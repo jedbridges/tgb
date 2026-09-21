@@ -1,0 +1,36 @@
+---
+import { url } from '~/lib/url';
+import Disclosure from './Disclosure.astro';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div>
+      <p class="site-footer__brand">The Great Books</p>
+      <p class="site-footer__tag">The books that college core curricula have asked students to read for a century, in one place.</p>
+    </div>
+    <nav class="ui site-footer__links" aria-label="Footer">
+      <a href={url('/books/')}>All books</a>
+      <a href={url('/programs/')}>Programs</a>
+      <a href={url('/authors/')}>Authors</a>
+      <a href={url('/about/')}>About</a>
+      <a href={url('/disclosure/')}>Affiliate disclosure</a>
+      <a href={url('/privacy/')}>Privacy</a>
+    </nav>
+    <div class="site-footer__legal ui">
+      <Disclosure compact />
+      <p>© {year} The Great Books.</p>
+    </div>
+  </div>
+</footer>
+<style>
+  .site-footer { margin-top: var(--s5); border-top: 1px solid var(--ink); padding: var(--s3) 0 var(--s4); }
+  .site-footer__grid { display: grid; gap: var(--s3); grid-template-columns: 1.4fr 1fr 1.4fr; }
+  .site-footer__brand { font-style: italic; font-size: var(--step-1); color: var(--ink-strong); }
+  .site-footer__tag { color: var(--ink-soft); max-width: 32ch; margin-top: var(--s0); }
+  .site-footer__links { display: flex; flex-direction: column; gap: 0.5rem; }
+  .site-footer__links a { text-decoration: none; color: var(--ink-soft); }
+  .site-footer__links a:hover { color: var(--ink-strong); }
+  .site-footer__legal { color: var(--ink-mute); font-size: var(--step--2); line-height: 1.5; display: grid; gap: var(--s1); align-content: start; }
+  @media (max-width: 760px) { .site-footer__grid { grid-template-columns: 1fr; gap: var(--s2); } }
+</style>

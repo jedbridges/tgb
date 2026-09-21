@@ -1,0 +1,30 @@
+name: Deploy
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+concurrency: { group: deploy, cancel-in-progress: true }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm run validate:content
+      - run: npm run build
+        env:
+          SITE_URL: ${{ secrets.SITE_URL }}
+          AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
+          BOOKSHOP_AFFILIATE_ID: ${{ secrets.BOOKSHOP_AFFILIATE_ID }}
+          PUBLIC_GA4_ID: ${{ secrets.PUBLIC_GA4_ID }}
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
+      - name: Smoke the live site
+        run: |
+          curl -fsS -o /dev/null "${{ secrets.SITE_URL }}/"
+          curl -fsS -o /dev/null "${{ secrets.SITE_URL }}/sitemap-index.xml"

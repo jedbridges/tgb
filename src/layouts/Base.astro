@@ -1,0 +1,60 @@
+---
+import '~/styles/base.css';
+import Seo from '~/components/Seo.astro';
+import Header from '~/components/Header.astro';
+import Footer from '~/components/Footer.astro';
+import SearchPalette from '~/components/SearchPalette.astro';
+import { GA4_ID } from '~/lib/analytics';
+interface Props {
+  title: string; description: string; image?: string;
+  type?: 'website' | 'article' | 'book'; noindex?: boolean;
+  jsonld?: Record<string, unknown> | Record<string, unknown>[];
+  bodyClass?: string;
+}
+const { bodyClass, ...seo } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f2e8e4" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <Seo {...seo} />
+    {GA4_ID && (
+      <script is:inline define:vars={{ GA4_ID }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', GA4_ID, { anonymize_ip: true, send_page_view: true });
+        const load = () => { const s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4_ID; document.head.appendChild(s); };
+        'requestIdleCallback' in window ? requestIdleCallback(load, { timeout: 4000 }) : setTimeout(load, 1500);
+      </script>
+    )}
+  </head>
+  <body class={bodyClass}>
+    <a class="skip ui" href="#main">Skip to content</a>
+    <Header />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <Footer />
+    <SearchPalette />
+    <script>
+      import { track } from '~/lib/analytics';
+      document.addEventListener('click', (e) => {
+        const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[data-affiliate]');
+        if (!a) return;
+        track('affiliate_click', { retailer: a.dataset.affiliate, work: a.dataset.work, page: location.pathname });
+      });
+    </script>
+  </body>
+</html>
+<style is:global>
+  .skip { position: absolute; left: var(--s1); top: -3rem; background: var(--ink); color: var(--paper); padding: 0.5rem 0.8rem; border-radius: 3px; z-index: 100; text-decoration: none; }
+  .skip:focus { top: var(--s1); }
+  main:focus { outline: none; }
+</style>

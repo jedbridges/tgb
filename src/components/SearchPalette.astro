@@ -1,0 +1,131 @@
+---
+/* Command palette: ⌘K or "/" opens. Pagefind loads on first open. */
+---
+<div class="palette" id="palette" hidden>
+  <div class="palette__backdrop" data-close-search></div>
+  <div class="palette__panel" role="dialog" aria-modal="true" aria-label="Search the library">
+    <form class="palette__form" role="search" onsubmit="return false">
+      <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="m11 11 3.5 3.5" stroke-linecap="round"/></svg>
+      <input id="palette-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search books, authors, themes…" aria-label="Search" aria-controls="palette-results" aria-expanded="false" aria-autocomplete="list" role="combobox" />
+      <kbd class="ui">esc</kbd>
+    </form>
+    <div class="palette__results" id="palette-results" role="listbox" aria-label="Results"></div>
+    <p class="palette__hint ui">Try <button type="button" data-q="justice">justice</button>, <button type="button" data-q="Plato">Plato</button>, or <button type="button" data-q="tragedy">tragedy</button></p>
+  </div>
+</div>
+<style>
+  .palette { position: fixed; inset: 0; z-index: 60; display: grid; place-items: start center; padding-top: min(14vh, 10rem); }
+  .palette[hidden] { display: none; }
+  .palette__backdrop { position: absolute; inset: 0; background: color-mix(in oklch, var(--ink-strong) 45%, transparent); backdrop-filter: blur(4px); animation: fade var(--dur-fast) both; }
+  .palette__panel { position: relative; width: min(100% - 2rem, 40rem); background: var(--paper-bright); border-radius: 8px; box-shadow: 0 30px 80px -20px rgb(var(--shadow-ink) / 0.5), 0 0 0 1px var(--paper-deeper); overflow: hidden; animation: rise var(--dur) var(--ease-out-expo) both; }
+  .palette__form { display: flex; align-items: center; gap: 0.8rem; padding: 0.9rem 1.1rem; border-bottom: 1px solid var(--paper-deeper); color: var(--ink-soft); }
+  .palette__form input { flex: 1; font-family: var(--font-display); font-size: var(--step-1); background: none; border: 0; outline: 0; color: var(--ink-strong); min-width: 0; }
+  .palette__form input::placeholder { color: var(--ink-mute); font-style: italic; }
+  .palette__form kbd { font-size: 0.7rem; color: var(--ink-mute); border: 1px solid var(--paper-deeper); border-radius: 4px; padding: 0.1em 0.4em; }
+  .palette__results { max-height: min(60vh, 32rem); overflow-y: auto; }
+  .palette__results:empty { display: none; }
+  .palette__hint { padding: 0.8rem 1.1rem; color: var(--ink-mute); font-size: var(--step--2); }
+  .palette__hint button { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 0.15em; }
+  .palette__results :global(.hit) { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; padding: 0.7rem 1.1rem; text-decoration: none; align-items: center; border-left: 2px solid transparent; }
+  .palette__results :global(.hit[aria-selected='true']), .palette__results :global(.hit:hover) { background: var(--paper); border-left-color: var(--accent); }
+  .palette__results :global(.hit__cover) { width: 2.4rem; aspect-ratio: 2/3; object-fit: cover; border-radius: 1px; box-shadow: 0 1px 3px rgb(var(--shadow-ink) / 0.3); background: var(--paper-deep); }
+  .palette__results :global(.hit__type) { font-family: var(--font-ui); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
+  .palette__results :global(.hit__title) { font-size: var(--step-0); color: var(--ink-strong); line-height: 1.2; }
+  .palette__results :global(.hit__title mark) { background: var(--accent-wash); color: inherit; }
+  .palette__results :global(.hit__sub) { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-soft); }
+  .palette__results :global(.hit__sub mark) { background: none; color: var(--accent-deep); }
+  .palette__results :global(.empty) { padding: 1.2rem 1.1rem; color: var(--ink-soft); font-style: italic; }
+  @keyframes fade { from { opacity: 0 } }
+  @keyframes rise { from { opacity: 0; transform: translateY(-10px) scale(0.98) } }
+  @media (prefers-reduced-motion: reduce) { .palette__panel, .palette__backdrop { animation: none; } }
+</style>
+<script>
+  type PF = { search: (q: string, o?: any) => Promise<{ results: { id: string; data: () => Promise<any> }[] }>; init?: () => Promise<void>; options?: (o: any) => Promise<void> };
+  const root = document.getElementById('palette')!;
+  const input = document.getElementById('palette-input') as HTMLInputElement;
+  const list = document.getElementById('palette-results')!;
+  let pf: PF | null = null;
+  let lastFocus: HTMLElement | null = null;
+  let sel = -1;
+  let seq = 0;
+
+  async function loadPagefind(): Promise<PF | null> {
+    if (pf) return pf;
+    try {
+      // @ts-ignore built at build time
+      const mod = await import(/* @vite-ignore */ '/pagefind/pagefind.js');
+      await mod.options?.({ excerptLength: 18 });
+      await mod.init?.();
+      pf = mod;
+    } catch { pf = null; }
+    return pf;
+  }
+  function open(q = '') {
+    lastFocus = document.activeElement as HTMLElement;
+    root.hidden = false;
+    document.body.style.overflow = 'hidden';
+    input.value = q; input.focus();
+    loadPagefind();
+    if (q) run(q);
+  }
+  function close() {
+    root.hidden = true; document.body.style.overflow = '';
+    list.innerHTML = ''; sel = -1; input.setAttribute('aria-expanded', 'false');
+    lastFocus?.focus();
+  }
+  function render(hits: any[]) {
+    sel = -1;
+    if (!hits.length) { list.innerHTML = `<p class="empty">Nothing on the shelf for “${escape(input.value)}”.</p>`; return; }
+    list.innerHTML = hits.map((h, i) => `
+      <a class="hit" role="option" id="hit-${i}" aria-selected="false" href="${h.url}">
+        ${h.meta.cover ? `<img class="hit__cover" src="${h.meta.cover}" alt="" width="40" height="60" loading="lazy">` : '<span class="hit__cover"></span>'}
+        <span>
+          <span class="hit__type">${escape(h.meta.type || 'page')}${h.meta.author ? ' · ' + escape(h.meta.author) : ''}</span>
+          <span class="hit__title" style="display:block">${escape(h.meta.title)}</span>
+          <span class="hit__sub" style="display:block">${h.excerpt}</span>
+        </span>
+      </a>`).join('');
+    input.setAttribute('aria-expanded', 'true');
+  }
+  const escape = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+  let t: number | undefined;
+  function run(q: string) {
+    clearTimeout(t);
+    if (!q.trim()) { list.innerHTML = ''; input.setAttribute('aria-expanded', 'false'); return; }
+    t = window.setTimeout(async () => {
+      const my = ++seq;
+      const engine = await loadPagefind();
+      if (!engine) { list.innerHTML = '<p class="empty">Search index is built at deploy time. Run a production build to enable it.</p>'; return; }
+      const res = await engine.search(q);
+      const top = await Promise.all(res.results.slice(0, 8).map((r) => r.data()));
+      if (my === seq) render(top);
+    }, 90);
+  }
+  function move(d: number) {
+    const hits = [...list.querySelectorAll<HTMLElement>('.hit')];
+    if (!hits.length) return;
+    hits[sel]?.setAttribute('aria-selected', 'false');
+    sel = (sel + d + hits.length) % hits.length;
+    hits[sel].setAttribute('aria-selected', 'true');
+    hits[sel].scrollIntoView({ block: 'nearest' });
+    input.setAttribute('aria-activedescendant', hits[sel].id);
+  }
+  input.addEventListener('input', () => run(input.value));
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
+    else if (e.key === 'Enter') { const h = list.querySelector<HTMLAnchorElement>('.hit[aria-selected="true"]') || list.querySelector<HTMLAnchorElement>('.hit'); if (h) location.href = h.href; }
+  });
+  root.addEventListener('click', (e) => {
+    const el = e.target as HTMLElement;
+    if (el.closest('[data-close-search]')) close();
+    const q = el.closest<HTMLElement>('[data-q]'); if (q) { input.value = q.dataset.q!; run(input.value); input.focus(); }
+  });
+  document.addEventListener('click', (e) => { if ((e.target as HTMLElement).closest('[data-open-search]')) open(); });
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); root.hidden ? open() : close(); return; }
+    if (e.key === 'Escape' && !root.hidden) { close(); return; }
+    const tag = (e.target as HTMLElement).tagName;
+    if (e.key === '/' && root.hidden && !['INPUT', 'TEXTAREA', 'SELECT'].includes(tag) && !(e.target as HTMLElement).isContentEditable) { e.preventDefault(); open(); }
+  });
+</script>

@@ -1,0 +1,51 @@
+/* The Great Books: design tokens. Warm paper, ink, one accent. */
+:root {
+  /* Palette (brand hexes, expressed as oklch for tinted derivatives) */
+  --paper: #f2e8e4;                 /* brand paper */
+  --paper-deep: oklch(0.905 0.018 45);   /* shelf / recessed surfaces */
+  --paper-deeper: oklch(0.86 0.022 45);  /* rules, dividers */
+  --paper-bright: oklch(0.965 0.01 55);  /* raised page (book inner) */
+  --ink: #4b4644;                   /* brand ink */
+  --ink-strong: oklch(0.22 0.012 40);
+  --ink-soft: oklch(0.52 0.014 40);
+  --ink-mute: oklch(0.66 0.014 45);
+  --accent: #ff4c00;                /* brand accent: the bookmark ribbon */
+  --accent-deep: oklch(0.58 0.2 38);
+  --accent-wash: oklch(0.93 0.04 45);
+  --shelf-wood: oklch(0.42 0.05 45);
+  --shelf-edge: oklch(0.55 0.06 50);
+  --shadow-ink: 20 12 8;            /* rgb for shadows, warm */
+
+  /* Type */
+  --font-display: 'Cormorant Garamond Variable', 'Cormorant Garamond', Georgia, serif;
+  --font-ui: 'DM Sans Variable', 'DM Sans', system-ui, sans-serif;
+  --step--2: clamp(0.72rem, 0.7rem + 0.1vw, 0.78rem);
+  --step--1: clamp(0.84rem, 0.82rem + 0.15vw, 0.92rem);
+  --step-0: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
+  --step-1: clamp(1.3rem, 1.2rem + 0.6vw, 1.6rem);
+  --step-2: clamp(1.7rem, 1.5rem + 1vw, 2.2rem);
+  --step-3: clamp(2.2rem, 1.8rem + 2vw, 3.2rem);
+  --step-4: clamp(2.9rem, 2.1rem + 3.6vw, 5rem);
+  --step-5: clamp(3.6rem, 2.4rem + 6vw, 7.5rem);
+  --tracking-caps: 0.14em;
+
+  /* Space */
+  --s-1: 0.25rem;
+  --s0: 0.5rem;
+  --s1: 1rem;
+  --s2: 1.5rem;
+  --s3: 2.5rem;
+  --s4: clamp(3rem, 2rem + 4vw, 5rem);
+  --s5: clamp(4.5rem, 3rem + 7vw, 9rem);
+  --gutter: clamp(1rem, 4vw, 3.5rem);
+  --measure: 62ch;
+  --page-max: 84rem;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur: 420ms;
+  --dur-slow: 900ms;
+}

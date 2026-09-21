@@ -1,0 +1,22 @@
+---
+import { affiliatesEnabled } from '~/lib/affiliates';
+import { url } from '~/lib/url';
+interface Props { compact?: boolean }
+const { compact = false } = Astro.props;
+const anyOn = affiliatesEnabled.amazon || affiliatesEnabled.bookshop;
+---
+{affiliatesEnabled.amazon ? (
+  <p class:list={['disclosure', { 'disclosure--compact': compact }]}>
+    As an Amazon Associate, The Great Books earns from qualifying purchases.{affiliatesEnabled.bookshop && ' Bookshop.org links also support this site.'}
+    {!compact && <> <a href={url('/disclosure/')}>How this works.</a></>}
+  </p>
+) : (
+  <p class:list={['disclosure', { 'disclosure--compact': compact }]}>
+    {anyOn ? 'Bookshop.org links support this site at no cost to you.' : 'Buy links go to Amazon and Bookshop.org. We may earn a commission on purchases in future.'}
+    {!compact && <> <a href={url('/disclosure/')}>How this works.</a></>}
+  </p>
+)}
+<style>
+  .disclosure { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); line-height: 1.5; }
+  .disclosure a { color: var(--ink-soft); }
+</style>
