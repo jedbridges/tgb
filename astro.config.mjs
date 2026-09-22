@@ -18,6 +18,10 @@ export default defineConfig({
     }),
     pagefind(),
   ],
+  image: {
+    // One modern format. The jpg fallbacks were 362 files nothing current requests.
+    formats: ['webp'],
+  },
   vite: {
     build: { assetsInlineLimit: 0 },
   },

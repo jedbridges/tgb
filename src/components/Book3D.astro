@@ -57,7 +57,7 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
       <span class="book__face book__front">
         <span class="side side--art">
           {image ? (
-            <Image src={image} alt={decorative ? '' : `Cover of ${title}`} width={Math.round(width * 2)} densities={[1, 2]} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : undefined} />
+            <Image src={image} alt={decorative ? '' : `Cover of ${title}`} width={Math.round(width * 2)} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : undefined} />
           ) : (
             <span class="cover-gen" role={decorative ? undefined : 'img'} aria-label={decorative ? undefined : `${title} by ${authorName}`}>
               <span class="cover-gen__series">The Great Books</span>

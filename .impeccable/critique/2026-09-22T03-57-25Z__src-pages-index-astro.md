@@ -10,6 +10,7 @@ target_fingerprint: "sha256:1dec0ea2daf99916dea7354176a035cd5fa887f90e06d67a0b37
 target_path: /Users/jedbridges/Documents/GitHub/tgb/src/pages/index.astro
 timestamp: 2026-09-22T03-57-25Z
 slug: src-pages-index-astro
+closed: true
 ---
 Method: dual-agent (A: design review, isolated; B: detector and browser evidence, isolated)
 

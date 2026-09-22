@@ -1,12 +1,40 @@
 @view-transition { navigation: auto; }
 
-/* The book carried from the shelf to its page is the same object, so it morphs rather
-   than cutting. Only the clicked cover is named, set by script at click time, because a
-   view-transition-name must be unique in the document and the shelf holds 689 of them. */
-::view-transition-group(book-cover) { animation-duration: 420ms; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
-::view-transition-old(book-cover), ::view-transition-new(book-cover) { animation: none; mix-blend-mode: normal; }
+/* Taking a book off the shelf.
+   The cover the reader tapped is the only thing that survives the navigation: the shelf
+   around it falls back and blurs away, the book travels and grows into the page it belongs
+   to, and the page it lands on rises up behind it. The cover is a named element, so the
+   browser carries the real pixels across the two documents rather than cross-fading them. */
+::view-transition-group(book-cover) {
+  animation-duration: 520ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 20;   /* the book stays above the page falling away behind it */
+}
+::view-transition-old(book-cover),
+::view-transition-new(book-cover) {
+  animation: none;              /* no cross-fade: this is one object moving, not two images */
+  mix-blend-mode: normal;
+  height: 100%;
+  object-fit: cover;
+}
+/* The shelf recedes: a touch of scale and blur reads as moving past it, not as a fade. */
+::view-transition-old(root) {
+  animation: 300ms cubic-bezier(0.4, 0, 1, 1) both vt-shelf-recede;
+}
+::view-transition-new(root) {
+  animation: 460ms 80ms cubic-bezier(0.16, 1, 0.3, 1) both vt-page-arrive;
+}
+@keyframes vt-shelf-recede {
+  to { opacity: 0; transform: scale(0.97); filter: blur(3px); }
+}
+@keyframes vt-page-arrive {
+  from { opacity: 0; transform: translateY(10px); }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) { animation: none !important; }
 }
 
 /* A book as a CSS 3D object. All sizing flows from --w (width) and --ratio (h/w), depth from --d. */
@@ -186,6 +214,14 @@
 .book[data-state='open'] .book__gloss { opacity: 0; }
 .book[data-state='open'] .book__shadow { transform: translateX(calc(var(--w) * -0.25)) scaleX(1.5); }
 .book--button { cursor: pointer; }
+/* On a touch screen there is no hover to lift the book, so the press itself does it. */
+@media (hover: none) {
+  .card:active .book__body { --tz: 44px; --ry: 10deg; --ty: -8px; transition-duration: 180ms; }
+  .card:active .book__shadow { transform: translateY(8px) scale(1.15, 1.6); opacity: 0.8; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card:active .book__body, .card:active .book__shadow { transition: none; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .book__body, .book__front, .book__shadow, .book__gloss { transition: none !important; }

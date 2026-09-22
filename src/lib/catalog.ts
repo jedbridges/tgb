@@ -71,12 +71,6 @@ export async function authorName(id: string) {
   return authors.get(id)?.data.name ?? placeholderAuthor(id).data.name;
 }
 
-/** Works visible on the site. */
-export async function publicWorks() {
-  const { works } = await loadCatalog();
-  return works;
-}
-
 /** A work "has a guide" once it carries the written summary, not just the catalogue entry. */
 export const hasGuide = (w: Work) => w.data.status !== 'stub';
 

@@ -307,7 +307,7 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
         .resultbar__clear { font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent-deep); text-decoration: underline; text-underline-offset: 0.2em; min-height: 30px; padding: 0 0.2em; }
         .resultbar .f--sort { margin-left: auto; display: flex; align-items: baseline; gap: 0.5rem; width: auto; }
         .resultbar .f--sort .f__label { margin: 0; white-space: nowrap; }
-        .resultbar .f--sort select { width: auto; min-width: 9.5rem; padding-block: 0.35rem; min-height: 36px; }
+        .resultbar .f--sort select { width: auto; min-width: 9.5rem; padding-block: 0.35rem; min-height: 44px; }
 
         .filters { grid-area: rail; display: grid; gap: var(--s2); align-content: start;
           position: sticky; top: 8.25rem;

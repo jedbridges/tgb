@@ -18,8 +18,8 @@ const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flat
 <Base title="The Great Books" description={`The ${works.length} books that college Great Books programs ask students to read, with a guide to each one, its themes, and where to buy it.`} jsonld={websiteLd()} bodyClass="home">
   <section class="hero wrap">
     <div class="hero__text">
-      <h1 class="reveal">Every great books list, on <em>one shelf</em>.</h1>
-      <p class="hero__lede reveal" style="--i:1">St. John's, Columbia, Chicago, Yale, and the published canons behind them. {works.length} works, with a guide to each book, the themes it turns on, every program that assigns it, and the edition worth buying.</p>
+      <h1 class="reveal">Three thousand years of reading, on <em>one shelf</em>.</h1>
+      <p class="hero__lede reveal" style="--i:1">The great books list, assembled from all nine of them: St. John's, Columbia, Chicago, Yale and the published canons behind them. {works.length} works, with a guide to each, the themes it turns on, and the edition worth buying.</p>
       <div class="hero__actions reveal" style="--i:2">
         <a class="btn btn--primary" href={url('/books/')}>Browse the shelf</a>
         <button class="btn" type="button" data-open-search>Search inside every book</button>
@@ -105,9 +105,20 @@ const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flat
   .themecloud a { display: inline-flex; align-items: center; min-height: 44px; font-size: var(--step-2); font-style: italic; text-decoration: none; color: var(--ink-soft); transition: color var(--dur-fast); }
   .themecloud a:hover { color: var(--accent-deep); }
   @media (max-width: 860px) {
-    .timeline { grid-auto-flow: row; grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)); gap: var(--s1); align-items: stretch; }
-    .tl { grid-template-columns: 3.5rem minmax(0, 1fr) auto; align-items: center; gap: var(--s1); min-height: 48px; padding: 0.3rem 0; }
-    .tl__bar { height: 10px; width: calc(12px + var(--f) * 100%); border-top: 0; border-left: 2px solid var(--ink-mute); }
-    .tl__label { font-size: var(--step--2); }
+    .timeline { grid-auto-flow: row; grid-template-columns: 1fr; gap: 0; align-items: stretch; }
+    .tl {
+      grid-template-columns: minmax(0, 1fr) auto;
+      grid-template-areas: 'label count' 'bar bar';
+      align-items: baseline; gap: 0.3rem var(--s1); min-height: 48px;
+      padding: 0.7rem 0; border-bottom: 1px solid var(--paper-deeper);
+    }
+    .tl__label { grid-area: label; font-size: var(--step-0); color: var(--ink-strong); }
+    .tl__count { grid-area: count; font-size: var(--step--1); }
+    /* The bar becomes a rule under the row, filled in proportion. Unmistakably a measure. */
+    .tl__bar {
+      grid-area: bar; height: 3px; width: 100%; border: 0; background: var(--paper-deeper);
+      background-image: linear-gradient(to right, var(--ink) 0, var(--ink) calc(var(--f) * 100%), transparent calc(var(--f) * 100%));
+    }
+    .tl:hover .tl__bar { background-image: linear-gradient(to right, var(--accent) 0, var(--accent) calc(var(--f) * 100%), transparent calc(var(--f) * 100%)); }
   }
 </style>
