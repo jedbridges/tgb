@@ -6,7 +6,6 @@ interface Props { kind: 'themes' | 'genres' | 'eras'; entry: { id: string; data:
 const { kind, entry, kindLabel, match } = Astro.props;
 const { works, authors } = await loadCatalog();
 const list = await sortedByAssignment(works.filter(match));
-const counts = await Promise.all(list.map((w) => programCount(w.id)));
 const param = { themes: 'theme', genres: 'genre', eras: 'era' }[kind];
 ---
 <section class="wrap head page-open">
@@ -20,7 +19,7 @@ const param = { themes: 'theme', genres: 'genre', eras: 'era' }[kind];
 <section class="wrap">
   {list.length ? (
     <div class="shelf-grid">
-      {list.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} programCount={counts[i]} index={Math.min(i, 12)} eager={i < 6} />)}
+      {list.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} index={Math.min(i, 12)} eager={i < 6} />)}
     </div>
   ) : (
     <p class="empty">Nothing on this shelf yet.</p>

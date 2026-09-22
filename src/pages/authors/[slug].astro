@@ -13,7 +13,6 @@ export async function getStaticPaths() {
 const { author } = Astro.props;
 const { works, assigned } = await loadCatalog();
 const mine = works.filter((w) => w.data.author.id === author.id || w.data.coauthors.some((c) => c.id === author.id)).sort((a, b) => a.data.year - b.data.year);
-const counts = await Promise.all(mine.map((w) => programCount(w.id)));
 const { Content } = await render(author);
 const a = author.data;
 const era = await getEntry('eras', a.era.id);
@@ -40,7 +39,7 @@ const hasBio = author.body && author.body.trim().length > 40;
     <section class="wrap" data-pagefind-ignore>
       <h2 class="h">Works on the lists</h2>
       <div class="shelf-grid">
-        {mine.map((w, i) => <BookCard work={w} authorName={a.name} width={140} programCount={counts[i]} index={i} eager={i < 4} />)}
+        {mine.map((w, i) => <BookCard work={w} authorName={a.name} width={140} index={i} eager={i < 4} />)}
       </div>
     </section>
     {progs.size > 0 && (

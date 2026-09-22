@@ -8,7 +8,6 @@ import { websiteLd } from '~/lib/seo';
 
 const { works, authors, programs } = await loadCatalog();
 const top = (await sortedByAssignment(works)).slice(0, 12);
-const counts = await Promise.all(top.map((w) => programCount(w.id)));
 const themeCounts = new Map<string, number>();
 for (const w of works) for (const t of w.data.themes) themeCounts.set(t.id, (themeCounts.get(t.id) ?? 0) + 1);
 const themes = (await getCollection('themes'))
@@ -79,7 +78,7 @@ const HEADLINE_WORDS = [
       <a class="section-head__more ui" href={url('/books/')}>All {works.length} →</a>
     </header>
     <div class="shelf-grid shelf-open">
-      {top.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} programCount={counts[i]} index={i} eager={i < 6} />)}
+      {top.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} index={i} eager={i < 6} />)}
     </div>
   </section>
 

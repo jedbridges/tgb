@@ -25,6 +25,12 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     </button>
 
     <div class="site-header__end">
+      <button
+        class="menu-toggle" type="button" data-menu-toggle
+        aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"
+      >
+        <span class="menu-toggle__bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
       <nav class="site-nav ui" aria-label="Primary">
         {nav.map((n) => <a href={url(n.href)} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a>)}
       </nav>
@@ -39,6 +45,16 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
       </svg>
       </button>
     </div>
+  </div>
+
+  <!-- The same destinations as the desktop bar, set at reading size. A phone has room for
+       five words; what it does not have room for is five words in a row. -->
+  <div class="site-menu" id="site-menu" hidden>
+    <nav class="site-menu__nav" aria-label="All pages">
+      {nav.map((n, i) => (
+        <a href={url(n.href)} style={`--i:${i}`} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a>
+      ))}
+    </nav>
   </div>
 </header>
 <style>
@@ -105,6 +121,52 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
   .site-nav a:hover { color: var(--ink-strong); box-shadow: inset 0 -3px 0 var(--edge); }
   .site-nav a[aria-current='page'] { color: var(--ink-strong); box-shadow: inset 0 -3px 0 var(--accent); }
 
+  /* Three rules that become an X. Drawn rather than set as a glyph, so the stroke matches
+     the search icon beside it and the two read as one set. */
+  .menu-toggle {
+    display: none; flex: 0 0 auto;
+    align-items: center; justify-content: center;
+    width: 44px; height: 44px; border-radius: 999px;
+    color: var(--ink-soft);
+    transition: color var(--dur-fast), background var(--dur-fast);
+  }
+  .menu-toggle:hover { color: var(--ink-strong); background: var(--paper-bright); }
+  .menu-toggle__bars { display: grid; gap: 4px; width: 18px; }
+  .menu-toggle__bars i {
+    display: block; height: 1.5px; background: currentColor; border-radius: 1px;
+    transition: transform var(--dur-fast) var(--ease-out), opacity var(--dur-fast);
+  }
+  .menu-toggle[aria-expanded='true'] .menu-toggle__bars i:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+  .menu-toggle[aria-expanded='true'] .menu-toggle__bars i:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded='true'] .menu-toggle__bars i:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+
+  /* The panel is a page, not a tray. It fills what is below the bar, the links are set in
+     the display face at reading size, and there is nothing else in it: five destinations
+     do not need a drawer with sections. */
+  .site-menu {
+    position: fixed; inset: calc(var(--header-h) + env(safe-area-inset-top, 0px)) 0 0 0;
+    z-index: 39; background: var(--paper);
+    display: grid; align-content: start;
+    padding: var(--s2) var(--gutter) calc(var(--s3) + env(safe-area-inset-bottom, 0px));
+    overflow-y: auto; overscroll-behavior: contain;
+  }
+  .site-menu[hidden] { display: none; }
+  .site-menu__nav { display: grid; }
+  .site-menu__nav a {
+    display: flex; align-items: baseline; justify-content: space-between;
+    padding: var(--s1) 0; border-bottom: var(--rule);
+    font-family: var(--font-display); font-style: italic; font-size: var(--step-2);
+    color: var(--ink-strong); text-decoration: none;
+  }
+  .site-menu__nav a[aria-current='page'] { color: var(--accent); }
+  .site-menu__nav a[aria-current='page']::after { content: ''; width: 0.5em; height: 0.5em; border-radius: 50%; background: var(--accent); align-self: center; }
+  @media (prefers-reduced-motion: no-preference) {
+    .site-menu:not([hidden]) .site-menu__nav a {
+      animation: page-set 420ms var(--ease-out-expo) backwards;
+      animation-delay: calc(var(--i, 0) * 45ms);
+    }
+  }
+
   /* The toggle rides in the same track as the navigation, at its right end. */
   .theme-toggle {
     flex: 0 0 auto;
@@ -159,13 +221,44 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
       /* Truncates rather than wrapping or pushing the row wider on a narrow phone. */
       flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
     }
-    .site-header__end { order: 3; flex: 0 0 auto; gap: var(--s0); }
-    .site-nav { gap: var(--s1); }
-    /* The mark is the home link, so the word is redundant and the space is not. */
-    .site-nav a[href$="/programs/"], .site-nav a[href="/"] { display: none; }
+    .site-header__end { order: 3; flex: 0 0 auto; gap: 0; }
+    /* Every destination moves into the panel, so the row keeps the mark, the search and
+       two buttons, and the search gets the width it needs to read as an input. */
+    .site-nav { display: none; }
+    .menu-toggle { display: inline-flex; }
   }
 </style>
 <script>
+  /* The menu.
+     Matches how the search palette already behaves, because two overlays on one site
+     should not have two different sets of manners: escape closes it, the rest of the page
+     goes inert so a screen reader and the tab key cannot wander behind it, the background
+     does not scroll, and focus comes back to the button that opened it. */
+  const menuBtn = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+  const menu = document.getElementById('site-menu');
+  if (menuBtn && menu) {
+    const others = () => [...document.body.children].filter((el) => !el.contains(menu)) as HTMLElement[];
+    const setOpen = (open: boolean) => {
+      menu.hidden = !open;
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      document.body.style.overflow = open ? 'hidden' : '';
+      others().forEach((el) => {
+        if (open) { el.inert = true; el.setAttribute('aria-hidden', 'true'); }
+        else { el.inert = false; el.removeAttribute('aria-hidden'); }
+      });
+      if (open) menu.querySelector<HTMLAnchorElement>('a')?.focus();
+      else menuBtn.focus();
+    };
+    menuBtn.addEventListener('click', () => setOpen(menu.hidden));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) setOpen(false); });
+    // Tapping a destination should not leave the panel open behind the new page, and a
+    // link to the page you are already on would otherwise close nothing at all.
+    menu.addEventListener('click', (e) => { if ((e.target as HTMLElement).closest('a')) setOpen(false); });
+    // Rotating to a width where the bar shows every link again leaves the panel stranded.
+    matchMedia('(min-width: 761px)').addEventListener('change', (e) => { if (e.matches && !menu.hidden) setOpen(false); });
+  }
+
   // The scheme follows the system until the reader says otherwise, and that choice is
   // theirs for good. Nothing here decides the colours: it only pins color-scheme, and
   // every token in tokens.css reads that. The same write happens inline in <head> before

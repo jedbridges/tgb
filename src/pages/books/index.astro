@@ -35,7 +35,7 @@ const facets = {
     <div class="browse__results">
       <a class="browse__skip" href="#browse-end">Skip the {works.length} results</a>
       <div class="shelf-grid browse__grid" id="browse-grid">
-        {sorted.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} eager={i < 6} programCount={rows[i].pc} hasGuide={guideFlags[i]} index={Math.min(i, 12)} />)}
+        {sorted.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} eager={i < 6} hasGuide={guideFlags[i]} index={Math.min(i, 12)} />)}
       </div>
       <p class="browse__empty" id="browse-empty" hidden>No book on the shelf answers to all of that at once. Loosen a filter above, or try a different word.</p>
       <div id="browse-end" tabindex="-1"></div>

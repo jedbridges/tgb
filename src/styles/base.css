@@ -106,7 +106,7 @@ input, textarea, select { caret-color: var(--accent); }
 /* Years, page counts and list tallies line up in columns. Oldstyle figures are right for
    figures inside a sentence and wrong for a column of them, and keeping this as a list of
    hand-picked class names meant every new count shipped in proportional figures. */
-.nums, [data-nums], .work__facts dd, .card__author, .card__count, .card__guide, .row__meta,
+.nums, [data-nums], .work__facts dd, .card__author, .card__guide, .row__meta,
 .row__n, .prog__count, .tl__count, .facts dd, .author__dates, .author__count, .era__range,
 .program__count, .badge__seg, .buy__edition-pub, .work__gloss-note, .titlepage__year,
 .chip__n, .themecloud__n, .resultbar__count, .f select, .segment__sub {
