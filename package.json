@@ -15,7 +15,7 @@
     "covers": "tsx scripts/fetch-covers.ts",
     "seed": "tsx scripts/seed-work.ts",
     "smoke": "tsx scripts/smoke-dist.ts",
-    "deploy": "wrangler deploy"
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@astrojs/preact": "^6.0.5",

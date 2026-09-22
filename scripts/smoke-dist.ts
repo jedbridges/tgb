@@ -2,6 +2,16 @@
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
+/*
+ * This runs as its own process, so it cannot inherit what astro.config resolved. It reads
+ * the same .env file rather than trusting the shell, which is what lets the origin be
+ * declared in exactly one place.
+ */
+for (const line of existsSync('.env') ? readFileSync('.env', 'utf8').split('\n') : []) {
+  const m = /^\s*([A-Z0-9_]+)\s*=\s*(.*)$/.exec(line);
+  if (m && !process.env[m[1]]) process.env[m[1]] = m[2].trim().replace(/^["']|["']$/g, '');
+}
+
 const dist = 'dist';
 const fail = (m: string) => { console.error(`✗ ${m}`); process.exitCode = 1; };
 const ok = (m: string) => console.log(`✓ ${m}`);
@@ -39,9 +49,38 @@ if (!site.includes('workers.dev')) {
 } else {
   ok(`origin is ${site}`);
 }
-// Canonicals must match the configured origin, or the whole site self-reports the wrong address.
-if (site) {
+/*
+ * The origin has to be declared, not defaulted.
+ *
+ * This check used to be skipped whenever SITE_URL was unset, which is precisely the case
+ * that goes wrong: astro.config falls back to the dev origin, the build succeeds, and the
+ * deployed site tells every crawler and every share preview that it lives on localhost.
+ * That shipped. An unset origin is now a failure, and the fallback is only ever a
+ * convenience for `astro dev`.
+ */
+if (!site) {
+  fail(
+    'SITE_URL is unset, so every canonical, sitemap entry and share image in this build ' +
+    'points at the dev origin. Copy .env.example to .env, or set it in the environment.',
+  );
+} else {
   const bad = pages.filter((p) => { const h = readFileSync(p, 'utf8'); const m = h.match(/<link rel="canonical" href="([^"]+)"/); return m && !m[1].startsWith(site); });
   bad.length ? fail(`${bad.length} pages have a canonical outside ${site}`) : ok('canonicals match the configured origin');
+
+  // The share image is the one absolute URL a reader never sees until it is already wrong.
+  const ogBad = pages.filter((p) => { const m = readFileSync(p, 'utf8').match(/property="og:image" content="([^"]+)"/); return m && !m[1].startsWith(site); });
+  ogBad.length ? fail(`${ogBad.length} pages have an og:image outside ${site}`) : ok('share images are on the configured origin');
+
+  // And nothing anywhere may still name a dev origin.
+  if (!/localhost|127\.0\.0\.1/.test(site)) {
+    const devRefs = pages.filter((p) => /localhost:\d+|127\.0\.0\.1/.test(readFileSync(p, 'utf8')));
+    devRefs.length
+      ? fail(`${devRefs.length} pages still reference a dev origin, e.g. ${devRefs[0]}`)
+      : ok('no dev origins in the build');
+  }
+  const sitemap = join(dist, 'sitemap-0.xml');
+  if (existsSync(sitemap) && !readFileSync(sitemap, 'utf8').includes(`<loc>${site}`)) {
+    fail(`sitemap-0.xml does not use ${site}`);
+  } else if (existsSync(sitemap)) ok('sitemap uses the configured origin');
 }
 if (process.exitCode) process.exit(1);
