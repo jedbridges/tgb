@@ -29,5 +29,19 @@ books.length ? ok(`${books.length} book pages`) : console.log('· no book pages 
 jsonldBad ? fail(`${jsonldBad} book pages with missing/invalid Book JSON-LD`) : books.length && ok('Book JSON-LD present and valid');
 tagBad ? fail(`${tagBad} book pages missing affiliate tag`) : tag && ok('affiliate tag on every book page');
 imgBad ? fail(`${imgBad} <img> without width/height`) : ok('all <img> have dimensions');
-if (pages.some((p) => readFileSync(p, 'utf8').includes('workers.dev'))) fail('hardcoded workers.dev reference');
+// A workers.dev URL is only wrong when it is NOT the configured origin, i.e. a stale hardcode
+// left behind after moving to a custom domain.
+const site = (process.env.SITE_URL ?? '').trim();
+if (!site.includes('workers.dev')) {
+  const stale = pages.filter((p) => readFileSync(p, 'utf8').includes('workers.dev'));
+  if (stale.length) fail(`${stale.length} pages reference workers.dev but SITE_URL is ${site || '(unset)'}`);
+  else ok('no stale workers.dev references');
+} else {
+  ok(`origin is ${site}`);
+}
+// Canonicals must match the configured origin, or the whole site self-reports the wrong address.
+if (site) {
+  const bad = pages.filter((p) => { const h = readFileSync(p, 'utf8'); const m = h.match(/<link rel="canonical" href="([^"]+)"/); return m && !m[1].startsWith(site); });
+  bad.length ? fail(`${bad.length} pages have a canonical outside ${site}`) : ok('canonicals match the configured origin');
+}
 if (process.exitCode) process.exit(1);

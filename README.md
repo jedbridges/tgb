@@ -26,4 +26,22 @@ Copy `.env.example` to `.env` to set affiliate IDs, analytics and the site URL l
 
 ## Deploy
 
-Push to `master`. Required GitHub secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `SITE_URL`, and optionally `AMAZON_ASSOCIATE_TAG`, `BOOKSHOP_AFFILIATE_ID`, `PUBLIC_GA4_ID`.
+Live at **https://tgb.bridges-site.workers.dev**
+
+Deploy from this machine, where wrangler is already signed in:
+
+```bash
+SITE_URL=https://tgb.bridges-site.workers.dev npm run build && npx wrangler deploy
+```
+
+`SITE_URL` must be set at build time. It is baked into canonical URLs, the sitemap and
+OpenGraph tags, and `npm run smoke` fails the build if the canonicals disagree with it.
+
+Deploying from GitHub Actions instead needs a scoped API token, because the local
+wrangler login is an OAuth token that cannot be shared with CI. Create one with the
+"Edit Cloudflare Workers" template and add it as `CLOUDFLARE_API_TOKEN`, along with
+`CLOUDFLARE_ACCOUNT_ID` (857288c4525ed3168fa33c44527ab5ee) and `SITE_URL`.
+`AMAZON_ASSOCIATE_TAG`, `BOOKSHOP_AFFILIATE_ID` and `PUBLIC_GA4_ID` are optional.
+
+To move to a custom domain later: add it under the Worker's Domains and Routes, then
+rebuild with the new `SITE_URL`. No code changes; paths are all root-relative.
