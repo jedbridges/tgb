@@ -48,6 +48,11 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     background: color-mix(in oklch, var(--paper) 96%, transparent);
     backdrop-filter: blur(14px) saturate(1.1); -webkit-backdrop-filter: blur(14px) saturate(1.1);
     border-bottom: 1px solid var(--edge);
+    /* On a phone the page runs under the status bar, so a bar pinned to top: 0 leaves a
+       band above it where the page shows through and text scrolls past behind the clock.
+       The inset is taken as padding rather than as a top offset, so the bar's own fill
+       covers that band while its contents stay clear of the notch. */
+    padding-top: env(safe-area-inset-top, 0px);
   }
   /* Three tracks, not a flex row: the outer two take the same share of whatever is left,
      which is what puts the search in the centre of the page rather than in the centre of
@@ -136,20 +141,28 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     .search-trigger kbd { display: none; }
   }
   @media (max-width: 760px) {
-    /* Below this there is not enough room either side of a centred search, so the row
-       becomes a plain one: mark, then the remaining links, then the two icon buttons. */
-    .site-header__row { display: flex; justify-content: space-between; height: var(--header-h); gap: var(--s0); }
+    /* Below this there is no room either side of a centred search, so the row goes flat:
+       mark, then the search, then what is left of the navigation and the toggle.
+
+       The search keeps its shape rather than collapsing to a magnifying glass. An icon
+       alone asks the reader to know what it does; a pill with a word in it is read as a
+       place to type. It takes the row's spare width to do that, which is affordable here
+       because the mark already links home and "Programs" is one tap further in. */
+    .site-header__row { display: flex; align-items: center; height: var(--header-h); gap: var(--s0); }
     .brand__word { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
     .search-trigger {
-      order: 3; width: 44px; max-width: none; padding: 0; justify-content: center;
+      order: 2; flex: 1 1 auto; width: auto; min-width: 0; max-width: none;
+      justify-content: flex-start; padding: 0.4rem 0.85rem; gap: 0.45rem;
       border-color: var(--edge);
     }
-    .search-trigger__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-    .site-header__end { order: 4; gap: var(--s0); }
+    .search-trigger__label {
+      /* Truncates rather than wrapping or pushing the row wider on a narrow phone. */
+      flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .site-header__end { order: 3; flex: 0 0 auto; gap: var(--s0); }
     .site-nav { gap: var(--s1); }
-  }
-  @media (max-width: 430px) {
-    .site-nav a[href$="/programs/"] { display: none; }
+    /* The mark is the home link, so the word is redundant and the space is not. */
+    .site-nav a[href$="/programs/"], .site-nav a[href="/"] { display: none; }
   }
 </style>
 <script>
