@@ -1,0 +1,1149 @@
+name: Great Books of the Western World
+shortName: Great Books (Britannica)
+kind: series
+institution: Encyclopædia Britannica, Inc.
+url: https://en.wikipedia.org/wiki/Great_Books_of_the_Western_World
+description: >-
+  Great Books of the Western World is a 60-volume anthology published by Encyclopædia
+  Britannica, first in 1952 (54 volumes, edited by Robert Maynard Hutchins and Mortimer
+  J. Adler) and in a revised second edition in 1990 (60 volumes, edited by Adler with
+  Clifton Fadiman and Philip W. Goetz). The set grew out of the Great Books seminars at
+  the University of Chicago and Columbia, and was chosen on three criteria: continuing
+  relevance, rewarding re-reading, and participation in "the great conversation" about
+  the ideas indexed in the Syntopicon.
+
+  This file follows the 1990 second edition. Volumes 1 and 2 are the Syntopicon, Adler's
+  two-volume index to 102 "Great Ideas" (his introductory essay The Great Conversation was
+  issued as a separate unnumbered volume). Volumes 3 to 54 are arranged chronologically by
+  the first author in each volume and labelled by author; volumes 55 to 60 are the
+  twentieth-century additions, labelled by subject. The 1990 edition dropped Apollonius,
+  Fielding, Sterne and Fourier, added Calvin, Erasmus, Molière, Racine, Voltaire, Diderot,
+  Kierkegaard, Nietzsche, Tocqueville, Balzac, Austen, George Eliot, Dickens, Twain and
+  Ibsen, and updated many translations. The Bible is deliberately omitted. Very large
+  collected volumes (the Greek dramatists, Plato, Aristotle, Hippocrates, Shakespeare,
+  Freud) list the major works individually and roll the remainder into a note.
+sourceNote: "Second-edition contents from https://en.wikipedia.org/wiki/Great_Books_of_the_Western_World (first-edition list plus the 1990 changes) cross-checked against the full 60-volume table of contents at https://www.bopsecrets.org/gateway/book-lists/greatbooks.htm, checked 2026-09-21"
+segmentLabel: Volume
+order: 3
+segments:
+  - id: vol-1
+    label: Volume 1
+    sublabel: The Syntopicon I
+    order: 1
+    items:
+      - work: adler-syntopicon
+        title: "The Syntopicon: An Index to the Great Ideas"
+        author: Mortimer J. Adler
+        note: "Volume I, Angel to Love (51 of the 102 Great Ideas)"
+  - id: vol-2
+    label: Volume 2
+    sublabel: The Syntopicon II
+    order: 2
+    items:
+      - work: adler-syntopicon
+        title: "The Syntopicon: An Index to the Great Ideas"
+        author: Mortimer J. Adler
+        note: "Volume II, Man to World (the remaining 51 Great Ideas)"
+  - id: vol-3
+    label: Volume 3
+    sublabel: Homer
+    order: 3
+    items:
+      - work: homer-iliad
+        title: The Iliad
+        author: Homer
+        note: "Richmond Lattimore translation"
+      - work: homer-odyssey
+        title: The Odyssey
+        author: Homer
+        note: "Richmond Lattimore translation"
+  - id: vol-4
+    label: Volume 4
+    sublabel: Aeschylus, Sophocles, Euripides, Aristophanes
+    order: 4
+    items:
+      - work: aeschylus-agamemnon
+        title: Agamemnon
+        author: Aeschylus
+      - work: aeschylus-libation-bearers
+        title: The Libation Bearers
+        author: Aeschylus
+        note: "Printed as Choephoroe"
+      - work: aeschylus-eumenides
+        title: The Eumenides
+        author: Aeschylus
+      - work: aeschylus-prometheus-bound
+        title: Prometheus Bound
+        author: Aeschylus
+        note: "Also in this volume: The Suppliant Maidens, The Persians, Seven Against Thebes (all seven surviving plays)"
+      - work: sophocles-oedipus-the-king
+        title: Oedipus the King
+        author: Sophocles
+      - work: sophocles-oedipus-at-colonus
+        title: Oedipus at Colonus
+        author: Sophocles
+      - work: sophocles-antigone
+        title: Antigone
+        author: Sophocles
+      - work: sophocles-philoctetes
+        title: Philoctetes
+        author: Sophocles
+        note: "Also in this volume: Ajax, Electra, Women of Trachis (all seven surviving plays)"
+      - work: euripides-medea
+        title: Medea
+        author: Euripides
+      - work: euripides-hippolytus
+        title: Hippolytus
+        author: Euripides
+      - work: euripides-trojan-women
+        title: The Trojan Women
+        author: Euripides
+      - work: euripides-bacchae
+        title: The Bacchae
+        author: Euripides
+        note: "All 19 surviving plays are included; also Rhesus, Alcestis, Heracleidae, Suppliant Women, Ion, Helen, Andromache, Electra, Hecuba, Heracles, Phoenician Women, Orestes, both Iphigenias, Cyclops"
+      - work: aristophanes-clouds
+        title: The Clouds
+        author: Aristophanes
+      - work: aristophanes-birds
+        title: The Birds
+        author: Aristophanes
+      - work: aristophanes-lysistrata
+        title: Lysistrata
+        author: Aristophanes
+      - work: aristophanes-frogs
+        title: The Frogs
+        author: Aristophanes
+        note: "All 11 surviving plays are included; also Acharnians, Knights, Wasps, Peace, The Poet and the Women, Assemblywomen, Plutus"
+  - id: vol-5
+    label: Volume 5
+    sublabel: Herodotus, Thucydides
+    order: 5
+    items:
+      - work: herodotus-histories
+        title: The History
+        author: Herodotus
+        note: "George Rawlinson translation"
+      - work: thucydides-peloponnesian-war
+        title: History of the Peloponnesian War
+        author: Thucydides
+        note: "Richard Crawley translation, revised by R. Feetham"
+  - id: vol-6
+    label: Volume 6
+    sublabel: Plato
+    order: 6
+    items:
+      - work: plato-euthyphro
+        title: Euthyphro
+        author: Plato
+        note: "All dialogues in the Benjamin Jowett translation"
+      - work: plato-apology
+        title: Apology
+        author: Plato
+      - work: plato-crito
+        title: Crito
+        author: Plato
+      - work: plato-phaedo
+        title: Phaedo
+        author: Plato
+      - work: plato-protagoras
+        title: Protagoras
+        author: Plato
+      - work: plato-meno
+        title: Meno
+        author: Plato
+      - work: plato-gorgias
+        title: Gorgias
+        author: Plato
+      - work: plato-symposium
+        title: Symposium
+        author: Plato
+      - work: plato-phaedrus
+        title: Phaedrus
+        author: Plato
+      - work: plato-republic
+        title: The Republic
+        author: Plato
+      - work: plato-timaeus
+        title: Timaeus
+        author: Plato
+      - work: plato-parmenides
+        title: Parmenides
+        author: Plato
+      - work: plato-theaetetus
+        title: Theaetetus
+        author: Plato
+      - work: plato-sophist
+        title: Sophist
+        author: Plato
+      - work: plato-laws
+        title: Laws
+        author: Plato
+        note: "Also in this volume: Charmides, Lysis, Laches, Euthydemus, Cratylus, Ion, Critias, Statesman, Philebus, and the Seventh Letter"
+  - id: vol-7
+    label: Volume 7
+    sublabel: Aristotle I
+    order: 7
+    items:
+      - work: aristotle-organon
+        title: The Organon
+        author: Aristotle
+        note: "Categories, On Interpretation, Prior Analytics, Posterior Analytics, Topics, Sophistical Refutations"
+      - work: aristotle-physics
+        title: Physics
+        author: Aristotle
+      - work: aristotle-on-the-heavens
+        title: On the Heavens
+        author: Aristotle
+      - work: aristotle-on-generation-and-corruption
+        title: On Generation and Corruption
+        author: Aristotle
+      - work: aristotle-meteorology
+        title: Meteorology
+        author: Aristotle
+      - work: aristotle-metaphysics
+        title: Metaphysics
+        author: Aristotle
+      - work: aristotle-on-the-soul
+        title: On the Soul
+        author: Aristotle
+      - work: aristotle-parva-naturalia
+        title: Minor Biological Works (Parva Naturalia)
+        author: Aristotle
+        note: "On Sense and the Sensible; On Memory and Reminiscence; On Sleep; On Dreams; On Prophesying by Dreams; On Longevity; On Youth and Old Age, On Life and Death, On Breathing"
+  - id: vol-8
+    label: Volume 8
+    sublabel: Aristotle II
+    order: 8
+    items:
+      - work: aristotle-history-of-animals
+        title: History of Animals
+        author: Aristotle
+      - work: aristotle-parts-of-animals
+        title: Parts of Animals
+        author: Aristotle
+      - work: aristotle-generation-of-animals
+        title: On the Generation of Animals
+        author: Aristotle
+        note: "Also in this volume: On the Motion of Animals, On the Gait of Animals"
+      - work: aristotle-nicomachean-ethics
+        title: Nicomachean Ethics
+        author: Aristotle
+      - work: aristotle-politics
+        title: Politics
+        author: Aristotle
+      - work: aristotle-athenian-constitution
+        title: The Athenian Constitution
+        author: Aristotle
+      - work: aristotle-rhetoric
+        title: Rhetoric
+        author: Aristotle
+      - work: aristotle-poetics
+        title: Poetics
+        author: Aristotle
+  - id: vol-9
+    label: Volume 9
+    sublabel: Hippocrates, Galen
+    order: 9
+    items:
+      - work: hippocrates-works
+        title: Hippocratic Writings
+        author: Hippocrates
+        note: "Francis Adams translation: the Oath, On Ancient Medicine, Airs Waters Places, Prognostics, Regimen in Acute Diseases, Epidemics, Aphorisms, On the Sacred Disease, surgical treatises and others"
+      - work: galen-on-the-natural-faculties
+        title: On the Natural Faculties
+        author: Galen
+  - id: vol-10
+    label: Volume 10
+    sublabel: Euclid, Archimedes, Nicomachus
+    order: 10
+    items:
+      - work: euclid-elements
+        title: The Thirteen Books of the Elements
+        author: Euclid
+        note: "Thomas Heath translation"
+      - work: archimedes-works
+        title: Works
+        author: Archimedes
+        note: "On the Sphere and Cylinder, Measurement of a Circle, On Conoids and Spheroids, On Spirals, Equilibrium of Planes, Sand Reckoner, Quadrature of the Parabola, On Floating Bodies, Book of Lemmas, The Method"
+      - work: nicomachus-introduction-to-arithmetic
+        title: Introduction to Arithmetic
+        author: Nicomachus of Gerasa
+  - id: vol-11
+    label: Volume 11
+    sublabel: Lucretius, Epictetus, Marcus Aurelius, Plotinus
+    order: 11
+    items:
+      - work: lucretius-on-the-nature-of-things
+        title: On the Nature of Things
+        author: Lucretius
+        note: "Rolfe Humphries translation, printed under the title The Way Things Are"
+      - work: epictetus-discourses
+        title: The Discourses
+        author: Epictetus
+      - work: marcus-aurelius-meditations
+        title: The Meditations
+        author: Marcus Aurelius
+      - work: plotinus-enneads
+        title: The Six Enneads
+        author: Plotinus
+  - id: vol-12
+    label: Volume 12
+    sublabel: Virgil
+    order: 12
+    items:
+      - work: virgil-eclogues
+        title: Eclogues
+        author: Virgil
+        note: "C. Day Lewis translation"
+      - work: virgil-georgics
+        title: Georgics
+        author: Virgil
+      - work: virgil-aeneid
+        title: The Aeneid
+        author: Virgil
+  - id: vol-13
+    label: Volume 13
+    sublabel: Plutarch
+    order: 13
+    items:
+      - work: plutarch-lives
+        title: The Lives of the Noble Grecians and Romans
+        author: Plutarch
+        note: "Dryden translation"
+  - id: vol-14
+    label: Volume 14
+    sublabel: Tacitus
+    order: 14
+    items:
+      - work: tacitus-annals
+        title: The Annals
+        author: Tacitus
+      - work: tacitus-histories
+        title: The Histories
+        author: Tacitus
+  - id: vol-15
+    label: Volume 15
+    sublabel: Ptolemy, Copernicus, Kepler
+    order: 15
+    items:
+      - work: ptolemy-almagest
+        title: The Almagest
+        author: Ptolemy
+      - work: copernicus-on-the-revolutions
+        title: On the Revolutions of the Heavenly Spheres
+        author: Nicolaus Copernicus
+      - work: kepler-epitome-of-copernican-astronomy
+        title: Epitome of Copernican Astronomy
+        author: Johannes Kepler
+        note: "Books IV and V"
+      - work: kepler-harmonies-of-the-world
+        title: The Harmonies of the World
+        author: Johannes Kepler
+        note: "Book V"
+  - id: vol-16
+    label: Volume 16
+    sublabel: Augustine
+    order: 16
+    items:
+      - work: augustine-confessions
+        title: The Confessions
+        author: Augustine of Hippo
+      - work: augustine-city-of-god
+        title: The City of God
+        author: Augustine of Hippo
+      - work: augustine-on-christian-doctrine
+        title: On Christian Doctrine
+        author: Augustine of Hippo
+  - id: vol-17
+    label: Volume 17
+    sublabel: Aquinas I
+    order: 17
+    items:
+      - work: aquinas-summa-theologica
+        title: Summa Theologica
+        author: Thomas Aquinas
+        note: "First Part complete and selections from the Second Part"
+  - id: vol-18
+    label: Volume 18
+    sublabel: Aquinas II
+    order: 18
+    items:
+      - work: aquinas-summa-theologica
+        title: Summa Theologica
+        author: Thomas Aquinas
+        note: "Selections from the Second and Third Parts and the Supplement"
+  - id: vol-19
+    label: Volume 19
+    sublabel: Dante, Chaucer
+    order: 19
+    items:
+      - work: dante-divine-comedy
+        title: The Divine Comedy
+        author: Dante Alighieri
+        note: "Charles S. Singleton translation"
+      - work: chaucer-troilus-and-criseyde
+        title: Troilus and Criseyde
+        author: Geoffrey Chaucer
+      - work: chaucer-canterbury-tales
+        title: The Canterbury Tales
+        author: Geoffrey Chaucer
+        note: "Nevill Coghill translation"
+  - id: vol-20
+    label: Volume 20
+    sublabel: Calvin
+    order: 20
+    items:
+      - work: calvin-institutes-of-the-christian-religion
+        title: Institutes of the Christian Religion
+        author: John Calvin
+        note: "Books I and II complete; Book III chapters I-V; Book IV chapters I-XIII"
+  - id: vol-21
+    label: Volume 21
+    sublabel: Machiavelli, Hobbes
+    order: 21
+    items:
+      - work: machiavelli-prince
+        title: The Prince
+        author: Niccolò Machiavelli
+      - work: hobbes-leviathan
+        title: Leviathan
+        author: Thomas Hobbes
+  - id: vol-22
+    label: Volume 22
+    sublabel: Rabelais
+    order: 22
+    items:
+      - work: rabelais-gargantua-and-pantagruel
+        title: Gargantua and Pantagruel
+        author: François Rabelais
+        note: "Books I-IV"
+  - id: vol-23
+    label: Volume 23
+    sublabel: Erasmus, Montaigne
+    order: 23
+    items:
+      - work: erasmus-praise-of-folly
+        title: The Praise of Folly
+        author: Desiderius Erasmus
+      - work: montaigne-essays
+        title: Essays
+        author: Michel de Montaigne
+        note: "Complete, Donald M. Frame translation"
+  - id: vol-24
+    label: Volume 24
+    sublabel: Shakespeare I
+    order: 24
+    items:
+      - work: shakespeare-richard-iii
+        title: Richard III
+        author: William Shakespeare
+      - work: shakespeare-comedy-of-errors
+        title: The Comedy of Errors
+        author: William Shakespeare
+      - work: shakespeare-taming-of-the-shrew
+        title: The Taming of the Shrew
+        author: William Shakespeare
+      - work: shakespeare-romeo-and-juliet
+        title: Romeo and Juliet
+        author: William Shakespeare
+      - work: shakespeare-richard-ii
+        title: Richard II
+        author: William Shakespeare
+      - work: shakespeare-midsummer-nights-dream
+        title: A Midsummer Night's Dream
+        author: William Shakespeare
+      - work: shakespeare-merchant-of-venice
+        title: The Merchant of Venice
+        author: William Shakespeare
+      - work: shakespeare-henry-iv-part-1
+        title: Henry IV, Part 1
+        author: William Shakespeare
+      - work: shakespeare-henry-iv-part-2
+        title: Henry IV, Part 2
+        author: William Shakespeare
+      - work: shakespeare-much-ado-about-nothing
+        title: Much Ado About Nothing
+        author: William Shakespeare
+      - work: shakespeare-henry-v
+        title: Henry V
+        author: William Shakespeare
+      - work: shakespeare-julius-caesar
+        title: Julius Caesar
+        author: William Shakespeare
+      - work: shakespeare-as-you-like-it
+        title: As You Like It
+        author: William Shakespeare
+        note: "Also in this volume (20 plays in all): Henry VI Parts 1-3, Titus Andronicus, The Two Gentlemen of Verona, Love's Labour's Lost, King John"
+  - id: vol-25
+    label: Volume 25
+    sublabel: Shakespeare II
+    order: 25
+    items:
+      - work: shakespeare-twelfth-night
+        title: Twelfth Night
+        author: William Shakespeare
+      - work: shakespeare-hamlet
+        title: Hamlet
+        author: William Shakespeare
+      - work: shakespeare-troilus-and-cressida
+        title: Troilus and Cressida
+        author: William Shakespeare
+      - work: shakespeare-measure-for-measure
+        title: Measure for Measure
+        author: William Shakespeare
+      - work: shakespeare-othello
+        title: Othello
+        author: William Shakespeare
+      - work: shakespeare-king-lear
+        title: King Lear
+        author: William Shakespeare
+      - work: shakespeare-macbeth
+        title: Macbeth
+        author: William Shakespeare
+      - work: shakespeare-antony-and-cleopatra
+        title: Antony and Cleopatra
+        author: William Shakespeare
+      - work: shakespeare-coriolanus
+        title: Coriolanus
+        author: William Shakespeare
+      - work: shakespeare-winters-tale
+        title: The Winter's Tale
+        author: William Shakespeare
+      - work: shakespeare-tempest
+        title: The Tempest
+        author: William Shakespeare
+        note: "Also in this volume (17 plays in all): The Merry Wives of Windsor, All's Well That Ends Well, Timon of Athens, Pericles, Cymbeline, Henry VIII"
+      - work: shakespeare-sonnets
+        title: Sonnets
+        author: William Shakespeare
+  - id: vol-26
+    label: Volume 26
+    sublabel: Gilbert, Galileo, Harvey
+    order: 26
+    items:
+      - work: gilbert-on-the-loadstone
+        title: On the Loadstone and Magnetic Bodies
+        author: William Gilbert
+      - work: galileo-two-new-sciences
+        title: Dialogues Concerning the Two New Sciences
+        author: Galileo Galilei
+      - work: harvey-on-the-motion-of-the-heart-and-blood
+        title: On the Motion of the Heart and Blood in Animals
+        author: William Harvey
+      - work: harvey-on-the-circulation-of-the-blood
+        title: On the Circulation of the Blood
+        author: William Harvey
+      - work: harvey-on-the-generation-of-animals
+        title: On the Generation of Animals
+        author: William Harvey
+  - id: vol-27
+    label: Volume 27
+    sublabel: Cervantes
+    order: 27
+    items:
+      - work: cervantes-don-quixote
+        title: Don Quixote
+        author: Miguel de Cervantes
+        note: "Complete, Samuel Putnam translation"
+  - id: vol-28
+    label: Volume 28
+    sublabel: Bacon, Descartes, Spinoza
+    order: 28
+    items:
+      - work: bacon-advancement-of-learning
+        title: The Advancement of Learning
+        author: Francis Bacon
+      - work: bacon-novum-organum
+        title: Novum Organum
+        author: Francis Bacon
+      - work: bacon-new-atlantis
+        title: New Atlantis
+        author: Francis Bacon
+      - work: descartes-rules-for-the-direction-of-the-mind
+        title: Rules for the Direction of the Mind
+        author: René Descartes
+      - work: descartes-discourse-on-method
+        title: Discourse on the Method
+        author: René Descartes
+      - work: descartes-meditations
+        title: Meditations on First Philosophy
+        author: René Descartes
+      - work: descartes-objections-and-replies
+        title: Objections Against the Meditations and Replies
+        author: René Descartes
+      - work: descartes-geometry
+        title: The Geometry
+        author: René Descartes
+      - work: spinoza-ethics
+        title: Ethics
+        author: Baruch Spinoza
+  - id: vol-29
+    label: Volume 29
+    sublabel: Milton
+    order: 29
+    items:
+      - work: milton-minor-poems
+        title: English Minor Poems
+        author: John Milton
+        note: "Including On the Morning of Christ's Nativity, L'Allegro, Il Penseroso, Lycidas, Comus, the sonnets"
+      - work: milton-paradise-lost
+        title: Paradise Lost
+        author: John Milton
+      - work: milton-samson-agonistes
+        title: Samson Agonistes
+        author: John Milton
+      - work: milton-areopagitica
+        title: Areopagitica
+        author: John Milton
+  - id: vol-30
+    label: Volume 30
+    sublabel: Pascal
+    order: 30
+    items:
+      - work: pascal-provincial-letters
+        title: The Provincial Letters
+        author: Blaise Pascal
+      - work: pascal-pensees
+        title: Pensées
+        author: Blaise Pascal
+      - work: pascal-scientific-treatises
+        title: Scientific Treatises
+        author: Blaise Pascal
+        note: "On the vacuum, equilibrium of liquids and weight of air, geometrical demonstration, the arithmetical triangle, and the correspondence with Fermat on probability"
+  - id: vol-31
+    label: Volume 31
+    sublabel: Molière, Racine
+    order: 31
+    items:
+      - work: moliere-school-for-wives
+        title: The School for Wives
+        author: Molière
+      - work: moliere-critique-of-the-school-for-wives
+        title: The Critique of the School for Wives
+        author: Molière
+      - work: moliere-tartuffe
+        title: Tartuffe
+        author: Molière
+      - work: moliere-don-juan
+        title: Don Juan
+        author: Molière
+      - work: moliere-miser
+        title: The Miser
+        author: Molière
+      - work: moliere-would-be-gentleman
+        title: The Would-Be Gentleman
+        author: Molière
+      - work: moliere-imaginary-invalid
+        title: The Imaginary Invalid
+        author: Molière
+      - work: racine-berenice
+        title: Bérénice
+        author: Jean Racine
+      - work: racine-phaedra
+        title: Phaedra
+        author: Jean Racine
+  - id: vol-32
+    label: Volume 32
+    sublabel: Newton, Huygens
+    order: 32
+    items:
+      - work: newton-principia
+        title: Mathematical Principles of Natural Philosophy
+        author: Isaac Newton
+      - work: newton-opticks
+        title: Optics
+        author: Isaac Newton
+      - work: huygens-treatise-on-light
+        title: Treatise on Light
+        author: Christiaan Huygens
+  - id: vol-33
+    label: Volume 33
+    sublabel: Locke, Berkeley, Hume
+    order: 33
+    items:
+      - work: locke-letter-concerning-toleration
+        title: A Letter Concerning Toleration
+        author: John Locke
+      - work: locke-second-treatise-of-government
+        title: Second Treatise of Civil Government
+        author: John Locke
+      - work: locke-essay-concerning-human-understanding
+        title: An Essay Concerning Human Understanding
+        author: John Locke
+      - work: berkeley-principles-of-human-knowledge
+        title: The Principles of Human Knowledge
+        author: George Berkeley
+      - work: hume-enquiry-concerning-human-understanding
+        title: An Enquiry Concerning Human Understanding
+        author: David Hume
+  - id: vol-34
+    label: Volume 34
+    sublabel: Swift, Voltaire, Diderot
+    order: 34
+    items:
+      - work: swift-gullivers-travels
+        title: Gulliver's Travels
+        author: Jonathan Swift
+      - work: voltaire-candide
+        title: Candide
+        author: Voltaire
+      - work: diderot-rameaus-nephew
+        title: Rameau's Nephew
+        author: Denis Diderot
+  - id: vol-35
+    label: Volume 35
+    sublabel: Montesquieu, Rousseau
+    order: 35
+    items:
+      - work: montesquieu-spirit-of-the-laws
+        title: The Spirit of the Laws
+        author: Montesquieu
+      - work: rousseau-discourse-on-inequality
+        title: A Discourse on the Origin of Inequality
+        author: Jean-Jacques Rousseau
+      - work: rousseau-discourse-on-political-economy
+        title: A Discourse on Political Economy
+        author: Jean-Jacques Rousseau
+      - work: rousseau-social-contract
+        title: The Social Contract
+        author: Jean-Jacques Rousseau
+  - id: vol-36
+    label: Volume 36
+    sublabel: Adam Smith
+    order: 36
+    items:
+      - work: smith-wealth-of-nations
+        title: The Wealth of Nations
+        author: Adam Smith
+  - id: vol-37
+    label: Volume 37
+    sublabel: Gibbon I
+    order: 37
+    items:
+      - work: gibbon-decline-and-fall
+        title: The Decline and Fall of the Roman Empire
+        author: Edward Gibbon
+        note: "Part 1"
+  - id: vol-38
+    label: Volume 38
+    sublabel: Gibbon II
+    order: 38
+    items:
+      - work: gibbon-decline-and-fall
+        title: The Decline and Fall of the Roman Empire
+        author: Edward Gibbon
+        note: "Part 2"
+  - id: vol-39
+    label: Volume 39
+    sublabel: Kant
+    order: 39
+    items:
+      - work: kant-critique-of-pure-reason
+        title: Critique of Pure Reason
+        author: Immanuel Kant
+      - work: kant-groundwork-of-the-metaphysics-of-morals
+        title: Fundamental Principles of the Metaphysic of Morals
+        author: Immanuel Kant
+      - work: kant-critique-of-practical-reason
+        title: Critique of Practical Reason
+        author: Immanuel Kant
+      - work: kant-metaphysics-of-morals
+        title: The Metaphysics of Morals
+        author: Immanuel Kant
+        note: "Excerpts: Preface and Introduction to the Metaphysical Elements of Ethics, General Introduction to the Metaphysic of Morals, The Science of Right"
+      - work: kant-critique-of-judgment
+        title: Critique of Judgement
+        author: Immanuel Kant
+  - id: vol-40
+    label: Volume 40
+    sublabel: American State Papers, The Federalist, J. S. Mill
+    order: 40
+    items:
+      - work: declaration-of-independence
+        title: Declaration of Independence
+        author: Thomas Jefferson and the Continental Congress
+      - work: articles-of-confederation
+        title: Articles of Confederation
+        author: Continental Congress
+      - work: us-constitution
+        title: The Constitution of the United States of America
+        author: Constitutional Convention
+      - work: federalist-papers
+        title: The Federalist
+        author: Alexander Hamilton, James Madison, John Jay
+      - work: mill-on-liberty
+        title: On Liberty
+        author: John Stuart Mill
+      - work: mill-representative-government
+        title: Considerations on Representative Government
+        author: John Stuart Mill
+      - work: mill-utilitarianism
+        title: Utilitarianism
+        author: John Stuart Mill
+  - id: vol-41
+    label: Volume 41
+    sublabel: Boswell
+    order: 41
+    items:
+      - work: boswell-life-of-johnson
+        title: The Life of Samuel Johnson
+        author: James Boswell
+  - id: vol-42
+    label: Volume 42
+    sublabel: Lavoisier, Faraday
+    order: 42
+    items:
+      - work: lavoisier-elements-of-chemistry
+        title: Elements of Chemistry
+        author: Antoine Lavoisier
+      - work: faraday-experimental-researches-in-electricity
+        title: Experimental Researches in Electricity
+        author: Michael Faraday
+  - id: vol-43
+    label: Volume 43
+    sublabel: Hegel, Kierkegaard, Nietzsche
+    order: 43
+    items:
+      - work: hegel-philosophy-of-right
+        title: The Philosophy of Right
+        author: G. W. F. Hegel
+      - work: hegel-philosophy-of-history
+        title: The Philosophy of History
+        author: G. W. F. Hegel
+      - work: kierkegaard-fear-and-trembling
+        title: Fear and Trembling
+        author: Søren Kierkegaard
+      - work: nietzsche-beyond-good-and-evil
+        title: Beyond Good and Evil
+        author: Friedrich Nietzsche
+  - id: vol-44
+    label: Volume 44
+    sublabel: Tocqueville
+    order: 44
+    items:
+      - work: tocqueville-democracy-in-america
+        title: Democracy in America
+        author: Alexis de Tocqueville
+  - id: vol-45
+    label: Volume 45
+    sublabel: Goethe, Balzac
+    order: 45
+    items:
+      - work: goethe-faust
+        title: Faust
+        author: Johann Wolfgang von Goethe
+        note: "Parts I and II, Philip Wayne translation"
+      - work: balzac-cousin-bette
+        title: Cousin Bette
+        author: Honoré de Balzac
+  - id: vol-46
+    label: Volume 46
+    sublabel: Austen, George Eliot
+    order: 46
+    items:
+      - work: austen-emma
+        title: Emma
+        author: Jane Austen
+      - work: george-eliot-middlemarch
+        title: Middlemarch
+        author: George Eliot
+  - id: vol-47
+    label: Volume 47
+    sublabel: Dickens
+    order: 47
+    items:
+      - work: dickens-little-dorrit
+        title: Little Dorrit
+        author: Charles Dickens
+  - id: vol-48
+    label: Volume 48
+    sublabel: Melville, Twain
+    order: 48
+    items:
+      - work: melville-moby-dick
+        title: Moby Dick
+        author: Herman Melville
+      - work: twain-huckleberry-finn
+        title: Adventures of Huckleberry Finn
+        author: Mark Twain
+  - id: vol-49
+    label: Volume 49
+    sublabel: Darwin
+    order: 49
+    items:
+      - work: darwin-origin-of-species
+        title: The Origin of Species
+        author: Charles Darwin
+      - work: darwin-descent-of-man
+        title: The Descent of Man
+        author: Charles Darwin
+  - id: vol-50
+    label: Volume 50
+    sublabel: Marx, Engels
+    order: 50
+    items:
+      - work: marx-capital
+        title: Capital
+        author: Karl Marx
+        note: "Volume 1"
+      - work: marx-communist-manifesto
+        title: Manifesto of the Communist Party
+        author: Karl Marx and Friedrich Engels
+  - id: vol-51
+    label: Volume 51
+    sublabel: Tolstoy
+    order: 51
+    items:
+      - work: tolstoy-war-and-peace
+        title: War and Peace
+        author: Leo Tolstoy
+        note: "Aylmer and Louise Maude translation"
+  - id: vol-52
+    label: Volume 52
+    sublabel: Dostoevsky, Ibsen
+    order: 52
+    items:
+      - work: dostoevsky-brothers-karamazov
+        title: The Brothers Karamazov
+        author: Fyodor Dostoevsky
+        note: "Constance Garnett translation"
+      - work: ibsen-dolls-house
+        title: A Doll's House
+        author: Henrik Ibsen
+      - work: ibsen-wild-duck
+        title: The Wild Duck
+        author: Henrik Ibsen
+      - work: ibsen-hedda-gabler
+        title: Hedda Gabler
+        author: Henrik Ibsen
+      - work: ibsen-master-builder
+        title: The Master Builder
+        author: Henrik Ibsen
+  - id: vol-53
+    label: Volume 53
+    sublabel: William James
+    order: 53
+    items:
+      - work: william-james-principles-of-psychology
+        title: The Principles of Psychology
+        author: William James
+  - id: vol-54
+    label: Volume 54
+    sublabel: Freud
+    order: 54
+    items:
+      - work: freud-origin-and-development-of-psychoanalysis
+        title: The Origin and Development of Psycho-Analysis
+        author: Sigmund Freud
+      - work: freud-selected-papers-on-hysteria
+        title: Selected Papers on Hysteria
+        author: Sigmund Freud
+      - work: freud-interpretation-of-dreams
+        title: The Interpretation of Dreams
+        author: Sigmund Freud
+      - work: freud-on-narcissism
+        title: On Narcissism
+        author: Sigmund Freud
+      - work: freud-the-unconscious
+        title: The Unconscious
+        author: Sigmund Freud
+        note: "Also in this volume: Instincts and Their Vicissitudes, Repression, The Sexual Enlightenment of Children, Future Prospects of Psycho-Analytic Therapy, Observations on Wild Psycho-Analysis"
+      - work: freud-general-introduction-to-psychoanalysis
+        title: A General Introduction to Psycho-Analysis
+        author: Sigmund Freud
+      - work: freud-beyond-the-pleasure-principle
+        title: Beyond the Pleasure Principle
+        author: Sigmund Freud
+      - work: freud-group-psychology
+        title: Group Psychology and the Analysis of the Ego
+        author: Sigmund Freud
+      - work: freud-ego-and-the-id
+        title: The Ego and the Id
+        author: Sigmund Freud
+      - work: freud-inhibitions-symptoms-and-anxiety
+        title: Inhibitions, Symptoms, and Anxiety
+        author: Sigmund Freud
+      - work: freud-thoughts-for-the-times-on-war-and-death
+        title: Thoughts for the Times on War and Death
+        author: Sigmund Freud
+      - work: freud-civilization-and-its-discontents
+        title: Civilization and Its Discontents
+        author: Sigmund Freud
+      - work: freud-new-introductory-lectures
+        title: New Introductory Lectures on Psycho-Analysis
+        author: Sigmund Freud
+  - id: vol-55
+    label: Volume 55
+    sublabel: 20th Century Philosophy and Religion
+    order: 55
+    items:
+      - work: william-james-pragmatism
+        title: Pragmatism
+        author: William James
+      - work: bergson-introduction-to-metaphysics
+        title: An Introduction to Metaphysics
+        author: Henri Bergson
+      - work: dewey-experience-and-education
+        title: Experience and Education
+        author: John Dewey
+      - work: whitehead-science-and-the-modern-world
+        title: Science and the Modern World
+        author: Alfred North Whitehead
+      - work: russell-problems-of-philosophy
+        title: The Problems of Philosophy
+        author: Bertrand Russell
+      - work: heidegger-what-is-metaphysics
+        title: What Is Metaphysics?
+        author: Martin Heidegger
+      - work: wittgenstein-philosophical-investigations
+        title: Philosophical Investigations
+        author: Ludwig Wittgenstein
+      - work: barth-word-of-god-and-word-of-man
+        title: The Word of God and the Word of Man
+        author: Karl Barth
+  - id: vol-56
+    label: Volume 56
+    sublabel: 20th Century Natural Science
+    order: 56
+    items:
+      - work: poincare-science-and-hypothesis
+        title: Science and Hypothesis
+        author: Henri Poincaré
+      - work: planck-scientific-autobiography
+        title: Scientific Autobiography and Other Papers
+        author: Max Planck
+      - work: whitehead-introduction-to-mathematics
+        title: An Introduction to Mathematics
+        author: Alfred North Whitehead
+      - work: einstein-relativity
+        title: "Relativity: The Special and the General Theory"
+        author: Albert Einstein
+      - work: eddington-expanding-universe
+        title: The Expanding Universe
+        author: Arthur Eddington
+      - work: bohr-atomic-theory-and-the-description-of-nature
+        title: Atomic Theory and the Description of Nature
+        author: Niels Bohr
+        note: "Selections; also Discussion with Einstein on Epistemological Problems in Atomic Physics"
+      - work: hardy-mathematicians-apology
+        title: A Mathematician's Apology
+        author: G. H. Hardy
+      - work: heisenberg-physics-and-philosophy
+        title: Physics and Philosophy
+        author: Werner Heisenberg
+      - work: schrodinger-what-is-life
+        title: What Is Life?
+        author: Erwin Schrödinger
+      - work: dobzhansky-genetics-and-the-origin-of-species
+        title: Genetics and the Origin of Species
+        author: Theodosius Dobzhansky
+      - work: waddington-nature-of-life
+        title: The Nature of Life
+        author: C. H. Waddington
+  - id: vol-57
+    label: Volume 57
+    sublabel: 20th Century Social Science I
+    order: 57
+    items:
+      - work: veblen-theory-of-the-leisure-class
+        title: The Theory of the Leisure Class
+        author: Thorstein Veblen
+      - work: tawney-acquisitive-society
+        title: The Acquisitive Society
+        author: R. H. Tawney
+      - work: keynes-general-theory
+        title: The General Theory of Employment, Interest and Money
+        author: John Maynard Keynes
+  - id: vol-58
+    label: Volume 58
+    sublabel: 20th Century Social Science II
+    order: 58
+    items:
+      - work: frazer-golden-bough
+        title: The Golden Bough
+        author: James George Frazer
+        note: "Chapters I-IV, LXVI-LXVII, LXIX"
+      - work: weber-essays-in-sociology
+        title: Essays in Sociology
+        author: Max Weber
+        note: "Chapters IV-XIII of the Gerth and Mills selection"
+      - work: huizinga-waning-of-the-middle-ages
+        title: The Waning of the Middle Ages
+        author: Johan Huizinga
+        note: "F. Hopman translation (also known as The Autumn of the Middle Ages)"
+      - work: levi-strauss-structural-anthropology
+        title: Structural Anthropology
+        author: Claude Lévi-Strauss
+        note: "Chapters I-VI, IX-XII, XV, XVII"
+  - id: vol-59
+    label: Volume 59
+    sublabel: 20th Century Imaginative Literature I
+    order: 59
+    items:
+      - work: henry-james-beast-in-the-jungle
+        title: The Beast in the Jungle
+        author: Henry James
+      - work: shaw-saint-joan
+        title: Saint Joan
+        author: George Bernard Shaw
+      - work: conrad-heart-of-darkness
+        title: Heart of Darkness
+        author: Joseph Conrad
+      - work: chekhov-uncle-vanya
+        title: Uncle Vanya
+        author: Anton Chekhov
+      - work: pirandello-six-characters-in-search-of-an-author
+        title: Six Characters in Search of an Author
+        author: Luigi Pirandello
+      - work: proust-swanns-way
+        title: Swann's Way
+        author: Marcel Proust
+        note: "The section Swann in Love only, from Remembrance of Things Past (Scott Moncrieff and Kilmartin translation)"
+      - work: cather-lost-lady
+        title: A Lost Lady
+        author: Willa Cather
+      - work: mann-death-in-venice
+        title: Death in Venice
+        author: Thomas Mann
+      - work: joyce-portrait-of-the-artist
+        title: A Portrait of the Artist as a Young Man
+        author: James Joyce
+  - id: vol-60
+    label: Volume 60
+    sublabel: 20th Century Imaginative Literature II
+    order: 60
+    items:
+      - work: woolf-to-the-lighthouse
+        title: To the Lighthouse
+        author: Virginia Woolf
+      - work: kafka-metamorphosis
+        title: The Metamorphosis
+        author: Franz Kafka
+      - work: lawrence-prussian-officer
+        title: The Prussian Officer
+        author: D. H. Lawrence
+      - work: ts-eliot-waste-land
+        title: The Waste Land
+        author: T. S. Eliot
+      - work: oneill-mourning-becomes-electra
+        title: Mourning Becomes Electra
+        author: Eugene O'Neill
+      - work: fitzgerald-great-gatsby
+        title: The Great Gatsby
+        author: F. Scott Fitzgerald
+      - work: faulkner-rose-for-emily
+        title: A Rose for Emily
+        author: William Faulkner
+      - work: brecht-mother-courage
+        title: Mother Courage and Her Children
+        author: Bertolt Brecht
+      - work: hemingway-short-happy-life-of-francis-macomber
+        title: The Short Happy Life of Francis Macomber
+        author: Ernest Hemingway
+      - work: orwell-animal-farm
+        title: Animal Farm
+        author: George Orwell
+      - work: beckett-waiting-for-godot
+        title: Waiting for Godot
+        author: Samuel Beckett

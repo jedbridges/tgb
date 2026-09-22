@@ -52,8 +52,9 @@
   async function loadPagefind(): Promise<PF | null> {
     if (pf) return pf;
     try {
-      // @ts-ignore built at build time
-      const mod = await import(/* @vite-ignore */ '/pagefind/pagefind.js');
+      // Built by Pagefind at build time; kept opaque so Vite does not try to resolve it.
+      const path = ['', 'pagefind', 'pagefind.js'].join('/');
+      const mod = await import(/* @vite-ignore */ path);
       await mod.options?.({ excerptLength: 18 });
       await mod.init?.();
       pf = mod;

@@ -1,0 +1,60 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import BookCard from '~/components/BookCard.astro';
+import { placeholderAuthor, loadCatalog, programCount } from '~/lib/catalog';
+import { authorUrl, programUrl, taxUrl, url } from '~/lib/url';
+import { personLd, breadcrumbs } from '~/lib/seo';
+
+export async function getStaticPaths() {
+  const authors = await getCollection('authors');
+  return authors.map((author) => ({ params: { slug: author.id }, props: { author } }));
+}
+const { author } = Astro.props;
+const { works, assigned } = await loadCatalog();
+const mine = works.filter((w) => w.data.author.id === author.id || w.data.coauthors.some((c) => c.id === author.id)).sort((a, b) => a.data.year - b.data.year);
+const counts = await Promise.all(mine.map((w) => programCount(w.id)));
+const { Content } = await render(author);
+const a = author.data;
+const era = await getEntry('eras', a.era.id);
+const region = await getEntry('regions', a.region.id);
+const f = (y?: number) => (y === undefined ? '' : y < 0 ? `${-y} BCE` : `${y}`);
+const dates = a.floruit ?? (a.born !== undefined ? `${f(a.born)} – ${f(a.died) || ''}` : '');
+const progs = new Map<string, string>();
+for (const w of mine) for (const x of assigned.get(w.id) ?? []) progs.set(x.program.id, x.program.data.name);
+const hasBio = author.body && author.body.trim().length > 40;
+---
+<Base title={a.name} description={`${a.name}${dates ? ` (${dates})` : ''}: ${mine.length} ${mine.length === 1 ? 'work' : 'works'} on the great college reading lists, with summaries and where to buy.`}
+  jsonld={[personLd(author), breadcrumbs([{ name: 'Authors', path: '/authors/' }, { name: a.name, path: authorUrl(author.id) }])]}>
+  <article data-pagefind-body data-pagefind-filter="type:Author">
+    <span class="visually-hidden" data-pagefind-meta="type:Author"></span>
+    <span class="visually-hidden" data-pagefind-meta={`slug:${author.id}`}></span>
+    <header class="wrap head">
+      <p class="eyebrow"><a href={url('/authors/')}>Authors</a> · {era?.data.label}</p>
+      <h1 class="italic" data-pagefind-meta="title">{a.name}</h1>
+      <p class="dates">{dates}{region && <> · {region.data.label}</>}</p>
+      {hasBio && <div class="prose bio"><Content /></div>}
+    </header>
+    <section class="wrap" data-pagefind-ignore>
+      <h2 class="h">Works on the lists</h2>
+      <div class="shelf-grid">
+        {mine.map((w, i) => <BookCard work={w} authorName={a.name} width={140} programCount={counts[i]} index={i} eager={i < 4} />)}
+      </div>
+    </section>
+    {progs.size > 0 && (
+      <section class="wrap progs" data-pagefind-ignore>
+        <h2 class="h">Assigned by</h2>
+        <ul class="chips">{[...progs].map(([id, name]) => <li><a class="tag" href={programUrl(id)}>{name}</a></li>)}</ul>
+      </section>
+    )}
+  </article>
+</Base>
+<style>
+  .head { padding-block: var(--s4) var(--s3); }
+  .head h1 { font-size: var(--step-4); }
+  .dates { color: var(--ink-soft); font-size: var(--step-1); margin-top: var(--s0); }
+  .bio { margin-top: var(--s2); }
+  .h { font-style: italic; font-size: var(--step-2); margin-bottom: var(--s2); }
+  .progs { padding-top: var(--s4); }
+  .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+</style>

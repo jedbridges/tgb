@@ -1,0 +1,665 @@
+name: Thomas Aquinas College
+shortName: Thomas Aquinas
+kind: college
+institution: Thomas Aquinas College (Santa Paula, California and Northfield, Massachusetts)
+url: https://www.thomasaquinas.edu/a-liberating-education/syllabus
+description: >-
+  Thomas Aquinas College is a Catholic liberal arts college founded in 1971 in Santa Paula, California, with a
+  second campus in Northfield, Massachusetts, opened in 2019. Every student follows the same four-year
+  curriculum, which has no majors, electives, or textbooks: all classes are discussions of primary sources, led
+  by tutors using the Socratic method, and the whole program is ordered toward theology as the highest science,
+  with the works of Aristotle and St. Thomas Aquinas as its backbone.
+
+  The curriculum consists of a four-year Seminar in literature, history, and philosophy, plus tutorials in
+  theology (four years), philosophy (three years), mathematics (four years), natural science (four years),
+  language (two years of Latin), and music (one year). The list below gives the Seminar readings for each year
+  first, followed by the theology, philosophy, and principal mathematics and natural science readings, each
+  marked in the note. Laboratory manuals, grammar primers, and collections of scientific papers are omitted.
+sourceNote: "Thomas Aquinas College Syllabus (list of works read in whole or in part), https://www.thomasaquinas.edu/a-liberating-education/syllabus, current curriculum, checked 2026-09-21"
+segmentLabel: Year
+order: 7
+segments:
+  - id: freshman
+    label: Freshman
+    sublabel: Greeks
+    order: 1
+    items:
+      - work: homer-iliad
+        title: The Iliad
+        author: Homer
+        note: "Seminar"
+      - work: homer-odyssey
+        title: The Odyssey
+        author: Homer
+        note: "Seminar"
+      - work: plato-ion
+        title: Ion
+        author: Plato
+        note: "Seminar"
+      - work: plato-symposium
+        title: Symposium
+        author: Plato
+        note: "Seminar"
+      - work: plato-republic
+        title: Republic
+        author: Plato
+        note: "Seminar"
+      - work: aeschylus-oresteia
+        title: Oresteia
+        author: Aeschylus
+        note: "Seminar: Agamemnon, Libation Bearers, Eumenides"
+      - work: sophocles-oedipus-the-king
+        title: Oedipus the King
+        author: Sophocles
+        note: "Seminar"
+      - work: sophocles-oedipus-at-colonus
+        title: Oedipus at Colonus
+        author: Sophocles
+        note: "Seminar"
+      - work: sophocles-antigone
+        title: Antigone
+        author: Sophocles
+        note: "Seminar"
+      - work: herodotus-histories
+        title: The Histories
+        author: Herodotus
+        note: "Seminar"
+      - work: plutarch-lives
+        title: Lives
+        author: Plutarch
+        note: "Seminar: Lycurgus, Pericles, Aristides, Alcibiades, Alexander"
+      - work: aristotle-poetics
+        title: Poetics
+        author: Aristotle
+        note: "Seminar"
+      - work: aristotle-rhetoric
+        title: Rhetoric
+        author: Aristotle
+        note: "Seminar"
+      - work: euripides-hippolytus
+        title: Hippolytus
+        author: Euripides
+        note: "Seminar"
+      - work: thucydides-peloponnesian-war
+        title: History of the Peloponnesian War
+        author: Thucydides
+        note: "Seminar"
+      - work: aristophanes-birds
+        title: The Birds
+        author: Aristophanes
+        note: "Seminar"
+      - work: aristophanes-clouds
+        title: The Clouds
+        author: Aristophanes
+        note: "Seminar"
+      - work: bible
+        title: The Holy Bible
+        author: Anonymous
+        note: "Theology tutorial: the entire year is devoted to reading the Bible"
+      - work: plato-meno
+        title: Meno
+        author: Plato
+        note: "Philosophy tutorial"
+      - work: plato-protagoras
+        title: Protagoras
+        author: Plato
+        note: "Philosophy tutorial"
+      - work: plato-gorgias
+        title: Gorgias
+        author: Plato
+        note: "Philosophy tutorial"
+      - work: plato-apology
+        title: Apology
+        author: Plato
+        note: "Philosophy tutorial"
+      - work: plato-crito
+        title: Crito
+        author: Plato
+        note: "Philosophy tutorial"
+      - work: plato-phaedo
+        title: Phaedo
+        author: Plato
+        note: "Philosophy tutorial"
+      - work: porphyry-isagoge
+        title: Isagoge
+        author: Porphyry
+        note: "Philosophy tutorial (On the Predicaments)"
+      - work: aristotle-organon
+        title: Organon
+        author: Aristotle
+        note: "Philosophy tutorial: Categories, On Interpretation, Prior Analytics, Posterior Analytics, Topics"
+      - work: aquinas-commentary-on-the-posterior-analytics
+        title: Commentary on the Posterior Analytics
+        author: Thomas Aquinas
+        note: "Philosophy tutorial: Proemium"
+      - work: euclid-elements
+        title: Elements
+        author: Euclid
+        note: "Mathematics tutorial"
+      - work: aristotle-parts-of-animals
+        title: Parts of Animals
+        author: Aristotle
+        note: "Natural science tutorial"
+      - work: galen-on-the-natural-faculties
+        title: On the Natural Faculties
+        author: Galen
+        note: "Natural science tutorial"
+      - work: harvey-on-the-motion-of-the-heart-and-blood
+        title: On the Motion of the Heart and Blood in Animals
+        author: William Harvey
+        note: "Natural science tutorial"
+      - work: archimedes-on-floating-bodies
+        title: On Floating Bodies
+        author: Archimedes
+        note: "Natural science tutorial; also Pascal, On the Equilibrium of Liquids; Linnaeus, Systema Naturae; Mendel, Plant Hybridization; Fabre; DeKoninck"
+  - id: sophomore
+    label: Sophomore
+    sublabel: Romans and the Middle Ages
+    order: 2
+    items:
+      - work: virgil-aeneid
+        title: The Aeneid
+        author: Virgil
+        note: "Seminar"
+      - work: lucretius-on-the-nature-of-things
+        title: On the Nature of Things
+        author: Lucretius
+        note: "Seminar"
+      - work: livy-history-of-rome
+        title: History of Rome
+        author: Livy
+        note: "Seminar: The Rise of Rome (Books I-V)"
+      - work: plutarch-lives
+        title: Lives
+        author: Plutarch
+        note: "Seminar: Marcellus, Caius Marius, Sulla, Tiberius and Caius Gracchus, Caesar, Cato the Younger, Brutus, Comparison of Dion and Brutus"
+      - work: cicero-on-duties
+        title: On Duties
+        author: Cicero
+        note: "Seminar"
+      - work: tacitus-annals
+        title: Annals
+        author: Tacitus
+        note: "Seminar"
+      - work: epictetus-enchiridion
+        title: Enchiridion
+        author: Epictetus
+        note: "Seminar (Manual)"
+      - work: augustine-confessions
+        title: Confessions
+        author: Augustine
+        note: "Seminar"
+      - work: augustine-on-the-teacher
+        title: On the Teacher
+        author: Augustine
+        note: "Seminar"
+      - work: boethius-consolation-of-philosophy
+        title: The Consolation of Philosophy
+        author: Boethius
+        note: "Seminar"
+      - work: dante-divine-comedy
+        title: The Divine Comedy
+        author: Dante Alighieri
+        note: "Seminar: Inferno, Purgatorio, Paradiso"
+      - work: chaucer-canterbury-tales
+        title: The Canterbury Tales
+        author: Geoffrey Chaucer
+        note: "Seminar"
+      - work: sir-gawain-and-the-green-knight
+        title: Sir Gawain and the Green Knight
+        author: Anonymous
+        note: "Seminar (the Pearl Poet)"
+      - work: spenser-faerie-queene
+        title: The Faerie Queene
+        author: Edmund Spenser
+        note: "Seminar"
+      - work: aquinas-on-the-teacher
+        title: On the Teacher
+        author: Thomas Aquinas
+        note: "Seminar (De Magistro)"
+      - work: augustine-on-christian-doctrine
+        title: On Christian Doctrine
+        author: Augustine
+        note: "Theology tutorial; also On the Spirit and the Letter, On Nature and Grace, On the Predestination of the Saints, On the Gift of Perseverance"
+      - work: augustine-city-of-god
+        title: The City of God
+        author: Augustine
+        note: "Theology tutorial"
+      - work: athanasius-on-the-incarnation
+        title: On the Incarnation
+        author: Athanasius
+        note: "Theology tutorial; with the Canons of the Council of Orange"
+      - work: anselm-proslogion
+        title: Proslogion
+        author: Anselm
+        note: "Theology tutorial; with Gaunilo's On Behalf of the Fool and Anselm's Reply"
+      - work: john-damascene-exact-exposition-of-the-orthodox-faith
+        title: An Exact Exposition of the Orthodox Faith
+        author: John of Damascus
+        note: "Theology tutorial"
+      - work: presocratics-fragments
+        title: Fragments
+        author: The Pre-Socratic Philosophers
+        note: "Philosophy tutorial"
+      - work: aristotle-physics
+        title: Physics
+        author: Aristotle
+        note: "Philosophy tutorial"
+      - work: aristotle-on-the-soul
+        title: On the Soul
+        author: Aristotle
+        note: "Philosophy tutorial (De Anima)"
+      - work: plato-timaeus
+        title: Timaeus
+        author: Plato
+        note: "Mathematics tutorial"
+      - work: ptolemy-almagest
+        title: Almagest
+        author: Ptolemy
+        note: "Mathematics tutorial"
+      - work: copernicus-on-the-revolutions
+        title: On the Revolutions of the Heavenly Spheres
+        author: Nicolaus Copernicus
+        note: "Mathematics tutorial"
+      - work: apollonius-conics
+        title: On Conic Sections
+        author: Apollonius of Perga
+        note: "Mathematics tutorial"
+      - work: kepler-epitome-of-copernican-astronomy
+        title: Epitome of Copernican Astronomy
+        author: Johannes Kepler
+        note: "Mathematics tutorial; also Astronomia Nova and Archimedes, On Conoids and Spheroids"
+      - work: aristotle-on-generation-and-corruption
+        title: On Generation and Corruption
+        author: Aristotle
+        note: "Natural science tutorial; with Aquinas, On the Principles of Nature and On the Combination of the Elements"
+      - work: lavoisier-elements-of-chemistry
+        title: Elements of Chemistry
+        author: Antoine Lavoisier
+        note: "Natural science tutorial; also papers by Avogadro, Dalton, Gay-Lussac, Pascal, Mendeleev and others"
+  - id: junior
+    label: Junior
+    sublabel: Renaissance and Early Modern
+    order: 3
+    items:
+      - work: cervantes-don-quixote
+        title: Don Quixote
+        author: Miguel de Cervantes
+        note: "Seminar"
+      - work: aquinas-on-kingship
+        title: On Kingship
+        author: Thomas Aquinas
+        note: "Seminar; with Summa Theologiae I-II, Q. 105, Art. 1"
+      - work: machiavelli-prince
+        title: The Prince
+        author: Niccolò Machiavelli
+        note: "Seminar"
+      - work: machiavelli-discourses-on-livy
+        title: Discourses on Livy
+        author: Niccolò Machiavelli
+        note: "Seminar"
+      - work: shakespeare-julius-caesar
+        title: Julius Caesar
+        author: William Shakespeare
+        note: "Seminar"
+      - work: shakespeare-richard-ii
+        title: Richard II
+        author: William Shakespeare
+        note: "Seminar"
+      - work: shakespeare-henry-iv-part-1
+        title: Henry IV, Part One
+        author: William Shakespeare
+        note: "Seminar"
+      - work: shakespeare-hamlet
+        title: Hamlet
+        author: William Shakespeare
+        note: "Seminar"
+      - work: shakespeare-king-lear
+        title: King Lear
+        author: William Shakespeare
+        note: "Seminar"
+      - work: shakespeare-othello
+        title: Othello
+        author: William Shakespeare
+        note: "Seminar"
+      - work: shakespeare-macbeth
+        title: Macbeth
+        author: William Shakespeare
+        note: "Seminar"
+      - work: shakespeare-twelfth-night
+        title: Twelfth Night
+        author: William Shakespeare
+        note: "Seminar"
+      - work: shakespeare-tempest
+        title: The Tempest
+        author: William Shakespeare
+        note: "Seminar"
+      - work: shakespeare-sonnets
+        title: Sonnets
+        author: William Shakespeare
+        note: "Seminar"
+      - work: luther-on-the-freedom-of-a-christian
+        title: The Freedom of a Christian
+        author: Martin Luther
+        note: "Seminar; with Cajetan, On Faith and Works Against the Lutherans, and the Council of Trent's Decree Concerning Justification"
+      - work: bacon-novum-organum
+        title: The New Organon
+        author: Francis Bacon
+        note: "Seminar"
+      - work: descartes-discourse-on-method
+        title: Discourse on Method
+        author: René Descartes
+        note: "Seminar"
+      - work: descartes-rules-for-the-direction-of-the-mind
+        title: Rules for the Direction of the Mind
+        author: René Descartes
+        note: "Seminar"
+      - work: descartes-meditations
+        title: Meditations on First Philosophy
+        author: René Descartes
+        note: "Seminar"
+      - work: pascal-pensees
+        title: Pensées
+        author: Blaise Pascal
+        note: "Seminar"
+      - work: hobbes-leviathan
+        title: Leviathan
+        author: Thomas Hobbes
+        note: "Seminar"
+      - work: spinoza-theologico-political-treatise
+        title: Theologico-Political Treatise
+        author: Baruch Spinoza
+        note: "Seminar"
+      - work: milton-paradise-lost
+        title: Paradise Lost
+        author: John Milton
+        note: "Seminar"
+      - work: corneille-le-cid
+        title: Le Cid
+        author: Pierre Corneille
+        note: "Seminar"
+      - work: racine-phaedra
+        title: Phaedra
+        author: Jean Racine
+        note: "Seminar"
+      - work: locke-essay-concerning-human-understanding
+        title: An Essay Concerning Human Understanding
+        author: John Locke
+        note: "Seminar"
+      - work: locke-second-treatise-of-government
+        title: Second Treatise of Government
+        author: John Locke
+        note: "Seminar"
+      - work: berkeley-principles-of-human-knowledge
+        title: A Treatise Concerning the Principles of Human Knowledge
+        author: George Berkeley
+        note: "Seminar"
+      - work: hume-enquiry-concerning-human-understanding
+        title: An Enquiry Concerning Human Understanding
+        author: David Hume
+        note: "Seminar"
+      - work: swift-gullivers-travels
+        title: Gulliver's Travels
+        author: Jonathan Swift
+        note: "Seminar"
+      - work: gibbon-decline-and-fall
+        title: The Decline and Fall of the Roman Empire
+        author: Edward Gibbon
+        note: "Seminar; selections"
+      - work: leibniz-discourse-on-metaphysics
+        title: Discourse on Metaphysics
+        author: Gottfried Wilhelm Leibniz
+        note: "Seminar"
+      - work: rousseau-social-contract
+        title: The Social Contract
+        author: Jean-Jacques Rousseau
+        note: "Seminar"
+      - work: rousseau-discourse-on-inequality
+        title: Discourse on the Origin of Inequality
+        author: Jean-Jacques Rousseau
+        note: "Seminar"
+      - work: kant-critique-of-pure-reason
+        title: Critique of Pure Reason
+        author: Immanuel Kant
+        note: "Seminar; selections"
+      - work: declaration-of-independence
+        title: The Declaration of Independence
+        author: Thomas Jefferson
+        note: "Seminar; with the Articles of Confederation"
+      - work: us-constitution
+        title: The Constitution of the United States
+        author: Anonymous
+        note: "Seminar"
+      - work: lincoln-douglas-debates
+        title: The Lincoln-Douglas Debates
+        author: Abraham Lincoln and Stephen Douglas
+        note: "Seminar"
+      - work: aquinas-summa-theologica
+        title: Summa Theologica
+        author: Thomas Aquinas
+        note: "Theology tutorial: On Sacred Doctrine, On God, On Law"
+      - work: aristotle-nicomachean-ethics
+        title: Nicomachean Ethics
+        author: Aristotle
+        note: "Philosophy tutorial"
+      - work: aristotle-politics
+        title: Politics
+        author: Aristotle
+        note: "Philosophy tutorial"
+      - work: descartes-principles-of-philosophy
+        title: Principles of Philosophy
+        author: René Descartes
+        note: "Natural science tutorial"
+      - work: galileo-two-new-sciences
+        title: Two New Sciences
+        author: Galileo Galilei
+        note: "Natural science tutorial"
+      - work: newton-principia
+        title: Mathematical Principles of Natural Philosophy
+        author: Isaac Newton
+        note: "Natural science tutorial"
+      - work: descartes-geometry
+        title: Geometry
+        author: René Descartes
+        note: "Mathematics tutorial; with Viète, Archimedes' Quadrature of the Parabola, and readings from Cavalieri, Pascal, Leibniz, Bernoulli, Newton, Berkeley, Bolzano"
+      - work: boethius-on-music
+        title: On Music
+        author: Boethius
+        note: "Music tutorial; with Zuckerkandl, The Sense of Music, Mozart sonatas, Gustin, Kalkavage"
+  - id: senior
+    label: Senior
+    sublabel: Modern
+    order: 4
+    items:
+      - work: tolstoy-war-and-peace
+        title: War and Peace
+        author: Leo Tolstoy
+        note: "Seminar"
+      - work: smith-wealth-of-nations
+        title: The Wealth of Nations
+        author: Adam Smith
+        note: "Seminar"
+      - work: kant-critique-of-pure-reason
+        title: Critique of Pure Reason
+        author: Immanuel Kant
+        note: "Seminar"
+      - work: kant-groundwork-of-the-metaphysics-of-morals
+        title: Groundwork of the Metaphysics of Morals
+        author: Immanuel Kant
+        note: "Seminar"
+      - work: goethe-faust
+        title: Faust
+        author: Johann Wolfgang von Goethe
+        note: "Seminar"
+      - work: hegel-philosophy-of-history
+        title: The Philosophy of History
+        author: G. W. F. Hegel
+        note: "Seminar"
+      - work: hegel-phenomenology-of-spirit
+        title: Phenomenology of Spirit
+        author: G. W. F. Hegel
+        note: "Seminar; selections"
+      - work: feuerbach-essence-of-christianity
+        title: The Essence of Christianity
+        author: Ludwig Feuerbach
+        note: "Seminar"
+      - work: austen-emma
+        title: Emma
+        author: Jane Austen
+        note: "Seminar"
+      - work: tocqueville-democracy-in-america
+        title: Democracy in America
+        author: Alexis de Tocqueville
+        note: "Seminar"
+      - work: tocqueville-old-regime-and-the-revolution
+        title: The Old Regime and the Revolution
+        author: Alexis de Tocqueville
+        note: "Seminar"
+      - work: twain-huckleberry-finn
+        title: Adventures of Huckleberry Finn
+        author: Mark Twain
+        note: "Seminar"
+      - work: marx-capital
+        title: Capital
+        author: Karl Marx
+        note: "Seminar; selections"
+      - work: marx-communist-manifesto
+        title: The Communist Manifesto
+        author: Karl Marx
+        note: "Seminar"
+      - work: marx-economic-and-philosophic-manuscripts
+        title: Economic and Philosophic Manuscripts of 1844
+        author: Karl Marx
+        note: "Seminar"
+      - work: marx-german-ideology
+        title: The German Ideology
+        author: Karl Marx
+        note: "Seminar; with Engels, Quantity and Quality, Negation of the Negation"
+      - work: ibsen-dolls-house
+        title: A Doll's House
+        author: Henrik Ibsen
+        note: "Seminar"
+      - work: dostoevsky-brothers-karamazov
+        title: The Brothers Karamazov
+        author: Fyodor Dostoevsky
+        note: "Seminar"
+      - work: nietzsche-on-the-use-and-abuse-of-history
+        title: On the Advantage and Disadvantage of History for Life
+        author: Friedrich Nietzsche
+        note: "Seminar"
+      - work: nietzsche-beyond-good-and-evil
+        title: Beyond Good and Evil
+        author: Friedrich Nietzsche
+        note: "Seminar"
+      - work: kierkegaard-fear-and-trembling
+        title: Fear and Trembling
+        author: Søren Kierkegaard
+        note: "Seminar"
+      - work: kierkegaard-philosophical-fragments
+        title: Philosophical Fragments
+        author: Søren Kierkegaard
+        note: "Seminar"
+      - work: cather-my-antonia
+        title: My Ántonia
+        author: Willa Cather
+        note: "Seminar"
+      - work: flaubert-three-tales
+        title: Three Tales
+        author: Gustave Flaubert
+        note: "Seminar"
+      - work: newman-development-of-christian-doctrine
+        title: An Essay on the Development of Christian Doctrine
+        author: John Henry Newman
+        note: "Seminar"
+      - work: conrad-heart-of-darkness
+        title: Heart of Darkness
+        author: Joseph Conrad
+        note: "Seminar"
+      - work: keats-poems
+        title: Selected Poems
+        author: John Keats
+        note: "Seminar; with selected poems of Hopkins and Stevens"
+      - work: ts-eliot-waste-land
+        title: The Waste Land
+        author: T. S. Eliot
+        note: "Seminar; with Journey of the Magi"
+      - work: joyce-dubliners
+        title: Dubliners
+        author: James Joyce
+        note: "Seminar: Eveline, A Little Cloud, A Painful Case, The Dead"
+      - work: freud-introductory-lectures-on-psychoanalysis
+        title: Introductory Lectures on Psychoanalysis
+        author: Sigmund Freud
+        note: "Seminar"
+      - work: jung-analytical-psychology
+        title: Analytical Psychology
+        author: Carl Jung
+        note: "Seminar"
+      - work: heidegger-introduction-to-metaphysics
+        title: Introduction to Metaphysics
+        author: Martin Heidegger
+        note: "Seminar; Lecture 1"
+      - work: faulkner-the-bear
+        title: The Bear
+        author: William Faulkner
+        note: "Seminar"
+      - work: aquinas-division-and-methods-of-the-sciences
+        title: The Division and Methods of the Sciences
+        author: Thomas Aquinas
+        note: "Seminar"
+      - work: pius-x-pascendi-dominici-gregis
+        title: Pascendi Dominici Gregis
+        author: Pope Pius X
+        note: "Seminar"
+      - work: leo-xiii-aeterni-patris
+        title: Aeterni Patris
+        author: Pope Leo XIII
+        note: "Seminar"
+      - work: leo-xiii-rerum-novarum
+        title: Rerum Novarum
+        author: Pope Leo XIII
+        note: "Seminar; with Pius XI, Quadragesimo Anno, and Pius XII, Humani Generis"
+      - work: oconnor-a-good-man-is-hard-to-find
+        title: A Good Man Is Hard to Find
+        author: Flannery O'Connor
+        note: "Seminar; with The Enduring Chill"
+      - work: plato-phaedrus
+        title: Phaedrus
+        author: Plato
+        note: "Seminar"
+      - work: john-paul-ii-veritatis-splendor
+        title: Veritatis Splendor
+        author: Pope John Paul II
+        note: "Seminar"
+      - work: aquinas-summa-theologica
+        title: Summa Theologica
+        author: Thomas Aquinas
+        note: "Theology tutorial: On the Trinity, On the Sacraments, On the Passion of Christ"
+      - work: aristotle-physics
+        title: Physics
+        author: Aristotle
+        note: "Philosophy tutorial (first semester)"
+      - work: aristotle-metaphysics
+        title: Metaphysics
+        author: Aristotle
+        note: "Philosophy tutorial (second semester)"
+      - work: aquinas-on-being-and-essence
+        title: On Being and Essence
+        author: Thomas Aquinas
+        note: "Philosophy tutorial"
+      - work: newton-opticks
+        title: Opticks
+        author: Isaac Newton
+        note: "Natural science tutorial; with Huygens, Treatise on Light, Young, Gilbert's De Magnete"
+      - work: faraday-experimental-researches-in-electricity
+        title: Experimental Researches in Electricity
+        author: Michael Faraday
+        note: "Natural science tutorial; with papers by Maxwell, Oersted, Ampère"
+      - work: darwin-origin-of-species
+        title: On the Origin of Species
+        author: Charles Darwin
+        note: "Natural science tutorial; with Mendel, Schrödinger's What Is Life?, Watson and Crick, Monod, Mayr, Gould and others"
+      - work: einstein-relativity
+        title: "Relativity: The Special and the General Theory"
+        author: Albert Einstein
+        note: "Mathematics tutorial; with Dedekind, Essays on the Theory of Numbers, and Lobachevsky, Theory of Parallels"

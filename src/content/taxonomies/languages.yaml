@@ -1,0 +1,21 @@
+- { id: akkadian, label: Akkadian }
+- { id: hebrew, label: Hebrew }
+- { id: greek, label: Greek }
+- { id: latin, label: Latin }
+- { id: arabic, label: Arabic }
+- { id: italian, label: Italian }
+- { id: french, label: French }
+- { id: english, label: English }
+- { id: middle-english, label: Middle English }
+- { id: old-english, label: Old English }
+- { id: german, label: German }
+- { id: spanish, label: Spanish }
+- { id: portuguese, label: Portuguese }
+- { id: dutch, label: Dutch }
+- { id: danish, label: Danish }
+- { id: norwegian, label: Norwegian }
+- { id: russian, label: Russian }
+- { id: sanskrit, label: Sanskrit }
+- { id: chinese, label: Chinese }
+- { id: japanese, label: Japanese }
+- { id: other, label: Other }

@@ -1,0 +1,30 @@
+---
+import Base from '~/layouts/Base.astro';
+import { GA4_ID } from '~/lib/analytics';
+---
+<Base title="Privacy" description="What The Great Books collects about visitors, which is very little.">
+  <article class="wrap page" data-pagefind-body data-pagefind-filter="type:Page"><span class="visually-hidden" data-pagefind-meta="type:Page"></span>
+    <p class="eyebrow">Privacy</p>
+    <h1 class="italic" data-pagefind-meta="title">What we collect</h1>
+    <div class="prose">
+      <p class="lede">There are no accounts, no comments and no newsletter. The site is static pages.</p>
+      <h2>Analytics</h2>
+      {GA4_ID ? (
+        <p>We use Google Analytics 4 with IP anonymisation to count visits and to see which buy links are used, so we can tell which guides are useful. Google sets cookies for this. You can block them with your browser's settings or an extension and the site works exactly the same.</p>
+      ) : (
+        <p>We use Cloudflare Web Analytics, which counts page views without cookies and without identifying you.</p>
+      )}
+      <h2>Affiliate links</h2>
+      <p>When you click a buy link, Amazon or Bookshop.org may set their own cookies so they can attribute a purchase to this site. Their privacy policies govern what they do with that.</p>
+      <h2>Hosting</h2>
+      <p>The site is served by Cloudflare, which logs requests for security and operations in the ordinary way.</p>
+      <h2>Contact</h2>
+      <p>hello@thegreatbooks.site</p>
+    </div>
+  </article>
+</Base>
+<style>
+  .page { padding-block: var(--s4) var(--s3); }
+  .page h1 { font-size: var(--step-4); margin-bottom: var(--s2); }
+  .lede { font-size: var(--step-1); line-height: 1.45; }
+</style>

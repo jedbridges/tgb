@@ -1,0 +1,28 @@
+---
+import { amazonUrl, bookshopUrl } from '~/lib/affiliates';
+import Disclosure from './Disclosure.astro';
+import type { Work } from '~/lib/catalog';
+interface Props { work: Work; authorName: string; compact?: boolean }
+const { work, authorName, compact = false } = Astro.props;
+const ed = work.data.recommendedEdition;
+const target = { title: ed?.title ?? work.data.title, author: authorName, isbn13: ed?.isbn13, asin: ed?.asin };
+---
+<div class:list={['buy', { 'buy--compact': compact }]}>
+  <div class="buy__row">
+    <a class="btn btn--primary" href={amazonUrl(target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id}>Buy on Amazon</a>
+    <a class="btn" href={bookshopUrl(target)} target="_blank" rel="sponsored noopener" data-affiliate="bookshop" data-work={work.id}>Buy on Bookshop.org</a>
+  </div>
+  {ed && (ed.translator || ed.publisher) && (
+    <p class="buy__edition ui">
+      Recommended: {ed.title ?? work.data.title}{ed.translator && <>, translated by {ed.translator}</>}{ed.publisher && <> ({ed.publisher}{ed.year && `, ${ed.year}`})</>}.
+      {ed.why && <span class="buy__why"> {ed.why}</span>}
+    </p>
+  )}
+  {!compact && <Disclosure />}
+</div>
+<style>
+  .buy { display: grid; gap: var(--s1); }
+  .buy__row { display: flex; flex-wrap: wrap; gap: var(--s0); }
+  .buy__edition { color: var(--ink-soft); font-size: var(--step--2); line-height: 1.5; max-width: 46ch; }
+  .buy__why { color: var(--ink-mute); }
+</style>

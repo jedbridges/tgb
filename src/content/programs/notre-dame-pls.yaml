@@ -1,0 +1,326 @@
+name: Program of Liberal Studies Great Books Seminars
+shortName: Notre Dame PLS
+kind: course
+institution: University of Notre Dame, Program of Liberal Studies
+url: https://pls.nd.edu/the-major/courses/great-books-seminars/
+description: >-
+  The Program of Liberal Studies (PLS) is a Great Books major at the University of Notre Dame, founded in 1950
+  by Otto Bird at the invitation of president John J. Cavanaugh, C.S.C. It descends from John Erskine's General
+  Honors course at Columbia and from Mortimer Adler's work at the University of Chicago, and is grounded in a
+  Catholic educational philosophy that values the integration of all forms of knowledge.
+
+  At the heart of the major are six Great Books Seminars, taken in sequence over the sophomore, junior, and
+  senior years, in small classes of ten to sixteen students. They begin in Greek, Roman, and Eastern antiquity
+  and end with works that address contemporary challenges, and are complemented by a required sequence of
+  tutorials in literature, philosophy, theology, political theory, music, history, and the sciences.
+sourceNote: "Great Books Seminars reading lists, https://pls.nd.edu/the-major/courses/great-books-seminars/ (Seminar I list dated July 2024, Seminar IV 2024-25, Seminar VI December 2025), checked 2026-09-21"
+segmentLabel: Seminar
+order: 8
+segments:
+  - id: seminar-1
+    label: Seminar I
+    sublabel: Ancient Greece
+    order: 1
+    items:
+      - work: homer-iliad
+        title: The Iliad
+        author: Homer
+      - work: homer-odyssey
+        title: The Odyssey
+        author: Homer
+      - work: sappho-poems
+        title: Poems and Fragments
+        author: Sappho
+      - work: herodotus-histories
+        title: The Histories
+        author: Herodotus
+      - work: aeschylus-oresteia
+        title: The Oresteia
+        author: Aeschylus
+      - work: sophocles-oedipus-the-king
+        title: Oedipus the King
+        author: Sophocles
+        note: "listed as The Three Theban Plays"
+      - work: sophocles-oedipus-at-colonus
+        title: Oedipus at Colonus
+        author: Sophocles
+        note: "listed as The Three Theban Plays"
+      - work: sophocles-antigone
+        title: Antigone
+        author: Sophocles
+        note: "listed as The Three Theban Plays"
+      - work: euripides-medea
+        title: Medea
+        author: Euripides
+      - work: euripides-bacchae
+        title: The Bacchae
+        author: Euripides
+      - work: thucydides-peloponnesian-war
+        title: The History of the Peloponnesian War
+        author: Thucydides
+      - work: aristophanes-lysistrata
+        title: Lysistrata
+        author: Aristophanes
+      - work: plato-symposium
+        title: Symposium
+        author: Plato
+      - work: plato-phaedrus
+        title: Phaedrus
+        author: Plato
+      - work: plato-apology
+        title: Apology
+        author: Plato
+      - work: plato-crito
+        title: Crito
+        author: Plato
+  - id: seminar-2
+    label: Seminar II
+    sublabel: Greece, Rome, Asia, and the Early Middle Ages
+    order: 2
+    items:
+      - work: plato-republic
+        title: The Republic
+        author: Plato
+      - work: aristotle-poetics
+        title: Poetics
+        author: Aristotle
+      - work: lucretius-on-the-nature-of-things
+        title: On the Nature of Things
+        author: Lucretius
+        note: "The Way Things Are"
+      - work: cicero-on-duties
+        title: On Duties
+        author: Cicero
+      - work: confucius-analects
+        title: Analects
+        author: Confucius
+      - work: laozi-tao-te-ching
+        title: Tao Te Ching
+        author: Laozi
+      - work: virgil-aeneid
+        title: The Aeneid
+        author: Virgil
+      - work: ovid-metamorphoses
+        title: Metamorphoses
+        author: Ovid
+      - work: epictetus-enchiridion
+        title: The Handbook
+        author: Epictetus
+      - work: plotinus-enneads
+        title: The Enneads
+        author: Plotinus
+        note: "selections"
+      - work: augustine-confessions
+        title: Confessions
+        author: Augustine
+      - work: shantideva-bodhicaryavatara
+        title: Bodhicaryavatara
+        author: Shantideva
+      - work: anselm-proslogion
+        title: Proslogion
+        author: Anselm
+      - work: augustine-city-of-god
+        title: The City of God
+        author: Augustine
+        note: "selections"
+  - id: seminar-3
+    label: Seminar III
+    sublabel: High Middle Ages and Renaissance
+    order: 3
+    items:
+      - work: ibn-tufail-hayy-ibn-yaqzan
+        title: Hayy Ibn Yaqzan
+        author: Ibn Tufail
+      - work: bonaventure-journey-of-the-mind-to-god
+        title: The Journey of the Mind to God
+        author: Bonaventure
+      - work: aquinas-summa-theologica
+        title: Summa Theologica
+        author: Thomas Aquinas
+        note: "Treatise on Law"
+      - work: dante-inferno
+        title: Inferno
+        author: Dante Alighieri
+      - work: dante-purgatorio
+        title: Purgatorio
+        author: Dante Alighieri
+      - work: dante-paradiso
+        title: Paradiso
+        author: Dante Alighieri
+      - work: petrarch-ascent-of-mont-ventoux
+        title: The Ascent of Mont Ventoux
+        author: Petrarch
+        note: "with On His Own Ignorance"
+      - work: chaucer-canterbury-tales
+        title: The Canterbury Tales
+        author: Geoffrey Chaucer
+      - work: julian-of-norwich-showings
+        title: Showings
+        author: Julian of Norwich
+      - work: erasmus-praise-of-folly
+        title: The Praise of Folly
+        author: Desiderius Erasmus
+      - work: machiavelli-prince
+        title: The Prince
+        author: Niccolò Machiavelli
+      - work: more-utopia
+        title: Utopia
+        author: Thomas More
+      - work: luther-on-the-freedom-of-a-christian
+        title: The Freedom of a Christian
+        author: Martin Luther
+      - work: montaigne-essays
+        title: Essays
+        author: Michel de Montaigne
+        note: "To the Reader, Of Cannibals, Of Experience, Of Repentance, Apology for Raymond Sebond"
+      - work: teresa-of-avila-interior-castle
+        title: The Interior Castle
+        author: Teresa of Ávila
+      - work: cervantes-don-quixote
+        title: Don Quixote
+        author: Miguel de Cervantes
+  - id: seminar-4
+    label: Seminar IV
+    sublabel: Renaissance to Enlightenment
+    order: 4
+    items:
+      - work: shakespeare-tempest
+        title: The Tempest
+        author: William Shakespeare
+      - work: bacon-novum-organum
+        title: The New Organon
+        author: Francis Bacon
+      - work: descartes-meditations
+        title: Meditations on First Philosophy
+        author: René Descartes
+      - work: hobbes-leviathan
+        title: Leviathan
+        author: Thomas Hobbes
+      - work: milton-samson-agonistes
+        title: Samson Agonistes
+        author: John Milton
+      - work: pascal-pensees
+        title: Pensées
+        author: Blaise Pascal
+      - work: swift-gullivers-travels
+        title: Gulliver's Travels
+        author: Jonathan Swift
+      - work: hume-enquiry-concerning-human-understanding
+        title: An Enquiry Concerning Human Understanding
+        author: David Hume
+      - work: rousseau-discourse-on-inequality
+        title: Discourse on the Origin of Inequality
+        author: Jean-Jacques Rousseau
+      - work: voltaire-candide
+        title: Candide
+        author: Voltaire
+      - work: smith-wealth-of-nations
+        title: The Wealth of Nations
+        author: Adam Smith
+      - work: mozart-don-giovanni
+        title: Don Giovanni
+        author: Wolfgang Amadeus Mozart
+      - work: kant-prolegomena
+        title: Prolegomena to Any Future Metaphysics
+        author: Immanuel Kant
+      - work: goethe-faust
+        title: Faust
+        author: Johann Wolfgang von Goethe
+        note: "Parts I and II"
+      - work: austen-pride-and-prejudice
+        title: Pride and Prejudice
+        author: Jane Austen
+      - work: mary-shelley-frankenstein
+        title: Frankenstein
+        author: Mary Shelley
+  - id: seminar-5
+    label: Seminar V
+    sublabel: Nineteenth Century
+    order: 5
+    items:
+      - work: tocqueville-democracy-in-america
+        title: Democracy in America
+        author: Alexis de Tocqueville
+      - work: hegel-lectures-on-aesthetics
+        title: Introductory Lectures on Aesthetics
+        author: G. W. F. Hegel
+      - work: kierkegaard-philosophical-fragments
+        title: Philosophical Fragments
+        author: Søren Kierkegaard
+      - work: douglass-narrative
+        title: Narrative of the Life of Frederick Douglass
+        author: Frederick Douglass
+      - work: jacobs-incidents-in-the-life-of-a-slave-girl
+        title: Incidents in the Life of a Slave Girl
+        author: Harriet Jacobs
+      - work: melville-moby-dick
+        title: Moby-Dick
+        author: Herman Melville
+      - work: marx-communist-manifesto
+        title: The Communist Manifesto
+        author: Karl Marx
+      - work: marx-capital
+        title: Capital
+        author: Karl Marx
+        note: "selections"
+      - work: flaubert-madame-bovary
+        title: Madame Bovary
+        author: Gustave Flaubert
+      - work: mill-on-liberty
+        title: On Liberty
+        author: John Stuart Mill
+      - work: tolstoy-war-and-peace
+        title: War and Peace
+        author: Leo Tolstoy
+      - work: george-eliot-middlemarch
+        title: Middlemarch
+        author: George Eliot
+  - id: seminar-6
+    label: Seminar VI
+    sublabel: Nineteenth and Twentieth Centuries
+    order: 6
+    items:
+      - work: darwin-descent-of-man
+        title: The Descent of Man
+        author: Charles Darwin
+      - work: dostoevsky-brothers-karamazov
+        title: The Brothers Karamazov
+        author: Fyodor Dostoevsky
+      - work: nietzsche-beyond-good-and-evil
+        title: Beyond Good and Evil
+        author: Friedrich Nietzsche
+      - work: du-bois-souls-of-black-folk
+        title: The Souls of Black Folk
+        author: W. E. B. Du Bois
+      - work: weber-protestant-ethic
+        title: The Protestant Ethic and the Spirit of Capitalism
+        author: Max Weber
+      - work: william-james-pragmatism
+        title: Pragmatism
+        author: William James
+      - work: freud-civilization-and-its-discontents
+        title: Civilization and Its Discontents
+        author: Sigmund Freud
+      - work: levi-if-this-is-a-man
+        title: If This Is a Man
+        author: Primo Levi
+        note: "Survival in Auschwitz"
+      - work: woolf-a-room-of-ones-own
+        title: A Room of One's Own
+        author: Virginia Woolf
+      - work: woolf-to-the-lighthouse
+        title: To the Lighthouse
+        author: Virginia Woolf
+      - work: wittgenstein-blue-book
+        title: The Blue Book
+        author: Ludwig Wittgenstein
+      - work: ellison-invisible-man
+        title: Invisible Man
+        author: Ralph Ellison
+      - work: day-long-loneliness
+        title: The Long Loneliness
+        author: Dorothy Day
+      - work: beauvoir-second-sex
+        title: The Second Sex
+        author: Simone de Beauvoir
+        note: "selections"

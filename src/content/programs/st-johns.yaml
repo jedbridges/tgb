@@ -1,0 +1,505 @@
+name: St. John's College
+shortName: St. John's
+kind: college
+institution: St. John's College (Annapolis, Maryland and Santa Fe, New Mexico)
+url: https://www.sjc.edu/academic-programs/undergraduate/great-books-reading-list
+description: >-
+  St. John's College is a small liberal arts college with campuses in Annapolis, Maryland and Santa Fe,
+  New Mexico. Since 1937 every undergraduate has followed the same four-year, all-required curriculum
+  (the "Program"), with no majors, no lectures as the main mode of teaching, and no textbooks: students
+  read primary works in roughly chronological order and discuss them in classes of about fifteen to
+  twenty led by tutors. The seminar, which meets twice a week in the evening for all four years, is the
+  heart of the Program; it is supported by tutorials in language (Greek, then French), mathematics, and
+  music, and by a laboratory sequence in the natural sciences.
+
+  The list below is the seminar reading list only, in the order the books are read during the 2025-26
+  academic year on the Annapolis campus. Freshman year is devoted to the Greeks; sophomore year moves
+  from the Bible and Rome through the Middle Ages to the Renaissance; junior year covers the seventeenth
+  and eighteenth centuries; senior year the nineteenth and twentieth. Tutorial and laboratory readings
+  (Euclid, Ptolemy, Copernicus, Newton, Lavoisier, and the like) are omitted, as are the elective
+  preceptorial readings of the junior and senior fall. The Santa Fe seminar list differs in a few places
+  (for example Santa Fe sophomores read Maimonides and freshmen read Prometheus Bound).
+sourceNote: "Annapolis seminar reading schedule 2025-26 as published by the Greenfield Library program-texts guide (Fall 2025 and Spring 2026 pages for each year), https://libguides.sjc.edu/programtexts, cross-checked against the college's Annapolis seminar schedule page https://www.sjc.edu/academic-programs/undergraduate/classes/seminar/annapolis-undergraduate-readings (Fall 2026, identical in order), the Statement of the Program PDF https://www.sjc.edu/application/files/9216/0177/3724/St_Johns_College_Statement_of_the_Program.pdf, and the alphabetical Great Books Reading List page; checked 2026-09-21"
+segmentLabel: Year
+order: 1
+segments:
+  - id: freshman
+    label: Freshman
+    sublabel: Greeks
+    order: 1
+    items:
+      - work: homer-iliad
+        title: The Iliad
+        author: Homer
+      - work: homer-odyssey
+        title: The Odyssey
+        author: Homer
+      - work: plato-meno
+        title: Meno
+        author: Plato
+      - work: aeschylus-agamemnon
+        title: Agamemnon
+        author: Aeschylus
+      - work: aeschylus-libation-bearers
+        title: The Libation Bearers
+        author: Aeschylus
+      - work: aeschylus-eumenides
+        title: The Eumenides
+        author: Aeschylus
+      - work: plato-gorgias
+        title: Gorgias
+        author: Plato
+      - work: plutarch-lives
+        title: Parallel Lives
+        author: Plutarch
+        note: "Lycurgus; Solon"
+      - work: herodotus-histories
+        title: The Histories
+        author: Herodotus
+        note: "Book I; II.50-53, 112-120; III.37-38, 66-87; V.105; VI.48-120; VII; VIII; IX"
+      - work: plato-republic
+        title: The Republic
+        author: Plato
+      - work: aristophanes-clouds
+        title: The Clouds
+        author: Aristophanes
+      - work: plato-apology
+        title: Apology
+        author: Plato
+      - work: plato-crito
+        title: Crito
+        author: Plato
+      - work: plato-phaedo
+        title: Phaedo
+        author: Plato
+      - work: sophocles-oedipus-the-king
+        title: Oedipus the King
+        author: Sophocles
+      - work: sophocles-oedipus-at-colonus
+        title: Oedipus at Colonus
+        author: Sophocles
+      - work: sophocles-antigone
+        title: Antigone
+        author: Sophocles
+      - work: euripides-medea
+        title: Medea
+        author: Euripides
+      - work: plato-symposium
+        title: Symposium
+        author: Plato
+      - work: thucydides-peloponnesian-war
+        title: History of the Peloponnesian War
+        author: Thucydides
+        note: "Books I-II; III.1-87; IV; V.1-26, 84-116; VI; VII; VIII.1-6, 45-end"
+      - work: plato-parmenides
+        title: Parmenides
+        author: Plato
+        note: "beginning-148D; 163B-end"
+      - work: plato-theaetetus
+        title: Theaetetus
+        author: Plato
+      - work: plato-sophist
+        title: Sophist
+        author: Plato
+      - work: plato-timaeus
+        title: Timaeus
+        author: Plato
+        note: "beginning-57"
+      - work: aristotle-nicomachean-ethics
+        title: Nicomachean Ethics
+        author: Aristotle
+      - work: aristotle-politics
+        title: Politics
+        author: Aristotle
+        note: "Books I.1-7, 12-13; III; IV.1-12; VII.1-4, 7"
+      - work: sophocles-philoctetes
+        title: Philoctetes
+        author: Sophocles
+      - work: euripides-bacchae
+        title: The Bacchae
+        author: Euripides
+      - work: aristotle-poetics
+        title: Poetics
+        author: Aristotle
+        note: "chapters 1-19"
+      - work: aristotle-physics
+        title: Physics
+        author: Aristotle
+        note: "selections from Books I, II, III, IV, VIII"
+      - work: aristotle-metaphysics
+        title: Metaphysics
+        author: Aristotle
+        note: "selections from Books I, II, IV, VII, IX, XII"
+      - work: aristotle-on-the-soul
+        title: On the Soul
+        author: Aristotle
+        note: "I.1; II.1-7, 11-12; III"
+      - work: plato-phaedrus
+        title: Phaedrus
+        author: Plato
+  - id: sophomore
+    label: Sophomore
+    sublabel: Rome, Middle Ages, Renaissance
+    order: 2
+    items:
+      - work: bible-genesis
+        title: Genesis
+        author: Bible
+      - work: bible-exodus
+        title: Exodus
+        author: Bible
+        note: "Exodus; Numbers 20"
+      - work: bible-leviticus
+        title: Leviticus
+        author: Bible
+        note: "chapters 11, 18-20"
+      - work: bible-deuteronomy
+        title: Deuteronomy
+        author: Bible
+      - work: bible-samuel
+        title: Samuel
+        author: Bible
+        note: "1 and 2 Samuel; 1 Kings 1-4"
+      - work: bible-psalms
+        title: Psalms
+        author: Bible
+        note: "selections"
+      - work: bible-amos
+        title: Amos
+        author: Bible
+      - work: bible-jonah
+        title: Jonah
+        author: Bible
+      - work: bible-isaiah
+        title: Isaiah
+        author: Bible
+        note: "chapters 40-55"
+      - work: bible-job
+        title: Job
+        author: Bible
+      - work: lucretius-on-the-nature-of-things
+        title: On the Nature of Things
+        author: Lucretius
+      - work: virgil-aeneid
+        title: The Aeneid
+        author: Virgil
+      - work: plutarch-lives
+        title: Parallel Lives
+        author: Plutarch
+        note: "Caesar; Cato the Younger"
+      - work: tacitus-annals
+        title: Annals
+        author: Tacitus
+        note: "Books I-VI"
+      - work: epictetus-enchiridion
+        title: Enchiridion (Handbook)
+        author: Epictetus
+      - work: bible-gospel-of-matthew
+        title: Gospel of Matthew
+        author: Bible
+      - work: bible-gospel-of-luke
+        title: Gospel of Luke
+        author: Bible
+      - work: bible-acts
+        title: Acts of the Apostles
+        author: Bible
+      - work: bible-gospel-of-john
+        title: Gospel of John
+        author: Bible
+        note: "Gospel of John; First Letter of John"
+      - work: bible-1-corinthians
+        title: First Letter to the Corinthians
+        author: Bible
+      - work: bible-romans
+        title: Letter to the Romans
+        author: Bible
+        note: "Romans; James"
+      - work: plotinus-enneads
+        title: The Enneads
+        author: Plotinus
+        note: "selections"
+      - work: augustine-confessions
+        title: Confessions
+        author: Augustine
+        note: "Books I-XI"
+      - work: anselm-proslogion
+        title: Proslogion
+        author: Anselm
+      - work: christian-creeds
+        title: Christian Creeds
+        author: Anonymous
+        note: "Apostles', Nicene, and other creeds as given in the seminar appendix"
+      - work: aquinas-summa-theologica
+        title: Summa Theologiae
+        author: Thomas Aquinas
+        note: "Prologue; Part I, qq. 1-13 (selections); Part I-II, qq. 90-109 (selections); Part II-II, qq. 1-2, 4"
+      - work: dante-divine-comedy
+        title: The Divine Comedy
+        author: Dante
+      - work: chaucer-canterbury-tales
+        title: The Canterbury Tales
+        author: Geoffrey Chaucer
+        note: "General Prologue; Knight's, Miller's, Reeve's, Wife of Bath's, Clerk's, Franklin's, Pardoner's tales"
+      - work: shakespeare-as-you-like-it
+        title: As You Like It
+        author: William Shakespeare
+      - work: montaigne-essays
+        title: Essays
+        author: Michel de Montaigne
+        note: "To the Reader; Of Cannibals; Of Cruelty; Of Repentance; Of Experience"
+      - work: machiavelli-prince
+        title: The Prince
+        author: Niccolò Machiavelli
+      - work: machiavelli-discourses-on-livy
+        title: Discourses on Livy
+        author: Niccolò Machiavelli
+        note: "Introductory letter; Book I: Preface, 1-28, 58-end; Book II: Preface, 1-5"
+      - work: shakespeare-richard-ii
+        title: Richard II
+        author: William Shakespeare
+      - work: shakespeare-henry-iv-part-1
+        title: Henry IV, Part 1
+        author: William Shakespeare
+      - work: shakespeare-othello
+        title: Othello
+        author: William Shakespeare
+      - work: shakespeare-hamlet
+        title: Hamlet
+        author: William Shakespeare
+      - work: luther-two-kinds-of-righteousness
+        title: Two Kinds of Righteousness
+        author: Martin Luther
+      - work: luther-on-secular-authority
+        title: "On Secular Authority: To What Extent It Should Be Obeyed"
+        author: Martin Luther
+      - work: luther-on-the-freedom-of-a-christian
+        title: The Freedom of a Christian
+        author: Martin Luther
+      - work: bach-st-matthew-passion
+        title: St. Matthew Passion
+        author: Johann Sebastian Bach
+      - work: bacon-novum-organum
+        title: Novum Organum
+        author: Francis Bacon
+        note: "Preface; Book I; Book II, aphorisms 1-20"
+      - work: descartes-discourse-on-method
+        title: Discourse on Method
+        author: René Descartes
+      - work: shakespeare-macbeth
+        title: Macbeth
+        author: William Shakespeare
+      - work: shakespeare-king-lear
+        title: King Lear
+        author: William Shakespeare
+      - work: shakespeare-tempest
+        title: The Tempest
+        author: William Shakespeare
+  - id: junior
+    label: Junior
+    sublabel: 17th-18th c.
+    order: 3
+    items:
+      - work: cervantes-don-quixote
+        title: Don Quixote
+        author: Miguel de Cervantes
+      - work: descartes-meditations
+        title: Meditations on First Philosophy
+        author: René Descartes
+      - work: pascal-pensees
+        title: Pensées
+        author: Blaise Pascal
+        note: "selections"
+      - work: milton-paradise-lost
+        title: Paradise Lost
+        author: John Milton
+        note: "Books I-V, VIII-X complete; VI-VII, XI-XII in part"
+      - work: hobbes-leviathan
+        title: Leviathan
+        author: Thomas Hobbes
+        note: "Introduction; chapters 1-21, 24-25, 27-32, 38-39, 43, 46-47; Review and Conclusion (selections)"
+      - work: spinoza-ethics
+        title: Ethics
+        author: Baruch Spinoza
+        note: "Part I; Part II through proposition 13"
+      - work: leibniz-discourse-on-metaphysics
+        title: Discourse on Metaphysics
+        author: Gottfried Wilhelm Leibniz
+      - work: leibniz-philosophical-essays
+        title: Philosophical Essays
+        author: Gottfried Wilhelm Leibniz
+        note: "selections"
+      - work: leibniz-principles-of-nature-and-grace
+        title: Principles of Nature and Grace
+        author: Gottfried Wilhelm Leibniz
+      - work: leibniz-monadology
+        title: Monadology
+        author: Gottfried Wilhelm Leibniz
+      - work: george-eliot-middlemarch
+        title: Middlemarch
+        author: George Eliot
+      - work: hume-treatise-of-human-nature
+        title: A Treatise of Human Nature
+        author: David Hume
+        note: "selections"
+      - work: kant-critique-of-pure-reason
+        title: Critique of Pure Reason
+        author: Immanuel Kant
+        note: "selections"
+      - work: locke-second-treatise-of-government
+        title: Second Treatise of Government
+        author: John Locke
+      - work: austen-pride-and-prejudice
+        title: Pride and Prejudice
+        author: Jane Austen
+      - work: rousseau-discourse-on-inequality
+        title: Discourse on the Origin of Inequality
+        author: Jean-Jacques Rousseau
+      - work: rousseau-social-contract
+        title: The Social Contract
+        author: Jean-Jacques Rousseau
+        note: "I.1-9; II.1-7, 11; III.1-5, 9, 11-12, 14-18; IV.1, 7-8"
+      - work: moliere-misanthrope
+        title: The Misanthrope
+        author: Molière
+      - work: mozart-don-giovanni
+        title: Don Giovanni
+        author: Wolfgang Amadeus Mozart
+      - work: kant-groundwork-of-the-metaphysics-of-morals
+        title: Groundwork of the Metaphysics of Morals
+        author: Immanuel Kant
+      - work: swift-gullivers-travels
+        title: Gulliver's Travels
+        author: Jonathan Swift
+      - work: smith-wealth-of-nations
+        title: The Wealth of Nations
+        author: Adam Smith
+        note: "selections"
+      - work: declaration-of-independence
+        title: Declaration of Independence
+        author: Thomas Jefferson
+      - work: articles-of-confederation
+        title: Articles of Confederation
+        author: Anonymous
+      - work: us-constitution
+        title: Constitution of the United States
+        author: Anonymous
+        note: "with Amendments"
+      - work: federalist-papers
+        title: The Federalist
+        author: Alexander Hamilton, James Madison, and John Jay
+        note: "selections"
+      - work: twain-huckleberry-finn
+        title: Adventures of Huckleberry Finn
+        author: Mark Twain
+  - id: senior
+    label: Senior
+    sublabel: 19th-20th c.
+    order: 4
+    items:
+      - work: tolstoy-war-and-peace
+        title: War and Peace
+        author: Leo Tolstoy
+      - work: hegel-phenomenology-of-spirit
+        title: Phenomenology of Spirit
+        author: G. W. F. Hegel
+        note: "Introduction; Sense-Certainty; Perception; Lordship and Bondage; Stoicism and Skepticism; Unhappy Consciousness; Conscience and the Beautiful Soul; Absolute Knowing"
+      - work: tocqueville-democracy-in-america
+        title: Democracy in America
+        author: Alexis de Tocqueville
+        note: "selections"
+      - work: marx-german-ideology
+        title: The German Ideology
+        author: Karl Marx and Friedrich Engels
+        note: "Part One; Theses on Feuerbach"
+      - work: marx-capital
+        title: Capital
+        author: Karl Marx
+        note: "Volume I, selections"
+      - work: marx-economic-and-philosophic-manuscripts
+        title: Economic and Philosophic Manuscripts of 1844
+        author: Karl Marx
+        note: "Estranged Labor; Private Property and Communism"
+      - work: kierkegaard-fear-and-trembling
+        title: Fear and Trembling
+        author: Søren Kierkegaard
+        note: "beginning through Problema I"
+      - work: kierkegaard-philosophical-fragments
+        title: Philosophical Fragments
+        author: Søren Kierkegaard
+      - work: morrison-song-of-solomon
+        title: Song of Solomon
+        author: Toni Morrison
+      - work: nietzsche-on-the-use-and-abuse-of-history
+        title: On the Use and Disadvantage of History for Life
+        author: Friedrich Nietzsche
+      - work: nietzsche-beyond-good-and-evil
+        title: Beyond Good and Evil
+        author: Friedrich Nietzsche
+      - work: conrad-heart-of-darkness
+        title: Heart of Darkness
+        author: Joseph Conrad
+      - work: freud-remembering-repeating-and-working-through
+        title: Remembering, Repeating and Working-Through
+        author: Sigmund Freud
+      - work: freud-mourning-and-melancholia
+        title: Mourning and Melancholia
+        author: Sigmund Freud
+      - work: freud-beyond-the-pleasure-principle
+        title: Beyond the Pleasure Principle
+        author: Sigmund Freud
+      - work: dostoevsky-brothers-karamazov
+        title: The Brothers Karamazov
+        author: Fyodor Dostoevsky
+      - work: wagner-tristan-and-isolde
+        title: Tristan and Isolde
+        author: Richard Wagner
+      - work: woolf-to-the-lighthouse
+        title: To the Lighthouse
+        author: Virginia Woolf
+      - work: federalist-papers
+        title: The Federalist
+        author: Alexander Hamilton, James Madison, and John Jay
+        note: "Nos. 78, 81"
+      - work: us-constitution
+        title: Constitution of the United States
+        author: Anonymous
+        note: "Articles III and VI"
+      - work: supreme-court-opinions
+        title: Supreme Court Opinions
+        author: United States Supreme Court
+        note: "Marbury v. Madison; Judiciary Act of 1789, sec. 13; Eakin v. Raub (Pa.); Dred Scott v. Sandford with Justice Curtis's dissent"
+      - work: lincoln-douglas-debates
+        title: The Lincoln-Douglas Debates
+        author: Abraham Lincoln and Stephen A. Douglas
+        note: "selections"
+      - work: lincoln-selected-speeches
+        title: Selected Speeches
+        author: Abraham Lincoln
+        note: "selections"
+      - work: douglass-selected-speeches
+        title: Selected Speeches
+        author: Frederick Douglass
+        note: "selections"
+      - work: booker-t-washington-selected-speeches
+        title: Selected Speeches
+        author: Booker T. Washington
+        note: "selections"
+      - work: du-bois-souls-of-black-folk
+        title: The Souls of Black Folk
+        author: W. E. B. Du Bois
+        note: "selections"
+      - work: faulkner-the-bear
+        title: The Bear
+        author: William Faulkner
+        note: "from Go Down, Moses"
+      - work: beauvoir-second-sex
+        title: The Second Sex
+        author: Simone de Beauvoir
+        note: "selections"
+      - work: heidegger-introduction-to-metaphysics
+        title: Introduction to Metaphysics
+        author: Martin Heidegger
+        note: "selections"
+      - work: plato-phaedrus
+        title: Phaedrus
+        author: Plato

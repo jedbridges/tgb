@@ -1,0 +1,38 @@
+---
+import { programUrl } from '~/lib/url';
+import { programsForWork } from '~/lib/catalog';
+interface Props { slug: string; compact?: boolean }
+const { slug, compact = false } = Astro.props;
+const list = await programsForWork(slug);
+// group by program
+const byProgram = new Map<string, { name: string; short: string; id: string; segs: { label: string; id: string; note?: string }[] }>();
+for (const a of list) {
+  const g = byProgram.get(a.program.id) ?? { name: a.program.data.name, short: a.program.data.shortName, id: a.program.id, segs: [] };
+  g.segs.push({ label: a.segment.label, id: a.segment.id, note: a.note });
+  byProgram.set(a.program.id, g);
+}
+---
+{byProgram.size > 0 && (
+  <ul class:list={['badges', { 'badges--compact': compact }]} aria-label="Assigned in">
+    {[...byProgram.values()].map((g) => (
+      <li>
+        <a class="badge" href={programUrl(g.id, g.segs[0].id)}>
+          <span class="badge__name">{compact ? g.short : g.name}</span>
+          <span class="badge__seg ui">{g.segs.map((s) => s.label).join(' · ')}{!compact && g.segs.find((s) => s.note) && <> <em>({g.segs.filter((s) => s.note).map((s) => s.note).join('; ')})</em></>}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+)}
+<style>
+  .badges { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4rem; }
+  .badge { display: grid; grid-template-columns: 1fr auto; gap: var(--s1); align-items: baseline; padding: 0.55rem 0; border-top: 1px solid var(--paper-deeper); text-decoration: none; }
+  .badges li:last-child .badge { border-bottom: 1px solid var(--paper-deeper); }
+  .badge__name { color: var(--ink-strong); }
+  .badge__seg { color: var(--ink-soft); font-size: var(--step--2); text-align: right; }
+  .badge__seg em { color: var(--ink-mute); }
+  .badge:hover .badge__name { color: var(--accent-deep); }
+  .badges--compact { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .badges--compact .badge { display: inline-flex; gap: 0.4em; padding: 0.3em 0.7em; border: 1px solid var(--paper-deeper) !important; border-radius: 999px; font-family: var(--font-ui); font-size: var(--step--2); }
+  .badges--compact .badge__seg { font-size: inherit; color: var(--ink-mute); }
+</style>

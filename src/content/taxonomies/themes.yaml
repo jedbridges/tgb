@@ -1,0 +1,28 @@
+- { id: justice, label: Justice, description: "What we owe one another, and who decides." }
+- { id: love, label: Love and desire, description: "Eros, friendship, devotion and the trouble they cause." }
+- { id: mortality, label: Death and mortality, description: "Living in the knowledge that we die." }
+- { id: fate-and-freedom, label: Fate and freedom, description: "Whether we choose our lives or they are chosen for us." }
+- { id: the-good-life, label: The good life, description: "What happiness is and how to reach it." }
+- { id: virtue, label: Virtue and character, description: "Courage, temperance, wisdom, and how they are learned." }
+- { id: god-and-faith, label: God and faith, description: "Belief, doubt, revelation and the search for the divine." }
+- { id: knowledge, label: Knowledge and truth, description: "What we can know, and how we can be sure." }
+- { id: nature-and-cosmos, label: Nature and the cosmos, description: "The order of the world and our place in it." }
+- { id: power-and-authority, label: Power and authority, description: "Who rules, by what right, and at what cost." }
+- { id: war, label: War, description: "Its glory, its waste and what it does to those who fight." }
+- { id: the-self, label: The self and identity, description: "Who we are underneath what we do." }
+- { id: family, label: Family and inheritance, description: "Fathers, sons, mothers, daughters and what passes between them." }
+- { id: society-and-the-state, label: Society and the state, description: "How communities form, hold together and fall apart." }
+- { id: liberty, label: Liberty and rights, description: "Freedom from, freedom to, and the limits of each." }
+- { id: reason-and-passion, label: Reason and passion, description: "The head against the heart, and which should lead." }
+- { id: art-and-beauty, label: Art and beauty, description: "What art is for and why beauty moves us." }
+- { id: language, label: Language and rhetoric, description: "How words persuade, reveal and deceive." }
+- { id: history-and-progress, label: History and progress, description: "Whether things get better, and what drives change." }
+- { id: evil-and-suffering, label: Evil and suffering, description: "Why bad things happen and what to do about them." }
+- { id: home-and-exile, label: Home and exile, description: "Leaving, returning and belonging." }
+- { id: madness, label: Madness and the irrational, description: "When reason gives way, and what is revealed." }
+- { id: money-and-class, label: Money and class, description: "Wealth, poverty and the distances between them." }
+- { id: science-and-method, label: Science and method, description: "How to ask questions the world will answer." }
+- { id: education, label: Education, description: "How people are formed, for better and worse." }
+- { id: heroism, label: Heroism and honour, description: "What makes a hero and what it costs." }
+- { id: women-and-men, label: Women and men, description: "The sexes, their roles and the arguments about them." }
+- { id: guilt-and-redemption, label: Guilt and redemption, description: "Wrongdoing, conscience and the possibility of being forgiven." }

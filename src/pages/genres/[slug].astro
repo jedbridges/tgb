@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import TaxonomyPage from '~/components/TaxonomyPage.astro';
+export async function getStaticPaths() {
+  return (await getCollection('genres')).map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+---
+<Base title={`${entry.data.label} on the great books lists`} description={`${entry.data.description ?? ''} Every ${entry.data.label.toLowerCase()} title on the great college reading lists.`}>
+  <TaxonomyPage kind="genres" entry={entry} eyebrow="Form" match={(w) => w.data.genre.id === entry.id || w.data.genres.some((g) => g.id === entry.id)} />
+</Base>

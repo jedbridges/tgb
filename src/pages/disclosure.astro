@@ -1,0 +1,34 @@
+---
+import Base from '~/layouts/Base.astro';
+import { affiliatesEnabled } from '~/lib/affiliates';
+---
+<Base title="Affiliate disclosure" description="How The Great Books earns money from the buy links on its pages.">
+  <article class="wrap page" data-pagefind-body data-pagefind-filter="type:Page"><span class="visually-hidden" data-pagefind-meta="type:Page"></span>
+    <p class="eyebrow">Disclosure</p>
+    <h1 class="italic" data-pagefind-meta="title">How this site makes money</h1>
+    <div class="prose">
+      <p class="lede">The Great Books is free to read and has no advertising. It is supported by affiliate commissions on books bought through its links.</p>
+      <h2>Amazon</h2>
+      {affiliatesEnabled.amazon ? (
+        <p>The Great Books is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com. As an Amazon Associate, The Great Books earns from qualifying purchases.</p>
+      ) : (
+        <p>Links to Amazon are currently plain links. If the site joins the Amazon Associates program, this page and the disclosure beneath every buy button will say so, and the site will earn from qualifying purchases.</p>
+      )}
+      <h2>Bookshop.org</h2>
+      {affiliatesEnabled.bookshop ? (
+        <p>Links to Bookshop.org are affiliate links. Bookshop.org pays a commission on purchases made through them and directs a share of every sale to independent bookstores.</p>
+      ) : (
+        <p>Links to Bookshop.org are currently plain links. Bookshop.org directs a share of every sale to independent bookstores regardless.</p>
+      )}
+      <h2>What this means for you</h2>
+      <p>Prices are the same whether you use these links or not. Commissions never influence which books appear on the lists, which are transcribed from the programs themselves, nor the recommendations about editions, which are made on the merits of the translation and apparatus.</p>
+      <h2>Questions</h2>
+      <p>Write to hello@thegreatbooks.site.</p>
+    </div>
+  </article>
+</Base>
+<style>
+  .page { padding-block: var(--s4) var(--s3); }
+  .page h1 { font-size: var(--step-4); margin-bottom: var(--s2); }
+  .lede { font-size: var(--step-1); line-height: 1.45; }
+</style>

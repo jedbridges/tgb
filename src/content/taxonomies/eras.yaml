@@ -1,0 +1,13 @@
+- { id: ancient-near-east, label: Ancient Near East, start: -3000, end: -600, order: 1, description: "Mesopotamia, Egypt and the Hebrew scriptures: the oldest voices on the shelf." }
+- { id: archaic-greece, label: Archaic Greece, start: -800, end: -480, order: 2, description: "Homer, Hesiod and the lyric poets, before Athens' golden age." }
+- { id: classical-greece, label: Classical Greece, start: -480, end: -323, order: 3, description: "Athenian tragedy, history, and the philosophy of Socrates, Plato and Aristotle." }
+- { id: hellenistic, label: Hellenistic and Roman Republic, start: -323, end: -27, order: 4, description: "After Alexander: Euclid, Epicurus, the Stoics, Lucretius and Cicero." }
+- { id: roman-empire, label: Roman Empire, start: -27, end: 476, order: 5, description: "Virgil, Ovid, Tacitus, Marcus Aurelius, the New Testament and the early Church." }
+- { id: late-antiquity, label: Late Antiquity, start: 300, end: 700, order: 6, description: "Augustine, Boethius and the passage from the classical to the Christian world." }
+- { id: medieval, label: Medieval, start: 700, end: 1400, order: 7, description: "Scholastic philosophy, chivalric epic, Dante and Chaucer." }
+- { id: renaissance, label: Renaissance, start: 1400, end: 1600, order: 8, description: "Humanism, Machiavelli, Montaigne, Shakespeare and the new science's first stirrings." }
+- { id: seventeenth-century, label: Seventeenth Century, start: 1600, end: 1700, order: 9, description: "The scientific revolution, Descartes, Hobbes, Milton, Pascal and Locke." }
+- { id: enlightenment, label: Enlightenment, start: 1700, end: 1800, order: 10, description: "Reason, rights and revolution: Hume, Rousseau, Smith, Kant and the American founding." }
+- { id: nineteenth-century, label: Nineteenth Century, start: 1800, end: 1900, order: 11, description: "Romanticism, the great novels, Hegel, Marx, Darwin, Nietzsche." }
+- { id: twentieth-century, label: Twentieth Century, start: 1900, end: 2000, order: 12, description: "Modernism, relativity, psychoanalysis, existentialism and the crises of the modern state." }
+- { id: twenty-first-century, label: Twenty-First Century, start: 2000, end: 2100, order: 13, description: "The newest additions to the lists, still arguing with everything before them." }

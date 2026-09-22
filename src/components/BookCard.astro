@@ -1,0 +1,35 @@
+---
+import Book3D from './Book3D.astro';
+import { workUrl } from '~/lib/url';
+import { yearShort, type Work } from '~/lib/catalog';
+interface Props { work: Work; authorName: string; width?: number; eager?: boolean; programCount?: number; showMeta?: boolean; index?: number }
+const { work, authorName, width = 140, eager = false, programCount, showMeta = true, index } = Astro.props;
+---
+<a class="card" href={workUrl(work.id)} data-slug={work.id} style={index !== undefined ? `--i:${index}` : undefined}>
+  <span class="card__stage" style={`--stage-h:${Math.round(width * 1.6)}px`}>
+    <Book3D work={work} authorName={authorName} width={width} eager={eager} />
+  </span>
+  <span class="card__ledge" aria-hidden="true"></span>
+  {showMeta && (
+    <span class="card__meta">
+      <span class="card__title">{work.data.title}</span>
+      <span class="card__author ui">{authorName} · {yearShort(work)}</span>
+      {programCount !== undefined && programCount > 0 && <span class="card__count ui">{programCount === 1 ? 'On 1 list' : `On ${programCount} lists`}</span>}
+    </span>
+  )}
+</a>
+<style>
+  .card { display: grid; grid-template-rows: auto auto 1fr; text-decoration: none; color: inherit; position: relative; min-width: 0; --ledge: 12px; }
+  .card__stage { display: flex; align-items: flex-end; justify-content: center; height: var(--stage-h); padding: 0 8%; position: relative; z-index: 1; }
+  .card__ledge {
+    height: var(--ledge); background: var(--shelf-wood);
+    background-image: linear-gradient(to bottom, var(--shelf-edge), var(--shelf-wood) 35%, color-mix(in oklch, var(--shelf-wood) 75%, black));
+    box-shadow: 0 6px 12px -4px rgb(var(--shadow-ink) / 0.35), inset 0 1px 0 color-mix(in oklch, var(--shelf-edge) 60%, white);
+    margin: -1px 0 0;
+  }
+  .card__meta { padding: var(--s1) var(--s0) var(--s2); display: grid; gap: 0.15rem; align-content: start; }
+  .card__title { font-size: var(--step-0); line-height: 1.2; color: var(--ink-strong); text-wrap: balance; transition: color var(--dur-fast); }
+  .card__author { color: var(--ink-soft); font-size: var(--step--2); letter-spacing: 0.02em; }
+  .card__count { color: var(--ink-mute); font-size: var(--step--2); }
+  .card:hover .card__title { color: var(--accent-deep); }
+</style>

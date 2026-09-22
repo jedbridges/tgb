@@ -1,0 +1,131 @@
+---
+/**
+ * A book as a CSS 3D object. Front cover (real image or typographic), spine, page edges, shadow.
+ * Renders as a <span> (inside a card link) or a <button> (detail page, openable).
+ */
+import { Image } from 'astro:assets';
+import { coverFor, type Work } from '~/lib/catalog';
+import { toneFor } from '~/lib/tone';
+import '~/styles/book3d.css';
+
+interface Props {
+  work: Work;
+  authorName: string;
+  width?: number;            // px
+  as?: 'span' | 'button';
+  pull?: boolean;            // hover pull-off-the-shelf
+  tilt?: boolean;            // pointer tilt
+  openable?: boolean;        // click opens cover (button only)
+  eager?: boolean;           // image loading priority
+  epigraph?: { text: string; source?: string };
+  class?: string;
+}
+const { work, authorName, width = 150, as = 'span', pull = true, tilt = false, openable = false, eager = false, epigraph, class: cls } = Astro.props;
+const { image, meta } = coverFor(work.id);
+const tone = toneFor(work.id);
+const ratio = image ? image.height / image.width : 1.52;
+const pages = work.data.pages ?? { short: 120, medium: 220, long: 480, epic: 900 }[work.data.length];
+const depth = Math.max(12, Math.min(58, Math.round(pages / 16)));
+const spine = meta?.spine ?? tone.bg;
+const spineInk = meta?.spineInk ?? tone.ink;
+const title = work.data.title;
+const titleClass = title.length > 40 ? 'xlong' : title.length > 22 ? 'long' : '';
+const Tag = as;
+const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --spine:${spine}; --spine-ink:${spineInk}; --tone-bg:${tone.bg}; --tone-ink:${tone.ink}`;
+---
+<Tag
+  class:list={['book', { 'book--button': as === 'button' }, cls]}
+  style={style}
+  data-book
+  data-pull={pull ? '' : undefined}
+  data-tilt={tilt ? '' : undefined}
+  data-openable={openable ? '' : undefined}
+  data-state="shelf"
+  type={as === 'button' ? 'button' : undefined}
+  aria-label={as === 'button' ? `${title} by ${authorName}. ${openable ? 'Open the cover' : ''}` : undefined}
+  aria-expanded={openable ? 'false' : undefined}
+>
+  <span class="book__scene">
+    <span class="book__body">
+      <span class="book__face book__front">
+        <span class="side side--art">
+          {image ? (
+            <Image src={image} alt={`Cover of ${title}`} width={Math.round(width * 2)} densities={[1, 2]} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : undefined} />
+          ) : (
+            <span class="cover-gen" role="img" aria-label={`${title} by ${authorName}`}>
+              <span class="cover-gen__series">The Great Books</span>
+              <span class:list={['cover-gen__title', titleClass]}>{title}</span>
+              <span class="cover-gen__author">{authorName}</span>
+            </span>
+          )}
+          <span class="book__gloss"></span>
+        </span>
+        {openable && <span class="side side--endpaper" aria-hidden="true"></span>}
+      </span>
+      <span class="book__face book__inner" aria-hidden="true">
+        {epigraph && <><span class="epigraph">“{epigraph.text}”</span>{epigraph.source && <span class="epigraph-src">{epigraph.source}</span>}</>}
+      </span>
+      <span class="book__face book__back"></span>
+      <span class="book__face book__spine"><span class="book__spine-text"><b>{authorName}</b>&ensp;<i>{title}</i></span></span>
+      <span class="book__face book__pages"></span>
+      <span class="book__face book__top"></span>
+      <span class="book__face book__bottom"></span>
+    </span>
+    <span class="book__shadow"></span>
+  </span>
+</Tag>
+<script>
+  // One delegated controller per page for every book: pointer tilt, and open/close.
+  const fine = matchMedia('(hover: hover) and (pointer: fine)');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  let raf = 0;
+  let pending: { el: HTMLElement; nx: number; ny: number } | null = null;
+
+  function apply() {
+    raf = 0;
+    if (!pending) return;
+    const { el, nx, ny } = pending;
+    const open = el.dataset.state === 'open';
+    const base = open ? -8 : 6;
+    el.style.setProperty('--rx', `${(-ny * (open ? 4 : 9)).toFixed(2)}deg`);
+    el.style.setProperty('--ry', `${(base + nx * (open ? 6 : 14)).toFixed(2)}deg`);
+    el.setAttribute('data-tilting', '');
+  }
+  document.addEventListener('pointermove', (e) => {
+    if (!fine.matches || reduce.matches) return;
+    const el = (e.target as HTMLElement).closest<HTMLElement>('[data-book][data-tilt], .card [data-book]');
+    if (!el) return;
+    const host = el.closest<HTMLElement>('.card') ?? el;
+    const r = host.getBoundingClientRect();
+    pending = { el, nx: ((e.clientX - r.left) / r.width) * 2 - 1, ny: ((e.clientY - r.top) / r.height) * 2 - 1 };
+    if (!raf) raf = requestAnimationFrame(apply);
+  }, { passive: true });
+  document.addEventListener('pointerout', (e) => {
+    const el = (e.target as HTMLElement).closest<HTMLElement>('[data-book]');
+    if (!el) return;
+    const host = el.closest<HTMLElement>('.card') ?? el;
+    if (host.contains(e.relatedTarget as Node)) return;
+    el.style.removeProperty('--rx'); el.style.removeProperty('--ry'); el.removeAttribute('data-tilting');
+  });
+  function toggle(el: HTMLElement) {
+    const open = el.dataset.state !== 'open';
+    el.dataset.state = open ? 'open' : 'shelf';
+    el.setAttribute('aria-expanded', String(open));
+    el.style.removeProperty('--rx'); el.style.removeProperty('--ry');
+  }
+  document.addEventListener('click', (e) => {
+    const el = (e.target as HTMLElement).closest<HTMLElement>('button[data-book][data-openable]');
+    if (el) toggle(el);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    document.querySelectorAll<HTMLElement>('[data-book][data-state="open"]').forEach(toggle);
+  });
+  // Only in-viewport books get a compositor layer hint.
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      for (const en of entries) (en.target.querySelector('.book__body') as HTMLElement).style.willChange = en.isIntersecting ? 'transform' : '';
+    }, { rootMargin: '120px' });
+    document.querySelectorAll('[data-book]').forEach((b) => io.observe(b));
+  }
+</script>

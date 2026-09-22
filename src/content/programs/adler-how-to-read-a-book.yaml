@@ -1,0 +1,1130 @@
+name: How to Read a Book Recommended Reading List
+shortName: Adler's list
+kind: list
+institution: Mortimer J. Adler and Charles Van Doren
+url: https://en.wikipedia.org/wiki/How_to_Read_a_Book
+description: >-
+  Mortimer Adler's How to Read a Book was first published in 1940 and heavily revised in 1972 with Charles Van
+  Doren. Appendix A of the 1972 edition, "A Recommended Reading List", gives 137 numbered entries in roughly
+  chronological order, each naming an author (or an anonymous work) and one or more recommended works. The
+  authors describe it as a list of books they would choose to take to a desert island, and note that it is
+  confined to the Western tradition because they did not feel competent to judge non-Western books.
+
+  Most entries name several works. Here each entry appears as up to four items, one per major work, with the
+  remaining titles named by the authors gathered into the note of the first item for that author.
+sourceNote: "Appendix A, How to Read a Book, revised edition (Simon and Schuster, 1972); transcribed from the reproductions at https://www.tosummarise.com/mortimer-adlers-reading-list-from-how-to-read-a-book/ and https://mortimeradlereadinglist.com/mortimer-adler-reading-list/, cross-checked against each other, checked 2026-09-21"
+segmentLabel: List
+order: 9
+segments:
+  - id: list
+    label: The list
+    order: 1
+    items:
+      - work: homer-iliad
+        title: The Iliad
+        author: Homer
+        note: "1"
+      - work: homer-odyssey
+        title: The Odyssey
+        author: Homer
+        note: "1"
+      - work: bible
+        title: The Old Testament
+        author: Anonymous
+        note: "2"
+      - work: aeschylus-oresteia
+        title: Tragedies
+        author: Aeschylus
+        note: "3"
+      - work: sophocles-oedipus-the-king
+        title: Tragedies
+        author: Sophocles
+        note: "4"
+      - work: herodotus-histories
+        title: The Histories
+        author: Herodotus
+        note: "5"
+      - work: euripides-medea
+        title: Medea
+        author: Euripides
+        note: "6: Tragedies, especially Medea, Hippolytus, The Bacchae"
+      - work: euripides-hippolytus
+        title: Hippolytus
+        author: Euripides
+        note: "6"
+      - work: euripides-bacchae
+        title: The Bacchae
+        author: Euripides
+        note: "6"
+      - work: thucydides-peloponnesian-war
+        title: History of the Peloponnesian War
+        author: Thucydides
+        note: "7"
+      - work: hippocrates-works
+        title: Medical Writings
+        author: Hippocrates
+        note: "8"
+      - work: aristophanes-clouds
+        title: The Clouds
+        author: Aristophanes
+        note: "9: Comedies, especially The Clouds, The Birds, The Frogs"
+      - work: aristophanes-birds
+        title: The Birds
+        author: Aristophanes
+        note: "9"
+      - work: aristophanes-frogs
+        title: The Frogs
+        author: Aristophanes
+        note: "9"
+      - work: plato-republic
+        title: Republic
+        author: Plato
+        note: "10: Dialogues, especially Republic, Symposium, Phaedo, Meno, Apology, Phaedrus, Protagoras, Gorgias, Sophist, Theaetetus"
+      - work: plato-symposium
+        title: Symposium
+        author: Plato
+        note: "10"
+      - work: plato-phaedo
+        title: Phaedo
+        author: Plato
+        note: "10"
+      - work: plato-apology
+        title: Apology
+        author: Plato
+        note: "10"
+      - work: aristotle-organon
+        title: Organon
+        author: Aristotle
+        note: "11: Works, especially Organon, Physics, Metaphysics, On the Soul, Nicomachean Ethics, Politics, Rhetoric, Poetics"
+      - work: aristotle-physics
+        title: Physics
+        author: Aristotle
+        note: "11"
+      - work: aristotle-metaphysics
+        title: Metaphysics
+        author: Aristotle
+        note: "11"
+      - work: aristotle-nicomachean-ethics
+        title: Nicomachean Ethics
+        author: Aristotle
+        note: "11"
+      - work: epicurus-letters
+        title: Letter to Herodotus and Letter to Menoeceus
+        author: Epicurus
+        note: "12"
+      - work: euclid-elements
+        title: Elements
+        author: Euclid
+        note: "13"
+      - work: archimedes-works
+        title: Works
+        author: Archimedes
+        note: "14: especially On the Equilibrium of Planes, On Floating Bodies, The Sand-Reckoner"
+      - work: apollonius-conics
+        title: On Conic Sections
+        author: Apollonius of Perga
+        note: "15"
+      - work: cicero-on-duties
+        title: Works
+        author: Cicero
+        note: "16: especially Orations, On Friendship, On Old Age"
+      - work: lucretius-on-the-nature-of-things
+        title: On the Nature of Things
+        author: Lucretius
+        note: "17"
+      - work: virgil-aeneid
+        title: Works
+        author: Virgil
+        note: "18"
+      - work: horace-odes
+        title: Odes and Epodes
+        author: Horace
+        note: "19: Works, especially Odes and Epodes, The Art of Poetry"
+      - work: livy-history-of-rome
+        title: History of Rome
+        author: Livy
+        note: "20"
+      - work: ovid-metamorphoses
+        title: Metamorphoses
+        author: Ovid
+        note: "21: Works, especially Metamorphoses"
+      - work: plutarch-lives
+        title: Lives of the Noble Grecians and Romans
+        author: Plutarch
+        note: "22"
+      - work: plutarch-moralia
+        title: Moralia
+        author: Plutarch
+        note: "22"
+      - work: tacitus-histories
+        title: Histories
+        author: Tacitus
+        note: "23: Histories, Annals, Agricola, Germania"
+      - work: tacitus-annals
+        title: Annals
+        author: Tacitus
+        note: "23"
+      - work: nicomachus-introduction-to-arithmetic
+        title: Introduction to Arithmetic
+        author: Nicomachus of Gerasa
+        note: "24"
+      - work: epictetus-discourses
+        title: Discourses
+        author: Epictetus
+        note: "25"
+      - work: epictetus-enchiridion
+        title: Enchiridion
+        author: Epictetus
+        note: "25 (Handbook)"
+      - work: ptolemy-almagest
+        title: Almagest
+        author: Ptolemy
+        note: "26"
+      - work: lucian-works
+        title: Works
+        author: Lucian
+        note: "27: especially The Way to Write History, The True History, The Sale of Creeds"
+      - work: marcus-aurelius-meditations
+        title: Meditations
+        author: Marcus Aurelius
+        note: "28"
+      - work: galen-on-the-natural-faculties
+        title: On the Natural Faculties
+        author: Galen
+        note: "29"
+      - work: bible
+        title: The New Testament
+        author: Anonymous
+        note: "30"
+      - work: plotinus-enneads
+        title: The Enneads
+        author: Plotinus
+        note: "31"
+      - work: augustine-on-the-teacher
+        title: On the Teacher
+        author: Augustine
+        note: "32: Works, especially On the Teacher, Confessions, The City of God, On Christian Doctrine"
+      - work: augustine-confessions
+        title: Confessions
+        author: Augustine
+        note: "32"
+      - work: augustine-city-of-god
+        title: The City of God
+        author: Augustine
+        note: "32"
+      - work: augustine-on-christian-doctrine
+        title: On Christian Doctrine
+        author: Augustine
+        note: "32"
+      - work: song-of-roland
+        title: The Song of Roland
+        author: Anonymous
+        note: "33"
+      - work: nibelungenlied
+        title: The Nibelungenlied
+        author: Anonymous
+        note: "34 (the Volsunga Saga is the Scandinavian version of the same legend)"
+      - work: njals-saga
+        title: The Saga of Burnt Njal
+        author: Anonymous
+        note: "35"
+      - work: aquinas-summa-theologica
+        title: Summa Theologica
+        author: Thomas Aquinas
+        note: "36"
+      - work: dante-new-life
+        title: The New Life
+        author: Dante Alighieri
+        note: "37: Works, especially The New Life, On Monarchy, The Divine Comedy"
+      - work: dante-on-monarchy
+        title: On Monarchy
+        author: Dante Alighieri
+        note: "37"
+      - work: dante-divine-comedy
+        title: The Divine Comedy
+        author: Dante Alighieri
+        note: "37"
+      - work: chaucer-troilus-and-criseyde
+        title: Troilus and Criseyde
+        author: Geoffrey Chaucer
+        note: "38: Works, especially Troilus and Criseyde, The Canterbury Tales"
+      - work: chaucer-canterbury-tales
+        title: The Canterbury Tales
+        author: Geoffrey Chaucer
+        note: "38"
+      - work: leonardo-notebooks
+        title: Notebooks
+        author: Leonardo da Vinci
+        note: "39"
+      - work: machiavelli-prince
+        title: The Prince
+        author: Niccolò Machiavelli
+        note: "40"
+      - work: machiavelli-discourses-on-livy
+        title: Discourses on the First Ten Books of Livy
+        author: Niccolò Machiavelli
+        note: "40"
+      - work: erasmus-praise-of-folly
+        title: The Praise of Folly
+        author: Desiderius Erasmus
+        note: "41"
+      - work: copernicus-on-the-revolutions
+        title: On the Revolutions of the Heavenly Spheres
+        author: Nicolaus Copernicus
+        note: "42"
+      - work: more-utopia
+        title: Utopia
+        author: Thomas More
+        note: "43"
+      - work: luther-three-treatises
+        title: Three Treatises
+        author: Martin Luther
+        note: "44: Three Treatises, Table-Talk"
+      - work: luther-table-talk
+        title: Table-Talk
+        author: Martin Luther
+        note: "44"
+      - work: rabelais-gargantua-and-pantagruel
+        title: Gargantua and Pantagruel
+        author: François Rabelais
+        note: "45"
+      - work: calvin-institutes-of-the-christian-religion
+        title: Institutes of the Christian Religion
+        author: John Calvin
+        note: "46"
+      - work: montaigne-essays
+        title: Essays
+        author: Michel de Montaigne
+        note: "47"
+      - work: gilbert-on-the-loadstone
+        title: On the Loadstone and Magnetic Bodies
+        author: William Gilbert
+        note: "48"
+      - work: cervantes-don-quixote
+        title: Don Quixote
+        author: Miguel de Cervantes
+        note: "49"
+      - work: spenser-prothalamion
+        title: Prothalamion
+        author: Edmund Spenser
+        note: "50"
+      - work: spenser-faerie-queene
+        title: The Faerie Queene
+        author: Edmund Spenser
+        note: "50"
+      - work: bacon-essays
+        title: Essays
+        author: Francis Bacon
+        note: "51: Essays, Advancement of Learning, Novum Organum, New Atlantis"
+      - work: bacon-advancement-of-learning
+        title: The Advancement of Learning
+        author: Francis Bacon
+        note: "51"
+      - work: bacon-novum-organum
+        title: Novum Organum
+        author: Francis Bacon
+        note: "51"
+      - work: bacon-new-atlantis
+        title: New Atlantis
+        author: Francis Bacon
+        note: "51"
+      - work: shakespeare-hamlet
+        title: Works
+        author: William Shakespeare
+        note: "52"
+      - work: galileo-starry-messenger
+        title: The Starry Messenger
+        author: Galileo Galilei
+        note: "53"
+      - work: galileo-two-new-sciences
+        title: Dialogues Concerning Two New Sciences
+        author: Galileo Galilei
+        note: "53"
+      - work: kepler-epitome-of-copernican-astronomy
+        title: Epitome of Copernican Astronomy
+        author: Johannes Kepler
+        note: "54"
+      - work: kepler-harmonies-of-the-world
+        title: Concerning the Harmonies of the World
+        author: Johannes Kepler
+        note: "54"
+      - work: harvey-on-the-motion-of-the-heart-and-blood
+        title: On the Motion of the Heart and Blood in Animals
+        author: William Harvey
+        note: "55: also On the Circulation of the Blood, On the Generation of Animals"
+      - work: hobbes-leviathan
+        title: Leviathan
+        author: Thomas Hobbes
+        note: "56"
+      - work: descartes-rules-for-the-direction-of-the-mind
+        title: Rules for the Direction of the Mind
+        author: René Descartes
+        note: "57: Rules for the Direction of the Mind, Discourse on Method, Geometry, Meditations on First Philosophy"
+      - work: descartes-discourse-on-method
+        title: Discourse on Method
+        author: René Descartes
+        note: "57"
+      - work: descartes-geometry
+        title: Geometry
+        author: René Descartes
+        note: "57"
+      - work: descartes-meditations
+        title: Meditations on First Philosophy
+        author: René Descartes
+        note: "57"
+      - work: milton-paradise-lost
+        title: Paradise Lost
+        author: John Milton
+        note: "58: Works, especially the minor poems, Areopagitica, Paradise Lost, Samson Agonistes"
+      - work: milton-areopagitica
+        title: Areopagitica
+        author: John Milton
+        note: "58"
+      - work: milton-samson-agonistes
+        title: Samson Agonistes
+        author: John Milton
+        note: "58"
+      - work: moliere-misanthrope
+        title: The Misanthrope
+        author: Molière
+        note: "59: Comedies, especially The Miser, The School for Wives, The Misanthrope, The Doctor in Spite of Himself, Tartuffe"
+      - work: moliere-tartuffe
+        title: Tartuffe
+        author: Molière
+        note: "59"
+      - work: moliere-miser
+        title: The Miser
+        author: Molière
+        note: "59"
+      - work: moliere-school-for-wives
+        title: The School for Wives
+        author: Molière
+        note: "59"
+      - work: pascal-provincial-letters
+        title: The Provincial Letters
+        author: Blaise Pascal
+        note: "60: The Provincial Letters, Pensées, scientific treatises"
+      - work: pascal-pensees
+        title: Pensées
+        author: Blaise Pascal
+        note: "60"
+      - work: huygens-treatise-on-light
+        title: Treatise on Light
+        author: Christiaan Huygens
+        note: "61"
+      - work: spinoza-ethics
+        title: Ethics
+        author: Baruch Spinoza
+        note: "62"
+      - work: locke-letter-concerning-toleration
+        title: A Letter Concerning Toleration
+        author: John Locke
+        note: "63: Letter Concerning Toleration, Of Civil Government (Second Treatise), Essay Concerning Human Understanding, Some Thoughts Concerning Education"
+      - work: locke-second-treatise-of-government
+        title: Second Treatise of Government
+        author: John Locke
+        note: "63 (Of Civil Government)"
+      - work: locke-essay-concerning-human-understanding
+        title: An Essay Concerning Human Understanding
+        author: John Locke
+        note: "63"
+      - work: locke-some-thoughts-concerning-education
+        title: Some Thoughts Concerning Education
+        author: John Locke
+        note: "63"
+      - work: racine-andromache
+        title: Andromache
+        author: Jean Racine
+        note: "64: Tragedies, especially Andromache, Phaedra"
+      - work: racine-phaedra
+        title: Phaedra
+        author: Jean Racine
+        note: "64"
+      - work: newton-principia
+        title: Mathematical Principles of Natural Philosophy
+        author: Isaac Newton
+        note: "65"
+      - work: newton-opticks
+        title: Opticks
+        author: Isaac Newton
+        note: "65"
+      - work: leibniz-discourse-on-metaphysics
+        title: Discourse on Metaphysics
+        author: Gottfried Wilhelm Leibniz
+        note: "66: Discourse on Metaphysics, New Essays Concerning Human Understanding, Monadology"
+      - work: leibniz-new-essays
+        title: New Essays Concerning Human Understanding
+        author: Gottfried Wilhelm Leibniz
+        note: "66"
+      - work: leibniz-monadology
+        title: Monadology
+        author: Gottfried Wilhelm Leibniz
+        note: "66"
+      - work: defoe-robinson-crusoe
+        title: Robinson Crusoe
+        author: Daniel Defoe
+        note: "67"
+      - work: swift-tale-of-a-tub
+        title: A Tale of a Tub
+        author: Jonathan Swift
+        note: "68: A Tale of a Tub, Journal to Stella, Gulliver's Travels, A Modest Proposal"
+      - work: swift-journal-to-stella
+        title: Journal to Stella
+        author: Jonathan Swift
+        note: "68"
+      - work: swift-gullivers-travels
+        title: Gulliver's Travels
+        author: Jonathan Swift
+        note: "68"
+      - work: swift-modest-proposal
+        title: A Modest Proposal
+        author: Jonathan Swift
+        note: "68"
+      - work: congreve-way-of-the-world
+        title: The Way of the World
+        author: William Congreve
+        note: "69"
+      - work: berkeley-principles-of-human-knowledge
+        title: Principles of Human Knowledge
+        author: George Berkeley
+        note: "70"
+      - work: pope-essay-on-criticism
+        title: An Essay on Criticism
+        author: Alexander Pope
+        note: "71: Essay on Criticism, Rape of the Lock, Essay on Man"
+      - work: pope-rape-of-the-lock
+        title: The Rape of the Lock
+        author: Alexander Pope
+        note: "71"
+      - work: pope-essay-on-man
+        title: An Essay on Man
+        author: Alexander Pope
+        note: "71"
+      - work: montesquieu-persian-letters
+        title: Persian Letters
+        author: Montesquieu
+        note: "72"
+      - work: montesquieu-spirit-of-the-laws
+        title: The Spirit of the Laws
+        author: Montesquieu
+        note: "72"
+      - work: voltaire-letters-on-the-english
+        title: Letters on the English
+        author: Voltaire
+        note: "73: Letters on the English, Candide, Philosophical Dictionary"
+      - work: voltaire-candide
+        title: Candide
+        author: Voltaire
+        note: "73"
+      - work: voltaire-philosophical-dictionary
+        title: Philosophical Dictionary
+        author: Voltaire
+        note: "73"
+      - work: fielding-joseph-andrews
+        title: Joseph Andrews
+        author: Henry Fielding
+        note: "74"
+      - work: fielding-tom-jones
+        title: Tom Jones
+        author: Henry Fielding
+        note: "74"
+      - work: johnson-vanity-of-human-wishes
+        title: The Vanity of Human Wishes
+        author: Samuel Johnson
+        note: "75: The Vanity of Human Wishes, Dictionary, Rasselas, The Lives of the Poets (especially the essays on Milton and Pope)"
+      - work: johnson-dictionary
+        title: A Dictionary of the English Language
+        author: Samuel Johnson
+        note: "75"
+      - work: johnson-rasselas
+        title: Rasselas
+        author: Samuel Johnson
+        note: "75"
+      - work: johnson-lives-of-the-poets
+        title: The Lives of the Poets
+        author: Samuel Johnson
+        note: "75: especially the essays on Milton and Pope"
+      - work: hume-treatise-of-human-nature
+        title: A Treatise of Human Nature
+        author: David Hume
+        note: "76: Treatise of Human Nature, Essays Moral and Political, Enquiry Concerning Human Understanding"
+      - work: hume-essays-moral-and-political
+        title: Essays, Moral and Political
+        author: David Hume
+        note: "76"
+      - work: hume-enquiry-concerning-human-understanding
+        title: An Enquiry Concerning Human Understanding
+        author: David Hume
+        note: "76"
+      - work: rousseau-discourse-on-inequality
+        title: Discourse on the Origin of Inequality
+        author: Jean-Jacques Rousseau
+        note: "77: On the Origin of Inequality, On Political Economy, Emile, The Social Contract"
+      - work: rousseau-discourse-on-political-economy
+        title: Discourse on Political Economy
+        author: Jean-Jacques Rousseau
+        note: "77"
+      - work: rousseau-emile
+        title: Emile
+        author: Jean-Jacques Rousseau
+        note: "77"
+      - work: rousseau-social-contract
+        title: The Social Contract
+        author: Jean-Jacques Rousseau
+        note: "77"
+      - work: sterne-tristram-shandy
+        title: Tristram Shandy
+        author: Laurence Sterne
+        note: "78"
+      - work: sterne-sentimental-journey
+        title: A Sentimental Journey Through France and Italy
+        author: Laurence Sterne
+        note: "78"
+      - work: smith-theory-of-moral-sentiments
+        title: The Theory of Moral Sentiments
+        author: Adam Smith
+        note: "79"
+      - work: smith-wealth-of-nations
+        title: The Wealth of Nations
+        author: Adam Smith
+        note: "79"
+      - work: kant-critique-of-pure-reason
+        title: Critique of Pure Reason
+        author: Immanuel Kant
+        note: "80: Critique of Pure Reason, Fundamental Principles of the Metaphysics of Morals, Critique of Practical Reason, The Science of Right, Critique of Judgment, Perpetual Peace"
+      - work: kant-groundwork-of-the-metaphysics-of-morals
+        title: Fundamental Principles of the Metaphysics of Morals
+        author: Immanuel Kant
+        note: "80"
+      - work: kant-critique-of-practical-reason
+        title: Critique of Practical Reason
+        author: Immanuel Kant
+        note: "80"
+      - work: kant-critique-of-judgment
+        title: Critique of Judgment
+        author: Immanuel Kant
+        note: "80"
+      - work: gibbon-decline-and-fall
+        title: The Decline and Fall of the Roman Empire
+        author: Edward Gibbon
+        note: "81: also Autobiography"
+      - work: boswell-london-journal
+        title: London Journal
+        author: James Boswell
+        note: "82: Journal (especially London Journal), Life of Samuel Johnson"
+      - work: boswell-life-of-johnson
+        title: Life of Samuel Johnson
+        author: James Boswell
+        note: "82"
+      - work: lavoisier-elements-of-chemistry
+        title: Elements of Chemistry
+        author: Antoine Lavoisier
+        note: "83"
+      - work: federalist-papers
+        title: The Federalist Papers
+        author: Alexander Hamilton, James Madison, and John Jay
+        note: "84: together with the Articles of Confederation, the Constitution of the United States, and the Declaration of Independence"
+      - work: bentham-principles-of-morals-and-legislation
+        title: An Introduction to the Principles of Morals and Legislation
+        author: Jeremy Bentham
+        note: "85: also Theory of Fictions"
+      - work: goethe-faust
+        title: Faust
+        author: Johann Wolfgang von Goethe
+        note: "86: Faust, Poetry and Truth"
+      - work: goethe-poetry-and-truth
+        title: Poetry and Truth
+        author: Johann Wolfgang von Goethe
+        note: "86"
+      - work: fourier-analytical-theory-of-heat
+        title: The Analytical Theory of Heat
+        author: Joseph Fourier
+        note: "87"
+      - work: hegel-phenomenology-of-spirit
+        title: Phenomenology of Spirit
+        author: G. W. F. Hegel
+        note: "88: Phenomenology of Spirit, Philosophy of Right, Lectures on the Philosophy of History"
+      - work: hegel-philosophy-of-right
+        title: Philosophy of Right
+        author: G. W. F. Hegel
+        note: "88"
+      - work: hegel-philosophy-of-history
+        title: Lectures on the Philosophy of History
+        author: G. W. F. Hegel
+        note: "88"
+      - work: wordsworth-poems
+        title: Poems
+        author: William Wordsworth
+        note: "89: especially Lyrical Ballads, Lucy poems, sonnets, The Prelude"
+      - work: coleridge-poems
+        title: Poems
+        author: Samuel Taylor Coleridge
+        note: "90: especially Kubla Khan, The Rime of the Ancient Mariner"
+      - work: coleridge-biographia-literaria
+        title: Biographia Literaria
+        author: Samuel Taylor Coleridge
+        note: "90"
+      - work: austen-pride-and-prejudice
+        title: Pride and Prejudice
+        author: Jane Austen
+        note: "91"
+      - work: austen-emma
+        title: Emma
+        author: Jane Austen
+        note: "91"
+      - work: clausewitz-on-war
+        title: On War
+        author: Carl von Clausewitz
+        note: "92"
+      - work: stendhal-red-and-the-black
+        title: The Red and the Black
+        author: Stendhal
+        note: "93: The Red and the Black, The Charterhouse of Parma, On Love"
+      - work: stendhal-charterhouse-of-parma
+        title: The Charterhouse of Parma
+        author: Stendhal
+        note: "93"
+      - work: stendhal-on-love
+        title: On Love
+        author: Stendhal
+        note: "93"
+      - work: byron-don-juan
+        title: Don Juan
+        author: Lord Byron
+        note: "94"
+      - work: schopenhauer-studies-in-pessimism
+        title: Studies in Pessimism
+        author: Arthur Schopenhauer
+        note: "95"
+      - work: faraday-chemical-history-of-a-candle
+        title: The Chemical History of a Candle
+        author: Michael Faraday
+        note: "96"
+      - work: faraday-experimental-researches-in-electricity
+        title: Experimental Researches in Electricity
+        author: Michael Faraday
+        note: "96"
+      - work: lyell-principles-of-geology
+        title: Principles of Geology
+        author: Charles Lyell
+        note: "97"
+      - work: comte-positive-philosophy
+        title: The Positive Philosophy
+        author: Auguste Comte
+        note: "98"
+      - work: balzac-pere-goriot
+        title: Père Goriot
+        author: Honoré de Balzac
+        note: "99"
+      - work: balzac-eugenie-grandet
+        title: Eugénie Grandet
+        author: Honoré de Balzac
+        note: "99"
+      - work: emerson-representative-men
+        title: Representative Men
+        author: Ralph Waldo Emerson
+        note: "100: Representative Men, Essays, Journal"
+      - work: emerson-essays
+        title: Essays
+        author: Ralph Waldo Emerson
+        note: "100"
+      - work: emerson-journals
+        title: Journal
+        author: Ralph Waldo Emerson
+        note: "100"
+      - work: hawthorne-scarlet-letter
+        title: The Scarlet Letter
+        author: Nathaniel Hawthorne
+        note: "101"
+      - work: tocqueville-democracy-in-america
+        title: Democracy in America
+        author: Alexis de Tocqueville
+        note: "102"
+      - work: mill-system-of-logic
+        title: A System of Logic
+        author: John Stuart Mill
+        note: "103: A System of Logic, On Liberty, Representative Government, Utilitarianism, The Subjection of Women, Autobiography"
+      - work: mill-on-liberty
+        title: On Liberty
+        author: John Stuart Mill
+        note: "103"
+      - work: mill-utilitarianism
+        title: Utilitarianism
+        author: John Stuart Mill
+        note: "103"
+      - work: mill-subjection-of-women
+        title: The Subjection of Women
+        author: John Stuart Mill
+        note: "103"
+      - work: darwin-origin-of-species
+        title: On the Origin of Species
+        author: Charles Darwin
+        note: "104: The Origin of Species, The Descent of Man, Autobiography"
+      - work: darwin-descent-of-man
+        title: The Descent of Man
+        author: Charles Darwin
+        note: "104"
+      - work: dickens-pickwick-papers
+        title: The Pickwick Papers
+        author: Charles Dickens
+        note: "105: Works, especially Pickwick Papers, David Copperfield, Hard Times"
+      - work: dickens-david-copperfield
+        title: David Copperfield
+        author: Charles Dickens
+        note: "105"
+      - work: dickens-hard-times
+        title: Hard Times
+        author: Charles Dickens
+        note: "105"
+      - work: bernard-introduction-to-experimental-medicine
+        title: An Introduction to the Study of Experimental Medicine
+        author: Claude Bernard
+        note: "106"
+      - work: thoreau-civil-disobedience
+        title: Civil Disobedience
+        author: Henry David Thoreau
+        note: "107"
+      - work: thoreau-walden
+        title: Walden
+        author: Henry David Thoreau
+        note: "107"
+      - work: marx-capital
+        title: Capital
+        author: Karl Marx
+        note: "108: Capital, together with the Communist Manifesto"
+      - work: marx-communist-manifesto
+        title: The Communist Manifesto
+        author: Karl Marx
+        note: "108"
+      - work: george-eliot-adam-bede
+        title: Adam Bede
+        author: George Eliot
+        note: "109"
+      - work: george-eliot-middlemarch
+        title: Middlemarch
+        author: George Eliot
+        note: "109"
+      - work: melville-moby-dick
+        title: Moby-Dick
+        author: Herman Melville
+        note: "110"
+      - work: melville-billy-budd
+        title: Billy Budd
+        author: Herman Melville
+        note: "110"
+      - work: dostoevsky-crime-and-punishment
+        title: Crime and Punishment
+        author: Fyodor Dostoevsky
+        note: "111"
+      - work: dostoevsky-idiot
+        title: The Idiot
+        author: Fyodor Dostoevsky
+        note: "111"
+      - work: dostoevsky-brothers-karamazov
+        title: The Brothers Karamazov
+        author: Fyodor Dostoevsky
+        note: "111"
+      - work: flaubert-madame-bovary
+        title: Madame Bovary
+        author: Gustave Flaubert
+        note: "112"
+      - work: flaubert-three-tales
+        title: Three Stories
+        author: Gustave Flaubert
+        note: "112"
+      - work: ibsen-hedda-gabler
+        title: Hedda Gabler
+        author: Henrik Ibsen
+        note: "113: Plays, especially Hedda Gabler, A Doll's House, The Wild Duck"
+      - work: ibsen-dolls-house
+        title: A Doll's House
+        author: Henrik Ibsen
+        note: "113"
+      - work: ibsen-wild-duck
+        title: The Wild Duck
+        author: Henrik Ibsen
+        note: "113"
+      - work: tolstoy-war-and-peace
+        title: War and Peace
+        author: Leo Tolstoy
+        note: "114: War and Peace, Anna Karenina, What Is Art?, Twenty-Three Tales"
+      - work: tolstoy-anna-karenina
+        title: Anna Karenina
+        author: Leo Tolstoy
+        note: "114"
+      - work: tolstoy-what-is-art
+        title: What Is Art?
+        author: Leo Tolstoy
+        note: "114"
+      - work: tolstoy-twenty-three-tales
+        title: Twenty-Three Tales
+        author: Leo Tolstoy
+        note: "114"
+      - work: twain-huckleberry-finn
+        title: Adventures of Huckleberry Finn
+        author: Mark Twain
+        note: "115"
+      - work: twain-mysterious-stranger
+        title: The Mysterious Stranger
+        author: Mark Twain
+        note: "115"
+      - work: william-james-principles-of-psychology
+        title: The Principles of Psychology
+        author: William James
+        note: "116: Principles of Psychology, Varieties of Religious Experience, Pragmatism, Essays in Radical Empiricism"
+      - work: william-james-varieties-of-religious-experience
+        title: The Varieties of Religious Experience
+        author: William James
+        note: "116"
+      - work: william-james-pragmatism
+        title: Pragmatism
+        author: William James
+        note: "116"
+      - work: william-james-essays-in-radical-empiricism
+        title: Essays in Radical Empiricism
+        author: William James
+        note: "116"
+      - work: henry-james-american
+        title: The American
+        author: Henry James
+        note: "117"
+      - work: henry-james-ambassadors
+        title: The Ambassadors
+        author: Henry James
+        note: "117"
+      - work: nietzsche-thus-spoke-zarathustra
+        title: Thus Spoke Zarathustra
+        author: Friedrich Nietzsche
+        note: "118: Thus Spoke Zarathustra, Beyond Good and Evil, The Genealogy of Morals, The Will to Power"
+      - work: nietzsche-beyond-good-and-evil
+        title: Beyond Good and Evil
+        author: Friedrich Nietzsche
+        note: "118"
+      - work: nietzsche-genealogy-of-morals
+        title: On the Genealogy of Morals
+        author: Friedrich Nietzsche
+        note: "118"
+      - work: nietzsche-will-to-power
+        title: The Will to Power
+        author: Friedrich Nietzsche
+        note: "118"
+      - work: poincare-science-and-hypothesis
+        title: Science and Hypothesis
+        author: Henri Poincaré
+        note: "119"
+      - work: poincare-science-and-method
+        title: Science and Method
+        author: Henri Poincaré
+        note: "119"
+      - work: freud-interpretation-of-dreams
+        title: The Interpretation of Dreams
+        author: Sigmund Freud
+        note: "120: Interpretation of Dreams, Introductory Lectures on Psychoanalysis, Civilization and Its Discontents, New Introductory Lectures on Psychoanalysis"
+      - work: freud-introductory-lectures-on-psychoanalysis
+        title: Introductory Lectures on Psychoanalysis
+        author: Sigmund Freud
+        note: "120"
+      - work: freud-civilization-and-its-discontents
+        title: Civilization and Its Discontents
+        author: Sigmund Freud
+        note: "120"
+      - work: freud-new-introductory-lectures
+        title: New Introductory Lectures on Psychoanalysis
+        author: Sigmund Freud
+        note: "120"
+      - work: shaw-man-and-superman
+        title: Man and Superman
+        author: George Bernard Shaw
+        note: "121: Plays and prefaces, especially Man and Superman, Major Barbara, Caesar and Cleopatra, Pygmalion, Saint Joan"
+      - work: shaw-major-barbara
+        title: Major Barbara
+        author: George Bernard Shaw
+        note: "121"
+      - work: shaw-pygmalion
+        title: Pygmalion
+        author: George Bernard Shaw
+        note: "121"
+      - work: shaw-saint-joan
+        title: Saint Joan
+        author: George Bernard Shaw
+        note: "121"
+      - work: planck-origin-and-development-of-the-quantum-theory
+        title: Origin and Development of the Quantum Theory
+        author: Max Planck
+        note: "122: also Where Is Science Going?, Scientific Autobiography"
+      - work: planck-where-is-science-going
+        title: Where Is Science Going?
+        author: Max Planck
+        note: "122"
+      - work: planck-scientific-autobiography
+        title: Scientific Autobiography
+        author: Max Planck
+        note: "122"
+      - work: bergson-time-and-free-will
+        title: Time and Free Will
+        author: Henri Bergson
+        note: "123: Time and Free Will, Matter and Memory, Creative Evolution, The Two Sources of Morality and Religion"
+      - work: bergson-matter-and-memory
+        title: Matter and Memory
+        author: Henri Bergson
+        note: "123"
+      - work: bergson-creative-evolution
+        title: Creative Evolution
+        author: Henri Bergson
+        note: "123"
+      - work: bergson-two-sources-of-morality-and-religion
+        title: The Two Sources of Morality and Religion
+        author: Henri Bergson
+        note: "123"
+      - work: dewey-how-we-think
+        title: How We Think
+        author: John Dewey
+        note: "124: How We Think, Democracy and Education, Experience and Nature, Logic: The Theory of Inquiry"
+      - work: dewey-democracy-and-education
+        title: Democracy and Education
+        author: John Dewey
+        note: "124"
+      - work: dewey-experience-and-nature
+        title: Experience and Nature
+        author: John Dewey
+        note: "124"
+      - work: dewey-logic-theory-of-inquiry
+        title: "Logic: The Theory of Inquiry"
+        author: John Dewey
+        note: "124"
+      - work: whitehead-introduction-to-mathematics
+        title: An Introduction to Mathematics
+        author: Alfred North Whitehead
+        note: "125: Introduction to Mathematics, Science and the Modern World, The Aims of Education, Adventures of Ideas"
+      - work: whitehead-science-and-the-modern-world
+        title: Science and the Modern World
+        author: Alfred North Whitehead
+        note: "125"
+      - work: whitehead-aims-of-education
+        title: The Aims of Education and Other Essays
+        author: Alfred North Whitehead
+        note: "125"
+      - work: whitehead-adventures-of-ideas
+        title: Adventures of Ideas
+        author: Alfred North Whitehead
+        note: "125"
+      - work: santayana-life-of-reason
+        title: The Life of Reason
+        author: George Santayana
+        note: "126: The Life of Reason, Skepticism and Animal Faith, Persons and Places"
+      - work: santayana-skepticism-and-animal-faith
+        title: Skepticism and Animal Faith
+        author: George Santayana
+        note: "126"
+      - work: santayana-persons-and-places
+        title: Persons and Places
+        author: George Santayana
+        note: "126"
+      - work: lenin-state-and-revolution
+        title: The State and Revolution
+        author: Vladimir Lenin
+        note: "127"
+      - work: proust-in-search-of-lost-time
+        title: Remembrance of Things Past
+        author: Marcel Proust
+        note: "128"
+      - work: russell-problems-of-philosophy
+        title: The Problems of Philosophy
+        author: Bertrand Russell
+        note: "129: The Problems of Philosophy, The Analysis of Mind, An Inquiry into Meaning and Truth, Human Knowledge: Its Scope and Limits"
+      - work: russell-analysis-of-mind
+        title: The Analysis of Mind
+        author: Bertrand Russell
+        note: "129"
+      - work: russell-inquiry-into-meaning-and-truth
+        title: An Inquiry into Meaning and Truth
+        author: Bertrand Russell
+        note: "129"
+      - work: russell-human-knowledge
+        title: "Human Knowledge: Its Scope and Limits"
+        author: Bertrand Russell
+        note: "129"
+      - work: mann-magic-mountain
+        title: The Magic Mountain
+        author: Thomas Mann
+        note: "130"
+      - work: mann-joseph-and-his-brothers
+        title: Joseph and His Brothers
+        author: Thomas Mann
+        note: "130"
+      - work: einstein-meaning-of-relativity
+        title: The Meaning of Relativity
+        author: Albert Einstein
+        note: "131: The Meaning of Relativity, On the Method of Theoretical Physics, The Evolution of Physics (with L. Infeld)"
+      - work: einstein-on-the-method-of-theoretical-physics
+        title: On the Method of Theoretical Physics
+        author: Albert Einstein
+        note: "131"
+      - work: einstein-evolution-of-physics
+        title: The Evolution of Physics
+        author: Albert Einstein
+        note: "131 (with Leopold Infeld)"
+      - work: joyce-dubliners
+        title: Dubliners
+        author: James Joyce
+        note: "132: The Dead"
+      - work: joyce-portrait-of-the-artist
+        title: A Portrait of the Artist as a Young Man
+        author: James Joyce
+        note: "132"
+      - work: joyce-ulysses
+        title: Ulysses
+        author: James Joyce
+        note: "132"
+      - work: maritain-art-and-scholasticism
+        title: Art and Scholasticism
+        author: Jacques Maritain
+        note: "133: Art and Scholasticism, The Degrees of Knowledge, The Rights of Man and Natural Law, True Humanism"
+      - work: maritain-degrees-of-knowledge
+        title: The Degrees of Knowledge
+        author: Jacques Maritain
+        note: "133"
+      - work: maritain-rights-of-man-and-natural-law
+        title: The Rights of Man and Natural Law
+        author: Jacques Maritain
+        note: "133"
+      - work: maritain-true-humanism
+        title: True Humanism
+        author: Jacques Maritain
+        note: "133"
+      - work: kafka-trial
+        title: The Trial
+        author: Franz Kafka
+        note: "134"
+      - work: kafka-castle
+        title: The Castle
+        author: Franz Kafka
+        note: "134"
+      - work: toynbee-study-of-history
+        title: A Study of History
+        author: Arnold J. Toynbee
+        note: "135"
+      - work: toynbee-civilization-on-trial
+        title: Civilization on Trial
+        author: Arnold J. Toynbee
+        note: "135"
+      - work: sartre-nausea
+        title: Nausea
+        author: Jean-Paul Sartre
+        note: "136"
+      - work: sartre-no-exit
+        title: No Exit
+        author: Jean-Paul Sartre
+        note: "136"
+      - work: sartre-being-and-nothingness
+        title: Being and Nothingness
+        author: Jean-Paul Sartre
+        note: "136"
+      - work: solzhenitsyn-first-circle
+        title: The First Circle
+        author: Aleksandr Solzhenitsyn
+        note: "137"
+      - work: solzhenitsyn-cancer-ward
+        title: Cancer Ward
+        author: Aleksandr Solzhenitsyn
+        note: "137"

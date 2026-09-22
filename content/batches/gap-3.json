@@ -1,0 +1,689 @@
+{
+ "works": [
+  {
+   "slug": "mill-on-liberty",
+   "title": "On Liberty",
+   "author": "John Stuart Mill",
+   "authorSlug": "mill",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "103"
+    },
+    {
+     "program": "columbia-core",
+     "segment": "Contemporary Civilization"
+    },
+    {
+     "program": "great-books-of-the-western-world",
+     "segment": "Volume 40"
+    },
+    {
+     "program": "harvard-classics",
+     "segment": "Volume 25"
+    },
+    {
+     "program": "notre-dame-pls",
+     "segment": "Seminar V"
+    }
+   ]
+  },
+  {
+   "slug": "mill-utilitarianism",
+   "title": "Utilitarianism",
+   "author": "John Stuart Mill",
+   "authorSlug": "mill",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "103"
+    },
+    {
+     "program": "great-books-of-the-western-world",
+     "segment": "Volume 40"
+    },
+    {
+     "program": "yale-directed-studies",
+     "segment": "Philosophy"
+    }
+   ]
+  },
+  {
+   "slug": "mill-autobiography",
+   "title": "Autobiography",
+   "author": "John Stuart Mill",
+   "authorSlug": "mill",
+   "programs": [
+    {
+     "program": "harvard-classics",
+     "segment": "Volume 25"
+    }
+   ]
+  },
+  {
+   "slug": "mill-representative-government",
+   "title": "Considerations on Representative Government",
+   "author": "John Stuart Mill",
+   "authorSlug": "mill",
+   "programs": [
+    {
+     "program": "great-books-of-the-western-world",
+     "segment": "Volume 40"
+    }
+   ]
+  },
+  {
+   "slug": "mill-subjection-of-women",
+   "title": "The Subjection of Women",
+   "author": "John Stuart Mill",
+   "authorSlug": "mill",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "103"
+    }
+   ]
+  },
+  {
+   "slug": "mill-system-of-logic",
+   "title": "A System of Logic",
+   "author": "John Stuart Mill",
+   "authorSlug": "mill",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "103: A System of Logic, On Liberty, Representative Government, Utilitarianism, The Subjection of Women, Autobiography"
+    }
+   ]
+  },
+  {
+   "slug": "hume-enquiry-concerning-human-understanding",
+   "title": "An Enquiry Concerning Human Understanding",
+   "author": "David Hume",
+   "authorSlug": "hume",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "76"
+    },
+    {
+     "program": "great-books-of-the-western-world",
+     "segment": "Volume 33"
+    },
+    {
+     "program": "harvard-classics",
+     "segment": "Volume 37"
+    },
+    {
+     "program": "notre-dame-pls",
+     "segment": "Seminar IV"
+    },
+    {
+     "program": "thomas-aquinas-college",
+     "segment": "Junior",
+     "note": "Seminar"
+    },
+    {
+     "program": "yale-directed-studies",
+     "segment": "Philosophy",
+     "note": "sections 1-5, 7-8, 12"
+    }
+   ]
+  },
+  {
+   "slug": "hume-treatise-of-human-nature",
+   "title": "A Treatise of Human Nature",
+   "author": "David Hume",
+   "authorSlug": "hume",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "76: Treatise of Human Nature, Essays Moral and Political, Enquiry Concerning Human Understanding"
+    },
+    {
+     "program": "st-johns",
+     "segment": "Junior",
+     "note": "selections"
+    },
+    {
+     "program": "yale-directed-studies",
+     "segment": "Philosophy",
+     "note": "I.4.6; II.1.1; II.3.3-4; III.1"
+    }
+   ]
+  },
+  {
+   "slug": "hume-essays-moral-and-political",
+   "title": "Essays, Moral and Political",
+   "author": "David Hume",
+   "authorSlug": "hume",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "76"
+    }
+   ]
+  },
+  {
+   "slug": "hume-of-the-standard-of-taste",
+   "title": "Of the Standard of Taste",
+   "author": "David Hume",
+   "authorSlug": "hume",
+   "programs": [
+    {
+     "program": "harvard-classics",
+     "segment": "Volume 27"
+    }
+   ]
+  },
+  {
+   "slug": "tocqueville-democracy-in-america",
+   "title": "Democracy in America",
+   "author": "Alexis de Tocqueville",
+   "authorSlug": "tocqueville",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "102"
+    },
+    {
+     "program": "chicago-basic-program",
+     "segment": "Year 4",
+     "note": "Spring seminar"
+    },
+    {
+     "program": "columbia-core",
+     "segment": "Contemporary Civilization",
+     "note": "selections"
+    },
+    {
+     "program": "great-books-of-the-western-world",
+     "segment": "Volume 44"
+    },
+    {
+     "program": "notre-dame-pls",
+     "segment": "Seminar V"
+    },
+    {
+     "program": "st-johns",
+     "segment": "Senior",
+     "note": "selections"
+    },
+    {
+     "program": "thomas-aquinas-college",
+     "segment": "Senior",
+     "note": "Seminar"
+    },
+    {
+     "program": "yale-directed-studies",
+     "segment": "Historical and Political Thought",
+     "note": "Vol. I: Introduction; I.2-5; II.1, 3-4, 6-9. Vol. II: Notice; II.1-5, 8-10, 20; IV.6-8"
+    }
+   ]
+  },
+  {
+   "slug": "tocqueville-essay-on-algeria",
+   "title": "Essay on Algeria",
+   "author": "Alexis de Tocqueville",
+   "authorSlug": "tocqueville",
+   "programs": [
+    {
+     "program": "columbia-core",
+     "segment": "Contemporary Civilization",
+     "note": "excerpt"
+    }
+   ]
+  },
+  {
+   "slug": "tocqueville-old-regime-and-the-revolution",
+   "title": "The Old Regime and the Revolution",
+   "author": "Alexis de Tocqueville",
+   "authorSlug": "tocqueville",
+   "programs": [
+    {
+     "program": "thomas-aquinas-college",
+     "segment": "Senior",
+     "note": "Seminar"
+    }
+   ]
+  },
+  {
+   "slug": "carlyle-characteristics",
+   "title": "Characteristics",
+   "author": "Thomas Carlyle",
+   "authorSlug": "carlyle",
+   "programs": [
+    {
+     "program": "harvard-classics",
+     "segment": "Volume 25"
+    }
+   ]
+  },
+  {
+   "slug": "carlyle-inaugural-address-at-edinburgh",
+   "title": "Inaugural Address at Edinburgh",
+   "author": "Thomas Carlyle",
+   "authorSlug": "carlyle",
+   "programs": [
+    {
+     "program": "harvard-classics",
+     "segment": "Volume 25"
+    }
+   ]
+  },
+  {
+   "slug": "carlyle-sir-walter-scott",
+   "title": "Sir Walter Scott",
+   "author": "Thomas Carlyle",
+   "authorSlug": "carlyle",
+   "programs": [
+    {
+     "program": "harvard-classics",
+     "segment": "Volume 25"
+    }
+   ]
+  },
+  {
+   "slug": "spinoza-ethics",
+   "title": "Ethics",
+   "author": "Baruch Spinoza",
+   "authorSlug": "spinoza",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "62"
+    },
+    {
+     "program": "great-books-of-the-western-world",
+     "segment": "Volume 28"
+    },
+    {
+     "program": "st-johns",
+     "segment": "Junior",
+     "note": "Part I; Part II through proposition 13"
+    }
+   ]
+  },
+  {
+   "slug": "spinoza-theologico-political-treatise",
+   "title": "Theologico-Political Treatise",
+   "author": "Baruch Spinoza",
+   "authorSlug": "spinoza",
+   "programs": [
+    {
+     "program": "thomas-aquinas-college",
+     "segment": "Junior",
+     "note": "Seminar"
+    }
+   ]
+  },
+  {
+   "slug": "marlowe-doctor-faustus",
+   "title": "Doctor Faustus",
+   "author": "Christopher Marlowe",
+   "authorSlug": "marlowe",
+   "programs": [
+    {
+     "program": "harvard-classics",
+     "segment": "Volume 19"
+    }
+   ]
+  },
+  {
+   "slug": "marlowe-edward-ii",
+   "title": "Edward the Second",
+   "author": "Christopher Marlowe",
+   "authorSlug": "marlowe",
+   "programs": [
+    {
+     "program": "harvard-classics",
+     "segment": "Volume 46"
+    }
+   ]
+  },
+  {
+   "slug": "copernicus-on-the-revolutions",
+   "title": "On the Revolutions of the Heavenly Spheres",
+   "author": "Nicolaus Copernicus",
+   "authorSlug": "copernicus",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "42"
+    },
+    {
+     "program": "great-books-of-the-western-world",
+     "segment": "Volume 15"
+    },
+    {
+     "program": "thomas-aquinas-college",
+     "segment": "Sophomore",
+     "note": "Mathematics tutorial"
+    }
+   ]
+  },
+  {
+   "slug": "ts-eliot-waste-land",
+   "title": "The Waste Land",
+   "author": "T. S. Eliot",
+   "authorSlug": "ts-eliot",
+   "programs": [
+    {
+     "program": "great-books-of-the-western-world",
+     "segment": "Volume 60"
+    },
+    {
+     "program": "thomas-aquinas-college",
+     "segment": "Senior",
+     "note": "Seminar; with Journey of the Magi"
+    }
+   ]
+  },
+  {
+   "slug": "burton-and-somerville-degrowth-a-defence",
+   "title": "Degrowth: A Defence",
+   "author": "Mark Burton and Peter Somerville",
+   "authorSlug": "burton-and",
+   "programs": [
+    {
+     "program": "columbia-core",
+     "segment": "Contemporary Civilization",
+     "note": "Climate and Futures unit"
+    }
+   ]
+  },
+  {
+   "slug": "elisabeth-of-bohemia-correspondence-with-descartes",
+   "title": "Correspondence with Descartes",
+   "author": "Elisabeth of Bohemia",
+   "authorSlug": "elisabeth-of",
+   "programs": [
+    {
+     "program": "yale-directed-studies",
+     "segment": "Philosophy",
+     "note": "selections"
+    }
+   ]
+  },
+  {
+   "slug": "helmholtz-on-the-conservation-of-force",
+   "title": "On the Conservation of Force",
+   "author": "Hermann von Helmholtz",
+   "authorSlug": "helmholtz",
+   "programs": [
+    {
+     "program": "harvard-classics",
+     "segment": "Volume 30",
+     "note": "Also Ice and Glaciers"
+    }
+   ]
+  },
+  {
+   "slug": "lenin-state-and-revolution",
+   "title": "The State and Revolution",
+   "author": "Vladimir Lenin",
+   "authorSlug": "lenin",
+   "programs": [
+    {
+     "program": "adler-how-to-read-a-book",
+     "segment": "The list",
+     "note": "127"
+    }
+   ]
+  },
+  {
+   "slug": "pirandello-six-characters-in-search-of-an-author",
+   "title": "Six Characters in Search of an Author",
+   "author": "Luigi Pirandello",
+   "authorSlug": "pirandello",
+   "programs": [
+    {
+     "program": "great-books-of-the-western-world",
+     "segment": "Volume 59"
+    }
+   ]
+  },
+  {
+   "slug": "supreme-court-opinions",
+   "title": "Supreme Court Opinions",
+   "author": "United States Supreme Court",
+   "authorSlug": "supreme-court",
+   "programs": [
+    {
+     "program": "st-johns",
+     "segment": "Senior",
+     "note": "Marbury v. Madison; Judiciary Act of 1789, sec. 13; Eakin v. Raub (Pa.); Dred Scott v. Sandford with Justice Curtis's dissent"
+    }
+   ]
+  }
+ ],
+ "authors": [
+  {
+   "slug": "mill",
+   "name": "John Stuart Mill",
+   "works": [
+    "mill-system-of-logic",
+    "mill-on-liberty",
+    "mill-utilitarianism",
+    "mill-subjection-of-women",
+    "mill-representative-government",
+    "mill-autobiography"
+   ]
+  },
+  {
+   "slug": "hume",
+   "name": "David Hume",
+   "works": [
+    "hume-treatise-of-human-nature",
+    "hume-essays-moral-and-political",
+    "hume-enquiry-concerning-human-understanding",
+    "hume-of-the-standard-of-taste"
+   ]
+  },
+  {
+   "slug": "tocqueville",
+   "name": "Alexis de Tocqueville",
+   "works": [
+    "tocqueville-democracy-in-america",
+    "tocqueville-essay-on-algeria",
+    "tocqueville-old-regime-and-the-revolution"
+   ]
+  },
+  {
+   "slug": "carlyle",
+   "name": "Thomas Carlyle",
+   "works": [
+    "carlyle-characteristics",
+    "carlyle-inaugural-address-at-edinburgh",
+    "carlyle-sir-walter-scott"
+   ]
+  },
+  {
+   "slug": "spinoza",
+   "name": "Baruch Spinoza",
+   "works": [
+    "spinoza-ethics",
+    "spinoza-theologico-political-treatise"
+   ]
+  },
+  {
+   "slug": "marlowe",
+   "name": "Christopher Marlowe",
+   "works": [
+    "marlowe-doctor-faustus",
+    "marlowe-edward-ii"
+   ]
+  },
+  {
+   "slug": "copernicus",
+   "name": "Nicolaus Copernicus",
+   "works": [
+    "copernicus-on-the-revolutions"
+   ]
+  },
+  {
+   "slug": "ts-eliot",
+   "name": "T. S. Eliot",
+   "works": [
+    "ts-eliot-waste-land"
+   ]
+  },
+  {
+   "slug": "burton-and",
+   "name": "Mark Burton and Peter Somerville",
+   "works": [
+    "burton-and-somerville-degrowth-a-defence"
+   ]
+  },
+  {
+   "slug": "elisabeth-of",
+   "name": "Elisabeth of Bohemia",
+   "works": [
+    "elisabeth-of-bohemia-correspondence-with-descartes"
+   ]
+  },
+  {
+   "slug": "helmholtz",
+   "name": "Hermann von Helmholtz",
+   "works": [
+    "helmholtz-on-the-conservation-of-force"
+   ]
+  },
+  {
+   "slug": "lenin",
+   "name": "Vladimir Lenin",
+   "works": [
+    "lenin-state-and-revolution"
+   ]
+  },
+  {
+   "slug": "pirandello",
+   "name": "Luigi Pirandello",
+   "works": [
+    "pirandello-six-characters-in-search-of-an-author"
+   ]
+  },
+  {
+   "slug": "supreme-court",
+   "name": "United States Supreme Court",
+   "works": [
+    "supreme-court-opinions"
+   ]
+  },
+  {
+   "slug": "augustine",
+   "name": "Augustine",
+   "works": [
+    "augustine-on-the-teacher",
+    "augustine-confessions",
+    "augustine-city-of-god",
+    "augustine-on-christian-doctrine",
+    "augustine-on-free-choice-of-the-will"
+   ]
+  },
+  {
+   "slug": "chekhov",
+   "name": "Anton Chekhov",
+   "works": [
+    "chekhov-uncle-vanya"
+   ]
+  },
+  {
+   "slug": "dessalines",
+   "name": "Jean-Jacques Dessalines",
+   "works": [
+    "haitian-declaration-of-independence",
+    "haitian-constitution-of-1805"
+   ]
+  },
+  {
+   "slug": "epicurus",
+   "name": "Epicurus",
+   "works": [
+    "epicurus-letters",
+    "epicurus-letter-to-menoeceus"
+   ]
+  },
+  {
+   "slug": "gandhi",
+   "name": "Mohandas K. Gandhi",
+   "works": [
+    "gandhi-hind-swaraj"
+   ]
+  },
+  {
+   "slug": "ibsen",
+   "name": "Henrik Ibsen",
+   "works": [
+    "ibsen-hedda-gabler",
+    "ibsen-dolls-house",
+    "ibsen-wild-duck",
+    "ibsen-master-builder"
+   ]
+  },
+  {
+   "slug": "lavoisier",
+   "name": "Antoine Lavoisier",
+   "works": [
+    "lavoisier-elements-of-chemistry"
+   ]
+  },
+  {
+   "slug": "machiavelli",
+   "name": "Niccolò Machiavelli",
+   "works": [
+    "machiavelli-prince",
+    "machiavelli-discourses-on-livy"
+   ]
+  },
+  {
+   "slug": "montaigne",
+   "name": "Michel de Montaigne",
+   "works": [
+    "montaigne-essays"
+   ]
+  },
+  {
+   "slug": "polybius",
+   "name": "Polybius",
+   "works": [
+    "polybius-histories"
+   ]
+  },
+  {
+   "slug": "sidney",
+   "name": "Philip Sidney",
+   "works": [
+    "sidney-defence-of-poesy"
+   ]
+  },
+  {
+   "slug": "spenser",
+   "name": "Edmund Spenser",
+   "works": [
+    "spenser-prothalamion",
+    "spenser-faerie-queene",
+    "spenser-epithalamion"
+   ]
+  },
+  {
+   "slug": "various",
+   "name": "Various",
+   "works": [
+    "hymns-of-the-christian-church",
+    "romantic-poetry-reader",
+    "stoics-reader"
+   ]
+  }
+ ]
+}

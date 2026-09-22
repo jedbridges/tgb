@@ -1,0 +1,209 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import { getImage } from 'astro:assets';
+import Base from '~/layouts/Base.astro';
+import Book3D from '~/components/Book3D.astro';
+import BookCard from '~/components/BookCard.astro';
+import BuyButtons from '~/components/BuyButtons.astro';
+import ProgramBadges from '~/components/ProgramBadges.astro';
+import { placeholderAuthor, authorOf, coverFor, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, loadCatalog } from '~/lib/catalog';
+import { authorUrl, taxUrl, url, workUrl } from '~/lib/url';
+import { bookLd, breadcrumbs } from '~/lib/seo';
+
+export async function getStaticPaths() {
+  const works = await getCollection('works');
+  return works.map((work) => ({ params: { slug: work.id }, props: { work } }));
+}
+const { work } = Astro.props;
+const author = await authorOf(work);
+const { Content } = await render(work);
+const { image } = coverFor(work.id);
+const og = image ? (await getImage({ src: image, width: 800, format: 'jpg' })).src : undefined;
+const related = await relatedWorks(work);
+const { authors } = await loadCatalog();
+const count = await programCount(work.id);
+const d = work.data;
+const [era, genre, region, language] = await Promise.all([
+  getEntry('eras', d.era.id), getEntry('genres', d.genre.id), getEntry('regions', d.region.id), getEntry('languages', d.language.id),
+]);
+const themeEntries = (await Promise.all(d.themes.map((t) => getEntry('themes', t.id)))).filter(Boolean);
+const keyThemeEntries = await Promise.all(d.keyThemes.map(async (k) => ({ ...k, entry: await getEntry('themes', k.theme.id) })));
+const isStub = d.status === 'stub';
+const first = d.highlights[0];
+const epigraph = first ? { text: first.text.length > 150 ? first.text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : first.text, source: first.location } : undefined;
+const description = d.synopsis.length > 158 ? d.synopsis.slice(0, 155).replace(/\s+\S*$/, '') + '…' : d.synopsis;
+const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'he', french: 'fr', german: 'de', italian: 'it', spanish: 'es', russian: 'ru' };
+---
+<Base title={`${d.title} by ${author.data.name}`} description={description} type="book" image={og} noindex={isStub}
+  jsonld={[bookLd(work, author, og ? new URL(og, Astro.site).toString() : undefined), breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }])]}>
+  <article class="work" data-pagefind-body data-pagefind-filter="type:Book">
+    <span class="visually-hidden" data-pagefind-meta="type:Book"></span>
+    <span class="visually-hidden" data-pagefind-meta={`author:${author.data.name}`}></span>
+    <span class="visually-hidden" data-pagefind-meta={`slug:${work.id}`}></span>
+    <span class="visually-hidden" data-pagefind-meta={`cover:${og ?? ''}`}></span>
+    <header class="wrap work__hero">
+      <div class="work__stage">
+        <Book3D work={work} authorName={author.data.name} width={230} as="button" tilt openable eager epigraph={epigraph} />
+        <p class="work__hint ui" aria-hidden="true">Click the book to open it</p>
+      </div>
+      <div class="work__head">
+        <p class="eyebrow reveal"><a href={url('/books/')}>The Great Books</a> · {count > 0 ? `On ${count} ${count === 1 ? 'list' : 'lists'}` : 'Catalogue'}</p>
+        <h1 class="reveal" style="--i:1" data-pagefind-meta="title">{d.title}</h1>
+        {d.subtitle && <p class="work__subtitle reveal" style="--i:2">{d.subtitle}</p>}
+        <p class="work__by reveal" style="--i:2">by <a href={authorUrl(author.id)}>{author.data.name}</a>{d.originalTitle && <span class="work__orig"> · <span lang={langCode[d.language.id]}>{d.originalTitle}</span></span>}</p>
+        <dl class="work__facts ui reveal" style="--i:3">
+          <div><dt>Written</dt><dd>{yearLabel(work)}</dd></div>
+          <div><dt>Era</dt><dd><a href={taxUrl('eras', d.era.id)}>{era?.data.label}</a></dd></div>
+          <div><dt>Form</dt><dd><a href={taxUrl('genres', d.genre.id)}>{genre?.data.label}</a></dd></div>
+          <div><dt>Language</dt><dd>{language?.data.label}</dd></div>
+          <div><dt>Length</dt><dd title={lengthHint[d.length]}>{lengthLabel[d.length]}{d.pages && <span class="work__pages"> · {d.pages} pp</span>}</dd></div>
+          <div><dt>Difficulty</dt><dd><span class="dots" aria-hidden="true">{[1, 2, 3, 4, 5].map((i) => <i class:list={{ on: i <= d.difficulty }}></i>)}</span> {difficultyLabel(d.difficulty)}</dd></div>
+        </dl>
+        <p class="work__synopsis reveal" style="--i:4">{d.synopsis}</p>
+        <div class="reveal" style="--i:5"><BuyButtons work={work} authorName={author.data.name} /></div>
+      </div>
+    </header>
+
+    <div class="wrap work__grid">
+      <div class="work__main">
+        {isStub ? (
+          <section class="prose work__stub">
+            <h2>Reading guide in progress</h2>
+            <p>The full guide to <em>{d.title}</em> is being written. The catalogue entry, program placements and buy links above are complete.</p>
+          </section>
+        ) : (
+          <>
+            {d.whyItMatters && (
+              <section class="work__why">
+                <h2 class="work__h">Why it's on the list</h2>
+                <p class="work__why-text">{d.whyItMatters}</p>
+              </section>
+            )}
+            {keyThemeEntries.length > 0 && (
+              <section>
+                <h2 class="work__h">Key themes</h2>
+                <dl class="themes">
+                  {keyThemeEntries.map((k) => (
+                    <div class="themes__item">
+                      <dt><a href={taxUrl('themes', k.theme.id)}>{k.entry?.data.label}</a></dt>
+                      <dd>{k.note}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+            )}
+            <section class="prose work__body">
+              <Content />
+            </section>
+            {d.highlights.length > 0 && (
+              <section class="highlights">
+                <h2 class="work__h">Highlights</h2>
+                <ol class="highlights__list">
+                  {d.highlights.map((h) => (
+                    <li>
+                      <blockquote>
+                        <p>{h.text}</p>
+                        <footer class="ui">{[h.location, h.translator && `trans. ${h.translator}`].filter(Boolean).join(' · ')}</footer>
+                      </blockquote>
+                      {h.note && <p class="highlights__note">{h.note}</p>}
+                    </li>
+                  ))}
+                </ol>
+              </section>
+            )}
+          </>
+        )}
+        <span class="visually-hidden">{[d.originalTitle, ...d.aliases, ...d.keywords, ...author.data.aliases].filter(Boolean).join(', ')}</span>
+      </div>
+
+      <aside class="work__side" data-pagefind-ignore>
+        <section>
+          <h2 class="side__h eyebrow">Assigned in</h2>
+          <ProgramBadges slug={work.id} />
+        </section>
+        <section>
+          <h2 class="side__h eyebrow">Themes</h2>
+          <ul class="chips">{themeEntries.map((t) => t && <li><a class="tag" href={taxUrl('themes', t.id)}>{t.data.label}</a></li>)}</ul>
+        </section>
+        <section>
+          <h2 class="side__h eyebrow">Tags</h2>
+          <ul class="chips">
+            <li><a class="tag" href={taxUrl('genres', d.genre.id)}>{genre?.data.label}</a></li>
+            {d.genres.map((g) => <li><a class="tag" href={taxUrl('genres', g.id)}>{g.id.replace(/-/g, ' ')}</a></li>)}
+            <li><a class="tag" href={taxUrl('eras', d.era.id)}>{era?.data.label}</a></li>
+            <li><a class="tag" href={url(`/books/`) + `?region=${d.region.id}`}>{region?.data.label}</a></li>
+            <li><a class="tag" href={url(`/books/`) + `?language=${d.language.id}`}>{language?.data.label}</a></li>
+            <li><a class="tag" href={url(`/books/`) + `?difficulty=${d.difficulty}`}>{difficultyLabel(d.difficulty)}</a></li>
+            <li><a class="tag" href={url(`/books/`) + `?length=${d.length}`}>{lengthLabel[d.length]}</a></li>
+          </ul>
+        </section>
+        {d.otherEditions.length > 0 && (
+          <section>
+            <h2 class="side__h eyebrow">Other editions</h2>
+            <ul class="editions ui">{d.otherEditions.map((e) => <li>{e.title ?? d.title}{e.translator && `, trans. ${e.translator}`}{e.publisher && ` (${e.publisher})`}{e.why && <span class="editions__why"> {e.why}</span>}</li>)}</ul>
+          </section>
+        )}
+      </aside>
+    </div>
+
+    {related.length > 0 && (
+      <section class="wrap related" data-pagefind-ignore>
+        <h2 class="work__h">Read next</h2>
+        <div class="shelf-grid">
+          {related.map((r, i) => <BookCard work={r} authorName={(authors.get(r.data.author.id) ?? placeholderAuthor(r.data.author.id)).data.name} width={120} index={i} />)}
+        </div>
+      </section>
+    )}
+  </article>
+</Base>
+<style>
+  .work__hero { display: grid; grid-template-columns: minmax(260px, 2fr) 3fr; gap: var(--s4); padding-block: var(--s4) var(--s3); align-items: start; }
+  .work__stage { position: sticky; top: 5rem; display: grid; justify-items: center; gap: var(--s2); padding: var(--s3) 0 var(--s1); }
+  .work__hint { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.06em; text-transform: uppercase; }
+  @media (hover: none) { .work__hint { display: none; } }
+  .work__head { display: grid; gap: var(--s1); align-content: start; }
+  .work__head h1 { font-style: italic; font-size: var(--step-4); line-height: 0.98; }
+  .work__subtitle { font-size: var(--step-1); color: var(--ink-soft); font-style: italic; margin-top: -0.4rem; }
+  .work__by { font-size: var(--step-1); color: var(--ink-soft); }
+  .work__by a { color: var(--ink-strong); }
+  .work__orig { color: var(--ink-mute); }
+  .work__facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--s1) var(--s2); margin: var(--s1) 0; padding: var(--s1) 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--paper-deeper); }
+  .work__facts div { display: grid; gap: 0.15rem; }
+  .work__facts dt { font-size: var(--step--2); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
+  .work__facts dd { margin: 0; color: var(--ink-strong); font-size: var(--step--1); }
+  .work__facts dd a { text-decoration: none; }
+  .work__facts dd a:hover { color: var(--accent-deep); }
+  .work__pages { color: var(--ink-mute); }
+  .dots { display: inline-flex; gap: 3px; vertical-align: middle; margin-right: 0.3em; }
+  .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--paper-deeper); }
+  .dots i.on { background: var(--accent); }
+  .work__synopsis { font-size: var(--step-1); line-height: 1.45; max-width: 58ch; text-wrap: pretty; }
+  .work__grid { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: var(--s4); padding-block: var(--s3); border-top: 1px solid var(--paper-deeper); }
+  .work__main { display: grid; gap: var(--s4); min-width: 0; }
+  .work__h { font-style: italic; font-size: var(--step-2); margin-bottom: var(--s2); }
+  .work__why { position: relative; padding-left: var(--s2); }
+  .work__why::before { content: ''; position: absolute; left: 0; top: 0.4rem; bottom: 0.4rem; width: 3px; background: var(--accent); }
+  .work__why-text { font-size: var(--step-1); line-height: 1.45; max-width: var(--measure); text-wrap: pretty; }
+  .themes { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: var(--s2) var(--s3); margin: 0; }
+  .themes__item dt { font-size: var(--step-1); }
+  .themes__item dt a { text-decoration: none; border-bottom: 1px solid var(--accent); }
+  .themes__item dd { margin: 0.35rem 0 0; color: var(--ink-soft); line-height: 1.5; }
+  .highlights__list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s3); }
+  .highlights__list li { max-width: var(--measure); }
+  .highlights__list blockquote { margin: 0; padding-left: var(--s2); border-left: 2px solid var(--accent); font-size: var(--step-1); line-height: 1.35; font-style: italic; }
+  .highlights__list blockquote footer { margin-top: 0.6rem; color: var(--ink-mute); font-size: var(--step--2); font-style: normal; letter-spacing: 0.04em; }
+  .highlights__note { margin-top: var(--s1); padding-left: var(--s2); color: var(--ink-soft); line-height: 1.5; }
+  .work__side { display: grid; gap: var(--s3); align-content: start; position: sticky; top: 5rem; }
+  .side__h { margin-bottom: var(--s1); }
+  .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .editions { margin: 0; padding-left: 1em; color: var(--ink-soft); display: grid; gap: 0.5rem; font-size: var(--step--2); }
+  .editions__why { color: var(--ink-mute); }
+  .related { padding-top: var(--s4); border-top: 1px solid var(--paper-deeper); }
+  .work__stub { padding: var(--s2); background: var(--paper-deep); border-radius: 4px; }
+  @media (max-width: 900px) {
+    .work__hero { grid-template-columns: 1fr; gap: var(--s2); }
+    .work__stage { position: static; padding-top: var(--s2); }
+    .work__grid { grid-template-columns: 1fr; }
+    .work__side { position: static; }
+  }
+</style>

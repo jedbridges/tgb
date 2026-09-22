@@ -1,0 +1,268 @@
+name: Basic Program of Liberal Education for Adults
+shortName: Chicago Basic Program
+kind: course
+institution: University of Chicago Graham School
+url: https://graham.uchicago.edu/program/basic-program-of-liberal-education/
+description: >-
+  The Basic Program of Liberal Education for Adults was founded at the University of Chicago in 1946, in the
+  wake of Robert Hutchins and Mortimer Adler's Great Books work, and is now run by the university's Graham
+  School. It is a four-year, non-credit certificate program for adults with no prerequisites, tests, papers, or
+  grades. Students progress as a cohort, taking one ten-week course in each of the Autumn, Winter, and Spring
+  quarters.
+
+  Each course pairs a ninety-minute Seminar, which covers three to five texts, with a ninety-minute Tutorial
+  devoted to the close reading of one or two texts, taught by different instructors and conducted by Socratic
+  discussion. The core sequence below follows the four-year curriculum overview published by the Graham School;
+  seminar and tutorial readings are marked in the notes.
+sourceNote: "Four-Year Core Sequence overview and per-quarter course pages, https://graham.uchicago.edu/program/basic-program-of-liberal-education/ and https://graham.uchicago.edu/course/basic-program-year-1-autumn/ (and sibling year/quarter pages), 2025-26 curriculum, checked 2026-09-21"
+segmentLabel: Year
+order: 6
+segments:
+  - id: year-1
+    label: Year 1
+    order: 1
+    items:
+      - work: sophocles-antigone
+        title: Antigone
+        author: Sophocles
+        note: "Autumn seminar"
+      - work: plato-apology
+        title: Apology
+        author: Plato
+        note: "Autumn seminar"
+      - work: plato-crito
+        title: Crito
+        author: Plato
+        note: "Autumn seminar"
+      - work: dostoevsky-crime-and-punishment
+        title: Crime and Punishment
+        author: Fyodor Dostoevsky
+        note: "Autumn seminar"
+      - work: plato-meno
+        title: Meno
+        author: Plato
+        note: "Autumn tutorial"
+      - work: herodotus-histories
+        title: The Histories
+        author: Herodotus
+        note: "Winter seminar"
+      - work: aeschylus-oresteia
+        title: Oresteia
+        author: Aeschylus
+        note: "Winter seminar"
+      - work: aristotle-nicomachean-ethics
+        title: Nicomachean Ethics
+        author: Aristotle
+        note: "Winter tutorial"
+      - work: machiavelli-prince
+        title: The Prince
+        author: Niccolò Machiavelli
+        note: "Spring seminar"
+      - work: hobbes-leviathan
+        title: Leviathan
+        author: Thomas Hobbes
+        note: "Spring seminar"
+      - work: rousseau-discourse-on-inequality
+        title: Discourse on the Origin of Inequality
+        author: Jean-Jacques Rousseau
+        note: "Spring seminar (Second Discourse)"
+      - work: shakespeare-tempest
+        title: The Tempest
+        author: William Shakespeare
+        note: "Spring seminar"
+      - work: shakespeare-king-lear
+        title: King Lear
+        author: William Shakespeare
+        note: "Spring tutorial: a Shakespeare tragedy (King Lear in 2025; Hamlet, Othello and Macbeth also in the required volume)"
+  - id: year-2
+    label: Year 2
+    order: 2
+    items:
+      - work: sophocles-oedipus-the-king
+        title: Oedipus the King
+        author: Sophocles
+        note: "Autumn seminar"
+      - work: aristotle-poetics
+        title: Poetics
+        author: Aristotle
+        note: "Autumn seminar"
+      - work: euripides-bacchae
+        title: The Bacchae
+        author: Euripides
+        note: "Autumn seminar"
+      - work: shakespeare-antony-and-cleopatra
+        title: Antony and Cleopatra
+        author: William Shakespeare
+        note: "Autumn seminar"
+      - work: homer-iliad
+        title: The Iliad
+        author: Homer
+        note: "Autumn tutorial"
+      - work: homer-odyssey
+        title: The Odyssey
+        author: Homer
+        note: "Winter seminar"
+      - work: joyce-portrait-of-the-artist
+        title: A Portrait of the Artist as a Young Man
+        author: James Joyce
+        note: "Winter seminar"
+      - work: woolf-a-room-of-ones-own
+        title: A Room of One's Own
+        author: Virginia Woolf
+        note: "Winter seminar"
+      - work: plato-republic
+        title: Republic
+        author: Plato
+        note: "Winter tutorial"
+      - work: montaigne-essays
+        title: Essays
+        author: Michel de Montaigne
+        note: "Spring seminar; selections"
+      - work: pascal-pensees
+        title: Pensées
+        author: Blaise Pascal
+        note: "Spring seminar"
+      - work: nietzsche-genealogy-of-morals
+        title: On the Genealogy of Morals
+        author: Friedrich Nietzsche
+        note: "Spring seminar"
+      - work: freud-introductory-lectures-on-psychoanalysis
+        title: Introductory Lectures on Psychoanalysis
+        author: Sigmund Freud
+        note: "Spring seminar"
+      - work: bible-genesis
+        title: Genesis
+        author: Anonymous
+        note: "Spring tutorial (Bible selections)"
+      - work: bible-job
+        title: Job
+        author: Anonymous
+        note: "Spring tutorial (Bible selections)"
+      - work: bible-gospel-of-matthew
+        title: Gospel of Matthew
+        author: Anonymous
+        note: "Spring tutorial (Bible selections)"
+  - id: year-3
+    label: Year 3
+    order: 3
+    items:
+      - work: euclid-elements
+        title: Elements
+        author: Euclid
+        note: "Autumn seminar; Book I"
+      - work: descartes-meditations
+        title: Meditations on First Philosophy
+        author: René Descartes
+        note: "Autumn seminar"
+      - work: george-eliot-middlemarch
+        title: Middlemarch
+        author: George Eliot
+        note: "Autumn tutorial"
+      - work: aristotle-physics
+        title: Physics
+        author: Aristotle
+        note: "Winter seminar"
+      - work: lucretius-on-the-nature-of-things
+        title: On the Nature of Things
+        author: Lucretius
+        note: "Winter seminar"
+      - work: newton-principia
+        title: Mathematical Principles of Natural Philosophy
+        author: Isaac Newton
+        note: "Winter seminar; selections"
+      - work: darwin-origin-of-species
+        title: On the Origin of Species
+        author: Charles Darwin
+        note: "Winter seminar"
+      - work: virgil-aeneid
+        title: The Aeneid
+        author: Virgil
+        note: "Winter tutorial"
+      - work: augustine-confessions
+        title: Confessions
+        author: Augustine
+        note: "Winter tutorial"
+      - work: aquinas-summa-theologica
+        title: Summa Theologica
+        author: Thomas Aquinas
+        note: "Spring seminar; Treatise on Law"
+      - work: locke-second-treatise-of-government
+        title: Second Treatise of Government
+        author: John Locke
+        note: "Spring seminar"
+      - work: kant-groundwork-of-the-metaphysics-of-morals
+        title: Grounding for the Metaphysics of Morals
+        author: Immanuel Kant
+        note: "Spring seminar"
+      - work: dante-inferno
+        title: Inferno
+        author: Dante Alighieri
+        note: "Spring tutorial"
+  - id: year-4
+    label: Year 4
+    order: 4
+    items:
+      - work: plutarch-lives
+        title: Lives of the Noble Greeks and Romans
+        author: Plutarch
+        note: "Autumn seminar; selections"
+      - work: plato-symposium
+        title: Symposium
+        author: Plato
+        note: "Autumn seminar"
+      - work: austen-pride-and-prejudice
+        title: Pride and Prejudice
+        author: Jane Austen
+        note: "Autumn seminar"
+      - work: thucydides-peloponnesian-war
+        title: History of the Peloponnesian War
+        author: Thucydides
+        note: "Autumn tutorial"
+      - work: aristotle-politics
+        title: Politics
+        author: Aristotle
+        note: "Winter seminar"
+      - work: smith-wealth-of-nations
+        title: The Wealth of Nations
+        author: Adam Smith
+        note: "Winter seminar; selections"
+      - work: marx-economic-and-philosophic-manuscripts
+        title: Economic and Philosophic Manuscripts of 1844
+        author: Karl Marx
+        note: "Winter seminar (Marx-Engels Reader)"
+      - work: marx-communist-manifesto
+        title: The Communist Manifesto
+        author: Karl Marx
+        note: "Winter seminar (Marx-Engels Reader)"
+      - work: marx-capital
+        title: Capital
+        author: Karl Marx
+        note: "Winter seminar; selections (Marx-Engels Reader). Winter tutorial is selected lyric poems from the Norton Anthology of Poetry, not listed here"
+      - work: declaration-of-independence
+        title: The Declaration of Independence
+        author: Thomas Jefferson
+        note: "Spring seminar"
+      - work: us-constitution
+        title: The Constitution of the United States
+        author: Anonymous
+        note: "Spring seminar"
+      - work: federalist-papers
+        title: The Federalist Papers
+        author: Alexander Hamilton, James Madison, and John Jay
+        note: "Spring seminar; selections"
+      - work: tocqueville-democracy-in-america
+        title: Democracy in America
+        author: Alexis de Tocqueville
+        note: "Spring seminar"
+      - work: lincoln-gettysburg-address
+        title: The Gettysburg Address
+        author: Abraham Lincoln
+        note: "Spring seminar"
+      - work: morrison-beloved
+        title: Beloved
+        author: Toni Morrison
+        note: "Spring seminar"
+      - work: plato-phaedo
+        title: Phaedo
+        author: Plato
+        note: "Spring tutorial"

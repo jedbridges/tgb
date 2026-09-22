@@ -1,0 +1,121 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import Book3D from '~/components/Book3D.astro';
+import { placeholderAuthor, loadCatalog, yearShort, difficultyLabel } from '~/lib/catalog';
+import { programUrl, url, workUrl, authorUrl } from '~/lib/url';
+import { breadcrumbs } from '~/lib/seo';
+import { abs } from '~/lib/url';
+
+export async function getStaticPaths() {
+  const programs = await getCollection('programs');
+  return programs.map((program) => ({ params: { slug: program.id }, props: { program } }));
+}
+const { program } = Astro.props;
+const { authors } = await loadCatalog();
+const segments = [...program.data.segments].sort((a, b) => a.order - b.order);
+const resolved = await Promise.all(segments.map(async (seg) => ({
+  ...seg,
+  items: (await Promise.all(seg.items.map(async (it) => ({ ...it, work: await getEntry('works', it.work.id) })))).filter((it) => it.work),
+})));
+const allWorks = resolved.flatMap((s) => s.items.map((i) => i.work!));
+const unique = new Set(allWorks.map((w) => w.id)).size;
+const p = program.data;
+const paragraphs = p.description.split(/\n\n+/);
+const itemList = {
+  '@context': 'https://schema.org', '@type': 'ItemList', name: `${p.name} reading list`, numberOfItems: unique,
+  itemListElement: allWorks.slice(0, 100).map((w, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(workUrl(w.id)), name: w.data.title })),
+};
+---
+<Base title={`${p.name} reading list`} description={`Every book on the ${p.name} list, in the program's own order, with summaries and where to buy each one. ${unique} works.`}
+  jsonld={[itemList, breadcrumbs([{ name: 'Programs', path: '/programs/' }, { name: p.name, path: programUrl(program.id) }])]}>
+  <article data-pagefind-body data-pagefind-filter="type:Program">
+    <span class="visually-hidden" data-pagefind-meta="type:Program"></span>
+    <span class="visually-hidden" data-pagefind-meta={`slug:${program.id}`}></span>
+    <header class="wrap head">
+      <p class="eyebrow"><a href={url('/programs/')}>Programs</a></p>
+      <h1 class="italic" data-pagefind-meta="title">{p.name}</h1>
+      <div class="head__grid">
+        <div class="prose head__desc">{paragraphs.map((t) => <p>{t}</p>)}</div>
+        <dl class="facts ui">
+          <div><dt>Works</dt><dd>{unique}</dd></div>
+          <div><dt>{p.segmentLabel}s</dt><dd>{segments.length}</dd></div>
+          {p.url && <div><dt>Official list</dt><dd><a href={p.url} rel="noopener" target="_blank">{new URL(p.url).hostname.replace(/^www\./, '')}</a></dd></div>}
+          <div><dt>Source</dt><dd class="facts__src">{p.sourceNote.replace(/https?:\/\/\S+/g, '').replace(/\s+,/g, ',').trim()}</dd></div>
+        </dl>
+      </div>
+      {segments.length > 1 && (
+        <nav class="segnav ui" aria-label={`${p.segmentLabel}s`}>
+          {segments.map((s) => <a href={`#${s.id}`}>{s.label}</a>)}
+          <a class="segnav__browse" href={url('/books/') + `?program=${program.id}`}>Open in the browser →</a>
+        </nav>
+      )}
+    </header>
+
+    {resolved.map((seg) => (
+      <section class="wrap segment" id={seg.id} data-pagefind-ignore>
+        <header class="segment__head">
+          <h2 class="segment__label">{seg.label}</h2>
+          {seg.sublabel && <p class="segment__sub">{seg.sublabel}</p>}
+          <a class="segment__browse ui" href={url('/books/') + `?program=${program.id}&segment=${seg.id}`}>Browse these {seg.items.length} →</a>
+        </header>
+        <ol class="rows">
+          {seg.items.map((it, i) => {
+            const w = it.work!;
+            const a = authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id);
+            return (
+              <li class="row">
+                <span class="row__n ui">{i + 1}</span>
+                <a class="row__book" href={workUrl(w.id)} aria-hidden="true" tabindex="-1"><Book3D work={w} authorName={a?.data.name ?? ''} width={54} pull={false} /></a>
+                <span class="row__text">
+                  <a class="row__title" href={workUrl(w.id)}>{w.data.title}</a>
+                  <span class="row__meta ui">{a && <a href={authorUrl(a.id)}>{a.data.name}</a>} · {yearShort(w)}{it.note && <span class="row__note"> · {it.note}</span>}{it.optional && <span class="row__note"> · optional</span>}</span>
+                </span>
+                <span class="row__diff ui" title={difficultyLabel(w.data.difficulty)}>{difficultyLabel(w.data.difficulty)}</span>
+              </li>
+            );
+          })}
+        </ol>
+      </section>
+    ))}
+  </article>
+</Base>
+<style>
+  .head { padding-block: var(--s4) var(--s2); }
+  .head h1 { font-size: var(--step-4); }
+  .head__grid { display: grid; grid-template-columns: minmax(0, 1fr) 18rem; gap: var(--s3); margin-top: var(--s2); align-items: start; }
+  .head__desc { font-size: var(--step-0); color: var(--ink); }
+  .facts { margin: 0; display: grid; gap: var(--s1); border-top: 1px solid var(--ink); padding-top: var(--s1); }
+  .facts div { display: grid; grid-template-columns: 6rem 1fr; gap: var(--s1); }
+  .facts dt { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.1em; text-transform: uppercase; padding-top: 0.15rem; }
+  .facts dd { margin: 0; color: var(--ink-strong); }
+  .facts__src { color: var(--ink-soft); font-size: var(--step--2); line-height: 1.5; }
+  .segnav { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s2); margin-top: var(--s3); padding: var(--s1) 0; border-top: 1px solid var(--paper-deeper); border-bottom: 1px solid var(--paper-deeper); position: sticky; top: 3.75rem; background: var(--paper); z-index: 5; }
+  .segnav a { text-decoration: none; color: var(--ink-soft); }
+  .segnav a:hover { color: var(--ink-strong); }
+  .segnav__browse { margin-left: auto; color: var(--accent-deep) !important; }
+  .segment { padding-block: var(--s3); scroll-margin-top: 7rem; }
+  .segment__head { display: grid; grid-template-columns: auto 1fr auto; align-items: baseline; gap: var(--s1) var(--s2); margin-bottom: var(--s2); }
+  .segment__label { font-style: italic; font-size: var(--step-3); }
+  .segment__sub { color: var(--ink-soft); font-size: var(--step-1); font-style: italic; }
+  .segment__browse { color: var(--ink-mute); text-decoration: none; }
+  .segment__browse:hover { color: var(--accent-deep); }
+  .rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+  .row { display: grid; grid-template-columns: 2rem 4.5rem minmax(0, 1fr) auto; gap: var(--s1) var(--s2); align-items: center; padding: 0.8rem 0; border-bottom: 1px solid var(--paper-deeper); }
+  .row__n { color: var(--ink-mute); }
+  .row__book { display: block; height: 5.4rem; display: grid; place-items: center; }
+  .row__book .book { --ry: 22deg; }
+  .row__text { display: grid; gap: 0.2rem; min-width: 0; }
+  .row__title { font-size: var(--step-1); line-height: 1.15; color: var(--ink-strong); text-decoration: none; }
+  .row__title:hover { color: var(--accent-deep); }
+  .row__meta { color: var(--ink-soft); font-size: var(--step--2); }
+  .row__meta a { text-decoration: none; }
+  .row__note { color: var(--ink-mute); }
+  .row__diff { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.06em; text-transform: uppercase; }
+  @media (max-width: 720px) {
+    .head__grid { grid-template-columns: 1fr; }
+    .row { grid-template-columns: 1.5rem 3.5rem minmax(0, 1fr); }
+    .row__diff { display: none; }
+    .segment__head { grid-template-columns: 1fr; }
+  }
+</style>

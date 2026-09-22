@@ -1,0 +1,362 @@
+name: Columbia University Core Curriculum
+shortName: Columbia Core
+kind: college
+institution: Columbia College, Columbia University
+url: https://www.college.columbia.edu/core-curriculum
+description: >-
+  The Core Curriculum is the set of common courses required of every undergraduate at Columbia College
+  in New York. Its two year-long seminars are the oldest and best known: Contemporary Civilization,
+  begun in 1919 as a course on the causes of the First World War and now taken in the sophomore year,
+  and Literature Humanities, begun in 1937 and taken in the first year. Each meets four hours a week in
+  sections of about twenty-two students led by instructors drawn from many departments. Both syllabi
+  are fixed for all sections and revised periodically by faculty committees; instructors add one text
+  of their own choosing each semester.
+
+  The lists below give the two current required syllabi in the order the works are read, Fall then
+  Spring. Where the syllabus offers a choice ("either The Prince or the Discourses"), both options are
+  listed with a note. The "Instructor's Choice" slots are not works and are omitted. Readings marked
+  with an asterisk on Columbia's pages are supplied to students as excerpts in the course readers.
+sourceNote: "Literature Humanities syllabus (in effect since 2024-25), https://www.college.columbia.edu/core-curriculum/classes/literature-humanities, and Contemporary Civilization syllabus (current), https://www.college.columbia.edu/core-curriculum/classes/contemporary-civilization; syllabus start year confirmed against Literature Humanities Texts 1937-present, https://www.college.columbia.edu/core-curriculum/lit-hum-texts-1937-2020; checked 2026-09-21"
+segmentLabel: Course
+order: 2
+segments:
+  - id: lit-hum
+    label: Literature Humanities
+    sublabel: First year (HUMA CC1001-1002)
+    order: 1
+    items:
+      - work: enheduanna-exaltation-of-inanna
+        title: The Exaltation of Inanna
+        author: Enheduanna
+      - work: epic-of-gilgamesh
+        title: The Epic of Gilgamesh
+        author: Anonymous
+      - work: bible-genesis
+        title: Genesis
+        author: Bible
+      - work: homer-iliad
+        title: The Iliad
+        author: Homer
+      - work: sappho-poems
+        title: "If Not, Winter: Fragments of Sappho"
+        author: Sappho
+      - work: homer-odyssey
+        title: The Odyssey
+        author: Homer
+      - work: aeschylus-oresteia
+        title: Oresteia
+        author: Aeschylus
+      - work: plato-symposium
+        title: Symposium
+        author: Plato
+      - work: virgil-aeneid
+        title: The Aeneid
+        author: Virgil
+      - work: bible-gospel-of-luke
+        title: Gospel of Luke
+        author: Bible
+      - work: bible-gospel-of-john
+        title: Gospel of John
+        author: Bible
+      - work: rankine-citizen
+        title: "Citizen: An American Lyric"
+        author: Claudia Rankine
+      - work: augustine-confessions
+        title: Confessions
+        author: Augustine
+      - work: ibn-arabi-translator-of-desires
+        title: The Translator of Desires
+        author: Ibn Arabi
+      - work: marie-de-france-lais
+        title: The Lais of Marie de France
+        author: Marie de France
+      - work: dante-inferno
+        title: Inferno
+        author: Dante
+      - work: montaigne-essays
+        title: Essays
+        author: Michel de Montaigne
+        note: "selections"
+      - work: shakespeare-king-lear
+        title: King Lear
+        author: William Shakespeare
+      - work: sor-juana-selected-works
+        title: Selected Works
+        author: Sor Juana Inés de la Cruz
+      - work: austen-pride-and-prejudice
+        title: Pride and Prejudice
+        author: Jane Austen
+      - work: woolf-to-the-lighthouse
+        title: To the Lighthouse
+        author: Virginia Woolf
+      - work: morrison-song-of-solomon
+        title: Song of Solomon
+        author: Toni Morrison
+  - id: cc
+    label: Contemporary Civilization
+    sublabel: Second year (COCI CC1101-1102)
+    order: 2
+    items:
+      - work: plato-republic
+        title: The Republic
+        author: Plato
+      - work: aristotle-nicomachean-ethics
+        title: Nicomachean Ethics
+        author: Aristotle
+      - work: aristotle-politics
+        title: Politics
+        author: Aristotle
+      - work: epicurus-letter-to-menoeceus
+        title: Letter to Menoeceus
+        author: Epicurus
+        note: "Epicureanism and Stoicism unit; excerpt"
+      - work: epictetus-enchiridion
+        title: Enchiridion (Handbook)
+        author: Epictetus
+        note: "Epicureanism and Stoicism unit"
+      - work: marcus-aurelius-meditations
+        title: Meditations
+        author: Marcus Aurelius
+        note: "Epicureanism and Stoicism unit"
+      - work: bible-exodus
+        title: Exodus
+        author: Bible
+      - work: bible-gospel-of-matthew
+        title: Gospel of Matthew
+        author: Bible
+      - work: bible-romans
+        title: Letter to the Romans
+        author: Bible
+      - work: bible-galatians
+        title: Letter to the Galatians
+        author: Bible
+      - work: augustine-city-of-god
+        title: City of God
+        author: Augustine
+        note: "selections"
+      - work: quran
+        title: The Qur'an
+        author: Anonymous
+        note: "selections"
+      - work: ibn-tufail-hayy-ibn-yaqzan
+        title: The Story of Hayy ibn Yaqzan
+        author: Ibn Tufayl
+        note: "Medieval Rationalism and Mysticism unit; excerpt"
+      - work: al-ghazali-rescuer-from-error
+        title: The Rescuer from Error
+        author: Al-Ghazali
+        note: "Medieval Rationalism and Mysticism unit; excerpt"
+      - work: ibn-khaldun-muqaddimah
+        title: The Muqaddimah
+        author: Ibn Khaldun
+        note: "Medieval Political Thought unit; selections"
+      - work: christine-de-pizan-book-of-the-city-of-ladies
+        title: The Book of the City of Ladies
+        author: Christine de Pizan
+        note: "Medieval Political Thought unit"
+      - work: machiavelli-prince
+        title: The Prince
+        author: Niccolò Machiavelli
+        note: "either The Prince or the Discourses"
+      - work: machiavelli-discourses-on-livy
+        title: Discourses on Livy
+        author: Niccolò Machiavelli
+        note: "either The Prince or the Discourses"
+      - work: council-of-castile-requerimiento
+        title: El Requerimiento
+        author: Council of Castile
+        note: "Conquest of the Americas unit; excerpt"
+      - work: broken-spears
+        title: "The Broken Spears: The Aztec Account of the Conquest of Mexico"
+        author: Miguel León-Portilla (ed.)
+        note: "Conquest of the Americas unit; excerpt"
+      - work: vitoria-on-the-american-indians
+        title: On the American Indians
+        author: Francisco de Vitoria
+        note: "Conquest of the Americas unit; excerpt"
+      - work: guaman-poma-appeal-concerning-the-priests
+        title: Appeal Concerning the Priests
+        author: Felipe Guamán Poma de Ayala
+        note: "Conquest of the Americas unit; excerpt"
+      - work: luther-preface-to-romans
+        title: Preface to the Epistle of St. Paul to the Romans
+        author: Martin Luther
+        note: "excerpt"
+      - work: luther-on-secular-authority
+        title: Concerning Governmental Authority
+        author: Martin Luther
+        note: "excerpt"
+      - work: swabian-peasants-twelve-articles
+        title: The Twelve Articles of the Swabian Peasants
+        author: Swabian Peasants
+        note: "excerpt; listed under Luther on the syllabus"
+      - work: luther-friendly-admonition-to-peace
+        title: Friendly Admonition to Peace Concerning the Twelve Articles of the Swabian Peasants
+        author: Martin Luther
+        note: "excerpt"
+      - work: descartes-discourse-on-method
+        title: Discourse on the Method
+        author: René Descartes
+        note: "either the Discourse or the Meditations"
+      - work: descartes-meditations
+        title: Meditations on First Philosophy
+        author: René Descartes
+        note: "either the Discourse or the Meditations"
+      - work: hobbes-leviathan
+        title: Leviathan
+        author: Thomas Hobbes
+      - work: locke-second-treatise-of-government
+        title: Second Treatise of Government
+        author: John Locke
+      - work: rousseau-discourse-on-inequality
+        title: Discourse on the Origin and Foundations of Inequality Among Men
+        author: Jean-Jacques Rousseau
+      - work: rousseau-social-contract
+        title: On the Social Contract
+        author: Jean-Jacques Rousseau
+      - work: smith-wealth-of-nations
+        title: The Wealth of Nations
+        author: Adam Smith
+        note: "selections"
+      - work: kant-groundwork-of-the-metaphysics-of-morals
+        title: Groundwork of the Metaphysics of Morals
+        author: Immanuel Kant
+      - work: declaration-of-independence
+        title: Declaration of Independence
+        author: Thomas Jefferson
+        note: "Revolutions and Rights unit"
+      - work: us-constitution
+        title: Constitution of the United States
+        author: Anonymous
+        note: "Revolutions and Rights unit; Amendments only"
+      - work: declaration-of-the-rights-of-man
+        title: Declaration of the Rights of Man and of the Citizen (1789)
+        author: French National Assembly
+        note: "Revolutions and Rights unit"
+      - work: de-gouges-declaration-of-the-rights-of-woman
+        title: Declaration of the Rights of Woman
+        author: Olympe de Gouges
+        note: "Revolutions and Rights unit"
+      - work: haitian-constitution-of-1801
+        title: Haitian Constitution of 1801
+        author: Toussaint Louverture
+        note: "Revolutions and Rights unit"
+      - work: haitian-declaration-of-independence
+        title: The Haitian Declaration of Independence
+        author: Jean-Jacques Dessalines
+        note: "Revolutions and Rights unit"
+      - work: haitian-constitution-of-1805
+        title: The 1805 Constitution of Haiti
+        author: Jean-Jacques Dessalines
+        note: "Revolutions and Rights unit"
+      - work: wollstonecraft-vindication-of-the-rights-of-woman
+        title: A Vindication of the Rights of Woman
+        author: Mary Wollstonecraft
+      - work: tocqueville-democracy-in-america
+        title: Democracy in America
+        author: Alexis de Tocqueville
+        note: "selections"
+      - work: tocqueville-essay-on-algeria
+        title: Essay on Algeria
+        author: Alexis de Tocqueville
+        note: "excerpt"
+      - work: douglass-what-to-the-slave-is-the-fourth-of-july
+        title: What to the Slave Is the Fourth of July?
+        author: Frederick Douglass
+        note: "American Perspectives unit"
+      - work: occom-collected-writings
+        title: The Collected Writings of Samson Occom, Mohegan
+        author: Samson Occom
+        note: "American Perspectives unit; selections"
+      - work: stanton-address-to-the-legislature-of-new-york
+        title: Address to the Legislature of New York
+        author: Elizabeth Cady Stanton
+        note: "American Perspectives unit"
+      - work: truth-aint-i-a-woman
+        title: Ain't I a Woman?
+        author: Sojourner Truth
+        note: "American Perspectives unit"
+      - work: walker-appeal-to-the-colored-citizens-of-the-world
+        title: Appeal to the Colored Citizens of the World
+        author: David Walker
+        note: "American Perspectives unit"
+      - work: mill-on-liberty
+        title: On Liberty
+        author: John Stuart Mill
+      - work: marx-communist-manifesto
+        title: The Marx-Engels Reader
+        author: Karl Marx and Friedrich Engels
+        note: "selections"
+      - work: nietzsche-genealogy-of-morals
+        title: On the Genealogy of Morals
+        author: Friedrich Nietzsche
+      - work: freud-civilization-and-its-discontents
+        title: Civilization and Its Discontents
+        author: Sigmund Freud
+        note: "either this or Five Lectures on Psycho-Analysis"
+      - work: freud-origin-and-development-of-psychoanalysis
+        title: Five Lectures on Psycho-Analysis
+        author: Sigmund Freud
+        note: "either this or Civilization and Its Discontents"
+      - work: du-bois-souls-of-black-folk
+        title: The Souls of Black Folk
+        author: W. E. B. Du Bois
+      - work: du-bois-souls-of-white-folk
+        title: The Souls of White Folk
+        author: W. E. B. Du Bois
+        note: "excerpt"
+      - work: ambedkar-annihilation-of-caste
+        title: Annihilation of Caste
+        author: B. R. Ambedkar
+        note: "Anti-Colonialism and Resistance unit"
+      - work: arendt-crises-of-the-republic
+        title: Crises of the Republic
+        author: Hannah Arendt
+        note: "Anti-Colonialism and Resistance unit"
+      - work: gandhi-hind-swaraj
+        title: Hind Swaraj, or Indian Home Rule
+        author: Mohandas K. Gandhi
+        note: "Anti-Colonialism and Resistance unit; excerpt"
+      - work: fanon-wretched-of-the-earth
+        title: The Wretched of the Earth
+        author: Frantz Fanon
+        note: "Anti-Colonialism and Resistance unit"
+      - work: king-letter-from-birmingham-jail
+        title: Letter from Birmingham Jail
+        author: Martin Luther King Jr.
+        note: "Anti-Colonialism and Resistance unit"
+      - work: foucault-discipline-and-punish
+        title: Discipline and Punish
+        author: Michel Foucault
+      - work: combahee-river-collective-statement
+        title: A Black Feminist Statement
+        author: Combahee River Collective
+        note: "Race, Gender, and Sexuality unit"
+      - work: beauvoir-second-sex
+        title: The Second Sex
+        author: Simone de Beauvoir
+        note: "Race, Gender, and Sexuality unit; excerpt"
+      - work: fields-slavery-race-and-ideology
+        title: Slavery, Race, and Ideology in the United States of America
+        author: Barbara J. Fields
+        note: "Race, Gender, and Sexuality unit"
+      - work: saito-slow-down
+        title: "Slow Down: The Degrowth Manifesto"
+        author: Kohei Saito
+        note: "Climate and Futures unit; excerpt"
+      - work: ecomodernist-manifesto
+        title: An Ecomodernist Manifesto
+        author: John Asafu-Adjaye et al.
+        note: "Climate and Futures unit"
+      - work: pollin-de-growth-vs-a-green-new-deal
+        title: De-Growth vs. a Green New Deal
+        author: Robert Pollin
+        note: "Climate and Futures unit"
+      - work: burton-and-somerville-degrowth-a-defence
+        title: "Degrowth: A Defence"
+        author: Mark Burton and Peter Somerville
+        note: "Climate and Futures unit"
+      - work: whyte-is-it-colonial-deja-vu
+        title: "Is It Colonial Déjà Vu? Indigenous Peoples and Climate Injustice"
+        author: Kyle Powys Whyte
+        note: "Climate and Futures unit"

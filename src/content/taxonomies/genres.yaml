@@ -1,0 +1,21 @@
+- { id: epic, label: Epic poetry, order: 1, description: "Long narrative poems of heroes, gods and nations." }
+- { id: lyric, label: Lyric poetry, order: 2, description: "Shorter poems of feeling, praise, love and grief." }
+- { id: tragedy, label: Tragedy, order: 3, description: "Drama that ends in ruin and asks what it means." }
+- { id: comedy, label: Comedy, order: 4, description: "Drama that laughs at us, and sometimes forgives us." }
+- { id: drama, label: Drama, order: 5, description: "Plays that resist the tragic or comic label." }
+- { id: dialogue, label: Philosophical dialogue, order: 6, description: "Philosophy staged as conversation." }
+- { id: treatise, label: Treatise, order: 7, description: "Systematic argument, from ethics to physics." }
+- { id: essay, label: Essay, order: 8, description: "Trials of thought in prose, personal or public." }
+- { id: history, label: History, order: 9, description: "Accounts of wars, cities and peoples by those who tried to explain them." }
+- { id: biography, label: Biography and memoir, order: 10, description: "Lives, told by others or by themselves." }
+- { id: scripture, label: Scripture, order: 11, description: "Sacred texts of the Hebrew Bible, the New Testament and other traditions." }
+- { id: theology, label: Theology, order: 12, description: "Reasoning about God, faith and the soul." }
+- { id: political-theory, label: Political theory, order: 13, description: "How we should live together, and who should rule." }
+- { id: novel, label: Novel, order: 14, description: "Long prose fiction and the inner life of ordinary people." }
+- { id: satire, label: Satire, order: 15, description: "Mockery with a moral edge." }
+- { id: romance, label: Romance and tale, order: 16, description: "Quests, marvels and tales within tales." }
+- { id: science, label: Science and mathematics, order: 17, description: "The books that changed what we think the world is made of." }
+- { id: economics, label: Economics, order: 18, description: "Wealth, labour, markets and their discontents." }
+- { id: psychology, label: Psychology, order: 19, description: "The mind studied from within and without." }
+- { id: letters, label: Letters and speeches, order: 20, description: "Public and private words meant to move someone." }
+- { id: founding-document, label: Founding documents, order: 21, description: "Declarations, constitutions and the arguments around them." }

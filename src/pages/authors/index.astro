@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import { loadCatalog } from '~/lib/catalog';
+import { authorUrl } from '~/lib/url';
+import { breadcrumbs } from '~/lib/seo';
+const { works, authors } = await loadCatalog();
+const eras = (await getCollection('eras')).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+const byAuthor = new Map<string, number>();
+for (const w of works) byAuthor.set(w.data.author.id, (byAuthor.get(w.data.author.id) ?? 0) + 1);
+const groups = eras.map((e) => ({
+  era: e,
+  authors: [...authors.values()].filter((a) => a.data.era.id === e.id && byAuthor.has(a.id)).sort((a, b) => (a.data.born ?? 0) - (b.data.born ?? 0) || a.data.sortName.localeCompare(b.data.sortName)),
+})).filter((g) => g.authors.length);
+const dates = (a: (typeof groups)[number]['authors'][number]) => {
+  const f = (y?: number) => (y === undefined ? '' : y < 0 ? `${-y} BCE` : `${y}`);
+  if (a.data.floruit) return a.data.floruit;
+  if (a.data.born === undefined) return '';
+  return `${f(a.data.born)}–${f(a.data.died) || ''}`.replace(/–$/, '');
+};
+---
+<Base title="Authors" description="Every author on the great college reading lists, arranged by era." jsonld={breadcrumbs([{ name: 'Authors', path: '/authors/' }])}>
+  <section class="wrap head">
+    <p class="eyebrow">The writers</p>
+    <h1 class="italic">Authors</h1>
+    <p class="lede">{authors.size} writers across three thousand years, in the order they lived.</p>
+  </section>
+  {groups.map((g) => (
+    <section class="wrap era">
+      <h2 class="era__label"><span>{g.era.data.label}</span><span class="era__range ui">{g.era.data.start < 0 ? `${-g.era.data.start} BCE` : g.era.data.start} to {g.era.data.end < 0 ? `${-g.era.data.end} BCE` : g.era.data.end}</span></h2>
+      <ul class="authors">
+        {g.authors.map((a) => (
+          <li>
+            <a href={authorUrl(a.id)} class="author">
+              <span class="author__name">{a.data.name}</span>
+              <span class="author__dates ui">{dates(a)}</span>
+              <span class="author__count ui">{byAuthor.get(a.id)} {byAuthor.get(a.id) === 1 ? 'work' : 'works'}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+</Base>
+<style>
+  .head { padding-block: var(--s4) var(--s3); }
+  .head h1 { font-size: var(--step-4); }
+  .lede { margin-top: var(--s1); font-size: var(--step-1); color: var(--ink-soft); }
+  .era { padding-block: var(--s2); }
+  .era__label { display: flex; align-items: baseline; gap: var(--s1); font-style: italic; font-size: var(--step-2); border-bottom: 1px solid var(--ink); padding-bottom: var(--s0); }
+  .era__range { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.08em; text-transform: uppercase; margin-left: auto; }
+  .authors { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); column-gap: var(--s3); }
+  .author { display: grid; grid-template-columns: 1fr auto; gap: 0 var(--s1); padding: 0.6rem 0; border-bottom: 1px solid var(--paper-deeper); text-decoration: none; }
+  .author__name { font-size: var(--step-1); color: var(--ink-strong); }
+  .author:hover .author__name { color: var(--accent-deep); }
+  .author__dates { grid-column: 1; color: var(--ink-mute); font-size: var(--step--2); }
+  .author__count { grid-column: 2; grid-row: 1 / 3; align-self: center; color: var(--ink-mute); font-size: var(--step--2); }
+</style>

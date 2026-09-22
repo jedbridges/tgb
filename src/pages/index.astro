@@ -1,10 +1,106 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '~/layouts/Base.astro';
+import BookCard from '~/components/BookCard.astro';
+import { placeholderAuthor, loadCatalog, sortedByAssignment, programCount } from '~/lib/catalog';
+import { programUrl, taxUrl, url } from '~/lib/url';
+import { websiteLd } from '~/lib/seo';
+
+const { works, authors, programs } = await loadCatalog();
+const top = (await sortedByAssignment(works)).slice(0, 12);
+const counts = await Promise.all(top.map((w) => programCount(w.id)));
+const themes = (await getCollection('themes')).slice(0, 16);
+const eras = (await getCollection('eras')).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+const eraCounts = new Map(eras.map((e) => [e.id, works.filter((w) => w.data.era.id === e.id).length]));
+const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flatMap((s) => s.items.map((i) => i.work.id))).size;
 ---
-<Base title="The Great Books" description="The definitive list of the books read in college Great Books programs, with summaries, themes and where to buy each one.">
-  <section class="wrap" style="padding-block: var(--s5)">
-    <p class="eyebrow reveal">Coming soon</p>
-    <h1 class="reveal" style="--i:1; font-style: italic">The Great Books</h1>
-    <p class="reveal prose" style="--i:2; margin-top: var(--s2); font-size: var(--step-1)">Every book the great college reading lists have asked students to read, gathered on one shelf.</p>
+<Base title="The Great Books" description={`The ${works.length} books that college Great Books programs ask students to read, with a guide to each one, its themes, and where to buy it.`} jsonld={websiteLd()} bodyClass="home">
+  <section class="hero wrap">
+    <div class="hero__text">
+      <p class="eyebrow reveal">St. John's · Columbia · Chicago · Yale · and the canons behind them</p>
+      <h1 class="reveal" style="--i:1">Every book the great <em>reading lists</em> ask you to read.</h1>
+      <p class="hero__lede reveal" style="--i:2">{works.length} works. {programs.length} programs. One shelf. A guide to each book, the themes it turns on, which programs assign it and where to buy the right edition.</p>
+      <div class="hero__actions reveal" style="--i:3">
+        <a class="btn btn--primary" href={url('/books/')}>Browse the shelf</a>
+        <button class="btn" type="button" data-open-search>Search inside every book</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap shelf-section">
+    <header class="section-head">
+      <h2 class="italic">Most assigned</h2>
+      <a class="section-head__more ui" href={url('/books/')}>All {works.length} →</a>
+    </header>
+    <div class="shelf-grid">
+      {top.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} programCount={counts[i]} index={i} eager={i < 6} />)}
+    </div>
+  </section>
+
+  <section class="wrap programs-section">
+    <header class="section-head">
+      <h2 class="italic">Start from your program</h2>
+      <a class="section-head__more ui" href={url('/programs/')}>All programs →</a>
+    </header>
+    <ul class="proglist">
+      {programs.map((p) => (
+        <li><a href={programUrl(p.id)} class="prog"><span class="prog__name">{p.data.shortName}</span><span class="prog__count ui">{progCount(p)} works</span></a></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="wrap eras-section">
+    <header class="section-head">
+      <h2 class="italic">Three thousand years</h2>
+    </header>
+    <ol class="timeline">
+      {eras.map((e) => (
+        <li><a href={taxUrl('eras', e.id)} class="tl">
+          <span class="tl__bar" style={`--n:${eraCounts.get(e.id) ?? 0}`}></span>
+          <span class="tl__label">{e.data.label}</span>
+          <span class="tl__count ui">{eraCounts.get(e.id)}</span>
+        </a></li>
+      ))}
+    </ol>
+  </section>
+
+  <section class="wrap themes-section">
+    <header class="section-head">
+      <h2 class="italic">Or start from a question</h2>
+    </header>
+    <ul class="themecloud">
+      {themes.map((t) => <li><a href={taxUrl('themes', t.id)}>{t.data.label}</a></li>)}
+    </ul>
   </section>
 </Base>
+<style>
+  .hero { padding-block: var(--s5) var(--s4); }
+  .hero__text { max-width: 44rem; }
+  .hero h1 { font-size: var(--step-5); line-height: 0.95; letter-spacing: -0.02em; margin-top: var(--s1); }
+  .hero h1 em { color: var(--accent-deep); }
+  .hero__lede { margin-top: var(--s2); font-size: var(--step-1); line-height: 1.45; color: var(--ink-soft); max-width: 48ch; text-wrap: pretty; }
+  .hero__actions { display: flex; flex-wrap: wrap; gap: var(--s1); margin-top: var(--s3); }
+  .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s2); border-top: 1px solid var(--ink); padding-top: var(--s1); margin-bottom: var(--s3); }
+  .section-head h2 { font-size: var(--step-3); }
+  .section-head__more { color: var(--ink-soft); text-decoration: none; }
+  .section-head__more:hover { color: var(--accent-deep); }
+  .shelf-section, .programs-section, .eras-section, .themes-section { padding-block: var(--s3); }
+  .proglist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0 var(--s3); }
+  .prog { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s1); padding: 0.8rem 0; border-bottom: 1px solid var(--paper-deeper); text-decoration: none; }
+  .prog__name { font-size: var(--step-1); color: var(--ink-strong); }
+  .prog:hover .prog__name { color: var(--accent-deep); }
+  .prog__count { color: var(--ink-mute); font-size: var(--step--2); }
+  .timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(12, 1fr); gap: 2px; align-items: end; }
+  .tl { display: grid; gap: 0.5rem; text-decoration: none; align-content: end; height: 100%; }
+  .tl__bar { display: block; height: calc(24px + var(--n) * 2px); max-height: 160px; background: var(--paper-deep); border-top: 2px solid var(--ink-mute); transition: background var(--dur-fast), border-color var(--dur-fast); }
+  .tl:hover .tl__bar { background: var(--accent-wash); border-color: var(--accent); }
+  .tl__label { font-size: var(--step--1); line-height: 1.15; color: var(--ink-soft); }
+  .tl__count { color: var(--ink-mute); font-size: var(--step--2); }
+  .themecloud { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; }
+  .themecloud a { font-size: var(--step-2); font-style: italic; text-decoration: none; color: var(--ink-soft); transition: color var(--dur-fast); }
+  .themecloud a:hover { color: var(--accent-deep); }
+  @media (max-width: 720px) {
+    .timeline { grid-template-columns: repeat(4, 1fr); gap: var(--s1); }
+    .tl__label { font-size: var(--step--2); }
+  }
+</style>

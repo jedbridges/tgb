@@ -1,0 +1,34 @@
+---
+import BookCard from './BookCard.astro';
+import { placeholderAuthor, loadCatalog, sortedByAssignment, programCount, type Work } from '~/lib/catalog';
+import { url } from '~/lib/url';
+interface Props { kind: 'themes' | 'genres' | 'eras'; entry: { id: string; data: { label: string; description?: string } }; eyebrow: string; match: (w: Work) => boolean }
+const { kind, entry, eyebrow, match } = Astro.props;
+const { works, authors } = await loadCatalog();
+const list = await sortedByAssignment(works.filter(match));
+const counts = await Promise.all(list.map((w) => programCount(w.id)));
+const param = { themes: 'theme', genres: 'genre', eras: 'era' }[kind];
+---
+<section class="wrap head">
+  <p class="eyebrow">{eyebrow}</p>
+  <h1 class="italic">{entry.data.label}</h1>
+  {entry.data.description && <p class="lede">{entry.data.description}</p>}
+  <p class="ui count">{list.length} {list.length === 1 ? 'work' : 'works'} · <a href={url('/books/') + `?${param}=${entry.id}`}>Refine in the browser →</a></p>
+</section>
+<section class="wrap">
+  {list.length ? (
+    <div class="shelf-grid">
+      {list.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} programCount={counts[i]} index={Math.min(i, 12)} eager={i < 6} />)}
+    </div>
+  ) : (
+    <p class="empty">Nothing on this shelf yet.</p>
+  )}
+</section>
+<style>
+  .head { padding-block: var(--s4) var(--s3); }
+  .head h1 { font-size: var(--step-4); }
+  .lede { margin-top: var(--s1); font-size: var(--step-1); color: var(--ink-soft); max-width: 50ch; }
+  .count { margin-top: var(--s1); color: var(--ink-mute); }
+  .count a { color: var(--accent-deep); text-decoration: none; }
+  .empty { color: var(--ink-soft); font-style: italic; }
+</style>

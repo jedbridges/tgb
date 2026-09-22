@@ -1,0 +1,920 @@
+name: The Harvard Classics
+shortName: Harvard Classics
+kind: series
+institution: P. F. Collier & Son
+url: https://en.wikipedia.org/wiki/Harvard_Classics
+description: >-
+  The Harvard Classics, popularly known as "Dr. Eliot's Five-Foot Shelf of Books", is a
+  51-volume anthology of classic works compiled and edited by Charles W. Eliot, president
+  of Harvard University, with William A. Neilson as assistant editor, and published by
+  P. F. Collier & Son in 1909-10. Eliot had claimed that a liberal education could be had
+  by reading fifteen minutes a day from a collection of books that would fit on a
+  five-foot shelf; Collier challenged him to make the selection.
+
+  The volumes are not arranged chronologically or by subject. Single-author volumes sit
+  beside thematic anthologies of essays, prefaces, poetry, drama, sacred writings, voyages
+  and historical documents. Volume 50 holds Eliot's introduction, the Reader's Guide and
+  the indexes; volume 51 holds the Lectures on the Harvard Classics added in 1914. The
+  separate 20-volume Shelf of Fiction (1917) is not included here. For the anthology
+  volumes this file lists the most significant pieces and summarises the rest in a note.
+sourceNote: "Volume contents from https://en.wikipedia.org/wiki/Harvard_Classics cross-checked against the volume list at https://www.myharvardclassics.com/categories/20120212 and the Internet Archive scans linked from Wikipedia, checked 2026-09-21"
+segmentLabel: Volume
+order: 4
+segments:
+  - id: vol-1
+    label: Volume 1
+    sublabel: Franklin, Woolman, Penn
+    order: 1
+    items:
+      - work: franklin-autobiography
+        title: The Autobiography of Benjamin Franklin
+        author: Benjamin Franklin
+      - work: woolman-journal
+        title: The Journal of John Woolman
+        author: John Woolman
+      - work: penn-fruits-of-solitude
+        title: Fruits of Solitude
+        author: William Penn
+  - id: vol-2
+    label: Volume 2
+    sublabel: Plato, Epictetus, Marcus Aurelius
+    order: 2
+    items:
+      - work: plato-apology
+        title: Apology
+        author: Plato
+      - work: plato-crito
+        title: Crito
+        author: Plato
+      - work: plato-phaedo
+        title: Phaedo
+        author: Plato
+      - work: epictetus-golden-sayings
+        title: The Golden Sayings of Epictetus
+        author: Epictetus
+      - work: marcus-aurelius-meditations
+        title: The Meditations
+        author: Marcus Aurelius
+  - id: vol-3
+    label: Volume 3
+    sublabel: Bacon, Milton's Prose, Thomas Browne
+    order: 3
+    items:
+      - work: bacon-essays
+        title: Essays, Civil and Moral
+        author: Francis Bacon
+      - work: bacon-new-atlantis
+        title: New Atlantis
+        author: Francis Bacon
+      - work: milton-areopagitica
+        title: Areopagitica
+        author: John Milton
+      - work: milton-of-education
+        title: Tractate of Education
+        author: John Milton
+      - work: browne-religio-medici
+        title: Religio Medici
+        author: Thomas Browne
+  - id: vol-4
+    label: Volume 4
+    sublabel: Complete Poems in English, Milton
+    order: 4
+    items:
+      - work: milton-paradise-lost
+        title: Paradise Lost
+        author: John Milton
+      - work: milton-paradise-regained
+        title: Paradise Regained
+        author: John Milton
+      - work: milton-samson-agonistes
+        title: Samson Agonistes
+        author: John Milton
+      - work: milton-minor-poems
+        title: English Minor Poems
+        author: John Milton
+        note: "All of Milton's English poems are included: Lycidas, L'Allegro, Il Penseroso, Comus, the Nativity Ode, sonnets and others"
+  - id: vol-5
+    label: Volume 5
+    sublabel: Essays and English Traits, Emerson
+    order: 5
+    items:
+      - work: emerson-essays
+        title: Essays
+        author: Ralph Waldo Emerson
+        note: "First and Second Series"
+      - work: emerson-english-traits
+        title: English Traits
+        author: Ralph Waldo Emerson
+  - id: vol-6
+    label: Volume 6
+    sublabel: Poems and Songs, Burns
+    order: 6
+    items:
+      - work: burns-poems-and-songs
+        title: Poems and Songs
+        author: Robert Burns
+  - id: vol-7
+    label: Volume 7
+    sublabel: The Confessions of St. Augustine, The Imitation of Christ
+    order: 7
+    items:
+      - work: augustine-confessions
+        title: The Confessions
+        author: Augustine of Hippo
+      - work: kempis-imitation-of-christ
+        title: The Imitation of Christ
+        author: Thomas à Kempis
+  - id: vol-8
+    label: Volume 8
+    sublabel: Nine Greek Dramas
+    order: 8
+    items:
+      - work: aeschylus-agamemnon
+        title: Agamemnon
+        author: Aeschylus
+      - work: aeschylus-libation-bearers
+        title: The Libation Bearers
+        author: Aeschylus
+      - work: aeschylus-eumenides
+        title: The Eumenides
+        author: Aeschylus
+        note: "Printed as The Furies"
+      - work: aeschylus-prometheus-bound
+        title: Prometheus Bound
+        author: Aeschylus
+      - work: sophocles-oedipus-the-king
+        title: Oedipus the King
+        author: Sophocles
+      - work: sophocles-antigone
+        title: Antigone
+        author: Sophocles
+      - work: euripides-hippolytus
+        title: Hippolytus
+        author: Euripides
+      - work: euripides-bacchae
+        title: The Bacchae
+        author: Euripides
+      - work: aristophanes-frogs
+        title: The Frogs
+        author: Aristophanes
+  - id: vol-9
+    label: Volume 9
+    sublabel: Letters and Treatises of Cicero and Pliny
+    order: 9
+    items:
+      - work: cicero-on-friendship
+        title: On Friendship
+        author: Cicero
+      - work: cicero-on-old-age
+        title: On Old Age
+        author: Cicero
+      - work: cicero-letters
+        title: Letters
+        author: Cicero
+        note: "Selections"
+      - work: pliny-letters
+        title: Letters
+        author: Pliny the Younger
+        note: "Selections"
+  - id: vol-10
+    label: Volume 10
+    sublabel: Wealth of Nations, Adam Smith
+    order: 10
+    items:
+      - work: smith-wealth-of-nations
+        title: The Wealth of Nations
+        author: Adam Smith
+  - id: vol-11
+    label: Volume 11
+    sublabel: Origin of Species, Darwin
+    order: 11
+    items:
+      - work: darwin-origin-of-species
+        title: The Origin of Species
+        author: Charles Darwin
+  - id: vol-12
+    label: Volume 12
+    sublabel: Plutarch's Lives
+    order: 12
+    items:
+      - work: plutarch-lives
+        title: Lives
+        author: Plutarch
+        note: "Selected lives, Dryden translation revised by Clough"
+  - id: vol-13
+    label: Volume 13
+    sublabel: Aeneid, Virgil
+    order: 13
+    items:
+      - work: virgil-aeneid
+        title: The Aeneid
+        author: Virgil
+        note: "John Dryden translation"
+  - id: vol-14
+    label: Volume 14
+    sublabel: Don Quixote, Part 1, Cervantes
+    order: 14
+    items:
+      - work: cervantes-don-quixote
+        title: Don Quixote
+        author: Miguel de Cervantes
+        note: "Part 1 only"
+  - id: vol-15
+    label: Volume 15
+    sublabel: Bunyan and Walton
+    order: 15
+    items:
+      - work: bunyan-pilgrims-progress
+        title: The Pilgrim's Progress
+        author: John Bunyan
+      - work: walton-lives-of-donne-and-herbert
+        title: The Lives of Donne and Herbert
+        author: Izaak Walton
+  - id: vol-16
+    label: Volume 16
+    sublabel: The Thousand and One Nights
+    order: 16
+    items:
+      - work: arabian-nights
+        title: Stories from the Thousand and One Nights
+        author: Anonymous
+        note: "Selections, Edward William Lane translation revised by Stanley Lane-Poole"
+  - id: vol-17
+    label: Volume 17
+    sublabel: Folk-Lore and Fable, Aesop, Grimm, Andersen
+    order: 17
+    items:
+      - work: aesop-fables
+        title: Fables
+        author: Aesop
+      - work: grimm-fairy-tales
+        title: Children's and Household Tales
+        author: Jacob and Wilhelm Grimm
+        note: "Selections"
+      - work: andersen-fairy-tales
+        title: Tales
+        author: Hans Christian Andersen
+        note: "Selections"
+  - id: vol-18
+    label: Volume 18
+    sublabel: Modern English Drama
+    order: 18
+    items:
+      - work: dryden-all-for-love
+        title: All for Love
+        author: John Dryden
+      - work: sheridan-school-for-scandal
+        title: The School for Scandal
+        author: Richard Brinsley Sheridan
+      - work: goldsmith-she-stoops-to-conquer
+        title: She Stoops to Conquer
+        author: Oliver Goldsmith
+      - work: percy-shelley-cenci
+        title: The Cenci
+        author: Percy Bysshe Shelley
+      - work: browning-blot-in-the-scutcheon
+        title: A Blot in the 'Scutcheon
+        author: Robert Browning
+      - work: byron-manfred
+        title: Manfred
+        author: Lord Byron
+  - id: vol-19
+    label: Volume 19
+    sublabel: Faust, Egmont, etc., Goethe; Doctor Faustus, Marlowe
+    order: 19
+    items:
+      - work: goethe-faust
+        title: Faust
+        author: Johann Wolfgang von Goethe
+        note: "Part I only"
+      - work: goethe-egmont
+        title: Egmont
+        author: Johann Wolfgang von Goethe
+      - work: goethe-hermann-and-dorothea
+        title: Hermann and Dorothea
+        author: Johann Wolfgang von Goethe
+      - work: marlowe-doctor-faustus
+        title: Doctor Faustus
+        author: Christopher Marlowe
+  - id: vol-20
+    label: Volume 20
+    sublabel: The Divine Comedy, Dante
+    order: 20
+    items:
+      - work: dante-divine-comedy
+        title: The Divine Comedy
+        author: Dante Alighieri
+        note: "Henry F. Cary translation"
+  - id: vol-21
+    label: Volume 21
+    sublabel: I Promessi Sposi, Manzoni
+    order: 21
+    items:
+      - work: manzoni-betrothed
+        title: The Betrothed (I Promessi Sposi)
+        author: Alessandro Manzoni
+  - id: vol-22
+    label: Volume 22
+    sublabel: The Odyssey, Homer
+    order: 22
+    items:
+      - work: homer-odyssey
+        title: The Odyssey
+        author: Homer
+        note: "Butcher and Lang prose translation"
+  - id: vol-23
+    label: Volume 23
+    sublabel: Two Years Before the Mast, Dana
+    order: 23
+    items:
+      - work: dana-two-years-before-the-mast
+        title: Two Years Before the Mast
+        author: Richard Henry Dana Jr.
+  - id: vol-24
+    label: Volume 24
+    sublabel: On the Sublime, French Revolution, etc., Burke
+    order: 24
+    items:
+      - work: burke-on-the-sublime-and-beautiful
+        title: A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful
+        author: Edmund Burke
+        note: "With the introductory essay On Taste"
+      - work: burke-reflections-on-the-revolution-in-france
+        title: Reflections on the Revolution in France
+        author: Edmund Burke
+      - work: burke-letter-to-a-noble-lord
+        title: A Letter to a Noble Lord
+        author: Edmund Burke
+  - id: vol-25
+    label: Volume 25
+    sublabel: J. S. Mill and Thomas Carlyle
+    order: 25
+    items:
+      - work: mill-autobiography
+        title: Autobiography
+        author: John Stuart Mill
+      - work: mill-on-liberty
+        title: On Liberty
+        author: John Stuart Mill
+      - work: carlyle-characteristics
+        title: Characteristics
+        author: Thomas Carlyle
+      - work: carlyle-inaugural-address-at-edinburgh
+        title: Inaugural Address at Edinburgh
+        author: Thomas Carlyle
+      - work: carlyle-sir-walter-scott
+        title: Sir Walter Scott
+        author: Thomas Carlyle
+  - id: vol-26
+    label: Volume 26
+    sublabel: Continental Drama
+    order: 26
+    items:
+      - work: calderon-life-is-a-dream
+        title: Life Is a Dream
+        author: Pedro Calderón de la Barca
+      - work: corneille-polyeucte
+        title: Polyeucte
+        author: Pierre Corneille
+      - work: racine-phaedra
+        title: Phaedra
+        author: Jean Racine
+      - work: moliere-tartuffe
+        title: Tartuffe
+        author: Molière
+      - work: lessing-minna-von-barnhelm
+        title: Minna von Barnhelm
+        author: Gotthold Ephraim Lessing
+      - work: schiller-william-tell
+        title: William Tell
+        author: Friedrich Schiller
+  - id: vol-27
+    label: Volume 27
+    sublabel: English Essays, Sidney to Macaulay
+    order: 27
+    items:
+      - work: sidney-defence-of-poesy
+        title: The Defense of Poesy
+        author: Philip Sidney
+      - work: hume-of-the-standard-of-taste
+        title: Of the Standard of Taste
+        author: David Hume
+      - work: hazlitt-of-persons-one-would-wish-to-have-seen
+        title: Of Persons One Would Wish to Have Seen
+        author: William Hazlitt
+      - work: lamb-on-the-tragedies-of-shakespeare
+        title: On the Tragedies of Shakespeare
+        author: Charles Lamb
+      - work: percy-shelley-defence-of-poetry
+        title: A Defence of Poetry
+        author: Percy Bysshe Shelley
+      - work: macaulay-machiavelli
+        title: Machiavelli
+        author: Thomas Babington Macaulay
+        note: "24 essays in all; also Jonson, Cowley, Addison, Steele, Swift (4), Defoe (2), Johnson, Sydney Smith, Coleridge, Leigh Hunt (2), De Quincey"
+  - id: vol-28
+    label: Volume 28
+    sublabel: Essays, English and American
+    order: 28
+    items:
+      - work: newman-idea-of-a-university
+        title: The Idea of a University
+        author: John Henry Newman
+        note: "Selections"
+      - work: arnold-study-of-poetry
+        title: The Study of Poetry
+        author: Matthew Arnold
+      - work: ruskin-sesame-and-lilies
+        title: Sesame and Lilies
+        author: John Ruskin
+      - work: huxley-science-and-culture
+        title: Science and Culture
+        author: Thomas Henry Huxley
+      - work: poe-poetic-principle
+        title: The Poetic Principle
+        author: Edgar Allan Poe
+      - work: thoreau-walking
+        title: Walking
+        author: Henry David Thoreau
+        note: "15 essays in all; also Thackeray on Swift, Bagehot on Milton, Freeman, Stevenson (2), Channing, and Lowell (Abraham Lincoln, Democracy)"
+  - id: vol-29
+    label: Volume 29
+    sublabel: Voyage of the Beagle, Darwin
+    order: 29
+    items:
+      - work: darwin-voyage-of-the-beagle
+        title: The Voyage of the Beagle
+        author: Charles Darwin
+  - id: vol-30
+    label: Volume 30
+    sublabel: Faraday, Helmholtz, Kelvin, Newcomb, etc.
+    order: 30
+    items:
+      - work: faraday-forces-of-matter
+        title: The Forces of Matter
+        author: Michael Faraday
+      - work: faraday-chemical-history-of-a-candle
+        title: The Chemical History of a Candle
+        author: Michael Faraday
+      - work: helmholtz-on-the-conservation-of-force
+        title: On the Conservation of Force
+        author: Hermann von Helmholtz
+        note: "Also Ice and Glaciers"
+      - work: kelvin-wave-theory-of-light
+        title: The Wave Theory of Light
+        author: Lord Kelvin
+        note: "Also The Tides"
+      - work: newcomb-extent-of-the-universe
+        title: The Extent of the Universe
+        author: Simon Newcomb
+      - work: geikie-geographical-evolution
+        title: Geographical Evolution
+        author: Archibald Geikie
+  - id: vol-31
+    label: Volume 31
+    sublabel: Autobiography, Cellini
+    order: 31
+    items:
+      - work: cellini-autobiography
+        title: The Autobiography of Benvenuto Cellini
+        author: Benvenuto Cellini
+  - id: vol-32
+    label: Volume 32
+    sublabel: Montaigne, Sainte-Beuve, Renan, etc.
+    order: 32
+    items:
+      - work: montaigne-essays
+        title: Essays
+        author: Michel de Montaigne
+        note: "Selections, Cotton translation"
+      - work: sainte-beuve-what-is-a-classic
+        title: What Is a Classic?
+        author: Charles Augustin Sainte-Beuve
+        note: "Also the essay Montaigne"
+      - work: renan-poetry-of-the-celtic-races
+        title: The Poetry of the Celtic Races
+        author: Ernest Renan
+      - work: lessing-education-of-the-human-race
+        title: The Education of the Human Race
+        author: Gotthold Ephraim Lessing
+      - work: schiller-aesthetic-education-of-man
+        title: Letters upon the Aesthetic Education of Man
+        author: Friedrich Schiller
+      - work: kant-groundwork-of-the-metaphysics-of-morals
+        title: Fundamental Principles of the Metaphysic of Morals
+        author: Immanuel Kant
+      - work: mazzini-byron-and-goethe
+        title: Byron and Goethe
+        author: Giuseppe Mazzini
+  - id: vol-33
+    label: Volume 33
+    sublabel: Voyages and Travels
+    order: 33
+    items:
+      - work: herodotus-histories
+        title: The Histories
+        author: Herodotus
+        note: "Book II, An Account of Egypt"
+      - work: tacitus-germania
+        title: Germany
+        author: Tacitus
+      - work: nichols-sir-francis-drake-revived
+        title: Sir Francis Drake Revived
+        author: Philip Nichols
+      - work: pretty-drakes-famous-voyage
+        title: Sir Francis Drake's Famous Voyage Round the World
+        author: Francis Pretty
+      - work: raleigh-discovery-of-guiana
+        title: The Discovery of Guiana
+        author: Walter Raleigh
+        note: "Also Drake's Great Armada (Walter Bigges) and Sir Humphrey Gilbert's Voyage to Newfoundland (Edward Haies)"
+  - id: vol-34
+    label: Volume 34
+    sublabel: Descartes, Voltaire, Rousseau, Hobbes
+    order: 34
+    items:
+      - work: descartes-discourse-on-method
+        title: Discourse on Method
+        author: René Descartes
+      - work: voltaire-letters-on-the-english
+        title: Letters on the English
+        author: Voltaire
+      - work: rousseau-discourse-on-inequality
+        title: A Discourse on the Origin of Inequality
+        author: Jean-Jacques Rousseau
+      - work: rousseau-profession-of-faith-of-a-savoyard-vicar
+        title: Profession of Faith of a Savoyard Vicar
+        author: Jean-Jacques Rousseau
+        note: "From Emile, Book IV"
+      - work: hobbes-leviathan
+        title: Leviathan
+        author: Thomas Hobbes
+        note: "Part I, Of Man"
+  - id: vol-35
+    label: Volume 35
+    sublabel: Froissart, Malory, Holinshed
+    order: 35
+    items:
+      - work: froissart-chronicles
+        title: Chronicles
+        author: Jean Froissart
+        note: "Selections"
+      - work: malory-le-morte-darthur
+        title: Le Morte d'Arthur
+        author: Thomas Malory
+        note: "The Holy Grail (Books XIII-XVII)"
+      - work: harrison-description-of-elizabethan-england
+        title: A Description of Elizabethan England
+        author: William Harrison
+        note: "From Holinshed's Chronicles"
+  - id: vol-36
+    label: Volume 36
+    sublabel: Machiavelli, More, Luther
+    order: 36
+    items:
+      - work: machiavelli-prince
+        title: The Prince
+        author: Niccolò Machiavelli
+      - work: roper-life-of-sir-thomas-more
+        title: The Life of Sir Thomas More
+        author: William Roper
+      - work: more-utopia
+        title: Utopia
+        author: Thomas More
+      - work: luther-ninety-five-theses
+        title: The Ninety-Five Theses
+        author: Martin Luther
+      - work: luther-to-the-christian-nobility
+        title: To the Christian Nobility of the German Nation
+        author: Martin Luther
+      - work: luther-on-the-freedom-of-a-christian
+        title: On the Freedom of a Christian
+        author: Martin Luther
+  - id: vol-37
+    label: Volume 37
+    sublabel: Locke, Berkeley, Hume
+    order: 37
+    items:
+      - work: locke-some-thoughts-concerning-education
+        title: Some Thoughts Concerning Education
+        author: John Locke
+      - work: berkeley-three-dialogues
+        title: Three Dialogues Between Hylas and Philonous
+        author: George Berkeley
+      - work: hume-enquiry-concerning-human-understanding
+        title: An Enquiry Concerning Human Understanding
+        author: David Hume
+  - id: vol-38
+    label: Volume 38
+    sublabel: Harvey, Jenner, Lister, Pasteur
+    order: 38
+    items:
+      - work: hippocrates-works
+        title: The Oath of Hippocrates
+        author: Hippocrates
+        note: "The Oath only"
+      - work: pare-journeys-in-diverse-places
+        title: Journeys in Diverse Places
+        author: Ambroise Paré
+      - work: harvey-on-the-motion-of-the-heart-and-blood
+        title: On the Motion of the Heart and Blood in Animals
+        author: William Harvey
+      - work: jenner-vaccination
+        title: The Three Original Publications on Vaccination Against Smallpox
+        author: Edward Jenner
+      - work: holmes-contagiousness-of-puerperal-fever
+        title: The Contagiousness of Puerperal Fever
+        author: Oliver Wendell Holmes
+      - work: lister-antiseptic-principle
+        title: On the Antiseptic Principle of the Practice of Surgery
+        author: Joseph Lister
+      - work: pasteur-scientific-papers
+        title: Scientific Papers
+        author: Louis Pasteur
+        note: "The Physiological Theory of Fermentation; The Germ Theory and Its Applications; Extension of the Germ Theory"
+      - work: lyell-scientific-papers
+        title: Scientific Papers
+        author: Charles Lyell
+        note: "Selections from Principles of Geology"
+  - id: vol-39
+    label: Volume 39
+    sublabel: Famous Prefaces
+    order: 39
+    items:
+      - work: bacon-novum-organum
+        title: Novum Organum
+        author: Francis Bacon
+        note: "Prooemium, Epistle Dedicatory, Preface and Plan of the Instauratio Magna, and the Preface to Novum Organum"
+      - work: newton-principia
+        title: Mathematical Principles of Natural Philosophy
+        author: Isaac Newton
+        note: "Preface only"
+      - work: johnson-preface-to-shakespeare
+        title: Preface to Shakespeare
+        author: Samuel Johnson
+        note: "Also the Preface to the English Dictionary"
+      - work: wordsworth-lyrical-ballads
+        title: Lyrical Ballads
+        author: William Wordsworth
+        note: "Prefaces, the Appendix, and the Essay Supplementary to the Preface only"
+      - work: hugo-cromwell
+        title: Cromwell
+        author: Victor Hugo
+        note: "Preface only"
+      - work: whitman-leaves-of-grass
+        title: Leaves of Grass
+        author: Walt Whitman
+        note: "1855 Preface only. 28 prefaces in all; also Caxton (8), Calvin, Copernicus, Knox, Spenser, Raleigh, Heminge and Condell, Dryden, Fielding, Goethe, Taine"
+  - id: vol-40
+    label: Volume 40
+    sublabel: "English Poetry 1: Chaucer to Gray"
+    order: 40
+    items:
+      - work: chaucer-canterbury-tales
+        title: The Canterbury Tales
+        author: Geoffrey Chaucer
+        note: "The Prologue and The Nun's Priest's Tale"
+      - work: english-and-scottish-ballads
+        title: Traditional Ballads
+        author: Anonymous
+        note: "31 ballads including Sir Patrick Spens, The Twa Corbies, Chevy Chase, A Gest of Robyn Hode"
+      - work: spenser-epithalamion
+        title: Epithalamion
+        author: Edmund Spenser
+        note: "Also Prothalamion and shorter pieces"
+      - work: shakespeare-sonnets
+        title: Sonnets
+        author: William Shakespeare
+        note: "30 sonnets and 16 songs from the plays"
+      - work: donne-poems
+        title: Poems
+        author: John Donne
+        note: "13 poems including A Valediction Forbidding Mourning, The Good Morrow"
+      - work: pope-essay-on-man
+        title: An Essay on Man
+        author: Alexander Pope
+      - work: gray-elegy-written-in-a-country-churchyard
+        title: Elegy Written in a Country Churchyard
+        author: Thomas Gray
+        note: "Also Gray's odes. Over 100 poets in all, including Wyatt, Sidney, Marlowe, Jonson, Herrick, Herbert, Marvell, Milton, Dryden"
+  - id: vol-41
+    label: Volume 41
+    sublabel: "English Poetry 2: Collins to Fitzgerald"
+    order: 41
+    items:
+      - work: goldsmith-deserted-village
+        title: The Deserted Village
+        author: Oliver Goldsmith
+        note: "Also The Traveller"
+      - work: wordsworth-poems
+        title: Poems
+        author: William Wordsworth
+        note: "Selections"
+      - work: coleridge-rime-of-the-ancient-mariner
+        title: The Rime of the Ancient Mariner
+        author: Samuel Taylor Coleridge
+        note: "Also Christabel and shorter poems"
+      - work: byron-prisoner-of-chillon
+        title: The Prisoner of Chillon
+        author: Lord Byron
+        note: "Also shorter poems"
+      - work: percy-shelley-adonais
+        title: Adonais
+        author: Percy Bysshe Shelley
+        note: "Also Hellas and shorter poems"
+      - work: keats-poems
+        title: Poems
+        author: John Keats
+        note: "Selections. Some 70 poets in all, including Collins, Cowper, Blake, Burns's contemporaries, Scott, Landor, Hood, Macaulay, E. B. Browning, FitzGerald"
+  - id: vol-42
+    label: Volume 42
+    sublabel: "English Poetry 3: Tennyson to Whitman"
+    order: 42
+    items:
+      - work: tennyson-poems
+        title: Poems
+        author: Alfred, Lord Tennyson
+        note: "Selections"
+      - work: browning-poems
+        title: Poems
+        author: Robert Browning
+        note: "Selections including The Lost Leader, Home-Thoughts from Abroad"
+      - work: arnold-poems
+        title: Poems
+        author: Matthew Arnold
+        note: "Selections"
+      - work: longfellow-evangeline
+        title: Evangeline
+        author: Henry Wadsworth Longfellow
+      - work: poe-poems
+        title: Poems
+        author: Edgar Allan Poe
+        note: "Selections"
+      - work: whitman-leaves-of-grass
+        title: Leaves of Grass
+        author: Walt Whitman
+        note: "Selections. Some 45 poets in all, including Emily Brontë, Clough, Meredith, the Rossettis, Morris, Swinburne, Stevenson, Bryant, Emerson, Whittier, Holmes, Lowell, Lanier"
+  - id: vol-43
+    label: Volume 43
+    sublabel: American Historical Documents
+    order: 43
+    items:
+      - work: mayflower-compact
+        title: The Mayflower Compact
+        author: Anonymous
+      - work: declaration-of-independence
+        title: The Declaration of Independence
+        author: Thomas Jefferson and the Continental Congress
+      - work: us-constitution
+        title: Constitution of the United States
+        author: Constitutional Convention
+      - work: washington-farewell-address
+        title: Washington's Farewell Address
+        author: George Washington
+        note: "Also the First Inaugural Address"
+      - work: lincoln-gettysburg-address
+        title: The Gettysburg Address
+        author: Abraham Lincoln
+      - work: lincoln-second-inaugural-address
+        title: Second Inaugural Address
+        author: Abraham Lincoln
+        note: "47 documents in all (1000-1904): Vinland voyages, Columbus, Fundamental Orders of Connecticut, Articles of Confederation, Federalist 1-2, Monroe Doctrine, Emancipation Proclamation, treaties"
+  - id: vol-44
+    label: Volume 44
+    sublabel: "Sacred Writings: Volume 1"
+    order: 44
+    items:
+      - work: confucius-analects
+        title: The Sayings of Confucius
+        author: Confucius
+      - work: bible-job
+        title: The Book of Job
+        author: Anonymous
+      - work: bible-psalms
+        title: The Book of Psalms
+        author: Anonymous
+      - work: bible-ecclesiastes
+        title: Ecclesiastes
+        author: Anonymous
+      - work: bible-gospel-of-luke
+        title: The Gospel According to Luke
+        author: Anonymous
+      - work: bible-acts
+        title: The Acts of the Apostles
+        author: Anonymous
+  - id: vol-45
+    label: Volume 45
+    sublabel: "Sacred Writings: Volume 2"
+    order: 45
+    items:
+      - work: bible-1-corinthians
+        title: The First Epistle of Paul to the Corinthians
+        author: Paul the Apostle
+      - work: bible-2-corinthians
+        title: The Second Epistle of Paul to the Corinthians
+        author: Paul the Apostle
+      - work: hymns-of-the-christian-church
+        title: Hymns of the Christian Church
+        author: Various
+        note: "Hymns based on Psalms; Greek, Latin and modern hymns"
+      - work: buddhist-writings
+        title: Buddhist Writings
+        author: Anonymous
+        note: "Henry Clarke Warren's translations: The Buddha, The Doctrine, The Order"
+      - work: bhagavad-gita
+        title: The Bhagavad Gita
+        author: Anonymous
+        note: "Edwin Arnold's verse translation, The Song Celestial"
+      - work: quran
+        title: Chapters from the Koran
+        author: Anonymous
+        note: "Selected Mecca and Medina suras, E. H. Palmer translation"
+  - id: vol-46
+    label: Volume 46
+    sublabel: Elizabethan Drama 1
+    order: 46
+    items:
+      - work: marlowe-edward-ii
+        title: Edward the Second
+        author: Christopher Marlowe
+      - work: shakespeare-hamlet
+        title: Hamlet
+        author: William Shakespeare
+      - work: shakespeare-king-lear
+        title: King Lear
+        author: William Shakespeare
+      - work: shakespeare-macbeth
+        title: Macbeth
+        author: William Shakespeare
+      - work: shakespeare-tempest
+        title: The Tempest
+        author: William Shakespeare
+  - id: vol-47
+    label: Volume 47
+    sublabel: Elizabethan Drama 2
+    order: 47
+    items:
+      - work: dekker-shoemakers-holiday
+        title: The Shoemaker's Holiday
+        author: Thomas Dekker
+      - work: jonson-alchemist
+        title: The Alchemist
+        author: Ben Jonson
+      - work: beaumont-and-fletcher-philaster
+        title: Philaster
+        author: Francis Beaumont and John Fletcher
+      - work: webster-duchess-of-malfi
+        title: The Duchess of Malfi
+        author: John Webster
+      - work: massinger-new-way-to-pay-old-debts
+        title: A New Way to Pay Old Debts
+        author: Philip Massinger
+  - id: vol-48
+    label: Volume 48
+    sublabel: Thoughts and Minor Works, Pascal
+    order: 48
+    items:
+      - work: pascal-pensees
+        title: Thoughts (Pensées)
+        author: Blaise Pascal
+        note: "With letters and minor works"
+  - id: vol-49
+    label: Volume 49
+    sublabel: Epic and Saga
+    order: 49
+    items:
+      - work: beowulf
+        title: Beowulf
+        author: Anonymous
+      - work: song-of-roland
+        title: The Song of Roland
+        author: Anonymous
+      - work: destruction-of-da-dergas-hostel
+        title: The Destruction of Dá Derga's Hostel
+        author: Anonymous
+      - work: volsunga-saga
+        title: The Story of the Volsungs and Niblungs
+        author: Anonymous
+        note: "William Morris and Eiríkr Magnússon translation"
+      - work: poetic-edda
+        title: Songs from the Elder Edda
+        author: Anonymous
+        note: "Selections"
+  - id: vol-50
+    label: Volume 50
+    sublabel: Introduction, Reader's Guide, Indexes
+    order: 50
+    items:
+      - work: charles-eliot-readers-guide-to-the-harvard-classics
+        title: The Editor's Introduction and Reader's Guide
+        author: Charles W. Eliot
+        note: "Editorial apparatus, not a literary work: introduction, reader's guide by class and subject, index of first lines, general and chronological indexes"
+  - id: vol-51
+    label: Volume 51
+    sublabel: Lectures on the Harvard Classics
+    order: 51
+    items:
+      - work: lectures-on-the-harvard-classics
+        title: Lectures on the Harvard Classics
+        author: William Allan Neilson (ed.)
+        note: "Added in 1914: sixty lectures by Harvard faculty introducing the fields covered by the set (history, philosophy, religion, education, science, politics, drama, poetry, fiction and others)"

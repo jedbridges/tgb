@@ -1,0 +1,20 @@
+- { id: mesopotamia, label: Mesopotamia, order: 1 }
+- { id: ancient-israel, label: Ancient Israel and Judea, order: 2 }
+- { id: greece, label: Greece, order: 3 }
+- { id: rome, label: Rome, order: 4 }
+- { id: north-africa, label: North Africa, order: 5 }
+- { id: byzantium-and-near-east, label: Byzantium and the Near East, order: 6 }
+- { id: islamic-world, label: Islamic World, order: 7 }
+- { id: italy, label: Italy, order: 8 }
+- { id: france, label: France, order: 9 }
+- { id: britain, label: Britain and Ireland, order: 10 }
+- { id: germany, label: Germany and Austria, order: 11 }
+- { id: spain-and-portugal, label: Spain and Portugal, order: 12 }
+- { id: low-countries, label: The Low Countries, order: 13 }
+- { id: scandinavia, label: Scandinavia, order: 14 }
+- { id: russia, label: Russia, order: 15 }
+- { id: united-states, label: United States, order: 16 }
+- { id: india, label: India, order: 17 }
+- { id: china, label: China, order: 18 }
+- { id: japan, label: Japan, order: 19 }
+- { id: other, label: Elsewhere, order: 20 }

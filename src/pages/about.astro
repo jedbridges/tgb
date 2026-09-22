@@ -1,0 +1,26 @@
+---
+import Base from '~/layouts/Base.astro';
+import { url } from '~/lib/url';
+---
+<Base title="About" description="What The Great Books is, where the lists come from, and how the summaries are written.">
+  <article class="wrap page" data-pagefind-body data-pagefind-filter="type:Page"><span class="visually-hidden" data-pagefind-meta="type:Page"></span>
+    <p class="eyebrow">About</p>
+    <h1 class="italic" data-pagefind-meta="title">One shelf for every list</h1>
+    <div class="prose">
+      <p class="lede">For a century, a handful of colleges have organised their whole curriculum around reading the same few hundred books. The lists overlap, disagree at the edges, and change a little every year. This site gathers them in one place.</p>
+      <h2>Where the lists come from</h2>
+      <p>Each program page is transcribed from the program's own published reading list, with the date and source recorded on the page. Where a program assigns only part of a work, the note says so. Where lists change, we update them and keep the source note current. See <a href={url('/programs/')}>the programs</a>.</p>
+      <h2>How the guides are written</h2>
+      <p>Every work gets a short synopsis, a note on why it keeps being assigned, its key themes, a longer reading guide, and a few passages worth knowing before you go in. The guides are written to be useful the week before a seminar: what happens, how to read it, what to watch for, and the questions it tends to provoke. They are not a substitute for the book. Nothing here is.</p>
+      <h2>Editions</h2>
+      <p>For translated works we recommend one edition and explain why, usually on the strength of the translation, the notes, or simply because it is the one most programs use. The buy links go to that edition where possible.</p>
+      <h2>How the site is paid for</h2>
+      <p>Buy links are affiliate links to Amazon and Bookshop.org. If you buy through them the site earns a small commission at no extra cost to you. Editorial choices are never influenced by that. Read the <a href={url('/disclosure/')}>full disclosure</a>.</p>
+    </div>
+  </article>
+</Base>
+<style>
+  .page { padding-block: var(--s4) var(--s3); }
+  .page h1 { font-size: var(--step-4); margin-bottom: var(--s2); }
+  .lede { font-size: var(--step-1); line-height: 1.45; }
+</style>

@@ -8,3 +8,5 @@ dist/
 .DS_Store
 npm-debug.log*
 .lighthouseci/
+.preview/
+content/worklist.json

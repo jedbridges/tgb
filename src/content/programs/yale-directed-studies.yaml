@@ -1,0 +1,423 @@
+name: Yale Directed Studies
+shortName: Yale DS
+kind: college
+institution: Yale University
+url: https://directedstudies.yale.edu/
+description: >-
+  Directed Studies is a selective one-year program for about 125 first-year students at Yale College,
+  founded in 1946. Students take three linked year-long courses, Literature, Philosophy, and Historical
+  and Political Thought, which together make up two-thirds of their first-year schedule. Each course
+  combines a weekly lecture by a Yale faculty member with small discussion sections of about eighteen
+  students, and students write a paper roughly every two weeks. The fall semester in all three courses
+  runs from the ancient Near East and Greece through late antiquity and the Middle Ages; the spring
+  semester runs from the Renaissance to the twentieth century.
+
+  The lists below follow the schedules of readings in the three official syllabi, fall then spring,
+  with the assigned selections given in the note. Anthologies and readers on the book list (Early Greek
+  Philosophy, The Stoics Reader, Classical Arabic Philosophy, the Romantic poetry reader) are entered
+  by the works actually assigned from them where the syllabus names them.
+sourceNote: "Directed Studies 2024-25 syllabi (the most recent published): Literature Fall 2024 and Spring 2025, Philosophy Fall 2024 and Spring 2025, Historical and Political Thought Fall 2024 and Spring 2025, PDFs linked from https://directedstudies.yale.edu/syllabi/syllabi/literature-syllabus, https://directedstudies.yale.edu/syllabi/syllabi/philosophy-syllabus, and https://directedstudies.yale.edu/syllabi/syllabi/historical-and-political-thought-syllabus; checked 2026-09-21"
+segmentLabel: Course
+order: 5
+segments:
+  - id: literature
+    label: Literature
+    order: 1
+    items:
+      - work: epic-of-gilgamesh
+        title: The Epic of Gilgamesh
+        author: Anonymous
+      - work: bible
+        title: The Bible
+        author: Bible
+        note: "Hebrew Bible, selections"
+      - work: homer-iliad
+        title: The Iliad
+        author: Homer
+      - work: homer-odyssey
+        title: The Odyssey
+        author: Homer
+      - work: sappho-poems
+        title: "If Not, Winter: Fragments of Sappho"
+        author: Sappho
+        note: "selected fragments"
+      - work: aeschylus-oresteia
+        title: Oresteia
+        author: Aeschylus
+      - work: sophocles-antigone
+        title: Antigone
+        author: Sophocles
+      - work: euripides-bacchae
+        title: The Bacchae
+        author: Euripides
+      - work: virgil-aeneid
+        title: The Aeneid
+        author: Virgil
+      - work: ovid-metamorphoses
+        title: Metamorphoses
+        author: Ovid
+        note: "Book 1; Book 9 (Iphis and Ianthe); Book 10; Book 11 (death of Orpheus)"
+      - work: bible-gospel-of-matthew
+        title: Gospel of Matthew
+        author: Bible
+      - work: bible-romans
+        title: Letter to the Romans
+        author: Bible
+      - work: gospel-of-thomas
+        title: Gospel of Thomas
+        author: Anonymous
+      - work: gospel-of-judas
+        title: Gospel of Judas
+        author: Anonymous
+      - work: augustine-confessions
+        title: Confessions
+        author: Augustine
+        note: "Books 1, 2, 6, 7, 8, 10"
+      - work: dante-divine-comedy
+        title: The Divine Comedy
+        author: Dante
+        note: "Inferno complete; Purgatorio 1-2, 10-12, 21-33; Paradiso 1, 10-12, 30-33"
+      - work: cervantes-don-quixote
+        title: Don Quixote
+        author: Miguel de Cervantes
+        note: "Part I"
+      - work: shakespeare-hamlet
+        title: Hamlet
+        author: William Shakespeare
+      - work: milton-paradise-lost
+        title: Paradise Lost
+        author: John Milton
+      - work: romantic-poetry-reader
+        title: Romantic Poetry Reader
+        author: Various
+        note: "course reader of Romantic poems"
+      - work: mary-shelley-frankenstein
+        title: Frankenstein
+        author: Mary Shelley
+      - work: goethe-faust
+        title: Faust
+        author: Johann Wolfgang von Goethe
+        note: "Part One"
+      - work: flaubert-madame-bovary
+        title: Madame Bovary
+        author: Gustave Flaubert
+      - work: tolstoy-hadji-murat
+        title: Hadji Murat
+        author: Leo Tolstoy
+      - work: proust-swanns-way
+        title: Swann's Way
+        author: Marcel Proust
+        note: "Combray"
+      - work: woolf-to-the-lighthouse
+        title: To the Lighthouse
+        author: Virginia Woolf
+      - work: hansberry-a-raisin-in-the-sun
+        title: A Raisin in the Sun
+        author: Lorraine Hansberry
+      - work: walcott-omeros
+        title: Omeros
+        author: Derek Walcott
+        note: "Books 1-3, 6, 7"
+  - id: philosophy
+    label: Philosophy
+    order: 2
+    items:
+      - work: plato-euthyphro
+        title: Euthyphro
+        author: Plato
+      - work: plato-apology
+        title: Apology
+        author: Plato
+      - work: plato-meno
+        title: Meno
+        author: Plato
+      - work: plato-phaedo
+        title: Phaedo
+        author: Plato
+      - work: presocratics-fragments
+        title: Early Greek Philosophy
+        author: Various
+        note: "Parmenides and Anaxagoras, in Barnes, Early Greek Philosophy"
+      - work: plato-republic
+        title: The Republic
+        author: Plato
+      - work: plato-timaeus
+        title: Timaeus
+        author: Plato
+        note: "27c-41d"
+      - work: aristotle-nicomachean-ethics
+        title: Nicomachean Ethics
+        author: Aristotle
+        note: "I.1-8, 13; II.1-7, 9; III.1-5, 10-12; VI.1-7, 12-13; VII.1-3; IX.4, 8-9; X.6-8"
+      - work: aristotle-organon
+        title: Categories
+        author: Aristotle
+        note: "Categories 1-5"
+      - work: aristotle-physics
+        title: Physics
+        author: Aristotle
+        note: "I.7-9; II"
+      - work: aristotle-on-the-soul
+        title: On the Soul
+        author: Aristotle
+        note: "I.1, 4; II.1-5; III.4-5"
+      - work: aristotle-metaphysics
+        title: Metaphysics
+        author: Aristotle
+        note: "I.1-2; VII.7-9; XII.1-7, 9-10"
+      - work: epicurus-letter-to-menoeceus
+        title: Letter to Menoeceus
+        author: Epicurus
+        note: "with the Principal Doctrines"
+      - work: lucretius-on-the-nature-of-things
+        title: On the Nature of Things
+        author: Lucretius
+        note: "Books I and III"
+      - work: stoics-reader
+        title: The Stoics Reader
+        author: Various
+        note: "texts 28-33, 138-150 (ed. Inwood and Gerson)"
+      - work: seneca-moral-and-political-essays
+        title: Moral and Political Essays
+        author: Seneca
+        note: "On Anger (selections); On the Private Life"
+      - work: sextus-empiricus-outlines-of-scepticism
+        title: Outlines of Scepticism
+        author: Sextus Empiricus
+        note: "Book 1"
+      - work: augustine-on-free-choice-of-the-will
+        title: On Free Choice of the Will
+        author: Augustine
+      - work: anselm-proslogion
+        title: Proslogion
+        author: Anselm
+        note: "chapters 2-4, with Gaunilo's Reply on Behalf of the Fool and Anselm's Reply"
+      - work: aquinas-summa-theologica
+        title: Summa Theologiae
+        author: Thomas Aquinas
+        note: "Part I, q. 2 a. 3 (the Five Ways); q. 3 a. 7; q. 4 a. 2; q. 12 a. 12; q. 13 aa. 2-5"
+      - work: al-kindi-on-the-intellect
+        title: On the Intellect
+        author: Al-Kindi
+        note: "in Classical Arabic Philosophy (McGinnis and Reisman)"
+      - work: al-razi-doubts-about-galen
+        title: Doubts About Galen
+        author: Al-Razi
+        note: "Introduction; in Classical Arabic Philosophy"
+      - work: al-farabi-on-the-intellect
+        title: On the Intellect
+        author: Al-Farabi
+        note: "in Classical Arabic Philosophy"
+      - work: avicenna-the-cure
+        title: The Cure
+        author: Avicenna (Ibn Sina)
+        note: "selections from The Soul; in Classical Arabic Philosophy"
+      - work: descartes-meditations
+        title: Meditations on First Philosophy
+        author: René Descartes
+      - work: elisabeth-of-bohemia-correspondence-with-descartes
+        title: Correspondence with Descartes
+        author: Elisabeth of Bohemia
+        note: "selections"
+      - work: leibniz-discourse-on-metaphysics
+        title: Discourse on Metaphysics
+        author: Gottfried Wilhelm Leibniz
+        note: "sections 1-16, 30-36"
+      - work: leibniz-monadology
+        title: Monadology
+        author: Gottfried Wilhelm Leibniz
+      - work: conway-principles-of-the-most-ancient-and-modern-philosophy
+        title: The Principles of the Most Ancient and Modern Philosophy
+        author: Anne Conway
+        note: "selections, in Atherton, Women Philosophers of the Early Modern Period"
+      - work: berkeley-principles-of-human-knowledge
+        title: A Treatise Concerning the Principles of Human Knowledge
+        author: George Berkeley
+      - work: hume-enquiry-concerning-human-understanding
+        title: An Enquiry Concerning Human Understanding
+        author: David Hume
+        note: "sections 1-5, 7-8, 12"
+      - work: hume-treatise-of-human-nature
+        title: A Treatise of Human Nature
+        author: David Hume
+        note: "I.4.6; II.1.1; II.3.3-4; III.1"
+      - work: kant-critique-of-pure-reason
+        title: Critique of Pure Reason
+        author: Immanuel Kant
+        note: "B Preface and Introduction; Transcendental Aesthetic; opening of the Analytic; First and Second Analogies; Refutation of Idealism; Third Antinomy"
+      - work: kant-groundwork-of-the-metaphysics-of-morals
+        title: Grounding for the Metaphysics of Morals
+        author: Immanuel Kant
+      - work: mill-utilitarianism
+        title: Utilitarianism
+        author: John Stuart Mill
+      - work: hegel-phenomenology-of-spirit
+        title: Phenomenology of Spirit
+        author: G. W. F. Hegel
+        note: "Introduction; Sense-Certainty; Lordship and Bondage"
+      - work: kierkegaard-fear-and-trembling
+        title: Fear and Trembling
+        author: Søren Kierkegaard
+      - work: beauvoir-second-sex
+        title: The Second Sex
+        author: Simone de Beauvoir
+        note: "Introduction; Myths, ch. 1 (selections); ch. 10 (selections)"
+  - id: historical-and-political-thought
+    label: Historical and Political Thought
+    order: 3
+    items:
+      - work: bible-genesis
+        title: Genesis
+        author: Bible
+        note: "chapters 37-50"
+      - work: bible-exodus
+        title: Exodus
+        author: Bible
+      - work: bible-deuteronomy
+        title: Deuteronomy
+        author: Bible
+        note: "chapters 29-32, 34"
+      - work: herodotus-histories
+        title: The Histories
+        author: Herodotus
+        note: "I.1-91; II.35-41; III.27-38, 61-89; VI.94-120; VII (selections); VII.201-VIII.125; VIII.140-144"
+      - work: thucydides-peloponnesian-war
+        title: History of the Peloponnesian War
+        author: Thucydides
+        note: "I.1-23, 66-97, 125-146; II.1-65; III.36-50, 81-84; V.84-116; VI.6-32, 47-61, 88-93; VII.50-87"
+      - work: plato-republic
+        title: The Republic
+        author: Plato
+        note: "Books I-VIII"
+      - work: aristotle-politics
+        title: Politics
+        author: Aristotle
+        note: "I; II.1-8; III; IV.1-12; V.1-5; VII.1-9, 13-15"
+      - work: polybius-histories
+        title: The Histories
+        author: Polybius
+        note: "I.1-6; III (selections); VI (selections); X.2; XI.19"
+      - work: livy-history-of-rome
+        title: The Rise of Rome (History of Rome, Books 1-5)
+        author: Livy
+        note: "Preface; I.1-21, 46-60; II.1-13, 23-33, 54-61; IV.1-7, 58-61; V"
+      - work: plutarch-lives
+        title: Parallel Lives
+        author: Plutarch
+        note: "Caesar; Brutus"
+      - work: tacitus-annals
+        title: Annals
+        author: Tacitus
+        note: "selections"
+      - work: augustine-city-of-god
+        title: City of God
+        author: Augustine
+        note: "selections from Books I, IV, V, VIII, XI, XII, XIV, XV, XVIII, XIX"
+      - work: al-farabi-political-regime
+        title: The Political Regime
+        author: Al-Farabi
+        note: "selections"
+      - work: al-farabi-attainment-of-happiness
+        title: The Attainment of Happiness
+        author: Al-Farabi
+        note: "selections"
+      - work: maimonides-guide-for-the-perplexed
+        title: The Guide of the Perplexed
+        author: Maimonides
+        note: "selections"
+      - work: aquinas-summa-theologica
+        title: Summa Theologiae
+        author: Thomas Aquinas
+        note: "Treatise on Law (Part I-II, qq. 90-97)"
+      - work: machiavelli-prince
+        title: The Prince
+        author: Niccolò Machiavelli
+        note: "with the Letter to Vettori"
+      - work: machiavelli-discourses-on-livy
+        title: Discourses on Livy
+        author: Niccolò Machiavelli
+        note: "Book I: Preface, chapters 1-6"
+      - work: luther-on-secular-authority
+        title: On Secular Authority
+        author: Martin Luther
+      - work: calvin-institutes-of-the-christian-religion
+        title: Institutes of the Christian Religion
+        author: John Calvin
+        note: "IV.20"
+      - work: hobbes-leviathan
+        title: Leviathan
+        author: Thomas Hobbes
+        note: "Introduction; chapters 1-6, 10-14, 16-18, 20-21, 29-30"
+      - work: locke-second-treatise-of-government
+        title: Second Treatise of Government
+        author: John Locke
+        note: "chapters 1-5, 6-8 (selections), 9-14, 18, 19 (selections)"
+      - work: rousseau-discourse-on-inequality
+        title: Discourse on the Origin of Inequality
+        author: Jean-Jacques Rousseau
+      - work: rousseau-social-contract
+        title: The Social Contract
+        author: Jean-Jacques Rousseau
+        note: "Parts I and II; IV.8"
+      - work: federalist-papers
+        title: The Federalist
+        author: Alexander Hamilton, James Madison, and John Jay
+        note: "Nos. 1, 9, 10, 39, 51"
+      - work: us-constitution
+        title: Constitution of the United States
+        author: Anonymous
+      - work: condorcet-political-writings
+        title: Political Writings
+        author: Nicolas de Condorcet
+        note: "On Freedom; On Revolution"
+      - work: sieyes-and-paine-debate
+        title: The Debate between Sieyès and Paine
+        author: Emmanuel Joseph Sieyès and Thomas Paine
+      - work: declaration-of-the-rights-of-man
+        title: Declaration of the Rights of Man and of the Citizen (1789)
+        author: French National Assembly
+      - work: burke-reflections-on-the-revolution-in-france
+        title: Reflections on the Revolution in France
+        author: Edmund Burke
+        note: "selections"
+      - work: wollstonecraft-vindication-of-the-rights-of-men
+        title: A Vindication of the Rights of Men
+        author: Mary Wollstonecraft
+        note: "selections"
+      - work: wollstonecraft-vindication-of-the-rights-of-woman
+        title: A Vindication of the Rights of Woman
+        author: Mary Wollstonecraft
+        note: "selections"
+      - work: tocqueville-democracy-in-america
+        title: Democracy in America
+        author: Alexis de Tocqueville
+        note: "Vol. I: Introduction; I.2-5; II.1, 3-4, 6-9. Vol. II: Notice; II.1-5, 8-10, 20; IV.6-8"
+      - work: douglass-narrative
+        title: Narrative of the Life of Frederick Douglass, an American Slave
+        author: Frederick Douglass
+        note: "chapters 1 and 10"
+      - work: douglass-selected-speeches
+        title: Selected Speeches
+        author: Frederick Douglass
+        note: "What to the Slave Is the Fourth of July?; The Trials and Triumphs of Self-Made Men; The Freedmen's Monument to Abraham Lincoln; Woman Suffrage Movement"
+      - work: marx-communist-manifesto
+        title: The Communist Manifesto
+        author: Karl Marx and Friedrich Engels
+      - work: marx-capital
+        title: Capital
+        author: Karl Marx
+        note: "Volume I, Part VIII, selections"
+      - work: nietzsche-genealogy-of-morals
+        title: On the Genealogy of Morals
+        author: Friedrich Nietzsche
+      - work: du-bois-souls-of-black-folk
+        title: The Souls of Black Folk
+        author: W. E. B. Du Bois
+        note: "chapters 1-5, 8, 10-14"
+      - work: arendt-origins-of-totalitarianism
+        title: The Origins of Totalitarianism
+        author: Hannah Arendt
+        note: "selections"
+      - work: arendt-personal-responsibility-under-dictatorship
+        title: Personal Responsibility Under Dictatorship
+        author: Hannah Arendt

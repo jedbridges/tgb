@@ -84,6 +84,17 @@ hr { border: 0; border-top: 1px solid var(--paper-deeper); margin: var(--s3) 0; 
 .btn--accent { background: var(--accent); border-color: var(--accent); color: var(--paper-bright); }
 .btn--accent:hover { background: var(--accent-deep); border-color: var(--accent-deep); color: var(--paper-bright); }
 
+/* Shelf: a row of books standing on a ledge. Used on every page that shows books. */
+.shelf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  column-gap: 0;
+  row-gap: var(--s3);
+}
+@media (max-width: 560px) {
+  .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(116px, 1fr)); }
+}
+
 /* Page-load reveal (one orchestrated moment) */
 @media (prefers-reduced-motion: no-preference) {
   .reveal { animation: reveal var(--dur-slow) var(--ease-out-expo) both; animation-delay: calc(var(--i, 0) * 70ms); }
