@@ -249,9 +249,18 @@
     opacity: 0.6;
   }
   /* A book leaving the shelf leaves a gap, and the books either side tip into it.
-     Two elements move, and only while a neighbour is actually hovered. */
+     Two elements move, and only while a neighbour is actually hovered.
+
+     The card to the right is reached with a sibling combinator, which is free. The card to
+     the LEFT used to be reached with :has(+ .card:hover), and that one is not free: measured
+     in Safari over a shelf of 689 cards it cost 14ms of synchronous style recalc on every
+     single pointermove, against a 16.7ms frame budget, so the whole budget was spent
+     recalculating styles before anything was painted. Chrome's :has() invalidation is far
+     better optimised and hid it completely. Marking the one previous sibling from the
+     delegated pointer handler instead is 3ms, the same as having no rule at all, and looks
+     identical. */
   .card:hover + .card .book__body { --ry: 30deg; --tx: -3px; }
-  .card:has(+ .card:hover) .book__body { --ry: 15deg; --tx: 3px; }
+  .card[data-near] .book__body { --ry: 15deg; --tx: 3px; }
   .book[data-tilting] .book__body { transition-duration: 120ms; }
 }
 .book[data-state='open'] .book__body { --ry: -8deg; --rx: 0deg; --tx: calc(var(--w) * 0.44); }

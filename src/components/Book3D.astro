@@ -129,6 +129,25 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
     pending = { el, nx: ((e.clientX - r.left) / r.width) * 2 - 1, ny: ((e.clientY - r.top) / r.height) * 2 - 1 };
     if (!raf) raf = requestAnimationFrame(apply);
   }, { passive: true });
+  /* The book to the left of the hovered one.
+     This is what :has(+ .card:hover) used to do in CSS, moved here because that selector
+     made Safari re-resolve the sibling chain of every card on the page on every pointermove.
+     One attribute goes on at most one element, and comes off again when the pointer reaches
+     anything that is not a card. */
+  let near: Element | null = null;
+  const markNeighbour = (card: Element | null) => {
+    const prev = card?.previousElementSibling ?? null;
+    const next = prev && prev.classList.contains('card') ? prev : null;
+    if (next === near) return;
+    near?.removeAttribute('data-near');
+    near = next;
+    near?.setAttribute('data-near', '');
+  };
+  document.addEventListener('pointerover', (e) => {
+    if (!fine.matches) return;
+    markNeighbour((e.target as HTMLElement).closest('.card'));
+  }, { passive: true });
+
   document.addEventListener('pointerout', (e) => {
     const el = (e.target as HTMLElement).closest<HTMLElement>('[data-book]');
     if (!el) return;

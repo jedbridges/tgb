@@ -223,27 +223,33 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
     let frame = 0;
     const rest = () => seal.style.setProperty('--sheen', '0');
 
+    /* Geometry is measured once and re-measured only when it can actually have changed.
+       Reading a bounding rect inside a pointermove handler forces a synchronous layout on
+       every single mouse move, and on a page carrying a shelf of books that is not a free
+       read: it is the whole reason a hover can feel like it is dragging. */
+    const hero = seal.closest('section');
+    let h: DOMRect | null = null;
+    let r: DOMRect | null = null;
+    const remeasure = () => { h = hero?.getBoundingClientRect() ?? null; r = seal.getBoundingClientRect(); };
+    remeasure();
+    addEventListener('resize', remeasure, { passive: true });
+    addEventListener('scroll', remeasure, { passive: true });
+
+    let px = 0, py = 0;
     addEventListener('pointermove', (e) => {
-      const hero = seal.closest('section');
-      if (!hero) return;
-      const h = hero.getBoundingClientRect();
-      if (e.clientY < h.top || e.clientY > h.bottom) { rest(); return; }
-
-      const r = seal.getBoundingClientRect();
-      const cx = r.left + r.width / 2;
-      const cy = r.top + r.height / 2;
-      const dx = e.clientX - cx;
-      const dy = e.clientY - cy;
-      // Full strength on the seal, falling away over about a seal's width, so it lights up
-      // as the pointer approaches rather than switching on at an edge.
-      const near = Math.max(0, 1 - Math.hypot(dx, dy) / (r.width * 1.15));
-      const angle = (Math.atan2(dy, dx) * 180) / Math.PI;
-
+      px = e.clientX; py = e.clientY;
       if (frame) return;
       frame = requestAnimationFrame(() => {
         frame = 0;
+        if (!h || !r || !r.width) return;
+        if (py < h.top || py > h.bottom) { rest(); return; }
+        const dx = px - (r.left + r.width / 2);
+        const dy = py - (r.top + r.height / 2);
+        // Full strength on the seal, falling away over about a seal's width, so it lights up
+        // as the pointer approaches rather than switching on at an edge.
+        const near = Math.max(0, 1 - Math.hypot(dx, dy) / (r.width * 1.15));
         seal.style.setProperty('--sheen', near.toFixed(3));
-        iris.setAttribute('gradientTransform', `rotate(${Math.round(angle)} 0.5 0.5)`);
+        iris.setAttribute('gradientTransform', `rotate(${Math.round((Math.atan2(dy, dx) * 180) / Math.PI)} 0.5 0.5)`);
       });
     }, { passive: true });
 
