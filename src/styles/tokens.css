@@ -111,7 +111,10 @@
      it. These were written out by hand in five files, so changing the bar's height left
      panels pinned under it. */
   --header-h: 4.75rem;
-  --stick: calc(var(--header-h) + var(--s0));   /* where a sticky panel comes to rest */
+  /* The band under the bar where the page fades out. Anything that pins itself to the
+     header has to clear this, or it comes to rest inside the fade and gets veiled. */
+  --scrim-h: 3.25rem;
+  --stick: calc(var(--header-h) + var(--scrim-h));   /* where a sticky panel comes to rest */
   --stick-max: calc(100dvh - var(--stick) - var(--s1));
 }
 /* The bar loses height as the row tightens, and everything pinned below it follows. These

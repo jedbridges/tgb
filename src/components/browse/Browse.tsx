@@ -286,11 +286,14 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
       </div>
       <style>{`
         .resultbar {
-          grid-area: bar; position: sticky; top: var(--header-h); z-index: 10;
+          /* Rests below the header's fade, not inside it: pinned at the bar's own edge, the
+             count and the sort control came to a stop under the opaque end of the scrim.
+             Solid paper for the same reason the bar itself is, so covers do not scroll
+             through the numbers. */
+          grid-area: bar; position: sticky; top: var(--stick); z-index: 10;
           display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s0) var(--s1);
-          padding: var(--s0) 0; margin-bottom: var(--s1);
-          background: color-mix(in oklch, var(--paper) 92%, transparent);
-          backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+          padding: var(--s0) 0 calc(var(--s0) - 1px); margin-bottom: var(--s1);
+          background: var(--paper);
           border-bottom: 1px solid var(--paper-deeper);
         }
         .resultbar__count { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); display: flex; align-items: baseline; gap: 0.4rem; }
@@ -315,9 +318,9 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
         .resultbar .f--sort select { width: auto; min-width: 9.5rem; padding-block: 0.35rem; min-height: 44px; }
 
         .filters { grid-area: rail; display: grid; gap: var(--s2); align-content: start;
-          position: sticky; top: calc(var(--header-h) + 3.5rem);
+          position: sticky; top: calc(var(--stick) + var(--s0));
           /* A sticky panel taller than the viewport pins its own lower half out of reach. */
-          max-height: calc(100dvh - var(--header-h) - 3.75rem); overflow-y: auto; overscroll-behavior: contain;
+          max-height: calc(100dvh - var(--stick) - var(--s1)); overflow-y: auto; overscroll-behavior: contain;
           padding-right: 2px; scrollbar-gutter: stable; min-width: 0;
         }
         .browse-search {

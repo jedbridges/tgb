@@ -89,7 +89,7 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
      alpha linearly, which the eye reads as a band with a hard edge at each end; sampling a
      sigmoid instead means the scrim leaves the bar and arrives at the page without a seam. */
   .site-header::after {
-    content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 3.25rem;
+    content: ''; position: absolute; top: 100%; left: 0; right: 0; height: var(--scrim-h);
     pointer-events: none;
     background: linear-gradient(to bottom,
       color-mix(in oklch, var(--paper) 100%, transparent) 0%,

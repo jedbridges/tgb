@@ -6,7 +6,7 @@ import Book3D from '~/components/Book3D.astro';
 import BookCard from '~/components/BookCard.astro';
 import BuyButtons from '~/components/BuyButtons.astro';
 import ProgramBadges from '~/components/ProgramBadges.astro';
-import { placeholderAuthor, authorOf, coverFor, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, guidedCount, loadCatalog } from '~/lib/catalog';
+import { placeholderAuthor, authorOf, coverFor, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, hasGuide, guidedCount, loadCatalog } from '~/lib/catalog';
 import { authorUrl, taxUrl, url, workUrl } from '~/lib/url';
 import { bookLd, breadcrumbs } from '~/lib/seo';
 import { amazonUrl } from '~/lib/affiliates';
@@ -183,7 +183,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
       <section class="wrap related" data-pagefind-ignore>
         <h2 class="work__h">Read next</h2>
         <div class="shelf-grid shelf-open">
-          {related.map((r, i) => <BookCard work={r} authorName={(authors.get(r.data.author.id) ?? placeholderAuthor(r.data.author.id)).data.name} width={120} index={i} />)}
+          {related.map((r, i) => <BookCard work={r} authorName={(authors.get(r.data.author.id) ?? placeholderAuthor(r.data.author.id)).data.name} width={120} hasGuide={hasGuide(r)} index={i} />)}
         </div>
       </section>
     )}
@@ -268,8 +268,9 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
     position: fixed; inset: auto 0 0 0; z-index: 30; display: none;
     justify-content: center; gap: var(--s1);
     padding: var(--s0) 0 calc(var(--s0) + env(safe-area-inset-bottom));
-    background: color-mix(in oklch, var(--paper) 94%, transparent);
-    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    /* Solid, like the header. A wash over scrolling covers reads as a smear, and a bar
+       carrying the page's one commercial action should not look provisional. */
+    background: var(--paper);
     border-top: 1px solid var(--ink);
   }
     /* The bar's contents sit on the page column, like everything else on the page. */
