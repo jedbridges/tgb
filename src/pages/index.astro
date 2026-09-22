@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '~/layouts/Base.astro';
 import BookCard from '~/components/BookCard.astro';
+import Seal from '~/components/Seal.astro';
 import { placeholderAuthor, loadCatalog, sortedByAssignment, programCount } from '~/lib/catalog';
 import { programUrl, taxUrl, url } from '~/lib/url';
 import { websiteLd } from '~/lib/seo';
@@ -51,6 +52,7 @@ const HEADLINE_WORDS = [
 ---
 <Base title="The Great Books" description={`The ${works.length} books that college Great Books programs ask students to read, with a guide to each one, its themes, and where to buy it.`} jsonld={websiteLd()} bodyClass="home">
   <section class="hero wrap">
+    <div class="hero__seal"><Seal /></div>
     <div class="hero__text page-open">
       <h1 class="hero__h1">
         <span class="hero__lead">Three thousand years</span>
@@ -165,6 +167,7 @@ const HEADLINE_WORDS = [
      more below without a scroll cue. min-height, not height, so short and landscape
      screens simply grow instead of clipping. svh keeps mobile browser chrome from lying. */
   .hero {
+    position: relative;
     padding-block: var(--s4) var(--s2);
     /* How much of the page is deliberately left below the fold. It has to cover the
        section's own chrome, its rule, its heading and the space under it, and then a real
@@ -176,7 +179,37 @@ const HEADLINE_WORDS = [
     align-content: center;
   }
   @media (max-width: 700px) { .hero { --fold-peek: 22rem; } }
-  .hero__text { max-width: 44rem; }
+  .hero__text { max-width: 44rem; position: relative; z-index: 1; }
+
+  /* The seal takes the empty right half of the hero, which was the one part of the first
+     screen doing no work, and runs off the edge of the page. Bleeding it is the point: a
+     medal that fits neatly inside the margin is a diagram of a medal, one that overruns
+     the page reads as an object lying on top of it. The page already clips at the
+     viewport, so nothing overflows sideways. */
+  .hero__seal {
+    position: absolute;
+    right: clamp(-11rem, -9vw, -4rem);
+    top: 50%;
+    translate: 0 -50%;
+    width: clamp(17rem, 31vw, 28rem);
+    rotate: -11deg;
+    z-index: 0;
+  }
+  /* Below this the hero has no spare width, so the seal moves up beside the headline and
+     runs further off the edge, where it reads as a stamp on the corner of the page. */
+  /* On a phone the bleed has to go. Full-width buttons leave no margin to run off, and a
+     medallion reduced to a crescent at the edge reads as a rendering accident rather than
+     a deliberate crop. It sits fully on the page instead, small, in the corner the fold
+     already leaves empty: a stamp on the bottom of a letter rather than a seal half off
+     the desk. */
+  @media (max-width: 900px) {
+    .hero__seal {
+      top: auto; bottom: 0; translate: 0 0;
+      right: var(--gutter);
+      width: clamp(6.5rem, 23vw, 9.5rem);
+      rotate: -9deg;
+    }
+  }
   /* Two lines at every width, breaking after "years" so that "of argument" reads as one
      phrase. The binding line is now the shorter of the two, which lets the type run larger.
      Sized against the viewport so it fits rather than wrapping wherever it likes. */

@@ -1,0 +1,62 @@
+[
+ {
+  "slug": "homer-odyssey",
+  "programs": 9,
+  "title": "The Odyssey"
+ },
+ {
+  "slug": "hobbes-leviathan",
+  "programs": 9,
+  "title": "Leviathan"
+ },
+ {
+  "slug": "plato-republic",
+  "programs": 8,
+  "title": "The Republic"
+ },
+ {
+  "slug": "kant-groundwork-of-the-metaphysics-of-morals",
+  "programs": 8,
+  "title": "Grounding for the Metaphysics of Morals"
+ },
+ {
+  "slug": "thucydides-peloponnesian-war",
+  "programs": 7,
+  "title": "History of the Peloponnesian War"
+ },
+ {
+  "slug": "lucretius-on-the-nature-of-things",
+  "programs": 7,
+  "title": "On the Nature of Things"
+ },
+ {
+  "slug": "cervantes-don-quixote",
+  "programs": 7,
+  "title": "Don Quixote"
+ },
+ {
+  "slug": "marx-communist-manifesto",
+  "programs": 7,
+  "title": "The Communist Manifesto"
+ },
+ {
+  "slug": "aristotle-physics",
+  "programs": 6,
+  "title": "Physics"
+ },
+ {
+  "slug": "bacon-novum-organum",
+  "programs": 6,
+  "title": "The New Organon"
+ },
+ {
+  "slug": "hume-enquiry-concerning-human-understanding",
+  "programs": 6,
+  "title": "An Enquiry Concerning Human Understanding"
+ },
+ {
+  "slug": "shakespeare-tempest",
+  "programs": 6,
+  "title": "The Tempest"
+ }
+]
