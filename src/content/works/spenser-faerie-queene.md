@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1978
   why: Thomas P. Roche's edition, complete in one volume with glosses; the Hackett edition of Book I is the option for a single book.
+  isbn13: "9780848811778"
 cover: { source: generated }
 synopsis: >-
   An unfinished allegorical epic in six books of nine-line stanzas, dedicated to Elizabeth I, who appears as Gloriana, the Faerie Queene. Each book follows a knight embodying a virtue: Redcrosse (Holiness) fights the dragon and frees Una's parents; Guyon (Temperance) destroys the Bower of Bliss; Britomart (Chastity) seeks her destined husband; Books IV to VI treat Friendship, Justice and Courtesy. Prince Arthur rescues the knights in turn. Two fragmentary cantos on Mutability close the poem.

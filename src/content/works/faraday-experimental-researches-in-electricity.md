@@ -16,6 +16,7 @@ recommendedEdition:
   publisher: Dover
   year: 2004
   why: A reprint of the three volumes in one; Great Books volume 42 prints the complete work.
+  isbn13: "9780486435053"
 cover: { source: generated }
 synopsis: >-
   The collected papers Faraday read to the Royal Society between 1831 and 1855, numbered in over three thousand paragraphs and gathered in three volumes. They report the discovery of electromagnetic induction, the laws of electrolysis, the identity of the electricities from different sources, the rotation of polarised light by a magnet, and diamagnetism. Throughout, Faraday works with lines of force rather than action at a distance, the idea Maxwell later made mathematical.

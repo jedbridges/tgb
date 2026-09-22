@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: Oxford University Press (Oxford World's Classics)
   year: 2008
   why: A modern prose rendering by the poem's leading editor, with a full introduction; readers with some Middle English should try the original.
+  isbn13: "9780192832900"
 cover: { source: generated }
 synopsis: >-
   A long poem in rhyme royal, adapted from Boccaccio, set during the siege of Troy. Troilus, a son of Priam who has mocked lovers, is struck by the sight of the widow Criseyde, and her uncle Pandarus manoeuvres the two into bed. After three years of secret happiness Criseyde is traded to the Greek camp in a prisoner exchange, promises to return within ten days, and instead accepts the protection of the Greek Diomede. Troilus is killed by Achilles, and from the eighth sphere looks down and laughs at the world's vanity.

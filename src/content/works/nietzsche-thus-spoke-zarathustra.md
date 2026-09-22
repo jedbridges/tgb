@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Penguin
   year: 1978
   why: Kaufmann's translation, which keeps the biblical cadence, is the one most often assigned.
+  isbn13: "9780140047486"
 cover: { source: generated }
 synopsis: >-
   A philosophical narrative in four parts, written in a prophetic style modelled on the Bible. After ten years alone on a mountain, the sage Zarathustra descends to teach that God is dead, that man is something to be overcome, and that the overman is the meaning of the earth. Through speeches, parables and encounters with disciples, a tightrope walker, a soothsayer and a menagerie of higher men, he arrives at the thought of eternal recurrence, that everything returns exactly as it was, and learns to affirm it.

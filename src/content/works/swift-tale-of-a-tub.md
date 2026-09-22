@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Oxford World's Classics
   year: 2008
   why: Includes The Battle of the Books and The Mechanical Operation of the Spirit, with notes that unpack the allusions.
+  isbn13: "9780192835932"
 cover: { source: generated }
 synopsis: >-
   Swift's first major work, published anonymously, is a prose satire on corruptions in religion and learning. Its narrative thread is an allegory of three brothers, Peter, Martin and Jack, standing for the Roman, Anglican and dissenting churches, who twist their father's will to justify altering the coats he left them. This story is repeatedly interrupted by digressions in the voice of a modern hack writer, on critics, on madness, on digressions themselves, that parody the pedantry and self-importance of contemporary authors. It was published with The Battle of the Books.

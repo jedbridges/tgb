@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Manchester University Press
   year: 1993
   why: The Revels Plays edition by Bevington and Rasmussen prints both surviving versions side by side, which is what the argument about the play turns on.
+  isbn13: "9780719015540"
 cover: { source: generated }
 synopsis: >-
   A scholar at Wittenberg who has exhausted logic, medicine, law and divinity turns to magic, conjures the devil Mephistopheles and signs away his soul in his own blood for twenty-four years of knowledge and power. What he does with them is mostly trivial: he plays tricks on the Pope, fetches grapes for a duchess, is shown a pageant of the seven deadly sins, and calls up the shade of Helen of Troy. Throughout, a good and an evil angel argue over him and he is repeatedly told that he could still repent. In the last scene the hour strikes and the devils come for him. The play survives in two quite different texts.

@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Library of America
   year: 1983
   why: Joel Porte's volume prints both series complete alongside Nature and the addresses.
+  isbn13: "9780940450158"
 cover: { source: generated }
 synopsis: >-
   Emerson's two series of essays, drawn from his lectures and journals. The First Series of 1841 contains History, Self-Reliance, Compensation, Spiritual Laws, Love, Friendship, Prudence, Heroism, The Over-Soul, Circles, Intellect and Art. The Second Series of 1844 adds The Poet, Experience, Character, Manners, Gifts, Nature, Politics, Nominalist and Realist and New England Reformers. They argue that every person has direct access to the truth without church, book or party, that conformity is a kind of suicide, and that nature and the soul answer to each other.

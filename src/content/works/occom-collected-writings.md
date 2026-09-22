@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Oxford University Press
   year: 2006
   why: Joanna Brooks's edition, the first to gather the sermons, journals, letters, petitions and hymns in one place.
+  isbn13: "9780190291051"
 cover: { source: generated }
 synopsis: >-
   The gathered writings of a Mohegan who converted during the Great Awakening, was educated by Eleazar Wheelock, became a Presbyterian minister and preacher in England, and spent his later life founding the Christian Indian town of Brothertown in New York. The volume collects his short autobiographical narrative, his journals of missionary travel, his letters and tribal petitions, his hymns, and the 1772 sermon preached at the execution of the Mohegan Moses Paul, the first work published in English by a Native American and a bestseller in its day.

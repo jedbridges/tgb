@@ -15,6 +15,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 2015
   why: Prints The Study of Poetry with Arnold's other major critical essays.
+  isbn13: "9780241388013"
 cover: { source: generated }
 synopsis: >-
   Arnold's introduction to T. H. Ward's anthology The English Poets, later placed in Essays in Criticism, Second Series. He predicts that poetry will take over the consoling and sustaining role of religion, and proposes that readers judge poems by keeping in mind touchstone lines from the great masters. He then reviews English poetry from Chaucer to Burns, ranking Chaucer below the classics for lack of high seriousness and setting Dryden and Pope down as classics of prose.

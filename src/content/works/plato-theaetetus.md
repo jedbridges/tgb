@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Hackett
   year: 1992
   why: Levett's translation is still the best, and Burnyeat's long introduction is a classic guide to the argument.
+  isbn13: "9780872201583"
 cover: { source: generated }
 synopsis: >-
   Socrates, describing himself as a midwife of ideas, asks the gifted young Theaetetus what knowledge is. Three answers are tested and rejected in turn, that knowledge is perception, which draws in Protagoras' claim that man is the measure of all things and Heraclitus' doctrine of flux; that it is true judgement, which raises the problem of how false judgement is possible; and that it is true judgement with an account. The dialogue ends without a definition, and Socrates leaves for his trial.

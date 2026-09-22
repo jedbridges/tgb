@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: Cambridge University Press
   year: 1995
   why: The Cambridge Texts volume that assigns the essays as philosophy rather than period prose, with full notes.
+  isbn13: "9780521348188"
 cover: { source: generated }
 synopsis: >-
   A selection of Seneca's prose treatises. On Anger, in three books, argues against Aristotle that anger is never useful, describes with unpleasant vividness what it does to a face and a household, and prescribes a daily examination of conscience. On Mercy is addressed to the young Nero, whose tutor Seneca was, and tries to persuade an absolute ruler that clemency is in his own interest. On the Private Life asks whether a Stoic may withdraw from public affairs, and On Favours examines what is owed between giver and receiver.

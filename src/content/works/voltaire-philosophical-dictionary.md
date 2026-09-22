@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1984
   why: A generous selection of the articles in a readable translation.
+  isbn13: "9780140442571"
 cover: { source: generated }
 synopsis: >-
   An alphabet of short, sharp articles, from Abraham to Virtue, first published anonymously in 1764 as a pocket book and enlarged in later editions. Voltaire uses the dictionary form to attack religious intolerance, biblical literalism, superstition, torture and the abuse of authority, and to argue for toleration, natural religion and common sense. Entries on Fanaticism, Tolerance, Torture, Soul, Miracles and Liberty of Thought are among the most read. It was banned in Geneva, Paris and Rome.

@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Folger Shakespeare Library (Simon and Schuster)
   year: 2005
   why: Good notes on the compressed late verse and the sheep-shearing scene.
+  isbn13: "9781101119037"
 cover: { source: generated }
 synopsis: >-
   Leontes, king of Sicilia, suddenly convinces himself that his pregnant wife Hermione has been unfaithful with his friend Polixenes, king of Bohemia. He imprisons her, has the newborn daughter abandoned on the Bohemian coast, and learns from the oracle that he was wrong just as his son and, apparently, his wife die. Sixteen years pass. The daughter, Perdita, raised by shepherds, falls in love with Polixenes' son and flees with him to Sicilia, where Leontes is still doing penance, and a statue of Hermione comes to life.

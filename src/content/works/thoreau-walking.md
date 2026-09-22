@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Norton Critical Editions
   year: 2008
   why: Includes Walking with the major texts and useful critical apparatus.
+  isbn13: "9781452844688"
 cover: { source: generated }
 synopsis: >-
   An essay grown from a lecture Thoreau gave many times from 1851 and published in the Atlantic Monthly a month after his death. He begins with the art of sauntering, which he derives from Sainte-Terre, the Holy Land, and says he needs four hours a day walking through woods and fields. He notices that his steps tend westward, and takes this as an emblem of the nation's movement toward wildness, declaring that in wildness is the preservation of the world. The Harvard Classics print it among fifteen essays by English and American writers.

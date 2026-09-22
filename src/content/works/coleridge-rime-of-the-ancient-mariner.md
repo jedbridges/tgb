@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Dover Thrift Editions
   year: 1992
   why: The 1817 text with the marginal gloss, cheaply; any Coleridge selection includes it.
+  isbn13: "9781580491716"
 cover: { source: generated }
 synopsis: >-
   A ballad in seven parts first published in Lyrical Ballads. An old sailor stops a wedding guest and tells how his ship was driven to the Antarctic, how he shot the albatross that had followed it, and how the crew died of thirst under a burning sky while he lived on, watched by Death and Life-in-Death. When he blesses the water snakes unaware, the curse begins to lift, the ship is brought home by spirits, and he is condemned to wander the earth telling his tale. Coleridge added a prose gloss in 1817.

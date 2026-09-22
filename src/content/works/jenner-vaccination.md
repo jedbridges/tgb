@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Prometheus Books
   year: 1996
   why: A reprint of the three papers in the Great Minds series; also free in the Harvard Classics online.
+  isbn13: "9781615920891"
 cover: { source: generated }
 synopsis: >-
   Three pamphlets by a Gloucestershire country doctor. The Inquiry of 1798 reports twenty-three cases, including his 1796 experiment in which he inoculated eight-year-old James Phipps with matter from a cowpox sore on a milkmaid's hand and later found him immune to smallpox, and proposes that cowpox protects against the deadlier disease. Further Observations of 1799 and A Continuation of 1800 answer objections, distinguish true cowpox from spurious, describe the proper handling of the vaccine, and record its spread. Jenner's word vaccine comes from vacca, the Latin for cow.

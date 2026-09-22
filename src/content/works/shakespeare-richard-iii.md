@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Folger Shakespeare Library (Simon and Schuster)
   year: 2004
   why: The family trees and notes make the crowd of Yorks and Lancasters manageable.
+  isbn13: "9781555763329"
 cover: { source: generated }
 synopsis: >-
   With the Wars of the Roses won by his family, Richard, Duke of Gloucester, tells the audience he is determined to prove a villain and sets out to remove everyone between himself and the throne. He woos Lady Anne over the corpse of the husband he killed, has his brother Clarence drowned in a wine butt, and has his young nephews murdered in the Tower after seizing the crown. Haunted by the ghosts of his victims on the eve of Bosworth, he is killed by Richmond, the future Henry VII.

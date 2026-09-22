@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Fortress Press
   year: 1970
   why: The standard one-volume edition, revised from the Muhlenberg translations.
+  isbn13: "9781451414295"
 cover: { source: generated }
 synopsis: >-
   The three pamphlets Luther published in 1520, collected as the shortest route into his thought. To the Christian Nobility of the German Nation calls on the lay rulers to reform a church Rome will not reform, and argues that every baptised Christian is a priest. The Babylonian Captivity of the Church reduces the seven sacraments to two or three and attacks the mass understood as a sacrifice offered by priests. On the Freedom of a Christian sets out justification by faith and the paradox that a Christian is lord of all and servant of all. The first was written in German, the second in Latin for theologians, the third in both.

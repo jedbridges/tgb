@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Harvard University Press
   year: 1982
   why: Joel Porte's one-volume selection, the usual way in to a journal that runs to sixteen scholarly volumes.
+  isbn13: "9780674248625"
 cover: { source: generated }
 synopsis: >-
   The notebooks Emerson kept from his college years until near his death, which he called his savings bank: he drew on them for his lectures and essays, and many famous sentences appear here first. They record his reading, his walks, his opinions of his neighbours and of slavery, and the deaths that mark the life, of his first wife Ellen, his brother Charles and his five-year-old son Waldo. The tone is by turns exalted, sceptical and flat with grief, and much less finished than the essays.

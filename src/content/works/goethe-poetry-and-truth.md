@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Princeton University Press
   year: 1994
   why: The complete modern translation from the Suhrkamp Goethe edition, with notes by Thomas P. Saine.
+  isbn13: "9780691037981"
 cover: { source: generated }
 synopsis: >-
   Goethe's autobiography of his first twenty-six years, written between his sixties and his eighties and published in four parts, the last after his death. It covers his childhood in Frankfurt, his student years in Leipzig and Strasbourg, his friendship with Herder, his early loves, the writing of Götz von Berlichingen and The Sorrows of Young Werther, and the engagement to Lili Schönemann he broke off before leaving for Weimar in 1775. The title warns that memory shapes fact into story.

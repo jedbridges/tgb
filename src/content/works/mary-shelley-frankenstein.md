@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 2018
   why: The first edition text, which most courses now prefer to the revised 1831 version, with Charlotte Gordon's introduction.
+  isbn13: "9780143131847"
 cover: { source: generated }
 synopsis: >-
   Told in letters from an Arctic explorer who rescues him from the ice, Victor Frankenstein recounts how as a student at Ingolstadt he discovered the secret of life and assembled a creature from dead matter, then fled in horror from what he had made. The abandoned creature teaches itself to speak and read, is driven off by everyone it approaches, and turns on its maker, killing his brother, his friend and his bride. Victor pursues it to the pole and dies; the creature mourns him and disappears into the dark. Written when Mary Shelley was eighteen.

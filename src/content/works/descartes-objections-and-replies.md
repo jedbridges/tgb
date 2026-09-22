@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: Cambridge University Press
   year: 1984
   why: The complete set of the seven objections with Descartes's answers, in the standard translation.
+  isbn13: "9781107268197"
 cover: { source: generated }
 synopsis: >-
   Descartes had the manuscript of the Meditations circulated before publication and printed the criticisms, with his answers, alongside it. Seven sets of objections arrive from theologians and philosophers, among them Hobbes, who denies that thinking proves an immaterial soul, Arnauld, who presses the charge that the proof of God and the proof of clear ideas argue in a circle, Gassendi, who defends the senses, and the Jesuit Bourdin, whom Descartes treats with contempt. The replies are where Descartes explains what he actually meant, often more plainly than in the Meditations themselves.

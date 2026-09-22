@@ -17,6 +17,7 @@ recommendedEdition:
   title: Martin Luther's Basic Theological Writings
   publisher: Fortress Press
   why: Timothy Lull's anthology prints the theses with the notes a first reader needs.
+  isbn13: "9780800698836"
 cover: { source: generated }
 synopsis: >-
   Ninety-five numbered propositions, written in Latin for academic debate and sent to the Archbishop of Mainz in October 1517, attacking the sale of indulgences. Luther argues that the pope cannot remit the guilt of sin or release souls from purgatory for money, that true repentance is a lifelong inward turning rather than a purchased receipt, and that the preachers of indulgences deceive the poor and insult the gospel. The document was quickly printed in German and became the opening move of the Reformation.

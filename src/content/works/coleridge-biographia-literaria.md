@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Oxford World's Classics
   year: 2013
   why: Adam Roberts' annotated edition; Everyman and Princeton editions also exist.
+  isbn13: "9781443733984"
 cover: { source: generated }
 synopsis: >-
   Part memoir, part philosophy and part criticism, written at speed in 1815 and published two years later. The first volume recounts Coleridge's education, his early poetry and friendship with Wordsworth, then turns to Hartley, Kant and Schelling to argue for a theory of mind in which the imagination is an active power distinct from fancy. The second volume applies the theory to Wordsworth, praising his genius and dissecting the theory of poetic language in the preface to Lyrical Ballads. The book is discursive, digressive and central to English criticism.

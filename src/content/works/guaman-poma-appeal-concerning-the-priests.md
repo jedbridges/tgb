@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: University of Texas Press
   year: 2009
   why: An abridged English translation of the manuscript from which the appeal is taken, with the drawings.
+  isbn13: "9780292779266"
 cover: { source: generated }
 synopsis: >-
   An indigenous Andean nobleman's protest against the Spanish clergy of colonial Peru, part of the enormous illustrated letter to Philip III that Guaman Poma spent decades writing and that was never delivered. Priest by priest and parish by parish he catalogues what the doctrineros actually do: extort labour and cloth, beat and imprison Andeans who complain, keep women and father children, sell sacraments, and seize the goods of the dead. The argument is not against Christianity, which Guaman Poma professes, but that these men make it impossible, and that the king would stop it if he knew.

@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: Continuum
   year: 1991
   why: The German Library volume, edited by Peter Demetz, is the most available modern translation.
+  isbn13: "9780826407061"
 cover: { source: generated }
 synopsis: >-
   The first major German comedy, set in a Berlin inn just after the Seven Years' War. Major von Tellheim, discharged and under suspicion of dishonesty, has broken off his engagement to the Saxon heiress Minna because he will not bring her a ruined name. Minna arrives in search of him, and when arguments fail, tricks him by pretending she too has been disinherited, so that his honour now obliges him to marry her. A letter from the king clears him, and Minna teases him a while longer before the happy ending.

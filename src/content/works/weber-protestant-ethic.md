@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 2002
   why: Translates the original 1905 version with Weber's replies to critics and related essays.
+  isbn13: "9780140439212"
 cover: { source: generated }
 synopsis: >-
   Weber's essay asks why modern capitalism, with its disciplined pursuit of profit as a duty, arose in the Protestant regions of Europe. He argues that Luther's idea of the calling and above all Calvinist predestination, which left believers anxious for signs of election, produced an inner-worldly asceticism of hard work, thrift and reinvestment. Franklin's maxims illustrate the resulting spirit. Once established, the system no longer needs the faith that produced it, and the modern person is caught in what Weber calls a steel-hard casing, often translated as the iron cage.

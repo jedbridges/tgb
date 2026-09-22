@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: W. W. Norton
   year: 1996
   why: A literary translation that keeps the Hebrew rhythm, with commentary on nearly every verse.
+  isbn13: "9780393070262"
 cover: { source: generated }
 synopsis: >-
   The first book of the Bible begins with two accounts of creation, the garden of Eden, Cain's murder of Abel, the flood and the tower of Babel. It then narrows to one family. God calls Abraham out of Mesopotamia with a promise of land and descendants; the promise passes through Isaac to Jacob, who wrestles with an angel and becomes Israel. The last quarter of the book follows Jacob's son Joseph, sold into Egypt by his brothers, who rises to govern the country and eventually saves and forgives the family that betrayed him.

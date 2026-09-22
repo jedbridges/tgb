@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1969
   why: Complete, including the correspondence with Trajan, in a translation that reads easily.
+  isbn13: "9780141915944"
 cover: { source: generated }
 synopsis: >-
   Ten books of letters by a senator and lawyer of the reign of Trajan, the first nine selected and polished by Pliny himself for publication, the tenth his official correspondence as governor of Bithynia with the emperor. The private letters describe his villas, his reading and writing, court cases, the death of friends, a haunted house, and, in two letters to Tacitus, the eruption of Vesuvius in 79 in which his uncle the Elder Pliny died. The letters to Trajan include his inquiry about how to treat Christians and the emperor's reply, the earliest official Roman account of the new religion.

@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1997
   why: James Secord's abridgement of the first edition, with an introduction on Lyell's argument and its reception.
+  isbn13: "9780140435283"
 cover: { source: generated }
 synopsis: >-
   Lyell's three-volume work argues that the earth's surface has been shaped over immense stretches of time by the same causes now in operation, rivers, volcanoes, earthquakes, erosion and deposition, acting at roughly their present intensity, and not by ancient catastrophes. The first volume reviews the history of geology and surveys present-day processes. The second treats the changes in living species and argues against Lamarck's transmutation. The third applies the method to the rock record and introduces the divisions of the Tertiary. Darwin took the first volume on the Beagle.

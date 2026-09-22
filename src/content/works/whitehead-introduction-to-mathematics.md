@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Dover
   year: 2017
   why: Cheap reprint of the 1911 text, which is unchanged in all later editions.
+  isbn13: "9780486813660"
 cover: { source: generated }
 synopsis: >-
   A short book written for the Home University Library to explain to non-mathematicians what mathematics is about. Whitehead argues that its power lies in abstraction and the use of variables, and then walks through the ideas of number, imaginary numbers, coordinate geometry, periodicity, trigonometry, series, the differential calculus and the notion of a limit, ending with a chapter on the conceptual basis of geometry. It contains almost no exercises and few formal proofs; the aim is to show the growth of general ideas and their connection to physics.

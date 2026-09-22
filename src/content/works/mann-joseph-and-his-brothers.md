@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Everyman's Library
   year: 2005
   why: Woods's translation of all four novels in one volume, replacing the older Lowe-Porter version.
+  isbn13: "9781400040018"
 cover: { source: generated }
 synopsis: >-
   A tetralogy of novels retelling the last fourteen chapters of Genesis at enormous length. The Tales of Jacob recounts Jacob's theft of the blessing, his years with Laban and the rape of Dinah. Young Joseph shows the favourite son's vanity and his brothers' sale of him into slavery. Joseph in Egypt follows him into Potiphar's house and the temptation by Potiphar's wife, whom Mann names Mut-em-enet. Joseph the Provider covers the prison, the dreams of Pharaoh Akhenaten, Joseph's rise and his reunion with his brothers. Mann wrote it in Germany, Switzerland and California over sixteen years.

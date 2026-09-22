@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: Oxford World's Classics
   year: 2009
   why: Both short works together with good notes; the Harvard Classics uses the older Church and Brodribb translation.
+  isbn13: "9780191587542"
 cover: { source: generated }
 synopsis: >-
   A short ethnographic essay on the peoples beyond the Rhine and Danube, written the same year as the Agricola. The first half describes the Germans in general, their land, warfare, kings and assemblies, religion, marriage customs and love of drinking and gambling; the second surveys the individual tribes from the Rhine to the Baltic. Tacitus uses German simplicity and chastity as a mirror for Roman decadence, and the work has had a long and troubling afterlife in German nationalism.

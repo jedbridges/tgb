@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Oxford University Press (Oxford World's Classics)
   year: 2009
   why: The full text of the play with the other major works and annotation.
+  isbn13: "9780199538973"
 cover: { source: generated }
 synopsis: >-
   A verse tragedy based on a Roman case of 1599. Count Francesco Cenci, a nobleman whose crimes the Pope repeatedly pardons for money, celebrates the deaths of two of his sons and then rapes his daughter Beatrice. With her stepmother and brother she hires assassins to kill him. The murder is discovered, and Beatrice, who refuses to confess or repent under torture, is condemned to death with her family. Shelley wrote it for the stage, but its subject kept it from being performed in Britain until 1886.

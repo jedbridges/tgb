@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Liberty Fund
   year: 2010
   why: Mark Goldie's edition, with the later letters and related texts, is free online and cheap in print.
+  isbn13: "9780865977914"
 cover: { source: generated }
 synopsis: >-
   Written in Latin during Locke's exile in Holland and published in English the same year, the letter argues that civil government exists only to protect life, liberty and property, and has no business enforcing religious belief, which cannot be compelled by force in any case. Churches are voluntary societies that may expel but never punish. Locke draws the line at atheists, who cannot be trusted to keep oaths, and at those whose faith binds them to a foreign power. The letter became the classic statement of religious toleration.

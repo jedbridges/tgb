@@ -15,6 +15,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 2008
   why: Margaret Reynolds's edition, with notes on the Methodist and rural background.
+  isbn13: "9781101153949"
 cover: { source: generated }
 synopsis: >-
   George Eliot's first full-length novel, set in a Midlands village in 1799. Adam Bede, a carpenter of stern integrity, loves the vain dairymaid Hetty Sorrel, who is seduced by the young squire Arthur Donnithorne. Pregnant and abandoned, Hetty flees, abandons her newborn child and is tried for its death. The Methodist preacher Dinah Morris, who comforts Hetty in prison, becomes the novel's moral centre. Chapter 17 sets out Eliot's defence of realism in fiction.

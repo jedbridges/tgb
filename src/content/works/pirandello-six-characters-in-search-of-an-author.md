@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1996
   why: A clear modern translation that includes Pirandello's preface, which explains where the characters came from.
+  isbn13: "9780140189223"
 cover: { source: generated }
 synopsis: >-
   A theatre company is rehearsing when six people interrupt and announce that they are characters from an unfinished play, abandoned by the author who imagined them, and that they need someone to put their story on stage. They tell it in pieces and in contradiction: a husband who sent his wife away, her three children by another man, and the Stepdaughter he almost bought from Madame Pace without knowing her. The actors try to perform what the characters describe and get it wrong, the characters object that no actor can be them, and the rehearsal ends in a real drowning and a gunshot that nobody can say were real.

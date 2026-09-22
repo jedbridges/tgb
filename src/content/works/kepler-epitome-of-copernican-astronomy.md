@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Prometheus Books
   year: 1995
   why: The Great Books translation of Books IV and V of the Epitome with Book V of the Harmonies, reprinted in paperback.
+  isbn13: "9781615921973"
 cover: { source: generated }
 synopsis: >-
   Kepler's textbook of the new astronomy, published in seven books in the form of questions and answers. It presents the Copernican system as reworked by his own discoveries, that the planets move in ellipses with the sun at one focus, that a line from the sun sweeps equal areas in equal times, and that the squares of the periods are proportional to the cubes of the distances. Books IV and V, the ones usually read, give the physical causes of planetary motion, with the sun's rotating force driving the planets, and the theory of the moon.

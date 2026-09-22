@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Cambridge University Press
   year: 2012
   why: Steven Lukes and Nadia Urbinati's selection in the Cambridge Texts series, the edition the Yale course uses.
+  isbn13: "9781107605398"
 cover: { source: generated }
 synopsis: >-
   A selection of the political essays of the mathematician and revolutionary Condorcet, written between the eve of the Revolution and his death in prison in 1794. They include his argument that women have the same natural rights as men and should be admitted to citizenship, his essay on the influence of the American Revolution on Europe, his writings on slavery, on the meaning of the word revolutionary, on public instruction and on freedom, and passages from the Sketch of the progress of the human mind that he wrote in hiding.

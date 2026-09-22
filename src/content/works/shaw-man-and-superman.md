@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 2004
   why: Complete with the Epistle Dedicatory, the Don Juan in Hell act and The Revolutionist's Handbook.
+  isbn13: "9780141904030"
 cover: { source: generated }
 synopsis: >-
   A comedy in four acts with a preface, a dream interlude and an appended handbook. John Tanner, a rich revolutionary who has written a book on the Life Force, is made guardian of Ann Whitefield and flees to Spain when he realises she means to marry him; she pursues and catches him. The third act, often played on its own as Don Juan in Hell, is a long debate among Don Juan, Doña Ana, the Statue and the Devil about whether life is going anywhere and what the superman would be. The Revolutionist's Handbook follows.

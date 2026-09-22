@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Astra House
   year: 2024
   why: The English translation of the Japanese bestseller, published in Britain by Weidenfeld and Nicolson.
+  isbn13: "9781662602351"
 cover: { source: generated }
 synopsis: >-
   A Japanese bestseller of 2020 by a young philosopher, translated into English in 2024. Saito argues that endless economic growth is incompatible with a habitable climate, that green growth and technological fixes are illusions, and that the late Marx, in his notebooks on ecology and pre-capitalist communities, points toward the answer. He proposes degrowth communism, a democratically planned economy of shared commons, shorter working hours and production for use rather than for profit.

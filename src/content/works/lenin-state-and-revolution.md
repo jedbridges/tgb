@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1992
   why: Prints the pamphlet on its own with an introduction placing it between the February and October revolutions.
+  isbn13: "9780140184358"
 cover: { source: generated }
 synopsis: >-
   Written in hiding in Finland in the months before the October revolution, and published in 1918. Lenin sets out to recover what he says Marx and Engels actually taught about the state against the socialists who had blunted it. The state, he argues, is not a neutral referee but an instrument by which one class holds down another, so the working class cannot take over the existing machinery of parliament, army and bureaucracy: it must smash it and replace it with something on the model of the Paris Commune. That replacement is the dictatorship of the proletariat, a state of armed workers which, as classes disappear, withers away.

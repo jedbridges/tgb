@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: Cambridge University Press
   year: 2000
   why: The complete Cambridge Edition translation, including the first introduction Kant discarded.
+  isbn13: "9780521348928"
 cover: { source: generated }
 synopsis: >-
   The third of Kant's critiques joins two subjects that look unrelated, aesthetics and biology, through the faculty of judgment. The first part analyses judgments of taste, arguing that calling something beautiful claims a universal agreement that rests on no concept, and treats the sublime, genius and fine art. The second part asks how we can understand living organisms, which seem to be organised toward ends, and concludes that we must regard nature as purposive without being able to know that it is, ending with a moral argument for God.

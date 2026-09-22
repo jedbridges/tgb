@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Dover
   year: 1999
   why: The essay in its final form, with the rest of Darkwater, in an inexpensive reprint.
+  isbn13: "9780486112022"
 cover: { source: generated }
 synopsis: >-
   An essay first published in The Independent in 1910 and revised for Darkwater in 1920 after the First World War. Du Bois writes as one who sees white people from behind the veil and knows their souls; he argues that the idea of personal whiteness is a modern invention, that the war in Europe was a fight over the spoils of the darker world, and that European claims to civilisation cannot survive the record of colonial exploitation. The essay is an early statement of the link between racism and empire.

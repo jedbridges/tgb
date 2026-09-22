@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 2005
   why: A precise modern translation with an introduction by Geoffrey Wall.
+  isbn13: "9780141928579"
 cover: { source: generated }
 synopsis: >-
   Flaubert's last completed book gathers three stories from three ages. A Simple Heart follows Félicité, a Norman servant, through fifty years of loyalty and loss to a death in which her stuffed parrot merges with the Holy Ghost. The Legend of Saint Julian the Hospitaller retells a medieval saint's life, from a boyhood of slaughtering animals through the murder of his parents to his embrace of a leper. Herodias recounts the feast at which Salome's dance costs John the Baptist his head.

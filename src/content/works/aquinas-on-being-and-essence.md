@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Pontifical Institute of Mediaeval Studies
   year: 1968
   why: Short, reliable and annotated; the version most tutorials assign.
+  isbn13: "9780888442505"
 cover: { source: generated }
 synopsis: >-
   A short treatise Aquinas wrote as a young master in Paris for his fellow Dominicans, explaining what the words being and essence mean and how essence is found in material substances, in separate substances such as angels, in God, and in accidents. Its central claim is that in every creature essence and the act of existing are really distinct, while in God alone they are identical. The work is the most compact introduction to Aquinas' metaphysics and draws heavily on Avicenna.

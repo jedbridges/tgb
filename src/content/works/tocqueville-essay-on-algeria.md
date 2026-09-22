@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Johns Hopkins University Press
   year: 2001
   why: The standard English text of the Algeria writings, with an introduction that explains their place in Tocqueville's politics.
+  isbn13: "9780801865091"
 cover: { source: generated }
 synopsis: >-
   A memorandum Tocqueville wrote after his first visit to Algeria, unpublished in his lifetime, on how France should hold and govern its new conquest. He takes French domination as settled and asks how it can be made to last, examining the country's tribes and towns, the Arab and Kabyle populations, the conduct of the war against Abd al-Qadir, and the administration of the settler colony. He argues for European settlement and for giving the colonists civil liberties, criticises the brutality and lawlessness of French military rule as damaging to France itself, and at the same time accepts measures against the Arab population that he would have condemned at home.

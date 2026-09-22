@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Dover
   year: 1997
   why: Reprints the original 1910 text, which is the version Adler's list points to.
+  isbn13: "9780486117416"
 cover: { source: generated }
 synopsis: >-
   Written for teachers, this is Dewey's account of reflective thought and how schooling either trains it or kills it. Thinking begins in a felt difficulty, moves through suggestion, the framing of a problem, hypothesis and reasoning, and ends in a test that either settles the matter or produces a new difficulty. Dewey then argues that curiosity, suggestion and orderliness are the native resources a teacher works with, and examines concrete school subjects, language, judgement, concrete and abstract thought, and the discipline of attention.

@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Folger Shakespeare Library (Simon and Schuster)
   year: 2004
   why: Glosses the wordplay, which is most of the fun.
+  isbn13: "9781988120065"
 cover: { source: generated }
 synopsis: >-
   Rosalind, daughter of a banished duke, is herself banished by her usurping uncle and flees to the Forest of Arden disguised as a young man called Ganymede, with her cousin Celia and the clown Touchstone. There she meets Orlando, who loves her and does not recognise her, and offers to cure him of love by having him woo her in her disguise. The forest also holds her exiled father's court, the melancholy Jaques, and assorted shepherds. Four couples marry at the end.

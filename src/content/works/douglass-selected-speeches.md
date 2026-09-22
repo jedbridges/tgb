@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Lawrence Hill Books
   year: 1999
   why: Philip Foner's edition, abridged by Yuval Taylor, is the standard single volume and the one most courses use.
+  isbn13: "9781613741450"
 cover: { source: generated }
 synopsis: >-
   Fifty years of Douglass's public writing and speaking, from his first abolitionist lectures in the 1840s to his last addresses on lynching. The pieces most often assigned include What to the Slave Is the Fourth of July?, which turns the holiday against its celebrants; The Trials and Triumphs of Self-Made Men, on work and merit; the oration at the unveiling of the Freedmen's Monument to Abraham Lincoln, which praises Lincoln while calling him the white man's president; and his defence of woman suffrage. Together they show his argument shift from ending slavery to securing citizenship.

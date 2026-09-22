@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Folger Shakespeare Library (Simon and Schuster)
   year: 2005
   why: Explains the feudal politics and keeps the verse readable.
+  isbn13: "9781501146282"
 cover: { source: generated }
 synopsis: >-
   Richard, an anointed but capricious king, banishes his cousin Henry Bolingbroke and seizes the estate of Bolingbroke's dead father to fund a war in Ireland. Bolingbroke returns with an army while Richard is away, the nobles go over to him, and Richard surrenders without a battle. In a long deposition scene he hands over the crown and is sent to Pomfret Castle, where he is murdered. Written entirely in verse, the play begins the cycle that runs through the Henry IV plays to Henry V.

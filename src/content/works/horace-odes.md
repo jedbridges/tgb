@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Oxford University Press (Oxford World's Classics)
   year: 2008
   why: Accurate prose-like verse with brief notes to each poem; the Loeb, with Latin facing, is the alternative.
+  isbn13: "9780199555277"
 cover: { source: generated }
 synopsis: >-
   The seventeen Epodes, iambic poems of invective and politics from the years around Actium, and the four books of Odes, 103 lyric poems in Greek metres published in 23 and 13 BCE. The Odes turn from the civil wars and the praise of Augustus to friendship, wine, the countryside, the passing of the seasons and the shortness of life, and include the poem that coined carpe diem and the claim that the poet has built a monument more lasting than bronze. They are the model for lyric poetry in Europe for the next eighteen centuries.

@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Yale University Press
   year: 1989
   why: The only complete English translation, edited by Claude V. Palisca with the diagrams and a full introduction.
+  isbn13: "9780300039436"
 cover: { source: generated }
 synopsis: >-
   Boethius's treatise on music as a mathematical science, drawing on Nicomachus and Ptolemy, which served as the university textbook on the subject for a thousand years. It divides music into cosmic, human and instrumental, ranks the musicus who understands proportion above the performer, and sets out the Pythagorean theory of consonance, the ratios of the intervals, the division of the monochord, the Greek tonal system and the modes. The fifth book, unfinished, compares the rival schools of Pythagoras and Aristoxenus.

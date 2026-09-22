@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1986
   why: Malcolm Cowley's edition of the twelve original poems and preface; the Library of America volume has all editions.
+  isbn13: "9780140421996"
 cover: { source: generated }
 synopsis: >-
   The book of poems Whitman printed himself in 1855, twelve untitled pieces in long unrhymed lines with a prose preface declaring that the United States are essentially the greatest poem, and then revised and enlarged through six further editions until his death. The first and longest poem, later called Song of Myself, celebrates the poet's body, the crowds of the city, the grass over the graves and the equality of everything that exists. Later editions added the Calamus poems, the Civil War poems of Drum-Taps and the elegy for Lincoln.

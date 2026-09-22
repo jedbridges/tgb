@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Folger Shakespeare Library (Simon and Schuster)
   year: 2004
   why: All 154 sonnets with facing-page paraphrase and notes, which is what a first reader needs.
+  isbn13: "9780671669263"
 cover: { source: generated }
 synopsis: >-
   A sequence of 154 fourteen-line poems, first printed in 1609, most of them addressed to a beautiful young man and the rest to a dark-haired mistress. The first seventeen urge the young man to marry and have children; the sequence then turns to the poet's love for him, his fear of time and death, a rival poet, and the promise that verse will outlast marble. The final poems record a compulsive and self-disgusted affair with the dark lady.

@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Cosimo Classics
   year: 2007
   why: A reprint of Saunders's 1890 selection; the essays are also in Hollingdale's Penguin Essays and Aphorisms.
+  isbn13: "9781602063495"
 cover: { source: generated }
 synopsis: >-
   A selection of essays from Schopenhauer's late collection Parerga and Paralipomena, chosen and translated by T. Bailey Saunders in 1890 and read in English under this title ever since. It includes On the Sufferings of the World, which argues that pain is the positive fact of life and pleasure only its absence; On the Vanity of Existence; On Suicide; the notorious essay On Women; On Education; and shorter pieces on noise, books and the study of Latin. It is the easiest way into Schopenhauer's thought.

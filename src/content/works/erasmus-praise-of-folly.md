@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1993
   why: Standard translation with A. H. T. Levi's notes and Erasmus' letter to Dorp defending the book.
+  isbn13: "9780141920214"
 cover: { source: generated }
 synopsis: >-
   A mock oration written in a week at Thomas More's house in London, in which Folly, a goddess, steps up to praise herself. She claims credit for everything that makes life bearable, from marriage and birth to self-love and friendship, then turns on the professions, grammarians, poets, lawyers, philosophers, theologians, monks, princes, bishops and popes, whose self-importance she exposes. In the last section she argues that Christianity itself is a kind of folly and that the happiest are those who are fools for Christ.

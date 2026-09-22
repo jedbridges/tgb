@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Folger Shakespeare Library (Simon and Schuster)
   year: 2005
   why: The rapid scene changes between Rome and Egypt are easier to follow with the Folger's clear staging notes.
+  isbn13: "9781988120058"
 cover: { source: generated }
 synopsis: >-
   Mark Antony, one of the three rulers of Rome after Caesar's death, has abandoned his duties for Cleopatra, queen of Egypt. Called back to Rome, he marries Octavius Caesar's sister to patch up the alliance, then returns to Cleopatra and provokes open war. He loses the sea battle at Actium when Cleopatra's ships flee, is deserted by his men, and falls on his sword after a false report of her death. Cleopatra, refusing to be led in Octavius's triumph, kills herself with an asp.

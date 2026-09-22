@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Hackett
   year: 1993
   why: The cheapest reliable text, and it adds the Letter from a Gentleman and Hume's own abstract of the Treatise.
+  isbn13: "9780872202290"
 otherEditions:
   - title: An Enquiry Concerning Human Understanding
     translator: Edited by Tom L. Beauchamp

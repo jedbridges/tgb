@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Fortress Press
   year: 1970
   why: Prints the essay with the two other 1520 treatises it was written alongside.
+  isbn13: "9781451414295"
 cover: { source: generated }
 synopsis: >-
   The last and mildest of Luther's three reform treatises of 1520, sent to Pope Leo X with a conciliatory open letter. It turns on a pair of claims Luther calls paradoxical: a Christian is perfectly free, lord of all and subject to none, and at the same time a perfectly dutiful servant of all. Faith alone justifies, so no work can earn salvation; but faith frees a person to serve a neighbour without calculating a reward. Luther compares the union of the soul with Christ to a marriage in which the riches of one become the riches of the other.

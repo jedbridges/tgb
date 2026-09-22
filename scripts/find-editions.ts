@@ -95,11 +95,24 @@ function readWork(file: string): Work | null {
   };
 }
 
+/**
+ * Author display names, keyed by the slug a work points at.
+ *
+ * Needed because a title alone is not evidence when the title is a common word. Porphyry's
+ * Isagoge is published as "Introduction", which matched "An introduction to political
+ * philosophy" at full confidence. The author is what separates them.
+ */
+const AUTHORS: Record<string, string> = {};
+for (const f of readdirSync('src/content/authors').filter((f) => f.endsWith('.md'))) {
+  const m = /^name:\s*(.+)$/m.exec(frontmatter(readFileSync(`src/content/authors/${f}`, 'utf8')));
+  if (m) AUTHORS[f.replace(/\.md$/, '')] = m[1].trim().replace(/^["']|["']$/g, '');
+}
+
 /* ---------------------------------------------------------------- the lookup */
 
 interface Volume {
   title?: string; subtitle?: string; authors?: string[]; publisher?: string;
-  publishedDate?: string; printType?: string; pageCount?: number;
+  publishedDate?: string; printType?: string; pageCount?: number; language?: string;
   industryIdentifiers?: { type: string; identifier: string }[];
 }
 
@@ -132,18 +145,38 @@ async function cachedSearch(slug: string, q: string): Promise<Volume[]> {
  * candidate, never on its own a reason to reject one.
  */
 const OL_CACHE = '.cache/openlibrary-isbn.json';
-const olSeen: Record<string, boolean> = existsSync(OL_CACHE) ? JSON.parse(readFileSync(OL_CACHE, 'utf8')) : {};
-async function inPrint(isbn: string): Promise<boolean> {
+const olSeen: Record<string, string | null> = existsSync(OL_CACHE) ? JSON.parse(readFileSync(OL_CACHE, 'utf8')) : {};
+
+/** The title Open Library files that ISBN under, or null if it does not know the number. */
+async function olTitle(isbn: string): Promise<string | null> {
   if (isbn in olSeen) return olSeen[isbn];
-  let ok = false;
+  let title: string | null = null;
   try {
     const res = await fetch(`https://openlibrary.org/isbn/${isbn}.json`, { headers: { 'User-Agent': 'greatbookslist.com edition lookup' } });
-    ok = res.ok;
-  } catch { ok = false; }
-  olSeen[isbn] = ok;
+    if (res.ok) {
+      const d = await res.json() as { title?: string };
+      title = typeof d.title === 'string' ? d.title : '';
+    }
+  } catch { title = null; }
+  olSeen[isbn] = title;
   writeFileSync(OL_CACHE, JSON.stringify(olSeen));
   await new Promise((r) => setTimeout(r, 260));
-  return ok;
+  return title;
+}
+
+/**
+ * Confirming a number exists is not the same as confirming it is the right book, and the
+ * difference showed up as soon as the matches were sampled: Troilus and Criseyde resolved
+ * to "Oxford Guides to Chaucer" and a Hazlitt essay to a book called "Karl Marx". Both
+ * numbers are real printed books, which is all the first version of this check asked.
+ * So the catalogue is asked what the number is, and the answer has to agree with what we
+ * were looking for before it counts as confirmation.
+ */
+async function inPrint(isbn: string, expect: string[]): Promise<boolean> {
+  const t = await olTitle(isbn);
+  if (t === null) return false;
+  if (t === '') return true;   // catalogued, but with no title to compare
+  return expect.some((e) => overlap(e, t) >= 0.6 || overlap(t, e) >= 0.6);
 }
 
 /**
@@ -183,8 +216,17 @@ function house(p: string): string {
   return n;
 }
 
+/**
+ * Houses that exist to reprint public-domain scans on demand. Their books carry real
+ * ISBNs and real titles, so they score well on paper and are exactly the wrong thing to
+ * send a reader to: a photographed 1910 page, often missing plates, sometimes missing
+ * chapters. They are the only sellers of some of the Harvard Classics volumes this site
+ * assigns, which is precisely why the match has to be refused rather than ranked.
+ */
+const REPRINT_MILL = /createspace|independently published|legare street|franklin classics|forgotten books|palala|wentworth press|kessinger|nabu press|sagwan|trieste publishing|hansebooks|bookrix|floating press|bibliobazaar|scholar's choice|andesite|arkose|rarebooksclub|lulu\.com|outlook verlag|pinnacle press|facsimile publisher/i;
+
 /** Anything whose title says it is about the book rather than being the book. */
-const ABOUT = /\b(study guide|sparknotes|cliffsnotes|summary|companion to|guide to|introduction to the|workbook|analysis of|coloring|quiz|notes on)\b/i;
+const ABOUT = /\b(study guide|sparknotes|cliffsnotes|summary of|companion to|guides? (to|for)|a guide|handbook to|introduction to the|workbook|analysis of|coloring|quiz|notes on|casebook|critical essays on|reader's guide)\b/i;
 
 interface Scored { isbn13: string; score: number; why: string[]; vol: Volume }
 
@@ -194,6 +236,14 @@ function score(w: Work, v: Volume): Scored | null {
   if (v.printType && v.printType !== 'BOOK') return null;   // the API returns BOOK, singular
   const full = [v.title, v.subtitle].filter(Boolean).join(': ');
   if (ABOUT.test(full)) return null;
+  if (v.publisher && REPRINT_MILL.test(v.publisher)) return null;
+  /*
+   * Every edition this site recommends is an English one, and a title matches across
+   * languages: an Italian monograph about Leo XIII's Aeterni Patris carries those two words
+   * and scored 70 against the encyclical itself. Books about a work, in the language of the
+   * work's scholarship, are the most convincing wrong answers this search produces.
+   */
+  if (v.language && v.language !== 'en') return null;
 
   const why: string[] = [];
   let s = 0;
@@ -216,6 +266,19 @@ function score(w: Work, v: Volume): Scored | null {
   } else if (w.ed.publisher && !v.publisher) {
     // A record with no publisher at all is usually a library catalogue stub, not an edition.
     s -= 8; why.push('no publisher on record');
+  }
+
+  /*
+   * Author. A volume that lists contributors and lists neither this work's author nor its
+   * translator among them is almost always a different book that happens to share words
+   * with the title, and the shorter the title the more often that happens.
+   */
+  const author = AUTHORS[w.author] ?? '';
+  if (author && v.authors?.length) {
+    const hit = v.authors.some((a) => overlap(author, a) >= 0.5 || overlap(a, author) >= 0.5);
+    if (hit) { s += 14; why.push('author named'); }
+    else if (words(w.ed.title || w.title).length <= 2) return null;   // generic title, wrong author
+    else { s -= 16; why.push('author absent'); }
   }
 
   // Translator, when the record happens to list them as a contributor.
@@ -248,7 +311,18 @@ const targets = files
   .filter((w): w is Work => !!w && !w.ed.isbn13 && !!(w.ed.title || w.ed.publisher))
   .filter((w) => !ONLY.size || ONLY.has(w.slug));
 
-const ACCEPT = 62;   // title + publisher agreeing, or title plus two weaker signals
+/*
+ * Two bars, not one.
+ *
+ * Google indexes the ebook next to the paperback and both carry a valid ISBN-13, so a
+ * candidate that Open Library cannot find is a candidate that might be a digital-only
+ * number, which Amazon's /dp/ path will not resolve. Where a catalogue of physical books
+ * confirms the number, ordinary agreement on title and publisher is enough. Where it does
+ * not, the match has to be strong enough to stand on the Google record alone.
+ */
+const ACCEPT = 62;
+const ACCEPT_UNCONFIRMED = 95;
+const bar = (m: Scored) => (m.why.includes('in print catalogue') ? ACCEPT : ACCEPT_UNCONFIRMED);
 const accepted: { w: Work; m: Scored }[] = [];
 const rejected: { w: Work; best?: Scored; reason: string }[] = [];
 let quotaHit = false;
@@ -274,9 +348,10 @@ for (const w of targets) {
 
   const ranked = vols.map((v) => score(w, v)).filter((x): x is Scored => !!x).sort((a, b) => b.score - a.score);
   // Among the plausible ones, prefer the number a catalogue of physical books recognises.
-  for (const c of ranked.slice(0, 3)) {
+  const expect = [w.ed.title || w.title, w.title].filter(Boolean) as string[];
+  for (const c of ranked.slice(0, 4)) {
     if (c.score < ACCEPT) break;
-    if (await inPrint(c.isbn13)) { c.score += 20; c.why.push('in print catalogue'); break; }
+    if (await inPrint(c.isbn13, expect)) { c.score += 20; c.why.push('in print catalogue'); break; }
   }
   ranked.sort((a, b) => b.score - a.score);
   const best = ranked[0];
@@ -285,7 +360,7 @@ for (const w of targets) {
     ranked.slice(0, 4).forEach((r) => console.log(`   ${r.score.toFixed(0).padStart(3)}  ${r.isbn13}  ${(r.vol.title ?? '').slice(0, 48).padEnd(48)} ${(r.vol.publisher ?? '').slice(0, 24)}  [${r.why.join(', ')}]`));
   }
   if (!best) rejected.push({ w, reason: vols.length ? `${vols.length} results, none matched` : 'no results' });
-  else if (best.score < ACCEPT) rejected.push({ w, best, reason: `best score ${best.score.toFixed(0)} below ${ACCEPT}` });
+  else if (best.score < bar(best)) rejected.push({ w, best, reason: `score ${best.score.toFixed(0)} below ${bar(best)}${bar(best) === ACCEPT_UNCONFIRMED ? ', unconfirmed in print' : ''}` });
   else accepted.push({ w, m: best });
 }
 

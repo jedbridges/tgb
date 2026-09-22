@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Free Press
   year: 1997
   why: The cheapest complete text; the Southern Illinois critical edition is better annotated if a library has it.
+  isbn13: "9780684836317"
 cover: { source: generated }
 synopsis: >-
   Dewey's fullest statement of what schools are for. Education is not preparation for later life but the process by which a society renews itself, and it works by giving the young shared experience rather than transmitted information. He attacks the split between liberal and vocational training, between knowing and doing, and between the child's interest and the discipline of a subject, arguing each is a symptom of a class division carried over from societies that democracy has outgrown. The later chapters treat method, subject matter, science, morals and the place of philosophy in all of it.

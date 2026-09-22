@@ -19,6 +19,7 @@ recommendedEdition:
   publisher: University of Chicago Press
   year: 2000
   why: Exact and consistent in its key terms, with notes that track Tocqueville's vocabulary.
+  isbn13: "9780226924564"
 otherEditions:
   - title: Democracy in America
     translator: Arthur Goldhammer

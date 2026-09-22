@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1986
   why: Washington's autobiography prints the Atlanta address in full; his other speeches are collected in E. Davidson Washington's Selected Speeches of 1932.
+  isbn13: "9780739420645"
 cover: { source: generated }
 synopsis: >-
   Washington, born in slavery in Virginia and founder of the Tuskegee Institute, was the most prominent Black American speaker of his generation. His best known address, at the Atlanta Cotton States Exposition in September 1895, urged Black Southerners to cast down their buckets where they were in agriculture and the trades, and offered white Southerners a compromise in which social separation would be accepted in return for economic opportunity. Other speeches make the case for industrial education, thrift and property as the road to civil rights, a position W. E. B. Du Bois attacked in The Souls of Black Folk.

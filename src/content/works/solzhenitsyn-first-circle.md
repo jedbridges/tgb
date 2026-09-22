@@ -20,6 +20,7 @@ recommendedEdition:
   publisher: Harper Perennial
   year: 2009
   why: The complete 96-chapter version Solzhenitsyn restored, replacing the cut text published in 1968.
+  isbn13: "9780062194886"
 cover: { source: generated }
 synopsis: >-
   Three days in December 1949 in a sharashka, a prison research institute outside Moscow where scientist-convicts live in relative comfort while building voice-recognition and scrambling devices for Stalin. The mathematician Nerzhin, the engineer Sologdin and the loyal communist Rubin argue about conscience and the regime; a diplomat who phoned a warning to a doctor waits to be identified by the prisoners' own machine. The title comes from Dante: the sharashka is hell's mildest circle.

@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Verso
   year: 2014
   why: Fields and her sister Karen reprint the essay in this book, which is the easiest place to find it outside New Left Review.
+  isbn13: "9781781683132"
 cover: { source: generated }
 synopsis: >-
   An essay first published in New Left Review in 1990. Fields argues that race is not a biological fact or an unchanging attitude but an ideology, a way of explaining social relations that arose in North America to justify the enslavement of Africans in a society proclaiming liberty and equality. Slavery produced race, not race slavery, and the ideology has been continually re-created since. She warns historians against treating race as a cause rather than something itself to be explained.
