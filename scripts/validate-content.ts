@@ -36,12 +36,15 @@ const REQUIRED_H = ['## Overview', '## How to read it', '## Questions it raises'
 for (const [slug, { data, body }] of works) {
   if (!authors.has(data.author)) err(`${slug}: author ${data.author} has no file`);
   const words = body.trim().split(/\s+/).filter(Boolean).length;
+  const wc = (t?: string) => (t ? t.trim().split(/\s+/).filter(Boolean).length : 0);
   const st = data.status ?? 'stub';
   if (st !== 'stub') {
     if (words < 550) err(`${slug}: status ${st} but body is ${words} words`);
     for (const h of REQUIRED_H) if (!body.includes(h)) err(`${slug}: missing "${h}"`);
     if (!/## (What happens|The argument)/.test(body)) err(`${slug}: missing "## What happens" or "## The argument"`);
     if (!data.whyItMatters) err(`${slug}: ${st} requires whyItMatters`);
+    if (wc(data.synopsis) < 80 || wc(data.synopsis) > 140) warn(`${slug}: synopsis is ${wc(data.synopsis)} words (want 90-120)`);
+    if (data.whyItMatters && (wc(data.whyItMatters) < 90 || wc(data.whyItMatters) > 180)) warn(`${slug}: whyItMatters is ${wc(data.whyItMatters)} words (want 100-160)`);
     if ((data.highlights ?? []).length < 2) err(`${slug}: ${st} requires at least 2 highlights`);
     if ((data.keyThemes ?? []).length < 2) err(`${slug}: ${st} requires at least 2 keyThemes`);
   }
@@ -51,6 +54,17 @@ for (const [slug, { data, body }] of works) {
   const text = `${data.synopsis ?? ''} ${data.whyItMatters ?? ''} ${body}`;
   const b = text.match(BANNED); if (b) warn(`${slug}: banned phrase "${b[0]}"`);
   if (/—/.test(text)) err(`${slug}: contains an em dash`);
+  // YAML flow style truncates any value at its first comma, silently losing text.
+  // Reject flow mappings in the rich fields, and catch notes that were already clipped.
+  const fmBlock = readFileSync(`src/content/works/${slug}.md`, 'utf8').split(/^---$/m)[1] ?? '';
+  for (const field of ['keyThemes', 'highlights', 'otherEditions']) {
+    const re = new RegExp(`^${field}:[\\s\\S]*?^\\s*-\\s*\\{`, 'm');
+    if (re.test(fmBlock)) err(`${slug}: ${field} uses YAML flow style ({ ... }); commas truncate values, use block style`);
+  }
+  const clipped = (t: string | undefined) => t && t.length > 12 && !/[.!?…"')\]]$/.test(t.trim());
+  for (const k of data.keyThemes ?? []) if (clipped(k.note)) err(`${slug}: keyTheme note looks truncated: "${k.note}"`);
+  for (const h of data.highlights ?? []) if (clipped(h.note)) err(`${slug}: highlight note looks truncated: "${h.note}"`);
+
   for (const h of data.highlights ?? []) {
     const modern = !['english', 'middle-english'].includes(data.language) && !h.translator && !/paraphrase/i.test(h.note ?? '');
     if (modern) warn(`${slug}: highlight without translator or paraphrase note`);

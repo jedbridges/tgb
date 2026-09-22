@@ -79,10 +79,12 @@
     if (!hits.length) { list.innerHTML = `<p class="empty">Nothing on the shelf for “${escape(input.value)}”.</p>`; return; }
     list.innerHTML = hits.map((h, i) => `
       <a class="hit" role="option" id="hit-${i}" aria-selected="false" href="${h.url}">
-        ${h.meta.cover ? `<img class="hit__cover" src="${h.meta.cover}" alt="" width="40" height="60" loading="lazy">` : '<span class="hit__cover"></span>'}
+        ${h.meta.cover
+          ? `<img class="hit__cover" src="${escape(h.meta.cover)}" alt="" width="40" height="60" loading="lazy">`
+          : `<span class="hit__cover" ${h.meta.tone ? `style="background:${escape(h.meta.tone)}"` : ''}></span>`}
         <span>
-          <span class="hit__type">${escape(h.meta.type || 'page')}${h.meta.author ? ' · ' + escape(h.meta.author) : ''}</span>
-          <span class="hit__title" style="display:block">${escape(h.meta.title)}</span>
+          <span class="hit__type">${escape(h.meta.type || 'Page')}${h.meta.author ? ' · ' + escape(h.meta.author) : ''}</span>
+          <span class="hit__title" style="display:block">${escape(h.meta.title || 'Untitled')}</span>
           <span class="hit__sub" style="display:block">${h.excerpt}</span>
         </span>
       </a>`).join('');

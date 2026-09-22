@@ -9,6 +9,7 @@ import ProgramBadges from '~/components/ProgramBadges.astro';
 import { placeholderAuthor, authorOf, coverFor, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, loadCatalog } from '~/lib/catalog';
 import { authorUrl, taxUrl, url, workUrl } from '~/lib/url';
 import { bookLd, breadcrumbs } from '~/lib/seo';
+import { toneFor } from '~/lib/tone';
 
 export async function getStaticPaths() {
   const works = await getCollection('works');
@@ -41,17 +42,18 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
     <span class="visually-hidden" data-pagefind-meta={`author:${author.data.name}`}></span>
     <span class="visually-hidden" data-pagefind-meta={`slug:${work.id}`}></span>
     <span class="visually-hidden" data-pagefind-meta={`cover:${og ?? ''}`}></span>
+    <span class="visually-hidden" data-pagefind-meta={`tone:${toneFor(work.id).bg}`}></span>
     <header class="wrap work__hero">
       <div class="work__stage">
         <Book3D work={work} authorName={author.data.name} width={230} as="button" tilt openable eager epigraph={epigraph} />
         <p class="work__hint ui" aria-hidden="true">Click the book to open it</p>
       </div>
       <div class="work__head">
-        <p class="eyebrow reveal"><a href={url('/books/')}>The Great Books</a> · {count > 0 ? `On ${count} ${count === 1 ? 'list' : 'lists'}` : 'Catalogue'}</p>
+        <p class="eyebrow reveal" data-pagefind-ignore><a href={url('/books/')}>The Great Books</a> · {count > 0 ? `On ${count} ${count === 1 ? 'list' : 'lists'}` : 'Catalogue'}</p>
         <h1 class="reveal" style="--i:1" data-pagefind-meta="title">{d.title}</h1>
         {d.subtitle && <p class="work__subtitle reveal" style="--i:2">{d.subtitle}</p>}
         <p class="work__by reveal" style="--i:2">by <a href={authorUrl(author.id)}>{author.data.name}</a>{d.originalTitle && <span class="work__orig"> · <span lang={langCode[d.language.id]}>{d.originalTitle}</span></span>}</p>
-        <dl class="work__facts ui reveal" style="--i:3">
+        <dl class="work__facts ui reveal" style="--i:3" data-pagefind-ignore>
           <div><dt>Written</dt><dd>{yearLabel(work)}</dd></div>
           <div><dt>Era</dt><dd><a href={taxUrl('eras', d.era.id)}>{era?.data.label}</a></dd></div>
           <div><dt>Form</dt><dd><a href={taxUrl('genres', d.genre.id)}>{genre?.data.label}</a></dd></div>
@@ -60,7 +62,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
           <div><dt>Difficulty</dt><dd><span class="dots" aria-hidden="true">{[1, 2, 3, 4, 5].map((i) => <i class:list={{ on: i <= d.difficulty }}></i>)}</span> {difficultyLabel(d.difficulty)}</dd></div>
         </dl>
         <p class="work__synopsis reveal" style="--i:4">{d.synopsis}</p>
-        <div class="reveal" style="--i:5"><BuyButtons work={work} authorName={author.data.name} /></div>
+        <div class="reveal" style="--i:5" data-pagefind-ignore><BuyButtons work={work} authorName={author.data.name} /></div>
       </div>
     </header>
 
@@ -113,7 +115,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
             )}
           </>
         )}
-        <span class="visually-hidden">{[d.originalTitle, ...d.aliases, ...d.keywords, ...author.data.aliases].filter(Boolean).join(', ')}</span>
+        <span class="visually-hidden" data-pagefind-weight="0.4">{[d.originalTitle, ...d.aliases, ...d.keywords, ...author.data.aliases].filter(Boolean).join(', ')}</span>
       </div>
 
       <aside class="work__side" data-pagefind-ignore>
@@ -158,7 +160,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
 </Base>
 <style>
   .work__hero { display: grid; grid-template-columns: minmax(260px, 2fr) 3fr; gap: var(--s4); padding-block: var(--s4) var(--s3); align-items: start; }
-  .work__stage { position: sticky; top: 5rem; display: grid; justify-items: center; gap: var(--s2); padding: var(--s3) 0 var(--s1); }
+  .work__stage { position: sticky; top: 5rem; align-self: start; display: grid; justify-items: center; gap: var(--s2); padding: var(--s3) 0 var(--s1); }
   .work__hint { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.06em; text-transform: uppercase; }
   @media (hover: none) { .work__hint { display: none; } }
   .work__head { display: grid; gap: var(--s1); align-content: start; }
@@ -193,7 +195,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .highlights__list blockquote { margin: 0; padding-left: var(--s2); border-left: 2px solid var(--accent); font-size: var(--step-1); line-height: 1.35; font-style: italic; }
   .highlights__list blockquote footer { margin-top: 0.6rem; color: var(--ink-mute); font-size: var(--step--2); font-style: normal; letter-spacing: 0.04em; }
   .highlights__note { margin-top: var(--s1); padding-left: var(--s2); color: var(--ink-soft); line-height: 1.5; }
-  .work__side { display: grid; gap: var(--s3); align-content: start; position: sticky; top: 5rem; }
+  .work__side { display: grid; gap: var(--s3); align-content: start; align-self: start; position: sticky; top: 5rem; container-type: inline-size; }
   .side__h { margin-bottom: var(--s1); }
   .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .editions { margin: 0; padding-left: 1em; color: var(--ink-soft); display: grid; gap: 0.5rem; font-size: var(--step--2); }

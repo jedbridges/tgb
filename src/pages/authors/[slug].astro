@@ -30,7 +30,7 @@ const hasBio = author.body && author.body.trim().length > 40;
     <span class="visually-hidden" data-pagefind-meta="type:Author"></span>
     <span class="visually-hidden" data-pagefind-meta={`slug:${author.id}`}></span>
     <header class="wrap head">
-      <p class="eyebrow"><a href={url('/authors/')}>Authors</a> · {era?.data.label}</p>
+      <p class="eyebrow" data-pagefind-ignore><a href={url('/authors/')}>Authors</a> · {era?.data.label}</p>
       <h1 class="italic" data-pagefind-meta="title">{a.name}</h1>
       <p class="dates">{dates}{region && <> · {region.data.label}</>}</p>
       {hasBio && <div class="prose bio"><Content /></div>}

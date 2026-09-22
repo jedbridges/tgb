@@ -33,11 +33,11 @@ const itemList = {
     <span class="visually-hidden" data-pagefind-meta="type:Program"></span>
     <span class="visually-hidden" data-pagefind-meta={`slug:${program.id}`}></span>
     <header class="wrap head">
-      <p class="eyebrow"><a href={url('/programs/')}>Programs</a></p>
+      <p class="eyebrow" data-pagefind-ignore><a href={url('/programs/')}>Programs</a></p>
       <h1 class="italic" data-pagefind-meta="title">{p.name}</h1>
       <div class="head__grid">
         <div class="prose head__desc">{paragraphs.map((t) => <p>{t}</p>)}</div>
-        <dl class="facts ui">
+        <dl class="facts ui" data-pagefind-ignore>
           <div><dt>Works</dt><dd>{unique}</dd></div>
           <div><dt>{p.segmentLabel}s</dt><dd>{segments.length}</dd></div>
           {p.url && <div><dt>Official list</dt><dd><a href={p.url} rel="noopener" target="_blank">{new URL(p.url).hostname.replace(/^www\./, '')}</a></dd></div>}

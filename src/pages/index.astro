@@ -12,6 +12,7 @@ const counts = await Promise.all(top.map((w) => programCount(w.id)));
 const themes = (await getCollection('themes')).slice(0, 16);
 const eras = (await getCollection('eras')).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
 const eraCounts = new Map(eras.map((e) => [e.id, works.filter((w) => w.data.era.id === e.id).length]));
+const eraMax = Math.max(1, ...eraCounts.values());
 const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flatMap((s) => s.items.map((i) => i.work.id))).size;
 ---
 <Base title="The Great Books" description={`The ${works.length} books that college Great Books programs ask students to read, with a guide to each one, its themes, and where to buy it.`} jsonld={websiteLd()} bodyClass="home">
@@ -56,7 +57,7 @@ const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flat
     <ol class="timeline">
       {eras.map((e) => (
         <li><a href={taxUrl('eras', e.id)} class="tl">
-          <span class="tl__bar" style={`--n:${eraCounts.get(e.id) ?? 0}`}></span>
+          <span class="tl__bar" style={`--f:${((eraCounts.get(e.id) ?? 0) / eraMax).toFixed(3)}`}></span>
           <span class="tl__label">{e.data.label}</span>
           <span class="tl__count ui">{eraCounts.get(e.id)}</span>
         </a></li>
@@ -90,17 +91,19 @@ const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flat
   .prog__name { font-size: var(--step-1); color: var(--ink-strong); }
   .prog:hover .prog__name { color: var(--accent-deep); }
   .prog__count { color: var(--ink-mute); font-size: var(--step--2); }
-  .timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(12, 1fr); gap: 2px; align-items: end; }
+  .timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 3px; align-items: end; }
   .tl { display: grid; gap: 0.5rem; text-decoration: none; align-content: end; height: 100%; }
-  .tl__bar { display: block; height: calc(24px + var(--n) * 2px); max-height: 160px; background: var(--paper-deep); border-top: 2px solid var(--ink-mute); transition: background var(--dur-fast), border-color var(--dur-fast); }
+  .tl__bar { display: block; height: calc(18px + var(--f) * 140px); background: var(--paper-deep); border-top: 2px solid var(--ink-mute); transition: background var(--dur-fast), border-color var(--dur-fast); }
   .tl:hover .tl__bar { background: var(--accent-wash); border-color: var(--accent); }
   .tl__label { font-size: var(--step--1); line-height: 1.15; color: var(--ink-soft); }
   .tl__count { color: var(--ink-mute); font-size: var(--step--2); }
   .themecloud { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; }
   .themecloud a { font-size: var(--step-2); font-style: italic; text-decoration: none; color: var(--ink-soft); transition: color var(--dur-fast); }
   .themecloud a:hover { color: var(--accent-deep); }
-  @media (max-width: 720px) {
-    .timeline { grid-template-columns: repeat(4, 1fr); gap: var(--s1); }
+  @media (max-width: 860px) {
+    .timeline { grid-auto-flow: row; grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)); gap: var(--s1); align-items: stretch; }
+    .tl { grid-template-columns: 3rem minmax(0, 1fr) auto; align-items: center; gap: var(--s1); }
+    .tl__bar { height: 10px; width: calc(12px + var(--f) * 100%); border-top: 0; border-left: 2px solid var(--ink-mute); }
     .tl__label { font-size: var(--step--2); }
   }
 </style>
