@@ -29,12 +29,14 @@ textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
   outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px;
 }
 button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
-/* Headings carry three signals, not one: they are larger, they are the heavier of the
-   display face's two cuts, and they are a full step darker than the paragraph under them.
-   Size alone was doing all the work, which is why the page read flat. */
+/* Headings are set in the brand ink, the same warm tone the outline buttons and the body
+   use, not in a darker one. A heading at eighty-four pixels does not need extra weight of
+   colour to be read as a heading, and taking it toward black on warm paper turns it into a
+   slab that belongs to a different palette. The hierarchy is carried by size, by the
+   display face, and by its heavier cut. */
 h1, h2, h3, h4 {
   font-family: var(--font-display); font-weight: var(--w-emph);
-  color: var(--ink-strong); margin: 0; text-wrap: balance;
+  color: var(--ink); margin: 0; text-wrap: balance;
 }
 /* Gambetta's lowercase runs wide, so display sizes need less negative tracking than the
    previous face did or the letters start to collide. */
@@ -144,8 +146,10 @@ input, textarea, select { caret-color: var(--accent-deep); }
 }
 .btn:hover { background: var(--ink); color: var(--paper); }
 .btn:active { transform: translateY(1px); }
-.btn--primary { background: var(--ink); color: var(--paper); }
-.btn--primary:hover { background: var(--ink-strong); }
+/* One colour for a primary action, everywhere. The home page used to fill its button with
+   ink while every buy button on the site was red, so the page's own headline and the page's
+   own action disagreed about what the accent was for. There is no ink-filled variant now:
+   an action is either the accent or it is an outline. */
 .btn--accent { background: var(--accent-deep); border-color: var(--accent-deep); color: var(--paper-bright); }
 .btn--accent:hover { background: var(--accent-press); border-color: var(--accent-press); }
 /* On a phone an action gets the full column. Half-width buttons are a desktop habit. */

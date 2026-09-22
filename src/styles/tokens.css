@@ -21,7 +21,10 @@
   /* Ink. Every value below is measured against --paper-deep, the darkest surface any of
      them is ever set on, not just against --paper. */
   --ink: light-dark(#4b4644, oklch(0.885 0.012 65));               /* 7.72 / 12.41 */
-  --ink-strong: light-dark(oklch(0.22 0.012 40), oklch(0.97 0.008 75));  /* 14.41 / 16.10 */
+  /* A lift above the brand ink for small text that has to carry, never a black. The old
+     value resolved to #201916 on paper and #f8f4ef in the dark, which is black and white
+     in all but name, and at display sizes it read as a slab rather than as ink. */
+  --ink-strong: light-dark(oklch(0.31 0.014 40), oklch(0.935 0.01 70));  /* 10.98 / 15.68 */
   --ink-soft: light-dark(oklch(0.46 0.015 40), oklch(0.76 0.014 55));    /* 5.38 / 8.15 */
   --ink-mute: light-dark(oklch(0.49 0.014 45), oklch(0.675 0.016 50));   /* 4.72 / 5.95 */
 
