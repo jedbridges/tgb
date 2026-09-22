@@ -1,20 +1,24 @@
 ---
 import Book3D from './Book3D.astro';
 import { workUrl } from '~/lib/url';
-import { yearShort, type Work } from '~/lib/catalog';
+import { coverFor, tintVars, yearShort, type Work } from '~/lib/catalog';
 interface Props { work: Work; authorName: string; width?: number; eager?: boolean; hasGuide?: boolean; showMeta?: boolean; index?: number }
 const { work, authorName, width = 140, eager = false, hasGuide = false, showMeta = true, index } = Astro.props;
+// The colour this book throws when it is pulled off the shelf. Empty for a cover that has
+// none, and the glow below then renders as nothing.
+const _m = coverFor(work.id).meta;
+const tint = tintVars(_m);
 ---
 <a
   class:list={['card', !showMeta && 'card--bare']}
   href={workUrl(work.id)}
   data-slug={work.id}
-  style={index !== undefined ? `--i:${index}` : undefined}
+  style={[index !== undefined ? `--i:${index};` : '', tint].filter(Boolean).join('') || undefined}
 >
   <span class="card__stage" style={`--stage-h:${Math.round(width * 1.6)}px`}>
     <Book3D work={work} authorName={authorName} width={width} eager={eager} decorative />
   </span>
-  <span class="card__ledge" aria-hidden="true"></span>
+  <span class="card__ledge" aria-hidden="true">{tint && <span class="card__glow"></span>}</span>
   {showMeta && (
     <>
       <span class="card__title">{work.data.title}</span>
@@ -61,6 +65,39 @@ const { work, authorName, width = 140, eager = false, hasGuide = false, showMeta
     content-visibility: auto;
     contain-intrinsic-size: auto calc(var(--stage-h) + var(--lift));
   }
+
+  /* The light a book throws when it comes off the shelf.
+     Not a halo around the card, which is a video-game hover and would be noise across six
+     hundred of them: a jacket pulled into the light bounces its own colour down onto the
+     wood it is standing on. So this pools at the ledge and fades upward, it sits behind the
+     book rather than around it, and it exists only while the book is actually out. */
+  .card__glow {
+    /* Inside the ledge, not a child of the card. As a grid item it took rows out of the
+       card's five-row subgrid and pushed the shelf, the title and the author down a band
+       each, which broke every row on the page. */
+    position: absolute; left: 50%; bottom: 100%; translate: -50% 0;
+    width: 170%; height: 9rem; pointer-events: none;
+    opacity: 0; --glow-a: 0.55;
+    /* Anchored to the top of the wood, not to the wood itself. Pooled on the shelf the
+       light landed on the darkest surface in the row and read as nothing; it belongs on
+       the wall the book is standing against. */
+    background: radial-gradient(
+      ellipse 56% 100% at 50% 100%,
+      oklch(var(--tint-l) var(--tint-c) var(--tint-h) / var(--glow-a)),
+      oklch(var(--tint-l) var(--tint-c) var(--tint-h) / calc(var(--glow-a) * 0.34)) 44%,
+      transparent 74%);
+    transition: opacity var(--dur) var(--ease-out);
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .card__glow { --glow-a: 0.78; } }
+  :root[data-theme='dark'] .card__glow { --glow-a: 0.78; }
+  @media (hover: hover) and (pointer: fine) {
+    .card:hover .card__glow, .card:focus-visible .card__glow { opacity: 1; }
+    /* The glow is wider than the card it belongs to, and the neighbouring cards paint their
+       own shelf and stage over it, which sheared it off with a hard vertical edge on each
+       side. Lifting the hovered card above its siblings lets its light finish. */
+    .card:hover, .card:focus-visible { z-index: 3; }
+  }
+  @media (prefers-reduced-motion: reduce) { .card__glow { transition: none; } }
 
   .card__ledge {
     position: relative;

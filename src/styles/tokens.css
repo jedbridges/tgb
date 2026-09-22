@@ -34,9 +34,9 @@
      were visibly different reds on the same screen. The deep one wins: it is the only one
      that clears a contrast floor, so nothing has to reach for a second value the moment
      text is involved, and a rule, a dot, a border and a word are all the same colour. */
-  --accent: light-dark(oklch(0.50 0.19 37), oklch(0.76 0.15 45));        /* 5.44 / 7.78 */
-  --accent-press: light-dark(oklch(0.42 0.17 35), oklch(0.84 0.12 50));  /* pressed, hover */
-  --accent-wash: light-dark(oklch(0.93 0.04 45), oklch(0.29 0.06 40));   /* tint */
+  --accent: light-dark(oklch(0.50 0.19 37), oklch(0.74 0.17 33));        /* 5.44 light, 7.64 dark */
+  --accent-press: light-dark(oklch(0.42 0.17 35), oklch(0.82 0.14 36));  /* pressed, hover */
+  --accent-wash: light-dark(oklch(0.93 0.04 45), oklch(0.29 0.07 35));   /* tint */
   --focus: var(--accent);           /* the same red carries focus */
 
   --shelf-wood: light-dark(oklch(0.42 0.05 45), oklch(0.33 0.045 45));
@@ -111,12 +111,7 @@
      it. These were written out by hand in five files, so changing the bar's height left
      panels pinned under it. */
   --header-h: 4.75rem;
-  /* The band under the bar where the page fades out. Short on purpose: a long ramp reads
-     as a smear hanging off the header rather than as content passing under it. Anything
-     that pins itself to the header has to clear this, or it comes to rest inside the fade
-     and gets veiled. */
-  --scrim-h: 1.35rem;
-  --stick: calc(var(--header-h) + var(--scrim-h));   /* where a sticky panel comes to rest */
+  --stick: calc(var(--header-h) + var(--s0));   /* where a sticky panel comes to rest */
   --stick-max: calc(100dvh - var(--stick) - var(--s1));
 }
 /* The bar loses height as the row tightens, and everything pinned below it follows. These

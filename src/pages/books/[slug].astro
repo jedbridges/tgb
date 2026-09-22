@@ -6,7 +6,7 @@ import Book3D from '~/components/Book3D.astro';
 import BookCard from '~/components/BookCard.astro';
 import BuyButtons from '~/components/BuyButtons.astro';
 import ProgramBadges from '~/components/ProgramBadges.astro';
-import { placeholderAuthor, authorOf, coverFor, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, hasGuide, guidedCount, loadCatalog } from '~/lib/catalog';
+import { placeholderAuthor, authorOf, coverFor, tintVars, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, hasGuide, guidedCount, loadCatalog } from '~/lib/catalog';
 import { authorUrl, taxUrl, url, workUrl } from '~/lib/url';
 import { bookLd, breadcrumbs } from '~/lib/seo';
 import { amazonUrl } from '~/lib/affiliates';
@@ -19,7 +19,10 @@ export async function getStaticPaths() {
 const { work } = Astro.props;
 const author = await authorOf(work);
 const { Content } = await render(work);
-const { image } = coverFor(work.id);
+const { image, meta: coverMeta } = coverFor(work.id);
+// The colour this jacket throws onto the wall behind it. Empty string for the third of
+// covers that are greyscale or near-black, and the wash below is then not rendered at all.
+const tint = tintVars(coverMeta);
 const og = image ? (await getImage({ src: image, width: 800, format: 'jpg' })).src : undefined;
 const related = await relatedWorks(work);
 const { authors } = await loadCatalog();
@@ -77,7 +80,8 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
         <div id="buy-inline" class="set-hold" data-pagefind-ignore><BuyButtons work={work} authorName={author.data.name} /></div>
         <p class="work__synopsis" style="--i:3">{d.synopsis}</p>
       </div>
-      <div class="work__stage">
+      <div class="work__stage" style={tint || undefined}>
+        {tint && <div class="work__wash" aria-hidden="true"></div>}
         <Book3D work={work} authorName={author.data.name} width={230} as="button" tilt openable eager epigraph={epigraph} />
       </div>
     </header>
@@ -199,6 +203,31 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   }
   .work__stage .book__front { view-transition-name: book-cover; }
   .work__stage { grid-column: 2; grid-row: 1; position: sticky; top: var(--stick); align-self: start; display: grid; justify-items: center; gap: var(--s2); padding-bottom: var(--s1); max-height: var(--stick-max); }
+  /* The light off the cover.
+     This is the one place on the site where a book is allowed to colour the page, and it
+     is still only light: a soft bloom on the wall behind the jacket, never a background
+     panel and never anything type sits on. Wider than it is tall, because that is how a
+     lit object bleeds sideways, and blurred so no edge of the gradient is findable. */
+  .work__wash {
+    /* Sized to the book, not to the column. Tied to the stage it filled the whole width of
+       a phone and stopped being light on a wall: it became a red page. */
+    position: absolute; top: -6%; left: 50%; translate: -50% 0;
+    width: min(118%, 27rem); aspect-ratio: 1.15;
+    z-index: -1; pointer-events: none;
+    --wash-a: 0.17;
+    background: radial-gradient(ellipse at 50% 42%,
+      oklch(var(--tint-l) var(--tint-c) var(--tint-h) / var(--wash-a)),
+      oklch(var(--tint-l) var(--tint-c) var(--tint-h) / calc(var(--wash-a) * 0.36)) 46%,
+      transparent 73%);
+    filter: blur(16px);
+  }
+  /* A dark page shows a coloured bloom far more readily than parchment does. */
+  @media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .work__wash { --wash-a: 0.2; } }
+  :root[data-theme='dark'] .work__wash { --wash-a: 0.2; }
+  @media (prefers-reduced-motion: no-preference) {
+    .work__wash { animation: wash-in 900ms var(--ease-out) 120ms backwards; }
+    @keyframes wash-in { from { opacity: 0; } }
+  }
   .work__head { grid-column: 1; grid-row: 1; display: grid; gap: var(--s1); align-content: start; min-width: 0; }
   .work__head h1 { font-style: italic; font-size: var(--step-4); line-height: var(--lh-title); letter-spacing: var(--tracking-display); }
     /* A subtitle belongs to the title above it, not to the byline below, so it closes up. */

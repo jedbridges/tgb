@@ -5,7 +5,28 @@ export type Work = CollectionEntry<'works'>;
 export type Author = CollectionEntry<'authors'>;
 export type Program = CollectionEntry<'programs'>;
 
-export interface CoverMeta { w: number; h: number; spine: string; spineInk: string; source?: string }
+export interface CoverMeta {
+  w: number; h: number; spine: string; spineInk: string; source?: string;
+  /** [lightness, chroma, hue] in oklch, borrowed from the cover. null when the cover has no
+      colour worth borrowing, which is a real answer and not a missing one. */
+  tint?: number[] | null;
+  tint2?: number[];
+}
+
+/**
+ * The borrowed colour, as custom properties, or nothing at all.
+ *
+ * Nothing at all is the important half. Around a third of the real covers are greyscale
+ * photographs or near-black cloth, and every generated cover is already the brand red;
+ * tinting those produces a grey haze that reads as a rendering fault rather than as light.
+ * They get no properties, and every rule that uses them is written to disappear when they
+ * are absent.
+ */
+export function tintVars(meta: CoverMeta | null | undefined): string {
+  const t = meta?.tint;
+  if (!t || t.length < 3) return '';
+  return `--tinted:1;--tint-l:${t[0]};--tint-c:${t[1]};--tint-h:${t[2]};`;
+}
 const coverFiles = import.meta.glob<{ default: ImageMetadata }>('/src/assets/covers/*.{jpg,jpeg,png,webp}', { eager: true });
 
 export function coverFor(slug: string): { image: ImageMetadata | null; meta: CoverMeta | null } {
