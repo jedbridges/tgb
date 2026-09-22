@@ -14,6 +14,12 @@
   --focus: oklch(0.50 0.19 35);         /* 5.46:1, clears the 3:1 non-text floor */
   --accent-wash: oklch(0.93 0.04 45);
   --shelf-wood: oklch(0.42 0.05 45);
+
+  /* Dividers. Dotted, like the leaders in a table of contents, and light enough to
+     separate without ruling the page. Structural edges (header, inputs, buttons,
+     focus rings) stay solid; these are for separating content only. */
+  --rule: 1px dotted color-mix(in oklch, var(--ink) 26%, transparent);
+  --rule-section: 1px dotted color-mix(in oklch, var(--ink) 42%, transparent);
   --shelf-edge: oklch(0.55 0.06 50);
   --shadow-ink: 20 12 8;            /* rgb for shadows, warm */
 

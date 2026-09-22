@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22.12" },
+  "engines": {
+    "node": ">=22.12"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro check && astro build && npm run smoke",
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
+    "opentype.js": "^2.0.0",
     "sharp": "^0.34.0",
     "tsx": "^4.20.0",
     "typescript": "^5.9.0",

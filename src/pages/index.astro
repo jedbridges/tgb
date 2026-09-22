@@ -9,7 +9,12 @@ import { websiteLd } from '~/lib/seo';
 const { works, authors, programs } = await loadCatalog();
 const top = (await sortedByAssignment(works)).slice(0, 12);
 const counts = await Promise.all(top.map((w) => programCount(w.id)));
-const themes = (await getCollection('themes')).slice(0, 16);
+const themeCounts = new Map<string, number>();
+for (const w of works) for (const t of w.data.themes) themeCounts.set(t.id, (themeCounts.get(t.id) ?? 0) + 1);
+const themes = (await getCollection('themes'))
+  .map((t) => ({ ...t, n: themeCounts.get(t.id) ?? 0 }))
+  .sort((a, b) => b.n - a.n)
+  .slice(0, 16);
 const eras = (await getCollection('eras')).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
 const eraCounts = new Map(eras.map((e) => [e.id, works.filter((w) => w.data.era.id === e.id).length]));
 const eraMax = Math.max(1, ...eraCounts.values());
@@ -50,7 +55,7 @@ const HEADLINE_WORDS = [
         </span>
         <span class="visually-hidden">of {HEADLINE_WORDS[0]}, and everything else the great reading lists assign.</span>
       </h1>
-      <p class="hero__lede reveal" style="--i:1">The great books list, assembled from all nine of them: St. John's, Columbia, Chicago, Yale and the published canons behind them. {works.length} works, with a guide to each, the themes it turns on, and the edition worth buying.</p>
+      <p class="hero__lede reveal" style="--i:1">The ideas that built the West, argued out in the books themselves. {works.length} works, nine reading lists, a guide to each.</p>
       <div class="hero__actions reveal" style="--i:2">
         <a class="btn btn--primary" href={url('/books/')}>Browse the shelf</a>
         <button class="btn" type="button" data-open-search>Search inside every book</button>
@@ -100,7 +105,14 @@ const HEADLINE_WORDS = [
       <h2 class="italic">Or start from a question</h2>
     </header>
     <ul class="themecloud">
-      {themes.map((t) => <li><a href={taxUrl('themes', t.id)}>{t.data.label}</a></li>)}
+      {themes.map((t) => (
+        <li>
+          <a href={taxUrl('themes', t.id)}>
+            <span class="themecloud__label">{t.data.label}</span>
+            <span class="themecloud__n">{t.n}</span>
+          </a>
+        </li>
+      ))}
     </ul>
   </section>
 </Base>
@@ -189,20 +201,20 @@ const HEADLINE_WORDS = [
     .rotator__word { transition: opacity 160ms linear; transform: none; filter: none; }
     .rotator__word[data-active] { transition: opacity 160ms linear; }
   }
-  .hero__lede { margin-top: var(--s2); font-size: var(--step-1); line-height: var(--lh-tight-prose); color: var(--ink-soft); max-width: 50ch; text-wrap: pretty; }
+  .hero__lede { margin-top: var(--s2); font-size: var(--step-0); line-height: var(--lh-prose); color: var(--ink-soft); max-width: 46ch; text-wrap: pretty; }
   .hero__actions { display: flex; flex-wrap: wrap; gap: var(--s1); margin-top: var(--s3); }
   @media (max-width: 700px) {
     .hero__actions { display: grid; grid-template-columns: 1fr; gap: 0.7rem; }
     .hero__actions .btn { width: 100%; min-height: 54px; }
   }
-  .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s2); border-top: 1px solid var(--ink); padding-top: var(--s1); margin-bottom: var(--s3); }
+  .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s2); border-top: var(--rule-section); padding-top: var(--s1); margin-bottom: var(--s3); }
   .section-head h2 { font-size: var(--step-3); }
   .section-head__more { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-soft); text-decoration: none; }
   .section-head__more:hover { color: var(--accent-deep); }
   .shelf-section { padding-block: 0 var(--s3); }
   .programs-section, .eras-section, .themes-section { padding-block: var(--s3); }
   .proglist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0 var(--s3); }
-  .prog { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s1); min-height: 48px; padding: 0.8rem 0; border-bottom: 1px solid var(--paper-deeper); text-decoration: none; }
+  .prog { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s1); min-height: 48px; padding: 0.8rem 0; border-bottom: var(--rule); text-decoration: none; }
   .prog__name { font-size: var(--step-1); color: var(--ink-strong); }
   .prog:hover .prog__name { color: var(--accent-deep); }
   .prog__count { color: var(--ink-mute); font-size: var(--step--2); }
@@ -213,9 +225,26 @@ const HEADLINE_WORDS = [
   .tl:hover .tl__bar { background: var(--accent); }
   .tl__label { font-size: var(--step--1); line-height: 1.15; color: var(--ink-soft); }
   .tl__count { color: var(--ink-mute); font-size: var(--step--2); }
-  .themecloud { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; }
-  .themecloud a { display: inline-flex; align-items: center; min-height: 44px; font-size: var(--step-2); font-style: italic; text-decoration: none; color: var(--ink-soft); transition: color var(--dur-fast); }
-  .themecloud a:hover { color: var(--accent-deep); }
+  .themecloud { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; }
+  /* These were the only links on the page with no affordance. A pill would fight the type,
+     since pills here belong to small sans-serif tags, so this uses the site's own link
+     language instead: a rule set low enough to clear the italic descenders, plus the count
+     of works, which both marks the link as a destination and says what is behind it. */
+  .themecloud a {
+    display: inline-flex; align-items: baseline; gap: 0.45em;
+    min-height: 44px; padding-block: 0.1em;
+    font-size: var(--step-2); font-style: italic; color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid var(--paper-deeper);
+    transition: color var(--dur-fast), border-color var(--dur-fast);
+  }
+  .themecloud__n {
+    font-family: var(--font-ui); font-style: normal; font-size: var(--step--2);
+    font-variant-numeric: tabular-nums; color: var(--ink-mute);
+    transition: color var(--dur-fast);
+  }
+  .themecloud a:hover, .themecloud a:focus-visible { color: var(--accent-deep); border-bottom-color: var(--accent); }
+  .themecloud a:hover .themecloud__n, .themecloud a:focus-visible .themecloud__n { color: var(--accent-deep); }
   @media (max-width: 860px) {
     .timeline { grid-auto-flow: row; grid-template-columns: 1fr; gap: 0; align-items: stretch; }
     .tl {

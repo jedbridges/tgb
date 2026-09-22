@@ -39,7 +39,7 @@ h4 { font-size: var(--step-1); line-height: var(--lh-heading); }
 p { margin: 0; }
 p + p { margin-top: 1em; }
 em, i { font-style: italic; }
-hr { border: 0; border-top: 1px solid var(--paper-deeper); margin: var(--s3) 0; }
+hr { border: 0; border-top: var(--rule); margin: var(--s3) 0; }
 ::selection { background: var(--accent-wash); color: var(--ink-strong); }
 
 /* Surfaces the browser would otherwise style for us. */

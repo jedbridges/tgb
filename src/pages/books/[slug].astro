@@ -193,7 +193,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .work__orig { color: var(--ink-mute); }
   .work__assigned { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); }
   .work__assigned strong { font-family: var(--font-display); font-size: var(--step-1); font-weight: 500; color: var(--ink-strong); font-variant-numeric: tabular-nums; }
-  .work__facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s2); margin: var(--s1) 0; padding: var(--s2) 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--paper-deeper); }
+  .work__facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s2); margin: var(--s1) 0; padding: var(--s2) 0; border-top: var(--rule-section); border-bottom: var(--rule); }
   @media (max-width: 620px) { .work__facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .work__facts div { display: grid; gap: 0.15rem; }
   .work__facts dt { font-size: var(--step--2); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
@@ -206,10 +206,10 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--paper-deeper); }
   .dots i.on { background: var(--accent); }
   .work__synopsis { font-size: var(--step-1); line-height: var(--lh-tight-prose); max-width: 60ch; text-wrap: pretty; }
-  .work__grid { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: var(--s4); padding-block: var(--s3); border-top: 1px solid var(--paper-deeper); }
+  .work__grid { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: var(--s4); padding-block: var(--s3); border-top: var(--rule); }
   .work__main { display: grid; gap: var(--s4); min-width: 0; }
   .work__h { font-style: italic; font-size: var(--step-2); margin-bottom: var(--s2); }
-  .work__why { padding: var(--s2) var(--s2) var(--s2) 0; border-top: 1px solid var(--ink); }
+  .work__why { padding: var(--s2) var(--s2) var(--s2) 0; border-top: var(--rule-section); }
   .work__why-text { font-size: var(--step-1); line-height: var(--lh-tight-prose); max-width: var(--measure); text-wrap: pretty; }
   .themes { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: var(--s2) var(--s3); margin: 0; }
   .themes__item dt { font-size: var(--step-1); }
@@ -231,7 +231,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .editions { margin: 0; padding-left: 1em; color: var(--ink-soft); display: grid; gap: 0.5rem; font-size: var(--step--2); }
   .editions__why { color: var(--ink-mute); }
-  .related { padding-top: var(--s4); border-top: 1px solid var(--paper-deeper); }
+  .related { padding-top: var(--s4); border-top: var(--rule); }
   .work__stub { display: grid; gap: var(--s1); max-width: var(--measure); }
   .work__stub p { color: var(--ink-soft); line-height: 1.6; }
   .work__stub-out { margin-top: var(--s1); }
