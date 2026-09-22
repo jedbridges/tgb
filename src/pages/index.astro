@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '~/layouts/Base.astro';
 import BookCard from '~/components/BookCard.astro';
 import Seal from '~/components/Seal.astro';
-import { placeholderAuthor, loadCatalog, sortedByAssignment, programCount } from '~/lib/catalog';
+import { placeholderAuthor, loadCatalog, sortedByAssignment, hasGuide } from '~/lib/catalog';
 import { programUrl, taxUrl, url } from '~/lib/url';
 import { websiteLd } from '~/lib/seo';
 
@@ -80,7 +80,7 @@ const HEADLINE_WORDS = [
       <a class="section-head__more ui" href={url('/books/')}>All {works.length} →</a>
     </header>
     <div class="shelf-grid shelf-open">
-      {top.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} index={i} eager={i < 6} />)}
+      {top.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} hasGuide={hasGuide(w)} index={i} eager={i < 6} />)}
     </div>
   </section>
 
@@ -181,35 +181,28 @@ const HEADLINE_WORDS = [
   @media (max-width: 700px) { .hero { --fold-peek: 22rem; } }
   .hero__text { max-width: 44rem; position: relative; z-index: 1; }
 
-  /* The seal takes the empty right half of the hero, which was the one part of the first
-     screen doing no work, and runs off the edge of the page. Bleeding it is the point: a
-     medal that fits neatly inside the margin is a diagram of a medal, one that overruns
-     the page reads as an object lying on top of it. The page already clips at the
-     viewport, so nothing overflows sideways. */
+  /* The seal hangs off the right edge at every width, cut in the same proportion each
+     time. The offset is a percentage of the seal's own size rather than of the page, which
+     is the only way the crop stays identical from a phone to a wide desktop: a fixed
+     offset crops a small seal in half and barely nicks a large one. You always see its
+     top left two thirds, which is the part carrying the mark and the start of the line. */
   .hero__seal {
     position: absolute;
-    right: clamp(-11rem, -9vw, -4rem);
     top: 50%;
-    translate: 0 -50%;
-    width: clamp(17rem, 31vw, 28rem);
+    right: 0;
+    width: clamp(13rem, 30vw, 27rem);
+    translate: 33% -50%;
     rotate: -11deg;
     z-index: 0;
   }
-  /* Below this the hero has no spare width, so the seal moves up beside the headline and
-     runs further off the edge, where it reads as a stamp on the corner of the page. */
-  /* On a phone the bleed has to go. Full-width buttons leave no margin to run off, and a
-     medallion reduced to a crescent at the edge reads as a rendering accident rather than
-     a deliberate crop. It sits fully on the page instead, small, in the corner the fold
-     already leaves empty: a stamp on the bottom of a letter rather than a seal half off
-     the desk. */
-  @media (max-width: 900px) {
-    .hero__seal {
-      top: auto; bottom: 0; translate: 0 0;
-      right: var(--gutter);
-      width: clamp(6.5rem, 23vw, 9.5rem);
-      rotate: -9deg;
-    }
+  /* Same crop, different height. On a phone the hero text runs the full width, so a seal
+     centred on the hero sits behind the lede and makes it hazy. It drops below the actions
+     instead, into the room the fold already leaves, and keeps exactly the same slice
+     hanging off the right edge. */
+  @media (max-width: 760px) {
+    .hero__seal { top: auto; bottom: 4%; translate: 33% 0; }
   }
+
   /* Two lines at every width, breaking after "years" so that "of argument" reads as one
      phrase. The binding line is now the shorter of the two, which lets the type run larger.
      Sized against the viewport so it fits rather than wrapping wherever it likes. */
