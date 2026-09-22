@@ -183,7 +183,7 @@ const HEADLINE_WORDS = [
   .rotator { display: inline-grid; grid-template-areas: 'w'; }
   .rotator__word {
     grid-area: w;
-    color: var(--accent-deep);
+    color: var(--accent);
     font-style: italic;
     opacity: 0;
     transform: translateY(0.34em);
@@ -213,7 +213,7 @@ const HEADLINE_WORDS = [
      which reads as the link being short of the margin. */
   .section-head__more { margin-right: -0.02em; }
   .section-head__more { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-soft); text-decoration: none; }
-  .section-head__more:hover { color: var(--accent-deep); }
+  .section-head__more:hover { color: var(--accent); }
   /* Every band below the hero opens the same way: a section rule, then its heading. The
      shelf used to open with no top padding at all, so its rule sat twice as close to the
      hero as the next three rules sat to each other. */
@@ -234,7 +234,7 @@ const HEADLINE_WORDS = [
     column-gap: var(--s1); text-decoration: none; min-width: 0;
   }
   .prog__name { grid-row: 1; font-size: var(--step-1); color: var(--ink-strong); padding-block: 0.9rem 0; text-wrap: balance; }
-  .prog:hover .prog__name { color: var(--accent-deep); }
+  .prog:hover .prog__name { color: var(--accent); }
   /* The rule is drawn by the row's last band so it lands at the same height in every
      column, and the count never breaks 'works' onto a line of its own. */
   .prog::after {
@@ -287,8 +287,8 @@ const HEADLINE_WORDS = [
     font-variant-numeric: tabular-nums; color: var(--ink-mute);
     transition: color var(--dur-fast);
   }
-  .themecloud a:hover, .themecloud a:focus-visible { color: var(--accent-deep); border-bottom-color: var(--accent); }
-  .themecloud a:hover .themecloud__n, .themecloud a:focus-visible .themecloud__n { color: var(--accent-deep); }
+  .themecloud a:hover, .themecloud a:focus-visible { color: var(--accent); border-bottom-color: var(--accent); }
+  .themecloud a:hover .themecloud__n, .themecloud a:focus-visible .themecloud__n { color: var(--accent); }
   @media (max-width: 860px) {
     .timeline { grid-auto-flow: row; grid-template-columns: 1fr; grid-template-rows: none; gap: 0; align-items: stretch; }
     .timeline > li { grid-row: auto; display: block; }

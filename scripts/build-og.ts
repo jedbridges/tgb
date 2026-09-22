@@ -12,7 +12,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import sharp from 'sharp';
 import opentype, { type Font } from 'opentype.js';
 
-const RED = '#a81f00';       // deep enough that cream type clears AA comfortably
+const RED = '#b62200';       // the site's one accent, --accent resolved in the light scheme
 const CREAM = '#f4ece6';
 const W = 1200, H = 630;
 

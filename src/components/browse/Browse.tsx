@@ -302,9 +302,9 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
           background: var(--ink); color: var(--paper); border: 1px solid var(--ink);
           transition: background var(--dur-fast);
         }
-        .pill:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
+        .pill:hover { background: var(--accent); border-color: var(--accent); }
         .pill__x { font-size: 1.15em; line-height: 0; opacity: 0.8; }
-        .resultbar__clear { font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent-deep); text-decoration: underline; text-underline-offset: 0.2em; min-height: 30px; padding: 0 0.2em; }
+        .resultbar__clear { font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; min-height: 30px; padding: 0 0.2em; }
         .resultbar .f--sort { margin-left: auto; display: flex; align-items: baseline; gap: 0.5rem; width: auto; }
         .resultbar .f--sort .f__label { margin: 0; white-space: nowrap; }
         .resultbar .f--sort select { width: auto; min-width: 9.5rem; padding-block: 0.35rem; min-height: 44px; }
@@ -327,7 +327,7 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
         .browse-search input::placeholder { color: var(--ink-mute); font-style: italic; }
         .browse-search input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
         .browse-search__clear { font-size: var(--step-1); line-height: 1; color: var(--ink-mute); min-width: 44px; min-height: 44px; }
-        .browse-search__clear:hover { color: var(--accent-deep); }
+        .browse-search__clear:hover { color: var(--accent); }
         .filters__toggle { display: none; width: 100%; justify-content: space-between; align-items: center; gap: var(--s1);
           font-family: var(--font-ui); font-size: var(--step--1); font-weight: 700; min-height: 46px;
           padding: 0.6rem 0; border-bottom: 1px solid var(--paper-deeper); }

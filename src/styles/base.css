@@ -23,7 +23,7 @@ body {
 }
 img, svg { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration-color: color-mix(in oklch, var(--accent) 55%, transparent); text-underline-offset: 0.16em; text-decoration-thickness: 1px; }
-a:hover { text-decoration-color: var(--accent-deep); }
+a:hover { text-decoration-color: var(--accent); }
 a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible,
 textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
   outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px;
@@ -60,8 +60,8 @@ hr { border: 0; border-top: var(--rule); margin: var(--s3) 0; }
 ::selection { background: var(--accent-wash); color: var(--ink-strong); }
 
 /* Surfaces the browser would otherwise style for us. */
-html { caret-color: var(--accent-deep); scrollbar-color: var(--paper-deeper) transparent; scrollbar-width: thin; }
-input, textarea, select { caret-color: var(--accent-deep); }
+html { caret-color: var(--accent); scrollbar-color: var(--paper-deeper) transparent; scrollbar-width: thin; }
+input, textarea, select { caret-color: var(--accent); }
 ::-webkit-scrollbar { width: 11px; height: 11px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--edge); border: 3px solid var(--paper); border-radius: 99px; }
@@ -150,7 +150,7 @@ input, textarea, select { caret-color: var(--accent-deep); }
    ink while every buy button on the site was red, so the page's own headline and the page's
    own action disagreed about what the accent was for. There is no ink-filled variant now:
    an action is either the accent or it is an outline. */
-.btn--accent { background: var(--accent-deep); border-color: var(--accent-deep); color: var(--paper-bright); }
+.btn--accent { background: var(--accent); border-color: var(--accent); color: var(--paper-bright); }
 .btn--accent:hover { background: var(--accent-press); border-color: var(--accent-press); }
 /* On a phone an action gets the full column. Half-width buttons are a desktop habit. */
 @media (max-width: 700px) {
@@ -234,7 +234,7 @@ input, textarea, select { caret-color: var(--accent-deep); }
    it names where you are and gets you back, which a decorative label never did. */
 .crumbs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5em; font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-mute); margin-bottom: var(--s1); }
 .crumbs a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--edge); }
-.crumbs a:hover { color: var(--accent-deep); border-bottom-color: var(--accent-deep); }
+.crumbs a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .crumbs li { display: flex; align-items: baseline; gap: 0.5em; list-style: none; }
 .crumbs li + li::before { content: '/'; color: var(--edge); }
 .crumbs ol, .crumbs ul { display: flex; flex-wrap: wrap; gap: 0.5em; margin: 0; padding: 0; }

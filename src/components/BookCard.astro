@@ -93,10 +93,10 @@ const { work, authorName, width = 140, eager = false, programCount, hasGuide = f
   .card__guide {
     display: inline-flex; align-items: center; gap: 0.3em;
     font-family: var(--font-ui); font-size: var(--step--2); line-height: 1;
-    color: var(--accent-deep); padding: 0.25em 0.5em;
+    color: var(--accent); padding: 0.25em 0.5em;
     border: 1px solid color-mix(in oklch, var(--accent) 50%, transparent);
     border-radius: 2px;
   }
   .card__guide::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
-  .card:hover .card__title { color: var(--accent-deep); }
+  .card:hover .card__title { color: var(--accent); }
 </style>
