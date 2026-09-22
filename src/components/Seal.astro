@@ -63,24 +63,9 @@ const RIM_R = 137;
 const RIM_LEN = n(2 * Math.PI * RIM_R);
 ---
 <div class:list={['seal', cls]} data-seal aria-hidden="true">
+  <div class="seal__sheen"></div>
   <svg class="seal__art" viewBox="0 0 400 400" role="presentation" focusable="false">
     <defs>
-      <!-- The rolled edge of the die. Small enough to stay a lip, not a glow. -->
-      <filter id="press-soft" x="-6%" y="-6%" width="112%" height="112%" color-interpolation-filters="sRGB">
-        <feGaussianBlur stdDeviation="0.75" />
-      </filter>
-
-      <!-- Oil on water, not a rainbow: the stops stay inside one warm-to-cool arc so the
-           sheen reads as light on a surface rather than as colour applied to it. -->
-      <linearGradient id="seal-iris" data-seal-iris x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
-        <stop offset="0%" stop-color="#f6ddc0" />
-        <stop offset="22%" stop-color="#cfe8e0" />
-        <stop offset="44%" stop-color="#d9d2ee" />
-        <stop offset="62%" stop-color="#f2d6df" />
-        <stop offset="80%" stop-color="#f8eed6" />
-        <stop offset="100%" stop-color="#cfe4ef" />
-      </linearGradient>
-
       <!-- Everything that does not turn. -->
       <g id="seal-still">
         <path d={SCALLOP} fill="none" stroke-width="2.6" />
@@ -125,12 +110,6 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
       <use href="#seal-still" />
       <use href="#seal-turn" class="seal__spin" />
     </g>
-
-    <!-- The sheen, in the struck lines only. -->
-    <g class="seal__sheen">
-      <use href="#seal-still" />
-      <use href="#seal-turn" class="seal__spin" />
-    </g>
   </svg>
 </div>
 
@@ -151,29 +130,37 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
 
   .seal__recess { fill: var(--press-recess); }
 
-  .seal__lip { filter: url(#press-soft); }
+  /* No blur on the lips. A softened edge is truer to a die strike, but it cost an SVG
+     filter, and an SVG filter with something turning inside it is re-run on the CPU every
+     frame: measured in Safari it held the whole page at 26fps with the filter alone and
+     6fps with the sheen as well. The lips carry a little less weight instead, which reads
+     as the same shallow press without asking anything of the compositor. */
   .seal__lip--dark * { fill: var(--press-dark); stroke: var(--press-dark); }
   .seal__lip--light * { fill: var(--press-light); stroke: var(--press-light); }
   /* The face is the page. It exists only to bury the middle of each lip, which is what
      turns two offset copies into one pressed line. */
   .seal__face * { fill: var(--paper); stroke: var(--paper); }
 
+  /* The sheen.
+     It used to be a fourth copy of every struck line, painted with an SVG gradient, so the
+     iridescence sat inside the lettering itself. That was the nicest version and it is not
+     affordable: its mere presence, blending or not, turning or not, held Safari at 6fps.
+     One CSS layer over the disc instead. It is composited rather than rasterised, so it
+     costs nothing until the pointer arrives, and it catches the whole medallion rather than
+     only its lines, which is what light on a foil does anyway. */
   .seal__sheen {
-    /* Held well down. At full strength this stopped being light on a pressed surface and
-       started being a rainbow decal, which is the one thing a bindery mark must never be. */
-    opacity: calc(var(--sheen, 0) * 0.34);
-    /* light-dark() resolves colours, not keywords, so the blend mode has to be switched by
-       the scheme itself: iridescence on parchment is pigment, in the dark it is light. */
-    mix-blend-mode: multiply;
+    position: absolute; inset: 5.4%;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: calc(var(--sheen, 0) * 0.4);
+    background: conic-gradient(
+      from calc(var(--sweep, 0) * 1deg),
+      #f6ddc0, #cfe8e0 52deg, #d9d2ee 108deg, #f2d6df 164deg,
+      #f8eed6 214deg, #cfe4ef 268deg, #f0d9c4 322deg, #f6ddc0 360deg
+    );
     transition: opacity 420ms var(--ease-out);
+    will-change: opacity;
   }
-  /* Screen on a near-black page carries much further than multiply on parchment, so the
-     dark scheme takes less of it. */
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme='light']) .seal__sheen { mix-blend-mode: screen; opacity: calc(var(--sheen, 0) * 0.24); }
-  }
-  :root[data-theme='dark'] .seal__sheen { mix-blend-mode: screen; opacity: calc(var(--sheen, 0) * 0.24); }
-  .seal__sheen * { fill: url(#seal-iris); stroke: url(#seal-iris); }
 
   .seal__rim {
     font-family: var(--font-ui);
@@ -216,10 +203,10 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
    * deboss is.
    */
   const seal = document.querySelector<HTMLElement>('[data-seal]');
-  const iris = seal?.querySelector<SVGElement>('[data-seal-iris]');
+  const sheen = seal?.querySelector<HTMLElement>('.seal__sheen');
   const fine = matchMedia('(hover: hover) and (pointer: fine)');
 
-  if (seal && iris && fine.matches) {
+  if (seal && sheen && fine.matches) {
     let frame = 0;
     const rest = () => seal.style.setProperty('--sheen', '0');
 
@@ -249,7 +236,7 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
         // as the pointer approaches rather than switching on at an edge.
         const near = Math.max(0, 1 - Math.hypot(dx, dy) / (r.width * 1.15));
         seal.style.setProperty('--sheen', near.toFixed(3));
-        iris.setAttribute('gradientTransform', `rotate(${Math.round((Math.atan2(dy, dx) * 180) / Math.PI)} 0.5 0.5)`);
+        seal.style.setProperty('--sweep', String(Math.round((Math.atan2(dy, dx) * 180) / Math.PI)));
       });
     }, { passive: true });
 
