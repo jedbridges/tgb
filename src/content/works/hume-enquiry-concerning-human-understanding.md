@@ -14,19 +14,19 @@ length: short
 pages: 120
 recommendedEdition:
   title: An Enquiry Concerning Human Understanding
-  translator: Edited by Eric Steinberg
+  editor: Eric Steinberg
   publisher: Hackett
   year: 1993
   why: The cheapest reliable text, and it adds the Letter from a Gentleman and Hume's own abstract of the Treatise.
   isbn13: "9780872202290"
 otherEditions:
   - title: An Enquiry Concerning Human Understanding
-    translator: Edited by Tom L. Beauchamp
+    editor: Tom L. Beauchamp
     publisher: Oxford University Press
     year: 1999
     why: The critical edition, with the variants between printings and extensive annotation.
   - title: An Enquiry Concerning Human Understanding
-    translator: Edited by Peter Millican
+    editor: Peter Millican
     publisher: Oxford World's Classics
     year: 2007
     why: The best introduction and notes for a first reader working alone.

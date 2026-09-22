@@ -14,14 +14,14 @@ length: long
 pages: 500
 recommendedEdition:
   title: Leviathan
-  translator: Edited by Edwin Curley
+  editor: Edwin Curley
   publisher: Hackett
   year: 1994
   isbn13: "9780872201774"
   why: Curley's edition carries the variants from the Latin text and has the best notes for the price.
 otherEditions:
   - title: Leviathan
-    translator: Edited by Richard Tuck
+    editor: Richard Tuck
     publisher: Cambridge University Press
     year: 1996
     isbn13: "9780521567978"

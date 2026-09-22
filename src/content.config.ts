@@ -48,7 +48,13 @@ const highlight = z.object({
 
 const edition = z.object({
   title: z.string().optional(),
+  /*
+   * A translator and an editor are different people doing different jobs, and collapsing
+   * them produced the site's worst sentence: "Leviathan, translated by Edited by Edwin
+   * Curley", on the one work all nine lists assign, in English, untranslated.
+   */
   translator: z.string().optional(),
+  editor: z.string().optional(),
   publisher: z.string().optional(),
   year: z.number().int().optional(),
   isbn13: isbn13.optional(),

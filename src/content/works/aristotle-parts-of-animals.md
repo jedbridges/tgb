@@ -16,7 +16,7 @@ length: short
 pages: 115
 recommendedEdition:
   title: "The Complete Works of Aristotle, Volume 1"
-  translator: Jonathan Barnes (ed.)
+  editor: Jonathan Barnes
   publisher: Princeton University Press
   year: 1984
   isbn13: "9780691016504"

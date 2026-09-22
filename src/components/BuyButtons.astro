@@ -8,15 +8,29 @@ const ed = work.data.recommendedEdition;
 const target = { title: ed?.title ?? work.data.title, author: authorName, isbn13: ed?.isbn13, asin: ed?.asin };
 /** A recommendation only exists if we can name the edition. Otherwise the links are a search,
  *  and saying so is the difference between a recommendation and a guess. */
-const named = Boolean(ed && (ed.translator || ed.publisher));
+const named = Boolean(ed && (ed.translator || ed.editor || ed.publisher));
 const precise = Boolean(ed?.asin || isbn13ToAsin(ed?.isbn13));
-const editionName = ed?.translator ? `${ed.translator} translation` : ed?.publisher ? `${ed.publisher} edition` : null;
+/*
+ * What this edition is actually called, in the order that tells a reader the most.
+ * For a translated work the translator is most of the decision; for one written in
+ * English it is the editor who made the text and the apparatus. A guard catches any
+ * editor still sitting in the translator field, so bad data degrades to the right
+ * sentence rather than to "translated by Edited by".
+ */
+const strayEditor = ed?.translator && /^(edited by|ed\.)\s/i.test(ed.translator);
+const translator = strayEditor ? undefined : ed?.translator;
+const editor = ed?.editor ?? (strayEditor ? ed!.translator!.replace(/^(edited by|ed\.)\s+/i, '') : undefined);
+const editionName = translator
+  ? `${translator} translation`
+  : editor
+    ? `${editor} edition`
+    : ed?.publisher ? `${ed.publisher} edition` : null;
 ---
 <div class:list={['buy', { 'buy--compact': compact }]}>
   {named ? (
     <p class="buy__lede">
       <span class="buy__lede-label">We recommend</span>
-      <span class="buy__edition-name">{ed!.title ?? work.data.title}{ed!.translator && <>, translated by {ed!.translator}</>}</span>
+      <span class="buy__edition-name">{ed!.title ?? work.data.title}{translator && <>, translated by {translator}</>}{!translator && editor && <>, edited by {editor}</>}</span>
       {(ed!.publisher || ed!.year) && <span class="buy__edition-pub">{[ed!.publisher, ed!.year].filter(Boolean).join(', ')}</span>}
       {ed!.why && <span class="buy__why">{ed!.why}</span>}
     </p>

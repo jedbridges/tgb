@@ -2,7 +2,7 @@
 import { getCollection, getEntry } from 'astro:content';
 import Base from '~/layouts/Base.astro';
 import Book3D from '~/components/Book3D.astro';
-import { placeholderAuthor, loadCatalog, yearShort, difficultyLabel } from '~/lib/catalog';
+import { placeholderAuthor, loadCatalog, yearShort, difficultyLabel, hasGuide } from '~/lib/catalog';
 import { programUrl, url, workUrl, authorUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
 import { abs } from '~/lib/url';
@@ -73,7 +73,10 @@ const itemList = {
                   <a class="row__title" href={workUrl(w.id)}>{w.data.title}</a>
                   <span class="row__meta ui">{a && <a href={authorUrl(a.id)}>{a.data.name}</a>} · {yearShort(w)}{it.note && <span class="row__note"> · {it.note}</span>}{it.optional && <span class="row__note"> · optional</span>}</span>
                 </span>
-                <span class="row__diff ui" title={difficultyLabel(w.data.difficulty)}>{difficultyLabel(w.data.difficulty)}</span>
+                <span class="row__end">
+                  {hasGuide(w) && <span class="row__guide ui">Guide</span>}
+                  <span class="row__diff ui" title={difficultyLabel(w.data.difficulty)}>{difficultyLabel(w.data.difficulty)}</span>
+                </span>
               </li>
             );
           })}
@@ -123,7 +126,19 @@ const itemList = {
   .row__meta { color: var(--ink-soft); font-size: var(--step--2); }
   .row__meta a { text-decoration: none; }
   .row__note { color: var(--ink-mute); }
+  .row__end { display: flex; align-items: baseline; gap: var(--s1); justify-self: end; }
   .row__diff { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; white-space: nowrap; }
+  /* This is the page a student actually arrives on with a syllabus in hand, and until now
+     it was the one surface that could not tell them which of 131 entries has 2,500 words
+     behind it and which has a paragraph. They found out by clicking. */
+  .row__guide {
+    display: inline-flex; align-items: center; gap: 0.3em; white-space: nowrap;
+    font-size: var(--step--2); line-height: 1; color: var(--accent);
+    padding: 0.25em 0.5em; border-radius: 2px;
+    border: 1px solid color-mix(in oklch, var(--accent) 50%, transparent);
+  }
+  .row__guide::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
+  @media (max-width: 720px) { .row__end { grid-column: 3; justify-self: start; } .row__guide { order: -1; } }
   @media (max-width: 720px) {
     .head__grid { grid-template-columns: 1fr; }
     .row { grid-template-columns: 1.5rem 3.5rem minmax(0, 1fr); }
