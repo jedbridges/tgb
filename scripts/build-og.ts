@@ -14,7 +14,7 @@
  */
 import { writeFileSync } from 'node:fs';
 import sharp from 'sharp';
-import { RED, CREAM, mark, markScaleForWidth, markHeightForWidth, loadFonts, setText } from './lib/brand.ts';
+import { RED, CREAM, mark, leaf, LEAF_W, LEAF_H, markScaleForWidth, markHeightForWidth, loadFonts, setText } from './lib/brand.ts';
 
 const W = 1200, H = 630;
 const M = 104;
@@ -50,13 +50,25 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
 await sharp(Buffer.from(svg)).png({ compressionLevel: 9 }).toFile('public/og-default.png');
 
 /**
- * The mark is 1.74 times wider than it is tall, so fitting it inside a square with even
- * padding left it filling barely half the width: at the sixteen pixels a browser tab
- * actually shows, the three page curves dissolved into a smear. It now runs almost the
- * full width and is centred on the height.
+ * Two icons, because one drawing cannot do both jobs.
+ *
+ * A browser tab is sixteen pixels. The full mark is three thin page curves beside a solid
+ * block, and at that size the curves are a pixel each: they grey together and the icon
+ * reads as an orange blob, which is what shipped. The tab icon therefore uses the solid
+ * leaf alone, which is nearly square, fills the space and still reads as a page. The home
+ * screen icon is 180 pixels and has room for the whole mark.
  */
-const icon = (size: number) => {
-  const w = size * 0.82;
+const tabIcon = (size: number) => {
+  const w = size * 0.58;
+  const x = (size - w) / 2;
+  const y = (size - (w / LEAF_W) * LEAF_H) / 2;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+    <rect width="${size}" height="${size}" rx="${size * 0.18}" fill="${RED}"/>
+    ${leaf(x, y, w / LEAF_W)}
+  </svg>`;
+};
+const appIcon = (size: number) => {
+  const w = size * 0.8;
   const x = (size - w) / 2;
   const y = (size - markHeightForWidth(w)) / 2;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
@@ -64,8 +76,11 @@ const icon = (size: number) => {
     ${mark(x, y, markScaleForWidth(w))}
   </svg>`;
 };
-writeFileSync('public/favicon.svg', icon(64));
-await sharp(Buffer.from(icon(180))).png().toFile('public/apple-touch-icon.png');
+writeFileSync('public/favicon.svg', tabIcon(64));
+// Safari in particular prefers a raster icon when it can find one, and a tab that has
+// already cached the old drawing is more likely to pick up a file it has never seen.
+for (const px of [16, 32, 48]) await sharp(Buffer.from(tabIcon(px * 4))).resize(px, px).png().toFile(`public/favicon-${px}.png`);
+await sharp(Buffer.from(appIcon(180))).png().toFile('public/apple-touch-icon.png');
 
 const meta = await sharp('public/og-default.png').metadata();
 console.log(

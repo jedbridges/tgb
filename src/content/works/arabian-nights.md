@@ -21,7 +21,7 @@ recommendedEdition:
   year: 2010
   why: The first complete modern English translation from the Arabic; a one-volume selection is also available.
   isbn13: "9780141943503"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780141943503" }
 synopsis: >-
   King Shahriyar, betrayed by his wife, marries a new bride each night and has her killed in the morning, until the vizier's daughter Shahrazad volunteers and keeps herself alive by telling a story each night and breaking off at dawn. The tales she tells, which grew over centuries from Persian, Indian and Arabic sources, include merchants and jinn, Sindbad's voyages, the fisherman and the demon, and the hunchback, with stories nested inside stories. Later European editions added Aladdin and Ali Baba, which are not in the Arabic manuscripts.
 keywords: [Shahrazad, Scheherazade, Shahriyar, Sindbad, Aladdin, Ali Baba, jinn, Harun al-Rashid, Baghdad]

@@ -21,7 +21,7 @@ recommendedEdition:
   year: 1983
   why: G. E. R. Lloyd's selection of the most read treatises, including the Oath, Epidemics, Airs Waters Places, The Sacred Disease and Aphorisms, with a good introduction.
   isbn13: "9780140444513"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780140444513" }
 synopsis: >-
   About sixty Greek medical treatises written by various hands between the late fifth and mid-fourth centuries BCE and passed down under the name of Hippocrates of Cos, though none can be securely attributed to him. They include the Oath, case histories in the Epidemics, the environmental medicine of Airs Waters Places, the attack on supernatural explanations in The Sacred Disease, the Aphorisms, and treatises on prognosis, regimen, fractures and surgery. Together they show medicine separating itself from religion and philosophy.
 keywords: [Hippocratic Oath, Epidemics, Airs Waters Places, The Sacred Disease, Aphorisms, Prognostic, four humours, Cos]

@@ -20,7 +20,7 @@ recommendedEdition:
   year: 2001
   why: Wilbur's prose version of the one Molière play not written in verse.
   isbn13: "9780156013109"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780156013109" }
 synopsis: >-
   Don Juan, a nobleman who takes any woman he wants and believes in nothing but arithmetic, abandons his new wife Elvire and moves from seduction to seduction with his servant Sganarelle protesting behind him. He mocks a beggar's faith, cheats a creditor, rejects his father's pleas and finally adopts hypocrisy as a strategy. In a cemetery he invites the stone statue of a man he killed to dinner; the statue accepts, returns the invitation, and drags him down to hell. The play was withdrawn after fifteen performances and not printed in full until after Molière's death.
 keywords: [Sganarelle, Elvire, the Commander's statue, libertine, atheism, Don Giovanni]

@@ -18,7 +18,7 @@ recommendedEdition:
   year: 2017
   why: The essay collection edited by Joni Adamson and Michael Davis in which the article first appeared.
   isbn13: "9781138612518"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9781138612518" }
 synopsis: >-
   An essay by the Potawatomi philosopher Kyle Powys Whyte arguing that for Indigenous peoples climate change is not a new crisis but a repetition of colonialism. Settler colonialism, he argues, already worked by disrupting the relationships between Indigenous peoples and their ecosystems, forcing them to adapt rapidly to imposed environmental change, so that anthropogenic climate change intensifies an old injustice rather than starting a new one. Whyte draws on Anishinaabe examples and on the responsibilities of collective continuance to argue that climate justice must address colonial power and Indigenous self-determination.
 keywords: [climate justice, settler colonialism, Indigenous peoples, Anishinaabe, Potawatomi, collective continuance, environmental justice, Anthropocene]

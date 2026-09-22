@@ -19,7 +19,7 @@ recommendedEdition:
   year: 2004
   why: Good glosses for the political background and the tavern slang alike.
   isbn13: "9780192834218"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780192834218" }
 synopsis: >-
   King Henry, who took the crown from Richard II, faces a rebellion led by the Percy family and their fiery son Hotspur. Meanwhile his own heir, Prince Hal, wastes his days in Eastcheap taverns with the fat knight Falstaff, though he privately plans to reform at the moment of greatest effect. The two plots meet at the battle of Shrewsbury, where Hal saves his father's life and kills Hotspur, and Falstaff plays dead and then claims the credit.
 keywords: [Prince Hal, Falstaff, Hotspur, Henry Percy, Shrewsbury, Eastcheap, Boar's Head, Glendower]

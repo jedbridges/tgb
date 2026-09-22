@@ -21,7 +21,7 @@ recommendedEdition:
   year: 2001
   why: Literal and carefully consistent, with an introduction that walks through the argument.
   isbn13: "9781888009170"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9781888009170" }
 synopsis: >-
   Aristotle's treatise on what it is to be alive. After reviewing earlier theories, he defines the soul as the form or first actuality of a natural body that has life, then studies its powers in order: nutrition, perception through each of the senses, imagination, and thought. Book III contains the brief and much-disputed chapters on the active intellect that occupied medieval philosophy for centuries.
 keywords: [soul, form, perception, imagination, intellect, nous, active intellect, life]

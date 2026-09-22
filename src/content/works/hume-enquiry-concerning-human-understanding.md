@@ -30,8 +30,7 @@ otherEditions:
     publisher: Oxford World's Classics
     year: 2007
     why: The best introduction and notes for a first reader working alone.
-cover:
-  source: generated
+cover: { source: openlibrary, isbn13: "9780872202290" }
 synopsis: >-
   Hume's rewriting of his early Treatise as twelve short sections. He divides the contents of the mind into impressions and ideas, sorts all reasoning into relations of ideas and matters of fact, and then argues that our beliefs about matters of fact rest on causal inference, that causal inference rests on the assumption that the future will resemble the past, and that this assumption can be justified neither by demonstration nor by experience. Custom, not reason, is what makes us expect the sun to rise. He goes on to treat necessary connection, liberty and necessity, the reasoning of animals, miracles, providence and a future state, closing with a mitigated scepticism he thinks anyone can live with.
 whyItMatters: >-

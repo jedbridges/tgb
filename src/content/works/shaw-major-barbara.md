@@ -18,7 +18,7 @@ recommendedEdition:
   year: 2000
   why: Standard text with Shaw's preface on the Gospel of St Andrew Undershaft.
   isbn13: "9780486421261"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780486421261" }
 synopsis: >-
   Barbara Undershaft, a major in the Salvation Army, is the daughter of the millionaire armaments maker Andrew Undershaft, whom she has not seen since childhood. He agrees to visit her East End shelter if she will visit his cannon works. When the Army accepts money from a distiller and from Undershaft himself, Barbara's faith collapses; at the model town of Perivale St Andrews her fiancé, a Greek scholar, agrees to inherit the business and Barbara resolves to save souls among the well-fed. Shaw's argument that poverty is the worst of crimes.
 keywords: [Andrew Undershaft, Adolphus Cusins, Salvation Army, Perivale St Andrews, poverty, armaments, Lady Britomart]

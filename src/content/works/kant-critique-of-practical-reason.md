@@ -20,7 +20,7 @@ recommendedEdition:
   year: 2015
   why: Gregor's standard translation in a revised edition with an introduction by Andrews Reath.
   isbn13: "9781107092716"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9781107092716" }
 synopsis: >-
   Kant's second critique restates and defends the ethics of the Groundwork as a system. It argues that pure reason can be practical, that the moral law is a fact of reason of which we are immediately conscious, and that this law reveals our freedom. The book then treats the feeling of respect for the law, the highest good in which virtue and happiness are joined, and the postulates of freedom, immortality and God that morality requires us to assume. It ends with the famous line about the starry heavens above and the moral law within.
 keywords: [moral law, fact of reason, freedom, highest good, postulates, respect, immortality, starry heavens]

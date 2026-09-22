@@ -20,7 +20,7 @@ recommendedEdition:
   year: 2002
   why: Accurate and current; Burton Raffel's Modern Library translation is brisker.
   isbn13: "9780486437903"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780486437903" }
 synopsis: >-
   Julien Sorel, a carpenter's son in a provincial town under the Restoration, admires Napoleon in secret and takes holy orders as the only route open to ambition. As tutor in the house of the mayor, Monsieur de Rênal, he seduces the mayor's wife; sent to a seminary and then to Paris as secretary to the Marquis de la Mole, he wins the marquis's proud daughter Mathilde. A letter from Madame de Rênal wrecks the marriage, and Julien shoots her in church, is tried and goes to the guillotine. A study of hypocrisy and class in 1830.
 keywords: [Julien Sorel, Madame de Rênal, Mathilde de la Mole, Verrières, Napoleon, Restoration, seminary, guillotine]

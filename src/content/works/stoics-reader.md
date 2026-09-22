@@ -21,7 +21,7 @@ recommendedEdition:
   year: 2008
   why: The edition Yale assigns; the numbered texts make it easy to find the passages on the syllabus.
   isbn13: "9780872209527"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780872209527" }
 synopsis: >-
   A collection of the surviving evidence for early and middle Stoicism, whose founders' books are lost. Inwood and Gerson translate and number the fragments and reports from Diogenes Laertius, Cicero, Plutarch, Stobaeus, Sextus Empiricus and others, arranged by topic: logic, physics, ethics, and the lives of Zeno, Cleanthes and Chrysippus. It is the standard way for students to read what the Stoics actually argued about fate, the passions, virtue and the rational cosmos.
 keywords: [Zeno, Chrysippus, Cleanthes, Diogenes Laertius, Cicero, fate, passions, oikeiosis]

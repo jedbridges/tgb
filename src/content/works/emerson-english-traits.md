@@ -16,7 +16,7 @@ recommendedEdition:
   publisher: Harvard University Press
   why: The Collected Works volume, with the notes that identify Emerson's many English acquaintances.
   isbn13: "9780674139923"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780674139923" }
 synopsis: >-
   Emerson's book about England, written after his lecture tours of 1833 and 1847 and published in 1856. In short chapters he takes up the land, the race, the national character, manners, truth, wealth, aristocracy, universities, religion, the press and the literature, and sets down what he thinks makes the English formidable: physical stamina, stubborn practicality, a genius for machinery and trade, and a distrust of ideas. He admires their solidity and doubts their spirit. The opening and closing chapters describe his visits to Carlyle, Wordsworth and Coleridge.
 keywords: [England, Thomas Carlyle, Wordsworth, Coleridge, Stonehenge, national character, aristocracy, Oxford]

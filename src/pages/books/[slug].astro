@@ -33,15 +33,25 @@ const [era, genre, region, language] = await Promise.all([
 ]);
 const themeEntries = (await Promise.all(d.themes.map((t) => getEntry('themes', t.id)))).filter(Boolean);
 const keyThemeEntries = await Promise.all(d.keyThemes.map(async (k) => ({ ...k, entry: await getEntry('themes', k.theme.id) })));
+/*
+ * Every book page is indexable.
+ *
+ * 641 of the 689 used to carry noindex because they have no written guide yet, which hid
+ * 93% of the site's buy buttons from search: the pages that earn the money were precisely
+ * the ones search could not reach. They are not thin. Each carries a synopsis, verified
+ * dates, its themes, its difficulty, which of the nine programs assign it, a named
+ * recommended edition and, for most, a verified ISBN, which is more than a great many
+ * pages that rank. A guide makes the page better; it does not make it legitimate.
+ */
 const isStub = d.status === 'stub';
 const first = d.highlights[0];
 const epigraph = first ? { text: first.text.length > 150 ? first.text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : first.text, source: first.location } : undefined;
 const description = d.synopsis.length > 158 ? d.synopsis.slice(0, 155).replace(/\s+\S*$/, '') + '…' : d.synopsis;
 const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'he', french: 'fr', german: 'de', italian: 'it', spanish: 'es', russian: 'ru' };
 ---
-<Base title={`${d.title} by ${author.data.name}`} description={description} type="book" image={og} noindex={isStub}
+<Base title={`${d.title} by ${author.data.name}`} description={description} type="book" image={og}
   jsonld={[bookLd(work, author, og ? new URL(og, Astro.site).toString() : undefined), breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }])]}>
-  <article class="work" data-pagefind-body data-pagefind-filter="type:Book">
+  <article class="work" data-pagefind-body data-pagefind-filter="type:Book" data-work-view={work.id} data-work-guide={hasGuideHere ? "yes" : "no"} data-work-lists={String(count)}>
     <span class="visually-hidden" data-pagefind-meta="type:Book"></span>
     <span class="visually-hidden" data-pagefind-meta={`author:${author.data.name}`}></span>
     <span class="visually-hidden" data-pagefind-meta={`slug:${work.id}`}></span>

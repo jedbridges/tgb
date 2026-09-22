@@ -20,7 +20,7 @@ recommendedEdition:
   year: 1990
   why: The Standard Edition translation as a standalone paperback.
   isbn13: "9780393008746"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780393008746" }
 synopsis: >-
   A dense late work in which Freud reverses his earlier view of anxiety. Instead of anxiety being transformed libido, it is now a signal produced by the ego in response to danger, and repression is a consequence of anxiety rather than its cause. Freud distinguishes inhibitions from symptoms, reexamines the cases of Little Hans and the Wolf Man, and traces the sequence of danger situations from birth through loss of the mother to castration and the superego's condemnation.
 keywords: [anxiety, signal anxiety, repression, Little Hans, Wolf Man, defence, castration, birth trauma]

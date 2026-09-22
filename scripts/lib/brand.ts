@@ -25,6 +25,20 @@ const MARK_PATHS = [
   'M800,965.685c-220.914-220.914-579.086-220.914-800,0v-800c220.914-220.913,579.086-220.913,800,0Z',
 ];
 
+/**
+ * The mark reduced to its solid leaf, for sizes where the rest cannot survive.
+ *
+ * The full mark is three thin page curves beside one solid block. Scaled into a sixteen
+ * pixel browser tab the curves are about a pixel each with a pixel between them, so they
+ * grey together into a smudge and the whole thing reads as an orange blob. The block alone
+ * is nearly square, fills the icon, and still reads as a page.
+ */
+export const LEAF_W = 800;
+export const LEAF_H = 965.685;
+export function leaf(x: number, y: number, scale: number, fill = CREAM): string {
+  return `<g transform="translate(${x},${y}) scale(${scale})" fill="${fill}"><path d="${MARK_PATHS[3]}"/></g>`;
+}
+
 /** The mark as an SVG group, placed and scaled. */
 export function mark(x: number, y: number, scale: number, fill = CREAM, opacity = 1): string {
   return `<g transform="translate(${x},${y}) scale(${scale})" fill="${fill}"${opacity < 1 ? ` opacity="${opacity}"` : ''}>`

@@ -32,8 +32,7 @@ otherEditions:
     publisher: Princeton University Press
     year: 1984
     why: The revised Oxford translation, worth having if you will read more than one Aristotle.
-cover:
-  source: generated
+cover: { source: openlibrary, isbn13: "9780813521923" }
 synopsis: >-
   Eight books of lectures on the things that have a nature, meaning the things that move and change of themselves. Aristotle begins with the principles any account of change must have, arguing against Parmenides that coming to be is possible if you distinguish matter from form and from the lack of a form. He then defines nature, sets out the four causes, defends purpose in nature against explanation by chance, and gives definitions of motion, the infinite, place, void and time. The last books analyse continuity and Zeno's paradoxes, argue that everything moved is moved by something else, and conclude that motion is eternal and requires a first mover that is not itself moved.
 whyItMatters: >-

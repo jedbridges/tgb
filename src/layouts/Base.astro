@@ -37,6 +37,10 @@ const { bodyClass, ...seo } = Astro.props;
       });
     </script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- Safari reaches for a raster icon before an SVG one, and a browser that has already
+         cached the old drawing is likelier to pick up a file it has never seen. -->
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <!-- The two faces the first screen actually needs: the headline's roman and the
@@ -66,11 +70,29 @@ const { bodyClass, ...seo } = Astro.props;
     <SearchPalette />
     <script>
       import { track } from '~/lib/analytics';
+
+      // The click. Which book, which retailer, which page it was clicked from.
       document.addEventListener('click', (e) => {
         const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[data-affiliate]');
         if (!a) return;
         track('affiliate_click', { retailer: a.dataset.affiliate, work: a.dataset.work, page: location.pathname });
       });
+
+      // And the denominator. A click count on its own says which books are popular; it
+      // cannot say which pages persuade, because a page seen ten times and clicked twice
+      // and a page seen a thousand times and clicked twenty look identical. This reports
+      // the view, so the number that matters, clicks per view, becomes computable per book.
+      const view = document.querySelector<HTMLElement>('[data-work-view]');
+      if (view) track('book_view', { work: view.dataset.workView, guide: view.dataset.workGuide, lists: view.dataset.workLists });
+
+      // Which way in people actually use. Search, the filters and the shelf all cost
+      // something to maintain and only one of them may be earning its place.
+      document.addEventListener('click', (e) => {
+        const card = (e.target as HTMLElement).closest<HTMLElement>('a.card[data-slug]');
+        if (card) track('shelf_open', { work: card.dataset.slug, page: location.pathname });
+      });
+      addEventListener('tgb:search', (e) => track('search_used', { query_length: String((e as CustomEvent).detail?.length ?? 0) }));
+      addEventListener('tgb:filter', (e) => track('filter_used', { facet: (e as CustomEvent).detail?.facet }));
     </script>
   </body>
 </html>

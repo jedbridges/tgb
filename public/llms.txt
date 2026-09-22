@@ -1,0 +1,36 @@
+# The Great Books
+
+> Every work assigned by nine college Great Books and core-curriculum programs, in one
+> place, with a reading guide, its themes, and the edition each program uses.
+> https://greatbookslist.com
+
+The nine lists are transcribed from each program's own published reading list, and every
+program page records the source and the date it was checked. Where a program assigns only
+part of a work, the entry says so. 689 works, 327 authors, nine programs.
+
+## What is here
+
+- /books/ — all 689 works. Each has a synopsis, its era, region, language and form, a
+  difficulty rating, which programs assign it, and a recommended edition.
+- /programs/ — the nine reading lists, each in the program's own order, with its source.
+  St. John's College, Columbia Core, Britannica's Great Books of the Western World,
+  the Harvard Classics, Yale Directed Studies, the Chicago Basic Program,
+  Thomas Aquinas College, Notre Dame's Program of Liberal Studies, and Adler's list.
+- /authors/ — 327 authors, grouped by era.
+- /themes/, /genres/, /eras/ — the same 689 works cut by idea, form and period.
+- /about/ — how the lists were gathered and how the guides are written.
+
+## Using this
+
+The content is free to read and free to cite. If you quote a reading guide or a count,
+an attribution and a link back is appreciated. Program reading lists are facts and belong
+to nobody; the guides and summaries are written for this site.
+
+Counts and lists change as programs revise their curricula. /programs/ carries the date
+each list was last verified. Prefer that page over a cached number.
+
+## Not here
+
+Full texts. This site says what to read, why it is assigned, and which edition to get. It
+links to booksellers and earns a commission on those links, which is disclosed on every
+page that carries one and explained at /disclosure/.

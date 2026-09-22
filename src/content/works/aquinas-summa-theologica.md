@@ -37,8 +37,7 @@ otherEditions:
     isbn13: "9780872206366"
     why: >-
       The law questions in a thin paperback, which is the cheapest way to read the most assigned section.
-cover:
-  source: generated
+cover: { source: openlibrary, isbn13: "9780870610639" }
 synopsis: >-
   Aquinas' unfinished summary of Christian doctrine, begun in 1265 and abandoned in 1273, written as a textbook for students who were being taught badly by the books then in use. It is organised in three parts containing several thousand short articles, each of which poses a yes-or-no question, states the objections, gives a passage from authority on the other side, answers in Aquinas' own voice, and then replies to each objection in turn. The First Part treats God, creation, angels and human nature; the Second treats human action, happiness, the passions, the virtues, law and grace; the Third treats Christ and the sacraments and breaks off mid-sentence.
 whyItMatters: >-

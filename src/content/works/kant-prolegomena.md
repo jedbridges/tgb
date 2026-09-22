@@ -20,7 +20,7 @@ recommendedEdition:
   year: 2004
   why: A clear modern translation with selections from the Critique and contemporary reviews.
   isbn13: "9780521535359"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780521535359" }
 synopsis: >-
   Written after the Critique of Pure Reason was received with confusion, the Prolegomena is Kant's own short restatement of its argument. It asks whether metaphysics is possible at all and works backward from the fact that pure mathematics and pure natural science exist to the conditions that make them possible, the a priori forms of intuition and the categories of the understanding. Kant credits Hume with waking him from his dogmatic slumber and shows why reason's ideas of the soul, the world and God cannot yield knowledge but still have a regulative use.
 keywords: [Hume, dogmatic slumber, synthetic a priori, metaphysics as science, categories, transcendental idealism, analytic method]

@@ -36,8 +36,7 @@ otherEditions:
     isbn13: "9780140440461"
     why: >-
       Keeps the terza rima and the wit, at some cost in literal accuracy, with commentary on the theology.
-cover:
-  source: generated
+cover: { source: openlibrary, isbn13: "9780679433132" }
 synopsis: >-
   Lost in a dark wood in his thirty-fifth year, Dante is rescued by the shade of the poet Virgil and led down through the nine circles of Hell, where the damned suffer punishments that mirror their sins, out to the shore of Mount Purgatory, and up its seven terraces, where the same sins are scoured away from souls who consent to the pain. At the summit, in the earthly paradise, Virgil departs and Beatrice, the Florentine woman Dante loved and lost, takes over, guiding him through the nine spheres of heaven to a final vision he says he cannot describe. A hundred cantos of interlocking three-line rhyme, crowded with the dead of history, myth and Dante's own city.
 whyItMatters: >-

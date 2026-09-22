@@ -21,7 +21,7 @@ recommendedEdition:
   year: 1988
   why: Literal and complete, with an interpretive essay; the translation most seminars use.
   isbn13: "9780226671109"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780226671109" }
 synopsis: >-
   Plato's longest and last dialogue, in which an unnamed Athenian stranger walks with a Cretan and a Spartan to the cave of Zeus and drafts a legal code for a new colony called Magnesia. Over twelve books they discuss the purpose of law, education, drinking parties, music, marriage, property, crime and punishment, and religion, with the preludes to each law meant to persuade citizens before compelling them. The city is a second-best to the Republic's, ruled by law rather than by philosophers.
 keywords: [Athenian Stranger, Magnesia, Cleinias, Megillus, nocturnal council, preludes, Crete, rule of law]

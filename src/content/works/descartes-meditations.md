@@ -36,8 +36,7 @@ otherEditions:
     isbn13: "9780521288088"
     why: >-
       The complete Objections and Replies, for anyone who wants to watch Descartes defend himself.
-cover:
-  source: generated
+cover: { source: openlibrary, isbn13: "9780521558181" }
 synopsis: >-
   Six meditations conducted in the first person, one to a day. Descartes resolves to set aside everything that can be doubted: the senses sometimes deceive, dreaming is hard to distinguish from waking, and for all he knows a powerful malicious spirit is deceiving him about arithmetic itself. What survives the demolition is that he is thinking, and so exists. From that single certainty he argues that he finds in himself an idea of a perfect being who could not be its author and could not be a deceiver, that error is therefore his own fault, that mind and body are distinct substances, and that the physical world can be known through reason rather than sensation.
 whyItMatters: >-

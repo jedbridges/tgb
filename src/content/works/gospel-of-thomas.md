@@ -19,7 +19,7 @@ recommendedEdition:
   year: 1992
   why: Coptic and English facing, with notes on each saying and its parallels in the canonical Gospels.
   isbn13: "9780060655815"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780060655815" }
 synopsis: >-
   A collection of 114 sayings attributed to Jesus, without narrative, miracles, passion or resurrection, found in a Coptic manuscript at Nag Hammadi in 1945 and known in Greek fragments from Oxyrhynchus. Many sayings parallel the parables and aphorisms of Matthew and Luke; others are unknown elsewhere and stress self-knowledge, the kingdom as something already present within and around the disciples, and the making of two into one. Scholars dispute whether it preserves early independent tradition or reworks the canonical Gospels.
 keywords: [Nag Hammadi, Didymus Judas Thomas, sayings gospel, logia, kingdom within, Oxyrhynchus, Coptic]

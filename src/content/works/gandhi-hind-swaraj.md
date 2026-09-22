@@ -19,7 +19,7 @@ recommendedEdition:
   year: 1997
   why: Anthony J. Parel's annotated edition of Gandhi's own English translation, with the related letters and essays.
   isbn13: "9780521574310"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780521574310" }
 synopsis: >-
   Written in Gujarati in ten days on a ship back from London in 1909, and translated by Gandhi himself the next year. It is a dialogue between a Reader, who wants to drive the British out by force, and an Editor, Gandhi, who argues that the real enemy is modern civilisation itself: its railways, lawyers, doctors and machinery. True home rule is self-rule, won by passive resistance, or soul-force, and by a return to village life and hand-spinning. Gandhi never disowned it.
 keywords: [swaraj, satyagraha, passive resistance, modern civilisation, railways, Reader and Editor, non-violence, home rule]

@@ -18,7 +18,7 @@ recommendedEdition:
   year: 2001
   why: A clean text with a short introduction; the book needs no apparatus.
   isbn13: "9780192854230"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780192854230" }
 synopsis: >-
   A short introduction to philosophy that begins with a table and asks what we can really know about it. Russell distinguishes appearance from reality, sense-data from physical objects, knowledge by acquaintance from knowledge by description, and argues that induction and the existence of universals must be accepted as self-evident. Later chapters examine idealism, a priori knowledge, and the limits of philosophical knowledge, ending with a defence of philosophy for the questions it raises rather than the answers it gives.
 keywords: [sense-data, knowledge by acquaintance, knowledge by description, induction, universals, appearance and reality, idealism]

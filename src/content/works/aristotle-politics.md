@@ -37,8 +37,7 @@ otherEditions:
     isbn13: "9781624666971"
     why: >-
       Heavily annotated and cross-referenced to the Ethics, which is where many arguments are completed.
-cover:
-  source: generated
+cover: { source: openlibrary, isbn13: "9780226921846" }
 synopsis: >-
   Aristotle's study of the city as the association in which human beings can live well rather than merely live. Book I derives the city from household and village, and defends natural slavery and male rule in arguments among the worst he ever made. Book II reviews proposed constitutions, including the common property of Plato's Republic. Book III asks who counts as a citizen and how office should justly be distributed. Books IV to VI survey actual regimes, set monarchy, aristocracy and polity against tyranny, oligarchy and democracy, and analyse how revolutions happen and how rulers survive. Books VII and VIII describe the best city and its schooling.
 whyItMatters: >-

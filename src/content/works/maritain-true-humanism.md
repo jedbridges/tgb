@@ -20,7 +20,7 @@ recommendedEdition:
   year: 1996
   why: The Collected Works volume with the revised translation under the more accurate title Integral Humanism.
   isbn13: "9780268159771"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780268159771" }
 synopsis: >-
   Lectures Maritain gave at Santander in 1934, published in 1936 and translated in 1938 as True Humanism. He argues that the humanism of the Renaissance and Enlightenment, in placing man at the centre, ended in the anthropocentric collapse of liberalism, communism and fascism. Against them he proposes an integral or theocentric humanism and sketches a pluralist, personalist democracy inspired by Christian principles but not confessional, a new Christendom for the modern age.
 keywords: [integral humanism, new Christendom, personalism, pluralism, communism, Christian democracy, Santander]

@@ -121,7 +121,12 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
     history.replaceState(null, '', toUrl(s));
   }, [visible]);
 
-  const set = (patch: Partial<State>) => setS((prev) => ({ ...prev, ...patch }));
+  const set = (patch: Partial<State>) => {
+    // Which facet was reached for, never what was chosen with it.
+    const facet = Object.keys(patch).find((k) => k !== 'sort');
+    if (facet) dispatchEvent(new CustomEvent('tgb:filter', { detail: { facet } }));
+    setS((prev) => ({ ...prev, ...patch }));
+  };
   const program = facets.programs.find((p) => p.id === s.program);
   const label = (list: Facet[], id: string) => list.find((x) => x.id === id)?.label ?? id;
 

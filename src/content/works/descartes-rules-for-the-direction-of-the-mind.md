@@ -21,7 +21,7 @@ recommendedEdition:
   year: 1985
   why: The standard scholarly translation, and the one most programs photocopy from.
   isbn13: "9780521288071"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780521288071" }
 synopsis: >-
   An unfinished early work, abandoned around 1628 and not published until after Descartes died. Twenty-one rules set out how the mind should be trained to reach certainty: only intuition and deduction yield knowledge, problems must be reduced to what is simplest and absolutely known, and the imagination should be used to represent quantities as figures and lines. The later rules describe the reduction of any well-posed problem to a single equation. It is the clearest statement of the ambition behind the Discourse and the Geometry, written before Descartes had a metaphysics to support it.
 keywords: [intuition and deduction, simple natures, mathesis universalis, enumeration, method, certainty, imagination, problem solving]

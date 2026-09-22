@@ -21,7 +21,7 @@ recommendedEdition:
   year: 1965
   why: Rhymed couplets that keep the comic timing of the French; the standard classroom text.
   isbn13: "9780156881807"
-cover: { source: generated }
+cover: { source: openlibrary, isbn13: "9780156881807" }
 synopsis: >-
   Orgon, a prosperous Parisian, has taken the pious fraud Tartuffe into his house and will hear nothing against him, even planning to marry his daughter to the man and sign over his property. His family sees through the impostor and stages a trap so that Orgon can watch Tartuffe attempt to seduce his wife. Tartuffe, exposed, turns on the family with the deed and a box of compromising papers, and only the king's intervention saves them. The play was banned for five years after its first performance.
 keywords: [Orgon, Elmire, Dorine, Cléante, Louis XIV, religious hypocrisy, Comédie-Française]
