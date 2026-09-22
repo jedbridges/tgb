@@ -195,12 +195,13 @@ const HEADLINE_WORDS = [
     rotate: -11deg;
     z-index: 0;
   }
-  /* Same crop, different height. On a phone the hero text runs the full width, so a seal
-     centred on the hero sits behind the lede and makes it hazy. It drops below the actions
-     instead, into the room the fold already leaves, and keeps exactly the same slice
-     hanging off the right edge. */
+  /* Same crop, different height. On a phone nothing clears a seal this size, so the only
+     question is what it may pass behind. Text is transparent and the primary action is not,
+     so it rises to the top of the hero and sits behind the headline like a watermark on
+     letterhead, rather than being sliced in half by a solid red button. The slice hanging
+     off the right edge is unchanged. */
   @media (max-width: 760px) {
-    .hero__seal { top: auto; bottom: 4%; translate: 33% 0; }
+    .hero__seal { top: 7%; translate: 33% 0; }
   }
 
   /* Two lines at every width, breaking after "years" so that "of argument" reads as one

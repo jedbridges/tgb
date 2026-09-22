@@ -2,85 +2,92 @@
 /**
  * The seal.
  *
- * A struck medallion, the way an award is foil-stamped onto a book jacket. That reference
- * is doing the work: a gold seal on a cover is already the universal sign that a book has
- * been judged and chosen, which is exactly what this site claims about 689 of them. It is
- * also why the metal is gilt rather than the brand red. Gilt is not a new colour invented
- * for decoration; it is what lettering on a clothbound spine has been stamped in for two
- * hundred years, and it sits on warm paper the way it was always meant to.
+ * Not an object on the page. The page itself, pressed.
  *
- * How it is made, and why not WebGL:
+ * A blind deboss is what a bindery does to a cloth cover when it wants a mark without ink:
+ * a heated die is struck into the board, and what you see afterwards is not pigment but
+ * light, caught on the wall of the recess. That is the whole of this component. There is no
+ * gold, no disc, no material that the site does not already have. Every line here is warm
+ * paper with a shadow above it and a highlight below it, which is exactly what a pressed
+ * line looks like under a light that comes from overhead.
  *
- * The deboss is three copies of one drawing. A dark copy sits a pixel and a half high, a
- * light copy a pixel and a half low, and the real one on top is filled with the same metal
- * as the disc behind it. Only the two offset rims survive, so the type reads as pressed
- * into the surface rather than sitting on it. This is how a die-struck medal actually
- * catches light, and it costs three <use> elements.
+ * Why this rather than a rendered medallion: an object has to win against the headline or
+ * lose to it, and at this size it was winning. A deboss is the surface, so it can run off
+ * the edge of the screen at any scale without competing with a word.
  *
- * The moving highlight is a real light source: feSpecularLighting with an fePointLight
- * whose position follows the pointer. Not a gradient pretending to be one. The surface has
- * a normal derived from the artwork's own alpha, so the glint bends around the lettering
- * and the rings rather than sliding over them.
+ * Three things are worth knowing about the construction.
  *
- * The iridescence is one conic-gradient in CSS, rotated by the same pointer angle and
- * blended over the metal.
+ * The strike is three copies of one drawing. A dark copy sits a little high, a light copy a
+ * little low, and the real one on top is filled with the page's own paper, so only the two
+ * lips survive. Both lips are softened by a small blur, because a die leaves a rolled edge
+ * rather than a cut one.
  *
- * Three.js would have cost 150KB before drawing anything, on a page whose entire script
- * budget is 183KB, to render one static object that never moves in depth. SVG filters are
- * GPU-composited, need no runtime, and degrade to a perfectly good flat gold seal when
- * anything fails.
+ * The recess cannot be pure paper. A true same-value deboss relies on a real light and a
+ * real surface; on a screen, under a grain overlay, it disappears. The face carries a few
+ * per cent of ink so the pressed area reads as sunk even on a phone in daylight. That is a
+ * cheat, and it is the difference between debossed and absent.
+ *
+ * The rim turns. The lettering rotates inside the ring while the seal itself stays put,
+ * slowly enough that it reads as drift rather than as a spinner. The rotation has to be
+ * applied inside the lip offset, not outside it, or the shadow travels around to the bottom
+ * of the letters: hence a translating group wrapping a rotating use, rather than one
+ * element carrying both.
+ *
+ * On hover an iridescence rises in the struck lines only, the way light moves over a foil
+ * that has been pressed rather than printed. It is one gradient, turned by the pointer.
  */
 interface Props { class?: string }
 const { class: cls } = Astro.props;
 
 const RIM = '· EVERY BOOK THAT NINE PROGRAMS ASSIGN · ONE SHELF ';
+
+/* The scalloped edge, as arcs rather than as a polygon: twenty-six chords, each bulged
+   outward by a fixed sagitta. Soft lobes, not teeth. A sunburst edge reads as a discount
+   sticker; this one reads as a notary seal, which is the claim being made. */
+const LOBES = 26;
+const EDGE_R = 170;
+const BULGE = 8;
+const chord = 2 * EDGE_R * Math.sin(Math.PI / LOBES);
+const arcR = (chord * chord) / 4 / (2 * BULGE) + (BULGE * BULGE) / (2 * BULGE);
+const n = (v: number) => Number(v.toFixed(2));
+const ring = Array.from({ length: LOBES + 1 }, (_, i) => {
+  const t = -Math.PI / 2 + (i * 2 * Math.PI) / LOBES;
+  return [n(200 + EDGE_R * Math.cos(t)), n(200 + EDGE_R * Math.sin(t))] as const;
+});
+const SCALLOP =
+  `M${ring[0][0]},${ring[0][1]}` +
+  ring.slice(1).map(([x, y]) => `A${n(arcR)},${n(arcR)} 0 0,1 ${x},${y}`).join('') +
+  'Z';
+
+const RIM_R = 137;
+const RIM_LEN = n(2 * Math.PI * RIM_R);
 ---
 <div class:list={['seal', cls]} data-seal aria-hidden="true">
-  <div class="seal__iris"></div>
   <svg class="seal__art" viewBox="0 0 400 400" role="presentation" focusable="false">
     <defs>
-      <linearGradient id="seal-metal" x1="0" y1="0" x2="0.35" y2="1">
-        <stop offset="0%" stop-color="var(--gilt-3)" />
-        <stop offset="26%" stop-color="var(--gilt-1)" />
-        <stop offset="48%" stop-color="var(--gilt-2)" />
-        <stop offset="62%" stop-color="var(--gilt-0)" />
-        <stop offset="80%" stop-color="var(--gilt-2)" />
-        <stop offset="100%" stop-color="var(--gilt-3)" />
-      </linearGradient>
-
-      <!-- The disc's own edge: lit from the top, shadowed at the bottom, so it reads as a
-           thing with thickness lying on the page rather than a printed circle. -->
-      <linearGradient id="seal-edge" x1="0" y1="0" x2="0.3" y2="1">
-        <stop offset="0%" stop-color="var(--gilt-1)" />
-        <stop offset="55%" stop-color="var(--gilt-3)" />
-        <stop offset="100%" stop-color="var(--gilt-4)" />
-      </linearGradient>
-
-      <!-- A real light, not a gradient impersonating one. Its position is written from the
-           pointer, and the surface normal comes from the artwork's alpha, so the highlight
-           travels around the lettering instead of across it. -->
-      <filter id="seal-glint" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="1.9" result="bump" />
-        <feSpecularLighting
-          in="bump" surfaceScale="4.2" specularConstant="0.95" specularExponent="21"
-          lighting-color="#fffaf0" result="spec"
-        >
-          <fePointLight data-seal-light x="130" y="90" z="96" />
-        </feSpecularLighting>
-        <feComposite in="spec" in2="SourceAlpha" operator="in" result="specIn" />
-        <feComposite in="SourceGraphic" in2="specIn" operator="arithmetic" k1="0" k2="1" k3="0.85" k4="0" />
+      <!-- The rolled edge of the die. Small enough to stay a lip, not a glow. -->
+      <filter id="press-soft" x="-6%" y="-6%" width="112%" height="112%" color-interpolation-filters="sRGB">
+        <feGaussianBlur stdDeviation="0.75" />
       </filter>
 
-      <!-- Everything struck into the metal, drawn once and used three times. -->
-      <g id="seal-relief">
-        <circle cx="200" cy="200" r="163" fill="none" stroke-width="2.4" />
-        <circle cx="200" cy="200" r="155" fill="none" stroke-width="1" />
-        <circle cx="200" cy="200" r="113" fill="none" stroke-width="1" />
-        <path id="seal-rim" d="M200,200 m-136,0 a136,136 0 1,1 272,0 a136,136 0 1,1 -272,0" fill="none" />
-        <text class="seal__rim">
-          <textPath href="#seal-rim" startOffset="0" textLength="854" lengthAdjust="spacing">{RIM}</textPath>
-        </text>
-        <!-- The mark, at the centre, where a medal carries its device. -->
+      <!-- Oil on water, not a rainbow: the stops stay inside one warm-to-cool arc so the
+           sheen reads as light on a surface rather than as colour applied to it. -->
+      <linearGradient id="seal-iris" data-seal-iris x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+        <stop offset="0%" stop-color="#f6ddc0" />
+        <stop offset="22%" stop-color="#cfe8e0" />
+        <stop offset="44%" stop-color="#d9d2ee" />
+        <stop offset="62%" stop-color="#f2d6df" />
+        <stop offset="80%" stop-color="#f8eed6" />
+        <stop offset="100%" stop-color="#cfe4ef" />
+      </linearGradient>
+
+      <!-- Everything that does not turn. -->
+      <g id="seal-still">
+        <path d={SCALLOP} fill="none" stroke-width="2.6" />
+        <circle cx="200" cy="200" r="158" fill="none" stroke-width="1.1" />
+        <circle cx="200" cy="200" r="152" fill="none" stroke-width="1.1" />
+        <circle cx="200" cy="200" r="113" fill="none" stroke-width="1.1" />
+        <!-- The mark, where a seal carries its device. -->
         <g transform="translate(144.5, 158) scale(0.0661)">
           <path d="M1681.625,391.685c-220.914-220.913-579.086-220.913-800,0v-226c220.914-220.913,579.086-220.913,800,0Z" />
           <path d="M1681.625,965.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z" />
@@ -88,48 +95,85 @@ const RIM = '· EVERY BOOK THAT NINE PROGRAMS ASSIGN · ONE SHELF ';
           <path d="M800,965.685c-220.914-220.914-579.086-220.914-800,0v-800c220.914-220.913,579.086-220.913,800,0Z" />
         </g>
         <text class="seal__count" x="200" y="252">689 WORKS</text>
-        <path d="M168,266 H232" stroke-width="1.4" fill="none" />
+        <path d="M168,266 H232" stroke-width="1.3" fill="none" />
+      </g>
+
+      <!-- Everything that does. -->
+      <g id="seal-turn">
+        <path id="seal-rim-path" d={`M200,200 m-${RIM_R},0 a${RIM_R},${RIM_R} 0 1,1 ${RIM_R * 2},0 a${RIM_R},${RIM_R} 0 1,1 -${RIM_R * 2},0`} fill="none" />
+        <text class="seal__rim">
+          <textPath href="#seal-rim-path" startOffset="0" textLength={RIM_LEN} lengthAdjust="spacing">{RIM}</textPath>
+        </text>
       </g>
     </defs>
 
-    <!-- The blank. -->
-    <circle cx="200" cy="200" r="178" fill="url(#seal-edge)" />
-    <circle cx="200" cy="200" r="172" fill="url(#seal-metal)" />
+    <!-- The sunk area itself. A recess gathers a little shade before any lip is drawn. -->
+    <path class="seal__recess" d={SCALLOP} />
 
-    <g filter="url(#seal-glint)">
-      <use href="#seal-relief" class="seal__cut" transform="translate(0,-2.1)" />
-      <use href="#seal-relief" class="seal__lip" transform="translate(0,2.1)" />
-      <use href="#seal-relief" class="seal__face" />
+    <!-- The strike. Dark lip high, light lip low, face in the page's own paper.
+         Each lip translates on the outside of a use that rotates on the inside, so the
+         lettering turns while the direction of the light does not. -->
+    <g class="seal__lip seal__lip--dark" transform="translate(0,-2.2)">
+      <use href="#seal-still" />
+      <use href="#seal-turn" class="seal__spin" />
+    </g>
+    <g class="seal__lip seal__lip--light" transform="translate(0,2.2)">
+      <use href="#seal-still" />
+      <use href="#seal-turn" class="seal__spin" />
+    </g>
+    <g class="seal__face">
+      <use href="#seal-still" />
+      <use href="#seal-turn" class="seal__spin" />
+    </g>
+
+    <!-- The sheen, in the struck lines only. -->
+    <g class="seal__sheen">
+      <use href="#seal-still" />
+      <use href="#seal-turn" class="seal__spin" />
     </g>
   </svg>
 </div>
 
 <style>
   .seal {
-    /* One gilt ramp, defined here rather than in tokens.css: it belongs to this object and
-       nothing else on the site is allowed to reach for gold. */
-    --gilt-0: #fff3d2;
-    --gilt-1: #e4c684;
-    --gilt-2: #bd9448;
-    --gilt-3: #8a682f;
-    --gilt-4: #57401d;
+    /* The press. Two schemes, not one flipped: a recess in dark paper needs a far weaker
+       highlight than one in light paper, or the lip reads as an outline drawn around the
+       shape rather than as light falling into it. */
+    --press-dark: light-dark(rgb(74 58 50 / 0.40), rgb(0 0 0 / 0.62));
+    --press-light: light-dark(rgb(255 253 250 / 0.92), rgb(255 244 228 / 0.085));
+    --press-recess: light-dark(rgb(74 58 50 / 0.030), rgb(0 0 0 / 0.11));
     position: relative;
-    /* Fills whatever the page gives it. The wrapper owns the size and the placement,
-       because a scoped class handed to a component does not reach the component's own
-       root element and silently does nothing. */
     width: 100%;
     aspect-ratio: 1;
-    isolation: isolate;
-    filter: drop-shadow(0 14px 26px rgb(var(--shadow-ink) / calc(0.3 * var(--shadow-a))));
   }
 
-  .seal__art { position: relative; z-index: 1; width: 100%; height: 100%; display: block; }
+  .seal__art { width: 100%; height: 100%; display: block; overflow: visible; }
 
-  /* The three strikes. The face is filled with the same metal as the blank, so only the
-     dark lip above and the light lip below survive, which is the whole illusion. */
-  .seal__cut { fill: var(--gilt-4); stroke: var(--gilt-4); opacity: 0.95; }
-  .seal__lip { fill: var(--gilt-0); stroke: var(--gilt-0); opacity: 0.9; }
-  .seal__face { fill: url(#seal-metal); stroke: url(#seal-metal); }
+  .seal__recess { fill: var(--press-recess); }
+
+  .seal__lip { filter: url(#press-soft); }
+  .seal__lip--dark * { fill: var(--press-dark); stroke: var(--press-dark); }
+  .seal__lip--light * { fill: var(--press-light); stroke: var(--press-light); }
+  /* The face is the page. It exists only to bury the middle of each lip, which is what
+     turns two offset copies into one pressed line. */
+  .seal__face * { fill: var(--paper); stroke: var(--paper); }
+
+  .seal__sheen {
+    /* Held well down. At full strength this stopped being light on a pressed surface and
+       started being a rainbow decal, which is the one thing a bindery mark must never be. */
+    opacity: calc(var(--sheen, 0) * 0.34);
+    /* light-dark() resolves colours, not keywords, so the blend mode has to be switched by
+       the scheme itself: iridescence on parchment is pigment, in the dark it is light. */
+    mix-blend-mode: multiply;
+    transition: opacity 420ms var(--ease-out);
+  }
+  /* Screen on a near-black page carries much further than multiply on parchment, so the
+     dark scheme takes less of it. */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) .seal__sheen { mix-blend-mode: screen; opacity: calc(var(--sheen, 0) * 0.24); }
+  }
+  :root[data-theme='dark'] .seal__sheen { mix-blend-mode: screen; opacity: calc(var(--sheen, 0) * 0.24); }
+  .seal__sheen * { fill: url(#seal-iris); stroke: url(#seal-iris); }
 
   .seal__rim {
     font-family: var(--font-ui);
@@ -145,68 +189,41 @@ const RIM = '· EVERY BOOK THAT NINE PROGRAMS ASSIGN · ONE SHELF ';
     text-anchor: middle;
   }
 
-  /* Iridescence. One conic sweep over the metal, turned by the pointer. Scoped to this
-     element by isolation above, so the blend never reaches the page behind it. */
-  .seal__iris {
-    position: absolute;
-    inset: 5.6%;   /* matches the disc, or the sweep haloes outside the metal */
-    border-radius: 50%;
-    z-index: 2;
-    pointer-events: none;
-    mix-blend-mode: overlay;
-    opacity: 0.55;
-    background: conic-gradient(
-      from calc(var(--sweep, 0) * 1deg),
-      #ffd9a8 0deg, #b6f0e2 52deg, #cdb9ff 108deg, #ffc9dd 164deg,
-      #fff0c2 214deg, #a8e8ff 268deg, #ffd0b0 322deg, #ffd9a8 360deg
-    );
-    transition: opacity var(--dur) var(--ease-out);
-  }
-
-  /* The press. It arrives the way it was made: from slightly above and larger, turning
-     into its skew as it lands, with the light still travelling after it settles. */
+  /* Drift, not rotation. A full turn takes well over a minute, so the eye reads it as the
+     page breathing rather than as something loading. */
+  .seal__spin { transform-box: view-box; transform-origin: 200px 200px; }
   @media (prefers-reduced-motion: no-preference) {
-    .seal { animation: seal-strike 900ms cubic-bezier(0.16, 1, 0.3, 1) 220ms backwards; }
+    .seal__spin { animation: seal-turn 78s linear infinite; }
+    @keyframes seal-turn { to { rotate: 360deg; } }
+
+    /* It arrives the way it was made: struck, from very slightly above. */
+    .seal { animation: seal-strike 820ms cubic-bezier(0.16, 1, 0.3, 1) 220ms backwards; }
     @keyframes seal-strike {
-      from { opacity: 0; transform: translateY(-26px) rotate(6deg) scale(1.14); }
-      60% { opacity: 1; }
+      from { opacity: 0; transform: translateY(-14px) scale(1.06); }
+      70% { opacity: 1; }
       to { opacity: 1; transform: none; }
     }
-  }
-
-  @media (hover: hover) and (pointer: fine) {
-    .seal { transition: transform var(--dur) var(--ease-out); }
-    .seal:hover .seal__iris { opacity: 0.78; }
   }
 </style>
 
 <script>
   /*
-   * The light, and only the light.
+   * The sheen, and only the sheen.
    *
-   * Everything visual is CSS and SVG; this moves one fePointLight and one gradient angle.
-   * It is bounded to a single rAF per frame and it never runs on a device without a real
-   * pointer, so a phone renders the seal as a still struck medal, which is what a struck
-   * medal is.
+   * Everything else is CSS and SVG. This reads the pointer across the hero and writes two
+   * values: how much iridescence, by distance from the seal, and which way it runs. It
+   * never runs without a real pointer, so a phone gets a still deboss, which is what a
+   * deboss is.
    */
   const seal = document.querySelector<HTMLElement>('[data-seal]');
-  const light = seal?.querySelector<SVGElement>('[data-seal-light]');
+  const iris = seal?.querySelector<SVGElement>('[data-seal-iris]');
   const fine = matchMedia('(hover: hover) and (pointer: fine)');
-  const still = matchMedia('(prefers-reduced-motion: reduce)');
 
-  if (seal && light && fine.matches && !still.matches) {
+  if (seal && iris && fine.matches) {
     let frame = 0;
-    let tx = 0, ty = 0;
-
-    const rest = () => {
-      light.setAttribute('x', '130'); light.setAttribute('y', '90');
-      seal.style.removeProperty('--sweep');
-      seal.style.removeProperty('transform');
-    };
+    const rest = () => seal.style.setProperty('--sheen', '0');
 
     addEventListener('pointermove', (e) => {
-      // The seal reacts across the whole hero, not only when the pointer is on it: a
-      // medal catches the light in the room, not the light you touch it with.
       const hero = seal.closest('section');
       if (!hero) return;
       const h = hero.getBoundingClientRect();
@@ -215,22 +232,18 @@ const RIM = '· EVERY BOOK THAT NINE PROGRAMS ASSIGN · ONE SHELF ';
       const r = seal.getBoundingClientRect();
       const cx = r.left + r.width / 2;
       const cy = r.top + r.height / 2;
-      // Light position in the SVG's own 400-unit space, pushed a little past the rim so
-      // the glint can leave the disc entirely rather than sticking to its edge.
-      tx = ((e.clientX - r.left) / r.width) * 400;
-      ty = ((e.clientY - r.top) / r.height) * 400;
-      const angle = (Math.atan2(e.clientY - cy, e.clientX - cx) * 180) / Math.PI;
+      const dx = e.clientX - cx;
+      const dy = e.clientY - cy;
+      // Full strength on the seal, falling away over about a seal's width, so it lights up
+      // as the pointer approaches rather than switching on at an edge.
+      const near = Math.max(0, 1 - Math.hypot(dx, dy) / (r.width * 1.15));
+      const angle = (Math.atan2(dy, dx) * 180) / Math.PI;
 
       if (frame) return;
       frame = requestAnimationFrame(() => {
         frame = 0;
-        light.setAttribute('x', String(Math.round(tx)));
-        light.setAttribute('y', String(Math.round(ty)));
-        seal.style.setProperty('--sweep', String(Math.round(angle)));
-        // A hint of tilt toward the pointer, in the same language as the books.
-        const dx = Math.max(-1, Math.min(1, (e.clientX - cx) / (r.width * 1.6)));
-        const dy = Math.max(-1, Math.min(1, (e.clientY - cy) / (r.height * 1.6)));
-        seal.style.transform = `perspective(900px) rotateY(${dx * 7}deg) rotateX(${-dy * 7}deg)`;
+        seal.style.setProperty('--sheen', near.toFixed(3));
+        iris.setAttribute('gradientTransform', `rotate(${Math.round(angle)} 0.5 0.5)`);
       });
     }, { passive: true });
 

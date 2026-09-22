@@ -79,7 +79,6 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
       </div>
       <div class="work__stage">
         <Book3D work={work} authorName={author.data.name} width={230} as="button" tilt openable eager epigraph={epigraph} />
-        <p class="work__hint ui" aria-hidden="true">Click the book to open it</p>
       </div>
     </header>
 
@@ -200,8 +199,6 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   }
   .work__stage .book__front { view-transition-name: book-cover; }
   .work__stage { grid-column: 2; grid-row: 1; position: sticky; top: var(--stick); align-self: start; display: grid; justify-items: center; gap: var(--s2); padding-bottom: var(--s1); max-height: var(--stick-max); }
-  .work__hint { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.06em; text-transform: uppercase; }
-  @media (hover: none) { .work__hint { display: none; } }
   .work__head { grid-column: 1; grid-row: 1; display: grid; gap: var(--s1); align-content: start; min-width: 0; }
   .work__head h1 { font-style: italic; font-size: var(--step-4); line-height: var(--lh-title); letter-spacing: var(--tracking-display); }
     /* A subtitle belongs to the title above it, not to the byline below, so it closes up. */
