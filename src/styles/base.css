@@ -22,6 +22,43 @@ body {
   text-wrap: pretty;
 }
 img, svg { display: block; max-width: 100%; height: auto; }
+
+/* Paper.
+   ----------------------------------------------------------------------------------
+   One fixed layer of blue-noise grain over the whole page, so the site reads as
+   something printed rather than something lit. Fixed, not scrolling: paper does not
+   move under the words, and a fixed layer is one composited surface the browser can
+   leave alone rather than a texture it has to repaint down the length of the document.
+
+   The tile carries black specks and white specks in its alpha channel, so plain opacity
+   darkens the parchment and lightens the dark without a blend mode. That matters:
+   mix-blend-mode would force every element underneath into one compositing group, which
+   is a real cost on a page holding 689 transformed book covers, and it would land on top
+   of the view transition as well.
+
+   It sits above the page and below nothing, because paper is the surface everything is
+   printed on, including the covers. pointer-events stay off so it is invisible to every
+   interaction. */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  background-image: url('/paper.png');
+  background-repeat: repeat;
+  background-size: 192px 192px;
+  /* Measured, not eyeballed. The tile's strongest speck is 46/255, so at this opacity the
+     darkest grain moves parchment by six levels out of 255 and the lightest moves the dark
+     page by six the other way. Symmetric, and about two per cent either side of the
+     surface: present when you look for it, invisible when you are reading. At 0.5 the dark
+     specks were dropping the paper twenty-two levels, which reads as dirt. */
+  opacity: 0.13;
+}
+/* Dark ink shows grain more readily than light paper does, so it takes a lighter hand. */
+@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) body::after { opacity: 0.16; } }
+:root[data-theme='dark'] body::after { opacity: 0.16; }
+:root[data-theme='light'] body::after { opacity: 0.13; }
 a { color: inherit; text-decoration-color: color-mix(in oklch, var(--accent) 55%, transparent); text-underline-offset: 0.16em; text-decoration-thickness: 1px; }
 a:hover { text-decoration-color: var(--accent); }
 a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible,
