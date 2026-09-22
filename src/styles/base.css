@@ -176,11 +176,54 @@ input, textarea, select { caret-color: var(--accent-deep); }
   .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(116px, 1fr)); }
 }
 
-/* One authored entrance, on the hero only. Never an identical fade on every section,
-   and never on a call to action: a CTA that arrives late reads as a failed load. */
+/* How a page opens.
+   ----------------------------------------------------------------------------------
+   The site already had one motion idea, in the headline, where the word that changes
+   arrives by resolving out of a blur rather than sliding or fading. Every page opens in
+   that same language. A masthead is set, not revealed: the lines are on the page from the
+   first frame, a little soft and a little low, and they sharpen into place. Nothing below
+   the masthead moves when the page loads, and nothing on this site reveals on scroll.
+
+   Opacity is deliberately not part of it. Text that starts at zero opacity is text the
+   browser does not count as painted, so fading a heading in pushes the page's largest
+   contentful paint out by the length of the animation; and a page that arrives blank and
+   fills itself in reads as a slow page however quickly it actually loaded. Starting from
+   present-but-unresolved costs nothing and says something.
+
+   backwards, not both: the from-state holds through the stagger delay and then the
+   element goes back to being an ordinary element, with no filter left behind on it. */
 @media (prefers-reduced-motion: no-preference) {
-  .reveal { animation: reveal var(--dur-slow) var(--ease-out-expo) both; animation-delay: calc(var(--i, 0) * 55ms); }
-  @keyframes reveal { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  :root:not([data-vt-nav]) .page-open > * {
+    animation: page-set 520ms var(--ease-out-expo) backwards;
+  }
+  /* Four steps and then everything after lands together, so a masthead with nine lines in
+     it still finishes inside a third of a second. */
+  :root:not([data-vt-nav]) .page-open > :nth-child(2) { animation-delay: 70ms; }
+  :root:not([data-vt-nav]) .page-open > :nth-child(3) { animation-delay: 140ms; }
+  :root:not([data-vt-nav]) .page-open > :nth-child(4) { animation-delay: 200ms; }
+  :root:not([data-vt-nav]) .page-open > :nth-child(n + 5) { animation-delay: 250ms; }
+  /* An action is not part of the masthead. A button that arrives after the words above it
+     reads as a page that has not finished loading, which is the opposite of an invitation. */
+  :root:not([data-vt-nav]) .page-open > .set-hold { animation: none; }
+
+  @keyframes page-set {
+    from { transform: translateY(7px); filter: blur(2.5px); }
+  }
+
+  /* The one authored moment, and it belongs to this product rather than to the web: books
+     being shelved. The shelf is already there and the books come down onto it, left to
+     right, in the order they stand. The shelf itself does not draw: each card's ledge runs
+     a full viewport past its own column so that a part-filled row still gets a shelf, so
+     scaling one of them sweeps the whole rail across the page in a couple of frames, which
+     reads as a flash rather than as a line being drawn.
+
+     Only on shelves of a known, small size. The browse grid holds 689 books and is a place
+     to work, not a performance. */
+  :root:not([data-vt-nav]) .shelf-open .card__stage {
+    animation: book-settle 640ms var(--ease-out-expo) backwards;
+    animation-delay: calc(min(var(--i, 0), 9) * 48ms);
+  }
+  @keyframes book-settle { from { transform: translateY(-16px); } }
 }
 
 /* Breadcrumb. Replaces the kicker that used to sit above page headings:

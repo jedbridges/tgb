@@ -28,6 +28,13 @@ const { bodyClass, ...seo } = Astro.props;
         const t = localStorage.getItem('tgb-theme');
         if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
       } catch (e) { /* private mode: the system preference still applies */ }
+      // A page reached by taking a book off a shelf already has a motion: the cover
+      // travels and the page rises behind it. Its masthead must not also set itself, or
+      // two entrances play over each other. pagereveal fires before this document's first
+      // frame, so the flag is in place before any of it can start.
+      addEventListener('pagereveal', (e) => {
+        if (e.viewTransition) document.documentElement.dataset.vtNav = '';
+      });
     </script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

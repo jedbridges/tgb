@@ -42,8 +42,8 @@ const HEADLINE_WORDS = [
 ---
 <Base title="The Great Books" description={`The ${works.length} books that college Great Books programs ask students to read, with a guide to each one, its themes, and where to buy it.`} jsonld={websiteLd()} bodyClass="home">
   <section class="hero wrap">
-    <div class="hero__text">
-      <h1 class="reveal hero__h1">
+    <div class="hero__text page-open">
+      <h1 class="hero__h1">
         <span class="hero__lead">Three thousand years</span>
         <span class="hero__turn">
           <span class="hero__of">of</span>
@@ -55,8 +55,8 @@ const HEADLINE_WORDS = [
         </span>
         <span class="visually-hidden">of {HEADLINE_WORDS[0]}, and everything else the great reading lists assign.</span>
       </h1>
-      <p class="hero__lede reveal" style="--i:1">The ideas that built the West, argued out in the books themselves. {works.length} works, nine reading lists, a guide to each.</p>
-      <div class="hero__actions reveal" style="--i:2">
+      <p class="hero__lede">The ideas that built the West, argued out in the books themselves. {works.length} works, nine reading lists, a guide to each.</p>
+      <div class="hero__actions set-hold">
         <a class="btn btn--primary" href={url('/books/')}>Browse the shelf</a>
         <button class="btn" type="button" data-open-search>Search inside every book</button>
       </div>
@@ -68,7 +68,7 @@ const HEADLINE_WORDS = [
       <h2 class="italic">Most assigned</h2>
       <a class="section-head__more ui" href={url('/books/')}>All {works.length} →</a>
     </header>
-    <div class="shelf-grid">
+    <div class="shelf-grid shelf-open">
       {top.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} programCount={counts[i]} index={i} eager={i < 6} />)}
     </div>
   </section>

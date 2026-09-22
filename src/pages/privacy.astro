@@ -3,9 +3,9 @@ import Base from '~/layouts/Base.astro';
 import { GA4_ID } from '~/lib/analytics';
 ---
 <Base title="Privacy" description="What The Great Books collects about visitors, which is very little.">
-  <article class="wrap page" data-pagefind-body data-pagefind-filter="type:Page"><span class="visually-hidden" data-pagefind-meta="type:Page"></span>
+  <article class="wrap page page-open" data-pagefind-body data-pagefind-filter="type:Page">
     <h1 class="italic" data-pagefind-meta="title">What we collect</h1>
-    <div class="prose">
+    <div class="prose set-hold"><span class="visually-hidden" data-pagefind-meta="type:Page"></span>
       <p class="lede">There are no accounts, no comments and no newsletter. The site is static pages.</p>
       <h2>Analytics</h2>
       {GA4_ID ? (

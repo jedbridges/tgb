@@ -3,9 +3,9 @@ import Base from '~/layouts/Base.astro';
 import { affiliatesEnabled } from '~/lib/affiliates';
 ---
 <Base title="Affiliate disclosure" description="How The Great Books earns money from the buy links on its pages.">
-  <article class="wrap page" data-pagefind-body data-pagefind-filter="type:Page"><span class="visually-hidden" data-pagefind-meta="type:Page"></span>
+  <article class="wrap page page-open" data-pagefind-body data-pagefind-filter="type:Page">
     <h1 class="italic" data-pagefind-meta="title">How this site makes money</h1>
-    <div class="prose">
+    <div class="prose set-hold"><span class="visually-hidden" data-pagefind-meta="type:Page"></span>
       <p class="lede">The Great Books is free to read and has no advertising. It is supported by affiliate commissions on books bought through its links.</p>
       <h2>Amazon</h2>
       {affiliatesEnabled.amazon ? (

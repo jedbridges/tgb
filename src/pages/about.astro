@@ -3,9 +3,9 @@ import Base from '~/layouts/Base.astro';
 import { url } from '~/lib/url';
 ---
 <Base title="About" description="What The Great Books is, where the lists come from, and how the summaries are written.">
-  <article class="wrap page" data-pagefind-body data-pagefind-filter="type:Page"><span class="visually-hidden" data-pagefind-meta="type:Page"></span>
+  <article class="wrap page page-open" data-pagefind-body data-pagefind-filter="type:Page">
     <h1 class="italic" data-pagefind-meta="title">One shelf for every list</h1>
-    <div class="prose">
+    <div class="prose set-hold"><span class="visually-hidden" data-pagefind-meta="type:Page"></span>
       <p class="lede">For a century, a handful of colleges have organised their whole curriculum around reading the same few hundred books. The lists overlap, disagree at the edges, and change a little every year. This site gathers them in one place.</p>
       <h2>Where the lists come from</h2>
       <p>Each program page is transcribed from the program's own published reading list, with the date and source recorded on the page. Where a program assigns only part of a work, the note says so. Where lists change, we update them and keep the source note current. See <a href={url('/programs/')}>the programs</a>.</p>
