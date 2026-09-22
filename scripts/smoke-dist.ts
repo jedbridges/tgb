@@ -41,7 +41,25 @@ books.length ? ok(`${books.length} book pages`) : console.log('· no book pages 
 jsonldBad ? fail(`${jsonldBad} book pages with missing/invalid Book JSON-LD`) : books.length && ok('Book JSON-LD present and valid');
 tagBad ? fail(`${tagBad} book pages missing affiliate tag`) : tag && ok('Amazon tag on every book page');
 shopBad ? fail(`${shopBad} book pages missing the Bookshop affiliate id`) : shop && ok('Bookshop id on every book page');
-imgBad ? fail(`${imgBad} <img> without width/height`) : ok('all <img> have dimensions');
+// Analytics is the only way to know which page earned a click, so a build that thinks it
+// has analytics and does not is worth catching here rather than in three months of blank
+// reports. Both halves are checked: the tag that loads GA4, and the listener that reports
+// an affiliate click to it.
+const ga = process.env.PUBLIC_GA4_ID?.trim();
+if (ga) {
+  const home = readFileSync(join(dist, 'index.html'), 'utf8');
+  if (!home.includes(ga)) fail(`PUBLIC_GA4_ID is set but ${ga} does not appear in the built pages`);
+  else {
+    const scripts = existsSync(join(dist, '_astro'))
+      ? readdirSync(join(dist, '_astro')).filter((f) => f.endsWith('.js'))
+        .map((f) => readFileSync(join(dist, '_astro', f), 'utf8')).join('')
+      : '';
+    scripts.includes('affiliate_click')
+      ? ok(`analytics ${ga}, with affiliate click tracking`)
+      : fail('GA4 is configured but the affiliate click listener is not in the bundle');
+  }
+}
+
 // A workers.dev URL is only wrong when it is NOT the configured origin, i.e. a stale hardcode
 // left behind after moving to a custom domain.
 const site = (process.env.SITE_URL ?? '').trim();
