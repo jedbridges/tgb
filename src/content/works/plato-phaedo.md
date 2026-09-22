@@ -41,9 +41,7 @@ synopsis: >-
   Some years after the event, Phaedo describes to Echecrates the last day of Socrates' life, spent in prison with a dozen friends while the executioner waits. Socrates argues that a philosopher should welcome death, and then offers arguments that the soul survives it: that opposites come from opposites, that learning is really the recovery of knowledge we had before birth, that the soul resembles the changeless realities rather than the changing body, and finally that the soul cannot admit death any more than the number three can admit evenness. Simmias and Cebes press serious objections. Socrates ends with a myth of the earth and the afterlife, bathes, drinks the hemlock and dies.
 whyItMatters: >-
   The Phaedo is where the theory of Forms is first laid out as a working piece of metaphysics rather than gestured at, and where the soul becomes the immaterial, immortal thing that Western philosophy and Christian theology will argue about for the next two thousand years. It is also the founding text of a particular picture of the philosophical life, in which thinking is practice for dying and the body is an obstacle. Nietzsche attacked it on exactly those grounds. Programs assign it for two reasons at once. It contains four arguments compact enough to be evaluated by a beginner, and it contains a death scene that makes the arguments matter, since the man advancing them is about to find out whether they are true.
-cover:
-  source: openlibrary
-  isbn13: "9780872206335"
+cover: { source: generated }
 keyThemes:
   - theme: mortality
     note: >-

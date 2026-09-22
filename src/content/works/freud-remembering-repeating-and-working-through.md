@@ -20,7 +20,7 @@ recommendedEdition:
   year: 1995
   isbn13: "9780393314038"
   why: Peter Gay's anthology prints this paper in the Standard Edition translation.
-cover: { source: openlibrary, isbn13: "9780393314038" }
+cover: { source: generated }
 synopsis: >-
   A short technical paper on how analytic treatment works. Patients do not simply remember what they have repressed; they repeat it in action, above all in their relationship with the analyst, without knowing they are doing so. Freud describes this repetition as transference, warns against expecting insight alone to cure, and names the slow labour of working-through by which the patient comes to recognise the resistance and overcome it.
 keywords: [transference, repetition compulsion, resistance, working-through, technique, acting out]

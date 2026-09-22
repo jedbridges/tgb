@@ -18,7 +18,7 @@ recommendedEdition:
   year: 2008
   isbn13: "9780199540792"
   why: Vickers's annotated text of the 1605 Advancement, with the Essays and New Atlantis.
-cover: { source: openlibrary, isbn13: "9780199540792" }
+cover: { source: generated }
 synopsis: >-
   Bacon's first major work, addressed to James I. The first book defends learning against the objections of divines, politicians and the learned themselves, and blames its ills on the vain disputations of the schoolmen. The second surveys all human knowledge, dividing it by the faculties of memory, imagination and reason into history, poetry and philosophy, and marks the places where knowledge is deficient and needs to be advanced. Bacon later expanded it in Latin as De Augmentis Scientiarum.
 keywords: [James I, division of the sciences, schoolmen, history poetry philosophy, deficiencies, De Augmentis]

@@ -20,9 +20,7 @@ recommendedEdition:
   year: 2011
   isbn13: "9781603846738"
   why: Contains both Discourses, the Discourse on Political Economy and the Social Contract in one accurate, inexpensive volume.
-cover:
-  source: openlibrary
-  isbn13: "9781603846738"
+cover: { source: generated }
 synopsis: >-
   Rousseau's answer to a prize question from the Academy of Dijon on the origin of inequality. He imagines human beings
   in a state of nature as solitary, healthy and free, moved only by self-preservation and pity, and then traces the

@@ -21,9 +21,7 @@ recommendedEdition:
   year: 2002
   isbn13: "9780872206335"
   why: Clear, accurate and cheap, with Euthyphro, Crito, Meno and Phaedo in the same volume.
-cover:
-  source: openlibrary
-  isbn13: "9780872206335"
+cover: { source: generated }
 synopsis: >-
   Socrates' speech in his own defence at his trial in Athens in 399 BCE, on charges of impiety and corrupting the
   young. He deals first with the old rumours about him, then cross-examines his accuser Meletus, and explains that

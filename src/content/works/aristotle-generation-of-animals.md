@@ -21,7 +21,7 @@ recommendedEdition:
   year: 1984
   isbn13: "9780691016504"
   why: The revised Oxford translation, with the related short works on the movement and gait of animals in the same volume.
-cover: { source: openlibrary, isbn13: "9780691016504" }
+cover: { source: generated }
 synopsis: >-
   Five books on animal reproduction and embryology. Aristotle describes the reproductive organs and modes of generation across animals, argues that the male supplies form and the female matter, and gives a detailed account of embryonic development based on his observation of chick eggs. Later books treat inheritance and resemblance, sex determination, monsters, and the causes of variation in eyes, hair and voice.
 keywords: [embryology, reproduction, semen, form and matter, inheritance, chick embryo, spontaneous generation, heredity]

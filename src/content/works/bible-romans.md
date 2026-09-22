@@ -20,7 +20,7 @@ recommendedEdition:
   year: 2018
   isbn13: "9780190276072"
   why: The standard scholarly study Bible, with introductions and notes for every book.
-cover: { source: openlibrary, isbn13: "9780190276072" }
+cover: { source: generated }
 synopsis: >-
   Paul's longest letter, written to a Christian community he had not yet visited, sets out his understanding of the gospel. All people, Jew and Gentile, have sinned and stand under God's judgment, and are made right with God not by works of the law but by faith in Christ. Paul argues about Adam and Christ, sin and grace, the struggle of the divided self, the place of Israel in God's plan, and ends with practical advice on love, obedience to rulers and tolerance among believers.
 keywords: [Paul, justification by faith, grace, law, Adam, Israel, sin, Gentiles]

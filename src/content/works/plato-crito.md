@@ -34,9 +34,7 @@ otherEditions:
     publisher: Penguin Classics
     year: 2010
     why: A fresh translation with a substantial introduction on the legal background of the trial.
-cover:
-  source: openlibrary
-  isbn13: "9780872206335"
+cover: { source: generated }
 synopsis: >-
   Socrates' old friend Crito visits him in prison before dawn and urges him to escape, saying the plan is ready, the bribes are affordable, and that staying will shame his friends and abandon his children. Socrates replies that the only question worth asking is whether escaping would be just, and that the opinion of the many is irrelevant to it. He establishes that one must never do wrong, not even in return for wrong, and then speaks in the voice of the Laws of Athens, who argue that he owes them his upbringing, his education and a lifetime's tacit agreement, and that breaking their judgments would destroy them. He stays.
 whyItMatters: >-

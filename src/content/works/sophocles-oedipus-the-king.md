@@ -36,9 +36,7 @@ otherEditions:
     year: 2018
     why: >-
       Sparer and stranger, published as Antigonick's companion; good for a second reading, not a first.
-cover:
-  source: openlibrary
-  isbn13: "9780140444254"
+cover: { source: generated }
 synopsis: >-
   Thebes is dying of a plague, and Apollo's oracle says it will lift only when the killer of the old king Laius is found and driven out. Oedipus, who saved the city from the Sphinx and was given its widowed queen Jocasta in marriage, swears a public oath to hunt the man down. Over the course of a single day, and against the warnings of the prophet Tiresias and then of Jocasta herself, he assembles the evidence and discovers that he is the killer, that Laius was his father, and that Jocasta is his mother. She hangs herself. He blinds himself with her brooches and begs Creon to send him out of the city he has saved twice.
 whyItMatters: >-

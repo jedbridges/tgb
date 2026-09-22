@@ -20,7 +20,7 @@ recommendedEdition:
   year: 2007
   isbn13: "9780872208711"
   why: The anthology Yale assigns; it prints the treatise with the other main texts of the tradition.
-cover: { source: openlibrary, isbn13: "9780872208711" }
+cover: { source: generated }
 synopsis: >-
   A short treatise distinguishing the senses in which the word intellect is used, in ordinary speech, by the theologians, and in Aristotle's Posterior Analytics, Ethics and On the Soul. Its core explains the stages of the human intellect, potential, actual and acquired, and the separate Active Intellect that raises human thought from potency to act and links the human mind to the celestial intelligences. The treatise shaped the accounts of the intellect in Avicenna, Averroes and Aquinas.
 keywords: [Active Intellect, potential intellect, acquired intellect, Aristotle, On the Soul, Avicenna, emanation]

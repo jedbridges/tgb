@@ -20,7 +20,7 @@ recommendedEdition:
   year: 1995
   isbn13: "9780393314038"
   why: Peter Gay's anthology includes this paper in the Standard Edition translation.
-cover: { source: openlibrary, isbn13: "9780393314038" }
+cover: { source: generated }
 synopsis: >-
   A 1914 paper that introduces narcissism, the investment of libido in the self, as a normal stage of development and a component of all later loving. Freud uses it to explain schizophrenia, hypochondria, the overestimation of the beloved, and the self-regard of parents for their children. The paper also proposes an ego ideal, watched over by a censoring agency of conscience, which prepared the way for the concept of the superego.
 keywords: [narcissism, libido, ego ideal, object choice, hypochondria, self-regard, Jung, Adler]
