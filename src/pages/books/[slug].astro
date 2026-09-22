@@ -186,7 +186,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
       <section class="wrap related" data-pagefind-ignore>
         <h2 class="work__h">Read next</h2>
         <div class="shelf-grid shelf-open">
-          {related.map((r, i) => <BookCard work={r} authorName={(authors.get(r.data.author.id) ?? placeholderAuthor(r.data.author.id)).data.name} width={120} hasGuide={hasGuide(r)} index={i} />)}
+          {related.map((r, i) => <BookCard work={r} authorName={(authors.get(r.data.author.id) ?? placeholderAuthor(r.data.author.id)).data.name} width={120} index={i} />)}
         </div>
       </section>
     )}

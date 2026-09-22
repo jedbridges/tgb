@@ -152,15 +152,30 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
     position: absolute; inset: 5.4%;
     border-radius: 50%;
     pointer-events: none;
-    opacity: calc(var(--sheen, 0) * 0.4);
-    background: conic-gradient(
-      from calc(var(--sweep, 0) * 1deg),
-      #f6ddc0, #cfe8e0 52deg, #d9d2ee 108deg, #f2d6df 164deg,
-      #f8eed6 214deg, #cfe4ef 268deg, #f0d9c4 322deg, #f6ddc0 360deg
-    );
+    opacity: calc(var(--sheen, 0) * 0.85);
+    /* A band, not a disc. A conic sweep covers every pixel of the medallion, which on
+       parchment passes for a sheen and on a dark page is simply a milky film laid over the
+       whole thing: the deboss disappears under it. A band that is transparent at both ends
+       leaves most of the seal alone and reads as light travelling across a surface, which
+       is what it is. The element is a circle, so turning it toward the pointer turns the
+       band and nothing else, and a rotation is composited rather than repainted. */
+    background: linear-gradient(to right,
+      transparent 14%,
+      rgb(246 221 192 / 0.40) 29%,
+      rgb(207 232 224 / 0.52) 41%,
+      rgb(217 210 238 / 0.58) 51%,
+      rgb(242 214 223 / 0.52) 61%,
+      rgb(248 238 214 / 0.38) 73%,
+      transparent 88%);
+    rotate: calc(var(--sweep, 0) * 1deg);
     transition: opacity 420ms var(--ease-out);
     will-change: opacity;
   }
+  /* Light added to a near-black page carries much further than light added to paper. */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) .seal__sheen { opacity: calc(var(--sheen, 0) * 0.42); }
+  }
+  :root[data-theme='dark'] .seal__sheen { opacity: calc(var(--sheen, 0) * 0.42); }
 
   .seal__rim {
     font-family: var(--font-ui);

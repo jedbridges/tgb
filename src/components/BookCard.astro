@@ -2,8 +2,8 @@
 import Book3D from './Book3D.astro';
 import { workUrl } from '~/lib/url';
 import { coverFor, tintVars, yearShort, type Work } from '~/lib/catalog';
-interface Props { work: Work; authorName: string; width?: number; eager?: boolean; hasGuide?: boolean; showMeta?: boolean; index?: number }
-const { work, authorName, width = 140, eager = false, hasGuide = false, showMeta = true, index } = Astro.props;
+interface Props { work: Work; authorName: string; width?: number; eager?: boolean; showMeta?: boolean; index?: number }
+const { work, authorName, width = 140, eager = false, showMeta = true, index } = Astro.props;
 // The colour this book throws when it is pulled off the shelf. Empty for a cover that has
 // none, and the glow below then renders as nothing.
 const _m = coverFor(work.id).meta;
@@ -23,7 +23,7 @@ const tint = tintVars(_m);
     <>
       <span class="card__title">{work.data.title}</span>
       <span class="card__author">{authorName} · {yearShort(work)}</span>
-      <span class="card__tail">{hasGuide && <span class="card__guide">Guide</span>}</span>
+      <span class="card__tail"></span>
     </>
   )}
 </a>
@@ -76,11 +76,16 @@ const tint = tintVars(_m);
        card's five-row subgrid and pushed the shelf, the title and the author down a band
        each, which broke every row on the page. */
     position: absolute; left: 50%; bottom: 100%; translate: -50% 0;
-    width: 170%; height: 9rem; pointer-events: none;
+    width: 124%; height: 9rem; pointer-events: none;
     opacity: 0; --glow-a: 0.55;
     /* Anchored to the top of the wood, not to the wood itself. Pooled on the shelf the
        light landed on the darkest surface in the row and read as nothing; it belongs on
-       the wall the book is standing against. */
+       the wall the book is standing against.
+
+       Its width is held just over the card's own, because the shelf grid clips what leaves
+       it and the light was being sheared off with a hard vertical edge at the first and
+       last column. The gradient reaches nothing well before the element's edge, so at this
+       width there is no visible boundary left to cut. */
     background: radial-gradient(
       ellipse 56% 100% at 50% 100%,
       oklch(var(--tint-l) var(--tint-c) var(--tint-h) / var(--glow-a)),
@@ -125,21 +130,13 @@ const tint = tintVars(_m);
     line-height: var(--lh-ui); letter-spacing: 0.02em; font-variant-numeric: tabular-nums;
     text-wrap: pretty;
   }
+  /* Empty, and still a row. The space the stage borrowed above the books is given back
+     here, so reserving the headroom does not push the shelves apart, and the five bands of
+     the subgrid stay five. */
   .card__tail {
-    /* The space the stage borrowed above the books is given back here, so reserving the
-       headroom does not push the shelves apart. */
     padding: var(--s0) 0 max(var(--s1), calc(var(--s4) - var(--lift)));
     display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem;
     align-content: start;
   }
-  /* The one thing a reader most wants to know before clicking: is there anything written here? */
-  .card__guide {
-    display: inline-flex; align-items: center; gap: 0.3em;
-    font-family: var(--font-ui); font-size: var(--step--2); line-height: 1;
-    color: var(--accent); padding: 0.25em 0.5em;
-    border: 1px solid color-mix(in oklch, var(--accent) 50%, transparent);
-    border-radius: 2px;
-  }
-  .card__guide::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
   .card:hover .card__title { color: var(--accent); }
 </style>

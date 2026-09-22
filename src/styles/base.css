@@ -211,7 +211,7 @@ input, textarea, select { caret-color: var(--accent); }
      shelf across the page; this is what stops it there. The margin leaves room for a
      cover to tilt out of its column on hover without being cut off. */
   overflow-x: clip;
-  overflow-clip-margin: 3rem;
+  overflow-clip-margin: 5rem;
 }
 @media (max-width: 560px) {
   .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(116px, 1fr)); }

@@ -39,7 +39,7 @@ const hasBio = author.body && author.body.trim().length > 40;
     <section class="wrap" data-pagefind-ignore>
       <h2 class="h">Works on the lists</h2>
       <div class="shelf-grid">
-        {mine.map((w, i) => <BookCard work={w} authorName={a.name} width={140} hasGuide={hasGuide(w)} index={i} eager={i < 4} />)}
+        {mine.map((w, i) => <BookCard work={w} authorName={a.name} width={140} index={i} eager={i < 4} />)}
       </div>
     </section>
     {progs.size > 0 && (
