@@ -40,21 +40,31 @@ const { work, authorName, width = 140, eager = false, programCount, hasGuide = f
     grid-template-rows: subgrid;
     text-decoration: none; color: inherit; position: relative; min-width: 0;
     --ledge: 12px;
+    /* Room above the book for the hover lift, reserved only where there is a pointer that
+       can hover. A touch device never needs it and should not pay for it in whitespace. */
+    --lift: 0px;
   }
+  @media (hover: hover) and (pointer: fine) { .card { --lift: 52px; } }
   .card--bare { grid-row: span 2; }
-  .card--bare .card__ledge { margin-bottom: var(--s4); }
+  .card--bare .card__ledge { margin-bottom: max(var(--s1), calc(var(--s4) - var(--lift))); }
   /* The browse filters hide cards with the hidden attribute, and an author display rule
      outranks the user agent's [hidden] rule whatever its specificity. */
   .card[hidden] { display: none; }
 
   .card__stage {
+    /* content-visibility below brings paint containment with it, which clips to this
+       element's padding box, so a book rising off the shelf on hover had its top sheared
+       off. The padding is inside the clip, so reserving it here gives the book somewhere
+       to go; the height grows by the same amount and box-sizing keeps the content box,
+       and therefore the book's resting position on the shelf, identical. */
     display: flex; align-items: flex-end; justify-content: center;
-    height: var(--stage-h); padding: 0 8%; position: relative; z-index: 1;
+    height: calc(var(--stage-h) + var(--lift));
+    padding: var(--lift) 8% 0; position: relative; z-index: 1;
     /* 689 books ship on one page and the cover is the whole cost of one: three stacked 3D
        faces, a shadow and an image. Containment sits here rather than on the card so the
        text below stays laid out, which is what lets the row heights resolve. */
     content-visibility: auto;
-    contain-intrinsic-size: auto var(--stage-h);
+    contain-intrinsic-size: auto calc(var(--stage-h) + var(--lift));
   }
 
   .card__ledge {
@@ -84,7 +94,9 @@ const { work, authorName, width = 140, eager = false, programCount, hasGuide = f
     text-wrap: pretty;
   }
   .card__tail {
-    padding: var(--s0) 0 var(--s4);
+    /* The space the stage borrowed above the books is given back here, so reserving the
+       headroom does not push the shelves apart. */
+    padding: var(--s0) 0 max(var(--s1), calc(var(--s4) - var(--lift)));
     display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem;
     align-content: start;
   }

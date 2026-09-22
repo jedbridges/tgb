@@ -80,7 +80,9 @@
   position: absolute; inset: 0;
   transform-style: preserve-3d;
   transform: translate3d(var(--tx), var(--ty), var(--tz)) rotateX(var(--rx)) rotateY(var(--ry));
-  transition: transform var(--dur) var(--ease-out-expo);
+  /* The resting state owns the exit, and a book goes back on the shelf faster than it
+     comes off it. The arrival is slowed to 420ms by the hover rule below. */
+  transition: transform 240ms var(--ease-out-expo);
 }
 .book__face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 /* Set for one frame before a navigation, so the cover is snapshotted flat and square on.
@@ -221,11 +223,26 @@
 
 /* States */
 @media (hover: hover) and (pointer: fine) {
+  /* Taking a book off a shelf is a lift, not a zoom. The dominant movement is therefore
+     translateY, which cannot change proportions at all, and the two things that can are
+     kept small: translateZ magnifies by the perspective ratio, 1260/(1260 - z), so the old
+     72px grew the book by 6% on its way out; 34px grows it by under 3%, which reads as
+     nearness rather than as size. And squaring the spine away entirely, from 24deg to
+     4deg, widened the visible cover by another 9% and flattened the object into a picture
+     of itself. Stopping at 18deg costs six degrees of turn and saves most of that width:
+     the cover ends up about 6% wider than at rest rather than 16%, which is below the
+     point where the eye reads it as the book changing shape. */
   .card:hover .book[data-pull] .book__body, .card:focus-visible .book[data-pull] .book__body, .book[data-pull]:hover .book__body, .book[data-pull]:focus-visible .book__body {
-    --ry: 4deg; --tz: 72px; --tx: 4px; --ty: -14px;
+    --ry: 18deg; --tz: 26px; --tx: 2px; --ty: -26px;
+    transition-duration: var(--dur);
   }
-  .card:hover .book[data-pull] .book__gloss, .book[data-pull]:hover .book__gloss { opacity: 1; }
-  .card:hover .book[data-pull] .book__shadow, .book[data-pull]:hover .book__shadow { transform: translate(calc(var(--w) * -0.02), 10px) scale(1.2, 1.9); opacity: 0.85; }
+  .card:hover .book[data-pull] .book__gloss, .book[data-pull]:hover .book__gloss { opacity: 0.8; }
+  /* The shadow carries the height instead: it drops away, spreads and softens, which is
+     what tells you the book has come up rather than come closer. */
+  .card:hover .book[data-pull] .book__shadow, .book[data-pull]:hover .book__shadow {
+    transform: translate(calc(var(--w) * -0.02), 16px) scale(1.24, 2.1);
+    opacity: 0.6;
+  }
   /* A book leaving the shelf leaves a gap, and the books either side tip into it.
      Two elements move, and only while a neighbour is actually hovered. */
   .card:hover + .card .book__body { --ry: 30deg; --tx: -3px; }
@@ -247,8 +264,9 @@
 .book--button { cursor: pointer; }
 /* On a touch screen there is no hover to lift the book, so the press itself does it. */
 @media (hover: none) {
-  .card:active .book__body { --tz: 44px; --ry: 10deg; --ty: -8px; transition-duration: 180ms; }
-  .card:active .book__shadow { transform: translateY(8px) scale(1.15, 1.6); opacity: 0.8; }
+  /* Pressing settles it back toward the shelf: the book gives under the finger. */
+  .card:active .book__body { --tz: 20px; --ry: 14deg; --ty: -10px; transition-duration: 140ms; }
+  .card:active .book__shadow { transform: translateY(8px) scale(1.12, 1.5); opacity: 0.75; }
 }
 @media (prefers-reduced-motion: reduce) {
   .card:active .book__body, .card:active .book__shadow { transition: none; }

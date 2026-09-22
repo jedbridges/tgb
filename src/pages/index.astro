@@ -222,9 +222,13 @@ const HEADLINE_WORDS = [
   /* Each row of this list shares one baseline for the names and one line for the rules.
      'Great Books (Britannica)' takes two lines and 'Yale DS' takes one, and before this
      the rule under each simply followed its own name down the page. */
+  /* Wide enough that the longest name on the list, Great Books (Britannica), keeps one
+     line. Rows take their height from their tallest name, so a single wrapped name opens a
+     band of dead space under every short name beside it; the fix is to stop it wrapping
+     rather than to let the rules drift apart. Nine programs land as three rows of three. */
   .proglist {
     list-style: none; margin: 0; padding: 0;
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
     grid-auto-rows: auto; column-gap: var(--s3); row-gap: 0;
   }
   .proglist > li { grid-row: span 2; display: grid; grid-template-rows: subgrid; min-width: 0; }
@@ -233,17 +237,17 @@ const HEADLINE_WORDS = [
     grid-template-columns: minmax(0, 1fr) auto; align-items: baseline;
     column-gap: var(--s1); text-decoration: none; min-width: 0;
   }
-  .prog__name { grid-row: 1; font-size: var(--step-1); color: var(--ink-strong); padding-block: 0.9rem 0; text-wrap: balance; }
+  .prog__name { grid-row: 1; font-size: var(--step-1); color: var(--ink-strong); padding-block: var(--s1) 0; text-wrap: balance; }
   .prog:hover .prog__name { color: var(--accent); }
   /* The rule is drawn by the row's last band so it lands at the same height in every
      column, and the count never breaks 'works' onto a line of its own. */
   .prog::after {
     content: ''; grid-row: 2; grid-column: 1 / -1;
-    align-self: end; border-bottom: var(--rule); margin-top: 0.9rem;
+    align-self: end; border-bottom: var(--rule); margin-top: var(--s1);
   }
   .prog__count {
     grid-row: 1; color: var(--ink-mute); font-size: var(--step--2);
-    white-space: nowrap; padding-block: 0.9rem 0;
+    white-space: nowrap; padding-block: var(--s1) 0;
   }
   /* Three bands the whole strip shares: bar, label, count. Every column takes its row
      heights from the strip rather than from its own text, so a three-line era name no
