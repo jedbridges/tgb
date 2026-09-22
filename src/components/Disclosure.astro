@@ -12,7 +12,7 @@ const anyOn = affiliatesEnabled.amazon || affiliatesEnabled.bookshop;
   </p>
 ) : (
   <p class:list={['disclosure', { 'disclosure--compact': compact }]}>
-    {anyOn ? 'Bookshop.org links support this site at no cost to you.' : 'Buy links go to Amazon and Bookshop.org. We may earn a commission on purchases in future.'}
+    {anyOn ? 'Bookshop.org links support this site at no cost to you.' : 'These links go straight to Amazon and Bookshop.org and earn this site nothing today. Prices are the same either way.'}
     {!compact && <> <a href={url('/disclosure/')}>How this works.</a></>}
   </p>
 )}

@@ -68,7 +68,7 @@
   border-radius: 3px 1px 1px 3px;
 }
 .book__inner {
-  /* first page, revealed when the cover opens */
+  /* first page, revealed when the cover opens. Only rendered on an openable book. */
   transform: translateZ(calc(var(--d) / 2 - 1px));
   background: var(--paper-bright);
   background-image: radial-gradient(120% 80% at 0% 50%, rgb(0 0 0 / 0.12), transparent 40%);
@@ -103,7 +103,6 @@
 }
 .book__spine-text b { font-weight: 600; }
 .book__spine-text i { font-style: italic; font-variant: normal; }
-.book[style*="--d: 1"] .book__spine-text, .book[style*="--d:1"] .book__spine-text { display: none; }
 .book__pages {
   width: calc(var(--d) - 3px); right: calc((var(--d) - 3px) / -2); top: 2px; bottom: 2px;
   transform: rotateY(90deg);

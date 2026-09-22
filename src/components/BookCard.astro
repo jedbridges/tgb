@@ -2,24 +2,35 @@
 import Book3D from './Book3D.astro';
 import { workUrl } from '~/lib/url';
 import { yearShort, type Work } from '~/lib/catalog';
-interface Props { work: Work; authorName: string; width?: number; eager?: boolean; programCount?: number; showMeta?: boolean; index?: number }
-const { work, authorName, width = 140, eager = false, programCount, showMeta = true, index } = Astro.props;
+interface Props { work: Work; authorName: string; width?: number; eager?: boolean; programCount?: number; hasGuide?: boolean; showMeta?: boolean; index?: number }
+const { work, authorName, width = 140, eager = false, programCount, hasGuide = false, showMeta = true, index } = Astro.props;
 ---
 <a class="card" href={workUrl(work.id)} data-slug={work.id} style={index !== undefined ? `--i:${index}` : undefined}>
   <span class="card__stage" style={`--stage-h:${Math.round(width * 1.6)}px`}>
-    <Book3D work={work} authorName={authorName} width={width} eager={eager} />
+    <Book3D work={work} authorName={authorName} width={width} eager={eager} decorative />
   </span>
   <span class="card__ledge" aria-hidden="true"></span>
   {showMeta && (
     <span class="card__meta">
       <span class="card__title">{work.data.title}</span>
-      <span class="card__author ui">{authorName} · {yearShort(work)}</span>
-      {programCount !== undefined && programCount > 0 && <span class="card__count ui">{programCount === 1 ? 'On 1 list' : `On ${programCount} lists`}</span>}
+      <span class="card__author">{authorName} · {yearShort(work)}</span>
+      <span class="card__tail">
+        {programCount !== undefined && programCount > 0 && (
+          <span class="card__count">{programCount === 1 ? 'On 1 list' : `On ${programCount} lists`}</span>
+        )}
+        {hasGuide && <span class="card__guide">Guide</span>}
+      </span>
     </span>
   )}
 </a>
 <style>
-  .card { display: grid; grid-template-rows: auto auto 1fr; text-decoration: none; color: inherit; position: relative; min-width: 0; --ledge: 12px; }
+  .card {
+    display: grid; grid-template-rows: auto auto 1fr;
+    text-decoration: none; color: inherit; position: relative; min-width: 0; --ledge: 12px;
+    /* 689 of these ship on one page: skip layout and paint for the ones off-screen. */
+    content-visibility: auto;
+    contain-intrinsic-size: auto 380px;
+  }
   .card__stage { display: flex; align-items: flex-end; justify-content: center; height: var(--stage-h); padding: 0 8%; position: relative; z-index: 1; }
   .card__ledge {
     height: var(--ledge); background: var(--shelf-wood);
@@ -29,7 +40,17 @@ const { work, authorName, width = 140, eager = false, programCount, showMeta = t
   }
   .card__meta { padding: var(--s1) var(--s0) var(--s2); display: grid; gap: 0.15rem; align-content: start; }
   .card__title { font-size: var(--step-0); line-height: 1.2; color: var(--ink-strong); text-wrap: balance; transition: color var(--dur-fast); }
-  .card__author { color: var(--ink-soft); font-size: var(--step--2); letter-spacing: 0.02em; }
-  .card__count { color: var(--ink-mute); font-size: var(--step--2); }
+  .card__author { color: var(--ink-soft); font-family: var(--font-ui); font-size: var(--step--2); letter-spacing: 0.02em; }
+  .card__tail { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem; margin-top: 0.2rem; }
+  .card__count { color: var(--ink-mute); font-family: var(--font-ui); font-size: var(--step--2); }
+  /* The one thing a reader most wants to know before clicking: is there anything written here? */
+  .card__guide {
+    display: inline-flex; align-items: center; gap: 0.3em;
+    font-family: var(--font-ui); font-size: var(--step--2); line-height: 1;
+    color: var(--accent-deep); padding: 0.25em 0.5em;
+    border: 1px solid color-mix(in oklch, var(--accent) 40%, var(--paper-deeper));
+    border-radius: 2px;
+  }
+  .card__guide::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
   .card:hover .card__title { color: var(--accent-deep); }
 </style>

@@ -6,23 +6,64 @@ interface Props { work: Work; authorName: string; compact?: boolean }
 const { work, authorName, compact = false } = Astro.props;
 const ed = work.data.recommendedEdition;
 const target = { title: ed?.title ?? work.data.title, author: authorName, isbn13: ed?.isbn13, asin: ed?.asin };
+/** A recommendation only exists if we can name the edition. Otherwise the links are a search,
+ *  and saying so is the difference between a recommendation and a guess. */
+const named = Boolean(ed && (ed.translator || ed.publisher));
+const precise = Boolean(ed?.isbn13 || ed?.asin);
+const editionName = ed?.translator ? `${ed.translator} translation` : ed?.publisher ? `${ed.publisher} edition` : null;
 ---
 <div class:list={['buy', { 'buy--compact': compact }]}>
-  <div class="buy__row">
-    <a class="btn btn--primary" href={amazonUrl(target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id}>Buy on Amazon</a>
-    <a class="btn" href={bookshopUrl(target)} target="_blank" rel="sponsored noopener" data-affiliate="bookshop" data-work={work.id}>Buy on Bookshop.org</a>
-  </div>
-  {ed && (ed.translator || ed.publisher) && (
-    <p class="buy__edition ui">
-      Recommended: {ed.title ?? work.data.title}{ed.translator && <>, translated by {ed.translator}</>}{ed.publisher && <> ({ed.publisher}{ed.year && `, ${ed.year}`})</>}.
-      {ed.why && <span class="buy__why"> {ed.why}</span>}
+  {named ? (
+    <p class="buy__lede">
+      <span class="buy__lede-label">We recommend</span>
+      <span class="buy__edition-name">{ed!.title ?? work.data.title}{ed!.translator && <>, translated by {ed!.translator}</>}</span>
+      {(ed!.publisher || ed!.year) && <span class="buy__edition-pub">{[ed!.publisher, ed!.year].filter(Boolean).join(', ')}</span>}
+      {ed!.why && <span class="buy__why">{ed!.why}</span>}
+    </p>
+  ) : (
+    <p class="buy__lede buy__lede--none">
+      <span class="buy__lede-label">No edition recommended yet</span>
+      <span class="buy__why">
+        {work.data.language.id === 'english'
+          ? 'These links search the retailer for this title rather than pointing at a chosen edition.'
+          : 'For a translated work the translation is most of the decision, and we have not made a recommendation for this one yet. These links search the retailer rather than pointing at a chosen translation.'}
+      </span>
     </p>
   )}
+
+  <div class="buy__row">
+    <a class="btn btn--accent" href={amazonUrl(target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id}>
+      {precise && editionName ? `Get the ${editionName}` : named ? 'Find this edition' : 'Search Amazon'}
+      <svg class="btn__ext" width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 5 7M8 10.5H1.5V4" stroke-linecap="round"/></svg>
+      <span class="visually-hidden">&#32;on Amazon, opens in a new tab</span>
+    </a>
+    <a class="btn" href={bookshopUrl(target)} target="_blank" rel="sponsored noopener" data-affiliate="bookshop" data-work={work.id}>
+      Bookshop.org
+      <svg class="btn__ext" width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 5 7M8 10.5H1.5V4" stroke-linecap="round"/></svg>
+      <span class="visually-hidden">&#32;on Bookshop.org, opens in a new tab and supports independent bookshops</span>
+    </a>
+  </div>
+
+  {work.data.otherEditions.length > 0 && (
+    <p class="buy__alts">
+      Also good: {work.data.otherEditions.map((e, i) => (
+        <>{i > 0 && '; '}<span class="buy__alt">{e.translator ?? e.publisher ?? e.title}</span>{e.why && <span class="buy__alt-why"> {e.why}</span>}</>
+      ))}
+    </p>
+  )}
+
   {!compact && <Disclosure />}
 </div>
 <style>
-  .buy { display: grid; gap: var(--s1); }
+  .buy { display: grid; gap: var(--s1); max-width: 46ch; }
+  .buy__lede { display: grid; gap: 0.1rem; padding-top: var(--s1); border-top: 1px solid var(--paper-deeper); }
+  .buy__lede-label { font-family: var(--font-ui); font-size: var(--step--2); font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); }
+  .buy__edition-name { font-size: var(--step-0); color: var(--ink-strong); line-height: 1.3; }
+  .buy__edition-pub { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); }
+  .buy__why { color: var(--ink-soft); font-size: var(--step--1); line-height: 1.5; margin-top: 0.25rem; }
+  .buy__lede--none .buy__why { max-width: 42ch; }
   .buy__row { display: flex; flex-wrap: wrap; gap: var(--s0); }
-  .buy__edition { color: var(--ink-soft); font-size: var(--step--2); line-height: 1.5; max-width: 46ch; }
-  .buy__why { color: var(--ink-mute); }
+  .btn__ext { opacity: 0.65; }
+  .buy__alts { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); line-height: 1.5; }
+  .buy__alt { color: var(--ink-soft); }
 </style>

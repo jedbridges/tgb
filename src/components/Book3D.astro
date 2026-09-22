@@ -17,15 +17,19 @@ interface Props {
   tilt?: boolean;            // pointer tilt
   openable?: boolean;        // click opens cover (button only)
   eager?: boolean;           // image loading priority
+  decorative?: boolean;      // inside a card: the card's own text is the accessible name
   epigraph?: { text: string; source?: string };
   class?: string;
 }
-const { work, authorName, width = 150, as = 'span', pull = true, tilt = false, openable = false, eager = false, epigraph, class: cls } = Astro.props;
+const { work, authorName, width = 150, as = 'span', pull = true, tilt = false, openable = false, eager = false, decorative = false, epigraph, class: cls } = Astro.props;
 const { image, meta } = coverFor(work.id);
 const tone = toneFor(work.id);
 const ratio = image ? image.height / image.width : 1.52;
 const pages = work.data.pages ?? { short: 120, medium: 220, long: 480, epic: 900 }[work.data.length];
 const depth = Math.max(12, Math.min(58, Math.round(pages / 16)));
+// Below ~22px there is not enough spine to letter. Decided here, because the old CSS
+// guard matched `--d: 1` as a substring and silently blanked every depth from 12 to 19.
+const showSpineText = depth >= 22;
 const spine = meta?.spine ?? tone.bg;
 const spineInk = meta?.spineInk ?? tone.ink;
 const title = work.data.title;
@@ -41,18 +45,20 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
   data-tilt={tilt ? '' : undefined}
   data-openable={openable ? '' : undefined}
   data-state="shelf"
+  aria-hidden={decorative ? 'true' : undefined}
   type={as === 'button' ? 'button' : undefined}
-  aria-label={as === 'button' ? `${title} by ${authorName}. ${openable ? 'Open the cover' : ''}` : undefined}
+  aria-label={as === 'button' ? (openable ? `Open the cover of ${title}` : `${title} by ${authorName}`) : undefined}
   aria-expanded={openable ? 'false' : undefined}
+  aria-controls={openable ? `book-inner-${work.id}` : undefined}
 >
   <span class="book__scene">
     <span class="book__body">
       <span class="book__face book__front">
         <span class="side side--art">
           {image ? (
-            <Image src={image} alt={`Cover of ${title}`} width={Math.round(width * 2)} densities={[1, 2]} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : undefined} />
+            <Image src={image} alt={decorative ? '' : `Cover of ${title}`} width={Math.round(width * 2)} densities={[1, 2]} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : undefined} />
           ) : (
-            <span class="cover-gen" role="img" aria-label={`${title} by ${authorName}`}>
+            <span class="cover-gen" role={decorative ? undefined : 'img'} aria-label={decorative ? undefined : `${title} by ${authorName}`}>
               <span class="cover-gen__series">The Great Books</span>
               <span class:list={['cover-gen__title', titleClass]}>{title}</span>
               <span class="cover-gen__author">{authorName}</span>
@@ -62,11 +68,13 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
         </span>
         {openable && <span class="side side--endpaper" aria-hidden="true"></span>}
       </span>
-      <span class="book__face book__inner" aria-hidden="true">
-        {epigraph && <><span class="epigraph">“{epigraph.text}”</span>{epigraph.source && <span class="epigraph-src">{epigraph.source}</span>}</>}
-      </span>
+      {openable && (
+        <span class="book__face book__inner" id={`book-inner-${work.id}`}>
+          {epigraph && <><span class="epigraph">“{epigraph.text}”</span>{epigraph.source && <span class="epigraph-src">{epigraph.source}</span>}</>}
+        </span>
+      )}
       <span class="book__face book__back"></span>
-      <span class="book__face book__spine"><span class="book__spine-text"><b>{authorName}</b>&ensp;<i>{title}</i></span></span>
+      <span class="book__face book__spine">{showSpineText && <span class="book__spine-text"><b>{authorName}</b>&ensp;<i>{title}</i></span>}</span>
       <span class="book__face book__pages"></span>
       <span class="book__face book__top"></span>
       <span class="book__face book__bottom"></span>

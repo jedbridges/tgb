@@ -3,12 +3,14 @@ import { getCollection } from 'astro:content';
 import Base from '~/layouts/Base.astro';
 import BookCard from '~/components/BookCard.astro';
 import Browse from '~/components/browse/Browse';
-import { placeholderAuthor, loadCatalog, catalogRecord, sortedByAssignment } from '~/lib/catalog';
+import { placeholderAuthor, loadCatalog, catalogRecord, sortedByAssignment, hasGuide, guidedCount } from '~/lib/catalog';
 import { breadcrumbs } from '~/lib/seo';
 
 const { works, authors, programs } = await loadCatalog();
 const sorted = await sortedByAssignment(works);
 const rows = await Promise.all(sorted.map(catalogRecord));
+const guideFlags = sorted.map(hasGuide);
+const guided = await guidedCount();
 const [themes, genres, eras, regions, languages] = await Promise.all([
   getCollection('themes'), getCollection('genres'), getCollection('eras'), getCollection('regions'), getCollection('languages'),
 ]);
@@ -25,24 +27,36 @@ const facets = {
 <Base title="All the books" description={`Browse all ${works.length} works assigned across the great college reading lists. Filter by program, era, theme, form, difficulty and length, or search inside the summaries.`}
   jsonld={breadcrumbs([{ name: 'Books', path: '/books/' }])}>
   <section class="wrap browse-head">
-    <p class="eyebrow">The shelf</p>
     <h1 class="italic">All the books</h1>
-    <p class="browse-head__lede"><span id="browse-count">{works.length}</span> works from the great reading lists. Filter by what you're studying, or search inside every summary.</p>
+    <p class="browse-head__lede">Every work on the nine lists, {guided} of them with a written reading guide so far. Filter by what you are studying, or search inside every summary.</p>
   </section>
   <section class="wrap browse" data-pagefind-ignore>
     <Browse client:load rows={rows} facets={facets} total={works.length} />
-    <div class="shelf-grid browse__grid" id="browse-grid" aria-live="polite">
-      {sorted.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} eager={i < 6} programCount={rows[i].pc} index={Math.min(i, 12)} />)}
+    <div class="browse__results">
+      <a class="browse__skip" href="#browse-end">Skip the {works.length} results</a>
+      <div class="shelf-grid browse__grid" id="browse-grid">
+        {sorted.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} eager={i < 6} programCount={rows[i].pc} hasGuide={guideFlags[i]} index={Math.min(i, 12)} />)}
+      </div>
+      <p class="browse__empty" id="browse-empty" hidden>Nothing matches all of those at once. Remove a filter above, or try a different word.</p>
+      <div id="browse-end" tabindex="-1"></div>
     </div>
-    <p class="browse__empty" id="browse-empty" hidden>Nothing on the shelf matches. Loosen a filter or try a different word.</p>
   </section>
 </Base>
 <style>
   .browse-head { padding-block: var(--s4) var(--s2); }
   .browse-head h1 { font-size: var(--step-4); }
   .browse-head__lede { margin-top: var(--s1); font-size: var(--step-1); color: var(--ink-soft); max-width: 50ch; }
-  .browse { display: grid; grid-template-columns: 17rem minmax(0, 1fr); gap: var(--s3); align-items: start; padding-bottom: var(--s4); }
+  .browse {
+    display: grid; grid-template-columns: 17rem minmax(0, 1fr); gap: 0 var(--s3);
+    grid-template-areas: 'bar bar' 'rail results';
+    align-items: start; padding-bottom: var(--s4);
+  }
+  .browse__results { grid-area: results; min-width: 0; }
   .browse__grid { min-height: 20rem; }
-  .browse__empty { grid-column: 2; padding: var(--s3); text-align: center; color: var(--ink-soft); font-style: italic; font-size: var(--step-1); }
-  @media (max-width: 860px) { .browse { grid-template-columns: 1fr; } .browse__empty { grid-column: 1; } }
+  .browse__empty { padding: var(--s4) var(--s2); max-width: 44ch; color: var(--ink-soft); font-size: var(--step-1); line-height: 1.5; }
+  /* 689 links is a long walk for a keyboard. Offer the exit before the walk. */
+  .browse__skip { position: absolute; left: -9999px; font-family: var(--font-ui); font-size: var(--step--2); }
+  .browse__skip:focus { position: static; display: inline-block; margin-bottom: var(--s1); color: var(--accent-deep); }
+  #browse-end:focus { outline: none; }
+  @media (max-width: 860px) { .browse { grid-template-columns: 1fr; grid-template-areas: 'bar' 'rail' 'results'; } }
 </style>

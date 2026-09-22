@@ -20,9 +20,10 @@ body {
 }
 img, svg { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration-color: color-mix(in oklch, var(--accent) 55%, transparent); text-underline-offset: 0.16em; text-decoration-thickness: 1px; }
-a:hover { text-decoration-color: var(--accent); }
-a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
-  outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px;
+a:hover { text-decoration-color: var(--accent-deep); }
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible,
+textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px;
 }
 button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
 h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; line-height: 1.05; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
@@ -36,6 +37,16 @@ em, i { font-style: italic; }
 hr { border: 0; border-top: 1px solid var(--paper-deeper); margin: var(--s3) 0; }
 ::selection { background: var(--accent-wash); color: var(--ink-strong); }
 
+/* Surfaces the browser would otherwise style for us. */
+html { caret-color: var(--accent-deep); scrollbar-color: var(--paper-deeper) transparent; scrollbar-width: thin; }
+input, textarea, select { caret-color: var(--accent-deep); }
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--paper-deeper); border: 3px solid var(--paper); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--ink-mute); }
+/* Years, page counts and list tallies line up in columns. */
+.tnum, .work__facts dd, .card__author, .card__count, .row__meta, .prog__count, .tl__count, .facts dd { font-variant-numeric: tabular-nums; }
+
 /* Utilities */
 .wrap { width: min(100% - 2 * var(--gutter), var(--page-max)); margin-inline: auto; }
 .prose { max-width: var(--measure); }
@@ -44,10 +55,6 @@ hr { border: 0; border-top: 1px solid var(--paper-deeper); margin: var(--s3) 0; 
 .prose p, .prose li { font-size: var(--step-0); line-height: 1.6; }
 .prose ul, .prose ol { padding-left: 1.2em; margin: 0.6em 0; }
 .prose blockquote { margin: var(--s2) 0; padding-left: var(--s2); border-left: 2px solid var(--accent); font-style: italic; font-size: var(--step-1); line-height: 1.35; }
-.eyebrow {
-  font-family: var(--font-ui); font-weight: 600; font-size: var(--step--2);
-  letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-soft);
-}
 .ui { font-family: var(--font-ui); font-size: var(--step--1); font-weight: 500; }
 .visually-hidden {
   position: absolute !important; width: 1px; height: 1px; overflow: hidden;
@@ -62,18 +69,22 @@ hr { border: 0; border-top: 1px solid var(--paper-deeper); margin: var(--s3) 0; 
 .tag {
   display: inline-flex; align-items: center; gap: 0.4em;
   font-family: var(--font-ui); font-size: var(--step--2); font-weight: 500;
-  letter-spacing: 0.04em; padding: 0.3em 0.7em; border-radius: 999px;
+  letter-spacing: 0.04em; padding: 0.7em 0.9em; min-height: 44px; border-radius: 999px;
   border: 1px solid var(--paper-deeper); color: var(--ink); text-decoration: none;
   background: transparent; transition: border-color var(--dur-fast), background var(--dur-fast);
 }
 .tag:hover { border-color: var(--ink-mute); background: var(--paper-bright); }
-.tag--accent { border-color: var(--accent); color: var(--accent-deep); }
+.tag--accent { border-color: var(--accent-deep); color: var(--accent-deep); }
+/* Tag kinds. A theme is an idea, a facet is a fact: they should not look alike. */
+.tag--theme { border-color: color-mix(in oklch, var(--accent) 45%, var(--paper-deeper)); }
+.tag--theme::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex: 0 0 auto; }
+.tag--facet { border-style: dashed; color: var(--ink-soft); }
 
 /* Buttons */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5em;
   font-family: var(--font-ui); font-weight: 600; font-size: var(--step--1);
-  letter-spacing: 0.02em; padding: 0.8em 1.3em; border-radius: 3px;
+  letter-spacing: 0.02em; padding: 0.8em 1.3em; border-radius: 3px; min-height: 44px;
   text-decoration: none; border: 1px solid var(--ink); color: var(--ink);
   transition: transform var(--dur-fast) var(--ease-out), background var(--dur-fast), color var(--dur-fast);
 }
@@ -81,8 +92,8 @@ hr { border: 0; border-top: 1px solid var(--paper-deeper); margin: var(--s3) 0; 
 .btn:active { transform: translateY(1px); }
 .btn--primary { background: var(--ink); color: var(--paper); }
 .btn--primary:hover { background: var(--ink-strong); }
-.btn--accent { background: var(--accent); border-color: var(--accent); color: var(--paper-bright); }
-.btn--accent:hover { background: var(--accent-deep); border-color: var(--accent-deep); color: var(--paper-bright); }
+.btn--accent { background: var(--accent-deep); border-color: var(--accent-deep); color: var(--paper-bright); }
+.btn--accent:hover { background: oklch(0.45 0.18 35); border-color: oklch(0.45 0.18 35); }
 
 /* Shelf: a row of books standing on a ledge. Used on every page that shows books. */
 .shelf-grid {
@@ -95,8 +106,18 @@ hr { border: 0; border-top: 1px solid var(--paper-deeper); margin: var(--s3) 0; 
   .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(116px, 1fr)); }
 }
 
-/* Page-load reveal (one orchestrated moment) */
+/* One authored entrance, on the hero only. Never an identical fade on every section,
+   and never on a call to action: a CTA that arrives late reads as a failed load. */
 @media (prefers-reduced-motion: no-preference) {
-  .reveal { animation: reveal var(--dur-slow) var(--ease-out-expo) both; animation-delay: calc(var(--i, 0) * 70ms); }
-  @keyframes reveal { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  .reveal { animation: reveal var(--dur-slow) var(--ease-out-expo) both; animation-delay: calc(var(--i, 0) * 55ms); }
+  @keyframes reveal { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 }
+
+/* Breadcrumb. Replaces the kicker that used to sit above page headings:
+   it names where you are and gets you back, which a decorative label never did. */
+.crumbs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5em; font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-mute); margin-bottom: var(--s1); }
+.crumbs a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--paper-deeper); }
+.crumbs a:hover { color: var(--accent-deep); border-bottom-color: var(--accent-deep); }
+.crumbs li { display: flex; align-items: baseline; gap: 0.5em; list-style: none; }
+.crumbs li + li::before { content: '/'; color: var(--paper-deeper); }
+.crumbs ol, .crumbs ul { display: flex; flex-wrap: wrap; gap: 0.5em; margin: 0; padding: 0; }

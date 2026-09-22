@@ -71,10 +71,18 @@ export async function authorName(id: string) {
   return authors.get(id)?.data.name ?? placeholderAuthor(id).data.name;
 }
 
-/** Works visible on the site: everything that isn't a bare stub without synopsis. */
+/** Works visible on the site. */
 export async function publicWorks() {
   const { works } = await loadCatalog();
   return works;
+}
+
+/** A work "has a guide" once it carries the written summary, not just the catalogue entry. */
+export const hasGuide = (w: Work) => w.data.status !== 'stub';
+
+export async function guidedCount() {
+  const { works } = await loadCatalog();
+  return works.filter(hasGuide).length;
 }
 
 export const yearLabel = (w: Work) => w.data.yearDisplay ?? (w.data.year < 0 ? `${-w.data.year} BCE` : `${w.data.year}`);
@@ -157,6 +165,7 @@ export async function catalogRecord(w: Work) {
     ps: [...new Set(progs.map((x) => `${x.program.id}/${x.segment.id}`))],
     pc: new Set(progs.map((x) => x.program.id)).size,
     au: w.data.author.id,
+    hg: hasGuide(w) ? 1 : 0,
   };
 }
 export type CatalogRow = Awaited<ReturnType<typeof catalogRecord>>;

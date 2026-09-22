@@ -9,16 +9,14 @@ const kindLabel = { college: 'Four-year college curriculum', course: 'Course seq
 ---
 <Base title="The programs" description="The college Great Books curricula and canonical reading lists this site draws from, each in its own order." jsonld={breadcrumbs([{ name: 'Programs', path: '/programs/' }])}>
   <section class="wrap head">
-    <p class="eyebrow">The lists</p>
     <h1 class="italic">The programs</h1>
     <p class="lede">Nine reading lists, from four-year college curricula to the published canons that shaped them. Each page keeps the program's own order.</p>
   </section>
   <section class="wrap">
     <ol class="programs">
       {programs.map((p, i) => (
-        <li class="program reveal" style={`--i:${i}`}>
+        <li class="program">
           <a href={programUrl(p.id)} class="program__link">
-            <span class="program__n ui">{String(i + 1).padStart(2, '0')}</span>
             <span class="program__body">
               <span class="program__name">{p.data.name}</span>
               <span class="program__kind ui">{kindLabel[p.data.kind]}{p.data.institution && p.data.institution !== p.data.name && ` · ${p.data.institution}`}</span>
@@ -36,9 +34,8 @@ const kindLabel = { college: 'Four-year college curriculum', course: 'Course seq
   .head h1 { font-size: var(--step-4); }
   .lede { margin-top: var(--s1); font-size: var(--step-1); color: var(--ink-soft); max-width: 50ch; }
   .programs { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
-  .program__link { display: grid; grid-template-columns: 3rem minmax(0, 1fr) 7rem; gap: var(--s2); padding: var(--s2) 0; border-bottom: 1px solid var(--paper-deeper); text-decoration: none; align-items: start; transition: background var(--dur-fast); }
+  .program__link { display: grid; grid-template-columns: minmax(0, 1fr) 7rem; gap: var(--s2); padding: var(--s2) 0; border-bottom: 1px solid var(--paper-deeper); text-decoration: none; align-items: start; transition: background var(--dur-fast); }
   .program__link:hover { background: color-mix(in oklch, var(--paper-bright) 60%, transparent); }
-  .program__n { color: var(--ink-mute); padding-top: 0.5rem; }
   .program__body { display: grid; gap: 0.3rem; }
   .program__name { font-size: var(--step-2); font-style: italic; line-height: 1.1; color: var(--ink-strong); }
   .program__link:hover .program__name { color: var(--accent-deep); }
@@ -46,5 +43,5 @@ const kindLabel = { college: 'Four-year college curriculum', course: 'Course seq
   .program__desc { color: var(--ink-soft); max-width: 62ch; margin-top: 0.3rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .program__count { text-align: right; color: var(--ink-soft); font-size: var(--step--2); line-height: 1.5; padding-top: 0.4rem; }
   .program__count b { font-family: var(--font-display); font-size: var(--step-2); color: var(--ink-strong); font-weight: 500; }
-  @media (max-width: 640px) { .program__link { grid-template-columns: 2rem 1fr; } .program__count { grid-column: 2; text-align: left; } .program__count br { display: none; } }
+  @media (max-width: 640px) { .program__link { grid-template-columns: 1fr; } .program__count { text-align: left; } .program__count br { display: none; } }
 </style>

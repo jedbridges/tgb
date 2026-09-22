@@ -25,7 +25,7 @@
   .palette__results { max-height: min(60vh, 32rem); overflow-y: auto; }
   .palette__results:empty { display: none; }
   .palette__hint { padding: 0.8rem 1.1rem; color: var(--ink-mute); font-size: var(--step--2); }
-  .palette__hint button { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 0.15em; }
+  .palette__hint button { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 0.15em; min-height: 32px; padding: 0 0.15em; }
   .palette__results :global(.hit) { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; padding: 0.7rem 1.1rem; text-decoration: none; align-items: center; border-left: 2px solid transparent; }
   .palette__results :global(.hit[aria-selected='true']), .palette__results :global(.hit:hover) { background: var(--paper); border-left-color: var(--accent); }
   .palette__results :global(.hit__cover) { width: 2.4rem; aspect-ratio: 2/3; object-fit: cover; border-radius: 1px; box-shadow: 0 1px 3px rgb(var(--shadow-ink) / 0.3); background: var(--paper-deep); }
@@ -34,7 +34,8 @@
   .palette__results :global(.hit__title mark) { background: var(--accent-wash); color: inherit; }
   .palette__results :global(.hit__sub) { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-soft); }
   .palette__results :global(.hit__sub mark) { background: none; color: var(--accent-deep); }
-  .palette__results :global(.empty) { padding: 1.2rem 1.1rem; color: var(--ink-soft); font-style: italic; }
+  .palette__results :global(.empty) { padding: 1.2rem 1.1rem; color: var(--ink-soft); line-height: 1.5; }
+  .palette__results :global(.empty a) { color: var(--accent-deep); }
   @keyframes fade { from { opacity: 0 } }
   @keyframes rise { from { opacity: 0; transform: translateY(-10px) scale(0.98) } }
   @media (prefers-reduced-motion: reduce) { .palette__panel, .palette__backdrop { animation: none; } }
@@ -61,22 +62,27 @@
     } catch { pf = null; }
     return pf;
   }
+  const panel = root.querySelector<HTMLElement>('.palette__panel')!;
+  const outside = () => [...document.body.children].filter((el) => el !== root) as HTMLElement[];
   function open(q = '') {
     lastFocus = document.activeElement as HTMLElement;
     root.hidden = false;
     document.body.style.overflow = 'hidden';
+    // A dialog that claims aria-modal must actually take the page out of the tab order.
+    outside().forEach((el) => { el.inert = true; el.setAttribute('aria-hidden', 'true'); });
     input.value = q; input.focus();
     loadPagefind();
     if (q) run(q);
   }
   function close() {
     root.hidden = true; document.body.style.overflow = '';
+    outside().forEach((el) => { el.inert = false; el.removeAttribute('aria-hidden'); });
     list.innerHTML = ''; sel = -1; input.setAttribute('aria-expanded', 'false');
     lastFocus?.focus();
   }
   function render(hits: any[]) {
     sel = -1;
-    if (!hits.length) { list.innerHTML = `<p class="empty">Nothing on the shelf for “${escape(input.value)}”.</p>`; return; }
+    if (!hits.length) { list.innerHTML = `<p class="empty">Nothing on the shelf for “${escape(input.value)}”. Try an author, a title, or a theme like justice.</p>`; return; }
     list.innerHTML = hits.map((h, i) => `
       <a class="hit" role="option" id="hit-${i}" aria-selected="false" href="${h.url}">
         ${h.meta.cover
@@ -98,7 +104,7 @@
     t = window.setTimeout(async () => {
       const my = ++seq;
       const engine = await loadPagefind();
-      if (!engine) { list.innerHTML = '<p class="empty">Search index is built at deploy time. Run a production build to enable it.</p>'; return; }
+      if (!engine) { list.innerHTML = '<p class="empty">Search is unavailable right now. You can still <a href="/books/">browse and filter every book</a>.</p>'; return; }
       const res = await engine.search(q);
       const top = await Promise.all(res.results.slice(0, 8).map((r) => r.data()));
       if (my === seq) render(top);
@@ -118,6 +124,16 @@
     if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
     else if (e.key === 'Enter') { const h = list.querySelector<HTMLAnchorElement>('.hit[aria-selected="true"]') || list.querySelector<HTMLAnchorElement>('.hit'); if (h) location.href = h.href; }
+  });
+  // Keep Tab inside the dialog.
+  panel.addEventListener('keydown', (e) => {
+    if (e.key !== 'Tab') return;
+    const stops = [...panel.querySelectorAll<HTMLElement>('a[href], button, input, [tabindex]:not([tabindex="-1"])')]
+      .filter((el) => el.offsetParent !== null);
+    if (!stops.length) return;
+    const firstStop = stops[0], lastStop = stops[stops.length - 1];
+    if (e.shiftKey && document.activeElement === firstStop) { e.preventDefault(); lastStop.focus(); }
+    else if (!e.shiftKey && document.activeElement === lastStop) { e.preventDefault(); firstStop.focus(); }
   });
   root.addEventListener('click', (e) => {
     const el = e.target as HTMLElement;

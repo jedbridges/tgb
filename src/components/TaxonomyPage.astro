@@ -2,15 +2,17 @@
 import BookCard from './BookCard.astro';
 import { placeholderAuthor, loadCatalog, sortedByAssignment, programCount, type Work } from '~/lib/catalog';
 import { url } from '~/lib/url';
-interface Props { kind: 'themes' | 'genres' | 'eras'; entry: { id: string; data: { label: string; description?: string } }; eyebrow: string; match: (w: Work) => boolean }
-const { kind, entry, eyebrow, match } = Astro.props;
+interface Props { kind: 'themes' | 'genres' | 'eras'; entry: { id: string; data: { label: string; description?: string } }; kindLabel: string; match: (w: Work) => boolean }
+const { kind, entry, kindLabel, match } = Astro.props;
 const { works, authors } = await loadCatalog();
 const list = await sortedByAssignment(works.filter(match));
 const counts = await Promise.all(list.map((w) => programCount(w.id)));
 const param = { themes: 'theme', genres: 'genre', eras: 'era' }[kind];
 ---
 <section class="wrap head">
-  <p class="eyebrow">{eyebrow}</p>
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol><li><a href={url('/')}>The Great Books</a></li><li><a href={url('/books/')}>All books</a></li><li>{kindLabel}</li></ol>
+  </nav>
   <h1 class="italic">{entry.data.label}</h1>
   {entry.data.description && <p class="lede">{entry.data.description}</p>}
   <p class="ui count">{list.length} {list.length === 1 ? 'work' : 'works'} · <a href={url('/books/') + `?${param}=${entry.id}`}>Refine in the browser →</a></p>

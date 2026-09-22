@@ -7,10 +7,11 @@
   --paper-bright: oklch(0.965 0.01 55);  /* raised page (book inner) */
   --ink: #4b4644;                   /* brand ink */
   --ink-strong: oklch(0.22 0.012 40);
-  --ink-soft: oklch(0.52 0.014 40);
-  --ink-mute: oklch(0.66 0.014 45);
-  --accent: #ff4c00;                /* brand accent: the bookmark ribbon */
-  --accent-deep: oklch(0.58 0.2 38);
+  --ink-soft: oklch(0.46 0.015 40);   /* 5.95:1 on paper */
+  --ink-mute: oklch(0.515 0.014 45);  /* 4.70:1 on paper, the quietest text allowed */
+  --accent: #ff4c00;                /* brand accent. Graphic use only: 2.77:1, never text */
+  --accent-deep: oklch(0.52 0.19 37);   /* 4.99:1, the accent when it must carry words */
+  --focus: oklch(0.50 0.19 35);         /* 5.46:1, clears the 3:1 non-text floor */
   --accent-wash: oklch(0.93 0.04 45);
   --shelf-wood: oklch(0.42 0.05 45);
   --shelf-edge: oklch(0.55 0.06 50);
@@ -26,7 +27,7 @@
   --step-2: clamp(1.7rem, 1.5rem + 1vw, 2.2rem);
   --step-3: clamp(2.2rem, 1.8rem + 2vw, 3.2rem);
   --step-4: clamp(2.9rem, 2.1rem + 3.6vw, 5rem);
-  --step-5: clamp(3.6rem, 2.4rem + 6vw, 7.5rem);
+  --step-5: clamp(3.4rem, 2.4rem + 5vw, 6rem);
   --tracking-caps: 0.14em;
 
   /* Space */
@@ -38,7 +39,7 @@
   --s4: clamp(3rem, 2rem + 4vw, 5rem);
   --s5: clamp(4.5rem, 3rem + 7vw, 9rem);
   --gutter: clamp(1rem, 4vw, 3.5rem);
-  --measure: 62ch;
+  --measure: 68ch;
   --page-max: 84rem;
 
   /* Motion */
@@ -47,5 +48,5 @@
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
   --dur-fast: 160ms;
   --dur: 420ms;
-  --dur-slow: 900ms;
+  --dur-slow: 620ms;
 }

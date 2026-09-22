@@ -8,5 +8,5 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 ---
 <Base title={`Great books about ${entry.data.label.toLowerCase()}`} description={`${entry.data.description ?? ''} The works on the great college reading lists that take up ${entry.data.label.toLowerCase()}.`}>
-  <TaxonomyPage kind="themes" entry={entry} eyebrow="Theme" match={(w) => w.data.themes.some((t) => t.id === entry.id)} />
+  <TaxonomyPage kind="themes" entry={entry} kindLabel="Theme" match={(w) => w.data.themes.some((t) => t.id === entry.id)} />
 </Base>

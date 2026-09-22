@@ -33,7 +33,9 @@ const itemList = {
     <span class="visually-hidden" data-pagefind-meta="type:Program"></span>
     <span class="visually-hidden" data-pagefind-meta={`slug:${program.id}`}></span>
     <header class="wrap head">
-      <p class="eyebrow" data-pagefind-ignore><a href={url('/programs/')}>Programs</a></p>
+      <nav class="crumbs" aria-label="Breadcrumb" data-pagefind-ignore>
+        <ol><li><a href={url('/')}>The Great Books</a></li><li><a href={url('/programs/')}>Programs</a></li></ol>
+      </nav>
       <h1 class="italic" data-pagefind-meta="title">{p.name}</h1>
       <div class="head__grid">
         <div class="prose head__desc">{paragraphs.map((t) => <p>{t}</p>)}</div>
@@ -41,13 +43,13 @@ const itemList = {
           <div><dt>Works</dt><dd>{unique}</dd></div>
           <div><dt>{p.segmentLabel}s</dt><dd>{segments.length}</dd></div>
           {p.url && <div><dt>Official list</dt><dd><a href={p.url} rel="noopener" target="_blank">{new URL(p.url).hostname.replace(/^www\./, '')}</a></dd></div>}
-          <div><dt>Source</dt><dd class="facts__src">{p.sourceNote.replace(/https?:\/\/\S+/g, '').replace(/\s+,/g, ',').trim()}</dd></div>
+          <div><dt>Source</dt><dd><details class="facts__src"><summary>How this list was checked</summary><p>{p.sourceNote.replace(/https?:\/\/\S+/g, '').replace(/\s+,/g, ',').replace(/,\s*,/g, ',').trim()}</p></details></dd></div>
         </dl>
       </div>
       {segments.length > 1 && (
         <nav class="segnav ui" aria-label={`${p.segmentLabel}s`}>
           {segments.map((s) => <a href={`#${s.id}`}>{s.label}</a>)}
-          <a class="segnav__browse" href={url('/books/') + `?program=${program.id}`}>Open in the browser →</a>
+          <a class="segnav__browse" href={url('/books/') + `?program=${program.id}`}>Filter the shelf by this program →</a>
         </nav>
       )}
     </header>
@@ -66,7 +68,7 @@ const itemList = {
             return (
               <li class="row">
                 <span class="row__n ui">{i + 1}</span>
-                <a class="row__book" href={workUrl(w.id)} aria-hidden="true" tabindex="-1"><Book3D work={w} authorName={a?.data.name ?? ''} width={54} pull={false} /></a>
+                <a class="row__book" href={workUrl(w.id)} aria-hidden="true" tabindex="-1"><Book3D work={w} authorName={a?.data.name ?? ''} width={54} pull={false} decorative /></a>
                 <span class="row__text">
                   <a class="row__title" href={workUrl(w.id)}>{w.data.title}</a>
                   <span class="row__meta ui">{a && <a href={authorUrl(a.id)}>{a.data.name}</a>} · {yearShort(w)}{it.note && <span class="row__note"> · {it.note}</span>}{it.optional && <span class="row__note"> · optional</span>}</span>
@@ -90,6 +92,8 @@ const itemList = {
   .facts dt { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.1em; text-transform: uppercase; padding-top: 0.15rem; }
   .facts dd { margin: 0; color: var(--ink-strong); }
   .facts__src { color: var(--ink-soft); font-size: var(--step--2); line-height: 1.5; }
+  .facts__src > summary { cursor: pointer; color: var(--ink-soft); min-height: 32px; display: flex; align-items: center; }
+  .facts__src > p { margin-top: 0.4rem; color: var(--ink-mute); }
   .segnav { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s2); margin-top: var(--s3); padding: var(--s1) 0; border-top: 1px solid var(--paper-deeper); border-bottom: 1px solid var(--paper-deeper); position: sticky; top: 3.75rem; background: var(--paper); z-index: 5; }
   .segnav a { text-decoration: none; color: var(--ink-soft); }
   .segnav a:hover { color: var(--ink-strong); }

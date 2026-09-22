@@ -18,10 +18,9 @@ const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flat
 <Base title="The Great Books" description={`The ${works.length} books that college Great Books programs ask students to read, with a guide to each one, its themes, and where to buy it.`} jsonld={websiteLd()} bodyClass="home">
   <section class="hero wrap">
     <div class="hero__text">
-      <p class="eyebrow reveal">St. John's · Columbia · Chicago · Yale · and the canons behind them</p>
-      <h1 class="reveal" style="--i:1">Every book the great <em>reading lists</em> ask you to read.</h1>
-      <p class="hero__lede reveal" style="--i:2">{works.length} works. {programs.length} programs. One shelf. A guide to each book, the themes it turns on, which programs assign it and where to buy the right edition.</p>
-      <div class="hero__actions reveal" style="--i:3">
+      <h1 class="reveal">Every book the great <em>reading lists</em> ask you to read.</h1>
+      <p class="hero__lede reveal" style="--i:1">The reading lists of St. John's, Columbia, Chicago and Yale, and the published canons behind them: {works.length} works on one shelf, with the themes each turns on, which programs assign it, and which edition to buy.</p>
+      <div class="hero__actions reveal" style="--i:2">
         <a class="btn btn--primary" href={url('/books/')}>Browse the shelf</a>
         <button class="btn" type="button" data-open-search>Search inside every book</button>
       </div>
@@ -83,26 +82,27 @@ const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flat
   .hero__actions { display: flex; flex-wrap: wrap; gap: var(--s1); margin-top: var(--s3); }
   .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s2); border-top: 1px solid var(--ink); padding-top: var(--s1); margin-bottom: var(--s3); }
   .section-head h2 { font-size: var(--step-3); }
-  .section-head__more { color: var(--ink-soft); text-decoration: none; }
+  .section-head__more { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-soft); text-decoration: none; }
   .section-head__more:hover { color: var(--accent-deep); }
   .shelf-section, .programs-section, .eras-section, .themes-section { padding-block: var(--s3); }
   .proglist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0 var(--s3); }
-  .prog { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s1); padding: 0.8rem 0; border-bottom: 1px solid var(--paper-deeper); text-decoration: none; }
+  .prog { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s1); min-height: 48px; padding: 0.8rem 0; border-bottom: 1px solid var(--paper-deeper); text-decoration: none; }
   .prog__name { font-size: var(--step-1); color: var(--ink-strong); }
   .prog:hover .prog__name { color: var(--accent-deep); }
   .prog__count { color: var(--ink-mute); font-size: var(--step--2); }
   .timeline { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 3px; align-items: end; }
-  .tl { display: grid; gap: 0.5rem; text-decoration: none; align-content: end; height: 100%; }
-  .tl__bar { display: block; height: calc(18px + var(--f) * 140px); background: var(--paper-deep); border-top: 2px solid var(--ink-mute); transition: background var(--dur-fast), border-color var(--dur-fast); }
-  .tl:hover .tl__bar { background: var(--accent-wash); border-color: var(--accent); }
+  .tl { display: grid; gap: 0.5rem; text-decoration: none; align-content: end; height: 100%; min-height: 44px; }
+  /* Paper-on-paper made this chart invisible until hover. Give it real ink. */
+  .tl__bar { display: block; height: calc(18px + var(--f) * 140px); background: color-mix(in oklch, var(--ink) 18%, var(--paper-deep)); border-top: 2px solid var(--ink); transition: background var(--dur-fast); }
+  .tl:hover .tl__bar { background: var(--accent); }
   .tl__label { font-size: var(--step--1); line-height: 1.15; color: var(--ink-soft); }
   .tl__count { color: var(--ink-mute); font-size: var(--step--2); }
   .themecloud { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; }
-  .themecloud a { font-size: var(--step-2); font-style: italic; text-decoration: none; color: var(--ink-soft); transition: color var(--dur-fast); }
+  .themecloud a { display: inline-flex; align-items: center; min-height: 44px; font-size: var(--step-2); font-style: italic; text-decoration: none; color: var(--ink-soft); transition: color var(--dur-fast); }
   .themecloud a:hover { color: var(--accent-deep); }
   @media (max-width: 860px) {
     .timeline { grid-auto-flow: row; grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)); gap: var(--s1); align-items: stretch; }
-    .tl { grid-template-columns: 3rem minmax(0, 1fr) auto; align-items: center; gap: var(--s1); }
+    .tl { grid-template-columns: 3.5rem minmax(0, 1fr) auto; align-items: center; gap: var(--s1); min-height: 48px; padding: 0.3rem 0; }
     .tl__bar { height: 10px; width: calc(12px + var(--f) * 100%); border-top: 0; border-left: 2px solid var(--ink-mute); }
     .tl__label { font-size: var(--step--2); }
   }

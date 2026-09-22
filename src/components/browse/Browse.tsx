@@ -10,9 +10,17 @@ type Facets = {
 type Sort = 'assigned' | 'chronological' | 'title' | 'author' | 'difficulty';
 interface State {
   q: string; program: string; segment: string; theme: string[]; genre: string; era: string; region: string; language: string;
-  author: string; difficulty: string; length: string; sort: Sort;
+  author: string; difficulty: string; length: string; guide: string; sort: Sort;
 }
-const EMPTY: State = { q: '', program: '', segment: '', theme: [], genre: '', era: '', region: '', language: '', author: '', difficulty: '', length: '', sort: 'assigned' };
+const EMPTY: State = { q: '', program: '', segment: '', theme: [], genre: '', era: '', region: '', language: '', author: '', difficulty: '', length: '', guide: '', sort: 'assigned' };
+
+const DIFFICULTY = ['Approachable', 'Moderate', 'Demanding', 'Difficult', 'Formidable'];
+const LENGTH: Facet[] = [
+  { id: 'short', label: 'Short, under 120 pp' },
+  { id: 'medium', label: 'Medium, 120 to 300 pp' },
+  { id: 'long', label: 'Long, 300 to 700 pp' },
+  { id: 'epic', label: 'Epic, over 700 pp' },
+];
 
 function fromUrl(): State {
   if (typeof location === 'undefined') return EMPTY;
@@ -21,7 +29,8 @@ function fromUrl(): State {
     ...EMPTY,
     q: p.get('q') ?? '', program: p.get('program') ?? '', segment: p.get('segment') ?? '',
     theme: p.getAll('theme'), genre: p.get('genre') ?? '', era: p.get('era') ?? '', region: p.get('region') ?? '',
-    language: p.get('language') ?? '', author: p.get('author') ?? '', difficulty: p.get('difficulty') ?? '', length: p.get('length') ?? '',
+    language: p.get('language') ?? '', author: p.get('author') ?? '', difficulty: p.get('difficulty') ?? '',
+    length: p.get('length') ?? '', guide: p.get('guide') ?? '',
     sort: (p.get('sort') as Sort) || 'assigned',
   };
 }
@@ -45,6 +54,7 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
   const [hits, setHits] = useState<Map<string, number> | null>(null); // slug -> rank when q active
   const [searching, setSearching] = useState(false);
   const [open, setOpen] = useState(false);
+  const [showAllThemes, setShowAllThemes] = useState(false);
   const first = useRef(true);
 
   useEffect(() => { setS(fromUrl()); }, []);
@@ -82,7 +92,8 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
       (!s.language || r.lang === s.language) &&
       (!s.author || r.au === s.author) &&
       (!s.difficulty || String(r.d) === s.difficulty) &&
-      (!s.length || r.l === s.length),
+      (!s.length || r.l === s.length) &&
+      (!s.guide || (s.guide === 'yes' ? r.hg === 1 : r.hg === 0)),
     );
     if (hits) list = list.filter((r) => hits.has(r.s));
     const cmp: Record<Sort, (a: CatalogRow, b: CatalogRow) => number> = {
@@ -104,133 +115,262 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
     grid.querySelectorAll<HTMLElement>('.card[data-slug]').forEach((c) => cards.set(c.dataset.slug!, c));
     const show = new Set(visible.map((r) => r.s));
     cards.forEach((c, slug) => { c.hidden = !show.has(slug); c.style.removeProperty('--i'); });
-    // reorder
     visible.forEach((r, i) => { const c = cards.get(r.s); if (c) { grid.appendChild(c); if (i < 12) c.style.setProperty('--i', String(i)); } });
     const empty = document.getElementById('browse-empty'); if (empty) empty.hidden = visible.length > 0;
-    const count = document.getElementById('browse-count'); if (count) count.textContent = String(visible.length);
     if (first.current) { first.current = false; return; }
     history.replaceState(null, '', toUrl(s));
   }, [visible]);
 
   const set = (patch: Partial<State>) => setS((prev) => ({ ...prev, ...patch }));
   const program = facets.programs.find((p) => p.id === s.program);
-  const active = Object.entries(s).filter(([k, v]) => k !== 'sort' && k !== 'q' && (Array.isArray(v) ? v.length : v)).length;
-  const countFor = (key: keyof CatalogRow, id: string, arr = false) => rows.filter((r) => arr ? (r[key] as string[]).includes(id) : String(r[key]) === id).length;
+  const label = (list: Facet[], id: string) => list.find((x) => x.id === id)?.label ?? id;
 
-  const Select = ({ label, k, opts, all = 'Any' }: { label: string; k: keyof State; opts: Facet[]; all?: string }) => (
-    <label class="f">
-      <span class="f__label">{label}</span>
-      <select value={s[k] as string} onChange={(e) => set({ [k]: (e.target as HTMLSelectElement).value } as any)}>
+  // Every active filter, as one removable list. This is the only place that reports state.
+  const pills: { key: string; label: string; clear: () => void }[] = [];
+  if (s.guide) pills.push({ key: 'guide', label: s.guide === 'yes' ? 'Has a reading guide' : 'Catalogue entry only', clear: () => set({ guide: '' }) });
+  if (s.program) pills.push({ key: 'program', label: label(facets.programs, s.program) + (s.segment && program ? `, ${label(program.segments, s.segment)}` : ''), clear: () => set({ program: '', segment: '' }) });
+  s.theme.forEach((t) => pills.push({ key: `theme-${t}`, label: label(facets.themes, t), clear: () => set({ theme: s.theme.filter((x) => x !== t) }) }));
+  if (s.genre) pills.push({ key: 'genre', label: label(facets.genres, s.genre), clear: () => set({ genre: '' }) });
+  if (s.era) pills.push({ key: 'era', label: label(facets.eras, s.era), clear: () => set({ era: '' }) });
+  if (s.author) pills.push({ key: 'author', label: label(facets.authors, s.author), clear: () => set({ author: '' }) });
+  if (s.difficulty) pills.push({ key: 'difficulty', label: DIFFICULTY[Number(s.difficulty) - 1], clear: () => set({ difficulty: '' }) });
+  if (s.length) pills.push({ key: 'length', label: label(LENGTH, s.length), clear: () => set({ length: '' }) });
+  if (s.region) pills.push({ key: 'region', label: label(facets.regions, s.region), clear: () => set({ region: '' }) });
+  if (s.language) pills.push({ key: 'language', label: label(facets.languages, s.language), clear: () => set({ language: '' }) });
+
+  // Counts on every facet, computed against the other active filters, so a zero-result
+  // combination is visible before it is chosen rather than apologised for afterwards.
+  const countIf = (pred: (r: CatalogRow) => boolean) => {
+    let n = 0;
+    for (const r of rows) {
+      if (!pred(r)) continue;
+      if (s.program && !r.p.includes(s.program)) continue;
+      if (s.era && r.e !== s.era) continue;
+      if (s.genre && !r.g.includes(s.genre)) continue;
+      if (s.guide && (s.guide === 'yes' ? r.hg !== 1 : r.hg !== 0)) continue;
+      n++;
+    }
+    return n;
+  };
+  const guidedTotal = rows.reduce((n, r) => n + r.hg, 0);
+  const themesShown = showAllThemes ? facets.themes : facets.themes.slice(0, 8);
+
+  const Select = ({ label: lbl, k, opts, all }: { label: string; k: keyof State; opts: Facet[]; all: string }) => (
+    <p class="f">
+      <label class="f__label" for={`f-${k}`}>{lbl}</label>
+      <select id={`f-${k}`} value={s[k] as string} onChange={(e) => set({ [k]: (e.target as HTMLSelectElement).value } as any)}>
         <option value="">{all}</option>
         {opts.map((o) => <option value={o.id}>{o.label}</option>)}
       </select>
-    </label>
+    </p>
   );
 
   return (
-    <div class="filters">
-      <div class="filters__search">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5" /><path d="m11 11 3.5 3.5" stroke-linecap="round" /></svg>
-        <input type="search" value={s.q} placeholder="Search titles, authors, summaries…" aria-label="Search books" onInput={(e) => set({ q: (e.target as HTMLInputElement).value })} />
-        {searching && <span class="filters__spin" aria-hidden="true" />}
-      </div>
-      <button class="filters__toggle ui" type="button" aria-expanded={open} onClick={() => setOpen(!open)}>
-        Filters{active ? ` (${active})` : ''} <span aria-hidden="true">{open ? '−' : '+'}</span>
-      </button>
-      <div class={`filters__body${open ? ' is-open' : ''}`}>
-        <label class="f">
-          <span class="f__label">Program</span>
-          <select value={s.program} onChange={(e) => set({ program: (e.target as HTMLSelectElement).value, segment: '' })}>
-            <option value="">All programs</option>
-            {facets.programs.map((p) => <option value={p.id}>{p.label} ({countFor('p', p.id, true)})</option>)}
-          </select>
-        </label>
-        {program && program.segments.length > 1 && (
-          <div class="f">
-            <span class="f__label">Within {program.label}</span>
-            <div class="segs">
-              <button type="button" class={`seg${!s.segment ? ' on' : ''}`} onClick={() => set({ segment: '' })}>All</button>
-              {program.segments.map((sg) => <button type="button" class={`seg${s.segment === sg.id ? ' on' : ''}`} onClick={() => set({ segment: sg.id })}>{sg.label}</button>)}
-            </div>
-          </div>
+    <>
+      {/* Results bar: count, active filters and sort, pinned directly above the grid.
+          Filtering 689 cards with the only readout off-screen reads as a broken control. */}
+      <div class="resultbar" role="status" aria-live="polite">
+        <p class="resultbar__count">
+          <strong>{visible.length}</strong> {visible.length === 1 ? 'book' : 'books'}
+          {visible.length !== total && <span class="resultbar__of"> of {total}</span>}
+          {searching && <span class="resultbar__spin" aria-hidden="true" />}
+        </p>
+        {pills.length > 0 && (
+          <ul class="resultbar__pills">
+            {pills.map((p) => (
+              <li key={p.key}>
+                <button type="button" class="pill" onClick={p.clear}>
+                  {p.label}<span class="pill__x" aria-hidden="true">×</span>
+                  <span class="visually-hidden">, remove this filter</span>
+                </button>
+              </li>
+            ))}
+            <li><button type="button" class="resultbar__clear" onClick={() => set({ ...EMPTY, q: s.q, sort: s.sort })}>Clear all</button></li>
+          </ul>
         )}
-        <div class="f">
-          <span class="f__label">Themes</span>
-          <div class="chips">
-            {facets.themes.map((t) => {
-              const on = s.theme.includes(t.id);
-              return <button type="button" class={`chip${on ? ' on' : ''}`} aria-pressed={on} onClick={() => set({ theme: on ? s.theme.filter((x) => x !== t.id) : [...s.theme, t.id] })}>{t.label}</button>;
-            })}
-          </div>
-        </div>
-        <Select label="Form" k="genre" opts={facets.genres} all="Any form" />
-        <Select label="Era" k="era" opts={facets.eras} all="Any era" />
-        <Select label="Author" k="author" opts={facets.authors} all="Any author" />
-        <div class="f f--row">
-          <label class="f">
-            <span class="f__label">Difficulty</span>
-            <select value={s.difficulty} onChange={(e) => set({ difficulty: (e.target as HTMLSelectElement).value })}>
-              <option value="">Any</option>
-              {['1', '2', '3', '4', '5'].map((d, i) => <option value={d}>{['Approachable', 'Moderate', 'Demanding', 'Difficult', 'Formidable'][i]}</option>)}
-            </select>
-          </label>
-          <label class="f">
-            <span class="f__label">Length</span>
-            <select value={s.length} onChange={(e) => set({ length: (e.target as HTMLSelectElement).value })}>
-              <option value="">Any</option>
-              <option value="short">Short</option><option value="medium">Medium</option><option value="long">Long</option><option value="epic">Epic</option>
-            </select>
-          </label>
-        </div>
-        <details class="more">
-          <summary class="ui">More</summary>
-          <Select label="Region" k="region" opts={facets.regions} all="Anywhere" />
-          <Select label="Original language" k="language" opts={facets.languages} all="Any language" />
-        </details>
-        {active > 0 && <button type="button" class="filters__clear ui" onClick={() => set({ ...EMPTY, q: s.q, sort: s.sort })}>Clear filters</button>}
+        <p class="f f--sort resultbar__sort">
+          <label class="f__label" for="f-sort">Sort</label>
+          <select id="f-sort" value={s.sort} onChange={(e) => set({ sort: (e.target as HTMLSelectElement).value as Sort })}>
+            <option value="assigned">Most assigned</option>
+            <option value="chronological">Chronological</option>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="difficulty">Easiest first</option>
+          </select>
+        </p>
       </div>
-      <label class="f f--sort">
-        <span class="f__label">Sort</span>
-        <select value={s.sort} onChange={(e) => set({ sort: (e.target as HTMLSelectElement).value as Sort })}>
-          <option value="assigned">Most assigned</option>
-          <option value="chronological">Chronological</option>
-          <option value="title">Title</option>
-          <option value="author">Author</option>
-          <option value="difficulty">Easiest first</option>
-        </select>
-      </label>
-      <p class="filters__count ui">{visible.length} of {total}</p>
+
+      <div class="filters">
+        <div class="filters__search">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5" /><path d="m11 11 3.5 3.5" stroke-linecap="round" /></svg>
+          <input id="browse-q" type="search" value={s.q} placeholder="Search titles, authors, summaries…" aria-label="Search inside every book" onInput={(e) => set({ q: (e.target as HTMLInputElement).value })} />
+        </div>
+        <button class="filters__toggle" type="button" aria-expanded={open} aria-controls="filters-body" onClick={() => setOpen(!open)}>
+          <span>Filters{pills.length ? ` (${pills.length})` : ''}</span>
+          <span aria-hidden="true">{open ? '−' : '+'}</span>
+        </button>
+        <div class={`filters__body${open ? ' is-open' : ''}`} id="filters-body">
+          <p class="f">
+            <label class="f__label" for="f-guide">Reading guide</label>
+            <select id="f-guide" value={s.guide} onChange={(e) => set({ guide: (e.target as HTMLSelectElement).value })}>
+              <option value="">Any ({rows.length})</option>
+              <option value="yes">Written ({guidedTotal})</option>
+              <option value="no">Catalogue only ({rows.length - guidedTotal})</option>
+            </select>
+          </p>
+          <p class="f">
+            <label class="f__label" for="f-program">Program</label>
+            <select id="f-program" value={s.program} onChange={(e) => set({ program: (e.target as HTMLSelectElement).value, segment: '' })}>
+              <option value="">All programs</option>
+              {facets.programs.map((p) => <option value={p.id}>{p.label} ({countIf((r) => r.p.includes(p.id))})</option>)}
+            </select>
+          </p>
+          {program && program.segments.length > 1 && (
+            <div class="f">
+              <span class="f__label">Within {program.label}</span>
+              <div class="segs">
+                <button type="button" class={`seg${!s.segment ? ' on' : ''}`} aria-pressed={!s.segment} onClick={() => set({ segment: '' })}>All</button>
+                {program.segments.map((sg) => <button type="button" class={`seg${s.segment === sg.id ? ' on' : ''}`} aria-pressed={s.segment === sg.id} onClick={() => set({ segment: sg.id })}>{sg.label}</button>)}
+              </div>
+            </div>
+          )}
+          <div class="f">
+            <span class="f__label">Themes</span>
+            <div class="chips">
+              {themesShown.map((t) => {
+                const on = s.theme.includes(t.id);
+                const n = countIf((r) => r.th.includes(t.id));
+                return (
+                  <button type="button" class={`chip${on ? ' on' : ''}`} aria-pressed={on} disabled={!on && n === 0}
+                    onClick={() => set({ theme: on ? s.theme.filter((x) => x !== t.id) : [...s.theme, t.id] })}>
+                    {t.label} <span class="chip__n">{n}</span>
+                  </button>
+                );
+              })}
+            </div>
+            {facets.themes.length > 8 && (
+              <button type="button" class="f__more" aria-expanded={showAllThemes} onClick={() => setShowAllThemes(!showAllThemes)}>
+                {showAllThemes ? 'Fewer themes' : `All ${facets.themes.length} themes`}
+              </button>
+            )}
+          </div>
+          <Select label="Form" k="genre" opts={facets.genres} all="Any form" />
+          <Select label="Era" k="era" opts={facets.eras} all="Any era" />
+          <Select label="Author" k="author" opts={facets.authors} all="Any author" />
+          <p class="f">
+            <label class="f__label" for="f-difficulty">Difficulty</label>
+            <select id="f-difficulty" value={s.difficulty} onChange={(e) => set({ difficulty: (e.target as HTMLSelectElement).value })}>
+              <option value="">Any difficulty</option>
+              {DIFFICULTY.map((d, i) => <option value={String(i + 1)}>{d}</option>)}
+            </select>
+          </p>
+          <Select label="Length" k="length" opts={LENGTH} all="Any length" />
+          <details class="more">
+            <summary>Region and language</summary>
+            <Select label="Region" k="region" opts={facets.regions} all="Anywhere" />
+            <Select label="Original language" k="language" opts={facets.languages} all="Any language" />
+          </details>
+          <button type="button" class="filters__done" onClick={() => { setOpen(false); document.getElementById('browse-grid')?.scrollIntoView({ block: 'start' }); }}>
+            Show {visible.length} {visible.length === 1 ? 'book' : 'books'}
+          </button>
+        </div>
+      </div>
       <style>{`
-        .filters { display: grid; gap: var(--s2); position: sticky; top: 4.75rem; }
-        .filters__search { display: flex; align-items: center; gap: 0.6rem; border-bottom: 1px solid var(--ink); padding: 0.4rem 0; color: var(--ink-soft); }
-        .filters__search input { flex: 1; min-width: 0; font-family: var(--font-display); font-size: var(--step-0); background: none; border: 0; outline: 0; color: var(--ink-strong); }
+        .resultbar {
+          grid-area: bar; position: sticky; top: 3.75rem; z-index: 10;
+          display: flex; flex-wrap: wrap; align-items: center; gap: var(--s0) var(--s1);
+          padding: 0.7rem 0; margin-bottom: var(--s1);
+          background: color-mix(in oklch, var(--paper) 92%, transparent);
+          backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+          border-bottom: 1px solid var(--paper-deeper);
+        }
+        .resultbar__count { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); display: flex; align-items: center; gap: 0.5rem; }
+        .resultbar__count strong { font-family: var(--font-display); font-size: var(--step-1); font-weight: 500; color: var(--ink-strong); font-variant-numeric: tabular-nums; }
+        .resultbar__of { color: var(--ink-mute); }
+        .resultbar__spin { width: 9px; height: 9px; border: 2px solid var(--paper-deeper); border-top-color: var(--accent); border-radius: 50%; animation: rbspin 0.8s linear infinite; }
+        @keyframes rbspin { to { transform: rotate(360deg); } }
+        @media (prefers-reduced-motion: reduce) { .resultbar__spin { animation: none; border-top-color: var(--paper-deeper); } }
+        .resultbar__pills { list-style: none; display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0; padding: 0; min-width: 0; }
+        .pill {
+          display: inline-flex; align-items: center; gap: 0.4em;
+          font-family: var(--font-ui); font-size: var(--step--2); line-height: 1;
+          padding: 0.5em 0.7em; border-radius: 999px; min-height: 30px;
+          background: var(--ink); color: var(--paper); border: 1px solid var(--ink);
+          transition: background var(--dur-fast);
+        }
+        .pill:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
+        .pill__x { font-size: 1.15em; line-height: 0; opacity: 0.8; }
+        .resultbar__clear { font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent-deep); text-decoration: underline; text-underline-offset: 0.2em; min-height: 30px; padding: 0 0.2em; }
+        .resultbar__sort { margin-left: auto; display: flex; align-items: baseline; gap: 0.5rem; }
+        .resultbar__sort .f__label { margin: 0; }
+
+        .filters { grid-area: rail; display: grid; gap: var(--s2); align-content: start;
+          position: sticky; top: 7.25rem;
+          /* A sticky panel taller than the viewport pins its own lower half out of reach. */
+          max-height: calc(100dvh - 8.5rem); overflow-y: auto; overscroll-behavior: contain;
+          padding-right: 2px; scrollbar-gutter: stable; min-width: 0;
+        }
+        .filters__search { display: flex; align-items: center; gap: 0.6rem; border-bottom: 1px solid var(--ink); padding: 0.5rem 0; color: var(--ink-soft); min-width: 0; }
+        .filters__search input { flex: 1; min-width: 0; font-family: var(--font-display); font-size: var(--step-0); background: none; border: 0; color: var(--ink-strong); min-height: 32px; }
+        .filters__search input:focus-visible { outline-offset: 1px; }
         .filters__search input::placeholder { color: var(--ink-mute); font-style: italic; }
-        .filters__spin { width: 10px; height: 10px; border: 2px solid var(--paper-deeper); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
-        @keyframes spin { to { transform: rotate(360deg); } }
-        .filters__toggle { display: none; justify-content: space-between; padding: 0.6rem 0; border-bottom: 1px solid var(--paper-deeper); }
-        .filters__body { display: grid; gap: var(--s2); }
-        .f { display: grid; gap: 0.35rem; }
-        .f--row { grid-template-columns: 1fr 1fr; gap: var(--s1); }
-        .f__label { font-family: var(--font-ui); font-size: var(--step--2); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
-        .f select { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-strong); background: transparent; border: 0; border-bottom: 1px solid var(--paper-deeper); padding: 0.4rem 0; border-radius: 0; -webkit-appearance: none; appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--ink-mute) 50%), linear-gradient(135deg, var(--ink-mute) 50%, transparent 50%); background-position: calc(100% - 12px) 55%, calc(100% - 7px) 55%; background-size: 5px 5px; background-repeat: no-repeat; cursor: pointer; }
-        .f select:focus { outline: none; border-bottom-color: var(--accent); }
-        .chips, .segs { display: flex; flex-wrap: wrap; gap: 0.35rem; }
-        .chip, .seg { font-family: var(--font-ui); font-size: var(--step--2); padding: 0.3em 0.65em; border-radius: 999px; border: 1px solid var(--paper-deeper); color: var(--ink-soft); transition: all var(--dur-fast); }
-        .chip:hover, .seg:hover { border-color: var(--ink-mute); color: var(--ink-strong); }
+        .filters__toggle { display: none; width: 100%; justify-content: space-between; align-items: center; gap: var(--s1);
+          font-family: var(--font-ui); font-size: var(--step--1); font-weight: 600; min-height: 46px;
+          padding: 0.6rem 0; border-bottom: 1px solid var(--paper-deeper); }
+        .filters__body { display: grid; gap: var(--s2); min-width: 0; }
+        .f { display: grid; gap: 0.3rem; margin: 0; min-width: 0; }
+        .f__label { font-family: var(--font-ui); font-size: var(--step--2); font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); }
+        .f select {
+          font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-strong);
+          background-color: transparent; border: 0; border-bottom: 1px solid var(--paper-deeper);
+          padding: 0.55rem 1.4rem 0.55rem 0; min-height: 44px; width: 100%; max-width: 100%;
+          border-radius: 0; -webkit-appearance: none; appearance: none; cursor: pointer;
+          background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+          background-position: calc(100% - 11px) 55%, calc(100% - 6px) 55%;
+          background-size: 5px 5px; background-repeat: no-repeat;
+        }
+        .f select:hover { border-bottom-color: var(--ink-mute); }
+        .chips, .segs { display: flex; flex-wrap: wrap; gap: 0.35rem; min-width: 0; }
+        .chip, .seg {
+          display: inline-flex; align-items: center; gap: 0.4em; max-width: 100%;
+          font-family: var(--font-ui); font-size: var(--step--2); line-height: 1;
+          padding: 0.6em 0.75em; min-height: 36px; border-radius: 999px;
+          border: 1px solid var(--paper-deeper); color: var(--ink-soft);
+          transition: border-color var(--dur-fast), color var(--dur-fast), background var(--dur-fast);
+        }
+        .chip:hover:not(:disabled), .seg:hover { border-color: var(--ink-mute); color: var(--ink-strong); }
         .chip.on, .seg.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
-        .more summary { cursor: pointer; color: var(--ink-soft); list-style: none; }
-        .more summary::before { content: '+ '; }
-        .more[open] summary::before { content: '− '; }
+        .chip:disabled { opacity: 0.4; cursor: not-allowed; }
+        .chip__n { font-size: 0.85em; color: var(--ink-mute); font-variant-numeric: tabular-nums; }
+        .chip.on .chip__n { color: color-mix(in oklch, var(--paper) 70%, transparent); }
+        .f__more, .more > summary {
+          display: flex; align-items: center;
+          font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-soft);
+          justify-self: start; min-height: 44px; text-decoration: underline; text-underline-offset: 0.2em; cursor: pointer;
+        }
+        .more > summary { list-style: none; text-decoration: none; }
+        .more > summary::-webkit-details-marker { display: none; }
+        .more > summary::before { content: '+ '; }
+        .more[open] > summary::before { content: '− '; }
         .more > .f { margin-top: var(--s1); }
-        .filters__clear { justify-self: start; color: var(--accent-deep); text-decoration: underline; text-underline-offset: 0.15em; }
-        .filters__count { color: var(--ink-mute); font-size: var(--step--2); }
+        .filters__done { display: none; }
+
         @media (max-width: 860px) {
-          .filters { position: static; }
+          .filters { position: static; max-height: none; overflow: visible; }
+          .resultbar { top: 3.25rem; }
           .filters__toggle { display: flex; }
           .filters__body { display: none; }
-          .filters__body.is-open { display: grid; }
+          .filters__body.is-open { display: grid; padding-bottom: var(--s1); }
+          /* A filter sheet with no way out and no count is a trap. */
+          .filters__done {
+            display: block; position: sticky; bottom: 0; z-index: 2;
+            font-family: var(--font-ui); font-size: var(--step--1); font-weight: 600;
+            min-height: 48px; width: 100%; margin-top: var(--s1);
+            background: var(--ink); color: var(--paper); border-radius: 3px;
+          }
+          .resultbar__sort { margin-left: 0; }
         }
       `}</style>
-    </div>
+    </>
   );
 }

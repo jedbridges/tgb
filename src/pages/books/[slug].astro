@@ -6,9 +6,10 @@ import Book3D from '~/components/Book3D.astro';
 import BookCard from '~/components/BookCard.astro';
 import BuyButtons from '~/components/BuyButtons.astro';
 import ProgramBadges from '~/components/ProgramBadges.astro';
-import { placeholderAuthor, authorOf, coverFor, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, loadCatalog } from '~/lib/catalog';
+import { placeholderAuthor, authorOf, coverFor, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, guidedCount, loadCatalog } from '~/lib/catalog';
 import { authorUrl, taxUrl, url, workUrl } from '~/lib/url';
 import { bookLd, breadcrumbs } from '~/lib/seo';
+import { amazonUrl } from '~/lib/affiliates';
 import { toneFor } from '~/lib/tone';
 
 export async function getStaticPaths() {
@@ -23,6 +24,9 @@ const og = image ? (await getImage({ src: image, width: 800, format: 'jpg' })).s
 const related = await relatedWorks(work);
 const { authors } = await loadCatalog();
 const count = await programCount(work.id);
+const guided = await guidedCount();
+const hasGuideHere = work.data.status !== 'stub';
+const hasNamedEdition = Boolean(work.data.recommendedEdition?.translator || work.data.recommendedEdition?.publisher);
 const d = work.data;
 const [era, genre, region, language] = await Promise.all([
   getEntry('eras', d.era.id), getEntry('genres', d.genre.id), getEntry('regions', d.region.id), getEntry('languages', d.language.id),
@@ -49,29 +53,36 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
         <p class="work__hint ui" aria-hidden="true">Click the book to open it</p>
       </div>
       <div class="work__head">
-        <p class="eyebrow reveal" data-pagefind-ignore><a href={url('/books/')}>The Great Books</a> · {count > 0 ? `On ${count} ${count === 1 ? 'list' : 'lists'}` : 'Catalogue'}</p>
-        <h1 class="reveal" style="--i:1" data-pagefind-meta="title">{d.title}</h1>
-        {d.subtitle && <p class="work__subtitle reveal" style="--i:2">{d.subtitle}</p>}
-        <p class="work__by reveal" style="--i:2">by <a href={authorUrl(author.id)}>{author.data.name}</a>{d.originalTitle && <span class="work__orig"> · <span lang={langCode[d.language.id]}>{d.originalTitle}</span></span>}</p>
-        <dl class="work__facts ui reveal" style="--i:3" data-pagefind-ignore>
+        <nav class="crumbs reveal" aria-label="Breadcrumb" data-pagefind-ignore>
+          <ol><li><a href={url('/')}>The Great Books</a></li><li><a href={url('/books/')}>All books</a></li></ol>
+        </nav>
+        <h1 class="reveal" data-pagefind-meta="title">{d.title}</h1>
+        {d.subtitle && <p class="work__subtitle reveal" style="--i:1">{d.subtitle}</p>}
+        <p class="work__by reveal" style="--i:1">by <a href={authorUrl(author.id)}>{author.data.name}</a>{d.originalTitle && <span class="work__orig"> · <span lang={langCode[d.language.id]}>{d.originalTitle}</span></span>}</p>
+        {count > 0 && <p class="work__assigned reveal" style="--i:1">Assigned by <strong>{count}</strong> of the 9 reading lists{hasGuideHere ? '' : ', catalogue entry only'}</p>}
+        <dl class="work__facts ui reveal" style="--i:2" data-pagefind-ignore>
           <div><dt>Written</dt><dd>{yearLabel(work)}</dd></div>
           <div><dt>Era</dt><dd><a href={taxUrl('eras', d.era.id)}>{era?.data.label}</a></dd></div>
           <div><dt>Form</dt><dd><a href={taxUrl('genres', d.genre.id)}>{genre?.data.label}</a></dd></div>
           <div><dt>Language</dt><dd>{language?.data.label}</dd></div>
-          <div><dt>Length</dt><dd title={lengthHint[d.length]}>{lengthLabel[d.length]}{d.pages && <span class="work__pages"> · {d.pages} pp</span>}</dd></div>
-          <div><dt>Difficulty</dt><dd><span class="dots" aria-hidden="true">{[1, 2, 3, 4, 5].map((i) => <i class:list={{ on: i <= d.difficulty }}></i>)}</span> {difficultyLabel(d.difficulty)}</dd></div>
+          <div><dt>Length</dt><dd>{lengthLabel[d.length]}{d.pages && <span class="work__pages"> · {d.pages} pp</span>}<span class="work__gloss-note">{lengthHint[d.length]}</span></dd></div>
+          <div><dt>Difficulty</dt><dd><span class="dots" aria-hidden="true">{[1, 2, 3, 4, 5].map((i) => <i class:list={{ on: i <= d.difficulty }}></i>)}</span> {difficultyLabel(d.difficulty)}<span class="work__gloss-note">{d.difficulty} of 5 for a first-year reader</span></dd></div>
         </dl>
-        <p class="work__synopsis reveal" style="--i:4">{d.synopsis}</p>
-        <div class="reveal" style="--i:5" data-pagefind-ignore><BuyButtons work={work} authorName={author.data.name} /></div>
+        <div id="buy-inline" data-pagefind-ignore><BuyButtons work={work} authorName={author.data.name} /></div>
+        <p class="work__synopsis" style="--i:3">{d.synopsis}</p>
       </div>
     </header>
 
     <div class="wrap work__grid">
       <div class="work__main">
         {isStub ? (
-          <section class="prose work__stub">
-            <h2>Reading guide in progress</h2>
-            <p>The full guide to <em>{d.title}</em> is being written. The catalogue entry, program placements and buy links above are complete.</p>
+          <section class="work__stub">
+            <h2 class="work__h">No reading guide yet</h2>
+            <p>The catalogue entry above is complete: the dates, the form, the themes and every program that assigns <em>{d.title}</em> are verified against each program's published list.</p>
+            <p>What is missing is the part that takes real work: the summary, the key passages, and a recommended translation. {hasNamedEdition
+              ? <>The edition named below is the one most programs assign, so the buy links are useful already.</>
+              : <>That includes a recommended translation, so for now the buy links search the retailer rather than pointing at a chosen edition.</>}</p>
+            <p class="work__stub-out"><a href={url('/books/') + '?guide=yes'}>Browse the {guided} works that do have a guide →</a></p>
           </section>
         ) : (
           <>
@@ -118,34 +129,44 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
         <span class="visually-hidden" data-pagefind-weight="0.4">{[d.originalTitle, ...d.aliases, ...d.keywords, ...author.data.aliases].filter(Boolean).join(', ')}</span>
       </div>
 
-      <aside class="work__side" data-pagefind-ignore>
+      <aside class="work__side" aria-labelledby="side-h" data-pagefind-ignore>
+        <h2 class="visually-hidden" id="side-h">Where this book sits</h2>
         <section>
-          <h2 class="side__h eyebrow">Assigned in</h2>
+          <h3 class="side__h">Assigned in</h3>
           <ProgramBadges slug={work.id} />
         </section>
         <section>
-          <h2 class="side__h eyebrow">Themes</h2>
-          <ul class="chips">{themeEntries.map((t) => t && <li><a class="tag" href={taxUrl('themes', t.id)}>{t.data.label}</a></li>)}</ul>
+          <h3 class="side__h">Themes</h3>
+          <ul class="chips">{themeEntries.map((t) => t && <li><a class="tag tag--theme" href={taxUrl('themes', t.id)}>{t.data.label}</a></li>)}</ul>
         </section>
         <section>
-          <h2 class="side__h eyebrow">Tags</h2>
+          <h3 class="side__h">Tags</h3>
           <ul class="chips">
-            <li><a class="tag" href={taxUrl('genres', d.genre.id)}>{genre?.data.label}</a></li>
-            {d.genres.map((g) => <li><a class="tag" href={taxUrl('genres', g.id)}>{g.id.replace(/-/g, ' ')}</a></li>)}
-            <li><a class="tag" href={taxUrl('eras', d.era.id)}>{era?.data.label}</a></li>
-            <li><a class="tag" href={url(`/books/`) + `?region=${d.region.id}`}>{region?.data.label}</a></li>
-            <li><a class="tag" href={url(`/books/`) + `?language=${d.language.id}`}>{language?.data.label}</a></li>
-            <li><a class="tag" href={url(`/books/`) + `?difficulty=${d.difficulty}`}>{difficultyLabel(d.difficulty)}</a></li>
-            <li><a class="tag" href={url(`/books/`) + `?length=${d.length}`}>{lengthLabel[d.length]}</a></li>
+            <li><a class="tag tag--facet" href={taxUrl('genres', d.genre.id)}>{genre?.data.label}</a></li>
+            {d.genres.map((g) => <li><a class="tag tag--facet" href={taxUrl('genres', g.id)}>{g.id.replace(/-/g, ' ')}</a></li>)}
+            <li><a class="tag tag--facet" href={taxUrl('eras', d.era.id)}>{era?.data.label}</a></li>
+            <li><a class="tag tag--facet" href={url(`/books/`) + `?region=${d.region.id}`}>{region?.data.label}</a></li>
+            <li><a class="tag tag--facet" href={url(`/books/`) + `?language=${d.language.id}`}>{language?.data.label}</a></li>
+            <li><a class="tag tag--facet" href={url(`/books/`) + `?difficulty=${d.difficulty}`}>{difficultyLabel(d.difficulty)}</a></li>
+            <li><a class="tag tag--facet" href={url(`/books/`) + `?length=${d.length}`}>{lengthLabel[d.length]}</a></li>
           </ul>
         </section>
         {d.otherEditions.length > 0 && (
           <section>
-            <h2 class="side__h eyebrow">Other editions</h2>
+            <h3 class="side__h">Other editions</h3>
             <ul class="editions ui">{d.otherEditions.map((e) => <li>{e.title ?? d.title}{e.translator && `, trans. ${e.translator}`}{e.publisher && ` (${e.publisher})`}{e.why && <span class="editions__why"> {e.why}</span>}</li>)}</ul>
           </section>
         )}
       </aside>
+    </div>
+
+    <div class="buybar" id="buybar" data-pagefind-ignore hidden>
+      <span class="buybar__what">
+        <span class="buybar__title">{d.title}</span>
+        <span class="buybar__ed">{d.recommendedEdition?.translator ? `${d.recommendedEdition.translator} translation` : 'No edition recommended yet'}</span>
+      </span>
+      <a class="btn btn--accent buybar__cta" href={amazonUrl({ title: d.recommendedEdition?.title ?? d.title, author: author.data.name, isbn13: d.recommendedEdition?.isbn13, asin: d.recommendedEdition?.asin })}
+         target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id}>Buy<span class="visually-hidden">&#32;{d.title} on Amazon, opens in a new tab</span></a>
     </div>
 
     {related.length > 0 && (
@@ -160,7 +181,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
 </Base>
 <style>
   .work__hero { display: grid; grid-template-columns: minmax(260px, 2fr) 3fr; gap: var(--s4); padding-block: var(--s4) var(--s3); align-items: start; }
-  .work__stage { position: sticky; top: 5rem; align-self: start; display: grid; justify-items: center; gap: var(--s2); padding: var(--s3) 0 var(--s1); }
+  .work__stage { position: sticky; top: 5rem; align-self: start; display: grid; justify-items: center; gap: var(--s2); padding: var(--s3) 0 var(--s1); max-height: calc(100dvh - 6rem); }
   .work__hint { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.06em; text-transform: uppercase; }
   @media (hover: none) { .work__hint { display: none; } }
   .work__head { display: grid; gap: var(--s1); align-content: start; }
@@ -169,13 +190,17 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .work__by { font-size: var(--step-1); color: var(--ink-soft); }
   .work__by a { color: var(--ink-strong); }
   .work__orig { color: var(--ink-mute); }
-  .work__facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: var(--s1) var(--s2); margin: var(--s1) 0; padding: var(--s1) 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--paper-deeper); }
+  .work__assigned { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); }
+  .work__assigned strong { font-family: var(--font-display); font-size: var(--step-1); font-weight: 500; color: var(--ink-strong); font-variant-numeric: tabular-nums; }
+  .work__facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s2); margin: var(--s1) 0; padding: var(--s2) 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--paper-deeper); }
+  @media (max-width: 620px) { .work__facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .work__facts div { display: grid; gap: 0.15rem; }
   .work__facts dt { font-size: var(--step--2); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
   .work__facts dd { margin: 0; color: var(--ink-strong); font-size: var(--step--1); }
   .work__facts dd a { text-decoration: none; }
   .work__facts dd a:hover { color: var(--accent-deep); }
   .work__pages { color: var(--ink-mute); }
+  .work__gloss-note { display: block; color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0; text-transform: none; margin-top: 0.15rem; }
   .dots { display: inline-flex; gap: 3px; vertical-align: middle; margin-right: 0.3em; }
   .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--paper-deeper); }
   .dots i.on { background: var(--accent); }
@@ -183,8 +208,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .work__grid { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: var(--s4); padding-block: var(--s3); border-top: 1px solid var(--paper-deeper); }
   .work__main { display: grid; gap: var(--s4); min-width: 0; }
   .work__h { font-style: italic; font-size: var(--step-2); margin-bottom: var(--s2); }
-  .work__why { position: relative; padding-left: var(--s2); }
-  .work__why::before { content: ''; position: absolute; left: 0; top: 0.4rem; bottom: 0.4rem; width: 3px; background: var(--accent); }
+  .work__why { padding: var(--s2) var(--s2) var(--s2) 0; border-top: 1px solid var(--ink); }
   .work__why-text { font-size: var(--step-1); line-height: 1.45; max-width: var(--measure); text-wrap: pretty; }
   .themes { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: var(--s2) var(--s3); margin: 0; }
   .themes__item dt { font-size: var(--step-1); }
@@ -195,17 +219,55 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .highlights__list blockquote { margin: 0; padding-left: var(--s2); border-left: 2px solid var(--accent); font-size: var(--step-1); line-height: 1.35; font-style: italic; }
   .highlights__list blockquote footer { margin-top: 0.6rem; color: var(--ink-mute); font-size: var(--step--2); font-style: normal; letter-spacing: 0.04em; }
   .highlights__note { margin-top: var(--s1); padding-left: var(--s2); color: var(--ink-soft); line-height: 1.5; }
-  .work__side { display: grid; gap: var(--s3); align-content: start; align-self: start; position: sticky; top: 5rem; container-type: inline-size; }
-  .side__h { margin-bottom: var(--s1); }
+  .work__side {
+    display: grid; gap: var(--s3); align-content: start; align-self: start;
+    position: sticky; top: 5rem; container-type: inline-size;
+    /* A sticky panel taller than the viewport pins its own lower half out of reach. */
+    max-height: calc(100dvh - 6rem); overflow-y: auto; overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+  .side__h { margin-bottom: var(--s1); font-family: var(--font-ui); font-size: var(--step--2); font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-soft); }
   .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .editions { margin: 0; padding-left: 1em; color: var(--ink-soft); display: grid; gap: 0.5rem; font-size: var(--step--2); }
   .editions__why { color: var(--ink-mute); }
   .related { padding-top: var(--s4); border-top: 1px solid var(--paper-deeper); }
-  .work__stub { padding: var(--s2); background: var(--paper-deep); border-radius: 4px; }
+  .work__stub { display: grid; gap: var(--s1); max-width: var(--measure); }
+  .work__stub p { color: var(--ink-soft); line-height: 1.6; }
+  .work__stub-out { margin-top: var(--s1); }
+  .work__stub-out a { color: var(--accent-deep); font-family: var(--font-ui); font-size: var(--step--1); text-decoration: none; border-bottom: 1px solid currentColor; }
+  .buybar {
+    position: fixed; inset: auto 0 0 0; z-index: 30; display: none;
+    align-items: center; gap: var(--s1);
+    padding: 0.6rem var(--gutter) calc(0.6rem + env(safe-area-inset-bottom));
+    background: color-mix(in oklch, var(--paper) 94%, transparent);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid var(--ink);
+  }
+  .buybar__what { display: grid; gap: 0.05rem; min-width: 0; flex: 1; }
+  .buybar__title { font-size: var(--step-0); line-height: 1.15; color: var(--ink-strong); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .buybar__ed { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .buybar__cta { flex: 0 0 auto; padding-inline: 1.4em; }
   @media (max-width: 900px) {
+    .buybar:not([hidden]) { display: flex; }
+    .work { padding-bottom: 5.5rem; }
     .work__hero { grid-template-columns: 1fr; gap: var(--s2); }
     .work__stage { position: static; padding-top: var(--s2); }
     .work__grid { grid-template-columns: 1fr; }
     .work__side { position: static; }
   }
 </style>
+<script>
+  // Show the sticky buy bar only once the inline action has scrolled away, so the two never compete.
+  const inline = document.getElementById('buy-inline');
+  const bar = document.getElementById('buybar');
+  if (inline && bar) {
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(
+        ([entry]) => { bar.hidden = entry.isIntersecting || entry.boundingClientRect.top > 0; },
+        { rootMargin: '-72px 0px 0px 0px' },
+      ).observe(inline);
+    } else {
+      bar.hidden = false;
+    }
+  }
+</script>
