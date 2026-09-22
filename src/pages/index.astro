@@ -14,11 +14,39 @@ const eras = (await getCollection('eras')).sort((a, b) => (a.data.order ?? 0) - 
 const eraCounts = new Map(eras.map((e) => [e.id, works.filter((w) => w.data.era.id === e.id).length]));
 const eraMax = Math.max(1, ...eraCounts.values());
 const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flatMap((s) => s.items.map((i) => i.work.id))).size;
+
+/**
+ * The cycling word is not decoration: each one is true of what is actually on the shelf,
+ * and the order alternates register so it never settles into a rhythm. Counts are the
+ * works carrying that theme or form in the catalogue.
+ */
+const HEADLINE_WORDS = [
+  'argument',   // knowledge, 251 works
+  'poetry',     // lyric and epic
+  'tragedy',    // 34 tragedies
+  'doubt',      // the self
+  'faith',      // 239
+  'rebellion',  // liberty, 104
+  'wonder',     // nature and the cosmos, 178
+  'grief',      // mortality, 114
+  'comedy',     // 29
+  'justice',    // 148
+  'desire',     // love, 149
+  'exile',      // home and exile
+];
 ---
 <Base title="The Great Books" description={`The ${works.length} books that college Great Books programs ask students to read, with a guide to each one, its themes, and where to buy it.`} jsonld={websiteLd()} bodyClass="home">
   <section class="hero wrap">
     <div class="hero__text">
-      <h1 class="reveal">Three thousand years of reading, on <em>one shelf</em>.</h1>
+      <h1 class="reveal hero__h1">
+        <span class="hero__lead">Three thousand years of</span>
+        <span class="rotator" data-rotator aria-hidden="true">
+          {HEADLINE_WORDS.map((w, i) => (
+            <em class="rotator__word" data-active={i === 0 ? '' : undefined}>{w}</em>
+          ))}
+        </span>
+        <span class="visually-hidden">{HEADLINE_WORDS[0]}, and everything else the great reading lists assign.</span>
+      </h1>
       <p class="hero__lede reveal" style="--i:1">The great books list, assembled from all nine of them: St. John's, Columbia, Chicago, Yale and the published canons behind them. {works.length} works, with a guide to each, the themes it turns on, and the edition worth buying.</p>
       <div class="hero__actions reveal" style="--i:2">
         <a class="btn btn--primary" href={url('/books/')}>Browse the shelf</a>
@@ -73,11 +101,78 @@ const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flat
     </ul>
   </section>
 </Base>
+<script>
+  // The headline names what is on the shelf. It is decoration only in the sense that the
+  // page reads perfectly with the first word standing still, which is what happens when
+  // scripting is off, when motion is reduced, and whenever the hero is not on screen.
+  const rotator = document.querySelector<HTMLElement>('[data-rotator]');
+  const words = rotator ? [...rotator.querySelectorAll<HTMLElement>('.rotator__word')] : [];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+
+  if (rotator && words.length > 1) {
+    let i = 0;
+    let timer: number | undefined;
+    let onScreen = true;
+
+    const show = (next: number) => {
+      words[i].removeAttribute('data-active');
+      i = next % words.length;
+      words[i].setAttribute('data-active', '');
+    };
+    const running = () => onScreen && !document.hidden && !reduce.matches;
+    const stop = () => { clearInterval(timer); timer = undefined; };
+    const start = () => {
+      stop();
+      if (!running()) return;
+      timer = window.setInterval(() => show(i + 1), 2600);
+    };
+
+    document.addEventListener('visibilitychange', start);
+    reduce.addEventListener('change', () => { if (reduce.matches) { show(0); stop(); } else start(); });
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; start(); }, { threshold: 0.1 }).observe(rotator);
+    }
+    start();
+  }
+</script>
 <style>
   .hero { padding-block: var(--s5) var(--s4); }
   .hero__text { max-width: 44rem; }
-  .hero h1 { font-size: var(--step-5); line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
-  .hero h1 em { color: var(--accent-deep); }
+  /* Exactly two lines at every width: the lead never wraps, and the size is tied to the
+     viewport so the longest line always fits rather than breaking where it likes. */
+  .hero__h1 {
+    display: grid; justify-items: start;
+    font-size: clamp(1.6rem, 8vw, 6rem);
+    line-height: var(--lh-display);
+    letter-spacing: var(--tracking-display);
+    text-wrap: nowrap;
+  }
+  .hero__lead { display: block; white-space: nowrap; }
+  .rotator { white-space: nowrap; }
+
+  /* The words stack in one grid cell, so the slot is always as wide as the longest of them
+     and the headline never reflows as they change. Nothing here animates layout. */
+  .rotator { display: inline-grid; grid-template-areas: 'w'; }
+  .rotator__word {
+    grid-area: w;
+    color: var(--accent-deep);
+    font-style: italic;
+    opacity: 0;
+    transform: translateY(0.34em);
+    filter: blur(6px);
+    transition: opacity 260ms var(--ease-out), transform 260ms var(--ease-out), filter 260ms var(--ease-out);
+  }
+  /* Entrances are slower than exits, so a word arrives with weight and leaves without fuss. */
+  .rotator__word[data-active] {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: opacity 520ms var(--ease-out-expo), transform 600ms var(--ease-out-expo), filter 420ms var(--ease-out-expo);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .rotator__word { transition: opacity 160ms linear; transform: none; filter: none; }
+    .rotator__word[data-active] { transition: opacity 160ms linear; }
+  }
   .hero__lede { margin-top: var(--s2); font-size: var(--step-1); line-height: var(--lh-tight-prose); color: var(--ink-soft); max-width: 50ch; text-wrap: pretty; }
   .hero__actions { display: flex; flex-wrap: wrap; gap: var(--s1); margin-top: var(--s3); }
   @media (max-width: 700px) {
