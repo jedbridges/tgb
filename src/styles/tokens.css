@@ -20,15 +20,27 @@
   /* Type */
   --font-display: 'Cormorant Garamond Variable', 'Cormorant Garamond', Georgia, serif;
   --font-ui: 'DM Sans Variable', 'DM Sans', system-ui, sans-serif;
-  --step--2: clamp(0.72rem, 0.7rem + 0.1vw, 0.78rem);
-  --step--1: clamp(0.84rem, 0.82rem + 0.15vw, 0.92rem);
-  --step-0: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
-  --step-1: clamp(1.3rem, 1.2rem + 0.6vw, 1.6rem);
-  --step-2: clamp(1.7rem, 1.5rem + 1vw, 2.2rem);
+  /* Size ramp. The floor was raised: --step--2 is the most-used size on the site, so at
+     ~12px it was setting most of the interface in the smallest type available. */
+  --step--2: clamp(0.8rem, 0.78rem + 0.1vw, 0.86rem);    /* ~13-14px: labels, metadata */
+  --step--1: clamp(0.9rem, 0.87rem + 0.15vw, 1rem);      /* ~14-16px: controls, UI */
+  --step-0: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);        /* ~17-19px: prose */
+  --step-1: clamp(1.3rem, 1.2rem + 0.6vw, 1.6rem);       /* lede, work titles */
+  --step-2: clamp(1.7rem, 1.5rem + 1vw, 2.2rem);         /* section headings */
   --step-3: clamp(2.2rem, 1.8rem + 2vw, 3.2rem);
-  --step-4: clamp(2.9rem, 2.1rem + 3.6vw, 5rem);
-  --step-5: clamp(3.4rem, 2.4rem + 5vw, 6rem);
+  --step-4: clamp(2.9rem, 2.1rem + 3.6vw, 5rem);         /* page titles */
+  --step-5: clamp(3.4rem, 2.4rem + 5vw, 6rem);           /* hero only */
+
+  /* Leading, tuned to role rather than one universal ratio. Wider measures get more. */
+  --lh-display: 0.98;   /* hero, where the line is short and the size is large */
+  --lh-title: 1.08;     /* page and work titles */
+  --lh-heading: 1.2;    /* section headings */
+  --lh-ui: 1.35;        /* controls and labels, which wrap rarely */
+  --lh-prose: 1.6;      /* running text at the 68ch measure */
+  --lh-tight-prose: 1.45; /* short prose set larger: ledes, synopses */
+
   --tracking-caps: 0.14em;
+  --tracking-display: -0.02em;  /* large Cormorant needs pulling in */
 
   /* Space */
   --s-1: 0.25rem;

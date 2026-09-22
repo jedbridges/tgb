@@ -37,7 +37,7 @@ const facets = {
       <div class="shelf-grid browse__grid" id="browse-grid">
         {sorted.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} eager={i < 6} programCount={rows[i].pc} hasGuide={guideFlags[i]} index={Math.min(i, 12)} />)}
       </div>
-      <p class="browse__empty" id="browse-empty" hidden>Nothing matches all of those at once. Remove a filter above, or try a different word.</p>
+      <p class="browse__empty" id="browse-empty" hidden>No book on the shelf answers to all of that at once. Loosen a filter above, or try a different word.</p>
       <div id="browse-end" tabindex="-1"></div>
     </div>
   </section>
@@ -48,7 +48,7 @@ const facets = {
   .browse-head__lede { margin-top: var(--s1); font-size: var(--step-1); color: var(--ink-soft); max-width: 50ch; }
   .browse {
     display: grid; grid-template-columns: 17rem minmax(0, 1fr); gap: 0 var(--s3);
-    grid-template-areas: 'bar bar' 'rail results';
+    grid-template-areas: 'search bar' 'rail results';
     align-items: start; padding-bottom: var(--s4);
   }
   .browse__results { grid-area: results; min-width: 0; }
@@ -58,5 +58,6 @@ const facets = {
   .browse__skip { position: absolute; left: -9999px; font-family: var(--font-ui); font-size: var(--step--2); }
   .browse__skip:focus { position: static; display: inline-block; margin-bottom: var(--s1); color: var(--accent-deep); }
   #browse-end:focus { outline: none; }
-  @media (max-width: 860px) { .browse { grid-template-columns: 1fr; grid-template-areas: 'bar' 'rail' 'results'; } }
+  /* On a phone: search first, then the count and sort, then filters, then the shelf. */
+  @media (max-width: 860px) { .browse { grid-template-columns: 1fr; grid-template-areas: 'search' 'bar' 'rail' 'results'; } }
 </style>

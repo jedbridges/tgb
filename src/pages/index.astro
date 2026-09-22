@@ -18,8 +18,8 @@ const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flat
 <Base title="The Great Books" description={`The ${works.length} books that college Great Books programs ask students to read, with a guide to each one, its themes, and where to buy it.`} jsonld={websiteLd()} bodyClass="home">
   <section class="hero wrap">
     <div class="hero__text">
-      <h1 class="reveal">Every book the great <em>reading lists</em> ask you to read.</h1>
-      <p class="hero__lede reveal" style="--i:1">The reading lists of St. John's, Columbia, Chicago and Yale, and the published canons behind them: {works.length} works on one shelf, with the themes each turns on, which programs assign it, and which edition to buy.</p>
+      <h1 class="reveal">Every great books list, on <em>one shelf</em>.</h1>
+      <p class="hero__lede reveal" style="--i:1">St. John's, Columbia, Chicago, Yale, and the published canons behind them. {works.length} works, with a guide to each book, the themes it turns on, every program that assigns it, and the edition worth buying.</p>
       <div class="hero__actions reveal" style="--i:2">
         <a class="btn btn--primary" href={url('/books/')}>Browse the shelf</a>
         <button class="btn" type="button" data-open-search>Search inside every book</button>
@@ -76,10 +76,14 @@ const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flat
 <style>
   .hero { padding-block: var(--s5) var(--s4); }
   .hero__text { max-width: 44rem; }
-  .hero h1 { font-size: var(--step-5); line-height: 0.95; letter-spacing: -0.02em; margin-top: var(--s1); }
+  .hero h1 { font-size: var(--step-5); line-height: var(--lh-display); letter-spacing: var(--tracking-display); }
   .hero h1 em { color: var(--accent-deep); }
-  .hero__lede { margin-top: var(--s2); font-size: var(--step-1); line-height: 1.45; color: var(--ink-soft); max-width: 48ch; text-wrap: pretty; }
+  .hero__lede { margin-top: var(--s2); font-size: var(--step-1); line-height: var(--lh-tight-prose); color: var(--ink-soft); max-width: 50ch; text-wrap: pretty; }
   .hero__actions { display: flex; flex-wrap: wrap; gap: var(--s1); margin-top: var(--s3); }
+  @media (max-width: 700px) {
+    .hero__actions { display: grid; grid-template-columns: 1fr; gap: 0.7rem; }
+    .hero__actions .btn { width: 100%; min-height: 54px; }
+  }
   .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s2); border-top: 1px solid var(--ink); padding-top: var(--s1); margin-bottom: var(--s3); }
   .section-head h2 { font-size: var(--step-3); }
   .section-head__more { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-soft); text-decoration: none; }

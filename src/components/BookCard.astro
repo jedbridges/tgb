@@ -39,8 +39,8 @@ const { work, authorName, width = 140, eager = false, programCount, hasGuide = f
     margin: -1px 0 0;
   }
   .card__meta { padding: var(--s1) var(--s0) var(--s2); display: grid; gap: 0.15rem; align-content: start; }
-  .card__title { font-size: var(--step-0); line-height: 1.2; color: var(--ink-strong); text-wrap: balance; transition: color var(--dur-fast); }
-  .card__author { color: var(--ink-soft); font-family: var(--font-ui); font-size: var(--step--2); letter-spacing: 0.02em; }
+  .card__title { font-size: var(--step-0); line-height: var(--lh-heading); color: var(--ink-strong); text-wrap: balance; transition: color var(--dur-fast); }
+  .card__author { color: var(--ink-soft); font-family: var(--font-ui); font-size: var(--step--2); line-height: var(--lh-ui); letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
   .card__tail { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem; margin-top: 0.2rem; }
   .card__count { color: var(--ink-mute); font-family: var(--font-ui); font-size: var(--step--2); }
   /* The one thing a reader most wants to know before clicking: is there anything written here? */

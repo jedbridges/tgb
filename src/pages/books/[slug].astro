@@ -166,7 +166,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
         <span class="buybar__ed">{d.recommendedEdition?.translator ? `${d.recommendedEdition.translator} translation` : 'No edition recommended yet'}</span>
       </span>
       <a class="btn btn--accent buybar__cta" href={amazonUrl({ title: d.recommendedEdition?.title ?? d.title, author: author.data.name, isbn13: d.recommendedEdition?.isbn13, asin: d.recommendedEdition?.asin })}
-         target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id}>Buy<span class="visually-hidden">&#32;{d.title} on Amazon, opens in a new tab</span></a>
+         target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id}>Buy the book<span class="visually-hidden">&#32;{d.title} on Amazon, opens in a new tab</span></a>
     </div>
 
     {related.length > 0 && (
@@ -181,11 +181,12 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
 </Base>
 <style>
   .work__hero { display: grid; grid-template-columns: minmax(260px, 2fr) 3fr; gap: var(--s4); padding-block: var(--s4) var(--s3); align-items: start; }
+  .work__stage .book__front { view-transition-name: book-cover; }
   .work__stage { position: sticky; top: 5rem; align-self: start; display: grid; justify-items: center; gap: var(--s2); padding: var(--s3) 0 var(--s1); max-height: calc(100dvh - 6rem); }
   .work__hint { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.06em; text-transform: uppercase; }
   @media (hover: none) { .work__hint { display: none; } }
   .work__head { display: grid; gap: var(--s1); align-content: start; }
-  .work__head h1 { font-style: italic; font-size: var(--step-4); line-height: 0.98; }
+  .work__head h1 { font-style: italic; font-size: var(--step-4); line-height: var(--lh-title); letter-spacing: var(--tracking-display); }
   .work__subtitle { font-size: var(--step-1); color: var(--ink-soft); font-style: italic; margin-top: -0.4rem; }
   .work__by { font-size: var(--step-1); color: var(--ink-soft); }
   .work__by a { color: var(--ink-strong); }
@@ -204,21 +205,21 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .dots { display: inline-flex; gap: 3px; vertical-align: middle; margin-right: 0.3em; }
   .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--paper-deeper); }
   .dots i.on { background: var(--accent); }
-  .work__synopsis { font-size: var(--step-1); line-height: 1.45; max-width: 58ch; text-wrap: pretty; }
+  .work__synopsis { font-size: var(--step-1); line-height: var(--lh-tight-prose); max-width: 60ch; text-wrap: pretty; }
   .work__grid { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: var(--s4); padding-block: var(--s3); border-top: 1px solid var(--paper-deeper); }
   .work__main { display: grid; gap: var(--s4); min-width: 0; }
   .work__h { font-style: italic; font-size: var(--step-2); margin-bottom: var(--s2); }
   .work__why { padding: var(--s2) var(--s2) var(--s2) 0; border-top: 1px solid var(--ink); }
-  .work__why-text { font-size: var(--step-1); line-height: 1.45; max-width: var(--measure); text-wrap: pretty; }
+  .work__why-text { font-size: var(--step-1); line-height: var(--lh-tight-prose); max-width: var(--measure); text-wrap: pretty; }
   .themes { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: var(--s2) var(--s3); margin: 0; }
   .themes__item dt { font-size: var(--step-1); }
   .themes__item dt a { text-decoration: none; border-bottom: 1px solid var(--accent); }
-  .themes__item dd { margin: 0.35rem 0 0; color: var(--ink-soft); line-height: 1.5; }
+  .themes__item dd { margin: 0.35rem 0 0; color: var(--ink-soft); line-height: var(--lh-prose); max-width: 46ch; }
   .highlights__list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s3); }
   .highlights__list li { max-width: var(--measure); }
-  .highlights__list blockquote { margin: 0; padding-left: var(--s2); border-left: 2px solid var(--accent); font-size: var(--step-1); line-height: 1.35; font-style: italic; }
+  .highlights__list blockquote { margin: 0; padding-left: var(--s2); border-left: 1px solid var(--accent); font-size: var(--step-1); line-height: var(--lh-tight-prose); font-style: italic; }
   .highlights__list blockquote footer { margin-top: 0.6rem; color: var(--ink-mute); font-size: var(--step--2); font-style: normal; letter-spacing: 0.04em; }
-  .highlights__note { margin-top: var(--s1); padding-left: var(--s2); color: var(--ink-soft); line-height: 1.5; }
+  .highlights__note { margin-top: var(--s1); padding-left: var(--s2); color: var(--ink-soft); line-height: var(--lh-prose); max-width: 56ch; }
   .work__side {
     display: grid; gap: var(--s3); align-content: start; align-self: start;
     position: sticky; top: 5rem; container-type: inline-size;
@@ -238,18 +239,20 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .buybar {
     position: fixed; inset: auto 0 0 0; z-index: 30; display: none;
     align-items: center; gap: var(--s1);
-    padding: 0.6rem var(--gutter) calc(0.6rem + env(safe-area-inset-bottom));
+    padding: 0.85rem var(--gutter) calc(0.85rem + env(safe-area-inset-bottom));
     background: color-mix(in oklch, var(--paper) 94%, transparent);
     backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
     border-top: 1px solid var(--ink);
   }
   .buybar__what { display: grid; gap: 0.05rem; min-width: 0; flex: 1; }
-  .buybar__title { font-size: var(--step-0); line-height: 1.15; color: var(--ink-strong); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .buybar__ed { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .buybar__cta { flex: 0 0 auto; padding-inline: 1.4em; }
+  .buybar__title { font-size: var(--step-1); line-height: 1.15; color: var(--ink-strong); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .buybar__ed { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  /* This is the page's action on a phone, so it is sized like one. */
+  .buybar__cta { flex: 0 0 auto; min-height: 60px; padding-inline: 1.9em; font-size: var(--step-0); border-radius: 4px; }
+  @media (max-width: 420px) { .buybar__cta { padding-inline: 1.3em; } .buybar__title { font-size: var(--step-0); } }
   @media (max-width: 900px) {
     .buybar:not([hidden]) { display: flex; }
-    .work { padding-bottom: 5.5rem; }
+    .work { padding-bottom: 7rem; }
     .work__hero { grid-template-columns: 1fr; gap: var(--s2); }
     .work__stage { position: static; padding-top: var(--s2); }
     .work__grid { grid-template-columns: 1fr; }

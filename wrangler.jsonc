@@ -6,5 +6,15 @@
     "directory": "./dist",
     "not_found_handling": "404-page",
     "html_handling": "auto-trailing-slash"
-  }
+  },
+  // The site lives on its own domain. Leaving the workers.dev hostname enabled
+  // would serve a second, fully crawlable copy competing with the real one.
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "greatbookslist.com", "custom_domain": true },
+    // Custom Domains match an exact hostname, so the apex route does not answer
+    // for www. Attaching www too means the address resolves instead of failing;
+    // every page canonicalises to the apex, so search engines consolidate there.
+    { "pattern": "www.greatbookslist.com", "custom_domain": true }
+  ]
 }

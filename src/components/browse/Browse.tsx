@@ -167,6 +167,14 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
 
   return (
     <>
+      {/* Search leads: it is the fastest way into 689 works. Sort sits with the count,
+          and the filters come after both. */}
+      <div class="browse-search">
+        <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5" /><path d="m11 11 3.5 3.5" stroke-linecap="round" /></svg>
+        <input id="browse-q" type="search" value={s.q} placeholder="Search titles, authors, summaries…" aria-label="Search inside every book" onInput={(e) => set({ q: (e.target as HTMLInputElement).value })} />
+        {s.q && <button type="button" class="browse-search__clear" onClick={() => set({ q: '' })} aria-label="Clear search">×</button>}
+      </div>
+
       {/* Results bar: count, active filters and sort, pinned directly above the grid.
           Filtering 689 cards with the only readout off-screen reads as a broken control. */}
       <div class="resultbar" role="status" aria-live="polite">
@@ -201,10 +209,6 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
       </div>
 
       <div class="filters">
-        <div class="filters__search">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5" /><path d="m11 11 3.5 3.5" stroke-linecap="round" /></svg>
-          <input id="browse-q" type="search" value={s.q} placeholder="Search titles, authors, summaries…" aria-label="Search inside every book" onInput={(e) => set({ q: (e.target as HTMLInputElement).value })} />
-        </div>
         <button class="filters__toggle" type="button" aria-expanded={open} aria-controls="filters-body" onClick={() => setOpen(!open)}>
           <span>Filters{pills.length ? ` (${pills.length})` : ''}</span>
           <span aria-hidden="true">{open ? '−' : '+'}</span>
@@ -278,13 +282,13 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
       <style>{`
         .resultbar {
           grid-area: bar; position: sticky; top: 3.75rem; z-index: 10;
-          display: flex; flex-wrap: wrap; align-items: center; gap: var(--s0) var(--s1);
+          display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s0) var(--s1);
           padding: 0.7rem 0; margin-bottom: var(--s1);
           background: color-mix(in oklch, var(--paper) 92%, transparent);
           backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
           border-bottom: 1px solid var(--paper-deeper);
         }
-        .resultbar__count { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); display: flex; align-items: center; gap: 0.5rem; }
+        .resultbar__count { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); display: flex; align-items: baseline; gap: 0.4rem; }
         .resultbar__count strong { font-family: var(--font-display); font-size: var(--step-1); font-weight: 500; color: var(--ink-strong); font-variant-numeric: tabular-nums; }
         .resultbar__of { color: var(--ink-mute); }
         .resultbar__spin { width: 9px; height: 9px; border: 2px solid var(--paper-deeper); border-top-color: var(--accent); border-radius: 50%; animation: rbspin 0.8s linear infinite; }
@@ -301,19 +305,29 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
         .pill:hover { background: var(--accent-deep); border-color: var(--accent-deep); }
         .pill__x { font-size: 1.15em; line-height: 0; opacity: 0.8; }
         .resultbar__clear { font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent-deep); text-decoration: underline; text-underline-offset: 0.2em; min-height: 30px; padding: 0 0.2em; }
-        .resultbar__sort { margin-left: auto; display: flex; align-items: baseline; gap: 0.5rem; }
-        .resultbar__sort .f__label { margin: 0; }
+        .resultbar .f--sort { margin-left: auto; display: flex; align-items: baseline; gap: 0.5rem; width: auto; }
+        .resultbar .f--sort .f__label { margin: 0; white-space: nowrap; }
+        .resultbar .f--sort select { width: auto; min-width: 9.5rem; padding-block: 0.35rem; min-height: 36px; }
 
         .filters { grid-area: rail; display: grid; gap: var(--s2); align-content: start;
-          position: sticky; top: 7.25rem;
+          position: sticky; top: 8.25rem;
           /* A sticky panel taller than the viewport pins its own lower half out of reach. */
           max-height: calc(100dvh - 8.5rem); overflow-y: auto; overscroll-behavior: contain;
           padding-right: 2px; scrollbar-gutter: stable; min-width: 0;
         }
-        .filters__search { display: flex; align-items: center; gap: 0.6rem; border-bottom: 1px solid var(--ink); padding: 0.5rem 0; color: var(--ink-soft); min-width: 0; }
-        .filters__search input { flex: 1; min-width: 0; font-family: var(--font-display); font-size: var(--step-0); background: none; border: 0; color: var(--ink-strong); min-height: 32px; }
-        .filters__search input:focus-visible { outline-offset: 1px; }
-        .filters__search input::placeholder { color: var(--ink-mute); font-style: italic; }
+        .browse-search {
+          grid-area: search; display: flex; align-items: center; gap: 0.7rem; min-width: 0;
+          border-bottom: 1px solid var(--ink); padding: 0.45rem 0; color: var(--ink-soft);
+        }
+        .browse-search input {
+          flex: 1; min-width: 0; font-family: var(--font-display); font-size: var(--step-1);
+          background: none; border: 0; color: var(--ink-strong); min-height: 44px;
+        }
+        .browse-search input:focus-visible { outline-offset: 1px; }
+        .browse-search input::placeholder { color: var(--ink-mute); font-style: italic; }
+        .browse-search input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+        .browse-search__clear { font-size: var(--step-1); line-height: 1; color: var(--ink-mute); min-width: 44px; min-height: 44px; }
+        .browse-search__clear:hover { color: var(--accent-deep); }
         .filters__toggle { display: none; width: 100%; justify-content: space-between; align-items: center; gap: var(--s1);
           font-family: var(--font-ui); font-size: var(--step--1); font-weight: 600; min-height: 46px;
           padding: 0.6rem 0; border-bottom: 1px solid var(--paper-deeper); }
@@ -368,7 +382,14 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
             min-height: 48px; width: 100%; margin-top: var(--s1);
             background: var(--ink); color: var(--paper); border-radius: 3px;
           }
-          .resultbar__sort { margin-left: 0; }
+          .resultbar {
+            display: grid; grid-template-columns: auto 1fr;
+            grid-template-areas: 'count sort' 'pills pills';
+            align-items: baseline; column-gap: var(--s1); row-gap: var(--s0);
+          }
+          .resultbar__count { grid-area: count; }
+          .resultbar .f--sort { grid-area: sort; justify-self: end; margin-left: 0; }
+          .resultbar__pills { grid-area: pills; }
         }
       `}</style>
     </>

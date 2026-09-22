@@ -1,3 +1,14 @@
+@view-transition { navigation: auto; }
+
+/* The book carried from the shelf to its page is the same object, so it morphs rather
+   than cutting. Only the clicked cover is named, set by script at click time, because a
+   view-transition-name must be unique in the document and the shelf holds 689 of them. */
+::view-transition-group(book-cover) { animation-duration: 420ms; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+::view-transition-old(book-cover), ::view-transition-new(book-cover) { animation: none; mix-blend-mode: normal; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}
+
 /* A book as a CSS 3D object. All sizing flows from --w (width) and --ratio (h/w), depth from --d. */
 .book {
   --w: 150px;
@@ -81,6 +92,12 @@
 .book__inner .epigraph { font-family: var(--font-display); font-style: italic; font-size: calc(var(--w) * 0.075); line-height: 1.25; text-wrap: pretty; text-align: left; }
 .book__inner .epigraph-src { font-family: var(--font-ui); font-size: calc(var(--w) * 0.045); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin-top: 0.8em; text-align: left; }
 .book__inner::after { content: ''; position: absolute; left: 12%; right: 8%; bottom: 8%; border-top: 1px solid color-mix(in oklch, var(--ink-mute) 35%, transparent); }
+/* Fallback first leaf for a work with no recorded passage: a title page, never a blank. */
+.book__inner .titlepage { display: grid; justify-items: center; text-align: center; gap: 0.5em; width: 100%; padding-inline: 4%; }
+.book__inner .titlepage__title { font-family: var(--font-display); font-style: italic; font-size: calc(var(--w) * 0.082); line-height: 1.15; color: var(--ink-strong); text-wrap: balance; }
+.book__inner .titlepage__rule { width: 28%; border-top: 1px solid color-mix(in oklch, var(--ink-mute) 55%, transparent); margin-block: 0.4em; }
+.book__inner .titlepage__author { font-family: var(--font-ui); font-size: calc(var(--w) * 0.045); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-soft); }
+.book__inner .titlepage__year { font-family: var(--font-ui); font-size: calc(var(--w) * 0.04); letter-spacing: 0.08em; color: var(--ink-mute); }
 .book__spine {
   width: var(--d); left: calc(var(--d) / -2);
   transform: rotateY(-90deg);
@@ -89,6 +106,7 @@
   color: var(--spine-ink);
   display: flex; align-items: center; justify-content: center;
   border-radius: 2px 0 0 2px;
+  overflow: hidden;
 }
 .book__spine-text {
   writing-mode: vertical-rl;
@@ -96,7 +114,8 @@
   font-size: clamp(8px, calc(var(--d) * 0.42), 15px);
   letter-spacing: 0.06em;
   white-space: nowrap;
-  max-height: 90%;
+  max-height: calc(var(--h) * 0.88);
+  max-inline-size: calc(var(--h) * 0.88);
   overflow: hidden; text-overflow: ellipsis;
   font-variant: small-caps;
   opacity: 0.95;
@@ -149,10 +168,21 @@
   }
   .card:hover .book[data-pull] .book__gloss, .book[data-pull]:hover .book__gloss { opacity: 1; }
   .card:hover .book[data-pull] .book__shadow, .book[data-pull]:hover .book__shadow { transform: translate(calc(var(--w) * -0.02), 10px) scale(1.2, 1.9); opacity: 0.85; }
+  /* A book leaving the shelf leaves a gap, and the books either side tip into it.
+     Two elements move, and only while a neighbour is actually hovered. */
+  .card:hover + .card .book__body { --ry: 30deg; --tx: -3px; }
+  .card:has(+ .card:hover) .book__body { --ry: 15deg; --tx: 3px; }
   .book[data-tilting] .book__body { transition-duration: 120ms; }
 }
 .book[data-state='open'] .book__body { --ry: -8deg; --rx: 0deg; --tx: calc(var(--w) * 0.44); }
 .book[data-state='open'] .book__front { transform: translateZ(calc(var(--d) / 2)) rotateY(-162deg); }
+/* The first leaf settles as the cover clears it, so the text arrives with the page
+   rather than sitting there waiting to be uncovered. */
+.book__inner > * { opacity: 0; transform: translateY(6px); transition: opacity 260ms var(--ease-out) 240ms, transform 320ms var(--ease-out-expo) 240ms; }
+.book[data-state='open'] .book__inner > * { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .book__inner > * { transition: none; opacity: 1; transform: none; }
+}
 .book[data-state='open'] .book__gloss { opacity: 0; }
 .book[data-state='open'] .book__shadow { transform: translateX(calc(var(--w) * -0.25)) scaleX(1.5); }
 .book--button { cursor: pointer; }

@@ -1,0 +1,41 @@
+---
+/**
+ * The 2019 brand mark, from design/logo.svg in the original repository.
+ * Four blocks reading as an open spread: three stacked page curves on the right,
+ * one full leaf on the left. Inked with currentColor so it takes the surrounding text colour.
+ */
+interface Props { size?: number; class?: string; title?: string; tone?: string }
+/** The 2019 mark was drawn in the brand ink, #4B4644, the same brown the masthead uses. */
+const { size = 22, class: cls, title, tone = 'var(--ink)' } = Astro.props;
+// Original artboard is 1681.625 x 965.685, so height drives the width.
+const width = Math.round((size * 1681.625) / 965.685);
+---
+<svg
+  class:list={['logo', cls]}
+  width={width}
+  height={size}
+  viewBox="0 0 1681.625 965.685"
+  fill="currentColor"
+  style={`color:${tone}`}
+  role={title ? 'img' : undefined}
+  aria-label={title}
+  aria-hidden={title ? undefined : 'true'}
+  focusable="false"
+>
+  <g class="logo__leaves">
+    <path d="M1681.625,391.685c-220.914-220.913-579.086-220.913-800,0v-226c220.914-220.913,579.086-220.913,800,0Z" />
+    <path d="M1681.625,965.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z" />
+    <path d="M1681.625,678.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z" />
+  </g>
+  <path class="logo__board" d="M800,965.685c-220.914-220.914-579.086-220.914-800,0v-800c220.914-220.913,579.086-220.913,800,0Z" />
+</svg>
+<style>
+  .logo { display: block; flex: 0 0 auto; }
+  /* The three leaves lift in sequence, like a spread being opened. */
+  .logo__leaves path { transform-box: fill-box; transform-origin: left center; transition: transform var(--dur) var(--ease-out); }
+  :global(a:hover) > .logo .logo__leaves path:nth-child(1) { transform: translateY(-5%); }
+  :global(a:hover) > .logo .logo__leaves path:nth-child(3) { transform: translateY(-2.5%); }
+  @media (prefers-reduced-motion: reduce) {
+    .logo__leaves path { transition: none; }
+  }
+</style>

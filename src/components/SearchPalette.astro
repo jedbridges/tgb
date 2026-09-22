@@ -21,7 +21,7 @@
   .palette__form { display: flex; align-items: center; gap: 0.8rem; padding: 0.9rem 1.1rem; border-bottom: 1px solid var(--paper-deeper); color: var(--ink-soft); }
   .palette__form input { flex: 1; font-family: var(--font-display); font-size: var(--step-1); background: none; border: 0; outline: 0; color: var(--ink-strong); min-width: 0; }
   .palette__form input::placeholder { color: var(--ink-mute); font-style: italic; }
-  .palette__form kbd { font-size: 0.7rem; color: var(--ink-mute); border: 1px solid var(--paper-deeper); border-radius: 4px; padding: 0.1em 0.4em; }
+  .palette__form kbd { font-size: var(--step--2); color: var(--ink-mute); border: 1px solid var(--paper-deeper); border-radius: 4px; padding: 0.1em 0.4em; }
   .palette__results { max-height: min(60vh, 32rem); overflow-y: auto; }
   .palette__results:empty { display: none; }
   .palette__hint { padding: 0.8rem 1.1rem; color: var(--ink-mute); font-size: var(--step--2); }
@@ -29,7 +29,7 @@
   .palette__results :global(.hit) { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; padding: 0.7rem 1.1rem; text-decoration: none; align-items: center; border-left: 2px solid transparent; }
   .palette__results :global(.hit[aria-selected='true']), .palette__results :global(.hit:hover) { background: var(--paper); border-left-color: var(--accent); }
   .palette__results :global(.hit__cover) { width: 2.4rem; aspect-ratio: 2/3; object-fit: cover; border-radius: 1px; box-shadow: 0 1px 3px rgb(var(--shadow-ink) / 0.3); background: var(--paper-deep); }
-  .palette__results :global(.hit__type) { font-family: var(--font-ui); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
+  .palette__results :global(.hit__type) { font-family: var(--font-ui); font-size: var(--step--2); font-weight: 600; line-height: var(--lh-ui); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); }
   .palette__results :global(.hit__title) { font-size: var(--step-0); color: var(--ink-strong); line-height: 1.2; }
   .palette__results :global(.hit__title mark) { background: var(--accent-wash); color: inherit; }
   .palette__results :global(.hit__sub) { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-soft); }

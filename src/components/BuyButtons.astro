@@ -1,5 +1,5 @@
 ---
-import { amazonUrl, bookshopUrl } from '~/lib/affiliates';
+import { amazonUrl, bookshopUrl, isbn13ToAsin } from '~/lib/affiliates';
 import Disclosure from './Disclosure.astro';
 import type { Work } from '~/lib/catalog';
 interface Props { work: Work; authorName: string; compact?: boolean }
@@ -9,7 +9,7 @@ const target = { title: ed?.title ?? work.data.title, author: authorName, isbn13
 /** A recommendation only exists if we can name the edition. Otherwise the links are a search,
  *  and saying so is the difference between a recommendation and a guess. */
 const named = Boolean(ed && (ed.translator || ed.publisher));
-const precise = Boolean(ed?.isbn13 || ed?.asin);
+const precise = Boolean(ed?.asin || isbn13ToAsin(ed?.isbn13));
 const editionName = ed?.translator ? `${ed.translator} translation` : ed?.publisher ? `${ed.publisher} edition` : null;
 ---
 <div class:list={['buy', { 'buy--compact': compact }]}>
@@ -45,11 +45,14 @@ const editionName = ed?.translator ? `${ed.translator} translation` : ed?.publis
   </div>
 
   {work.data.otherEditions.length > 0 && (
-    <p class="buy__alts">
-      Also good: {work.data.otherEditions.map((e, i) => (
-        <>{i > 0 && '; '}<span class="buy__alt">{e.translator ?? e.publisher ?? e.title}</span>{e.why && <span class="buy__alt-why"> {e.why}</span>}</>
-      ))}
-    </p>
+    <div class="buy__alts">
+      <p class="buy__alts-label">Also good</p>
+      <ul>
+        {work.data.otherEditions.map((e) => (
+          <li><span class="buy__alt">{e.translator ?? e.publisher ?? e.title}</span>{e.why && <>. {e.why}</>}</li>
+        ))}
+      </ul>
+    </div>
   )}
 
   {!compact && <Disclosure />}
@@ -63,7 +66,14 @@ const editionName = ed?.translator ? `${ed.translator} translation` : ed?.publis
   .buy__why { color: var(--ink-soft); font-size: var(--step--1); line-height: 1.5; margin-top: 0.25rem; }
   .buy__lede--none .buy__why { max-width: 42ch; }
   .buy__row { display: flex; flex-wrap: wrap; gap: var(--s0); }
+  @media (max-width: 700px) {
+    .buy { max-width: none; }
+    .buy__row { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+    .buy__row .btn { width: 100%; min-height: 52px; font-size: var(--step--1); }
+  }
   .btn__ext { opacity: 0.65; }
-  .buy__alts { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); line-height: 1.5; }
-  .buy__alt { color: var(--ink-soft); }
+  .buy__alts { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); line-height: 1.55; }
+  .buy__alts-label { font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); margin-bottom: 0.3rem; }
+  .buy__alts ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+  .buy__alt { color: var(--ink-soft); font-weight: 600; }
 </style>
