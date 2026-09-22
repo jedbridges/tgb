@@ -26,18 +26,21 @@ ok(`${pages.length} html pages`);
 for (const f of ['index.html', '404.html', 'sitemap-index.xml']) existsSync(join(dist, f)) ? ok(f) : fail(`${f} missing`);
 
 const tag = process.env.AMAZON_ASSOCIATE_TAG?.trim();
+const shop = process.env.BOOKSHOP_AFFILIATE_ID?.trim();
 const books = pages.filter((p) => /\/books\/[^/]+\/index\.html$/.test(p));
-let jsonldBad = 0, tagBad = 0, imgBad = 0;
+let jsonldBad = 0, tagBad = 0, shopBad = 0, imgBad = 0;
 for (const p of books) {
   const html = readFileSync(p, 'utf8');
   const lds = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
   try { lds.forEach((m) => JSON.parse(m[1])); if (!lds.some((m) => m[1].includes('"Book"'))) jsonldBad++; } catch { jsonldBad++; }
   if (tag && !html.includes(`tag=${tag}`)) tagBad++;
+  if (shop && !html.includes(`bookshop.org/a/${shop}/`) && !html.includes(`affiliate=${shop}`)) shopBad++;
   for (const img of html.matchAll(/<img\b[^>]*>/g)) if (!/\bwidth=/.test(img[0]) || !/\bheight=/.test(img[0])) imgBad++;
 }
 books.length ? ok(`${books.length} book pages`) : console.log('· no book pages yet');
 jsonldBad ? fail(`${jsonldBad} book pages with missing/invalid Book JSON-LD`) : books.length && ok('Book JSON-LD present and valid');
-tagBad ? fail(`${tagBad} book pages missing affiliate tag`) : tag && ok('affiliate tag on every book page');
+tagBad ? fail(`${tagBad} book pages missing affiliate tag`) : tag && ok('Amazon tag on every book page');
+shopBad ? fail(`${shopBad} book pages missing the Bookshop affiliate id`) : shop && ok('Bookshop id on every book page');
 imgBad ? fail(`${imgBad} <img> without width/height`) : ok('all <img> have dimensions');
 // A workers.dev URL is only wrong when it is NOT the configured origin, i.e. a stale hardcode
 // left behind after moving to a custom domain.
