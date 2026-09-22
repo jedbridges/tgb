@@ -1,7 +1,7 @@
 /**
  * Builds the share card and the icons.
  *
- * The headline is set in the site's own face, Cormorant Garamond, by converting the text
+ * The headline is set in the site's own face, Gambetta, by converting the text
  * to outlines with opentype.js. sharp renders SVG through librsvg, which only sees fonts
  * installed on the machine, so embedding a webfont would silently fall back to a system
  * serif. Outlines make the card look identical everywhere and install nothing.
@@ -10,26 +10,26 @@
  */
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import sharp from 'sharp';
-import opentype from 'opentype.js';
+import opentype, { type Font } from 'opentype.js';
 
 const RED = '#a81f00';       // deep enough that cream type clears AA comfortably
 const CREAM = '#f4ece6';
 const W = 1200, H = 630;
 
 const FONTS = {
-  italic: '.cache/fonts/CormorantGaramond-Italic[wght].ttf',
-  roman: '.cache/fonts/CormorantGaramond[wght].ttf',
+  italic: '.cache/fonts/Gambetta-400i.ttf',
+  roman: '.cache/fonts/Gambetta-400.ttf',
 };
 for (const p of Object.values(FONTS)) {
   if (!existsSync(p)) throw new Error(`Missing ${p}. Fetch the TTFs from google/fonts first.`);
 }
 
-/** Variable TTFs expose the default instance to opentype.js, which is what we want here. */
+/** Static TTFs from Fontshare, the same outlines the site serves as woff2. */
 const load = (p: string) => opentype.parse(readFileSync(p).buffer.slice(0) as ArrayBuffer);
 const italic = load(FONTS.italic);
 const roman = load(FONTS.roman);
 
-interface Line { font: opentype.Font; text: string; size: number; x: number; y: number; letterSpacing?: number; opacity?: number }
+interface Line { font: Font; text: string; size: number; x: number; y: number; letterSpacing?: number; opacity?: number }
 
 /** Outline one line and report its measured width, so the caller can centre or rule to it. */
 function line({ font, text, size, x, y, letterSpacing = 0, opacity = 1 }: Line) {
@@ -49,7 +49,7 @@ const MARK = (x: number, y: number, scale: number, opacity = 1) => `<g transform
 // and one line of fact. Everything hangs off the same left edge and the block is centred
 // vertically, so the card is balanced rather than top-heavy.
 const M = 104;
-const wordmark = line({ font: italic, text: 'The Great Books', size: 132, x: M, y: 372 });
+const wordmark = line({ font: italic, text: 'The Great Books', size: 118, x: M, y: 368 });
 const strap = line({
   font: roman, text: '689 works · nine reading lists', size: 40, x: M, y: 452, opacity: 0.86,
 });

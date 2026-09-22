@@ -1,34 +1,48 @@
 @view-transition { navigation: auto; }
 
 /* Taking a book off the shelf.
-   The cover the reader tapped is the only thing that survives the navigation: the shelf
-   around it falls back and blurs away, the book travels and grows into the page it belongs
-   to, and the page it lands on rises up behind it. The cover is a named element, so the
-   browser carries the real pixels across the two documents rather than cross-fading them. */
+   The cover the reader tapped is the only thing that survives the navigation: it travels
+   and grows into the page it belongs to while the shelf fades behind it.
+
+   Two things make this read as one object rather than as two pictures of one. The book is
+   squared up before the snapshot is taken, in the click handler, because a snapshot of a
+   face inside a rotateY is a projected, foreshortened image and the browser then
+   interpolates it against a flat one. And the outgoing page is not blurred: animating a
+   filter over a full-page snapshot re-renders the whole thing every frame, which is what
+   made this stutter. */
 ::view-transition-group(book-cover) {
-  animation-duration: 520ms;
+  animation-duration: 460ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 20;   /* the book stays above the page falling away behind it */
 }
+/* The two covers are the same picture at two sizes, so they are held at full strength and
+   only the last moments are blended, which hides the difference in crop without ever
+   showing one image through the other. */
+::view-transition-old(book-cover) {
+  animation: 200ms 200ms cubic-bezier(0.4, 0, 1, 1) both vt-cover-out;
+}
+::view-transition-new(book-cover) {
+  animation: 260ms cubic-bezier(0.16, 1, 0.3, 1) both vt-cover-in;
+}
 ::view-transition-old(book-cover),
 ::view-transition-new(book-cover) {
-  animation: none;              /* no cross-fade: this is one object moving, not two images */
-  mix-blend-mode: normal;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; height: 100%; object-fit: cover; mix-blend-mode: normal;
 }
-/* The shelf recedes: a touch of scale and blur reads as moving past it, not as a fade. */
+@keyframes vt-cover-out { to { opacity: 0; } }
+@keyframes vt-cover-in { from { opacity: 0; } }
+
+/* The shelf falls back a little and fades. No blur: see above. */
 ::view-transition-old(root) {
-  animation: 300ms cubic-bezier(0.4, 0, 1, 1) both vt-shelf-recede;
+  animation: 220ms cubic-bezier(0.4, 0, 1, 1) both vt-shelf-recede;
 }
 ::view-transition-new(root) {
-  animation: 460ms 80ms cubic-bezier(0.16, 1, 0.3, 1) both vt-page-arrive;
+  animation: 340ms 60ms cubic-bezier(0.16, 1, 0.3, 1) both vt-page-arrive;
 }
 @keyframes vt-shelf-recede {
-  to { opacity: 0; transform: scale(0.97); filter: blur(3px); }
+  to { opacity: 0; transform: scale(0.985); }
 }
 @keyframes vt-page-arrive {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(8px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -69,6 +83,20 @@
   transition: transform var(--dur) var(--ease-out-expo);
 }
 .book__face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+/* Set for one frame before a navigation, so the cover is snapshotted flat and square on.
+   !important because it has to beat every hover and pull state at once, and there is no
+   transition on it: the squaring happens in the frame the snapshot is taken, not as an
+   animation the reader watches. */
+.book__body[data-vt='flat'] {
+  transform: none !important;
+  transition: none !important;
+}
+.book__body[data-vt='flat'] .book__front { transform: none !important; }
+.book__body[data-vt='flat'] .book__spine,
+.book__body[data-vt='flat'] .book__pages,
+.book__body[data-vt='flat'] .book__top,
+.book__body[data-vt='flat'] .book__back,
+.book__body[data-vt='flat'] .book__gloss { opacity: 0 !important; }
 .book__front {
   transform: translateZ(calc(var(--d) / 2));
   transform-origin: left center;
@@ -150,7 +178,7 @@
   font-variant: small-caps;
   opacity: 0.95;
 }
-.book__spine-text b { font-weight: 600; }
+.book__spine-text b { font-weight: 500; }
 .book__spine-text i { font-style: italic; font-variant: normal; }
 .book__pages {
   width: calc(var(--d) - 3px); right: calc((var(--d) - 3px) / -2); top: 2px; bottom: 2px;
@@ -167,7 +195,7 @@
 
 .book__shadow {
   position: absolute; left: 6%; right: -4%; bottom: -5%; height: 9%;
-  background: radial-gradient(ellipse at 45% 50%, rgb(var(--shadow-ink) / 0.55), rgb(var(--shadow-ink) / 0.25) 45%, transparent 72%);
+  background: radial-gradient(ellipse at 45% 50%, rgb(var(--shadow-ink) / calc(0.55 * var(--shadow-a))), rgb(var(--shadow-ink) / calc(0.25 * var(--shadow-a))) 45%, transparent 72%);
   filter: blur(6px);
   transform: translateX(calc(var(--w) * 0.06)) scaleX(1);
   transform-origin: 40% 50%;

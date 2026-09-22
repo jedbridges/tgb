@@ -25,14 +25,14 @@ for (const a of list) {
   </ul>
 )}
 <style>
-  .badges { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4rem; }
-  .badge { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.1rem; padding: 0.55rem 0; border-top: var(--rule); text-decoration: none; }
+  .badges { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+  .badge { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-1); padding: var(--s0) 0; border-top: var(--rule); text-decoration: none; }
   .badges li:last-child .badge { border-bottom: var(--rule); }
   .badge__name { color: var(--ink-strong); }
-  .badge__seg { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.06em; text-transform: uppercase; }
+  .badge__seg { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; }
   .badge__seg em { color: var(--ink-mute); }
   .badge:hover .badge__name { color: var(--accent-deep); }
-  .badges--compact { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-  .badges--compact .badge { display: inline-flex; gap: 0.4em; padding: 0.3em 0.7em; border: 1px solid var(--paper-deeper) !important; border-radius: 999px; font-family: var(--font-ui); font-size: var(--step--2); }
+  .badges--compact { display: flex; flex-wrap: wrap; gap: var(--s-1); }
+  .badges--compact .badge { display: inline-flex; gap: 0.4em; padding: 0.3em 0.7em; border: 1px solid var(--edge) !important; border-radius: 999px; font-family: var(--font-ui); font-size: var(--step--2); }
   .badges--compact .badge__seg { font-size: inherit; color: var(--ink-mute); }
 </style>

@@ -281,9 +281,9 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
       </div>
       <style>{`
         .resultbar {
-          grid-area: bar; position: sticky; top: 3.75rem; z-index: 10;
+          grid-area: bar; position: sticky; top: var(--header-h); z-index: 10;
           display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s0) var(--s1);
-          padding: 0.7rem 0; margin-bottom: var(--s1);
+          padding: var(--s0) 0; margin-bottom: var(--s1);
           background: color-mix(in oklch, var(--paper) 92%, transparent);
           backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
           border-bottom: 1px solid var(--paper-deeper);
@@ -310,13 +310,13 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
         .resultbar .f--sort select { width: auto; min-width: 9.5rem; padding-block: 0.35rem; min-height: 44px; }
 
         .filters { grid-area: rail; display: grid; gap: var(--s2); align-content: start;
-          position: sticky; top: 8.25rem;
+          position: sticky; top: calc(var(--header-h) + 3.5rem);
           /* A sticky panel taller than the viewport pins its own lower half out of reach. */
-          max-height: calc(100dvh - 8.5rem); overflow-y: auto; overscroll-behavior: contain;
+          max-height: calc(100dvh - var(--header-h) - 3.75rem); overflow-y: auto; overscroll-behavior: contain;
           padding-right: 2px; scrollbar-gutter: stable; min-width: 0;
         }
         .browse-search {
-          grid-area: search; display: flex; align-items: center; gap: 0.7rem; min-width: 0;
+          grid-area: search; display: flex; align-items: center; gap: var(--s0); min-width: 0;
           border-bottom: 1px solid var(--ink); padding: 0.45rem 0; color: var(--ink-soft);
         }
         .browse-search input {
@@ -329,11 +329,11 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
         .browse-search__clear { font-size: var(--step-1); line-height: 1; color: var(--ink-mute); min-width: 44px; min-height: 44px; }
         .browse-search__clear:hover { color: var(--accent-deep); }
         .filters__toggle { display: none; width: 100%; justify-content: space-between; align-items: center; gap: var(--s1);
-          font-family: var(--font-ui); font-size: var(--step--1); font-weight: 600; min-height: 46px;
+          font-family: var(--font-ui); font-size: var(--step--1); font-weight: 700; min-height: 46px;
           padding: 0.6rem 0; border-bottom: 1px solid var(--paper-deeper); }
         .filters__body { display: grid; gap: var(--s2); min-width: 0; }
         .f { display: grid; gap: 0.3rem; margin: 0; min-width: 0; }
-        .f__label { font-family: var(--font-ui); font-size: var(--step--2); font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); }
+        .f__label { font-family: var(--font-ui); font-size: var(--step--2); font-weight: 500; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); }
         .f select {
           font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-strong);
           background-color: transparent; border: 0; border-bottom: 1px solid var(--paper-deeper);
@@ -371,14 +371,14 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
 
         @media (max-width: 860px) {
           .filters { position: static; max-height: none; overflow: visible; }
-          .resultbar { top: 3.25rem; }
+          .resultbar { top: var(--header-h); }
           .filters__toggle { display: flex; }
           .filters__body { display: none; }
           .filters__body.is-open { display: grid; padding-bottom: var(--s1); }
           /* A filter sheet with no way out and no count is a trap. */
           .filters__done {
             display: block; position: sticky; bottom: 0; z-index: 2;
-            font-family: var(--font-ui); font-size: var(--step--1); font-weight: 600;
+            font-family: var(--font-ui); font-size: var(--step--1); font-weight: 700;
             min-height: 48px; width: 100%; margin-top: var(--s1);
             background: var(--ink); color: var(--paper); border-radius: 3px;
           }

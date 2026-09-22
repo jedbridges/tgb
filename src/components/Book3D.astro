@@ -7,6 +7,7 @@ import { Image } from 'astro:assets';
 import { coverFor, type Work } from '~/lib/catalog';
 import { toneFor } from '~/lib/tone';
 import '~/styles/book3d.css';
+import { legibleSpine } from '~/lib/contrast';
 
 interface Props {
   work: Work;
@@ -31,12 +32,19 @@ const depth = Math.max(12, Math.min(58, Math.round(pages / 16)));
 // words. Decided here, because the old CSS guard matched `--d: 1` as a substring and
 // silently blanked every depth from 12 to 19.
 const showSpineText = depth >= 22 && width >= 96;
-const spine = image && meta?.spine ? meta.spine : tone.bg;
-const spineInk = image && meta?.spineInk ? meta.spineInk : tone.ink;
+// The spine colour is sampled from the real cover, so it can land anywhere, including the
+// mid tones where neither black nor cream lettering is readable. Measured here rather than
+// guessed from a luminance threshold, which had put cream on 168 mid-tone spines.
+const sampled = image && meta?.spine ? meta.spine : tone.bg;
+const legible = legibleSpine(sampled);
+const spine = legible.bg;
+const spineInk = legible.ink;
+// The generated cover is our own artwork, so its pair is checked the same way.
+const cover = legibleSpine(tone.bg);
 const title = work.data.title;
 const titleClass = title.length > 40 ? 'xlong' : title.length > 22 ? 'long' : '';
 const Tag = as;
-const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --spine:${spine}; --spine-ink:${spineInk}; --tone-bg:${tone.bg}; --tone-ink:${tone.ink}`;
+const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --spine:${spine}; --spine-ink:${spineInk}; --tone-bg:${cover.bg}; --tone-ink:${cover.ink}`;
 ---
 <Tag
   class:list={['book', { 'book--button': as === 'button' }, cls]}
@@ -148,10 +156,19 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
     const card = (e.target as HTMLElement).closest<HTMLElement>('a.card[data-slug]');
     if (!card) return;
     document.querySelectorAll<HTMLElement>('[style*="view-transition-name"]').forEach((el) => el.style.removeProperty('view-transition-name'));
-    card.querySelector<HTMLElement>('.book__front')?.style.setProperty('view-transition-name', 'book-cover');
+    const body = card.querySelector<HTMLElement>('.book__body');
+    const front = card.querySelector<HTMLElement>('.book__front');
+    if (!body || !front) return;
+    // Square the book up first. The browser snapshots the cover as it is painted, and a
+    // face inside a rotateY paints as a foreshortened parallelogram; handing that to the
+    // transition against the flat cover on the next page is what made it tear. Squaring it
+    // also cancels the hover tilt, so the book leaves from wherever the pointer left it.
+    body.dataset.vt = 'flat';
+    front.style.setProperty('view-transition-name', 'book-cover');
   }, { capture: true });
   addEventListener('pageshow', () => {
     document.querySelectorAll<HTMLElement>('.book__front').forEach((el) => el.style.removeProperty('view-transition-name'));
+    document.querySelectorAll<HTMLElement>('.book__body[data-vt]').forEach((el) => delete el.dataset.vt);
   });
 
   // Only in-viewport books get a compositor layer hint.

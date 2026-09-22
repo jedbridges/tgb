@@ -1,52 +1,95 @@
-/* The Great Books: design tokens. Warm paper, ink, one accent. */
+/* The Great Books: design tokens. Warm paper, ink, one accent, in two schemes.
+
+   Every colour is declared once, as light-dark(light, dark). The scheme follows the
+   visitor's system setting until they choose otherwise, at which point a data-theme
+   attribute on <html> pins color-scheme and every token resolves the other way with no
+   second copy of the palette to keep in step.
+
+   The red family is four values with four jobs and nothing in between: the brand red for
+   graphics, one darker cut for anything that has to carry words or clear a contrast floor,
+   one step below that for a pressed button, and a tint. Anything wanting red uses one of
+   these; no file mixes its own. */
 :root {
-  /* Palette (brand hexes, expressed as oklch for tinted derivatives) */
-  --paper: #f2e8e4;                 /* brand paper */
-  --paper-deep: oklch(0.905 0.018 45);   /* shelf / recessed surfaces */
-  --paper-deeper: oklch(0.86 0.022 45);  /* rules, dividers */
-  --paper-bright: oklch(0.965 0.01 55);  /* raised page (book inner) */
-  --ink: #4b4644;                   /* brand ink */
-  --ink-strong: oklch(0.22 0.012 40);
-  --ink-soft: oklch(0.46 0.015 40);   /* 5.95:1 on paper */
-  --ink-mute: oklch(0.515 0.014 45);  /* 4.70:1 on paper, the quietest text allowed */
-  --accent: #ff4c00;                /* brand accent. Graphic use only: 2.77:1, never text */
-  --accent-deep: oklch(0.52 0.19 37);   /* 4.99:1, the accent when it must carry words */
-  --focus: oklch(0.50 0.19 35);         /* 5.46:1, clears the 3:1 non-text floor */
-  --accent-wash: oklch(0.93 0.04 45);
-  --shelf-wood: oklch(0.42 0.05 45);
+  color-scheme: light dark;
+
+  /* Surfaces */
+  --paper: light-dark(#f2e8e4, oklch(0.175 0.012 45));            /* the page */
+  --paper-deep: light-dark(oklch(0.905 0.018 45), oklch(0.215 0.014 45));   /* recessed */
+  --paper-deeper: light-dark(oklch(0.86 0.022 45), oklch(0.265 0.016 45));  /* backgrounds */
+  --paper-bright: light-dark(oklch(0.965 0.01 55), oklch(0.245 0.014 50));  /* raised */
+
+  /* Ink. Every value below is measured against --paper-deep, the darkest surface any of
+     them is ever set on, not just against --paper. */
+  --ink: light-dark(#4b4644, oklch(0.885 0.012 65));               /* 7.72 / 12.41 */
+  --ink-strong: light-dark(oklch(0.22 0.012 40), oklch(0.97 0.008 75));  /* 14.41 / 16.10 */
+  --ink-soft: light-dark(oklch(0.46 0.015 40), oklch(0.76 0.014 55));    /* 5.38 / 8.15 */
+  --ink-mute: light-dark(oklch(0.49 0.014 45), oklch(0.675 0.016 50));   /* 4.72 / 5.95 */
+
+  /* Red. Four jobs, four values. */
+  --accent: light-dark(#ff4c00, oklch(0.70 0.19 40));              /* graphics only */
+  --accent-deep: light-dark(oklch(0.50 0.19 37), oklch(0.76 0.15 45));   /* 4.91 / 7.78 */
+  --accent-press: light-dark(oklch(0.42 0.17 35), oklch(0.84 0.12 50));  /* pressed, hover */
+  --accent-wash: light-dark(oklch(0.93 0.04 45), oklch(0.29 0.06 40));   /* tint */
+  --focus: var(--accent-deep);      /* one accent carries focus too */
+
+  --shelf-wood: light-dark(oklch(0.42 0.05 45), oklch(0.33 0.045 45));
 
   /* Dividers. Dotted, like the leaders in a table of contents, and light enough to
      separate without ruling the page. Structural edges (header, inputs, buttons,
      focus rings) stay solid; these are for separating content only. */
-  --rule: 1px dotted color-mix(in oklch, var(--ink) 26%, transparent);
-  --rule-section: 1px dotted color-mix(in oklch, var(--ink) 42%, transparent);
-  --shelf-edge: oklch(0.55 0.06 50);
+  --rule: 1px dotted light-dark(
+    color-mix(in oklch, var(--ink) 26%, transparent),
+    color-mix(in oklch, var(--ink) 18%, transparent));
+  --rule-section: 1px dotted light-dark(
+    color-mix(in oklch, var(--ink) 42%, transparent),
+    color-mix(in oklch, var(--ink) 30%, transparent));
+  --shelf-edge: light-dark(oklch(0.55 0.06 50), oklch(0.45 0.05 50));
+  /* Solid edges, as opposed to the dotted content rules above. A control whose box is its
+     only identity gets the strong one; boxes that merely group already-legible text get
+     the light one. paper-deeper reads 1.28:1 and was too faint to function as either. */
+  --edge: light-dark(
+    color-mix(in oklch, var(--ink) 34%, transparent),
+    color-mix(in oklch, var(--ink) 20%, transparent));
+  --edge-strong: light-dark(
+    color-mix(in oklch, var(--ink) 72%, transparent),
+    color-mix(in oklch, var(--ink) 42%, transparent));
   --shadow-ink: 20 12 8;            /* rgb for shadows, warm */
+  --shadow-a: 1;                    /* shadows work harder against a dark page */
 
   /* Type */
-  --font-display: 'Cormorant Garamond Variable', 'Cormorant Garamond', Georgia, serif;
-  --font-ui: 'DM Sans Variable', 'DM Sans', system-ui, sans-serif;
-  /* Size ramp. The floor was raised: --step--2 is the most-used size on the site, so at
-     ~12px it was setting most of the interface in the smallest type available. */
-  --step--2: clamp(0.8rem, 0.78rem + 0.1vw, 0.86rem);    /* ~13-14px: labels, metadata */
-  --step--1: clamp(0.9rem, 0.87rem + 0.15vw, 1rem);      /* ~14-16px: controls, UI */
-  --step-0: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);        /* ~17-19px: prose */
-  --step-1: clamp(1.3rem, 1.2rem + 0.6vw, 1.6rem);       /* lede, work titles */
-  --step-2: clamp(1.7rem, 1.5rem + 1vw, 2.2rem);         /* section headings */
-  --step-3: clamp(2.2rem, 1.8rem + 2vw, 3.2rem);
-  --step-4: clamp(2.9rem, 2.1rem + 3.6vw, 5rem);         /* page titles */
-  --step-5: clamp(3.4rem, 2.4rem + 5vw, 6rem);           /* hero only */
+  --font-display: 'Gambetta', Georgia, 'Times New Roman', serif;
+  --font-ui: 'Satoshi', system-ui, -apple-system, sans-serif;
+  /* Size ramp, two ratios rather than one. The interface range steps by about 1.15, which
+     is as far apart as small sizes can go before they stop looking like one system. The
+     display range steps by about 1.4, which is what makes a heading read as a heading from
+     across the room. The old ramp stepped 1.11 from UI to prose, so a label, a control and
+     a paragraph were within a pixel of each other and the page had no floor to build on. */
+  --step--2: clamp(0.8125rem, 0.79rem + 0.11vw, 0.875rem);  /* 13-14px: caps labels */
+  --step--1: clamp(0.9375rem, 0.91rem + 0.14vw, 1rem);      /* 15-16px: controls */
+  --step-0: clamp(1.0625rem, 1.01rem + 0.28vw, 1.1875rem);  /* 17-19px: prose */
+  --step-1: clamp(1.3rem, 1.19rem + 0.55vw, 1.625rem);      /* 21-26px: lede, work titles */
+  --step-2: clamp(1.8rem, 1.5rem + 1.5vw, 2.625rem);        /* 29-42px: sub-headings */
+  --step-3: clamp(2.4rem, 1.85rem + 2.75vw, 3.75rem);       /* 38-60px: section headings */
+  --step-4: clamp(3rem, 2.15rem + 4.25vw, 5.25rem);         /* 48-84px: page titles */
+  --step-5: clamp(3.6rem, 2.4rem + 6vw, 6.5rem);            /* 58-104px: hero only */
 
   /* Leading, tuned to role rather than one universal ratio. Wider measures get more. */
   --lh-display: 0.98;   /* hero, where the line is short and the size is large */
   --lh-title: 1.08;     /* page and work titles */
   --lh-heading: 1.2;    /* section headings */
   --lh-ui: 1.35;        /* controls and labels, which wrap rarely */
-  --lh-prose: 1.6;      /* running text at the 68ch measure */
+  --lh-prose: 1.62;     /* running text at the 68ch measure */
   --lh-tight-prose: 1.45; /* short prose set larger: ledes, synopses */
 
+  /* Weight. Gambetta and Satoshi each ship 400 and 500; only Satoshi ships 700. Nothing
+     may ask for a weight that is not here: font-synthesis is off, so a missing weight is
+     silently rounded to a shipped one rather than faked. */
+  --w-text: 400;
+  --w-emph: 500;   /* headings, labels, the display face's only heavier cut */
+  --w-bold: 700;   /* Satoshi only: buttons and the one word a sentence turns on */
+
   --tracking-caps: 0.14em;
-  --tracking-display: -0.02em;  /* large Cormorant needs pulling in */
+  --tracking-display: -0.012em; /* Gambetta is wider; less pull than the old face needed */
 
   /* Space */
   --s-1: 0.25rem;
@@ -57,6 +100,19 @@
   --s4: clamp(3rem, 2rem + 4vw, 5rem);
   --s5: clamp(4.5rem, 3rem + 7vw, 9rem);
   --gutter: clamp(1rem, 4vw, 3.5rem);
+  /* The header's own height, and the offsets every sticky thing on the site derives from
+     it. These were written out by hand in five files, so changing the bar's height left
+     panels pinned under it. */
+  --header-h: 4.75rem;
+  --stick: calc(var(--header-h) + var(--s0));   /* where a sticky panel comes to rest */
+  --stick-max: calc(100dvh - var(--stick) - var(--s1));
+}
+/* The bar loses height as the row tightens, and everything pinned below it follows. These
+   live on the root rather than on the header, because it is the rest of the page that
+   reads them. */
+@media (max-width: 1180px) { :root { --header-h: 4rem; } }
+@media (max-width: 760px) { :root { --header-h: 3.5rem; } }
+:root {
   --measure: 68ch;
   --page-max: 84rem;
 
@@ -68,3 +124,13 @@
   --dur: 420ms;
   --dur-slow: 620ms;
 }
+
+/* A chosen scheme pins color-scheme, which is what every light-dark() above reads. */
+:root[data-theme='light'] { color-scheme: light; }
+:root[data-theme='dark'] { color-scheme: dark; }
+
+/* The two values light-dark() cannot express, because they are not colours. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) { --shadow-ink: 0 0 0; --shadow-a: 1.7; }
+}
+:root[data-theme='dark'] { --shadow-ink: 0 0 0; --shadow-a: 1.7; }

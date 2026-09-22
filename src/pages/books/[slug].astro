@@ -48,10 +48,6 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
     <span class="visually-hidden" data-pagefind-meta={`cover:${og ?? ''}`}></span>
     <span class="visually-hidden" data-pagefind-meta={`tone:${toneFor(work.id).bg}`}></span>
     <header class="wrap work__hero">
-      <div class="work__stage">
-        <Book3D work={work} authorName={author.data.name} width={230} as="button" tilt openable eager epigraph={epigraph} />
-        <p class="work__hint ui" aria-hidden="true">Click the book to open it</p>
-      </div>
       <div class="work__head">
         <nav class="crumbs reveal" aria-label="Breadcrumb" data-pagefind-ignore>
           <ol><li><a href={url('/')}>The Great Books</a></li><li><a href={url('/books/')}>All books</a></li></ol>
@@ -70,6 +66,10 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
         </dl>
         <div id="buy-inline" data-pagefind-ignore><BuyButtons work={work} authorName={author.data.name} /></div>
         <p class="work__synopsis" style="--i:3">{d.synopsis}</p>
+      </div>
+      <div class="work__stage">
+        <Book3D work={work} authorName={author.data.name} width={230} as="button" tilt openable eager epigraph={epigraph} />
+        <p class="work__hint ui" aria-hidden="true">Click the book to open it</p>
       </div>
     </header>
 
@@ -180,56 +180,74 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   </article>
 </Base>
 <style>
-  .work__hero { display: grid; grid-template-columns: minmax(260px, 2fr) 3fr; gap: var(--s4); padding-block: var(--s4) var(--s3); align-items: start; }
+    /* The hero and the body below it are the same two columns: everything written sits in
+     one wide column at the page gutter, and the right rail holds the object and the facts
+     about it. Before this the title started two fifths across and the guide underneath it
+     started at the gutter, so the page had two left edges. */
+  .work__hero {
+    display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: var(--s4);
+    padding-block: var(--s4) var(--s3); align-items: start;
+  }
   .work__stage .book__front { view-transition-name: book-cover; }
-  .work__stage { position: sticky; top: 5rem; align-self: start; display: grid; justify-items: center; gap: var(--s2); padding: var(--s3) 0 var(--s1); max-height: calc(100dvh - 6rem); }
+  .work__stage { grid-column: 2; grid-row: 1; position: sticky; top: var(--stick); align-self: start; display: grid; justify-items: center; gap: var(--s2); padding-bottom: var(--s1); max-height: var(--stick-max); }
   .work__hint { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0.06em; text-transform: uppercase; }
   @media (hover: none) { .work__hint { display: none; } }
-  .work__head { display: grid; gap: var(--s1); align-content: start; }
+  .work__head { grid-column: 1; grid-row: 1; display: grid; gap: var(--s1); align-content: start; min-width: 0; }
   .work__head h1 { font-style: italic; font-size: var(--step-4); line-height: var(--lh-title); letter-spacing: var(--tracking-display); }
-  .work__subtitle { font-size: var(--step-1); color: var(--ink-soft); font-style: italic; margin-top: -0.4rem; }
+    /* A subtitle belongs to the title above it, not to the byline below, so it closes up. */
+  .work__subtitle { font-size: var(--step-1); color: var(--ink-soft); font-style: italic; margin-top: calc(var(--s-1) - var(--s1)); }
   .work__by { font-size: var(--step-1); color: var(--ink-soft); }
   .work__by a { color: var(--ink-strong); }
   .work__orig { color: var(--ink-mute); }
   .work__assigned { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); }
-  .work__assigned strong { font-family: var(--font-display); font-size: var(--step-1); font-weight: 500; color: var(--ink-strong); font-variant-numeric: tabular-nums; }
-  .work__facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s2); margin: var(--s1) 0; padding: var(--s2) 0; border-top: var(--rule-section); border-bottom: var(--rule); }
+  .work__assigned strong { font-family: var(--font-display); font-size: var(--step-1); font-weight: var(--w-emph); color: var(--ink-strong); font-variant-numeric: tabular-nums; }
+  .work__facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s2); margin: 0; padding: var(--s2) 0; border-top: var(--rule-section); border-bottom: var(--rule); }
   @media (max-width: 620px) { .work__facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  .work__facts div { display: grid; gap: 0.15rem; }
-  .work__facts dt { font-size: var(--step--2); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
+    /* Only two of the six facts carry a second gloss line, so without shared rows the labels
+     in the bottom row sat at a different height from the labels in the top row. */
+  .work__facts { grid-auto-rows: auto; row-gap: var(--s2); }
+  .work__facts div { grid-row: span 2; display: grid; grid-template-rows: subgrid; row-gap: var(--s-1); min-width: 0; }
+  .work__facts dt { align-self: start; font-size: var(--step--2); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
   .work__facts dd { margin: 0; color: var(--ink-strong); font-size: var(--step--1); }
   .work__facts dd a { text-decoration: none; }
   .work__facts dd a:hover { color: var(--accent-deep); }
   .work__pages { color: var(--ink-mute); }
-  .work__gloss-note { display: block; color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0; text-transform: none; margin-top: 0.15rem; }
-  .dots { display: inline-flex; gap: 3px; vertical-align: middle; margin-right: 0.3em; }
-  .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--paper-deeper); }
+  .work__gloss-note { display: block; color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0; text-transform: none; margin-top: var(--s-1); }
+    /* Aligned to the label's x-height rather than to the line box. */
+  .dots { display: inline-flex; gap: 3px; vertical-align: 0.02em; margin-right: 0.4em; }
+  .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--edge); }
   .dots i.on { background: var(--accent); }
   .work__synopsis { font-size: var(--step-1); line-height: var(--lh-tight-prose); max-width: 60ch; text-wrap: pretty; }
   .work__grid { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: var(--s4); padding-block: var(--s3); border-top: var(--rule); }
   .work__main { display: grid; gap: var(--s4); min-width: 0; }
   .work__h { font-style: italic; font-size: var(--step-2); margin-bottom: var(--s2); }
-  .work__why { padding: var(--s2) var(--s2) var(--s2) 0; border-top: var(--rule-section); }
+  .work { --fold: 0; }
+  .work__why { padding-block: var(--s2); border-top: var(--rule-section); }
   .work__why-text { font-size: var(--step-1); line-height: var(--lh-tight-prose); max-width: var(--measure); text-wrap: pretty; }
-  .themes { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: var(--s2) var(--s3); margin: 0; }
+    /* Theme names and their notes each keep their own band across the row. */
+  .themes { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); grid-auto-rows: auto; gap: var(--s2) var(--s3); margin: 0; }
+  .themes__item { grid-row: span 2; display: grid; grid-template-rows: subgrid; row-gap: var(--s-1); min-width: 0; }
   .themes__item dt { font-size: var(--step-1); }
   .themes__item dt a { text-decoration: none; border-bottom: 1px solid var(--accent); }
-  .themes__item dd { margin: 0.35rem 0 0; color: var(--ink-soft); line-height: var(--lh-prose); max-width: 46ch; }
+  .themes__item dd { margin: 0; color: var(--ink-soft); line-height: var(--lh-prose); max-width: 46ch; }
   .highlights__list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s3); }
   .highlights__list li { max-width: var(--measure); }
-  .highlights__list blockquote { margin: 0; padding-left: var(--s2); border-left: 1px solid var(--accent); font-size: var(--step-1); line-height: var(--lh-tight-prose); font-style: italic; }
-  .highlights__list blockquote footer { margin-top: 0.6rem; color: var(--ink-mute); font-size: var(--step--2); font-style: normal; letter-spacing: 0.04em; }
+    /* The quotation's first letter, not its opening mark, lines up with the rule. */
+  .highlights__list blockquote { margin: 0; padding-left: var(--s2); border-left: 1px solid var(--accent); font-size: var(--step-1); line-height: var(--lh-tight-prose); font-style: italic; color: var(--ink-strong); hanging-punctuation: first last; }
+  .highlights__list blockquote footer { margin-top: var(--s0); color: var(--ink-mute); font-size: var(--step--2); font-style: normal; letter-spacing: 0.04em; }
   .highlights__note { margin-top: var(--s1); padding-left: var(--s2); color: var(--ink-soft); line-height: var(--lh-prose); max-width: 56ch; }
   .work__side {
     display: grid; gap: var(--s3); align-content: start; align-self: start;
-    position: sticky; top: 5rem; container-type: inline-size;
+    position: sticky; top: var(--stick); container-type: inline-size;
     /* A sticky panel taller than the viewport pins its own lower half out of reach. */
-    max-height: calc(100dvh - 6rem); overflow-y: auto; overscroll-behavior: contain;
+    max-height: var(--stick-max); overflow-y: auto; overscroll-behavior: contain;
     scrollbar-gutter: stable;
   }
-  .side__h { margin-bottom: var(--s1); font-family: var(--font-ui); font-size: var(--step--2); font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-soft); }
-  .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
-  .editions { margin: 0; padding-left: 1em; color: var(--ink-soft); display: grid; gap: 0.5rem; font-size: var(--step--2); }
+  .side__h { margin-bottom: var(--s1); font-family: var(--font-ui); font-size: var(--step--2); font-weight: var(--w-emph); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-soft); }
+  .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s-1); }
+    /* Markers hang in the margin so the editions keep the sidebar's left edge. */
+  .editions { margin: 0; padding-left: 0; color: var(--ink-soft); display: grid; gap: var(--s0); font-size: var(--step--2); }
+  .editions li { margin-left: 1.1em; }
   .editions__why { color: var(--ink-mute); }
   .related { padding-top: var(--s4); border-top: var(--rule); }
   .work__stub { display: grid; gap: var(--s1); max-width: var(--measure); }
@@ -238,13 +256,15 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .work__stub-out a { color: var(--accent-deep); font-family: var(--font-ui); font-size: var(--step--1); text-decoration: none; border-bottom: 1px solid currentColor; }
   .buybar {
     position: fixed; inset: auto 0 0 0; z-index: 30; display: none;
-    align-items: center; gap: var(--s1);
-    padding: 0.85rem var(--gutter) calc(0.85rem + env(safe-area-inset-bottom));
+    justify-content: center; gap: var(--s1);
+    padding: var(--s0) 0 calc(var(--s0) + env(safe-area-inset-bottom));
     background: color-mix(in oklch, var(--paper) 94%, transparent);
     backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
     border-top: 1px solid var(--ink);
   }
-  .buybar__what { display: grid; gap: 0.05rem; min-width: 0; flex: 1; }
+    /* The bar's contents sit on the page column, like everything else on the page. */
+  .buybar > * { align-self: center; }
+  .buybar__what { display: grid; gap: 0; min-width: 0; flex: 1 1 auto; }
   .buybar__title { font-size: var(--step-1); line-height: 1.15; color: var(--ink-strong); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .buybar__ed { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   /* This is the page's action on a phone, so it is sized like one. */
@@ -252,9 +272,10 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   @media (max-width: 420px) { .buybar__cta { padding-inline: 1.3em; } .buybar__title { font-size: var(--step-0); } }
   @media (max-width: 900px) {
     .buybar:not([hidden]) { display: flex; }
-    .work { padding-bottom: 7rem; }
+    .work { padding-bottom: 7rem; }  /* clears the fixed buy bar */
     .work__hero { grid-template-columns: 1fr; gap: var(--s2); }
-    .work__stage { position: static; padding-top: var(--s2); }
+    .work__stage { grid-column: 1; grid-row: 1; position: static; padding-top: var(--s2); }
+    .work__head { grid-row: 2; }
     .work__grid { grid-template-columns: 1fr; }
     .work__side { position: static; }
   }

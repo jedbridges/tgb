@@ -1,6 +1,4 @@
-@import '@fontsource-variable/cormorant-garamond/wght.css';
-@import '@fontsource-variable/cormorant-garamond/wght-italic.css';
-@import '@fontsource-variable/dm-sans/wght.css';
+@import './fonts.css';
 @import './tokens.css';
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -14,13 +12,13 @@ body {
   font-family: var(--font-display);
   font-size: var(--step-0);
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: var(--w-text);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-optical-sizing: auto;
   font-synthesis: none;   /* never fake a weight or an italic the family already ships */
   font-feature-settings: 'liga', 'kern';
-  font-variant-numeric: oldstyle-nums;  /* Cormorant's text figures sit with lowercase prose */
+  font-variant-numeric: oldstyle-nums;  /* text figures sit better beside lowercase prose */
   text-wrap: pretty;
 }
 img, svg { display: block; max-width: 100%; height: auto; }
@@ -31,14 +29,31 @@ textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible {
   outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px;
 }
 button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
-h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; margin: 0; text-wrap: balance; }
+/* Headings carry three signals, not one: they are larger, they are the heavier of the
+   display face's two cuts, and they are a full step darker than the paragraph under them.
+   Size alone was doing all the work, which is why the page read flat. */
+h1, h2, h3, h4 {
+  font-family: var(--font-display); font-weight: var(--w-emph);
+  color: var(--ink-strong); margin: 0; text-wrap: balance;
+}
+/* Gambetta's lowercase runs wide, so display sizes need less negative tracking than the
+   previous face did or the letters start to collide. */
 h1 { font-size: var(--step-4); line-height: var(--lh-title); letter-spacing: var(--tracking-display); }
 h2 { font-size: var(--step-3); line-height: var(--lh-heading); letter-spacing: -0.015em; }
 h3 { font-size: var(--step-2); line-height: var(--lh-heading); letter-spacing: -0.01em; }
 h4 { font-size: var(--step-1); line-height: var(--lh-heading); }
+/* Gambetta's capitals carry a left side bearing that parks a heading a hair right of the
+   paragraph beneath it. At display sizes the gap is visible, so it is pulled back. */
+h1, h2 { margin-left: -0.02em; }
 p { margin: 0; }
-p + p { margin-top: 1em; }
+p + p { margin-top: 0.9em; }
 em, i { font-style: italic; }
+/* Gambetta ships no bold, and font-synthesis is off, so a strong here would silently round
+   to the 500 already used by headings and read as no emphasis at all. The darker ink is
+   scoped to running text: a <b> also sets the author's name on a book's spine, where the
+   colour has to stay whatever is legible against that spine. */
+strong, b { font-weight: var(--w-emph); }
+.prose strong, .prose b { color: var(--ink-strong); }
 hr { border: 0; border-top: var(--rule); margin: var(--s3) 0; }
 ::selection { background: var(--accent-wash); color: var(--ink-strong); }
 
@@ -47,49 +62,83 @@ html { caret-color: var(--accent-deep); scrollbar-color: var(--paper-deeper) tra
 input, textarea, select { caret-color: var(--accent-deep); }
 ::-webkit-scrollbar { width: 11px; height: 11px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--paper-deeper); border: 3px solid var(--paper); border-radius: 99px; }
+::-webkit-scrollbar-thumb { background: var(--edge); border: 3px solid var(--paper); border-radius: 99px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--ink-mute); }
-/* Years, page counts and list tallies line up in columns. */
-.work__facts dd, .card__author, .card__count, .row__meta, .prog__count, .tl__count, .facts dd { font-variant-numeric: tabular-nums; }
+/* Years, page counts and list tallies line up in columns. Oldstyle figures are right for
+   figures inside a sentence and wrong for a column of them, and keeping this as a list of
+   hand-picked class names meant every new count shipped in proportional figures. */
+.nums, [data-nums], .work__facts dd, .card__author, .card__count, .card__guide, .row__meta,
+.row__n, .prog__count, .tl__count, .facts dd, .author__dates, .author__count, .era__range,
+.program__count, .badge__seg, .buy__edition-pub, .work__gloss-note, .titlepage__year,
+.chip__n, .themecloud__n, .resultbar__count, .f select, .segment__sub {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tracked capitals leave their last letter's tracking hanging off the right of the block.
+   Left-aligned that is invisible; centred or right-aligned it shifts the whole line. This
+   takes the trailing space back wherever the site sets capitals. */
+.label, .work__facts dt, .side__h, .facts dt, .program__kind, .buy__lede-label,
+.buy__alts-label, .f__label, .hit__type, .work__hint, .era__range, .row__diff,
+.badge__seg, .titlepage__author, .cover-gen__author {
+  margin-right: calc(-1 * var(--tracking-caps));
+}
 
 /* Utilities */
 .wrap { width: min(100% - 2 * var(--gutter), var(--page-max)); margin-inline: auto; }
 .prose { max-width: var(--measure); }
-.prose h2 { font-size: var(--step-2); margin-top: var(--s3); margin-bottom: var(--s1); font-style: italic; }
-.prose h3 { font-size: var(--step-1); margin-top: var(--s2); margin-bottom: var(--s0); }
+.prose h2 { font-size: var(--step-2); margin-top: var(--s4); margin-bottom: var(--s1); font-style: italic; }
+.prose h3 { font-size: var(--step-1); margin-top: var(--s3); margin-bottom: var(--s0); }
+.prose > :first-child { margin-top: 0; }
 .prose p, .prose li { font-size: var(--step-0); line-height: var(--lh-prose); }
-.prose > p + p { margin-top: 0.85em; }
+.prose > p + p { margin-top: 0.9em; }
 /* A guide opens on its first paragraph, so let it carry a little more presence. */
 .prose > p:first-of-type { font-size: var(--step-1); line-height: var(--lh-tight-prose); color: var(--ink-strong); }
-.prose ul, .prose ol { padding-left: 1.2em; margin: 0.6em 0; }
-.prose blockquote { margin: var(--s2) 0; padding-left: var(--s2); border-left: 1px solid var(--accent); font-style: italic; font-size: var(--step-1); line-height: var(--lh-tight-prose); }
-.ui { font-family: var(--font-ui); font-size: var(--step--1); font-weight: 500; line-height: var(--lh-ui); }
+/* Markers hang in the margin so the list text keeps the paragraph's left edge. */
+.prose ul, .prose ol { padding-left: 0; margin: var(--s1) 0; list-style-position: outside; }
+.prose ul li, .prose ol li { margin-left: 1.15em; }
+.prose li + li { margin-top: 0.4em; }
+/* A pulled quote hangs its own opening mark into the left margin so the first letter of
+   the quotation, not the punctuation, lines up with the prose above it. */
+.prose blockquote {
+  margin: var(--s3) 0; padding-left: var(--s2); border-left: 1px solid var(--accent);
+  font-style: italic; font-size: var(--step-1); line-height: var(--lh-tight-prose);
+  color: var(--ink-strong); hanging-punctuation: first last;
+}
+.ui { font-family: var(--font-ui); font-size: var(--step--1); font-weight: var(--w-emph); line-height: var(--lh-ui); }
 .visually-hidden {
   position: absolute !important; width: 1px; height: 1px; overflow: hidden;
   clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
 }
 .italic { font-style: italic; }
-.accent { color: var(--accent); }
+/* A caps label. One class rather than the same five declarations repeated in nine files. */
+.label {
+  font-family: var(--font-ui); font-size: var(--step--2); font-weight: var(--w-emph);
+  line-height: var(--lh-ui); letter-spacing: var(--tracking-caps);
+  text-transform: uppercase; color: var(--ink-mute);
+  /* Tracking adds a trailing gap after the last letter, which makes a label look shifted
+     left of whatever it sits above. Removing it on the last letter squares the block up. */
+  padding-right: 0; margin-right: calc(-1 * var(--tracking-caps));
+}
 
 /* Tag / chip */
 .tag {
   display: inline-flex; align-items: center; gap: 0.4em;
-  font-family: var(--font-ui); font-size: var(--step--2); font-weight: 500;
+  font-family: var(--font-ui); font-size: var(--step--2); font-weight: var(--w-emph);
   letter-spacing: 0.04em; padding: 0.7em 0.9em; min-height: 44px; border-radius: 999px;
-  border: 1px solid var(--paper-deeper); color: var(--ink); text-decoration: none;
+  border: 1px solid var(--edge); color: var(--ink); text-decoration: none;
   background: transparent; transition: border-color var(--dur-fast), background var(--dur-fast);
 }
-.tag:hover { border-color: var(--ink-mute); background: var(--paper-bright); }
+.tag:hover { border-color: var(--edge-strong); background: var(--paper-bright); }
 /* Tag kinds. A theme is an idea, a facet is a fact: they should not look alike. */
-.tag--theme { border-color: color-mix(in oklch, var(--accent) 45%, var(--paper-deeper)); }
+.tag--theme { border-color: color-mix(in oklch, var(--accent) 60%, transparent); }
 .tag--theme::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); flex: 0 0 auto; }
 .tag--facet { border-style: dashed; color: var(--ink-soft); }
 
 /* Buttons */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 0.5em;
-  font-family: var(--font-ui); font-weight: 600; font-size: var(--step--1);
-  letter-spacing: 0.02em; padding: 0.8em 1.3em; border-radius: 3px; min-height: 44px;
+  font-family: var(--font-ui); font-weight: var(--w-bold); font-size: var(--step--1);
+  letter-spacing: 0.01em; padding: 0.8em 1.3em; border-radius: 3px; min-height: 44px;
   text-decoration: none; border: 1px solid var(--ink); color: var(--ink);
   transition: transform var(--dur-fast) var(--ease-out), background var(--dur-fast), color var(--dur-fast);
 }
@@ -98,7 +147,7 @@ input, textarea, select { caret-color: var(--accent-deep); }
 .btn--primary { background: var(--ink); color: var(--paper); }
 .btn--primary:hover { background: var(--ink-strong); }
 .btn--accent { background: var(--accent-deep); border-color: var(--accent-deep); color: var(--paper-bright); }
-.btn--accent:hover { background: oklch(0.45 0.18 35); border-color: oklch(0.45 0.18 35); }
+.btn--accent:hover { background: var(--accent-press); border-color: var(--accent-press); }
 /* On a phone an action gets the full column. Half-width buttons are a desktop habit. */
 @media (max-width: 700px) {
   .btn--block { width: 100%; min-height: 54px; }
@@ -108,8 +157,20 @@ input, textarea, select { caret-color: var(--accent-deep); }
 .shelf-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  column-gap: 0;
-  row-gap: var(--s3);
+  /* The shelf itself is continuous, drawn by each ledge reaching past its own column, so
+     the columns can be spaced apart without breaking it. That lets a card's title start at
+     the page gutter, in line with the section heading above it, instead of being inset by
+     its own padding while the cover floated centred over it. */
+  column-gap: var(--s1);
+  /* Zero, because a card spans five of this grid's rows and a row-gap would open up
+     between its cover, its shelf and each line of its caption. The space between one
+     shelf and the next is the card's own bottom padding instead. */
+  row-gap: 0;
+  /* Each card's shelf continues past its own column so a part-filled row still gets a
+     shelf across the page; this is what stops it there. The margin leaves room for a
+     cover to tilt out of its column on hover without being cut off. */
+  overflow-x: clip;
+  overflow-clip-margin: 3rem;
 }
 @media (max-width: 560px) {
   .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(116px, 1fr)); }
@@ -125,8 +186,8 @@ input, textarea, select { caret-color: var(--accent-deep); }
 /* Breadcrumb. Replaces the kicker that used to sit above page headings:
    it names where you are and gets you back, which a decorative label never did. */
 .crumbs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5em; font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-mute); margin-bottom: var(--s1); }
-.crumbs a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--paper-deeper); }
+.crumbs a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--edge); }
 .crumbs a:hover { color: var(--accent-deep); border-bottom-color: var(--accent-deep); }
 .crumbs li { display: flex; align-items: baseline; gap: 0.5em; list-style: none; }
-.crumbs li + li::before { content: '/'; color: var(--paper-deeper); }
+.crumbs li + li::before { content: '/'; color: var(--edge); }
 .crumbs ol, .crumbs ul { display: flex; flex-wrap: wrap; gap: 0.5em; margin: 0; padding: 0; }

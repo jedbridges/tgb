@@ -5,13 +5,18 @@ import { yearShort, type Work } from '~/lib/catalog';
 interface Props { work: Work; authorName: string; width?: number; eager?: boolean; programCount?: number; hasGuide?: boolean; showMeta?: boolean; index?: number }
 const { work, authorName, width = 140, eager = false, programCount, hasGuide = false, showMeta = true, index } = Astro.props;
 ---
-<a class="card" href={workUrl(work.id)} data-slug={work.id} style={index !== undefined ? `--i:${index}` : undefined}>
+<a
+  class:list={['card', !showMeta && 'card--bare']}
+  href={workUrl(work.id)}
+  data-slug={work.id}
+  style={index !== undefined ? `--i:${index}` : undefined}
+>
   <span class="card__stage" style={`--stage-h:${Math.round(width * 1.6)}px`}>
     <Book3D work={work} authorName={authorName} width={width} eager={eager} decorative />
   </span>
   <span class="card__ledge" aria-hidden="true"></span>
   {showMeta && (
-    <span class="card__meta">
+    <>
       <span class="card__title">{work.data.title}</span>
       <span class="card__author">{authorName} · {yearShort(work)}</span>
       <span class="card__tail">
@@ -20,35 +25,76 @@ const { work, authorName, width = 140, eager = false, programCount, hasGuide = f
         )}
         {hasGuide && <span class="card__guide">Guide</span>}
       </span>
-    </span>
+    </>
   )}
 </a>
 <style>
+  /* Every card on a shelf row takes its row heights from the grid, not from its own text.
+     A three-line title in one card therefore sets the title band for the whole row, so the
+     authors line up with each other, the list counts line up with each other, and the
+     shelves run straight. Before this the card sized itself and each column landed
+     wherever its text ended. The five bands are: book, shelf, title, author, tail. */
   .card {
-    display: grid; grid-template-rows: auto auto 1fr;
-    text-decoration: none; color: inherit; position: relative; min-width: 0; --ledge: 12px;
-    /* 689 of these ship on one page: skip layout and paint for the ones off-screen. */
-    content-visibility: auto;
-    contain-intrinsic-size: auto 380px;
+    display: grid;
+    grid-row: span 5;
+    grid-template-rows: subgrid;
+    text-decoration: none; color: inherit; position: relative; min-width: 0;
+    --ledge: 12px;
   }
-  .card__stage { display: flex; align-items: flex-end; justify-content: center; height: var(--stage-h); padding: 0 8%; position: relative; z-index: 1; }
+  .card--bare { grid-row: span 2; }
+  .card--bare .card__ledge { margin-bottom: var(--s4); }
+  /* The browse filters hide cards with the hidden attribute, and an author display rule
+     outranks the user agent's [hidden] rule whatever its specificity. */
+  .card[hidden] { display: none; }
+
+  .card__stage {
+    display: flex; align-items: flex-end; justify-content: center;
+    height: var(--stage-h); padding: 0 8%; position: relative; z-index: 1;
+    /* 689 books ship on one page and the cover is the whole cost of one: three stacked 3D
+       faces, a shadow and an image. Containment sits here rather than on the card so the
+       text below stays laid out, which is what lets the row heights resolve. */
+    content-visibility: auto;
+    contain-intrinsic-size: auto var(--stage-h);
+  }
+
   .card__ledge {
+    position: relative;
     height: var(--ledge); background: var(--shelf-wood);
     background-image: linear-gradient(to bottom, var(--shelf-edge), var(--shelf-wood) 35%, color-mix(in oklch, var(--shelf-wood) 75%, black));
-    box-shadow: 0 6px 12px -4px rgb(var(--shadow-ink) / 0.35), inset 0 1px 0 color-mix(in oklch, var(--shelf-edge) 60%, white);
+    box-shadow: 0 6px 12px -4px rgb(var(--shadow-ink) / calc(0.35 * var(--shadow-a))), inset 0 1px 0 color-mix(in oklch, var(--shelf-edge) 60%, var(--ink-strong));
     margin: -1px 0 0;
   }
-  .card__meta { padding: var(--s1) var(--s0) var(--s2); display: grid; gap: 0.15rem; align-content: start; }
-  .card__title { font-size: var(--step-0); line-height: var(--lh-heading); color: var(--ink-strong); text-wrap: balance; transition: color var(--dur-fast); }
-  .card__author { color: var(--ink-soft); font-family: var(--font-ui); font-size: var(--step--2); line-height: var(--lh-ui); letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
-  .card__tail { display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem; margin-top: 0.2rem; }
+  /* A shelf runs the width of the wall, not the width of the books standing on it. Each
+     ledge continues to the right and the grid clips it, so a row holding four books still
+     gets a full shelf. Cards later in the row simply paint their own ledge over it. */
+  .card__ledge::after {
+    content: ''; position: absolute; inset: 0 -100vw 0 100%;
+    background: inherit; box-shadow: inherit;
+  }
+
+  .card__title {
+    padding: var(--s1) 0 0;
+    font-size: var(--step-0); line-height: var(--lh-heading); color: var(--ink-strong);
+    text-wrap: balance; transition: color var(--dur-fast);
+  }
+  .card__author {
+    padding: var(--s-1) 0 0;
+    color: var(--ink-soft); font-family: var(--font-ui); font-size: var(--step--2);
+    line-height: var(--lh-ui); letter-spacing: 0.02em; font-variant-numeric: tabular-nums;
+    text-wrap: pretty;
+  }
+  .card__tail {
+    padding: var(--s0) 0 var(--s4);
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem 0.5rem;
+    align-content: start;
+  }
   .card__count { color: var(--ink-mute); font-family: var(--font-ui); font-size: var(--step--2); }
   /* The one thing a reader most wants to know before clicking: is there anything written here? */
   .card__guide {
     display: inline-flex; align-items: center; gap: 0.3em;
     font-family: var(--font-ui); font-size: var(--step--2); line-height: 1;
     color: var(--accent-deep); padding: 0.25em 0.5em;
-    border: 1px solid color-mix(in oklch, var(--accent) 40%, var(--paper-deeper));
+    border: 1px solid color-mix(in oklch, var(--accent) 50%, transparent);
     border-radius: 2px;
   }
   .card__guide::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }

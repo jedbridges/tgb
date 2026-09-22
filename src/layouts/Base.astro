@@ -18,10 +18,24 @@ const { bodyClass, ...seo } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f2e8e4" />
+    <meta name="theme-color" content="#f2e8e4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#231f1d" media="(prefers-color-scheme: dark)" />
+    <!-- Runs before the first byte of body is parsed, so a reader who pinned a scheme
+         never sees the other one flash first. It writes one attribute and nothing else:
+         the palette itself lives in tokens.css. -->
+    <script is:inline>
+      try {
+        const t = localStorage.getItem('tgb-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) { /* private mode: the system preference still applies */ }
+    </script>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <!-- The two faces the first screen actually needs: the headline's roman and the
+         italic of the word that turns inside it. The rest load only if a page uses them. -->
+    <link rel="preload" href="/fonts/gambetta-500.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/gambetta-500i.woff2" as="font" type="font/woff2" crossorigin />
     <Seo {...seo} />
     {GA4_ID && (
       <script is:inline define:vars={{ GA4_ID }}>
@@ -54,7 +68,7 @@ const { bodyClass, ...seo } = Astro.props;
   </body>
 </html>
 <style is:global>
-  .skip { position: absolute; left: var(--s1); top: -3rem; background: var(--ink); color: var(--paper); padding: 0.5rem 0.8rem; border-radius: 3px; z-index: 100; text-decoration: none; }
+  .skip { position: absolute; left: var(--gutter); top: -3rem; background: var(--ink); color: var(--paper); padding: 0.5rem 0.8rem; border-radius: 3px; z-index: 100; text-decoration: none; }
   .skip:focus { top: var(--s1); }
   main:focus { outline: none; }
 </style>

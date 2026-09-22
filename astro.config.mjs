@@ -14,7 +14,8 @@ export default defineConfig({
   integrations: [
     preact(),
     sitemap({
-      filter: (page) => !page.includes('/404'),
+      // /type is a temporary specimen: unlisted, unindexed, out of the sitemap.
+      filter: (page) => !page.includes('/404') && !page.includes('/type'),
     }),
     pagefind(),
   ],

@@ -59,21 +59,21 @@ const editionName = ed?.translator ? `${ed.translator} translation` : ed?.publis
 </div>
 <style>
   .buy { display: grid; gap: var(--s1); max-width: 46ch; }
-  .buy__lede { display: grid; gap: 0.1rem; padding-top: var(--s1); border-top: 1px solid var(--paper-deeper); }
-  .buy__lede-label { font-family: var(--font-ui); font-size: var(--step--2); font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); }
+  .buy__lede { display: grid; gap: var(--s-1); padding-top: var(--s1); border-top: 1px solid var(--edge); }
+  .buy__lede-label { font-family: var(--font-ui); font-size: var(--step--2); font-weight: var(--w-emph); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); }
   .buy__edition-name { font-size: var(--step-0); color: var(--ink-strong); line-height: 1.3; }
   .buy__edition-pub { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); }
-  .buy__why { color: var(--ink-soft); font-size: var(--step--1); line-height: 1.5; margin-top: 0.25rem; }
+  .buy__why { color: var(--ink-soft); font-size: var(--step--1); line-height: var(--lh-ui); margin-top: var(--s-1); }
   .buy__lede--none .buy__why { max-width: 42ch; }
   .buy__row { display: flex; flex-wrap: wrap; gap: var(--s0); }
   @media (max-width: 700px) {
     .buy { max-width: none; }
-    .buy__row { display: grid; grid-template-columns: 1fr; gap: 0.6rem; }
+    .buy__row { display: grid; grid-template-columns: 1fr; gap: var(--s0); }
     .buy__row .btn { width: 100%; min-height: 52px; font-size: var(--step--1); }
   }
   .btn__ext { opacity: 0.65; }
   .buy__alts { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); line-height: 1.55; }
-  .buy__alts-label { font-weight: 600; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); margin-bottom: 0.3rem; }
-  .buy__alts ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
-  .buy__alt { color: var(--ink-soft); font-weight: 600; }
+  .buy__alts-label { font-weight: var(--w-emph); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); margin-bottom: var(--s-1); }
+  .buy__alts ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-1); }
+  .buy__alt { color: var(--ink-soft); font-weight: var(--w-emph); }
 </style>
