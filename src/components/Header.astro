@@ -60,30 +60,12 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
 <style>
   .site-header {
     position: sticky; top: 0; z-index: 40;
-    /* The fade is the bar, not a band hanging off it.
-       Read upward, the way the page travels: nothing at the bar's lower edge, and solid
-       paper by its middle, so content dissolves as it passes under and is gone well before
-       it reaches the wordmark or the search. The stops trace a sigmoid rather than a
-       straight line; a linear alpha ramp shows as a hard edge at each end and was reading
-       as a drop shadow under a solid bar. */
-    background: linear-gradient(to top,
-      color-mix(in oklch, var(--paper) 0%, transparent) 0%,
-      color-mix(in oklch, var(--paper) 1.3%, transparent) 4.05%,
-      color-mix(in oklch, var(--paper) 4.9%, transparent) 7.75%,
-      color-mix(in oklch, var(--paper) 10.4%, transparent) 11.25%,
-      color-mix(in oklch, var(--paper) 17.5%, transparent) 14.95%,
-      color-mix(in oklch, var(--paper) 25.9%, transparent) 17.65%,
-      color-mix(in oklch, var(--paper) 35.2%, transparent) 20.6%,
-      color-mix(in oklch, var(--paper) 45%, transparent) 23.55%,
-      color-mix(in oklch, var(--paper) 55%, transparent) 26.45%,
-      color-mix(in oklch, var(--paper) 64.8%, transparent) 29.4%,
-      color-mix(in oklch, var(--paper) 74.1%, transparent) 32.35%,
-      color-mix(in oklch, var(--paper) 82.5%, transparent) 35.5%,
-      color-mix(in oklch, var(--paper) 89.6%, transparent) 38.75%,
-      color-mix(in oklch, var(--paper) 95.1%, transparent) 42.25%,
-      color-mix(in oklch, var(--paper) 98.7%, transparent) 45.95%,
-      color-mix(in oklch, var(--paper) 100%, transparent) 50%,
-      var(--paper) 100%);
+    /* Solid.
+       This was a tinted ramp across the bar's own height, and then a progressive blur under
+       it. Both read as haze: the page was legible through the top of the bar, and the gap
+       between the bar and the browse bar that pins under it turned into a second edge.
+       A reference site's chrome is not the place for an effect. */
+    background: var(--paper);
     /* On a phone the page runs under the status bar, so a bar pinned to top: 0 leaves a
        band above it where the page shows through and text scrolls past behind the clock.
        The inset is taken as padding rather than as a top offset, so the bar's own fill

@@ -286,11 +286,9 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
       </div>
       <style>{`
         .resultbar {
-          /* Rests below the header's fade, not inside it: pinned at the bar's own edge, the
-             count and the sort control came to a stop under the opaque end of the scrim.
-             Solid paper for the same reason the bar itself is, so covers do not scroll
-             through the numbers. */
-          grid-area: bar; position: sticky; top: var(--stick); z-index: 10;
+          /* Flush against the header, not below it. Two solid bars with a gap between them
+             leave a slot for the page to scroll through, which is worse than either edge. */
+          grid-area: bar; position: sticky; top: var(--header-h); z-index: 10;
           display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s0) var(--s1);
           padding: var(--s0) 0 calc(var(--s0) - 1px); margin-bottom: var(--s1);
           background: var(--paper);
