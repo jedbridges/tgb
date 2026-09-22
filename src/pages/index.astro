@@ -39,13 +39,16 @@ const HEADLINE_WORDS = [
   <section class="hero wrap">
     <div class="hero__text">
       <h1 class="reveal hero__h1">
-        <span class="hero__lead">Three thousand years of</span>
-        <span class="rotator" data-rotator aria-hidden="true">
-          {HEADLINE_WORDS.map((w, i) => (
-            <em class="rotator__word" data-active={i === 0 ? '' : undefined}>{w}</em>
-          ))}
+        <span class="hero__lead">Three thousand years</span>
+        <span class="hero__turn">
+          <span class="hero__of">of</span>
+          <span class="rotator" data-rotator aria-hidden="true">
+            {HEADLINE_WORDS.map((w, i) => (
+              <em class="rotator__word" data-active={i === 0 ? '' : undefined}>{w}</em>
+            ))}
+          </span>
         </span>
-        <span class="visually-hidden">{HEADLINE_WORDS[0]}, and everything else the great reading lists assign.</span>
+        <span class="visually-hidden">of {HEADLINE_WORDS[0]}, and everything else the great reading lists assign.</span>
       </h1>
       <p class="hero__lede reveal" style="--i:1">The great books list, assembled from all nine of them: St. John's, Columbia, Chicago, Yale and the published canons behind them. {works.length} works, with a guide to each, the themes it turns on, and the edition worth buying.</p>
       <div class="hero__actions reveal" style="--i:2">
@@ -136,18 +139,31 @@ const HEADLINE_WORDS = [
   }
 </script>
 <style>
-  .hero { padding-block: var(--s5) var(--s4); }
+  /* The hero is sized so the first shelf breaks the fold: the section heading and the top
+     of the covers sit just inside the viewport, which shows the product and says there is
+     more below without a scroll cue. min-height, not height, so short and landscape
+     screens simply grow instead of clipping. svh keeps mobile browser chrome from lying. */
+  .hero {
+    padding-block: var(--s4) var(--s2);
+    min-height: calc(100svh - var(--fold-peek, 17rem));
+    display: grid;
+    align-content: center;
+  }
+  @media (max-width: 700px) { .hero { --fold-peek: 15rem; } }
+  @media (max-height: 640px) { .hero { min-height: 0; padding-block: var(--s4) var(--s3); } }
   .hero__text { max-width: 44rem; }
-  /* Exactly two lines at every width: the lead never wraps, and the size is tied to the
-     viewport so the longest line always fits rather than breaking where it likes. */
+  /* Two lines at every width, breaking after "years" so that "of argument" reads as one
+     phrase. The binding line is now the shorter of the two, which lets the type run larger.
+     Sized against the viewport so it fits rather than wrapping wherever it likes. */
   .hero__h1 {
     display: grid; justify-items: start;
-    font-size: clamp(1.6rem, 8vw, 6rem);
+    font-size: clamp(1.7rem, 9vw, 6rem);
     line-height: var(--lh-display);
     letter-spacing: var(--tracking-display);
     text-wrap: nowrap;
   }
   .hero__lead { display: block; white-space: nowrap; }
+  .hero__turn { display: flex; align-items: baseline; gap: 0.26em; white-space: nowrap; }
   .rotator { white-space: nowrap; }
 
   /* The words stack in one grid cell, so the slot is always as wide as the longest of them
@@ -183,7 +199,8 @@ const HEADLINE_WORDS = [
   .section-head h2 { font-size: var(--step-3); }
   .section-head__more { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-soft); text-decoration: none; }
   .section-head__more:hover { color: var(--accent-deep); }
-  .shelf-section, .programs-section, .eras-section, .themes-section { padding-block: var(--s3); }
+  .shelf-section { padding-block: 0 var(--s3); }
+  .programs-section, .eras-section, .themes-section { padding-block: var(--s3); }
   .proglist { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0 var(--s3); }
   .prog { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s1); min-height: 48px; padding: 0.8rem 0; border-bottom: 1px solid var(--paper-deeper); text-decoration: none; }
   .prog__name { font-size: var(--step-1); color: var(--ink-strong); }
