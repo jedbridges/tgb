@@ -25,18 +25,28 @@ const progCount = (p: (typeof programs)[number]) => new Set(p.data.segments.flat
  * and the order alternates register so it never settles into a rhythm. Counts are the
  * works carrying that theme or form in the catalogue.
  */
+/*
+ * The first word is the one everyone sees, because it is the one on screen before the
+ * rotation starts, the one a reader with scripting off keeps, and the one a screen reader
+ * is given. It was 'argument', which is accurate to the site and combative as a greeting.
+ *
+ * 'wonder' opens instead. Not for warmth: it is where both Plato and Aristotle say
+ * philosophy actually begins, so it is the truest possible first word for a shelf that
+ * starts with the Greeks. The order after it moves outward rather than straight into the
+ * dark, and argument keeps its place, third.
+ */
 const HEADLINE_WORDS = [
-  'argument',   // knowledge, 251 works
+  'wonder',     // nature and the cosmos, 178 works
   'poetry',     // lyric and epic
+  'argument',   // knowledge, 251
+  'justice',    // 148
+  'faith',      // 239
+  'desire',     // love, 149
   'tragedy',    // 34 tragedies
   'doubt',      // the self
-  'faith',      // 239
   'rebellion',  // liberty, 104
-  'wonder',     // nature and the cosmos, 178
-  'grief',      // mortality, 114
   'comedy',     // 29
-  'justice',    // 148
-  'desire',     // love, 149
+  'grief',      // mortality, 114
   'exile',      // home and exile
 ];
 ---
@@ -157,12 +167,16 @@ const HEADLINE_WORDS = [
      screens simply grow instead of clipping. svh keeps mobile browser chrome from lying. */
   .hero {
     padding-block: var(--s4) var(--s2);
-    min-height: calc(100svh - var(--fold-peek, 17rem));
+    /* How much of the page is deliberately left below the fold. It has to cover the
+       section's own chrome, its rule, its heading and the space under it, and then a real
+       slice of the first row of books: enough that the shelf reads as a shelf rather than
+       as a heading with something cut off underneath it. Measured rather than guessed,
+       and checked at both breakpoints. */
+    min-height: calc(100svh - var(--fold-peek, 26rem));
     display: grid;
     align-content: center;
   }
-  @media (max-width: 700px) { .hero { --fold-peek: 15rem; } }
-  @media (max-height: 640px) { .hero { min-height: 0; padding-block: var(--s4) var(--s3); } }
+  @media (max-width: 700px) { .hero { --fold-peek: 22rem; } }
   .hero__text { max-width: 44rem; }
   /* Two lines at every width, breaking after "years" so that "of argument" reads as one
      phrase. The binding line is now the shorter of the two, which lets the type run larger.
@@ -207,6 +221,35 @@ const HEADLINE_WORDS = [
     .hero__actions { display: grid; grid-template-columns: 1fr; gap: var(--s0); }
     .hero__actions .btn { width: 100%; min-height: 54px; }
   }
+
+  /* Reserving space below the fold only works while the hero is the thing being sized. On
+     a shorter screen the hero's own content is taller than the space left for it, the
+     min-height stops binding, and the shelf drops out of view again however much is
+     reserved. So on a short viewport the hero gives up height instead: less padding, a
+     smaller headline, tighter gaps. The books stay visible, which is the point of the
+     first screen. */
+  @media (max-height: 880px) {
+    .hero { padding-block: var(--s2) var(--s1); }
+    .hero__h1 { font-size: clamp(1.6rem, 7.2vw, 4.5rem); }
+    .hero__lede { margin-top: var(--s1); }
+    .hero__actions { margin-top: var(--s2); }
+    /* The hero is not the only thing between the top of the page and the books. The shelf
+       section's own opening, its rule, its heading and the space under it come to roughly
+       three hundred pixels, so on a short screen that closes up too. */
+    .shelf-section { padding-top: var(--s3); }
+    .shelf-section .section-head { margin-bottom: var(--s2); }
+  }
+  /* A 1366 by 768 laptop is the tightest common screen there is, and at that height the
+     headline alone is a fifth of the viewport. It gives up more size here so the shelf
+     still breaks the fold. */
+  @media (max-height: 800px) {
+    .hero { padding-block: var(--s1) var(--s0); }
+    .hero__h1 { font-size: clamp(1.5rem, 5.4vw, 3rem); }
+    .shelf-section { padding-top: var(--s2); }
+    .shelf-section .section-head { margin-bottom: var(--s1); }
+  }
+  @media (max-height: 640px) { .hero { min-height: 0; padding-block: var(--s2) var(--s1); } }
+
   .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s2); border-top: var(--rule-section); padding-top: var(--s1); margin-bottom: var(--s3); }
   .section-head h2 { font-size: var(--step-3); }
   /* A tracked link sitting on a right edge leaves the tracking after its last character,
