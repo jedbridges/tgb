@@ -293,13 +293,15 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .buybar {
     position: fixed; inset: auto 0 0 0; z-index: 30; display: none;
     justify-content: center; gap: var(--s1);
-    padding: var(--s0) 0 calc(var(--s0) + env(safe-area-inset-bottom));
+    /* The same gutter as the page, and never less than the notch in landscape. Without it
+       the title sat against the left edge of the screen and the button against the right. */
+    padding-block: var(--s1) calc(var(--s1) + env(safe-area-inset-bottom));
+    padding-inline: max(var(--gutter), env(safe-area-inset-left)) max(var(--gutter), env(safe-area-inset-right));
     /* Solid, like the header. A wash over scrolling covers reads as a smear, and a bar
        carrying the page's one commercial action should not look provisional. */
     background: var(--paper);
     border-top: 1px solid var(--ink);
   }
-    /* The bar's contents sit on the page column, like everything else on the page. */
   .buybar > * { align-self: center; }
   .buybar__what { display: grid; gap: 0; min-width: 0; flex: 1 1 auto; }
   .buybar__title { font-size: var(--step-1); line-height: 1.15; color: var(--ink-strong); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
