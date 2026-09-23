@@ -20,10 +20,7 @@ recommendedEdition:
   publisher: Green Lion Press
   year: 2002
   why: Renders Aristotle's coinages into plain English rather than Latinate jargon, with commentary on every book.
-cover:
-  source: archive
-  archiveId: aristotlesmetaph0001aris
-  credit: "Internet Archive, aristotlesmetaph0001aris"
+cover: { source: generated }
 synopsis: >-
   Fourteen books of Aristotle's first philosophy, the study of being as being. He reviews his predecessors' accounts of causes, defends the principle of non-contradiction, and in the central books asks what substance is, working through matter, form, essence, potentiality and actuality. Book XII argues for an eternal unmoved mover, thought thinking itself, on which the heavens and nature depend.
 keywords: [being qua being, substance, ousia, potentiality, actuality, essence, unmoved mover, non-contradiction]

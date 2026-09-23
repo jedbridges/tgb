@@ -21,10 +21,7 @@ recommendedEdition:
   year: 1984
   isbn13: "9780140443332"
   why: Vivid and readable, with a long introduction and notes; contains all three plays of the trilogy.
-cover:
-  source: archive
-  archiveId: agamemnonofaesch015545mbp
-  credit: "Internet Archive, agamemnonofaesch015545mbp"
+cover: { source: generated }
 synopsis: >-
   The first play of the Oresteia. A watchman sees the beacon announcing the fall of Troy, and Agamemnon returns to Argos with the captive prophetess Cassandra. His wife Clytemnestra, who has ruled in his absence with her lover Aegisthus, persuades him to walk into the palace on crimson tapestries. Cassandra foresees the murder and her own death and goes in to meet it. Clytemnestra kills them both and stands over the bodies, claiming justice for the daughter Agamemnon sacrificed at Aulis, while the chorus of old men foretells the return of Orestes.
 keywords: [Agamemnon, Clytemnestra, Cassandra, Aegisthus, Iphigenia, Troy, Argos, beacon]

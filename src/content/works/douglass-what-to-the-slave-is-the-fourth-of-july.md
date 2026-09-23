@@ -18,10 +18,7 @@ recommendedEdition:
   year: 1999
   why: Philip Foner's collection, abridged by Yuval Taylor, prints the speech whole with its date and occasion.
   isbn13: "9781613741450"
-cover:
-  source: archive
-  archiveId: Douglass_July_Oration
-  credit: "Internet Archive, Douglass_July_Oration"
+cover: { source: generated }
 synopsis: >-
   An Independence Day oration delivered at Corinthian Hall in Rochester, New York, on 5 July 1852, at the invitation of a local antislavery society. Douglass begins by praising the founders and the Declaration, then turns the occasion against his audience: the holiday is theirs and not his, and to the slave the celebration is mockery. He refuses to argue that slavery is wrong, saying the case needs no proof, and instead indicts the churches, the press and the Fugitive Slave Act. He ends by reading the Constitution as an antislavery document and predicting the system's fall.
 keywords: [Rochester, Declaration of Independence, Fugitive Slave Act, hypocrisy, Constitution, abolitionism, Corinthian Hall]

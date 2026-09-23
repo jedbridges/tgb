@@ -20,10 +20,7 @@ recommendedEdition:
   publisher: Calder
   year: 1981
   why: English National Opera guide with the German libretto facing and essays; St. John's reads the libretto with the score.
-cover:
-  source: archive
-  archiveId: cu31924022273662
-  credit: "Internet Archive, cu31924022273662"
+cover: { source: generated }
 synopsis: >-
   Wagner's opera in three acts, for which he wrote both the poem and the music, drawing on Gottfried von Strassburg's medieval romance. Tristan is bringing the Irish princess Isolde to Cornwall as bride for his uncle King Marke; she means to poison them both for his killing of her betrothed, but her servant substitutes a love potion. Discovered together in the king's garden, Tristan is wounded and taken to his castle in Brittany, where he dies as Isolde arrives; she sings over his body and follows him in death. Its opening chord and unresolved harmony marked a turning point in Western music.
 keywords: [Tristan chord, Liebestod, King Marke, Brangäne, love potion, Gottfried von Strassburg, Schopenhauer, music drama]

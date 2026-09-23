@@ -19,10 +19,7 @@ recommendedEdition:
   publisher: Dover
   year: 1962
   why: The only translation in print, and short enough to read in an evening with a pencil.
-cover:
-  source: archive
-  archiveId: treatiseonlight031310mbp
-  credit: "Internet Archive, treatiseonlight031310mbp"
+cover: { source: generated }
 synopsis: >-
   Huygens argues that light is not a stream of particles but a disturbance spreading through an all-pervading ether, like sound through air. Each point that the disturbance reaches becomes the centre of a new spherical wavelet, and the common tangent of those wavelets is the advancing wavefront: the construction now called Huygens's principle. From it he derives the laws of reflection and refraction, explains why light bends toward the normal in a denser medium by travelling more slowly there, and accounts in detail for the double refraction of Iceland crystal, which had baffled everyone.
 keywords: [Huygens principle, wavefront, ether, refraction, reflection, Iceland crystal, double refraction, speed of light, Roemer]

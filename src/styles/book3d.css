@@ -98,7 +98,7 @@
 .book__body[data-vt='flat'] .book__pages,
 .book__body[data-vt='flat'] .book__top,
 .book__body[data-vt='flat'] .book__back,
-.book__body[data-vt='flat'] .book__gloss { opacity: 0 !important; }
+.book__body[data-vt='flat'] .side--art::after { opacity: 0 !important; }
 .book__front {
   transform: translateZ(calc(var(--d) / 2));
   transform-origin: left center;
@@ -127,8 +127,10 @@
   border-radius: 3px 1px 1px 3px;
 }
 .book__front img { width: 100%; height: 100%; object-fit: cover; -webkit-user-drag: none; user-drag: none; pointer-events: none; }
-.book__gloss {
-  position: absolute; inset: 0; pointer-events: none;
+/* The sheen on a jacket, as the cover's own pseudo-element rather than an element of its
+   own. It behaves identically and it is not 689 more nodes on the browse page. */
+.side--art::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
   background: linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.18) 46%, rgb(255 255 255 / 0.05) 52%, transparent 62%);
   opacity: 0; transition: opacity var(--dur) var(--ease-out);
   mix-blend-mode: screen;
@@ -241,7 +243,7 @@
     --ry: 18deg; --tz: 26px; --tx: 2px; --ty: -26px;
     transition-duration: var(--dur);
   }
-  .card:hover .book[data-pull] .book__gloss, .book[data-pull]:hover .book__gloss { opacity: 0.8; }
+  .card:hover .book[data-pull] .side--art::after, .book[data-pull]:hover .side--art::after { opacity: 0.8; }
   /* The shadow carries the height instead: it drops away, spreads and softens, which is
      what tells you the book has come up rather than come closer. */
   .card:hover .book[data-pull] .book__shadow, .book[data-pull]:hover .book__shadow {
@@ -283,7 +285,7 @@
 @media (prefers-reduced-motion: reduce) {
   .book__inner > * { transition: none; opacity: 1; transform: none; }
 }
-.book[data-state='open'] .book__gloss { opacity: 0; }
+.book[data-state='open'] .side--art::after { opacity: 0; }
 .book[data-state='open'] .book__shadow { transform: translateX(calc(var(--w) * -0.25)) scaleX(1.5); }
 .book--button { cursor: pointer; }
 /* On a touch screen there is no hover to lift the book, so the press itself does it. */
@@ -297,5 +299,5 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .book__body, .book__front, .book__shadow, .book__gloss { transition: none !important; }
+  .book__body, .book__front, .book__shadow, .side--art::after { transition: none !important; }
 }

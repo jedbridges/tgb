@@ -17,10 +17,7 @@ recommendedEdition:
   publisher: Carcanet (Fyfield Books)
   year: 2003
   why: Has The Deserted Village and The Traveller with the best of the prose; any Goldsmith selection will serve.
-cover:
-  source: archive
-  archiveId: goldsmithstrave00goog
-  credit: "Internet Archive, goldsmithstrave00goog"
+cover: { source: generated }
 synopsis: >-
   A poem of about 430 lines in heroic couplets remembering Auburn, an idealised English village of the poet's youth, and finding it emptied. The first half recalls its parson, schoolmaster, alehouse and evening games; the second describes the enclosure of the common land by a single rich landowner, the flight of the villagers to the city and to America, and the departure of Poetry itself. Goldsmith's dedication to Reynolds insists that the depopulation he describes is real. It was widely read as a protest against luxury and enclosure.
 keywords: [Auburn, enclosure, Sweet Auburn loveliest village of the plain, the village preacher, the village schoolmaster, luxury, heroic couplets]

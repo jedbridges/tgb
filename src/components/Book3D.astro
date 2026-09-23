@@ -73,7 +73,6 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
               <span class="cover-gen__author">{authorName}</span>
             </span>
           )}
-          <span class="book__gloss"></span>
         </span>
         {openable && <span class="side side--endpaper" aria-hidden="true"></span>}
       </span>
@@ -94,11 +93,20 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
           )}
         </span>
       )}
-      <span class="book__face book__back"></span>
+      {/*
+        A book on a shelf rests turned a little to the left, and it never turns the other
+        way: the hover pulls it to 18deg and the neighbours tip to 15 and 30, all positive.
+        So the back, the page edges and the underside cannot project a single pixel, which
+        was checked by painting them magenta on the live shelf and finding none. They are
+        three of the six faces on every one of 689 cards, and dropping them takes 2,067
+        elements out of the browse page with no visible change at all. The book on a work's
+        own page does turn, and opens, so there it keeps all six.
+      */}
+      {openable && <span class="book__face book__back"></span>}
       <span class="book__face book__spine">{showSpineText && <span class="book__spine-text"><b>{authorName}</b>&ensp;<i>{title}</i></span>}</span>
-      <span class="book__face book__pages"></span>
+      {openable && <span class="book__face book__pages"></span>}
       <span class="book__face book__top"></span>
-      <span class="book__face book__bottom"></span>
+      {openable && <span class="book__face book__bottom"></span>}
     </span>
     <span class="book__shadow"></span>
   </span>

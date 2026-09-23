@@ -20,10 +20,7 @@ recommendedEdition:
   year: 2018
   isbn13: "9780190276072"
   why: The standard scholarly study Bible, with introductions and notes for every book.
-cover:
-  source: archive
-  archiveId: bookisaiah00socigoog
-  credit: "Internet Archive, bookisaiah00socigoog"
+cover: { source: generated }
 synopsis: >-
   The longest of the prophetic books collects oracles spanning two centuries. Chapters 1 to 39 come largely from Isaiah of Jerusalem in the eighth century BCE, warning Judah and its kings against faithlessness and foreign alliances during the Assyrian threat. Chapters 40 to 55, addressed to exiles in Babylon, announce comfort, a new exodus, the sovereignty of one God over all nations, and the suffering servant who bears the sins of others. The closing chapters look toward a restored Jerusalem and a new heaven and earth.
 keywords: [Isaiah, suffering servant, Babylon, exile, Jerusalem, Immanuel, Assyria, comfort ye my people]

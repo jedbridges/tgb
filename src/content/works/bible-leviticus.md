@@ -21,10 +21,7 @@ recommendedEdition:
   year: 2008
   isbn13: "9780393333930"
   why: A literal, rhythmic translation with a running commentary that explains the Hebrew and the law codes.
-cover:
-  source: archive
-  archiveId: booksgenesisexo02missgoog
-  credit: "Internet Archive, booksgenesisexo02missgoog"
+cover: { source: generated }
 synopsis: >-
   The third book of the Torah is almost entirely law, delivered to Moses at the Tent of Meeting. It prescribes the sacrifices, the ordination of Aaron's priests, the rules for clean and unclean animals, purity after childbirth and disease, the Day of Atonement and a code of holiness covering sexual conduct, the treatment of the poor and the stranger, the sabbath and jubilee years. Its central demand is that Israel be holy as God is holy, and it contains the command to love your neighbour as yourself.
 keywords: [Aaron, priests, sacrifice, holiness code, clean and unclean, Day of Atonement, jubilee, love your neighbour]
