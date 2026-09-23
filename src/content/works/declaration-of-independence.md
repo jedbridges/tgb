@@ -28,7 +28,9 @@ otherEditions:
     year: 1998
     why: Pauline Maier's account of the drafting and of the state and local declarations that preceded it.
 cover:
-  source: generated
+  source: archive
+  archiveId: declarationofind00jeff
+  credit: "Internet Archive, declarationofind00jeff"
 synopsis: >-
   The document by which the Second Continental Congress announced on 4 July 1776 that the thirteen colonies were free of British rule, drafted by Jefferson and revised by Adams, Franklin and the Congress. A short preamble states that all men are created equal, that they have unalienable rights to life, liberty and the pursuit of happiness, and that governments derive their just powers from the consent of the governed. A list of twenty-seven grievances against George III follows, arranged to show a deliberate pattern of usurpation, then a paragraph on the colonists' unanswered petitions, and finally the declaration itself, with the signers pledging their lives, fortunes and honour.
 whyItMatters: >-

@@ -37,7 +37,9 @@ otherEditions:
     why: >-
       The scholarly standard, with the early works that show how the method was arrived at.
 cover:
-  source: generated
+  source: archive
+  archiveId: discourseonmetho1912desc
+  credit: "Internet Archive, discourseonmetho1912desc"
 synopsis: >-
   Descartes introduces his new philosophy by telling the story of his own education and his disappointment with it. He left school learned and doubtful, then spent years travelling and soldiering, and concluded that his own reasoning would yield more truth than books. Part two states the four rules of his method: accept nothing not clearly evident, divide each difficulty into parts, move from the simplest objects upward, and review until nothing has been omitted. Part four gives the first published statement of the cogito, with proofs of God and of the soul. The later parts defend a mechanical account of the body, argue that animals lack language and so lack reason, and explain why he is publishing.
 whyItMatters: >-

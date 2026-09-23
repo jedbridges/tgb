@@ -19,7 +19,10 @@ recommendedEdition:
   publisher: Everyman's Library
   year: 1963
   why: Contains De Motu Cordis and the two later letters on circulation in a readable modern translation.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: onmotionheartan00harvgoog
+  credit: "Internet Archive, onmotionheartan00harvgoog"
 synopsis: >-
   A seventy-two page Latin treatise published at Frankfurt in 1628 in which Harvey, physician to James I, demonstrates that the blood circulates. Against Galen's view that blood is made in the liver and consumed in the tissues, he shows by vivisection of animals and ligature experiments on human arms that the heart is a pump, that the valves in the veins allow flow only toward the heart, and that the quantity of blood the heart expels in an hour far exceeds what the body could make. He concludes that the same blood must pass from arteries to veins and return, though he could not see the capillaries.
 keywords: [circulation of the blood, Galen, vivisection, valves, ligature, systole, diastole, Frankfurt 1628]

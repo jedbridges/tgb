@@ -59,7 +59,7 @@ const SCALLOP =
   ring.slice(1).map(([x, y]) => `A${n(arcR)},${n(arcR)} 0 0,1 ${x},${y}`).join('') +
   'Z';
 
-const RIM_R = 137;
+const RIM_R = 134;
 const RIM_LEN = n(2 * Math.PI * RIM_R);
 ---
 <div class:list={['seal', cls]} data-seal aria-hidden="true">
@@ -69,9 +69,9 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
       <!-- Everything that does not turn. -->
       <g id="seal-still">
         <path d={SCALLOP} fill="none" stroke-width="2.6" />
-        <circle cx="200" cy="200" r="158" fill="none" stroke-width="1.1" />
-        <circle cx="200" cy="200" r="152" fill="none" stroke-width="1.1" />
-        <circle cx="200" cy="200" r="113" fill="none" stroke-width="1.1" />
+        <circle cx="200" cy="200" r="161" fill="none" stroke-width="1.1" />
+        <circle cx="200" cy="200" r="155" fill="none" stroke-width="1.1" />
+        <circle cx="200" cy="200" r="108" fill="none" stroke-width="1.1" />
         <!-- The mark, where a seal carries its device. -->
         <g transform="translate(144.5, 158) scale(0.0661)">
           <path d="M1681.625,391.685c-220.914-220.913-579.086-220.913-800,0v-226c220.914-220.913,579.086-220.913,800,0Z" />
@@ -98,11 +98,11 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
     <!-- The strike. Dark lip high, light lip low, face in the page's own paper.
          Each lip translates on the outside of a use that rotates on the inside, so the
          lettering turns while the direction of the light does not. -->
-    <g class="seal__lip seal__lip--dark" transform="translate(0,-2.2)">
+    <g class="seal__lip seal__lip--dark" transform="translate(0,-2.5)">
       <use href="#seal-still" />
       <use href="#seal-turn" class="seal__spin" />
     </g>
-    <g class="seal__lip seal__lip--light" transform="translate(0,2.2)">
+    <g class="seal__lip seal__lip--light" transform="translate(0,2.5)">
       <use href="#seal-still" />
       <use href="#seal-turn" class="seal__spin" />
     </g>
@@ -118,8 +118,8 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
     /* The press. Two schemes, not one flipped: a recess in dark paper needs a far weaker
        highlight than one in light paper, or the lip reads as an outline drawn around the
        shape rather than as light falling into it. */
-    --press-dark: light-dark(rgb(74 58 50 / 0.40), rgb(0 0 0 / 0.62));
-    --press-light: light-dark(rgb(255 253 250 / 0.92), rgb(255 244 228 / 0.085));
+    --press-dark: light-dark(rgb(74 58 50 / 0.56), rgb(0 0 0 / 0.72));
+    --press-light: light-dark(rgb(255 255 253 / 1), rgb(255 244 228 / 0.13));
     --press-recess: light-dark(rgb(74 58 50 / 0.030), rgb(0 0 0 / 0.11));
     position: relative;
     width: 100%;
@@ -177,15 +177,18 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
   }
   :root[data-theme='dark'] .seal__sheen { opacity: calc(var(--sheen, 0) * 0.42); }
 
+  /* Bigger than it looks like it needs to be. A blind deboss carries no ink, so the only
+     things holding a letter together are its size and the depth of the strike, and at 19.5
+     the thin strokes of the rim legend were disappearing into the paper. */
   .seal__rim {
     font-family: var(--font-ui);
-    font-size: 19.5px;
+    font-size: 22px;
     font-weight: 700;
-    letter-spacing: 0.055em;
+    letter-spacing: 0.05em;
   }
   .seal__count {
     font-family: var(--font-ui);
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.2em;
     text-anchor: middle;

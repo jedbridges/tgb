@@ -19,7 +19,10 @@ recommendedEdition:
   publisher: Harcourt
   year: 1991
   why: Wilbur's verse translation, paired with a later comedy on the same theme.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: bim_eighteenth-century_plays-by-moliere-the-m_molire-jean-baptiste-d_1771
+  credit: "Internet Archive, bim_eighteenth-century_plays-by-moliere-the-m_molire-jean-baptiste-d_1771"
 synopsis: >-
   Arnolphe, a man in his forties terrified of being cuckolded, has raised the orphan Agnès from childhood in complete ignorance so that she will make an obedient wife. Days before the wedding a young man, Horace, meets Agnès by chance and falls in love, and, not knowing who Arnolphe is, confides every step of the courtship to him. Agnès learns more from a few days of love than from years of confinement, and Arnolphe's scheme collapses. The play's success provoked a public quarrel that Molière answered on stage in The Critique of the School for Wives.
 keywords: [Arnolphe, Agnès, Horace, jealousy, cuckoldry, Chrysalde]

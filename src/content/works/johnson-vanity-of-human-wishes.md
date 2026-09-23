@@ -17,7 +17,10 @@ recommendedEdition:
   publisher: Oxford World's Classics
   year: 2009
   why: Contains the poem with London, Rasselas, the prefaces and a selection of essays and letters.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: londonthevanityo00johnuoft
+  credit: "Internet Archive, londonthevanityo00johnuoft"
 synopsis: >-
   A poem of 368 lines in heroic couplets, freely imitating Juvenal's tenth satire. Surveying mankind from China to Peru, Johnson shows how each object of desire, wealth, political power, learning, military glory, long life and beauty, betrays those who obtain it. Cardinal Wolsey, the scholar, Charles XII of Sweden and the aged and the beautiful serve as examples. The poem ends by asking whether then no wish should be made, and answers that we should pray for a healthy mind, patience and faith, leaving the choice to heaven.
 keywords: [Juvenal, Wolsey, Charles XII, heroic couplets, imitation, ambition, old age, Chinese to Peru]

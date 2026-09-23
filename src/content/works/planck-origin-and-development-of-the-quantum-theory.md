@@ -20,7 +20,10 @@ recommendedEdition:
   publisher: Clarendon Press
   year: 1922
   why: The original English edition; the lecture is also freely available from the Nobel Foundation.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: origindevelopmen00planrich
+  credit: "Internet Archive, origindevelopmen00planrich"
 synopsis: >-
   The lecture Planck delivered in Stockholm in June 1920 on receiving the Nobel Prize for 1918. He describes how the study of black-body radiation led him, after years of work on entropy, to the hypothesis that energy is emitted and absorbed in discrete quanta, and how Einstein, Bohr and others extended the idea to light, specific heats and the structure of the atom. He ends by confessing that the quantum cannot be reconciled with classical physics and that a new theory is needed.
 keywords: [Nobel lecture, black-body radiation, quantum hypothesis, Planck's constant, Bohr atom, Einstein]

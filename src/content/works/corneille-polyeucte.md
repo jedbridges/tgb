@@ -19,7 +19,10 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1980
   why: Cairncross's verse translation; the Harvard Classics uses Thomas Constable's version.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: polyeuctemartyr00corngoog
+  credit: "Internet Archive, polyeuctemartyr00corngoog"
 synopsis: >-
   In Roman Armenia in the third century, Polyeucte, an Armenian nobleman newly married to Pauline, the governor's daughter, is secretly baptised a Christian and smashes the idols at a public sacrifice. His father-in-law Félix must condemn him. Pauline, who married Polyeucte from duty while loving the Roman Sévère, pleads for his life, but he chooses martyrdom; his death converts first Pauline and then Félix. Corneille's Christian tragedy, in which love of God outranks even the heroic virtue of his other plays.
 keywords: [Pauline, Sévère, Félix, martyrdom, baptism, Armenia, Decius, Christian tragedy]

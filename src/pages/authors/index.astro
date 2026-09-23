@@ -31,8 +31,10 @@ const dates = (a: (typeof groups)[number]['authors'][number]) => {
         {g.authors.map((a) => (
           <li>
             <a href={authorUrl(a.id)} class="author">
-              <span class="author__name">{a.data.name}</span>
-              <span class="author__dates ui">{dates(a)}</span>
+              <span class="author__id">
+                <span class="author__name">{a.data.name}</span>
+                <span class="author__dates ui">{dates(a)}</span>
+              </span>
               <span class="author__count ui">{byAuthor.get(a.id)} {byAuthor.get(a.id) === 1 ? 'work' : 'works'}</span>
             </a>
           </li>
@@ -48,25 +50,29 @@ const dates = (a: (typeof groups)[number]['authors'][number]) => {
   .era { padding-block: var(--s3); }
   .era__label { display: flex; align-items: baseline; gap: var(--s1); font-style: italic; font-size: var(--step-2); border-bottom: var(--rule-section); padding-bottom: var(--s0); }
   .era__range { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; margin-left: auto; white-space: nowrap; }
-    /* Name and dates each keep their own band across the row, so the rule under every
-     author in a row falls on one line however long the name is. */
+  /* The rule under each author keeps its own band across the row, so it falls on one line
+     however long the name is. The dates do not: giving them a band of their own meant that
+     one two-line name in a row pushed every other author's dates to the bottom of a tall
+     empty cell, and a short name sat with a hole under it. They belong to the name, so they
+     travel with it. */
   .authors {
     list-style: none; margin: 0; padding: 0;
     display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     grid-auto-rows: auto; column-gap: var(--s3); row-gap: 0;
   }
-  .authors > li { grid-row: span 3; display: grid; grid-template-rows: subgrid; min-width: 0; }
+  .authors > li { grid-row: span 2; display: grid; grid-template-rows: subgrid; min-width: 0; }
   .author {
-    grid-row: span 3; display: grid; grid-template-rows: subgrid;
+    grid-row: span 2; display: grid; grid-template-rows: subgrid;
     grid-template-columns: minmax(0, 1fr) auto; column-gap: var(--s1);
     text-decoration: none; min-width: 0;
   }
   .author::after {
-    content: ''; grid-row: 3; grid-column: 1 / -1;
+    content: ''; grid-row: 2; grid-column: 1 / -1;
     align-self: end; border-bottom: var(--rule); margin-top: 0.7rem;
   }
-  .author__name { grid-row: 1; padding-top: 0.7rem; font-size: var(--step-1); color: var(--ink-strong); text-wrap: balance; }
+  .author__id { grid-row: 1; grid-column: 1; display: grid; gap: 0.2rem; align-content: start; padding-top: 0.7rem; min-width: 0; }
+  .author__name { font-size: var(--step-1); color: var(--ink-strong); text-wrap: balance; line-height: var(--lh-heading); }
   .author:hover .author__name { color: var(--accent); }
-  .author__dates { grid-row: 2; grid-column: 1; color: var(--ink-mute); font-size: var(--step--2); }
-  .author__count { grid-column: 2; grid-row: 1; align-self: baseline; padding-top: 0.7rem; color: var(--ink-mute); font-size: var(--step--2); white-space: nowrap; }
+  .author__dates { color: var(--ink-mute); font-size: var(--step--2); }
+  .author__count { grid-row: 1; grid-column: 2; align-self: start; padding-top: 0.9rem; color: var(--ink-mute); font-size: var(--step--2); white-space: nowrap; }
 </style>

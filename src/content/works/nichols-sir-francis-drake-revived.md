@@ -18,7 +18,10 @@ recommendedEdition:
   publisher: P. F. Collier and Son
   year: 1910
   why: The volume in which it is assigned, with Herodotus, Tacitus and the Elizabethan voyages of Raleigh and Gilbert.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: sirfrancisdraker00nichrich
+  credit: "Internet Archive, sirfrancisdraker00nichrich"
 synopsis: >-
   An account of Francis Drake's voyage of 1572 and 1573 to the Spanish Main, compiled by the preacher Philip Nichols from the reports of Drake and his companions and revised by Drake himself before his death. It describes the attack on Nombre de Dios, where Drake was wounded, the alliance with the Cimaroons, escaped African slaves who guided him across the isthmus of Panama, his first sight of the Pacific from a tree, and the ambush of a Spanish mule train carrying silver and gold. It was published by Drake's nephew in 1626.
 keywords: [Francis Drake, Nombre de Dios, Cimaroons, Panama, Spanish Main, privateering, Elizabethan voyages, treasure]

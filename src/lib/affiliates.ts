@@ -1,3 +1,5 @@
+import notStocked from '~/assets/bookshop-missing.json';
+
 /** Single place for affiliate configuration. IDs come from env; blank IDs degrade to plain retailer links. */
 const AMAZON_TAG = (import.meta.env.AMAZON_ASSOCIATE_TAG as string | undefined)?.trim() || '';
 const BOOKSHOP_ID = (import.meta.env.BOOKSHOP_AFFILIATE_ID as string | undefined)?.trim() || '';
@@ -36,8 +38,26 @@ export function amazonUrl(w: BuyTarget): string {
   return u.toString();
 }
 
+/**
+ * Bookshop does not carry everything, and a deep link to an ISBN it has never heard of is
+ * a 404 with our affiliate id on it.
+ *
+ * Every recommended ISBN on the site was checked against bookshop.org: 314 of the 419 are
+ * stocked and 105 are not, almost all of them Hackett or the ebook ISBNs of Penguin and
+ * Oxford paperbacks. The misses are listed rather than the hits because the list is
+ * shorter, and because a new ISBN should be assumed to work until it is shown not to.
+ *
+ * Re-check it when the recommended editions change: fetch bookshop.org/a/{id}/{isbn} from
+ * a bookshop.org page and see whether it lands on /p/books/.
+ */
+const BOOKSHOP_MISSING = new Set(notStocked as string[]);
+
 export function bookshopUrl(w: BuyTarget): string {
-  if (w.isbn13) return BOOKSHOP_ID ? `https://bookshop.org/a/${BOOKSHOP_ID}/${w.isbn13}` : `https://bookshop.org/book/${w.isbn13}`;
+  const affiliate = BOOKSHOP_ID ? `affiliate=${BOOKSHOP_ID}&` : '';
+  const carried = w.isbn13 && !BOOKSHOP_MISSING.has(w.isbn13);
+  if (carried) return BOOKSHOP_ID ? `https://bookshop.org/a/${BOOKSHOP_ID}/${w.isbn13}` : `https://bookshop.org/book/${w.isbn13}`;
+  // No ISBN, or one they do not carry: their search, which lands on the work in whatever
+  // edition they do have rather than on a dead end. The affiliate id rides along.
   const q = encodeURIComponent(`${w.title} ${w.author}`);
-  return BOOKSHOP_ID ? `https://bookshop.org/search?affiliate=${BOOKSHOP_ID}&keywords=${q}` : `https://bookshop.org/search?keywords=${q}`;
+  return `https://bookshop.org/search?${affiliate}keywords=${q}`;
 }

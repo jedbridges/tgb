@@ -20,7 +20,10 @@ recommendedEdition:
   year: 2018
   isbn13: "9780190276072"
   why: The standard scholarly study Bible, with introductions and notes for every book.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: amosbersunderlut00bibl
+  credit: "Internet Archive, amosbersunderlut00bibl"
 synopsis: >-
   Amos, a herdsman from Judah, prophesies against the northern kingdom of Israel in a time of prosperity under Jeroboam II. In nine short chapters of oracles and visions he denounces the rich who trample the poor, sell the needy for a pair of sandals and mask injustice with lavish worship. God rejects their festivals and demands that justice roll down like waters. The book foretells exile and ends with a brief promise of restoration.
 keywords: [Amos, Jeroboam II, Bethel, Day of the Lord, justice, prophets, Israel, oracles]

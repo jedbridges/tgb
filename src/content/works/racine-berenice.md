@@ -19,7 +19,10 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1967
   why: Three of Racine's major tragedies in a clear blank-verse translation.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: berenicetragedy00raciiala
+  credit: "Internet Archive, berenicetragedy00raciiala"
 synopsis: >-
   Titus has just become emperor of Rome. For five years he has loved Berenice, queen of Judaea, and promised to marry her, but Roman law and opinion will not accept a foreign queen as empress. His friend Antiochus, king of Commagene, also loves her and has kept silent. The whole play is Titus finding the will to tell Berenice, and Berenice finding the will to accept it. No one dies. Racine's preface argues that majestic sadness is enough for tragedy.
 keywords: [Titus, Bérénice, Antiochus, Rome, Judaea, Suetonius, duty, renunciation]

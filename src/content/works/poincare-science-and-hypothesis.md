@@ -20,7 +20,10 @@ recommendedEdition:
   year: 2018
   why: A fresh complete translation; the 1905 Dover text is the one in Great Books and is free online.
   isbn13: "9781350026759"
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: scienceandhypoth00poinuoft
+  credit: "Internet Archive, scienceandhypoth00poinuoft"
 synopsis: >-
   Poincaré's first book for general readers, on the role of hypothesis in mathematics and physics. He argues that mathematical induction is a synthetic a priori judgement, that the axioms of geometry are neither empirical facts nor necessary truths but conventions chosen for convenience, and that the principles of mechanics have the same conventional character. The final part surveys the physics of his day, from the theory of light to electrodynamics, and asks which hypotheses are fruitful and which merely disguise ignorance.
 keywords: [conventionalism, non-Euclidean geometry, mathematical induction, hypothesis, principle of relativity, ether]

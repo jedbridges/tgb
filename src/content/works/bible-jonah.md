@@ -20,7 +20,10 @@ recommendedEdition:
   year: 2018
   isbn13: "9780190276072"
   why: The standard scholarly study Bible, with introductions and notes for every book.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: tangale-1922-ruth-and-jonah-rut-yona
+  credit: "Internet Archive, tangale-1922-ruth-and-jonah-rut-yona"
 synopsis: >-
   A short prose tale, four chapters long, about a prophet who runs away. Told to preach to Nineveh, the capital of Israel's enemy Assyria, Jonah boards a ship for Tarshish, is thrown overboard in a storm and swallowed by a great fish. Vomited onto dry land, he delivers a one-sentence sermon and the whole city repents. Jonah sulks at God's mercy, and God rebukes him with a plant that withers, asking whether he should not pity a city of a hundred and twenty thousand people.
 keywords: [Jonah, Nineveh, great fish, whale, Tarshish, repentance, mercy, Assyria]

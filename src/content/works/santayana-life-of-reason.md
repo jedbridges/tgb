@@ -18,7 +18,10 @@ recommendedEdition:
   publisher: Prometheus Books
   year: 1998
   why: A one-volume reprint of the five books; the MIT critical edition is the scholarly text.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: lifeofreasonorph01sant
+  credit: "Internet Archive, lifeofreasonorph01sant"
 synopsis: >-
   Santayana's five-volume account of how human impulses, once shaped by reflection, become a life worth living. Reason in Common Sense lays out the naturalist basis; the four following volumes trace reason in society, from love and the family to patriotism; in religion, which he treats as poetry mistaken for science; in art; and in science, which he defends as the only knowledge we have. The sentence that those who cannot remember the past are condemned to repeat it comes from the first volume.
 keywords: [naturalism, reason in religion, reason in society, reason in art, reason in science, ideal, impulse, progress]

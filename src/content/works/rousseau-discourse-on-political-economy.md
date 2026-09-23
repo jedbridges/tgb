@@ -20,7 +20,10 @@ recommendedEdition:
   year: 2011
   isbn13: "9781603846738"
   why: The Cress volume includes this essay alongside the Discourses and the Social Contract.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: rousseau-discourse-on-political-economy-kelly.ocr
+  credit: "Internet Archive, rousseau-discourse-on-political-economy-kelly.ocr"
 synopsis: >-
   An article Rousseau wrote for volume five of Diderot's Encyclopédie in 1755, later printed separately. It distinguishes the government of a state from that of a family, introduces the concept of the general will as the rule of legitimate administration, and lays out three maxims for rulers, to follow the general will, to cultivate virtue through public education, and to provide for public needs by fair taxation. Much of the Social Contract is sketched here first.
 keywords: [general will, Encyclopédie, public education, taxation, virtue, patriotism, Diderot]

@@ -18,7 +18,10 @@ recommendedEdition:
   publisher: Herald Press
   year: 2003
   why: A small modern reprint; the Harvard Classics text, in volume 1 with Franklin and Woolman, is free online.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: somefruitssolit00penngoog
+  credit: "Internet Archive, somefruitssolit00penngoog"
 synopsis: >-
   A collection of some 850 numbered maxims and reflections, published anonymously by the Quaker founder of Pennsylvania while he was in hiding from political enemies in England. They are grouped under headings such as Ignorance, Education, Luxury, Friendship, Government and Religion, and offer plain practical advice in the manner of Proverbs, with a Quaker stress on simplicity, honesty, moderation, the inner light and the equal worth of all people. A second series, More Fruits of Solitude, followed in 1702.
 keywords: [maxims, Quakers, Society of Friends, Pennsylvania, simplicity, moderation, friendship, aphorisms]

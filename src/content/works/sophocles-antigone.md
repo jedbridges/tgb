@@ -21,7 +21,10 @@ recommendedEdition:
   year: 1984
   isbn13: "9780140444254"
   why: Vivid and speakable, with Bernard Knox's introductions; the edition most courses assign.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: antigone00sophiala
+  credit: "Internet Archive, antigone00sophiala"
 synopsis: >-
   Oedipus' two sons have killed each other in the fighting over Thebes, and the new king Creon rules that the
   defender Eteocles be buried with honours while the attacker Polynices is left for the dogs and birds. Antigone,

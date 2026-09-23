@@ -33,7 +33,9 @@ otherEditions:
     isbn13: "9780393356250"
     why: Fast iambic pentameter, and an introduction that takes the slave women seriously.
 cover:
-  source: generated
+  source: archive
+  archiveId: odysseyh01homeuoft
+  credit: "Internet Archive, odysseyh01homeuoft"
 synopsis: >-
   Ten years after the fall of Troy, Odysseus has still not come home to Ithaca, where suitors are eating up his household and courting his wife Penelope. His son Telemachus sets out to look for news. Odysseus, released from the nymph Calypso, is wrecked among the Phaeacians and tells them of his wanderings, the Cyclops, Circe, the descent to the dead, the Sirens, Scylla and the cattle of the Sun. Returned to Ithaca in disguise as a beggar, he is recognised by his old nurse and his dog, strings the great bow, kills the suitors with Telemachus, and is reunited with Penelope and his father.
 whyItMatters: >-

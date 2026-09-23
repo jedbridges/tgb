@@ -20,7 +20,10 @@ recommendedEdition:
   publisher: Green Lion Press
   year: 2000
   why: The translation used at St. John's and Thomas Aquinas College, with diagrams reworked for study; the 1939 Taliaferro text is the one Great Books reprinted.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: treatiseonconics00apolrich
+  credit: "Internet Archive, treatiseonconics00apolrich"
 synopsis: >-
   A treatise in eight books, of which seven survive, on the curves produced by cutting a cone with a plane. Apollonius shows that the ellipse, parabola and hyperbola can all be obtained from any cone and gives them their names, then proves their properties from the relation of ordinates to the diameter, an approach that anticipates coordinates. Books 1 to 4 set out the basic theory, including tangents and the two branches of the hyperbola; Books 5 to 7 treat normals, equal and similar conics, and the lengths of conjugate diameters.
 keywords: [ellipse, parabola, hyperbola, cone, latus rectum, tangents, Perga, Euclid, Archimedes]

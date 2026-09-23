@@ -19,7 +19,10 @@ recommendedEdition:
   year: 1991
   isbn13: "9780872201323"
   why: A clear translation of the Monadology with the Discourse and the Principles of Nature and Grace that explain it.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: monadologyotherp00gott
+  credit: "Internet Archive, monadologyotherp00gott"
 synopsis: >-
   Ninety numbered paragraphs that Leibniz wrote in Vienna in 1714 as a summary of his mature philosophy. The world consists of monads, simple unextended substances with no windows, each perceiving the whole universe from its own point of view. God, whose existence Leibniz argues from the principle of sufficient reason, has chosen the best of all possible worlds and coordinated the monads in a pre-established harmony. The final sections treat the soul, the body, and the City of God.
 keywords: [monad, pre-established harmony, sufficient reason, best of all possible worlds, apperception, entelechy, City of God]

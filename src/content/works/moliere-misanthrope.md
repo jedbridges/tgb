@@ -19,7 +19,10 @@ recommendedEdition:
   publisher: Harcourt
   year: 1955
   why: Wilbur's couplets are the version most anthologies and programs use.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: misanthropecomed00molirich
+  credit: "Internet Archive, misanthropecomed00molirich"
 synopsis: >-
   Alceste despises the flattery and small lies that hold Parisian society together and insists on saying exactly what he thinks, which loses him a lawsuit and most of his friends. He is nonetheless in love with Célimène, a young widow whose wit and pleasure in admirers embody everything he condemns. Over a single day of visits, quarrels and intercepted letters he demands that she leave society with him; she refuses, and he walks out alone. The play leaves open whether Alceste is a hero of honesty or a comic fool.
 keywords: [Alceste, Célimène, Philinte, Oronte, sincerity, salon, comedy of manners]

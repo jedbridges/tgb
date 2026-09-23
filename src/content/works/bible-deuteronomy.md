@@ -21,7 +21,10 @@ recommendedEdition:
   year: 2008
   isbn13: "9780393333930"
   why: A literal, rhythmic translation with a running commentary that explains the Hebrew and the law codes.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: booksgenesisexo02missgoog
+  credit: "Internet Archive, booksgenesisexo02missgoog"
 synopsis: >-
   The last book of the Torah is cast as a series of speeches by Moses to the Israelites on the plains of Moab, on the eve of their entry into Canaan. He recalls the journey from Egypt, restates the Ten Commandments, and delivers a law code covering worship, kingship, judges, war, debt and charity. The book closes with blessings and curses for keeping or breaking the covenant, the command to love God with all one's heart, a song and a blessing, and the death of Moses within sight of the land.
 keywords: [Moses, Shema, covenant, Moab, law code, blessings and curses, Promised Land, Joshua]

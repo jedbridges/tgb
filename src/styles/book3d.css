@@ -11,7 +11,7 @@
    filter over a full-page snapshot re-renders the whole thing every frame, which is what
    made this stutter. */
 ::view-transition-group(book-cover) {
-  animation-duration: 460ms;
+  animation-duration: 360ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 20;   /* the book stays above the page falling away behind it */
 }
@@ -19,10 +19,10 @@
    only the last moments are blended, which hides the difference in crop without ever
    showing one image through the other. */
 ::view-transition-old(book-cover) {
-  animation: 200ms 200ms cubic-bezier(0.4, 0, 1, 1) both vt-cover-out;
+  animation: 160ms 160ms cubic-bezier(0.4, 0, 1, 1) both vt-cover-out;
 }
 ::view-transition-new(book-cover) {
-  animation: 260ms cubic-bezier(0.16, 1, 0.3, 1) both vt-cover-in;
+  animation: 200ms cubic-bezier(0.16, 1, 0.3, 1) both vt-cover-in;
 }
 ::view-transition-old(book-cover),
 ::view-transition-new(book-cover) {
@@ -33,10 +33,10 @@
 
 /* The shelf falls back a little and fades. No blur: see above. */
 ::view-transition-old(root) {
-  animation: 220ms cubic-bezier(0.4, 0, 1, 1) both vt-shelf-recede;
+  animation: 170ms cubic-bezier(0.4, 0, 1, 1) both vt-shelf-recede;
 }
 ::view-transition-new(root) {
-  animation: 340ms 60ms cubic-bezier(0.16, 1, 0.3, 1) both vt-page-arrive;
+  animation: 260ms 40ms cubic-bezier(0.16, 1, 0.3, 1) both vt-page-arrive;
 }
 @keyframes vt-shelf-recede {
   to { opacity: 0; transform: scale(0.985); }
@@ -262,6 +262,16 @@
   .card:hover + .card .book__body { --ry: 30deg; --tx: -3px; }
   .card[data-near] .book__body { --ry: 15deg; --tx: 3px; }
   .book[data-tilting] .book__body { transition-duration: 120ms; }
+  /* The click has to land on something. Without this the book held its hover pose while
+     the navigation happened, which read as the page ignoring you. It presses in, fast,
+     the way a real object gives under a finger. */
+  .card:active .book[data-pull] .book__body, .book[data-pull]:active .book__body {
+    --tz: 8px; --ty: -12px; --ry: 21deg;
+    transition-duration: 110ms;
+  }
+  .card:active .book[data-pull] .book__shadow, .book[data-pull]:active .book__shadow {
+    transform: translate(0, 10px) scale(1.12, 1.5); opacity: 0.5; transition-duration: 110ms;
+  }
 }
 .book[data-state='open'] .book__body { --ry: -8deg; --rx: 0deg; --tx: calc(var(--w) * 0.44); }
 .book[data-state='open'] .book__front { transform: translateZ(calc(var(--d) / 2)) rotateY(-162deg); }

@@ -86,9 +86,12 @@ const works = defineCollection({
     recommendedEdition: edition.optional(),
     otherEditions: z.array(edition).default([]),
     cover: z.object({
-      source: z.enum(['openlibrary', 'generated', 'manual']).default('generated'),
+      /* 'archive' is a scan of a public-domain edition from the Internet Archive, adopted
+         by scripts/find-scans.ts for works no modern jacket could be found for. */
+      source: z.enum(['openlibrary', 'generated', 'manual', 'archive']).default('generated'),
       olid: z.string().optional(),
       coverId: z.number().optional(),
+      archiveId: z.string().optional(),
       isbn13: isbn13.optional(),
       credit: z.string().optional(),
     }).default({ source: 'generated' }),

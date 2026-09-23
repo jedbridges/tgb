@@ -19,7 +19,10 @@ recommendedEdition:
   publisher: Methuen Drama (New Mermaids)
   year: 1964
   why: T. W. Craik's annotated student edition; the unglossed text is free in Harvard Classics Volume 47.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: newwaytopayoldde00massuoft
+  credit: "Internet Archive, newwaytopayoldde00massuoft"
 synopsis: >-
   The most performed non-Shakespearean play of its age for two centuries. Sir Giles Overreach, a ruthless extortioner modelled on a real monopolist, has ruined his nephew Wellborn and schemes to marry his daughter Margaret to a lord. Wellborn, with the help of the rich widow Lady Allworth, tricks Overreach into believing he is about to marry her and so restoring his credit; Margaret marries Allworth's stepson instead, and Overreach, his bonds voided, goes mad on stage.
 keywords: [Sir Giles Overreach, Wellborn, Lady Allworth, Margaret, Marrall, Greedy, usury, Jacobean comedy]

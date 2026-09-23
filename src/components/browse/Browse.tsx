@@ -44,6 +44,38 @@ function toUrl(s: State) {
   return location.pathname + (qs ? `?${qs}` : '');
 }
 
+type Family = 'program' | 'theme' | 'genre' | 'era' | 'region' | 'language' | 'author' | 'difficulty' | 'length' | 'guide';
+
+/**
+ * Does this row survive the current filters?
+ *
+ * The grid and the facet counts both ask this, because they used to ask it separately and
+ * disagree: the grid checked all eleven facets and the counts checked four, so every number
+ * beside a theme or a program was computed as though half the filters were not there.
+ *
+ * `except` drops one family. A single-select facet replaces its own value rather than
+ * adding to it, so the count beside "Columbia" has to mean "how many if I switch to
+ * Columbia", not "how many are in Columbia and St John's at once", which is what counting
+ * it against the current program gave. Themes are different: they accumulate, so their
+ * chips are counted with every active filter in place and mean "how many if I add this".
+ */
+function passes(r: CatalogRow, s: State, except?: Family): boolean {
+  const use = (f: Family) => f !== except;
+  return (
+    (!use('program') || !s.program || r.p.includes(s.program)) &&
+    (!use('program') || !s.segment || !s.program || r.ps.includes(`${s.program}/${s.segment}`)) &&
+    (!use('theme') || s.theme.every((t) => r.th.includes(t))) &&
+    (!use('genre') || !s.genre || r.g.includes(s.genre)) &&
+    (!use('era') || !s.era || r.e === s.era) &&
+    (!use('region') || !s.region || r.r === s.region) &&
+    (!use('language') || !s.language || r.lang === s.language) &&
+    (!use('author') || !s.author || r.au === s.author) &&
+    (!use('difficulty') || !s.difficulty || String(r.d) === s.difficulty) &&
+    (!use('length') || !s.length || r.l === s.length) &&
+    (!use('guide') || !s.guide || (s.guide === 'yes' ? r.hg === 1 : r.hg === 0))
+  );
+}
+
 type PF = { search: (q: string) => Promise<{ results: { data: () => Promise<{ meta: Record<string, string>; url: string }> }[] }>; init?: () => Promise<void> };
 let pf: Promise<PF | null> | null = null;
 const PF_PATH = ['', 'pagefind', 'pagefind.js'].join('/');
@@ -55,13 +87,33 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
   const [searching, setSearching] = useState(false);
   const [open, setOpen] = useState(false);
   const [showAllThemes, setShowAllThemes] = useState(false);
-  const first = useRef(true);
+  const histFirst = useRef(true);
+  const fromPop = useRef(false);
+  const navKind = useRef<'push' | 'replace'>('replace');
 
   useEffect(() => { setS(fromUrl()); }, []);
   useEffect(() => {
-    const onPop = () => setS(fromUrl());
+    const onPop = () => { fromPop.current = true; setS(fromUrl()); };
     addEventListener('popstate', onPop); return () => removeEventListener('popstate', onPop);
   }, []);
+
+  /*
+   * Back should undo a filter, not leave the page.
+   *
+   * Every state change used to be a replaceState, so the popstate listener above could
+   * never fire from the reader's own filtering and the only history entry was the one they
+   * arrived on. Choosing a facet pushes now. Typing still replaces, because a search box
+   * that puts one entry in the history per keystroke makes the back button useless in a
+   * different way.
+   */
+  useEffect(() => {
+    if (histFirst.current) { histFirst.current = false; return; }
+    if (fromPop.current) { fromPop.current = false; return; }
+    const url = toUrl(s);
+    if (url === location.pathname + location.search) return;
+    if (navKind.current === 'push') history.pushState(null, '', url);
+    else history.replaceState(null, '', url);
+  }, [s]);
 
   // text search
   useEffect(() => {
@@ -82,19 +134,7 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
   }, [s.q]);
 
   const visible = useMemo(() => {
-    let list = rows.filter((r) =>
-      (!s.program || r.p.includes(s.program)) &&
-      (!s.segment || !s.program || r.ps.includes(`${s.program}/${s.segment}`)) &&
-      s.theme.every((t) => r.th.includes(t)) &&
-      (!s.genre || r.g.includes(s.genre)) &&
-      (!s.era || r.e === s.era) &&
-      (!s.region || r.r === s.region) &&
-      (!s.language || r.lang === s.language) &&
-      (!s.author || r.au === s.author) &&
-      (!s.difficulty || String(r.d) === s.difficulty) &&
-      (!s.length || r.l === s.length) &&
-      (!s.guide || (s.guide === 'yes' ? r.hg === 1 : r.hg === 0)),
-    );
+    let list = rows.filter((r) => passes(r, s));
     if (hits) list = list.filter((r) => hits.has(r.s));
     const cmp: Record<Sort, (a: CatalogRow, b: CatalogRow) => number> = {
       assigned: (a, b) => b.pc - a.pc || a.y - b.y,
@@ -117,14 +157,13 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
     cards.forEach((c, slug) => { c.hidden = !show.has(slug); c.style.removeProperty('--i'); });
     visible.forEach((r, i) => { const c = cards.get(r.s); if (c) { grid.appendChild(c); if (i < 12) c.style.setProperty('--i', String(i)); } });
     const empty = document.getElementById('browse-empty'); if (empty) empty.hidden = visible.length > 0;
-    if (first.current) { first.current = false; return; }
-    history.replaceState(null, '', toUrl(s));
   }, [visible]);
 
   const set = (patch: Partial<State>) => {
     // Which facet was reached for, never what was chosen with it.
     const facet = Object.keys(patch).find((k) => k !== 'sort');
     if (facet) dispatchEvent(new CustomEvent('tgb:filter', { detail: { facet } }));
+    navKind.current = Object.keys(patch).every((k) => k === 'q') ? 'replace' : 'push';
     setS((prev) => ({ ...prev, ...patch }));
   };
   const program = facets.programs.find((p) => p.id === s.program);
@@ -145,19 +184,16 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
 
   // Counts on every facet, computed against the other active filters, so a zero-result
   // combination is visible before it is chosen rather than apologised for afterwards.
-  const countIf = (pred: (r: CatalogRow) => boolean) => {
+  const countIf = (pred: (r: CatalogRow) => boolean, except?: Family) => {
     let n = 0;
     for (const r of rows) {
       if (!pred(r)) continue;
-      if (s.program && !r.p.includes(s.program)) continue;
-      if (s.era && r.e !== s.era) continue;
-      if (s.genre && !r.g.includes(s.genre)) continue;
-      if (s.guide && (s.guide === 'yes' ? r.hg !== 1 : r.hg !== 0)) continue;
+      if (!passes(r, s, except)) continue;
+      if (hits && !hits.has(r.s)) continue;   // a text query narrows the counts too
       n++;
     }
     return n;
   };
-  const guidedTotal = rows.reduce((n, r) => n + r.hg, 0);
   const themesShown = showAllThemes ? facets.themes : facets.themes.slice(0, 8);
 
   const Select = ({ label: lbl, k, opts, all }: { label: string; k: keyof State; opts: Facet[]; all: string }) => (
@@ -223,15 +259,15 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
             <label class="f__label" for="f-guide">Reading guide</label>
             <select id="f-guide" value={s.guide} onChange={(e) => set({ guide: (e.target as HTMLSelectElement).value })}>
               <option value="">Any ({rows.length})</option>
-              <option value="yes">Written ({guidedTotal})</option>
-              <option value="no">Catalogue only ({rows.length - guidedTotal})</option>
+              <option value="yes">Written ({countIf((r) => r.hg === 1, 'guide')})</option>
+              <option value="no">Catalogue only ({countIf((r) => r.hg === 0, 'guide')})</option>
             </select>
           </p>
           <p class="f">
             <label class="f__label" for="f-program">Program</label>
             <select id="f-program" value={s.program} onChange={(e) => set({ program: (e.target as HTMLSelectElement).value, segment: '' })}>
               <option value="">All programs</option>
-              {facets.programs.map((p) => <option value={p.id}>{p.label} ({countIf((r) => r.p.includes(p.id))})</option>)}
+              {facets.programs.map((p) => <option value={p.id}>{p.label} ({countIf((r) => r.p.includes(p.id), 'program')})</option>)}
             </select>
           </p>
           {program && program.segments.length > 1 && (

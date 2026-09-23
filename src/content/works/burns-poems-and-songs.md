@@ -18,7 +18,10 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 1996
   why: Carol McGuirk's selection with a glossary of Scots and notes on the songs' tunes.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: poemsandsongsro03burngoog
+  credit: "Internet Archive, poemsandsongsro03burngoog"
 synopsis: >-
   The poems and songs of the Ayrshire farmer who became Scotland's national poet, from the Kilmarnock edition of 1786 to the songs he wrote and collected for The Scots Musical Museum until his death in 1796. They include the mock-heroic Tam o' Shanter, the satires Holy Willie's Prayer and Address to the Deil, To a Mouse and To a Louse, The Cotter's Saturday Night, the radical A Man's a Man for A' That, and songs such as Auld Lang Syne, A Red Red Rose, Ae Fond Kiss and Scots Wha Hae. Most are in Scots, with a glossary needed by outsiders.
 keywords: [Tam o' Shanter, Auld Lang Syne, To a Mouse, Holy Willie's Prayer, A Red Red Rose, Scots, Ayrshire, Kilmarnock edition]

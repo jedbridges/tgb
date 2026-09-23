@@ -20,7 +20,10 @@ recommendedEdition:
   year: 2010
   why: The Carmelite scholarly translation, in a study edition with introductions to each set of dwelling places.
   isbn13: "9780935216806"
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: interiorcastleor00tere
+  credit: "Internet Archive, interiorcastleor00tere"
 synopsis: >-
   Written in a few months in 1577 at the request of Teresa's confessor, for the nuns of her reformed Carmelite convents. She pictures the soul as a castle of crystal with seven suites of rooms, or mansions, and God at the centre. The first three describe the ordinary Christian life of prayer and its temptations; the fourth the beginning of supernatural prayer; the fifth, sixth and seventh the soul's betrothal and marriage to God, including her own raptures, visions and sufferings, described with unusual candour.
 keywords: [mansions, dwelling places, prayer, mystical marriage, Carmelites, rapture, silkworm, seven mansions]

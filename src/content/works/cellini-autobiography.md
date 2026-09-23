@@ -19,7 +19,10 @@ recommendedEdition:
   publisher: Oxford World's Classics
   year: 2009
   why: A modern translation with notes on the artists, popes and princes Cellini names.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: autobiographyofb00cell
+  credit: "Internet Archive, autobiographyofb00cell"
 synopsis: >-
   The Florentine goldsmith and sculptor dictated his life to a boy in his workshop, beginning at fifty-eight. He recounts his training, his quarrels and killings, his claim to have shot the Constable of Bourbon during the sack of Rome in 1527, his imprisonment in the Castel Sant'Angelo and escape, his years at the court of Francis I in France, and his return to Florence, where he cast the bronze Perseus for Duke Cosimo. The casting of the Perseus, in which he throws his pewter dishes into the furnace to save the metal, is the book's set piece. It breaks off in 1562.
 keywords: [Perseus, Cosimo de' Medici, Francis I, Castel Sant'Angelo, sack of Rome, goldsmith, Florence, Michelangelo, Pope Clement VII]

@@ -21,7 +21,10 @@ recommendedEdition:
   year: 2008
   isbn13: "9780393333930"
   why: A literal, rhythmic translation with a running commentary that explains the Hebrew and the law codes.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: booksgenesispar01socigoog
+  credit: "Internet Archive, booksgenesispar01socigoog"
 synopsis: >-
   The second book of the Hebrew Bible tells how the Israelites, enslaved in Egypt, are led out by Moses after ten plagues and the parting of the sea. At Mount Sinai God gives them the Ten Commandments and a body of law and makes a covenant with them. The people rebel by worshipping a golden calf, Moses intercedes for them, and the book ends with detailed instructions for building the Tabernacle in which God will dwell among them.
 keywords: [Moses, Pharaoh, Passover, Ten Commandments, Sinai, golden calf, burning bush, covenant]

@@ -17,7 +17,10 @@ recommendedEdition:
   publisher: P. F. Collier and Son
   year: 1910
   why: The volume in which it is assigned, together with Drake's voyages and Gilbert's Newfoundland voyage.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: discoveryofguian00rale
+  credit: "Internet Archive, discoveryofguian00rale"
 synopsis: >-
   Raleigh's account of his 1595 expedition up the Orinoco in search of El Dorado, the golden city of Manoa, written to restore his standing with Elizabeth I. He describes the capture of the Spanish governor at Trinidad, the ascent of the river in open boats, the tribes he met and enlisted as English allies against Spain, the wealth he was told of but never saw, and marvels such as men with heads beneath their shoulders. He urges the queen to conquer Guiana before the Spaniards do. His second voyage in 1617 failed and cost him his head.
 keywords: [El Dorado, Orinoco, Manoa, Guiana, Trinidad, Elizabeth I, Berrio, Spanish empire]

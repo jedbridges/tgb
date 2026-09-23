@@ -20,7 +20,10 @@ recommendedEdition:
   publisher: Oxford World's Classics
   year: 2008
   why: A generous selection in chronological order with the notes a reader needs to follow the politics.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: letterstoatticus01ciceuoft
+  credit: "Internet Archive, letterstoatticus01ciceuoft"
 synopsis: >-
   Nearly nine hundred letters survive from Cicero's correspondence, written between 68 and 43 BCE and published after his death, in collections to his friend Atticus, to other friends and colleagues, to his brother Quintus and to Brutus. Unrevised and often hasty, they record the collapse of the Roman republic from the inside, including Cicero's exile, the civil war between Caesar and Pompey, his grief at his daughter Tullia's death, and the months after Caesar's assassination when he tried to rally the Senate against Antony.
 keywords: [Atticus, Quintus Cicero, Tullia, Caesar, Pompey, Antony, Brutus, civil war, Roman republic]

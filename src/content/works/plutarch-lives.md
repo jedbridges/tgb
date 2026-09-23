@@ -32,7 +32,9 @@ otherEditions:
     year: 2006
     why: Marius, Sulla, Crassus, Pompey, Caesar and Cicero together, which is the fastest way into the late republic.
 cover:
-  source: generated
+  source: archive
+  archiveId: livesofnoblegrec00plutiala
+  credit: "Internet Archive, livesofnoblegrec00plutiala"
 synopsis: >-
   Forty-six biographies of Greek and Roman statesmen and soldiers, arranged in pairs with a Greek matched to a Roman
   and most pairs closed by a short comparison, plus four lives that stand alone. The subjects run from the legendary

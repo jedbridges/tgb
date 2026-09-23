@@ -21,7 +21,10 @@ recommendedEdition:
   year: 1984
   isbn13: "9780691016504"
   why: The revised Oxford translation of all six logical works in one volume, the standard scholarly text in English.
-cover: { source: generated }
+cover:
+  source: archive
+  archiveId: organonorlogica01aris
+  credit: "Internet Archive, organonorlogica01aris"
 synopsis: >-
   The collective name for Aristotle's six logical treatises. The Categories classifies the kinds of things that can be said; On Interpretation treats propositions and their contradictories; the Prior Analytics sets out the syllogism; the Posterior Analytics describes demonstrative knowledge from first principles; the Topics teaches dialectical argument; and the Sophistical Refutations catalogues fallacies. Together they founded formal logic.
 keywords: [syllogism, categories, demonstration, dialectic, fallacy, substance, predication, logic]

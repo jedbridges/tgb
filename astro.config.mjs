@@ -25,6 +25,16 @@ export default defineConfig({
   site,
   output: 'static',
   trailingSlash: 'always',
+  /*
+   * Fetch the page before the click.
+   *
+   * A book on the shelf lifts under the pointer and then sat there while the browser went
+   * and got the page it was already pointing at. Hovering a link now starts the fetch, so
+   * by the time the click lands the document is usually in the cache and the transition has
+   * something to transition to. It costs one small script and only fires on hover, so a
+   * reader scrolling past 689 books downloads nothing.
+   */
+  prefetch: { prefetchAll: true, defaultStrategy: 'hover' },
   build: { format: 'directory' },
   integrations: [
     preact(),
