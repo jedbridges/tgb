@@ -213,20 +213,62 @@
 }
 
 /* Typographic (generated) cover */
+/* The house binding.
+   Half the catalogue is old enough that no publisher's jacket exists for it, and a flat
+   coloured panel with type on it reads as a placeholder. A bound series does not: the
+   Harvard Classics, Everyman, Loeb and Britannica's own Great Books are all a cloth board
+   with the title stamped into it, so it is the honest thing to show rather than a costume.
+
+   The cloth is one 64px tile carrying light and dark in its alpha channel, so it recolours
+   by sitting over any of the ten binding tones and needs no blend mode: a blend mode on 689
+   covers would force the whole shelf into one compositing group. */
 .cover-gen {
-  position: absolute; inset: 0; background: var(--tone-bg, var(--spine)); color: var(--tone-ink, var(--spine-ink));
+  position: absolute; inset: 0; background-color: var(--tone-bg, var(--spine)); color: var(--tone-ink, var(--spine-ink));
   display: grid; grid-template-rows: auto 1fr auto; padding: 8% 9% 9%;
   font-family: var(--font-display);
   background-image:
-    linear-gradient(to right, rgb(0 0 0 / 0.22), transparent 6%),
-    radial-gradient(130% 100% at 100% 0%, rgb(255 255 255 / 0.08), transparent 55%);
+    linear-gradient(to right, rgb(0 0 0 / 0.26), transparent 7%),
+    radial-gradient(130% 100% at 100% 0%, rgb(255 255 255 / 0.07), transparent 55%),
+    url('/cloth.png');
+  background-size: auto, auto, calc(var(--w) * 0.22) calc(var(--w) * 0.22);
+  background-repeat: no-repeat, no-repeat, repeat;
 }
-.cover-gen::before { content: ''; position: absolute; inset: 5%; border: 1px solid color-mix(in oklch, currentColor 45%, transparent); pointer-events: none; }
-.cover-gen__series { font-family: var(--font-ui); font-size: calc(var(--w) * 0.05); letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.75; }
+/* The blind rule stamped inside the edge of the board, pressed rather than printed: a dark
+   line with a light one under it, which is what a heated die leaves in cloth. */
+.cover-gen::before {
+  content: ''; position: absolute; inset: 6%; pointer-events: none;
+  border: 1px solid rgb(0 0 0 / 0.38);
+  box-shadow: 0 1px 0 rgb(255 255 255 / 0.11), inset 0 1px 0 rgb(255 255 255 / 0.09);
+}
+/* Gilt. Not a flat cream: a warm gradient across the letterform with a dark line under it,
+   so the type reads as metal leaf pressed into the cloth rather than as ink on top of it.
+   Static, so none of it costs a frame. */
+.cover-gen__series, .cover-gen__title, .cover-gen__author {
+  background-image: linear-gradient(170deg,
+    color-mix(in oklch, var(--tone-ink) 86%, #6b4f1d) 0%,
+    var(--tone-ink) 34%,
+    color-mix(in oklch, var(--tone-ink) 90%, white) 52%,
+    var(--tone-ink) 68%,
+    color-mix(in oklch, var(--tone-ink) 82%, #6b4f1d) 100%);
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 0.42);
+}
+/* Clipping a gradient to a letterform is the whole of the gilt, and it is also the one way
+   this cover could fail to nothing: an engine without background-clip paints transparent
+   text on cloth. The fallback is the plain cream the series used before. */
+@supports not ((background-clip: text) or (-webkit-background-clip: text)) {
+  .cover-gen__series, .cover-gen__title, .cover-gen__author { color: var(--tone-ink); background-image: none; }
+}
+.cover-gen__series { font-family: var(--font-ui); font-size: calc(var(--w) * 0.05); letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.8; }
 .cover-gen__title { align-self: center; font-size: calc(var(--w) * 0.12); line-height: 1.02; letter-spacing: -0.01em; font-weight: 500; text-wrap: balance; }
 .cover-gen__title.long { font-size: calc(var(--w) * 0.095); }
 .cover-gen__title.xlong { font-size: calc(var(--w) * 0.08); }
-.cover-gen__author { font-family: var(--font-ui); font-size: calc(var(--w) * 0.058); letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.9; padding-top: 6%; border-top: 1px solid color-mix(in oklch, currentColor 45%, transparent); }
+.cover-gen__author {
+  font-family: var(--font-ui); font-size: calc(var(--w) * 0.058); letter-spacing: 0.12em; text-transform: uppercase;
+  padding-top: 6%; border-top: 1px solid rgb(0 0 0 / 0.34);
+  box-shadow: 0 -1px 0 rgb(255 255 255 / 0.08) inset;
+}
 
 /* States */
 @media (hover: hover) and (pointer: fine) {
