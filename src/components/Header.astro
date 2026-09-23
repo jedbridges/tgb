@@ -300,9 +300,10 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     root.dataset.theme = next;
     try { localStorage.setItem('tgb-theme', next); } catch { /* private mode */ }
     describe();
+    (window as unknown as { __tgbChrome?: () => void }).__tgbChrome?.();
   });
 
   // Someone who never chose a scheme keeps following their system if it changes under them.
-  media.addEventListener('change', describe);
+  media.addEventListener('change', () => { describe(); (window as unknown as { __tgbChrome?: () => void }).__tgbChrome?.(); });
   describe();
 </script>

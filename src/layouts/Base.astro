@@ -21,8 +21,15 @@ const { bodyClass, ...seo } = Astro.props;
          which is also what makes the env(safe-area-inset-*) values non-zero, so anything
          that needs to dodge the status bar or the home indicator can. -->
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#f2e8e4" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#231f1d" media="(prefers-color-scheme: dark)" />
+    <!-- What Safari paints its own chrome with: the strip behind the status bar, and the
+         band under the page. It has to be the page's exact paper, and it has to follow the
+         theme actually in force. Two things were wrong here. The dark value was #231f1d
+         while the dark paper is #150f0c, so the strip was a visibly different colour from
+         the page. And both were gated on prefers-color-scheme, which knows nothing about
+         the site's own light/dark toggle, so anyone who pinned a scheme against their
+         system got the other one's chrome. One tag, written below before the first paint,
+         and corrected from the page's real background once there is a body to measure. -->
+    <meta name="theme-color" content="#f2e8e4" />
     <!-- Runs before the first byte of body is parsed, so a reader who pinned a scheme
          never sees the other one flash first. It writes one attribute and nothing else:
          the palette itself lives in tokens.css. -->
@@ -31,6 +38,20 @@ const { bodyClass, ...seo } = Astro.props;
         const t = localStorage.getItem('tgb-theme');
         if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
       } catch (e) { /* private mode: the system preference still applies */ }
+      // Resolve the scheme the same way the toggle does, and hand Safari the matching
+      // paper before it draws any of its own chrome.
+      window.__tgbChrome = () => {
+        const root = document.documentElement;
+        const dark = (root.dataset.theme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
+        const meta = document.querySelector('meta[name="theme-color"]');
+        if (!meta) return;
+        // Once there is a body, its computed background is the paper by definition, so the
+        // chrome can never drift from the palette again.
+        const measured = document.body && getComputedStyle(document.body).backgroundColor;
+        meta.setAttribute('content', measured && measured !== 'rgba(0, 0, 0, 0)' ? measured : (dark ? '#150f0c' : '#f2e8e4'));
+      };
+      window.__tgbChrome();
+      addEventListener('DOMContentLoaded', () => window.__tgbChrome());
       // A page reached by taking a book off a shelf already has a motion: the cover
       // travels and the page rises behind it. Its masthead must not also set itself, or
       // two entrances play over each other. pagereveal fires before this document's first
