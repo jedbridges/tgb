@@ -17,10 +17,7 @@ recommendedEdition:
   publisher: Oxford University Press
   why: Oxford World's Classics, which prints the Dialogues with the treatise they were written to popularise.
   isbn13: "9780192835499"
-cover:
-  source: archive
-  archiveId: threedialoguesbe00berkiala
-  credit: "Internet Archive, threedialoguesbe00berkiala"
+cover: { source: generated }
 synopsis: >-
   Berkeley restates the argument of the Principles as a conversation over three mornings. Hylas, who believes in matter, is led by Philonous to admit that heat, taste, sound and colour exist only in the perceiver, and then that extension, motion and solidity are in no better case. If all sensible qualities are ideas, the material substance supposed to hold them is an empty phrase. Philonous then argues that his own position, not Hylas's, is the one that saves common sense and defeats scepticism, and that the order of our ideas points to God as their author.
 keywords: [Hylas, Philonous, immaterialism, scepticism, sensible qualities, common sense, God]

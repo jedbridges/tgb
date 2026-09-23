@@ -31,10 +31,7 @@ otherEditions:
     publisher: Various
     year: 1838
     why: The nineteenth-century translation, free everywhere, but it softens Tocqueville's sharper words.
-cover:
-  source: archive
-  archiveId: democracyiname01tocq
-  credit: "Internet Archive, democracyiname01tocq"
+cover: { source: generated }
 synopsis: >-
   Tocqueville's report on the United States after a nine month journey in 1831 and 1832, written as an account of what
   the equality of conditions does to a people. The first volume, of 1835, describes the physical setting, the

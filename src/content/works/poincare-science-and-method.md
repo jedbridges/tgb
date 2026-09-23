@@ -20,10 +20,7 @@ recommendedEdition:
   year: 2003
   why: The standard translation, with a preface by Bertrand Russell.
   isbn13: "9780486165707"
-cover:
-  source: archive
-  archiveId: sciencemethod00poinuoft
-  credit: "Internet Archive, sciencemethod00poinuoft"
+cover: { source: generated }
 synopsis: >-
   The third of Poincaré's books on the philosophy of science. The first part asks how scientists choose which facts to study and includes his famous account of mathematical discovery, in which the answer to a problem came to him as he stepped onto a bus in Coutances after weeks of unconscious work. Later parts discuss chance and why it exists for us, the paradoxes of set theory and the logicist programme, and the new mechanics of Lorentz and relativity, the Milky Way and the theory of tides.
 keywords: [mathematical creation, unconscious work, chance, logicism, Russell, Lorentz, new mechanics]

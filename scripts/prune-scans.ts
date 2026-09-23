@@ -58,8 +58,19 @@ for (const f of files) {
   for (let y = 1; y < g.info.height; y++) for (let x = 0; x < g.info.width; x++) { diff += Math.abs(g.data[y * g.info.width + x] - g.data[(y - 1) * g.info.width + x]); pairs++; }
   const edge = diff / pairs;
 
+  /* The bar, raised once the cloth binding existed.
+     Reviewing all 145 adopted scans on a contact sheet settled what actually separates
+     them, and it is not any single statistic: a title page and a blank board can score the
+     same on contrast, because at thumbnail size a page of small type has no more large
+     structure than an empty cover. What does separate them is ground. Everything worth
+     keeping is either light, a printed title page or a paper-covered board, or dark with a
+     real picture on it, Rackham's Aesop, the Medea, My Antonia. What fails is always the
+     same object: a dark cloth board with nothing on it, which the house binding now beats
+     comfortably. So darkness alone does not condemn a scan, and darkness without structure
+     does. */
+  const meanLum = await sharp(jpg).greyscale().resize(1, 1, { fit: 'fill' }).raw().toBuffer().then((b) => b[0]);
   const why = w > 0.5 ? `${Math.round(w * 100)}% near-white, a notice page or a blank leaf`
-    : k > 0.90 && edge < 2.3 ? `${Math.round(k * 100)}% ink and no structure, a blank board` : null;
+    : meanLum < 112 && edge < 4.5 ? `a dark board with nothing on it, which the binding beats` : null;
   if (!why) continue;
 
   dropped.push(slug);

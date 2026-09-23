@@ -21,10 +21,7 @@ recommendedEdition:
   year: 1984
   isbn13: "9780691016504"
   why: The revised Oxford translation of the whole biological corpus in one volume.
-cover:
-  source: archive
-  archiveId: aristotleonparts00arisrich
-  credit: "Internet Archive, aristotleonparts00arisrich"
+cover: { source: generated }
 synopsis: >-
   Aristotle's explanation of why animals have the parts they do. Book I is a manifesto for biology as a science, arguing that explanation must start from the purpose a part serves rather than from the matter it is made of, and defending the study of humble creatures. Books II to IV go through blood, flesh, bone, organs and limbs across the animal kinds, asking in each case what the part is for.
 keywords: [final cause, teleology, biology, organs, blood, division, animal kinds, function]

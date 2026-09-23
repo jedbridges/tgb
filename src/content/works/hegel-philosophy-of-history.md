@@ -20,10 +20,7 @@ recommendedEdition:
   publisher: Dover
   year: 1956
   why: The complete Sibree translation is the one in Great Books; Leo Rauch's Hackett Introduction covers the part most courses read.
-cover:
-  source: archive
-  archiveId: lecturesonphilos00hegerich
-  credit: "Internet Archive, lecturesonphilos00hegerich"
+cover: { source: generated }
 synopsis: >-
   Lectures Hegel gave five times in Berlin, compiled from his notes and students' transcripts after his death. The long introduction argues that history is the progress of the consciousness of freedom, that reason governs the world, and that great individuals and whole peoples serve ends they do not understand. The body of the lectures then surveys world history as a sequence of civilisations, the Oriental world, Greece, Rome and the Germanic Christian world, in which freedom passes from one man to some men to all.
 keywords: [world spirit, cunning of reason, world-historical individuals, freedom, Oriental world, Germanic world, Weltgeschichte]

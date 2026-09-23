@@ -18,10 +18,7 @@ recommendedEdition:
   year: 2003
   isbn13: "9780872206786"
   why: Hughes's annotations unpack the classical and scriptural allusions that crowd every page.
-cover:
-  source: archive
-  archiveId: areopagitica00miltuoft
-  credit: "Internet Archive, areopagitica00miltuoft"
+cover: { source: generated }
 synopsis: >-
   A pamphlet in the form of a speech to Parliament, arguing against its 1643 ordinance requiring books to be licensed before printing. Milton traces censorship to the Inquisition, argues that virtue untested by exposure to error is worthless, and claims that truth, set free to grapple with falsehood, will win. He asks Parliament to trust English readers and to punish bad books after publication rather than strangle good ones before it.
 keywords: [censorship, licensing, free press, Parliament, liberty of the press, Truth and Falsehood, cloistered virtue]

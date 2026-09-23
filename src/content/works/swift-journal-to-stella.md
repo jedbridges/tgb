@@ -19,10 +19,7 @@ recommendedEdition:
   year: 2013
   why: Abigail Williams's edition for the Cambridge Works of Jonathan Swift, the first full scholarly text.
   isbn13: "9780521841665"
-cover:
-  source: archive
-  archiveId: journaltostella00swif
-  credit: "Internet Archive, journaltostella00swif"
+cover: { source: generated }
 synopsis: >-
   Sixty-five letters that Swift wrote from London between 1710 and 1713 to Esther Johnson, whom he called Stella, and her companion Rebecca Dingley in Dublin. Written as a nightly diary in a private baby language of pet names and abbreviations, they record Swift's rise to intimacy with the Tory ministers Harley and St John, the pamphlet war he waged for them, the gossip of coffee houses and court, his money worries and his health. The letters were not written for publication and appeared only after his death.
 keywords: [Esther Johnson, Stella, Rebecca Dingley, Harley, Bolingbroke, Tory ministry, little language, London 1710]
