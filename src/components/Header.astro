@@ -91,6 +91,16 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     white-space: nowrap; min-width: 0;
   }
   .brand__mark { flex: 0 0 auto; }
+  /* The wordmark follows the sweep rather than changing with it, so the red reads as one
+     movement crossing the whole lockup left to right. */
+  .brand__word { transition: color 220ms var(--ease-out); }
+  .brand:hover .brand__word, .brand:focus-visible .brand__word {
+    color: var(--accent); transition-delay: 200ms;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .brand__word { transition: none; }
+    .brand:hover .brand__word, .brand:focus-visible .brand__word { transition-delay: 0s; }
+  }
 
   /* The search is the widest thing in the bar because it is the fastest way into 689 books. */
   .search-trigger {
