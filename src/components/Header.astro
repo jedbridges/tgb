@@ -72,6 +72,19 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
        covers that band while its contents stay clear of the notch. */
     padding-top: env(safe-area-inset-top, 0px);
   }
+  /* And the strip above it.
+     On iOS the visual viewport grows past the layout viewport as Safari collapses its own
+     toolbars, so for a moment there is a band at the top of the screen that no element
+     reaches and the page shows through it: book covers sliding past behind the clock. The
+     safe-area padding above does not help, because the band is not the safe area, it is the
+     difference between two viewports mid-scroll.
+     So the bar paints it rather than measuring it. Everything above the header is its own
+     paper, as far up as there is screen, and whatever the browser does with its chrome
+     there is nothing to see through. */
+  .site-header::before {
+    content: ''; position: absolute; left: 0; right: 0; bottom: 100%; height: 100vh;
+    background: var(--paper); pointer-events: none;
+  }
   /* Three tracks, not a flex row: the outer two take the same share of whatever is left,
      which is what puts the search in the centre of the page rather than in the centre of
      the gap between the wordmark and the navigation. */
