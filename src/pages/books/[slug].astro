@@ -201,7 +201,13 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
     display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: var(--s4);
     padding-block: var(--s4) var(--s3); align-items: start;
   }
-  .work__stage .book__front { view-transition-name: book-cover; }
+  /* :global, because the cover belongs to Book3D. Astro scopes this stylesheet's selectors
+     with this page's own cid, and .book__front carries Book3D's, so the plain selector
+     compiled to .book__front[data-astro-cid-htmgan3m] and matched nothing. The destination
+     therefore had no transition name at all: the browser had an outgoing snapshot and
+     nothing to morph it into, so the cover sat still and faded out while the page changed
+     under it. That is the whole reason the eye was left hunting. */
+  .work__stage :global(.book__front) { view-transition-name: book-cover; }
   .work__stage { grid-column: 2; grid-row: 1; position: sticky; top: var(--stick); align-self: start; display: grid; justify-items: center; gap: var(--s2); padding-bottom: var(--s1); max-height: var(--stick-max); }
   /* The light off the cover.
      This is the one place on the site where a book is allowed to colour the page, and it

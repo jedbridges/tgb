@@ -195,6 +195,23 @@ const HEADLINE_WORDS = [
     rotate: -11deg;
     z-index: 0;
   }
+  /* Very wide screens.
+     The hero is a centred column, so past about 1600px the seal stops being cut by the
+     screen and starts floating in the middle of an empty half, which loses the whole point
+     of it. It is pinned to the viewport's own right edge from there on and grows with the
+     screen, so the same slice keeps hanging off the side however wide the monitor is. The
+     right-hand inset is the gap between the column and the viewport edge, which is what
+     makes it reach past the wrap without a horizontal scrollbar. */
+  @media (min-width: 1600px) {
+    .hero__seal {
+      right: calc((100vw - 100%) / -2);
+      width: min(34rem, 26vw);
+      translate: 30% -50%;
+    }
+  }
+  @media (min-width: 2100px) {
+    .hero__seal { width: min(44rem, 24vw); translate: 28% -50%; }
+  }
   /* Same crop, different height. On a phone nothing clears a seal this size, so the only
      question is what it may pass behind. Text is transparent and the primary action is not,
      so it rises to the top of the hero and sits behind the headline like a watermark on

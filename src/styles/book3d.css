@@ -11,18 +11,21 @@
    filter over a full-page snapshot re-renders the whole thing every frame, which is what
    made this stutter. */
 ::view-transition-group(book-cover) {
-  animation-duration: 360ms;
+  animation-duration: 420ms;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 20;   /* the book stays above the page falling away behind it */
 }
 /* The two covers are the same picture at two sizes, so they are held at full strength and
    only the last moments are blended, which hides the difference in crop without ever
    showing one image through the other. */
+/* The two covers are the same picture at two sizes, so the crossfade happens late and
+   fast: for most of the travel the reader is watching one object move, not two pictures
+   dissolving into each other. */
 ::view-transition-old(book-cover) {
-  animation: 160ms 160ms cubic-bezier(0.4, 0, 1, 1) both vt-cover-out;
+  animation: 120ms 280ms cubic-bezier(0.4, 0, 1, 1) both vt-cover-out;
 }
 ::view-transition-new(book-cover) {
-  animation: 200ms cubic-bezier(0.16, 1, 0.3, 1) both vt-cover-in;
+  animation: 200ms 220ms cubic-bezier(0.16, 1, 0.3, 1) both vt-cover-in;
 }
 ::view-transition-old(book-cover),
 ::view-transition-new(book-cover) {
@@ -32,17 +35,19 @@
 @keyframes vt-cover-in { from { opacity: 0; } }
 
 /* The shelf falls back a little and fades. No blur: see above. */
+/* The page it leaves and the page it arrives at both defer to the cover: the shelf drops
+   away quickly and the new page rises under the book rather than competing with it. */
 ::view-transition-old(root) {
-  animation: 170ms cubic-bezier(0.4, 0, 1, 1) both vt-shelf-recede;
+  animation: 140ms cubic-bezier(0.4, 0, 1, 1) both vt-shelf-recede;
 }
 ::view-transition-new(root) {
-  animation: 260ms 40ms cubic-bezier(0.16, 1, 0.3, 1) both vt-page-arrive;
+  animation: 300ms 90ms cubic-bezier(0.16, 1, 0.3, 1) both vt-page-arrive;
 }
 @keyframes vt-shelf-recede {
   to { opacity: 0; transform: scale(0.985); }
 }
 @keyframes vt-page-arrive {
-  from { opacity: 0; transform: translateY(8px); }
+  from { opacity: 0; transform: translateY(14px); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -89,16 +94,13 @@
    !important because it has to beat every hover and pull state at once, and there is no
    transition on it: the squaring happens in the frame the snapshot is taken, not as an
    animation the reader watches. */
-.book__body[data-vt='flat'] {
-  transform: none !important;
+/* Set for one frame before a navigation. The cover keeps its pose, because the page it is
+   travelling to shows the same cover at the same angle; only the pointer tilt is dropped so
+   the book leaves from its resting angle. */
+.book__body[data-vt='rest'] {
+  --rx: 0deg !important;
   transition: none !important;
 }
-.book__body[data-vt='flat'] .book__front { transform: none !important; }
-.book__body[data-vt='flat'] .book__spine,
-.book__body[data-vt='flat'] .book__pages,
-.book__body[data-vt='flat'] .book__top,
-.book__body[data-vt='flat'] .book__back,
-.book__body[data-vt='flat'] .side--art::after { opacity: 0 !important; }
 .book__front {
   transform: translateZ(calc(var(--d) / 2));
   transform-origin: left center;

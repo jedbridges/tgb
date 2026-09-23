@@ -306,3 +306,46 @@ input, textarea, select { caret-color: var(--accent); }
 .crumbs li { display: flex; align-items: baseline; gap: 0.5em; list-style: none; }
 .crumbs li + li::before { content: '/'; color: var(--edge); }
 .crumbs ol, .crumbs ul { display: flex; flex-wrap: wrap; gap: 0.5em; margin: 0; padding: 0; }
+
+/* Hover, everywhere else.
+   ----------------------------------------------------------------------------------
+   The shelf already has the one big gesture: a book comes off it. Everything here is the
+   opposite, small enough that a reader feels it without being able to name it, and only
+   where there is a pointer that can hover. Each one moves transform or opacity so none of
+   it costs a layout. */
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  /* A tag's dot is the thing that is alive, not the tag. */
+  .tag { transition: border-color var(--dur-fast), background var(--dur-fast), transform var(--dur-fast) var(--ease-out); }
+  .tag:hover { transform: translateY(-1px); }
+  .tag--theme::before { transition: transform var(--dur-fast) var(--ease-out-expo); }
+  .tag--theme:hover::before { transform: scale(1.45); }
+
+  /* Buttons press rather than glow. */
+  .btn { transition: transform var(--dur-fast) var(--ease-out), background var(--dur-fast), color var(--dur-fast), border-color var(--dur-fast); }
+  .btn:hover { transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); transition-duration: 60ms; }
+
+  /* An arrow that means "onward" should go there. */
+  .more-link, .browse__skip { transition: color var(--dur-fast); }
+  .more-link span[aria-hidden], .more-link .arrow { display: inline-block; transition: transform var(--dur) var(--ease-out-expo); }
+  .more-link:hover span[aria-hidden], .more-link:hover .arrow { transform: translateX(4px); }
+}
+
+/* An underline that draws itself from the side it was approached from is a trick; one that
+   grows from the centre reads as the link answering. Applies to prose links and crumbs,
+   never to the nav, which already has its own current-page rule. */
+@media (hover: hover) and (pointer: fine) {
+  .prose a, .crumbs a, .work__by a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 0% 1px;
+    padding-bottom: 1px;
+  }
+  .prose a { background-size: 100% 1px; }
+  @media (prefers-reduced-motion: no-preference) {
+    .prose a, .crumbs a, .work__by a { transition: background-size var(--dur) var(--ease-out-expo), color var(--dur-fast); }
+  }
+  .crumbs a:hover, .work__by a:hover, .prose a:hover { background-size: 100% 1px; color: var(--accent); }
+}

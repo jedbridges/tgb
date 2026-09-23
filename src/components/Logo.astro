@@ -9,9 +9,12 @@ interface Props { size?: number; class?: string; title?: string; tone?: string }
 const { size = 22, class: cls, title, tone = 'var(--ink)' } = Astro.props;
 // Original artboard is 1681.625 x 965.685, so height drives the width.
 const width = Math.round((size * 1681.625) / 965.685);
+/* Unique per instance: two marks on one page must not share a clip path id. */
+const wipeId = `logo-wipe-${Math.random().toString(36).slice(2, 9)}`;
 ---
 <svg
   class:list={['logo', cls]}
+  data-logo
   width={width}
   height={size}
   viewBox="0 0 1681.625 965.685"
@@ -28,6 +31,17 @@ const width = Math.round((size * 1681.625) / 965.685);
     <path d="M1681.625,678.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z" />
   </g>
   <path class="logo__board" d="M800,965.685c-220.914-220.914-579.086-220.914-800,0v-800c220.914-220.913,579.086-220.913,800,0Z" />
+  <!-- The same mark again, in the accent, revealed left to right by a clip that opens on
+       hover. Two copies and one rect beats animating fill on five paths: the wipe is a
+       transform on a single clip rectangle, so it is composited rather than repainted, and
+       the ink underneath never moves. -->
+  <clipPath id={wipeId}><rect class="logo__wipe" x="0" y="0" width="1681.625" height="965.685" /></clipPath>
+  <g class="logo__flush" clip-path={`url(#${wipeId})`} aria-hidden="true">
+    <path d="M1681.625,391.685c-220.914-220.913-579.086-220.913-800,0v-226c220.914-220.913,579.086-220.913,800,0Z" />
+    <path d="M1681.625,965.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z" />
+    <path d="M1681.625,678.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z" />
+    <path d="M800,965.685c-220.914-220.914-579.086-220.914-800,0v-800c220.914-220.913,579.086-220.913,800,0Z" />
+  </g>
 </svg>
 <style>
   .logo { display: block; flex: 0 0 auto; }
@@ -37,5 +51,29 @@ const width = Math.round((size * 1681.625) / 965.685);
   :global(a:hover) > .logo .logo__leaves path:nth-child(3) { transform: translateY(-2.5%); }
   @media (prefers-reduced-motion: reduce) {
     .logo__leaves path { transition: none; }
+  }
+</style>
+
+<style>
+  .logo { overflow: visible; }
+  .logo__flush { fill: var(--accent); }
+  /* The clip is closed at rest and opens across the mark on hover. transform-box keeps the
+     rectangle in the artboard's own 1681-unit space rather than the rendered pixel box. */
+  .logo__wipe {
+    transform-box: view-box;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .logo__wipe { transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1); }
+    .logo__leaves path, .logo__board { transition: opacity 280ms var(--ease-out); }
+  }
+  a:hover .logo__wipe, a:focus-visible .logo__wipe, button:hover .logo__wipe { transform: scaleX(1); }
+  /* The ink fades a little under the sweep so the red reads as the mark changing colour
+     rather than as a second mark laid on top of the first. */
+  a:hover .logo__leaves path, a:hover .logo__board,
+  a:focus-visible .logo__leaves path, a:focus-visible .logo__board { opacity: 0.12; }
+  @media (prefers-reduced-motion: reduce) {
+    a:hover .logo__wipe, a:focus-visible .logo__wipe { transform: scaleX(1); }
   }
 </style>

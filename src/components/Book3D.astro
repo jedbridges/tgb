@@ -186,11 +186,11 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
     const body = card.querySelector<HTMLElement>('.book__body');
     const front = card.querySelector<HTMLElement>('.book__front');
     if (!body || !front) return;
-    // Square the book up first. The browser snapshots the cover as it is painted, and a
-    // face inside a rotateY paints as a foreshortened parallelogram; handing that to the
-    // transition against the flat cover on the next page is what made it tear. Squaring it
-    // also cancels the hover tilt, so the book leaves from wherever the pointer left it.
-    body.dataset.vt = 'flat';
+    // Both ends of this transition are the same 3D cover at different sizes, so the pose is
+    // left alone: squaring the outgoing one was written for a flat destination that, because
+    // of the scoping bug above, never existed. What is cancelled is the hover tilt, so the
+    // book leaves from its resting angle rather than from wherever the pointer left it.
+    body.dataset.vt = 'rest';
     front.style.setProperty('view-transition-name', 'book-cover');
   }, { capture: true });
   addEventListener('pageshow', () => {
