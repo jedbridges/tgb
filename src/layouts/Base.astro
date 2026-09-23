@@ -29,7 +29,8 @@ const { bodyClass, ...seo } = Astro.props;
          the site's own light/dark toggle, so anyone who pinned a scheme against their
          system got the other one's chrome. One tag, written below before the first paint,
          and corrected from the page's real background once there is a body to measure. -->
-    <meta name="theme-color" content="#f2e8e4" />
+    <meta name="theme-color" content="#f2e8e4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#150f0c" media="(prefers-color-scheme: dark)" />
     <!-- Runs before the first byte of body is parsed, so a reader who pinned a scheme
          never sees the other one flash first. It writes one attribute and nothing else:
          the palette itself lives in tokens.css. -->
@@ -43,12 +44,16 @@ const { bodyClass, ...seo } = Astro.props;
       window.__tgbChrome = () => {
         const root = document.documentElement;
         const dark = (root.dataset.theme ?? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
-        const meta = document.querySelector('meta[name="theme-color"]');
-        if (!meta) return;
-        // Once there is a body, its computed background is the paper by definition, so the
-        // chrome can never drift from the palette again.
+        const metas = document.querySelectorAll('meta[name="theme-color"]');
+        if (!metas.length) return;
+        // The two tags above are keyed to the system preference, which is right until the
+        // reader pins a scheme against it. When they have, the media keys are dropped and
+        // both tags carry the colour actually in force. Once there is a body, its computed
+        // background IS the paper, so the chrome cannot drift from the palette.
+        const pinned = !!root.dataset.theme;
         const measured = document.body && getComputedStyle(document.body).backgroundColor;
-        meta.setAttribute('content', measured && measured !== 'rgba(0, 0, 0, 0)' ? measured : (dark ? '#150f0c' : '#f2e8e4'));
+        const colour = measured && measured !== 'rgba(0, 0, 0, 0)' ? measured : (dark ? '#150f0c' : '#f2e8e4');
+        metas.forEach((m) => { if (pinned) { m.removeAttribute('media'); m.setAttribute('content', colour); } });
       };
       window.__tgbChrome();
       addEventListener('DOMContentLoaded', () => window.__tgbChrome());

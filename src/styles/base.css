@@ -2,12 +2,40 @@
 @import './tokens.css';
 
 *, *::before, *::after { box-sizing: border-box; }
-/* overflow-x: clip stops content escaping sideways. overscroll-behavior-x stops the page
-   itself sliding against nothing when a touch starts horizontally, which on iOS reads as
-   the whole site coming loose. */
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; overflow-x: clip; overscroll-behavior-x: none; }
-body { overflow-x: clip; overscroll-behavior-x: none; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+/* The page scrolls inside the body, not the document.
+   ----------------------------------------------------------------------------------
+   On iOS, Safari renders the scrolling document into the strip behind the status bar and
+   the strip behind its own toolbar, and nothing in the page can cover them. That was
+   measured three ways: a fixed element at top: 0 begins BELOW the strip, an absolutely
+   positioned band above a sticky header is clipped by the scrollport, and a sticky header
+   given top: -70px is clipped too. env(safe-area-inset-top) reads 0 throughout, so there
+   is nothing to measure either. The strip simply shows the document's own content from
+   just above wherever the header is pinned, which is what put book covers behind the clock.
+
+   If the document does not scroll, it has nothing to render there. So the html element is
+   frozen and the body becomes the scroll container: the strips fall back to the html
+   background, which is the page's paper, and the header and the buy bar meet them cleanly.
+
+   The cost is that Safari keeps its toolbar expanded rather than collapsing it on scroll,
+   which is about forty points of height. That is the trade for bars that are actually
+   solid, and it is the trade the site wants.
+
+   overflow-x: clip still stops content escaping sideways, and overscroll-behavior stops
+   the page sliding against nothing at the edges. */
+html {
+  height: 100%;
+  overflow: hidden;
+  background: var(--paper);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: clip;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) { body { scroll-behavior: auto; } }
 body {
   margin: 0;
   background: var(--paper);
