@@ -23,19 +23,15 @@ cover: { source: openlibrary, isbn13: "9780805211627" }
 synopsis: >-
   A lecture Arendt gave in 1964 in the wake of the controversy over her book on the Eichmann trial. She rejects the idea of collective guilt, insisting that guilt is personal while responsibility can be political, and asks how ordinary people under Nazi rule could have refused to participate. The cog in the machine defence fails, she argues, because courts try persons, not systems. Those who did not go along were not the most educated or moral but those who asked themselves whether they could live with what they had done.
 whyItMatters: >-
-  Arendt wrote this lecture to answer the storm of anger that followed her report on Adolf
-  Eichmann's trial, in which readers heard her phrase the banality of evil as an excuse rather
-  than as the diagnosis she meant it to be, and to work out, more carefully than the earlier book
-  had space to, a question the trial itself had forced on her: how should a court, or anyone
-  else, assign responsibility to an individual who claims he was only a cog turning inside a vast
-  machine of state-organized murder? Her answer refuses two easy exits at once. She rejects
-  collective guilt, the idea that an entire nation or people can be guilty the way an individual
-  is guilty, insisting that guilt in any meaningful sense always attaches to specific persons for
-  specific acts. And she rejects the cog defense just as firmly, on the ground that courts try
-  persons and not systems, so a person who chose to keep turning remains a person who chose. What
-  she found, examining who actually refused to participate under Nazi rule, is that it was not
-  the most educated or the most conventionally moral who resisted, but those who simply asked
-  themselves whether they could go on living with themselves afterward.
+  Arendt wrote this lecture to answer the anger that followed her report on Eichmann's trial,
+  where readers heard the banality of evil as an excuse rather than the diagnosis she meant. She
+  works out a question the trial had forced on her: how should responsibility be assigned to
+  someone who claims he was only a cog turning inside a machine of state-organized murder? Her
+  answer refuses two exits at once. She rejects collective guilt, insisting guilt always attaches
+  to specific persons for specific acts, and she rejects the cog defense just as firmly, since
+  courts try persons and not systems. What she found, examining who actually refused to
+  participate under Nazi rule, is that it was not the most educated or conventionally moral, but
+  those who simply asked whether they could go on living with themselves afterward.
 keyThemes:
   - theme: guilt-and-redemption
     note: "Arendt separates guilt, which she insists is always personal and attaches only to those who actually did or ordered specific wrongful acts, from responsibility, which can be political and can attach to people who did nothing individually wrong but who belong to a political community implicated in collective wrongdoing."

@@ -48,14 +48,19 @@ keyThemes:
 highlights:
   - text: "The Fox and the Grapes: unable to reach the grapes, the fox declared them sour and walked away."
     location: "Fable, Perry Index 15"
+    note: "Paraphrase of the standard telling; the moral, that it is easy to despise what you cannot get, is drawn from the fable's traditional close."
   - text: "The Tortoise and the Hare: slow and steady wins the race."
     location: "Fable, Perry Index 226"
+    note: "Paraphrase of the fable's traditional moral, attached to it across the many retellings of the story rather than a single fixed source text."
   - text: "The Boy Who Cried Wolf: he who tells lies must be prepared to be disbelieved even when he speaks the truth."
     location: "Fable, Perry Index 210"
+    note: "Paraphrase of the moral traditionally appended to the fable, which survives in several ancient versions with minor variation in wording."
   - text: "The Ant and the Grasshopper: it is thrifty to prepare today for the wants of tomorrow."
     location: "Fable, Perry Index 373"
+    note: "Paraphrase of the fable's traditional moral as it appears across the Greek and Latin collections."
   - text: "The Lion and the Mouse: a kindness is never wasted, however small the creature who performs it."
     location: "Fable, Perry Index 150"
+    note: "Paraphrase of the moral traditionally drawn from the fable, in which the mouse's small act of gratitude later saves the lion's life."
 related: [andersen-fairy-tales, grimm-fairy-tales, arabian-nights, plato-phaedo]
 keywords: [tortoise and the hare, fox and the grapes, boy who cried wolf, ant and the grasshopper, lion and the mouse, Phaedrus, Babrius, moral]
 status: draft
