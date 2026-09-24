@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import preact from '@astrojs/preact';
+import { readdirSync, readFileSync } from 'node:fs';
 import sitemap from '@astrojs/sitemap';
 import pagefind from 'astro-pagefind';
 import { loadEnv } from 'vite';
@@ -21,6 +22,22 @@ if (SITE_URL) process.env.SITE_URL = SITE_URL;
 for (const k of ['AMAZON_ASSOCIATE_TAG', 'BOOKSHOP_AFFILIATE_ID', 'PUBLIC_GA4_ID'])
   if (!process.env[k] && env[k]) process.env[k] = env[k];
 
+/*
+ * The sitemap is a request, not an inventory: it says which pages we want judged. 595 of the
+ * 689 works are still catalogue stubs, so asking Google to weigh them against the 94 written
+ * guides is asking to be read as a thin affiliate site. They are noindexed on the page itself
+ * and dropped here, and a work rejoins both the moment its status stops being 'stub'.
+ *
+ * Read with a regex rather than a YAML parser because astro.config runs before the content
+ * layer exists, and the only field needed is one line of frontmatter.
+ */
+const stubSlugs = new Set(
+  readdirSync('src/content/works')
+    .filter((f) => f.endsWith('.md'))
+    .filter((f) => /^status:\s*stub\s*$/m.test(readFileSync(`src/content/works/${f}`, 'utf8')))
+    .map((f) => f.replace(/\.md$/, '')),
+);
+
 export default defineConfig({
   site,
   output: 'static',
@@ -39,7 +56,11 @@ export default defineConfig({
   integrations: [
     preact(),
     sitemap({
-      filter: (page) => !page.includes('/404'),
+      filter: (page) => {
+        if (page.includes('/404')) return false;
+        const m = page.match(/\/books\/([^/]+)\/?$/);
+        return !(m && stubSlugs.has(m[1]));
+      },
     }),
     pagefind(),
   ],

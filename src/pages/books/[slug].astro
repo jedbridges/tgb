@@ -28,6 +28,14 @@ const related = await relatedWorks(work);
 const { authors } = await loadCatalog();
 const count = await programCount(work.id);
 const guided = await guidedCount();
+/*
+ * A stub is a catalogue record: the synopsis, the edition and the buy links, on the same
+ * template as 594 others. That is useful to a reader who lands on it and thin to a search
+ * engine, and thin affiliate pages are named in Google's own spam policies, so 595 of them
+ * would be judged against the 94 written guides rather than beside them. Stubs are therefore
+ * noindex,follow (still crawled, still passing link equity) and dropped from the sitemap in
+ * astro.config.mjs. Each one rejoins both by itself on the commit that gives it a guide.
+ */
 const hasGuideHere = work.data.status !== 'stub';
 const hasNamedEdition = Boolean(work.data.recommendedEdition?.translator || work.data.recommendedEdition?.publisher);
 const d = work.data;
@@ -53,6 +61,7 @@ const description = d.synopsis.length > 158 ? d.synopsis.slice(0, 155).replace(/
 const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'he', french: 'fr', german: 'de', italian: 'it', spanish: 'es', russian: 'ru' };
 ---
 <Base title={`${d.title} by ${author.data.name}`} description={description} type="book" image={og}
+  noindex={!hasGuideHere}
   jsonld={[bookLd(work, author, og ? new URL(og, Astro.site).toString() : undefined), breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }])]}>
   <article class="work" data-pagefind-body data-pagefind-filter="type:Book" data-work-view={work.id} data-work-guide={hasGuideHere ? "yes" : "no"} data-work-lists={String(count)}>
     <span class="visually-hidden" data-pagefind-meta="type:Book"></span>
