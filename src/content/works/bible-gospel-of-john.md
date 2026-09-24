@@ -52,10 +52,10 @@ highlights:
   - text: "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."
     location: "3:16"
     translator: King James Version
-  - text: "Jesus wept."
-    location: "11:35"
+  - text: "Jesus wept. Then said the Jews, Behold how he loved him!"
+    location: "11:35-36"
     translator: King James Version
-    note: "At the tomb of Lazarus, a few verses before he raises him. The shortest verse in the English Bible."
+    note: "At the tomb of Lazarus, a few verses before he raises him. The first sentence is the shortest verse in the English Bible."
   - text: "A new commandment I give unto you, That ye love one another; as I have loved you, that ye also love one another."
     location: "13:34"
     translator: King James Version

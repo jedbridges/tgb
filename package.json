@@ -11,7 +11,7 @@
     "build": "astro check && astro build && npm run smoke",
     "preview": "astro preview",
     "check": "astro check",
-    "validate:content": "tsx scripts/validate-content.ts",
+    "validate:content": "astro sync && tsx scripts/validate-content.ts",
     "covers": "tsx scripts/fetch-covers.ts",
     "seed": "tsx scripts/seed-work.ts",
     "smoke": "tsx scripts/smoke-dist.ts",
