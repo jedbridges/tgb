@@ -35,6 +35,11 @@ const BANNED = /\b(timeless|masterpiece|delve|tapestry|in conclusion|testament t
 const REQUIRED_H = ['## Overview', '## How to read it', '## Questions it raises'];
 for (const [slug, { data, body }] of works) {
   if (!authors.has(data.author)) err(`${slug}: author ${data.author} has no file`);
+  /* A dangling `related` slug is a build failure, not a warning: the collection schema types
+     it as reference('works') and Astro only resolves that at build time, so an invented slug
+     sails through this script and then takes the build down several minutes later. */
+  for (const r of data.related ?? [])
+    if (!works.has(typeof r === 'string' ? r : r.id)) err(`${slug}: related "${typeof r === 'string' ? r : r.id}" has no file`);
   const words = body.trim().split(/\s+/).filter(Boolean).length;
   const wc = (t?: string) => (t ? t.trim().split(/\s+/).filter(Boolean).length : 0);
   const st = data.status ?? 'stub';
