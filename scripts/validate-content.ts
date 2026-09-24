@@ -38,8 +38,11 @@ for (const [slug, { data, body }] of works) {
   /* A dangling `related` slug is a build failure, not a warning: the collection schema types
      it as reference('works') and Astro only resolves that at build time, so an invented slug
      sails through this script and then takes the build down several minutes later. */
-  for (const r of data.related ?? [])
-    if (!works.has(typeof r === 'string' ? r : r.id)) err(`${slug}: related "${typeof r === 'string' ? r : r.id}" has no file`);
+  for (const r of data.related ?? []) {
+    const id = typeof r === 'string' ? r : r.id;
+    if (!works.has(id)) err(`${slug}: related "${id}" has no file`);
+    if (id === slug) err(`${slug}: related lists itself`);
+  }
   const words = body.trim().split(/\s+/).filter(Boolean).length;
   const wc = (t?: string) => (t ? t.trim().split(/\s+/).filter(Boolean).length : 0);
   const st = data.status ?? 'stub';
