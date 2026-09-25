@@ -1,0 +1,509 @@
+---
+/**
+ * A reading list as a bookcase: every work spine-out, in the program's own order.
+ *
+ * At rest each book is one flat button and one line of lettering, so a list of 277 costs a
+ * few hundred plain elements and no 3D at all. Only the book that is taken down becomes an
+ * object: it is built on click, turns out of the shelf into its cover, and is thrown away
+ * again when it goes back.
+ */
+import { getImage } from 'astro:assets';
+import { coverFor, hasGuide, yearShort, type Work } from '~/lib/catalog';
+import { toneFor } from '~/lib/tone';
+import { legibleSpine } from '~/lib/contrast';
+import { workUrl } from '~/lib/url';
+
+interface Props {
+  segments: { id: string; label: string; items: { work: Work; author: string }[] }[];
+  label: string;
+}
+const { segments, label } = Astro.props;
+
+/* A handful of years or courses reads best as a shelf each, labelled. Fifty volumes do not:
+   they run on continuously with a small gap where one ends and the next begins. */
+const bySegment = segments.length > 1 && segments.length <= 6;
+const LENGTH_PAGES = { short: 120, medium: 220, long: 480, epic: 900 } as const;
+
+const built = await Promise.all(segments.map(async (seg) => ({
+  ...seg,
+  books: await Promise.all(seg.items.map(async ({ work: w, author }) => {
+    const { image, meta } = coverFor(w.id);
+    const tone = toneFor(w.id);
+    // The same spine the 3D book shows: sampled from the jacket, made legible.
+    const spine = legibleSpine(image && meta?.spine ? meta.spine : tone.bg);
+    const board = legibleSpine(tone.bg);
+    const pages = w.data.pages ?? LENGTH_PAGES[w.data.length];
+    const depth = Math.max(12, Math.min(58, Math.round(pages / 16)));
+    const ratio = image ? image.height / image.width : 1.52;
+    return {
+      slug: w.id, title: w.data.title, author, year: yearShort(w), seg: seg.label,
+      guide: hasGuide(w), href: workUrl(w.id),
+      // Never thinner than a 9px title needs: every book on the case carries its lettering.
+      t: Math.round(13 + ((depth - 12) / 46) * 13),
+      h: Math.round(98 + ((Math.min(1.72, Math.max(1.3, ratio)) - 1.3) / 0.42) * 36),
+      ratio: Number(ratio.toFixed(3)),
+      spine: spine.bg, ink: spine.ink,
+      cover: image ? (await getImage({ src: image, width: 240, format: 'webp' })).src : '',
+      toneBg: board.bg, toneInk: board.ink,
+    };
+  })),
+})));
+
+let n = 0;
+const shelves = built.map((s) => ({ ...s, books: s.books.map((b) => ({ ...b, n: ++n })) }));
+const all = shelves.flatMap((s) => s.books);
+// Everything the open book needs, once, rather than as a dozen attributes on 277 buttons.
+const data = JSON.stringify(all.map(({ n, slug, title, author, year, seg, guide, href, t, ratio, spine, ink, cover, toneBg, toneInk }) =>
+  ({ n, slug, title, author, year, seg, guide, href, t, ratio, spine, ink, cover, toneBg, toneInk }))).replace(/</g, '\\u003c');
+const groups = bySegment ? shelves : [{ id: 'all', label: '', books: shelves.flatMap((s, si) => s.books.map((b, bi) => ({ ...b, start: si > 0 && bi === 0 }))) }];
+---
+<section class="bookcase" aria-label={`${label}, as a bookcase`} data-pagefind-ignore>
+  {groups.map((g) => (
+    <div class="bookcase__shelf">
+      {bySegment && <p class="bookcase__label ui">{g.label}</p>}
+      <div class="bookcase__row">
+        {g.books.map((b) => (
+          <button type="button" class="bookcase__spine" tabindex={b.n === 1 ? 0 : -1}
+            aria-label={`${b.title}, ${b.author}`} aria-expanded="false" data-i={b.n - 1}
+            data-start={'start' in b && b.start ? '' : undefined}
+            style={`--t:${b.t}px;--h:${b.h}px;--spine:${b.spine};--spine-ink:${b.ink}`}>
+            <span class="bookcase__back"><span class="bookcase__lettering">{b.title}</span></span>
+          </button>
+        ))}
+      </div>
+    </div>
+  ))}
+  <span class="visually-hidden" aria-live="polite" data-announce></span>
+  <p class="bookcase__caption ui">
+    <span class="bookcase__hint">{all.length} works, spine out. <span class="bookcase__hint-fine">Take one down to see its cover.</span><span class="bookcase__hint-touch">Tap one to take it down.</span></span>
+  </p>
+  <script type="application/json" class="bookcase__data" set:html={data}></script>
+</section>
+
+<style is:global>
+  /* The case. Every spine stands in a slot of the same height, so every line of books is the
+     same height and one repeating gradient can lay a shelf under each of them, however the
+     books wrap. A shelf runs the width of the wall, not the width of the books on it. */
+  .bookcase { --line: 140px; --ledge: 12px; margin-top: var(--s3); }
+  .bookcase__shelf + .bookcase__shelf { margin-top: var(--s2); }
+  .bookcase__label { margin-bottom: var(--s0); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); }
+  .bookcase__row {
+    position: relative;
+    display: flex; flex-wrap: wrap; align-items: flex-end; align-content: flex-start;
+    column-gap: 2px; row-gap: var(--ledge); padding-bottom: var(--ledge);
+    background-image: repeating-linear-gradient(to bottom,
+      transparent 0 var(--line),
+      var(--shelf-edge) var(--line) calc(var(--line) + 2px),
+      var(--shelf-wood) calc(var(--line) + 2px) calc(var(--line) + 8px),
+      color-mix(in oklch, var(--shelf-wood) 72%, black) calc(var(--line) + 8px) calc(var(--line) + var(--ledge)));
+    /* Books parted to make room slip past the ends of the shelf rather than widening the
+       page; the book taken down is taller than its slot and must still show above it. */
+    overflow-x: clip; overflow-y: visible;
+  }
+
+  .bookcase__spine {
+    appearance: none; border: 0; margin: 0; padding: 0; background: none; font: inherit; color: inherit;
+    flex: none; position: relative; width: var(--t); height: var(--line); cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    translate: var(--part, 0px) 0;
+    transition: translate var(--dur-slow) var(--ease-out-expo) var(--delay, 0ms);
+  }
+  .bookcase__spine[data-start] { margin-left: 10px; }
+  .bookcase__spine:focus-visible { outline: none; }
+  /* The spine itself: sampled cloth, a little shading across the round of the back, and the
+     two pairs of blind rules a binder presses in at head and tail. Kept faint; they are
+     there to be felt more than seen. */
+  .bookcase__back {
+    position: absolute; left: 0; right: 0; bottom: 0; height: var(--h);
+    display: flex; align-items: center; justify-content: center; overflow: hidden;
+    color: var(--spine-ink);
+    background-color: var(--spine);
+    background-image:
+      linear-gradient(to bottom, transparent 7%, color-mix(in oklch, var(--spine-ink) 26%, transparent) 7% calc(7% + 1px), transparent calc(7% + 1px) calc(9% + 1px), color-mix(in oklch, var(--spine-ink) 18%, transparent) calc(9% + 1px) calc(9% + 2px), transparent calc(9% + 2px) calc(90% - 2px), color-mix(in oklch, var(--spine-ink) 18%, transparent) calc(90% - 2px) calc(90% - 1px), transparent calc(90% - 1px)),
+      linear-gradient(to right, rgb(0 0 0 / 0.24), transparent 24%, rgb(255 255 255 / 0.06) 46%, transparent 64%, rgb(0 0 0 / 0.2));
+    border-radius: 1.5px 1.5px 0 0;
+    transform-origin: 50% 100%;
+    transition: translate var(--dur-fast) var(--ease-out), opacity 120ms linear;
+  }
+  .bookcase__back::after {
+    content: ''; position: absolute; inset: 0; pointer-events: none;
+    background: rgb(255 255 255 / 0.08); opacity: 0; transition: opacity var(--dur-fast) linear;
+  }
+  /* Titles on the spines are set the way the site sets every title: Gambetta italic. The
+     face ships no small capitals and synthesis is off, so small-caps would silently fall
+     back to lowercase; tracked capitals at this size read as a label, not as a binding. */
+  .bookcase__lettering {
+    writing-mode: vertical-rl;
+    /* A percentage here resolves against the wrong axis for vertical text, so the long
+       titles overflowed both ends; the spine's own height is what the lettering has. */
+    max-inline-size: calc(var(--h) * 0.8); overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    font-family: var(--font-display); font-weight: 500; font-style: italic;
+    font-size: clamp(9px, calc(var(--t) * 0.56), 12.5px); letter-spacing: 0.01em; line-height: 1;
+    font-kerning: normal; text-rendering: optimizeLegibility;
+    opacity: 0.94;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .bookcase__spine:hover .bookcase__back { translate: 0 -5px; }
+    .bookcase__spine:hover .bookcase__back::after { opacity: 1; }
+  }
+  /* Raised above its neighbours, or the books either side paint over the ring. */
+  .bookcase__spine:focus-visible { z-index: 2; }
+  .bookcase__spine:focus-visible .bookcase__back { translate: 0 -5px; outline: 2px solid var(--focus); outline-offset: 1px; }
+  /* The book in the hand stands in for this one, so the slot is left empty. */
+  .bookcase__spine[aria-expanded='true'] .bookcase__back { opacity: 0; transition: none; }
+
+  /* A neighbour taken away leaves nothing to lean on for a moment. The books either side tip
+     into the space and right themselves: a couple of degrees, once. */
+  .bookcase__spine[data-lean] .bookcase__back { animation: bookcase-lean 820ms cubic-bezier(0.3, 0.7, 0.4, 1) 90ms; }
+  .bookcase__spine[data-lean='right'] .bookcase__back { transform-origin: 100% 100%; --lean: 2.2deg; }
+  .bookcase__spine[data-lean='left'] .bookcase__back { transform-origin: 0 100%; --lean: -2.2deg; }
+  @keyframes bookcase-lean {
+    35% { rotate: var(--lean); }
+    72% { rotate: calc(var(--lean) * -0.2); }
+  }
+
+  /* The book taken down. Built on click, positioned on its own slot, and scaled from the
+     spine's size up to its own, pivoting on the foot of the spine so the first frame is
+     exactly the spine it replaces. */
+  .bookcase__book {
+    position: absolute; left: var(--x); top: var(--y); width: var(--bw); height: var(--bh);
+    z-index: 4; pointer-events: none;
+    transform-origin: 0 100%; scale: var(--s); translate: 0 var(--ly, 0px);
+    perspective: 900px; perspective-origin: 20% 40%;
+    /* The turn is the one thing here the eye follows, so it runs a little longer than the
+       site's other motion and on a softer curve: expo spends the whole move in the first
+       150ms, which reads as a flick rather than as a book being turned in the hand. */
+    --turn: 720ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition: scale var(--turn), translate var(--dur) var(--ease-out);
+  }
+  .bookcase__body {
+    position: absolute; inset: 0; transform-style: preserve-3d;
+    transform-origin: 0 50%;
+    transform: translateX(0) rotateY(90deg);
+    transition: transform var(--turn);
+  }
+  .bookcase__book[data-state='open'] { scale: 1; translate: 0 0; }
+  .bookcase__book[data-state='open'] .bookcase__body { transform: translateX(calc(var(--bw) * -0.5)) rotateY(14deg); }
+  .bookcase__book[data-state='open'] .bookcase__front { pointer-events: auto; }
+  .bookcase__book[data-state='closing'], .bookcase__book[data-state='closing'] .bookcase__body {
+    transition-duration: var(--dur); transition-timing-function: var(--ease-in-out);
+  }
+  .bookcase__front, .bookcase__edge {
+    position: absolute; top: 0; bottom: 0;
+    backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  }
+  .bookcase__front {
+    left: 0; right: 0; display: block; overflow: hidden;
+    transform: translateZ(calc(var(--d) / 2));
+    background: var(--spine); border-radius: 1px 3px 3px 1px;
+    box-shadow: inset 3px 0 6px -3px rgb(0 0 0 / 0.35);
+    cursor: pointer;
+  }
+  .bookcase__front img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 220ms linear; }
+  .bookcase__front img[data-ready] { opacity: 1; }
+  .bookcase__front .cover-gen { --w: var(--bw); }
+  .bookcase__front:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+  .bookcase__edge {
+    width: var(--d); left: calc(var(--d) / -2);
+    transform: rotateY(-90deg);
+    display: flex; align-items: center; justify-content: center; overflow: hidden;
+    color: var(--spine-ink); background-color: var(--spine);
+    background-image: linear-gradient(to right, rgb(0 0 0 / 0.26), transparent 26%, transparent 74%, rgb(0 0 0 / 0.2));
+    border-radius: 2px 0 0 2px;
+  }
+  .bookcase__edge .bookcase__lettering { max-inline-size: calc(var(--bh) * 0.8); }
+  /* Its shadow on the shelf. */
+  .bookcase__shadow {
+    position: absolute; left: 0; bottom: -7px; width: 120%; height: 14px; translate: -50% 0; z-index: -1;
+    background: radial-gradient(ellipse at 50% 40%, rgb(var(--shadow-ink) / calc(0.42 * var(--shadow-a))), rgb(var(--shadow-ink) / calc(0.12 * var(--shadow-a))) 46%, transparent 70%);
+    opacity: 0; transition: opacity var(--dur) var(--ease-out);
+  }
+  .bookcase__book[data-state='open'] .bookcase__shadow { opacity: 1; }
+  /* The line under the case. It names what the pointer is over, and when a book is down it
+     becomes that book's card. */
+  .bookcase__caption {
+    /* Held at the foot of the window while the case is taller than it, so a book taken down
+       from the top shelf still shows its card. It rises out of the paper rather than
+       sitting on a bar. */
+    position: sticky; bottom: 0; z-index: 5;
+    padding: var(--s1) 0 calc(var(--s0) + env(safe-area-inset-bottom));
+    background: linear-gradient(to bottom, color-mix(in oklch, var(--paper) 0%, transparent), var(--paper) var(--s1));
+    min-height: 2.6rem;
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.9rem;
+    font-size: var(--step--1); color: var(--ink-soft);
+  }
+  .bookcase__caption > * { animation: bookcase-caption 260ms var(--ease-out) both; }
+  @keyframes bookcase-caption { from { opacity: 0; translate: 0 4px; } }
+  .bookcase__hint { color: var(--ink-mute); }
+  .bookcase__hint-touch { display: none; }
+  @media (hover: none) { .bookcase__hint-fine { display: none; } .bookcase__hint-touch { display: inline; } }
+  .bookcase__n { color: var(--ink-mute); font-variant-numeric: tabular-nums; min-width: 2ch; }
+  .bookcase__title { font-family: var(--font-display); font-style: italic; font-size: var(--step-1); line-height: 1.15; color: var(--ink-strong); text-decoration: none; }
+  a.bookcase__title:hover { color: var(--accent); }
+  .bookcase__meta { color: var(--ink-soft); }
+  /* The same mark the list below uses for a written guide. */
+  .bookcase__guide {
+    display: inline-flex; align-items: center; gap: 0.3em; align-self: center; white-space: nowrap;
+    font-size: var(--step--2); line-height: 1; color: var(--accent);
+    padding: 0.25em 0.5em; border-radius: 2px;
+    border: 1px solid color-mix(in oklch, var(--accent) 50%, transparent);
+  }
+  .bookcase__guide::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
+  .bookcase__actions { display: inline-flex; flex-wrap: wrap; gap: 0.25rem 1rem; margin-left: auto; }
+  .bookcase__act { appearance: none; background: none; border: 0; padding: 0.35rem 0; font: inherit; color: var(--ink-soft); cursor: pointer; text-decoration: none; }
+  .bookcase__act:hover { color: var(--accent); }
+  .bookcase__act--go { color: var(--ink-strong); }
+
+  /* On a phone the case is one long shelf that scrolls sideways. */
+  @media (max-width: 719px) {
+    .bookcase { --line: 124px; }
+    .bookcase__row {
+      flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden;
+      padding-top: 26px; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter);
+      background-repeat: repeat-x; background-position: 0 26px; background-size: 100% calc(var(--line) + var(--ledge));
+      background-attachment: local;
+      overscroll-behavior-x: contain; scrollbar-width: none;
+    }
+    .bookcase__row::-webkit-scrollbar { display: none; }
+    .bookcase__row::after { content: ''; flex: none; width: 1px; }
+    .bookcase__actions { margin-left: 0; }
+  }
+
+  /* The masthead sets itself with a small blur; over a case of three hundred spines that is
+     a filter across a very large layer, so the case arrives without one. */
+  @media (prefers-reduced-motion: no-preference) {
+    :root:not([data-vt-nav]) .page-open > .bookcase { animation: bookcase-in 520ms var(--ease-out-expo) 250ms backwards; }
+    @keyframes bookcase-in { from { opacity: 0; transform: translateY(7px); } }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .bookcase__spine, .bookcase__back, .bookcase__book, .bookcase__body { transition: none !important; }
+    .bookcase__spine[data-lean] .bookcase__back, .bookcase__caption > * { animation: none; }
+    .bookcase__book { scale: 1; }
+    .bookcase__body { transform: translateX(calc(var(--bw) * -0.5)) rotateY(14deg); }
+    .bookcase__book { opacity: 0; transition: opacity 160ms linear !important; }
+    .bookcase__book[data-state='open'] { opacity: 1; }
+  }
+</style>
+
+<script>
+  import { track } from '~/lib/analytics';
+
+  interface Book {
+    n: number; slug: string; title: string; author: string; year: string; seg: string; guide: boolean; href: string;
+    t: number; ratio: number; spine: string; ink: string; cover: string; toneBg: string; toneInk: string;
+  }
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  const narrow = matchMedia('(max-width: 719px)');
+  const el = <K extends keyof HTMLElementTagNameMap>(tag: K, cls?: string, text?: string) => {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
+    return e;
+  };
+
+  for (const kase of document.querySelectorAll<HTMLElement>('.bookcase')) {
+    const books: Book[] = JSON.parse(kase.querySelector('.bookcase__data')!.textContent!);
+    const spines = [...kase.querySelectorAll<HTMLButtonElement>('.bookcase__spine')];
+    const caption = kase.querySelector<HTMLElement>('.bookcase__caption')!;
+    const announce = kase.querySelector<HTMLElement>('[data-announce]')!;
+    const hint = caption.innerHTML;
+    let open: { spine: HTMLButtonElement; book: HTMLElement; moved: HTMLButtonElement[] } | null = null;
+    let shown = -1;
+
+    const settle = (children: Node[]) => { caption.replaceChildren(...children); };
+    const describe = (i: number) => {
+      if (open || i === shown) return;
+      shown = i;
+      if (i < 0) { caption.innerHTML = hint; return; }
+      const b = books[i];
+      settle([el('span', 'bookcase__n', String(b.n)), el('span', 'bookcase__title', b.title), el('span', 'bookcase__meta', [b.author, b.seg].filter(Boolean).join(' · '))]);
+    };
+
+    /* Preload on hover intent, so the cover is decoded before the book has turned. */
+    const warmed = new Set<number>();
+    const warm = (i: number) => {
+      if (warmed.has(i) || !books[i].cover) return;
+      warmed.add(i);
+      const im = new Image(); im.decoding = 'async'; im.src = books[i].cover;
+    };
+
+    kase.addEventListener('pointerover', (e) => {
+      const s = (e.target as HTMLElement).closest<HTMLButtonElement>('.bookcase__spine');
+      if (!s) return;
+      const i = Number(s.dataset.i);
+      describe(i); warm(i);
+    });
+    kase.addEventListener('pointerleave', () => describe(-1));
+    kase.addEventListener('focusin', (e) => {
+      const s = (e.target as HTMLElement).closest<HTMLButtonElement>('.bookcase__spine');
+      if (s) { const i = Number(s.dataset.i); describe(i); warm(i); }
+    });
+
+    function build(b: Book, spine: HTMLButtonElement) {
+      const row = spine.parentElement!;
+      const line = spine.offsetHeight;
+      const back = spine.firstElementChild!.getBoundingClientRect();
+      const h = back.height;
+      // A hovered spine has already risen a few pixels; start from where it actually is.
+      const ly = back.bottom - spine.getBoundingClientRect().bottom;
+      const bh = Math.round(line * 1.1);
+      const bw = Math.round(bh / Math.min(1.7, Math.max(1.25, b.ratio)));
+      const s = h / bh;
+      const d = b.t / s;
+      const book = el('div', 'bookcase__book');
+      book.style.cssText = `--x:${spine.offsetLeft + spine.offsetWidth / 2}px;--y:${spine.offsetTop + line - bh}px;--bw:${bw}px;--bh:${bh}px;--s:${s.toFixed(4)};--d:${d.toFixed(2)}px;--t:${b.t}px;--ly:${ly.toFixed(1)}px;--spine:${b.spine};--spine-ink:${b.ink}`;
+      book.setAttribute('aria-hidden', 'true');
+
+      const shadow = el('span', 'bookcase__shadow');
+      const body = el('div', 'bookcase__body');
+      const front = el('a', 'bookcase__front') as HTMLAnchorElement;
+      front.href = b.href; front.tabIndex = -1;
+      if (b.cover) {
+        const img = el('img') as HTMLImageElement;
+        img.alt = ''; img.decoding = 'async';
+        img.addEventListener('load', () => { img.dataset.ready = ''; }, { once: true });
+        img.src = b.cover;
+        if (img.complete) img.dataset.ready = '';
+        front.append(img);
+      } else {
+        // The house binding, exactly as the 3D books draw it.
+        const gen = el('span', 'cover-gen');
+        gen.style.cssText = `--tone-bg:${b.toneBg};--tone-ink:${b.toneInk}`;
+        const title = el('span', 'cover-gen__title' + (b.title.length > 40 ? ' xlong' : b.title.length > 22 ? ' long' : ''), b.title);
+        gen.append(el('span', 'cover-gen__series', 'The Great Books'), title, el('span', 'cover-gen__author', b.author));
+        front.append(gen);
+      }
+      const edge = el('div', 'bookcase__edge');
+      edge.append(el('span', 'bookcase__lettering', b.title));
+      body.append(edge, front);
+      book.append(shadow, body);
+      row.append(book);
+      return { book, bw, d };
+    }
+
+    function part(spine: HTMLButtonElement, bw: number, d: number) {
+      const row = [...spine.parentElement!.querySelectorAll<HTMLButtonElement>('.bookcase__spine')];
+      const i = row.indexOf(spine);
+      const top = spine.offsetTop;
+      const t = spine.offsetWidth;
+      // How far the book reaches either side of its own slot once it faces out, plus air.
+      const left = Math.round(bw / 2 + d * 0.25 + 8 - t / 2);
+      const right = Math.round(bw * 0.47 + 8 - t / 2);
+      const moved: HTMLButtonElement[] = [];
+      for (let k = i - 1, step = 0; k >= 0 && row[k].offsetTop === top; k--, step++) {
+        row[k].style.setProperty('--part', `${-left}px`);
+        row[k].style.setProperty('--delay', `${Math.min(step, 3) * 15}ms`);
+        moved.push(row[k]);
+      }
+      for (let k = i + 1, step = 0; k < row.length && row[k].offsetTop === top; k++, step++) {
+        row[k].style.setProperty('--part', `${right}px`);
+        row[k].style.setProperty('--delay', `${Math.min(step, 3) * 15}ms`);
+        moved.push(row[k]);
+      }
+      const lean = (s: HTMLButtonElement | undefined, dir: string) => {
+        if (!s || s.offsetTop !== top || reduce.matches) return;
+        s.dataset.lean = dir;
+        s.addEventListener('animationend', () => delete s.dataset.lean, { once: true });
+      };
+      lean(row[i - 1], 'right'); lean(row[i + 1], 'left');
+      return moved;
+    }
+
+    function card(b: Book) {
+      const title = el('a', 'bookcase__title', b.title) as HTMLAnchorElement;
+      title.href = b.href;
+      const nodes: Node[] = [el('span', 'bookcase__n', String(b.n)), title, el('span', 'bookcase__meta', [b.author, b.year, b.seg].filter(Boolean).join(' · '))];
+      if (b.guide) nodes.push(el('span', 'bookcase__guide', 'Guide'));
+      const actions = el('span', 'bookcase__actions');
+      const go = el('a', 'bookcase__act bookcase__act--go', 'Open the book →') as HTMLAnchorElement;
+      go.href = b.href;
+      const find = el('button', 'bookcase__act', 'Find in list ↓') as HTMLButtonElement;
+      find.type = 'button'; find.dataset.find = b.slug;
+      const back = el('button', 'bookcase__act', 'Put back') as HTMLButtonElement;
+      back.type = 'button'; back.dataset.putBack = '';
+      actions.append(go, find, back);
+      nodes.push(actions);
+      settle(nodes);
+    }
+
+    function takeDown(spine: HTMLButtonElement) {
+      if (open) putBack('swap');
+      const b = books[Number(spine.dataset.i)];
+      if (narrow.matches) spine.scrollIntoView({ inline: 'center', block: 'nearest', behavior: reduce.matches ? 'auto' : 'smooth' });
+      const { book, bw, d } = build(b, spine);
+      spine.setAttribute('aria-expanded', 'true');
+      const moved = part(spine, bw, d);
+      open = { spine, book, moved };
+      // One frame at the spine's own size and angle, then let it turn.
+      book.getBoundingClientRect();
+      requestAnimationFrame(() => { book.dataset.state = 'open'; });
+      card(b);
+      announce.textContent = `${b.title}, ${b.author}, taken down.`;
+      track('bookcase_open', { work: b.slug, page: location.pathname });
+    }
+
+    function putBack(why?: 'swap' | 'instant') {
+      if (!open) return;
+      const { spine, book, moved } = open;
+      open = null; shown = -1;
+      for (const s of moved) { s.style.removeProperty('--part'); s.style.setProperty('--delay', '0ms'); }
+      // Guarded, because the same book can be taken down again before this one has landed.
+      const done = () => { book.remove(); if (open?.spine !== spine) spine.setAttribute('aria-expanded', 'false'); };
+      if (why === 'instant' || reduce.matches) done();
+      else {
+        book.dataset.state = 'closing';
+        book.addEventListener('transitionend', (e) => { if (e.target === book && e.propertyName === 'scale') done(); });
+        setTimeout(done, 700);
+      }
+      if (why !== 'swap') caption.innerHTML = hint;
+    }
+
+    kase.addEventListener('click', (e) => {
+      const t = e.target as HTMLElement;
+      const spine = t.closest<HTMLButtonElement>('.bookcase__spine');
+      if (spine) {
+        if (open?.spine === spine) { putBack(); return; }
+        spines.forEach((s) => (s.tabIndex = s === spine ? 0 : -1));
+        takeDown(spine);
+        return;
+      }
+      if (t.closest('[data-put-back]')) { const s = open?.spine; putBack(); s?.focus(); return; }
+      const find = t.closest<HTMLElement>('[data-find]');
+      if (find) {
+        const row = document.querySelector<HTMLElement>(`.row[data-slug="${CSS.escape(find.dataset.find!)}"]`);
+        if (!row) return;
+        row.scrollIntoView({ block: 'center', behavior: reduce.matches ? 'auto' : 'smooth' });
+        row.classList.remove('row--found'); void row.offsetWidth; row.classList.add('row--found');
+        return;
+      }
+      /* The cover travels into the book's own page, as a book taken off any shelf does. */
+      const front = t.closest<HTMLElement>('.bookcase__front, .bookcase__title, .bookcase__act--go');
+      if (front && open) open.book.querySelector<HTMLElement>('.bookcase__front')!.style.setProperty('view-transition-name', 'book-cover');
+    });
+    document.addEventListener('click', (e) => {
+      if (open && !kase.contains(e.target as Node)) putBack();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && open) { const s = open.spine; putBack(); s.focus(); }
+    });
+    // Only a change of width moves the books; a phone's toolbar sliding away does not.
+    let width = innerWidth;
+    addEventListener('resize', () => { if (innerWidth !== width) { width = innerWidth; putBack('instant'); } });
+    addEventListener('pageshow', () => {
+      kase.querySelectorAll<HTMLElement>('.bookcase__front').forEach((f) => f.style.removeProperty('view-transition-name'));
+    });
+
+    /* One tab stop for the whole case; the arrow keys walk the shelf. */
+    kase.addEventListener('keydown', (e) => {
+      const s = (e.target as HTMLElement).closest<HTMLButtonElement>('.bookcase__spine');
+      if (!s) return;
+      const i = spines.indexOf(s);
+      const to = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? spines.length - 1 : -2;
+      if (to === -2) return;
+      e.preventDefault();
+      const next = spines[Math.max(0, Math.min(spines.length - 1, to))];
+      spines.forEach((x) => (x.tabIndex = x === next ? 0 : -1));
+      next.focus();
+    });
+  }
+</script>

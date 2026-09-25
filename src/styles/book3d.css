@@ -128,14 +128,26 @@
     repeating-linear-gradient(115deg, rgb(0 0 0 / 0.018) 0 3px, transparent 3px 7px);
   border-radius: 3px 1px 1px 3px;
 }
+/* A printed endpaper: the form's motif in the binding's own colour, as publishers once
+   printed theirs. Only on the one book that opens. */
+.side--endpaper .endpaper-print { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--spine); opacity: 0.2; }
 .book__front img { width: 100%; height: 100%; object-fit: cover; -webkit-user-drag: none; user-drag: none; pointer-events: none; }
-/* The sheen on a jacket, as the cover's own pseudo-element rather than an element of its
-   own. It behaves identically and it is not 689 more nodes on the browse page. */
+/* The light on a jacket, as the cover's own pseudo-element rather than an element of its
+   own, so it is not 689 more nodes on the browse page. Not a diagonal streak: a broad, soft
+   pool, the way a lamp sits on a board, and it drifts with the pointer as the book tilts.
+   It is drawn once at twice the cover's size and only ever translated, so following the
+   pointer is compositing, never repainting. Plain alpha, no blend mode. */
 .side--art::after {
-  content: ''; position: absolute; inset: 0; pointer-events: none;
-  background: linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.18) 46%, rgb(255 255 255 / 0.05) 52%, transparent 62%);
-  opacity: 0; transition: opacity var(--dur) var(--ease-out);
-  mix-blend-mode: screen;
+  content: ''; position: absolute; inset: -50%; pointer-events: none;
+  background: radial-gradient(closest-side,
+    rgb(255 255 255 / 0.19),
+    rgb(255 255 255 / 0.11) 30%,
+    rgb(255 255 255 / 0.045) 56%,
+    rgb(255 255 255 / 0.012) 72%,
+    transparent 84%);
+  translate: calc(var(--hx, -0.35) * 28%) calc(var(--hy, -0.45) * 28%);
+  opacity: 0;
+  transition: opacity var(--dur) var(--ease-out), translate 260ms var(--ease-out);
 }
 .book__back {
   transform: rotateY(180deg) translateZ(calc(var(--d) / 2));
@@ -200,14 +212,19 @@
 .book__bottom { bottom: calc((var(--d) - 3px) / -2); transform: rotateX(-90deg); background-image: linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.2)), repeating-linear-gradient(to bottom, var(--paper-edge) 0 1px, oklch(0.88 0.02 70) 1px 2px); }
 
 .book__shadow {
-  position: absolute; left: 6%; right: -4%; bottom: -5%; height: 9%;
-  /* Two layers: the book's own shadow, and the colour its jacket throws into it. The
-     tinted layer multiplies itself away to nothing when the cover has no colour worth
-     borrowing, so an untinted book keeps exactly the shadow it had. */
+  /* Softened by its own gradient rather than by filter: blur(), and grown by the 6px the
+     blur used to spread it. A filter on an element whose transform animates on every hover
+     is re-rasterised as it moves; a gradient is just a gradient. */
+  position: absolute; left: calc(6% - 6px); right: calc(-4% - 6px); bottom: calc(-5% - 6px); height: calc(9% + 12px);
+  /* Only shadow: no colour borrowed from the jacket, which read as a coloured glow on
+     the ground rather than as the book's own shade. */
   background:
-    radial-gradient(ellipse at 45% 50%, oklch(0.62 var(--tint-c, 0) var(--tint-h, 0) / calc(0.42 * var(--shadow-a) * var(--tinted, 0))), transparent 66%),
-    radial-gradient(ellipse at 45% 50%, rgb(var(--shadow-ink) / calc(0.55 * var(--shadow-a))), rgb(var(--shadow-ink) / calc(0.25 * var(--shadow-a))) 45%, transparent 72%);
-  filter: blur(6px);
+    radial-gradient(ellipse at 45% 50%,
+      rgb(var(--shadow-ink) / calc(0.46 * var(--shadow-a))),
+      rgb(var(--shadow-ink) / calc(0.3 * var(--shadow-a))) 26%,
+      rgb(var(--shadow-ink) / calc(0.13 * var(--shadow-a))) 46%,
+      rgb(var(--shadow-ink) / calc(0.04 * var(--shadow-a))) 60%,
+      transparent 70%);
   transform: translateX(calc(var(--w) * 0.06)) scaleX(1);
   transform-origin: 40% 50%;
   transition: transform var(--dur) var(--ease-out-expo), opacity var(--dur) var(--ease-out);
@@ -287,7 +304,7 @@
     --ry: 18deg; --tz: 26px; --tx: 2px; --ty: -26px;
     transition-duration: var(--dur);
   }
-  .card:hover .book[data-pull] .side--art::after, .book[data-pull]:hover .side--art::after { opacity: 0.8; }
+  .card:hover .book[data-pull] .side--art::after, .book[data-pull]:hover .side--art::after { opacity: 1; }
   /* The shadow carries the height instead: it drops away, spreads and softens, which is
      what tells you the book has come up rather than come closer. */
   .card:hover .book[data-pull] .book__shadow, .book[data-pull]:hover .book__shadow {
@@ -307,7 +324,13 @@
      identical. */
   .card:hover + .card .book__body { --ry: 30deg; --tx: -3px; }
   .card[data-near] .book__body { --ry: 15deg; --tx: 3px; }
-  .book[data-tilting] .book__body { transition-duration: 120ms; }
+  /* While the pointer is steering the book it has to track, not trail. This used to be a
+     bare .book[data-tilting] rule, which the pull-hover rule above outranks, so every tilt
+     update eased over the full 420ms and the book chased the cursor. The same selectors
+     with [data-tilting] added win on specificity and still leave the lift at 420ms. */
+  .book[data-tilting] .book__body,
+  .card:hover .book[data-pull][data-tilting] .book__body,
+  .book[data-pull][data-tilting]:hover .book__body { transition-duration: 120ms; }
   /* The click has to land on something. Without this the book held its hover pose while
      the navigation happened, which read as the page ignoring you. It presses in, fast,
      the way a real object gives under a finger. */

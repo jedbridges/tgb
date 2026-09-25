@@ -8,6 +8,8 @@ import { coverFor, type Work } from '~/lib/catalog';
 import { toneFor } from '~/lib/tone';
 import '~/styles/book3d.css';
 import { legibleSpine } from '~/lib/contrast';
+import FormPattern from './FormPattern.astro';
+import type { FormFamily } from '~/lib/form';
 
 interface Props {
   work: Work;
@@ -20,9 +22,10 @@ interface Props {
   eager?: boolean;           // image loading priority
   decorative?: boolean;      // inside a card: the card's own text is the accessible name
   epigraph?: { text: string; source?: string };
+  endpaper?: FormFamily;     // printed endpaper motif, seen when the cover opens
   class?: string;
 }
-const { work, authorName, width = 150, as = 'span', pull = true, tilt = false, openable = false, eager = false, decorative = false, epigraph, class: cls } = Astro.props;
+const { work, authorName, width = 150, as = 'span', pull = true, tilt = false, openable = false, eager = false, decorative = false, epigraph, endpaper, class: cls } = Astro.props;
 const { image, meta } = coverFor(work.id);
 const tone = toneFor(work.id);
 const ratio = image ? image.height / image.width : 1.52;
@@ -74,7 +77,7 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
             </span>
           )}
         </span>
-        {openable && <span class="side side--endpaper" aria-hidden="true"></span>}
+        {openable && <span class="side side--endpaper" aria-hidden="true">{endpaper && <FormPattern family={endpaper} id={`endpaper-${work.id}`} class="endpaper-print" />}</span>}
       </span>
       {openable && (
         <span class="book__face book__inner" id={`book-inner-${work.id}`}>
@@ -126,14 +129,30 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
     const base = open ? -8 : 6;
     el.style.setProperty('--rx', `${(-ny * (open ? 4 : 9)).toFixed(2)}deg`);
     el.style.setProperty('--ry', `${(base + nx * (open ? 6 : 14)).toFixed(2)}deg`);
-    el.setAttribute('data-tilting', '');
+    // Where the light sits on the jacket: over the part of the cover the pointer is on.
+    el.style.setProperty('--hx', nx.toFixed(3));
+    el.style.setProperty('--hy', ny.toFixed(3));
+    // The lift off the shelf plays out at its own pace first; only then does the book start
+    // tracking the pointer on the short transition. Switching at once cut the lift to 120ms.
+    if (!el.hasAttribute('data-tilting') && performance.now() - (since.get(el) ?? 0) > 380) el.setAttribute('data-tilting', '');
   }
+  const since = new WeakMap<HTMLElement, number>();
+  /* The host's rectangle, measured once when the pointer arrives rather than on every move.
+     Reading it inside pointermove forced a synchronous layout per event, straight after the
+     previous frame's --rx/--ry write had dirtied the styles: the same drag Seal.astro found
+     and fixed. Scrolling or resizing moves the rectangle, so either one clears the cache. */
+  let rects = new WeakMap<HTMLElement, DOMRect>();
+  const forget = () => { rects = new WeakMap(); };
+  addEventListener('scroll', forget, { passive: true, capture: true });
+  addEventListener('resize', forget, { passive: true });
   document.addEventListener('pointermove', (e) => {
     if (!fine.matches || reduce.matches) return;
     const el = (e.target as HTMLElement).closest<HTMLElement>('[data-book][data-tilt], .card [data-book]');
     if (!el) return;
     const host = el.closest<HTMLElement>('.card') ?? el;
-    const r = host.getBoundingClientRect();
+    let r = rects.get(host);
+    if (!r) { r = host.getBoundingClientRect(); rects.set(host, r); }
+    if (!since.has(el)) since.set(el, performance.now());
     pending = { el, nx: ((e.clientX - r.left) / r.width) * 2 - 1, ny: ((e.clientY - r.top) / r.height) * 2 - 1 };
     if (!raf) raf = requestAnimationFrame(apply);
   }, { passive: true });
@@ -162,6 +181,8 @@ const style = `--w:${width}px; --ratio:${ratio.toFixed(3)}; --d:${depth}px; --sp
     const host = el.closest<HTMLElement>('.card') ?? el;
     if (host.contains(e.relatedTarget as Node)) return;
     el.style.removeProperty('--rx'); el.style.removeProperty('--ry'); el.removeAttribute('data-tilting');
+    el.style.removeProperty('--hx'); el.style.removeProperty('--hy');
+    since.delete(el);
   });
   function toggle(el: HTMLElement) {
     const open = el.dataset.state !== 'open';

@@ -1,0 +1,34 @@
+---
+/**
+ * One quiet repeating motif per form of writing, drawn in hairlines in currentColor.
+ * Static: no filters and nothing that moves, so it costs one paint.
+ *   verse     lines of uneven length, like lineation
+ *   stage     an arcade of thin arches
+ *   argument  a compass construction: two circles and the line through them
+ *   record    laid paper, with its chain lines
+ *   sacred    a diaper lattice, as in a manuscript ground
+ *   story     combed marbling, the endpaper of a novel
+ *   science   graph ruling
+ */
+import type { FormFamily } from '~/lib/form';
+interface Props { family: FormFamily; id: string; class?: string }
+const { family, id, class: cls } = Astro.props;
+const tiles: Record<FormFamily, { w: number; h: number; body: string }> = {
+  verse: { w: 96, h: 40, body: '<path d="M6 6h58M6 16h44M6 26h64M6 36h30"/>' },
+  stage: { w: 30, h: 40, body: '<path d="M3 40V19a12 12 0 0 1 24 0v21"/>' },
+  argument: { w: 72, h: 72, body: '<circle cx="28" cy="36" r="16"/><circle cx="44" cy="36" r="16"/><path d="M36 18.9v34.2M4 36h64"/>' },
+  record: { w: 26, h: 4, body: '<path d="M0.5 0v4" stroke-width="0.9"/><path d="M0 2h26" stroke-opacity="0.45"/>' },
+  sacred: { w: 22, h: 22, body: '<path d="M11 1l10 10-10 10L1 11z"/><circle cx="11" cy="11" r="0.9" fill="currentColor" stroke="none"/>' },
+  story: { w: 64, h: 14, body: '<path d="M0 4c8-5 16 5 24 0s16-5 24 0 12 3 16 0M0 11c8-5 16 5 24 0s16-5 24 0 12 3 16 0"/>' },
+  science: { w: 60, h: 60, body: '<path d="M0 0.5h60M0 12.5h60M0 24.5h60M0 36.5h60M0 48.5h60M0.5 0v60M12.5 0v60M24.5 0v60M36.5 0v60M48.5 0v60" stroke-opacity="0.5"/><path d="M0 0.5h60M0.5 0v60"/>' },
+};
+const t = tiles[family];
+---
+<svg class:list={['form-pattern', cls]} aria-hidden="true" focusable="false" data-form={family}>
+  <defs>
+    <pattern id={id} patternUnits="userSpaceOnUse" width={t.w} height={t.h}>
+      <g fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" set:html={t.body} />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill={`url(#${id})`} />
+</svg>

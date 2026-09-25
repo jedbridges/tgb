@@ -5,6 +5,8 @@ import Base from '~/layouts/Base.astro';
 import Book3D from '~/components/Book3D.astro';
 import BookCard from '~/components/BookCard.astro';
 import BuyButtons from '~/components/BuyButtons.astro';
+import FormPattern from '~/components/FormPattern.astro';
+import { formFamily } from '~/lib/form';
 import ProgramBadges from '~/components/ProgramBadges.astro';
 import { placeholderAuthor, authorOf, coverFor, tintVars, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, hasGuide, guidedCount, loadCatalog } from '~/lib/catalog';
 import { authorUrl, taxUrl, url, workUrl } from '~/lib/url';
@@ -20,9 +22,9 @@ const { work } = Astro.props;
 const author = await authorOf(work);
 const { Content } = await render(work);
 const { image, meta: coverMeta } = coverFor(work.id);
-// The colour this jacket throws onto the wall behind it. Empty string for the third of
-// covers that are greyscale or near-black, and the wash below is then not rendered at all.
+// The borrowed colour, for the form texture behind the book; empty for greyscale covers.
 const tint = tintVars(coverMeta);
+const family = formFamily(work.data.genre.id);
 const og = image ? (await getImage({ src: image, width: 800, format: 'jpg' })).src : undefined;
 const related = await relatedWorks(work);
 const { authors } = await loadCatalog();
@@ -90,8 +92,8 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
         <p class="work__synopsis" style="--i:3">{d.synopsis}</p>
       </div>
       <div class="work__stage" style={tint || undefined}>
-        {tint && <div class="work__wash" aria-hidden="true"></div>}
-        <Book3D work={work} authorName={author.data.name} width={230} as="button" tilt openable eager epigraph={epigraph} />
+        <FormPattern family={family} id="form-stage" class="work__texture" />
+        <Book3D work={work} authorName={author.data.name} width={230} as="button" tilt openable eager epigraph={epigraph} endpaper={family} />
       </div>
     </header>
 
@@ -207,6 +209,9 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
      about it. Before this the title started two fifths across and the guide underneath it
      started at the gutter, so the page had two left edges. */
   .work__hero {
+    /* The texture behind the book reaches past the column by design; past the edge of a
+       phone screen it would widen the page instead. */
+    overflow-x: clip;
     display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: var(--s4);
     padding-block: var(--s4) var(--s3); align-items: start;
   }
@@ -216,32 +221,29 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
      therefore had no transition name at all: the browser had an outgoing snapshot and
      nothing to morph it into, so the cover sat still and faded out while the page changed
      under it. That is the whole reason the eye was left hunting. */
-  .work__stage :global(.book__front) { view-transition-name: book-cover; }
+  /* Only while the book is shut. A view-transition-name flattens its element into one
+     plane, so on an opened cover the jacket was drawn from behind, mirrored, where the
+     endpaper should be. A page transition only ever captures the book shut anyway. */
+  .work__stage :global(.book[data-state='shelf'] .book__front) { view-transition-name: book-cover; }
   .work__stage { grid-column: 2; grid-row: 1; position: sticky; top: var(--stick); align-self: start; display: grid; justify-items: center; gap: var(--s2); padding-bottom: var(--s1); max-height: var(--stick-max); }
-  /* The light off the cover.
-     This is the one place on the site where a book is allowed to colour the page, and it
-     is still only light: a soft bloom on the wall behind the jacket, never a background
-     panel and never anything type sits on. Wider than it is tall, because that is how a
-     lit object bleeds sideways, and blurred so no edge of the gradient is findable. */
-  .work__wash {
-    /* Sized to the book, not to the column. Tied to the stage it filled the whole width of
-       a phone and stopped being light on a wall: it became a red page. */
-    position: absolute; top: -6%; left: 50%; translate: -50% 0;
-    width: min(118%, 27rem); aspect-ratio: 1.15;
-    z-index: -1; pointer-events: none;
-    --wash-a: 0.17;
-    background: radial-gradient(ellipse at 50% 42%,
-      oklch(var(--tint-l) var(--tint-c) var(--tint-h) / var(--wash-a)),
-      oklch(var(--tint-l) var(--tint-c) var(--tint-h) / calc(var(--wash-a) * 0.36)) 46%,
-      transparent 73%);
-    filter: blur(16px);
+  /* The form of the work, as a texture on the wall the book stands against: verse ruled in
+     lines, a play in arches, an argument in compass work. Coloured by the jacket where it
+     has a colour, and faint enough that it is noticed on the second book, not the first.
+     z-index -2 keeps it behind the book inside the stage, which is positioned. */
+  .work__stage :global(.work__texture) {
+    position: absolute; top: -10%; left: 50%; translate: -50% 0;
+    width: min(170%, 34rem); aspect-ratio: 0.86; height: auto; max-width: none;
+    z-index: -2; pointer-events: none;
+    color: oklch(var(--tint-l, 0.5) calc(var(--tint-c, 0) * 0.8) var(--tint-h, 0));
+    -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 46%, #000 18%, rgb(0 0 0 / 0.4) 46%, transparent 72%);
+    mask-image: radial-gradient(ellipse 50% 50% at 50% 46%, #000 18%, rgb(0 0 0 / 0.4) 46%, transparent 72%);
+    opacity: 0.34;
   }
-  /* A dark page shows a coloured bloom far more readily than parchment does. */
-  @media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .work__wash { --wash-a: 0.2; } }
-  :root[data-theme='dark'] .work__wash { --wash-a: 0.2; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .work__stage :global(.work__texture) { opacity: 0.4; } }
+  :root[data-theme='dark'] .work__stage :global(.work__texture) { opacity: 0.4; }
   @media (prefers-reduced-motion: no-preference) {
-    .work__wash { animation: wash-in 900ms var(--ease-out) 120ms backwards; }
-    @keyframes wash-in { from { opacity: 0; } }
+    .work__stage :global(.work__texture) { animation: texture-in 1200ms var(--ease-out) 200ms backwards; }
+    @keyframes texture-in { from { opacity: 0; } }
   }
   .work__head { grid-column: 1; grid-row: 1; display: grid; gap: var(--s1); align-content: start; min-width: 0; }
   .work__head h1 { font-style: italic; font-size: var(--step-4); line-height: var(--lh-title); letter-spacing: var(--tracking-display); }
@@ -328,7 +330,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
     .buybar:not([hidden]) { display: flex; }
     .work { padding-bottom: 7rem; }  /* clears the fixed buy bar */
     .work__hero { grid-template-columns: 1fr; gap: var(--s2); }
-    .work__stage { grid-column: 1; grid-row: 1; position: static; padding-top: var(--s2); }
+    .work__stage { grid-column: 1; grid-row: 1; position: relative; padding-top: var(--s2); }
     .work__head { grid-row: 2; }
     .work__grid { grid-template-columns: 1fr; }
     .work__side { position: static; }

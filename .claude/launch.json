@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["astro", "preview", "--port", "4331"],
       "port": 4331
+    },
+    {
+      "name": "tgb-dev",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["astro", "dev", "--port", "4332"],
+      "port": 4332
     }
   ]
 }

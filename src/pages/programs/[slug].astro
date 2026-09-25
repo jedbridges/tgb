@@ -2,6 +2,7 @@
 import { getCollection, getEntry } from 'astro:content';
 import Base from '~/layouts/Base.astro';
 import Book3D from '~/components/Book3D.astro';
+import Bookcase from '~/components/Bookcase.astro';
 import { placeholderAuthor, loadCatalog, yearShort, difficultyLabel, hasGuide } from '~/lib/catalog';
 import { programUrl, url, workUrl, authorUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
@@ -18,6 +19,10 @@ const resolved = await Promise.all(segments.map(async (seg) => ({
   ...seg,
   items: (await Promise.all(seg.items.map(async (it) => ({ ...it, work: await getEntry('works', it.work.id) })))).filter((it) => it.work),
 })));
+const caseSegments = resolved.map((seg) => ({
+  id: seg.id, label: seg.label,
+  items: seg.items.map((it) => ({ work: it.work!, author: (authors.get(it.work!.data.author.id) ?? placeholderAuthor(it.work!.data.author.id)).data.name })),
+}));
 const allWorks = resolved.flatMap((s) => s.items.map((i) => i.work!));
 const unique = new Set(allWorks.map((w) => w.id)).size;
 const p = program.data;
@@ -46,6 +51,7 @@ const itemList = {
           <div><dt>Source</dt><dd><details class="facts__src"><summary>How this list was checked</summary><p>{p.sourceNote.replace(/https?:\/\/\S+/g, '').replace(/\s+,/g, ',').replace(/,\s*,/g, ',').trim()}</p></details></dd></div>
         </dl>
       </div>
+      <Bookcase segments={caseSegments} label={`${p.name} reading list`} />
       {segments.length > 1 && (
         <nav class="segnav ui" aria-label={`${p.segmentLabel}s`}>
           {segments.map((s) => <a href={`#${s.id}`}>{s.label}</a>)}
@@ -66,7 +72,7 @@ const itemList = {
             const w = it.work!;
             const a = authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id);
             return (
-              <li class="row">
+              <li class="row" data-slug={w.id}>
                 <span class="row__n ui">{i + 1}</span>
                 <a class="row__book" href={workUrl(w.id)} aria-hidden="true" tabindex="-1"><Book3D work={w} authorName={a?.data.name ?? ''} width={54} pull={false} decorative /></a>
                 <span class="row__text">
@@ -103,8 +109,7 @@ const itemList = {
   .segnav a:hover { color: var(--ink-strong); }
   .segnav__browse { margin-left: auto; color: var(--accent) !important; }
   .segnav { scrollbar-gutter: stable; }
-  .segment { padding-block: var(--s3); scroll-margin-top: calc(var(--header-h) + 4rem); }
-  .segment__head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: baseline; gap: var(--s0) var(--s2); margin-bottom: var(--s2); }
+  .segment { padding-block: var(--s3); scroll-margin-top: calc(var(--header-h) + 4rem); }  .segment__head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: baseline; gap: var(--s0) var(--s2); margin-bottom: var(--s2); }
   .segment__label { font-style: italic; font-size: var(--step-3); }
   .segment__sub { color: var(--ink-soft); font-size: var(--step-1); font-style: italic; }
   .segment__browse { color: var(--ink-mute); text-decoration: none; }
@@ -117,6 +122,14 @@ const itemList = {
     gap: var(--s1) var(--s2); align-items: baseline;
     padding: var(--s1) 0; border-bottom: var(--rule);
   }
+  .row { scroll-margin-block: 30vh; }
+  /* Arrived at from the bookcase: the row is marked once, then lets go. */
+  .row--found { animation: row-found 1800ms var(--ease-out) both; }
+  @keyframes row-found {
+    0%, 30% { background: color-mix(in oklch, var(--accent-wash) 70%, transparent); }
+    100% { background: transparent; }
+  }
+  @media (prefers-reduced-motion: reduce) { .row--found { animation-duration: 2400ms; animation-timing-function: steps(1, end); } }
   .row__n { color: var(--ink-mute); font-variant-numeric: tabular-nums; text-align: right; }
   .row__book { height: 5.4rem; display: grid; place-items: end center; align-self: center; }
   .row__book .book { --ry: 22deg; }
