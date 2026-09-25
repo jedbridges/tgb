@@ -21,11 +21,18 @@ const programs = readPrograms();
 // programs -> works
 const referenced = new Set<string>();
 for (const p of programs) {
-  const seen = new Set<string>();
-  for (const s of p.segments) for (const it of s.items) {
-    referenced.add(it.work);
-    if (seen.has(it.work)) warn(`${p.id}: ${it.work} listed twice`); seen.add(it.work);
-    if (!works.has(it.work)) err(`${p.id}: references missing work ${it.work}`);
+  /* A work may legitimately recur across segments (the Summa spans two Great Books volumes,
+     St. John's reads Plutarch in both freshman and sophomore year), so only a repeat inside
+     one segment is suspect, and not even then if the source list names it twice under
+     different titles (Adler numbers the Old and New Testaments as separate entries). */
+  for (const s of p.segments) {
+    const seen = new Set<string>();
+    for (const it of s.items) {
+      referenced.add(it.work);
+      const key = `${it.work}|${it.title ?? ''}`;
+      if (seen.has(key)) warn(`${p.id}/${s.id}: ${it.work} listed twice`); seen.add(key);
+      if (!works.has(it.work)) err(`${p.id}: references missing work ${it.work}`);
+    }
   }
 }
 for (const slug of works.keys()) if (!referenced.has(slug)) warn(`work ${slug} is in no program`);
@@ -33,6 +40,7 @@ for (const slug of works.keys()) if (!referenced.has(slug)) warn(`work ${slug} i
 // works
 const BANNED = /\b(timeless|masterpiece|delve|tapestry|in conclusion|testament to|rich tapestry)\b/i;
 const REQUIRED_H = ['## Overview', '## How to read it', '## Questions it raises'];
+const TITLE_SLUGS = new Set(['broken-spears', 'ecomodernist-manifesto', 'lectures-on-the-harvard-classics']);
 for (const [slug, { data, body }] of works) {
   if (!authors.has(data.author)) err(`${slug}: author ${data.author} has no file`);
   /* A dangling `related` slug is a build failure, not a warning: the collection schema types
@@ -77,7 +85,11 @@ for (const [slug, { data, body }] of works) {
     const modern = !['english', 'middle-english'].includes(data.language) && !h.translator && !/paraphrase/i.test(h.note ?? '');
     if (modern) warn(`${slug}: highlight without translator or paraphrase note`);
   }
-  if (slug.split('-')[0] !== data.author.split('-')[0] && !['bible', 'anonymous', 'various'].includes(data.author)) warn(`${slug}: author ${data.author} does not match slug prefix`);
+  /* Slugs are author-title, except for works known by their title alone: scripture, founding
+     documents, and a few edited volumes whose compiler nobody would search for. Renaming those
+     would break live URLs and every program and related reference, so they are exempt here. */
+  const titleSlug = slug.startsWith('bible-') || data.genre === 'founding-document' || TITLE_SLUGS.has(slug);
+  if (slug.split('-')[0] !== data.author.split('-')[0] && !['bible', 'anonymous', 'various'].includes(data.author) && !titleSlug) warn(`${slug}: author ${data.author} does not match slug prefix`);
 }
 // 12-gram duplication across works (templated sameness)
 const grams = new Map<string, string>();

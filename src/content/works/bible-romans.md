@@ -2,7 +2,7 @@
 title: Letter to the Romans
 originalTitle: Πρὸς Ῥωμαίους
 aliases: [Romans, Epistle to the Romans, Paul's Letter to the Romans]
-author: bible
+author: paul
 year: 57
 yearDisplay: c. 57 CE
 era: roman-empire

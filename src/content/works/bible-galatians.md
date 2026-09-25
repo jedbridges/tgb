@@ -2,7 +2,7 @@
 title: Letter to the Galatians
 originalTitle: Πρὸς Γαλάτας
 aliases: [Galatians, Epistle to the Galatians]
-author: bible
+author: paul
 year: 50
 yearDisplay: c. 48-55 CE
 era: roman-empire
