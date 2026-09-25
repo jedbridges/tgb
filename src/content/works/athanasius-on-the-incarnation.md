@@ -92,7 +92,7 @@ Notice that Athanasius frames the central dilemma as a question of what is fitti
 
 Pay attention to why the specific manner of Christ's death, public, decisive, unmistakably real and complete, matters so much to Athanasius's argument. The logic of defeating death from within requires that the death actually undergone be genuine and total, not merely apparent, and Athanasius spends real effort establishing this.
 
-Read the later sections on prophecy and the collapse of idolatry as historically specific arguments addressed to Athanasius's actual fourth-century audience and their actual objections, rather than as timeless philosophical proofs. Doing so makes clear both what kind of evidence Athanasius thought would be persuasive to his contemporaries and how different that evidentiary landscape is from a modern reader's own.
+Read the later sections on prophecy and the collapse of idolatry as historically specific arguments addressed to Athanasius's actual fourth-century audience and their actual objections, rather than as philosophical proofs meant to hold for every age. Doing so makes clear both what kind of evidence Athanasius thought would be persuasive to his contemporaries and how different that evidentiary landscape is from a modern reader's own.
 
 Read C. S. Lewis's introduction, widely printed alongside the older translation, for his argument about why reading old books like this one directly, rather than only reading modern summaries and discussions of them, corrects blind spots that are otherwise invisible from within any single era, including our own.
 
