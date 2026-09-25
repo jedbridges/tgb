@@ -7,5 +7,6 @@ died: 925
 region: islamic-world
 language: arabic
 era: medieval
-status: stub
+status: draft
 ---
+Al-Razi, known in Latin as Rhazes, was the greatest physician of the medieval Islamic world, director of the hospital at Baghdad, author of the first clinical description of smallpox and measles, and of a medical encyclopaedia that Europe used for centuries. He was also a philosopher of unusual independence, holding that reason is sufficient without prophecy, which made him a heretic to most of his successors. *Doubts About Galen* is his examination of the ancient authority, finding where Galen contradicted himself or the evidence, and is an early model of criticising the master by his own standards. He went blind in old age and refused an operation.
