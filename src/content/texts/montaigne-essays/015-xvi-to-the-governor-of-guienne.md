@@ -16,7 +16,7 @@ MONTAIGNE.
 
 I have seen no one from the king of Navarre; they say that M. de Biron has seen him.
 
-            THE AUTHOR TO THE READER.
+THE AUTHOR TO THE READER.
 
 —[Omitted by Cotton.]—
 
@@ -26,6 +26,6 @@ From Montaigne, the 12th June 1580—[So in the edition of 1595; the edition of 
 
 From Montaigne, the 1st March 1580.
 
-     —[See Bonnefon, Montaigne, 1893, p. 254.  The book had been
-     licensed for the press on the 9th May previous.  The edition of 1588
-     has 12th June 1588;]—
+—[See Bonnefon, Montaigne, 1893, p. 254.  The book had been
+licensed for the press on the 9th May previous.  The edition of 1588
+has 12th June 1588;]—

@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-xxiii"
-heading: "BOOK XXIII"
+heading: "Book XXIII"
 order: 25
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

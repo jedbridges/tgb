@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-ix"
-heading: "BOOK IX."
+heading: "Book IX."
 order: 9
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

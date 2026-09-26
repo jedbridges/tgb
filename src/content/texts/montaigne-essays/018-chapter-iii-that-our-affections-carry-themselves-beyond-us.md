@@ -1,25 +1,25 @@
 ---
 work: montaigne-essays
 section: "chapter-iii-that-our-affections-carry-themselves-beyond-us"
-heading: "CHAPTER III——THAT OUR AFFECTIONS CARRY THEMSELVES BEYOND US."
+heading: "Chapter Iii——that Our Affections Carry Themselves Beyond Us."
 order: 18
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"
 edition: "Charles Cotton's translation, 1685, in the 1877 revision"
 translator: "Charles Cotton"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 3154
+words: 4101
 ---
 Such as accuse mankind of the folly of gaping after future things, and advise us to make our benefit of those which are present, and to set up our rest upon them, as having no grasp upon that which is to come, even less than that which we have upon what is past, have hit upon the most universal of human errors, if that may be called an error to which nature herself has disposed us, in order to the continuation of her own work, prepossessing us, amongst several others, with this deceiving imagination, as being more jealous of our action than afraid of our knowledge.
 
 We are never present with, but always beyond ourselves: fear, desire, hope, still push us on towards the future, depriving us, in the meantime, of the sense and consideration of that which is to amuse us with the thought of what shall be, even when we shall be no more.[1]—
 
-          [1]Compare [Rousseau, Emile, livre ii.]
+        [1]Compare [Rousseau, Emile, livre ii.]
 
-   “Calamitosus est animus futuri auxius.”
+ “Calamitosus est animus futuri auxius.”
 
-  [“The mind anxious about the future is unhappy.”
-      —Seneca, Epist., 98.]
+[“The mind anxious about the future is unhappy.”
+    —Seneca, Epist., 98.]
 
 We find this great precept often repeated in Plato, “Do thine own work, and know thyself.” Of which two parts, both the one and the other generally, comprehend our whole duty, and do each of them in like manner involve the other; for who will do his own work aright will find that his first lesson is to know what he is, and that which is proper to himself; and who rightly understands himself will never mistake another man’s work for his own, but will love and improve himself above all other things, will refuse superfluous employments, and reject all unprofitable thoughts and propositions. As folly, on the one side, though it should enjoy all it desire, would notwithstanding never be content, so, on the other, wisdom, acquiescing in the present, is never dissatisfied with itself. —[Cicero, Tusc. Quae., 57, v. 18.]—Epicurus dispenses his sages from all foresight and care of the future.
 
@@ -29,17 +29,17 @@ I am scandalised, that in so sacred a government as that of the Lacedaemonians t
 
 Aristotle, who will still have a hand in everything, makes a ‘quaere’ upon the saying of Solon, that none can be said to be happy until he is dead: “whether, then, he who has lived and died according to his heart’s desire, if he have left an ill repute behind him, and that his posterity be miserable, can be said to be happy?” Whilst we have life and motion, we convey ourselves by fancy and preoccupation, whither and to what we please; but once out of being, we have no more any manner of communication with that which is, and it had therefore been better said by Solon that man is never happy, because never so, till he is no more.
 
-                              “Quisquam
-          Vix radicitus e vita se tollit, et eicit;
-          Sed facit esse sui quiddam super inscius ipse,
-          Nec removet satis a projecto corpore sese, et
-          Vindicat.”
+                         “Quisquam
+     Vix radicitus e vita se tollit, et eicit;
+     Sed facit esse sui quiddam super inscius ipse,
+     Nec removet satis a projecto corpore sese, et
+     Vindicat.”
 
-     [“Scarcely one man can, even in dying, wholly detach himself from
-     the idea of life; in his ignorance he must needs imagine that there
-     is in him something that survives him, and cannot sufficiently
-     separate or emancipate himself from his remains”
-      —Lucretius, iii. 890.]
+[“Scarcely one man can, even in dying, wholly detach himself from
+the idea of life; in his ignorance he must needs imagine that there
+is in him something that survives him, and cannot sufficiently
+separate or emancipate himself from his remains”
+ —Lucretius, iii. 890.]
 
 Bertrand de Guesclin, dying at the siege of the Castle of Rancon, near unto Puy, in Auvergne, the besieged were afterwards, upon surrender, enjoined to lay down the keys of the place upon the corpse of the dead general. Bartolommeo d’Alviano, the Venetian General, happening to die in the service of the Republic in Brescia, and his corpse being to be carried through the territory of Verona, an enemy’s country, most of the army were inclined to demand safe-conduct from the Veronese; but Theodoro Trivulzio opposed the motion, rather choosing to make his way by force of arms, and to run the hazard of a battle, saying it was by no means fit that he who in his life was never afraid of his enemies should seem to apprehend them when he was dead. In truth, in affairs of the same nature, by the Greek laws, he who made suit to an enemy for a body to give it burial renounced his victory, and had no more right to erect a trophy, and he to whom such suit was made was reputed victor. By this means it was that Nicias lost the advantage he had visibly obtained over the Corinthians, and that Agesilaus, on the contrary, assured that which he had before very doubtfully gained over the Boeotians.—[Plutarch, Life of Nicias, c. ii.; Life of Agesilaus, c. vi.]
 
@@ -57,20 +57,63 @@ I am ready to conceive an implacable hatred against all popular domination, thou
 
 Fortune, a few years after, punished them in the same kind; for Chabrias, captain-general of their naval forces, having got the better of Pollis, Admiral of Sparta, at the Isle of Naxos, totally lost the fruits of his victory, one of very great importance to their affairs, in order not to incur the danger of this example, and so that he should not lose a few bodies of his dead friends that were floating in the sea, gave opportunity to a world of living enemies to sail away in safety, who afterwards made them pay dear for this unseasonable superstition:—
 
-               “Quaeris, quo jaceas, post obitum, loco?
-                    Quo non nata jacent.”
+          “Quaeris, quo jaceas, post obitum, loco?
+               Quo non nata jacent.”
 
-     [“Dost ask where thou shalt lie after death?
-     Where things not born lie, that never being had.”]
-                                   Seneca, Tyoa. Choro ii. 30.
+[“Dost ask where thou shalt lie after death?
+Where things not born lie, that never being had.”]
+                              Seneca, Tyoa. Choro ii. 30.
 
 This other restores the sense of repose to a body without a soul:
 
-     “Neque sepulcrum, quo recipiatur, habeat: portum corporis, ubi,
-     remissa human, vita, corpus requiescat a malis.”
+“Neque sepulcrum, quo recipiatur, habeat: portum corporis, ubi,
+remissa human, vita, corpus requiescat a malis.”
 
-     [“Nor let him have a sepulchre wherein he may be received, a haven
-     for his body, where, life being gone, that body may rest from its
-     woes.”—Ennius, ap.  Cicero, Tusc.  i.  44.]
+[“Nor let him have a sepulchre wherein he may be received, a haven
+for his body, where, life being gone, that body may rest from its
+woes.”—Ennius, ap.  Cicero, Tusc.  i.  44.]
 
 As nature demonstrates to us that several dead things retain yet an occult relation to life; wine changes its flavour and complexion in cellars, according to the changes and seasons of the vine from whence it came; and the flesh of—venison alters its condition in the powdering-tub, and its taste according to the laws of the living flesh of its kind, as it is said.
+
+*CHAPTER IV——THAT THE SOUL EXPENDS ITS PASSIONS UPON FALSE OBJECTS, WHERE THE TRUE ARE WANTING*
+
+A gentleman of my country, marvellously tormented with the gout, being importuned by his physicians totally to abstain from all manner of salt meats, was wont pleasantly to reply, that in the extremity of his fits he must needs have something to quarrel with, and that railing at and cursing, one while the Bologna sausages, and another the dried tongues and the hams, was some mitigation to his pain. But, in good earnest, as the arm when it is advanced to strike, if it miss the blow, and goes by the wind, it pains us; and as also, that, to make a pleasant prospect, the sight should not be lost and dilated in vague air, but have some bound and object to limit and circumscribe it at a reasonable distance.
+
+    “Ventus ut amittit vires, nisi robore densa
+     Occurrant sylvae, spatio diffusus inani.”
+
+[“As the wind loses its force diffused in void space, unless it in
+its strength encounters the thick wood.”—Lucan, iii.  362.]
+
+So it seems that the soul, being transported and discomposed, turns its violence upon itself, if not supplied with something to oppose it, and therefore always requires an object at which to aim, and whereon to act. Plutarch says of those who are delighted with little dogs and monkeys, that the amorous part that is in us, for want of a legitimate object, rather than lie idle, does after that manner forge and create one false and frivolous. And we see that the soul, in its passions, inclines rather to deceive itself, by creating a false and fantastical a subject, even contrary to its own belief, than not to have something to work upon. After this manner brute beasts direct their fury to fall upon the stone or weapon that has hurt them, and with their teeth a even execute revenge upon themselves for the injury they have received from another:
+
+    “Pannonis haud aliter, post ictum saevior ursa,
+     Cui jaculum parva Lybis amentavit habena,
+     Se rotat in vulnus, telumque irata receptum
+     Impetit, et secum fugientem circuit hastam.”
+
+[“So the she-bear, fiercer after the blow from the Lybian’s thong-
+hurled dart, turns round upon the wound, and attacking the received
+spear, twists it, as she flies.”—Lucan, vi. 220.]
+
+What causes of the misadventures that befall us do we not invent? what is it that we do not lay the fault to, right or wrong, that we may have something to quarrel with? It is not those beautiful tresses you tear, nor is it the white bosom that in your anger you so unmercifully beat, that with an unlucky bullet have slain your beloved brother; quarrel with something else. Livy, speaking of the Roman army in Spain, says that for the loss of the two brothers, their great captains:
+
+     “Flere omnes repente, et offensare capita.”
+
+[“All at once wept and tore their hair."-Livy, xxv.  37.]
+
+‘Tis a common practice. And the philosopher Bion said pleasantly of the king, who by handsful pulled his hair off his head for sorrow, “Does this man think that baldness is a remedy for grief?”—[Cicero, Tusc. Quest., iii. 26.]—Who has not seen peevish gamesters chew and swallow the cards, and swallow the dice, in revenge for the loss of their money? Xerxes whipped the sea, and wrote a challenge to Mount Athos; Cyrus employed a whole army several days at work, to revenge himself of the river Gyndas, for the fright it had put him into in passing over it; and Caligula demolished a very beautiful palace for the pleasure his mother had once enjoyed there.
+
+—[Pleasure—unless ‘plaisir’ were originally ‘deplaisir’—must be
+understood here ironically, for the house was one in which she had
+been imprisoned.—Seneca, De Ira. iii. 22]—
+
+I remember there was a story current, when I was a boy, that one of our neighbouring kings—[Probably Alfonso XI. of Castile]—having received a blow from the hand of God, swore he would be revenged, and in order to it, made proclamation that for ten years to come no one should pray to Him, or so much as mention Him throughout his dominions, or, so far as his authority went, believe in Him; by which they meant to paint not so much the folly as the vainglory of the nation of which this tale was told. They are vices that always go together, but in truth such actions as these have in them still more of presumption than want of wit. Augustus Caesar, having been tossed with a tempest at sea, fell to defying Neptune, and in the pomp of the Circensian games, to be revenged, deposed his statue from the place it had amongst the other deities. Wherein he was still less excusable than the former, and less than he was afterwards when, having lost a battle under Quintilius Varus in Germany, in rage and despair he went running his head against the wall, crying out, “O Varus! give me back my legions!” for these exceed all folly, forasmuch as impiety is joined therewith, invading God Himself, or at least Fortune, as if she had ears that were subject to our batteries; like the Thracians, who when it thunders or lightens, fall to shooting against heaven with Titanian vengeance, as if by flights of arrows they intended to bring God to reason. Though the ancient poet in Plutarch tells us—
+
+         “Point ne se faut couroucer aux affaires,
+          Il ne leur chault de toutes nos choleres.”
+
+[“We must not trouble the gods with our affairs; they take no heed
+of our angers and disputes.”—Plutarch.]
+
+But we can never enough decry the disorderly sallies of our minds.

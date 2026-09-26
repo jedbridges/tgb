@@ -1,7 +1,7 @@
 ---
 work: augustine-confessions
 section: "book-vii"
-heading: "BOOK VII"
+heading: "Book VII"
 order: 7
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3296"

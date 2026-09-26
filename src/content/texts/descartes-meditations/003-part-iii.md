@@ -1,7 +1,7 @@
 ---
 work: descartes-meditations
 section: "part-iii"
-heading: "PART III"
+heading: "Part III"
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/59"

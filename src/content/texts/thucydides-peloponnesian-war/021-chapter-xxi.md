@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-xxi"
-heading: "CHAPTER XXI"
+heading: "Chapter XXI"
 order: 21
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

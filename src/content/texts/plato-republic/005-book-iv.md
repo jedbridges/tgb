@@ -1,7 +1,7 @@
 ---
 work: plato-republic
 section: "book-iv"
-heading: "BOOK IV."
+heading: "Book IV."
 order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1497"

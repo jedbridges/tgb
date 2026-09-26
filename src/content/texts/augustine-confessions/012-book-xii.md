@@ -1,7 +1,7 @@
 ---
 work: augustine-confessions
 section: "book-xii"
-heading: "BOOK XII"
+heading: "Book XII"
 order: 12
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3296"

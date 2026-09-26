@@ -1,7 +1,7 @@
 ---
 work: virgil-aeneid
 section: "book-vi"
-heading: "Book: VI"
+heading: "Book VI"
 order: 6
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/virgil/the-aeneid/john-dryden"

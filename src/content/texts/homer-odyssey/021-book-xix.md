@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-xix"
-heading: "BOOK XIX"
+heading: "Book XIX"
 order: 21
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

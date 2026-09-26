@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-xv"
-heading: "BOOK XV."
+heading: "Book XV."
 order: 15
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

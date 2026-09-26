@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-ii"
-heading: "CHAPTER II"
+heading: "Chapter II"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

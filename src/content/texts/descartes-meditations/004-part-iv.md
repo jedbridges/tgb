@@ -1,7 +1,7 @@
 ---
 work: descartes-meditations
 section: "part-iv"
-heading: "PART IV"
+heading: "Part IV"
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/59"

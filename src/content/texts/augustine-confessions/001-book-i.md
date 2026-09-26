@@ -1,7 +1,7 @@
 ---
 work: augustine-confessions
 section: "book-i"
-heading: "BOOK I"
+heading: "Book I"
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3296"
@@ -10,7 +10,7 @@ translator: "E. B. Pusey"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
 words: 7086
 ---
-**THE CONFESSIONS OF SAINT AUGUSTINE**
+**The Confessions of Saint Augustine**
 
 CONTENTS
 

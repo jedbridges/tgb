@@ -1,7 +1,7 @@
 ---
 work: declaration-of-independence
 section: "the-declaration-of-independence-of-the-united-states-of-amer"
-heading: "THE DECLARATION OF INDEPENDENCE OF THE UNITED STATES OF AMERICA"
+heading: "The Declaration of Independence of the United States of America"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1"
@@ -77,7 +77,7 @@ Nor have We been wanting in attention to our British brethren. We have warned th
 
 We, therefore, the Representatives of the United States of America, in General Congress, Assembled, appealing to the Supreme Judge of the world for the rectitude of our intentions, do, in the Name, and by the Authority of the good People of these Colonies, solemnly publish and declare, That these United Colonies are, and of Right ought to be Free and Independent States; that they are Absolved from all Allegiance to the British Crown, and that all political connection between them and the State of Great Britain, is and ought to be totally dissolved; and that as Free and Independent States, they have full Power to levy War, conclude Peace, contract Alliances, establish Commerce, and to do all other Acts and Things which Independent States may of right do. And for the support of this Declaration, with a firm reliance on the Protection of Divine Providence, we mutually pledge to each other our Lives, our Fortunes and our sacred Honor.
 
-**THOMAS JEFFERSON'S HANDWRITTEN DRAFTS**
+**Thomas Jefferson's Handwritten Drafts**
 
 The following four images are of engravings taken from Jefferson’s draft of the Declaration of Independence, in his handwriting with emendations in the handwritings of Benjamin Franklin and John Adams. Tapping the "ENLARGE" button will display the image in full-size.
 

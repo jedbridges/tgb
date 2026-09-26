@@ -9,7 +9,7 @@ edition: "The text of 1776"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
 words: 483
 ---
-**THE DECLARATION OF INDEPENDENCE OF THE UNITED STATES OF AMERICA**
+**The Declaration of Independence of the United States of America**
 
 Table of Contents
 

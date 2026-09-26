@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-iv"
-heading: "CHAPTER IV"
+heading: "Chapter IV"
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

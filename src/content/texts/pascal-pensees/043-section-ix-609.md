@@ -1,0 +1,87 @@
+---
+work: pascal-pensees
+section: "section-ix-609"
+heading: "Section Ix, 609"
+order: 43
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 962
+---
+*To show that the true Jews and the true Christians have but the same religion.*—The religion of the Jews seemed to consist essentially in the fatherhood of Abraham, in circumcision, in sacrifices, in ceremonies, in the Ark, in the temple, in Jerusalem, and, finally, in the law, and in the covenant with Moses.
+
+I say that it consisted in none of those things, but only in the love of God, and that God disregarded all the other things.
+
+That God did not accept the posterity of Abraham.
+
+That the Jews were to be punished like strangers, if they transgressed. *Deut.* viii, 19; "If thou do at all forget the Lord thy God, and walk after other gods, I testify against you this day that ye shall surely perish, as the nations which the Lord destroyeth before your face."
+
+That strangers, if they loved God, were to be received by Him as the Jews. *Isaiah* lvi, 3: "Let not the stranger say, 'The Lord will not receive me.' The strangers who join themselves unto the Lord to serve Him and love Him, will I bring unto my holy mountain, and accept therein sacrifices, for mine house is a house of prayer."
+
+That the true Jews considered their merit to be from God only, and not from Abraham. *Isaiah* lxiii, 16; "Doubtless thou art our Father, though Abraham be ignorant of us, and Israel acknowledge us not. Thou art our Father and our Redeemer."
+
+Moses himself told them that God would not accept persons. *Deut.* x, 17: "God," said he, "regardeth neither persons nor sacrifices."
+
+The Sabbath was only a sign, *Exod.* xxxi, 13; and in memory of the escape from Egypt, *Deut.* v, 19. Therefore it is no longer necessary, since Egypt must be forgotten.
+
+Circumcision was only a sign, *Gen.* xvii, 11. And thence it came to pass that, being in the desert, they were not circumcised because they could not be confounded with other peoples; and after Jesus Christ came, it was no longer necessary.
+
+That the circumcision of the heart is commanded. *Deut.* x, 16; *Jeremiah* iv, 4: "Be ye circumcised in heart; take away the superfluities of your heart, and harden yourselves not. For your God is a mighty God, strong and terrible, who accepteth not persons."
+
+That God said He would one day do it. *Deut.* xxx, 6; "God will circumcise thine heart, and the heart of thy seed, that thou mayest love Him with all thine heart."
+
+That the uncircumcised in heart shall be judged. *Jeremiah* ix, 26: For God will judge the uncircumcised peoples, and all the people of Israel, because he is "uncircumcised in heart."
+
+That the external is of no avail apart from the internal. *Joel* ii, 13: *Scindite corda vestra*, etc.; *Isaiah* lviii, 3, 4, etc.
+
+The love of God is enjoined in the whole of Deuteronomy. *Deut.* xxx, 19: "I call heaven and earth to record that I have set before you life and death, that you should choose life, and love God, and obey Him, for God is your life."
+
+That the Jews, for lack of that love, should be rejected for their offences, and the heathen chosen in their stead. *Hosea* i, 10; *Deut.* xxxii, 20. "I will hide myself from them in view of their latter sins, for they are a froward generation without faith. They have moved me to jealousy with that which is not God, and I will move them to jealousy with those which are not a people, and with an ignorant and foolish nation." *Isaiah* lxv, 1.
+
+That temporal goods are false, and that the true good is to be united to God. *Psalm* cxliii, 15.
+
+That their feasts are displeasing to God. *Amos* v, 21.
+
+That the sacrifices of the Jews displeased God. *Isaiah* lxvi. 1-3; i, II; *Jer.* vi, 20; David, *Miserere.*—Even on the part of the good, *Expectavi*. *Psalm* xlix, 8, 9, 10, 11, 12, 13 and 14.
+
+That He has established them only for their hardness. *Micah*, admirably, vi; 1 *Kings* xv, 22; *Hosea* vi, 6.
+
+That the sacrifices of the Gentiles will be accepted of God, and that God will take no pleasure in the sacrifices of the Jews. *Malachi* i, II.
+
+That God will make a new covenant with the Messiah, and the old will be annulled. *Jer.* xxxi, 31. *Mandata non bona. Ezek.*
+
+That the old things will be forgotten. *Isaiah* xliii, 18, 19; lxv 17, 10.
+
+That the Ark will no longer be remembered. *Jer.* iii, 15, 16.
+
+That the temple should be rejected. *Jer.* vii, 12, 13, 14.
+
+That the sacrifices should be rejected, and other pure sacrifices established. *Malachi* i, II.
+
+That the order of Aaron's priesthood should be rejected, and that of Melchizedek introduced by the Messiah. *Ps. Dixit Dominus.*
+
+That this priesthood should be eternal. *Ibid.*
+
+That Jerusalem should be rejected, and Rome admitted. *Ps. Dixit Dominus.*
+
+That the name of the Jews should be rejected, and a new name given. *Isaiah* lxv, 15.
+
+That this last name should be more excellent than that of the Jews, and eternal. *Isaiah* lvi, 5.
+
+That the Jews should be without prophets (Amos), without a king, without princes, without sacrifice, without an idol.
+
+That the Jews should nevertheless always remain a people. *Jer.* xxxi, 36.
+
+**Section Ix, 610**
+
+*Republic.*—The Christian republic—and even the Jewish—has only had God for ruler, as Philo the Jew notices, *On Monarchy*.
+
+When they fought, it was for God only; their chief hope was in God only; they considered their towns as belonging to God only, and kept them for God. 1 *Chron.* xix, 13.
+
+**Section Ix, 611**
+
+*Gen.* xvii, 7. *Statuam pactum meum inter me et te fœdere sempiterno ... ut sim Deus tuus ...*
+
+*Et tu ergo custodies pactum meum.*

@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-iii"
-heading: "BOOK III."
+heading: "Book III."
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

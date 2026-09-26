@@ -1,7 +1,7 @@
 ---
 work: descartes-meditations
 section: "part-vi"
-heading: "PART VI"
+heading: "Part VI"
 order: 6
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/59"

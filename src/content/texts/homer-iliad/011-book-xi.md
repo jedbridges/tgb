@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-xi"
-heading: "BOOK XI."
+heading: "Book XI."
 order: 11
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

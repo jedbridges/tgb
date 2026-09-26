@@ -1,7 +1,7 @@
 ---
 work: descartes-meditations
 section: "part-i"
-heading: "PART I"
+heading: "Part I"
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/59"
@@ -10,7 +10,7 @@ translator: "John Veitch"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
 words: 2806
 ---
-**PREFATORY NOTE BY THE AUTHOR**
+**Prefatory Note by the Author**
 
 If this Discourse appear too long to be read at once, it may be divided into six Parts: and, in the first, will be found various considerations touching the Sciences; in the second, the principal rules of the Method which the Author has discovered, in the third, certain of the rules of Morals which he has deduced from this Method; in the fourth, the reasonings by which he establishes the existence of God and of the Human Soul, which are the foundations of his Metaphysic; in the fifth, the order of the Physical questions which he has investigated, and, in particular, the explication of the motion of the heart and of some other difficulties pertaining to Medicine, as also the difference between the soul of man and that of the brutes; and, in the last, what the Author believes to be required in order to greater advancement in the investigation of Nature than has yet been made, with the reasons that have induced him to write.
 

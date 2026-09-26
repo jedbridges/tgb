@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-ix"
-heading: "CHAPTER IX"
+heading: "Chapter IX"
 order: 9
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

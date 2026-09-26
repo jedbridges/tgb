@@ -1,0 +1,47 @@
+---
+work: pascal-pensees
+section: "section-xiv-920"
+heading: "Section Xiv, 920"
+order: 87
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 409
+---
+... The saints indulge in subtleties in order to think themselves criminals, and impeach their better actions. And these indulge in subtleties in order to excuse the most wicked.
+
+The heathen sages erected a structure equally fine outside, but upon a bad foundation; and the devil deceived men by this apparent resemblance based upon the most different foundation.
+
+Man never had so good a cause as I; and others have never furnished so good a capture as you....
+
+The more they point out weakness in my person, the more they authorise my cause.
+
+You say that I am a heretic. Is that lawful? And if you do not fear that men do justice, do you not fear that God does justice?
+
+You will feel the force of the truth, and you will yield to it ...
+
+There is something supernatural in such a blindness. *Digna necessitas.[380] Mentiris impudentissime* ...
+
+*Doctrina sua noscitur vir* ...
+
+False piety, a double sin.
+
+I am alone against thirty thousand. No. Protect, you, the court; protect, you, deception; let me protect the truth. It is all my strength. If I lose it, I am undone. I shall not lack accusations, and persecutions. But I possess the truth, and we shall see who will take it away.
+
+I do not need to defend religion, but you do not need to defend error and injustice. Let God, out of His compassion, having no regard to the evil which is in me, and having regard to the good which is in you, grant us all grace that truth may not be overcome in my hands, and that falsehood ...
+
+**Section Xiv, 921**
+
+*Probable.*—Let us see if we seek God sincerely, by comparison of the things which we love. It is *probable* that this food will not poison me. It is *probable* that I shall not lose my action by not prosecuting it ...
+
+**Section Xiv, 922**
+
+It is not absolution only which remits sins by the sacrament of penance, but contrition, which is not real if it does not seek the sacrament.
+
+**Section Xiv, 923**
+
+People who do not keep their word, without faith, without honour, without truth, deceitful in heart, deceitful in speech; for which that amphibious animal in fable was once reproached, which held itself in a doubtful position between the fish and the birds ...
+
+It is important to kings and princes to be considered pious; and therefore they must confess themselves to you.

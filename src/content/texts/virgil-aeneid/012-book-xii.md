@@ -1,7 +1,7 @@
 ---
 work: virgil-aeneid
 section: "book-xii"
-heading: "Book: XII"
+heading: "Book XII"
 order: 12
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/virgil/the-aeneid/john-dryden"

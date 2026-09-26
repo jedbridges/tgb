@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-xii"
-heading: "BOOK XII"
+heading: "Book XII"
 order: 14
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

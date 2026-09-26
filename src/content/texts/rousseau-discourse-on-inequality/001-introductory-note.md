@@ -1,7 +1,7 @@
 ---
 work: rousseau-discourse-on-inequality
 section: "introductory-note"
-heading: "INTRODUCTORY NOTE"
+heading: "Introductory Note"
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/11136"
@@ -20,6 +20,6 @@ During Rousseau's later years he was the victim of the delusion of persecution; 
 
 The Savoyard Vicar and his "Profession of Faith" are introduced into "Emile" not, according to the author, because he wishes to exhibit his principles as those which should be taught, but to give an example of the way in which religious matters should be discussed with the young. Nevertheless, it is universally recognized that these opinions are Rousseau's own, and represent in short form his characteristic attitude toward religious belief. The Vicar himself is believed to combine the traits of two Savoyard priests whom Rousseau knew in his youth. The more important was the Abbe Gaime, whom he had known at Turin; the other, the Abbe Gatier, who had taught him at Annecy.
 
-**QUESTION PROPOSED BY THE ACADEMY OF DIJON**
+**Question Proposed by the Academy of Dijon**
 
 What is the Origin of the Inequality among Mankind; and whether such Inequality is authorized by the Law of Nature?

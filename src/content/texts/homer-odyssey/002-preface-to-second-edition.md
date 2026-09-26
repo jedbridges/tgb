@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "preface-to-second-edition"
-heading: "PREFACE TO SECOND EDITION"
+heading: "Preface to Second Edition"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

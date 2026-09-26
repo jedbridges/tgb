@@ -1,0 +1,57 @@
+---
+work: pascal-pensees
+section: "section-ix-619"
+heading: "Section Ix, 619"
+order: 46
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 965
+---
+*Advantages of the Jewish people.*—In this search the Jewish people at once attracts my attention by the number of wonderful and singular facts which appear about them.
+
+I first see that they are a people wholly composed of brethren, and whereas all others are formed by the assemblage of an infinity of families, this, though so wonderfully fruitful, has all sprung from one man alone, and, being thus all one flesh, and members one of another, they constitute a powerful state of one family. This is unique.
+
+This family, or people, is the most ancient within human knowledge, a fact which seems to me to inspire a peculiar veneration for it, especially in view of our present inquiry; since if God had from all time revealed Himself to men, it is to these we must turn for knowledge of the tradition.
+
+This people is not eminent solely by their antiquity, but is also singular by their duration, which has always continued from their origin till now. For whereas the nations of Greece and of Italy, of Lacedæmon, of Athens and of Rome, and others who came long after, have long since perished, these ever remain, and in spite of the endeavours of many powerful kings who have a hundred times tried to destroy them, as their historians testify, and as it is easy to conjecture from the natural order of things during so long a space of years, they have nevertheless been preserved (and this preservation has been foretold); and extending from the earliest times to the latest, their history comprehends in its duration all our histories [which it preceded by a long time].
+
+The law by which this people is governed is at once the most ancient law in the world, the most perfect, and the only one which has been always observed without a break in a state. This is what Josephus admirably proves, *against Apion*,[223] and also Philo[224] the Jew, in different places, where they point out that it is so ancient that the very name of *law* was only known by the oldest nation more than a thousand years afterwards; so that Homer, who has written the history of so many states, has never used the term. And it is easy to judge of its perfection by simply reading it; for we see that it has provided for all things with so great wisdom, equity, and judgment, that the most ancient legislators, Greek and Roman, having had some knowledge of it, have borrowed from it their principal laws; this is evident from what are called the Twelve Tables, and from the other proofs which Josephus gives.
+
+But this law is at the same time the severest and strictest of all in respect to their religious worship, imposing on this people, in order to keep them to their duty, a thousand peculiar and painful observances, on pain of death. Whence it is very astonishing that it has been constantly preserved during many centuries by a people, rebellious and impatient as this one was; while all other states have changed their laws from time to time, although these were far more lenient.
+
+The book which contains this law, the first of all, is itself the most ancient book in the world, those of Homer, Hesiod, and others, being six or seven hundred years later.
+
+**Section Ix, 620**
+
+The creation and the deluge being past, and God no longer requiring to destroy the world, nor to create it anew, nor to give such great signs of Himself, He began to establish a people on the earth, purposely formed, who were to last until the coming of the people whom the Messiah should fashion by His spirit.
+
+**Section Ix, 621**
+
+The creation of the world beginning to be distant, God provided a single contemporary historian, and appointed a whole people as guardians of this book, in order that this history might be the most authentic in the world, and that all men might thereby learn a fact so necessary to know, and which could only be known through that means.
+
+**Section Ix, 622**
+
+[Japhet begins the genealogy.]
+
+Joseph folds his arms, and prefers the younger.[225]
+
+**Section Ix, 623**
+
+Why should Moses make the lives of men so long, and their generations so few?
+
+Because it is not the length of years, but the multitude of generations, which renders things obscure. For truth is perverted only by the change of men. And yet he puts two things, the most memorable that were ever imagined, namely, the creation and the deluge, so near that we reach from one to the other.
+
+**Section Ix, 624**
+
+Shem, who saw Lamech, who saw Adam, saw also Jacob, who saw those who saw Moses; therefore the deluge and the creation are true. This is conclusive among certain people who understand it rightly.
+
+**Section Ix, 625**
+
+The longevity of the patriarchs, instead of causing the loss of past history, conduced, on the contrary, to its preservation. For the reason why we are sometimes insufficiently instructed in the history of our ancestors, is that we have never lived long with them, and that they are often dead before we have attained the age of reason. Now, when men lived so long, children lived long with their parents. They conversed long with them. But what else could be the subject of their talk save the history of their ancestors, since to that all history was reduced, and men did not study science or art, which now form a large part of daily conversation? We see also that in these days tribes took particular care to preserve their genealogies.
+
+**Section Ix, 626**
+
+I believe that Joshua was the first of God's people to have this name, as Jesus Christ was the last of God's people.

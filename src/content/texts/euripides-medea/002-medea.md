@@ -1,7 +1,7 @@
 ---
 work: euripides-medea
 section: "medea"
-heading: "MEDEA"
+heading: "Medea"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/35451"
@@ -75,30 +75,30 @@ Nurse.
 
 Attendant.
 
-  Thou ancient treasure of my lady's room,
-  What mak'st thou here before the gates alone,
-  And alway turning on thy lips some moan
-  Of old mischances? Will our mistress be
-  Content, this long time to be left by thee?
+Thou ancient treasure of my lady's room,
+What mak'st thou here before the gates alone,
+And alway turning on thy lips some moan
+Of old mischances? Will our mistress be
+Content, this long time to be left by thee?
 
 Nurse.
 
-  Grey guard of Jason's children, a good thrall
-  Hath his own grief, if any hurt befall
-  His masters. Aye, it holds one's heart! . . .
-        Meseems
-  I have strayed out so deep in evil dreams,
-  I longed to rest me here alone, and cry
-  Medea's wrongs to this still Earth and Sky.
+Grey guard of Jason's children, a good thrall
+Hath his own grief, if any hurt befall
+His masters. Aye, it holds one's heart! . . .
+      Meseems
+I have strayed out so deep in evil dreams,
+I longed to rest me here alone, and cry
+Medea's wrongs to this still Earth and Sky.
 
 Attendant.
 
-  How? Are the tears yet running in her eyes?
+How? Are the tears yet running in her eyes?
 
 Nurse.
 
-  'Twere good to be like thee! . . . Her sorrow lies
-  Scarce wakened yet, not half its perils wrought.
+'Twere good to be like thee! . . . Her sorrow lies
+Scarce wakened yet, not half its perils wrought.
 
 Attendant.
 
@@ -183,57 +183,57 @@ Not we who love her, but some enemy!
 
 Voice (*within*).
 
-           Oh shame and pain: O woe is me!
-           Would I could die in my misery!
+Oh shame and pain: O woe is me!
+Would I could die in my misery!
 
 [*The* Children *and the* Attendant *go in*.
 
 Nurse.
 
-        Ah, children, hark! She moves again
-            Her frozen heart, her sleeping wrath.
-            In, quick! And never cross her path,
-        Nor rouse that dark eye in its pain;
+Ah, children, hark! She moves again
+    Her frozen heart, her sleeping wrath.
+    In, quick! And never cross her path,
+Nor rouse that dark eye in its pain;
 
-        That fell sea-spirit, and the dire
-            Spring of a will untaught, unbowed.
-            Quick, now!—Methinks this weeping cloud
-        Hath in its heart some thunder-fire,
+That fell sea-spirit, and the dire
+    Spring of a will untaught, unbowed.
+    Quick, now!—Methinks this weeping cloud
+Hath in its heart some thunder-fire,
 
-        Slow gathering, that must flash ere long.
-            I know not how, for ill or well,
-            It turns, this uncontrollable
-        Tempestuous spirit, blind with wrong.
+Slow gathering, that must flash ere long.
+    I know not how, for ill or well,
+    It turns, this uncontrollable
+Tempestuous spirit, blind with wrong.
 
 Voice (*within*).
 
-        Have I not suffered? Doth it call
-        No tears? . . . Ha, ye beside the wall
-        Unfathered children, God hate you
-        As I am hated, and him, too,
-            That gat you, and this house and all!
+Have I not suffered? Doth it call
+No tears? . . . Ha, ye beside the wall
+Unfathered children, God hate you
+As I am hated, and him, too,
+    That gat you, and this house and all!
 
 Nurse.
 
-        For pity! What have they to do,
-            Babes, with their father's sin? Why call
-            Thy curse on these? . . . Ah, children, all
-        These days my bosom bleeds for you.
+For pity! What have they to do,
+    Babes, with their father's sin? Why call
+    Thy curse on these? . . . Ah, children, all
+These days my bosom bleeds for you.
 
-        Rude are the wills of princes: yea,
-            Prevailing alway, seldom crossed,
-            On fitful winds their moods are tossed:
-        'Tis best men tread the equal way.
+Rude are the wills of princes: yea,
+    Prevailing alway, seldom crossed,
+    On fitful winds their moods are tossed:
+'Tis best men tread the equal way.
 
-        Aye, not with glory but with peace
-            May the long summers find me crowned:
-            For gentleness—her very sound
-        Is magic, and her usages.
+Aye, not with glory but with peace
+    May the long summers find me crowned:
+    For gentleness—her very sound
+Is magic, and her usages.
 
-        All wholesome: but the fiercely great
-            Hath little music on his road,
-            And falleth, when the hand of God
-        Shall move, most deep and desolate.
+All wholesome: but the fiercely great
+    Hath little music on his road,
+    And falleth, when the hand of God
+Shall move, most deep and desolate.
 
 [*During the last words the* Leader *of the Chorus has entered. Other women follow her.*
 
@@ -252,52 +252,52 @@ Leader.
 
 Nurse.
 
-     There is no house! 'Tis gone. The lord
-         Seeketh a prouder bed: and she
-     Wastes in her chamber, not one word
-         Will hear of care or charity.
+There is no house! 'Tis gone. The lord
+    Seeketh a prouder bed: and she
+Wastes in her chamber, not one word
+    Will hear of care or charity.
 
 Voice (*within*).
 
-            O Zeus, O Earth, O Light,
-                Will the fire not stab my brain?
-                    What profiteth living? Oh,
-                    Shall I not lift the slow
-                    Yoke, and let Life go,
-            As a beast out in the night,
-                To lie, and be rid of pain?
+O Zeus, O Earth, O Light,
+    Will the fire not stab my brain?
+        What profiteth living? Oh,
+        Shall I not lift the slow
+        Yoke, and let Life go,
+As a beast out in the night,
+    To lie, and be rid of pain?
 
 Chorus.
 
 *Some Women* A.
 
-             "O Zeus, O Earth, O Light:"
-               The cry of a bride forlorn
-               Heard ye, and wailing born
-                     Of lost delight?
+"O Zeus, O Earth, O Light:"
+  The cry of a bride forlorn
+  Heard ye, and wailing born
+        Of lost delight?
 
 B.
 
-            Why weariest thou this day,
-                   Wild heart, for the bed abhorrèd,
-            The cold bed in the clay?
-            Death cometh though no man pray,
-                   Ungarlanded, un-adorèd.
-                          Call him not thou.
+Why weariest thou this day,
+       Wild heart, for the bed abhorrèd,
+The cold bed in the clay?
+Death cometh though no man pray,
+       Ungarlanded, un-adorèd.
+              Call him not thou.
 
 C.
 
-            If another's arms be now
-                   Where thine have been,
-                   On his head be the sin:
-            Rend not thy brow!
+If another's arms be now
+       Where thine have been,
+       On his head be the sin:
+Rend not thy brow!
 
 D.
 
-            All that thou sufferest,
-                God seeth: Oh, not so sore
-            Waste nor weep for the breast
-                That was thine of yore.
+All that thou sufferest,
+    God seeth: Oh, not so sore
+Waste nor weep for the breast
+    That was thine of yore.
 
 Voice (*within*).
 
@@ -316,10 +316,10 @@ Voice (*within*).
 
 Nurse.
 
-   Oh, wild words! Did ye hear her cry
-          To them that guard man's faith forsworn,
-          Themis and Zeus? . . . This wrath new-born
-   Shall make mad workings ere it die.
+Oh, wild words! Did ye hear her cry
+       To them that guard man's faith forsworn,
+       Themis and Zeus? . . . This wrath new-born
+Shall make mad workings ere it die.
 
 Chorus.
 
@@ -327,45 +327,45 @@ Chorus.
 
 A.
 
-           Would she but come to seek
-               Our faces, that love her well,
-               And take to her heart the spell
-                     Of words that speak?
+Would she but come to seek
+    Our faces, that love her well,
+    And take to her heart the spell
+          Of words that speak?
 
 B.
 
-           Alas for the heavy hate
-               And anger that burneth ever!
-           Would it but now abate,
-           Ah God, I love her yet.
-               And surely my love's endeavour
-                     Shall fail not here.
+Alas for the heavy hate
+    And anger that burneth ever!
+Would it but now abate,
+Ah God, I love her yet.
+    And surely my love's endeavour
+          Shall fail not here.
 
 C.
 
-           Go: from that chamber drear
-                  Forth to the day
-           Lead her, and say, Oh, say
-                  That we love her dear.
+Go: from that chamber drear
+       Forth to the day
+Lead her, and say, Oh, say
+       That we love her dear.
 
 D.
 
-           Go, lest her hand be hard
-               On the innocent: Ah, let be!
-           For her grief moves hitherward,
-                    Like an angry sea.
+Go, lest her hand be hard
+    On the innocent: Ah, let be!
+For her grief moves hitherward,
+         Like an angry sea.
 
 Nurse.
 
-   That will I: though what words of mine
-       Or love shall move her? Let them lie
-       With the old lost labours! . . . Yet her eye—
-   Know ye the eyes of the wild kine,
+That will I: though what words of mine
+    Or love shall move her? Let them lie
+    With the old lost labours! . . . Yet her eye—
+Know ye the eyes of the wild kine,
 
-   The lion flash that guards their brood?
-       So looks she now if any thrall
-       Speak comfort, or draw near at all
-   My mistress in her evil mood.
+The lion flash that guards their brood?
+    So looks she now if any thrall
+    Speak comfort, or draw near at all
+My mistress in her evil mood.
 
 [*The* Nurse *goes into the house*.
 
@@ -390,17 +390,17 @@ Chorus.
 
 *Others.*
 
-       I heard a song, but it comes no more.
-             Where the tears ran over:
-       A keen cry but tired, tired:
-       A woman's cry for her heart's desired,
-           For a traitor's kiss and a lost lover.
-       But a prayer, methinks, yet riseth sore
-           To God, to Faith, God's ancient daughter—
-       The Faith that over sundering seas
-       Drew her to Hellas, and the breeze
-       Of midnight shivered, and the door
-           Closed of the salt unsounded water.
+I heard a song, but it comes no more.
+      Where the tears ran over:
+A keen cry but tired, tired:
+A woman's cry for her heart's desired,
+    For a traitor's kiss and a lost lover.
+But a prayer, methinks, yet riseth sore
+    To God, to Faith, God's ancient daughter—
+The Faith that over sundering seas
+Drew her to Hellas, and the breeze
+Of midnight shivered, and the door
+    Closed of the salt unsounded water.
 
 [*During the last words* Medea *has come out from the house*.
 
@@ -658,14 +658,14 @@ Those perils wrought whose dread yet haunteth me.
 
 Chorus.
 
-           O woman, woman of sorrow,
-               Where wilt thou turn and flee?
-           What town shall be thine to-morrow,
-               What land of all lands that be,
-           What door of a strange man's home?
-               Yea, God hath hunted thee,
-           Medea, forth to the foam
-                   Of a trackless sea.
+O woman, woman of sorrow,
+    Where wilt thou turn and flee?
+What town shall be thine to-morrow,
+    What land of all lands that be,
+What door of a strange man's home?
+    Yea, God hath hunted thee,
+Medea, forth to the foam
+        Of a trackless sea.
 
 Medea.
 
@@ -748,20 +748,20 @@ But the old World knoweth—'tis the speech of all his ages—
 
 *Some Women.*
 
-           Forth from thy father's home
-               Thou camest, O heart of fire,
-       To the Dark Blue Rocks, to the clashing foam,
-               To the seas of thy desire:
+    Forth from thy father's home
+        Thou camest, O heart of fire,
+To the Dark Blue Rocks, to the clashing foam,
+        To the seas of thy desire:
 
-           Till the Dark Blue Bar was crossed;
-               And, lo, by an alien river
-           Standing, thy lover lost,
-                   Void-armed for ever,
+    Till the Dark Blue Bar was crossed;
+        And, lo, by an alien river
+    Standing, thy lover lost,
+            Void-armed for ever,
 
-           Forth yet again, O lowest
-               Of landless women, a ranger
-           Of desolate ways, thou goest,
-                   From the walls of the stranger.
+    Forth yet again, O lowest
+        Of landless women, a ranger
+    Of desolate ways, thou goest,
+            From the walls of the stranger.
 
 *Others.*
 
@@ -1104,29 +1104,29 @@ Chorus.
 
 *Others.*
 
-       Home of my heart, land of my own,
-              Cast me not, nay, for pity,
-       Out on my ways, helpless, alone,
-       Where the feet fail in the mire and stone,
-              A woman without a city.
-       Ah, not that! Better the end:
-              The green grave cover me rather,
-       If a break must come in the days I know,
-       And the skies be changed and the earth below;
-       For the weariest road that man may wend
-              Is forth from the home of his father.
+Home of my heart, land of my own,
+       Cast me not, nay, for pity,
+Out on my ways, helpless, alone,
+Where the feet fail in the mire and stone,
+       A woman without a city.
+Ah, not that! Better the end:
+       The green grave cover me rather,
+If a break must come in the days I know,
+And the skies be changed and the earth below;
+For the weariest road that man may wend
+       Is forth from the home of his father.
 
-       Lo, we have seen: 'tis not a song
-              Sung, nor learned of another.
-       For whom hast thou in thy direst wrong
-       For comfort? Never a city strong
-              To hide thee, never a brother.
-       Ah, but the man—cursèd be he,
-              Cursèd beyond recover,
-       Who openeth, shattering, seal by seal,
-       A friend's clean heart, then turns his heel,
-       Deaf unto love: never in me
-              Friend shall he know nor lover.
+Lo, we have seen: 'tis not a song
+       Sung, nor learned of another.
+For whom hast thou in thy direst wrong
+For comfort? Never a city strong
+       To hide thee, never a brother.
+Ah, but the man—cursèd be he,
+       Cursèd beyond recover,
+Who openeth, shattering, seal by seal,
+A friend's clean heart, then turns his heel,
+Deaf unto love: never in me
+       Friend shall he know nor lover.
 
 [*While* Medea *is waiting downcast, seated upon her door-step, there passes from the left a traveller with followers. As he catches sight of* Medea *he stops*.
 
@@ -1179,7 +1179,7 @@ A rarer wit.
 
 Medea.
 
-                         How said he?
+How said he?
 
 Aegeus.
 
@@ -1188,7 +1188,7 @@ Life's wine, nor seek for more. . . .
 
 Medea.
 
-                                                             Until?
+Until?
 
 Aegeus.
 
@@ -1285,7 +1285,7 @@ A king's heir!
 
 Aegeus.
 
-                    How, who gives the bride? Say on.
+How, who gives the bride? Say on.
 
 Medea.
 
@@ -1414,12 +1414,12 @@ I purpose, and the end I thirst for won.
 
 Chorus.
 
-      Farewell: and Maia's guiding Son
-          Back lead thee to thy hearth and fire,
-          Aegeus; and all the long desire
-      That wasteth thee, at last be won:
-      Our eyes have seen thee as thou art,
-      A gentle and a righteous heart.
+Farewell: and Maia's guiding Son
+    Back lead thee to thy hearth and fire,
+    Aegeus; and all the long desire
+That wasteth thee, at last be won:
+Our eyes have seen thee as thou art,
+A gentle and a righteous heart.
 
 Medea.
 
@@ -1825,7 +1825,7 @@ Ah God!
 
 Attendant.
 
-                     This chimes not with the news I bear.
+This chimes not with the news I bear.
 
 Medea.
 
@@ -2201,22 +2201,22 @@ Chorus.
 
 *Some Women.*
 
-                O Earth, our mother; and thou
-                    All-seër, arrowy crown
-                Of Sunlight, manward now
-                    Look down, Oh, look down!
-                Look upon one accurst,
-                    Ere yet in blood she twine
-                    Red hands—blood that is thine!
-                O Sun, save her first!
-                She is thy daughter still,
-                    Of thine own golden line;
-                Save her! Or shall man spill
-                       The life divine?
-    Give peace, O Fire that diest not! Send thy spell
-        To stay her yet, to lift her afar, afar—
-    A torture-changèd spirit, a voice of Hell
-        Wrought of old wrongs and war!
+            O Earth, our mother; and thou
+                All-seër, arrowy crown
+            Of Sunlight, manward now
+                Look down, Oh, look down!
+            Look upon one accurst,
+                Ere yet in blood she twine
+                Red hands—blood that is thine!
+            O Sun, save her first!
+            She is thy daughter still,
+                Of thine own golden line;
+            Save her! Or shall man spill
+                   The life divine?
+Give peace, O Fire that diest not! Send thy spell
+    To stay her yet, to lift her afar, afar—
+A torture-changèd spirit, a voice of Hell
+    Wrought of old wrongs and war!
 
 *Others.*
 
@@ -2245,22 +2245,22 @@ Hark! Did ye hear? Heard ye the children's cry?
 
 *Another.*
 
-    O miserable woman! O abhorred!
+O miserable woman! O abhorred!
 
 *A Child within.*
 
-        What shall I do? What is it? Keep me fast
-            From mother!
+What shall I do? What is it? Keep me fast
+    From mother!
 
 *The Other Child.*
 
-                                   I know nothing. Brother! Oh,
-            I think she means to kill us.
+                       I know nothing. Brother! Oh,
+I think she means to kill us.
 
 *A Woman.*
 
-                                                      Let me go!
-        I will—Help! Help!—and save them at the last.
+                                              Let me go!
+I will—Help! Help!—and save them at the last.
 
 *A Child.*
 
@@ -2268,7 +2268,7 @@ Yes, in God's name! Help quickly ere we die!
 
 *The Other Child.*
 
-    She has almost caught me now. She has a sword.
+She has almost caught me now. She has a sword.
 
 [*Many of the Women are now beating at the barred door to get in. Others are standing apart.*
 
@@ -2498,91 +2498,91 @@ To the last end thy memories of me.
 
 Jason.
 
-        May They that hear the weeping child
-            Blast thee, and They that walk in blood!
+May They that hear the weeping child
+    Blast thee, and They that walk in blood!
 
 Medea.
 
-        Thy broken vows, thy friends beguiled
-            Have shut for thee the ears of God.
+Thy broken vows, thy friends beguiled
+    Have shut for thee the ears of God.
 
 Jason.
 
-        Go, thou art wet with children's tears!
+Go, thou art wet with children's tears!
 
 Medea.
 
-            Go thou, and lay thy bride to sleep.
+Go thou, and lay thy bride to sleep.
 
 Jason.
 
-            Childless, I go, to weep and weep.
+Childless, I go, to weep and weep.
 
 Medea.
 
-        Not yet! Age cometh and long years.
+Not yet! Age cometh and long years.
 
 Jason.
 
-        My sons, mine own!
+My sons, mine own!
 
 Medea.
 
-                                    Not thine, but mine . . .
+Not thine, but mine . . .
 
 Jason.
 
-        . . . Who slew them!
+. . . Who slew them!
 
 Medea.
 
-                                           Yes: to torture thee.
+Yes: to torture thee.
 
 Jason.
 
-        Once let me kiss their lips, once twine
-            Mine arms and touch. . . . Ah, woe is me!
+Once let me kiss their lips, once twine
+    Mine arms and touch. . . . Ah, woe is me!
 
 Medea.
 
-        Wouldst love them and entreat? But now
-            They were as nothing.
+Wouldst love them and entreat? But now
+    They were as nothing.
 
 Jason.
 
-                                                     At the last,
-        O God, to touch that tender brow!
+                                             At the last,
+O God, to touch that tender brow!
 
 Medea.
 
-            Thy words upon the wind are cast.
+Thy words upon the wind are cast.
 
 Jason.
 
-        Thou, Zeus, wilt hear me. All is said
-            For naught. I am but spurned away
-        And trampled by this tigress, red
-            With children's blood. Yet, come what may,
-        So far as thou hast granted, yea,
-            So far as yet my strength may stand,
-        I weep upon these dead, and say
-            Their last farewell, and raise my hand
+Thou, Zeus, wilt hear me. All is said
+    For naught. I am but spurned away
+And trampled by this tigress, red
+    With children's blood. Yet, come what may,
+So far as thou hast granted, yea,
+    So far as yet my strength may stand,
+I weep upon these dead, and say
+    Their last farewell, and raise my hand
 
-        To all the daemons of the air
-            In witness of these things; how she
-            Who slew them, will not suffer me
-        To gather up my babes, nor bear
-        To earth their bodies; whom, O stone
-        Of women, would I ne'er had known
-            Nor gotten, to be slain by thee!
+To all the daemons of the air
+    In witness of these things; how she
+    Who slew them, will not suffer me
+To gather up my babes, nor bear
+To earth their bodies; whom, O stone
+Of women, would I ne'er had known
+    Nor gotten, to be slain by thee!
 
 [*He casts himself upon the earth.*
 
 Chorus.
 
-          Great treasure halls hath Zeus in heaven,
-          From whence to man strange dooms be given,
-                        Past hope or fear.
-          And the end men looked for cometh not,
-          And a path is there where no man thought:
-                        So hath it fallen here.
+Great treasure halls hath Zeus in heaven,
+From whence to man strange dooms be given,
+              Past hope or fear.
+And the end men looked for cometh not,
+And a path is there where no man thought:
+              So hath it fallen here.

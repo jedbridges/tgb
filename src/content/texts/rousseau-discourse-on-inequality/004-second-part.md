@@ -1,7 +1,7 @@
 ---
 work: rousseau-discourse-on-inequality
 section: "second-part"
-heading: "SECOND PART"
+heading: "Second Part"
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/11136"

@@ -1,7 +1,7 @@
 ---
 work: plato-republic
 section: "book-v"
-heading: "BOOK V."
+heading: "Book V."
 order: 6
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1497"

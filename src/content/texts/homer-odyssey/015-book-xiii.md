@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-xiii"
-heading: "BOOK XIII"
+heading: "Book XIII"
 order: 15
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

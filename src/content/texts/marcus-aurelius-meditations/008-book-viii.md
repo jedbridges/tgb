@@ -1,7 +1,7 @@
 ---
 work: marcus-aurelius-meditations
 section: "book-viii"
-heading: "Book: VIII"
+heading: "Book VIII"
 order: 8
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long"

@@ -1,7 +1,7 @@
 ---
 work: augustine-confessions
 section: "book-ii"
-heading: "BOOK II"
+heading: "Book II"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3296"

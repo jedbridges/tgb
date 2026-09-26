@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-viii"
-heading: "BOOK VIII."
+heading: "Book VIII."
 order: 8
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

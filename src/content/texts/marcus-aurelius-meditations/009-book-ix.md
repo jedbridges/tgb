@@ -1,7 +1,7 @@
 ---
 work: marcus-aurelius-meditations
 section: "book-ix"
-heading: "Book: IX"
+heading: "Book IX"
 order: 9
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long"

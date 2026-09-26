@@ -1,7 +1,7 @@
 ---
 work: augustine-confessions
 section: "book-x"
-heading: "BOOK X"
+heading: "Book X"
 order: 10
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3296"

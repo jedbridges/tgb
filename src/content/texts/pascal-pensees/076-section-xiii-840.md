@@ -1,0 +1,19 @@
+---
+work: pascal-pensees
+section: "section-xiii-840"
+heading: "Section Xiii, 840"
+order: 76
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 263
+---
+Miracles furnish the test in matters of doubt, between Jews and heathens, Jews and Christians, Catholics and heretics, the slandered and slanderers, between the two crosses.
+
+But miracles would be useless to heretics; for the Church, authorised by miracles which have already obtained belief, tells us that they have not the true faith. There is no doubt that they are not in it, since the first miracles of the Church exclude belief of theirs. Thus there is miracle against miracle, both the first and greatest being on the side of the Church.
+
+These nuns,[334] astonished at what is said, that they are in the way of perdition; that their confessors are leading them to Geneva; that they suggest to them that Jesus Christ is not in the Eucharist, nor on the right hand of the Father; know that all this is false, and therefore offer themselves to God in this state. *Vide si via iniquitatis in me est.*[335] What happens thereupon? This place, which is said to be the temple of the devil, God makes His own temple. It is said that the children must be taken away from it. God heals them there. It is said that it is the arsenal of hell. God makes of it the sanctuary of His grace. Lastly, they are threatened with all the fury and vengeance of heaven; and God overwhelms them with favours. A man would need to have lost his senses to conclude from this that they are therefore in the way of perdition.
+
+(We have without doubt the same signs as Saint Athanasius.)

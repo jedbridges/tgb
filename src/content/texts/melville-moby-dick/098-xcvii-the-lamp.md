@@ -1,0 +1,16 @@
+---
+work: melville-moby-dick
+section: "xcvii-the-lamp"
+heading: "XCVII: The Lamp"
+order: 98
+source: standardebooks
+sourceUrl: "https://standardebooks.org/ebooks/herman-melville/moby-dick"
+edition: "The 1851 text"
+licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
+words: 238
+---
+Had you descended from the *Pequod*’s try-works to the *Pequod*’s forecastle, where the off duty watch were sleeping, for one single moment you would have almost thought you were standing in some illuminated shrine of canonized kings and counsellors. There they lay in their triangular oaken vaults, each mariner a chiselled muteness; a score of lamps flashing upon his hooded eyes.
+
+In merchantmen, oil for the sailor is more scarce than the milk of queens. To dress in the dark, and eat in the dark, and stumble in darkness to his pallet, this is his usual lot. But the whaleman, as he seeks the food of light, so he lives in light. He makes his berth an Aladdin’s lamp, and lays him down in it; so that in the pitchiest night the ship’s black hull still houses an illumination.
+
+See with what entire freedom the whaleman takes his handful of lamps⁠—often but old bottles and vials, though⁠—to the copper cooler at the try-works, and replenishes them there, as mugs of ale at a vat. He burns, too, the purest of oil, in its unmanufactured, and, therefore, unvitiated state; a fluid unknown to solar, lunar, or astral contrivances ashore. It is sweet as early grass butter in April. He goes and hunts for his oil, so as to be sure of its freshness and genuineness, even as the traveller on the prairie hunts up his own supper of game.

@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-iv"
-heading: "BOOK IV"
+heading: "Book IV"
 order: 6
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

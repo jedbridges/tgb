@@ -1,7 +1,7 @@
 ---
 work: marcus-aurelius-meditations
 section: "book-iv"
-heading: "Book: IV"
+heading: "Book IV"
 order: 4
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long"

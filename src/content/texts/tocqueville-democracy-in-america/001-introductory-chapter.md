@@ -8,12 +8,8 @@ sourceUrl: "https://www.gutenberg.org/ebooks/815"
 edition: "Henry Reeve's translation, 1835, Volume 1"
 translator: "Henry Reeve"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 5600
+words: 5587
 ---
-**By Alexis De Tocqueville**
-
-AVOCAT À LA COUR ROYALE DE PARIS ETC., ETC.
-
 **Translated by Henry Reeve, Esq.**
 
 IN TWO VOLUMES. VOL. I.

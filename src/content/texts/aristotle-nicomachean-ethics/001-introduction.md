@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "introduction"
-heading: "INTRODUCTION"
+heading: "Introduction"
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

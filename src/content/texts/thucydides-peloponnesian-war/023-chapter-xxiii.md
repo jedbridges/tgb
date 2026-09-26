@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-xxiii"
-heading: "CHAPTER XXIII"
+heading: "Chapter XXIII"
 order: 23
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

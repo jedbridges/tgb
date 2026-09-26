@@ -1,0 +1,73 @@
+---
+work: pascal-pensees
+section: "section-xiii-828"
+heading: "Section Xiii, 828"
+order: 74
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 939
+---
+Jesus Christ says that the Scriptures testify of Him. But He does not point out in what respect.
+
+Even the prophecies could not prove Jesus Christ during His life; and so, men would not have been culpable for not believing in Him before His death, had the miracles not sufficed without doctrine. Now those who did not believe in Him, when He was still alive, were sinners, as He said Himself, and without excuse. Therefore they must have had proof beyond doubt, which they resisted. Now, they had not the prophecies, but only the miracles. Therefore the latter suffice, when the doctrine is not inconsistent with them; and they ought to be believed.
+
+John vii, 40. *Dispute among the Jews as among the Christians of to-day.* Some believed in Jesus Christ; others believed Him not, because of the prophecies which said that He should be born in Bethlehem. They should have considered more carefully whether He was not. For His miracles being convincing, they should have been quite sure of these supposed contradictions of His teaching to Scripture; and this obscurity did not excuse, but blinded them. Thus those who refuse to believe in the miracles in the present day on account of a supposed contradiction, which is unreal, are not excused.
+
+The Pharisees said to the people, who believed in Him, because of His miracles: "This people who knoweth not the law are cursed. But have any of the rulers or of the Pharisees believed on him? For we know that out of Galilee ariseth no prophet." Nicodemus answered: "Doth our law judge any man before it hear him, [and specially, such a man who works such miracles]?"
+
+**Section Xiii, 829**
+
+The prophecies were ambiguous; they are no longer so.
+
+**Section Xiii, 830**
+
+The five propositions were ambiguous; they are no longer so.
+
+**Section Xiii, 831**
+
+Miracles are no longer necessary, because we have had them already. But when tradition is no longer minded; when the Pope alone is offered to us; when he has been imposed upon; and when the true source of truth, which is tradition, is thus excluded; and the Pope, who is its guardian, is biased; the truth is no longer free to appear. Then, as men speak no longer of truth, truth itself must speak to men. This is what happened in the time of Arius. (Miracles under Diocletian and under Arius.)
+
+**Section Xiii, 832**
+
+*Miracle.*—The people concluded this of themselves; but if the reason of it must be given to you ...
+
+It is unfortunate to be in exception to the rule. The same must be strict, and opposed to exception. But yet, as it is certain that there are exceptions to a rule, our judgment must though strict, be just.
+
+**Section Xiii, 833**
+
+John vi, 26: *Non quia vidisti signum, sed quia saturati estis.*
+
+Those who follow Jesus Christ because of His miracles honour His power in all the miracles which it produces. But those who, making profession to follow Him because of His miracles, follow Him in fact only because He comforts them and satisfies them with worldly blessings, discredit His miracles, when they are opposed to their own comforts.
+
+John ix: *Non est hic homo a Deo, quia sabbatum non custodit. Alii: Quomodo potest homo peccator hæc signa facere?*
+
+Which is the most clear?
+
+This house is not of God; for they do not there believe that the five propositions are in Jansenius. Others: This house is of God; for in it there are wrought strange miracles.
+
+Which is the most clear?
+
+*Tu quid dicis? Dico quia propheta est. Nisi esset hic a Deo, non poterat facere quidquam.*[330]
+
+**Section Xiii, 834**
+
+In the Old Testament, when they will turn you from God. In the New, when they will turn you from Jesus Christ. These are the occasions for excluding particular miracles from belief. No others need be excluded.
+
+Does it therefore follow that they would have the right to exclude all the prophets who came to them? No; they would have sinned in not excluding those who denied God, and would have sinned in excluding those who did not deny God.
+
+So soon, then, as we see a miracle, we must either assent to it, or have striking proofs to the contrary. We must see if it denies a God, or Jesus Christ, or the Church.
+
+**Section Xiii, 835**
+
+There is a great difference between not being for Jesus Christ and saying so, and not being for Jesus Christ and pretending to be so. The one party can do miracles, not the others. For it is clear of the one party, that they are opposed to the truth, but not of the others; and thus miracles are clearer.
+
+**Section Xiii, 836**
+
+That we must love one God only is a thing so evident, that it does not require miracles to prove it.
+
+**Section Xiii, 837**
+
+Jesus Christ performed miracles, then the apostles, and the first saints in great number; because the prophecies not being yet accomplished, but in the process of being accomplished by them, the miracles alone bore witness to them. It was foretold that the Messiah should convert the nations. How could this prophecy be fulfilled without the conversion of the nations? And how could the nations be converted to the Messiah, if they did not see this final effect of the prophecies which prove Him? Therefore, till He had died, risen again, and converted the nations, all was not accomplished; and so miracles were needed during all this time. Now they are no longer needed against the Jews; for the accomplished prophecies constitute a lasting miracle.

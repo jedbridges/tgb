@@ -1,7 +1,7 @@
 ---
 work: augustine-confessions
 section: "book-v"
-heading: "BOOK V"
+heading: "Book V"
 order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3296"

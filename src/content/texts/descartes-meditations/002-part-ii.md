@@ -1,7 +1,7 @@
 ---
 work: descartes-meditations
 section: "part-ii"
-heading: "PART II"
+heading: "Part II"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/59"

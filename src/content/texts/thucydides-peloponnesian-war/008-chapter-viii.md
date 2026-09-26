@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-viii"
-heading: "CHAPTER VIII"
+heading: "Chapter VIII"
 order: 8
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

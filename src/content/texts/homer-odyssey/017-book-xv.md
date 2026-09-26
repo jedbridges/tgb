@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-xv"
-heading: "BOOK XV"
+heading: "Book XV"
 order: 17
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

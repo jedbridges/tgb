@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-ix"
-heading: "BOOK IX"
+heading: "Book IX"
 order: 11
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

@@ -1,7 +1,7 @@
 ---
 work: virgil-aeneid
 section: "book-iii"
-heading: "Book: III"
+heading: "Book III"
 order: 3
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/virgil/the-aeneid/john-dryden"

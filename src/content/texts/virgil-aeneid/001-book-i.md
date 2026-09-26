@@ -1,7 +1,7 @@
 ---
 work: virgil-aeneid
 section: "book-i"
-heading: "Book: I"
+heading: "Book I"
 order: 1
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/virgil/the-aeneid/john-dryden"

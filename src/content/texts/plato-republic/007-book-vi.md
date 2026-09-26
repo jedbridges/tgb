@@ -1,7 +1,7 @@
 ---
 work: plato-republic
 section: "book-vi"
-heading: "BOOK VI."
+heading: "Book VI."
 order: 7
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1497"

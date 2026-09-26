@@ -1,7 +1,7 @@
 ---
 work: rousseau-discourse-on-inequality
 section: "a-discourse-upon-the-origin-and-the-foundation-of-the-inequa"
-heading: "A DISCOURSE UPON THE ORIGIN AND THE FOUNDATION OF THE INEQUALITY AMONG MANKIND"
+heading: "A Discourse Upon the Origin and the Foundation of the Inequality Among Mankind"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/11136"

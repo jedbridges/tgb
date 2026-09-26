@@ -1,7 +1,7 @@
 ---
 work: descartes-meditations
 section: "part-v"
-heading: "PART V"
+heading: "Part V"
 order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/59"

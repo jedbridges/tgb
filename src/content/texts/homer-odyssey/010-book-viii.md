@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-viii"
-heading: "BOOK VIII"
+heading: "Book VIII"
 order: 10
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

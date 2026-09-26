@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-xv"
-heading: "CHAPTER XV"
+heading: "Chapter XV"
 order: 15
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

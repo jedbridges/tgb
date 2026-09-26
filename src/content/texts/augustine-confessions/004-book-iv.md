@@ -1,7 +1,7 @@
 ---
 work: augustine-confessions
 section: "book-iv"
-heading: "BOOK IV"
+heading: "Book IV"
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3296"

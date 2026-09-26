@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "preface"
-heading: "PREFACE"
+heading: "Preface"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

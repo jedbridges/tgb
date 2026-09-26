@@ -1,0 +1,23 @@
+---
+work: pascal-pensees
+section: "section-xi-723"
+heading: "Section Xi, 723"
+order: 64
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 287
+---
+*Predictions.*—That in the fourth monarchy, before the destruction of the second temple, before the dominion of the Jews was taken away, in the seventieth week of Daniel, during the continuance of the second temple, the heathen should be instructed, and brought to the knowledge of the God worshipped by the Jews; that those who loved Him should be delivered from their enemies, and filled with His fear and love.
+
+And it happened that in the fourth monarchy, before the destruction of the second temple, etc., the heathen in great number worshipped God, and led an angelic life. Maidens dedicated their virginity and their life to God. Men renounced their pleasures. What Plato could only make acceptable to a few men, specially chosen and instructed, a secret influence imparted, by the power of a few words, to a hundred million ignorant men.
+
+The rich left their wealth. Children left the dainty homes of their parents to go into the rough desert. (See Philo the Jew.) All this was foretold a great while ago. For two thousand years no heathen had worshipped the God of the Jews; and at the time foretold, a great number of the heathen worshipped this only God. The temples were destroyed. The very kings made submission to the cross. All this was due to the Spirit of God, which was spread abroad upon the earth.
+
+No heathen, since Moses until Jesus Christ, believed according to the very Rabbis. A great number of the heathen, after Jesus Christ, believed in the books of Moses, kept them in substance and spirit, and only rejected what was useless.
+
+**Section Xi, 724**
+
+*Prophecies.*—The conversion of the Egyptians (Isaiah xix, 19); an altar in Egypt to the true God.

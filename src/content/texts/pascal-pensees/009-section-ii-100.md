@@ -1,0 +1,193 @@
+---
+work: pascal-pensees
+section: "section-ii-100"
+heading: "Section Ii, 100"
+order: 9
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 3034
+---
+*Self-love.*—The nature of self-love and of this human Ego is to love self only and consider self only. But what will man do? He cannot prevent this object that he loves from being full of faults and wants. He wants to be great, and he sees himself small. He wants to be happy, and he sees himself miserable. He wants to be perfect, and he sees himself full of imperfections. He wants to be the object of love and esteem among men, and he sees that his faults merit only their hatred and contempt. This embarrassment in which he finds himself produces in him the most unrighteous and criminal passion that can be imagined; for he conceives a mortal enmity against that truth which reproves him, and which convinces him of his faults. He would annihilate it, but, unable to destroy it in its essence, he destroys it as far as possible in his own knowledge and in that of others; that is to say, he devotes all his attention to hiding his faults both from others and from himself, and he cannot endure either that others should point them out to him, or that they should see them.
+
+Truly it is an evil to be full of faults; but it is a still greater evil to be full of them, and to be unwilling to recognise them, since that is to add the further fault of a voluntary illusion. We do not like others to deceive us; we do not think it fair that they should be held in higher esteem by us than they deserve; it is not then fair that we should deceive them, and should wish them to esteem us more highly than we deserve.
+
+Thus, when they discover only the imperfections and vices which we really have, it is plain they do us no wrong, since it is not they who cause them; they rather do us good, since they help us to free ourselves from an evil, namely, the ignorance of these imperfections. We ought not to be angry at their knowing our faults and despising us; it is but right that they should know us for what we are, and should despise us, if we are contemptible.
+
+Such are the feelings that would arise in a heart full of equity and justice. What must we say then of our own heart, when we see in it a wholly different disposition? For is it not true that we hate truth and those who tell it us, and that we like them to be deceived in our favour, and prefer to be esteemed by them as being other than what we are in fact? One proof of this makes me shudder. The Catholic religion does not bind us to confess our sins indiscriminately to everybody; it allows them to remain hidden from all other men save one, to whom she bids us reveal the innermost recesses of our heart, and show ourselves as we are. There is only this one man in the world whom she orders us to undeceive, and she binds him to an inviolable secrecy, which makes this knowledge to him as if it were not. Can we imagine anything more charitable and pleasant? And yet the corruption of man is such that he finds even this law harsh; and it is one of the main reasons which has caused a great part of Europe to rebel against the Church.[61]
+
+How unjust and unreasonable is the heart of man, which feels it disagreeable to be obliged to do in regard to one man what in some measure it were right to do to all men! For is it right that we should deceive men?
+
+There are different degrees in this aversion to truth; but all may perhaps be said to have it in some degree, because it is inseparable from self-love. It is this false delicacy which makes those who are under the necessity of reproving others choose so many windings and middle courses to avoid offence. They must lessen our faults, appear to excuse them, intersperse praises and evidence of love and esteem. Despite all this, the medicine does not cease to be bitter to self-love. It takes as little as it can, always with disgust, and often with a secret spite against those who administer it.
+
+Hence it happens that if any have some interest in being loved by us, they are averse to render us a service which they know to be disagreeable. They treat us as we wish to be treated. We hate the truth, and they hide it from us. We desire flattery, and they flatter us. We like to be deceived, and they deceive us.
+
+So each degree of good fortune which raises us in the world removes us farther from truth, because we are most afraid of wounding those whose affection is most useful and whose dislike is most dangerous. A prince may be the byword of all Europe, and he alone will know nothing of it. I am not astonished. To tell the truth is useful to those to whom it is spoken, but disadvantageous to those who tell it, because it makes them disliked. Now those who live with princes love their own interests more than that of the prince whom they serve; and so they take care not to confer on him a benefit so as to injure themselves.
+
+This evil is no doubt greater and more common among the higher classes; but the lower are not exempt from it, since there is always some advantage in making men love us. Human life is thus only a perpetual illusion; men deceive and flatter each other. No one speaks of us in our presence as he does of us in our absence. Human society is founded on mutual deceit; few friendships would endure if each knew what his friend said of him in his absence, although he then spoke in sincerity and without passion.
+
+Man is then only disguise, falsehood, and hypocrisy, both in himself and in regard to others. He does not wish any one to tell him the truth; he avoids telling it to others, and all these dispositions, so removed from justice and reason, have a natural root in his heart.
+
+**Section Ii, 101**
+
+I set it down as a fact that if all men knew what each said of the other, there would not be four friends in the world. This is apparent from the quarrels which arise from the indiscreet tales told from time to time. [I say, further, all men would be ...]
+
+**Section Ii, 102**
+
+Some vices only lay hold of us by means of others, and these, like branches, fall on removal of the trunk.
+
+**Section Ii, 103**
+
+The example of Alexander's chastity[62] has not made so many continent as that of his drunkenness has made intemperate. It is not shameful not to be as virtuous as he, and it seems excusable to be no more vicious. We do not believe ourselves to be exactly sharing in the vices of the vulgar, when we see that we are sharing in those of great men; and yet we do not observe that in these matters they are ordinary men. We hold on to them by the same end by which they hold on to the rabble; for, however exalted they are, they are still united at some point to the lowest of men. They are not suspended in the air, quite removed from our society. No, no; if they are greater than we, it is because their heads are higher; but their feet are as low as ours. They are all on the same level, and rest on the same earth; and by that extremity they are as low as we are, as the meanest folk, as infants, and as the beasts.
+
+**Section Ii, 104**
+
+When our passion leads us to do something, we forget our duty; for example, we like a book and read it, when we ought to be doing something else. Now, to remind ourselves of our duty, we must set ourselves a task we dislike; we then plead that we have something else to do, and by this means remember our duty.
+
+**Section Ii, 105**
+
+How difficult it is to submit anything to the judgment of another, without prejudicing his judgment by the manner in which we submit it! If we say, "I think it beautiful," "I think it obscure," or the like, we either entice the imagination into that view, or irritate it to the contrary. It is better to say nothing; and then the other judges according to what really is, that is to say, according as it then is, and according as the other circumstances, not of our making, have placed it. But we at least shall have added nothing, unless it be that silence also produces an effect, according to the turn and the interpretation which the other will be disposed to give it, or as he will guess it from gestures or countenance, or from the tone of the voice, if he is a physiognomist. So difficult is it not to upset a judgment from its natural place, or, rather, so rarely is it firm and stable!
+
+**Section Ii, 106**
+
+By knowing each man's ruling passion, we are sure of pleasing him; and yet each has his fancies, opposed to his true good, in the very idea which he has of the good. It is a singularly puzzling fact.
+
+**Section Ii, 107**
+
+*Lustravit lampade terras.*[63]—The weather and my mood have little connection. I have my foggy and my fine days within me; my prosperity or misfortune has little to do with the matter. I sometimes struggle against luck, the glory of mastering it makes me master it gaily; whereas I am sometimes surfeited in the midst of good fortune.
+
+**Section Ii, 108**
+
+Although people may have no interest in what they are saying, we must not absolutely conclude from this that they are not lying; for there are some people who lie for the mere sake of lying.
+
+**Section Ii, 109**
+
+When we are well we wonder what we would do if we were ill, but when we are ill we take medicine cheerfully; the illness persuades us to do so. We have no longer the passions and desires for amusements and promenades which health gave to us, but which are incompatible with the necessities of illness. Nature gives us, then, passions and desires suitable to our present state.[64] We are only troubled by the fears which we, and not nature, give ourselves, for they add to the state in which we are the passions of the state in which we are not.
+
+As nature makes us always unhappy in every state, our desires picture to us a happy state; because they add to the state in which we are the pleasures of the state in which we are not. And if we attained to these pleasures, we should not be happy after all; because we should have other desires natural to this new state.
+
+We must particularise this general proposition....
+
+**Section Ii, 110**
+
+The consciousness of the falsity of present pleasures, and the ignorance of the vanity of absent pleasures, cause inconstancy.
+
+**Section Ii, 111**
+
+*Inconstancy.*—We think we are playing on ordinary organs when playing upon man. Men are organs, it is true, but, odd, changeable, variable [with pipes not arranged in proper order. Those who only know how to play on ordinary organs] will not produce harmonies on these. We must know where [*the keys*] are.
+
+**Section Ii, 112**
+
+*Inconstancy.*—Things have different qualities, and the soul different inclinations; for nothing is simple which is presented to the soul, and the soul never presents itself simply to any object. Hence it comes that we weep and laugh at the same thing.
+
+**Section Ii, 113**
+
+*Inconstancy and oddity.*—To live only by work, and to rule over the most powerful State in the world, are very opposite things. They are united in the person of the great Sultan of the Turks.
+
+**Section Ii, 114**
+
+Variety is as abundant as all tones of the voice, all ways of walking, coughing, blowing the nose, sneezing. We distinguish vines by their fruit, and call them the Condrien, the Desargues, and such and such a stock. Is this all? Has a vine ever produced two bunches exactly the same, and has a bunch two grapes alike? etc.
+
+I can never judge of the same thing exactly in the same way. I cannot judge of my work, while doing it. I must do as the artists, stand at a distance, but not too far. How far, then? Guess.
+
+**Section Ii, 115**
+
+*Variety.*—Theology is a science, but at the same time how many sciences? A man is a whole; but if we dissect him, will he be the head, the heart, the stomach, the veins, each vein, each portion of a vein, the blood, each humour in the blood?
+
+A town, a country-place, is from afar a town and a country-place. But, as we draw near, there are houses, trees, tiles, leaves, grass, ants, limbs of ants, in infinity. All this is contained under the name of country-place.
+
+**Section Ii, 116**
+
+*Thoughts.*—All is one, all is different. How many natures exist in man? How many vocations? And by what chance does each man ordinarily choose what he has heard praised? A well-turned heel.
+
+**Section Ii, 117**
+
+*The heel of a slipper.*—"Ah! How well this is turned! Here is a clever workman! How brave is this soldier!" This is the source of our inclinations, and of the choice of conditions. "How much this man drinks! How little that one!" This makes people sober or drunk, soldiers, cowards, etc.
+
+**Section Ii, 118**
+
+Chief talent, that which rules the rest.
+
+**Section Ii, 119**
+
+Nature imitates herself. A seed sown in good ground brings forth fruit. A principle, instilled into a good mind, brings forth fruit. Numbers imitate space, which is of a different nature.
+
+All is made and led by the same master, root, branches, and fruits; principles and consequences.
+
+**Section Ii, 120**
+
+[Nature diversifies and imitates; art imitates and diversifies.]
+
+**Section Ii, 121**
+
+Nature always begins the same things again, the years, the days, the hours; in like manner spaces and numbers follow each other from beginning to end. Thus is made a kind of infinity and eternity. Not that anything in all this is infinite and eternal, but these finite realities are infinitely multiplied. Thus it seems to me to be only the number which multiplies them that is infinite.
+
+**Section Ii, 122**
+
+Time heals griefs and quarrels, for we change and are no longer the same persons. Neither the offender nor the offended are any more themselves. It is like a nation which we have provoked, but meet again after two generations. They are still Frenchmen, but not the same.
+
+**Section Ii, 123**
+
+He no longer loves the person whom he loved ten years ago. I quite believe it. She is no longer the same, nor is he. He was young, and she also; she is quite different. He would perhaps love her yet, if she were what she was then.
+
+**Section Ii, 124**
+
+We view things not only from different sides, but with different eyes; we have no wish to find them alike.
+
+**Section Ii, 125**
+
+*Contraries.*—Man is naturally credulous and incredulous, timid and rash.
+
+**Section Ii, 126**
+
+Description of man: dependency, desire of independence, need.
+
+**Section Ii, 127**
+
+Condition of man: inconstancy, weariness, unrest.
+
+**Section Ii, 128**
+
+The weariness which is felt by us in leaving pursuits to which we are attached. A man dwells at home with pleasure; but if he sees a woman who charms him, or if he enjoys himself in play for five or six days, he is miserable if he returns to his former way of living. Nothing is more common than that.
+
+**Section Ii, 129**
+
+Our nature consists in motion; complete rest is death.[65]
+
+**Section Ii, 130**
+
+*Restlessness.*—If a soldier, or labourer, complain of the hardship of his lot, set him to do nothing.
+
+**Section Ii, 131**
+
+*Weariness.*[66]—Nothing is so insufferable to man as to be completely at rest, without passions, without business, without diversion, without study. He then feels his nothingness, his forlornness, his insufficiency, his dependence, his weakness, his emptiness. There will immediately arise from the depth of his heart weariness, gloom, sadness, fretfulness, vexation, despair.
+
+**Section Ii, 132**
+
+Methinks Cæsar was too old to set about amusing himself with conquering the world.[67] Such sport was good for Augustus or Alexander. They were still young men, and thus difficult to restrain. But Cæsar should have been more mature.
+
+**Section Ii, 133**
+
+Two faces which resemble each other, make us laugh, when together, by their resemblance, though neither of them by itself makes us laugh.
+
+**Section Ii, 134**
+
+How useless is painting, which attracts admiration by the resemblance of things, the originals of which we do not admire!
+
+**Section Ii, 135**
+
+The struggle alone pleases us, not the victory. We love to see animals fighting, not the victor infuriated over the vanquished. We would only see the victorious end; and, as soon as it comes, we are satiated. It is the same in play, and the same in the search for truth. In disputes we like to see the clash of opinions, but not at all to contemplate truth when found. To observe it with pleasure, we have to see it emerge out of strife. So in the passions, there is pleasure in seeing the collision of two contraries; but when one acquires the mastery, it becomes only brutality. We never seek things for themselves, but for the search. Likewise in plays, scenes which do not rouse the emotion of fear are worthless, so are extreme and hopeless misery, brutal lust, and extreme cruelty.
+
+**Section Ii, 136**
+
+A mere trifle consoles us, for a mere trifle distresses us.[68]
+
+**Section Ii, 137**
+
+Without examining every particular pursuit, it is enough to comprehend them under diversion.
+
+**Section Ii, 138**
+
+Men naturally slaters and of all callings, save in their own rooms.

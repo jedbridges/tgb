@@ -1,7 +1,7 @@
 ---
 work: plato-republic
 section: "book-ix"
-heading: "BOOK IX."
+heading: "Book IX."
 order: 10
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1497"

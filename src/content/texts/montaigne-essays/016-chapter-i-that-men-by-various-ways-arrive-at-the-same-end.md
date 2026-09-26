@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-i-that-men-by-various-ways-arrive-at-the-same-end"
-heading: "CHAPTER I——THAT MEN BY VARIOUS WAYS ARRIVE AT THE SAME END."
+heading: "Chapter I——that Men by Various Ways Arrive at the Same End."
 order: 16
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

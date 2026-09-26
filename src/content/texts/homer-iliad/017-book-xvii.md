@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-xvii"
-heading: "BOOK XVII."
+heading: "Book XVII."
 order: 17
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

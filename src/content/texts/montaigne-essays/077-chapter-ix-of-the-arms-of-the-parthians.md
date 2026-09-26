@@ -1,0 +1,67 @@
+---
+work: montaigne-essays
+section: "chapter-ix-of-the-arms-of-the-parthians"
+heading: "Chapter Ix——of the Arms of the Parthians"
+order: 77
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/3600"
+edition: "Charles Cotton's translation, 1685, in the 1877 revision"
+translator: "Charles Cotton"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 1271
+---
+‘Tis an ill custom and unmanly that the gentlemen of our time have got, not to put on arms but just upon the point of the most extreme necessity, and to lay them by again, so soon as ever there is any show of the danger being over; hence many disorders arise; for every one bustling and running to his arms just when he should go to charge, has his cuirass to buckle on when his companions are already put to rout. Our ancestors were wont to give their head-piece, lance and gauntlets to be carried, but never put off the other pieces so long as there was any work to be done. Our troops are now cumbered and rendered unsightly with the clutter of baggage and servants who cannot be from their masters, by reason they carry their arms. Titus Livius speaking of our nation:
+
+“Intolerantissima laboris corpora vix arma humeris gerebant.”
+
+[“Bodies most impatient of labour could scarce endure to wear
+their arms on their shoulders.”—Livy, x. 28.]
+
+Many nations do yet, and did anciently, go to war without defensive arms, or with such, at least, as were of very little proof:
+
+     “Tegmina queis capitum, raptus de subere cortex.”
+
+[“To whom the coverings of the heads were the bark of the
+cork-tree.”—AEneid, vii. 742.]
+
+Alexander, the most adventurous captain that ever was, very seldom wore armour, and such amongst us as slight it, do not by that much harm to the main concern; for if we see some killed for want of it, there are few less whom the lumber of arms helps to destroy, either by being overburthened, crushed, and cramped with their weight, by a rude shock, or otherwise. For, in plain truth, to observe the weight and thickness of the armour we have now in use, it seems as if we only sought to defend ourselves, and are rather loaded than secured by it. We have enough to do to support its weight, being so manacled and immured, as if we were only to contend with our own arms, and as if we had not the same obligation to defend them, that they have to defend us. Tacitus gives a pleasant description of the men-at-arms among our ancient Gauls, who were so armed as only to be able to stand, without power to harm or to be harmed, or to rise again if once struck down. Lucullus, seeing certain soldiers of the Medes, who formed the van of Tigranes’ army, heavily armed and very uneasy, as if in prisons of iron, thence conceived hopes with great ease to defeat them, and by them began his charge and victory. And now that our musketeers are in credit, I believe some invention will be found out to immure us for our safety, and to draw us to the war in castles, such as those the ancients loaded their elephants withal.
+
+This humour is far differing from that of the younger Scipio, who sharply reprehended his soldiers for having planted caltrops under water, in a ditch by which those of the town he held besieged might sally out upon him; saying, that those who assaulted should think of attacking, and not to fear; suspecting, with good reason, that this stop they had put to the enemies, would make themselves less vigilant upon their guard. He said also to a young man, who showed him a fine buckler he had, that he was very proud of, “It is a very fine buckler indeed, but a Roman soldier ought to repose greater confidence in his right hand than in his left.”
+
+Now ‘tis nothing but the not being used to wear it that makes the weight of our armour so intolerable:
+
+    “L’usbergo in dosso haveano, et l’elmo in testa,
+     Due di questi guerrier, de’ quali io canto;
+     Ne notte o di, d’ appoi ch’ entraro in questa
+     Stanza, gl’haveano mai messi da canto;
+     Che facile a portar come la vesta
+     Era lor, perche in uso l’havean tanto:”
+
+[“Two of the warriors, of whom I sing, had on their backs their
+cuirass and on their heads their casque, and never had night or day
+once laid them by, whilst here they were; those arms, by long
+practice, were grown as light to bear as a garment”
+ —Ariosto, Cant., MI. 30.]
+
+the Emperor Caracalla was wont to march on foot, completely armed, at the head of his army. The Roman infantry always carried not only a morion, a sword, and a shield (for as to arms, says Cicero, they were so accustomed to have them always on, that they were no more trouble to them than their own limbs):
+
+“Arma enim membra militis esse dicunt.”
+
+but, moreover, fifteen days’ provision, together with a certain number of stakes, wherewith to fortify their camp, sixty pounds in weight. And Marius’ soldiers, laden at the same rate, were inured to march in order of battle five leagues in five hours, and sometimes, upon any urgent occasion, six.
+
+Their military discipline was much ruder than ours, and accordingly produced much greater effects. The younger Scipio, reforming his army in Spain, ordered his soldiers to eat standing, and nothing that was drest. The jeer that was given a Lacedaemonian soldier is marvellously pat to this purpose, who, in an expedition of war, was reproached for having been seen under the roof of a house: they were so inured to hardship that, let the weather be what it would, it was a shame to be seen under any other cover than the roof of heaven. We should not march our people very far at that rate.
+
+As to what remains, Marcellinus, a man bred up in the Roman wars, curiously observes the manner of the Parthians arming themselves, and the rather, for being so different from that of the Romans. “They had,” says he, “armour so woven as to have all the scales fall over one another like so many little feathers; which did nothing hinder the motion of the body, and yet were of such resistance, that our darts hitting upon them, would rebound” (these were the coats of mail our forefathers were so constantly wont to use). And in another place: “they had,” says he, “strong and able horses, covered with thick tanned hides of leather, and were themselves armed ‘cap-a-pie’ with great plates of iron, so artificially ordered, that in all parts of the limbs, which required bending, they lent themselves to the motion. One would have said, that they had been men of iron; having armour for the head so neatly fitted, and so naturally representing the form of a face, that they were nowhere vulnerable, save at two little round holes, that gave them a little light, corresponding with their eyes, and certain small chinks about their nostrils, through which they, with great difficulty, breathed,”
+
+         “Flexilis inductis animatur lamina membris,
+          Horribilis visu; credas simulacra moveri
+          Ferrea, cognatoque viros spirare metallo.
+          Par vestitus equis: ferrata fronte minantur,
+          Ferratosque movent, securi vulneris, armos.”
+
+[“Plates of steel are placed over the body, so flexible that,
+dreadful to be seen, you would think these not living men, but
+moving images.  The horses are similarly armed, and, secured from
+wounds, move their iron shoulders.”—Claud, In Ruf., ii. 358.]
+
+‘Tis a description drawing very near resembling the equipage of the men-at-arms in France, with their barded horses. Plutarch says, that Demetrius caused two complete suits of armour to be made for himself and for Alcimus, a captain of the greatest note and authority about him, of six score pounds weight each, whereas the ordinary suits weighed but half as much.

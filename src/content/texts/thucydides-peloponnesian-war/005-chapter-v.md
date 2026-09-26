@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-v"
-heading: "CHAPTER V"
+heading: "Chapter V"
 order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

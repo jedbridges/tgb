@@ -1,7 +1,7 @@
 ---
 work: augustine-confessions
 section: "book-xi"
-heading: "BOOK XI"
+heading: "Book XI"
 order: 11
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3296"

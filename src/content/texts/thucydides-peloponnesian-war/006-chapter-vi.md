@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-vi"
-heading: "CHAPTER VI"
+heading: "Chapter VI"
 order: 6
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

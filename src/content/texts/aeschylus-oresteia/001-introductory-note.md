@@ -1,7 +1,7 @@
 ---
 work: aeschylus-oresteia
 section: "introductory-note"
-heading: "INTRODUCTORY NOTE"
+heading: "Introductory Note"
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8604"

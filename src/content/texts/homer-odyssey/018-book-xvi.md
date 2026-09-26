@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-xvi"
-heading: "BOOK XVI"
+heading: "Book XVI"
 order: 18
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

@@ -1,7 +1,7 @@
 ---
 work: marcus-aurelius-meditations
 section: "book-vii"
-heading: "Book: VII"
+heading: "Book VII"
 order: 7
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long"

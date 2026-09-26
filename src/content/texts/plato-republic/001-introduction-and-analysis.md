@@ -1,7 +1,7 @@
 ---
 work: plato-republic
 section: "introduction-and-analysis"
-heading: "INTRODUCTION AND ANALYSIS."
+heading: "Introduction and Analysis."
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1497"
@@ -783,7 +783,7 @@ The greatest of all ideals may, or rather must be conceived by us under similitu
 
 There is a third ideal, not the same, but akin to these, which has a place in the home and heart of every believer in the religion of Christ, and in which men seem to find a nearer and more familiar truth, the Divine man, the Son of Man, the Saviour of mankind, Who is the first-born and head of the whole family in heaven and earth, in Whom the Divine and human, that which is without and that which is within the range of our earthly faculties, are indissolubly united. Neither is this divine form of goodness wholly separable from the ideal of the Christian Church, which is said in the New Testament to be ‘His body,’ or at variance with those other images of good which Plato sets before us. We see Him in a figure only, and of figures of speech we select but a few, and those the simplest, to be the expression of Him. We behold Him in a picture, but He is not there. We gather up the fragments of His discourses, but neither do they represent Him as He truly was. His dwelling is neither in heaven nor earth, but in the heart of man. This is that image which Plato saw dimly in the distance, which, when existing among men, he called, in the language of Homer, ‘the likeness of God,’ the likeness of a nature which in all ages men have felt to be greater and better than themselves, and which in endless forms, whether derived from Scripture or nature, from the witness of history or from the human heart, regarded as a person or not as a person, with or without parts or passions, existing in space or not in space, is and will always continue to be to mankind the Idea of Good.
 
-**PERSONS OF THE DIALOGUE.**
+**Persons of the Dialogue.**
 
 Socrates, who is the narrator.
 

@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "preface-to-first-edition"
-heading: "PREFACE TO FIRST EDITION"
+heading: "Preface to First Edition"
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

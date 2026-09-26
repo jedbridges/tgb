@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-x"
-heading: "BOOK X"
+heading: "Book X"
 order: 12
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

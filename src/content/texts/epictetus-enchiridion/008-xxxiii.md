@@ -68,7 +68,7 @@ Women forthwith from the age of fourteen are called by the men mistresses (*κυ
 
 It is a mark of a mean capacity to spend much time on the things which concern the body, such as much exercise, much eating, much drinking, much easing of the body, much copulation. But these things should be done as subordinate things: and let all your care be directed to the mind.
 
-**XLII33**
+**Xlii33**
 
 When any person treats you ill or speaks ill of you, remember that he does this or says this because he thinks that it is his duty. It is not possible then for him to follow that which seems right to you, but that which seems right to himself. Accordingly if he is wrong in his opinion, he is the person who is hurt, for he is the person who has been deceived; for if a man shall suppose the true conjunction to be false, it is not the conjunction which is hindered, but the man who has been deceived about it. If you proceed then from these opinions, you will be mild in temper to him who reviles you: for say on each occasion, It seemed so to him.
 

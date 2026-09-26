@@ -1,7 +1,7 @@
 ---
 work: virgil-aeneid
 section: "book-xi"
-heading: "Book: XI"
+heading: "Book XI"
 order: 11
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/virgil/the-aeneid/john-dryden"

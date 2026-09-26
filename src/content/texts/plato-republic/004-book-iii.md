@@ -1,7 +1,7 @@
 ---
 work: plato-republic
 section: "book-iii"
-heading: "BOOK III."
+heading: "Book III."
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1497"

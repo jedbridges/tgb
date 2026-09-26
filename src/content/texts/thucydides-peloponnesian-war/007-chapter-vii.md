@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-vii"
-heading: "CHAPTER VII"
+heading: "Chapter VII"
 order: 7
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

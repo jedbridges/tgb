@@ -1,0 +1,51 @@
+---
+work: pascal-pensees
+section: "section-xiii-817"
+heading: "Section Xiii, 817"
+order: 72
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 650
+---
+Having considered how it comes that there are so many false miracles, false revelations, sorceries, etc., it has seemed to me that the true cause is that there are some true; for it would not be possible that there should be so many false miracles, if there were none true, nor so many false revelations, if there were none true, nor so many false religions, if there were not one true. For if there had never been all this, it is almost impossible that men should have imagined it, and still more impossible that so many others should have believed it. But as there have been very great things true, and as they have been believed by great men, this impression has been the cause that nearly everybody is rendered capable of believing also the false. And thus, instead of concluding that there are no true miracles, since there are so many false, it must be said, on the contrary, that there are true miracles, since there are so many false; and that there are false ones only because there are true; and that in the same way there are false religions because there is one true.—Objection to this: savages have a religion. But this is because they have heard the true spoken of, as appears by the cross of Saint Andrew, the deluge, circumcision, etc.—This arises from the fact that the human mind, finding itself inclined to that side by the truth, becomes thereby susceptible of all the falsehoods of this ...
+
+**Section Xiii, 818**
+
+Jeremiah xxiii, 32. The *miracles* of the false prophets. In the Hebrew and Vatable[324] they are the *tricks*.
+
+*Miracle* does not always signify miracle. I Sam. xiv, 15; *miracle* signifies *fear*, and is so in the Hebrew. The same evidently in Job xxxiii, 7; and also Isaiah xxi, 4; Jeremiah xliv, 12. *Portentum* signifies *simulacrum*, Jeremiah l, 38; and it is so in the Hebrew and Vatable. Isaiah viii, 18. Jesus Christ says that He and His will be in *miracles*.
+
+**Section Xiii, 819**
+
+If the devil favoured the doctrine which destroys him, he would be divided against himself, as Jesus Christ said. If God favoured the doctrine which destroys the Church, He would be divided against Himself. *Omne regnum divisum.*[325] For Jesus Christ wrought against the devil, and destroyed his power over the heart, of which exorcism is the symbolisation, in order to establish the kingdom of God. And thus He adds, *Si in digito Dei ... regnum Dei ad vos*.[326]
+
+**Section Xiii, 820**
+
+There is a great difference between tempting and leading into error. God tempts, but He does not lead into error. To tempt is to afford opportunities, which impose no necessity; if men do not love God, they will do a certain thing. To lead into error is to place a man under the necessity of inferring and following out what is untrue.
+
+**Section Xiii, 821**
+
+Abraham and Gideon are above revelation. The Jews blinded themselves in judging of miracles by the Scripture. God has never abandoned His true worshippers.
+
+I prefer to follow Jesus Christ than any other, because He has miracle, prophecy, doctrine, perpetuity, etc.
+
+The Donatists. No miracle which obliges them to say it is the devil.
+
+The more we particularise God, Jesus Christ, the Church ...
+
+**Section Xiii, 822**
+
+If there were no false miracles, there would be certainty. If there were no rule to judge of them, miracles would be useless, and there would be no reason for believing.
+
+Now there is, humanly speaking, no human certainty, but we have reason.
+
+**Section Xiii, 823**
+
+Either God has confounded the false miracles, or He has foretold them; and in both ways He has raised Himself above what is supernatural with respect to us, and has raised us to it.
+
+**Section Xiii, 824**
+
+Miracles serve not to convert, but to condemn. (Q. 113, A. 10, *Ad.* 2.)[327]

@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-xxi"
-heading: "BOOK XXI."
+heading: "Book XXI."
 order: 21
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

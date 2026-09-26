@@ -1,7 +1,7 @@
 ---
 work: plato-republic
 section: "book-i"
-heading: "BOOK I."
+heading: "Book I."
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1497"

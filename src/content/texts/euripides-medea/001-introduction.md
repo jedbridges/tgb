@@ -1,14 +1,14 @@
 ---
 work: euripides-medea
 section: "introduction"
-heading: "INTRODUCTION"
+heading: "Introduction"
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/35451"
 edition: "Gilbert Murray's translation, 1910"
 translator: "Gilbert Murray"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 2088
+words: 2080
 ---
 The *Medea*, in spite of its background of wonder and enchantment, is not a romantic play but a tragedy of character and situation. It deals, so to speak, not with the romance itself, but with the end of the romance, a thing which is so terribly often the reverse of romantic. For all but the very highest of romances are apt to have just one flaw somewhere, and in the story of Jason and Medea the flaw was of a fatal kind.
 
@@ -36,7 +36,7 @@ From any such judgment there is an instant appeal to sane human sympathy. Jason 
 
 G. M.
 
-**CHARACTERS OF THE PLAY**
+**Characters of the Play**
 
 Medea, *daughter of Aiêtês, King of Colchis*.
 
@@ -54,6 +54,7 @@ Attendant *on the children*.
 
 A Messenger.
 
-Chorus of Corinthian Women, with their Leader. Soldiers and Attendants.
+Chorus
+Leader
 
 *The scene is laid in Corinth. The play was first acted when Pythodôrus was Archon, Olympiad 87, year* 1 (B.C. 431). *Euphorion was first, Sophocles second, Euripides third, with Medea, Philoctêtes, Dictys, and the Harvesters, a Satyr-play.*

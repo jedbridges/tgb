@@ -7,7 +7,7 @@ source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/adam-smith/the-wealth-of-nations"
 edition: "The 1776 text, fifth edition of 1789"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 11887
+words: 11889
 ---
 Of the Expense of the Institutions for the Instruction of People of All Ages
 
@@ -95,9 +95,7 @@ The revenue of every established church, such parts of it excepted as may arise 
 
 The proper performance of every service seems to require that its pay or recompence should be, as exactly as possible, proportioned to the nature of the service. If any service is very much underpaid, it is very apt to suffer by the meanness and incapacity of the greater part of those who are employed in it. If it is very much overpaid, it is apt to suffer, perhaps, still more by their negligence and idleness. A man of a large revenue, whatever may be his profession, thinks he ought to live like other men of large revenues; and to spend a great part of his time in festivity, in vanity, and in dissipation. But in a clergyman this train of life not only consumes the time which ought to be employed in the duties of his function, but in the eyes of the common people destroys almost entirely that sanctity of character which can alone enable him to perform those duties with proper weight and authority.
 
-**IV**
-
-Of the Expense of Supporting the Dignity of the Sovereign
+**Book V, IV: Of the Expense of Supporting the Dignity of the Sovereign**
 
 Over and above the expense necessary for enabling the sovereign to perform his several duties, a certain expense is requisite for the support of his dignity. This expense varies both with the different periods of improvement, and with the different forms of government.
 

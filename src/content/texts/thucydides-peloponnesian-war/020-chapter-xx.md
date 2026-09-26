@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-xx"
-heading: "CHAPTER XX"
+heading: "Chapter XX"
 order: 20
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

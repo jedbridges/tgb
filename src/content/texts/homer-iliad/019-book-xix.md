@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-xix"
-heading: "BOOK XIX."
+heading: "Book XIX."
 order: 19
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

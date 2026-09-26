@@ -1,16 +1,16 @@
 ---
 work: pascal-pensees
 section: "introduction"
-heading: "INTRODUCTION"
+heading: "Introduction"
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
 edition: "W. F. Trotter's translation, 1904"
 translator: "W. F. Trotter"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 5103
+words: 4942
 ---
-**PASCAL'S PENSÉES**
+**Pascal's Pensées**
 
 INTRODUCTION BY T. S. ELIOT
 
@@ -67,13 +67,3 @@ He who reads this book will observe at once its fragmentary nature; but only aft
 We cannot quite understand any of the parts, fragmentary as they are, without some understanding of the whole. Capital, for instance, is his analysis of the *three orders*: the order of nature, the order of mind, and the order of charity. These three are *discontinuous*; the higher is not implicit in the lower as in an evolutionary doctrine it would be.[D] In this distinction Pascal offers much about which the modern world would do well to think. And indeed, because of his unique combination and balance of qualities, I know of no religious writer more pertinent to our time. The great mystics like St. John of the Cross, are primarily for readers with a special determination of purpose; the devotional writers, such as St. François de Sales, are primarily for those who already feel consciously desirous of the love of God; the great theologians are for those interested in theology. But I can think of no Christian writer, not Newman even, more to be commended than Pascal to those who doubt, but who have the mind to conceive, and the sensibility to feel, the disorder, the futility, the meaninglessness, the mystery of life and suffering, and who can only find peace through a satisfaction of the whole being.
 
 T. S. Eliot.
-
-**Notes**
-
-[A] Cf. the use of the simile of the *couvreur*. For comparing parallel passages, the edition of the *Pensées* by Henri Massis (*A la cité des livres*) is better than the two-volume edition of Jacques Chevalier (Gabalda). It seems just possible that in the latter edition, and also in his biographical study (*Pascal*; by Jacques Chevalier, English translation, published by Sheed & Ward), M. Chevalier is a little over-zealous to demonstrate the perfect orthodoxy of Pascal.
-
-[B] The great man of Port-Royal was of course Saint-Cyran, but any one who is interested will certainly consult, first of all, the book of Sainte-Beuve mentioned.
-
-[C] For a brilliant criticism of the errors of Descartes from a theological point of view the reader is referred to *Three Reformers* by Jacques Maritain (translation published by Sheed & Ward).
-
-[D] An important modern theory of discontinuity, suggested partly by Pascal, is sketched in the collected fragments of *Speculations* by T. E. Hulme (Kegan Paul).

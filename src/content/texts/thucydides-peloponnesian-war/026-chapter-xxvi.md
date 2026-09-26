@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-xxvi"
-heading: "CHAPTER XXVI"
+heading: "Chapter XXVI"
 order: 26
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

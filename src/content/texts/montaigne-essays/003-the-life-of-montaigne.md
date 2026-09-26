@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "the-life-of-montaigne"
-heading: "THE LIFE OF MONTAIGNE"
+heading: "The Life of Montaigne"
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"
@@ -82,4 +82,4 @@ In 1595 Mademoiselle de Gournay published a new edition of Montaigne’s Essays,
 
 Coldly as Montaigne’s literary productions appear to have been received by the generation immediately succeeding his own age, his genius grew into just appreciation in the seventeenth century, when such great spirits arose as La Bruyere, Moliere, La Fontaine, Madame de Sevigne. “O,” exclaimed the Chatelaine des Rochers, “what capital company he is, the dear man! he is my old friend; and just for the reason that he is so, he always seems new. My God! how full is that book of sense!” Balzac said that he had carried human reason as far and as high as it could go, both in politics and in morals. On the other hand, Malebranche and the writers of Port Royal were against him; some reprehended the licentiousness of his writings; others their impiety, materialism, epicureanism. Even Pascal, who had carefully read the Essays, and gained no small profit by them, did not spare his reproaches. But Montaigne has outlived detraction. As time has gone on, his admirers and borrowers have increased in number, and his Jansenism, which recommended him to the eighteenth century, may not be his least recommendation in the nineteenth. Here we have certainly, on the whole, a first-class man, and one proof of his masterly genius seems to be, that his merits and his beauties are sufficient to induce us to leave out of consideration blemishes and faults which would have been fatal to an inferior writer.
 
-                       THE LETTERS OF MONTAIGNE.
+THE LETTERS OF MONTAIGNE.

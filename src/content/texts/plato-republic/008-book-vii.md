@@ -1,7 +1,7 @@
 ---
 work: plato-republic
 section: "book-vii"
-heading: "BOOK VII."
+heading: "Book VII."
 order: 8
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1497"

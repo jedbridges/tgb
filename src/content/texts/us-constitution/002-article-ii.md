@@ -1,7 +1,7 @@
 ---
 work: us-constitution
 section: "article-ii"
-heading: "ARTICLE II"
+heading: "Article II"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/5"

@@ -1,7 +1,7 @@
 ---
 work: homer-odyssey
 section: "book-xiv"
-heading: "BOOK XIV"
+heading: "Book XIV"
 order: 16
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1727"

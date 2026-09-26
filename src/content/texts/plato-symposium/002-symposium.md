@@ -1,7 +1,7 @@
 ---
 work: plato-symposium
 section: "symposium"
-heading: "SYMPOSIUM"
+heading: "Symposium"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1600"

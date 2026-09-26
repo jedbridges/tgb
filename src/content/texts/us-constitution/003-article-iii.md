@@ -1,7 +1,7 @@
 ---
 work: us-constitution
 section: "article-iii"
-heading: "ARTICLE III"
+heading: "Article III"
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/5"

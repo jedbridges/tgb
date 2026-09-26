@@ -1,7 +1,7 @@
 ---
 work: us-constitution
 section: "article-iv"
-heading: "ARTICLE IV"
+heading: "Article IV"
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/5"
@@ -23,11 +23,11 @@ The Congress shall have Power to dispose of and make all needful Rules and Regul
 
 Section 4. The United States shall guarantee to every State in this Union a Republican Form of Government, and shall protect each of them against Invasion; and on Application of the Legislature, or of the Executive (when the Legislature cannot be convened) against domestic Violence.
 
-**ARTICLE V**
+**Article V**
 
 The Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this Constitution, or, on the Application of the Legislatures of two thirds of the several States, shall call a Convention for proposing Amendments, which, in either Case, shall be valid to all Intents and Purposes, as Part of this Constitution, when ratified by the Legislatures of three fourths of the several States, or by Conventions in three fourths thereof, as the one or the other Mode of Ratification may be proposed by the Congress; Provided that no Amendment which may be made prior to the Year one thousand eight hundred and eight shall in any Manner affect the first and fourth Clauses in the ninth Section of the first Article; and that no State, without its Consent, shall be deprived of it's equal Suffrage in the Senate.
 
-**ARTICLE VI**
+**Article VI**
 
 All Debts contracted and Engagements entered into, before the Adoption of this Constitution, shall be as valid against the United States under this Constitution, as under the Confederation.
 
@@ -35,7 +35,7 @@ This Constitution, and the Laws of the United States which shall be made in Purs
 
 The Senators and Representatives before mentioned, and the Members of the several State Legislatures, and all executive and judicial Officers, both of the United States and of the several States, shall be bound by Oath or Affirmation, to support this Constitution; but no religious Test shall ever be required as a Qualification to any Office or public Trust under the United States.
 
-**ARTICLE VII**
+**Article VII**
 
 The Ratification of the Conventions of nine States, shall be sufficient for the Establishment of this Constitution between the States so ratifying the Same.
 

@@ -9,7 +9,7 @@ edition: "The text of 1787, with the amendments"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
 words: 2325
 ---
-**THE CONSTITUTION OF THE UNITED STATES OF AMERICA, 1787**
+**The Constitution of the United States of America, 1787**
 
 We the people of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.
 

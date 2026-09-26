@@ -1,0 +1,57 @@
+---
+work: pascal-pensees
+section: "section-viii-570"
+heading: "Section Viii, 570"
+order: 40
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 1108
+---
+*The reason why. Types.*—[They had to deal with a carnal people and to render them the depositary of the spiritual covenant.] To give faith to the Messiah, it was necessary there should have been precedent prophecies, and that these should be conveyed by persons above suspicion, diligent, faithful, unusually zealous, and known to all the world.
+
+To accomplish all this, God chose this carnal people, to whom He entrusted the prophecies which foretell the Messiah as a deliverer, and as a dispenser of those carnal goods which this people loved. And thus they have had an extraordinary passion for their prophets, and, in sight of the whole world, have had charge of these books which foretell their Messiah, assuring all nations that He should come, and in the way foretold in the books, which they held open to the whole world. Yet this people, deceived by the poor and ignominious advent of the Messiah, have been His most cruel enemies. So that they, the people least open to suspicion in the world of favouring us, the most strict and most zealous that can be named for their law and their prophets, have kept the books incorrupt. Hence those who have rejected and crucified Jesus Christ, who has been to them an offence, are those who have charge of the books which testify of Him, and state that He will be an offence and rejected. Therefore they have shown it was He by rejecting Him, and He has been alike proved both by the righteous Jews who received Him, and by the unrighteous who rejected Him, both facts having been foretold.
+
+Wherefore the prophecies have a hidden and spiritual meaning, to which this people were hostile, under the carnal meaning which they loved. If the spiritual meaning had been revealed, they would not have loved it, and, unable to bear it, they would not have been zealous of the preservation of their books and their ceremonies; and if they had loved these spiritual promises, and had preserved them incorrupt till the time of the Messiah, their testimony would have had no force, because they had been his friends.
+
+Therefore it was well that the spiritual meaning should be concealed; but, on the other hand, if this meaning had been so hidden as not to appear at all, it could not have served as a proof of the Messiah. What then was done? In a crowd of passages it has been hidden under the temporal meaning, and in a few has been clearly revealed; besides that the time and the state of the world have been so clearly foretold that it is clearer than the sun. And in some places this spiritual meaning is so clearly expressed, that it would require a blindness like that which the flesh imposes on the spirit when it is subdued by it, not to recognise it.
+
+See, then, what has been the prudence of God. This meaning is concealed under another in an infinite number of passages, and in some, though rarely, it is revealed; but yet so that the passages in which it is concealed are equivocal, and can suit both meanings; whereas the passages where it is disclosed are unequivocal, and can only suit the spiritual meaning.
+
+So that this cannot lead us into error, and could only be misunderstood by so carnal a people.
+
+For when blessings are promised in abundance, what was to prevent them from understanding the true blessings, but their covetousness, which limited the meaning to worldly goods? But those whose only good was in God referred them to God alone. For there are two principles, which divide the wills of men, covetousness and charity. Not that covetousness cannot exist along with faith in God, nor charity with worldly riches; but covetousness uses God, and enjoys the world, and charity is the opposite.
+
+Now the ultimate end gives names to things. All which prevents us from attaining it, is called an enemy to us. Thus the creatures, however good, are the enemies of the righteous, when they turn them away from God, and God Himself is the enemy of those whose covetousness He confounds.
+
+Thus as the significance of the word "enemy" is dependent on the ultimate end, the righteous understood by it their passions, and the carnal the Babylonians; and so these terms were obscure only for the unrighteous. And this is what Isaiah says: *Signa legem in electis meis*,[208] and that Jesus Christ shall be a stone of stumbling. But, "Blessed are they who shall not be offended in him." Hosea,[209] *ult.*, says excellently, "Where is the wise? and he shall understand what I say. The righteous shall know them, for the ways of God are right; but the transgressors shall fall therein."
+
+**Section Viii, 571**
+
+Hypothesis that the apostles were impostors.—The time clearly, the manner obscurely.—Five typical proofs.
+
+{1600 prophets.
+  2000 {
+{ 400 scattered.
+
+**Section Viii, 572**
+
+*Blindness of Scripture.*—"The Scripture," said the Jews, "says that we shall not know whence Christ will come (John vii, 27, and xii, 34). The Scripture says that Christ abideth for ever, and He said that He should die." Therefore, says Saint John,[210] they believed not, though He had done so many miracles, that the word of Isaiah might be fulfilled: "He hath blinded them," etc.
+
+**Section Viii, 573**
+
+*Greatness.*—Religion is so great a thing that it is right that those who will not take the trouble to seek it, if it be obscure, should be deprived of it. Why, then, do any complain, if it be such as can be found by seeking?
+
+**Section Viii, 574**
+
+All things work together for good to the elect, even the obscurities of Scripture; for they honour them because of what is divinely clear. And all things work together for evil to the rest of the world, even what is clear; for they revile such, because of the obscurities which they do not understand.
+
+**Section Viii, 575**
+
+*The general conduct of the world towards the Church: God willing to blind and to enlighten.*—The event having proved the divinity of these prophecies, the rest ought to be believed. And thereby we see the order of the world to be of this kind. The miracles of the Creation and the Deluge being forgotten, God sends the law and the miracles of Moses, the prophets who prophesied particular things; and to prepare a lasting miracle, He prepares prophecies and their fulfilment; but, as the prophecies could be suspected, He desires to make them above suspicion, etc.
+
+**Section Viii, 576**
+
+God has made the blindness of this people subservient to the good of the elect.

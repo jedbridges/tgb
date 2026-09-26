@@ -1,7 +1,7 @@
 ---
 work: augustine-confessions
 section: "book-xiii"
-heading: "BOOK XIII"
+heading: "Book XIII"
 order: 13
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3296"

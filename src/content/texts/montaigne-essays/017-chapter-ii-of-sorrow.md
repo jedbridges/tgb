@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-ii-of-sorrow"
-heading: "CHAPTER II——OF SORROW"
+heading: "Chapter Ii——of Sorrow"
 order: 17
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"
@@ -18,59 +18,59 @@ A story that may very fitly be coupled with another of the same kind, of recent 
 
 And, peradventure, something like this might be working in the fancy of the ancient painter,—[Cicero, De Orator., c. 22 ; Pliny, xxxv. 10.]— who having, in the sacrifice of Iphigenia, to represent the sorrow of the assistants proportionably to the several degrees of interest every one had in the death of this fair innocent virgin, and having, in the other figures, laid out the utmost power of his art, when he came to that of her father, he drew him with a veil over his face, meaning thereby that no kind of countenance was capable of expressing such a degree of sorrow. Which is also the reason why the poets feign the miserable mother, Niobe, having first lost seven sons, and then afterwards as many daughters (overwhelmed with her losses), to have been at last transformed into a rock—
 
-               “Diriguisse malis,”
+          “Diriguisse malis,”
 
-     [“Petrified with her misfortunes.”—Ovid, Met., vi. 304.]
+[“Petrified with her misfortunes.”—Ovid, Met., vi. 304.]
 
 thereby to express that melancholic, dumb, and deaf stupefaction, which benumbs all our faculties, when oppressed with accidents greater than we are able to bear. And, indeed, the violence and impression of an excessive grief must of necessity astonish the soul, and wholly deprive her of her ordinary functions: as it happens to every one of us, who, upon any sudden alarm of very ill news, find ourselves surprised, stupefied, and in a manner deprived of all power of motion, so that the soul, beginning to vent itself in tears and lamentations, seems to free and disengage itself from the sudden oppression, and to have obtained some room to work itself out at greater liberty.
 
-          “Et via vix tandem voci laxata dolore est.”
+     “Et via vix tandem voci laxata dolore est.”
 
-     [“And at length and with difficulty is a passage opened by grief for
-     utterance.”—AEneid, xi. 151.]
+[“And at length and with difficulty is a passage opened by grief for
+utterance.”—AEneid, xi. 151.]
 
 In the war that Ferdinand made upon the widow of King John of Hungary, about Buda, a man-at-arms was particularly taken notice of by every one for his singular gallant behaviour in a certain encounter; and, unknown, highly commended, and lamented, being left dead upon the place: but by none so much as by Raisciac, a German lord, who was infinitely enamoured of so rare a valour. The body being brought off, and the count, with the common curiosity coming to view it, the armour was no sooner taken off but he immediately knew him to be his own son, a thing that added a second blow to the compassion of all the beholders; only he, without uttering a word, or turning away his eyes from the woeful object, stood fixedly contemplating the body of his son, till the vehemency of sorrow having overcome his vital spirits, made him sink down stone-dead to the ground.
 
-          “Chi puo dir com’ egli arde, a in picciol fuoco,”
+     “Chi puo dir com’ egli arde, a in picciol fuoco,”
 
-     [“He who can say how he burns with love, has little fire”
-      —Petrarca, Sonetto 137.]
+[“He who can say how he burns with love, has little fire”
+ —Petrarca, Sonetto 137.]
 
 say the Innamoratos, when they would represent an ‘insupportable passion.
 
-                         “Misero quod omneis
-               Eripit sensus mihi: nam simul te,
-               Lesbia, aspexi, nihil est super mi,
-                         Quod loquar amens.
-               Lingua sed torpet: tenuis sub artus
-               Flamma dimanat; sonitu suopte
-               Tintinant aures; gemina teguntur
-                         Lumina nocte.”
+                    “Misero quod omneis
+          Eripit sensus mihi: nam simul te,
+          Lesbia, aspexi, nihil est super mi,
+                    Quod loquar amens.
+          Lingua sed torpet: tenuis sub artus
+          Flamma dimanat; sonitu suopte
+          Tintinant aures; gemina teguntur
+                    Lumina nocte.”
 
-     [“Love deprives me of all my faculties: Lesbia, when once in thy
-     presence, I have not left the power to tell my distracting passion:
-     my tongue becomes torpid; a subtle flame creeps through my veins; my
-     ears tingle in deafness; my eyes are veiled with darkness.”
-      Catullus, Epig. li. 5]
+[“Love deprives me of all my faculties: Lesbia, when once in thy
+presence, I have not left the power to tell my distracting passion:
+my tongue becomes torpid; a subtle flame creeps through my veins; my
+ears tingle in deafness; my eyes are veiled with darkness.”
+ Catullus, Epig. li. 5]
 
 Neither is it in the height and greatest fury of the fit that we are in a condition to pour out our complaints or our amorous persuasions, the soul being at that time over-burdened, and labouring with profound thoughts; and the body dejected and languishing with desire; and thence it is that sometimes proceed those accidental impotencies that so unseasonably surprise the lover, and that frigidity which by the force of an immoderate ardour seizes him even in the very lap of fruition. —[The edition of 1588 has here, “An accident not unknown to myself.”]— For all passions that suffer themselves to be relished and digested are but moderate:
 
-               “Curae leves loquuntur, ingentes stupent.”
+          “Curae leves loquuntur, ingentes stupent.”
 
-     [“Light griefs can speak: deep sorrows are dumb.”
-      —Seneca, Hippolytus, act ii. scene 3.]
+[“Light griefs can speak: deep sorrows are dumb.”
+ —Seneca, Hippolytus, act ii. scene 3.]
 
 A surprise of unexpected joy does likewise often produce the same effect:
 
-               “Ut me conspexit venientem, et Troja circum
-               Arma amens vidit, magnis exterrita monstris,
-               Diriguit visu in medio, calor ossa reliquit,
-               Labitur, et longo vix tandem tempore fatur.”
+          “Ut me conspexit venientem, et Troja circum
+          Arma amens vidit, magnis exterrita monstris,
+          Diriguit visu in medio, calor ossa reliquit,
+          Labitur, et longo vix tandem tempore fatur.”
 
-     [“When she beheld me advancing, and saw, with stupefaction, the
-     Trojan arms around me, terrified with so great a prodigy, she
-     fainted away at the very sight: vital warmth forsook her limbs: she
-     sinks down, and, after a long interval, with difficulty speaks.”—
-     AEneid, iii. 306.]
+[“When she beheld me advancing, and saw, with stupefaction, the
+Trojan arms around me, terrified with so great a prodigy, she
+fainted away at the very sight: vital warmth forsook her limbs: she
+sinks down, and, after a long interval, with difficulty speaks.”—
+AEneid, iii. 306.]
 
 Besides the examples of the Roman lady, who died for joy to see her son safe returned from the defeat of Cannae; and of Sophocles and of Dionysius the Tyrant,—[Pliny, vii. 53. Diodorus Siculus, however (xv. c. 20), tells us that Dionysius “was so overjoyed at the news that he made a great sacrifice upon it to the gods, prepared sumptuous feasts, to which he invited all his friends, and therein drank so excessively that it threw him into a very bad distemper.”]—who died of joy; and of Thalna, who died in Corsica, reading news of the honours the Roman Senate had decreed in his favour, we have, moreover, one in our time, of Pope Leo X., who upon news of the taking of Milan, a thing he had so ardently desired, was rapt with so sudden an excess of joy that he immediately fell into a fever and died.—[Guicciardini, Storia d’Italia, vol. xiv.]—And for a more notable testimony of the imbecility of human nature, it is recorded by the ancients—[Pliny, ‘ut supra’]—that Diodorus the dialectician died upon the spot, out of an extreme passion of shame, for not having been able in his own school, and in the presence of a great auditory, to disengage himself from a nice argument that was propounded to him. I, for my part, am very little subject to these violent passions; I am naturally of a stubborn apprehension, which also, by reasoning, I every day harden and fortify.

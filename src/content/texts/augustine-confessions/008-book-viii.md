@@ -1,7 +1,7 @@
 ---
 work: augustine-confessions
 section: "book-viii"
-heading: "BOOK VIII"
+heading: "Book VIII"
 order: 8
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3296"

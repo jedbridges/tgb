@@ -1,7 +1,7 @@
 ---
 work: thucydides-peloponnesian-war
 section: "chapter-iii"
-heading: "CHAPTER III"
+heading: "Chapter III"
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7142"

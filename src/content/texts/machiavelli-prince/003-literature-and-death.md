@@ -37,9 +37,7 @@ When the *History of Florence* was finished, Machiavelli took it to Rome for pre
 
 Machiavelli was absent from Florence at this time, but hastened his return, hoping to secure his former office of secretary to the “Ten of Liberty and Peace.” Unhappily he was taken ill soon after he reached Florence, where he died on 22nd June 1527.
 
-**I**
-
-How Many Kinds of Principalities There Are, and by What Means They Are Acquired
+**I: How Many Kinds of Principalities There Are, and by What Means They Are Acquired**
 
 All states, all powers, that have held and hold rule over men have been and are either republics or principalities.
 
