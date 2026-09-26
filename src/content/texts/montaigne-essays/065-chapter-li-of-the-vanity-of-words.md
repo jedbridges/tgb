@@ -1,0 +1,50 @@
+---
+work: montaigne-essays
+section: chapter-li-of-the-vanity-of-words
+heading: "CHAPTER LI——OF THE VANITY OF WORDS"
+order: 65
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/3600"
+edition: "Charles Cotton's translation, 1685, in the 1877 revision"
+translator: "Charles Cotton"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 1375
+---
+A rhetorician of times past said, that to make little things appear great was his profession. This was a shoemaker, who can make a great shoe for a little foot.—[A saying of Agesilaus.]—They would in Sparta have sent such a fellow to be whipped for making profession of a tricky and deceitful act; and I fancy that Archidamus, who was king of that country, was a little surprised at the answer of Thucydides, when inquiring of him, which was the better wrestler, Pericles, or he, he replied, that it was hard to affirm; for when I have thrown him, said he, he always persuades the spectators that he had no fall and carries away the prize. —[Quintilian, ii. 15.]—The women who paint, pounce, and plaster up their ruins, filling up their wrinkles and deformities, are less to blame, because it is no great matter whether we see them in their natural complexions; whereas these make it their business to deceive not our sight only but our judgments, and to adulterate and corrupt the very essence of things. The republics that have maintained themselves in a regular and well-modelled government, such as those of Lacedaemon and Crete, had orators in no very great esteem. Aristo wisely defined rhetoric to be “a science to persuade the people;” Socrates and Plato “an art to flatter and deceive.” And those who deny it in the general description, verify it throughout in their precepts. The Mohammedans will not suffer their children to be instructed in it, as being useless, and the Athenians, perceiving of how pernicious consequence the practice of it was, it being in their city of universal esteem, ordered the principal part, which is to move the affections, with their exordiums and perorations, to be taken away. ‘Tis an engine invented to manage and govern a disorderly and tumultuous rabble, and that never is made use of, but like physic to the sick, in a discomposed state. In those where the vulgar or the ignorant, or both together, have been all-powerful and able to give the law, as in those of Athens, Rhodes, and Rome, and where the public affairs have been in a continual tempest of commotion, to such places have the orators always repaired. And in truth, we shall find few persons in those republics who have pushed their fortunes to any great degree of eminence without the assistance of eloquence.
+
+Pompey, Caesar, Crassus, Lucullus, Lentulus, Metellus, thence took their chiefest spring, to mount to that degree of authority at which they at last arrived, making it of greater use to them than arms, contrary to the opinion of better times; for, L. Volumnius speaking publicly in favour of the election of Q. Fabius and Pub. Decius, to the consular dignity: “These are men,” said he, “born for war and great in execution; in the combat of the tongue altogether wanting; spirits truly consular. The subtle, eloquent, and learned are only good for the city, to make praetors of, to administer justice.”—[Livy, x. 22.]
+
+Eloquence most flourished at Rome when the public affairs were in the worst condition and most disquieted with intestine commotions; as a free and untilled soil bears the worst weeds. By which it should seem that a monarchical government has less need of it than any other: for the stupidity and facility natural to the common people, and that render them subject to be turned and twined and, led by the ears by this charming harmony of words, without weighing or considering the truth and reality of things by the force of reason: this facility, I say, is not easily found in a single person, and it is also more easy by good education and advice to secure him from the impression of this poison. There was never any famous orator known to come out of Persia or Macedon.
+
+I have entered into this discourse upon the occasion of an Italian I lately received into my service, and who was clerk of the kitchen to the late Cardinal Caraffa till his death. I put this fellow upon an account of his office: when he fell to discourse of this palate-science, with such a settled countenance and magisterial gravity, as if he had been handling some profound point of divinity. He made a learned distinction of the several sorts of appetites; of that a man has before he begins to eat, and of those after the second and third service; the means simply to satisfy the first, and then to raise and actuate the other two; the ordering of the sauces, first in general, and then proceeded to the qualities of the ingredients and their effects; the differences of salads according to their seasons, those which ought to be served up hot, and which cold; the manner of their garnishment and decoration to render them acceptable to the eye. After which he entered upon the order of the whole service, full of weighty and important considerations:
+
+               “Nec minimo sane discrimine refert,
+               Quo gestu lepores, et quo gallina secetur;”
+
+     [“Nor with less discrimination observes how we should carve a hare,
+     and how a hen.” or, (“Nor with the least discrimination relates how
+     we should carve hares, and how cut up a hen.)”
+      —Juvenal, Sat., v. 123.]
+
+and all this set out with lofty and magnificent words, the very same we make use of when we discourse of the government of an empire. Which learned lecture of my man brought this of Terence into my memory:
+
+         “Hoc salsum est, hoc adustum est, hoc lautum est, parum:
+          Illud recte: iterum sic memento: sedulo
+          Moneo, qux possum, pro mea sapientia.
+          Postremo, tanquam in speculum, in patinas,
+          Demea, Inspicere jubeo, et moneo, quid facto usus sit.”
+
+     [“This is too salt, that’s burnt, that’s not washed enough; that’s
+     well; remember to do so another time.  Thus do I ever advise them to
+     have things done properly, according to my capacity; and lastly,
+     Demea, I command my cooks to look into every dish as if it were a
+     mirror, and tell them what they should do.”
+      —Terence, Adelph., iii. 3, 71.]
+
+And yet even the Greeks themselves very much admired and highly applauded the order and disposition that Paulus AEmilius observed in the feast he gave them at his return from Macedon. But I do not here speak of effects, I speak of words only.
+
+I do not know whether it may have the same operation upon other men that it has upon me, but when I hear our architects thunder out their bombast words of pilasters, architraves, and cornices, of the Corinthian and Doric orders, and suchlike jargon, my imagination is presently possessed with the palace of Apollidon; when, after all, I find them but the paltry pieces of my own kitchen door.
+
+To hear men talk of metonomies, metaphors, and allegories, and other grammar words, would not one think they signified some rare and exotic form of speaking? And yet they are phrases that come near to the babble of my chambermaid.
+
+And this other is a gullery of the same stamp, to call the offices of our kingdom by the lofty titles of the Romans, though they have no similitude of function, and still less of authority and power. And this also, which I doubt will one day turn to the reproach of this age of ours, unworthily and indifferently to confer upon any we think fit the most glorious surnames with which antiquity honoured but one or two persons in several ages. Plato carried away the surname of Divine, by so universal a consent that never any one repined at it, or attempted to take it from him; and yet the Italians, who pretend, and with good reason, to more sprightly wits and sounder sense than the other nations of their time, have lately bestowed the same title upon Aretin, in whose writings, save tumid phrases set out with smart periods, ingenious indeed but far-fetched and fantastic, and the eloquence, be it what it may, I see nothing in him above the ordinary writers of his time, so far is he from approaching the ancient divinity. And we make nothing of giving the surname of great to princes who have nothing more than ordinary in them.
