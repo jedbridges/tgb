@@ -101,18 +101,21 @@ const itemList = {
   .facts div { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: var(--s1); align-items: baseline; }
   .facts dt { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; align-self: baseline; }
   .facts dd { margin: 0; color: var(--ink-strong); }
+  .facts dd a { display: inline-block; min-height: 24px; padding-block: 0.2em; margin-block: -0.2em; }
   .facts__src { color: var(--ink-soft); font-size: var(--step--2); line-height: 1.5; }
   .facts__src > summary { cursor: pointer; color: var(--ink-soft); min-height: 32px; display: flex; align-items: center; }
   .facts__src > p { margin-top: var(--s0); color: var(--ink-mute); }
   .segnav { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s2); margin-top: var(--s3); padding: var(--s1) 0; border-top: var(--rule); border-bottom: var(--rule); position: sticky; top: var(--header-h); background: var(--paper); z-index: 5; }
-  .segnav a { text-decoration: none; color: var(--ink-soft); }
+  /* Standalone controls, so they get the site's 44px floor; the row stays the same height
+     because the padding it already had is what the min-height now names. */
+  .segnav a { display: inline-flex; align-items: center; min-height: 44px; margin-block: calc(-1 * var(--s0)); text-decoration: none; color: var(--ink-soft); }
   .segnav a:hover { color: var(--ink-strong); }
   .segnav__browse { margin-left: auto; color: var(--accent) !important; }
   .segnav { scrollbar-gutter: stable; }
   .segment { padding-block: var(--s3); scroll-margin-top: calc(var(--header-h) + 4rem); }  .segment__head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: baseline; gap: var(--s0) var(--s2); margin-bottom: var(--s2); }
   .segment__label { font-style: italic; font-size: var(--step-3); }
   .segment__sub { color: var(--ink-soft); font-size: var(--step-1); font-style: italic; }
-  .segment__browse { color: var(--ink-mute); text-decoration: none; }
+  .segment__browse { display: inline-flex; align-items: center; min-height: 24px; color: var(--ink-mute); text-decoration: none; }
   .segment__browse:hover { color: var(--accent); }
   .rows { list-style: none; margin: 0; padding: 0; border-top: var(--rule-section); }
     /* The number, the title and the difficulty label all sit on the title's first baseline
