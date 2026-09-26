@@ -116,10 +116,16 @@ interface Volume {
   industryIdentifiers?: { type: string; identifier: string }[];
 }
 
-async function books(q: string): Promise<Volume[]> {
+async function books(q: string, attempt = 0): Promise<Volume[]> {
   const url = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(q)}&maxResults=20&printType=books&country=US&key=${KEY}`;
   const res = await fetch(url);
-  if (res.status === 429) throw new Error('QUOTA');
+  /* A 429 is usually the per-minute limit, not the day's quota: from a shared egress it
+     arrived after sixty calls, with the daily thousand nowhere near spent. Back off three
+     times before concluding the day is done. */
+  if (res.status === 429) {
+    if (attempt < 3) { await new Promise((r) => setTimeout(r, 8000 * 2 ** attempt)); return books(q, attempt + 1); }
+    throw new Error('QUOTA');
+  }
   if (!res.ok) throw new Error(`Books API ${res.status}`);
   const j = await res.json() as { items?: { volumeInfo: Volume }[] };
   return (j.items ?? []).map((i) => i.volumeInfo);
@@ -157,7 +163,12 @@ async function olTitle(isbn: string): Promise<string | null> {
       const d = await res.json() as { title?: string };
       title = typeof d.title === 'string' ? d.title : '';
     }
-  } catch { title = null; }
+  } catch {
+    /* Could not reach the catalogue at all: that is not an answer about this number, and
+       remembering it as one would leave the ISBN marked unknown for every later run. From
+       an environment that denies openlibrary.org this had cached "unknown" for all of them. */
+    return null;
+  }
   olSeen[isbn] = title;
   writeFileSync(OL_CACHE, JSON.stringify(olSeen));
   await new Promise((r) => setTimeout(r, 260));
