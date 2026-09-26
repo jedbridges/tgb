@@ -63,6 +63,7 @@ function textOf(node: Node): string {
   const tag = el.tagName?.toLowerCase();
   if (!tag) return el.childNodes.map(textOf).join('');
   if (['script', 'style', 'sup', 'aside', 'nav', 'img', 'figure'].includes(tag)) return '';
+  if (tag === 'pre') return '\n\n' + decode(el.rawText).split('\n').map((l) => l.replace(/\s+$/, '')).join('  \n') + '\n\n';
   if (el.getAttribute('epub:type')?.includes('noteref') || el.classList?.contains('pagenum')) return '';
   const inner = el.childNodes.map(textOf).join('');
   if (tag === 'em' || tag === 'i') return inner.trim() ? `*${inner.trim()}*` : '';
@@ -123,7 +124,7 @@ function splitGutenberg(html: string): Section[] {
   const root = parseHtml(html, { blockTextElements: { script: false, style: false } });
   const body = root.querySelector('body') ?? root;
   // Drop the licence and boilerplate that Gutenberg wraps around the text.
-  for (const sel of ['#pg-header', '#pg-footer', '.pg-boilerplate', 'pre']) body.querySelectorAll(sel).forEach((n) => n.remove());
+  for (const sel of ['#pg-header', '#pg-footer', '.pg-boilerplate']) body.querySelectorAll(sel).forEach((n) => n.remove());
   const sections: Section[] = [];
   let cur: { heading: string; parts: string[] } | null = null;
   const flush = () => { if (cur) { const b = tidy(cur.parts.join('')); if (b) sections.push({ heading: cur.heading, body: b, path: cur.heading }); } };
@@ -136,6 +137,8 @@ function splitGutenberg(html: string): Section[] {
       return;
     }
     if (tag && ['p', 'blockquote', 'ul', 'ol', 'table'].includes(tag)) { if (cur) cur.parts.push(textOf(el)); return; }
+    // Older Gutenberg files set verse, and sometimes whole books, in <pre>: keep the lines.
+    if (tag === 'pre') { if (cur) cur.parts.push('\n\n' + decode(el.rawText).split('\n').map((l) => l.replace(/\s+$/, '')).join('  \n') + '\n\n'); return; }
     // Gutenberg sets verse in <div class="poem"> or "stanza" full of spans or line breaks: take it whole.
     if (tag === 'div' && /(^|\s)(poem|stanza|verse|poetry)(\s|$)/.test(el.getAttribute('class') ?? '')) { if (cur) cur.parts.push(textOf(el)); return; }
     for (const c of el.childNodes ?? []) walk(c);
@@ -149,6 +152,22 @@ function splitGutenberg(html: string): Section[] {
 /* Fold short sections into the one before, and drop the front matter that survives the
    type filters (a table of contents rendered as a section, a two line epigraph). */
 function fold(sections: Section[]): Section[] {
+  /* A file with one heading and forty thousand words has its books inside the text: a
+     short line in capitals or "Book III" on a line of its own. Split there. */
+  sections = sections.flatMap((s) => {
+    if (words(s.body) < 40000) return [s];
+    const parts: Section[] = []; let head = s.heading; let buf: string[] = [];
+    for (const line of s.body.split('\n')) {
+      const t = line.replace(/\s+\\?$/, '').trim();
+      if (/^(BOOK|PART|CANTO|CHAPTER)\s+[IVXLC\d]+\b.{0,40}$/i.test(t) && t.split(/\s+/).length <= 8) {
+        const b = tidy(buf.join('\n')); if (b) parts.push({ heading: head, body: b, path: `${s.path} / ${head}` });
+        head = t.replace(/\s+/g, ' '); buf = []; continue;
+      }
+      buf.push(line);
+    }
+    const b = tidy(buf.join('\n')); if (b) parts.push({ heading: head, body: b, path: `${s.path} / ${head}` });
+    return parts.length > 1 ? parts : [s];
+  });
   const out: Section[] = [];
   for (const s of sections) {
     if (/^(contents|table of contents|list of illustrations|index)$/i.test(s.heading)) continue;
