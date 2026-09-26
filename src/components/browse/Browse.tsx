@@ -14,6 +14,8 @@ interface State {
 }
 const EMPTY: State = { q: '', program: '', segment: '', theme: [], genre: '', era: '', region: '', language: '', author: '', difficulty: '', length: '', guide: '', sort: 'assigned' };
 
+/** Cards let into the layout at a time. Must match PAGE in pages/books/index.astro. */
+const PAGE = 60;
 const DIFFICULTY = ['Approachable', 'Moderate', 'Demanding', 'Difficult', 'Formidable'];
 const LENGTH: Facet[] = [
   { id: 'short', label: 'Short, under 120 pp' },
@@ -148,16 +150,43 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
     return list;
   }, [rows, s, hits]);
 
+  /*
+   * How many of the matching cards are in the layout. The page ships with the first PAGE
+   * laid out and the rest hidden (see books/index.astro); every change to the filters
+   * starts the window over, and nearing the bottom of it, or pressing the button, lets in
+   * another PAGE. Hidden cards cost nothing to lay out, which is the whole point: the
+   * shelf of 689 was two and a half seconds of style and layout on a phone.
+   */
+  const [limit, setLimit] = useState(PAGE);
+  useEffect(() => { setLimit(PAGE); }, [visible]);
+
   // apply to DOM + URL
   useEffect(() => {
     const grid = document.getElementById('browse-grid'); if (!grid) return;
     const cards = new Map<string, HTMLElement>();
     grid.querySelectorAll<HTMLElement>('.card[data-slug]').forEach((c) => cards.set(c.dataset.slug!, c));
-    const show = new Set(visible.map((r) => r.s));
+    const show = new Set(visible.slice(0, limit).map((r) => r.s));
     cards.forEach((c, slug) => { c.hidden = !show.has(slug); c.style.removeProperty('--i'); });
     visible.forEach((r, i) => { const c = cards.get(r.s); if (c) { grid.appendChild(c); if (i < 12) c.style.setProperty('--i', String(i)); } });
     const empty = document.getElementById('browse-empty'); if (empty) empty.hidden = visible.length > 0;
-  }, [visible]);
+    const more = document.getElementById('browse-more'); if (more) more.hidden = visible.length <= limit;
+    const btn = document.getElementById('browse-more-btn');
+    if (btn) btn.textContent = `Show ${Math.min(PAGE, visible.length - limit)} more of ${visible.length}`;
+  }, [visible, limit]);
+
+  // The next shelf arrives as the reader nears the end of this one, or on the button.
+  useEffect(() => {
+    const more = document.getElementById('browse-more'); const btn = document.getElementById('browse-more-btn');
+    if (!more || !btn) return;
+    const grow = () => setLimit((n) => n + PAGE);
+    btn.addEventListener('click', grow);
+    let io: IntersectionObserver | undefined;
+    if ('IntersectionObserver' in window) {
+      io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting) && !more.hidden) grow(); }, { rootMargin: '600px 0px' });
+      io.observe(more);
+    }
+    return () => { btn.removeEventListener('click', grow); io?.disconnect(); };
+  }, []);
 
   const set = (patch: Partial<State>) => {
     // Which facet was reached for, never what was chosen with it.

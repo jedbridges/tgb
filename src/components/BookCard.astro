@@ -2,13 +2,19 @@
 import Book3D from './Book3D.astro';
 import { workUrl } from '~/lib/url';
 import { yearShort, type Work } from '~/lib/catalog';
-interface Props { work: Work; authorName: string; width?: number; eager?: boolean; showMeta?: boolean; index?: number }
-const { work, authorName, width = 140, eager = false, showMeta = true, index } = Astro.props;
+interface Props { work: Work; authorName: string; width?: number; eager?: boolean; showMeta?: boolean; index?: number; later?: boolean }
+const { work, authorName, width = 140, eager = false, showMeta = true, index, later = false } = Astro.props;
 ---
+<!-- `later`: the card is in the document but not in the layout until the browse island
+     reveals it, so a shelf of 689 costs the first paint sixty cards rather than all of
+     them. A reader without scripting gets every card back through the noscript rule on
+     the browse page, which is the one place this is set. -->
 <a
   class:list={['card', !showMeta && 'card--bare']}
   href={workUrl(work.id)}
   data-slug={work.id}
+  data-later={later ? '' : undefined}
+  hidden={later || undefined}
   style={index !== undefined ? `--i:${index};` : undefined}
 >
   <span class="card__stage" style={`--stage-h:${Math.round(width * 1.6)}px`}>
