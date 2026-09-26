@@ -29,9 +29,9 @@ Update this section at the end of every session.
 | 1f Analytics groups | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1h Header search bar cycles through example queries | Done | [#39](https://github.com/jedbridges/tgb/pull/39) |
 | 1g SEO: shelf notes on 71 pages, difficulty and length pages, segment descriptions, per segment ItemList | Done | [#39](https://github.com/jedbridges/tgb/pull/39) |
-| 2a Texts collection, source map for 51 works, fetch script | Built, unrun: blocked on network allow list | [#40](https://github.com/jedbridges/tgb/pull/40) |
-| 2b Passage index | Text pages index as Passage with a work filter; second index deferred until the volume is known | [#40](https://github.com/jedbridges/tgb/pull/40) |
-| 2c Text pages, search inside, guide highlights beside the contents | Built on a fixture, to be reviewed on real text | [#40](https://github.com/jedbridges/tgb/pull/40) |
+| 2a Texts collection, source map for 51 works, fetch script | Done. The build container cannot reach the sources, so the owner runs the fetch on a Mac and commits the sections: 51 works, 2,223 sections in [#41](https://github.com/jedbridges/tgb/pull/41). A parser fix for verse breaks, epigraph headings and front matter waits on one more run | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41) |
+| 2b Passage index | Done. Text pages index as Passage in the one Pagefind index, 44 MB on disk, 186 KB to open the palette and 100 to 200 KB a query; a second index is not needed at this volume | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41) |
+| 2c Text pages, search inside, guide highlights beside the contents | Reviewed on the real texts: headings, contents and passage pages right; verse rendering fixed in the parser, pending a rerun | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41) |
 | 2d SEO for text pages | noindex and out of the sitemap until a section carries commentary; theme passage pages and Quotation markup shipped in [#41](https://github.com/jedbridges/tgb/pull/41) | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 3a Cloudflare AI Search over R2 | Corpus export ready: `npm run corpus` writes 1,096 documents, 1.23M words, with url and kind headers for citations; bucket and AI Search instance not yet created | [#41](https://github.com/jedbridges/tgb/pull/41) |
 | 3b Ask tab and cited answers | Not started | |
@@ -249,6 +249,14 @@ Kept so a later session knows what was checked and how, not only what was built.
   length pages: performance 96 to 98, accessibility, best practices and SEO 100, total
   blocking time 0 ms, layout shift under 0.005. A code review of the search module and the
   fetch script produced ten findings, all fixed in that PR.
+- 26 September 2026, texts: after the owner's fetch on a Mac, the built site was rebuilt
+  with all 2,223 sections (98 s, dist 230 MB, Pagefind 44 MB) and the Hamlet, Lucretius,
+  Karamazov and Montaigne text pages screenshotted in Chromium. Headings read "Act I, Scene
+  IV" and "Part I, I: Fyodor Pavlovitch Karamazov". Verse ran together as prose because
+  tidy() stripped the two space line breaks; fixed in the parser along with the epigraph
+  headings in Middlemarch, the surviving "Footnotes:" and contents sections, and Jowett's
+  introduction to the Republic. The fix was checked on fixture HTML, and the regenerated
+  sections are to be reviewed once the owner reruns the script.
 - The query suite the palette is checked against, run in Chromium against the built site:
   Plato, Republic, justice, Iliad, Ilias, sophomore, approachable epic, tragedy, Greek
   tragedy, short novel, easy long novels, happiness, Dostoevski, Neitzsche, xqzv, St Johns,
