@@ -1,68 +1,77 @@
 ---
-/* Command palette: ⌘K or "/" opens. Pagefind loads on first open. */
+/* Command palette: ⌘K or "/" opens. Pagefind loads on first open, through lib/search. */
+const hints = [
+  ['justice', 'a theme'], ['Plato', 'an author'], ['tragedy', 'a form'],
+  ['sophomore', 'a program year'], ['approachable epic', 'difficulty and length'], ['Iliad', 'a title'],
+];
 ---
 <div class="palette" id="palette" hidden>
   <div class="palette__backdrop" data-close-search></div>
   <div class="palette__panel" role="dialog" aria-modal="true" aria-label="Search the library">
     <form class="palette__form" role="search" onsubmit="return false">
       <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="m11 11 3.5 3.5" stroke-linecap="round"/></svg>
-      <input id="palette-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search books, authors, themes…" aria-label="Search" aria-controls="palette-results" aria-expanded="false" aria-autocomplete="list" role="combobox" />
+      <input id="palette-input" type="search" autocomplete="off" spellcheck="false" placeholder="Search books, authors, themes, programs…" aria-label="Search" aria-controls="palette-results" aria-expanded="false" aria-autocomplete="list" role="combobox" />
       <kbd class="ui">esc</kbd>
     </form>
     <div class="palette__results" id="palette-results" role="listbox" aria-label="Results"></div>
-    <p class="palette__hint ui">Try <button type="button" data-q="justice">justice</button>, <button type="button" data-q="Plato">Plato</button>, or <button type="button" data-q="tragedy">tragedy</button></p>
+    <p class="palette__hint ui" id="palette-hint">Try {hints.map(([q, what], i) => <>{i > 0 && (i === hints.length - 1 ? ', or ' : ', ')}<button type="button" data-q={q}>{q}</button> <span class="palette__what">({what})</span></>)}</p>
   </div>
 </div>
 <style>
   .palette { position: fixed; inset: 0; z-index: 60; display: grid; place-items: start center; padding-top: min(14vh, 10rem); }
   .palette[hidden] { display: none; }
   .palette__backdrop { position: absolute; inset: 0; background: color-mix(in oklch, var(--ink-strong) 45%, transparent); backdrop-filter: blur(4px); animation: fade var(--dur-fast) both; }
-  .palette__panel { position: relative; width: min(100% - 2 * var(--gutter), 40rem); background: var(--paper-bright); border-radius: 8px; box-shadow: 0 30px 80px -20px rgb(var(--shadow-ink) / calc(0.5 * var(--shadow-a))), 0 0 0 1px var(--edge); overflow: hidden; animation: rise var(--dur) var(--ease-out-expo) both; }
+  .palette__panel { position: relative; width: min(100% - 2 * var(--gutter), 42rem); background: var(--paper-bright); border-radius: 8px; box-shadow: 0 30px 80px -20px rgb(var(--shadow-ink) / calc(0.5 * var(--shadow-a))), 0 0 0 1px var(--edge); overflow: hidden; animation: rise var(--dur) var(--ease-out-expo) both; }
   .palette__form { display: flex; align-items: center; gap: 0.8rem; padding: 0.9rem 1.1rem; border-bottom: 1px solid var(--paper-deeper); color: var(--ink-soft); }
   .palette__form input { flex: 1; font-family: var(--font-display); font-size: var(--step-1); background: none; border: 0; outline: 0; color: var(--ink-strong); min-width: 0; }
   .palette__form input::placeholder { color: var(--ink-mute); font-style: italic; }
   .palette__form kbd { font-size: var(--step--2); color: var(--ink-mute); border: 1px solid var(--paper-deeper); border-radius: 4px; padding: 0.1em 0.4em; }
-  .palette__results { max-height: min(60vh, 32rem); overflow-y: auto; }
+  .palette__results { max-height: min(64vh, 36rem); overflow-y: auto; overscroll-behavior: contain; }
   .palette__results:empty { display: none; }
-  .palette__hint { padding: 0.8rem 1.1rem; color: var(--ink-mute); font-size: var(--step--2); }
+  .palette__hint { padding: 0.8rem 1.1rem; color: var(--ink-mute); font-size: var(--step--2); line-height: 1.7; }
   .palette__hint button { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 0.15em; min-height: 32px; padding: 0 0.15em; }
-  .palette__results :global(.hit) { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; padding: 0.7rem 1.1rem; text-decoration: none; align-items: center; border-left: 2px solid transparent; }
+  .palette__what { color: var(--ink-mute); }
+  /* Group headers: the reader's question is "which of these is the book", answered before
+     they read a single title. */
+  .palette__results :global(.group) { font-family: var(--font-ui); font-size: var(--step--2); font-weight: 500; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); padding: 0.75rem 1.1rem 0.25rem; display: flex; justify-content: space-between; gap: 1rem; }
+  .palette__results :global(.group + .group) { border-top: 1px solid var(--paper-deeper); }
+  .palette__results :global(.group__n) { font-weight: 400; letter-spacing: 0; text-transform: none; }
+  .palette__results :global(.hit) { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; padding: 0.6rem 1.1rem; text-decoration: none; align-items: center; border-left: 2px solid transparent; color: inherit; }
   .palette__results :global(.hit[aria-selected='true']), .palette__results :global(.hit:hover) { background: var(--paper); border-left-color: var(--accent); }
   .palette__results :global(.hit__cover) { width: 2.4rem; aspect-ratio: 2/3; object-fit: cover; border-radius: 1px; box-shadow: 0 1px 3px rgb(var(--shadow-ink) / calc(0.3 * var(--shadow-a))); background: var(--paper-deep); }
-  .palette__results :global(.hit__type) { font-family: var(--font-ui); font-size: var(--step--2); font-weight: 500; line-height: var(--lh-ui); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); }
-  .palette__results :global(.hit__title) { font-size: var(--step-0); color: var(--ink-strong); line-height: 1.2; }
+  .palette__results :global(.hit__cover--flat) { aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; font-family: var(--font-display); font-style: italic; color: var(--ink-soft); font-size: var(--step-0); box-shadow: none; background: var(--paper-deep); }
+  .palette__results :global(.hit__type) { font-family: var(--font-ui); font-size: var(--step--2); line-height: var(--lh-ui); color: var(--ink-mute); }
+  .palette__results :global(.hit__title) { display: block; font-size: var(--step-0); color: var(--ink-strong); line-height: 1.2; }
   .palette__results :global(.hit__title mark) { background: var(--accent-wash); color: inherit; }
-  .palette__results :global(.hit__sub) { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-soft); }
-  .palette__results :global(.hit__sub mark) { background: none; color: var(--accent); }
+  .palette__results :global(.hit__sub) { display: block; font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-soft); line-height: 1.45; margin-top: 0.15rem; }
+  .palette__results :global(.hit__sub mark) { background: none; color: var(--accent); font-weight: 500; }
+  /* The facts line: the answer to "how hard, how long, about what", read without a click. */
+  .palette__results :global(.hit__facts) { display: flex; flex-wrap: wrap; gap: 0.25rem 0.6rem; margin-top: 0.3rem; font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); line-height: var(--lh-ui); }
+  .palette__results :global(.hit__facts .chip) { color: var(--ink-soft); background: var(--paper-deep); border-radius: 999px; padding: 0.05em 0.55em; }
+  .palette__results :global(.hit__facts .chip--guide) { color: var(--accent); background: var(--accent-wash); }
   .palette__results :global(.empty) { padding: 1.2rem 1.1rem; color: var(--ink-soft); line-height: 1.5; }
-  .palette__results :global(.empty a) { color: var(--accent); }
+  .palette__results :global(.empty a), .palette__results :global(.empty button) { color: var(--accent); text-decoration: underline; text-underline-offset: 0.15em; }
+  .palette__results :global(.empty__sug) { list-style: none; margin: 0.5rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .palette__results :global(.empty__sug button) { font: inherit; background: var(--paper); border-radius: 999px; padding: 0.2em 0.8em; text-decoration: none; color: var(--ink-strong); min-height: 32px; }
+  .palette__results :global(.all) { display: block; padding: 0.7rem 1.1rem 0.9rem; font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent); text-decoration: none; border-top: 1px solid var(--paper-deeper); }
+  .palette__results :global(.all[aria-selected='true']), .palette__results :global(.all:hover) { background: var(--paper); }
+  @media (max-width: 480px) { .palette__what { display: none; } }
   @keyframes fade { from { opacity: 0 } }
   @keyframes rise { from { opacity: 0; transform: translateY(-10px) scale(0.98) } }
   @media (prefers-reduced-motion: reduce) { .palette__panel, .palette__backdrop { animation: none; } }
 </style>
 <script>
-  type PF = { search: (q: string, o?: any) => Promise<{ results: { id: string; data: () => Promise<any> }[] }>; init?: () => Promise<void>; options?: (o: any) => Promise<void> };
+  import { search, warm, groupHits, suggestFor, browseUrl, DIFFICULTY_WORD, LENGTH_WORD, type Hit, type Group } from '~/lib/search';
   const root = document.getElementById('palette')!;
   const input = document.getElementById('palette-input') as HTMLInputElement;
   const list = document.getElementById('palette-results')!;
-  let pf: PF | null = null;
+  const panel = root.querySelector<HTMLElement>('.palette__panel')!;
   let lastFocus: HTMLElement | null = null;
   let sel = -1;
   let seq = 0;
+  let names: Promise<string[]> | null = null;
+  const loadNames = () => (names ??= fetch('/search-names.json').then((r) => r.json()).then((j) => j.authors as string[]).catch(() => []));
 
-  async function loadPagefind(): Promise<PF | null> {
-    if (pf) return pf;
-    try {
-      // Built by Pagefind at build time; kept opaque so Vite does not try to resolve it.
-      const path = ['', 'pagefind', 'pagefind.js'].join('/');
-      const mod = await import(/* @vite-ignore */ path);
-      await mod.options?.({ excerptLength: 18 });
-      await mod.init?.();
-      pf = mod;
-    } catch { pf = null; }
-    return pf;
-  }
-  const panel = root.querySelector<HTMLElement>('.palette__panel')!;
   const outside = () => [...document.body.children].filter((el) => el !== root) as HTMLElement[];
   function open(q = '') {
     lastFocus = document.activeElement as HTMLElement;
@@ -71,7 +80,7 @@
     // A dialog that claims aria-modal must actually take the page out of the tab order.
     outside().forEach((el) => { el.inert = true; el.setAttribute('aria-hidden', 'true'); });
     input.value = q; input.focus();
-    loadPagefind();
+    warm();
     if (q) run(q);
   }
   function close() {
@@ -80,38 +89,75 @@
     list.innerHTML = ''; sel = -1; input.setAttribute('aria-expanded', 'false');
     lastFocus?.focus();
   }
-  function render(hits: any[]) {
+  const escape = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+
+  /* One renderer for every kind of hit. What differs between a book, an author and a
+     theme is only which meta it carries, so a passage or an answer source later is a hit
+     with different meta, not another template. */
+  function cover(h: Hit) {
+    if (h.meta.cover) return `<img class="hit__cover" src="${escape(h.meta.cover)}" alt="" width="40" height="60" loading="lazy">`;
+    if (h.type === 'Book') return `<span class="hit__cover" ${h.meta.tone ? `style="background:${escape(h.meta.tone)}"` : ''}></span>`;
+    return `<span class="hit__cover hit__cover--flat" aria-hidden="true">${escape(h.title.slice(0, 1))}</span>`;
+  }
+  function facts(h: Hit) {
+    if (h.type !== 'Book') return h.meta.count ? `<span class="hit__facts">${escape(h.meta.count)} works</span>` : '';
+    const parts: string[] = [];
+    const diff = DIFFICULTY_WORD[Number(h.meta.difficulty)]; if (diff) parts.push(`<span>${diff}</span>`);
+    const len = LENGTH_WORD[h.meta.length]; if (len) parts.push(`<span>${len}${h.meta.pages ? ` · ${escape(h.meta.pages)} pp` : ''}</span>`);
+    for (const t of (h.meta.themes || '').split(', ').filter(Boolean).slice(0, 2)) {
+      const [id, label] = t.split('|');
+      parts.push(`<span class="chip">${escape(label || id)}</span>`);
+    }
+    if (h.meta.guide === 'yes') parts.push('<span class="chip chip--guide">Reading guide</span>');
+    return parts.length ? `<span class="hit__facts">${parts.join('')}</span>` : '';
+  }
+  function typeLine(h: Hit) {
+    const bits = [h.type === 'Book' ? '' : h.type, h.meta.author, h.type === 'Book' ? h.meta.year : h.type === 'Author' ? h.meta.year : ''].filter(Boolean);
+    return bits.map(escape).join(' · ');
+  }
+  function renderHit(h: Hit, i: number, group: Group) {
+    return `<a class="hit" role="option" id="hit-${i}" aria-selected="false" href="${escape(h.url)}" data-group="${group}" data-rank="${i}">
+      ${cover(h)}
+      <span>
+        <span class="hit__type">${typeLine(h)}</span>
+        <span class="hit__title">${escape(h.title)}</span>
+        <span class="hit__sub">${h.excerpt}</span>
+        ${facts(h)}
+      </span>
+    </a>`;
+  }
+  async function renderEmpty(q: string) {
+    const sug = suggestFor(q, await loadNames());
+    list.innerHTML = `<div class="empty">Nothing on the shelf for “${escape(q)}”.
+      ${sug.length ? `<span>Did you mean</span><ul class="empty__sug">${sug.map((n) => `<li><button type="button" data-q="${escape(n)}">${escape(n)}</button></li>`).join('')}</ul>`
+        : `Try an author, a title, a theme like <button type="button" data-q="justice">justice</button>, or <a href="/books/">browse and filter every book</a>.`}
+    </div>`;
+  }
+  function render(hits: Hit[], q: string) {
     sel = -1;
-    if (!hits.length) { list.innerHTML = `<p class="empty">Nothing on the shelf for “${escape(input.value)}”. Try an author, a title, or a theme like justice.</p>`; return; }
-    list.innerHTML = hits.map((h, i) => `
-      <a class="hit" role="option" id="hit-${i}" aria-selected="false" href="${h.url}">
-        ${h.meta.cover
-          ? `<img class="hit__cover" src="${escape(h.meta.cover)}" alt="" width="40" height="60" loading="lazy">`
-          : `<span class="hit__cover" ${h.meta.tone ? `style="background:${escape(h.meta.tone)}"` : ''}></span>`}
-        <span>
-          <span class="hit__type">${escape(h.meta.type || 'Page')}${h.meta.author ? ' · ' + escape(h.meta.author) : ''}</span>
-          <span class="hit__title" style="display:block">${escape(h.meta.title || 'Untitled')}</span>
-          <span class="hit__sub" style="display:block">${h.excerpt}</span>
-        </span>
-      </a>`).join('');
+    if (!hits.length) { renderEmpty(q); return; }
+    const groups = groupHits(hits, { Book: 6, Author: 3, Theme: 3, Era: 2, Form: 2, Program: 3, Page: 2 });
+    let i = 0;
+    list.innerHTML = groups.map((g) => `<div class="group" role="presentation"><span>${g.label}</span></div>${g.hits.map((h) => renderHit(h, i++, g.group)).join('')}`).join('')
+      + `<a class="all" role="option" id="hit-${i}" aria-selected="false" href="${escape(browseUrl(q))}">See every book that matches “${escape(q)}” →</a>`;
     input.setAttribute('aria-expanded', 'true');
   }
-  const escape = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
   let t: number | undefined;
   function run(q: string) {
     clearTimeout(t);
     if (!q.trim()) { list.innerHTML = ''; input.setAttribute('aria-expanded', 'false'); return; }
     t = window.setTimeout(async () => {
       const my = ++seq;
-      const engine = await loadPagefind();
-      if (!engine) { list.innerHTML = '<p class="empty">Search is unavailable right now. You can still <a href="/books/">browse and filter every book</a>.</p>'; return; }
-      const res = await engine.search(q);
-      const top = await Promise.all(res.results.slice(0, 8).map((r) => r.data()));
-      if (my === seq) render(top);
+      const hits = await search(q, { limit: 30 });
+      if (my !== seq) return;
+      if (hits === null) { list.innerHTML = '<p class="empty">Search is unavailable right now. You can still <a href="/books/">browse and filter every book</a>.</p>'; return; }
+      render(hits, q.trim());
+      if (!hits.length) dispatchEvent(new CustomEvent('tgb:search-empty', { detail: { length: q.trim().length } }));
     }, 90);
   }
+  const options = () => [...list.querySelectorAll<HTMLElement>('[role="option"]')];
   function move(d: number) {
-    const hits = [...list.querySelectorAll<HTMLElement>('.hit')];
+    const hits = options();
     if (!hits.length) return;
     hits[sel]?.setAttribute('aria-selected', 'false');
     sel = (sel + d + hits.length) % hits.length;
@@ -129,10 +175,21 @@
     }
     run(input.value);
   });
+  function go(a: HTMLAnchorElement) {
+    dispatchEvent(new CustomEvent('tgb:search-open', { detail: { group: a.dataset.group ?? (a.classList.contains('all') ? 'all' : 'none'), rank: Number(a.dataset.rank ?? -1) } }));
+    location.href = a.href;
+  }
   input.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
-    else if (e.key === 'Enter') { const h = list.querySelector<HTMLAnchorElement>('.hit[aria-selected="true"]') || list.querySelector<HTMLAnchorElement>('.hit'); if (h) location.href = h.href; }
+    else if (e.key === 'Enter') {
+      const h = list.querySelector<HTMLAnchorElement>('[role="option"][aria-selected="true"]') || list.querySelector<HTMLAnchorElement>('.hit');
+      if (h) go(h); else if (input.value.trim()) location.href = browseUrl(input.value.trim());
+    }
+  });
+  list.addEventListener('click', (e) => {
+    const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[role="option"]');
+    if (a) { e.preventDefault(); go(a); }
   });
   // Keep Tab inside the dialog.
   panel.addEventListener('keydown', (e) => {

@@ -1,6 +1,7 @@
 /** Browse island: facet filters + sort + Pagefind text search over the SSR'd card grid. State lives in the URL. */
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import type { CatalogRow } from '~/lib/catalog';
+import { search, facetsToFilters } from '~/lib/search';
 
 type Facet = { id: string; label: string };
 type Facets = {
@@ -78,10 +79,6 @@ function passes(r: CatalogRow, s: State, except?: Family): boolean {
   );
 }
 
-type PF = { search: (q: string) => Promise<{ results: { data: () => Promise<{ meta: Record<string, string>; url: string }> }[] }>; init?: () => Promise<void> };
-let pf: Promise<PF | null> | null = null;
-const PF_PATH = ['', 'pagefind', 'pagefind.js'].join('/');
-const loadPf = () => (pf ??= import(/* @vite-ignore */ PF_PATH).then(async (m: any) => { await m.init?.(); return m as PF; }).catch(() => null));
 
 export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; facets: Facets; total: number }) {
   const [s, setS] = useState<State>(EMPTY);
@@ -117,23 +114,23 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
     else history.replaceState(null, '', url);
   }, [s]);
 
-  // text search
+  // Text search, through the shared module, narrowed by the same facets as the grid so
+  // the index does the filtering and the 200 hydrated hits are all ones that can show.
+  const filterKey = JSON.stringify(facetsToFilters(s));
   useEffect(() => {
     const q = s.q.trim();
     if (!q) { setHits(null); return; }
     let live = true; setSearching(true);
     const t = setTimeout(async () => {
-      const engine = await loadPf();
-      if (!engine || !live) { setSearching(false); if (!engine) setHits(new Map()); return; }
-      const res = await engine.search(q);
-      const top = await Promise.all(res.results.slice(0, 200).map((r) => r.data()));
+      const top = await search(q, { filters: facetsToFilters(s), limit: 200 });
       if (!live) return;
+      if (top === null) { setHits(new Map()); setSearching(false); return; }
       const m = new Map<string, number>();
-      top.forEach((h, i) => { const slug = h.meta?.slug || h.url.match(/\/books\/([^/]+)\//)?.[1]; if (slug && !m.has(slug)) m.set(slug, i); });
+      top.forEach((h, i) => { const slug = h.meta.slug || h.url.match(/\/books\/([^/]+)\//)?.[1]; if (slug && !m.has(slug)) m.set(slug, i); });
       setHits(m); setSearching(false);
     }, 120);
     return () => { live = false; clearTimeout(t); };
-  }, [s.q]);
+  }, [s.q, filterKey]);
 
   const visible = useMemo(() => {
     let list = rows.filter((r) => passes(r, s));
