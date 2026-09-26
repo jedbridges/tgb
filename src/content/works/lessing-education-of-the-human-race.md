@@ -1,7 +1,7 @@
 ---
 title: The Education of the Human Race
 originalTitle: Die Erziehung des Menschengeschlechts
-aliases: []
+aliases: [Die Erziehung des Menschengeschlechts, Education of the Human Race]
 author: lessing
 year: 1780
 era: enlightenment

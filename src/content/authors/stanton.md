@@ -1,7 +1,7 @@
 ---
 name: Elizabeth Cady Stanton
 sortName: Stanton, Elizabeth Cady
-aliases: []
+aliases: [Stanton, Cady Stanton]
 born: 1815
 died: 1902
 region: united-states

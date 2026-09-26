@@ -1,7 +1,7 @@
 ---
 name: William Hazlitt
 sortName: Hazlitt, William
-aliases: []
+aliases: [Hazlitt]
 born: 1778
 died: 1830
 region: britain

@@ -1,7 +1,7 @@
 ---
 name: John Woolman
 sortName: Woolman, John
-aliases: []
+aliases: [Woolman]
 born: 1720
 died: 1772
 region: united-states

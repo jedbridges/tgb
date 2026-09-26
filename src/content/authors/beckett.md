@@ -1,7 +1,7 @@
 ---
 name: Samuel Beckett
 sortName: Beckett, Samuel
-aliases: []
+aliases: [Beckett]
 born: 1906
 died: 1989
 region: britain

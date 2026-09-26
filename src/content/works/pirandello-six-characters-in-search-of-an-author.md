@@ -1,5 +1,6 @@
 ---
 title: Six Characters in Search of an Author
+aliases: ["Sei personaggi in cerca d'autore", Six Characters, Sei personaggi]
 originalTitle: Sei personaggi in cerca d'autore
 author: pirandello
 year: 1921

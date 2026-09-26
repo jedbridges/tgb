@@ -1,7 +1,7 @@
 ---
 name: Denis Diderot
 sortName: Diderot, Denis
-aliases: []
+aliases: [Diderot]
 born: 1713
 died: 1784
 region: france

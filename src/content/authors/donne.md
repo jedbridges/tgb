@@ -1,7 +1,7 @@
 ---
 name: John Donne
 sortName: Donne, John
-aliases: []
+aliases: [Donne]
 born: 1572
 died: 1631
 region: britain

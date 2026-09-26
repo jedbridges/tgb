@@ -79,9 +79,10 @@ const searchMeta: [string, string][] = [
   ['era', era?.data.label ?? ''], ['genre', genre?.data.label ?? ''],
   ['themes', themeEntries.slice(0, 3).map((t) => `${t!.id}|${t!.data.label}`).join(', ')],
   ['guide', hasGuideHere ? 'yes' : 'no'], ['lists', String(count)],
+  ['aliases', [d.originalTitle, ...d.aliases].filter(Boolean).join(', ')],
 ];
 const factWords = [era?.data.label, genre?.data.label, language?.data.label, lengthLabel[d.length], lengthHint[d.length], difficultyLabel(d.difficulty)].filter(Boolean).join(', ');
-const assignmentWords = [...new Set(mine.flatMap((x) => [x.program.data.name, x.program.data.shortName, x.segment.label]))].join(', ');
+const assignmentWords = [...new Set(mine.flatMap((x) => [x.program.data.name, x.program.data.shortName, ...x.program.data.aliases, x.segment.label]))].join(', ');
 const first = d.highlights[0];
 const epigraph = first ? { text: first.text.length > 150 ? first.text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : first.text, source: first.location } : undefined;
 const description = d.synopsis.length > 158 ? d.synopsis.slice(0, 155).replace(/\s+\S*$/, '') + '…' : d.synopsis;

@@ -1,7 +1,7 @@
 ---
 name: Adam Smith
 sortName: Smith, Adam
-aliases: []
+aliases: [Smith, Adam Smith]
 born: 1723
 died: 1790
 region: britain

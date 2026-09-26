@@ -1,6 +1,6 @@
 ---
 title: Sesame and Lilies
-aliases: []
+aliases: [Sesame and Lilies Ruskin, "Of Kings' Treasuries", "Of Queens' Gardens"]
 author: ruskin
 year: 1865
 era: nineteenth-century

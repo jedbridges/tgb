@@ -1,7 +1,7 @@
 ---
 name: Philip Nichols
 sortName: Nichols, Philip
-aliases: []
+aliases: [Nichols]
 floruit: "1570s-1590s"
 region: britain
 language: english

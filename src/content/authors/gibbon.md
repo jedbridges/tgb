@@ -1,7 +1,7 @@
 ---
 name: Edward Gibbon
 sortName: Gibbon, Edward
-aliases: []
+aliases: [Gibbon]
 born: 1737
 died: 1794
 region: britain

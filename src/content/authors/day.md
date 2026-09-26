@@ -1,7 +1,7 @@
 ---
 name: Dorothy Day
 sortName: Day, Dorothy
-aliases: []
+aliases: [Dorothy Day]
 born: 1897
 died: 1980
 region: united-states

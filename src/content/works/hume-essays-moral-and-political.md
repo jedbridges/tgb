@@ -1,5 +1,6 @@
 ---
 title: Essays, Moral and Political
+aliases: [Essays Moral Political and Literary, Hume Essays]
 author: hume
 year: 1741
 yearDisplay: 1741-1742

@@ -1,7 +1,7 @@
 ---
 name: William Roper
 sortName: Roper, William
-aliases: []
+aliases: [Roper]
 born: 1496
 died: 1578
 region: britain

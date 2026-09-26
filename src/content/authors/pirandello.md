@@ -1,5 +1,6 @@
 ---
 name: Luigi Pirandello
+aliases: [Pirandello]
 sortName: Pirandello, Luigi
 born: 1867
 died: 1936

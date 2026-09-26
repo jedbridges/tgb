@@ -1,6 +1,6 @@
 ---
 title: Don Juan
-aliases: []
+aliases: [Don Juan poem, Byron Don Juan]
 author: byron
 year: 1819
 yearDisplay: 1819-1824

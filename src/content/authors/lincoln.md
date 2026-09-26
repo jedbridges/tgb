@@ -1,7 +1,7 @@
 ---
 name: Abraham Lincoln
 sortName: Lincoln, Abraham
-aliases: []
+aliases: [Lincoln, Abe Lincoln]
 born: 1809
 died: 1865
 region: united-states

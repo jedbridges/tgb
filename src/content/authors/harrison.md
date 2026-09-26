@@ -1,5 +1,6 @@
 ---
 name: William Harrison
+aliases: [Harrison]
 sortName: Harrison, William
 born: 1535
 died: 1593

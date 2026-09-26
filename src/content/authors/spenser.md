@@ -1,5 +1,6 @@
 ---
 name: Edmund Spenser
+aliases: [Spencer, Spenser]
 sortName: Spenser, Edmund
 born: 1552
 died: 1599

@@ -1,6 +1,6 @@
 ---
 title: Adventures of Ideas
-aliases: []
+aliases: [Adventures of Ideas Whitehead]
 author: whitehead
 year: 1933
 era: twentieth-century

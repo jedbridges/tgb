@@ -1,7 +1,7 @@
 ---
 name: Michael Faraday
 sortName: Faraday, Michael
-aliases: []
+aliases: [Faraday]
 born: 1791
 died: 1867
 region: britain

@@ -1,5 +1,6 @@
 ---
 title: Essays in Radical Empiricism
+aliases: [Radical Empiricism, Essays in Radical Empiricism James]
 author: william-james
 year: 1912
 yearDisplay: 1904-1905 (collected 1912)

@@ -1,7 +1,7 @@
 ---
 name: Franz Kafka
 sortName: Kafka, Franz
-aliases: []
+aliases: [Kafka]
 born: 1883
 died: 1924
 region: germany

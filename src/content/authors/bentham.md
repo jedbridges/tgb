@@ -1,7 +1,7 @@
 ---
 name: Jeremy Bentham
 sortName: Bentham, Jeremy
-aliases: []
+aliases: [Bentham]
 born: 1748
 died: 1832
 region: britain

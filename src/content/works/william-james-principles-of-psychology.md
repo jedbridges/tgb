@@ -1,5 +1,6 @@
 ---
 title: The Principles of Psychology
+aliases: [Principles of Psychology, Stream of consciousness James]
 author: william-james
 year: 1890
 era: nineteenth-century

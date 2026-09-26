@@ -1,5 +1,6 @@
 ---
 title: Geographical Evolution
+aliases: [Geographical Evolution Geikie]
 author: geikie
 year: 1879
 era: nineteenth-century

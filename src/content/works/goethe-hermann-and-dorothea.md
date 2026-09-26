@@ -1,7 +1,7 @@
 ---
 title: Hermann and Dorothea
 originalTitle: Hermann und Dorothea
-aliases: []
+aliases: [Hermann und Dorothea, Hermann and Dorothea]
 author: goethe
 year: 1797
 era: enlightenment

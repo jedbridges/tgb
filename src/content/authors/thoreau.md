@@ -1,7 +1,7 @@
 ---
 name: Henry David Thoreau
 sortName: Thoreau, Henry David
-aliases: []
+aliases: [Thoreau]
 born: 1817
 died: 1862
 region: united-states

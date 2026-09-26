@@ -1,7 +1,7 @@
 ---
 name: John Milton
 sortName: Milton, John
-aliases: []
+aliases: [Milton]
 born: 1608
 died: 1674
 region: britain

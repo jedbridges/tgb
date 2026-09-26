@@ -1,5 +1,6 @@
 ---
 title: The Alchemist
+aliases: [Alchemist, Subtle and Face]
 author: jonson
 year: 1610
 era: seventeenth-century

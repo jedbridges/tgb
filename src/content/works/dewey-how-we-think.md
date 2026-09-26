@@ -1,6 +1,6 @@
 ---
 title: How We Think
-aliases: []
+aliases: [How We Think Dewey, Reflective thinking]
 author: dewey
 year: 1910
 era: twentieth-century

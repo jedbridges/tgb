@@ -1,6 +1,6 @@
 ---
 title: The Beast in the Jungle
-aliases: []
+aliases: [Beast in the Jungle, John Marcher]
 author: henry-james
 year: 1903
 era: twentieth-century

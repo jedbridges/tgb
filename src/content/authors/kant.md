@@ -1,7 +1,7 @@
 ---
 name: Immanuel Kant
 sortName: Kant, Immanuel
-aliases: []
+aliases: [Kant]
 born: 1724
 died: 1804
 region: germany

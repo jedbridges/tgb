@@ -1,7 +1,7 @@
 ---
 name: John Dewey
 sortName: Dewey, John
-aliases: []
+aliases: [Dewey]
 born: 1859
 died: 1952
 region: united-states

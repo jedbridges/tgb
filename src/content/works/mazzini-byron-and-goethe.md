@@ -1,5 +1,6 @@
 ---
 title: Byron and Goethe
+aliases: [Byron and Goethe essay, Mazzini on Byron and Goethe]
 author: mazzini
 year: 1839
 era: nineteenth-century

@@ -1,7 +1,7 @@
 ---
 name: Primo Levi
 sortName: Levi, Primo
-aliases: []
+aliases: [Levi]
 born: 1919
 died: 1987
 region: italy

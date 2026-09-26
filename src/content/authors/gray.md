@@ -1,7 +1,7 @@
 ---
 name: Thomas Gray
 sortName: Gray, Thomas
-aliases: []
+aliases: [Gray, Grey]
 born: 1716
 died: 1771
 region: britain

@@ -1,5 +1,6 @@
 ---
 title: Autobiography
+aliases: [Autobiography of John Stuart Mill, Mill Autobiography]
 author: mill
 year: 1873
 era: nineteenth-century

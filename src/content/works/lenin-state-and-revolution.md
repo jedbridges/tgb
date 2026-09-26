@@ -1,5 +1,6 @@
 ---
 title: The State and Revolution
+aliases: [Государство и революция, State and Revolution, Gosudarstvo i revolyutsiya]
 originalTitle: Государство и революция
 author: lenin
 year: 1917

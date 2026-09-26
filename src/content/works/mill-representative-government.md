@@ -1,5 +1,6 @@
 ---
 title: Considerations on Representative Government
+aliases: [Representative Government, On Representative Government]
 author: mill
 year: 1861
 era: nineteenth-century

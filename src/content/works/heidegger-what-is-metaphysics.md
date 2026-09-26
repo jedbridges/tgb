@@ -1,7 +1,7 @@
 ---
 title: What Is Metaphysics?
 originalTitle: Was ist Metaphysik?
-aliases: []
+aliases: [Was ist Metaphysik, What Is Metaphysics]
 author: heidegger
 year: 1929
 era: twentieth-century

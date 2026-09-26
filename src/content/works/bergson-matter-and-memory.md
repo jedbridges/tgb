@@ -1,7 +1,7 @@
 ---
 title: Matter and Memory
 originalTitle: Matière et mémoire
-aliases: []
+aliases: [Matière et mémoire, Matiere et memoire]
 author: bergson
 year: 1896
 era: nineteenth-century

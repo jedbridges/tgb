@@ -1,5 +1,6 @@
 ---
 name: Jane Austen
+aliases: [Austen]
 sortName: Austen, Jane
 born: 1775
 died: 1817

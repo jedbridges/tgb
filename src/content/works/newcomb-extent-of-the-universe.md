@@ -1,6 +1,6 @@
 ---
 title: The Extent of the Universe
-aliases: []
+aliases: [Extent of the Universe, Newcomb universe]
 author: newcomb
 year: 1906
 era: twentieth-century

@@ -1,7 +1,7 @@
 ---
 name: Lorraine Hansberry
 sortName: Hansberry, Lorraine
-aliases: []
+aliases: [Hansberry]
 born: 1930
 died: 1965
 region: united-states

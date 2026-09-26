@@ -1,6 +1,6 @@
 ---
 title: Beloved
-aliases: []
+aliases: [Beloved Morrison, Sethe, Sweet Home]
 author: morrison
 year: 1987
 era: twentieth-century

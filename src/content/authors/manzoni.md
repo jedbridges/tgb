@@ -1,7 +1,7 @@
 ---
 name: Alessandro Manzoni
 sortName: Manzoni, Alessandro
-aliases: []
+aliases: [Manzoni]
 born: 1785
 died: 1873
 region: italy

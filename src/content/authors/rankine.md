@@ -1,5 +1,6 @@
 ---
 name: Claudia Rankine
+aliases: [Rankine]
 sortName: Rankine, Claudia
 born: 1963
 region: united-states

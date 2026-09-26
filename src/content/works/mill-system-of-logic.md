@@ -1,5 +1,6 @@
 ---
 title: A System of Logic
+aliases: [System of Logic, Logic Ratiocinative and Inductive]
 subtitle: Ratiocinative and Inductive
 author: mill
 year: 1843

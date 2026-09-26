@@ -1,6 +1,6 @@
 ---
 title: Experience and Nature
-aliases: []
+aliases: ["Experience & Nature"]
 author: dewey
 year: 1925
 era: twentieth-century

@@ -1,7 +1,7 @@
 ---
 title: Democracy and Education
 subtitle: An Introduction to the Philosophy of Education
-aliases: []
+aliases: ["Democracy & Education"]
 author: dewey
 year: 1916
 era: twentieth-century

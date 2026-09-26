@@ -1,5 +1,6 @@
 ---
 title: Characteristics
+aliases: [Characteristics essay, Carlyle Characteristics]
 author: carlyle
 year: 1831
 era: nineteenth-century

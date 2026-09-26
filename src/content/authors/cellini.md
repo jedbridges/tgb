@@ -1,7 +1,7 @@
 ---
 name: Benvenuto Cellini
 sortName: Cellini, Benvenuto
-aliases: []
+aliases: [Cellini]
 born: 1500
 died: 1571
 region: italy

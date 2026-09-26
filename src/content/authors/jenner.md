@@ -1,7 +1,7 @@
 ---
 name: Edward Jenner
 sortName: Jenner, Edward
-aliases: []
+aliases: [Jenner]
 born: 1749
 died: 1823
 region: britain

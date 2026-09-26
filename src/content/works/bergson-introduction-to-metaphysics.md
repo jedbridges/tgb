@@ -1,7 +1,7 @@
 ---
 title: An Introduction to Metaphysics
 originalTitle: Introduction à la métaphysique
-aliases: []
+aliases: [Introduction à la métaphysique, Bergson Introduction to Metaphysics]
 author: bergson
 year: 1903
 era: twentieth-century

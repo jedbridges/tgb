@@ -1,7 +1,7 @@
 ---
 name: William Congreve
 sortName: Congreve, William
-aliases: []
+aliases: [Congreve]
 born: 1670
 died: 1729
 region: britain

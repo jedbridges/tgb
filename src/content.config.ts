@@ -119,6 +119,8 @@ const programs = defineCollection({
   schema: z.object({
     name: z.string(),
     shortName: z.string(),
+    /** Other names a reader types for the program: the college, an acronym, a course name. */
+    aliases: z.array(z.string()).default([]),
     kind: z.enum(['college', 'course', 'series', 'list']),
     institution: z.string().optional(),
     url: z.string().url().optional(),

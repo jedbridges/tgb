@@ -1,7 +1,7 @@
 ---
 title: The Two Sources of Morality and Religion
 originalTitle: Les Deux Sources de la morale et de la religion
-aliases: []
+aliases: [Les Deux Sources de la morale et de la religion, Two Sources]
 author: bergson
 year: 1932
 era: twentieth-century

@@ -1,5 +1,6 @@
 ---
 title: Experimental Researches in Electricity
+aliases: [Experimental Researches, Faraday electricity]
 author: faraday
 year: 1839
 yearDisplay: 1839-1855

@@ -1,5 +1,6 @@
 ---
 title: Utilitarianism
+aliases: [Utilitarianism Mill, Greatest happiness principle]
 author: mill
 year: 1861
 era: nineteenth-century

@@ -1,7 +1,7 @@
 ---
 name: Martin Heidegger
 sortName: Heidegger, Martin
-aliases: []
+aliases: [Heidegger]
 born: 1889
 died: 1976
 region: germany

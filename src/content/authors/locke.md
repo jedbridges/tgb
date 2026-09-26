@@ -1,7 +1,7 @@
 ---
 name: John Locke
 sortName: Locke, John
-aliases: []
+aliases: [Locke]
 born: 1632
 died: 1704
 region: britain

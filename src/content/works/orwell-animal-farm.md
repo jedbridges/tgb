@@ -1,7 +1,7 @@
 ---
 title: Animal Farm
 subtitle: A Fairy Story
-aliases: []
+aliases: [Animal Farm, A Fairy Story, Napoleon and Snowball]
 author: orwell
 year: 1945
 era: twentieth-century

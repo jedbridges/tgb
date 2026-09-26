@@ -1,7 +1,7 @@
 ---
 name: Henry Fielding
 sortName: Fielding, Henry
-aliases: []
+aliases: [Fielding]
 born: 1707
 died: 1754
 region: britain

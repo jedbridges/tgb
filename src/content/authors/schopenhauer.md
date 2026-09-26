@@ -1,7 +1,7 @@
 ---
 name: Arthur Schopenhauer
 sortName: Schopenhauer, Arthur
-aliases: []
+aliases: [Schopenhauer, Schopenhaur]
 born: 1788
 died: 1860
 region: germany

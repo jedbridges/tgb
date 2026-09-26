@@ -1,7 +1,7 @@
 ---
 name: Matthew Arnold
 sortName: Arnold, Matthew
-aliases: []
+aliases: [Arnold]
 born: 1822
 died: 1888
 region: britain

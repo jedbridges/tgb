@@ -1,6 +1,6 @@
 ---
 title: Song of Solomon
-aliases: []
+aliases: [Song of Solomon Morrison, Milkman Dead]
 author: morrison
 year: 1977
 era: twentieth-century

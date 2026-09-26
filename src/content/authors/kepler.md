@@ -1,7 +1,7 @@
 ---
 name: Johannes Kepler
 sortName: Kepler, Johannes
-aliases: []
+aliases: [Kepler, Keplerus]
 born: 1571
 died: 1630
 region: germany

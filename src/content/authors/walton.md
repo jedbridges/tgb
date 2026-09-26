@@ -1,5 +1,6 @@
 ---
 name: Izaak Walton
+aliases: [Walton]
 sortName: Walton, Izaak
 born: 1593
 died: 1683

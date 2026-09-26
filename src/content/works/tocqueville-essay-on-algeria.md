@@ -1,5 +1,6 @@
 ---
 title: Essay on Algeria
+aliases: ["Travail sur l'Algérie", Writings on Empire and Slavery, Tocqueville Algeria]
 originalTitle: Travail sur l'Algérie
 author: tocqueville
 year: 1841

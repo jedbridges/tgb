@@ -1,7 +1,7 @@
 ---
 name: John Bunyan
 sortName: Bunyan, John
-aliases: []
+aliases: [Bunyan]
 born: 1628
 died: 1688
 region: britain

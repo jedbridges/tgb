@@ -22,7 +22,7 @@ Update this section at the end of every session.
 |---|---|---|
 | Plan written, options reviewed | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1a Index the right things | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
-| 1b Alias fill on 85 works and authors | Not started | |
+| 1b Alias fill on 85 works, 75 authors and 9 programs | Done | [#39](https://github.com/jedbridges/tgb/pull/39) |
 | 1c Shared search module | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1d Palette result design | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1e Browse uses the shared module and filters | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |

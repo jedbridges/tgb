@@ -1,5 +1,6 @@
 ---
 title: On Liberty
+aliases: [On Liberty Mill, Harm principle, Liberty]
 author: mill
 year: 1859
 era: nineteenth-century

@@ -1,7 +1,7 @@
 ---
 title: Little Dorrit
 originalTitle: ""
-aliases: []
+aliases: [Amy Dorrit, Marshalsea]
 author: dickens
 year: 1857
 yearDisplay: 1855-1857

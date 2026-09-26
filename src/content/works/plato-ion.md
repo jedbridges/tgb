@@ -1,7 +1,7 @@
 ---
 title: Ion
 originalTitle: Ἴων
-aliases: []
+aliases: [Ion, Ἴων, Ion dialogue]
 author: plato
 year: -390
 yearDisplay: c. 390 BCE

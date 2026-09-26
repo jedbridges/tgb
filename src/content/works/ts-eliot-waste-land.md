@@ -1,5 +1,6 @@
 ---
 title: The Waste Land
+aliases: [Waste Land, The Wasteland, April is the cruellest month]
 author: ts-eliot
 year: 1922
 era: twentieth-century

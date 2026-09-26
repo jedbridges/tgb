@@ -1,6 +1,6 @@
 ---
 title: Much Ado About Nothing
-aliases: []
+aliases: [Much Ado, Beatrice and Benedick]
 author: shakespeare
 year: 1599
 yearDisplay: c. 1598-1599

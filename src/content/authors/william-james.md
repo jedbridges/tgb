@@ -1,7 +1,7 @@
 ---
 name: William James
 sortName: James, William
-aliases: []
+aliases: [James, W. James]
 born: 1842
 died: 1910
 region: united-states

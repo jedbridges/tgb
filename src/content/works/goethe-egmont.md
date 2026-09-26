@@ -1,7 +1,7 @@
 ---
 title: Egmont
 originalTitle: Egmont
-aliases: []
+aliases: [Egmont play, Count Egmont]
 author: goethe
 year: 1788
 era: enlightenment

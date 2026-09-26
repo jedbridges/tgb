@@ -150,12 +150,13 @@ export async function search(q: string, opts: SearchOptions = {}): Promise<Hit[]
       meta: r.meta,
       filters: r.filters ?? {},
     }));
-  /* The page named by the query comes first. Ranking by term density puts Plato's Laws
+  /* The page named by the query, by its title or one of its other names, comes first. Ranking by term density puts Plato's Laws
      above Plato himself, because a dialogue names its author more often than his own
      page does; a reader who typed "Plato" wanted Plato. */
   if (text) {
     const want = plain(text);
-    const exact = hits.filter((h) => plain(h.title) === want);
+    const names = (h: Hit) => [h.title, ...(h.meta.aliases || '').split(', ')].filter(Boolean);
+    const exact = hits.filter((h) => names(h).some((n) => plain(n) === want));
     if (exact.length) return [...exact, ...hits.filter((h) => !exact.includes(h))];
   }
   return hits;
