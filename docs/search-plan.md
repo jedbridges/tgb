@@ -194,6 +194,27 @@ Things Phase 1 deliberately does **not** do, because Phase 2 or 3 would undo the
 4. Phase 2b and 2c, then the remaining texts in batches of 100 so PR size stays sane.
 5. Phase 3 once search analytics show what people ask. Worker, embeddings job, Ask tab.
 
+## Off the shelf options considered
+
+Checked in September 2026. Vendor docs were not reachable from the build container, so
+the free tier numbers come from third party summaries and should be confirmed before
+signing up.
+
+| Option | Cost | What it gives | Verdict |
+|---|---|---|---|
+| Pagefind (current) | Free, static | Sharded index, filters, weights, metadata, no server | Keep. Nothing else does static keyword search this well at 689 pages plus texts. |
+| Orama (open source) | Free, static | In browser hybrid keyword plus vector search, TypeScript | Whole index downloads before the first search; too heavy for the guide corpus. Its vector search is worth borrowing for Phase 3's in browser cosine step. |
+| Orama Cloud | Free tier, paid above | Hosted index, crawler, embeddable box with AI answers | Fastest path to a working "Ask" demo. Vendor lock, styling limits, and the answer model is theirs. Good for a weekend proof, not the shipped version. |
+| Cloudflare AI Search (was AutoRAG) | Free tier on Vectorize (5M stored, 30M queried dimensions per month), Workers AI usage billed | Managed chunking, embedding, retrieval and answers over an R2 bucket, already on the deploy platform | Best fit for Phase 3. Replaces the custom embedding job and most of the Worker. Answer model can be routed through AI Gateway to Claude. |
+| Meilisearch, Typesense | Free self hosted, cloud from about $30 a month | Server side hybrid search, typo tolerance, facets | Needs a server the site does not have. Not worth it for a static site of this size. |
+| Algolia DocSearch | Free for open source docs only | Hosted search | Not eligible. |
+| MiniSearch, FlexSearch, Fuse | Free, static | Small in memory indexes | Same download problem as Orama; fine for the author name suggestions in the empty state, which is how Phase 1 uses one. |
+
+Effect on the phases: Phase 1 unchanged. Phase 2 unchanged. Phase 3 defaults to
+Cloudflare AI Search over an R2 bucket of the guide and passage Markdown, with the
+answer model routed to Claude through AI Gateway, and the custom embeddings job
+becomes the fallback if AI Search's chunking or citations are not good enough.
+
 ## Open decisions for the owner
 
 - Which translations to mirror where more than one is public domain (for example
