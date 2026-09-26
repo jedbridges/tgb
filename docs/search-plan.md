@@ -151,6 +151,12 @@ The palette is invisible to crawlers. These pages are its crawlable twin.
   to the pages above. That is user value, not crawl value, but it puts the landing pages
   one click from every search.
 - Sitemap: add the new difficulty and length pages, keep theme, era and genre pages.
+- Shipped after 1g in [#41](https://github.com/jedbridges/tgb/pull/41): lastmod on every
+  sitemap entry and dateModified on Book and Person markup, both from git and from content
+  changes only; a publisher Organization on the WebSite and Book markup; IndexNow on every
+  deploy for pages changed in the last three days; llms.txt regenerated at build with every
+  page kind, and llms-full.txt with the shelf notes, program descriptions and an index of
+  all 689 works.
 
 ## Phase 2: the text layer
 

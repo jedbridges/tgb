@@ -19,8 +19,16 @@ const key = readdirSync('public').find((f) => /^[0-9a-f]{32}\.txt$/.test(f))?.re
 if (!key) throw new Error('No IndexNow key file in public/. Expected a 32-character hex name.');
 
 const sitemap = readFileSync('dist/sitemap-0.xml', 'utf8');
-const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-if (!urls.length) throw new Error('No URLs in dist/sitemap-0.xml. Build first.');
+/* --days N keeps only pages whose lastmod (from git, see src/lib/lastmod.ts) is within N
+   days, which is what a deploy should announce; without it every page is sent. */
+const daysArg = process.argv.indexOf('--days');
+const days = daysArg > -1 ? Number(process.argv[daysArg + 1]) : Infinity;
+const since = Number.isFinite(days) ? Date.now() - days * 86400000 : -Infinity;
+const urls = [...sitemap.matchAll(/<url>([\s\S]*?)<\/url>/g)]
+  .map((m) => ({ loc: m[1].match(/<loc>([^<]+)<\/loc>/)?.[1] ?? '', lastmod: m[1].match(/<lastmod>([^<]+)<\/lastmod>/)?.[1] }))
+  .filter((u) => u.loc && (!Number.isFinite(days) || (u.lastmod && Date.parse(u.lastmod) >= since)))
+  .map((u) => u.loc);
+if (!urls.length) { console.log(Number.isFinite(days) ? `Nothing changed in the last ${days} days.` : 'No URLs in dist/sitemap-0.xml. Build first.'); process.exit(0); }
 
 console.log(`${urls.length} URLs, key ${key}`);
 if (!process.argv.includes('--send')) {

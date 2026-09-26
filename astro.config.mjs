@@ -4,6 +4,7 @@ import preact from '@astrojs/preact';
 import { readdirSync, readFileSync } from 'node:fs';
 import sitemap from '@astrojs/sitemap';
 import pagefind from 'astro-pagefind';
+import { lastModifiedForPath } from './src/lib/lastmod.ts';
 import { loadEnv } from 'vite';
 
 /*
@@ -66,6 +67,12 @@ export default defineConfig({
         if (/\/books\/[^/]+\/text\//.test(page)) return false;
         const m = page.match(/\/books\/([^/]+)\/?$/);
         return !(m && stubSlugs.has(m[1]));
+      },
+      /* lastmod from git, per page, so a crawler can tell a guide rewritten yesterday from
+         one untouched since launch. Pages with no known source get no date, not a fake one. */
+      serialize: (item) => {
+        const lastmod = lastModifiedForPath(new URL(item.url).pathname);
+        return lastmod ? { ...item, lastmod } : item;
       },
     }),
     pagefind(),
