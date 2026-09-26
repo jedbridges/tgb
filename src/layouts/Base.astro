@@ -124,6 +124,9 @@ const { bodyClass, ...seo } = Astro.props;
         if (card) track('shelf_open', { work: card.dataset.slug, page: location.pathname });
       });
       addEventListener('tgb:search', (e) => track('search_used', { query_length: String((e as CustomEvent).detail?.length ?? 0) }));
+      // Which kind of result a search ends in, and how far down. Still never the query.
+      addEventListener('tgb:search-open', (e) => { const d = (e as CustomEvent).detail ?? {}; track('search_open', { group: d.group, rank: String(d.rank), top3: d.rank >= 0 && d.rank < 3 ? 'yes' : 'no' }); });
+      addEventListener('tgb:search-empty', (e) => track('search_empty', { query_length: String((e as CustomEvent).detail?.length ?? 0) }));
       addEventListener('tgb:filter', (e) => track('filter_used', { facet: (e as CustomEvent).detail?.facet }));
     </script>
   </body>
