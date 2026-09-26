@@ -10,33 +10,33 @@
 # The first batch: the works most programs assign whose originals or older translations
 # are public domain, chosen so the page design can be reviewed on epic, drama, dialogue,
 # treatise and novel. The script reports any URL that does not resolve; fix it here.
-- { work: homer-odyssey, source: standardebooks, url: https://standardebooks.org/ebooks/homer/the-odyssey/samuel-butler, edition: "Samuel Butler's prose translation, 1900", translator: Samuel Butler }
-- { work: homer-iliad, source: standardebooks, url: https://standardebooks.org/ebooks/homer/the-iliad/samuel-butler, edition: "Samuel Butler's prose translation, 1898", translator: Samuel Butler }
+- { work: homer-odyssey, source: gutenberg, url: "1727", edition: "Samuel Butler's prose translation, 1900", translator: Samuel Butler }
+- { work: homer-iliad, source: gutenberg, url: "2199", edition: "Samuel Butler's prose translation, 1898", translator: Samuel Butler }
 - { work: virgil-aeneid, source: standardebooks, url: https://standardebooks.org/ebooks/virgil/the-aeneid/john-dryden, edition: "John Dryden's verse translation, 1697", translator: John Dryden }
-- { work: plato-republic, source: standardebooks, url: https://standardebooks.org/ebooks/plato/the-republic/benjamin-jowett, edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
-- { work: plato-apology, source: standardebooks, url: https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett, match: "^Apology", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
-- { work: plato-symposium, source: standardebooks, url: https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett, match: "^Symposium", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
-- { work: aristotle-nicomachean-ethics, source: standardebooks, url: https://standardebooks.org/ebooks/aristotle/nicomachean-ethics/w-d-ross, edition: "W. D. Ross's translation, 1925", translator: W. D. Ross }
-- { work: sophocles-antigone, source: standardebooks, url: https://standardebooks.org/ebooks/sophocles/plays/francis-storr, match: "^Antigone", edition: "Francis Storr's translation, 1912", translator: Francis Storr }
-- { work: sophocles-oedipus-the-king, source: standardebooks, url: https://standardebooks.org/ebooks/sophocles/plays/francis-storr, match: "^Oedipus the King", edition: "Francis Storr's translation, 1912", translator: Francis Storr }
+- { work: plato-republic, source: gutenberg, url: "1497", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: plato-apology, source: gutenberg, url: "1656", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: plato-symposium, source: gutenberg, url: "1600", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: aristotle-nicomachean-ethics, source: gutenberg, url: "8438", edition: "W. D. Ross's translation, 1908", translator: W. D. Ross }
+- { work: sophocles-antigone, source: gutenberg, url: "31", match: "Antigone", edition: "Francis Storr's translation, 1912", translator: Francis Storr }
+- { work: sophocles-oedipus-the-king, source: gutenberg, url: "31", match: "Oedipus the King", edition: "Francis Storr's translation, 1912", translator: Francis Storr }
 - { work: aeschylus-oresteia, source: gutenberg, url: "8604", edition: "E. D. A. Morshead's translation, 1881", translator: E. D. A. Morshead }
 - { work: euripides-medea, source: gutenberg, url: "35451", edition: "Gilbert Murray's translation, 1910", translator: Gilbert Murray }
-- { work: herodotus-histories, source: standardebooks, url: https://standardebooks.org/ebooks/herodotus/histories/george-rawlinson, edition: "George Rawlinson's translation, 1858", translator: George Rawlinson }
-- { work: thucydides-peloponnesian-war, source: standardebooks, url: https://standardebooks.org/ebooks/thucydides/the-history-of-the-peloponnesian-war/richard-crawley, edition: "Richard Crawley's translation, 1874", translator: Richard Crawley }
+- { work: herodotus-histories, source: gutenberg, url: "2707", edition: "G. C. Macaulay's translation, 1890, Books I to IV", translator: G. C. Macaulay }
+- { work: thucydides-peloponnesian-war, source: gutenberg, url: "7142", edition: "Richard Crawley's translation, 1874", translator: Richard Crawley }
 - { work: lucretius-on-the-nature-of-things, source: gutenberg, url: "785", edition: "William Ellery Leonard's verse translation, 1916", translator: William Ellery Leonard }
 - { work: marcus-aurelius-meditations, source: standardebooks, url: https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long, edition: "George Long's translation, 1862", translator: George Long }
 - { work: epictetus-enchiridion, source: standardebooks, url: https://standardebooks.org/ebooks/epictetus/the-enchiridion/elizabeth-carter, edition: "Elizabeth Carter's translation, 1758", translator: Elizabeth Carter }
-- { work: augustine-confessions, source: standardebooks, url: https://standardebooks.org/ebooks/augustine-of-hippo/the-confessions/e-b-pusey, edition: "E. B. Pusey's translation, 1838", translator: E. B. Pusey }
+- { work: augustine-confessions, source: gutenberg, url: "3296", edition: "E. B. Pusey's translation, 1838", translator: E. B. Pusey }
 - { work: dante-divine-comedy, source: standardebooks, url: https://standardebooks.org/ebooks/dante-alighieri/the-divine-comedy/henry-wadsworth-longfellow, edition: "Henry Wadsworth Longfellow's translation, 1867", translator: Henry Wadsworth Longfellow }
 - { work: machiavelli-prince, source: standardebooks, url: https://standardebooks.org/ebooks/niccolo-machiavelli/the-prince/w-k-marriott, edition: "W. K. Marriott's translation, 1908", translator: W. K. Marriott }
-- { work: montaigne-essays, source: standardebooks, url: https://standardebooks.org/ebooks/michel-de-montaigne/essays/charles-cotton, edition: "Charles Cotton's translation, 1685, in the 1877 revision", translator: Charles Cotton }
+- { work: montaigne-essays, source: gutenberg, url: "3600", edition: "Charles Cotton's translation, 1685, in the 1877 revision", translator: Charles Cotton }
 - { work: shakespeare-hamlet, source: standardebooks, url: https://standardebooks.org/ebooks/william-shakespeare/hamlet, edition: "The text of the Folger and Globe editions" }
 - { work: shakespeare-king-lear, source: standardebooks, url: https://standardebooks.org/ebooks/william-shakespeare/king-lear, edition: "The text of the Folger and Globe editions" }
 - { work: shakespeare-tempest, source: standardebooks, url: https://standardebooks.org/ebooks/william-shakespeare/the-tempest, edition: "The text of the Folger and Globe editions" }
 - { work: cervantes-don-quixote, source: standardebooks, url: https://standardebooks.org/ebooks/miguel-de-cervantes-saavedra/don-quixote/john-ormsby, edition: "John Ormsby's translation, 1885", translator: John Ormsby }
 - { work: hobbes-leviathan, source: standardebooks, url: https://standardebooks.org/ebooks/thomas-hobbes/leviathan, edition: "The 1651 text" }
 - { work: descartes-meditations, source: gutenberg, url: "59", edition: "John Veitch's translation, 1901", translator: John Veitch }
-- { work: pascal-pensees, source: standardebooks, url: https://standardebooks.org/ebooks/blaise-pascal/pensees/w-f-trotter, edition: "W. F. Trotter's translation, 1904", translator: W. F. Trotter }
+- { work: pascal-pensees, source: gutenberg, url: "18269", edition: "W. F. Trotter's translation, 1904", translator: W. F. Trotter }
 - { work: locke-second-treatise-of-government, source: gutenberg, url: "7370", edition: "The 1690 text" }
 - { work: milton-paradise-lost, source: standardebooks, url: https://standardebooks.org/ebooks/john-milton/paradise-lost, edition: "The 1674 text" }
 - { work: swift-gullivers-travels, source: standardebooks, url: https://standardebooks.org/ebooks/jonathan-swift/gullivers-travels, edition: "The 1726 text" }
@@ -49,7 +49,7 @@
 - { work: us-constitution, source: gutenberg, url: "5", edition: "The text of 1787, with the amendments" }
 - { work: federalist-papers, source: standardebooks, url: https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers, edition: "The 1788 text" }
 - { work: austen-pride-and-prejudice, source: standardebooks, url: https://standardebooks.org/ebooks/jane-austen/pride-and-prejudice, edition: "The 1813 text" }
-- { work: tocqueville-democracy-in-america, source: standardebooks, url: https://standardebooks.org/ebooks/alexis-de-tocqueville/democracy-in-america/henry-reeve, edition: "Henry Reeve's translation, 1835 and 1840", translator: Henry Reeve }
+- { work: tocqueville-democracy-in-america, source: gutenberg, url: "815", edition: "Henry Reeve's translation, 1835, Volume 1", translator: Henry Reeve }
 - { work: marx-communist-manifesto, source: standardebooks, url: https://standardebooks.org/ebooks/karl-marx_friedrich-engels/the-communist-manifesto/samuel-moore, edition: "Samuel Moore's translation, 1888", translator: Samuel Moore }
 - { work: mill-on-liberty, source: standardebooks, url: https://standardebooks.org/ebooks/john-stuart-mill/on-liberty, edition: "The 1859 text" }
 - { work: darwin-origin-of-species, source: standardebooks, url: https://standardebooks.org/ebooks/charles-darwin/the-origin-of-species, edition: "The sixth edition, 1872" }

@@ -80,6 +80,10 @@ function textOf(node: Node): string {
   }
   if (tag === 'blockquote') return `\n\n${inner.trim().split(/\n{2,}/).map((p) => '> ' + p.replace(/\n/g, '\n> ')).join('\n>\n')}\n\n`;
   if (/^h[1-6]$/.test(tag)) return '';
+  if (tag === 'div' && /(^|\s)(poem|stanza|verse|poetry)(\s|$)/.test(el.getAttribute('class') ?? '') && !el.querySelector('p')) {
+    const lines = el.querySelectorAll('span, div.line, .line').map((l) => textOf(l).trim()).filter(Boolean);
+    return `\n\n${(lines.length ? lines : inner.split('\n').map((l) => l.trim()).filter(Boolean)).join('  \n')}\n\n`;
+  }
   if (['div', 'section', 'article', 'body', 'html', 'header', 'ul', 'ol', 'li', 'table', 'tr', 'td', 'th', 'dl', 'dt', 'dd', 'hr'].includes(tag)) return `\n\n${inner}\n\n`;
   return inner;
 }
@@ -132,6 +136,8 @@ function splitGutenberg(html: string): Section[] {
       return;
     }
     if (tag && ['p', 'blockquote', 'ul', 'ol', 'table'].includes(tag)) { if (cur) cur.parts.push(textOf(el)); return; }
+    // Gutenberg sets verse in <div class="poem"> or "stanza" full of spans or line breaks: take it whole.
+    if (tag === 'div' && /(^|\s)(poem|stanza|verse|poetry)(\s|$)/.test(el.getAttribute('class') ?? '')) { if (cur) cur.parts.push(textOf(el)); return; }
     for (const c of el.childNodes ?? []) walk(c);
   };
   walk(body);
@@ -157,7 +163,7 @@ const slugify = (s: string) => s.toLowerCase().replace(/[’']/g, '').replace(/[
 
 async function run(s: Source) {
   const url = pageUrl(s);
-  const html = await fetchCached(url, `${s.work}`);
+  const html = await fetchCached(url, `${s.work}-${s.source}-${s.url.replace(/[^a-z0-9]+/gi, '-').slice(-40)}`);
   let raw = s.source === 'standardebooks' ? splitStandardEbooks(html) : splitGutenberg(html);
   if (s.match) {
     const re = new RegExp(s.match, 'i');
