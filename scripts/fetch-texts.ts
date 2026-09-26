@@ -23,7 +23,7 @@ const decode = (s: string) => decodeHTML(s);
 
 /* `match` is a regular expression on the section's heading path ("Apology" or "Antigone: Scene 1")
    for a volume that holds several works, so each work takes only its own sections. */
-interface Source { work: string; source: 'standardebooks' | 'gutenberg'; url: string; edition: string; translator?: string; match?: string }
+interface Source { work: string; source: 'standardebooks' | 'gutenberg'; url: string; edition: string; translator?: string; match?: string; skip?: string }
 interface Section { heading: string; body: string; path: string }
 
 const DRY = process.argv.includes('--dry');
@@ -96,7 +96,9 @@ function preLines(el: HTMLElement): string {
   const indent = Math.min(...lines.filter((l) => l.trim()).map((l) => l.match(/^\s*/)![0].length));
   return '\n\n' + lines.map((l) => l.slice(indent)).join('  \n').replace(/(  \n){2,}/g, '\n\n') + '\n\n';
 }
-const tidy = (s: string) => s.replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+/* Trailing whitespace goes, except the two spaces that mark a verse line break in Markdown:
+   those stay, or every poem and every speech would run together as prose on the page. */
+const tidy = (s: string) => s.replace(/[ \t]+\n/g, (m) => (m.length >= 3 ? '  \n' : '\n')).replace(/(  )?\n(\s*\n)+/g, '\n\n').trim();
 const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
 
 /* ALL CAPS headings read as shouting on the page; keep small words small. Roman numerals stay. */
@@ -121,14 +123,18 @@ function splitStandardEbooks(html: string): Section[] {
   for (const s of leaves) {
     const type = s.getAttribute('epub:type') ?? '';
     if (/titlepage|imprint|colophon|copyright|toc|loi|dedication|halftitlepage|frontmatter|backmatter|endnotes|bibliography|glossary/.test(type)) continue;
-    const h = s.querySelector('h1, h2, h3, h4, h5, h6, header');
+    // The heading element itself, never the whole header: a header may also hold an epigraph.
+    const h = s.querySelector('h1, h2, h3, h4, h5, h6') ?? s.querySelector('header');
     const heading = h ? headingText(h) : '';
     let bodyText = tidy(textOf(s));
     if (!bodyText) continue;
     let heading2 = heading;
     if (/^[ivxlc\d]+$/i.test(heading)) {
       const first = bodyText.split('\n')[0].trim();
-      if (first.length > 0 && first.length <= 80 && !/[.!?]$/.test(first)) { heading2 = `${heading}: ${first}`; bodyText = tidy(bodyText.slice(first.length)); }
+      // A short first line with no full stop is a title set as a paragraph; a quoted or
+      // italic first line is an epigraph, and a chapter with only a number is "Chapter I".
+      if (first.length > 0 && first.length <= 80 && !/[.!?,;]$/.test(first) && !/^[>*]/.test(first)) { heading2 = `${heading}: ${first}`; bodyText = tidy(bodyText.slice(first.length)); }
+      else heading2 = `Chapter ${heading}`;
     }
     // The headings of the enclosing sections, so a dialogue's chapters carry the dialogue's name.
     const ancestors: string[] = [];
@@ -204,8 +210,11 @@ function fold(sections: Section[]): Section[] {
   });
   const out: Section[] = [];
   for (const s of sections) {
-    if (/^\d{3,4}$/.test(s.heading.trim())) continue; // a year standing as a heading is front matter
-    if (/^(contents|table of contents|list of illustrations|index|footnotes|endnotes|notes?( to .*)?|transcriber.?s? notes?|project gutenberg.*|.*bookmarks|dramatis person(ae|æ)|the following is a list.*|by [a-z .]+)$/i.test(s.heading.trim())) continue;
+    const h = s.heading.trim().replace(/[:.]$/, '');
+    if (/^\d{3,4}$/.test(h)) continue; // a year standing as a heading is front matter
+    if (/^(contents|table of contents|list of illustrations|index|footnotes|endnotes|notes?( to .*)?|transcriber.?s? notes?|project gutenberg.*|.*bookmarks|dramatis person(ae|æ)|the following is a list.*|by [a-z .]+)$/i.test(h)) continue;
+    // A section that opens with the contents list is the front matter, whatever its heading.
+    if (/^(contents|table of contents)\b/i.test(s.body.trimStart().split('\n')[0].replace(/[*_]/g, ''))) continue;
     if (out.length && words(s.body) < MIN_WORDS) { out[out.length - 1].body += `\n\n**${s.heading}**\n\n${s.body}`; continue; }
     out.push({ ...s });
   }
@@ -228,6 +237,8 @@ async function run(s: Source) {
     if (!kept.length) throw new Error(`match /${s.match}/ selected nothing; headings are: ${[...new Set(raw.map((x) => x.path.split(' / ')[0]))].slice(0, 12).join(' | ')}`);
     raw = kept;
   }
+  // A translator's introduction or analysis is not the work; the source map names it to leave out.
+  if (s.skip) { const re = new RegExp(s.skip, 'i'); raw = raw.filter((x) => !re.test(x.path)); }
   const sections = fold(raw);
   const total = sections.reduce((n, x) => n + words(x.body), 0);
   console.log(`${s.work}: ${sections.length} sections, ${total.toLocaleString()} words${DRY ? ' (dry)' : ''}`);

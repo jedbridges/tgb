@@ -6,6 +6,8 @@
 #   edition:    what a reader is being given, named honestly (translator, year)
 #   translator: as the work's recommendedEdition uses it, when the text is a translation
 #   match:      a regular expression on the heading path, for a volume holding several works
+#   skip:       a regular expression on the heading path for sections to leave out, such as
+#               a translator's introduction that is longer than the work
 #
 # The first batch: the works most programs assign whose originals or older translations
 # are public domain, chosen so the page design can be reviewed on epic, drama, dialogue,
@@ -13,7 +15,7 @@
 - { work: homer-odyssey, source: gutenberg, url: "1727", edition: "Samuel Butler's prose translation, 1900", translator: Samuel Butler }
 - { work: homer-iliad, source: gutenberg, url: "2199", edition: "Samuel Butler's prose translation, 1898", translator: Samuel Butler }
 - { work: virgil-aeneid, source: standardebooks, url: https://standardebooks.org/ebooks/virgil/the-aeneid/john-dryden, edition: "John Dryden's verse translation, 1697", translator: John Dryden }
-- { work: plato-republic, source: gutenberg, url: "1497", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: plato-republic, source: gutenberg, url: "1497", skip: "^Introduction and Analysis", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
 - { work: plato-apology, source: gutenberg, url: "1656", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
 - { work: plato-symposium, source: gutenberg, url: "1600", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
 - { work: aristotle-nicomachean-ethics, source: gutenberg, url: "8438", edition: "W. D. Ross's translation, 1908", translator: W. D. Ross }
