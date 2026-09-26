@@ -29,15 +29,15 @@ Update this section at the end of every session.
 | 1f Analytics groups | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1h Header search bar cycles through example queries | Done | [#39](https://github.com/jedbridges/tgb/pull/39) |
 | 1g SEO: shelf notes on 71 pages, difficulty and length pages, segment descriptions, per segment ItemList | Done | [#39](https://github.com/jedbridges/tgb/pull/39) |
-| 2a Texts collection and fetch script | Blocked on network allow list | |
-| 2b Passage index | Not started | |
-| 2c Passage result design and text pages | Not started | |
-| 2d SEO for text pages | Not started | |
+| 2a Texts collection, source map for 51 works, fetch script | Built, unrun: blocked on network allow list | [#40](https://github.com/jedbridges/tgb/pull/40) |
+| 2b Passage index | Text pages index as Passage with a work filter; second index deferred until the volume is known | [#40](https://github.com/jedbridges/tgb/pull/40) |
+| 2c Text pages, search inside, guide highlights beside the contents | Built on a fixture, to be reviewed on real text | [#40](https://github.com/jedbridges/tgb/pull/40) |
+| 2d SEO for text pages | noindex and out of the sitemap until a section carries commentary | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 3a Cloudflare AI Search over R2 | Not started | |
 | 3b Ask tab and cited answers | Not started | |
 | 3c SEO: reviewed question pages | Not started | |
 
-Environment asks still open: allow `standardebooks.org` and `gutenberg.org` for Phase 2;
+Environment asks still open: allow `standardebooks.org` and `www.gutenberg.org` for Phase 2, then run `npx tsx scripts/fetch-texts.ts` and fix any source URL it reports;
 allow `openlibrary.org`, `covers.openlibrary.org`, `archive.org` and store
 `GOOGLE_BOOKS_API_KEY` for the covers job that predates this plan.
 

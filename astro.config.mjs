@@ -61,6 +61,9 @@ export default defineConfig({
         // The type specimen is a working page for the site's own typography, noindexed on
         // the page itself; listing it here told search the opposite.
         if (/\/type\/?$/.test(page)) return false;
+        // Text pages carry noindex until a section has commentary of its own (see
+        // docs/search-plan.md, 2d); listing bare Gutenberg text would tell search the opposite.
+        if (/\/books\/[^/]+\/text\//.test(page)) return false;
         const m = page.match(/\/books\/([^/]+)\/?$/);
         return !(m && stubSlugs.has(m[1]));
       },

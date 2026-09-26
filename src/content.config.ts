@@ -166,5 +166,28 @@ const programs = defineCollection({
   }),
 });
 
+/*
+ * The texts themselves, for the works whose originals or older translations are public
+ * domain. One file per section (a book of the Odyssey, an act and scene, a chapter), written
+ * by scripts/fetch-texts.ts from Standard Ebooks or Project Gutenberg and never by hand, so
+ * a section can be regenerated without losing anything. The id is work/section.
+ */
+const texts = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: 'src/content/texts' }),
+  schema: z.object({
+    work: reference('works'),
+    section: slug,
+    heading: z.string(),
+    order: z.number().int(),
+    source: z.enum(['standardebooks', 'gutenberg']),
+    sourceUrl: z.string().url(),
+    edition: z.string(),
+    translator: z.string().optional(),
+    licence: z.string(),
+    words: z.number().int(),
+  }),
+});
+
 export const collections = {
+  texts,
   difficulties, lengths, shelfNotes, works, authors, programs, themes, genres, eras, regions, languages };

@@ -9,7 +9,7 @@ import FormPattern from '~/components/FormPattern.astro';
 import { formFamily } from '~/lib/form';
 import ProgramBadges from '~/components/ProgramBadges.astro';
 import { placeholderAuthor, authorOf, coverFor, tintVars, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, hasGuide, guidedCount, loadCatalog } from '~/lib/catalog';
-import { authorUrl, taxUrl, url, workUrl } from '~/lib/url';
+import { authorUrl, taxUrl, url, workUrl, textUrl } from '~/lib/url';
 import { bookLd, breadcrumbs } from '~/lib/seo';
 import { amazonUrl } from '~/lib/affiliates';
 import { toneFor } from '~/lib/tone';
@@ -29,6 +29,9 @@ const og = image ? (await getImage({ src: image, width: 800, format: 'jpg' })).s
 const related = await relatedWorks(work);
 const { authors, assigned } = await loadCatalog();
 const count = await programCount(work.id);
+/* A public domain text, when the fetch script has written one for this work. */
+const textSections = (await getCollection('texts')).filter((t) => t.data.work.id === work.id);
+const hasText = textSections.length > 0;
 const guided = await guidedCount();
 /*
  * A stub is a catalogue record: the synopsis, the edition and the buy links, on the same
@@ -185,6 +188,13 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
           <h3 class="side__h">Assigned in</h3>
           <ProgramBadges slug={work.id} />
         </section>
+        {hasText && (
+          <section>
+            <h3 class="side__h">Read the text</h3>
+            <p class="side__text"><a class="btn" href={textUrl(work.id)}>Read {d.title} online, free →</a></p>
+            <p class="side__note ui">{textSections[0].data.edition}, in {textSections.length} parts. Not the assigned edition; a way to find a passage.</p>
+          </section>
+        )}
         <section>
           <h3 class="side__h">Themes</h3>
           <ul class="chips">{themeEntries.map((t) => t && <li><a class="tag tag--theme" href={taxUrl('themes', t.id)}>{t.data.label}</a></li>)}</ul>
@@ -323,6 +333,8 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
     max-height: var(--stick-max); overflow-y: auto; overscroll-behavior: contain;
     scrollbar-gutter: stable;
   }
+  .side__text { margin: 0; }
+  .side__note { margin-top: var(--s0); font-size: var(--step--2); color: var(--ink-mute); line-height: 1.5; }
   .side__h { margin-bottom: var(--s1); font-family: var(--font-ui); font-size: var(--step--2); font-weight: var(--w-emph); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-soft); }
   .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s-1); }
     /* Markers hang in the margin so the editions keep the sidebar's left edge. */
