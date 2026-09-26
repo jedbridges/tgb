@@ -10,7 +10,7 @@ import { formFamily } from '~/lib/form';
 import ProgramBadges from '~/components/ProgramBadges.astro';
 import { placeholderAuthor, authorOf, coverFor, tintVars, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, hasGuide, guidedCount, loadCatalog } from '~/lib/catalog';
 import { authorUrl, taxUrl, url, workUrl, textUrl } from '~/lib/url';
-import { bookLd, breadcrumbs } from '~/lib/seo';
+import { bookLd, quotationsLd, breadcrumbs } from '~/lib/seo';
 import { amazonUrl } from '~/lib/affiliates';
 import { toneFor } from '~/lib/tone';
 
@@ -93,7 +93,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
 ---
 <Base title={`${d.title} by ${author.data.name}`} description={description} type="book" image={og}
   noindex={!hasGuideHere}
-  jsonld={[bookLd(work, author, og ? new URL(og, Astro.site).toString() : undefined), breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }])]}>
+  jsonld={[bookLd(work, author, og ? new URL(og, Astro.site).toString() : undefined), ...quotationsLd(work, author), breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }])]}>
   <article class="work" data-pagefind-body data-pagefind-filter="type:Book" data-work-view={work.id} data-work-guide={hasGuideHere ? "yes" : "no"} data-work-lists={String(count)}>
     {searchMeta.map(([k, v]) => <span class="visually-hidden" data-pagefind-meta={`${k}:${v}`}></span>)}
     {searchFilters.map(([k, v]) => <span class="visually-hidden" data-pagefind-filter={`${k}:${v}`}></span>)}
@@ -159,11 +159,11 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
               <Content />
             </section>
             {d.highlights.length > 0 && (
-              <section class="highlights">
+              <section class="highlights" id="passages">
                 <h2 class="work__h">Highlights</h2>
                 <ol class="highlights__list">
-                  {d.highlights.map((h) => (
-                    <li>
+                  {d.highlights.map((h, i) => (
+                    <li id={`passage-${i + 1}`}>
                       <blockquote>
                         <p>{h.text}</p>
                         <footer class="ui">{[h.location, h.translator && `trans. ${h.translator}`].filter(Boolean).join(' · ')}</footer>

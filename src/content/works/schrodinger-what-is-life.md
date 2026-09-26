@@ -1,6 +1,6 @@
 ---
 title: What Is Life?
-aliases: [What Is Life The Physical Aspect of the Living Cell, What is Life? with Mind and Matter]
+aliases: ["What Is Life? The Physical Aspect of the Living Cell", "What is Life? with Mind and Matter"]
 author: schrodinger
 year: 1944
 era: twentieth-century

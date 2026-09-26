@@ -121,6 +121,7 @@ const hints = [
     if (q) run(q);
   }
   function close() {
+    seq++; clearTimeout(t);
     root.hidden = true; document.body.style.overflow = '';
     outside().forEach((el) => { el.inert = false; el.removeAttribute('aria-hidden'); });
     list.innerHTML = ''; sel = -1; input.setAttribute('aria-expanded', 'false');
@@ -165,8 +166,9 @@ const hints = [
   }
   const status = document.getElementById('palette-status')!;
   const say = (msg: string) => { status.textContent = msg; };
-  async function renderEmpty(q: string) {
+  async function renderEmpty(q: string, my: number) {
     const sug = suggestFor(q, await loadNames());
+    if (my !== seq) return; // a later query has rendered meanwhile
     list.innerHTML = `<div class="empty"><p>Nothing on the shelf for “${escape(q)}”.</p>
       ${sug.length
         ? `<p class="empty__lead">Did you mean</p><ul class="empty__sug">${sug.map((n) => `<li><button type="button" data-q="${escape(n)}">${escape(n)}</button></li>`).join('')}</ul>`
@@ -175,10 +177,10 @@ const hints = [
     </div>`;
     say(sug.length ? `No results. Did you mean ${sug.join(', ')}?` : 'No results.');
   }
-  function render(hits: Hit[], q: string) {
+  function render(hits: Hit[], q: string, my: number) {
     sel = -1;
-    if (!hits.length) { renderEmpty(q); return; }
-    const groups = groupHits(hits, { Book: 6, Author: 3, Theme: 3, Era: 2, Form: 2, Shelf: 2, Program: 3, Page: 2 });
+    if (!hits.length) { renderEmpty(q, my); return; }
+    const groups = groupHits(hits, { Book: 6, Author: 3, Theme: 3, Era: 2, Form: 2, Shelf: 2, Program: 3, Passage: 4, Page: 2 });
     let i = 0;
     list.innerHTML = groups.map((g) => `<div class="group" role="presentation"><span>${g.label}</span>${g.total > g.hits.length ? `<span class="group__n">${g.hits.length} of ${g.total}</span>` : ''}</div>${g.hits.map((h) => renderHit(h, i++, g.group)).join('')}`).join('')
       + `<a class="all" role="option" id="hit-${i}" aria-selected="false" href="${escape(browseUrl(q))}">See every book that matches “${escape(q)}” →</a>`;
@@ -188,15 +190,23 @@ const hints = [
   let t: number | undefined;
   function run(q: string) {
     clearTimeout(t);
-    if (!q.trim()) { list.innerHTML = ''; input.setAttribute('aria-expanded', 'false'); root.classList.remove('is-busy'); say(''); return; }
+    if (!q.trim()) { seq++; list.innerHTML = ''; input.setAttribute('aria-expanded', 'false'); root.classList.remove('is-busy'); say(''); return; }
     root.classList.add('is-busy');
     t = window.setTimeout(async () => {
       const my = ++seq;
-      const hits = await search(q, { limit: 30 });
+      /* Books, authors and shelves first, without the passages, which would otherwise be
+         most of the index once the texts are in. Passages are added only when the guides
+         have little to say, so "Achilles" leads with the Iliad and not with Book XXII. */
+      let hits = await search(q, { limit: 30, filters: { type: { not: 'Passage' } } });
       if (my !== seq) return;
+      if (hits && hits.filter((h) => h.type === 'Book' || h.type === 'Theme').length < 3) {
+        const passages = await search(q, { limit: 4, parse: false, filters: { type: 'Passage' } });
+        if (my !== seq) return;
+        if (passages?.length) hits = [...hits, ...passages];
+      }
       root.classList.remove('is-busy');
       if (hits === null) { list.innerHTML = '<div class="empty"><p>Search is unavailable right now.</p><p class="empty__out"><a href="/books/">Browse and filter every book →</a></p></div>'; say('Search is unavailable.'); return; }
-      render(hits, q.trim());
+      render(hits, q.trim(), my);
       if (!hits.length) dispatchEvent(new CustomEvent('tgb:search-empty', { detail: { length: q.trim().length } }));
     }, 90);
   }

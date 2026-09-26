@@ -106,7 +106,7 @@ const highlights = d.highlights;
       if (!q) { out.innerHTML = ''; return; }
       t = window.setTimeout(async () => {
         const my = ++seq;
-        const hits = await search(q, { filters: { type: 'Passage', work }, limit: 12 });
+        const hits = await search(q, { parse: false, filters: { type: 'Passage', work }, limit: 12 });
         if (my === seq) render(hits, q);
       }, 120);
     });

@@ -290,6 +290,17 @@ const groups = bySegment ? shelves : [{ id: 'all', label: '', books: shelves.fla
 </style>
 
 <script>
+  /* A shelf that scrolls sideways on a phone is a scroll region, and one whose spines are
+     all tabindex -1 under the roving model has nothing for a keyboard to land on. Any row
+     that actually overflows becomes focusable itself, named by its shelf. */
+  for (const row of document.querySelectorAll<HTMLElement>('.bookcase__row')) {
+    const fit = () => {
+      const over = row.scrollWidth > row.clientWidth + 1;
+      if (over) { row.tabIndex = 0; row.setAttribute('aria-label', `${row.previousElementSibling?.textContent?.trim() || 'Shelf'}, scrolls sideways`); }
+      else { row.removeAttribute('tabindex'); row.removeAttribute('aria-label'); }
+    };
+    fit(); addEventListener('resize', fit, { passive: true });
+  }
   import { track } from '~/lib/analytics';
 
   interface Book {

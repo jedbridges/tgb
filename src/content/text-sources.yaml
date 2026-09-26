@@ -5,6 +5,7 @@
 #   url:        the Standard Ebooks book page, or the Gutenberg book number
 #   edition:    what a reader is being given, named honestly (translator, year)
 #   translator: as the work's recommendedEdition uses it, when the text is a translation
+#   match:      a regular expression on the heading path, for a volume holding several works
 #
 # The first batch: the works most programs assign whose originals or older translations
 # are public domain, chosen so the page design can be reviewed on epic, drama, dialogue,
@@ -13,11 +14,11 @@
 - { work: homer-iliad, source: standardebooks, url: https://standardebooks.org/ebooks/homer/the-iliad/samuel-butler, edition: "Samuel Butler's prose translation, 1898", translator: Samuel Butler }
 - { work: virgil-aeneid, source: standardebooks, url: https://standardebooks.org/ebooks/virgil/the-aeneid/john-dryden, edition: "John Dryden's verse translation, 1697", translator: John Dryden }
 - { work: plato-republic, source: standardebooks, url: https://standardebooks.org/ebooks/plato/the-republic/benjamin-jowett, edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
-- { work: plato-apology, source: standardebooks, url: https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett, edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
-- { work: plato-symposium, source: standardebooks, url: https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett, edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: plato-apology, source: standardebooks, url: https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett, match: "^Apology", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: plato-symposium, source: standardebooks, url: https://standardebooks.org/ebooks/plato/dialogues/benjamin-jowett, match: "^Symposium", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
 - { work: aristotle-nicomachean-ethics, source: standardebooks, url: https://standardebooks.org/ebooks/aristotle/nicomachean-ethics/w-d-ross, edition: "W. D. Ross's translation, 1925", translator: W. D. Ross }
-- { work: sophocles-antigone, source: standardebooks, url: https://standardebooks.org/ebooks/sophocles/plays/francis-storr, edition: "Francis Storr's translation, 1912", translator: Francis Storr }
-- { work: sophocles-oedipus-the-king, source: standardebooks, url: https://standardebooks.org/ebooks/sophocles/plays/francis-storr, edition: "Francis Storr's translation, 1912", translator: Francis Storr }
+- { work: sophocles-antigone, source: standardebooks, url: https://standardebooks.org/ebooks/sophocles/plays/francis-storr, match: "^Antigone", edition: "Francis Storr's translation, 1912", translator: Francis Storr }
+- { work: sophocles-oedipus-the-king, source: standardebooks, url: https://standardebooks.org/ebooks/sophocles/plays/francis-storr, match: "^Oedipus the King", edition: "Francis Storr's translation, 1912", translator: Francis Storr }
 - { work: aeschylus-oresteia, source: gutenberg, url: "8604", edition: "E. D. A. Morshead's translation, 1881", translator: E. D. A. Morshead }
 - { work: euripides-medea, source: gutenberg, url: "35451", edition: "Gilbert Murray's translation, 1910", translator: Gilbert Murray }
 - { work: herodotus-histories, source: standardebooks, url: https://standardebooks.org/ebooks/herodotus/histories/george-rawlinson, edition: "George Rawlinson's translation, 1858", translator: George Rawlinson }

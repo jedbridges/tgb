@@ -119,7 +119,7 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
   const filterKey = JSON.stringify(facetsToFilters(s));
   useEffect(() => {
     const q = s.q.trim();
-    if (!q) { setHits(null); return; }
+    if (!q) { setHits(null); setSearching(false); return; }
     let live = true; setSearching(true);
     const t = setTimeout(async () => {
       const top = await search(q, { filters: facetsToFilters(s), limit: 200 });
@@ -246,7 +246,8 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
           Filtering 689 cards with the only readout off-screen reads as a broken control. */}
       <div class="resultbar" role="status" aria-live="polite">
         <p class="resultbar__count">
-          <strong>{visible.length}</strong> {visible.length === 1 ? 'book' : 'books'}
+          {/* Search hydrates at most 200 hits, so a broad word shows a floor, not a total. */}
+          <strong>{visible.length}{hits && hits.size >= 200 ? '+' : ''}</strong> {visible.length === 1 ? 'book' : 'books'}
           {visible.length !== total && <span class="resultbar__of"> of {total}</span>}
           {searching && <span class="resultbar__spin" aria-hidden="true" />}
         </p>

@@ -68,6 +68,22 @@ export const personLd = (author: Author) => ({
   deathDate: author.data.died !== undefined && author.data.died > 0 ? String(author.data.died) : undefined,
 });
 
+/**
+ * The guide's marked passages as Quotation objects, one per highlight, each anchored to
+ * its place on the page. A search for the line itself then has a page that says, in the
+ * schema's own terms, that this is a quotation from this book by this author.
+ */
+export const quotationsLd = (work: Work, author: Author) =>
+  work.data.highlights.map((h, i) => ({
+    '@context': 'https://schema.org', '@type': 'Quotation',
+    '@id': `${abs(workUrl(work.id))}#passage-${i + 1}`,
+    text: h.text,
+    isPartOf: { '@type': 'Book', '@id': abs(workUrl(work.id)), name: work.data.title },
+    creator: { '@type': 'Person', name: author.data.name },
+    ...(h.location ? { citation: h.location } : {}),
+    ...(h.translator ? { translator: { '@type': 'Person', name: h.translator } } : {}),
+  }));
+
 export const websiteLd = () => ({
   '@context': 'https://schema.org', '@type': 'WebSite', name: 'The Great Books', url: abs('/'),
   potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: abs('/books/') + '?q={search_term_string}' }, 'query-input': 'required name=search_term_string' },

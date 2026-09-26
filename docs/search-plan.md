@@ -32,7 +32,7 @@ Update this section at the end of every session.
 | 2a Texts collection, source map for 51 works, fetch script | Built, unrun: blocked on network allow list | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 2b Passage index | Text pages index as Passage with a work filter; second index deferred until the volume is known | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 2c Text pages, search inside, guide highlights beside the contents | Built on a fixture, to be reviewed on real text | [#40](https://github.com/jedbridges/tgb/pull/40) |
-| 2d SEO for text pages | noindex and out of the sitemap until a section carries commentary | [#40](https://github.com/jedbridges/tgb/pull/40) |
+| 2d SEO for text pages | noindex and out of the sitemap until a section carries commentary; theme passage pages and Quotation markup shipped in [#41](https://github.com/jedbridges/tgb/pull/41) | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 3a Cloudflare AI Search over R2 | Not started | |
 | 3b Ask tab and cited answers | Not started | |
 | 3c SEO: reviewed question pages | Not started | |
@@ -231,6 +231,24 @@ Generated answers are never published automatically. Instead:
   JSON-LD, links to the works, and the Ask box embedded for follow ups.
 - These pages are the crawlable twin of the Ask tab and the place organic traffic lands
   before discovering the tool.
+
+## Verification record
+
+Kept so a later session knows what was checked and how, not only what was built.
+
+- 26 September 2026, after [#41](https://github.com/jedbridges/tgb/pull/41): every internal
+  link in the built site resolves (77,386 checked). Axe clean on 24 renders of the theme,
+  passages, length, difficulty, program and book pages at phone and desktop width in light
+  and dark, with the palette open on one. Mobile Lighthouse on the theme, passages and
+  length pages: performance 96 to 98, accessibility, best practices and SEO 100, total
+  blocking time 0 ms, layout shift under 0.005. A code review of the search module and the
+  fetch script produced ten findings, all fixed in that PR.
+- The query suite the palette is checked against, run in Chromium against the built site:
+  Plato, Republic, justice, Iliad, Ilias, sophomore, approachable epic, tragedy, Greek
+  tragedy, short novel, easy long novels, happiness, Dostoevski, Neitzsche, xqzv, St Johns,
+  Lit Hum, Politeia, Vom Kriege, Shylock, Britannica, Austen, Yale. Expected leaders are the
+  author page, the exact title or alias, the theme page, the program page, or the filtered
+  shelf, and a misspelling reaches the empty state with a suggestion.
 
 ## Off the shelf options considered
 
