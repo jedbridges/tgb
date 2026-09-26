@@ -262,7 +262,8 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .work__facts div { grid-row: span 2; display: grid; grid-template-rows: subgrid; row-gap: var(--s-1); min-width: 0; }
   .work__facts dt { align-self: start; font-size: var(--step--2); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); }
   .work__facts dd { margin: 0; color: var(--ink-strong); font-size: var(--step--1); }
-  .work__facts dd a { text-decoration: none; }
+  /* The link's box is taller than its text so a thumb can land on it (24px is the floor). */
+  .work__facts dd a { text-decoration: none; display: inline-block; padding-block: 0.2em; margin-block: -0.2em; min-height: 24px; }
   .work__facts dd a:hover { color: var(--accent); }
   .work__pages { color: var(--ink-mute); }
   .work__gloss-note { display: block; color: var(--ink-mute); font-size: var(--step--2); letter-spacing: 0; text-transform: none; margin-top: var(--s-1); }

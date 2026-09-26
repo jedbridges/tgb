@@ -72,10 +72,13 @@ const { bodyClass, ...seo } = Astro.props;
     <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <!-- The two faces the first screen actually needs: the headline's roman and the
-         italic of the word that turns inside it. The rest load only if a page uses them. -->
+    <!-- The faces the first screen actually needs: the headline's roman, the italic of the
+         word that turns inside it, and the body roman. The 400 was left out when every page
+         opened on a headline; now that an author page opens on a paragraph, its late arrival
+         reflowed the whole bio (CLS 0.14). The rest load only if a page uses them. -->
     <link rel="preload" href="/fonts/gambetta-500.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/gambetta-500i.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/gambetta-400.woff2" as="font" type="font/woff2" crossorigin />
     <Seo {...seo} />
     {GA4_ID && (
       <script is:inline define:vars={{ GA4_ID }}>

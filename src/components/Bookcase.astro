@@ -109,6 +109,16 @@ const groups = bySegment ? shelves : [{ id: 'all', label: '', books: shelves.fla
     transition: translate var(--dur-slow) var(--ease-out-expo) var(--delay, 0ms);
   }
   .bookcase__spine[data-start] { margin-left: 10px; }
+  /* A thin book is a thin target. Under a finger the hit area widens to 24px either way,
+     centred on the spine, without moving a pixel of what is drawn; a thick spine gets no
+     extension. Neighbours overlap, and the later one wins, which is the same book a finger
+     would have landed on. */
+  @media (pointer: coarse) {
+    .bookcase__spine::after {
+      content: ''; position: absolute; inset-block: 0;
+      inset-inline: min(0px, calc((var(--t) - 24px) / 2));
+    }
+  }
   .bookcase__spine:focus-visible { outline: none; }
   /* The spine itself: sampled cloth, a little shading across the round of the back, and the
      two pairs of blind rules a binder presses in at head and tail. Kept faint; they are

@@ -18,7 +18,9 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
       <span class="brand__word">The Great Books</span>
     </a>
 
-    <button class="search-trigger ui" type="button" data-open-search aria-label="Search the library" aria-keyshortcuts="Meta+K /">
+    <!-- No aria-label: the visible words are the accessible name, so someone steering by
+         voice can say what they see (WCAG 2.5.3). -->
+    <button class="search-trigger ui" type="button" data-open-search aria-keyshortcuts="Meta+K /">
       <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="m11 11 3.5 3.5" stroke-linecap="round"/></svg>
       <span class="search-trigger__label">Search every book</span>
       <kbd aria-hidden="true">⌘K</kbd>
