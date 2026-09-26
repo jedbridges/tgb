@@ -21,8 +21,10 @@ import { parse as parseHtml, HTMLElement, Node } from 'node-html-parser';
 import { decodeHTML } from 'entities';
 const decode = (s: string) => decodeHTML(s);
 
-interface Source { work: string; source: 'standardebooks' | 'gutenberg'; url: string; edition: string; translator?: string }
-interface Section { heading: string; body: string }
+/* `match` is a regular expression on the section's heading path ("Apology" or "Antigone: Scene 1")
+   for a volume that holds several works, so each work takes only its own sections. */
+interface Source { work: string; source: 'standardebooks' | 'gutenberg'; url: string; edition: string; translator?: string; match?: string }
+interface Section { heading: string; body: string; path: string }
 
 const DRY = process.argv.includes('--dry');
 const ONLY = new Set(process.argv.slice(2).filter((a) => !a.startsWith('--')));
@@ -67,8 +69,12 @@ function textOf(node: Node): string {
   if (tag === 'br') return '\n';
   if (tag === 'p') {
     // Verse: Standard Ebooks marks lines with <span> inside <p>; Gutenberg often uses <br>.
-    const lines = el.querySelectorAll(':scope > span');
-    const isVerse = lines.length > 1 || el.classList?.contains('verse') || el.classList?.contains('poem');
+    /* Verse is marked as such by the source (Standard Ebooks: z3998:verse, poem, song on an
+       ancestor; Gutenberg: a poem class), never guessed from spans, which SE also uses for
+       roman numerals and foreign phrases inside ordinary prose. */
+    const verseHost = (n: HTMLElement | null): boolean => !!n && (/(^|\s)(z3998:)?(verse|poem|song|stanza)(\s|$)/.test(`${n.getAttribute?.('epub:type') ?? ''} ${n.getAttribute?.('class') ?? ''}`) || verseHost(n.parentNode as HTMLElement | null));
+    const isVerse = verseHost(el);
+    const lines = isVerse ? el.querySelectorAll(':scope > span') : [];
     const text = isVerse ? lines.length > 1 ? lines.map((l) => textOf(l).trim()).join('  \n') : inner.split('\n').map((l) => l.trim()).filter(Boolean).join('  \n') : inner.replace(/\s+/g, ' ').trim();
     return text ? `\n\n${text}\n\n` : '';
   }
@@ -82,8 +88,8 @@ const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
 
 function headingText(el: HTMLElement): string {
   // Standard Ebooks headings carry an ordinal and a title in separate spans: "Book I" / "The Anger of Achilles".
-  const parts = el.querySelectorAll('span').map((s) => decode(s.text).replace(/\s+/g, ' ').trim()).filter(Boolean);
-  const raw = parts.length >= 2 ? parts.slice(0, 2).join(': ') : decode(el.text).replace(/\s+/g, ' ').trim();
+  const parts = el.querySelectorAll('span').map((s) => s.text.replace(/\s+/g, ' ').trim()).filter(Boolean);
+  const raw = parts.length >= 2 ? parts.slice(0, 2).join(': ') : el.text.replace(/\s+/g, ' ').trim();
   return raw.replace(/\s*:\s*$/, '');
 }
 
@@ -99,7 +105,12 @@ function splitStandardEbooks(html: string): Section[] {
     const heading = h ? headingText(h) : '';
     const bodyText = tidy(textOf(s));
     if (!bodyText) continue;
-    sections.push({ heading, body: bodyText });
+    // The headings of the enclosing sections, so a dialogue's chapters carry the dialogue's name.
+    const ancestors: string[] = [];
+    for (let a = s.parentNode as HTMLElement | null; a; a = a.parentNode as HTMLElement | null) {
+      if (a.tagName?.toLowerCase() === 'section') { const ah = a.querySelector(':scope > h1, :scope > h2, :scope > h3, :scope > header'); if (ah) ancestors.unshift(headingText(ah)); }
+    }
+    sections.push({ heading, body: bodyText, path: [...ancestors, heading].filter(Boolean).join(' / ') });
   }
   return sections;
 }
@@ -111,13 +122,13 @@ function splitGutenberg(html: string): Section[] {
   for (const sel of ['#pg-header', '#pg-footer', '.pg-boilerplate', 'pre']) body.querySelectorAll(sel).forEach((n) => n.remove());
   const sections: Section[] = [];
   let cur: { heading: string; parts: string[] } | null = null;
-  const flush = () => { if (cur) { const b = tidy(cur.parts.join('')); if (b) sections.push({ heading: cur.heading, body: b }); } };
+  const flush = () => { if (cur) { const b = tidy(cur.parts.join('')); if (b) sections.push({ heading: cur.heading, body: b, path: cur.heading }); } };
   const walk = (n: Node) => {
     const el = n as HTMLElement;
     const tag = el.tagName?.toLowerCase();
     if (tag && /^h[1-4]$/.test(tag)) {
       flush();
-      cur = { heading: decode(el.text).replace(/\s+/g, ' ').trim(), parts: [] };
+      cur = { heading: el.text.replace(/\s+/g, ' ').trim(), parts: [] };
       return;
     }
     if (tag && ['p', 'blockquote', 'ul', 'ol', 'table'].includes(tag)) { if (cur) cur.parts.push(textOf(el)); return; }
@@ -134,7 +145,7 @@ function splitGutenberg(html: string): Section[] {
 function fold(sections: Section[]): Section[] {
   const out: Section[] = [];
   for (const s of sections) {
-    if (/^(contents|table of contents|preface to the|list of illustrations|index)$/i.test(s.heading)) continue;
+    if (/^(contents|table of contents|list of illustrations|index)$/i.test(s.heading)) continue;
     if (out.length && words(s.body) < MIN_WORDS) { out[out.length - 1].body += `\n\n**${s.heading}**\n\n${s.body}`; continue; }
     out.push({ ...s });
   }
@@ -147,11 +158,18 @@ const slugify = (s: string) => s.toLowerCase().replace(/[’']/g, '').replace(/[
 async function run(s: Source) {
   const url = pageUrl(s);
   const html = await fetchCached(url, `${s.work}`);
-  const raw = s.source === 'standardebooks' ? splitStandardEbooks(html) : splitGutenberg(html);
+  let raw = s.source === 'standardebooks' ? splitStandardEbooks(html) : splitGutenberg(html);
+  if (s.match) {
+    const re = new RegExp(s.match, 'i');
+    const kept = raw.filter((x) => re.test(x.path));
+    if (!kept.length) throw new Error(`match /${s.match}/ selected nothing; headings are: ${[...new Set(raw.map((x) => x.path.split(' / ')[0]))].slice(0, 12).join(' | ')}`);
+    raw = kept;
+  }
   const sections = fold(raw);
   const total = sections.reduce((n, x) => n + words(x.body), 0);
   console.log(`${s.work}: ${sections.length} sections, ${total.toLocaleString()} words${DRY ? ' (dry)' : ''}`);
-  if (DRY || !sections.length) { if (!sections.length) console.warn(`  ! nothing parsed from ${url}`); return; }
+  if (!sections.length) throw new Error(`nothing parsed from ${url}`);
+  if (DRY) return;
   const dir = `${OUT}/${s.work}`;
   rmSync(dir, { recursive: true, force: true });
   mkdirSync(dir, { recursive: true });

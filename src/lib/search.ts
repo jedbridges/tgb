@@ -52,7 +52,7 @@ export function loadSearch(): Promise<Engine | null> {
       await m.init?.();
       return m;
     })
-    .catch(() => null));
+    .catch(() => { engine = null; return null; })); // a failed load is retried next time, not remembered
 }
 
 /** Warm the engine without searching, for example when the palette opens. */
@@ -60,6 +60,8 @@ export const warm = () => { loadSearch(); };
 
 export interface SearchOptions {
   filters?: Filters;
+  /** Read facet words out of the query (default). Off for a search inside one book, where "greek chorus" is two words of text. */
+  parse?: boolean;
   /** Results to hydrate. Pagefind ranks first and hydrates lazily, so this bounds the fetches. */
   limit?: number;
   /** Reserved for the passage index (phase 2). Only 'guides' exists today. */
@@ -99,7 +101,7 @@ const VOCAB: [string, string, FilterValue][] = [
 ];
 const VOCAB_BY_LEN = [...VOCAB].sort((a, b) => b[0].split(' ').length - a[0].split(' ').length);
 
-export interface Parsed { text: string; filters: Filters; matched: string[] }
+export interface Parsed { text: string; filters: Filters; matched: { phrase: string; key: string; value: FilterValue }[] }
 
 /**
  * Split a query into the words to search and the facets it named. A single facet word
@@ -109,13 +111,13 @@ export interface Parsed { text: string; filters: Filters; matched: string[] }
 export function parseQuery(q: string): Parsed {
   const words = q.toLowerCase().replace(/[^\p{L}\p{N}\s'-]/gu, ' ').split(/\s+/).filter(Boolean);
   if (words.length < 2) return { text: q.trim(), filters: {}, matched: [] };
-  const filters: Filters = {}; const matched: string[] = []; const rest: string[] = [];
+  const filters: Filters = {}; const matched: Parsed['matched'] = []; const rest: string[] = [];
   let i = 0;
   outer: while (i < words.length) {
     for (const [phrase, key, value] of VOCAB_BY_LEN) {
       const n = phrase.split(' ').length;
       if (words.slice(i, i + n).join(' ') === phrase && !(key in filters)) {
-        filters[key] = value; matched.push(phrase); i += n; continue outer;
+        filters[key] = value; matched.push({ phrase, key, value }); i += n; continue outer;
       }
     }
     rest.push(words[i]); i++;
@@ -126,7 +128,7 @@ export function parseQuery(q: string): Parsed {
 
 /** Null when the index could not load, an empty list when nothing matched. */
 export async function search(q: string, opts: SearchOptions = {}): Promise<Hit[] | null> {
-  const parsed = parseQuery(q);
+  const parsed = opts.parse === false ? { text: q.trim(), filters: {} as Filters, matched: [] } : parseQuery(q);
   const filters = { ...parsed.filters, ...(opts.filters ?? {}) };
   const text = parsed.text || null;
   if (!text && !Object.keys(filters).length) return [];
@@ -138,7 +140,8 @@ export async function search(q: string, opts: SearchOptions = {}): Promise<Hit[]
      two letters of it ("Neitzsche" marks "ne"), which is not a result. A hit has to mark
      a real fraction of some word that was typed. */
   const shortest = Math.min(...(text ?? '').split(/\s+/).filter(Boolean).map((w) => w.length));
-  const need = Math.max(3, Math.ceil(shortest * 0.6));
+  // Half the word, so a stem still counts: "happiness" is answered by a page that marks "happy".
+  const need = Math.max(3, Math.ceil(shortest * 0.5));
   const real = (excerpt: string) => [...excerpt.matchAll(/<mark>([^<]+)<\/mark>/g)].some((m) => m[1].replace(/[^\p{L}\p{N}]/gu, '').length >= need);
   const hits = raw
     .filter((r) => !text || real(r.excerpt))
@@ -212,9 +215,13 @@ export function groupHits(hits: Hit[], cap: Partial<Record<Group, number>> = {})
 
 /** The browse page URL that shows the same thing, for "see every book that matches". */
 export function browseUrl(q: string): string {
-  const { text, filters } = parseQuery(q);
+  const { text, filters, matched } = parseQuery(q);
   const p = new URLSearchParams();
-  if (text) p.set('q', text);
+  /* The browse page holds one value per facet, so a word that became a composed filter
+     ("easy", "ancient", "plays") goes back into the query text rather than being lost. */
+  const back = matched.filter((m) => typeof m.value !== 'string').map((m) => m.phrase);
+  const words = [text, ...back].filter(Boolean).join(' ');
+  if (words) p.set('q', words);
   for (const [k, v] of Object.entries(filters)) if (k !== 'type' && typeof v === 'string') p.set(k, v);
   const qs = p.toString();
   return '/books/' + (qs ? `?${qs}` : '');
