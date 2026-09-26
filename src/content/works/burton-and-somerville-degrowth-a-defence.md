@@ -1,5 +1,6 @@
 ---
 title: "Degrowth: A Defence"
+aliases: [Degrowth, "Degrowth: A Defense"]
 author: burton-somerville
 year: 2019
 era: twenty-first-century

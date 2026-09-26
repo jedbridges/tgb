@@ -1,7 +1,7 @@
 ---
 name: John Dryden
 sortName: Dryden, John
-aliases: []
+aliases: [Dryden]
 born: 1631
 died: 1700
 region: britain

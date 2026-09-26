@@ -1,7 +1,7 @@
 ---
 name: Gustave Flaubert
 sortName: Flaubert, Gustave
-aliases: []
+aliases: [Flaubert]
 born: 1821
 died: 1880
 region: france

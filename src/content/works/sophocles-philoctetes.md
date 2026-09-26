@@ -1,7 +1,7 @@
 ---
 title: Philoctetes
 originalTitle: Φιλοκτήτης
-aliases: []
+aliases: [Philoctetes, Φιλοκτήτης, Philoktetes, Neoptolemus]
 author: sophocles
 year: -409
 era: classical-greece

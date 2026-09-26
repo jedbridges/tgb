@@ -1,6 +1,6 @@
 ---
 title: Mourning Becomes Electra
-aliases: []
+aliases: [Mourning Becomes Electra, Lavinia Mannon, American Oresteia]
 author: oneill
 year: 1931
 era: twentieth-century

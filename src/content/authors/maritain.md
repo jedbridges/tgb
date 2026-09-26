@@ -1,7 +1,7 @@
 ---
 name: Jacques Maritain
 sortName: Maritain, Jacques
-aliases: []
+aliases: [Maritain]
 born: 1882
 died: 1973
 region: france

@@ -1,7 +1,7 @@
 ---
 name: Oliver Goldsmith
 sortName: Goldsmith, Oliver
-aliases: []
+aliases: [Goldsmith]
 born: 1728
 died: 1774
 region: britain

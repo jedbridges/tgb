@@ -1,6 +1,6 @@
 ---
 title: Omeros
-aliases: []
+aliases: [Omeros Walcott, Caribbean Homer, Achille and Hector]
 author: walcott
 year: 1990
 era: twentieth-century

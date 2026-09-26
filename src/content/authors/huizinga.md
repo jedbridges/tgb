@@ -1,7 +1,7 @@
 ---
 name: Johan Huizinga
 sortName: Huizinga, Johan
-aliases: []
+aliases: [Huizinga, Huizinga Johan]
 born: 1872
 died: 1945
 region: low-countries

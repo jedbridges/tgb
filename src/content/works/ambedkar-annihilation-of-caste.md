@@ -1,6 +1,6 @@
 ---
 title: Annihilation of Caste
-aliases: []
+aliases: [Annihilation of Caste speech, Caste in India]
 author: ambedkar
 year: 1936
 era: twentieth-century

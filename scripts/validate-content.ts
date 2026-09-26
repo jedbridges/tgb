@@ -46,6 +46,9 @@ for (const [slug, { data, body }] of works) {
   /* A dangling `related` slug is a build failure, not a warning: the collection schema types
      it as reference('works') and Astro only resolves that at build time, so an invented slug
      sails through this script and then takes the build down several minutes later. */
+  /* A title in translation is searched for under its original and its other English
+     renderings; a work that carries one and no aliases is findable only one way. */
+  if (data.originalTitle && !(data.aliases ?? []).length) warn(`${slug}: originalTitle set but no aliases`);
   for (const r of data.related ?? []) {
     const id = typeof r === 'string' ? r : r.id;
     if (!works.has(id)) err(`${slug}: related "${id}" has no file`);

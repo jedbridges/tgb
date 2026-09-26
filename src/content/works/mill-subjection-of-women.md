@@ -1,5 +1,6 @@
 ---
 title: The Subjection of Women
+aliases: [Subjection of Women, The Subjection of Woman]
 author: mill
 year: 1869
 era: nineteenth-century

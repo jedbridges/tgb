@@ -1,7 +1,7 @@
 ---
 name: John Keats
 sortName: Keats, John
-aliases: []
+aliases: [Keats]
 born: 1795
 died: 1821
 region: britain

@@ -1,6 +1,6 @@
 ---
 title: Experience and Education
-aliases: []
+aliases: ["Experience & Education"]
 author: dewey
 year: 1938
 era: twentieth-century

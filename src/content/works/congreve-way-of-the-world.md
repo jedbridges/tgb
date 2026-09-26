@@ -1,6 +1,6 @@
 ---
 title: The Way of the World
-aliases: []
+aliases: [Way of the World, Millamant, Mirabell]
 author: congreve
 year: 1700
 era: enlightenment

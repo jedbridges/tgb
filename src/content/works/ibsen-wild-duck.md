@@ -1,7 +1,7 @@
 ---
 title: The Wild Duck
 originalTitle: Vildanden
-aliases: []
+aliases: [Vildanden, Wild Duck, Hedvig]
 author: ibsen
 year: 1884
 era: nineteenth-century

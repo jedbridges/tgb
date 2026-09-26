@@ -1,6 +1,6 @@
 ---
 title: The Tempest
-aliases: []
+aliases: [Tempest, Prospero, Caliban]
 author: shakespeare
 year: 1611
 yearDisplay: c. 1611

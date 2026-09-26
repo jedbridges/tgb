@@ -1,7 +1,7 @@
 ---
 name: Marcel Proust
 sortName: Proust, Marcel
-aliases: []
+aliases: [Proust]
 born: 1871
 died: 1922
 region: france

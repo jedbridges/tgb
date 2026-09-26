@@ -1,7 +1,7 @@
 ---
 name: Nathaniel Hawthorne
 sortName: Hawthorne, Nathaniel
-aliases: []
+aliases: [Hawthorne]
 born: 1804
 died: 1864
 region: united-states

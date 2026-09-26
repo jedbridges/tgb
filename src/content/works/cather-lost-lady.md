@@ -1,5 +1,6 @@
 ---
 title: A Lost Lady
+aliases: [Lost Lady, Marian Forrester]
 author: cather
 year: 1923
 era: twentieth-century

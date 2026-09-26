@@ -1,7 +1,7 @@
 ---
 name: John Ruskin
 sortName: Ruskin, John
-aliases: []
+aliases: [Ruskin]
 born: 1819
 died: 1900
 region: britain

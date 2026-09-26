@@ -1,5 +1,6 @@
 ---
 title: The Study of Poetry
+aliases: [On the Study of Poetry, Study of Poetry]
 author: arnold
 year: 1880
 era: nineteenth-century

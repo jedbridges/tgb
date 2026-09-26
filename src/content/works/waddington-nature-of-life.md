@@ -1,5 +1,6 @@
 ---
 title: The Nature of Life
+aliases: [Nature of Life, Waddington biology]
 author: waddington
 year: 1961
 era: twentieth-century

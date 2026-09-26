@@ -1,7 +1,7 @@
 ---
 title: Antigone
 originalTitle: Ἀντιγόνη
-aliases: []
+aliases: [Antigone, Ἀντιγόνη, Antigonē, Creon]
 author: sophocles
 year: -441
 yearDisplay: c. 441 BCE

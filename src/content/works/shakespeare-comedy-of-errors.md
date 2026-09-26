@@ -1,6 +1,6 @@
 ---
 title: The Comedy of Errors
-aliases: []
+aliases: [Comedy of Errors, Antipholus, Dromio]
 author: shakespeare
 year: 1594
 yearDisplay: c. 1594

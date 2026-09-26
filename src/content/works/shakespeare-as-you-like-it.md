@@ -1,6 +1,6 @@
 ---
 title: As You Like It
-aliases: []
+aliases: [As You Like It Shakespeare, Rosalind, Forest of Arden]
 author: shakespeare
 year: 1599
 yearDisplay: c. 1599

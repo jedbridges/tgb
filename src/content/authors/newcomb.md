@@ -1,7 +1,7 @@
 ---
 name: Simon Newcomb
 sortName: Newcomb, Simon
-aliases: []
+aliases: [Newcomb]
 born: 1835
 died: 1909
 region: united-states

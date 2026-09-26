@@ -1,6 +1,6 @@
 ---
 title: Samson Agonistes
-aliases: []
+aliases: [Samson, Samson Agonistes Milton]
 author: milton
 year: 1671
 era: seventeenth-century

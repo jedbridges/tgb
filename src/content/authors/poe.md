@@ -1,7 +1,7 @@
 ---
 name: Edgar Allan Poe
 sortName: Poe, Edgar Allan
-aliases: []
+aliases: [Poe, E. A. Poe]
 born: 1809
 died: 1849
 region: united-states

@@ -1,7 +1,7 @@
 ---
 title: Hedda Gabler
 originalTitle: Hedda Gabler
-aliases: []
+aliases: [Hedda Gabler, Hedda]
 author: ibsen
 year: 1890
 era: nineteenth-century

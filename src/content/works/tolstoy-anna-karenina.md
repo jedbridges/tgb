@@ -1,7 +1,7 @@
 ---
 title: Anna Karenina
 originalTitle: Анна Каренина
-aliases: []
+aliases: [Анна Каренина, Anna Karenin, Anna Karenina Tolstoy, Levin]
 author: tolstoy
 year: 1878
 yearDisplay: 1875-1878

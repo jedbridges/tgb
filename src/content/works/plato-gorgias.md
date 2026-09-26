@@ -1,7 +1,7 @@
 ---
 title: Gorgias
 originalTitle: Γοργίας
-aliases: []
+aliases: [Gorgias, Γοργίας, Callicles]
 author: plato
 year: -385
 yearDisplay: c. 385 BCE

@@ -1,5 +1,6 @@
 ---
 title: English Traits
+aliases: [English Traits Emerson]
 author: emerson
 year: 1856
 era: nineteenth-century

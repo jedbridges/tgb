@@ -1,7 +1,7 @@
 ---
 name: Robert Pollin
 sortName: Pollin, Robert
-aliases: []
+aliases: [Pollin]
 born: 1950
 region: united-states
 language: english

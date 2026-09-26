@@ -1,6 +1,6 @@
 ---
 title: The Ambassadors
-aliases: []
+aliases: [Ambassadors, Lambert Strether]
 author: henry-james
 year: 1903
 era: twentieth-century

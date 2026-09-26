@@ -1,7 +1,7 @@
 ---
 title: Epithalamion
 originalTitle: ""
-aliases: []
+aliases: [Epithalamion Spenser, Spenser wedding poem]
 author: spenser
 year: 1595
 era: renaissance

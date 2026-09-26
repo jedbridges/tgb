@@ -1,7 +1,7 @@
 ---
 name: William Wordsworth
 sortName: Wordsworth, William
-aliases: []
+aliases: [Wordsworth]
 born: 1770
 died: 1850
 region: britain

@@ -1,7 +1,7 @@
 ---
 name: Herman Melville
 sortName: Melville, Herman
-aliases: []
+aliases: [Melville]
 born: 1819
 died: 1891
 region: united-states

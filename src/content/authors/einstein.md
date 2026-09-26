@@ -1,7 +1,7 @@
 ---
 name: Albert Einstein
 sortName: Einstein, Albert
-aliases: []
+aliases: [Einstein]
 born: 1879
 died: 1955
 region: germany

@@ -1,7 +1,7 @@
 ---
 name: William Penn
 sortName: Penn, William
-aliases: []
+aliases: [Penn]
 born: 1644
 died: 1718
 region: britain

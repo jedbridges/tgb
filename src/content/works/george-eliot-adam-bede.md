@@ -1,5 +1,6 @@
 ---
 title: Adam Bede
+aliases: [Hetty Sorrel, Dinah Morris]
 author: george-eliot
 year: 1859
 era: nineteenth-century

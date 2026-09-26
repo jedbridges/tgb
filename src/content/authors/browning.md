@@ -1,7 +1,7 @@
 ---
 name: Robert Browning
 sortName: Browning, Robert
-aliases: []
+aliases: [Browning]
 born: 1812
 died: 1889
 region: britain

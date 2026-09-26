@@ -1,7 +1,7 @@
 ---
 title: Protagoras
 originalTitle: Πρωταγόρας
-aliases: []
+aliases: [Protagoras, Πρωταγόρας, Protagoras dialogue]
 author: plato
 year: -390
 yearDisplay: c. 390 BCE

@@ -1,5 +1,6 @@
 name: How to Read a Book Recommended Reading List
 shortName: Adler's list
+aliases: ["Adler", "Mortimer Adler", "How to Read a Book list"]
 kind: list
 institution: Mortimer J. Adler and Charles Van Doren
 url: https://en.wikipedia.org/wiki/How_to_Read_a_Book
@@ -18,6 +19,7 @@ order: 9
 segments:
   - id: list
     label: The list
+    description: "The recommended reading list at the back of Mortimer Adler and Charles Van Doren's How to Read a Book (1972 edition): 137 authors in chronological order, from Homer to Solzhenitsyn, chosen as the books that reward the kind of reading the book teaches."
     order: 1
     items:
       - work: homer-iliad

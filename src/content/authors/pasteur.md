@@ -1,7 +1,7 @@
 ---
 name: Louis Pasteur
 sortName: Pasteur, Louis
-aliases: []
+aliases: [Pasteur]
 born: 1822
 died: 1895
 region: france

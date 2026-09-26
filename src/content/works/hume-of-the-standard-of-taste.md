@@ -1,5 +1,6 @@
 ---
 title: Of the Standard of Taste
+aliases: [Standard of Taste, On the Standard of Taste]
 author: hume
 year: 1757
 era: enlightenment

@@ -1,7 +1,7 @@
 ---
 name: Thomas Dekker
 sortName: Dekker, Thomas
-aliases: []
+aliases: [Dekker, Decker]
 born: 1572
 died: 1632
 region: britain

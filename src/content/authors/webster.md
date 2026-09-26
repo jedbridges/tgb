@@ -1,7 +1,7 @@
 ---
 name: John Webster
 sortName: Webster, John
-aliases: []
+aliases: [Webster]
 floruit: "c. 1602-1634"
 region: britain
 language: english

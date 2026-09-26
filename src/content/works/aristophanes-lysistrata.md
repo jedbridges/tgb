@@ -1,7 +1,7 @@
 ---
 title: Lysistrata
 originalTitle: Λυσιστράτη
-aliases: []
+aliases: [Lysistrate, Lysistrata]
 author: aristophanes
 year: -411
 yearDisplay: 411 BCE

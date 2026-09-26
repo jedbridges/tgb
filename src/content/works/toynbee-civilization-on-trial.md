@@ -1,6 +1,6 @@
 ---
 title: Civilization on Trial
-aliases: []
+aliases: [Civilization on Trial Toynbee, Toynbee essays]
 author: toynbee
 year: 1948
 era: twentieth-century

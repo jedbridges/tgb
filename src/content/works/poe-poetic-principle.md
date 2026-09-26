@@ -1,6 +1,6 @@
 ---
 title: The Poetic Principle
-aliases: []
+aliases: [Poetic Principle, Poe on poetry]
 author: poe
 year: 1850
 yearDisplay: lecture 1848, published 1850

@@ -1,7 +1,7 @@
 ---
 title: Parmenides
 originalTitle: Παρμενίδης
-aliases: []
+aliases: [Parmenides, Παρμενίδης, Parmenides dialogue]
 author: plato
 year: -365
 yearDisplay: c. 365 BCE

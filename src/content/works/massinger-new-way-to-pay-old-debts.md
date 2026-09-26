@@ -1,7 +1,7 @@
 ---
 title: A New Way to Pay Old Debts
 originalTitle: ""
-aliases: []
+aliases: [New Way to Pay Old Debts, Sir Giles Overreach]
 author: massinger
 year: 1625
 yearDisplay: c. 1625, published 1633

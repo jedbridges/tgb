@@ -1,7 +1,7 @@
 ---
 name: Edmund Burke
 sortName: Burke, Edmund
-aliases: []
+aliases: [Burke]
 born: 1729
 died: 1797
 region: britain

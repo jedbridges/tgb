@@ -1,7 +1,7 @@
 ---
 name: Karl Barth
 sortName: Barth, Karl
-aliases: []
+aliases: [Barth]
 born: 1886
 died: 1968
 region: germany

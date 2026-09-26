@@ -1,5 +1,6 @@
 ---
 title: A Rose for Emily
+aliases: [Rose for Emily, Emily Grierson]
 author: faulkner
 year: 1930
 era: twentieth-century

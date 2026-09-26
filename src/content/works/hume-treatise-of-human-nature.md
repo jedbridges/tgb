@@ -1,5 +1,6 @@
 ---
 title: A Treatise of Human Nature
+aliases: [Treatise of Human Nature, Treatise on Human Nature, Hume Treatise]
 author: hume
 year: 1739
 yearDisplay: 1739-1740

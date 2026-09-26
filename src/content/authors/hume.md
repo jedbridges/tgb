@@ -1,5 +1,6 @@
 ---
 name: David Hume
+aliases: [Hume]
 sortName: Hume, David
 born: 1711
 died: 1776

@@ -1,7 +1,7 @@
 ---
 name: Laurence Sterne
 sortName: Sterne, Laurence
-aliases: []
+aliases: [Sterne, Stern]
 born: 1713
 died: 1768
 region: britain

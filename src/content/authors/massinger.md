@@ -1,7 +1,7 @@
 ---
 name: Philip Massinger
 sortName: Massinger, Philip
-aliases: []
+aliases: [Massinger]
 born: 1583
 died: 1640
 region: britain

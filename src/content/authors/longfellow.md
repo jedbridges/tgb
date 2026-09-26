@@ -1,7 +1,7 @@
 ---
 name: Henry Wadsworth Longfellow
 sortName: Longfellow, Henry Wadsworth
-aliases: []
+aliases: [Longfellow]
 born: 1807
 died: 1882
 region: united-states

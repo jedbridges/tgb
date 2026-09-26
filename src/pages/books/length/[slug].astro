@@ -1,0 +1,18 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import TaxonomyPage from '~/components/TaxonomyPage.astro';
+export async function getStaticPaths() {
+  return (await getCollection('lengths')).map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const titles: Record<string, string> = {
+  short: 'Short great books you can read in a weekend',
+  medium: 'Great books of medium length',
+  long: 'Long great books worth the month',
+  epic: 'The longest great books, and why to read them anyway',
+};
+---
+<Base title={titles[entry.id] ?? `${entry.data.label} on the great books lists`} description={`${entry.data.description ?? ''} Every work of this length on the great college reading lists, with a guide to each.`}>
+  <TaxonomyPage kind="lengths" entry={entry} kindLabel="Length" match={(w) => w.data.length === entry.data.value} />
+</Base>

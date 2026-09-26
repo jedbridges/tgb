@@ -1,6 +1,6 @@
 ---
 title: The Merchant of Venice
-aliases: []
+aliases: [Merchant of Venice, Shylock, Portia]
 author: shakespeare
 year: 1597
 yearDisplay: c. 1596-1597

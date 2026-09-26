@@ -1,5 +1,6 @@
 ---
 name: Thomas Carlyle
+aliases: [Carlyle, Sage of Chelsea]
 sortName: Carlyle, Thomas
 born: 1795
 died: 1881

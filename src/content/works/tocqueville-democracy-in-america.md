@@ -1,5 +1,6 @@
 ---
 title: Democracy in America
+aliases: [De la démocratie en Amérique, De la democratie en Amerique, Democracy in America Tocqueville]
 originalTitle: De la démocratie en Amérique
 author: tocqueville
 year: 1835

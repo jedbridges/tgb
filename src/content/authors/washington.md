@@ -1,7 +1,7 @@
 ---
 name: George Washington
 sortName: Washington, George
-aliases: []
+aliases: [Washington]
 born: 1732
 died: 1799
 region: united-states

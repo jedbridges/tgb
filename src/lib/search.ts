@@ -10,10 +10,10 @@
  * both use it.
  */
 
-export type Group = 'Book' | 'Author' | 'Theme' | 'Era' | 'Form' | 'Program' | 'Passage' | 'Page';
-export const GROUP_ORDER: Group[] = ['Book', 'Author', 'Theme', 'Era', 'Form', 'Program', 'Passage', 'Page'];
+export type Group = 'Book' | 'Author' | 'Theme' | 'Era' | 'Form' | 'Shelf' | 'Program' | 'Passage' | 'Page';
+export const GROUP_ORDER: Group[] = ['Book', 'Author', 'Theme', 'Era', 'Form', 'Shelf', 'Program', 'Passage', 'Page'];
 export const GROUP_LABEL: Record<Group, string> = {
-  Book: 'Books', Author: 'Authors', Theme: 'Themes', Era: 'Eras', Form: 'Forms', Program: 'Programs', Passage: 'Passages', Page: 'Pages',
+  Book: 'Books', Author: 'Authors', Theme: 'Themes', Era: 'Eras', Form: 'Forms', Shelf: 'Shelves', Program: 'Programs', Passage: 'Passages', Page: 'Pages',
 };
 
 export interface Hit {
@@ -150,12 +150,13 @@ export async function search(q: string, opts: SearchOptions = {}): Promise<Hit[]
       meta: r.meta,
       filters: r.filters ?? {},
     }));
-  /* The page named by the query comes first. Ranking by term density puts Plato's Laws
+  /* The page named by the query, by its title or one of its other names, comes first. Ranking by term density puts Plato's Laws
      above Plato himself, because a dialogue names its author more often than his own
      page does; a reader who typed "Plato" wanted Plato. */
   if (text) {
     const want = plain(text);
-    const exact = hits.filter((h) => plain(h.title) === want);
+    const names = (h: Hit) => [h.title, ...(h.meta.aliases || '').split(', ')].filter(Boolean);
+    const exact = hits.filter((h) => names(h).some((n) => plain(n) === want));
     if (exact.length) return [...exact, ...hits.filter((h) => !exact.includes(h))];
   }
   return hits;

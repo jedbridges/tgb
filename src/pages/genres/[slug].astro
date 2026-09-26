@@ -6,7 +6,15 @@ export async function getStaticPaths() {
   return (await getCollection('genres')).map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
 }
 const { entry } = Astro.props;
+const titles: Record<string, string> = {
+  epic: 'The great epics', lyric: 'The great lyric poems', tragedy: 'The great tragedies', comedy: 'The great comedies', drama: 'The great plays',
+  dialogue: 'The great philosophical dialogues', treatise: 'The great treatises', essay: 'The great essays', history: 'The great histories',
+  biography: 'The great biographies and memoirs', scripture: 'Scripture on the great books lists', theology: 'The great works of theology',
+  'political-theory': 'The great works of political theory', novel: 'The great novels', satire: 'The great satires', romance: 'The great romances and tales',
+  science: 'The great books of science and mathematics', economics: 'The great books of economics', psychology: 'The great books of psychology',
+  letters: 'The great letters and speeches', 'founding-document': 'The founding documents',
+};
 ---
-<Base title={`${entry.data.label} on the great books lists`} description={`${entry.data.description ?? ''} Every ${entry.data.label.toLowerCase()} title on the great college reading lists.`}>
+<Base title={titles[entry.id] ?? `${entry.data.label} on the great books lists`} description={`${entry.data.description ?? ''} Every ${entry.data.label.toLowerCase()} title on the great college reading lists.`}>
   <TaxonomyPage kind="genres" entry={entry} kindLabel="Form" match={(w) => w.data.genre.id === entry.id || w.data.genres.some((g) => g.id === entry.id)} />
 </Base>

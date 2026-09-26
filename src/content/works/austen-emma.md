@@ -1,7 +1,7 @@
 ---
 title: Emma
 originalTitle: ""
-aliases: []
+aliases: [Emma Woodhouse]
 author: austen
 year: 1815
 era: nineteenth-century

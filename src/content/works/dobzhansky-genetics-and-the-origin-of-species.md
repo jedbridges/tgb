@@ -1,6 +1,6 @@
 ---
 title: Genetics and the Origin of Species
-aliases: []
+aliases: [Genetics and Origin of Species, Modern synthesis]
 author: dobzhansky
 year: 1937
 era: twentieth-century

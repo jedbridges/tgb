@@ -1,7 +1,7 @@
 ---
 name: Claude Bernard
 sortName: Bernard, Claude
-aliases: []
+aliases: [Bernard]
 born: 1813
 died: 1878
 region: france

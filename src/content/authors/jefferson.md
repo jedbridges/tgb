@@ -1,7 +1,7 @@
 ---
 name: Thomas Jefferson
 sortName: Jefferson, Thomas
-aliases: []
+aliases: [Jefferson]
 born: 1743
 died: 1826
 region: united-states

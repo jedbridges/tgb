@@ -1,7 +1,7 @@
 ---
 title: Creative Evolution
 originalTitle: L'Évolution créatrice
-aliases: []
+aliases: ["L'Évolution créatrice", Evolution creatrice, Élan vital]
 author: bergson
 year: 1907
 era: twentieth-century

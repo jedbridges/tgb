@@ -1,7 +1,7 @@
 ---
 title: On War
 originalTitle: Vom Kriege
-aliases: []
+aliases: [Vom Kriege, Vom Krieg, On War Clausewitz]
 author: clausewitz
 year: 1832
 era: nineteenth-century

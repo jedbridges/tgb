@@ -1,6 +1,6 @@
 ---
 title: The Taming of the Shrew
-aliases: []
+aliases: [Taming of the Shrew, Petruchio, Katherina]
 author: shakespeare
 year: 1592
 yearDisplay: c. 1590-1592

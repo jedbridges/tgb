@@ -1,7 +1,7 @@
 ---
 name: Henry James
 sortName: James, Henry
-aliases: []
+aliases: [James, H. James]
 born: 1843
 died: 1916
 region: united-states

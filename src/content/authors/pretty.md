@@ -1,7 +1,7 @@
 ---
 name: Francis Pretty
 sortName: Pretty, Francis
-aliases: []
+aliases: [Pretty]
 floruit: "1577-1580"
 region: britain
 language: english

@@ -1,7 +1,7 @@
 ---
 name: Alexander Pope
 sortName: Pope, Alexander
-aliases: []
+aliases: [Pope]
 born: 1688
 died: 1744
 region: britain

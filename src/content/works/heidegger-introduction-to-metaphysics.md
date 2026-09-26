@@ -1,7 +1,7 @@
 ---
 title: Introduction to Metaphysics
 originalTitle: Einführung in die Metaphysik
-aliases: []
+aliases: [Einführung in die Metaphysik, Einfuhrung in die Metaphysik, Why is there something rather than nothing]
 author: heidegger
 year: 1935
 yearDisplay: lectures 1935, published 1953

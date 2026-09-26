@@ -1,6 +1,6 @@
 ---
 title: Troilus and Cressida
-aliases: []
+aliases: [Troilus and Cressida Shakespeare, Troilus, Cressida]
 author: shakespeare
 year: 1602
 yearDisplay: c. 1602

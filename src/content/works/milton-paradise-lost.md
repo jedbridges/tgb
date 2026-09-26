@@ -1,6 +1,6 @@
 ---
 title: Paradise Lost
-aliases: []
+aliases: [Paradise Lost Milton, Fall of Man, Satan Milton]
 author: milton
 year: 1667
 yearDisplay: 1667; revised 1674

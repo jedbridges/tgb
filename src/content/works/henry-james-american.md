@@ -1,6 +1,6 @@
 ---
 title: The American
-aliases: []
+aliases: [American novel, Christopher Newman]
 author: henry-james
 year: 1877
 era: nineteenth-century

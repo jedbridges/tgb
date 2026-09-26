@@ -1,7 +1,7 @@
 ---
 name: William Harvey
 sortName: Harvey, William
-aliases: []
+aliases: [Harvey, Gulielmus Harveius]
 born: 1578
 died: 1657
 region: britain

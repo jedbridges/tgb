@@ -1,5 +1,6 @@
 ---
 title: Sir Walter Scott
+aliases: [Essay on Sir Walter Scott, Walter Scott]
 author: carlyle
 year: 1838
 era: nineteenth-century

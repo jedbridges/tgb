@@ -1,6 +1,6 @@
 ---
 title: Measure for Measure
-aliases: []
+aliases: [Measure for Measure Shakespeare, Isabella and Angelo, Duke Vincentio]
 author: shakespeare
 year: 1604
 yearDisplay: c. 1603-1604

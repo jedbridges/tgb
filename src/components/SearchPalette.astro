@@ -178,7 +178,7 @@ const hints = [
   function render(hits: Hit[], q: string) {
     sel = -1;
     if (!hits.length) { renderEmpty(q); return; }
-    const groups = groupHits(hits, { Book: 6, Author: 3, Theme: 3, Era: 2, Form: 2, Program: 3, Page: 2 });
+    const groups = groupHits(hits, { Book: 6, Author: 3, Theme: 3, Era: 2, Form: 2, Shelf: 2, Program: 3, Page: 2 });
     let i = 0;
     list.innerHTML = groups.map((g) => `<div class="group" role="presentation"><span>${g.label}</span>${g.total > g.hits.length ? `<span class="group__n">${g.hits.length} of ${g.total}</span>` : ''}</div>${g.hits.map((h) => renderHit(h, i++, g.group)).join('')}`).join('')
       + `<a class="all" role="option" id="hit-${i}" aria-selected="false" href="${escape(browseUrl(q))}">See every book that matches “${escape(q)}” →</a>`;

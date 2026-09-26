@@ -1,7 +1,7 @@
 ---
 name: David Walker
 sortName: Walker, David
-aliases: []
+aliases: [Walker]
 born: 1796
 died: 1830
 region: united-states

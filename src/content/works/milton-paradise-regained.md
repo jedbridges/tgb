@@ -1,6 +1,6 @@
 ---
 title: Paradise Regained
-aliases: []
+aliases: ["Paradise Regain'd", Paradise Regained Milton]
 author: milton
 year: 1671
 era: seventeenth-century
