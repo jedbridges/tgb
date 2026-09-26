@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxiv-of-the-roman-grandeur
+section: "chapter-xxiv-of-the-roman-grandeur"
 heading: "CHAPTER XXIV——OF THE ROMAN GRANDEUR"
 order: 95
 source: gutenberg

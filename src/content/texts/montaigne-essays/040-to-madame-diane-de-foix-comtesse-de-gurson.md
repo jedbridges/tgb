@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: to-madame-diane-de-foix-comtesse-de-gurson
+section: "to-madame-diane-de-foix-comtesse-de-gurson"
 heading: "TO MADAME DIANE DE FOIX, Comtesse de Gurson"
 order: 40
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: wide-ranging-much-diffused-and-common-species-vary-most
+section: "wide-ranging-much-diffused-and-common-species-vary-most"
 heading: "Wide-Ranging, Much Diffused, and Common Species Vary Most"
 order: 10
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxix-which-treats-of-the-droll-device-and-method-adopted-to-
+section: "xxix-which-treats-of-the-droll-device-and-method-adopted-to-"
 heading: "XXIX Which treats of the droll device and method adopted to extricate our love-stricken knight from the severe penance he had imposed upon himself."
 order: 32
 source: standardebooks

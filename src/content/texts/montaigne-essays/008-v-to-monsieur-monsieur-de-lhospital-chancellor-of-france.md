@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: v-to-monsieur-monsieur-de-lhospital-chancellor-of-france
+section: "v-to-monsieur-monsieur-de-lhospital-chancellor-of-france"
 heading: "V.——To Monsieur, Monsieur de L’HOSPITAL, Chancellor of France"
 order: 8
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: summary-86
+section: "summary-86"
 heading: "Summary"
 order: 86
 source: standardebooks

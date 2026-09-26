@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: he-was-a-squyer-of-lowe-degre-that-loved-the-kings-daughter-
+section: "he-was-a-squyer-of-lowe-degre-that-loved-the-kings-daughter-"
 heading: "He was a squyer of lowe degre,: That loved the king’s daughter of Hungrie."
 order: 62
 source: standardebooks

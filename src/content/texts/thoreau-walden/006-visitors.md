@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: visitors
+section: "visitors"
 heading: "Visitors"
 order: 6
 source: standardebooks

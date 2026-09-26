@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: fertility-of-varieties-when-crossed-and-of-their-mongrel-off
+section: "fertility-of-varieties-when-crossed-and-of-their-mongrel-off"
 heading: "Fertility of Varieties When Crossed, and of Their Mongrel Offspring, Not Universal"
 order: 58
 source: standardebooks

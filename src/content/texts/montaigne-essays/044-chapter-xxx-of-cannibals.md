@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxx-of-cannibals
+section: "chapter-xxx-of-cannibals"
 heading: "CHAPTER XXX——OF CANNIBALS"
 order: 44
 source: gutenberg

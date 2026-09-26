@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-i-of-profit-and-honesty
+section: "chapter-i-of-profit-and-honesty"
 heading: "CHAPTER I——OF PROFIT AND HONESTY"
 order: 109
 source: gutenberg

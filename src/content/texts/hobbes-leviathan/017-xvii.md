@@ -1,6 +1,6 @@
 ---
 work: hobbes-leviathan
-section: xvii
+section: "xvii"
 heading: "XVII"
 order: 17
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: xiii
+section: "xiii"
 heading: "XIII"
 order: 98
 source: standardebooks

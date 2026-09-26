@@ -1,6 +1,6 @@
 ---
 work: descartes-meditations
-section: part-iii
+section: "part-iii"
 heading: "PART III"
 order: 3
 source: gutenberg

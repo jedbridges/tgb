@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: conclusion-of-the-digression-concerning-the-variations-in-th
+section: "conclusion-of-the-digression-concerning-the-variations-in-th"
 heading: "Conclusion of the Digression Concerning the Variations in the Value of Silver"
 order: 22
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-iv
+section: "book-iv"
 heading: "BOOK IV."
 order: 4
 source: gutenberg

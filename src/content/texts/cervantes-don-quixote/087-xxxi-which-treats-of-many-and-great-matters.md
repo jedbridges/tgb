@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxi-which-treats-of-many-and-great-matters
+section: "xxxi-which-treats-of-many-and-great-matters"
 heading: "XXXI Which treats of many and great matters."
 order: 87
 source: standardebooks

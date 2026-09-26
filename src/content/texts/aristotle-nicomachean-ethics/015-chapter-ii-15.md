@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-ii-15
+section: "chapter-ii-15"
 heading: "Chapter II."
 order: 15
 source: gutenberg

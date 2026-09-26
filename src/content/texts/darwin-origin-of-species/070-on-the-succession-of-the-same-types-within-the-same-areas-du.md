@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-succession-of-the-same-types-within-the-same-areas-du
+section: "on-the-succession-of-the-same-types-within-the-same-areas-du"
 heading: "On the Succession of the Same Types Within the Same Areas, During the Later Tertiary Periods"
 order: 70
 source: standardebooks

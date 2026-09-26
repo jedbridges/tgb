@@ -1,6 +1,6 @@
 ---
 work: augustine-confessions
-section: book-ii
+section: "book-ii"
 heading: "BOOK II"
 order: 2
 source: gutenberg

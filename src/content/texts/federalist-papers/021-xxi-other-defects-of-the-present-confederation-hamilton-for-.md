@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxi-other-defects-of-the-present-confederation-hamilton-for-
+section: "xxi-other-defects-of-the-present-confederation-hamilton-for-"
 heading: "XXI Other Defects of the Present Confederation Hamilton: For The Independent Journal, Wednesday, December 12, 1787."
 order: 21
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlv-of-how-the-great-sancho-panza-took-possession-of-his-isl
+section: "xlv-of-how-the-great-sancho-panza-took-possession-of-his-isl"
 heading: "XLV Of how the great Sancho Panza took possession of his island, and of how he made a beginning in governing."
 order: 101
 source: standardebooks

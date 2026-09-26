@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: iii-of-the-laughable-conversation-that-passed-between-don-qu
+section: "iii-of-the-laughable-conversation-that-passed-between-don-qu"
 heading: "III Of the laughable conversation that passed between Don Quixote, Sancho Panza, and the bachelor Samson Carrasco."
 order: 59
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-vi
+section: "canto-vi"
 heading: "Canto: VI"
 order: 7
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: appendix
+section: "appendix"
 heading: "APPENDIX"
 order: 74
 source: gutenberg

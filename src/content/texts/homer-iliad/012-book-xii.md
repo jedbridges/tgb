@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-xii
+section: "book-xii"
 heading: "BOOK XII."
 order: 12
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: i-the-author-gives-some-account-of-himself-and-family-his-fi
+section: "i-the-author-gives-some-account-of-himself-and-family-his-fi"
 heading: "I The author gives some account of himself and family. His first inducements to travel. He is shipwrecked, and swims for his life. Gets safe on shore in the country of Lilliput; is made a prisoner, and carried up the country."
 order: 1
 source: standardebooks

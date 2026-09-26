@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxiv-in-which-is-continued-the-novel-of-the-ill-advised-cur
+section: "xxxiv-in-which-is-continued-the-novel-of-the-ill-advised-cur"
 heading: "XXXIV In which is continued the novel of The Ill-Advised Curiosity."
 order: 37
 source: standardebooks

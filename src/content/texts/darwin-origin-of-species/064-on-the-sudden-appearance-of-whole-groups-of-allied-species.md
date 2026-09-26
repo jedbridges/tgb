@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-sudden-appearance-of-whole-groups-of-allied-species
+section: "on-the-sudden-appearance-of-whole-groups-of-allied-species"
 heading: "On the Sudden Appearance of Whole Groups of Allied Species"
 order: 64
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xviii-of-what-happened-don-quixote-in-the-castle-or-house-of
+section: "xviii-of-what-happened-don-quixote-in-the-castle-or-house-of"
 heading: "XVIII Of what happened Don Quixote in the castle or house of the Knight of the Green Gabán, together with other matters out of the common."
 order: 74
 source: standardebooks

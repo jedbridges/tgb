@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxxi-the-judiciary-continued-and-the-distribution-of-the-ju
+section: "lxxxi-the-judiciary-continued-and-the-distribution-of-the-ju"
 heading: "LXXXI The Judiciary Continued, and the Distribution of the Judicial Authority Hamilton: From McClean’s Edition, New York, Wednesday, May 28, 1788."
 order: 81
 source: standardebooks

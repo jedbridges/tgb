@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xiv-that-our-mind-hinders-itself
+section: "chapter-xiv-that-our-mind-hinders-itself"
 heading: "CHAPTER XIV——THAT OUR MIND HINDERS ITSELF"
 order: 85
 source: gutenberg

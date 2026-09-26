@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: d-the-mysterious-visitor
+section: "d-the-mysterious-visitor"
 heading: "(d) The Mysterious Visitor"
 order: 42
 source: standardebooks

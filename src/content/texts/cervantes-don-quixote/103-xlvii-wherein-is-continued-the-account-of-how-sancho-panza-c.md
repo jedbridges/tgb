@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlvii-wherein-is-continued-the-account-of-how-sancho-panza-c
+section: "xlvii-wherein-is-continued-the-account-of-how-sancho-panza-c"
 heading: "XLVII Wherein is continued the account of how Sancho Panza conducted himself in his government."
 order: 103
 source: standardebooks

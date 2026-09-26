@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: taxes-upon-profit-or-upon-the-revenue-arising-from-stock
+section: "taxes-upon-profit-or-upon-the-revenue-arising-from-stock"
 heading: "Taxes Upon Profit, or Upon the Revenue Arising from Stock"
 order: 58
 source: standardebooks

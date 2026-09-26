@@ -1,6 +1,6 @@
 ---
 work: tolstoy-war-and-peace
-section: viii
+section: "viii"
 heading: "VIII"
 order: 8
 source: standardebooks

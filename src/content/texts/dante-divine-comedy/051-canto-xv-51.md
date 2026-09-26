@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xv-51
+section: "canto-xv-51"
 heading: "Canto: XV"
 order: 51
 source: standardebooks

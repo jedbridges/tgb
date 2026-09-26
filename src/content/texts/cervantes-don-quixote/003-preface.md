@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: preface
+section: "preface"
 heading: "Preface"
 order: 3
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: shakespeare-hamlet
-section: scene-i-12
+section: "scene-i-12"
 heading: "Scene: I"
 order: 12
 source: standardebooks

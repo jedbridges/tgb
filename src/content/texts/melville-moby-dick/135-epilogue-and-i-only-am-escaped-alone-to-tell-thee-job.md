@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: epilogue-and-i-only-am-escaped-alone-to-tell-thee-job
+section: "epilogue-and-i-only-am-escaped-alone-to-tell-thee-job"
 heading: "Epilogue “And I only am escaped alone to tell thee.” Job"
 order: 135
 source: standardebooks

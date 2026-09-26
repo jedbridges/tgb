@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: i-to-monsieur-de-montaigne
+section: "i-to-monsieur-de-montaigne"
 heading: "I.——To Monsieur de MONTAIGNE"
 order: 4
 source: gutenberg

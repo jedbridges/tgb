@@ -1,6 +1,6 @@
 ---
 work: thucydides-peloponnesian-war
-section: chapter-xx
+section: "chapter-xx"
 heading: "CHAPTER XX"
 order: 20
 source: gutenberg

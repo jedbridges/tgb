@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xvii-53
+section: "canto-xvii-53"
 heading: "Canto: XVII"
 order: 53
 source: standardebooks

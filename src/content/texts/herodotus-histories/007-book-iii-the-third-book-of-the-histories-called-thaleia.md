@@ -1,6 +1,6 @@
 ---
 work: herodotus-histories
-section: book-iii-the-third-book-of-the-histories-called-thaleia
+section: "book-iii-the-third-book-of-the-histories-called-thaleia"
 heading: "BOOK III. THE THIRD BOOK OF THE HISTORIES, CALLED THALEIA"
 order: 7
 source: gutenberg

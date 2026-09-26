@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-the-state-of-war
+section: "of-the-state-of-war"
 heading: "OF THE STATE OF WAR."
 order: 5
 source: gutenberg

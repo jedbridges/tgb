@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-the-forms-of-a-common-wealth
+section: "of-the-forms-of-a-common-wealth"
 heading: "OF THE FORMS OF A COMMON-WEALTH."
 order: 12
 source: gutenberg

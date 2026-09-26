@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxix32-concerning-the-militia-hamilton-from-the-new-york-pac
+section: "xxix32-concerning-the-militia-hamilton-from-the-new-york-pac"
 heading: "XXIX32 Concerning the Militia Hamilton: From the New York Packet, Wednesday, January 9, 1788."
 order: 29
 source: standardebooks

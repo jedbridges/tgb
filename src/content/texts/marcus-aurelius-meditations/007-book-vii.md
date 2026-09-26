@@ -1,6 +1,6 @@
 ---
 work: marcus-aurelius-meditations
-section: book-vii
+section: "book-vii"
 heading: "Book: VII"
 order: 7
 source: standardebooks

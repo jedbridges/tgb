@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: breeds-of-the-domestic-pigeon-their-differences-and-origin
+section: "breeds-of-the-domestic-pigeon-their-differences-and-origin"
 heading: "Breeds of the Domestic Pigeon, Their Differences and Origin"
 order: 4
 source: standardebooks

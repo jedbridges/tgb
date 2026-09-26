@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: of-the-interest-attaching-to-the-ideas-of-morality
+section: "of-the-interest-attaching-to-the-ideas-of-morality"
 heading: "Of the Interest attaching to the Ideas of Morality"
 order: 8
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: vii-the-authors-great-love-of-his-native-country-his-masters
+section: "vii-the-authors-great-love-of-his-native-country-his-masters"
 heading: "VII The author’s great love of his native country. His master’s observations upon the constitution and administration of England, as described by the author, with parallel cases and comparisons. His master’s observations upon human nature."
 order: 34
 source: standardebooks

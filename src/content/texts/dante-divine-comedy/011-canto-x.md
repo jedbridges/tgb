@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-x
+section: "canto-x"
 heading: "Canto: X"
 order: 11
 source: standardebooks

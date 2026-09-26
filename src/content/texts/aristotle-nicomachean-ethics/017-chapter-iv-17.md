@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-iv-17
+section: "chapter-iv-17"
 heading: "Chapter IV."
 order: 17
 source: gutenberg

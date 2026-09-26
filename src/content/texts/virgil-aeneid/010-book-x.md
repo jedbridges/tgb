@@ -1,6 +1,6 @@
 ---
 work: virgil-aeneid
-section: book-x
+section: "book-x"
 heading: "Book: X"
 order: 10
 source: standardebooks

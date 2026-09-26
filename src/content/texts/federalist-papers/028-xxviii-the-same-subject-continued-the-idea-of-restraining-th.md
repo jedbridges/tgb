@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxviii-the-same-subject-continued-the-idea-of-restraining-th
+section: "xxviii-the-same-subject-continued-the-idea-of-restraining-th"
 heading: "XXVIII The Same Subject Continued (The Idea of Restraining the Legislative Authority in Regard to the Common Defense Considered) Hamilton: For The Independent Journal, Wednesday, December 26, 1787."
 order: 28
 source: standardebooks

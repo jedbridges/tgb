@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxvii-in-which-is-continued-the-story-of-the-famous-princes
+section: "xxxvii-in-which-is-continued-the-story-of-the-famous-princes"
 heading: "XXXVII In which is continued the story of the famous Princess Micomicona, with other droll adventures."
 order: 40
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-v-40
+section: "chapter-v-40"
 heading: "Chapter V."
 order: 40
 source: gutenberg

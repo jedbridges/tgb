@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: special-difficulties-of-the-theory-of-natural-selection
+section: "special-difficulties-of-the-theory-of-natural-selection"
 heading: "Special Difficulties of the Theory of Natural Selection"
 order: 43
 source: standardebooks

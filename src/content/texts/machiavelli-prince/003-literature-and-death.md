@@ -1,6 +1,6 @@
 ---
 work: machiavelli-prince
-section: literature-and-death
+section: "literature-and-death"
 heading: "Literature and Death"
 order: 3
 source: standardebooks

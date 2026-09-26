@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: origins-and-savage-period-of-mankind
+section: "origins-and-savage-period-of-mankind"
 heading: "ORIGINS AND SAVAGE PERIOD OF MANKIND"
 order: 25
 source: gutenberg

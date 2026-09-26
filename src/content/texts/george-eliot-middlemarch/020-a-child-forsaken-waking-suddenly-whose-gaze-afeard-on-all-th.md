@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: a-child-forsaken-waking-suddenly-whose-gaze-afeard-on-all-th
+section: "a-child-forsaken-waking-suddenly-whose-gaze-afeard-on-all-th"
 heading: "A child forsaken, waking suddenly,: Whose gaze afeard on all things round doth rove,"
 order: 20
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: and-now-good-morrow-to-our-waking-souls-which-watch-not-one-
+section: "and-now-good-morrow-to-our-waking-souls-which-watch-not-one-"
 heading: "And now good-morrow to our waking souls: Which watch not one another out of fear;"
 order: 83
 source: standardebooks

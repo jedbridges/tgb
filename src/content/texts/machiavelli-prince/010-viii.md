@@ -1,6 +1,6 @@
 ---
 work: machiavelli-prince
-section: viii
+section: "viii"
 heading: "VIII"
 order: 10
 source: standardebooks

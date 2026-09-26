@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxviii-which-treats-of-the-strange-and-delightful-adventure-
+section: "xxviii-which-treats-of-the-strange-and-delightful-adventure-"
 heading: "XXVIII Which treats of the strange and delightful adventure that befell the curate and the barber in the same Sierra."
 order: 31
 source: standardebooks

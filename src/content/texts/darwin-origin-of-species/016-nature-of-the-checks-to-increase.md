@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: nature-of-the-checks-to-increase
+section: "nature-of-the-checks-to-increase"
 heading: "Nature of the Checks to Increase"
 order: 16
 source: standardebooks

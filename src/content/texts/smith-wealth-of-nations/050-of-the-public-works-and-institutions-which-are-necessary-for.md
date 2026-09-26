@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: of-the-public-works-and-institutions-which-are-necessary-for
+section: "of-the-public-works-and-institutions-which-are-necessary-for"
 heading: "Of the Public Works and Institutions Which Are Necessary for Facilitating Particular Branches of Commerce1320"
 order: 50
 source: standardebooks

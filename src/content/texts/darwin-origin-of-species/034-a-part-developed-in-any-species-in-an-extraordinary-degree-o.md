@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: a-part-developed-in-any-species-in-an-extraordinary-degree-o
+section: "a-part-developed-in-any-species-in-an-extraordinary-degree-o"
 heading: "A Part Developed in Any Species in an Extraordinary Degree or Manner, in Comparison with the Same Part in Allied Species, Tends to Be Highly Variable"
 order: 34
 source: standardebooks

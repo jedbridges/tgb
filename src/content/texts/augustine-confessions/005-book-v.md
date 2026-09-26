@@ -1,6 +1,6 @@
 ---
 work: augustine-confessions
-section: book-v
+section: "book-v"
 heading: "BOOK V"
 order: 5
 source: gutenberg

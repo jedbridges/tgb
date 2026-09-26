@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: section-36
+section: "section-36"
 heading: "Part 36"
 order: 36
 source: standardebooks

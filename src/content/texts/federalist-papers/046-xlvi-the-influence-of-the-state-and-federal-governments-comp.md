@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xlvi-the-influence-of-the-state-and-federal-governments-comp
+section: "xlvi-the-influence-of-the-state-and-federal-governments-comp"
 heading: "XLVI The Influence of the State and Federal Governments Compared Madison: From the New York Packet, Tuesday, January 29, 1788."
 order: 46
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: vi-of-the-diverting-and-important-scrutiny-which-the-curate-
+section: "vi-of-the-diverting-and-important-scrutiny-which-the-curate-"
 heading: "VI Of the diverting and important scrutiny which the curate and the barber made in the library of our ingenious gentleman."
 order: 9
 source: standardebooks

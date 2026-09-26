@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: life-treads-on-life-and-heart-on-heart-we-press-too-close-in
+section: "life-treads-on-life-and-heart-on-heart-we-press-too-close-in"
 heading: "Life treads on life, and heart on heart;: We press too close in church and mart"
 order: 9
 source: standardebooks

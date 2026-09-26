@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: digression-concerning-the-corn-trade-and-corn-laws999
+section: "digression-concerning-the-corn-trade-and-corn-laws999"
 heading: "Digression Concerning the Corn Trade and Corn Laws999"
 order: 40
 source: standardebooks

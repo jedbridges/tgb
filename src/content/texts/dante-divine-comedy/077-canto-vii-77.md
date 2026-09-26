@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-vii-77
+section: "canto-vii-77"
 heading: "Canto: VII"
 order: 77
 source: standardebooks

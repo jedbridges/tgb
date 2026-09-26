@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxii-which-deals-with-the-adventure-of-the-enchanted-head-to
+section: "lxii-which-deals-with-the-adventure-of-the-enchanted-head-to"
 heading: "LXII Which deals with the adventure of the enchanted head, together with other trivial matters which cannot be left untold."
 order: 118
 source: standardebooks

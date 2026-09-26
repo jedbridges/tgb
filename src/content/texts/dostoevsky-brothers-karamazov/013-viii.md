@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: viii
+section: "viii"
 heading: "VIII"
 order: 13
 source: standardebooks

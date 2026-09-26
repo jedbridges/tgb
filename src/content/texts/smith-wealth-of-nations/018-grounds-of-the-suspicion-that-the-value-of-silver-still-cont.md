@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: grounds-of-the-suspicion-that-the-value-of-silver-still-cont
+section: "grounds-of-the-suspicion-that-the-value-of-silver-still-cont"
 heading: "Grounds of the Suspicion That the Value of Silver Still Continues to Decrease"
 order: 18
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-x-71
+section: "chapter-x-71"
 heading: "Chapter X."
 order: 71
 source: gutenberg

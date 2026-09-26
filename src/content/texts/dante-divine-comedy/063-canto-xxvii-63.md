@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xxvii-63
+section: "canto-xxvii-63"
 heading: "Canto: XXVII"
 order: 63
 source: standardebooks

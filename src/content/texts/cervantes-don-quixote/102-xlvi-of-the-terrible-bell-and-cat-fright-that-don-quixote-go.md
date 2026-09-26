@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlvi-of-the-terrible-bell-and-cat-fright-that-don-quixote-go
+section: "xlvi-of-the-terrible-bell-and-cat-fright-that-don-quixote-go"
 heading: "XLVI Of the terrible bell and cat fright that Don Quixote got in the course of the enamoured Altisidora’s wooing."
 order: 102
 source: standardebooks

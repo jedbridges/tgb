@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: how-will-you-know-the-pitch-of-that-great-bell-too-large-for
+section: "how-will-you-know-the-pitch-of-that-great-bell-too-large-for"
 heading: "How will you know the pitch of that great bell: Too large for you to stir? Let but a flute"
 order: 31
 source: standardebooks

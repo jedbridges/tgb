@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-vi
+section: "book-vi"
 heading: "BOOK VI"
 order: 8
 source: gutenberg

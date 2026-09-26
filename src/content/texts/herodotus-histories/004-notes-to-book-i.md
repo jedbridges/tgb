@@ -1,6 +1,6 @@
 ---
 work: herodotus-histories
-section: notes-to-book-i
+section: "notes-to-book-i"
 heading: "NOTES TO BOOK I"
 order: 4
 source: gutenberg

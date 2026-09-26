@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: instability-of-the-administration-in-the-united-states
+section: "instability-of-the-administration-in-the-united-states"
 heading: "Instability Of The Administration In The United States"
 order: 23
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: the-concept-of-freedom-is-the-key-that-explains-the-autonomy
+section: "the-concept-of-freedom-is-the-key-that-explains-the-autonomy"
 heading: "The Concept of Freedom is the Key that explains the Autonomy of the Will"
 order: 6
 source: gutenberg

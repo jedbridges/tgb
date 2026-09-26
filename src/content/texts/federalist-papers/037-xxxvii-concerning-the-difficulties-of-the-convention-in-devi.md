@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxxvii-concerning-the-difficulties-of-the-convention-in-devi
+section: "xxxvii-concerning-the-difficulties-of-the-convention-in-devi"
 heading: "XXXVII Concerning the Difficulties of the Convention in Devising a Proper Form of Government Madison: From The Daily Advertiser, Friday, January 11, 1788."
 order: 37
 source: standardebooks

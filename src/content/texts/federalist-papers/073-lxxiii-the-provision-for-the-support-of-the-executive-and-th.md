@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxiii-the-provision-for-the-support-of-the-executive-and-th
+section: "lxxiii-the-provision-for-the-support-of-the-executive-and-th"
 heading: "LXXIII The Provision for the Support of the Executive, and the Veto Power Hamilton: From the New York Packet, Friday, March 21, 1788."
 order: 73
 source: standardebooks

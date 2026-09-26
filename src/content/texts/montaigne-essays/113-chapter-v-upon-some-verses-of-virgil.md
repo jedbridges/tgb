@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-v-upon-some-verses-of-virgil
+section: "chapter-v-upon-some-verses-of-virgil"
 heading: "CHAPTER V——UPON SOME VERSES OF VIRGIL"
 order: 113
 source: gutenberg

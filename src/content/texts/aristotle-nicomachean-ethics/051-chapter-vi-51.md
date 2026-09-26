@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-vi-51
+section: "chapter-vi-51"
 heading: "Chapter VI."
 order: 51
 source: gutenberg

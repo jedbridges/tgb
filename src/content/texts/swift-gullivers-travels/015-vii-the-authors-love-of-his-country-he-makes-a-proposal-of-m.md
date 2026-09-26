@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: vii-the-authors-love-of-his-country-he-makes-a-proposal-of-m
+section: "vii-the-authors-love-of-his-country-he-makes-a-proposal-of-m"
 heading: "VII The author’s love of his country. He makes a proposal of much advantage to the king, which is rejected. The king’s great ignorance in politics. The learning of that country very imperfect and confined. The laws, and military affairs, and parties in the state."
 order: 15
 source: standardebooks

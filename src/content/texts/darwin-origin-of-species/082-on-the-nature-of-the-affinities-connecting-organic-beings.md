@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-nature-of-the-affinities-connecting-organic-beings
+section: "on-the-nature-of-the-affinities-connecting-organic-beings"
 heading: "On the Nature of the Affinities Connecting Organic Beings"
 order: 82
 source: standardebooks

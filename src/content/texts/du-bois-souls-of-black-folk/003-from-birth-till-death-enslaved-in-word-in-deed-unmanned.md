@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: from-birth-till-death-enslaved-in-word-in-deed-unmanned
+section: "from-birth-till-death-enslaved-in-word-in-deed-unmanned"
 heading: "From birth till death enslaved; in word, in deed, unmanned!: ⋮"
 order: 3
 source: standardebooks

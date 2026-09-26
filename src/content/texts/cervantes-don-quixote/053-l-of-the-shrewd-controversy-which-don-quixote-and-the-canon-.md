@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: l-of-the-shrewd-controversy-which-don-quixote-and-the-canon-
+section: "l-of-the-shrewd-controversy-which-don-quixote-and-the-canon-"
 heading: "L Of the shrewd controversy which Don Quixote and the canon held, together with other incidents."
 order: 53
 source: standardebooks

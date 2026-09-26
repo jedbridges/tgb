@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: vii-the-same-subject-continued-concerning-dangers-from-disse
+section: "vii-the-same-subject-continued-concerning-dangers-from-disse"
 heading: "VII The Same Subject Continued (Concerning Dangers from Dissensions Between the States) Hamilton: For The Independent Journal, Thursday, November 15, 1787."
 order: 7
 source: standardebooks

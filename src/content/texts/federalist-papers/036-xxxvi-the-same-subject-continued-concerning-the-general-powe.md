@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxxvi-the-same-subject-continued-concerning-the-general-powe
+section: "xxxvi-the-same-subject-continued-concerning-the-general-powe"
 heading: "XXXVI The Same Subject Continued (Concerning the General Power of Taxation) Hamilton: From the New York Packet, Tuesday, January 8, 1788."
 order: 36
 source: standardebooks

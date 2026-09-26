@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxi-of-what-happened-don-quixote-on-entering-barcelona-toget
+section: "lxi-of-what-happened-don-quixote-on-entering-barcelona-toget"
 heading: "LXI Of what happened Don Quixote on entering Barcelona, together with other matters that partake of the true rather than of the ingenious."
 order: 117
 source: standardebooks

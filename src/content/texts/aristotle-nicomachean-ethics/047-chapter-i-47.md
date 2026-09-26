@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-i-47
+section: "chapter-i-47"
 heading: "Chapter I."
 order: 47
 source: gutenberg

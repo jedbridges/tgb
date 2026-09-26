@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xvii-the-same-subject-continued-the-insufficiency-of-the-pre
+section: "xvii-the-same-subject-continued-the-insufficiency-of-the-pre"
 heading: "XVII The Same Subject Continued (The Insufficiency of the Present Confederation to Preserve the Union) Hamilton: For The Independent Journal, Wednesday, December 5, 1787."
 order: 17
 source: standardebooks

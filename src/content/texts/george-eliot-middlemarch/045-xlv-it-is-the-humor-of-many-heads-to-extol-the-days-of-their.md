@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: xlv-it-is-the-humor-of-many-heads-to-extol-the-days-of-their
+section: "xlv-it-is-the-humor-of-many-heads-to-extol-the-days-of-their"
 heading: "XLV It is the humor of many heads to extol the days of their forefathers, and declaim against the wickedness of times present. Which notwithstanding they cannot handsomely do, without the borrowed help and satire of times past; condemning the vices of their own times, by the expressions of vices in times which they commend, which cannot but argue the community of vice in both. Horace, therefore, Juvenal, and Persius, were no prophets, although their lines did seem to indigitate and point at our times. Sir Thomas Browne: Pseudodoxia Epidemica"
 order: 45
 source: standardebooks

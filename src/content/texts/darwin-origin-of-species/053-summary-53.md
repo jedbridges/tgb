@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: summary-53
+section: "summary-53"
 heading: "Summary"
 order: 53
 source: standardebooks

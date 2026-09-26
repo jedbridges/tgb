@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xviii-in-which-is-related-the-discourse-sancho-panza-held-wi
+section: "xviii-in-which-is-related-the-discourse-sancho-panza-held-wi"
 heading: "XVIII In which is related the discourse Sancho Panza held with his master, Don Quixote, and other adventures worth relating."
 order: 21
 source: standardebooks

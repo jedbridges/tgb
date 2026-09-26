@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: hybrids-and-mongrels-compared-independently-of-their-fertili
+section: "hybrids-and-mongrels-compared-independently-of-their-fertili"
 heading: "Hybrids and Mongrels Compared, Independently of Their Fertility"
 order: 59
 source: standardebooks

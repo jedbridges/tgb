@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xlvii-the-particular-structure-of-the-new-government-and-the
+section: "xlvii-the-particular-structure-of-the-new-government-and-the"
 heading: "XLVII The Particular Structure of the New Government and the Distribution of Power Among Its Different Parts Madison: For The Independent Journal, Wednesday, January 30, 1788."
 order: 47
 source: standardebooks

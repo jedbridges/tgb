@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: liii-of-the-troublous-end-and-termination-sancho-panzas-gove
+section: "liii-of-the-troublous-end-and-termination-sancho-panzas-gove"
 heading: "LIII Of the troublous end and termination Sancho Panza’s government came to."
 order: 109
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: xv-to-the-same
+section: "xv-to-the-same"
 heading: "XV.——To the same."
 order: 14
 source: gutenberg

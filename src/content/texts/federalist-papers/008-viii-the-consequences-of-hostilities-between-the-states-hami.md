@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: viii-the-consequences-of-hostilities-between-the-states-hami
+section: "viii-the-consequences-of-hostilities-between-the-states-hami"
 heading: "VIII The Consequences of Hostilities Between the States Hamilton: From the New York Packet, Tuesday, November 20, 1787."
 order: 8
 source: standardebooks

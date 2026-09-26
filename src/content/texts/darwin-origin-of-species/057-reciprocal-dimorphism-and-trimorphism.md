@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: reciprocal-dimorphism-and-trimorphism
+section: "reciprocal-dimorphism-and-trimorphism"
 heading: "Reciprocal Dimorphism and Trimorphism"
 order: 57
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xviii-of-giving-the-lie
+section: "chapter-xviii-of-giving-the-lie"
 heading: "CHAPTER XVIII——OF GIVING THE LIE"
 order: 89
 source: gutenberg

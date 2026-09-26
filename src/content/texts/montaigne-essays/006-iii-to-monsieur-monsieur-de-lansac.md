@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: iii-to-monsieur-monsieur-de-lansac
+section: "iii-to-monsieur-monsieur-de-lansac"
 heading: "III.——To Monsieur, Monsieur de LANSAC,"
 order: 6
 source: gutenberg

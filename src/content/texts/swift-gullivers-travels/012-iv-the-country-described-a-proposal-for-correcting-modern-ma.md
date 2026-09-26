@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: iv-the-country-described-a-proposal-for-correcting-modern-ma
+section: "iv-the-country-described-a-proposal-for-correcting-modern-ma"
 heading: "IV The country described. A proposal for correcting modern maps. The king’s palace; and some account of the metropolis. The author’s way of travelling. The chief temple described."
 order: 12
 source: standardebooks

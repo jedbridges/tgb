@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-intercrossing-of-individuals
+section: "on-the-intercrossing-of-individuals"
 heading: "On the Intercrossing of Individuals"
 order: 21
 source: standardebooks

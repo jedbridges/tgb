@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: v-of-the-shrewd-and-droll-conversation-that-passed-between-s
+section: "v-of-the-shrewd-and-droll-conversation-that-passed-between-s"
 heading: "V Of the shrewd and droll conversation that passed between Sancho Panza and his wife Teresa Panza, and other matters worthy of being duly recorded."
 order: 61
 source: standardebooks

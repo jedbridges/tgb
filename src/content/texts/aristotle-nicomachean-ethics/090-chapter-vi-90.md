@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-vi-90
+section: "chapter-vi-90"
 heading: "Chapter VI."
 order: 90
 source: gutenberg

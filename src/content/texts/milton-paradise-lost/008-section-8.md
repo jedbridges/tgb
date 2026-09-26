@@ -1,6 +1,6 @@
 ---
 work: milton-paradise-lost
-section: section-8
+section: "section-8"
 heading: "Part 8"
 order: 8
 source: standardebooks

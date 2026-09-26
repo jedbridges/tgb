@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: the-plague-athens
+section: "the-plague-athens"
 heading: "THE PLAGUE ATHENS"
 order: 29
 source: gutenberg

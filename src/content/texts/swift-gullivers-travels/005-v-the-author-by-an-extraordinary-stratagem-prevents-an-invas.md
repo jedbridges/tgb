@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: v-the-author-by-an-extraordinary-stratagem-prevents-an-invas
+section: "v-the-author-by-an-extraordinary-stratagem-prevents-an-invas"
 heading: "V The author, by an extraordinary stratagem, prevents an invasion. A high title of honour is conferred upon him. Ambassadors arrive from the emperor of Blefuscu, and sue for peace. The empress’s apartment on fire by an accident; the author instrumental in saving the rest of the palace."
 order: 5
 source: standardebooks

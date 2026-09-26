@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: liii-it-is-but-a-shallow-haste-which-concludeth-insincerity-
+section: "liii-it-is-but-a-shallow-haste-which-concludeth-insincerity-"
 heading: "LIII It is but a shallow haste which concludeth insincerity from what outsiders call inconsistency⁠—putting a dead mechanism of “ifs” and “therefores” for the living myriad of hidden suckers whereby the belief and the conduct are wrought into mutual sustainment."
 order: 53
 source: standardebooks

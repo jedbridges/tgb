@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: the-bean-field
+section: "the-bean-field"
 heading: "The Bean-Field"
 order: 7
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: he-had-more-tow-on-his-distaffe-than-gerveis-knew
+section: "he-had-more-tow-on-his-distaffe-than-gerveis-knew"
 heading: "He had more tow on his distaffe: Than Gerveis knew."
 order: 12
 source: standardebooks

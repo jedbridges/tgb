@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: objections-to-the-theory-of-natural-selection-as-applied-to-
+section: "objections-to-the-theory-of-natural-selection-as-applied-to-"
 heading: "Objections to the Theory of Natural Selection as Applied to Instincts: Neuter and Sterile Insects"
 order: 52
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: thucydides-peloponnesian-war
-section: chapter-v
+section: "chapter-v"
 heading: "CHAPTER V"
 order: 5
 source: gutenberg

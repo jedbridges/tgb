@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: lxxxvi-le-coeur-se-sature-damour-comme-dun-sel-divin-qui-le-
+section: "lxxxvi-le-coeur-se-sature-damour-comme-dun-sel-divin-qui-le-"
 heading: "LXXXVI Le coeur se sature d’amour comme d’un sel divin qui le conserve; de la l’incorruptible adhérence de ceux qui se sont aimés des l’aube de la vie, et la fraîcheur des vielles amours prolongés. Il existe un embaumement d’amour. C’est de Daphnis et Chlöe que sont faits Philémon et Baucis. Cette vieillesse là, ressemblance du soir avec l’aurore. Victor Hugo: L’homme qui rit"
 order: 86
 source: standardebooks

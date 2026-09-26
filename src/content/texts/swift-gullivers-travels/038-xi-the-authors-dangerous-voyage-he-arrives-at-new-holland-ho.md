@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: xi-the-authors-dangerous-voyage-he-arrives-at-new-holland-ho
+section: "xi-the-authors-dangerous-voyage-he-arrives-at-new-holland-ho"
 heading: "XI The author’s dangerous voyage. He arrives at New Holland, hoping to settle there. Is wounded with an arrow by one of the natives. Is seized and carried by force into a Portuguese ship. The great civilities of the captain. The author arrives at England."
 order: 38
 source: standardebooks

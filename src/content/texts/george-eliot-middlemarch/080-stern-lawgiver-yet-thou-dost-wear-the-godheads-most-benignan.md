@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: stern-lawgiver-yet-thou-dost-wear-the-godheads-most-benignan
+section: "stern-lawgiver-yet-thou-dost-wear-the-godheads-most-benignan"
 heading: "Stern lawgiver! yet thou dost wear: The Godhead’s most benignant grace;"
 order: 80
 source: standardebooks

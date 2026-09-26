@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: extracts
+section: "extracts"
 heading: "Extracts"
 order: 1
 source: standardebooks

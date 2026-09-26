@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxx-which-follows-sixty-nine-and-deals-with-matters-indispen
+section: "lxx-which-follows-sixty-nine-and-deals-with-matters-indispen"
 heading: "LXX Which follows sixty-nine and deals with matters indispensable for the clear comprehension of this history."
 order: 126
 source: standardebooks

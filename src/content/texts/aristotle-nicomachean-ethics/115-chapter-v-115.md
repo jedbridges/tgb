@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-v-115
+section: "chapter-v-115"
 heading: "Chapter V."
 order: 115
 source: gutenberg

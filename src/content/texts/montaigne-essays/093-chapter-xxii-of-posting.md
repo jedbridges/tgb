@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxii-of-posting
+section: "chapter-xxii-of-posting"
 heading: "CHAPTER XXII——OF POSTING"
 order: 93
 source: gutenberg

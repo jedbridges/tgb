@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: instincts-of-the-cuckoo
+section: "instincts-of-the-cuckoo"
 heading: "Instincts of the Cuckoo"
 order: 49
 source: standardebooks

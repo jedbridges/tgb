@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxvi-wherein-is-related-the-strange-and-undreamt-of-adventu
+section: "xxxvi-wherein-is-related-the-strange-and-undreamt-of-adventu"
 heading: "XXXVI Wherein is related the strange and undreamt-of adventure of the distressed Duenna, alias the countess Trifaldi, together with a letter which Sancho Panza wrote to his wife, Teresa Panza."
 order: 92
 source: standardebooks

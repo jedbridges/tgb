@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: morphology
+section: "morphology"
 heading: "Morphology"
 order: 83
 source: standardebooks

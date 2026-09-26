@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: to-madame-destissac
+section: "to-madame-destissac"
 heading: "To Madame D’Estissac."
 order: 79
 source: gutenberg

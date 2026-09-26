@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxx-of-don-quixotes-adventure-with-a-fair-huntress
+section: "xxx-of-don-quixotes-adventure-with-a-fair-huntress"
 heading: "XXX Of Don Quixote’s adventure with a fair huntress."
 order: 86
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: liv-which-deals-with-matters-relating-to-this-history-and-no
+section: "liv-which-deals-with-matters-relating-to-this-history-and-no"
 heading: "LIV Which deals with matters relating to this history and no other."
 order: 110
 source: standardebooks

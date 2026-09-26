@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xl-that-the-relish-for-good-and-evil-depends-in-grea
+section: "chapter-xl-that-the-relish-for-good-and-evil-depends-in-grea"
 heading: "CHAPTER XL——THAT THE RELISH FOR GOOD AND EVIL DEPENDS IN GREAT MEASURE UPON THE OPINION WE HAVE OF THEM"
 order: 54
 source: gutenberg

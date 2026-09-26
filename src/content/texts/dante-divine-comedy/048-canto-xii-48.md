@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xii-48
+section: "canto-xii-48"
 heading: "Canto: XII"
 order: 48
 source: standardebooks

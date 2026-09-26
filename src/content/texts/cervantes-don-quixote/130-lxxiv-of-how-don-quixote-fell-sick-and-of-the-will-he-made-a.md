@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxxiv-of-how-don-quixote-fell-sick-and-of-the-will-he-made-a
+section: "lxxiv-of-how-don-quixote-fell-sick-and-of-the-will-he-made-a"
 heading: "LXXIV Of how Don Quixote fell sick, and of the will he made, and how he died."
 order: 130
 source: standardebooks

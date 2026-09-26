@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: summary-of-the-preceding-and-present-chapters
+section: "summary-of-the-preceding-and-present-chapters"
 heading: "Summary of the Preceding and Present Chapters"
 order: 71
 source: standardebooks

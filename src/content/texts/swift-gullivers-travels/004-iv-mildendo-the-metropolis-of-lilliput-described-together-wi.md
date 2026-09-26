@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: iv-mildendo-the-metropolis-of-lilliput-described-together-wi
+section: "iv-mildendo-the-metropolis-of-lilliput-described-together-wi"
 heading: "IV Mildendo, the metropolis of Lilliput, described, together with the emperor’s palace. A conversation between the author and a principal secretary, concerning the affairs of that empire. The author’s offers to serve the emperor in his wars."
 order: 4
 source: standardebooks

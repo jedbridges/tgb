@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxii-wherin-is-related-the-grand-adventure-of-the-cave-of-mo
+section: "xxii-wherin-is-related-the-grand-adventure-of-the-cave-of-mo"
 heading: "XXII Wherin is related the grand adventure of the Cave of Montesinos in the heart of La Mancha, which the valiant Don Quixote brought to a happy termination."
 order: 78
 source: standardebooks

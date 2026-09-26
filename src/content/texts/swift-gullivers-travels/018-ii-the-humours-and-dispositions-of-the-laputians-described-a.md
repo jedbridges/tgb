@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: ii-the-humours-and-dispositions-of-the-laputians-described-a
+section: "ii-the-humours-and-dispositions-of-the-laputians-described-a"
 heading: "II The humours and dispositions of the Laputians described. An account of their learning. Of the king and his court. The author’s reception there. The inhabitants subject to fear and disquietudes. An account of the women."
 order: 18
 source: standardebooks

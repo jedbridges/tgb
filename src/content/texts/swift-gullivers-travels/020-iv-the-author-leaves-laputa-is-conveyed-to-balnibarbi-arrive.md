@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: iv-the-author-leaves-laputa-is-conveyed-to-balnibarbi-arrive
+section: "iv-the-author-leaves-laputa-is-conveyed-to-balnibarbi-arrive"
 heading: "IV The author leaves Laputa; is conveyed to Balnibarbi; arrives at the metropolis. A description of the metropolis, and the country adjoining. The author hospitably received by a great lord. His conversation with that lord."
 order: 20
 source: standardebooks

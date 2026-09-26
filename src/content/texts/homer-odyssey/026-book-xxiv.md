@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-xxiv
+section: "book-xxiv"
 heading: "BOOK XXIV"
 order: 26
 source: gutenberg

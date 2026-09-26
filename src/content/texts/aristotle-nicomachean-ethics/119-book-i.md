@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: book-i
+section: "book-i"
 heading: "BOOK I"
 order: 119
 source: gutenberg

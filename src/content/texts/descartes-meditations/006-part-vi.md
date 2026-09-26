@@ -1,6 +1,6 @@
 ---
 work: descartes-meditations
-section: part-vi
+section: "part-vi"
 heading: "PART VI"
 order: 6
 source: gutenberg

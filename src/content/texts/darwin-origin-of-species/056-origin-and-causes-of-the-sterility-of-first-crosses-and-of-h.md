@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: origin-and-causes-of-the-sterility-of-first-crosses-and-of-h
+section: "origin-and-causes-of-the-sterility-of-first-crosses-and-of-h"
 heading: "Origin and Causes of the Sterility of First Crosses and of Hybrids"
 order: 56
 source: standardebooks

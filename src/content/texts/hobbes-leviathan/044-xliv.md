@@ -1,6 +1,6 @@
 ---
 work: hobbes-leviathan
-section: xliv
+section: "xliv"
 heading: "XLIV"
 order: 44
 source: standardebooks

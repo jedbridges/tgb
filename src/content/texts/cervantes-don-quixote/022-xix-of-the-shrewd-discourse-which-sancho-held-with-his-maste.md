@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xix-of-the-shrewd-discourse-which-sancho-held-with-his-maste
+section: "xix-of-the-shrewd-discourse-which-sancho-held-with-his-maste"
 heading: "XIX Of the shrewd discourse which Sancho held with his master, and of the adventure that befell him with a dead body, together with other notable occurrences."
 order: 22
 source: standardebooks

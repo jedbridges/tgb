@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: xcii
+section: "xcii"
 heading: "XCII"
 order: 93
 source: standardebooks

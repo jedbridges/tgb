@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: the-void
+section: "the-void"
 heading: "THE VOID"
 order: 4
 source: gutenberg

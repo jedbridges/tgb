@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xviii-that-men-are-not-to-judge-of-our-happiness-til
+section: "chapter-xviii-that-men-are-not-to-judge-of-our-happiness-til"
 heading: "CHAPTER XVIII——THAT MEN ARE NOT TO JUDGE OF OUR HAPPINESS TILL AFTER DEATH."
 order: 33
 source: gutenberg

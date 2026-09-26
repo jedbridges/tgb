@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: variations-in-the-proportion-between-the-respective-values-o
+section: "variations-in-the-proportion-between-the-respective-values-o"
 heading: "Variations in the Proportion Between the Respective Values of Gold and Silver"
 order: 17
 source: standardebooks

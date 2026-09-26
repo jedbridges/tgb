@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xvi-of-what-befell-don-quixote-with-a-discreet-gentleman-of-
+section: "xvi-of-what-befell-don-quixote-with-a-discreet-gentleman-of-"
 heading: "XVI Of what befell Don Quixote with a discreet gentleman of La Mancha."
 order: 72
 source: standardebooks

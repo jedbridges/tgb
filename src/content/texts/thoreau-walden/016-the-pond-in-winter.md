@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: the-pond-in-winter
+section: "the-pond-in-winter"
 heading: "The Pond in Winter"
 order: 16
 source: standardebooks

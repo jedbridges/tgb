@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: character-of-domestic-varieties-difficulty-of-distinguishing
+section: "character-of-domestic-varieties-difficulty-of-distinguishing"
 heading: "Character of Domestic Varieties; Difficulty of Distinguishing Between Varieties and Species; Origin of Domestic Varieties from One or More Species"
 order: 3
 source: standardebooks

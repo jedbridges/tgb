@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-xii-110
+section: "chapter-xii-110"
 heading: "Chapter XII."
 order: 110
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: e-the-russian-monk-and-his-possible-significance
+section: "e-the-russian-monk-and-his-possible-significance"
 heading: "(e) The Russian Monk and his possible Significance"
 order: 43
 source: standardebooks

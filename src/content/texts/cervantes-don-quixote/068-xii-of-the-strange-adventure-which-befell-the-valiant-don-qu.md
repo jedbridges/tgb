@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xii-of-the-strange-adventure-which-befell-the-valiant-don-qu
+section: "xii-of-the-strange-adventure-which-befell-the-valiant-don-qu"
 heading: "XII Of the strange adventure which befell the valiant Don Quixote with the bold Knight of the Mirrors."
 order: 68
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lvii-which-treats-of-how-don-quixote-took-leave-of-the-duke-
+section: "lvii-which-treats-of-how-don-quixote-took-leave-of-the-duke-"
 heading: "LVII Which treats of how Don Quixote took leave of the duke, and of what followed with the witty and impudent Altisidora, one of the duchess’s damsels."
 order: 113
 source: standardebooks

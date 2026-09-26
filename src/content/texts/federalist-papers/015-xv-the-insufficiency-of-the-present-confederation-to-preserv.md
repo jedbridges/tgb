@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xv-the-insufficiency-of-the-present-confederation-to-preserv
+section: "xv-the-insufficiency-of-the-present-confederation-to-preserv"
 heading: "XV The Insufficiency of the Present Confederation to Preserve the Union Hamilton: For The Independent Journal, Saturday, December 1, 1787."
 order: 15
 source: standardebooks

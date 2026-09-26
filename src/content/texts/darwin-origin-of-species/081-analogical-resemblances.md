@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: analogical-resemblances
+section: "analogical-resemblances"
 heading: "Analogical Resemblances"
 order: 81
 source: standardebooks

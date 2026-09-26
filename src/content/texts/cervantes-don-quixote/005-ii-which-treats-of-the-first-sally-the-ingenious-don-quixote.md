@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: ii-which-treats-of-the-first-sally-the-ingenious-don-quixote
+section: "ii-which-treats-of-the-first-sally-the-ingenious-don-quixote"
 heading: "II Which treats of the first sally the ingenious Don Quixote made from home."
 order: 5
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-origin-and-transition-of-organic-beings-with-peculiar
+section: "on-the-origin-and-transition-of-organic-beings-with-peculiar"
 heading: "On the Origin and Transition of Organic Beings with Peculiar Habits and Structure"
 order: 40
 source: standardebooks

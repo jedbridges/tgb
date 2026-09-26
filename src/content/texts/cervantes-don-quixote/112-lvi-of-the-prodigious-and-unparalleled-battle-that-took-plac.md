@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lvi-of-the-prodigious-and-unparalleled-battle-that-took-plac
+section: "lvi-of-the-prodigious-and-unparalleled-battle-that-took-plac"
 heading: "LVI Of the prodigious and unparalleled battle that took place between Don Quixote of La Mancha and the Lackey Tosilos in defence of the daughter of Doña Rodriguez."
 order: 112
 source: standardebooks

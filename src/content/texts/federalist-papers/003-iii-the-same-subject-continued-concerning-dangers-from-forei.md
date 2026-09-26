@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: iii-the-same-subject-continued-concerning-dangers-from-forei
+section: "iii-the-same-subject-continued-concerning-dangers-from-forei"
 heading: "III The Same Subject Continued (Concerning Dangers from Foreign Force and Influence) Jay: For The Independent Journal, Saturday, November 3, 1787."
 order: 3
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: v-in-which-the-narrative-of-our-knights-mishap-is-continued
+section: "v-in-which-the-narrative-of-our-knights-mishap-is-continued"
 heading: "V In which the narrative of our knight’s mishap is continued."
 order: 8
 source: standardebooks

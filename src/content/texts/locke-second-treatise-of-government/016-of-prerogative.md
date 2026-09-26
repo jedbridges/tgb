@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-prerogative
+section: "of-prerogative"
 heading: "OF PREROGATIVE."
 order: 16
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: xci-the-pequod-meets-the-rose-bud-in-vain-it-was-to-rake-for
+section: "xci-the-pequod-meets-the-rose-bud-in-vain-it-was-to-rake-for"
 heading: "XCI The Pequod Meets the Rose-Bud “In vain it was to rake for Ambergriese in the paunch of this Leviathan, insufferable fetor denying not inquiry.” Sir T. Browne, V.E."
 order: 92
 source: standardebooks

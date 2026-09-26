@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xvi
+section: "canto-xvi"
 heading: "Canto: XVI"
 order: 17
 source: standardebooks

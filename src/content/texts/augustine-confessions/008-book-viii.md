@@ -1,6 +1,6 @@
 ---
 work: augustine-confessions
-section: book-viii
+section: "book-viii"
 heading: "BOOK VIII"
 order: 8
 source: gutenberg

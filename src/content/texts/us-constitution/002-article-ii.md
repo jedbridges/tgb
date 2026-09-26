@@ -1,6 +1,6 @@
 ---
 work: us-constitution
-section: article-ii
+section: "article-ii"
 heading: "ARTICLE II"
 order: 2
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: the-following-is-a-list-of-the-works-of-aristotle
+section: "the-following-is-a-list-of-the-works-of-aristotle"
 heading: "The following is a list of the works of Aristotle:—"
 order: 2
 source: gutenberg

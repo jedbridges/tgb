@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: our-deeds-still-travel-with-us-from-afar-and-what-we-have-be
+section: "our-deeds-still-travel-with-us-from-afar-and-what-we-have-be"
 heading: "Our deeds still travel with us from afar,: And what we have been makes us what we are."
 order: 70
 source: standardebooks

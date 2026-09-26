@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: how-happy-is-he-born-and-taught-that-serveth-not-anothers-wi
+section: "how-happy-is-he-born-and-taught-that-serveth-not-anothers-wi"
 heading: "How happy is he born and taught: That serveth not another’s will;"
 order: 56
 source: standardebooks

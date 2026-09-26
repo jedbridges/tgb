@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xvi-the-same-subject-continued-the-insufficiency-of-the-pres
+section: "xvi-the-same-subject-continued-the-insufficiency-of-the-pres"
 heading: "XVI The Same Subject Continued (The Insufficiency of the Present Confederation to Preserve the Union) Hamilton: From the New York Packet, Tuesday, December 4, 1787."
 order: 16
 source: standardebooks

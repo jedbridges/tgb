@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-vii-105
+section: "chapter-vii-105"
 heading: "Chapter VII."
 order: 105
 source: gutenberg

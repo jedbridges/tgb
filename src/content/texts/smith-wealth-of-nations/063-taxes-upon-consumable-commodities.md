@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: taxes-upon-consumable-commodities
+section: "taxes-upon-consumable-commodities"
 heading: "Taxes Upon Consumable Commodities"
 order: 63
 source: standardebooks

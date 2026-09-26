@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lix-concerning-the-power-of-congress-to-regulate-the-electio
+section: "lix-concerning-the-power-of-congress-to-regulate-the-electio"
 heading: "LIX Concerning the Power of Congress to Regulate the Election of Members Hamilton: From the New York Packet, Friday, February 22, 1788."
 order: 59
 source: standardebooks

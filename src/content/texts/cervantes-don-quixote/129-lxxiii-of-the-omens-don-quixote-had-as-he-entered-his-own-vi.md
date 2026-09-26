@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxxiii-of-the-omens-don-quixote-had-as-he-entered-his-own-vi
+section: "lxxiii-of-the-omens-don-quixote-had-as-he-entered-his-own-vi"
 heading: "LXXIII Of the omens Don Quixote had as he entered his own village, and other incidents that embellish and give a colour to this great history."
 order: 129
 source: standardebooks

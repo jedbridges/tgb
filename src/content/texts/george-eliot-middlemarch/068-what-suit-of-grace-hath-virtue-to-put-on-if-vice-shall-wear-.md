@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: what-suit-of-grace-hath-virtue-to-put-on-if-vice-shall-wear-
+section: "what-suit-of-grace-hath-virtue-to-put-on-if-vice-shall-wear-"
 heading: "What suit of grace hath Virtue to put on: If Vice shall wear as good, and do as well?"
 order: 68
 source: standardebooks

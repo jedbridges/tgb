@@ -1,6 +1,6 @@
 ---
 work: marcus-aurelius-meditations
-section: book-iv
+section: "book-iv"
 heading: "Book: IV"
 order: 4
 source: standardebooks

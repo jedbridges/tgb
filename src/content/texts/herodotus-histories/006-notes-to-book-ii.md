@@ -1,6 +1,6 @@
 ---
 work: herodotus-histories
-section: notes-to-book-ii
+section: "notes-to-book-ii"
 heading: "NOTES TO BOOK II"
 order: 6
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: vi-a-further-account-of-the-academy-the-author-proposes-some
+section: "vi-a-further-account-of-the-academy-the-author-proposes-some"
 heading: "VI A further account of the academy. The author proposes some improvements, which are honourably received."
 order: 22
 source: standardebooks

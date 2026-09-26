@@ -1,6 +1,6 @@
 ---
 work: herodotus-histories
-section: book-iv-the-fourth-book-of-the-histories-called-melpomene
+section: "book-iv-the-fourth-book-of-the-histories-called-melpomene"
 heading: "BOOK IV. THE FOURTH BOOK OF THE HISTORIES, CALLED MELPOMENE"
 order: 9
 source: gutenberg

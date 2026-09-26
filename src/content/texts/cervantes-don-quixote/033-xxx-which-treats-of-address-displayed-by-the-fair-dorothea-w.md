@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxx-which-treats-of-address-displayed-by-the-fair-dorothea-w
+section: "xxx-which-treats-of-address-displayed-by-the-fair-dorothea-w"
 heading: "XXX Which treats of address displayed by the fair Dorothea, with other matters pleasant and amusing."
 order: 33
 source: standardebooks

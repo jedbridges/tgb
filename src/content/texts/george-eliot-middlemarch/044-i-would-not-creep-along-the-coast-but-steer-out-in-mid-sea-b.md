@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: i-would-not-creep-along-the-coast-but-steer-out-in-mid-sea-b
+section: "i-would-not-creep-along-the-coast-but-steer-out-in-mid-sea-b"
 heading: "I would not creep along the coast, but steer: Out in mid-sea, by guidance of the stars."
 order: 44
 source: standardebooks

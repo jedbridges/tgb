@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-vii
+section: "book-vii"
 heading: "BOOK VII"
 order: 9
 source: gutenberg

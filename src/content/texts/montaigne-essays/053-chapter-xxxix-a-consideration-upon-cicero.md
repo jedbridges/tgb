@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxxix-a-consideration-upon-cicero
+section: "chapter-xxxix-a-consideration-upon-cicero"
 heading: "CHAPTER XXXIX——A CONSIDERATION UPON CICERO"
 order: 53
 source: gutenberg

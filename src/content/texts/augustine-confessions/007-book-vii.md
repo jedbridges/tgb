@@ -1,6 +1,6 @@
 ---
 work: augustine-confessions
-section: book-vii
+section: "book-vii"
 heading: "BOOK VII"
 order: 7
 source: gutenberg

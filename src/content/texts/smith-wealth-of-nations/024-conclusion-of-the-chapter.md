@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: conclusion-of-the-chapter
+section: "conclusion-of-the-chapter"
 heading: "Conclusion of the Chapter"
 order: 24
 source: standardebooks

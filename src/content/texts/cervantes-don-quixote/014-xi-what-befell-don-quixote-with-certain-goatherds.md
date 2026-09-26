@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xi-what-befell-don-quixote-with-certain-goatherds
+section: "xi-what-befell-don-quixote-with-certain-goatherds"
 heading: "XI What befell Don Quixote with certain goatherds."
 order: 14
 source: standardebooks

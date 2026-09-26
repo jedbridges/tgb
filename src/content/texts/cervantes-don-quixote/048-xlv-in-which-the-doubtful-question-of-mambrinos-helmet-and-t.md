@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlv-in-which-the-doubtful-question-of-mambrinos-helmet-and-t
+section: "xlv-in-which-the-doubtful-question-of-mambrinos-helmet-and-t"
 heading: "XLV In which the doubtful question of Mambrino’s helmet and the packsaddle is finally settled, with other adventures that occurred in truth and earnest."
 order: 48
 source: standardebooks

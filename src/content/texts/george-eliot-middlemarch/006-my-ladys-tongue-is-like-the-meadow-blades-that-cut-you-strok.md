@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: my-ladys-tongue-is-like-the-meadow-blades-that-cut-you-strok
+section: "my-ladys-tongue-is-like-the-meadow-blades-that-cut-you-strok"
 heading: "My lady’s tongue is like the meadow blades,: That cut you stroking them with idle hand."
 order: 6
 source: standardebooks

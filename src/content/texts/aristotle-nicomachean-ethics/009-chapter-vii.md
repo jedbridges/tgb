@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-vii
+section: "chapter-vii"
 heading: "Chapter VII."
 order: 9
 source: gutenberg

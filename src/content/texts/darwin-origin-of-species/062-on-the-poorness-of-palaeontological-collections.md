@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-poorness-of-palaeontological-collections
+section: "on-the-poorness-of-palaeontological-collections"
 heading: "On the Poorness of Palaeontological Collections"
 order: 62
 source: standardebooks

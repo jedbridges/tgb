@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxiii-of-ill-means-employed-to-a-good-end
+section: "chapter-xxiii-of-ill-means-employed-to-a-good-end"
 heading: "CHAPTER XXIII——OF ILL MEANS EMPLOYED TO A GOOD END"
 order: 94
 source: gutenberg

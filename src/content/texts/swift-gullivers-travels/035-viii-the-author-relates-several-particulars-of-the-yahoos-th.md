@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: viii-the-author-relates-several-particulars-of-the-yahoos-th
+section: "viii-the-author-relates-several-particulars-of-the-yahoos-th"
 heading: "VIII The author relates several particulars of the Yahoos. The great virtues of the Houyhnhnms. The education and exercise of their youth. Their general assembly."
 order: 35
 source: standardebooks

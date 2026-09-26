@@ -1,6 +1,6 @@
 ---
 work: marcus-aurelius-meditations
-section: book-v
+section: "book-v"
 heading: "Book: V"
 order: 5
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: extinction-caused-by-natural-selection
+section: "extinction-caused-by-natural-selection"
 heading: "Extinction Caused by Natural Selection"
 order: 23
 source: standardebooks

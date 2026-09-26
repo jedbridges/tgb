@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: chapter-xiv-advantages-american-society-derive-from-democrac
+section: "chapter-xiv-advantages-american-society-derive-from-democrac"
 heading: "Chapter XIV: Advantages American Society Derive From Democracy—Part I"
 order: 25
 source: gutenberg

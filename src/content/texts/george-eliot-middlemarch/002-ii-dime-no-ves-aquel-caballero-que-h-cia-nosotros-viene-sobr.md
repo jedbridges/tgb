@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: ii-dime-no-ves-aquel-caballero-que-h-cia-nosotros-viene-sobr
+section: "ii-dime-no-ves-aquel-caballero-que-h-cia-nosotros-viene-sobr"
 heading: "II “Dime; no ves aquel caballero que hácia nosotros viene sobre un caballo rucio rodado que trae puesto en la cabeza un yelmo de oro?” “Lo que veo y columbro,” respondió Sancho, “no es sino un hombre sobre un asno pardo como el mio, que trae sobre la cabeza una cosa que relumbra.” “Pues ese es el yelmo de Mambrino,” dijo Don Quijote. “Seest thou not yon cavalier who cometh toward us on a dapple-gray steed, and weareth a golden helmet?” “What I see,” answered Sancho, “is nothing but a man on a gray ass like my own, who carries something shiny on his head.” “Just so,” answered Don Quixote: “and that resplendent object is the helmet of Mambrino.” Cervantes"
 order: 2
 source: standardebooks

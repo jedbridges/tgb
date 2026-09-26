@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: some-vital-functions
+section: "some-vital-functions"
 heading: "SOME VITAL FUNCTIONS"
 order: 20
 source: gutenberg

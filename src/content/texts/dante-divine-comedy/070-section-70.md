@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: section-70
+section: "section-70"
 heading: "Part 70"
 order: 70
 source: standardebooks

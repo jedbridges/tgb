@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-v-41
+section: "canto-v-41"
 heading: "Canto: V"
 order: 41
 source: standardebooks

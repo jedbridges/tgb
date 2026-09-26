@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: development-and-embryology
+section: "development-and-embryology"
 heading: "Development and Embryology"
 order: 84
 source: standardebooks

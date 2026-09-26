@@ -1,6 +1,6 @@
 ---
 work: austen-pride-and-prejudice
-section: xxxvi
+section: "xxxvi"
 heading: "XXXVI"
 order: 36
 source: standardebooks

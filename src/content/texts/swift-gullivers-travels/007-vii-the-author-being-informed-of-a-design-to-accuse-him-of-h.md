@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: vii-the-author-being-informed-of-a-design-to-accuse-him-of-h
+section: "vii-the-author-being-informed-of-a-design-to-accuse-him-of-h"
 heading: "VII The author, being informed of a design to accuse him of high-treason, makes his escape to Blefuscu. His reception there."
 order: 7
 source: standardebooks

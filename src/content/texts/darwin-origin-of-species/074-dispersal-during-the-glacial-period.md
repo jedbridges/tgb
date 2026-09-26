@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: dispersal-during-the-glacial-period
+section: "dispersal-during-the-glacial-period"
 heading: "Dispersal During the Glacial Period"
 order: 74
 source: standardebooks

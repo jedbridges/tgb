@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-ii-76
+section: "chapter-ii-76"
 heading: "Chapter II."
 order: 76
 source: gutenberg

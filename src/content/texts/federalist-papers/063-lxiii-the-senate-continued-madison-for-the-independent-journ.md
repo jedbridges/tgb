@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxiii-the-senate-continued-madison-for-the-independent-journ
+section: "lxiii-the-senate-continued-madison-for-the-independent-journ"
 heading: "LXIII The Senate Continued Madison: For The Independent Journal, Saturday, March 1, 1788."
 order: 63
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xii-of-what-a-goatherd-related-to-those-with-don-quixote
+section: "xii-of-what-a-goatherd-related-to-those-with-don-quixote"
 heading: "XII Of what a goatherd related to those with Don Quixote."
 order: 15
 source: standardebooks

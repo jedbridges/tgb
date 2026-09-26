@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-xiii-58
+section: "chapter-xiii-58"
 heading: "Chapter XIII."
 order: 58
 source: gutenberg

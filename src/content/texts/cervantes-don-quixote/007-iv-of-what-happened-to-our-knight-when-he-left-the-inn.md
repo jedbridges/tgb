@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: iv-of-what-happened-to-our-knight-when-he-left-the-inn
+section: "iv-of-what-happened-to-our-knight-when-he-left-the-inn"
 heading: "IV Of what happened to our knight when he left the inn."
 order: 7
 source: standardebooks

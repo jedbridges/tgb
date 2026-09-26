@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: party-is-nature-too-and-you-shall-see-by-force-of-logic-how-
+section: "party-is-nature-too-and-you-shall-see-by-force-of-logic-how-"
 heading: "Party is Nature too, and you shall see: By force of Logic how they both agree"
 order: 51
 source: standardebooks

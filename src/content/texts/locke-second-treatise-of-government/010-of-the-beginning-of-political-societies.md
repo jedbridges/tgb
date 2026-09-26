@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-the-beginning-of-political-societies
+section: "of-the-beginning-of-political-societies"
 heading: "OF THE BEGINNING OF POLITICAL SOCIETIES."
 order: 10
 source: gutenberg

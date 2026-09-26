@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-viii-of-idleness
+section: "chapter-viii-of-idleness"
 heading: "CHAPTER VIII——OF IDLENESS"
 order: 23
 source: gutenberg

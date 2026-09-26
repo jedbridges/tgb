@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-xi
+section: "book-xi"
 heading: "BOOK XI"
 order: 13
 source: gutenberg

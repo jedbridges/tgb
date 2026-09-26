@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xi-47
+section: "canto-xi-47"
 heading: "Canto: XI"
 order: 47
 source: standardebooks

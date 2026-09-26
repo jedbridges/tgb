@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxxv-of-three-good-women
+section: "chapter-xxxv-of-three-good-women"
 heading: "CHAPTER XXXV——OF THREE GOOD WOMEN"
 order: 106
 source: gutenberg

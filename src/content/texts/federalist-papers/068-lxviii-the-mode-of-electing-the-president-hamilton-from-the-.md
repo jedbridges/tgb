@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxviii-the-mode-of-electing-the-president-hamilton-from-the-
+section: "lxviii-the-mode-of-electing-the-president-hamilton-from-the-"
 heading: "LXVIII The Mode of Electing the President Hamilton: From The Independent Journal, Wednesday, March 12, 1788."
 order: 68
 source: standardebooks

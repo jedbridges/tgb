@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: sounds
+section: "sounds"
 heading: "Sounds"
 order: 4
 source: standardebooks

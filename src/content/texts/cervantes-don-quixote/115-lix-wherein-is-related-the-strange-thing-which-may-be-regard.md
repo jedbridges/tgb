@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lix-wherein-is-related-the-strange-thing-which-may-be-regard
+section: "lix-wherein-is-related-the-strange-thing-which-may-be-regard"
 heading: "LIX Wherein is related the strange thing, which may be regarded as an adventure, that happened Don Quixote."
 order: 115
 source: standardebooks

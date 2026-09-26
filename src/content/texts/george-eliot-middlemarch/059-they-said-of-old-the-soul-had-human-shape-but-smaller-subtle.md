@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: they-said-of-old-the-soul-had-human-shape-but-smaller-subtle
+section: "they-said-of-old-the-soul-had-human-shape-but-smaller-subtle"
 heading: "They said of old the Soul had human shape,: But smaller, subtler than the fleshly self,"
 order: 59
 source: standardebooks

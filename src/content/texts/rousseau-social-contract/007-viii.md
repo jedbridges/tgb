@@ -1,6 +1,6 @@
 ---
 work: rousseau-social-contract
-section: viii
+section: "viii"
 heading: "VIII"
 order: 7
 source: standardebooks

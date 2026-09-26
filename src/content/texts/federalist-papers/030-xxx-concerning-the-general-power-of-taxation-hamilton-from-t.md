@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxx-concerning-the-general-power-of-taxation-hamilton-from-t
+section: "xxx-concerning-the-general-power-of-taxation-hamilton-from-t"
 heading: "XXX Concerning the General Power of Taxation Hamilton: From the New York Packet, Friday, December 28, 1787."
 order: 30
 source: standardebooks

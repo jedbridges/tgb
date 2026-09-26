@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-vi-116
+section: "chapter-vi-116"
 heading: "Chapter VI."
 order: 116
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xlix-of-ancient-customs
+section: "chapter-xlix-of-ancient-customs"
 heading: "CHAPTER XLIX——OF ANCIENT CUSTOMS"
 order: 63
 source: gutenberg

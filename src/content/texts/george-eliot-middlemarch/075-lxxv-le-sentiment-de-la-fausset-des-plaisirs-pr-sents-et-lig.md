@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: lxxv-le-sentiment-de-la-fausset-des-plaisirs-pr-sents-et-lig
+section: "lxxv-le-sentiment-de-la-fausset-des-plaisirs-pr-sents-et-lig"
 heading: "LXXV Le sentiment de la fausseté des plaisirs présents, et l’ignorance de la vanité des plaisirs absents, causent l’inconstance. Pascal"
 order: 75
 source: standardebooks

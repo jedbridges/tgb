@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: iii-the-author-sent-for-to-court-the-queen-buys-him-off-his-
+section: "iii-the-author-sent-for-to-court-the-queen-buys-him-off-his-"
 heading: "III The author sent for to court. The queen buys him off his master the farmer, and presents him to the king. He disputes with his majesty’s great scholars. An apartment at court provided for the author. He is in high favour with the queen. He stands up for the honour of his own country. His quarrels with the queen’s dwarf."
 order: 11
 source: standardebooks

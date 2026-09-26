@@ -1,6 +1,6 @@
 ---
 work: aeschylus-oresteia
-section: dramatis-personae
+section: "dramatis-personae"
 heading: "DRAMATIS PERSONAE"
 order: 2
 source: gutenberg

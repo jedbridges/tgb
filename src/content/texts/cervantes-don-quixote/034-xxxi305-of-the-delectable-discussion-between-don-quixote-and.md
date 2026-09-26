@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxi305-of-the-delectable-discussion-between-don-quixote-and
+section: "xxxi305-of-the-delectable-discussion-between-don-quixote-and"
 heading: "XXXI305 Of the delectable discussion between Don Quixote and Sancho Panza, his squire, together with other incidents."
 order: 34
 source: standardebooks

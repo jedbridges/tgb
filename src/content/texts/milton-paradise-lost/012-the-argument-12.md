@@ -1,6 +1,6 @@
 ---
 work: milton-paradise-lost
-section: the-argument-12
+section: "the-argument-12"
 heading: "The Argument"
 order: 12
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xvi-a-proceeding-of-some-ambassadors
+section: "chapter-xvi-a-proceeding-of-some-ambassadors"
 heading: "CHAPTER XVI——A PROCEEDING OF SOME AMBASSADORS"
 order: 31
 source: gutenberg

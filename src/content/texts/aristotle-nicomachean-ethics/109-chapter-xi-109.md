@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-xi-109
+section: "chapter-xi-109"
 heading: "Chapter XI."
 order: 109
 source: gutenberg

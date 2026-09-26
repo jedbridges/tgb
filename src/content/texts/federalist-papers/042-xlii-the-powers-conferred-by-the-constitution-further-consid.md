@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xlii-the-powers-conferred-by-the-constitution-further-consid
+section: "xlii-the-powers-conferred-by-the-constitution-further-consid"
 heading: "XLII The Powers Conferred by the Constitution Further Considered Madison: From the New York Packet, Tuesday, January 22, 1788."
 order: 42
 source: standardebooks

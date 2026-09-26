@@ -1,6 +1,6 @@
 ---
 work: shakespeare-king-lear
-section: scene-iii-11
+section: "scene-iii-11"
 heading: "Scene: III"
 order: 11
 source: standardebooks

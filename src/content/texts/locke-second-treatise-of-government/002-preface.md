@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: preface
+section: "preface"
 heading: "PREFACE"
 order: 2
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: x522-wherein-is-related-the-crafty-device-sancho-adopted-to-
+section: "x522-wherein-is-related-the-crafty-device-sancho-adopted-to-"
 heading: "X522 Wherein is related the crafty device Sancho adopted to enchant the lady Dulcinea, and other incidents as ludicrous as they are true."
 order: 66
 source: standardebooks

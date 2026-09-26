@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: concluding-remark
+section: "concluding-remark"
 heading: "CONCLUDING REMARK"
 order: 11
 source: gutenberg

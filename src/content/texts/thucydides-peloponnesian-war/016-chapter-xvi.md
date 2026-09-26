@@ -1,6 +1,6 @@
 ---
 work: thucydides-peloponnesian-war
-section: chapter-xvi
+section: "chapter-xvi"
 heading: "CHAPTER XVI"
 order: 16
 source: gutenberg

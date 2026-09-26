@@ -1,6 +1,6 @@
 ---
 work: augustine-confessions
-section: book-iii
+section: "book-iii"
 heading: "BOOK III"
 order: 3
 source: gutenberg

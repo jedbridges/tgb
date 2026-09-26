@@ -1,6 +1,6 @@
 ---
 work: shakespeare-king-lear
-section: scene-v
+section: "scene-v"
 heading: "Scene: V"
 order: 5
 source: standardebooks

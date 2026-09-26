@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-the-legislative-executive-and-federative-power-of-the-com
+section: "of-the-legislative-executive-and-federative-power-of-the-com"
 heading: "OF THE LEGISLATIVE, EXECUTIVE, AND FEDERATIVE POWER OF THE COMMON-WEALTH."
 order: 14
 source: gutenberg

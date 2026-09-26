@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lii-of-the-quarrel-that-don-quixote-had-with-the-goatherd-to
+section: "lii-of-the-quarrel-that-don-quixote-had-with-the-goatherd-to"
 heading: "LII Of the quarrel that Don Quixote had with the goatherd, together with the rare adventure of the penitents, which with an expenditure of sweat he brought to a happy conclusion."
 order: 55
 source: standardebooks

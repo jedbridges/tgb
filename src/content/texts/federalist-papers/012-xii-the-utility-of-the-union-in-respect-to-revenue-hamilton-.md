@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xii-the-utility-of-the-union-in-respect-to-revenue-hamilton-
+section: "xii-the-utility-of-the-union-in-respect-to-revenue-hamilton-"
 heading: "XII The Utility of the Union in Respect to Revenue Hamilton: From the New York Packet, Tuesday, November 27, 1787."
 order: 12
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: vi-concerning-dangers-from-dissensions-between-the-states-ha
+section: "vi-concerning-dangers-from-dissensions-between-the-states-ha"
 heading: "VI Concerning Dangers from Dissensions Between the States Hamilton: For The Independent Journal, Wednesday, November 14, 1787."
 order: 6
 source: standardebooks

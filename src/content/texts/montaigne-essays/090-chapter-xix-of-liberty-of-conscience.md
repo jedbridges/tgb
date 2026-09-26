@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xix-of-liberty-of-conscience
+section: "chapter-xix-of-liberty-of-conscience"
 heading: "CHAPTER XIX——OF LIBERTY OF CONSCIENCE"
 order: 90
 source: gutenberg

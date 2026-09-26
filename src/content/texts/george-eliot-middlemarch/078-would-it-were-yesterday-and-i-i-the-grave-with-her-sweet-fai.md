@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: would-it-were-yesterday-and-i-i-the-grave-with-her-sweet-fai
+section: "would-it-were-yesterday-and-i-i-the-grave-with-her-sweet-fai"
 heading: "Would it were yesterday and I i’ the grave,: With her sweet faith above for monument."
 order: 78
 source: standardebooks

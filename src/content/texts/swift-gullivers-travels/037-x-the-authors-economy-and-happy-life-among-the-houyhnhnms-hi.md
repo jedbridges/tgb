@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: x-the-authors-economy-and-happy-life-among-the-houyhnhnms-hi
+section: "x-the-authors-economy-and-happy-life-among-the-houyhnhnms-hi"
 heading: "X The author’s economy, and happy life, among the Houyhnhnms. His great improvement in virtue by conversing with them. Their conversations. The author has notice given him by his master, that he must depart from the country. He falls into a swoon for grief; but submits. He contrives and finishes a canoe by the help of a fellow-servant, and puts to sea at a venture."
 order: 37
 source: standardebooks

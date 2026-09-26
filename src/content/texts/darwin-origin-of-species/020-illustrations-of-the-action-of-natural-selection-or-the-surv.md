@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: illustrations-of-the-action-of-natural-selection-or-the-surv
+section: "illustrations-of-the-action-of-natural-selection-or-the-surv"
 heading: "Illustrations of the Action of Natural Selection, or the Survival of the Fittest"
 order: 20
 source: standardebooks

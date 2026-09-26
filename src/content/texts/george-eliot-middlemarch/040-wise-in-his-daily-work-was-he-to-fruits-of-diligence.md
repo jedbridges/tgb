@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: wise-in-his-daily-work-was-he-to-fruits-of-diligence
+section: "wise-in-his-daily-work-was-he-to-fruits-of-diligence"
 heading: "Wise in his daily work was he:: To fruits of diligence,"
 order: 40
 source: standardebooks

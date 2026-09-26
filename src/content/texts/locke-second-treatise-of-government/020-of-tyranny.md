@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-tyranny
+section: "of-tyranny"
 heading: "OF TYRANNY."
 order: 20
 source: gutenberg

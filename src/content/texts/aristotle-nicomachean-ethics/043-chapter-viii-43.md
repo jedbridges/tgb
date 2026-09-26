@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-viii-43
+section: "chapter-viii-43"
 heading: "Chapter VIII."
 order: 43
 source: gutenberg

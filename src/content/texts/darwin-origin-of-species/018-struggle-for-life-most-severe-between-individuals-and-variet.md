@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: struggle-for-life-most-severe-between-individuals-and-variet
+section: "struggle-for-life-most-severe-between-individuals-and-variet"
 heading: "Struggle for Life Most Severe Between Individuals and Varieties of the Same Species"
 order: 18
 source: standardebooks

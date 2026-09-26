@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxv-the-treaty-making-power-of-the-executive-hamilton-for-t
+section: "lxxv-the-treaty-making-power-of-the-executive-hamilton-for-t"
 heading: "LXXV The Treaty-Making Power of the Executive Hamilton: For The Independent Journal, Wednesday, March 26, 1788."
 order: 75
 source: standardebooks

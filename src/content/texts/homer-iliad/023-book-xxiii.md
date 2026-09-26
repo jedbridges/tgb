@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-xxiii
+section: "book-xxiii"
 heading: "BOOK XXIII."
 order: 23
 source: gutenberg

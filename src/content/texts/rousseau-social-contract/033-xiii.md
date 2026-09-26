@@ -1,6 +1,6 @@
 ---
 work: rousseau-social-contract
-section: xiii
+section: "xiii"
 heading: "XIII"
 order: 33
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxx-the-powers-of-the-judiciary-hamilton-from-mccleans-edit
+section: "lxxx-the-powers-of-the-judiciary-hamilton-from-mccleans-edit"
 heading: "LXXX The Powers of the Judiciary Hamilton: From McClean’s Edition, New York, Wednesday, May 28, 1788."
 order: 80
 source: standardebooks

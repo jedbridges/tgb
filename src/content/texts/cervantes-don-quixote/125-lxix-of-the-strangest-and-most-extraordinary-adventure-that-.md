@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxix-of-the-strangest-and-most-extraordinary-adventure-that-
+section: "lxix-of-the-strangest-and-most-extraordinary-adventure-that-"
 heading: "LXIX Of the strangest and most extraordinary adventure that befell Don Quixote in the whole course of this great history."
 order: 125
 source: standardebooks

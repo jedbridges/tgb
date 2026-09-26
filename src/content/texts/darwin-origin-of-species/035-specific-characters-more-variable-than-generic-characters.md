@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: specific-characters-more-variable-than-generic-characters
+section: "specific-characters-more-variable-than-generic-characters"
 heading: "Specific Characters More Variable Than Generic Characters"
 order: 35
 source: standardebooks

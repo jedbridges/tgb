@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xlii-of-the-inequality-amoungst-us
+section: "chapter-xlii-of-the-inequality-amoungst-us"
 heading: "CHAPTER XLII——OF THE INEQUALITY AMOUNGST US."
 order: 56
 source: gutenberg

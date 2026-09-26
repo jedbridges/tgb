@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: higher-laws
+section: "higher-laws"
 heading: "Higher Laws"
 order: 11
 source: standardebooks

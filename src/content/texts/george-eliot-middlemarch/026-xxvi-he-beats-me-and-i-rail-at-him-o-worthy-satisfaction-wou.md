@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: xxvi-he-beats-me-and-i-rail-at-him-o-worthy-satisfaction-wou
+section: "xxvi-he-beats-me-and-i-rail-at-him-o-worthy-satisfaction-wou"
 heading: "XXVI He beats me and I rail at him: O worthy satisfaction! would it were otherwise⁠—that I could beat him while he railed at me. Troilus and Cressida"
 order: 26
 source: standardebooks

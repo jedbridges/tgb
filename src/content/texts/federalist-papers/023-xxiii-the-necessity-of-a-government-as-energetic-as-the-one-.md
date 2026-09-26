@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxiii-the-necessity-of-a-government-as-energetic-as-the-one-
+section: "xxiii-the-necessity-of-a-government-as-energetic-as-the-one-"
 heading: "XXIII The Necessity of a Government as Energetic as the One Proposed to the Preservation of the Union Hamilton: From the New York Packet, Tuesday, December 18, 1787."
 order: 23
 source: standardebooks

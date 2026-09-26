@@ -1,6 +1,6 @@
 ---
 work: plato-republic
-section: book-viii
+section: "book-viii"
 heading: "BOOK VIII."
 order: 9
 source: gutenberg

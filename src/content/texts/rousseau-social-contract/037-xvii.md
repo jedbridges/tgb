@@ -1,6 +1,6 @@
 ---
 work: rousseau-social-contract
-section: xvii
+section: "xvii"
 heading: "XVII"
 order: 37
 source: standardebooks

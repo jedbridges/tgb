@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: rudimentary-atrophied-and-aborted-organs
+section: "rudimentary-atrophied-and-aborted-organs"
 heading: "Rudimentary, Atrophied, and Aborted Organs"
 order: 85
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: thucydides-peloponnesian-war
-section: chapter-xii
+section: "chapter-xii"
 heading: "CHAPTER XII"
 order: 12
 source: gutenberg

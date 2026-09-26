@@ -1,6 +1,6 @@
 ---
 work: milton-paradise-lost
-section: section-15
+section: "section-15"
 heading: "Part 15"
 order: 15
 source: standardebooks

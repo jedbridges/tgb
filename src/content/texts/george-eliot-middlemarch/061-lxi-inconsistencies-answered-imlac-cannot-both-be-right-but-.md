@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: lxi-inconsistencies-answered-imlac-cannot-both-be-right-but-
+section: "lxi-inconsistencies-answered-imlac-cannot-both-be-right-but-"
 heading: "LXI “Inconsistencies,” answered Imlac, “cannot both be right, but imputed to man they may both be true.” Rasselas"
 order: 61
 source: standardebooks

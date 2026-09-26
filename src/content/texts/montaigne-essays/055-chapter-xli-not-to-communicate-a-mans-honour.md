@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xli-not-to-communicate-a-mans-honour
+section: "chapter-xli-not-to-communicate-a-mans-honour"
 heading: "CHAPTER XLI——NOT TO COMMUNICATE A MAN’S HONOUR"
 order: 55
 source: gutenberg

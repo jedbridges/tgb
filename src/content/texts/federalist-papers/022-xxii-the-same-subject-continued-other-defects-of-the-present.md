@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxii-the-same-subject-continued-other-defects-of-the-present
+section: "xxii-the-same-subject-continued-other-defects-of-the-present"
 heading: "XXII The Same Subject Continued (Other Defects of the Present Confederation) Hamilton: From the New York Packet, Friday, December 14, 1787."
 order: 22
 source: standardebooks

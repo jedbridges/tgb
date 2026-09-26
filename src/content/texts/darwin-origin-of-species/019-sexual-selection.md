@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: sexual-selection
+section: "sexual-selection"
 heading: "Sexual Selection"
 order: 19
 source: standardebooks

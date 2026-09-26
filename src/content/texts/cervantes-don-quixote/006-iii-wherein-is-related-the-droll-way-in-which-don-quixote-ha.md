@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: iii-wherein-is-related-the-droll-way-in-which-don-quixote-ha
+section: "iii-wherein-is-related-the-droll-way-in-which-don-quixote-ha"
 heading: "III Wherein is related the droll way in which Don Quixote had himself dubbed a knight."
 order: 6
 source: standardebooks

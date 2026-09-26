@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxii-of-custom-and-that-we-should-not-easily-change-
+section: "chapter-xxii-of-custom-and-that-we-should-not-easily-change-"
 heading: "CHAPTER XXII——OF CUSTOM, AND THAT WE SHOULD NOT EASILY CHANGE A LAW RECEIVED"
 order: 37
 source: gutenberg

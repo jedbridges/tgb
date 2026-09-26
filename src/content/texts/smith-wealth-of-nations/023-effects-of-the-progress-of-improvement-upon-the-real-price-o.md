@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: effects-of-the-progress-of-improvement-upon-the-real-price-o
+section: "effects-of-the-progress-of-improvement-upon-the-real-price-o"
 heading: "Effects of the Progress of Improvement Upon the Real Price of Manufactures"
 order: 23
 source: standardebooks

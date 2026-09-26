@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: atomic-forms-and-their-combinations
+section: "atomic-forms-and-their-combinations"
 heading: "ATOMIC FORMS AND THEIR COMBINATIONS"
 order: 11
 source: gutenberg

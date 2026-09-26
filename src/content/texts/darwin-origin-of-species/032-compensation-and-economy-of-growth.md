@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: compensation-and-economy-of-growth
+section: "compensation-and-economy-of-growth"
 heading: "Compensation and Economy of Growth"
 order: 32
 source: standardebooks

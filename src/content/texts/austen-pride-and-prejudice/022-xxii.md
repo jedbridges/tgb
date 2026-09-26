@@ -1,6 +1,6 @@
 ---
 work: austen-pride-and-prejudice
-section: xxii
+section: "xxii"
 heading: "XXII"
 order: 22
 source: standardebooks

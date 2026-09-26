@@ -1,6 +1,6 @@
 ---
 work: augustine-confessions
-section: book-iv
+section: "book-iv"
 heading: "BOOK IV"
 order: 4
 source: gutenberg

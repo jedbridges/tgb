@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: finale
+section: "finale"
 heading: "Finale"
 order: 87
 source: standardebooks

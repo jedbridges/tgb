@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xiv-objections-to-the-proposed-constitution-from-extent-of-t
+section: "xiv-objections-to-the-proposed-constitution-from-extent-of-t"
 heading: "XIV Objections to the Proposed Constitution from Extent of Territory Answered Madison: From the New York Packet, Friday, November 30, 1787."
 order: 14
 source: standardebooks

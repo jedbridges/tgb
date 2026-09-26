@@ -1,6 +1,6 @@
 ---
 work: shakespeare-king-lear
-section: scene-iv-19
+section: "scene-iv-19"
 heading: "Scene: IV"
 order: 19
 source: standardebooks

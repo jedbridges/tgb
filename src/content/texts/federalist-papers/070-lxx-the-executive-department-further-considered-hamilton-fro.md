@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxx-the-executive-department-further-considered-hamilton-fro
+section: "lxx-the-executive-department-further-considered-hamilton-fro"
 heading: "LXX The Executive Department Further Considered Hamilton: From The Independent Journal, Saturday, March 15, 1788."
 order: 70
 source: standardebooks

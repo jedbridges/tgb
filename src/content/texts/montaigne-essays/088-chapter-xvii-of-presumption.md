@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xvii-of-presumption
+section: "chapter-xvii-of-presumption"
 heading: "CHAPTER XVII——OF PRESUMPTION"
 order: 88
 source: gutenberg

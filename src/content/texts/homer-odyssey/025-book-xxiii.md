@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-xxiii
+section: "book-xxiii"
 heading: "BOOK XXIII"
 order: 25
 source: gutenberg

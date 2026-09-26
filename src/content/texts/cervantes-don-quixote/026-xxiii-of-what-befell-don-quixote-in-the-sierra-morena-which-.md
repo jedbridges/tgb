@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxiii-of-what-befell-don-quixote-in-the-sierra-morena-which-
+section: "xxiii-of-what-befell-don-quixote-in-the-sierra-morena-which-"
 heading: "XXIII Of what befell Don Quixote in the Sierra Morena, which was one of the rarest adventures related in this veracious history."
 order: 26
 source: standardebooks

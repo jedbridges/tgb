@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xi-81
+section: "canto-xi-81"
 heading: "Canto: XI"
 order: 81
 source: standardebooks

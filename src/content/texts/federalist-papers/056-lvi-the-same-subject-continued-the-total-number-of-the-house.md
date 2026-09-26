@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lvi-the-same-subject-continued-the-total-number-of-the-house
+section: "lvi-the-same-subject-continued-the-total-number-of-the-house"
 heading: "LVI The Same Subject Continued (The Total Number of the House of Representatives) Madison: For The Independent Journal, Saturday, February 16, 1788."
 order: 56
 source: standardebooks

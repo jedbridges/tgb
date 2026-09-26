@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: l-periodical-appeals-to-the-people-considered-madison-from-t
+section: "l-periodical-appeals-to-the-people-considered-madison-from-t"
 heading: "L Periodical Appeals to the People Considered Madison: From the New York Packet, Tuesday, February 5, 1788."
 order: 50
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxiv-the-powers-of-the-senate-jay-from-the-independent-journ
+section: "lxiv-the-powers-of-the-senate-jay-from-the-independent-journ"
 heading: "LXIV The Powers of the Senate Jay: From The Independent Journal, Wednesday, March 5, 1788."
 order: 64
 source: standardebooks

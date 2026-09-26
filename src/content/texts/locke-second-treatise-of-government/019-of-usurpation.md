@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-usurpation
+section: "of-usurpation"
 heading: "OF USURPATION."
 order: 19
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxi-that-the-profit-of-one-man-is-the-damage-of-anot
+section: "chapter-xxi-that-the-profit-of-one-man-is-the-damage-of-anot"
 heading: "CHAPTER XXI——THAT THE PROFIT OF ONE MAN IS THE DAMAGE OF ANOTHER"
 order: 36
 source: gutenberg

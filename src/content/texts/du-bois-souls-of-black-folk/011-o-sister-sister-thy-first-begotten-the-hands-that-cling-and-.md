@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: o-sister-sister-thy-first-begotten-the-hands-that-cling-and-
+section: "o-sister-sister-thy-first-begotten-the-hands-that-cling-and-"
 heading: "O sister, sister, thy first-begotten,: The hands that cling and the feet that follow,"
 order: 11
 source: standardebooks

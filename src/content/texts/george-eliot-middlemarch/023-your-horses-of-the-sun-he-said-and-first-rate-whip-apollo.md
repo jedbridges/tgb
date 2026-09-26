@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: your-horses-of-the-sun-he-said-and-first-rate-whip-apollo
+section: "your-horses-of-the-sun-he-said-and-first-rate-whip-apollo"
 heading: "“Your horses of the Sun,” he said,: “And first-rate whip Apollo!"
 order: 23
 source: standardebooks

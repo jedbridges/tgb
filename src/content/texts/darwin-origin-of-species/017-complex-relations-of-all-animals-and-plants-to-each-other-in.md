@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: complex-relations-of-all-animals-and-plants-to-each-other-in
+section: "complex-relations-of-all-animals-and-plants-to-each-other-in"
 heading: "Complex Relations of All Animals and Plants to Each Other in the Struggle for Existence"
 order: 17
 source: standardebooks

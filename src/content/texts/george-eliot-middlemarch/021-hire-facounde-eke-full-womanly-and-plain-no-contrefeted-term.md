@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: hire-facounde-eke-full-womanly-and-plain-no-contrefeted-term
+section: "hire-facounde-eke-full-womanly-and-plain-no-contrefeted-term"
 heading: "Hire facounde eke full womanly and plain,: No contrefeted termes had she"
 order: 21
 source: standardebooks

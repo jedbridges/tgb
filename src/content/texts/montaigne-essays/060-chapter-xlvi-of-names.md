@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xlvi-of-names
+section: "chapter-xlvi-of-names"
 heading: "CHAPTER XLVI——OF NAMES"
 order: 60
 source: gutenberg

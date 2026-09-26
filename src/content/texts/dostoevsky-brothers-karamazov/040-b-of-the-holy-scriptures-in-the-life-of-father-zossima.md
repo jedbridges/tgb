@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: b-of-the-holy-scriptures-in-the-life-of-father-zossima
+section: "b-of-the-holy-scriptures-in-the-life-of-father-zossima"
 heading: "(b) Of the Holy Scriptures in the Life of Father Zossima"
 order: 40
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxxii-of-how-don-quixote-and-sancho-reached-their-village
+section: "lxxii-of-how-don-quixote-and-sancho-reached-their-village"
 heading: "LXXII Of how Don Quixote and Sancho reached their village."
 order: 128
 source: standardebooks

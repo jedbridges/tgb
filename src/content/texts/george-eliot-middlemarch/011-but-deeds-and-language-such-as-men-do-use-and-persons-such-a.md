@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: but-deeds-and-language-such-as-men-do-use-and-persons-such-a
+section: "but-deeds-and-language-such-as-men-do-use-and-persons-such-a"
 heading: "But deeds and language such as men do use,: And persons such as comedy would choose,"
 order: 11
 source: standardebooks

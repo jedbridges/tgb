@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-relations-of-the-inhabitants-of-islands-to-those-of-t
+section: "on-the-relations-of-the-inhabitants-of-islands-to-those-of-t"
 heading: "On the Relations of the Inhabitants of Islands to Those of the Nearest Mainland"
 order: 79
 source: standardebooks

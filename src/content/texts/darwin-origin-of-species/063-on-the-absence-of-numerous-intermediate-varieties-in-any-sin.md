@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-absence-of-numerous-intermediate-varieties-in-any-sin
+section: "on-the-absence-of-numerous-intermediate-varieties-in-any-sin"
 heading: "On the Absence of Numerous Intermediate Varieties in Any Single Formation"
 order: 63
 source: standardebooks

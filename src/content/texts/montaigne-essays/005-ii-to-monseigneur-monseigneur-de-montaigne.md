@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: ii-to-monseigneur-monseigneur-de-montaigne
+section: "ii-to-monseigneur-monseigneur-de-montaigne"
 heading: "II.——To Monseigneur, Monseigneur de MONTAIGNE."
 order: 5
 source: gutenberg

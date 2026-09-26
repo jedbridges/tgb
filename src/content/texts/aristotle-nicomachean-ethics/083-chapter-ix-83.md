@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-ix-83
+section: "chapter-ix-83"
 heading: "Chapter IX."
 order: 83
 source: gutenberg

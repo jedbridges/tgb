@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-ii-of-sorrow
+section: "chapter-ii-of-sorrow"
 heading: "CHAPTER II——OF SORROW"
 order: 17
 source: gutenberg

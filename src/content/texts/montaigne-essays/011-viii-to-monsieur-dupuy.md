@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: viii-to-monsieur-dupuy
+section: "viii-to-monsieur-dupuy"
 heading: "VIII.——To Monsieur DUPUY,"
 order: 11
 source: gutenberg

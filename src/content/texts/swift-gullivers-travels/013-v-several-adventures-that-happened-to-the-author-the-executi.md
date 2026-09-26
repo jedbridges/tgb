@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: v-several-adventures-that-happened-to-the-author-the-executi
+section: "v-several-adventures-that-happened-to-the-author-the-executi"
 heading: "V Several adventures that happened to the author. The execution of a criminal. The author shows his skill in navigation."
 order: 13
 source: standardebooks

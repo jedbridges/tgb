@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: summary-of-the-last-and-present-chapters
+section: "summary-of-the-last-and-present-chapters"
 heading: "Summary of the Last and Present Chapters"
 order: 80
 source: standardebooks

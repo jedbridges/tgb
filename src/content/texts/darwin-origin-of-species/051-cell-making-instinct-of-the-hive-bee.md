@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: cell-making-instinct-of-the-hive-bee
+section: "cell-making-instinct-of-the-hive-bee"
 heading: "Cell-Making Instinct of the Hive-Bee"
 order: 51
 source: standardebooks

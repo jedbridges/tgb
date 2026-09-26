@@ -1,6 +1,6 @@
 ---
 work: shakespeare-hamlet
-section: scene-vii
+section: "scene-vii"
 heading: "Scene: VII"
 order: 18
 source: standardebooks

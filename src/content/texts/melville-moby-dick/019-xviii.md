@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: xviii
+section: "xviii"
 heading: "XVIII"
 order: 19
 source: standardebooks

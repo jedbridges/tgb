@@ -1,6 +1,6 @@
 ---
 work: us-constitution
-section: article-i
+section: "article-i"
 heading: "Article I"
 order: 1
 source: gutenberg

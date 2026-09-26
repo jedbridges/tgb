@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: single-centres-of-supposed-creation
+section: "single-centres-of-supposed-creation"
 heading: "Single Centres of Supposed Creation"
 order: 72
 source: standardebooks

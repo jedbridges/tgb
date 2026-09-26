@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-ix
+section: "book-ix"
 heading: "BOOK IX"
 order: 11
 source: gutenberg

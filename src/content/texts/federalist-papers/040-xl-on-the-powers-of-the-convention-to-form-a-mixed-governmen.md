@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xl-on-the-powers-of-the-convention-to-form-a-mixed-governmen
+section: "xl-on-the-powers-of-the-convention-to-form-a-mixed-governmen"
 heading: "XL On the Powers of the Convention to Form a Mixed Government Examined and Sustained Madison: For the New York Packet, Friday, January 18, 1788."
 order: 40
 source: standardebooks

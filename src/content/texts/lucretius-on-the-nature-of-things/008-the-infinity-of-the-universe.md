@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: the-infinity-of-the-universe
+section: "the-infinity-of-the-universe"
 heading: "THE INFINITY OF THE UNIVERSE"
 order: 8
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xx-of-the-force-of-imagination
+section: "chapter-xx-of-the-force-of-imagination"
 heading: "CHAPTER XX——OF THE FORCE OF IMAGINATION"
 order: 35
 source: gutenberg

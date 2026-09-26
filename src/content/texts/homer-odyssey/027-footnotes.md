@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: footnotes
+section: "footnotes"
 heading: "FOOTNOTES:"
 order: 27
 source: gutenberg

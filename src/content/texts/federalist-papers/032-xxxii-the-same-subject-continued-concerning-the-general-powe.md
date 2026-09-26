@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxxii-the-same-subject-continued-concerning-the-general-powe
+section: "xxxii-the-same-subject-continued-concerning-the-general-powe"
 heading: "XXXII The Same Subject Continued (Concerning the General Power of Taxation) Hamilton: From The Independent Journal, Wednesday, January 2, 1788."
 order: 32
 source: standardebooks

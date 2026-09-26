@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: li-which-deals-with-what-the-goatherd-told-those-who-were-ca
+section: "li-which-deals-with-what-the-goatherd-told-those-who-were-ca"
 heading: "LI Which deals with what the goatherd told those who were carrying off Don Quixote."
 order: 54
 source: standardebooks

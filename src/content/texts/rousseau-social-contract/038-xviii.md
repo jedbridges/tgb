@@ -1,6 +1,6 @@
 ---
 work: rousseau-social-contract
-section: xviii
+section: "xviii"
 heading: "XVIII"
 order: 38
 source: standardebooks

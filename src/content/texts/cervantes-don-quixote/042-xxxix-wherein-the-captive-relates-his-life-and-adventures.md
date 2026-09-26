@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxix-wherein-the-captive-relates-his-life-and-adventures
+section: "xxxix-wherein-the-captive-relates-his-life-and-adventures"
 heading: "XXXIX Wherein the captive relates his life and adventures."
 order: 42
 source: standardebooks

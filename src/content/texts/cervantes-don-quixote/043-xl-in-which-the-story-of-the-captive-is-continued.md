@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xl-in-which-the-story-of-the-captive-is-continued
+section: "xl-in-which-the-story-of-the-captive-is-continued"
 heading: "XL In which the story of the captive is continued."
 order: 43
 source: standardebooks

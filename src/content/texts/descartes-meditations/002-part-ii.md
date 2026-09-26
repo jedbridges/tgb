@@ -1,6 +1,6 @@
 ---
 work: descartes-meditations
-section: part-ii
+section: "part-ii"
 heading: "PART II"
 order: 2
 source: gutenberg

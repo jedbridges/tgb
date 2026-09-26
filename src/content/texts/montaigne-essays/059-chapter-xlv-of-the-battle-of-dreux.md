@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xlv-of-the-battle-of-dreux
+section: "chapter-xlv-of-the-battle-of-dreux"
 heading: "CHAPTER XLV——OF THE BATTLE OF DREUX"
 order: 59
 source: gutenberg

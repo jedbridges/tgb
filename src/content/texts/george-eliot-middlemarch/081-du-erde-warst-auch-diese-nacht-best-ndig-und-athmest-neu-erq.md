@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: du-erde-warst-auch-diese-nacht-best-ndig-und-athmest-neu-erq
+section: "du-erde-warst-auch-diese-nacht-best-ndig-und-athmest-neu-erq"
 heading: "Du Erde warst auch diese Nacht beständig,: Und athmest neu erquickt zu meinen Füssen,"
 order: 81
 source: standardebooks

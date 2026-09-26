@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: lxxxv-then-went-the-jury-out-whose-names-were-mr-blindman-mr
+section: "lxxxv-then-went-the-jury-out-whose-names-were-mr-blindman-mr"
 heading: "LXXXV Then went the jury out whose names were Mr. Blindman, Mr. No-good, Mr. Malice, Mr. Love-lust, Mr. Live-loose, Mr. Heady, Mr. High-mind, Mr. Enmity, Mr. Liar, Mr. Cruelty, Mr. Hate-light, Mr. Implacable, who everyone gave in his private verdict against him among themselves, and afterwards unanimously concluded to bring him in guilty before the judge. And first among themselves, Mr. Blindman, the foreman, said, I see clearly that this man is a heretic. Then said Mr. No-good, Away with such a fellow from the earth! Ay, said Mr. Malice, for I hate the very look of him. Then said Mr. Love-lust, I could never endure him. Nor I, said Mr. Live-loose; for he would be always condemning my way. Hang him, hang him, said Mr. Heady. A sorry scrub, said Mr. High-mind. My heart riseth against him, said Mr. Enmity. He is a rogue, said Mr. Liar. Hanging is too good for him, said Mr. Cruelty. Let us despatch him out of the way said Mr. Hate-light. Then said Mr. Implacable, Might I have all the world given me, I could not be reconciled to him; therefore let us forthwith bring him in guilty of death. Pilgrim’s Progress"
 order: 85
 source: standardebooks

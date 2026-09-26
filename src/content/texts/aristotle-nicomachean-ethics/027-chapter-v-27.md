@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-v-27
+section: "chapter-v-27"
 heading: "Chapter V."
 order: 27
 source: gutenberg

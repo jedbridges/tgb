@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-lvi-of-prayers
+section: "chapter-lvi-of-prayers"
 heading: "CHAPTER LVI——OF PRAYERS"
 order: 70
 source: gutenberg

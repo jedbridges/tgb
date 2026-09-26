@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-viii-of-the-art-of-conference
+section: "chapter-viii-of-the-art-of-conference"
 heading: "CHAPTER VIII——OF THE ART OF CONFERENCE"
 order: 116
 source: gutenberg

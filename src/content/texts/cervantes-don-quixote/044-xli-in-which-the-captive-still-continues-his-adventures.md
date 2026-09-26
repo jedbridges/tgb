@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xli-in-which-the-captive-still-continues-his-adventures
+section: "xli-in-which-the-captive-still-continues-his-adventures"
 heading: "XLI In which the captive still continues his adventures."
 order: 44
 source: standardebooks

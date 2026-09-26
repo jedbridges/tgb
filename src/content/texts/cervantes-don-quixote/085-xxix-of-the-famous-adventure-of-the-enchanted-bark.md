@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxix-of-the-famous-adventure-of-the-enchanted-bark
+section: "xxix-of-the-famous-adventure-of-the-enchanted-bark"
 heading: "XXIX Of the famous adventure of the enchanted bark."
 order: 85
 source: standardebooks

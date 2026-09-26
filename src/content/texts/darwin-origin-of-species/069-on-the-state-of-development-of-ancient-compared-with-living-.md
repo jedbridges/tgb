@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-state-of-development-of-ancient-compared-with-living-
+section: "on-the-state-of-development-of-ancient-compared-with-living-"
 heading: "On the State of Development of Ancient Compared with Living Forms"
 order: 69
 source: standardebooks

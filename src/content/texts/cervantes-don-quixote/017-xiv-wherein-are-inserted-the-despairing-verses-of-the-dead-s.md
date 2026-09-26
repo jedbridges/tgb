@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xiv-wherein-are-inserted-the-despairing-verses-of-the-dead-s
+section: "xiv-wherein-are-inserted-the-despairing-verses-of-the-dead-s"
 heading: "XIV Wherein are inserted the despairing verses of the dead shepherd, together with other incidents not looked for.157"
 order: 17
 source: standardebooks

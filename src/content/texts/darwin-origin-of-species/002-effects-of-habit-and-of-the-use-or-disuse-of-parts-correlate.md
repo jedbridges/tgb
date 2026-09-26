@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: effects-of-habit-and-of-the-use-or-disuse-of-parts-correlate
+section: "effects-of-habit-and-of-the-use-or-disuse-of-parts-correlate"
 heading: "Effects of Habit and of the Use or Disuse of Parts; Correlated Variation; Inheritance"
 order: 2
 source: standardebooks

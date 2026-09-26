@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: say-goddess-what-ensued-when-raphael-the-affable-archangel
+section: "say-goddess-what-ensued-when-raphael-the-affable-archangel"
 heading: "Say, goddess, what ensued, when Raphael,: The affable archangel⁠ ⁠…"
 order: 3
 source: standardebooks

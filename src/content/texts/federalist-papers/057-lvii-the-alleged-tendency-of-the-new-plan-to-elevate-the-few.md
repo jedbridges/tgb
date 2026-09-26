@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lvii-the-alleged-tendency-of-the-new-plan-to-elevate-the-few
+section: "lvii-the-alleged-tendency-of-the-new-plan-to-elevate-the-few"
 heading: "LVII The Alleged Tendency of the New Plan to Elevate the Few at the Expense of the Many Considered in Connection with Representation Madison: From the New York Packet, Tuesday, February 19, 1788."
 order: 57
 source: standardebooks

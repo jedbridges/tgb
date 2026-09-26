@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxii-of-the-freedom-don-quixote-conferred-on-several-unfortu
+section: "xxii-of-the-freedom-don-quixote-conferred-on-several-unfortu"
 heading: "XXII Of the freedom Don Quixote conferred on several unfortunates who against their will were being carried where they had no wish to go."
 order: 25
 source: standardebooks

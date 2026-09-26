@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxiv-which-relates-how-they-learned-the-way-in-which-they-w
+section: "xxxiv-which-relates-how-they-learned-the-way-in-which-they-w"
 heading: "XXXIV Which relates how they learned the way in which they were to disenchant the peerless Dulcinea del Toboso, which is one of the rarest adventures in this book."
 order: 90
 source: standardebooks

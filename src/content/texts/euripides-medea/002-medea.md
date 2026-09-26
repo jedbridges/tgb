@@ -1,6 +1,6 @@
 ---
 work: euripides-medea
-section: medea
+section: "medea"
 heading: "MEDEA"
 order: 2
 source: gutenberg

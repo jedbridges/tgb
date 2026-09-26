@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: full-souls-are-double-mirrors-making-still-an-endless-vista-
+section: "full-souls-are-double-mirrors-making-still-an-endless-vista-"
 heading: "Full souls are double mirrors, making still: An endless vista of fair things before,"
 order: 72
 source: standardebooks

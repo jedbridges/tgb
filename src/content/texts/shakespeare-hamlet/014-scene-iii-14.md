@@ -1,6 +1,6 @@
 ---
 work: shakespeare-hamlet
-section: scene-iii-14
+section: "scene-iii-14"
 heading: "Scene: III"
 order: 14
 source: standardebooks

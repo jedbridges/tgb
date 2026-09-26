@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: liv-the-apportionment-of-members-among-the-states-madison-fr
+section: "liv-the-apportionment-of-members-among-the-states-madison-fr"
 heading: "LIV The Apportionment of Members Among the States Madison: From the New York Packet, Tuesday, February 12, 1788."
 order: 54
 source: standardebooks

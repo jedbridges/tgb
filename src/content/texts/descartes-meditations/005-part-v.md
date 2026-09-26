@@ -1,6 +1,6 @@
 ---
 work: descartes-meditations
-section: part-v
+section: "part-v"
 heading: "PART V"
 order: 5
 source: gutenberg

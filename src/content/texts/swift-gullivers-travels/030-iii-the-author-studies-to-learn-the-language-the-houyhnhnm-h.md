@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: iii-the-author-studies-to-learn-the-language-the-houyhnhnm-h
+section: "iii-the-author-studies-to-learn-the-language-the-houyhnhnm-h"
 heading: "III The author studies to learn the language. The Houyhnhnm, his master, assists in teaching him. The language described. Several Houyhnhnms of quality come out of curiosity to see the author. He gives his master a short account of his voyage."
 order: 30
 source: standardebooks

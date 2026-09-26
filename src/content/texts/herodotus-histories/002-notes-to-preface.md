@@ -1,6 +1,6 @@
 ---
 work: herodotus-histories
-section: notes-to-preface
+section: "notes-to-preface"
 heading: "NOTES TO PREFACE"
 order: 2
 source: gutenberg

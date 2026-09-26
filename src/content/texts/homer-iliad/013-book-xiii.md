@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-xiii
+section: "book-xiii"
 heading: "BOOK XIII."
 order: 13
 source: gutenberg

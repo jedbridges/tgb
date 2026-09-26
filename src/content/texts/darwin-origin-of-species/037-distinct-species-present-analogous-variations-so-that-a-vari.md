@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: distinct-species-present-analogous-variations-so-that-a-vari
+section: "distinct-species-present-analogous-variations-so-that-a-vari"
 heading: "Distinct Species Present Analogous Variations, So That a Variety of One Species Often Assumes a Character Proper to an Allied Species, or Reverts to Some of the Characters of an Early Progenitor"
 order: 37
 source: standardebooks

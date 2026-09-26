@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: lxxiv
+section: "lxxiv"
 heading: "LXXIV"
 order: 75
 source: standardebooks

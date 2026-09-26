@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: where-lies-the-power-there-let-the-blame-lie-too-nay-power-i
+section: "where-lies-the-power-there-let-the-blame-lie-too-nay-power-i"
 heading: "Where lies the power, there let the blame lie too.: Nay, power is relative; you cannot fright"
 order: 64
 source: standardebooks

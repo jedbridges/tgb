@@ -1,6 +1,6 @@
 ---
 work: rousseau-discourse-on-inequality
-section: discourse-first-part
+section: "discourse-first-part"
 heading: "DISCOURSE FIRST PART"
 order: 3
 source: gutenberg

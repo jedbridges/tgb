@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: by-john-locke
+section: "by-john-locke"
 heading: "by JOHN LOCKE"
 order: 1
 source: gutenberg

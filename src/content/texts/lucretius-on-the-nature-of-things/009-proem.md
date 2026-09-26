@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: proem
+section: "proem"
 heading: "PROEM"
 order: 9
 source: gutenberg

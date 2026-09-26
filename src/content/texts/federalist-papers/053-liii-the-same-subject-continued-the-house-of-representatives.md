@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: liii-the-same-subject-continued-the-house-of-representatives
+section: "liii-the-same-subject-continued-the-house-of-representatives"
 heading: "LIII The Same Subject Continued (The House of Representatives) Madison: For The Independent Journal, Saturday, February 9, 1788."
 order: 53
 source: standardebooks

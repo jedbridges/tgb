@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: lxiii-these-little-things-are-great-to-little-man-goldsmith
+section: "lxiii-these-little-things-are-great-to-little-man-goldsmith"
 heading: "LXIII These little things are great to little man. Goldsmith"
 order: 63
 source: standardebooks

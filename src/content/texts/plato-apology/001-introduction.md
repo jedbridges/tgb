@@ -1,6 +1,6 @@
 ---
 work: plato-apology
-section: introduction
+section: "introduction"
 heading: "INTRODUCTION."
 order: 1
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-ii
+section: "book-ii"
 heading: "BOOK II"
 order: 4
 source: gutenberg

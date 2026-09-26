@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: utilitarian-doctrine-how-far-true-beauty-how-acquired
+section: "utilitarian-doctrine-how-far-true-beauty-how-acquired"
 heading: "Utilitarian Doctrine, How Far True: Beauty, How Acquired"
 order: 45
 source: standardebooks

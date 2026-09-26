@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: cxxvi
+section: "cxxvi"
 heading: "CXXVI"
 order: 125
 source: standardebooks

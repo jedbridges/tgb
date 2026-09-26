@@ -1,6 +1,6 @@
 ---
 work: euripides-medea
-section: notes-to-medea
+section: "notes-to-medea"
 heading: "NOTES TO MEDEA"
 order: 3
 source: gutenberg

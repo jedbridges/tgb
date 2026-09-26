@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: the-senses-and-mental-pictures
+section: "the-senses-and-mental-pictures"
 heading: "THE SENSES AND MENTAL PICTURES"
 order: 19
 source: gutenberg

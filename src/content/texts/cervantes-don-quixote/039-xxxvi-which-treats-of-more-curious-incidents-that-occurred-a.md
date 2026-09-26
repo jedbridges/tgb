@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxvi-which-treats-of-more-curious-incidents-that-occurred-a
+section: "xxxvi-which-treats-of-more-curious-incidents-that-occurred-a"
 heading: "XXXVI Which treats of more curious incidents that occurred at the inn."
 order: 39
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxvii-wherein-it-is-shown-who-master-pedro-and-his-ape-were-
+section: "xxvii-wherein-it-is-shown-who-master-pedro-and-his-ape-were-"
 heading: "XXVII Wherein it is shown who Master Pedro and his ape were, together with the mishap Don Quixote had in the braying adventure, which he did not conclude as he would have liked or as he had expected."
 order: 83
 source: standardebooks

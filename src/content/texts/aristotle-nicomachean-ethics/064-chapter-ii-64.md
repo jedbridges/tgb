@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-ii-64
+section: "chapter-ii-64"
 heading: "Chapter II."
 order: 64
 source: gutenberg

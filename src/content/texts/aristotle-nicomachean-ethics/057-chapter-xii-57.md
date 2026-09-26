@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-xii-57
+section: "chapter-xii-57"
 heading: "Chapter XII."
 order: 57
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-iv-114
+section: "chapter-iv-114"
 heading: "Chapter IV."
 order: 114
 source: gutenberg

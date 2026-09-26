@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: unconscious-selection
+section: "unconscious-selection"
 heading: "Unconscious Selection"
 order: 6
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: h-can-a-man-judge-his-fellow-creatures-faith-to-the-end
+section: "h-can-a-man-judge-his-fellow-creatures-faith-to-the-end"
 heading: "(h) Can a Man judge his Fellow Creatures? Faith to the End"
 order: 46
 source: standardebooks

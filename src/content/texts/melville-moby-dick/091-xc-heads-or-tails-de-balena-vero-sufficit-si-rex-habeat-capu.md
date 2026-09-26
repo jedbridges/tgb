@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: xc-heads-or-tails-de-balena-vero-sufficit-si-rex-habeat-capu
+section: "xc-heads-or-tails-de-balena-vero-sufficit-si-rex-habeat-capu"
 heading: "XC Heads or Tails “De balena vero sufficit, si rex habeat caput, et regina caudam.” Bracton, l. 3, c. 3"
 order: 91
 source: standardebooks

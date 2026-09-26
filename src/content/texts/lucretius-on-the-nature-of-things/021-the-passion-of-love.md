@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: the-passion-of-love
+section: "the-passion-of-love"
 heading: "THE PASSION OF LOVE"
 order: 21
 source: gutenberg

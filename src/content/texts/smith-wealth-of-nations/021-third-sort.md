@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: third-sort
+section: "third-sort"
 heading: "Third Sort"
 order: 21
 source: standardebooks

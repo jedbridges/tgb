@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-xiv-59
+section: "chapter-xiv-59"
 heading: "Chapter XIV."
 order: 59
 source: gutenberg

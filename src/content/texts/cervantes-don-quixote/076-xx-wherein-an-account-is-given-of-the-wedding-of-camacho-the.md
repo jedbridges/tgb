@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xx-wherein-an-account-is-given-of-the-wedding-of-camacho-the
+section: "xx-wherein-an-account-is-given-of-the-wedding-of-camacho-the"
 heading: "XX Wherein an account is given of the wedding of Camacho the Rich, together with the incident of Basilio the Poor."
 order: 76
 source: standardebooks

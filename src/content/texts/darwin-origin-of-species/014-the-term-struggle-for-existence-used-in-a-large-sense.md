@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: the-term-struggle-for-existence-used-in-a-large-sense
+section: "the-term-struggle-for-existence-used-in-a-large-sense"
 heading: "The Term, Struggle for Existence, Used in a Large Sense"
 order: 14
 source: standardebooks

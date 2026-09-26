@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: lxix-if-thou-hast-heard-a-word-let-it-die-with-thee-ecclesia
+section: "lxix-if-thou-hast-heard-a-word-let-it-die-with-thee-ecclesia"
 heading: "LXIX If thou hast heard a word, let it die with thee. Ecclesiasticus"
 order: 69
 source: standardebooks

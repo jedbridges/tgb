@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-x-of-quick-or-slow-speech
+section: "chapter-x-of-quick-or-slow-speech"
 heading: "CHAPTER X——OF QUICK OR SLOW SPEECH"
 order: 25
 source: gutenberg

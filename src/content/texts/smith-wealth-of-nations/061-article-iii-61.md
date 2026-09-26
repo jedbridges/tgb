@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: article-iii-61
+section: "article-iii-61"
 heading: "Article: III"
 order: 61
 source: standardebooks

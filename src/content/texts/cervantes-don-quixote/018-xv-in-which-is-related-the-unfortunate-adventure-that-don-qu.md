@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xv-in-which-is-related-the-unfortunate-adventure-that-don-qu
+section: "xv-in-which-is-related-the-unfortunate-adventure-that-don-qu"
 heading: "XV In which is related the unfortunate adventure that Don Quixote fell in with when he fell out with certain heartless Yanguesans."
 order: 18
 source: standardebooks

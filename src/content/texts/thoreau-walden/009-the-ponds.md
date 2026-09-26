@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: the-ponds
+section: "the-ponds"
 heading: "The Ponds"
 order: 9
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: machiavelli-prince
-section: xxvi
+section: "xxvi"
 heading: "XXVI"
 order: 28
 source: standardebooks

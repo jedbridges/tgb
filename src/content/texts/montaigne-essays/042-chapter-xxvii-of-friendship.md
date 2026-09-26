@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxvii-of-friendship
+section: "chapter-xxvii-of-friendship"
 heading: "CHAPTER XXVII——OF FRIENDSHIP"
 order: 42
 source: gutenberg

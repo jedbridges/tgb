@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-xii-73
+section: "chapter-xii-73"
 heading: "Chapter XII."
 order: 73
 source: gutenberg

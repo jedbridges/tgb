@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: by-swaggering-could-i-never-thrive-for-the-rain-it-raineth-e
+section: "by-swaggering-could-i-never-thrive-for-the-rain-it-raineth-e"
 heading: "By swaggering could I never thrive,: For the rain it raineth every day."
 order: 41
 source: standardebooks

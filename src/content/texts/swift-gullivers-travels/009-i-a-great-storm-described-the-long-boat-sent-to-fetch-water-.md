@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: i-a-great-storm-described-the-long-boat-sent-to-fetch-water-
+section: "i-a-great-storm-described-the-long-boat-sent-to-fetch-water-"
 heading: "I A great storm described; the long boat sent to fetch water; the author goes with it to discover the country. He is left on shore, is seized by one of the natives, and carried to a farmer’s house. His reception, with several accidents that happened there. A description of the inhabitants."
 order: 9
 source: standardebooks

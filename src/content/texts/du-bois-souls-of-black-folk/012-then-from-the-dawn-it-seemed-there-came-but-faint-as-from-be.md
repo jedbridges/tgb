@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: then-from-the-dawn-it-seemed-there-came-but-faint-as-from-be
+section: "then-from-the-dawn-it-seemed-there-came-but-faint-as-from-be"
 heading: "Then from the Dawn it seemed there came, but faint: As from beyond the limit of the world,"
 order: 12
 source: standardebooks

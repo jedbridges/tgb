@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxxvii-that-we-laugh-and-cry-for-the-same-thing
+section: "chapter-xxxvii-that-we-laugh-and-cry-for-the-same-thing"
 heading: "CHAPTER XXXVII——THAT WE LAUGH AND CRY FOR THE SAME THING"
 order: 51
 source: gutenberg

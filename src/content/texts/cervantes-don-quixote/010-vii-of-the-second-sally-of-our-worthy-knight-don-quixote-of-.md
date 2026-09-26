@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: vii-of-the-second-sally-of-our-worthy-knight-don-quixote-of-
+section: "vii-of-the-second-sally-of-our-worthy-knight-don-quixote-of-"
 heading: "VII Of the second sally of our worthy knight Don Quixote of La Mancha."
 order: 10
 source: standardebooks

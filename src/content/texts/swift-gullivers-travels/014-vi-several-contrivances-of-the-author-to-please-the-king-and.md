@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: vi-several-contrivances-of-the-author-to-please-the-king-and
+section: "vi-several-contrivances-of-the-author-to-please-the-king-and"
 heading: "VI Several contrivances of the author to please the king and queen. He shows his skill in music. The king inquires into the state of England, which the author relates to him. The king’s observations thereon."
 order: 14
 source: standardebooks

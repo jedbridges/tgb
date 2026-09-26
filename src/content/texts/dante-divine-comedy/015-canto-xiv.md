@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xiv
+section: "canto-xiv"
 heading: "Canto: XIV"
 order: 15
 source: standardebooks

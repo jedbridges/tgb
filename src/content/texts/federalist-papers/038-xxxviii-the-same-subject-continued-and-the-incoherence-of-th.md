@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxxviii-the-same-subject-continued-and-the-incoherence-of-th
+section: "xxxviii-the-same-subject-continued-and-the-incoherence-of-th"
 heading: "XXXVIII The Same Subject Continued, and the Incoherence of the Objections to the New Plan Exposed Madison: From The Independent Journal, Saturday, January 12, 1788."
 order: 38
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlviii-of-what-befell-don-quixote-with-do-a-rodriguez-the-du
+section: "xlviii-of-what-befell-don-quixote-with-do-a-rodriguez-the-du"
 heading: "XLVIII Of what befell Don Quixote with Doña Rodriguez, the duchess’s Duenna, together with other occurrences worthy of record and eternal remembrance."
 order: 104
 source: standardebooks

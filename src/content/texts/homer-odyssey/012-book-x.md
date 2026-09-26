@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-x
+section: "book-x"
 heading: "BOOK X"
 order: 12
 source: gutenberg

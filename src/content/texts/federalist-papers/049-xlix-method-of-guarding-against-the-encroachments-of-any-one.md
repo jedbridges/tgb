@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xlix-method-of-guarding-against-the-encroachments-of-any-one
+section: "xlix-method-of-guarding-against-the-encroachments-of-any-one"
 heading: "XLIX Method of Guarding Against the Encroachments of Any One Department of Government by Appealing to the People Through a Convention Madison: For The Independent Journal, Saturday, February 2, 1788."
 order: 49
 source: standardebooks

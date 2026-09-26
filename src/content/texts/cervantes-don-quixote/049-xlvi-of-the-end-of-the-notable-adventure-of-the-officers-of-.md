@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlvi-of-the-end-of-the-notable-adventure-of-the-officers-of-
+section: "xlvi-of-the-end-of-the-notable-adventure-of-the-officers-of-"
 heading: "XLVI Of the end of the notable adventure of the officers of the holy brotherhood; and of the great ferocity of our worthy knight, Don Quixote."
 order: 49
 source: standardebooks

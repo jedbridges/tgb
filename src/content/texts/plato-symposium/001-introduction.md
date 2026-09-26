@@ -1,6 +1,6 @@
 ---
 work: plato-symposium
-section: introduction
+section: "introduction"
 heading: "INTRODUCTION."
 order: 1
 source: gutenberg

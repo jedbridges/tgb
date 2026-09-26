@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: what-bring-they-neath-the-midnight-beside-the-river-sea
+section: "what-bring-they-neath-the-midnight-beside-the-river-sea"
 heading: "What bring they ’neath the midnight,: Beside the River-sea?"
 order: 13
 source: standardebooks

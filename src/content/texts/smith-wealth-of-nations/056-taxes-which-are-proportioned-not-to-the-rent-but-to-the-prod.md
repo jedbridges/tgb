@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: taxes-which-are-proportioned-not-to-the-rent-but-to-the-prod
+section: "taxes-which-are-proportioned-not-to-the-rent-but-to-the-prod"
 heading: "Taxes Which Are Proportioned, Not to the Rent, but to the Produce of Land"
 order: 56
 source: standardebooks

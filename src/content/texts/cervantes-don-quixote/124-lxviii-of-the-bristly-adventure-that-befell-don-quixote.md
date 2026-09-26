@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxviii-of-the-bristly-adventure-that-befell-don-quixote
+section: "lxviii-of-the-bristly-adventure-that-befell-don-quixote"
 heading: "LXVIII Of the bristly adventure that befell Don Quixote."
 order: 124
 source: standardebooks

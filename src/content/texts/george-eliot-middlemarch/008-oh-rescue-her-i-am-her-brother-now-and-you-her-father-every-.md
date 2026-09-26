@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: oh-rescue-her-i-am-her-brother-now-and-you-her-father-every-
+section: "oh-rescue-her-i-am-her-brother-now-and-you-her-father-every-"
 heading: "Oh, rescue her! I am her brother now,: And you her father. Every gentle maid"
 order: 8
 source: standardebooks

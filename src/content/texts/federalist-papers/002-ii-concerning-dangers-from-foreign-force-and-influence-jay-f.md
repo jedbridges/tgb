@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: ii-concerning-dangers-from-foreign-force-and-influence-jay-f
+section: "ii-concerning-dangers-from-foreign-force-and-influence-jay-f"
 heading: "II Concerning Dangers from Foreign Force and Influence Jay: For The Independent Journal, Wednesday, October 31, 1787."
 order: 2
 source: standardebooks

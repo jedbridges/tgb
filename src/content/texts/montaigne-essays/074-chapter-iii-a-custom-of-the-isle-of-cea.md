@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-iii-a-custom-of-the-isle-of-cea
+section: "chapter-iii-a-custom-of-the-isle-of-cea"
 heading: "CHAPTER III——A CUSTOM OF THE ISLE OF CEA"
 order: 74
 source: gutenberg

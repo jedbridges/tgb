@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxiii-of-the-mishap-that-befell-sancho-panza-through-the-vis
+section: "lxiii-of-the-mishap-that-befell-sancho-panza-through-the-vis"
 heading: "LXIII Of the mishap that befell Sancho Panza through the visit to the galleys, and the strange adventure of the fair Morisco."
 order: 119
 source: standardebooks

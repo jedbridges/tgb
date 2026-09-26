@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-xvi
+section: "book-xvi"
 heading: "BOOK XVI"
 order: 18
 source: gutenberg

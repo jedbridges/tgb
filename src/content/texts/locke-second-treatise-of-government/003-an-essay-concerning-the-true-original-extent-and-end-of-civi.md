@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: an-essay-concerning-the-true-original-extent-and-end-of-civi
+section: "an-essay-concerning-the-true-original-extent-and-end-of-civi"
 heading: "AN ESSAY CONCERNING THE TRUE ORIGINAL, EXTENT AND END OF CIVIL GOVERNMENT"
 order: 3
 source: gutenberg

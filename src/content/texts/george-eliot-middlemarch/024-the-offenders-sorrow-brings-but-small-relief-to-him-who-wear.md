@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: the-offenders-sorrow-brings-but-small-relief-to-him-who-wear
+section: "the-offenders-sorrow-brings-but-small-relief-to-him-who-wear"
 heading: "The offender’s sorrow brings but small relief: To him who wears the strong offence’s cross."
 order: 24
 source: standardebooks

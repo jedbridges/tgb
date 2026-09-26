@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: modes-of-transition
+section: "modes-of-transition"
 heading: "Modes of Transition"
 order: 42
 source: standardebooks

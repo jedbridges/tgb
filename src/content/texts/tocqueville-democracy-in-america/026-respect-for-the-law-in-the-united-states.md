@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: respect-for-the-law-in-the-united-states
+section: "respect-for-the-law-in-the-united-states"
 heading: "Respect For The Law In The United States"
 order: 26
 source: gutenberg

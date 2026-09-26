@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: piacer-e-popone-vuol-la-sua-stagione
+section: "piacer-e-popone-vuol-la-sua-stagione"
 heading: "Piacer e popone: Vuol la sua stagione."
 order: 7
 source: standardebooks

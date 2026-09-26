@@ -1,6 +1,6 @@
 ---
 work: herodotus-histories
-section: notes-to-book-iii
+section: "notes-to-book-iii"
 heading: "NOTES TO BOOK III"
 order: 8
 source: gutenberg

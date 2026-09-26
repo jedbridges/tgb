@@ -1,6 +1,6 @@
 ---
 work: aeschylus-oresteia
-section: introductory-note
+section: "introductory-note"
 heading: "INTRODUCTORY NOTE"
 order: 1
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xlviii-of-war-horses-or-destriers
+section: "chapter-xlviii-of-war-horses-or-destriers"
 heading: "CHAPTER XLVIII——OF WAR HORSES, OR DESTRIERS"
 order: 62
 source: gutenberg

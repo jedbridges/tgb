@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: iii-a-phenomenon-solved-by-modern-philosophy-and-astronomy-t
+section: "iii-a-phenomenon-solved-by-modern-philosophy-and-astronomy-t"
 heading: "III A phenomenon solved by modern philosophy and astronomy. The Laputians’ great improvements in the latter. The king’s method of suppressing insurrections."
 order: 19
 source: standardebooks

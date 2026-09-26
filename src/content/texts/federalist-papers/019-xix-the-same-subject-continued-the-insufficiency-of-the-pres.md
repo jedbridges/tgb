@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xix-the-same-subject-continued-the-insufficiency-of-the-pres
+section: "xix-the-same-subject-continued-the-insufficiency-of-the-pres"
 heading: "XIX The Same Subject Continued (The Insufficiency of the Present Confederation to Preserve the Union) Madison, with Hamilton: For The Independent Journal, Saturday, December 8, 1787."
 order: 19
 source: standardebooks

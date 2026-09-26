@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: chapter-ix-why-the-people-may-strictly-be-said-to-govern-in-
+section: "chapter-ix-why-the-people-may-strictly-be-said-to-govern-in-"
 heading: "Chapter IX: Why The People May Strictly Be Said To Govern In The United"
 order: 18
 source: gutenberg

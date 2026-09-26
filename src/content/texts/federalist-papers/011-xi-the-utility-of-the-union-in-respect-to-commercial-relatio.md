@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xi-the-utility-of-the-union-in-respect-to-commercial-relatio
+section: "xi-the-utility-of-the-union-in-respect-to-commercial-relatio"
 heading: "XI The Utility of the Union in Respect to Commercial Relations and a Navy Hamilton: For The Independent Journal, Saturday, November 24, 1787."
 order: 11
 source: standardebooks

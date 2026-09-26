@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxxi-of-anger
+section: "chapter-xxxi-of-anger"
 heading: "CHAPTER XXXI——OF ANGER"
 order: 102
 source: gutenberg

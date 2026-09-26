@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: let-the-high-muse-chant-loves-olympian-we-are-but-mortals-an
+section: "let-the-high-muse-chant-loves-olympian-we-are-but-mortals-an"
 heading: "Let the high Muse chant loves Olympian:: We are but mortals, and must sing of man."
 order: 27
 source: standardebooks

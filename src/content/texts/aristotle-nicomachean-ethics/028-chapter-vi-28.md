@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-vi-28
+section: "chapter-vi-28"
 heading: "Chapter VI."
 order: 28
 source: gutenberg

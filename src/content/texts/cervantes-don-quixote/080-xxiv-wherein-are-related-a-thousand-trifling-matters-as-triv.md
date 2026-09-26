@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxiv-wherein-are-related-a-thousand-trifling-matters-as-triv
+section: "xxiv-wherein-are-related-a-thousand-trifling-matters-as-triv"
 heading: "XXIV Wherein are related a thousand trifling matters, as trivial as they are necessary to the right understanding of this great history."
 order: 80
 source: standardebooks

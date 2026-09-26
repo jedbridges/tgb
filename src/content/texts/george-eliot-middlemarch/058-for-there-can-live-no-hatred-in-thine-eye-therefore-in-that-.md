@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: for-there-can-live-no-hatred-in-thine-eye-therefore-in-that-
+section: "for-there-can-live-no-hatred-in-thine-eye-therefore-in-that-"
 heading: "For there can live no hatred in thine eye,: Therefore in that I cannot know thy change"
 order: 58
 source: standardebooks

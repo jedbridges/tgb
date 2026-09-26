@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: taxes-upon-the-profit-of-particular-employments
+section: "taxes-upon-the-profit-of-particular-employments"
 heading: "Taxes Upon the Profit of Particular Employments"
 order: 59
 source: standardebooks

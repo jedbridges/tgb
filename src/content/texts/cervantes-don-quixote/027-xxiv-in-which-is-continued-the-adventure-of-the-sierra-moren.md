@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxiv-in-which-is-continued-the-adventure-of-the-sierra-moren
+section: "xxiv-in-which-is-continued-the-adventure-of-the-sierra-moren"
 heading: "XXIV In which is continued the adventure of the Sierra Morena."
 order: 27
 source: standardebooks

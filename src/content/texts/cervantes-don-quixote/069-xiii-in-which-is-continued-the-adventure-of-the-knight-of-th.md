@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xiii-in-which-is-continued-the-adventure-of-the-knight-of-th
+section: "xiii-in-which-is-continued-the-adventure-of-the-knight-of-th"
 heading: "XIII In which is continued the adventure of the Knight of the Grove, together with the sensible, original, and tranquil colloquy that passed between the two squires."
 order: 69
 source: standardebooks

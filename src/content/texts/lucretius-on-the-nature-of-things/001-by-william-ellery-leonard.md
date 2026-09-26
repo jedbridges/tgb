@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: by-william-ellery-leonard
+section: "by-william-ellery-leonard"
 heading: "By William Ellery Leonard"
 order: 1
 source: gutenberg

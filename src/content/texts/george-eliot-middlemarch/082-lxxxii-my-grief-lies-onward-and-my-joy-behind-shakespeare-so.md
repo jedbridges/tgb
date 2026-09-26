@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: lxxxii-my-grief-lies-onward-and-my-joy-behind-shakespeare-so
+section: "lxxxii-my-grief-lies-onward-and-my-joy-behind-shakespeare-so"
 heading: "LXXXII My grief lies onward and my joy behind. Shakespeare: Sonnets"
 order: 82
 source: standardebooks

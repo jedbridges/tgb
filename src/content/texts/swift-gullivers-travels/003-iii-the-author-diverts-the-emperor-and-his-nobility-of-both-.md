@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: iii-the-author-diverts-the-emperor-and-his-nobility-of-both-
+section: "iii-the-author-diverts-the-emperor-and-his-nobility-of-both-"
 heading: "III The author diverts the emperor, and his nobility of both sexes, in a very uncommon manner. The diversions of the court of Lilliput described. The author has his liberty granted him upon certain conditions."
 order: 3
 source: standardebooks

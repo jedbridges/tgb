@@ -1,6 +1,6 @@
 ---
 work: herodotus-histories
-section: notes-to-book-iv
+section: "notes-to-book-iv"
 heading: "NOTES TO BOOK IV."
 order: 10
 source: gutenberg

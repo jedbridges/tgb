@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: the-world-is-not-eternal
+section: "the-world-is-not-eternal"
 heading: "THE WORLD IS NOT ETERNAL"
 order: 23
 source: gutenberg

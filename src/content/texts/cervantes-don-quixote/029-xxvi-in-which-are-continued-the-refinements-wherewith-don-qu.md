@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxvi-in-which-are-continued-the-refinements-wherewith-don-qu
+section: "xxvi-in-which-are-continued-the-refinements-wherewith-don-qu"
 heading: "XXVI In which are continued the refinements wherewith Don Quixote played the part of a lover in the Sierra Morena."
 order: 29
 source: standardebooks

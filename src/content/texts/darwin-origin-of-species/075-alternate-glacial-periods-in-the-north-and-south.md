@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: alternate-glacial-periods-in-the-north-and-south
+section: "alternate-glacial-periods-in-the-north-and-south"
 heading: "Alternate Glacial Periods in the North and South"
 order: 75
 source: standardebooks

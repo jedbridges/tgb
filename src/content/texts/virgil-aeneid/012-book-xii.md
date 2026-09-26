@@ -1,6 +1,6 @@
 ---
 work: virgil-aeneid
-section: book-xii
+section: "book-xii"
 heading: "Book: XII"
 order: 12
 source: standardebooks

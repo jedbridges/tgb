@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: all-that-in-woman-is-adored-in-thy-fair-self-i-find
+section: "all-that-in-woman-is-adored-in-thy-fair-self-i-find"
 heading: "All that in woman is adored: In thy fair self I find⁠—"
 order: 16
 source: standardebooks

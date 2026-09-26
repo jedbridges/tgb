@@ -1,6 +1,6 @@
 ---
 work: machiavelli-prince
-section: youth
+section: "youth"
 heading: "Youth"
 order: 1
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxxiii-the-judiciary-continued-in-relation-to-trial-by-jury
+section: "lxxxiii-the-judiciary-continued-in-relation-to-trial-by-jury"
 heading: "LXXXIII The Judiciary Continued in Relation to Trial by Jury Hamilton: From McClean’s Edition, New York, Wednesday, May 28, 1788."
 order: 83
 source: standardebooks

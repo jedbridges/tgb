@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xi-of-cripples
+section: "chapter-xi-of-cripples"
 heading: "CHAPTER XI——OF CRIPPLES"
 order: 119
 source: gutenberg

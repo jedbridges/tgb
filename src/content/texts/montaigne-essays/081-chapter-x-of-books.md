@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-x-of-books
+section: "chapter-x-of-books"
 heading: "CHAPTER X——OF BOOKS"
 order: 81
 source: gutenberg

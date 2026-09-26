@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-vii-117
+section: "chapter-vii-117"
 heading: "Chapter VII."
 order: 117
 source: gutenberg

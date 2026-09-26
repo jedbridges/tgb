@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxii-the-senate-madison-for-the-independent-journal-wednesda
+section: "lxii-the-senate-madison-for-the-independent-journal-wednesda"
 heading: "LXII The Senate Madison: For The Independent Journal, Wednesday, February 27, 1788."
 order: 62
 source: standardebooks

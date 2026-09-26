@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: chapter-summary-27
+section: "chapter-summary-27"
 heading: "Chapter Summary"
 order: 27
 source: gutenberg

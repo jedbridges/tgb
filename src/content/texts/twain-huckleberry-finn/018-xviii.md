@@ -1,6 +1,6 @@
 ---
 work: twain-huckleberry-finn
-section: xviii
+section: "xviii"
 heading: "XVIII"
 order: 18
 source: standardebooks

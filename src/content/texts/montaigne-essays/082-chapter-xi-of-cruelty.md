@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xi-of-cruelty
+section: "chapter-xi-of-cruelty"
 heading: "CHAPTER XI——OF CRUELTY"
 order: 82
 source: gutenberg

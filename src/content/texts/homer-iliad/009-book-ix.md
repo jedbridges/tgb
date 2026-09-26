@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-ix
+section: "book-ix"
 heading: "BOOK IX."
 order: 9
 source: gutenberg

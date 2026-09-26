@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xi-of-prognostications
+section: "chapter-xi-of-prognostications"
 heading: "CHAPTER XI——OF PROGNOSTICATIONS"
 order: 26
 source: gutenberg

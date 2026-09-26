@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-inhabitants-of-oceanic-islands
+section: "on-the-inhabitants-of-oceanic-islands"
 heading: "On the Inhabitants of Oceanic Islands"
 order: 77
 source: standardebooks

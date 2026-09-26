@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lx-of-what-happened-don-quixote-on-his-way-to-barcelona
+section: "lx-of-what-happened-don-quixote-on-his-way-to-barcelona"
 heading: "LX Of what happened Don Quixote on his way to Barcelona."
 order: 116
 source: standardebooks

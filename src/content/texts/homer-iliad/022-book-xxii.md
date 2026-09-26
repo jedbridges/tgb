@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-xxii
+section: "book-xxii"
 heading: "BOOK XXII."
 order: 22
 source: gutenberg

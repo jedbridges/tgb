@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-the-extent-of-the-legislative-power
+section: "of-the-extent-of-the-legislative-power"
 heading: "OF THE EXTENT OF THE LEGISLATIVE POWER."
 order: 13
 source: gutenberg

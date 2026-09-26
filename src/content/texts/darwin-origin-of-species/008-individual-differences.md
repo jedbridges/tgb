@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: individual-differences
+section: "individual-differences"
 heading: "Individual Differences"
 order: 8
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lii-wherein-is-related-the-adventure-of-the-second-distresse
+section: "lii-wherein-is-related-the-adventure-of-the-second-distresse"
 heading: "LII Wherein is related the adventure of the second distressed or afflicted Duenna, otherwise called Doña Rodriguez."
 order: 108
 source: standardebooks

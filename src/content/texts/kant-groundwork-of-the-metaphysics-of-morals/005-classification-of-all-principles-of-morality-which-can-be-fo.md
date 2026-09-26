@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: classification-of-all-principles-of-morality-which-can-be-fo
+section: "classification-of-all-principles-of-morality-which-can-be-fo"
 heading: "Classification of all Principles of Morality which can be founded on the Conception of Heteronomy"
 order: 5
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-xix
+section: "book-xix"
 heading: "BOOK XIX."
 order: 19
 source: gutenberg

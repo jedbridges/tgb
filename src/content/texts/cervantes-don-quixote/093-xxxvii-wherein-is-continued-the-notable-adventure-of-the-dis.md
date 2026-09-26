@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxvii-wherein-is-continued-the-notable-adventure-of-the-dis
+section: "xxxvii-wherein-is-continued-the-notable-adventure-of-the-dis"
 heading: "XXXVII Wherein is continued the notable adventure of the distressed Duenna."
 order: 93
 source: standardebooks

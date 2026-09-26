@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-vii-29
+section: "chapter-vii-29"
 heading: "Chapter VII."
 order: 29
 source: gutenberg

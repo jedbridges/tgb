@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: the-inconstancy-and-various-motions-of-fortune
+section: "the-inconstancy-and-various-motions-of-fortune"
 heading: "The inconstancy and various motions of Fortune"
 order: 47
 source: gutenberg

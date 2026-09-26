@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: li-the-structure-of-the-government-must-furnish-the-proper-c
+section: "li-the-structure-of-the-government-must-furnish-the-proper-c"
 heading: "LI The Structure of the Government Must Furnish the Proper Checks and Balances Between the Different Departments Madison: For The Independent Journal, Wednesday, February 6, 1788."
 order: 51
 source: standardebooks

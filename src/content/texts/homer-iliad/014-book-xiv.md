@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-xiv
+section: "book-xiv"
 heading: "BOOK XIV."
 order: 14
 source: gutenberg

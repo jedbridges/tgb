@@ -1,6 +1,6 @@
 ---
 work: hobbes-leviathan
-section: a-review-and-conclusion
+section: "a-review-and-conclusion"
 heading: "A Review, and Conclusion"
 order: 48
 source: standardebooks

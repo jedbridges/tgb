@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: legislative-power-of-the-state
+section: "legislative-power-of-the-state"
 heading: "Legislative Power Of The State"
 order: 9
 source: gutenberg

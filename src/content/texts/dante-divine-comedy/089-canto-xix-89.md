@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xix-89
+section: "canto-xix-89"
 heading: "Canto: XIX"
 order: 89
 source: standardebooks

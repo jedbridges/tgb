@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-ii-of-repentance
+section: "chapter-ii-of-repentance"
 heading: "CHAPTER II——OF REPENTANCE"
 order: 110
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: liii
+section: "liii"
 heading: "LIII"
 order: 54
 source: standardebooks

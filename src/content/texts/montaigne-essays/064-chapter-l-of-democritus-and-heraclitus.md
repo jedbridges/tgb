@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-l-of-democritus-and-heraclitus
+section: "chapter-l-of-democritus-and-heraclitus"
 heading: "CHAPTER L——OF DEMOCRITUS AND HERACLITUS"
 order: 64
 source: gutenberg

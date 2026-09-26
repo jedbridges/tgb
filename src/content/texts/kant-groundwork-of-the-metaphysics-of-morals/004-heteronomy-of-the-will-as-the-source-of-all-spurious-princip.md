@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: heteronomy-of-the-will-as-the-source-of-all-spurious-princip
+section: "heteronomy-of-the-will-as-the-source-of-all-spurious-princip"
 heading: "Heteronomy of the Will as the Source of all spurious Principles of Morality"
 order: 4
 source: gutenberg

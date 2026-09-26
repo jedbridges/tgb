@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: capitation-taxes
+section: "capitation-taxes"
 heading: "Capitation Taxes"
 order: 62
 source: standardebooks

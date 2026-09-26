@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: introductory-chapter
+section: "introductory-chapter"
 heading: "Introductory Chapter"
 order: 1
 source: gutenberg

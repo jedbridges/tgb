@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: x-the-same-subject-continued-the-union-as-a-safeguard-agains
+section: "x-the-same-subject-continued-the-union-as-a-safeguard-agains"
 heading: "X The Same Subject Continued (The Union as a Safeguard Against Domestic Faction and Insurrection) Madison: From The Daily Advertiser, Thursday, November 22, 1787."
 order: 10
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: atomic-motions
+section: "atomic-motions"
 heading: "ATOMIC MOTIONS"
 order: 10
 source: gutenberg

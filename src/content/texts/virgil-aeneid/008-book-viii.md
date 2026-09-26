@@ -1,6 +1,6 @@
 ---
 work: virgil-aeneid
-section: book-viii
+section: "book-viii"
 heading: "Book: VIII"
 order: 8
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-the-state-of-nature
+section: "of-the-state-of-nature"
 heading: "OF THE STATE OF NATURE."
 order: 4
 source: gutenberg

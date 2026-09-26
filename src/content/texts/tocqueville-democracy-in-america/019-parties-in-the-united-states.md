@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: parties-in-the-united-states
+section: "parties-in-the-united-states"
 heading: "Parties In The United States"
 order: 19
 source: gutenberg

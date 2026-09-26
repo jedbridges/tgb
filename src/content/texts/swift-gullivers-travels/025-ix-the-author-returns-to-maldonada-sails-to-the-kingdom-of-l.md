@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: ix-the-author-returns-to-maldonada-sails-to-the-kingdom-of-l
+section: "ix-the-author-returns-to-maldonada-sails-to-the-kingdom-of-l"
 heading: "IX The author returns to Maldonada. Sails to the kingdom of Luggnagg. The author confined. He is sent for to court. The manner of his admittance. The king’s great lenity to his subjects."
 order: 25
 source: standardebooks

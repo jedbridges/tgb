@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: pity-the-laden-one-this-wandering-woe-may-visit-you-and-me
+section: "pity-the-laden-one-this-wandering-woe-may-visit-you-and-me"
 heading: "Pity the laden one; this wandering woe: May visit you and me."
 order: 73
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: principles-of-selection-anciently-followed-and-their-effects
+section: "principles-of-selection-anciently-followed-and-their-effects"
 heading: "Principles of Selection Anciently Followed, and Their Effects"
 order: 5
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: xxxii-theyll-take-suggestion-as-a-cat-laps-milk-shakespeare-
+section: "xxxii-theyll-take-suggestion-as-a-cat-laps-milk-shakespeare-"
 heading: "XXXII They’ll take suggestion as a cat laps milk. Shakespeare: Tempest"
 order: 32
 source: standardebooks

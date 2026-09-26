@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xliv-in-which-are-continued-the-unheard-of-adventures-of-the
+section: "xliv-in-which-are-continued-the-unheard-of-adventures-of-the"
 heading: "XLIV In which are continued the unheard-of adventures of the inn."
 order: 47
 source: standardebooks

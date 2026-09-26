@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxix-of-virtue
+section: "chapter-xxix-of-virtue"
 heading: "CHAPTER XXIX——OF VIRTUE"
 order: 100
 source: gutenberg

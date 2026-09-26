@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: substance-is-eternal
+section: "substance-is-eternal"
 heading: "SUBSTANCE IS ETERNAL"
 order: 3
 source: gutenberg

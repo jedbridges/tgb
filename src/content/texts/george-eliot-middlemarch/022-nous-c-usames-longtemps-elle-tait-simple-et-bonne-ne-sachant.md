@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: nous-c-usames-longtemps-elle-tait-simple-et-bonne-ne-sachant
+section: "nous-c-usames-longtemps-elle-tait-simple-et-bonne-ne-sachant"
 heading: "Nous câusames longtemps; elle était simple et bonne.: Ne sachant pas le mal, elle faisait le bien;"
 order: 22
 source: standardebooks

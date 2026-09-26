@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: ii-the-author-conducted-by-a-houyhnhnm-to-his-house-the-hous
+section: "ii-the-author-conducted-by-a-houyhnhnm-to-his-house-the-hous"
 heading: "II The author conducted by a Houyhnhnm to his house. The house described. The author’s reception. The food of the Houyhnhnms. The author in distress for want of meat. Is at last relieved. His manner of feeding in this country."
 order: 29
 source: standardebooks

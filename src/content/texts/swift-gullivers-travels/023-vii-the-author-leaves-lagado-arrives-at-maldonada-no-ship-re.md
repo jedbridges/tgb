@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: vii-the-author-leaves-lagado-arrives-at-maldonada-no-ship-re
+section: "vii-the-author-leaves-lagado-arrives-at-maldonada-no-ship-re"
 heading: "VII The author leaves Lagado: arrives at Maldonada. No ship ready. He takes a short voyage to Glubbdubdrib. His reception by the governor."
 order: 23
 source: standardebooks

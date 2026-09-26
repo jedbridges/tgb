@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxiii-in-which-is-related-the-novel-of-the-ill-advised-curi
+section: "xxxiii-in-which-is-related-the-novel-of-the-ill-advised-curi"
 heading: "XXXIII In which is related the novel of The Ill-Advised Curiosity."
 order: 36
 source: standardebooks

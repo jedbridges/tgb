@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-liv-of-vain-subtleties
+section: "chapter-liv-of-vain-subtleties"
 heading: "CHAPTER LIV——OF VAIN SUBTLETIES"
 order: 68
 source: gutenberg

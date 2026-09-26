@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxv-which-treats-of-the-heroic-and-prodigious-battle-don-qu
+section: "xxxv-which-treats-of-the-heroic-and-prodigious-battle-don-qu"
 heading: "XXXV Which treats of the heroic and prodigious battle Don Quixote had with certain skins of red wine, and brings the novel of The Ill-Advised Curiosity to a close."
 order: 38
 source: standardebooks

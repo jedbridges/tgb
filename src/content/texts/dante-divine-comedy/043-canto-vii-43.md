@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-vii-43
+section: "canto-vii-43"
 heading: "Canto: VII"
 order: 43
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-crime-and-punishment
-section: viii
+section: "viii"
 heading: "VIII"
 order: 39
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xvii-wherein-is-shown-the-furthest-and-highest-point-which-t
+section: "xvii-wherein-is-shown-the-furthest-and-highest-point-which-t"
 heading: "XVII Wherein is shown the furthest and highest point which the unexampled courage of Don Quixote reached or could reach; together with the happily achieved adventure of the lions."
 order: 73
 source: standardebooks

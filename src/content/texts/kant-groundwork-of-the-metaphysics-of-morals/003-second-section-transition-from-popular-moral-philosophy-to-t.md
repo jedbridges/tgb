@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: second-section-transition-from-popular-moral-philosophy-to-t
+section: "second-section-transition-from-popular-moral-philosophy-to-t"
 heading: "SECOND SECTION—TRANSITION FROM POPULAR MORAL PHILOSOPHY TO THE METAPHYSIC OF MORALS"
 order: 3
 source: gutenberg

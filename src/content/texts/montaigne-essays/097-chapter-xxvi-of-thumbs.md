@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxvi-of-thumbs
+section: "chapter-xxvi-of-thumbs"
 heading: "CHAPTER XXVI——OF THUMBS"
 order: 97
 source: gutenberg

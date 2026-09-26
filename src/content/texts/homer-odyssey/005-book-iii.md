@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-iii
+section: "book-iii"
 heading: "BOOK III"
 order: 5
 source: gutenberg

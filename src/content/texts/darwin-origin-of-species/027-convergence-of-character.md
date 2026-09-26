@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: convergence-of-character
+section: "convergence-of-character"
 heading: "Convergence of Character"
 order: 27
 source: standardebooks

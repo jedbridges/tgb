@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: conclusion
+section: "conclusion"
 heading: "Conclusion"
 order: 45
 source: gutenberg

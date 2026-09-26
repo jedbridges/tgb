@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxxi-that-a-man-is-soberly-to-judge-of-the-divine-or
+section: "chapter-xxxi-that-a-man-is-soberly-to-judge-of-the-divine-or"
 heading: "CHAPTER XXXI——THAT A MAN IS SOBERLY TO JUDGE OF THE DIVINE ORDINANCES"
 order: 45
 source: gutenberg

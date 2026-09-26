@@ -1,6 +1,6 @@
 ---
 work: milton-paradise-lost
-section: section-3
+section: "section-3"
 heading: "Part 3"
 order: 3
 source: standardebooks

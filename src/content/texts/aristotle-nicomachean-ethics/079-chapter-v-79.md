@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-v-79
+section: "chapter-v-79"
 heading: "Chapter V."
 order: 79
 source: gutenberg

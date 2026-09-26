@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlii-which-treats-of-what-further-took-place-in-the-inn-and-
+section: "xlii-which-treats-of-what-further-took-place-in-the-inn-and-"
 heading: "XLII Which treats of what further took place in the inn, and of several other things worth knowing."
 order: 45
 source: standardebooks

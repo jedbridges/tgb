@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xli-of-the-arrival-of-clavile-o-and-the-end-of-this-protract
+section: "xli-of-the-arrival-of-clavile-o-and-the-end-of-this-protract"
 heading: "XLI Of the arrival of Clavileño and the end of this protracted adventure."
 order: 97
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: the-life-of-montaigne
+section: "the-life-of-montaigne"
 heading: "THE LIFE OF MONTAIGNE"
 order: 3
 source: gutenberg

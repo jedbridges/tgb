@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xi-of-the-strange-adventure-which-the-valiant-don-quixote-ha
+section: "xi-of-the-strange-adventure-which-the-valiant-don-quixote-ha"
 heading: "XI Of the strange adventure which the valiant Don Quixote had with the car or cart of the Cortes of Death."
 order: 67
 source: standardebooks

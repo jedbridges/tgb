@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxv-the-powers-of-the-senate-continued-hamilton-from-the-new
+section: "lxv-the-powers-of-the-senate-continued-hamilton-from-the-new"
 heading: "LXV The Powers of the Senate Continued Hamilton: From the New York Packet, Friday, March 7, 1788."
 order: 65
 source: standardebooks

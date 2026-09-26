@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: but-the-brute-said-in-his-breast-till-the-mills-i-grind-have
+section: "but-the-brute-said-in-his-breast-till-the-mills-i-grind-have"
 heading: "But the Brute said in his breast, “Till the mills I grind have ceased,: The riches shall be dust of dust, dry ashes be the feast!"
 order: 8
 source: standardebooks

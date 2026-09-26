@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: l-wherein-is-set-forth-who-the-enchanters-and-executioners-w
+section: "l-wherein-is-set-forth-who-the-enchanters-and-executioners-w"
 heading: "L Wherein is set forth who the enchanters and executioners were who flogged the Duenna and pinched Don Quixote, and also what befell the page who carried the letter to Teresa Panza, Sancho Panza’s wife."
 order: 106
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: origins-of-vegetable-and-animal-life
+section: "origins-of-vegetable-and-animal-life"
 heading: "ORIGINS OF VEGETABLE AND ANIMAL LIFE"
 order: 24
 source: gutenberg

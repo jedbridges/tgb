@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xv-wherein-it-is-told-and-known-who-the-knight-of-the-mirror
+section: "xv-wherein-it-is-told-and-known-who-the-knight-of-the-mirror"
 heading: "XV Wherein it is told and known who the Knight of the Mirrors and his squire were."
 order: 71
 source: standardebooks

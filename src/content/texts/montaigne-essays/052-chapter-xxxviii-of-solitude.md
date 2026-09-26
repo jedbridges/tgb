@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxxviii-of-solitude
+section: "chapter-xxxviii-of-solitude"
 heading: "CHAPTER XXXVIII——OF SOLITUDE"
 order: 52
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: ix-the-union-as-a-safeguard-against-domestic-faction-and-ins
+section: "ix-the-union-as-a-safeguard-against-domestic-faction-and-ins"
 heading: "IX The Union as a Safeguard Against Domestic Faction and Insurrection Hamilton: For The Independent Journal, Wednesday, November 21, 1787."
 order: 9
 source: standardebooks

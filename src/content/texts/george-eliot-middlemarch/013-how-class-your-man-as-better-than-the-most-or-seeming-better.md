@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: how-class-your-man-as-better-than-the-most-or-seeming-better
+section: "how-class-your-man-as-better-than-the-most-or-seeming-better"
 heading: "How class your man?⁠—as better than the most,: Or, seeming better, worse beneath that cloak?"
 order: 13
 source: standardebooks

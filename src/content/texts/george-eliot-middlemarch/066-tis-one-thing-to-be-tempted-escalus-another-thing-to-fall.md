@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: tis-one-thing-to-be-tempted-escalus-another-thing-to-fall
+section: "tis-one-thing-to-be-tempted-escalus-another-thing-to-fall"
 heading: "’Tis one thing to be tempted, Escalus,: Another thing to fall."
 order: 66
 source: standardebooks

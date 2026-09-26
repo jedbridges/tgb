@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxv-which-treats-of-the-strange-things-that-happened-to-the-
+section: "xxv-which-treats-of-the-strange-things-that-happened-to-the-"
 heading: "XXV Which treats of the strange things that happened to the stout knight of La Mancha in the Sierra Morena, and of his imitation of the penance of Beltenebros."
 order: 28
 source: standardebooks

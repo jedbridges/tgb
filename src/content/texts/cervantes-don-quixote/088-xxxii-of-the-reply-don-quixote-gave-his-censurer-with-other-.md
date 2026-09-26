@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxii-of-the-reply-don-quixote-gave-his-censurer-with-other-
+section: "xxxii-of-the-reply-don-quixote-gave-his-censurer-with-other-"
 heading: "XXXII Of the reply Don Quixote gave his censurer, with other incidents, grave and droll."
 order: 88
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxxi-of-what-passed-between-don-quixote-and-his-squire-sanch
+section: "lxxi-of-what-passed-between-don-quixote-and-his-squire-sanch"
 heading: "LXXI Of what passed between Don Quixote and his squire Sancho on the way to their village."
 order: 127
 source: standardebooks

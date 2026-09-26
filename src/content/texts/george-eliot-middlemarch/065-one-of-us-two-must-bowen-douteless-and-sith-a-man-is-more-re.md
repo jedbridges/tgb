@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: one-of-us-two-must-bowen-douteless-and-sith-a-man-is-more-re
+section: "one-of-us-two-must-bowen-douteless-and-sith-a-man-is-more-re"
 heading: "One of us two must bowen douteless,: And, sith a man is more reasonable"
 order: 65
 source: standardebooks

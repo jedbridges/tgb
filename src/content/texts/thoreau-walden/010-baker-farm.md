@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: baker-farm
+section: "baker-farm"
 heading: "Baker Farm"
 order: 10
 source: standardebooks

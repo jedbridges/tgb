@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-ix-of-vanity
+section: "chapter-ix-of-vanity"
 heading: "CHAPTER IX——OF VANITY"
 order: 117
 source: gutenberg

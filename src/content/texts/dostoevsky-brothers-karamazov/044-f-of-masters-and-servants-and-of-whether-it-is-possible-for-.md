@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: f-of-masters-and-servants-and-of-whether-it-is-possible-for-
+section: "f-of-masters-and-servants-and-of-whether-it-is-possible-for-"
 heading: "(f) Of Masters and Servants, and of whether it is possible for them to be Brothers in the Spirit"
 order: 44
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: causes-of-variability
+section: "causes-of-variability"
 heading: "Causes of Variability"
 order: 1
 source: standardebooks

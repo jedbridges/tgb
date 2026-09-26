@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: a-task-too-strong-for-wizard-spells-this-squire-had-brought-
+section: "a-task-too-strong-for-wizard-spells-this-squire-had-brought-"
 heading: "A task too strong for wizard spells: This squire had brought about;"
 order: 49
 source: standardebooks

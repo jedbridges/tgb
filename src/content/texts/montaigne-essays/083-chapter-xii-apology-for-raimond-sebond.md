@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xii-apology-for-raimond-sebond
+section: "chapter-xii-apology-for-raimond-sebond"
 heading: "CHAPTER XII. — APOLOGY FOR RAIMOND SEBOND."
 order: 83
 source: gutenberg

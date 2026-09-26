@@ -1,6 +1,6 @@
 ---
 work: herodotus-histories
-section: book-ii-the-second-book-of-the-histories-called-euterpe
+section: "book-ii-the-second-book-of-the-histories-called-euterpe"
 heading: "BOOK II. THE SECOND BOOK OF THE HISTORIES, CALLED EUTERPE"
 order: 5
 source: gutenberg

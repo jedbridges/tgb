@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: book-i
+section: "book-i"
 heading: "BOOK I"
 order: 2
 source: gutenberg

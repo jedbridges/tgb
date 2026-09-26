@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: tyranny-of-the-majority
+section: "tyranny-of-the-majority"
 heading: "Tyranny Of The Majority"
 order: 28
 source: gutenberg

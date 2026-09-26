@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lv-of-what-befell-sancho-on-the-road-and-other-things-that-c
+section: "lv-of-what-befell-sancho-on-the-road-and-other-things-that-c"
 heading: "LV Of what befell Sancho on the road, and other things that cannot be surpassed."
 order: 111
 source: standardebooks

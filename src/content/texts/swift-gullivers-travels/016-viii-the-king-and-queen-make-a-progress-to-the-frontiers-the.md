@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: viii-the-king-and-queen-make-a-progress-to-the-frontiers-the
+section: "viii-the-king-and-queen-make-a-progress-to-the-frontiers-the"
 heading: "VIII The king and queen make a progress to the frontiers. The author attends them. The manner in which he leaves the country very particularly related. He returns to England."
 order: 16
 source: standardebooks

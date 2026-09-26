@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-lv-of-smells
+section: "chapter-lv-of-smells"
 heading: "CHAPTER LV——OF SMELLS"
 order: 69
 source: gutenberg

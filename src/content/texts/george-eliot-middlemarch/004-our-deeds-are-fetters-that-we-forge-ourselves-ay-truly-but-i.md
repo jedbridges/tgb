@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: our-deeds-are-fetters-that-we-forge-ourselves-ay-truly-but-i
+section: "our-deeds-are-fetters-that-we-forge-ourselves-ay-truly-but-i"
 heading: "Our deeds are fetters that we forge ourselves.: Ay, truly: but I think it is the world"
 order: 4
 source: standardebooks

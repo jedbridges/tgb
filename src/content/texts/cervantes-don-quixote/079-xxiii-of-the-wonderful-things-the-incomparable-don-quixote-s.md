@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxiii-of-the-wonderful-things-the-incomparable-don-quixote-s
+section: "xxiii-of-the-wonderful-things-the-incomparable-don-quixote-s"
 heading: "XXIII Of the wonderful things the incomparable Don Quixote said he saw in the profound Cave of Montesinos, the impossibility and magnitude of which cause this adventure to be deemed apocryphal."
 order: 79
 source: standardebooks

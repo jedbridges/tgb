@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxi-the-same-subject-continued-concerning-the-power-of-congr
+section: "lxi-the-same-subject-continued-concerning-the-power-of-congr"
 heading: "LXI The Same Subject Continued (Concerning the Power of Congress to Regulate the Election of Members) Hamilton: From the New York Packet, Tuesday, February 26, 1788."
 order: 61
 source: standardebooks

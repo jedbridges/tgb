@@ -1,6 +1,6 @@
 ---
 work: thucydides-peloponnesian-war
-section: chapter-ix
+section: "chapter-ix"
 heading: "CHAPTER IX"
 order: 9
 source: gutenberg

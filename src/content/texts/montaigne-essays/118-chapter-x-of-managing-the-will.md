@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-x-of-managing-the-will
+section: "chapter-x-of-managing-the-will"
 heading: "CHAPTER X——OF MANAGING THE WILL"
 order: 118
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: well-says-this-verse
+section: "well-says-this-verse"
 heading: "Well says this verse:"
 order: 61
 source: gutenberg

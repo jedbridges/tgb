@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: lxxiv-mercifully-grant-that-we-may-grow-aged-together-book-o
+section: "lxxiv-mercifully-grant-that-we-may-grow-aged-together-book-o"
 heading: "LXXIV Mercifully grant that we may grow aged together. Book of Tobit: Marriage Prayer"
 order: 74
 source: standardebooks

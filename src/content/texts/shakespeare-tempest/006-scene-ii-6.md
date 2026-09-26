@@ -1,6 +1,6 @@
 ---
 work: shakespeare-tempest
-section: scene-ii-6
+section: "scene-ii-6"
 heading: "Scene: II"
 order: 6
 source: standardebooks

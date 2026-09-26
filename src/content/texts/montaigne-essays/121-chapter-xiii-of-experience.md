@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xiii-of-experience
+section: "chapter-xiii-of-experience"
 heading: "CHAPTER XIII——OF EXPERIENCE"
 order: 121
 source: gutenberg

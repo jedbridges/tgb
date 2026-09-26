@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: i-the-author-sets-out-as-captain-of-a-ship-his-men-conspire-
+section: "i-the-author-sets-out-as-captain-of-a-ship-his-men-conspire-"
 heading: "I The author sets out as captain of a ship. His men conspire against him, confine him a long time to his cabin, and set him on shore in an unknown land. He travels up into the country. The Yahoos, a strange sort of animal, described. The author meets two Houyhnhnms."
 order: 28
 source: standardebooks

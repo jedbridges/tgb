@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxvii-of-the-resolution-don-quixote-formed-to-turn-shepherd-
+section: "lxvii-of-the-resolution-don-quixote-formed-to-turn-shepherd-"
 heading: "LXVII Of the resolution Don Quixote formed to turn shepherd and take to a life in the fields while the year for which he had given his word was running its course; with other events truly delectable and happy."
 order: 123
 source: standardebooks

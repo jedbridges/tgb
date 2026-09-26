@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxx-of-a-monstrous-child
+section: "chapter-xxx-of-a-monstrous-child"
 heading: "CHAPTER XXX——OF A MONSTROUS CHILD"
 order: 101
 source: gutenberg

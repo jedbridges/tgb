@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-slavery
+section: "of-slavery"
 heading: "OF SLAVERY."
 order: 6
 source: gutenberg

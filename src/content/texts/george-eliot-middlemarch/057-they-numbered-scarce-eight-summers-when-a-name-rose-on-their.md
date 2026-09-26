@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: they-numbered-scarce-eight-summers-when-a-name-rose-on-their
+section: "they-numbered-scarce-eight-summers-when-a-name-rose-on-their"
 heading: "They numbered scarce eight summers when a name: Rose on their souls and stirred such motions there"
 order: 57
 source: standardebooks

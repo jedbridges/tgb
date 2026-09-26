@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-xv
+section: "book-xv"
 heading: "BOOK XV."
 order: 15
 source: gutenberg

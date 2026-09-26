@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-the-ends-of-political-society-and-government
+section: "of-the-ends-of-political-society-and-government"
 heading: "OF THE ENDS OF POLITICAL SOCIETY AND GOVERNMENT."
 order: 11
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: taxes-upon-rent-taxes-upon-the-rent-of-land
+section: "taxes-upon-rent-taxes-upon-the-rent-of-land"
 heading: "Taxes Upon Rent; Taxes Upon the Rent of Land"
 order: 55
 source: standardebooks

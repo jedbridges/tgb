@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lviii-which-tells-how-adventures-came-crowding-on-don-quixot
+section: "lviii-which-tells-how-adventures-came-crowding-on-don-quixot"
 heading: "LVIII Which tells how adventures came crowding on Don Quixote in such numbers that they gave one another no breathing-time."
 order: 114
 source: standardebooks

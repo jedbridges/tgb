@@ -1,6 +1,6 @@
 ---
 work: plato-republic
-section: book-iv
+section: "book-iv"
 heading: "BOOK IV."
 order: 5
 source: gutenberg

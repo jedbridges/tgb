@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: nature-and-composition-of-the-mind
+section: "nature-and-composition-of-the-mind"
 heading: "NATURE AND COMPOSITION OF THE MIND"
 order: 14
 source: gutenberg

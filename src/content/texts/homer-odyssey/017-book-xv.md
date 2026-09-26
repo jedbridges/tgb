@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-xv
+section: "book-xv"
 heading: "BOOK XV"
 order: 17
 source: gutenberg

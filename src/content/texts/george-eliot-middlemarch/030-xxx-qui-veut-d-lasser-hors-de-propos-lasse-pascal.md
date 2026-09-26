@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: xxx-qui-veut-d-lasser-hors-de-propos-lasse-pascal
+section: "xxx-qui-veut-d-lasser-hors-de-propos-lasse-pascal"
 heading: "XXX Qui veut délasser hors de propos, lasse. Pascal"
 order: 30
 source: standardebooks

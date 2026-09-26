@@ -1,6 +1,6 @@
 ---
 work: machiavelli-prince
-section: office
+section: "office"
 heading: "Office"
 order: 2
 source: standardebooks

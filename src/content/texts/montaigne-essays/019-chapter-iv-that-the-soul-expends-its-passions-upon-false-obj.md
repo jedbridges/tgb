@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-iv-that-the-soul-expends-its-passions-upon-false-obj
+section: "chapter-iv-that-the-soul-expends-its-passions-upon-false-obj"
 heading: "CHAPTER IV——THAT THE SOUL EXPENDS ITS PASSIONS UPON FALSE OBJECTS, WHERE THE TRUE ARE WANTING"
 order: 19
 source: gutenberg

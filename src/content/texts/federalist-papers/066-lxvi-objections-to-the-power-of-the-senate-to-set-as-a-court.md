@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxvi-objections-to-the-power-of-the-senate-to-set-as-a-court
+section: "lxvi-objections-to-the-power-of-the-senate-to-set-as-a-court"
 heading: "LXVI Objections to the Power of the Senate to Set as a Court for Impeachments Further Considered Hamilton: From The Independent Journal, Saturday, March 8, 1788."
 order: 66
 source: standardebooks

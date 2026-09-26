@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: willst-du-deine-macht-verk-nden-w-hle-sie-die-frei-von-s-nde
+section: "willst-du-deine-macht-verk-nden-w-hle-sie-die-frei-von-s-nde"
 heading: "Willst Du Deine Macht verkünden,: Wähle sie die frei von Sünden,"
 order: 4
 source: standardebooks

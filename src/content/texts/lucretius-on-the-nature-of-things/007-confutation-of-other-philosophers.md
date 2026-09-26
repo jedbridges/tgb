@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: confutation-of-other-philosophers
+section: "confutation-of-other-philosophers"
 heading: "CONFUTATION OF OTHER PHILOSOPHERS"
 order: 7
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxvii-the-executive-department-hamilton-from-the-new-york-pa
+section: "lxvii-the-executive-department-hamilton-from-the-new-york-pa"
 heading: "LXVII The Executive Department Hamilton: From the New York Packet, Tuesday, March 11, 1788."
 order: 67
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: li-of-the-progress-of-sanchos-government-and-other-such-ente
+section: "li-of-the-progress-of-sanchos-government-and-other-such-ente"
 heading: "LI Of the progress of Sancho’s government, and other such entertaining matters."
 order: 107
 source: standardebooks

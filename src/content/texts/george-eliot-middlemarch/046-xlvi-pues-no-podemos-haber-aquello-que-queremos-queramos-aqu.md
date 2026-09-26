@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: xlvi-pues-no-podemos-haber-aquello-que-queremos-queramos-aqu
+section: "xlvi-pues-no-podemos-haber-aquello-que-queremos-queramos-aqu"
 heading: "XLVI Pues no podemos haber aquello que queremos, queramos aquello que podremos. Since we cannot get what we like, let us like what we can get. Spanish Proverb"
 order: 46
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: i-which-treats-of-the-character-and-pursuits-of-the-famous-g
+section: "i-which-treats-of-the-character-and-pursuits-of-the-famous-g"
 heading: "I Which treats of the character and pursuits of the famous gentleman Don Quixote of La Mancha."
 order: 4
 source: standardebooks

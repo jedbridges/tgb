@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xxxii-102
+section: "canto-xxxii-102"
 heading: "Canto: XXXII"
 order: 102
 source: standardebooks

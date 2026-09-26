@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: dim-face-of-beauty-haunting-all-the-world-fair-face-of-beaut
+section: "dim-face-of-beauty-haunting-all-the-world-fair-face-of-beaut"
 heading: "Dim face of Beauty haunting all the world,: Fair face of Beauty all too fair to see,"
 order: 10
 source: standardebooks

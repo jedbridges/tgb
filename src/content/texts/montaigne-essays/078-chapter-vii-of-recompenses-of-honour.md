@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-vii-of-recompenses-of-honour
+section: "chapter-vii-of-recompenses-of-honour"
 heading: "CHAPTER VII——OF RECOMPENSES OF HONOUR"
 order: 78
 source: gutenberg

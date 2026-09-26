@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: i-walk-through-the-churchyard-to-lay-this-body-down
+section: "i-walk-through-the-churchyard-to-lay-this-body-down"
 heading: "I walk through the churchyard: To lay this body down;"
 order: 14
 source: standardebooks

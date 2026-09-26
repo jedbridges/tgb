@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: since-i-can-do-no-good-because-a-woman-reach-constantly-at-s
+section: "since-i-can-do-no-good-because-a-woman-reach-constantly-at-s"
 heading: "Since I can do no good because a woman,: Reach constantly at something that is near it."
 order: 1
 source: standardebooks

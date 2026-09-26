@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xxxiii-69
+section: "canto-xxxiii-69"
 heading: "Canto: XXXIII"
 order: 69
 source: standardebooks

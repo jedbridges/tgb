@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlix-which-treats-of-the-shrewd-conversation-which-sancho-pa
+section: "xlix-which-treats-of-the-shrewd-conversation-which-sancho-pa"
 heading: "XLIX Which treats of the shrewd conversation which Sancho Panza held with his master Don Quixote."
 order: 52
 source: standardebooks

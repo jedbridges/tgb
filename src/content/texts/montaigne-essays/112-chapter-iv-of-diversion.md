@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-iv-of-diversion
+section: "chapter-iv-of-diversion"
 heading: "CHAPTER IV——OF DIVERSION"
 order: 112
 source: gutenberg

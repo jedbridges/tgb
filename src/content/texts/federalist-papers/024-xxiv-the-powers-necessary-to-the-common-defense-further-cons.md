@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxiv-the-powers-necessary-to-the-common-defense-further-cons
+section: "xxiv-the-powers-necessary-to-the-common-defense-further-cons"
 heading: "XXIV The Powers Necessary to the Common Defense Further Considered Hamilton: For The Independent Journal, Wednesday, December 19, 1787."
 order: 24
 source: standardebooks

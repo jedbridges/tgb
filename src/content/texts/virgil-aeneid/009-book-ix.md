@@ -1,6 +1,6 @@
 ---
 work: virgil-aeneid
-section: book-ix
+section: "book-ix"
 heading: "Book: IX"
 order: 9
 source: standardebooks

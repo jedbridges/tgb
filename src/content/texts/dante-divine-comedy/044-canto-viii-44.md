@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-viii-44
+section: "canto-viii-44"
 heading: "Canto: VIII"
 order: 44
 source: standardebooks

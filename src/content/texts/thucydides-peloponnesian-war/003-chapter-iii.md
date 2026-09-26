@@ -1,6 +1,6 @@
 ---
 work: thucydides-peloponnesian-war
-section: chapter-iii
+section: "chapter-iii"
 heading: "CHAPTER III"
 order: 3
 source: gutenberg

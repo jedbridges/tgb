@@ -1,6 +1,6 @@
 ---
 work: twain-huckleberry-finn
-section: chapter-the-last
+section: "chapter-the-last"
 heading: "Chapter the Last"
 order: 43
 source: standardebooks

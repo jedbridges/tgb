@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: house-warming
+section: "house-warming"
 heading: "House-Warming"
 order: 13
 source: standardebooks

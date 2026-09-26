@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: an-ancient-land-in-ancient-oracles-is-called-law-thirsty-all
+section: "an-ancient-land-in-ancient-oracles-is-called-law-thirsty-all"
 heading: "An ancient land in ancient oracles: Is called “law-thirsty”: all the struggle there"
 order: 9
 source: standardebooks

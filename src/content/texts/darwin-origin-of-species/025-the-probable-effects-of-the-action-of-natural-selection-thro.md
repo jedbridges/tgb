@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: the-probable-effects-of-the-action-of-natural-selection-thro
+section: "the-probable-effects-of-the-action-of-natural-selection-thro"
 heading: "The Probable Effects of the Action of Natural Selection Through Divergence of Character and Extinction, on the Descendants of a Common Ancestor"
 order: 25
 source: standardebooks

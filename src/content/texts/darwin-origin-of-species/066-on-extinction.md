@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-extinction
+section: "on-extinction"
 heading: "On Extinction"
 order: 66
 source: standardebooks

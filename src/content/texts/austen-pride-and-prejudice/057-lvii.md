@@ -1,6 +1,6 @@
 ---
 work: austen-pride-and-prejudice
-section: lvii
+section: "lvii"
 heading: "LVII"
 order: 57
 source: standardebooks

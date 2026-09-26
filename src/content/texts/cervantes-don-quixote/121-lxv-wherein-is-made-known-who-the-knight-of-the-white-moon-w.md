@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxv-wherein-is-made-known-who-the-knight-of-the-white-moon-w
+section: "lxv-wherein-is-made-known-who-the-knight-of-the-white-moon-w"
 heading: "LXV Wherein is made known who the knight of the white moon was; likewise Don Gregorio’s release, and other events."
 order: 121
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxii-which-treats-of-what-befell-don-quixotes-party-at-the-
+section: "xxxii-which-treats-of-what-befell-don-quixotes-party-at-the-"
 heading: "XXXII Which treats of what befell Don Quixote’s party at the inn."
 order: 35
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: spring
+section: "spring"
 heading: "Spring"
 order: 17
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xviii-88
+section: "canto-xviii-88"
 heading: "Canto: XVIII"
 order: 88
 source: standardebooks

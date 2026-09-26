@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xiii-the-ceremony-of-the-interview-of-princes
+section: "chapter-xiii-the-ceremony-of-the-interview-of-princes"
 heading: "CHAPTER XIII——THE CEREMONY OF THE INTERVIEW OF PRINCES"
 order: 28
 source: gutenberg

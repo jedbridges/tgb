@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: oh-sir-the-loftiest-hopes-on-earth-draw-lots-with-meaner-hop
+section: "oh-sir-the-loftiest-hopes-on-earth-draw-lots-with-meaner-hop"
 heading: "Oh, sir, the loftiest hopes on earth: Draw lots with meaner hopes: heroic breasts,"
 order: 18
 source: standardebooks

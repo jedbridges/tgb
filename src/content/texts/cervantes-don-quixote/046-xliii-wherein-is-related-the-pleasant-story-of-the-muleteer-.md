@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xliii-wherein-is-related-the-pleasant-story-of-the-muleteer-
+section: "xliii-wherein-is-related-the-pleasant-story-of-the-muleteer-"
 heading: "XLIII Wherein is related the pleasant story of the muleteer, together with other strange things that came to pass in the inn."
 order: 46
 source: standardebooks

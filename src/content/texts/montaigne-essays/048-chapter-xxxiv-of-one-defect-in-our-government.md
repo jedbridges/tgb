@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxxiv-of-one-defect-in-our-government
+section: "chapter-xxxiv-of-one-defect-in-our-government"
 heading: "CHAPTER XXXIV——OF ONE DEFECT IN OUR GOVERNMENT"
 order: 48
 source: gutenberg

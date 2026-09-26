@@ -1,6 +1,6 @@
 ---
 work: plato-republic
-section: introduction-and-analysis
+section: "introduction-and-analysis"
 heading: "INTRODUCTION AND ANALYSIS."
 order: 1
 source: gutenberg

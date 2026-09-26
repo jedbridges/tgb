@@ -1,6 +1,6 @@
 ---
 work: hobbes-leviathan
-section: viii
+section: "viii"
 heading: "VIII"
 order: 8
 source: standardebooks

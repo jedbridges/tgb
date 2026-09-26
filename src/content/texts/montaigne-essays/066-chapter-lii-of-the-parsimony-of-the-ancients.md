@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-lii-of-the-parsimony-of-the-ancients
+section: "chapter-lii-of-the-parsimony-of-the-ancients"
 heading: "CHAPTER LII——OF THE PARSIMONY OF THE ANCIENTS"
 order: 66
 source: gutenberg

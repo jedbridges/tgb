@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-i-36
+section: "chapter-i-36"
 heading: "Chapter I."
 order: 36
 source: gutenberg

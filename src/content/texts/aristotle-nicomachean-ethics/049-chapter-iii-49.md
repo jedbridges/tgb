@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-iii-49
+section: "chapter-iii-49"
 heading: "Chapter III."
 order: 49
 source: gutenberg

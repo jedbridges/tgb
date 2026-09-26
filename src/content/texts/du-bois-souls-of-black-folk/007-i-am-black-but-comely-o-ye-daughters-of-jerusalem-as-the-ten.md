@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: i-am-black-but-comely-o-ye-daughters-of-jerusalem-as-the-ten
+section: "i-am-black-but-comely-o-ye-daughters-of-jerusalem-as-the-ten"
 heading: "I am black but comely, O ye daughters of Jerusalem,: As the tents of Kedar, as the curtains of Solomon."
 order: 7
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xxix-65
+section: "canto-xxix-65"
 heading: "Canto: XXIX"
 order: 65
 source: standardebooks

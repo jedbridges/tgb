@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lviii-objection-that-the-number-of-members-will-not-be-augme
+section: "lviii-objection-that-the-number-of-members-will-not-be-augme"
 heading: "LVIII Objection That the Number of Members Will Not Be Augmented as the Progress of Population Demands Madison: Considered For The Independent Journal, Wednesday, February 20, 1788."
 order: 58
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: marcus-aurelius-meditations
-section: book-ii
+section: "book-ii"
 heading: "Book: II"
 order: 2
 source: standardebooks

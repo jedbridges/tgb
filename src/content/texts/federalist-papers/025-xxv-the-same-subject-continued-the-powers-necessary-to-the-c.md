@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxv-the-same-subject-continued-the-powers-necessary-to-the-c
+section: "xxv-the-same-subject-continued-the-powers-necessary-to-the-c"
 heading: "XXV The Same Subject Continued (The Powers Necessary to the Common Defense Further Considered) Hamilton: From the New York Packet, Friday, December 21, 1787."
 order: 25
 source: standardebooks

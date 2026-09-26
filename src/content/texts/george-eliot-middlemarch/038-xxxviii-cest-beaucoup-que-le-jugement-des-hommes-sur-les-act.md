@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: xxxviii-cest-beaucoup-que-le-jugement-des-hommes-sur-les-act
+section: "xxxviii-cest-beaucoup-que-le-jugement-des-hommes-sur-les-act"
 heading: "XXXVIII C’est beaucoup que le jugement des hommes sur les actions humaines; tôt ou tard il devient efficace. Guizot"
 order: 38
 source: standardebooks

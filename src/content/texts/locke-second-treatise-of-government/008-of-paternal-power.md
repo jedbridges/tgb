@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-paternal-power
+section: "of-paternal-power"
 heading: "OF PATERNAL POWER."
 order: 8
 source: gutenberg

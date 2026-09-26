@@ -1,6 +1,6 @@
 ---
 work: plato-republic
-section: book-vi
+section: "book-vi"
 heading: "BOOK VI."
 order: 7
 source: gutenberg

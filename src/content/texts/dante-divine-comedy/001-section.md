@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: section
+section: "section"
 heading: "Part 1"
 order: 1
 source: standardebooks

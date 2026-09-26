@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: ix-a-grand-debate-at-the-general-assembly-of-the-houyhnhnms-
+section: "ix-a-grand-debate-at-the-general-assembly-of-the-houyhnhnms-"
 heading: "IX A grand debate at the general assembly of the Houyhnhnms, and how it was determined. The learning of the Houyhnhnms. Their buildings. Their manner of burials. The defectiveness of their language."
 order: 36
 source: standardebooks

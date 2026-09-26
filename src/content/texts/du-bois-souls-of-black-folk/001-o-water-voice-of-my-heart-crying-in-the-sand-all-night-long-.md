@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: o-water-voice-of-my-heart-crying-in-the-sand-all-night-long-
+section: "o-water-voice-of-my-heart-crying-in-the-sand-all-night-long-"
 heading: "O water, voice of my heart, crying in the sand,: All night long crying with a mournful cry,"
 order: 1
 source: standardebooks

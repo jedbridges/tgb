@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: viii-of-the-good-fortune-which-the-valiant-don-quixote-had-i
+section: "viii-of-the-good-fortune-which-the-valiant-don-quixote-had-i"
 heading: "VIII Of the good fortune which the valiant Don Quixote had in the terrible and undreamt-of adventure of the windmills, with other occurrences worthy to be fitly recorded."
 order: 11
 source: standardebooks

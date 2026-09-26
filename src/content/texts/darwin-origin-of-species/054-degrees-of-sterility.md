@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: degrees-of-sterility
+section: "degrees-of-sterility"
 heading: "Degrees of Sterility"
 order: 54
 source: standardebooks

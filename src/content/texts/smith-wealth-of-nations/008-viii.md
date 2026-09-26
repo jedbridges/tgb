@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: viii
+section: "viii"
 heading: "VIII"
 order: 8
 source: standardebooks

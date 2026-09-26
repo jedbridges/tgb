@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: this-figure-hath-high-price-twas-wrought-with-love-ages-ago-
+section: "this-figure-hath-high-price-twas-wrought-with-love-ages-ago-"
 heading: "This figure hath high price: ’twas wrought with love: Ages ago in finest ivory;"
 order: 43
 source: standardebooks

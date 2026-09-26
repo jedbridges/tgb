@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: procedure-of-the-federal-courts
+section: "procedure-of-the-federal-courts"
 heading: "Procedure Of The Federal Courts"
 order: 16
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: nothing-exists-per-se-except-atoms-and-the-void
+section: "nothing-exists-per-se-except-atoms-and-the-void"
 heading: "NOTHING EXISTS per se EXCEPT ATOMS AND THE VOID"
 order: 5
 source: gutenberg

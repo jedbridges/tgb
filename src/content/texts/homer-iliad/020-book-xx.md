@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-xx
+section: "book-xx"
 heading: "BOOK XX."
 order: 20
 source: gutenberg

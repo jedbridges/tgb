@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxvii-the-appointing-power-continued-and-other-powers-of-th
+section: "lxxvii-the-appointing-power-continued-and-other-powers-of-th"
 heading: "LXXVII The Appointing Power Continued and Other Powers of the Executive Considered Hamilton: From The Independent Journal, Wednesday, April 2, 1788."
 order: 77
 source: standardebooks

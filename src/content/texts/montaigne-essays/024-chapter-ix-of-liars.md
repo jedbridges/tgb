@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-ix-of-liars
+section: "chapter-ix-of-liars"
 heading: "CHAPTER IX——OF LIARS"
 order: 24
 source: gutenberg

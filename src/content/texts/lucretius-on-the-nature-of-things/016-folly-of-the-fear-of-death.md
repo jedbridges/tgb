@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: folly-of-the-fear-of-death
+section: "folly-of-the-fear-of-death"
 heading: "FOLLY OF THE FEAR OF DEATH"
 order: 16
 source: gutenberg

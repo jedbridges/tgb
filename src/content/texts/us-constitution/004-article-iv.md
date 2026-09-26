@@ -1,6 +1,6 @@
 ---
 work: us-constitution
-section: article-iv
+section: "article-iv"
 heading: "ARTICLE IV"
 order: 4
 source: gutenberg

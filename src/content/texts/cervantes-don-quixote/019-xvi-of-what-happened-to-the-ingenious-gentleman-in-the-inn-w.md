@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xvi-of-what-happened-to-the-ingenious-gentleman-in-the-inn-w
+section: "xvi-of-what-happened-to-the-ingenious-gentleman-in-the-inn-w"
 heading: "XVI Of what happened to the ingenious gentleman in the inn which he took to be a castle."
 order: 19
 source: standardebooks

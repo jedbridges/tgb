@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxi-the-duration-in-office-of-the-executive-hamilton-from-t
+section: "lxxi-the-duration-in-office-of-the-executive-hamilton-from-t"
 heading: "LXXI The Duration in Office of the Executive Hamilton: From the New York Packet, Tuesday, March 18, 1788."
 order: 71
 source: standardebooks

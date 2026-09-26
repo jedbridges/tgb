@@ -1,6 +1,6 @@
 ---
 work: hobbes-leviathan
-section: xxxii
+section: "xxxii"
 heading: "XXXII"
 order: 32
 source: standardebooks

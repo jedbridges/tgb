@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: digression-concerning-banks-of-deposit-particularly-concerni
+section: "digression-concerning-banks-of-deposit-particularly-concerni"
 heading: "Digression Concerning Banks of Deposit, Particularly Concerning That of Amsterdam908"
 order: 37
 source: standardebooks

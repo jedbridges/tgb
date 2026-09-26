@@ -1,6 +1,6 @@
 ---
 work: thucydides-peloponnesian-war
-section: chapter-xiv
+section: "chapter-xiv"
 heading: "CHAPTER XIV"
 order: 14
 source: gutenberg

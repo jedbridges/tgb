@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-iii
+section: "book-iii"
 heading: "BOOK III."
 order: 3
 source: gutenberg

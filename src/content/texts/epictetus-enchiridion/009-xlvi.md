@@ -1,6 +1,6 @@
 ---
 work: epictetus-enchiridion
-section: xlvi
+section: "xlvi"
 heading: "XLVI"
 order: 9
 source: standardebooks

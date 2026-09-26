@@ -1,6 +1,6 @@
 ---
 work: twain-huckleberry-finn
-section: xxxiii
+section: "xxxiii"
 heading: "XXXIII"
 order: 33
 source: standardebooks

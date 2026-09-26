@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxv-wherein-is-set-down-the-braying-adventure-and-the-droll-
+section: "xxv-wherein-is-set-down-the-braying-adventure-and-the-droll-"
 heading: "XXV Wherein is set down the braying adventure, and the droll one of the puppet-showman, together with the memorable divinations of the divining ape."
 order: 81
 source: standardebooks

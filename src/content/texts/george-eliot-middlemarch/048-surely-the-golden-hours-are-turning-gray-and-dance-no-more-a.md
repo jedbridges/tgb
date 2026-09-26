@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: surely-the-golden-hours-are-turning-gray-and-dance-no-more-a
+section: "surely-the-golden-hours-are-turning-gray-and-dance-no-more-a"
 heading: "Surely the golden hours are turning gray: And dance no more, and vainly strive to run"
 order: 48
 source: standardebooks

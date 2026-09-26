@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: and-thus-thy-fall-hath-left-a-kind-of-blot-to-mark-the-full-
+section: "and-thus-thy-fall-hath-left-a-kind-of-blot-to-mark-the-full-"
 heading: "And thus thy fall hath left a kind of blot,: To mark the full-fraught man and best indued"
 order: 77
 source: standardebooks

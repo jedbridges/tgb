@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xl-of-matters-relating-and-belonging-to-this-adventure-and-t
+section: "xl-of-matters-relating-and-belonging-to-this-adventure-and-t"
 heading: "XL Of matters relating and belonging to this adventure and to this memorable history."
 order: 96
 source: standardebooks

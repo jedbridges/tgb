@@ -1,6 +1,6 @@
 ---
 work: austen-pride-and-prejudice
-section: xviii
+section: "xviii"
 heading: "XVIII"
 order: 18
 source: standardebooks

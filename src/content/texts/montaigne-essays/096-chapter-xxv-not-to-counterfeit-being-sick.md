@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxv-not-to-counterfeit-being-sick
+section: "chapter-xxv-not-to-counterfeit-being-sick"
 heading: "CHAPTER XXV——NOT TO COUNTERFEIT BEING SICK"
 order: 96
 source: gutenberg

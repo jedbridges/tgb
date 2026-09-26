@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-x-108
+section: "chapter-x-108"
 heading: "Chapter X."
 order: 108
 source: gutenberg

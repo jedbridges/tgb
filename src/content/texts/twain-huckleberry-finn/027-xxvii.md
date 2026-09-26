@@ -1,6 +1,6 @@
 ---
 work: twain-huckleberry-finn
-section: xxvii
+section: "xxvii"
 heading: "XXVII"
 order: 27
 source: standardebooks

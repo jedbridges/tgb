@@ -1,6 +1,6 @@
 ---
 work: austen-pride-and-prejudice
-section: xiii
+section: "xiii"
 heading: "XIII"
 order: 13
 source: standardebooks

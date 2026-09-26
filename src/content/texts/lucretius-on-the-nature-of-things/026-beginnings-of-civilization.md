@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: beginnings-of-civilization
+section: "beginnings-of-civilization"
 heading: "BEGINNINGS OF CIVILIZATION"
 order: 26
 source: gutenberg

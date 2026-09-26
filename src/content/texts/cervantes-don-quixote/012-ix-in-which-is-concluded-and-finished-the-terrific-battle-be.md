@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: ix-in-which-is-concluded-and-finished-the-terrific-battle-be
+section: "ix-in-which-is-concluded-and-finished-the-terrific-battle-be"
 heading: "IX In which is concluded and finished the terrific battle between the gallant Biscayan and the valiant Manchegan."
 order: 12
 source: standardebooks

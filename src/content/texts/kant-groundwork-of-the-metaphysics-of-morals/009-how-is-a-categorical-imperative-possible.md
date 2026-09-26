@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: how-is-a-categorical-imperative-possible
+section: "how-is-a-categorical-imperative-possible"
 heading: "How is a Categorical Imperative Possible?"
 order: 9
 source: gutenberg

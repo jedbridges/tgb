@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: geometrical-ratio-of-increase
+section: "geometrical-ratio-of-increase"
 heading: "Geometrical Ratio of Increase"
 order: 15
 source: standardebooks

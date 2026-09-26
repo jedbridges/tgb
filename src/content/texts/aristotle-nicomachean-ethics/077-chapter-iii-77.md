@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-iii-77
+section: "chapter-iii-77"
 heading: "Chapter III."
 order: 77
 source: gutenberg

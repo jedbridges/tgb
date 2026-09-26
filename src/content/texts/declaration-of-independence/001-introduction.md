@@ -1,6 +1,6 @@
 ---
 work: declaration-of-independence
-section: introduction
+section: "introduction"
 heading: "Introduction"
 order: 1
 source: gutenberg

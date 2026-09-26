@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-iii-101
+section: "chapter-iii-101"
 heading: "Chapter III."
 order: 101
 source: gutenberg

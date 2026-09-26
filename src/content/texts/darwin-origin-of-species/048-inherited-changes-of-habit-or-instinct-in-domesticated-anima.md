@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: inherited-changes-of-habit-or-instinct-in-domesticated-anima
+section: "inherited-changes-of-habit-or-instinct-in-domesticated-anima"
 heading: "Inherited Changes of Habit or Instinct in Domesticated Animals"
 order: 48
 source: standardebooks

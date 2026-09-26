@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-vii-that-the-intention-is-judge-of-our-actions
+section: "chapter-vii-that-the-intention-is-judge-of-our-actions"
 heading: "CHAPTER VII——THAT THE INTENTION IS JUDGE OF OUR ACTIONS"
 order: 22
 source: gutenberg

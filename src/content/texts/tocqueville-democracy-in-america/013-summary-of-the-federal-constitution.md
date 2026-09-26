@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: summary-of-the-federal-constitution
+section: "summary-of-the-federal-constitution"
 heading: "Summary Of The Federal Constitution"
 order: 13
 source: gutenberg

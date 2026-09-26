@@ -1,6 +1,6 @@
 ---
 work: twain-huckleberry-finn
-section: xxxix
+section: "xxxix"
 heading: "XXXIX"
 order: 39
 source: standardebooks

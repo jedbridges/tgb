@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: the-clerkly-person-smiled-and-said-promise-was-a-pretty-maid
+section: "the-clerkly-person-smiled-and-said-promise-was-a-pretty-maid"
 heading: "The clerkly person smiled and said: Promise was a pretty maid,"
 order: 17
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xli-general-view-of-the-powers-conferred-by-the-constitution
+section: "xli-general-view-of-the-powers-conferred-by-the-constitution"
 heading: "XLI General View of the Powers Conferred by the Constitution Madison: For The Independent Journal, Saturday, January 19, 1788."
 order: 41
 source: standardebooks

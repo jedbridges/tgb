@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxxiv-certain-general-and-miscellaneous-objections-to-the-c
+section: "lxxxiv-certain-general-and-miscellaneous-objections-to-the-c"
 heading: "LXXXIV Certain General and Miscellaneous Objections to the Constitution Considered and Answered Hamilton: From McClean’s Edition, New York, Wednesday, May 28, 1788."
 order: 84
 source: standardebooks

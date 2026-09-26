@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: article-ii
+section: "article-ii"
 heading: "Article: II"
 order: 51
 source: standardebooks

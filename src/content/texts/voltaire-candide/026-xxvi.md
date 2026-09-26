@@ -1,6 +1,6 @@
 ---
 work: voltaire-candide
-section: xxvi
+section: "xxvi"
 heading: "XXVI"
 order: 26
 source: standardebooks

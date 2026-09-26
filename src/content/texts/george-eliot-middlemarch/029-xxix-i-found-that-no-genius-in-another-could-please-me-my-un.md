@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: xxix-i-found-that-no-genius-in-another-could-please-me-my-un
+section: "xxix-i-found-that-no-genius-in-another-could-please-me-my-un"
 heading: "XXIX I found that no genius in another could please me. My unfortunate paradoxes had entirely dried up that source of comfort. Goldsmith"
 order: 29
 source: standardebooks

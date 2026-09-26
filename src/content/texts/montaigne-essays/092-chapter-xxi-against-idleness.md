@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxi-against-idleness
+section: "chapter-xxi-against-idleness"
 heading: "CHAPTER XXI——AGAINST IDLENESS"
 order: 92
 source: gutenberg

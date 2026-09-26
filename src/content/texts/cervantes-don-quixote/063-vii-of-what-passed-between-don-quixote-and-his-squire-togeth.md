@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: vii-of-what-passed-between-don-quixote-and-his-squire-togeth
+section: "vii-of-what-passed-between-don-quixote-and-his-squire-togeth"
 heading: "VII Of what passed between Don Quixote and his squire, together with other very notable incidents."
 order: 63
 source: standardebooks

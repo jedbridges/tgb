@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: correlated-variation
+section: "correlated-variation"
 heading: "Correlated Variation"
 order: 31
 source: standardebooks

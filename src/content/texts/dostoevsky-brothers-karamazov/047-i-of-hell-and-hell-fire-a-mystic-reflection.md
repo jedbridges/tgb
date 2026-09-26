@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: i-of-hell-and-hell-fire-a-mystic-reflection
+section: "i-of-hell-and-hell-fire-a-mystic-reflection"
 heading: "(i) Of Hell and Hell Fire, a Mystic Reflection"
 order: 47
 source: standardebooks

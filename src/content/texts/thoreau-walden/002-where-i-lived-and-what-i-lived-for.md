@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: where-i-lived-and-what-i-lived-for
+section: "where-i-lived-and-what-i-lived-for"
 heading: "Where I Lived, and What I Lived For"
 order: 2
 source: standardebooks

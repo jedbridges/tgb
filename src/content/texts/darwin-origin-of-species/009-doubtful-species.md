@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: doubtful-species
+section: "doubtful-species"
 heading: "Doubtful Species"
 order: 9
 source: standardebooks

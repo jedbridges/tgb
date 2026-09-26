@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: chapter-xiii-government-of-the-democracy-in-america-part-iii
+section: "chapter-xiii-government-of-the-democracy-in-america-part-iii"
 heading: "Chapter XIII: Government Of The Democracy In America—Part III"
 order: 24
 source: gutenberg

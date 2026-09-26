@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-v-103
+section: "chapter-v-103"
 heading: "Chapter V."
 order: 103
 source: gutenberg

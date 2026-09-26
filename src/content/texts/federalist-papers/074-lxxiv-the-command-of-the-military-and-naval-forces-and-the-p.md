@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxiv-the-command-of-the-military-and-naval-forces-and-the-p
+section: "lxxiv-the-command-of-the-military-and-naval-forces-and-the-p"
 heading: "LXXIV The Command of the Military and Naval Forces, and the Pardoning Power of the Executive Hamilton: From the New York Packet, Tuesday, March 25, 1788."
 order: 74
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: v-the-author-at-his-masters-command-informs-him-of-the-state
+section: "v-the-author-at-his-masters-command-informs-him-of-the-state"
 heading: "V The author at his master’s command, informs him of the state of England. The causes of war among the princes of Europe. The author begins to explain the English constitution."
 order: 32
 source: standardebooks

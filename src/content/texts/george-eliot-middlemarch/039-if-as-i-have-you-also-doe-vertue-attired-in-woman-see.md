@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: if-as-i-have-you-also-doe-vertue-attired-in-woman-see
+section: "if-as-i-have-you-also-doe-vertue-attired-in-woman-see"
 heading: "If, as I have, you also doe,: Vertue attired in woman see,"
 order: 39
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: viii-a-further-account-of-glubbdubdrib-ancient-and-modern-hi
+section: "viii-a-further-account-of-glubbdubdrib-ancient-and-modern-hi"
 heading: "VIII A further account of Glubbdubdrib. Ancient and modern history corrected."
 order: 24
 source: standardebooks

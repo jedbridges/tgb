@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: great-meteorological-phenomena-etc
+section: "great-meteorological-phenomena-etc"
 heading: "GREAT METEOROLOGICAL PHENOMENA, ETC."
 order: 28
 source: gutenberg

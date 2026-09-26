@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: the-soul-is-mortal
+section: "the-soul-is-mortal"
 heading: "THE SOUL IS MORTAL"
 order: 15
 source: gutenberg

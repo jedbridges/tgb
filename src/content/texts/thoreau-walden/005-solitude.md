@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: solitude
+section: "solitude"
 heading: "Solitude"
 order: 5
 source: standardebooks

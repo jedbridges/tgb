@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-ii-37
+section: "chapter-ii-37"
 heading: "Chapter II."
 order: 37
 source: gutenberg

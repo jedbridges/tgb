@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: all-times-are-good-to-seek-your-wedded-home-bringing-a-mutua
+section: "all-times-are-good-to-seek-your-wedded-home-bringing-a-mutua"
 heading: "All times are good to seek your wedded home: Bringing a mutual delight."
 order: 28
 source: standardebooks

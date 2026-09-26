@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xiii-advantage-of-the-union-in-respect-to-economy-in-governm
+section: "xiii-advantage-of-the-union-in-respect-to-economy-in-governm"
 heading: "XIII Advantage of the Union in Respect to Economy in Government Hamilton: For The Independent Journal, Wednesday, November 28, 1787."
 order: 13
 source: standardebooks

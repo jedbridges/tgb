@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: book-vii
+section: "book-vii"
 heading: "BOOK VII"
 order: 124
 source: gutenberg

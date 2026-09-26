@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxviii-the-judiciary-department-hamilton-from-mccleans-edit
+section: "lxxviii-the-judiciary-department-hamilton-from-mccleans-edit"
 heading: "LXXVIII The Judiciary Department Hamilton: From McClean’s Edition, New York, Wednesday, May 28, 1788."
 order: 78
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxi-in-which-camachos-wedding-is-continued-with-other-deligh
+section: "xxi-in-which-camachos-wedding-is-continued-with-other-deligh"
 heading: "XXI In which Camacho’s wedding is continued, with other delightful incidents."
 order: 77
 source: standardebooks

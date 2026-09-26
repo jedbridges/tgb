@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: circumstances-favourable-to-mans-power-of-selection
+section: "circumstances-favourable-to-mans-power-of-selection"
 heading: "Circumstances Favourable to Man’s Power of Selection"
 order: 7
 source: standardebooks

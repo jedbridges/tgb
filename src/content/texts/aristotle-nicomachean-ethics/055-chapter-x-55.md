@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-x-55
+section: "chapter-x-55"
 heading: "Chapter X."
 order: 55
 source: gutenberg

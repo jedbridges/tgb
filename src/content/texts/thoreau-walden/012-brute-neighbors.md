@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: brute-neighbors
+section: "brute-neighbors"
 heading: "Brute Neighbors"
 order: 12
 source: standardebooks

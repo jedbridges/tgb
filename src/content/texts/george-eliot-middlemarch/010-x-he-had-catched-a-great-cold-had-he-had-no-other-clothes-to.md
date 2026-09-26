@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: x-he-had-catched-a-great-cold-had-he-had-no-other-clothes-to
+section: "x-he-had-catched-a-great-cold-had-he-had-no-other-clothes-to"
 heading: "X He had catched a great cold, had he had no other clothes to wear than the skin of a bear not yet killed. Fuller"
 order: 10
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-iv
+section: "book-iv"
 heading: "BOOK IV"
 order: 6
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: viii-wherein-is-related-what-befell-don-quixote-on-his-way-t
+section: "viii-wherein-is-related-what-befell-don-quixote-on-his-way-t"
 heading: "VIII Wherein is related what befell Don Quixote on his way to see his lady Dulcinea del Toboso."
 order: 64
 source: standardebooks

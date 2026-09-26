@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxix-in-which-the-trifaldi-continues-her-marvellous-and-mem
+section: "xxxix-in-which-the-trifaldi-continues-her-marvellous-and-mem"
 heading: "XXXIX In which the Trifaldi continues her marvellous and memorable story."
 order: 95
 source: standardebooks

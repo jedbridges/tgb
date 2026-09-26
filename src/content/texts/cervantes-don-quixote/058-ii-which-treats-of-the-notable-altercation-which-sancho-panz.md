@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: ii-which-treats-of-the-notable-altercation-which-sancho-panz
+section: "ii-which-treats-of-the-notable-altercation-which-sancho-panz"
 heading: "II Which treats of the notable altercation which Sancho Panza had with Don Quixote’s niece, and housekeeper, together with other droll matters."
 order: 58
 source: standardebooks

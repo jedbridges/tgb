@@ -1,6 +1,6 @@
 ---
 work: shakespeare-king-lear
-section: scene-i-16
+section: "scene-i-16"
 heading: "Scene: I"
 order: 16
 source: standardebooks

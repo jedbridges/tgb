@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-xi-56
+section: "chapter-xi-56"
 heading: "Chapter XI."
 order: 56
 source: gutenberg

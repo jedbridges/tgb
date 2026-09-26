@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xiii-in-which-is-ended-the-story-of-the-shepherdess-marcela-
+section: "xiii-in-which-is-ended-the-story-of-the-shepherdess-marcela-"
 heading: "XIII In which is ended the story of the shepherdess Marcela, with other incidents."
 order: 16
 source: standardebooks

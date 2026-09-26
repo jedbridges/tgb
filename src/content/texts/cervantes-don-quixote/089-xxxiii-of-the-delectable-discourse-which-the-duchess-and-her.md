@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxiii-of-the-delectable-discourse-which-the-duchess-and-her
+section: "xxxiii-of-the-delectable-discourse-which-the-duchess-and-her"
 heading: "XXXIII Of the delectable discourse which the duchess and her damsels held with Sancho Panza, well worth reading and noting."
 order: 89
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxvii-of-how-the-curate-and-the-barber-proceeded-with-their-
+section: "xxvii-of-how-the-curate-and-the-barber-proceeded-with-their-"
 heading: "XXVII Of how the curate and the barber proceeded with their scheme; together with other matters worthy of record in this great history."
 order: 30
 source: standardebooks

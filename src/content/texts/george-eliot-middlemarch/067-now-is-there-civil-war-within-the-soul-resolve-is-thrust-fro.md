@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: now-is-there-civil-war-within-the-soul-resolve-is-thrust-fro
+section: "now-is-there-civil-war-within-the-soul-resolve-is-thrust-fro"
 heading: "Now is there civil war within the soul:: Resolve is thrust from off the sacred throne"
 order: 67
 source: standardebooks

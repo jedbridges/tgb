@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: infinite-worlds
+section: "infinite-worlds"
 heading: "INFINITE WORLDS"
 order: 12
 source: gutenberg

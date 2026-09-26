@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-xiii-97
+section: "chapter-xiii-97"
 heading: "Chapter XIII."
 order: 97
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxix-of-moderation
+section: "chapter-xxix-of-moderation"
 heading: "CHAPTER XXIX——OF MODERATION"
 order: 43
 source: gutenberg

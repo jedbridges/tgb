@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: summary-of-chapter-60
+section: "summary-of-chapter-60"
 heading: "Summary of Chapter"
 order: 60
 source: standardebooks

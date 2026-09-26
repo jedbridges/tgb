@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: first-section-transition-from-the-common-rational-knowledge-
+section: "first-section-transition-from-the-common-rational-knowledge-"
 heading: "FIRST SECTION—TRANSITION FROM THE COMMON RATIONAL KNOWLEDGE OF MORALITY TO THE PHILOSOPHICAL"
 order: 2
 source: gutenberg

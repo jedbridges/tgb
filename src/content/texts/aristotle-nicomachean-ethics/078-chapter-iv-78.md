@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-iv-78
+section: "chapter-iv-78"
 heading: "Chapter IV."
 order: 78
 source: gutenberg

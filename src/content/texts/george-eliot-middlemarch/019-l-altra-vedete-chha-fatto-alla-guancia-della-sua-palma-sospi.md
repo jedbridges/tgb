@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: l-altra-vedete-chha-fatto-alla-guancia-della-sua-palma-sospi
+section: "l-altra-vedete-chha-fatto-alla-guancia-della-sua-palma-sospi"
 heading: "L’ altra vedete ch’ha fatto alla guancia: Della sua palma, sospirando, letto."
 order: 19
 source: standardebooks

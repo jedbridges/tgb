@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: chapter-viii-the-federal-constitution-part-ii
+section: "chapter-viii-the-federal-constitution-part-ii"
 heading: "Chapter VIII: The Federal Constitution—Part II"
 order: 14
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: ii-the-emperor-of-lilliput-attended-by-several-of-the-nobili
+section: "ii-the-emperor-of-lilliput-attended-by-several-of-the-nobili"
 heading: "II The emperor of Lilliput, attended by several of the nobility, comes to see the author in his confinement. The emperor’s person and habit described. Learned men appointed to teach the author their language. He gains favour by his mild disposition. His pockets are searched, and his sword and pistols taken from him."
 order: 2
 source: standardebooks

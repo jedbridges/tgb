@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxxvi-of-cato-the-younger
+section: "chapter-xxxvi-of-cato-the-younger"
 heading: "CHAPTER XXXVI——OF CATO THE YOUNGER"
 order: 50
 source: gutenberg

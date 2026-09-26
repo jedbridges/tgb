@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxviii-wherein-is-told-the-distressed-duennas-tale-of-her-m
+section: "xxxviii-wherein-is-told-the-distressed-duennas-tale-of-her-m"
 heading: "XXXVIII Wherein is told the distressed Duenna’s tale of her misfortunes."
 order: 94
 source: standardebooks

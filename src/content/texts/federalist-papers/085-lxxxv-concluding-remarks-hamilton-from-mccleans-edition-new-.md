@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxxv-concluding-remarks-hamilton-from-mccleans-edition-new-
+section: "lxxxv-concluding-remarks-hamilton-from-mccleans-edition-new-"
 heading: "LXXXV Concluding Remarks Hamilton: From McClean’s Edition, New York, Wednesday, May 28, 1788."
 order: 85
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: xxvi
+section: "xxvi"
 heading: "XXVI"
 order: 27
 source: standardebooks

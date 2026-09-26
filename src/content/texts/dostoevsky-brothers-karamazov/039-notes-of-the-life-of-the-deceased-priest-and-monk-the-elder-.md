@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: notes-of-the-life-of-the-deceased-priest-and-monk-the-elder-
+section: "notes-of-the-life-of-the-deceased-priest-and-monk-the-elder-"
 heading: "Notes of the Life of the deceased Priest and Monk, the Elder Zossima, taken from his own words by Alexey Fyodorovitch Karamazov. Biographical Notes (a) Father Zossima’s Brother"
 order: 39
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xlviii-these-departments-should-not-be-so-far-separated-as-t
+section: "xlviii-these-departments-should-not-be-so-far-separated-as-t"
 heading: "XLVIII These Departments Should Not Be So Far Separated as to Have No Constitutional Control Over Each Other Madison: From the New York Packet, Friday, February 1, 1788."
 order: 48
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: preface-to-second-edition
+section: "preface-to-second-edition"
 heading: "PREFACE TO SECOND EDITION"
 order: 2
 source: gutenberg

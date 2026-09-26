@@ -1,6 +1,6 @@
 ---
 work: pascal-pensees
-section: transcribers-notes
+section: "transcribers-notes"
 heading: "Transcriber's Notes"
 order: 89
 source: gutenberg

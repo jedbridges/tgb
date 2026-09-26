@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: why-if-the-soul-can-fling-the-dust-aside-and-naked-on-the-ai
+section: "why-if-the-soul-can-fling-the-dust-aside-and-naked-on-the-ai"
 heading: "Why, if the Soul can fling the Dust aside,: And naked on the Air of Heaven ride,"
 order: 6
 source: standardebooks

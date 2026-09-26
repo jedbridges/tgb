@@ -1,6 +1,6 @@
 ---
 work: epictetus-enchiridion
-section: xxiv
+section: "xxiv"
 heading: "XXIV"
 order: 3
 source: standardebooks

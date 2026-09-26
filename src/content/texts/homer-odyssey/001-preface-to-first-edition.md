@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: preface-to-first-edition
+section: "preface-to-first-edition"
 heading: "PREFACE TO FIRST EDITION"
 order: 1
 source: gutenberg

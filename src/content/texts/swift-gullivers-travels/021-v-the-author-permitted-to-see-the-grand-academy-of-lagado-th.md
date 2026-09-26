@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: v-the-author-permitted-to-see-the-grand-academy-of-lagado-th
+section: "v-the-author-permitted-to-see-the-grand-academy-of-lagado-th"
 heading: "V The author permitted to see the grand academy of Lagado. The academy largely described. The arts wherein the professors employ themselves."
 order: 21
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: i-of-the-interview-the-curate-and-the-barber-had-with-don-qu
+section: "i-of-the-interview-the-curate-and-the-barber-had-with-don-qu"
 heading: "I Of the interview the curate and the barber had with Don Quixote about his malady."
 order: 57
 source: standardebooks

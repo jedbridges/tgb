@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: close-up-his-eyes-and-draw-the-curtain-close-and-let-us-all-
+section: "close-up-his-eyes-and-draw-the-curtain-close-and-let-us-all-"
 heading: "Close up his eyes and draw the curtain close;: And let us all to meditation."
 order: 33
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: ix-wherein-is-related-what-will-be-seen-there
+section: "ix-wherein-is-related-what-will-be-seen-there"
 heading: "IX Wherein is related what will be seen there."
 order: 65
 source: standardebooks

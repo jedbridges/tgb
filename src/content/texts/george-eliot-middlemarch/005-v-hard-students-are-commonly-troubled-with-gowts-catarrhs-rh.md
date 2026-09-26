@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: v-hard-students-are-commonly-troubled-with-gowts-catarrhs-rh
+section: "v-hard-students-are-commonly-troubled-with-gowts-catarrhs-rh"
 heading: "V Hard students are commonly troubled with gowts, catarrhs, rheums, cachexia, bradypepsia, bad eyes, stone, and collick, crudities, oppilations, vertigo, winds, consumptions, and all such diseases as come by overmuch sitting: they are most part lean, dry, ill-colored⁠ ⁠… and all through immoderate pains and extraordinary studies. If you will not believe the truth of this, look upon great Tostatus and Thomas Aquainas’ works; and tell me whether those men took pains. Burton’s Anatomy of Melancholy, P. I, s. 2"
 order: 5
 source: standardebooks

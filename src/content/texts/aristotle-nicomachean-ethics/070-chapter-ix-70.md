@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-ix-70
+section: "chapter-ix-70"
 heading: "Chapter IX."
 order: 70
 source: gutenberg

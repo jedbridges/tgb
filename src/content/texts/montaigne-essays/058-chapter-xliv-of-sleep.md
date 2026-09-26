@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xliv-of-sleep
+section: "chapter-xliv-of-sleep"
 heading: "CHAPTER XLIV——OF SLEEP"
 order: 58
 source: gutenberg

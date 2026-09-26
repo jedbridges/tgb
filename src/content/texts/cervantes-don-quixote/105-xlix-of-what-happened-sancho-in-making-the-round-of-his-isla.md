@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlix-of-what-happened-sancho-in-making-the-round-of-his-isla
+section: "xlix-of-what-happened-sancho-in-making-the-round-of-his-isla"
 heading: "XLIX Of what happened Sancho in making the round of his island."
 order: 105
 source: standardebooks

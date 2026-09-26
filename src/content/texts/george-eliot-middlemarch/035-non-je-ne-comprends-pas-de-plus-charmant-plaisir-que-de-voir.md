@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: non-je-ne-comprends-pas-de-plus-charmant-plaisir-que-de-voir
+section: "non-je-ne-comprends-pas-de-plus-charmant-plaisir-que-de-voir"
 heading: "Non, je ne comprends pas de plus charmant plaisir: Que de voir d’héritiers une troupe affligée"
 order: 35
 source: standardebooks

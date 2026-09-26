@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xix-in-which-is-related-the-adventure-of-the-enamoured-sheph
+section: "xix-in-which-is-related-the-adventure-of-the-enamoured-sheph"
 heading: "XIX In which is related the adventure of the enamoured shepherd, together with other truly droll incidents."
 order: 75
 source: standardebooks

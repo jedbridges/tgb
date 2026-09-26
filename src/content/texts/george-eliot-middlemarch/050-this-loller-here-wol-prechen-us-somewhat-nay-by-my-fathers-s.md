@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: this-loller-here-wol-prechen-us-somewhat-nay-by-my-fathers-s
+section: "this-loller-here-wol-prechen-us-somewhat-nay-by-my-fathers-s"
 heading: "“This Loller here wol prechen us somewhat.”: “Nay by my father’s soule! that schal he nat,”"
 order: 50
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxiv-treating-of-the-adventure-which-gave-don-quixote-more-u
+section: "lxiv-treating-of-the-adventure-which-gave-don-quixote-more-u"
 heading: "LXIV Treating of the adventure which gave Don Quixote more unhappiness than all that had hitherto befallen him."
 order: 120
 source: standardebooks

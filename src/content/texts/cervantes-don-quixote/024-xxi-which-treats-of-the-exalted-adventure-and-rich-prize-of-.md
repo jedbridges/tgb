@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxi-which-treats-of-the-exalted-adventure-and-rich-prize-of-
+section: "xxi-which-treats-of-the-exalted-adventure-and-rich-prize-of-"
 heading: "XXI Which treats of the exalted adventure and rich prize of Mambrino’s helmet, together with other things that happened to our invincible knight."
 order: 24
 source: standardebooks

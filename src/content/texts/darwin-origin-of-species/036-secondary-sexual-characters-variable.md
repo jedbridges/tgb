@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: secondary-sexual-characters-variable
+section: "secondary-sexual-characters-variable"
 heading: "Secondary Sexual Characters Variable"
 order: 36
 source: standardebooks

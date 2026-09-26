@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: to-mercy-pity-peace-and-love-all-pray-in-their-distress
+section: "to-mercy-pity-peace-and-love-all-pray-in-their-distress"
 heading: "To mercy, pity, peace, and love: All pray in their distress,"
 order: 76
 source: standardebooks

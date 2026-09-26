@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: project-gutenberg-editors-bookmarks
+section: "project-gutenberg-editors-bookmarks"
 heading: "PROJECT GUTENBERG EDITOR’S BOOKMARKS:"
 order: 122
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: organs-of-extreme-perfection-and-complication
+section: "organs-of-extreme-perfection-and-complication"
 heading: "Organs of Extreme Perfection and Complication"
 order: 41
 source: standardebooks

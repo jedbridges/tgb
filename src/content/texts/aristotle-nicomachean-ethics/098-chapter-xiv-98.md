@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-xiv-98
+section: "chapter-xiv-98"
 heading: "Chapter XIV."
 order: 98
 source: gutenberg

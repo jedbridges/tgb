@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: i-general-introduction-hamilton-for-the-independent-journal-
+section: "i-general-introduction-hamilton-for-the-independent-journal-"
 heading: "I General Introduction Hamilton: For The Independent Journal, Saturday, October 27, 1787."
 order: 1
 source: standardebooks

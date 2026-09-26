@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlvii-of-the-strange-manner-in-which-don-quixote-of-la-manch
+section: "xlvii-of-the-strange-manner-in-which-don-quixote-of-la-manch"
 heading: "XLVII Of the strange manner in which Don Quixote of La Mancha was carried away enchanted, together with other remarkable incidents."
 order: 50
 source: standardebooks

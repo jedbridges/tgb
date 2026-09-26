@@ -1,6 +1,6 @@
 ---
 work: shakespeare-hamlet
-section: scene-ii-9
+section: "scene-ii-9"
 heading: "Scene: II"
 order: 9
 source: standardebooks

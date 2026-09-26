@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-v-whether-the-governor-of-a-place-besieged-ought-him
+section: "chapter-v-whether-the-governor-of-a-place-besieged-ought-him"
 heading: "CHAPTER V——WHETHER THE GOVERNOR OF A PLACE BESIEGED OUGHT HIMSELF TO GO OUT TO PARLEY"
 order: 20
 source: gutenberg

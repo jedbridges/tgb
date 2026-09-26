@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-v-18
+section: "chapter-v-18"
 heading: "Chapter V."
 order: 18
 source: gutenberg

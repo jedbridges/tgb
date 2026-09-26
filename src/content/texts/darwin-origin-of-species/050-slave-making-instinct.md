@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: slave-making-instinct
+section: "slave-making-instinct"
 heading: "Slave-Making Instinct"
 order: 50
 source: standardebooks

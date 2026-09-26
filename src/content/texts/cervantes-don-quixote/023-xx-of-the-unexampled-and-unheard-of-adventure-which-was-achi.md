@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xx-of-the-unexampled-and-unheard-of-adventure-which-was-achi
+section: "xx-of-the-unexampled-and-unheard-of-adventure-which-was-achi"
 heading: "XX Of the unexampled and unheard-of adventure which was achieved by the valiant Don Quixote of La Mancha with less peril than any ever achieved by any famous knight in the world."
 order: 23
 source: standardebooks

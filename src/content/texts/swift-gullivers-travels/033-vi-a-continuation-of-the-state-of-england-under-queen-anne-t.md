@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: vi-a-continuation-of-the-state-of-england-under-queen-anne-t
+section: "vi-a-continuation-of-the-state-of-england-under-queen-anne-t"
 heading: "VI A continuation of the state of England under Queen Anne. The character of a first minister of state in European courts."
 order: 33
 source: standardebooks

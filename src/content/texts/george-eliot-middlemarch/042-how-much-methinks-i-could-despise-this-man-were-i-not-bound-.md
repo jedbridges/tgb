@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: how-much-methinks-i-could-despise-this-man-were-i-not-bound-
+section: "how-much-methinks-i-could-despise-this-man-were-i-not-bound-"
 heading: "How much, methinks, I could despise this man: Were I not bound in charity against it!"
 order: 42
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: thrice-happy-she-that-is-so-well-assured-unto-herself-and-se
+section: "thrice-happy-she-that-is-so-well-assured-unto-herself-and-se"
 heading: "Thrice happy she that is so well assured: Unto herself, and settled so in heart,"
 order: 37
 source: standardebooks

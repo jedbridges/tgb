@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xxiii-93
+section: "canto-xxiii-93"
 heading: "Canto: XXIII"
 order: 93
 source: standardebooks

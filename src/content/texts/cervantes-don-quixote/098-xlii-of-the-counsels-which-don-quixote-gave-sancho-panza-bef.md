@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlii-of-the-counsels-which-don-quixote-gave-sancho-panza-bef
+section: "xlii-of-the-counsels-which-don-quixote-gave-sancho-panza-bef"
 heading: "XLII Of the counsels which Don Quixote gave Sancho Panza before he set out to govern the island, together with other well-considered matters."
 order: 98
 source: standardebooks

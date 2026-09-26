@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: love-seeketh-not-itself-to-please-nor-for-itself-hath-any-ca
+section: "love-seeketh-not-itself-to-please-nor-for-itself-hath-any-ca"
 heading: "Love seeketh not itself to please,: Nor for itself hath any care"
 order: 25
 source: standardebooks

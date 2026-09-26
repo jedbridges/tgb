@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xlviii-in-which-the-canon-pursues-the-subject-of-the-books-o
+section: "xlviii-in-which-the-canon-pursues-the-subject-of-the-books-o"
 heading: "XLVIII In which the canon pursues the subject of the books of chivalry, with other matters worthy of his wit."
 order: 51
 source: standardebooks

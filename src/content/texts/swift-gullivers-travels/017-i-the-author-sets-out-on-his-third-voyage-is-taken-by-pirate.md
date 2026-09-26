@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: i-the-author-sets-out-on-his-third-voyage-is-taken-by-pirate
+section: "i-the-author-sets-out-on-his-third-voyage-is-taken-by-pirate"
 heading: "I The author sets out on his third voyage. Is taken by pirates. The malice of a Dutchman. His arrival at an island. He is received into Laputa."
 order: 17
 source: standardebooks

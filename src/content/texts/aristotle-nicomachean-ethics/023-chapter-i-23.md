@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-i-23
+section: "chapter-i-23"
 heading: "Chapter I."
 order: 23
 source: gutenberg

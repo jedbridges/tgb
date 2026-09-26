@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-xvi
+section: "book-xvi"
 heading: "BOOK XVI."
 order: 16
 source: gutenberg

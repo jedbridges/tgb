@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-iii-38
+section: "chapter-iii-38"
 heading: "Chapter III."
 order: 38
 source: gutenberg

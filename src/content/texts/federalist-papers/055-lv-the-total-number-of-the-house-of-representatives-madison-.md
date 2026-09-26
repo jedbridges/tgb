@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lv-the-total-number-of-the-house-of-representatives-madison-
+section: "lv-the-total-number-of-the-house-of-representatives-madison-"
 heading: "LV The Total Number of the House of Representatives Madison: For The Independent Journal, Wednesday, February 13, 1788."
 order: 55
 source: standardebooks

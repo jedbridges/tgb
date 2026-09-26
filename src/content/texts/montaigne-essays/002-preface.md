@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: preface
+section: "preface"
 heading: "PREFACE"
 order: 2
 source: gutenberg

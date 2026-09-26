@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xii-of-physiognomy
+section: "chapter-xii-of-physiognomy"
 heading: "CHAPTER XII——OF PHYSIOGNOMY"
 order: 120
 source: gutenberg

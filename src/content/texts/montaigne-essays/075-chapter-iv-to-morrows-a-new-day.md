@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-iv-to-morrows-a-new-day
+section: "chapter-iv-to-morrows-a-new-day"
 heading: "CHAPTER IV——TO-MORROW’S A NEW DAY"
 order: 75
 source: gutenberg

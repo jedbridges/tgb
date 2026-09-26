@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-i-75
+section: "chapter-i-75"
 heading: "Chapter I."
 order: 75
 source: gutenberg

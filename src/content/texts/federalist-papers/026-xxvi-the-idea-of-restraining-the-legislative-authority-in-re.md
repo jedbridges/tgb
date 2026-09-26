@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxvi-the-idea-of-restraining-the-legislative-authority-in-re
+section: "xxvi-the-idea-of-restraining-the-legislative-authority-in-re"
 heading: "XXVI The Idea of Restraining the Legislative Authority in Regard to the Common Defense Considered Hamilton: For The Independent Journal, Saturday, December 22, 1788."
 order: 26
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: xi-the-author-leaves-luggnagg-and-sails-to-japan-from-thence
+section: "xi-the-author-leaves-luggnagg-and-sails-to-japan-from-thence"
 heading: "XI The author leaves Luggnagg, and sails to Japan. From thence he returns in a Dutch ship to Amsterdam, and from Amsterdam to England."
 order: 27
 source: standardebooks

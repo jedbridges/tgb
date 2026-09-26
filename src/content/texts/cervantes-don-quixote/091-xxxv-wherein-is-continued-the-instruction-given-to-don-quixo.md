@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxv-wherein-is-continued-the-instruction-given-to-don-quixo
+section: "xxxv-wherein-is-continued-the-instruction-given-to-don-quixo"
 heading: "XXXV Wherein is continued the instruction given to Don Quixote touching the disenchantment of Dulcinea, together with other marvellous incidents."
 order: 91
 source: standardebooks

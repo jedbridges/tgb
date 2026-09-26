@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: o-black-boy-of-atlanta-but-half-was-spoken
+section: "o-black-boy-of-atlanta-but-half-was-spoken"
 heading: "O black boy of Atlanta!: But half was spoken;"
 order: 5
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: circumstances-favourable-for-the-production-of-new-forms-thr
+section: "circumstances-favourable-for-the-production-of-new-forms-thr"
 heading: "Circumstances Favourable for the Production of New Forms Through Natural Selection"
 order: 22
 source: standardebooks

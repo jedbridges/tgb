@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: third-period
+section: "third-period"
 heading: "Third Period"
 order: 16
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-i-of-the-inconstancy-of-our-actions
+section: "chapter-i-of-the-inconstancy-of-our-actions"
 heading: "CHAPTER I——OF THE INCONSTANCY OF OUR ACTIONS"
 order: 72
 source: gutenberg

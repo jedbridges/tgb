@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: effects-of-the-increased-use-and-disuse-of-parts-as-controll
+section: "effects-of-the-increased-use-and-disuse-of-parts-as-controll"
 heading: "Effects of the Increased Use and Disuse of Parts, as Controlled by Natural Selection"
 order: 29
 source: standardebooks

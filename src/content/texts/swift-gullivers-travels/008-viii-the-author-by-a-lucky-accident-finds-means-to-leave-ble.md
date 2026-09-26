@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: viii-the-author-by-a-lucky-accident-finds-means-to-leave-ble
+section: "viii-the-author-by-a-lucky-accident-finds-means-to-leave-ble"
 heading: "VIII The author, by a lucky accident, finds means to leave Blefuscu; and, after some difficulties, returns safe to his native country."
 order: 8
 source: standardebooks

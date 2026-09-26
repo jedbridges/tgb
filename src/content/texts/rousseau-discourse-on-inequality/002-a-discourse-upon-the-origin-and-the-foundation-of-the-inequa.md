@@ -1,6 +1,6 @@
 ---
 work: rousseau-discourse-on-inequality
-section: a-discourse-upon-the-origin-and-the-foundation-of-the-inequa
+section: "a-discourse-upon-the-origin-and-the-foundation-of-the-inequa"
 heading: "A DISCOURSE UPON THE ORIGIN AND THE FOUNDATION OF THE INEQUALITY AMONG MANKIND"
 order: 2
 source: gutenberg

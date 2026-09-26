@@ -1,6 +1,6 @@
 ---
 work: virgil-aeneid
-section: book-iii
+section: "book-iii"
 heading: "Book: III"
 order: 3
 source: standardebooks

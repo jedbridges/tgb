@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: conclusion
+section: "conclusion"
 heading: "Conclusion"
 order: 18
 source: standardebooks

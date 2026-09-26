@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xliv-how-sancho-panza-was-conducted-to-his-government-and-of
+section: "xliv-how-sancho-panza-was-conducted-to-his-government-and-of"
 heading: "XLIV How Sancho Panza was conducted to his government, and of the strange adventure that befell Don Quixote in the castle."
 order: 100
 source: standardebooks

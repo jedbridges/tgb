@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xliii-of-the-second-set-of-counsels-don-quixote-gave-sancho-
+section: "xliii-of-the-second-set-of-counsels-don-quixote-gave-sancho-"
 heading: "XLIII Of the second set of counsels Don Quixote gave Sancho Panza."
 order: 99
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: laws-governing-the-sterility-of-first-crosses-and-of-hybrids
+section: "laws-governing-the-sterility-of-first-crosses-and-of-hybrids"
 heading: "Laws Governing the Sterility of First Crosses and of Hybrids"
 order: 55
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: plato-republic
-section: book-x
+section: "book-x"
 heading: "BOOK X."
 order: 11
 source: gutenberg

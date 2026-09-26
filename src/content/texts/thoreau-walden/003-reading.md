@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: reading
+section: "reading"
 heading: "Reading"
 order: 3
 source: standardebooks

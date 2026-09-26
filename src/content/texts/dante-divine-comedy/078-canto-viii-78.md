@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-viii-78
+section: "canto-viii-78"
 heading: "Canto: VIII"
 order: 78
 source: standardebooks

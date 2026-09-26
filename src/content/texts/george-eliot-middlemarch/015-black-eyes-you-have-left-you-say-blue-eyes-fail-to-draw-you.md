@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: black-eyes-you-have-left-you-say-blue-eyes-fail-to-draw-you
+section: "black-eyes-you-have-left-you-say-blue-eyes-fail-to-draw-you"
 heading: "Black eyes you have left, you say,: Blue eyes fail to draw you;"
 order: 15
 source: standardebooks

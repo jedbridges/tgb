@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xxxiii-103
+section: "canto-xxxiii-103"
 heading: "Canto: XXXIII"
 order: 103
 source: standardebooks

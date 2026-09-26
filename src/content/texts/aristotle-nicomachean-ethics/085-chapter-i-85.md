@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-i-85
+section: "chapter-i-85"
 heading: "Chapter I."
 order: 85
 source: gutenberg

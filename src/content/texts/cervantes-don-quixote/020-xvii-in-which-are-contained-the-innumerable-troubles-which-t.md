@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xvii-in-which-are-contained-the-innumerable-troubles-which-t
+section: "xvii-in-which-are-contained-the-innumerable-troubles-which-t"
 heading: "XVII In which are contained the innumerable troubles which the brave Don Quixote and his good squire Sancho Panza endured in the inn, which to his misfortune he took to be a castle."
 order: 20
 source: standardebooks

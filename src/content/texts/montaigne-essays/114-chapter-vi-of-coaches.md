@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-vi-of-coaches
+section: "chapter-vi-of-coaches"
 heading: "CHAPTER VI——OF COACHES"
 order: 114
 source: gutenberg

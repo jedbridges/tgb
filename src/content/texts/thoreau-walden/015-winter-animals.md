@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: winter-animals
+section: "winter-animals"
 heading: "Winter Animals"
 order: 15
 source: standardebooks

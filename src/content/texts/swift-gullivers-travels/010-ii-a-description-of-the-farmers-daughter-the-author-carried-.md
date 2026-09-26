@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: ii-a-description-of-the-farmers-daughter-the-author-carried-
+section: "ii-a-description-of-the-farmers-daughter-the-author-carried-"
 heading: "II A description of the farmer’s daughter. The author carried to a market-town, and then to the metropolis. The particulars of his journey."
 order: 10
 source: standardebooks

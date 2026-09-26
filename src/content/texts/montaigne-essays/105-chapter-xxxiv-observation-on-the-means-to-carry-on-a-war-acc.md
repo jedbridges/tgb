@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xxxiv-observation-on-the-means-to-carry-on-a-war-acc
+section: "chapter-xxxiv-observation-on-the-means-to-carry-on-a-war-acc"
 heading: "CHAPTER XXXIV——OBSERVATION ON THE MEANS TO CARRY ON A WAR ACCORDING TO JULIUS CAESAR"
 order: 105
 source: gutenberg

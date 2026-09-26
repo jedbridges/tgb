@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: tis-strange-to-see-the-humors-of-these-men-these-great-aspir
+section: "tis-strange-to-see-the-humors-of-these-men-these-great-aspir"
 heading: "’Tis strange to see the humors of these men,: These great aspiring spirits, that should be wise"
 order: 36
 source: standardebooks

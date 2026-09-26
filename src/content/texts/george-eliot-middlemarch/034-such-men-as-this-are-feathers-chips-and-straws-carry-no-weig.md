@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: such-men-as-this-are-feathers-chips-and-straws-carry-no-weig
+section: "such-men-as-this-are-feathers-chips-and-straws-carry-no-weig"
 heading: "Such men as this are feathers, chips, and straws,: Carry no weight, no force."
 order: 34
 source: standardebooks

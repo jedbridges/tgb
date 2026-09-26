@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-the-subordination-of-the-powers-of-the-common-wealth
+section: "of-the-subordination-of-the-powers-of-the-common-wealth"
 heading: "OF THE SUBORDINATION OF THE POWERS OF THE COMMON-WEALTH."
 order: 15
 source: gutenberg

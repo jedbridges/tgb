@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: character-of-the-atoms
+section: "character-of-the-atoms"
 heading: "CHARACTER OF THE ATOMS"
 order: 6
 source: gutenberg

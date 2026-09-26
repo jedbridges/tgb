@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxxii-the-judiciary-continued-hamilton-from-mccleans-editio
+section: "lxxxii-the-judiciary-continued-hamilton-from-mccleans-editio"
 heading: "LXXXII The Judiciary Continued Hamilton: From McClean’s Edition, New York, Wednesday, May 28, 1788."
 order: 82
 source: standardebooks

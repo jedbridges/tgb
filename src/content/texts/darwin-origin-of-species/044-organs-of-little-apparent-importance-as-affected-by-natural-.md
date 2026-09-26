@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: organs-of-little-apparent-importance-as-affected-by-natural-
+section: "organs-of-little-apparent-importance-as-affected-by-natural-"
 heading: "Organs of Little Apparent Importance, as Affected by Natural Selection"
 order: 44
 source: standardebooks

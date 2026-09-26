@@ -1,6 +1,6 @@
 ---
 work: machiavelli-prince
-section: xiii
+section: "xiii"
 heading: "XIII"
 order: 15
 source: standardebooks

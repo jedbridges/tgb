@@ -1,6 +1,6 @@
 ---
 work: augustine-confessions
-section: book-ix
+section: "book-ix"
 heading: "BOOK IX"
 order: 9
 source: gutenberg

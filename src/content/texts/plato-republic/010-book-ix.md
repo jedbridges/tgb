@@ -1,6 +1,6 @@
 ---
 work: plato-republic
-section: book-ix
+section: "book-ix"
 heading: "BOOK IX."
 order: 10
 source: gutenberg

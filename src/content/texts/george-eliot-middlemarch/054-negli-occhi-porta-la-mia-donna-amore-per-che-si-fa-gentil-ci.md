@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: negli-occhi-porta-la-mia-donna-amore-per-che-si-fa-gentil-ci
+section: "negli-occhi-porta-la-mia-donna-amore-per-che-si-fa-gentil-ci"
 heading: "Negli occhi porta la mia donna Amore;: Per che si fa gentil ciò ch’ella mira"
 order: 54
 source: standardebooks

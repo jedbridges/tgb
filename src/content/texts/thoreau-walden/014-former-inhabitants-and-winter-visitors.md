@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: former-inhabitants-and-winter-visitors
+section: "former-inhabitants-and-winter-visitors"
 heading: "Former Inhabitants and Winter Visitors"
 order: 14
 source: standardebooks

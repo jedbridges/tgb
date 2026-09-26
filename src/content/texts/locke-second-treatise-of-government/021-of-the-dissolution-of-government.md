@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-the-dissolution-of-government
+section: "of-the-dissolution-of-government"
 heading: "OF THE DISSOLUTION OF GOVERNMENT."
 order: 21
 source: gutenberg

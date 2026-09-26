@@ -1,6 +1,6 @@
 ---
 work: plato-symposium
-section: symposium
+section: "symposium"
 heading: "SYMPOSIUM"
 order: 2
 source: gutenberg

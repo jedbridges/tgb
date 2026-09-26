@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xlv-the-alleged-danger-from-the-powers-of-the-union-to-the-s
+section: "xlv-the-alleged-danger-from-the-powers-of-the-union-to-the-s"
 heading: "XLV The Alleged Danger from the Powers of the Union to the State Governments Madison: Considered For The Independent Journal, Saturday, January 26, 1788."
 order: 45
 source: standardebooks

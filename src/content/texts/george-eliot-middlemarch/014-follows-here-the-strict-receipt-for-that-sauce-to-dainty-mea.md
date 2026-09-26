@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: follows-here-the-strict-receipt-for-that-sauce-to-dainty-mea
+section: "follows-here-the-strict-receipt-for-that-sauce-to-dainty-mea"
 heading: "Follows here the strict receipt: For that sauce to dainty meat,"
 order: 14
 source: standardebooks

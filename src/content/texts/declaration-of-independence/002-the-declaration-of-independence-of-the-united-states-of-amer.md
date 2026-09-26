@@ -1,6 +1,6 @@
 ---
 work: declaration-of-independence
-section: the-declaration-of-independence-of-the-united-states-of-amer
+section: "the-declaration-of-independence-of-the-united-states-of-amer"
 heading: "THE DECLARATION OF INDEPENDENCE OF THE UNITED STATES OF AMERICA"
 order: 2
 source: gutenberg

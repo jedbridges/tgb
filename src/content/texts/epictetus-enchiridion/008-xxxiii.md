@@ -1,6 +1,6 @@
 ---
 work: epictetus-enchiridion
-section: xxxiii
+section: "xxxiii"
 heading: "XXXIII"
 order: 8
 source: standardebooks

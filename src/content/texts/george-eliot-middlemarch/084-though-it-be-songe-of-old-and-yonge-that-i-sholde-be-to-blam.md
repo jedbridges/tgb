@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: though-it-be-songe-of-old-and-yonge-that-i-sholde-be-to-blam
+section: "though-it-be-songe-of-old-and-yonge-that-i-sholde-be-to-blam"
 heading: "Though it be songe of old and yonge,: That I sholde be to blame,"
 order: 84
 source: standardebooks

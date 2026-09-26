@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-xii
+section: "book-xii"
 heading: "BOOK XII"
 order: 14
 source: gutenberg

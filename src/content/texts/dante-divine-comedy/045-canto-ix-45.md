@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-ix-45
+section: "canto-ix-45"
 heading: "Canto: IX"
 order: 45
 source: standardebooks

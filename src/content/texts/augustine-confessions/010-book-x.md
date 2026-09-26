@@ -1,6 +1,6 @@
 ---
 work: augustine-confessions
-section: book-x
+section: "book-x"
 heading: "BOOK X"
 order: 10
 source: gutenberg

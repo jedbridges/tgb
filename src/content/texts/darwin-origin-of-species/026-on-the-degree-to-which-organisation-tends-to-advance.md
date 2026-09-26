@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-degree-to-which-organisation-tends-to-advance
+section: "on-the-degree-to-which-organisation-tends-to-advance"
 heading: "On the Degree to Which Organisation Tends to Advance"
 order: 26
 source: standardebooks

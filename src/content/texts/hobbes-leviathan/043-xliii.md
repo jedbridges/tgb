@@ -1,6 +1,6 @@
 ---
 work: hobbes-leviathan
-section: xliii
+section: "xliii"
 heading: "XLIII"
 order: 43
 source: standardebooks

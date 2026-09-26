@@ -1,6 +1,6 @@
 ---
 work: shakespeare-king-lear
-section: scene-v-20
+section: "scene-v-20"
 heading: "Scene: V"
 order: 20
 source: standardebooks

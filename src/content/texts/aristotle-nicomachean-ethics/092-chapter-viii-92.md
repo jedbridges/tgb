@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-viii-92
+section: "chapter-viii-92"
 heading: "Chapter VIII."
 order: 92
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: augustine-confessions
-section: book-vi
+section: "book-vi"
 heading: "BOOK VI"
 order: 6
 source: gutenberg

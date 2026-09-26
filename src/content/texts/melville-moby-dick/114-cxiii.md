@@ -1,6 +1,6 @@
 ---
 work: melville-moby-dick
-section: cxiii
+section: "cxiii"
 heading: "CXIII"
 order: 114
 source: standardebooks

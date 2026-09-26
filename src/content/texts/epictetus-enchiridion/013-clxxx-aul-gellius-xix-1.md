@@ -1,6 +1,6 @@
 ---
 work: epictetus-enchiridion
-section: clxxx-aul-gellius-xix-1
+section: "clxxx-aul-gellius-xix-1"
 heading: "CLXXX Aul. Gellius, xix 1."
 order: 13
 source: standardebooks

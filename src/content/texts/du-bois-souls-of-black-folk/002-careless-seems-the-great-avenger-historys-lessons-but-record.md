@@ -1,6 +1,6 @@
 ---
 work: du-bois-souls-of-black-folk
-section: careless-seems-the-great-avenger-historys-lessons-but-record
+section: "careless-seems-the-great-avenger-historys-lessons-but-record"
 heading: "Careless seems the great Avenger;: History’s lessons but record"
 order: 2
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: us-constitution
-section: article-iii
+section: "article-iii"
 heading: "ARTICLE III"
 order: 3
 source: gutenberg

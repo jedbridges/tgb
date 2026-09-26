@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: many-of-the-species-included-within-the-larger-genera-resemb
+section: "many-of-the-species-included-within-the-larger-genera-resemb"
 heading: "Many of the Species Included Within the Larger Genera Resemble Varieties in Being Very Closely, but Unequally, Related to Each Other, and in Having Restricted Ranges"
 order: 12
 source: standardebooks

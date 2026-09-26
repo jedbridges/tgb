@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: freedom-must-be-presupposed-as-a-property-of-the-will-of-all
+section: "freedom-must-be-presupposed-as-a-property-of-the-will-of-all"
 heading: "Freedom must be presupposed as a Property of the Will of all Rational Beings"
 order: 7
 source: gutenberg

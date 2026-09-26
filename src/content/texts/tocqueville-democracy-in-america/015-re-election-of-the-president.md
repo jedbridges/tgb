@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: re-election-of-the-president
+section: "re-election-of-the-president"
 heading: "Re-election Of The President"
 order: 15
 source: gutenberg

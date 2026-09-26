@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xvi-of-glory
+section: "chapter-xvi-of-glory"
 heading: "CHAPTER XVI——OF GLORY"
 order: 87
 source: gutenberg

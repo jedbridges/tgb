@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: x-the-luggnaggians-commended-a-particular-description-of-the
+section: "x-the-luggnaggians-commended-a-particular-description-of-the"
 heading: "X The Luggnaggians commended. A particular description of the Struldbrugs, with many conversations between the author and some eminent persons upon that subject."
 order: 26
 source: standardebooks

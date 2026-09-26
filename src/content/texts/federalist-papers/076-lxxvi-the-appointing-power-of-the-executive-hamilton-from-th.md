@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxvi-the-appointing-power-of-the-executive-hamilton-from-th
+section: "lxxvi-the-appointing-power-of-the-executive-hamilton-from-th"
 heading: "LXXVI The Appointing Power of the Executive Hamilton: From the New York Packet, Tuesday, April 1, 1788."
 order: 76
 source: standardebooks

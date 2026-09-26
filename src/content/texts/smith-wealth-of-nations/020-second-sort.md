@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: second-sort
+section: "second-sort"
 heading: "Second Sort"
 order: 20
 source: standardebooks

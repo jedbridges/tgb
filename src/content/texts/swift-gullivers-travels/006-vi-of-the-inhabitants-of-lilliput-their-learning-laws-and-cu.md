@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: vi-of-the-inhabitants-of-lilliput-their-learning-laws-and-cu
+section: "vi-of-the-inhabitants-of-lilliput-their-learning-laws-and-cu"
 heading: "VI Of the inhabitants of Lilliput; their learning, laws, and customs; the manner of educating their children. The author’s way of living in that country. His vindication of a great lady."
 order: 6
 source: standardebooks

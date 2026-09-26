@@ -1,6 +1,6 @@
 ---
 work: descartes-meditations
-section: part-iv
+section: "part-iv"
 heading: "PART IV"
 order: 4
 source: gutenberg

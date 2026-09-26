@@ -1,6 +1,6 @@
 ---
 work: sophocles-oedipus-the-king
-section: oedipus-the-king
+section: "oedipus-the-king"
 heading: "OEDIPUS THE KING"
 order: 1
 source: gutenberg

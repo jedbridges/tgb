@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xiv-wherein-is-continued-the-adventure-of-the-knight-of-the-
+section: "xiv-wherein-is-continued-the-adventure-of-the-knight-of-the-"
 heading: "XIV Wherein is continued the adventure of the Knight of the Grove."
 order: 70
 source: standardebooks

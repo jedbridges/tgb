@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-vi-42
+section: "canto-vi-42"
 heading: "Canto: VI"
 order: 42
 source: standardebooks

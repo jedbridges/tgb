@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxix-the-real-character-of-the-executive-hamilton-from-the-n
+section: "lxix-the-real-character-of-the-executive-hamilton-from-the-n"
 heading: "LXIX The Real Character of the Executive Hamilton: From the New York Packet, Friday, March 14, 1788."
 order: 69
 source: standardebooks

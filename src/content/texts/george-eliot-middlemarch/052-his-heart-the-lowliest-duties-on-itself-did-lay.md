@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: his-heart-the-lowliest-duties-on-itself-did-lay
+section: "his-heart-the-lowliest-duties-on-itself-did-lay"
 heading: "His heart: The lowliest duties on itself did lay."
 order: 52
 source: standardebooks

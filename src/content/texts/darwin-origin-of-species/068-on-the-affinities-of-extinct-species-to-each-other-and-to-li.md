@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-affinities-of-extinct-species-to-each-other-and-to-li
+section: "on-the-affinities-of-extinct-species-to-each-other-and-to-li"
 heading: "On the Affinities of Extinct Species to Each Other, and to Living Forms"
 order: 68
 source: standardebooks

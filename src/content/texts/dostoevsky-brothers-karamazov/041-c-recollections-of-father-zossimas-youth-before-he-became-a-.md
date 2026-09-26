@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: c-recollections-of-father-zossimas-youth-before-he-became-a-
+section: "c-recollections-of-father-zossimas-youth-before-he-became-a-"
 heading: "(c) Recollections of Father Zossima’s Youth before he became a Monk. The Duel"
 order: 41
 source: standardebooks

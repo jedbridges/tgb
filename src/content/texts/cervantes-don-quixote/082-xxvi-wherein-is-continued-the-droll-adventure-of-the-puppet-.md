@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxvi-wherein-is-continued-the-droll-adventure-of-the-puppet-
+section: "xxvi-wherein-is-continued-the-droll-adventure-of-the-puppet-"
 heading: "XXVI Wherein is continued the droll adventure of the puppet-showman, together with other things in truth right good."
 order: 82
 source: standardebooks

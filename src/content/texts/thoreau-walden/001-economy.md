@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: economy
+section: "economy"
 heading: "Economy"
 order: 1
 source: standardebooks

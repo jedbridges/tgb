@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lii-the-house-of-representatives-madison-from-the-new-york-p
+section: "lii-the-house-of-representatives-madison-from-the-new-york-p"
 heading: "LII The House of Representatives Madison: From the New York Packet, Friday, February 8, 1788."
 order: 52
 source: standardebooks

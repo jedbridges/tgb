@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: hath-she-her-faults-i-would-you-had-them-too-they-are-the-fr
+section: "hath-she-her-faults-i-would-you-had-them-too-they-are-the-fr"
 heading: "Hath she her faults? I would you had them too.: They are the fruity must of soundest wine;"
 order: 55
 source: standardebooks

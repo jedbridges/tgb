@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: of-the-extreme-limits-of-all-practical-philosophy
+section: "of-the-extreme-limits-of-all-practical-philosophy"
 heading: "Of the Extreme Limits of all Practical Philosophy."
 order: 10
 source: gutenberg

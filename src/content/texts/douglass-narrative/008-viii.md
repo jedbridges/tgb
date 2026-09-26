@@ -1,6 +1,6 @@
 ---
 work: douglass-narrative
-section: viii
+section: "viii"
 heading: "VIII"
 order: 8
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: pascal-pensees
-section: notes
+section: "notes"
 heading: "NOTES"
 order: 88
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-xiv-that-men-are-justly-punished-for-being-obstinate
+section: "chapter-xiv-that-men-are-justly-punished-for-being-obstinate"
 heading: "CHAPTER XIV——THAT MEN ARE JUSTLY PUNISHED FOR BEING OBSTINATE IN THE DEFENCE OF A FORT THAT IS NOT IN REASON TO BE DEFENDED"
 order: 29
 source: gutenberg

@@ -1,6 +1,6 @@
 ---
 work: lucretius-on-the-nature-of-things
-section: existence-and-character-of-the-images
+section: "existence-and-character-of-the-images"
 heading: "EXISTENCE AND CHARACTER OF THE IMAGES"
 order: 18
 source: gutenberg

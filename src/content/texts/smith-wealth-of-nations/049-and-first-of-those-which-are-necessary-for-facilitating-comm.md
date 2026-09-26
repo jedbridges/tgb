@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: and-first-of-those-which-are-necessary-for-facilitating-comm
+section: "and-first-of-those-which-are-necessary-for-facilitating-comm"
 heading: "And, First, of Those Which Are Necessary for Facilitating Commerce in General1308"
 order: 49
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-viii-106
+section: "chapter-viii-106"
 heading: "Chapter VIII."
 order: 106
 source: gutenberg

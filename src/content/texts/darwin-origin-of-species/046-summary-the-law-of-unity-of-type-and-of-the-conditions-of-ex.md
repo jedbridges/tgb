@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: summary-the-law-of-unity-of-type-and-of-the-conditions-of-ex
+section: "summary-the-law-of-unity-of-type-and-of-the-conditions-of-ex"
 heading: "Summary: The Law of Unity of Type and of the Conditions of Existence Embraced by the Theory of Natural Selection"
 order: 46
 source: standardebooks

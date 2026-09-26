@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxxviii-which-treats-of-the-curious-discourse-don-quixote-de
+section: "xxxviii-which-treats-of-the-curious-discourse-don-quixote-de"
 heading: "XXXVIII Which treats of the curious discourse Don Quixote delivered on arms and letters."
 order: 41
 source: standardebooks

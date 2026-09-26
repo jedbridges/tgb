@@ -1,6 +1,6 @@
 ---
 work: kant-groundwork-of-the-metaphysics-of-morals
-section: preface
+section: "preface"
 heading: "PREFACE"
 order: 1
 source: gutenberg

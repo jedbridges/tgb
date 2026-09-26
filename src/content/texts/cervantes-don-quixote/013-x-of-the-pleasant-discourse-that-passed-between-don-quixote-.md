@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: x-of-the-pleasant-discourse-that-passed-between-don-quixote-
+section: "x-of-the-pleasant-discourse-that-passed-between-don-quixote-"
 heading: "X Of the pleasant discourse that passed between Don Quixote and his squire Sancho Panza."
 order: 13
 source: standardebooks

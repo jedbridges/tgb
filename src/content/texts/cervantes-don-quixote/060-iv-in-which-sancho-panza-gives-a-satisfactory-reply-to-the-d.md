@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: iv-in-which-sancho-panza-gives-a-satisfactory-reply-to-the-d
+section: "iv-in-which-sancho-panza-gives-a-satisfactory-reply-to-the-d"
 heading: "IV In which Sancho Panza gives a satisfactory reply to the doubts and questions of the bachelor Samson Carrasco, together with other matters worth knowing and telling."
 order: 60
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: appendix-book-vii-chapters-12-to-15-bekker
+section: "appendix-book-vii-chapters-12-to-15-bekker"
 heading: "APPENDIX. Book VII. Chapters 12 to 15. (Bekker.)"
 order: 84
 source: gutenberg

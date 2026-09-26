@@ -1,6 +1,6 @@
 ---
 work: aristotle-nicomachean-ethics
-section: chapter-vii-81
+section: "chapter-vii-81"
 heading: "Chapter VII."
 order: 81
 source: gutenberg

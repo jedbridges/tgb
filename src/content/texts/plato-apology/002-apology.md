@@ -1,6 +1,6 @@
 ---
 work: plato-apology
-section: apology
+section: "apology"
 heading: "APOLOGY"
 order: 2
 source: gutenberg

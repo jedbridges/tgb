@@ -1,6 +1,6 @@
 ---
 work: swift-gullivers-travels
-section: iv-the-houyhnhnms-notion-of-truth-and-falsehood-the-authors-
+section: "iv-the-houyhnhnms-notion-of-truth-and-falsehood-the-authors-"
 heading: "IV The Houyhnhnm’s notion of truth and falsehood. The author’s discourse disapproved by his master. The author gives a more particular account of himself, and the accidents of his voyage."
 order: 31
 source: standardebooks

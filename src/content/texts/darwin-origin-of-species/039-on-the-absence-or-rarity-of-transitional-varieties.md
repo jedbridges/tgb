@@ -1,6 +1,6 @@
 ---
 work: darwin-origin-of-species
-section: on-the-absence-or-rarity-of-transitional-varieties
+section: "on-the-absence-or-rarity-of-transitional-varieties"
 heading: "On the Absence or Rarity of Transitional Varieties"
 order: 39
 source: standardebooks

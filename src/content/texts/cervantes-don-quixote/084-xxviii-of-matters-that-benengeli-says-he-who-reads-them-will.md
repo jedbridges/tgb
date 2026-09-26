@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: xxviii-of-matters-that-benengeli-says-he-who-reads-them-will
+section: "xxviii-of-matters-that-benengeli-says-he-who-reads-them-will"
 heading: "XXVIII Of matters that Benengeli says he who reads them will know, if he reads them with attention."
 order: 84
 source: standardebooks

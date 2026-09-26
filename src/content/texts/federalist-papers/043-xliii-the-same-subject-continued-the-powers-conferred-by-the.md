@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xliii-the-same-subject-continued-the-powers-conferred-by-the
+section: "xliii-the-same-subject-continued-the-powers-conferred-by-the"
 heading: "XLIII The Same Subject Continued (The Powers Conferred by the Constitution Further Considered) Madison: For The Independent Journal, Wednesday, January 23, 1788."
 order: 43
 source: standardebooks

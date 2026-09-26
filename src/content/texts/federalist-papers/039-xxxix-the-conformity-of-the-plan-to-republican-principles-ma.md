@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xxxix-the-conformity-of-the-plan-to-republican-principles-ma
+section: "xxxix-the-conformity-of-the-plan-to-republican-principles-ma"
 heading: "XXXIX The Conformity of the Plan to Republican Principles Madison: For The Independent Journal, Wednesday, January 16, 1788."
 order: 39
 source: standardebooks

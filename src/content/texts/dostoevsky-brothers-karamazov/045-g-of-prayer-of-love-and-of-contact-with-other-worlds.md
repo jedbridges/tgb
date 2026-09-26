@@ -1,6 +1,6 @@
 ---
 work: dostoevsky-brothers-karamazov
-section: g-of-prayer-of-love-and-of-contact-with-other-worlds
+section: "g-of-prayer-of-love-and-of-contact-with-other-worlds"
 heading: "(g) Of Prayer, of Love, and of Contact with other Worlds"
 order: 45
 source: standardebooks

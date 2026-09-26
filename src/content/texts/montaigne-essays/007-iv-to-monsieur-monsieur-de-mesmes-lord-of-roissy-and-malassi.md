@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: iv-to-monsieur-monsieur-de-mesmes-lord-of-roissy-and-malassi
+section: "iv-to-monsieur-monsieur-de-mesmes-lord-of-roissy-and-malassi"
 heading: "IV.——To Monsieur, Monsieur de MESMES, Lord of Roissy and Malassize, Privy"
 order: 7
 source: gutenberg

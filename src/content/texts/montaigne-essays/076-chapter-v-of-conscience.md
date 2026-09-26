@@ -1,6 +1,6 @@
 ---
 work: montaigne-essays
-section: chapter-v-of-conscience
+section: "chapter-v-of-conscience"
 heading: "CHAPTER V——OF CONSCIENCE"
 order: 76
 source: gutenberg

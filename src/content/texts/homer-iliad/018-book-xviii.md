@@ -1,6 +1,6 @@
 ---
 work: homer-iliad
-section: book-xviii
+section: "book-xviii"
 heading: "BOOK XVIII."
 order: 18
 source: gutenberg

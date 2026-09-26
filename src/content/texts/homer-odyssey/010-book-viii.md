@@ -1,6 +1,6 @@
 ---
 work: homer-odyssey
-section: book-viii
+section: "book-viii"
 heading: "BOOK VIII"
 order: 10
 source: gutenberg

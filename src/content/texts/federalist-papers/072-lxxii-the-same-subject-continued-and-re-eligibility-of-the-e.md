@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: lxxii-the-same-subject-continued-and-re-eligibility-of-the-e
+section: "lxxii-the-same-subject-continued-and-re-eligibility-of-the-e"
 heading: "LXXII The Same Subject Continued, and Re-Eligibility of the Executive Considered Hamilton: From The Independent Journal, Wednesday, March 19, 1788."
 order: 72
 source: standardebooks

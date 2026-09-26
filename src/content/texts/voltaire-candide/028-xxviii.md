@@ -1,6 +1,6 @@
 ---
 work: voltaire-candide
-section: xxviii
+section: "xxviii"
 heading: "XXVIII"
 order: 28
 source: standardebooks

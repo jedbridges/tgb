@@ -1,6 +1,6 @@
 ---
 work: marcus-aurelius-meditations
-section: book-vi
+section: "book-vi"
 heading: "Book: VI"
 order: 6
 source: standardebooks

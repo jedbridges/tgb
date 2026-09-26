@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-property
+section: "of-property"
 heading: "OF PROPERTY."
 order: 7
 source: gutenberg

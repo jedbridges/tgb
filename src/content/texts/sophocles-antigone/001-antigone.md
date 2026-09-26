@@ -1,6 +1,6 @@
 ---
 work: sophocles-antigone
-section: antigone
+section: "antigone"
 heading: "ANTIGONE"
 order: 1
 source: gutenberg

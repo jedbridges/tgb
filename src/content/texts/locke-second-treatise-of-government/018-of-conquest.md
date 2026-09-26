@@ -1,6 +1,6 @@
 ---
 work: locke-second-treatise-of-government
-section: of-conquest
+section: "of-conquest"
 heading: "OF CONQUEST."
 order: 18
 source: gutenberg

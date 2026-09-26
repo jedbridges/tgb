@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-xvii-87
+section: "canto-xvii-87"
 heading: "Canto: XVII"
 order: 87
 source: standardebooks

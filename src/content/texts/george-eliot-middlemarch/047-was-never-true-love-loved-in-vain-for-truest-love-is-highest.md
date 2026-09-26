@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: was-never-true-love-loved-in-vain-for-truest-love-is-highest
+section: "was-never-true-love-loved-in-vain-for-truest-love-is-highest"
 heading: "Was never true love loved in vain,: For truest love is highest gain."
 order: 47
 source: standardebooks

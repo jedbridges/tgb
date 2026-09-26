@@ -1,6 +1,6 @@
 ---
 work: tocqueville-democracy-in-america
-section: trial-by-jury-in-the-united-states-considered-as-a-political
+section: "trial-by-jury-in-the-united-states-considered-as-a-political"
 heading: "Trial By Jury In The United States Considered As A Political Institution"
 order: 30
 source: gutenberg

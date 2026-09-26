@@ -1,6 +1,6 @@
 ---
 work: shakespeare-hamlet
-section: scene-v-16
+section: "scene-v-16"
 heading: "Scene: V"
 order: 16
 source: standardebooks

@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: introduction
+section: "introduction"
 heading: "Introduction"
 order: 25
 source: standardebooks

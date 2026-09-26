@@ -1,6 +1,6 @@
 ---
 work: george-eliot-middlemarch
-section: lx-good-phrases-are-surely-and-ever-were-very-commendable-ju
+section: "lx-good-phrases-are-surely-and-ever-were-very-commendable-ju"
 heading: "LX Good phrases are surely, and ever were, very commendable. Justice Shallow"
 order: 60
 source: standardebooks

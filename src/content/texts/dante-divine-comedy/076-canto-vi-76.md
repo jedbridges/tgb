@@ -1,6 +1,6 @@
 ---
 work: dante-divine-comedy
-section: canto-vi-76
+section: "canto-vi-76"
 heading: "Canto: VI"
 order: 76
 source: standardebooks

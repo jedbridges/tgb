@@ -1,6 +1,6 @@
 ---
 work: smith-wealth-of-nations
-section: first-period
+section: "first-period"
 heading: "First Period"
 order: 14
 source: standardebooks

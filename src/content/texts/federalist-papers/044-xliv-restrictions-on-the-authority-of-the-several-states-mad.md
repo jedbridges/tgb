@@ -1,6 +1,6 @@
 ---
 work: federalist-papers
-section: xliv-restrictions-on-the-authority-of-the-several-states-mad
+section: "xliv-restrictions-on-the-authority-of-the-several-states-mad"
 heading: "XLIV Restrictions on the Authority of the Several States Madison: From the New York Packet, Friday, January 25, 1788."
 order: 44
 source: standardebooks

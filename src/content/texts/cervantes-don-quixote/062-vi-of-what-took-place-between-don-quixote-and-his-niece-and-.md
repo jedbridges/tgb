@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: vi-of-what-took-place-between-don-quixote-and-his-niece-and-
+section: "vi-of-what-took-place-between-don-quixote-and-his-niece-and-"
 heading: "VI Of what took place between Don Quixote and his niece and housekeeper; one of the most important chapters in the whole history."
 order: 62
 source: standardebooks

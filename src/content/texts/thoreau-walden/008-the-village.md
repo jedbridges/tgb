@@ -1,6 +1,6 @@
 ---
 work: thoreau-walden
-section: the-village
+section: "the-village"
 heading: "The Village"
 order: 8
 source: standardebooks

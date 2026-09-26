@@ -1,6 +1,6 @@
 ---
 work: cervantes-don-quixote
-section: lxvi-which-treats-of-what-he-who-reads-will-see-or-what-he-w
+section: "lxvi-which-treats-of-what-he-who-reads-will-see-or-what-he-w"
 heading: "LXVI Which treats of what he who reads will see, or what he who has it read to him will hear."
 order: 122
 source: standardebooks

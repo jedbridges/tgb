@@ -1,6 +1,6 @@
 ---
 work: tolstoy-war-and-peace
-section: xxxii
+section: "xxxii"
 heading: "XXXII"
 order: 221
 source: standardebooks
