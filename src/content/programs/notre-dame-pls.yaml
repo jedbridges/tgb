@@ -21,6 +21,7 @@ segments:
   - id: seminar-1
     label: Seminar I
     sublabel: Ancient Greece
+    description: "Ancient Greece: Homer, the tragedians, Herodotus, Thucydides, and a long stretch of Plato and Aristotle. The first of six seminars in the Program of Liberal Studies, Notre Dame's great books major."
     order: 1
     items:
       - work: homer-iliad
@@ -77,6 +78,7 @@ segments:
   - id: seminar-2
     label: Seminar II
     sublabel: Greece, Rome, Asia, and the Early Middle Ages
+    description: "From late Greece through Rome and the early Middle Ages, with the Bible, Augustine, and the Confucian and Buddhist classics read alongside the Western ones: the seminar's one deliberate step outside Europe."
     order: 2
     items:
       - work: plato-republic
@@ -127,6 +129,7 @@ segments:
   - id: seminar-3
     label: Seminar III
     sublabel: High Middle Ages and Renaissance
+    description: "The high Middle Ages and the Renaissance: Aquinas, Dante, Chaucer, Petrarch, Machiavelli, Luther, Montaigne, Shakespeare and Cervantes. The seminar in which the medieval synthesis is built and then begins to come apart."
     order: 3
     items:
       - work: ibn-tufail-hayy-ibn-yaqzan
@@ -183,6 +186,7 @@ segments:
   - id: seminar-4
     label: Seminar IV
     sublabel: Renaissance to Enlightenment
+    description: "Renaissance to Enlightenment: Descartes, Pascal, Hobbes, Locke, Milton, Swift, Hume, Rousseau, Kant and Austen. The seminar on the new science, the new politics and the novel."
     order: 4
     items:
       - work: shakespeare-tempest
@@ -237,6 +241,7 @@ segments:
   - id: seminar-5
     label: Seminar V
     sublabel: Nineteenth Century
+    description: "The nineteenth century: Hegel, Tocqueville, Marx, Darwin, Kierkegaard, Dostoevsky, Tolstoy and Nietzsche, and the American writers of the same decades."
     order: 5
     items:
       - work: tocqueville-democracy-in-america
@@ -279,6 +284,7 @@ segments:
   - id: seminar-6
     label: Seminar VI
     sublabel: Nineteenth and Twentieth Centuries
+    description: "Nineteenth and twentieth centuries: Freud, Weber, Woolf, Eliot, Heidegger, Arendt and the writers who came after the wars. The last seminar, ending with books whose arguments are still open."
     order: 6
     items:
       - work: darwin-descent-of-man

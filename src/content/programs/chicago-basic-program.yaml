@@ -21,6 +21,7 @@ order: 6
 segments:
   - id: year-1
     label: Year 1
+    description: "The first year begins with the Greeks and the questions that never go away: Plato's Socrates on the examined life, Aristotle on the good, Thucydides on power, Sophocles on fate. Read in weekly evening seminars for adults, two hours a week."
     order: 1
     items:
       - work: sophocles-antigone
@@ -77,6 +78,7 @@ segments:
         note: "Spring tutorial: a Shakespeare tragedy (King Lear in 2025; Hamlet, Othello and Macbeth also in the required volume)"
   - id: year-2
     label: Year 2
+    description: "Rome, the Bible and the Middle Ages through the early Renaissance: Virgil, the Gospels, Augustine, Aquinas, Dante, and Machiavelli. The second year asks what happened to the Greek questions when faith and empire took them over."
     order: 2
     items:
       - work: sophocles-oedipus-the-king
@@ -145,6 +147,7 @@ segments:
         note: "Spring tutorial (Bible selections)"
   - id: year-3
     label: Year 3
+    description: "The seventeenth and eighteenth centuries: the scientific revolution, the social contract, and the novel. Descartes, Hobbes, Locke, Rousseau, Hume, Kant, and Shakespeare and Cervantes read alongside them."
     order: 3
     items:
       - work: euclid-elements
@@ -201,6 +204,7 @@ segments:
         note: "Spring tutorial"
   - id: year-4
     label: Year 4
+    description: "The nineteenth and twentieth centuries, and the books that made the modern arguments: Tocqueville, Marx, Darwin, Nietzsche, Dostoevsky, Freud, Weber, and the writers who answered them. The program ends where the present begins."
     order: 4
     items:
       - work: plutarch-lives

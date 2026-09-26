@@ -4,4 +4,5 @@ export const abs = (path: string) => new URL(url(path), SITE + '/').toString();
 export const workUrl = (slug: string) => url(`/books/${slug}`);
 export const authorUrl = (slug: string) => url(`/authors/${slug}`);
 export const programUrl = (slug: string, segment?: string) => url(`/programs/${slug}`) + (segment ? `#${segment}` : '');
-export const taxUrl = (kind: 'themes' | 'genres' | 'eras' | 'regions' | 'languages', id: string) => url(`/${kind}/${id}`);
+export const taxUrl = (kind: 'themes' | 'genres' | 'eras' | 'regions' | 'languages' | 'difficulties' | 'lengths', id: string) =>
+  url(kind === 'difficulties' ? `/books/difficulty/${id}` : kind === 'lengths' ? `/books/length/${id}` : `/${kind}/${id}`);

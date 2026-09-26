@@ -6,7 +6,15 @@ export async function getStaticPaths() {
   return (await getCollection('eras')).map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
 }
 const { entry } = Astro.props;
+/* Page titles are what a search result shows; "Great books of the Medieval" is not a phrase anyone types. */
+const titles: Record<string, string> = {
+  'ancient-near-east': 'Great books of the Ancient Near East', 'archaic-greece': 'Great books of Archaic Greece', 'classical-greece': 'Great books of Classical Greece',
+  hellenistic: 'Great books of the Hellenistic world and the Roman Republic', 'roman-empire': 'Great books of the Roman Empire', 'late-antiquity': 'Great books of Late Antiquity',
+  medieval: 'Great books of the Middle Ages', renaissance: 'Great books of the Renaissance', 'seventeenth-century': 'Great books of the seventeenth century',
+  enlightenment: 'Great books of the Enlightenment', 'nineteenth-century': 'Great books of the nineteenth century', 'twentieth-century': 'Great books of the twentieth century',
+  'twenty-first-century': 'Great books of the twenty-first century',
+};
 ---
-<Base title={`Great books of the ${entry.data.label}`} description={`${entry.data.description ?? ''} The works from this era on the great college reading lists.`}>
+<Base title={titles[entry.id] ?? `Great books of the ${entry.data.label}`} description={`${entry.data.description ?? ''} The works from this era on the great college reading lists.`}>
   <TaxonomyPage kind="eras" entry={entry} kindLabel="Era" match={(w) => w.data.era.id === entry.id} />
 </Base>

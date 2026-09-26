@@ -1,17 +1,47 @@
 ---
+import { getCollection, getEntry, render } from 'astro:content';
 import BookCard from './BookCard.astro';
-import { placeholderAuthor, loadCatalog, sortedByAssignment, hasGuide, type Work } from '~/lib/catalog';
-import { url } from '~/lib/url';
-interface Props { kind: 'themes' | 'genres' | 'eras'; entry: { id: string; data: { label: string; description?: string } }; kindLabel: string; match: (w: Work) => boolean }
+import { placeholderAuthor, loadCatalog, sortedByAssignment, yearShort, lengthLabel, difficultyLabel, type Work } from '~/lib/catalog';
+import { url, taxUrl, workUrl, authorUrl } from '~/lib/url';
+import { breadcrumbs } from '~/lib/seo';
+import { abs } from '~/lib/url';
+
+type Kind = 'themes' | 'genres' | 'eras' | 'difficulties' | 'lengths';
+interface Props { kind: Kind; entry: { id: string; data: { label: string; description?: string; order?: number } }; kindLabel: string; match: (w: Work) => boolean }
 const { kind, entry, kindLabel, match } = Astro.props;
 const { works, authors } = await loadCatalog();
 const list = await sortedByAssignment(works.filter(match));
-const param = { themes: 'theme', genres: 'genre', eras: 'era' }[kind];
+const param = { themes: 'theme', genres: 'genre', eras: 'era', difficulties: 'difficulty', lengths: 'length' }[kind];
+const paramValue = kind === 'difficulties' ? String((entry.data as any).value) : kind === 'lengths' ? (entry.data as any).value : entry.id;
 /* Search groups these under their own headers. The label words differ from the page kind
    on purpose: a search for "tragedy" should say Form, not Genre, because that is the word
    the book pages use. */
-const searchType = { themes: 'Theme', genres: 'Form', eras: 'Era' }[kind];
+const searchType = { themes: 'Theme', genres: 'Form', eras: 'Era', difficulties: 'Shelf', lengths: 'Shelf' }[kind];
+const authorName = (w: Work) => (authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name;
+
+/*
+ * The written part of the page. A shelf with no note is a grid with a one line description,
+ * which is what every shelf was; a shelf with one is a page a reader arriving from a search
+ * for "great books about justice" can actually read.
+ */
+const note = await getEntry('shelfNotes', `${kind}-${entry.id}`);
+const Content = note ? (await render(note)).Content : null;
+const startHere = note?.data.startHere ? await getEntry('works', note.data.startHere.id) : null;
+const pairing = note?.data.pairing ? await Promise.all(note.data.pairing.works.map((w) => getEntry('works', w.id))) : null;
+
+/* The other shelves of this kind, so every shelf is one link from every other. */
+const siblings = (await getCollection(kind))
+  .filter((e) => e.id !== entry.id)
+  .sort((a, b) => ((a.data as any).order ?? 0) - ((b.data as any).order ?? 0) || a.data.label.localeCompare(b.data.label));
+const kindWord = { themes: 'themes', genres: 'forms', eras: 'eras', difficulties: 'levels', lengths: 'lengths' }[kind];
+
+const itemList = {
+  '@context': 'https://schema.org', '@type': 'ItemList', name: `${entry.data.label}: ${list.length} great books`, numberOfItems: list.length,
+  itemListElement: list.slice(0, 50).map((w, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(workUrl(w.id)), name: w.data.title })),
+};
+const crumbs = breadcrumbs([{ name: 'Books', path: '/books/' }, { name: entry.data.label, path: taxUrl(kind, entry.id) }]);
 ---
+<script type="application/ld+json" set:html={JSON.stringify([itemList, crumbs])} />
 <section class="wrap head page-open" data-pagefind-body data-pagefind-filter={`type:${searchType}`}>
   <span class="visually-hidden" data-pagefind-meta={`type:${searchType}`}></span>
   <span class="visually-hidden" data-pagefind-meta={`slug:${entry.id}`}></span>
@@ -21,17 +51,49 @@ const searchType = { themes: 'Theme', genres: 'Form', eras: 'Era' }[kind];
   </nav>
   <h1 class="italic" data-pagefind-meta="title" data-pagefind-weight="10">{entry.data.label}</h1>
   {entry.data.description && <p class="lede">{entry.data.description}</p>}
-  <p class="ui count" data-pagefind-ignore>{list.length} {list.length === 1 ? 'work' : 'works'} · <a href={url('/books/') + `?${param}=${entry.id}`}>Refine in the browser →</a></p>
+  <p class="ui count" data-pagefind-ignore>{list.length} {list.length === 1 ? 'work' : 'works'} · <a href={url('/books/') + `?${param}=${paramValue}`}>Refine in the browser →</a></p>
+
+  {Content && (
+    <div class="note">
+      <div class="prose note__text"><Content /></div>
+      {(startHere || pairing) && (
+        <aside class="note__picks" aria-label="Where to start">
+          {startHere && (
+            <a class="pick" href={workUrl(startHere.id)}>
+              <span class="pick__k ui">Start here</span>
+              <span class="pick__t">{startHere.data.title}</span>
+              <span class="pick__a ui">{authorName(startHere)} · {yearShort(startHere)} · {difficultyLabel(startHere.data.difficulty)} · {lengthLabel[startHere.data.length]}</span>
+              {note!.data.startHereNote && <span class="pick__n">{note!.data.startHereNote}</span>}
+            </a>
+          )}
+          {pairing && pairing[0] && pairing[1] && (
+            <div class="pick pick--pair">
+              <span class="pick__k ui">Read together</span>
+              <span class="pick__t"><a href={workUrl(pairing[0].id)}>{pairing[0].data.title}</a> <span class="pick__amp">and</span> <a href={workUrl(pairing[1].id)}>{pairing[1].data.title}</a></span>
+              <span class="pick__a ui">{authorName(pairing[0])} · {authorName(pairing[1])}</span>
+              <span class="pick__n">{note!.data.pairing!.note}</span>
+            </div>
+          )}
+        </aside>
+      )}
+    </div>
+  )}
 </section>
 <section class="wrap" data-pagefind-ignore>
   {list.length ? (
     <div class="shelf-grid">
-      {list.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} index={Math.min(i, 12)} eager={i < 6} />)}
+      {list.map((w, i) => <BookCard work={w} authorName={authorName(w)} width={140} index={Math.min(i, 12)} eager={i < 6} />)}
     </div>
   ) : (
     <p class="empty">Nothing on this shelf yet.</p>
   )}
 </section>
+{siblings.length > 0 && (
+  <nav class="wrap more" aria-label={`Other ${kindWord}`} data-pagefind-ignore>
+    <h2 class="more__h">Other {kindWord}</h2>
+    <ul class="more__list">{siblings.map((s) => <li><a class="tag" href={taxUrl(kind, s.id)}>{s.data.label}</a></li>)}</ul>
+  </nav>
+)}
 <style>
   .head { padding-block: var(--s4) var(--s3); }
   .head h1 { font-size: var(--step-4); }
@@ -39,4 +101,26 @@ const searchType = { themes: 'Theme', genres: 'Form', eras: 'Era' }[kind];
   .count { margin-top: var(--s1); color: var(--ink-mute); }
   .count a { color: var(--accent); text-decoration: none; }
   .empty { color: var(--ink-soft); font-style: italic; }
+
+  /* The essay and its two picks side by side: the reading on the left at a measure, the
+     two decisions the reader came for on the right, where the eye lands after the title. */
+  .note { display: grid; grid-template-columns: minmax(0, 62ch) minmax(16rem, 22rem); gap: var(--s3) var(--s5); align-items: start; margin-top: var(--s3); }
+  .note__text { font-size: var(--step-0); }
+  .note__picks { display: grid; gap: var(--s2); position: sticky; top: calc(var(--stick) + var(--s1)); }
+  .pick { display: grid; gap: 0.3rem; padding: var(--s2); border-radius: 6px; background: var(--paper-bright); box-shadow: 0 1px 0 var(--edge), 0 12px 30px -18px rgb(var(--shadow-ink) / calc(0.35 * var(--shadow-a))); text-decoration: none; color: inherit; transition: box-shadow var(--dur-fast), transform var(--dur-fast); }
+  a.pick:hover { transform: translateY(-2px); box-shadow: 0 1px 0 var(--edge), 0 18px 34px -16px rgb(var(--shadow-ink) / calc(0.45 * var(--shadow-a))); }
+  .pick__k { font-size: var(--step--2); font-weight: 500; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--accent); }
+  .pick__t { font-family: var(--font-display); font-size: var(--step-2); line-height: var(--lh-heading); color: var(--ink-strong); text-wrap: balance; }
+  .pick__t a { color: inherit; text-decoration: none; }
+  .pick__t a:hover { color: var(--accent); }
+  .pick__amp { font-style: italic; color: var(--ink-mute); font-size: var(--step-0); }
+  .pick__a { font-size: var(--step--2); color: var(--ink-mute); }
+  .pick__n { font-size: var(--step--1); color: var(--ink-soft); line-height: 1.5; margin-top: 0.2rem; }
+  .more { padding-block: var(--s3) var(--s5); }
+  .more__h { font-family: var(--font-ui); font-size: var(--step--2); font-weight: 500; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); margin-bottom: var(--s1); }
+  .more__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  @media (max-width: 860px) {
+    .note { grid-template-columns: 1fr; gap: var(--s3); }
+    .note__picks { position: static; }
+  }
 </style>

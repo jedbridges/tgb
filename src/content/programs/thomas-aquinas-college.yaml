@@ -23,6 +23,7 @@ segments:
   - id: freshman
     label: Freshman
     sublabel: Greeks
+    description: "Greek epic, drama, history and philosophy, and Euclid's geometry done at the board. Plato and Aristotle are read as the first attempts to answer the questions the poets raised, and the Bible is begun in the theology tutorial."
     order: 1
     items:
       - work: homer-iliad
@@ -156,6 +157,7 @@ segments:
   - id: sophomore
     label: Sophomore
     sublabel: Romans and the Middle Ages
+    description: "Rome and the Middle Ages: Virgil, Lucretius, Augustine, Boethius, and Aristotle read again, this time with Aquinas as guide. The year moves from pagan Rome to the Christian synthesis that the college is named for."
     order: 2
     items:
       - work: virgil-aeneid
@@ -281,6 +283,7 @@ segments:
   - id: junior
     label: Junior
     sublabel: Renaissance and Early Modern
+    description: "Renaissance and early modern: Dante, Chaucer, Shakespeare, Cervantes and Milton in seminar; Descartes, Pascal, Hobbes, Locke and Rousseau in the philosophy and politics tutorials; Newton in the laboratory."
     order: 3
     items:
       - work: cervantes-don-quixote
@@ -470,6 +473,7 @@ segments:
   - id: senior
     label: Senior
     sublabel: Modern
+    description: "The modern world, argued with: Kant, Hegel, Marx, Tocqueville, Tolstoy, Dostoevsky, Nietzsche, Freud and the twentieth century, read against the Aristotelian and Thomistic account built up over the first three years."
     order: 4
     items:
       - work: tolstoy-war-and-peace

@@ -23,6 +23,7 @@ order: 5
 segments:
   - id: literature
     label: Literature
+    description: "The Literature course of Directed Studies, Yale's first-year great books program: epic, tragedy, comedy, lyric and the novel from Gilgamesh and Homer through Dante, Shakespeare, Milton, Goethe, Dostoevsky and Woolf, read at roughly a book a week."
     order: 1
     items:
       - work: epic-of-gilgamesh
@@ -121,6 +122,7 @@ segments:
         note: "Books 1-3, 6, 7"
   - id: philosophy
     label: Philosophy
+    description: "The Philosophy course: Plato and Aristotle in the fall, then Augustine, Aquinas, Descartes, Hume and Kant in the spring, with Nietzsche and Wittgenstein at the end. The sequence Yale uses to teach how philosophical argument works."
     order: 2
     items:
       - work: plato-euthyphro
@@ -265,6 +267,7 @@ segments:
         note: "Introduction; Myths, ch. 1 (selections); ch. 10 (selections)"
   - id: historical-and-political-thought
     label: Historical and Political Thought
+    description: "Historical and Political Thought: Herodotus, Thucydides, Plato's Republic, Aristotle's Politics, Machiavelli, Hobbes, Locke, Rousseau, Tocqueville, Marx and Weber. How the West has argued about who should rule."
     order: 3
     items:
       - work: bible-genesis

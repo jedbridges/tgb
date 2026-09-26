@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import TaxonomyPage from '~/components/TaxonomyPage.astro';
+export async function getStaticPaths() {
+  return (await getCollection('difficulties')).map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const titles: Record<string, string> = {
+  approachable: 'Approachable great books: the easiest places to start',
+  moderate: 'Great books of moderate difficulty',
+  demanding: 'Demanding great books, worth the work',
+  difficult: 'The difficult great books, and how to read them',
+  formidable: 'The hardest books on the great books lists',
+};
+---
+<Base title={titles[entry.id] ?? `${entry.data.label} great books`} description={`${entry.data.description ?? ''} Every work at this level on the great college reading lists, with a guide to each.`}>
+  <TaxonomyPage kind="difficulties" entry={entry} kindLabel="Difficulty" match={(w) => w.data.difficulty === entry.data.value} />
+</Base>

@@ -27,7 +27,7 @@ Update this section at the end of every session.
 | 1d Palette result design | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1e Browse uses the shared module and filters | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1f Analytics groups | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
-| 1g SEO: search landing pages and sitelinks | Not started | |
+| 1g SEO: shelf notes on 71 pages, difficulty and length pages, segment descriptions, per segment ItemList | Done | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 2a Texts collection and fetch script | Blocked on network allow list | |
 | 2b Passage index | Not started | |
 | 2c Passage result design and text pages | Not started | |

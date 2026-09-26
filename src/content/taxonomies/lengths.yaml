@@ -1,0 +1,4 @@
+- { id: short, value: short, label: Short books, order: 1, description: "Under 120 pages: an evening or a weekend." }
+- { id: medium, value: medium, label: Medium-length books, order: 2, description: "120 to 300 pages: a week of steady reading." }
+- { id: long, value: long, label: Long books, order: 3, description: "300 to 700 pages: a month, and worth the month." }
+- { id: epic, value: epic, label: Epic-length books, order: 4, description: "Over 700 pages: a season of your reading life." }

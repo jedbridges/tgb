@@ -27,13 +27,20 @@ const allWorks = resolved.flatMap((s) => s.items.map((i) => i.work!));
 const unique = new Set(allWorks.map((w) => w.id)).size;
 const p = program.data;
 const paragraphs = p.description.split(/\n\n+/);
+/* One list per year or course as well as the whole: "St. John's sophomore reading list"
+   is its own query, and its own ordered list. */
+const segmentLists = resolved.map((seg) => ({
+  '@context': 'https://schema.org', '@type': 'ItemList', '@id': `${abs(programUrl(program.id))}#${seg.id}`,
+  name: `${p.shortName} ${seg.label} reading list`, description: seg.description, numberOfItems: seg.items.length,
+  itemListElement: seg.items.map((it, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(workUrl(it.work!.id)), name: it.work!.data.title })),
+}));
 const itemList = {
   '@context': 'https://schema.org', '@type': 'ItemList', name: `${p.name} reading list`, numberOfItems: unique,
   itemListElement: allWorks.slice(0, 100).map((w, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(workUrl(w.id)), name: w.data.title })),
 };
 ---
 <Base title={`${p.name} reading list`} description={`Every book on the ${p.name} list, in the program's own order, with summaries and where to buy each one. ${unique} works.`}
-  jsonld={[itemList, breadcrumbs([{ name: 'Programs', path: '/programs/' }, { name: p.name, path: programUrl(program.id) }])]}>
+  jsonld={[itemList, ...segmentLists, breadcrumbs([{ name: 'Programs', path: '/programs/' }, { name: p.name, path: programUrl(program.id) }])]}>
   <article data-pagefind-body data-pagefind-filter="type:Program">
     <span class="visually-hidden" data-pagefind-meta="type:Program"></span>
     <span class="visually-hidden" data-pagefind-meta={`slug:${program.id}`}></span>
@@ -63,13 +70,14 @@ const itemList = {
     </header>
 
     {resolved.map((seg) => (
-      <section class="wrap segment" id={seg.id} data-pagefind-ignore>
+      <section class="wrap segment" id={seg.id}>
         <header class="segment__head">
           <h2 class="segment__label">{seg.label}</h2>
           {seg.sublabel && <p class="segment__sub">{seg.sublabel}</p>}
-          <a class="segment__browse ui" href={url('/books/') + `?program=${program.id}&segment=${seg.id}`}>Browse these {seg.items.length} →</a>
+          {seg.description && <p class="segment__desc">{seg.description}</p>}
+          <a class="segment__browse ui" data-pagefind-ignore href={url('/books/') + `?program=${program.id}&segment=${seg.id}`}>Browse these {seg.items.length} →</a>
         </header>
-        <ol class="rows">
+        <ol class="rows" data-pagefind-ignore>
           {seg.items.map((it, i) => {
             const w = it.work!;
             const a = authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id);
@@ -117,6 +125,9 @@ const itemList = {
   .segment { padding-block: var(--s3); scroll-margin-top: calc(var(--header-h) + 4rem); }  .segment__head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: baseline; gap: var(--s0) var(--s2); margin-bottom: var(--s2); }
   .segment__label { font-style: italic; font-size: var(--step-3); }
   .segment__sub { color: var(--ink-soft); font-size: var(--step-1); font-style: italic; }
+  /* The description takes its own row under the label and sublabel, at a reading measure,
+     rather than the narrow middle column the sublabel sits in. */
+  .segment__desc { grid-column: 1 / -1; color: var(--ink-soft); max-width: 62ch; margin-top: calc(-1 * var(--s0)); line-height: 1.5; }
   .segment__browse { display: inline-flex; align-items: center; min-height: 24px; color: var(--ink-mute); text-decoration: none; }
   .segment__browse:hover { color: var(--accent); }
   .rows { list-style: none; margin: 0; padding: 0; border-top: var(--rule-section); }

@@ -10,10 +10,10 @@
  * both use it.
  */
 
-export type Group = 'Book' | 'Author' | 'Theme' | 'Era' | 'Form' | 'Program' | 'Passage' | 'Page';
-export const GROUP_ORDER: Group[] = ['Book', 'Author', 'Theme', 'Era', 'Form', 'Program', 'Passage', 'Page'];
+export type Group = 'Book' | 'Author' | 'Theme' | 'Era' | 'Form' | 'Shelf' | 'Program' | 'Passage' | 'Page';
+export const GROUP_ORDER: Group[] = ['Book', 'Author', 'Theme', 'Era', 'Form', 'Shelf', 'Program', 'Passage', 'Page'];
 export const GROUP_LABEL: Record<Group, string> = {
-  Book: 'Books', Author: 'Authors', Theme: 'Themes', Era: 'Eras', Form: 'Forms', Program: 'Programs', Passage: 'Passages', Page: 'Pages',
+  Book: 'Books', Author: 'Authors', Theme: 'Themes', Era: 'Eras', Form: 'Forms', Shelf: 'Shelves', Program: 'Programs', Passage: 'Passages', Page: 'Pages',
 };
 
 export interface Hit {

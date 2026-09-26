@@ -27,6 +27,7 @@ segments:
   - id: freshman
     label: Freshman
     sublabel: Greeks
+    description: "The Greeks, read in order: Homer first, then the tragedians, Herodotus and Thucydides, and a year of Plato and Aristotle. Freshmen learn Greek alongside the seminar so that by spring they are reading Plato's sentences in his own words."
     order: 1
     items:
       - work: homer-iliad
@@ -141,6 +142,7 @@ segments:
   - id: sophomore
     label: Sophomore
     sublabel: Rome, Middle Ages, Renaissance
+    description: "From the Hebrew Bible and the Gospels through Rome, the medieval synthesis and the Renaissance: Virgil, Augustine, Aquinas, Dante, Chaucer, Machiavelli, and most of Shakespeare. The year in which the Greek questions meet the Christian answers."
     order: 2
     items:
       - work: bible-genesis
@@ -298,6 +300,7 @@ segments:
   - id: junior
     label: Junior
     sublabel: 17th-18th c.
+    description: "The seventeenth and eighteenth centuries: the new science and the new politics. Descartes, Pascal, Hobbes, Locke, Spinoza, Leibniz, Hume and Kant, with Milton, Cervantes, Swift and Austen among the philosophers. French replaces Greek in the language tutorial."
     order: 3
     items:
       - work: cervantes-don-quixote
@@ -395,6 +398,7 @@ segments:
   - id: senior
     label: Senior
     sublabel: 19th-20th c.
+    description: "The nineteenth and twentieth centuries, where the modern arguments begin: Hegel, Marx, Tocqueville, Tolstoy, Dostoevsky, Nietzsche, Freud, Heidegger, and the American founding read alongside them. Seniors write a thesis on a book of their choosing."
     order: 4
     items:
       - work: tolstoy-war-and-peace

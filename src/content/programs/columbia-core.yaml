@@ -24,6 +24,7 @@ segments:
   - id: lit-hum
     label: Literature Humanities
     sublabel: First year (HUMA CC1001-1002)
+    description: "Literature Humanities, taken by every Columbia first-year since 1937: a year of the West's central literary works read in order, from the Iliad through Genesis, Greek tragedy, Virgil, Augustine, Dante, Montaigne, Shakespeare, Austen and Dostoevsky, in seminars of about twenty."
     order: 1
     items:
       - work: enheduanna-exaltation-of-inanna
@@ -96,6 +97,7 @@ segments:
   - id: cc
     label: Contemporary Civilization
     sublabel: Second year (COCI CC1101-1102)
+    description: "Contemporary Civilization, the second-year seminar founded in 1919: the political, moral and religious thought of the West, from Plato and Aristotle through the Bible, Augustine, Machiavelli, Hobbes, Locke, Rousseau, Kant, Marx and Nietzsche, and the arguments of the present."
     order: 2
     items:
       - work: plato-republic

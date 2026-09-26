@@ -1,0 +1,5 @@
+- { id: approachable, value: 1, label: Approachable, order: 1, description: "Books a first-year reader can open cold and follow to the end." }
+- { id: moderate, value: 2, label: Moderate, order: 2, description: "Clear on the page, with an argument or a world that asks for some patience." }
+- { id: demanding, value: 3, label: Demanding, order: 3, description: "Rewarding on a first reading, better on a second, best with a companion." }
+- { id: difficult, value: 4, label: Difficult, order: 4, description: "Books that expect you to work, and repay every hour of it." }
+- { id: formidable, value: 5, label: Formidable, order: 5, description: "The summits: read with a guide, a group, or a semester." }

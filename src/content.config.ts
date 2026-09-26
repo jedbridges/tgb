@@ -20,6 +20,32 @@ const eras = defineCollection({
   loader: file('src/content/taxonomies/eras.yaml'),
   schema: taxonomyItem.extend({ start: z.number().int(), end: z.number().int() }),
 });
+/* Difficulty and length are facts on each work, not references, so these two exist only to
+   give each level a page: a slug, a label and the value the work carries. */
+const difficulties = defineCollection({
+  loader: file('src/content/taxonomies/difficulties.yaml'),
+  schema: taxonomyItem.extend({ value: z.number().int().min(1).max(5) }),
+});
+const lengths = defineCollection({
+  loader: file('src/content/taxonomies/lengths.yaml'),
+  schema: taxonomyItem.extend({ value: z.enum(['short', 'medium', 'long', 'epic']) }),
+});
+
+/*
+ * The written part of a shelf page: what the works on it share, where to start and what
+ * to read together. One file per theme, era, form, difficulty and length, named
+ * kind-id.md, so the page for a shelf with no note yet still builds as a plain grid.
+ */
+const shelfNotes = defineCollection({
+  loader: glob({ pattern: '*.md', base: 'src/content/shelf-notes' }),
+  schema: z.object({
+    kind: z.enum(['themes', 'genres', 'eras', 'difficulties', 'lengths']),
+    shelf: slug,
+    startHere: reference('works').optional(),
+    startHereNote: z.string().max(240).optional(),
+    pairing: z.object({ works: z.array(reference('works')).length(2), note: z.string().max(320) }).optional(),
+  }),
+});
 
 const authors = defineCollection({
   loader: glob({ pattern: '**/*.md', base: 'src/content/authors' }),
@@ -132,10 +158,13 @@ const programs = defineCollection({
       id: slug,
       label: z.string(),
       sublabel: z.string().optional(),
+      /** A sentence or two on what the year or course is for. Indexed, and the text under the heading a search engine reads. */
+      description: z.string().max(600).optional(),
       order: z.number().int(),
       items: z.array(programItem).min(1),
     })).min(1),
   }),
 });
 
-export const collections = { works, authors, programs, themes, genres, eras, regions, languages };
+export const collections = {
+  difficulties, lengths, shelfNotes, works, authors, programs, themes, genres, eras, regions, languages };
