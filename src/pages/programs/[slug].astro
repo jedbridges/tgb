@@ -41,7 +41,8 @@ const itemList = {
       <nav class="crumbs" aria-label="Breadcrumb" data-pagefind-ignore>
         <ol><li><a href={url('/')}>The Great Books</a></li><li><a href={url('/programs/')}>Programs</a></li></ol>
       </nav>
-      <h1 class="italic" data-pagefind-meta="title">{p.name}</h1>
+      <h1 class="italic" data-pagefind-meta="title" data-pagefind-weight="10">{p.name}</h1>
+      <span class="visually-hidden" data-pagefind-weight="3">{[p.shortName, ...segments.map((s) => s.label)].join(', ')}</span>
       <div class="head__grid">
         <div class="prose head__desc">{paragraphs.map((t) => <p>{t}</p>)}</div>
         <dl class="facts ui" data-pagefind-ignore>

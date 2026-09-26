@@ -21,12 +21,12 @@ Update this section at the end of every session.
 | Item | State | PR |
 |---|---|---|
 | Plan written, options reviewed | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
-| 1a Index the right things | In progress | |
+| 1a Index the right things | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1b Alias fill on 85 works and authors | Not started | |
-| 1c Shared search module | In progress | |
-| 1d Palette result design | In progress | |
-| 1e Browse uses the shared module and filters | In progress | |
-| 1f Analytics groups | In progress | |
+| 1c Shared search module | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
+| 1d Palette result design | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
+| 1e Browse uses the shared module and filters | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
+| 1f Analytics groups | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1g SEO: search landing pages and sitelinks | Not started | |
 | 2a Texts collection and fetch script | Blocked on network allow list | |
 | 2b Passage index | Not started | |
@@ -77,6 +77,10 @@ search can answer. No new infrastructure, no per query cost.
 | `data-pagefind-body`, type meta and filter on theme, era and genre pages | `src/components/TaxonomyPage.astro` | Concept queries land on the theme page |
 
 ### 1b. Content fill
+
+- Program short forms ("St Johns", "SJC", "Columbia Core") need somewhere to live: add an
+  `aliases` field to the program schema and weight it like the book aliases. Today
+  "St Johns" finds Samuel Johnson first.
 
 - Fill `aliases` on the 85 works that have none or an empty list: translated titles,
   common short forms, transliterations.
@@ -255,6 +259,7 @@ signing up.
 | Alias fill | 2a | Aliases live in front matter. The fetch script matches editions against `aliases` and `originalTitle`. |
 | Analytics events | 2, 3 | `search_used` with a `group` field. Passage and Ask are new values. |
 | `facetsToFilters()` | 2b | Pure function, reused by the passage scope. |
+| `parseQuery()` in `search.ts` | 2b, 3b | Words that name a facet ("approachable Greek tragedy") become Pagefind filters and leave the text. Its vocabulary mirrors the taxonomies and is the same table the passage scope and the Ask prompt will use. The Phase 1 no-mark rule (a hit must mark a real fraction of a typed word) is what stops Pagefind's two letter fallback from filling the empty state. |
 | Theme, era, genre pages written up (1g) | 3a, 3c | They become the best retrieval chunks for concept questions and the parents of the question pages. |
 | Difficulty and length pages (1g) | 2d, 3c | Quote pages and question pages link into them; they never move. |
 | Highlights in guides | 2c, 2d | Quote pages and section commentary are rendered from the same front matter, never copied. |
