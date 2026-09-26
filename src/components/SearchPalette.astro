@@ -16,6 +16,8 @@ const hints = [
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg>
       </button>
     </form>
+    <div class="palette__busy" aria-hidden="true"></div>
+    <p class="visually-hidden" id="palette-status" role="status" aria-live="polite"></p>
     <div class="palette__results" id="palette-results" role="listbox" aria-label="Results"></div>
     <p class="palette__hint ui" id="palette-hint">Try {hints.map(([q, what], i) => <>{i > 0 && (i === hints.length - 1 ? ', or ' : ', ')}<button type="button" data-q={q}>{q}</button> <span class="palette__what">({what})</span></>)}</p>
   </div>
@@ -70,10 +72,24 @@ const hints = [
   .palette__results :global(.hit__facts) { display: flex; flex-wrap: wrap; gap: 0.25rem 0.6rem; margin-top: 0.3rem; font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); line-height: var(--lh-ui); }
   .palette__results :global(.hit__facts .chip) { color: var(--ink-soft); background: var(--paper-deep); border-radius: 999px; padding: 0.05em 0.55em; }
   .palette__results :global(.hit__facts .chip--guide) { color: var(--accent); background: var(--accent-wash); }
-  .palette__results :global(.empty) { padding: 1.2rem 1.1rem; color: var(--ink-soft); line-height: 1.5; }
+  /* Searching: the first search also fetches the index, which can take a second on a
+     phone. A hairline sweeps under the field until the answer lands; the live region
+     carries the count for a screen reader. */
+  .palette__busy { position: relative; height: 2px; margin-top: -2px; overflow: hidden; opacity: 0; transition: opacity var(--dur-fast); }
+  .palette__busy::after { content: ''; position: absolute; inset: 0 auto 0 0; width: 35%; background: var(--accent); transform: translateX(-100%); }
+  .palette.is-busy .palette__busy { opacity: 1; }
+  .palette.is-busy .palette__busy::after { animation: sweep 1.1s ease-in-out infinite; }
+  @keyframes sweep { to { transform: translateX(300%); } }
+  .palette__results :global(.empty) { padding: 1.1rem 1.1rem 1.2rem; color: var(--ink-soft); line-height: 1.5; display: grid; gap: 0.5rem; }
+  .palette__results :global(.empty p) { margin: 0; }
   .palette__results :global(.empty a), .palette__results :global(.empty button) { color: var(--accent); text-decoration: underline; text-underline-offset: 0.15em; }
-  .palette__results :global(.empty__sug) { list-style: none; margin: 0.5rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
-  .palette__results :global(.empty__sug button) { font: inherit; background: var(--paper); border-radius: 999px; padding: 0.2em 0.8em; text-decoration: none; color: var(--ink-strong); min-height: 32px; }
+  .palette__results :global(.empty__lead) { font-family: var(--font-ui); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); margin-top: 0.3rem; }
+  .palette__results :global(.empty__sug) { list-style: none; margin: -0.2rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .palette__results :global(.empty__sug button) { font: inherit; font-family: var(--font-display); background: var(--paper); border-radius: 999px; padding: 0.2em 0.9em; text-decoration: none; color: var(--ink-strong); min-height: 36px; transition: background var(--dur-fast); }
+  .palette__results :global(.empty__sug button:hover) { background: var(--paper-deep); }
+  .palette__results :global(.empty__out) { font-family: var(--font-ui); font-size: var(--step--2); margin-top: 0.4rem; }
+  .palette__results :global(.empty__out a) { text-decoration: none; }
+  @media (prefers-reduced-motion: reduce) { .palette.is-busy .palette__busy::after { animation: none; transform: none; width: 100%; opacity: 0.5; } }
   .palette__results :global(.all) { display: block; padding: 0.7rem 1.1rem 0.9rem; font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent); text-decoration: none; border-top: 1px solid var(--paper-deeper); }
   .palette__results :global(.all[aria-selected='true']), .palette__results :global(.all:hover) { background: var(--paper); }
   @media (max-width: 480px) { .palette__what { display: none; } }
@@ -147,31 +163,39 @@ const hints = [
       </span>
     </a>`;
   }
+  const status = document.getElementById('palette-status')!;
+  const say = (msg: string) => { status.textContent = msg; };
   async function renderEmpty(q: string) {
     const sug = suggestFor(q, await loadNames());
-    list.innerHTML = `<div class="empty">Nothing on the shelf for “${escape(q)}”.
-      ${sug.length ? `<span>Did you mean</span><ul class="empty__sug">${sug.map((n) => `<li><button type="button" data-q="${escape(n)}">${escape(n)}</button></li>`).join('')}</ul>`
-        : `Try an author, a title, a theme like <button type="button" data-q="justice">justice</button>, or <a href="/books/">browse and filter every book</a>.`}
+    list.innerHTML = `<div class="empty"><p>Nothing on the shelf for “${escape(q)}”.</p>
+      ${sug.length
+        ? `<p class="empty__lead">Did you mean</p><ul class="empty__sug">${sug.map((n) => `<li><button type="button" data-q="${escape(n)}">${escape(n)}</button></li>`).join('')}</ul>`
+        : `<p>Try an author, a title, or a theme like <button type="button" data-q="justice">justice</button>.</p>`}
+      <p class="empty__out"><a href="/books/">Browse and filter every book →</a></p>
     </div>`;
+    say(sug.length ? `No results. Did you mean ${sug.join(', ')}?` : 'No results.');
   }
   function render(hits: Hit[], q: string) {
     sel = -1;
     if (!hits.length) { renderEmpty(q); return; }
     const groups = groupHits(hits, { Book: 6, Author: 3, Theme: 3, Era: 2, Form: 2, Program: 3, Page: 2 });
     let i = 0;
-    list.innerHTML = groups.map((g) => `<div class="group" role="presentation"><span>${g.label}</span></div>${g.hits.map((h) => renderHit(h, i++, g.group)).join('')}`).join('')
+    list.innerHTML = groups.map((g) => `<div class="group" role="presentation"><span>${g.label}</span>${g.total > g.hits.length ? `<span class="group__n">${g.hits.length} of ${g.total}</span>` : ''}</div>${g.hits.map((h) => renderHit(h, i++, g.group)).join('')}`).join('')
       + `<a class="all" role="option" id="hit-${i}" aria-selected="false" href="${escape(browseUrl(q))}">See every book that matches “${escape(q)}” →</a>`;
     input.setAttribute('aria-expanded', 'true');
+    say(`${hits.length} ${hits.length === 1 ? 'result' : 'results'}: ${groups.map((g) => `${g.total} ${g.label.toLowerCase()}`).join(', ')}. Use the arrow keys.`);
   }
   let t: number | undefined;
   function run(q: string) {
     clearTimeout(t);
-    if (!q.trim()) { list.innerHTML = ''; input.setAttribute('aria-expanded', 'false'); return; }
+    if (!q.trim()) { list.innerHTML = ''; input.setAttribute('aria-expanded', 'false'); root.classList.remove('is-busy'); say(''); return; }
+    root.classList.add('is-busy');
     t = window.setTimeout(async () => {
       const my = ++seq;
       const hits = await search(q, { limit: 30 });
       if (my !== seq) return;
-      if (hits === null) { list.innerHTML = '<p class="empty">Search is unavailable right now. You can still <a href="/books/">browse and filter every book</a>.</p>'; return; }
+      root.classList.remove('is-busy');
+      if (hits === null) { list.innerHTML = '<div class="empty"><p>Search is unavailable right now.</p><p class="empty__out"><a href="/books/">Browse and filter every book →</a></p></div>'; say('Search is unavailable.'); return; }
       render(hits, q.trim());
       if (!hits.length) dispatchEvent(new CustomEvent('tgb:search-empty', { detail: { length: q.trim().length } }));
     }, 90);

@@ -146,7 +146,7 @@ export async function search(q: string, opts: SearchOptions = {}): Promise<Hit[]
       url: r.url,
       title: r.meta.title || 'Untitled',
       type: (r.meta.type as Group) || 'Page',
-      excerpt: r.excerpt,
+      excerpt: tidyExcerpt(r.excerpt, r.meta.title, r.meta.author),
       meta: r.meta,
       filters: r.filters ?? {},
     }));
@@ -163,19 +163,50 @@ export async function search(q: string, opts: SearchOptions = {}): Promise<Hit[]
 const plain = (s: string) => s.toLowerCase().replace(/^(the|a|an)\s+/, '').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 
 /**
+ * An excerpt with no matched word in the body starts at the top of the page, which on a
+ * book page is the title, the by-line and the original title, all of which the hit
+ * already shows. Drop that lead-in, and close an excerpt Pagefind cut mid-sentence.
+ */
+function tidyExcerpt(excerpt: string, title?: string, author?: string): string {
+  let e = excerpt.trim();
+  const strip = (s: string) => s.replace(/<\/?mark>/g, '');
+  const bare = strip(e);
+  if (title && bare.startsWith(title)) {
+    // "Title. by Author · Original title. " then the synopsis proper.
+    // Only a title that stands as its own sentence; "Homer was..." keeps its subject.
+    const m = bare.match(new RegExp(`^${esc(title)}\\.\\s*(?:by\\s+${author ? esc(author) : '[^.]+?'}(?:\\s*·\\s*[^.]+?)?\\.\\s*)?`));
+    if (m && m[0].length < bare.length - 20) {
+      // Advance through the marked string by the same number of visible characters.
+      let seen = 0, i = 0;
+      while (i < e.length && seen < m[0].length) {
+        if (e.startsWith('<mark>', i)) i += 6; else if (e.startsWith('</mark>', i)) i += 7; else { i++; seen++; }
+      }
+      e = e.slice(i).trim();
+      if (e) e = e[0].toUpperCase() + e.slice(1);
+    }
+  }
+  const seen = strip(e);
+  if (e && /^\p{Ll}/u.test(seen)) e = '…' + e;
+  if (e && !/[.!?…"”)]$/.test(seen)) e += '…';
+  return e;
+}
+const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
  * Hits by group. Groups are ordered by their best hit, so a search for "Plato" leads
  * with the author when the author page outranks his dialogues and with the books when
  * it does not, rather than always putting books first.
  */
-export function groupHits(hits: Hit[], cap: Partial<Record<Group, number>> = {}): { group: Group; label: string; hits: Hit[] }[] {
-  const by = new Map<Group, { first: number; hits: Hit[] }>();
+export function groupHits(hits: Hit[], cap: Partial<Record<Group, number>> = {}): { group: Group; label: string; hits: Hit[]; total: number }[] {
+  const by = new Map<Group, { first: number; hits: Hit[]; total: number }>();
   hits.forEach((h, i) => {
     const g = GROUP_ORDER.includes(h.type) ? h.type : 'Page';
-    const entry = by.get(g) ?? { first: i, hits: [] };
+    const entry = by.get(g) ?? { first: i, hits: [], total: 0 };
+    entry.total++;
     if (entry.hits.length < (cap[g] ?? Infinity)) entry.hits.push(h);
     by.set(g, entry);
   });
-  return [...by.entries()].sort((a, b) => a[1].first - b[1].first).map(([g, e]) => ({ group: g, label: GROUP_LABEL[g], hits: e.hits }));
+  return [...by.entries()].sort((a, b) => a[1].first - b[1].first).map(([g, e]) => ({ group: g, label: GROUP_LABEL[g], hits: e.hits, total: e.total }));
 }
 
 /** The browse page URL that shows the same thing, for "see every book that matches". */
