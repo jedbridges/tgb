@@ -331,7 +331,11 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
     .buybar:not([hidden]) { display: flex; }
     .work { padding-bottom: 7rem; }  /* clears the fixed buy bar */
     .work__hero { grid-template-columns: 1fr; gap: var(--s2); }
-    .work__stage { grid-column: 1; grid-row: 1; position: relative; padding-top: var(--s2); }
+    /* top: auto, not just position: relative. The sticky rule above sets top to the
+       header's offset, and a relatively positioned box keeps honouring top: it was drawn
+       64px lower than the grid placed it, over the breadcrumb of every book page on a
+       phone, while the layout box stayed where it was. */
+    .work__stage { grid-column: 1; grid-row: 1; position: relative; top: auto; max-height: none; padding-top: var(--s2); }
     .work__head { grid-row: 2; }
     .work__grid { grid-template-columns: 1fr; }
     .work__side { position: static; }
