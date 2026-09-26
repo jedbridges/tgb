@@ -232,6 +232,24 @@ Generated answers are never published automatically. Instead:
 - These pages are the crawlable twin of the Ask tab and the place organic traffic lands
   before discovering the tool.
 
+## Verification record
+
+Kept so a later session knows what was checked and how, not only what was built.
+
+- 26 September 2026, after [#41](https://github.com/jedbridges/tgb/pull/41): every internal
+  link in the built site resolves (77,386 checked). Axe clean on 24 renders of the theme,
+  passages, length, difficulty, program and book pages at phone and desktop width in light
+  and dark, with the palette open on one. Mobile Lighthouse on the theme, passages and
+  length pages: performance 96 to 98, accessibility, best practices and SEO 100, total
+  blocking time 0 ms, layout shift under 0.005. A code review of the search module and the
+  fetch script produced ten findings, all fixed in that PR.
+- The query suite the palette is checked against, run in Chromium against the built site:
+  Plato, Republic, justice, Iliad, Ilias, sophomore, approachable epic, tragedy, Greek
+  tragedy, short novel, easy long novels, happiness, Dostoevski, Neitzsche, xqzv, St Johns,
+  Lit Hum, Politeia, Vom Kriege, Shylock, Britannica, Austen, Yale. Expected leaders are the
+  author page, the exact title or alias, the theme page, the program page, or the filtered
+  shelf, and a misspelling reaches the empty state with a suggestion.
+
 ## Off the shelf options considered
 
 Checked in September 2026. Vendor docs were not reachable from the build container, so
