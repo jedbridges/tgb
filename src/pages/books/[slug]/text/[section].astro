@@ -1,0 +1,88 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import { authorOf, yearLabel } from '~/lib/catalog';
+import { url, workUrl, textUrl, authorUrl } from '~/lib/url';
+import { breadcrumbs } from '~/lib/seo';
+
+export async function getStaticPaths() {
+  const texts = await getCollection('texts');
+  const works = await getCollection('works');
+  const byWork = new Map<string, typeof texts>();
+  for (const t of texts) byWork.set(t.data.work.id, [...(byWork.get(t.data.work.id) ?? []), t]);
+  return [...byWork].flatMap(([slug, sections]) => {
+    const work = works.find((w) => w.id === slug);
+    if (!work) return [];
+    const sorted = sections.sort((a, b) => a.data.order - b.data.order);
+    return sorted.map((entry, i) => ({ params: { slug, section: entry.data.section }, props: { work, entry, prev: sorted[i - 1] ?? null, next: sorted[i + 1] ?? null, count: sorted.length } }));
+  });
+}
+const { work, entry, prev, next, count } = Astro.props;
+const author = await authorOf(work);
+const { Content } = await render(entry);
+const d = work.data; const t = entry.data;
+const minutes = Math.max(1, Math.round(t.words / 220));
+/*
+ * Indexed by the site's search as a Passage, so "search inside" and the palette can find
+ * the line; noindexed for the web until the section carries commentary of its own, which
+ * is the rule in docs/search-plan.md, 2d. Bare public domain text is not a page of ours.
+ */
+---
+<Base title={`${d.title}: ${t.heading}`} description={`${t.heading} of ${d.title} by ${author.data.name}, ${t.edition.replace(/^The /, 'the ')}. Read online with the reading guide alongside.`} noindex
+  jsonld={breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }, { name: 'Text', path: textUrl(work.id) }, { name: t.heading, path: textUrl(work.id, t.section) }])}>
+  <article class="wrap passage" data-pagefind-body data-pagefind-filter="type:Passage">
+    <span class="visually-hidden" data-pagefind-meta="type:Passage"></span>
+    <span class="visually-hidden" data-pagefind-meta={`work:${work.id}`}></span>
+    <span class="visually-hidden" data-pagefind-filter={`work:${work.id}`}></span>
+    <span class="visually-hidden" data-pagefind-meta={`author:${author.data.name}`}></span>
+    <span class="visually-hidden" data-pagefind-meta={`heading:${t.heading}`}></span>
+    <span class="visually-hidden" data-pagefind-meta={`book:${d.title}`}></span>
+    <span class="visually-hidden" data-pagefind-meta={`section:${t.section}`}></span>
+    <span class="visually-hidden" data-pagefind-meta={`translator:${t.translator ?? ''}`}></span>
+
+    <header class="passage__head page-open" data-pagefind-ignore>
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol><li><a href={url('/')}>The Great Books</a></li><li><a href={workUrl(work.id)}>{d.title}</a></li><li><a href={textUrl(work.id)}>Text</a></li></ol>
+      </nav>
+      <p class="passage__book"><a href={workUrl(work.id)}>{d.title}</a> · <a href={authorUrl(author.id)}>{author.data.name}</a> · {yearLabel(work)}</p>
+    </header>
+    {/* The heading carries the title meta so a hit reads "Book IX: The Cyclops" and the
+        book's own title sits on the type line. */}
+    <h1 class="passage__h" data-pagefind-meta="title" data-pagefind-weight="6">{t.heading}</h1>
+    <p class="passage__meta ui" data-pagefind-ignore>Part {t.order} of {count} · {t.words.toLocaleString()} words · about {minutes} min · {t.translator ? `trans. ${t.translator}` : t.edition}</p>
+
+    <div class="prose passage__text"><Content /></div>
+
+    <nav class="passage__nav" aria-label="Parts" data-pagefind-ignore>
+      {prev ? <a class="passage__prev" href={textUrl(work.id, prev.data.section)}><span class="ui">Previous</span><span>{prev.data.heading}</span></a> : <span></span>}
+      <a class="passage__all ui" href={textUrl(work.id)}>Contents</a>
+      {next ? <a class="passage__next" href={textUrl(work.id, next.data.section)}><span class="ui">Next</span><span>{next.data.heading}</span></a> : <a class="passage__next" href={workUrl(work.id)}><span class="ui">The end</span><span>Back to the guide</span></a>}
+    </nav>
+    <footer class="passage__foot" data-pagefind-ignore>
+      <p>{t.edition}. {t.licence} <a href={t.sourceUrl} rel="noopener">Source edition</a>. The programs assign a different edition; <a href={workUrl(work.id)}>the guide</a> names it.</p>
+    </footer>
+  </article>
+</Base>
+<style>
+  .passage { padding-block: var(--s4) var(--s5); max-width: calc(var(--measure) + 2 * var(--gutter)); margin-inline: auto; }
+  .passage__book { margin-top: var(--s1); font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); }
+  .passage__book a { color: inherit; text-decoration: none; }
+  .passage__book a:hover { color: var(--accent); }
+  .passage__h { font-size: var(--step-3); font-style: italic; margin-top: var(--s2); text-wrap: balance; }
+  .passage__meta { margin-top: var(--s0); color: var(--ink-mute); font-size: var(--step--2); }
+  /* Long text is read, not scanned: a touch larger and looser than the guides, and never
+     wider than the measure. */
+  .passage__text { margin-top: var(--s3); font-size: var(--step-0); line-height: 1.62; }
+  /* The guides open with a larger first paragraph; a chapter of text does not. */
+  .passage__text :global(p), .passage__text :global(p:first-child) { font-size: inherit; line-height: inherit; text-wrap: pretty; }
+  .passage__text :global(p + p) { text-indent: 1.4em; margin-top: 0; }
+  .passage__text :global(blockquote) { margin: var(--s2) 0; padding-left: var(--s2); border-left: 1px solid var(--edge-strong); color: var(--ink-soft); }
+  .passage__nav { display: grid; grid-template-columns: 1fr auto 1fr; gap: var(--s2); align-items: start; margin-top: var(--s4); padding-top: var(--s2); border-top: 1px solid var(--paper-deeper); }
+  .passage__prev, .passage__next { display: grid; gap: 0.2rem; text-decoration: none; color: var(--ink-strong); font-family: var(--font-display); min-height: 44px; }
+  .passage__prev .ui, .passage__next .ui { font-size: var(--step--2); color: var(--ink-mute); letter-spacing: var(--tracking-caps); text-transform: uppercase; }
+  .passage__next { text-align: right; }
+  .passage__prev:hover, .passage__next:hover { color: var(--accent); }
+  .passage__all { align-self: center; color: var(--ink-soft); text-decoration: none; font-size: var(--step--1); min-height: 44px; display: inline-flex; align-items: center; padding-inline: 0.5rem; }
+  .passage__foot { margin-top: var(--s3); font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); line-height: 1.5; }
+  .passage__foot a { color: inherit; }
+</style>

@@ -1,0 +1,154 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import { authorOf, yearLabel } from '~/lib/catalog';
+import { url, workUrl, textUrl, authorUrl } from '~/lib/url';
+import { breadcrumbs } from '~/lib/seo';
+
+/* One contents page per work that has a text. The pages exist only for works the fetch
+   script has written sections for, so a book without one has no dead link to here. */
+export async function getStaticPaths() {
+  const texts = await getCollection('texts');
+  const byWork = new Map<string, typeof texts>();
+  for (const t of texts) byWork.set(t.data.work.id, [...(byWork.get(t.data.work.id) ?? []), t]);
+  const works = await getCollection('works');
+  return [...byWork].flatMap(([slug, sections]) => {
+    const work = works.find((w) => w.id === slug);
+    return work ? [{ params: { slug }, props: { work, sections: sections.sort((a, b) => a.data.order - b.data.order) } }] : [];
+  });
+}
+const { work, sections } = Astro.props;
+const author = await authorOf(work);
+const d = work.data;
+const first = sections[0].data;
+const total = sections.reduce((n, s) => n + s.data.words, 0);
+const minutes = Math.max(1, Math.round(total / 220));
+const time = minutes < 90 ? `${minutes} minutes` : `${Math.round(minutes / 60)} hours`;
+const highlights = d.highlights;
+---
+<Base title={`Read ${d.title} online, free`} description={`The full text of ${d.title} by ${author.data.name}, ${first.edition.replace(/^The /, 'the ')}, in ${sections.length} parts, with the reading guide alongside.`} noindex
+  jsonld={breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }, { name: 'Text', path: textUrl(work.id) }])}>
+  <article class="wrap text-index" data-pagefind-ignore>
+    <header class="text-index__head page-open">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol><li><a href={url('/')}>The Great Books</a></li><li><a href={url('/books/')}>All books</a></li><li><a href={workUrl(work.id)}>{d.title}</a></li><li>Text</li></ol>
+      </nav>
+      <h1 class="italic">{d.title}</h1>
+      <p class="text-index__by">by <a href={authorUrl(author.id)}>{author.data.name}</a> · {yearLabel(work)}</p>
+      <p class="text-index__ed">{first.edition}. {sections.length} {sections.length === 1 ? 'part' : 'parts'}, about {total.toLocaleString()} words, {time} of reading. <a href={first.sourceUrl} rel="noopener">Source edition</a>.</p>
+      <p class="text-index__guide"><a class="btn" href={workUrl(work.id)}>The reading guide →</a></p>
+    </header>
+
+    <div class="text-index__grid">
+      <div>
+        {/* Search inside this book: the shared module, narrowed to passages of this work. */}
+        <form class="inside" role="search" data-inside={work.id} onsubmit="return false">
+          <label class="inside__label ui" for="inside-q">Search inside the text</label>
+          <div class="inside__row">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5"/><path d="m11 11 3.5 3.5" stroke-linecap="round"/></svg>
+            <input id="inside-q" type="search" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder={`A word or phrase from ${d.title}`} aria-controls="inside-results" />
+          </div>
+          <div class="inside__results" id="inside-results" aria-live="polite"></div>
+        </form>
+
+        <h2 class="text-index__h">Contents</h2>
+        <ol class="toc">
+          {sections.map((s) => (
+            <li class="toc__item">
+              <a class="toc__link" href={textUrl(work.id, s.data.section)}>
+                <span class="toc__t">{s.data.heading}</span>
+                <span class="toc__n ui">{s.data.words.toLocaleString()} words</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <aside class="text-index__side">
+        {highlights.length > 0 && (
+          <section>
+            <h2 class="side__h">Passages the guide marks</h2>
+            <ul class="marks">
+              {highlights.map((h) => (
+                <li class="marks__item">
+                  <blockquote class="marks__q"><p>{h.text.length > 220 ? h.text.slice(0, 217).replace(/\s+\S*$/, '') + '…' : h.text}</p></blockquote>
+                  {h.location && <p class="marks__where ui">{h.location}</p>}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+        <section>
+          <h2 class="side__h">About this text</h2>
+          <p class="text-index__lic">{first.licence}{first.translator ? ` Translated by ${first.translator}.` : ''} It is not the edition the programs assign; the guide names that one, and the buy links there point at it.</p>
+        </section>
+      </aside>
+    </div>
+  </article>
+</Base>
+<script>
+  import { search, type Hit } from '~/lib/search';
+  const form = document.querySelector<HTMLFormElement>('[data-inside]');
+  const input = document.getElementById('inside-q') as HTMLInputElement | null;
+  const out = document.getElementById('inside-results');
+  if (form && input && out) {
+    const work = form.dataset.inside!;
+    const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+    let t: number | undefined, seq = 0;
+    const render = (hits: Hit[] | null, q: string) => {
+      if (hits === null) { out.innerHTML = '<p class="inside__empty">Search is unavailable right now.</p>'; return; }
+      if (!hits.length) { out.innerHTML = `<p class="inside__empty">Nothing in the text for “${esc(q)}”.</p>`; return; }
+      out.innerHTML = `<ol class="inside__list">${hits.map((h) => `<li><a class="inside__hit" href="${esc(h.url)}"><span class="inside__where ui">${esc(h.meta.heading || h.title)}</span><span class="inside__ex">${h.excerpt}</span></a></li>`).join('')}</ol>`;
+    };
+    input.addEventListener('input', () => {
+      clearTimeout(t);
+      const q = input.value.trim();
+      if (!q) { out.innerHTML = ''; return; }
+      t = window.setTimeout(async () => {
+        const my = ++seq;
+        const hits = await search(q, { filters: { type: 'Passage', work }, limit: 12 });
+        if (my === seq) render(hits, q);
+      }, 120);
+    });
+  }
+</script>
+<style>
+  .text-index { padding-block: var(--s4) var(--s5); }
+  .text-index__head h1 { font-size: var(--step-4); }
+  .text-index__by { margin-top: var(--s0); font-size: var(--step-1); color: var(--ink-soft); }
+  .text-index__by a { color: inherit; }
+  .text-index__ed { margin-top: var(--s1); color: var(--ink-soft); max-width: 60ch; line-height: 1.5; }
+  .text-index__guide { margin-top: var(--s2); }
+  .text-index__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem); gap: var(--s4) var(--s5); margin-top: var(--s4); align-items: start; }
+  .text-index__h { font-style: italic; font-size: var(--step-2); margin: var(--s4) 0 var(--s2); }
+  .toc { list-style: none; margin: 0; padding: 0; counter-reset: part; max-width: 60ch; }
+  .toc__item { border-top: 1px solid var(--paper-deeper); }
+  .toc__link { display: flex; justify-content: space-between; align-items: baseline; gap: var(--s2); padding: 0.7rem 0; text-decoration: none; color: var(--ink-strong); min-height: 44px; }
+  .toc__link:hover .toc__t { color: var(--accent); }
+  .toc__t { font-family: var(--font-display); font-size: var(--step-1); transition: color var(--dur-fast); }
+  .toc__n { color: var(--ink-mute); font-size: var(--step--2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .inside { max-width: 60ch; }
+  .inside__label { display: block; font-size: var(--step--2); font-weight: 500; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); margin-bottom: 0.4rem; }
+  .inside__row { display: flex; align-items: center; gap: 0.6rem; padding: 0.45rem 0.9rem; border: 1px solid var(--edge-strong); border-radius: 999px; color: var(--ink-soft); background: var(--paper-bright); }
+  .inside__row:focus-within { border-color: var(--ink-mute); }
+  .inside__row input { flex: 1; min-width: 0; font-family: var(--font-display); font-size: var(--step-0); background: none; border: 0; outline: 0; color: var(--ink-strong); -webkit-appearance: none; appearance: none; min-height: 32px; }
+  .inside__row input::-webkit-search-decoration, .inside__row input::-webkit-search-cancel-button { -webkit-appearance: none; display: none; }
+  .inside__row input::placeholder { color: var(--ink-mute); font-style: italic; opacity: 1; }
+  .inside__results :global(.inside__list) { list-style: none; margin: var(--s1) 0 0; padding: 0; }
+  .inside__results :global(.inside__hit) { display: block; padding: 0.6rem 0; border-top: 1px solid var(--paper-deeper); text-decoration: none; color: inherit; }
+  .inside__results :global(.inside__where) { display: block; font-size: var(--step--2); color: var(--accent); }
+  .inside__results :global(.inside__ex) { display: block; font-size: var(--step--1); color: var(--ink-soft); line-height: 1.5; }
+  .inside__results :global(.inside__ex mark) { background: var(--accent-wash); color: var(--ink-strong); }
+  .inside__results :global(.inside__empty) { margin-top: var(--s1); color: var(--ink-soft); font-style: italic; }
+  .side__h { margin-bottom: var(--s1); font-family: var(--font-ui); font-size: var(--step--2); font-weight: var(--w-emph); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-soft); }
+  .text-index__side { display: grid; gap: var(--s3); position: sticky; top: calc(var(--stick) + var(--s1)); }
+  .marks { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s2); }
+  .marks__q { margin: 0; padding-left: var(--s1); border-left: 1px solid var(--edge-strong); font-size: var(--step--1); line-height: 1.5; color: var(--ink-soft); }
+  .marks__q p { margin: 0; }
+  .marks__where { margin-top: 0.3rem; font-size: var(--step--2); color: var(--ink-mute); }
+  .text-index__lic { font-size: var(--step--1); color: var(--ink-soft); line-height: 1.5; }
+  @media (max-width: 860px) {
+    .text-index__grid { grid-template-columns: 1fr; }
+    .text-index__side { position: static; }
+  }
+</style>
