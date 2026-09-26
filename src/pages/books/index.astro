@@ -10,6 +10,10 @@ const { works, authors, programs } = await loadCatalog();
 const sorted = await sortedByAssignment(works);
 const rows = await Promise.all(sorted.map(catalogRecord));
 const guided = await guidedCount();
+/* Cards laid out before the island starts revealing more. Sixty is four to six shelves at
+   every width, which is further than the first screen reaches and less than a tenth of
+   the layout work. The island uses the same number: see PAGE in Browse.tsx. */
+const PAGE = 60;
 const [themes, genres, eras, regions, languages] = await Promise.all([
   getCollection('themes'), getCollection('genres'), getCollection('eras'), getCollection('regions'), getCollection('languages'),
 ]);
@@ -30,13 +34,24 @@ const facets = {
     <p class="browse-head__lede">Every work on the nine lists, {guided} of them with a written reading guide so far. Filter by what you are studying, or search inside every summary.</p>
   </section>
   <section class="wrap browse" data-pagefind-ignore>
-    <Browse client:load rows={rows} facets={facets} total={works.length} />
+    <Browse client:idle rows={rows} facets={facets} total={works.length} />
     <div class="browse__results">
       <a class="browse__skip" href="#browse-end">Skip the {works.length} results</a>
+      {/*
+        The whole shelf is in the document, so search indexes it, crawlers see it and the
+        filters have every card to work with. Only the first sixty are laid out at first:
+        laying out 689 cards, each a subgrid holding a 3D book, was two and a half seconds
+        of style and layout on a phone before a single filter could be touched. The island
+        lets the rest in a shelf at a time as the reader nears the bottom.
+      */}
       <div class="shelf-grid browse__grid" id="browse-grid">
-        {sorted.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} eager={i < 6} index={Math.min(i, 12)} />)}
+        {sorted.map((w, i) => <BookCard work={w} authorName={(authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id)).data.name} width={140} eager={i < 6} index={Math.min(i, 12)} later={i >= PAGE} />)}
       </div>
+      <noscript><style>{`.browse__grid .card[data-later][hidden] { display: grid; }`}</style></noscript>
       <p class="browse__empty" id="browse-empty" hidden>No book on the shelf answers to all of that at once. Loosen a filter above, or try a different word.</p>
+      <p class="browse__more" id="browse-more" hidden>
+        <button type="button" class="btn" id="browse-more-btn">Show more books</button>
+      </p>
       <div id="browse-end" tabindex="-1"></div>
     </div>
   </section>
@@ -57,6 +72,10 @@ const facets = {
   .browse__skip { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; font-family: var(--font-ui); font-size: var(--step--2); }
   .browse__skip:focus { position: static; width: auto; height: auto; clip-path: none; display: inline-block; margin-bottom: var(--s1); color: var(--accent); }
   #browse-end:focus { outline: none; }
+  /* The button is the keyboard's and the fallback's way to the next shelf; a pointer
+     usually never sees it because the sentinel above it has already let the shelf in. */
+  .browse__more { display: flex; justify-content: center; padding-block: var(--s3) var(--s1); }
+  .browse__more[hidden] { display: none; }
   /* On a phone: search first, then the count and sort, then filters, then the shelf. */
   @media (max-width: 860px) { .browse { grid-template-columns: 1fr; grid-template-areas: 'search' 'bar' 'rail' 'results'; } }
 </style>
