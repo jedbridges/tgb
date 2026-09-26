@@ -15,6 +15,8 @@
     "covers": "tsx scripts/fetch-covers.ts",
     "seed": "tsx scripts/seed-work.ts",
     "smoke": "tsx scripts/smoke-dist.ts",
+    "corpus": "tsx scripts/export-corpus.ts",
+    "texts": "tsx scripts/fetch-texts.ts",
     "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {

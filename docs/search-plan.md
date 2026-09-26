@@ -33,7 +33,7 @@ Update this section at the end of every session.
 | 2b Passage index | Text pages index as Passage with a work filter; second index deferred until the volume is known | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 2c Text pages, search inside, guide highlights beside the contents | Built on a fixture, to be reviewed on real text | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 2d SEO for text pages | noindex and out of the sitemap until a section carries commentary; theme passage pages and Quotation markup shipped in [#41](https://github.com/jedbridges/tgb/pull/41) | [#40](https://github.com/jedbridges/tgb/pull/40) |
-| 3a Cloudflare AI Search over R2 | Not started | |
+| 3a Cloudflare AI Search over R2 | Corpus export ready: `npm run corpus` writes 1,096 documents, 1.23M words, with url and kind headers for citations; bucket and AI Search instance not yet created | [#41](https://github.com/jedbridges/tgb/pull/41) |
 | 3b Ask tab and cited answers | Not started | |
 | 3c SEO: reviewed question pages | Not started | |
 
