@@ -1,198 +1,231 @@
 # Search plan: from book index to study tool
 
-Three phases, each shippable on its own, each built on the one before. The rule that
-shaped this document: nothing in Phase 1 is thrown away or rewritten in Phase 2 or 3.
-The overlap table at the end lists every place a later phase touches Phase 1 work and
-says how the Phase 1 version is built so it survives.
+This is the living plan for search. It spans several sessions. Every session starts by
+reading the **Status** section, does the next unchecked item, and ends by updating it
+with the PR link. Nothing else in the repository tracks this work.
 
-## Where search stands today
+Two rules shape every phase:
 
-- Pagefind (via `astro-pagefind`) indexes book, author, program, about, privacy and
-  disclosure pages. Theme, era and genre pages are not indexed.
-- Book pages index the guide body, synopsis, key themes, highlights, plus a hidden span
-  of aliases, keywords and original title at weight 0.4. The 3D book's cover text is
-  also indexed by accident (the stage has no `data-pagefind-ignore`).
-- The facts block (era, form, language, length, difficulty) is excluded from the index,
-  so "hard", "epic", "Greek tragedy" and "medieval" do not match on those fields.
+1. **Nothing built in an earlier phase is thrown away or rewritten later.** The overlap
+   map near the end lists every place a later phase touches earlier work and how the
+   earlier version is built so it survives.
+2. **Every search feature has a crawlable twin.** Search itself runs in the browser, so
+   Google never sees a result list. Organic traffic comes from static pages that answer
+   the same questions people type into the box. Each phase names the pages it adds to
+   the sitemap and the internal links that point at them.
+
+## Status
+
+Update this section at the end of every session.
+
+| Item | State | PR |
+|---|---|---|
+| Plan written, options reviewed | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
+| 1a Index the right things | In progress | |
+| 1b Alias fill on 85 works and authors | Not started | |
+| 1c Shared search module | In progress | |
+| 1d Palette result design | In progress | |
+| 1e Browse uses the shared module and filters | In progress | |
+| 1f Analytics groups | In progress | |
+| 1g SEO: search landing pages and sitelinks | Not started | |
+| 2a Texts collection and fetch script | Blocked on network allow list | |
+| 2b Passage index | Not started | |
+| 2c Passage result design and text pages | Not started | |
+| 2d SEO for text pages | Not started | |
+| 3a Cloudflare AI Search over R2 | Not started | |
+| 3b Ask tab and cited answers | Not started | |
+| 3c SEO: reviewed question pages | Not started | |
+
+Environment asks still open: allow `standardebooks.org` and `gutenberg.org` for Phase 2;
+allow `openlibrary.org`, `covers.openlibrary.org`, `archive.org` and store
+`GOOGLE_BOOKS_API_KEY` for the covers job that predates this plan.
+
+## Where search stood at the start
+
+- Pagefind (via `astro-pagefind`) indexed book, author, program, about, privacy and
+  disclosure pages. Theme, era and genre pages were not indexed.
+- Book pages indexed the guide body, synopsis, key themes, highlights, plus a hidden span
+  of aliases, keywords and original title at weight 0.4. The 3D book's cover text was
+  also indexed by accident (the stage had no `data-pagefind-ignore`).
+- The facts block (era, form, language, length, difficulty) was excluded from the index,
+  so "hard", "epic", "Greek tragedy" and "medieval" did not match on those fields.
 - Metadata per hit: `type`, `author`, `slug`, `cover`, `tone`, `title`. No filters
   beyond `type`.
-- Two consumers, two loaders: `SearchPalette.astro` (8 hits, 18-word excerpts, flat
-  list) and `Browse.tsx` (200 hits used only to order and hide cards). Each imports
-  `/pagefind/pagefind.js` on its own.
-- The `aliases` field is filled on 604 of 689 works, empty on 56, missing on 29.
+- Two consumers, two loaders: `SearchPalette.astro` (8 hits, 18 word excerpts, flat
+  list) and `Browse.tsx` (200 hits used only to order and hide cards).
+- `aliases` filled on 604 of 689 works, empty on 56, missing on 29.
 - Analytics: one `search_used` event per session carrying only the query length.
+- SEO: WebSite JSON-LD with a SearchAction pointing at `/books/?q=` already existed.
+  Theme, era and genre pages existed but were a card grid with a one line description.
 
-## Phase 1: quick wins (one PR, one to two days)
+## Phase 1: quick wins
 
-Everything here is Pagefind config, metadata and result rendering. No new
-infrastructure, no per-query cost.
+Pagefind config, metadata, result rendering, and the crawlable pages that mirror what
+search can answer. No new infrastructure, no per query cost.
 
 ### 1a. Index the right things
 
 | Change | File | Why |
 |---|---|---|
-| Add `data-pagefind-ignore` to `.work__stage` | `src/pages/books/[slug].astro` | Cover and spine text pollute excerpts |
-| Emit `data-pagefind-filter` for `era`, `genre`, `language`, `length`, `difficulty`, `program`, `theme` | same | Structured queries and grouped results |
-| Emit `data-pagefind-meta` for `year`, `difficulty`, `length`, `pages`, `era`, `genre`, `themes` (comma list), `guide` (yes/no), `lists` (count) | same | Hits can show the answer without a click |
-| Hidden span of era, genre, length and difficulty *words* (for example "hard", "epic", "Greek") at weight 0.6 | same | Word search matches the facts, not just the filter |
-| Add `data-pagefind-body`, type meta and filter to theme, era and genre pages | `src/pages/themes/[slug].astro`, `eras/`, `genres/` | Concept queries should land on the theme page |
-| Give `h1` title `data-pagefind-weight="10"` and author line weight 7 | book and author pages | Title and author outrank body mentions |
-| Raise alias span to weight 1 and split keywords (weight 0.6) from aliases (weight 3) | `src/pages/books/[slug].astro` | "Iliad" finds the Iliad first |
-| Segment labels and program short names in a hidden span on each book page | same | "sophomore", "St. John's" match books |
+| `data-pagefind-ignore` on `.work__stage` | `src/pages/books/[slug].astro` | Cover and spine text polluted excerpts |
+| `data-pagefind-filter` for `era`, `genre`, `language`, `length`, `difficulty`, `program`, `theme`, `guide` | same | Structured queries and grouped results |
+| `data-pagefind-meta` for `year`, `difficulty`, `length`, `pages`, `era`, `genre`, `themes`, `guide`, `lists` | same | Hits show the answer without a click |
+| Hidden span of the facts as words ("Demanding", "Epic", "Greek", "Ancient") at weight 0.6 | same | Word search matches the facts |
+| Hidden span of program short names and segment labels at weight 0.6 | same | "sophomore" and "St. John's" match books |
+| Title weight 10, author line weight 7 | book and author pages | Title and author outrank body mentions |
+| Aliases and original title at weight 3, keywords at 0.6 | `src/pages/books/[slug].astro` | "Iliad" finds the Iliad first |
+| `data-pagefind-body`, type meta and filter on theme, era and genre pages | `src/components/TaxonomyPage.astro` | Concept queries land on the theme page |
 
 ### 1b. Content fill
 
-- Fill `aliases` on the 85 works that have none or an empty list. Same pipeline as the
-  guides. Include translated titles, common short forms and transliterations.
-- Add a short `aliases` list to authors missing one (Latin names, anglicised names).
-- Run `npm run validate:content` after; extend it to warn on an empty aliases list.
+- Fill `aliases` on the 85 works that have none or an empty list: translated titles,
+  common short forms, transliterations.
+- Add `aliases` to authors missing one (Latin names, anglicised names).
+- Extend `npm run validate:content` to warn on an empty aliases list.
 
 ### 1c. One search module, two consumers
 
-Create `src/lib/search.ts`, a plain TypeScript module with no framework dependency:
+`src/lib/search.ts`, plain TypeScript, no framework dependency:
 
 ```ts
-export type Hit = { url; title; type; author?; excerpt; meta: Record<string,string>; filters? };
-export async function loadSearch(): Promise<Engine | null>   // single cached import, options set once
-export async function search(q: string, opts?: { filters?; limit?; excerptLength? }): Promise<Hit[]>
-export function groupHits(hits: Hit[]): { books: Hit[]; authors: Hit[]; themes: Hit[]; programs: Hit[]; pages: Hit[] }
-export function suggestFor(q: string, authors: string[], themes: string[]): string[]   // empty-state help
+export type Hit = { url; title; type; author?; excerpt; meta: Record<string,string> };
+export async function loadSearch(): Promise<Engine | null>   // one cached import, options set once
+export async function search(q, opts?: { filters?; limit?; scope? }): Promise<Hit[]>
+export function groupHits(hits): Record<Group, Hit[]>
+export function suggestFor(q, names): string[]              // empty state help
+export function facetsToFilters(state): Filters             // Browse facet state to Pagefind filters
 ```
 
-Both `SearchPalette.astro` and `Browse.tsx` import it. This is the single most important
-overlap guard: every later phase adds a *second backend* behind the same `search()`
-signature rather than editing either consumer again.
+Both `SearchPalette.astro` and `Browse.tsx` import it. Every later phase adds a second
+backend behind the same `search()` rather than editing either consumer again.
 
 ### 1d. Result design in the palette
 
-- Excerpt length 32 words, matched terms bolded via Pagefind's `<mark>`.
-- Results grouped with small caps headers: Books, Authors, Themes, Programs, Pages.
-  Books capped at 6, others at 3, keyboard order follows the DOM.
-- Each book hit shows cover, title, author and year, then a facts line: difficulty as
-  dots, length word, one or two theme chips, "guide" badge when one exists.
-- Empty state lists up to three nearest author names (prefix and fuzzy match on the
-  author list shipped inline, it is 8KB) and links to the themes index.
+- Excerpts of 32 words with matched terms marked.
+- Results grouped under small caps headers: Books, Authors, Themes, Programs, Pages.
+  Books capped at 6, the others at 3. Keyboard order follows the DOM.
+- Each book hit shows cover, title, author and year, then a facts line: difficulty word,
+  length word, one or two theme chips, a "guide" mark when one exists. Chips are links
+  to the theme pages, which is an internal link crawlers can also follow from the theme
+  page grid.
+- Empty state offers up to three nearest author names (prefix and fuzzy match on the
+  author list shipped inline) and links to the themes index.
 - Hint row rotates through query types: a concept, an author, a program year, a
-  difficulty phrase, so the palette teaches what it can answer.
-- `Enter` on an empty selection with a query goes to `/books/?q=…`, which the Browse
-  island already reads.
+  difficulty phrase.
+- `Enter` with no selection goes to `/books/?q=…`.
 
 ### 1e. Browse page
 
-- Browse's text search calls the shared `search()` with `filters` derived from the active
-  facet state, so the Pagefind filters and the facet filters agree.
-- Query typed in the palette and sent to `/books/?q=` shows the same ranking.
+- Browse's text search calls the shared `search()` with filters derived from the facet
+  state so the two filter systems agree.
 
 ### 1f. Measure
 
-- Extend the `search_used` event with the group the user clicked (book, author, theme,
-  program, none) and whether the result was in the top three. Still no query text.
-- Add a `search_empty` event with the query length only.
+- `search_used` gains a `group` field (book, author, theme, program, page, none) and
+  `top3` (whether the click was in the first three). Still no query text.
+- `search_empty` with query length only.
 
-Ships when: `npm run build` passes, Pagefind index size noted in the PR, a Playwright
-script in the scratchpad checks ten sample queries return the expected first hit.
+### 1g. SEO for Phase 1
 
-## Phase 2: the text layer (two to three PRs)
+The palette is invisible to crawlers. These pages are its crawlable twin.
 
-Goal: "find the passage" works on the roughly 400 works whose originals or older
-translations are public domain.
+- **Theme, era and genre pages become real pages.** Each gets a 150 to 300 word
+  introduction that names the works and the questions they share, a "start here" pick,
+  and a "read together" pairing. Titles stay "Great books about justice". These are the
+  landing pages for the concept queries, which are the most searched kind.
+- **Difficulty and length pages.** `/books/approachable/`, `/books/short/` and so on,
+  static, with an introduction and the card grid, in the sitemap. They answer "easy
+  great books", "short classics" and "hardest books on the list", which are real search
+  queries with no good answer today.
+- **Program year pages already exist** as segment anchors. Give each segment a short
+  description so "St. John's sophomore reading list" matches a heading with text under
+  it, and add ItemList JSON-LD per segment.
+- **Sitelinks search box.** The WebSite SearchAction already points at `/books/?q=`.
+  Add `<link rel="canonical">` on `/books/` so query URLs collapse to it.
+- **Internal links from search hits.** Theme chips and the facts line in each hit link
+  to the pages above. That is user value, not crawl value, but it puts the landing pages
+  one click from every search.
+- Sitemap: add the new difficulty and length pages, keep theme, era and genre pages.
+
+## Phase 2: the text layer
+
+"Find the passage" on the roughly 400 works whose originals or older translations are
+public domain.
 
 ### 2a. Texts as a content collection
 
-- New collection `texts` with one entry per work that has a public domain source:
-  `work` (slug), `source` (Standard Ebooks or Gutenberg URL), `translator`, `year`,
-  `licence`, and the text split into `sections` with a stable id, heading and body.
-- A fetch script `scripts/fetch-texts.ts` mirrors the source, normalises to Markdown,
-  splits by the source's own headings (book, canto, act and scene, chapter). Cached
-  under `.cache/texts/`. This needs `standardebooks.org` and `gutenberg.org` allowed
-  in the environment network settings.
-- Pages at `/books/{slug}/text/{section}/` rendered from the collection, with the
-  work's guide linked in the side rail. Not in the sitemap until the design is reviewed.
+- New collection `texts`: `work`, `source`, `translator`, `year`, `licence`, and
+  `sections` with a stable id, heading and body.
+- `scripts/fetch-texts.ts` mirrors Standard Ebooks and Gutenberg, normalises to
+  Markdown, splits on the source's own headings. Cached under `.cache/texts/`. Needs
+  `standardebooks.org` and `gutenberg.org` allowed in the environment.
 
-### 2b. Index the texts
+### 2b. Passage index
 
-- Text pages carry `data-pagefind-body`, `data-pagefind-filter="type:Passage"`, and
-  meta `work`, `section`, `heading`, `translator`.
-- The index will grow a lot. Pagefind supports multiple indexes: build the passages
-  into a second index at `/pagefind-text/` so the palette's first open still loads
-  only the 9MB guide index. The shared `search()` module gains a `scope: 'guides' |
-  'text' | 'all'` option and merges the two result sets.
-- Palette gets a sixth group, Passages, shown only when the query matches nothing in
-  Books or Themes, or when the user toggles "in the text". Book pages get a
-  "Search inside" box scoped to that work via the `work` filter.
+- Text pages carry `data-pagefind-body`, filter `type:Passage`, and meta `work`,
+  `section`, `heading`, `translator`.
+- Built as a second Pagefind index at `/pagefind-text/` so the palette's first open
+  still loads only the guide index. The shared `search()` gains `scope: 'guides' |
+  'text' | 'all'` and merges result sets.
+- Palette adds a Passages group, shown when the query finds nothing in Books or Themes
+  or when the user toggles "in the text". Book pages get a "Search inside" box scoped
+  by the `work` filter.
 
-### 2c. Result design for passages
+### 2c. Passage result design and text pages
 
-Reuses the Phase 1 hit component. A passage hit shows: work title and author in the
-type line, the heading (Book 9, Act 3 Scene 1), the excerpt at 40 words, and a
-"Read in context" link to the section page with the match highlighted by
-`:target-text` where supported.
+- Reuses the Phase 1 hit renderer. A passage hit shows work and author on the type
+  line, the heading (Book 9, Act 3 Scene 1), a 40 word excerpt, and "Read in context".
+- Text pages at `/books/{slug}/text/{section}/` with the guide's highlights and notes
+  for that section shown beside the text, and the guide linked in the rail.
 
-## Phase 3: answers (one PR plus a Worker)
+### 2d. SEO for text pages
 
-### 3a. Embeddings, one time
+Thin duplicate pages of Gutenberg text can hurt the whole site, so the text layer is
+indexed carefully rather than wholesale.
 
-- Chunk guide text and passage sections at about 300 words with 40 overlap. Embed with
-  Voyage AI (`voyage-3.5-lite` or current equivalent), one batch job, under a dollar.
-- Store as a static `embeddings.bin` plus `chunks.json` under `/ask/`. Lazy loaded only
-  when the user opens the Ask mode. Cosine search in a Web Worker.
-- Query embedding needs an API call, so this runs through the same Cloudflare Worker
-  as 3b, or a minimal `/api/embed` route on it.
+- **Indexed:** section pages that carry site commentary (a highlight, a note, a key
+  theme entry that cites the section). These are unique pages: the passage plus what it
+  means plus where it sits on the reading lists.
+- **noindex, follow:** section pages with bare text and no commentary. They still serve
+  readers and pass links. Each one joins the index by itself when a note is added.
+- **Canonical and attribution:** every text page names the source edition and links to
+  it, which is what the licences ask and what keeps the pages honest.
+- **Quote pages.** The highlights already in the guides become the seed for
+  "famous passages from the Republic" pages, one per work with three or more highlights,
+  with the text, the location, the translator, and a short note. These rank for
+  quote queries, which are a large share of student searches.
+- Sitemap: indexed section pages and quote pages only.
 
-### 3b. Cited answers
+## Phase 3: answers
 
-- Cloudflare Worker at `/api/ask`: rate limited by IP, takes `{ question, scope }`,
-  retrieves the top 8 chunks, calls Claude with a cached system prompt that requires
-  citations to chunk ids, streams the answer back.
-- Model: `claude-sonnet-5` by default, about a cent a question with caching. Switch
-  to `claude-opus-5` for the comparative theme questions if quality is not there.
-- Palette gets an "Ask" tab. Answers render as prose with inline superscript links to
-  the book page or passage page, and the source hits listed beneath using the Phase 1
-  hit component.
+### 3a. Cloudflare AI Search over R2
 
-### 3c. Guard rails
+- Sync the guide Markdown, theme pages and indexed passage sections to an R2 bucket at
+  build time. Cloudflare AI Search (formerly AutoRAG) chunks, embeds and re-indexes.
+  The vector store's free tier (5M stored, 30M queried dimensions a month, to be
+  confirmed on the pricing page) covers this corpus.
+- Route the answer model through AI Gateway to Claude (`claude-sonnet-5` by default,
+  `claude-opus-5` if comparative questions need it).
+- Fallback if chunking or citations are not good enough: a one time Voyage AI
+  embedding job into a static file and a small Worker, as originally planned.
 
-- Only site text and public domain passages are in the retrieval set. The prompt says
-  so and the UI says so.
-- Log the question length, the scope and whether any citation was clicked. No question
-  text.
+### 3b. Ask tab
 
-## Overlap map: what each later phase touches, and how Phase 1 avoids rework
+- Palette gets an Ask tab. Answers render as prose with superscript links to the book
+  or passage page, and the source hits listed beneath through the Phase 1 renderer.
+- Only site text and public domain passages are in the retrieval set, and the UI says
+  so.
+- Log question length, scope and whether a citation was clicked. No question text.
 
-| Phase 1 work | Touched again in | How Phase 1 is built so it survives |
-|---|---|---|
-| `src/lib/search.ts` | 2b, 3a, 3b | Phase 1 defines the `Hit` type and the `search()` signature with `filters`, `scope` reserved as an optional field from day one. Phase 2 adds the text index behind it, Phase 3 adds a `mode: 'ask'` branch. Consumers never change again. |
-| Hit rendering in the palette | 2c, 3b | Phase 1 renders a hit from the `Hit` type through one function, `renderHit(hit)`, with the type line, facts line and excerpt driven by `meta`. Passage hits and answer sources are just hits with different meta. |
-| Result groups | 2b, 3b | `groupHits()` groups by `type` meta generically. Adding "Passage" is a new key and a header string, not a rewrite. |
-| Book page metadata and filters | 2a | Text pages emit the *same* `work` slug meta the book page emits, so scoped "search inside" needs no new key. |
-| Pagefind options | 2b | Phase 1 sets options in one place (the shared loader). The second index is a second `loadSearch(index)` call, not a second options block. |
-| Alias fill | 2a, 3a | Aliases live in front matter. The fetch script matches Standard Ebooks titles against `aliases` and `originalTitle`, so filling them now makes Phase 2 matching better, not redundant. |
-| Analytics events | 2, 3 | Event names are `search_used`, `search_empty` and a `group` field. Passages and Ask are new `group` values, not new events. |
-| Browse filter to Pagefind filter mapping | 2b | Written as a pure function `facetsToFilters(state)` in `search.ts`, reused by the passage scope. |
-| Theme pages indexed | 3b | Theme pages become the best retrieval chunks for concept questions. Indexing them now and writing them well pays twice. |
+### 3c. SEO for answers
 
-Things Phase 1 deliberately does **not** do, because Phase 2 or 3 would undo them:
+Generated answers are never published automatically. Instead:
 
-- No fuzzy or stemming layer bolted onto Pagefind results in the palette. Phase 3's
-  embeddings solve that properly. Phase 1 handles typos only in the empty-state author
-  suggestions.
-- No separate search page. The palette plus `/books/?q=` cover it, and a full page
-  would be rebuilt when Ask arrives.
-- No caching of Pagefind results in `localStorage`. The second index in Phase 2 would
-  invalidate it.
-- No client-side synonym table. Synonyms go into `aliases` front matter, which every
-  phase reads.
-
-## Order of work
-
-1. Phase 1a and 1c together (index changes and the shared module), since the palette
-   cannot show facts until the meta exists. One PR.
-2. Phase 1b content fill and 1d, 1e, 1f in the same PR or a second one the same day.
-3. Environment: allow `standardebooks.org` and `gutenberg.org`, then Phase 2a fetch
-   script and collection. PR with texts for a first batch of about 40 works so the
-   design can be reviewed on real pages.
-4. Phase 2b and 2c, then the remaining texts in batches of 100 so PR size stays sane.
-5. Phase 3 once search analytics show what people ask. Worker, embeddings job, Ask tab.
+- Search analytics show which question shapes recur. The top ones are written up as
+  reviewed question pages ("Which Plato dialogue should I read first?") with FAQPage
+  JSON-LD, links to the works, and the Ask box embedded for follow ups.
+- These pages are the crawlable twin of the Ask tab and the place organic traffic lands
+  before discovering the tool.
 
 ## Off the shelf options considered
 
@@ -203,22 +236,48 @@ signing up.
 | Option | Cost | What it gives | Verdict |
 |---|---|---|---|
 | Pagefind (current) | Free, static | Sharded index, filters, weights, metadata, no server | Keep. Nothing else does static keyword search this well at 689 pages plus texts. |
-| Orama (open source) | Free, static | In browser hybrid keyword plus vector search, TypeScript | Whole index downloads before the first search; too heavy for the guide corpus. Its vector search is worth borrowing for Phase 3's in browser cosine step. |
-| Orama Cloud | Free tier, paid above | Hosted index, crawler, embeddable box with AI answers | Fastest path to a working "Ask" demo. Vendor lock, styling limits, and the answer model is theirs. Good for a weekend proof, not the shipped version. |
-| Cloudflare AI Search (was AutoRAG) | Free tier on Vectorize (5M stored, 30M queried dimensions per month), Workers AI usage billed | Managed chunking, embedding, retrieval and answers over an R2 bucket, already on the deploy platform | Best fit for Phase 3. Replaces the custom embedding job and most of the Worker. Answer model can be routed through AI Gateway to Claude. |
-| Meilisearch, Typesense | Free self hosted, cloud from about $30 a month | Server side hybrid search, typo tolerance, facets | Needs a server the site does not have. Not worth it for a static site of this size. |
+| Orama (open source) | Free, static | In browser hybrid keyword plus vector search | Whole index downloads before the first search; too heavy here. |
+| Orama Cloud | Free tier, paid above | Hosted index, crawler, embeddable box with AI answers | Fastest path to an Ask demo. Vendor lock, styling limits, their model. Proof of concept only. |
+| Cloudflare AI Search | Free tier on Vectorize, Workers AI billed | Managed chunking, embedding, retrieval and answers over R2, on the deploy platform | Best fit for Phase 3. |
+| Meilisearch, Typesense | Free self hosted, cloud from about $30 a month | Server side hybrid search | Needs a server. Not for a static site this size. |
 | Algolia DocSearch | Free for open source docs only | Hosted search | Not eligible. |
-| MiniSearch, FlexSearch, Fuse | Free, static | Small in memory indexes | Same download problem as Orama; fine for the author name suggestions in the empty state, which is how Phase 1 uses one. |
+| MiniSearch, FlexSearch, Fuse | Free, static | Small in memory indexes | Right size for the author suggestions in the empty state. |
 
-Effect on the phases: Phase 1 unchanged. Phase 2 unchanged. Phase 3 defaults to
-Cloudflare AI Search over an R2 bucket of the guide and passage Markdown, with the
-answer model routed to Claude through AI Gateway, and the custom embeddings job
-becomes the fallback if AI Search's chunking or citations are not good enough.
+## Overlap map
+
+| Earlier work | Touched again in | How it is built so it survives |
+|---|---|---|
+| `src/lib/search.ts` | 2b, 3a, 3b | `Hit`, `search()` with `filters` and an optional `scope` from day one. Phase 2 adds the text index behind it, Phase 3 an ask mode. Consumers never change again. |
+| Hit rendering in the palette | 2c, 3b | One `renderHit(hit)` driven by `meta`. Passage hits and answer sources are hits with different meta. |
+| Result groups | 2b, 3b | `groupHits()` keys on `type`. Passage is a new key and a header string. |
+| Book page metadata and filters | 2a, 2d | Text pages emit the same `work` slug meta the book page emits. |
+| Pagefind options | 2b | Set once in the shared loader. The second index is a second `load(index)` call. |
+| Alias fill | 2a | Aliases live in front matter. The fetch script matches editions against `aliases` and `originalTitle`. |
+| Analytics events | 2, 3 | `search_used` with a `group` field. Passage and Ask are new values. |
+| `facetsToFilters()` | 2b | Pure function, reused by the passage scope. |
+| Theme, era, genre pages written up (1g) | 3a, 3c | They become the best retrieval chunks for concept questions and the parents of the question pages. |
+| Difficulty and length pages (1g) | 2d, 3c | Quote pages and question pages link into them; they never move. |
+| Highlights in guides | 2c, 2d | Quote pages and section commentary are rendered from the same front matter, never copied. |
+
+Phase 1 deliberately does **not** do these, because a later phase would undo them:
+
+- No fuzzy or stemming layer bolted onto Pagefind results. Phase 3 solves that properly.
+  Phase 1 handles typos only in the empty state author suggestions.
+- No separate search page. The palette plus `/books/?q=` cover it.
+- No caching of Pagefind results in `localStorage`. The second index would invalidate it.
+- No client side synonym table. Synonyms go into `aliases` front matter.
+- No generated answer pages. Question pages are written and reviewed (3c).
+
+## Order of work
+
+1. 1a, 1c, 1d, 1e, 1f in one PR. Then 1b and 1g, one PR each.
+2. Environment: allow the two text hosts. 2a with a first batch of about 40 works so
+   the page design can be reviewed on real text. Then 2b, 2c, 2d, and the rest of the
+   texts in batches of 100.
+3. Phase 3 once analytics show what people ask.
 
 ## Open decisions for the owner
 
 - Which translations to mirror where more than one is public domain (for example
   Butler versus Lang for Homer). Default: Standard Ebooks' choice.
-- Whether text pages should be indexed by Google. Default: no until they are reviewed,
-  since thin duplicate pages of Gutenberg text can hurt the site's ranking.
-- Phase 3 model and monthly cap on the Worker.
+- Phase 3 model and a monthly cap on the Worker.
