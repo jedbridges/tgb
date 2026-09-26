@@ -1,0 +1,91 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import { placeholderAuthor, loadCatalog, sortedByAssignment, yearShort } from '~/lib/catalog';
+import { url, workUrl, authorUrl, taxUrl } from '~/lib/url';
+import { abs } from '~/lib/url';
+import { breadcrumbs } from '~/lib/seo';
+
+/*
+ * The marked passages of a theme, gathered from the guides of the works on that shelf.
+ * A student searching for "quotes about justice" or "what Plato says about death" lands
+ * here, reads the lines in the translators' words, and is one click from the book. Each
+ * passage links to its anchor on the guide, where the note and the buy links are, so the
+ * page is a way in and not a substitute.
+ */
+export async function getStaticPaths() {
+  return (await getCollection('themes')).map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { works, authors } = await loadCatalog();
+const onShelf = await sortedByAssignment(works.filter((w) => w.data.themes.some((t) => t.id === entry.id)));
+/* Two passages from each of the most assigned works keeps the page under a few hundred
+   lines and every voice on the shelf represented rather than the loudest five. */
+const PER_WORK = 2, WORKS = 80;
+const rows = onShelf
+  .filter((w) => w.data.highlights.length > 0)
+  .slice(0, WORKS)
+  .map((w) => ({
+    work: w,
+    author: authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id),
+    passages: w.data.highlights.slice(0, PER_WORK).map((h, i) => ({ ...h, n: i + 1 })),
+  }));
+const count = rows.reduce((n, r) => n + r.passages.length, 0);
+const label = entry.data.label;
+const lower = label.toLowerCase();
+const itemList = {
+  '@context': 'https://schema.org', '@type': 'ItemList', name: `Passages about ${lower} from the great books`, numberOfItems: count,
+  itemListElement: rows.flatMap((r) => r.passages.map((p) => ({ '@type': 'ListItem', position: 0, url: `${abs(workUrl(r.work.id))}#passage-${p.n}`, name: `${r.work.data.title}, ${p.location ?? 'passage'}` }))).map((it, i) => ({ ...it, position: i + 1 })),
+};
+---
+<Base title={`Passages about ${lower} from the great books`} description={`${count} passages on ${lower} from ${rows.length} works on the great college reading lists, in the translators' words, each linked to its reading guide.`}
+  jsonld={[itemList, breadcrumbs([{ name: 'Books', path: '/books/' }, { name: label, path: taxUrl('themes', entry.id) }, { name: 'Passages', path: `/themes/${entry.id}/passages/` }])]}>
+  <article class="wrap quotes" data-pagefind-ignore>
+    <header class="quotes__head page-open">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol><li><a href={url('/')}>The Great Books</a></li><li><a href={url('/books/')}>All books</a></li><li><a href={taxUrl('themes', entry.id)}>{label}</a></li><li>Passages</li></ol>
+      </nav>
+      <h1 class="italic">Passages about {lower}</h1>
+      <p class="quotes__lede">{entry.data.description} {count} passages from {rows.length} of the works on this shelf, marked in their reading guides, in the order the programs assign them. Each one opens on the guide, where the note on it is.</p>
+      <p class="quotes__back ui"><a href={taxUrl('themes', entry.id)}>← All {onShelf.length} works on {lower}</a></p>
+    </header>
+
+    <ol class="quotes__list">
+      {rows.map((r) => (
+        <li class="qwork">
+          <h2 class="qwork__h"><a href={workUrl(r.work.id)}>{r.work.data.title}</a> <span class="qwork__by">{r.author.data.name} · {yearShort(r.work)}</span></h2>
+          <ol class="qwork__list">
+            {r.passages.map((p) => (
+              <li class="q">
+                <blockquote class="q__text">
+                  <p>{p.text}</p>
+                  <footer class="ui">
+                    <a href={`${workUrl(r.work.id)}#passage-${p.n}`}>{[p.location, p.translator && `trans. ${p.translator}`].filter(Boolean).join(' · ') || 'On the guide'} →</a>
+                  </footer>
+                </blockquote>
+              </li>
+            ))}
+          </ol>
+        </li>
+      ))}
+    </ol>
+  </article>
+</Base>
+<style>
+  .quotes { padding-block: var(--s4) var(--s5); }
+  .quotes__head h1 { font-size: var(--step-4); }
+  .quotes__lede { margin-top: var(--s1); font-size: var(--step-0); color: var(--ink-soft); max-width: 60ch; line-height: var(--lh-prose); }
+  .quotes__back { margin-top: var(--s1); }
+  .quotes__back a { color: var(--accent); text-decoration: none; }
+  .quotes__list { list-style: none; margin: var(--s4) 0 0; padding: 0; display: grid; gap: var(--s4); max-width: var(--measure); }
+  .qwork__h { font-size: var(--step-1); font-style: italic; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3em 0.7em; }
+  .qwork__h a { color: var(--ink-strong); text-decoration: none; }
+  .qwork__h a:hover { color: var(--accent); }
+  .qwork__by { font-family: var(--font-ui); font-style: normal; font-size: var(--step--2); color: var(--ink-mute); letter-spacing: 0.02em; }
+  .qwork__list { list-style: none; margin: var(--s1) 0 0; padding: 0; display: grid; gap: var(--s2); }
+  .q__text { margin: 0; padding-left: var(--s2); border-left: 1px solid var(--accent); font-size: var(--step-0); line-height: var(--lh-tight-prose); font-style: italic; color: var(--ink-strong); hanging-punctuation: first last; }
+  .q__text p { margin: 0; }
+  .q__text footer { margin-top: var(--s0); font-style: normal; font-size: var(--step--2); letter-spacing: 0.04em; }
+  .q__text footer a { color: var(--ink-mute); text-decoration: none; min-height: 24px; display: inline-block; }
+  .q__text footer a:hover { color: var(--accent); }
+</style>

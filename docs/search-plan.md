@@ -32,7 +32,7 @@ Update this section at the end of every session.
 | 2a Texts collection, source map for 51 works, fetch script | Built, unrun: blocked on network allow list | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 2b Passage index | Text pages index as Passage with a work filter; second index deferred until the volume is known | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 2c Text pages, search inside, guide highlights beside the contents | Built on a fixture, to be reviewed on real text | [#40](https://github.com/jedbridges/tgb/pull/40) |
-| 2d SEO for text pages | noindex and out of the sitemap until a section carries commentary | [#40](https://github.com/jedbridges/tgb/pull/40) |
+| 2d SEO for text pages | noindex and out of the sitemap until a section carries commentary; theme passage pages and Quotation markup shipped in [#41](https://github.com/jedbridges/tgb/pull/41) | [#40](https://github.com/jedbridges/tgb/pull/40) |
 | 3a Cloudflare AI Search over R2 | Not started | |
 | 3b Ask tab and cited answers | Not started | |
 | 3c SEO: reviewed question pages | Not started | |

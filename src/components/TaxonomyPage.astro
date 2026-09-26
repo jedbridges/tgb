@@ -51,7 +51,7 @@ const crumbs = breadcrumbs([{ name: 'Books', path: '/books/' }, { name: entry.da
   </nav>
   <h1 class="italic" data-pagefind-meta="title" data-pagefind-weight="10">{entry.data.label}</h1>
   {entry.data.description && <p class="lede">{entry.data.description}</p>}
-  <p class="ui count" data-pagefind-ignore>{list.length} {list.length === 1 ? 'work' : 'works'} · <a href={url('/books/') + `?${param}=${paramValue}`}>Refine in the browser →</a></p>
+  <p class="ui count" data-pagefind-ignore>{list.length} {list.length === 1 ? 'work' : 'works'} · <a href={url('/books/') + `?${param}=${paramValue}`}>Refine in the browser →</a>{kind === 'themes' && <> · <a href={url(`/themes/${entry.id}/passages`)}>Marked passages →</a></>}</p>
 
   {Content && (
     <div class="note">
