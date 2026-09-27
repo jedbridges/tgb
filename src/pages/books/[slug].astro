@@ -106,6 +106,11 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
         {d.subtitle && <p class="work__subtitle" data-pagefind-weight="4">{d.subtitle}</p>}
         <p class="work__by">by <a href={authorUrl(author.id)} data-pagefind-weight="7">{author.data.name}</a>{d.originalTitle && <span class="work__orig"> · <span lang={langCode[d.language.id]}>{d.originalTitle}</span></span>}</p>
         {count > 0 && <p class="work__assigned" data-pagefind-ignore>Assigned by <strong>{count}</strong> of the 9 reading lists{hasGuideHere ? '' : ', catalogue entry only'}</p>}
+        {/* What the book is comes before what to buy: a reader told the story first is
+            the reader who wants the edition, and the edition sits right under the story,
+            still in the first screen on a desktop. The facts follow as reference. */}
+        <p class="work__synopsis" style="--i:3">{d.synopsis}</p>
+        <div id="buy-inline" class="set-hold" data-pagefind-ignore><BuyButtons work={work} authorName={author.data.name} /></div>
         <dl class="work__facts ui" data-pagefind-ignore>
           <div><dt>Written</dt><dd>{yearLabel(work)}</dd></div>
           <div><dt>Era</dt><dd><a href={taxUrl('eras', d.era.id)}>{era?.data.label}</a></dd></div>
@@ -114,8 +119,6 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
           <div><dt>Length</dt><dd>{lengthLabel[d.length]}{d.pages && <span class="work__pages"> · {d.pages} pp</span>}<span class="work__gloss-note">{lengthHint[d.length]}</span></dd></div>
           <div><dt>Difficulty</dt><dd><span class="dots" aria-hidden="true">{[1, 2, 3, 4, 5].map((i) => <i class:list={{ on: i <= d.difficulty }}></i>)}</span> {difficultyLabel(d.difficulty)}<span class="work__gloss-note">{d.difficulty} of 5 for a first-year reader</span></dd></div>
         </dl>
-        <div id="buy-inline" class="set-hold" data-pagefind-ignore><BuyButtons work={work} authorName={author.data.name} /></div>
-        <p class="work__synopsis" style="--i:3">{d.synopsis}</p>
       </div>
       <div class="work__stage" style={tint || undefined} data-pagefind-ignore>
         <FormPattern family={family} id="form-stage" class="work__texture" />
@@ -227,6 +230,9 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
       </span>
       <a class="btn btn--accent buybar__cta" href={amazonUrl({ title: d.recommendedEdition?.title ?? d.title, author: author.data.name, isbn13: d.recommendedEdition?.isbn13, asin: d.recommendedEdition?.asin })}
          target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id}>Buy the book<span class="visually-hidden">&#32;{d.title} on Amazon, opens in a new tab</span></a>
+      <button class="buybar__close" type="button" data-buybar-close aria-label="Hide the buy bar">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 2l10 10M12 2 2 12" stroke-linecap="round"/></svg>
+      </button>
     </div>
 
     {related.length > 0 && (
@@ -370,6 +376,9 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .buybar__ed { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   /* This is the page's action on a phone, so it is sized like one. */
   .buybar__cta { flex: 0 0 auto; min-height: 60px; padding-inline: 1.9em; font-size: var(--step-0); border-radius: 4px; }
+  /* A reader who has decided not to buy should not carry the bar for the rest of the page. */
+  .buybar__close { flex: 0 0 auto; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; color: var(--ink-mute); margin-right: -0.6rem; }
+  .buybar__close:hover { color: var(--ink-strong); background: var(--paper-bright); }
   @media (max-width: 420px) { .buybar__cta { padding-inline: 1.3em; } .buybar__title { font-size: var(--step-0); } }
   @media (max-width: 900px) {
     .buybar:not([hidden]) { display: flex; }
@@ -386,17 +395,26 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   }
 </style>
 <script>
-  // Show the sticky buy bar only once the inline action has scrolled away, so the two never compete.
-  const inline = document.getElementById('buy-inline');
+  // The sticky buy bar arrives once the reader has read the argument for the book, not the
+  // moment the inline buttons scroll away: it follows "Why it's on the list" (or, on a page
+  // without one, the inline buttons) out of the viewport, and a tap on its close keeps it
+  // away for the rest of the visit.
+  const after = document.querySelector<HTMLElement>('.work__why') ?? document.getElementById('buy-inline');
   const bar = document.getElementById('buybar');
-  if (inline && bar) {
+  let dismissed = false;
+  try { dismissed = sessionStorage.getItem('tgb-buybar') === 'off'; } catch { /* private mode */ }
+  if (after && bar && !dismissed) {
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(
-        ([entry]) => { bar.hidden = entry.isIntersecting || entry.boundingClientRect.top > 0; },
+        ([entry]) => { bar.hidden = dismissed || entry.isIntersecting || entry.boundingClientRect.top > 0; },
         { rootMargin: '-72px 0px 0px 0px' },
-      ).observe(inline);
+      ).observe(after);
     } else {
       bar.hidden = false;
     }
+    bar.querySelector('[data-buybar-close]')?.addEventListener('click', () => {
+      dismissed = true; bar.hidden = true;
+      try { sessionStorage.setItem('tgb-buybar', 'off'); } catch { /* private mode */ }
+    });
   }
 </script>
