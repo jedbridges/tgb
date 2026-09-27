@@ -73,7 +73,7 @@
 - { work: plato-phaedrus, source: gutenberg, url: "1636", skip: "^Introduction", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
 - { work: plato-gorgias, source: gutenberg, url: "1672", skip: "^Introduction", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
 - { work: plato-timaeus, source: gutenberg, url: "1572", skip: "^(Introduction|Section)", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
-- { work: aristotle-politics, source: gutenberg, url: "6762", skip: "^(London|Introduction|Bibliography)", edition: "Benjamin Jowett's translation, 1885", translator: Benjamin Jowett }
+- { work: aristotle-politics, source: gutenberg, url: "6762", skip: "(^|/ )(London|Introduction|Bibliography)", edition: "Benjamin Jowett's translation, 1885", translator: Benjamin Jowett }
 - { work: aristotle-poetics, source: gutenberg, url: "1974", edition: "S. H. Butcher's translation, 1902", translator: S. H. Butcher }
 - { work: aristophanes-clouds, source: gutenberg, url: "2562", edition: "The Athenian Society translation, 1912" }
 - { work: aristophanes-birds, source: gutenberg, url: "3013", edition: "The Athenian Society translation, 1912" }
@@ -81,7 +81,7 @@
 - { work: cicero-on-duties, source: gutenberg, url: "47001", skip: "^(Introduction|Bibliography)", edition: "Walter Miller's translation, 1913", translator: Walter Miller }
 - { work: augustine-city-of-god, source: gutenberg, url: "45304", edition: "Marcus Dods's translation, 1871, Books I to X", translator: Marcus Dods }
 - { work: aquinas-summa-theologica, source: gutenberg, url: "17611", edition: "The English Dominican translation, 1911, the First Part", translator: Fathers of the English Dominican Province }
-- { work: chaucer-canterbury-tales, source: gutenberg, url: "2383", match: "Prologue|Tale|Preces", edition: "The Middle English text in D. Laing Purves's edition, 1870" }
+- { work: chaucer-canterbury-tales, source: gutenberg, url: "2383", match: "^(?!.*Legend)(The Prologue|.*Tale|Preces)", edition: "The Middle English text in D. Laing Purves's edition, 1870" }
 - { work: shakespeare-macbeth, source: gutenberg, url: "1533", edition: "The Globe edition text" }
 - { work: descartes-discourse-on-method, source: gutenberg, url: "59", edition: "John Veitch's translation, 1850", translator: John Veitch }
 - { work: harvey-on-the-motion-of-the-heart-and-blood, source: gutenberg, url: "67065", edition: "Robert Willis's translation, 1847", translator: Robert Willis }

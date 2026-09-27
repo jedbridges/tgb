@@ -148,7 +148,7 @@ function splitStandardEbooks(html: string): Section[] {
   return sections;
 }
 
-function splitGutenberg(html: string): Section[] {
+function splitGutenberg(html: string, workTitle = ''): Section[] {
   const root = parseHtml(html, { blockTextElements: { script: false, style: false } });
   const body = root.querySelector('body') ?? root;
   // Drop the licence and boilerplate that Gutenberg wraps around the text.
@@ -156,7 +156,8 @@ function splitGutenberg(html: string): Section[] {
   const sections: Section[] = [];
   let cur: { heading: string; path: string; parts: string[] } | null = null;
   let part = ''; // the nearest h1/h2: "Book One", "Part I", "Inferno"
-  let title = ''; // the file's first heading, the work's title
+  let title = ''; // the file's first heading, the work's title; the guide's title when the file has none
+  const name = () => title || workTitle;
   const flush = () => { if (cur) { const b = tidy(cur.parts.join('')); if (b) sections.push({ heading: cur.heading, body: b, path: cur.path }); } };
   const bare = (t: string) => /^(chapter|canto|book|part|scene|act)?\s*[ivxlc\d]+\.?$/i.test(t) || t.length <= 3;
   const walk = (n: Node) => {
@@ -177,13 +178,13 @@ function splitGutenberg(html: string): Section[] {
       // opens takes the work's title, and the introduction's part ends here.
       if (/^(dramatis person(ae|æ)|persons?( of the (drama|play|dialogue)| represented)?|characters( in the play)?|the persons)\b/i.test(t)) {
         flush();
-        if (/^(introduction|preface|by\b)/i.test(part) || !part) part = title || part;
+        if (/^(introduction|preface|by\b)/i.test(part) || !part) part = name() || part;
         cur = { heading: titleCase(part || t), path: part || t, parts: [`\n\n**${titleCase(t)}**\n\n`] };
         return;
       }
       // A transcriber's note set as a heading heads nothing; the text under it belongs to
       // the section already open, or to the work itself if none is.
-      if (/transliterat|transcriber/i.test(t)) { if (!cur) cur = { heading: titleCase(title || t), path: title || t, parts: [] }; return; }
+      if (/transliterat|transcriber/i.test(t)) { if (!cur) cur = { heading: titleCase(name() || t), path: name() || t, parts: [] }; return; }
       // "Translated by Benjamin Jowett" heads the text itself in the Jowett volumes. It comes
       // twice in a file: once under the title page, once after the introduction, where the
       // dialogue proper begins under its own h2 ("GORGIAS", h3 "By Plato", h3 "Translated
@@ -191,8 +192,8 @@ function splitGutenberg(html: string): Section[] {
       // is only an author line; an appended piece keeps its own name for the source map to skip.
       if (/^translated (by|into)\b/i.test(t)) {
         flush();
-        const name = part && !/^(by\b|contents$)/i.test(part) ? part : title || t;
-        cur = { heading: titleCase(name), path: name, parts: [] };
+        const n = part && !/^(by\b|contents$)/i.test(part) ? part : name() || t;
+        cur = { heading: titleCase(n), path: n, parts: [] };
         return;
       }
       flush();
@@ -203,7 +204,10 @@ function splitGutenberg(html: string): Section[] {
         part = t;
         cur = { heading: titleCase(t), path: t, parts: [] };
       } else {
-        const heading = bare(t) && part && !/^(book|part|canto)\b/i.test(t) ? `${part}, ${t}` : t;
+        // A bare number, a scene, or a tale's own "The Prologue" needs its part: "Act I, Scene II",
+        // "The Miller's Tale, The Prologue".
+        const wantsPart = bare(t) || /^(scene\b|(the )?(prologue|tale|epilogue)$)/i.test(t);
+        const heading = wantsPart && part && !/^(book|part|canto)\b/i.test(t) ? `${part}, ${t}` : t;
         cur = { heading: titleCase(heading), path: part ? `${part} / ${t}` : t, parts: [] };
       }
       return;
@@ -224,7 +228,7 @@ function splitGutenberg(html: string): Section[] {
   flush();
   // A file whose headings the walker could not read still has its text: one section, the
   // whole of it, is better than nothing at all.
-  if (!sections.length) { const b = tidy(textOf(body)); if (b) sections.push({ heading: titleCase(title || 'Text'), body: b, path: title || 'Text' }); }
+  if (!sections.length) { const b = tidy(textOf(body)); if (b) sections.push({ heading: titleCase(name() || 'Text'), body: b, path: name() || 'Text' }); }
   return sections;
 }
 
@@ -258,6 +262,10 @@ function fold(sections: Section[]): Section[] {
     // A section that opens with the contents list is the front matter, whatever its heading.
     if (/^(contents|table of contents)\b/i.test(s.body.trimStart().split('\n')[0].replace(/[*_]/g, ''))) continue;
     if (out.length && words(s.body) < MIN_WORDS) { out[out.length - 1].body += `\n\n**${s.heading}**\n\n${s.body}`; continue; }
+    // The title block's short section (a translator's note, the argument) and the play that
+    // follows carry the same name: one section, not two called "Antigone".
+    const prev = out[out.length - 1];
+    if (prev && prev.heading === s.heading && words(prev.body) < 1000) { prev.body = `${prev.body}\n\n${s.body}`; continue; }
     out.push({ ...s });
   }
   if (out.length && words(out[0].body) < MIN_WORDS && out.length > 1) { out[1].body = `**${out[0].heading}**\n\n${out[0].body}\n\n${out[1].body}`; out.shift(); }
@@ -272,7 +280,8 @@ const slugify = (s: string) => {
 async function run(s: Source) {
   const url = pageUrl(s);
   const html = await fetchCached(url, `${s.work}-${s.source}-${s.url.replace(/[^a-z0-9]+/gi, '-').slice(-40)}`);
-  let raw = s.source === 'standardebooks' ? splitStandardEbooks(html) : splitGutenberg(html);
+  const workTitle = readFileSync(`src/content/works/${s.work}.md`, 'utf8').match(/^title:\s*["']?(.+?)["']?\s*$/m)?.[1] ?? '';
+  let raw = s.source === 'standardebooks' ? splitStandardEbooks(html) : splitGutenberg(html, workTitle);
   if (s.match) {
     const re = new RegExp(s.match, 'i');
     const kept = raw.filter((x) => re.test(x.path));
