@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "lxxxi-the-judiciary-continued-and-the-distribution-of-the-ju"
-heading: "LXXXI The Judiciary Continued, and the Distribution of the Judicial Authority Hamilton: From McClean’s Edition, New York, Wednesday, May 28, 1788."
+heading: "LXXXI: The Judiciary Continued, and the Distribution of the Judicial Authority"
 order: 81
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 3810
+words: 3800
 ---
-The Judiciary Continued, and the Distribution of the Judicial Authority
-
 Hamilton: From *McClean’s Edition*, New York, Wednesday, May 28, 1788.
 
 To the People of the State of New York:

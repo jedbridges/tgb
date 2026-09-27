@@ -86,7 +86,7 @@ Alyosha looked attentively at him. It was the first time he had seen him. There 
 
 “Wait a little, Varvara!” cried her father, speaking peremptorily but looking at her quite approvingly. “That’s her character,” he said, addressing Alyosha again.
 
-> “And in all nature there was naught
+> “And in all nature there was naught  
 > That could find favor in his eyes⁠—
 
 or rather in the feminine: that could find favor in her eyes. But now let me present you to my wife, Arina Petrovna. She is crippled, she is forty-three; she can move, but very little. She is of humble origin. Arina Petrovna, compose your countenance. This is Alexey Fyodorovitch Karamazov. Get up, Alexey Fyodorovitch.” He took him by the hand and with unexpected force pulled him up. “You must stand up to be introduced to a lady. It’s not the Karamazov, mamma, who⁠ ⁠… h’m⁠ ⁠… etcetera, but his brother, radiant with modest virtues. Come, Arina Petrovna, come, mamma, first your hand to be kissed.”

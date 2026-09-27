@@ -32,21 +32,21 @@ For we can explain nothing but that which we can reduce to laws, the object of w
 
 The subjective impossibility of explaining the freedom of the will is identical with the impossibility of discovering and explaining an interest * which man can take in the moral law. Nevertheless he does actually take an interest in it, the basis of which in us we call the moral feeling, which some have falsely assigned as the standard of our moral judgement, whereas it must rather be viewed as the subjective effect that the law exercises on the will, the objective principle of which is furnished by reason alone.
 
-* Interest is that by which reason becomes practical, i.e.,
-a cause determining the will. Hence we say of rational
-beings only that they take an interest in a thing;
-irrational beings only feel sensual appetites. Reason takes
-a direct interest in action then only when the universal
-validity of its maxims is alone sufficient to determine the
-will. Such an interest alone is pure. But if it can
-determine the will only by means of another object of desire
-or on the suggestion of a particular feeling of the subject,
-then reason takes only an indirect interest in the action,
-and, as reason by itself without experience cannot discover
-either objects of the will or a special feeling actuating
-it, this latter interest would only be empirical and not a
-pure rational interest. The logical interest of reason
-(namely, to extend its insight) is never direct, but
+* Interest is that by which reason becomes practical, i.e.,  
+a cause determining the will. Hence we say of rational  
+beings only that they take an interest in a thing;  
+irrational beings only feel sensual appetites. Reason takes  
+a direct interest in action then only when the universal  
+validity of its maxims is alone sufficient to determine the  
+will. Such an interest alone is pure. But if it can  
+determine the will only by means of another object of desire  
+or on the suggestion of a particular feeling of the subject,  
+then reason takes only an indirect interest in the action,  
+and, as reason by itself without experience cannot discover  
+either objects of the will or a special feeling actuating  
+it, this latter interest would only be empirical and not a  
+pure rational interest. The logical interest of reason  
+(namely, to extend its insight) is never direct, but  
 presupposes purposes for which reason is employed.
 
 In order indeed that a rational being who is also affected through the senses should will what reason alone directs such beings that they ought to will, it is no doubt requisite that reason should have a power to infuse a feeling of pleasure or satisfaction in the fulfilment of duty, that is to say, that it should have a causality by which it determines the sensibility according to its own principles. But it is quite impossible to discern, i.e., to make it intelligible a priori, how a mere thought, which itself contains nothing sensible, can itself produce a sensation of pleasure or pain; for this is a particular kind of causality of which as of every other causality we can determine nothing whatever a priori; we must only consult experience about it. But as this cannot supply us with any relation of cause and effect except between two objects of experience, whereas in this case, although indeed the effect produced lies within experience, yet the cause is supposed to be pure reason acting through mere ideas which offer no object to experience, it follows that for us men it is quite impossible to explain how and why the universality of the maxim as a law, that is, morality, interests. This only is certain, that it is not because it interests us that it has validity for us (for that would be heteronomy and dependence of practical reason on sensibility, namely, on a feeling as its principle, in which case it could never give moral laws), but that it interests us because it is valid for us as men, inasmuch as it had its source in our will as intelligences, in other words, in our proper self, and what belongs to mere appearance is necessarily subordinated by reason to the nature of the thing in itself.

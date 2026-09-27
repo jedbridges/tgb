@@ -15,36 +15,36 @@ The Earl of Gloucester’s castle.
 
 Edmund
 
-Thou, nature, art my goddess; to thy law
-My services are bound. Wherefore should I
-Stand in the plague of custom, and permit
-The curiosity of nations to deprive me,
-For that I am some twelve or fourteen moon-shines
-Lag of a brother? Why bastard? wherefore base?
-When my dimensions are as well compact,
-My mind as generous, and my shape as true,
-As honest madam’s issue? Why brand they us
-With base? with baseness? bastardy? base, base?
-Who, in the lusty stealth of nature, take
-More composition and fierce quality
-Than doth, within a dull, stale, tired bed,
-Go to the creating a whole tribe of fops,
-Got ’tween asleep and wake? Well, then,
-Legitimate Edgar, I must have your land:
-Our father’s love is to the bastard Edmund
-As to the legitimate: fine word⁠—legitimate!
-Well, my legitimate, if this letter speed,
-And my invention thrive, Edmund the base
-Shall top the legitimate. I grow; I prosper:
+Thou, nature, art my goddess; to thy law  
+My services are bound. Wherefore should I  
+Stand in the plague of custom, and permit  
+The curiosity of nations to deprive me,  
+For that I am some twelve or fourteen moon-shines  
+Lag of a brother? Why bastard? wherefore base?  
+When my dimensions are as well compact,  
+My mind as generous, and my shape as true,  
+As honest madam’s issue? Why brand they us  
+With base? with baseness? bastardy? base, base?  
+Who, in the lusty stealth of nature, take  
+More composition and fierce quality  
+Than doth, within a dull, stale, tired bed,  
+Go to the creating a whole tribe of fops,  
+Got ’tween asleep and wake? Well, then,  
+Legitimate Edgar, I must have your land:  
+Our father’s love is to the bastard Edmund  
+As to the legitimate: fine word⁠—legitimate!  
+Well, my legitimate, if this letter speed,  
+And my invention thrive, Edmund the base  
+Shall top the legitimate. I grow; I prosper:  
 Now, gods, stand up for bastards!
 
  *Enter Gloucester.*
 
 Gloucester
 
-Kent banish’d thus! and France in choler parted!
-And the king gone to-night! subscribed his power!
-Confined to exhibition! All this done
+Kent banish’d thus! and France in choler parted!  
+And the king gone to-night! subscribed his power!  
+Confined to exhibition! All this done  
 Upon the gad! Edmund, how now! what news?
 
 Edmund

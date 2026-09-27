@@ -38,7 +38,7 @@ words: 3362
 
 “Yes, formally and solemnly betrothed. It was all done on my arrival in Moscow, with great ceremony, with icons, all in fine style. The general’s wife blessed us, and⁠—would you believe it?⁠—congratulated Katya. ‘You’ve made a good choice,’ she said, ‘I see right through him.’ And⁠—would you believe it?⁠—she didn’t like Ivan, and hardly greeted him. I had a lot of talk with Katya in Moscow. I told her about myself⁠—sincerely, honorably. She listened to everything.
 
-> There was sweet confusion,
+> There was sweet confusion,  
 > There were tender words.
 
 Though there were proud words, too. She wrung out of me a mighty promise to reform. I gave my promise, and here⁠—”

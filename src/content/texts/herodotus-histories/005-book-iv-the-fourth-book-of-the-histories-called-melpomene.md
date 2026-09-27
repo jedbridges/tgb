@@ -190,9 +190,9 @@ for it is rightly said that in hot regions the horns come quickly, whereas in ex
 
 88. After this Dareios being pleased with the floating bridge rewarded the chief constructor of it, Mandrocles the Samian, with gifts tenfold; 88 and as an offering from these Mandrocles had a painting made of figures to present the whole scene of the bridge over the Bosphorus and king Dareios sitting in a prominent seat and his army crossing over; this he caused to be painted and dedicated it as an offering in the temple of Hera, with the following inscription:
 
-"Bosphorus having bridged over, the straits fish-abounding, to Hera
-   Mandrocleës dedicates this, of his work to record;
- A crown on himself he set, and he brought to the Samians glory,
+"Bosphorus having bridged over, the straits fish-abounding, to Hera  
+   Mandrocleës dedicates this, of his work to record;  
+ A crown on himself he set, and he brought to the Samians glory,  
    And for Dareios performed everything after his mind."
 
 89. This memorial was made of him who constructed the bridge: and Dareios, after he had rewarded Mandrocles with gifts, passed over into Europe, having first commanded the Ionians to sail into the Pontus as far as the river Ister, and when they arrived at the Ister, there to wait for him, making a bridge meanwhile over the river; for the chief of his naval force were the Ionians, the Aiolians and the Hellespontians. So the fleet sailed through between the Kyanean rocks and made straight for the Ister; and then they sailed up the river a two days' voyage from the sea and proceeded to make a bridge across the neck, as it were, of the river, where the mouths of the Ister part off. Dareios meanwhile, having crossed the Bosphorus on the floating bridge, was advancing through Thrace, and when he came to the sources of the river Tearos he encamped for three days.
@@ -329,7 +329,7 @@ for it is rightly said that in hot regions the horns come quickly, whereas in ex
 
 155. After that, Polymnestos, a man of repute among the Theraians, received Phronime from him and kept her as his concubine; and in course of time there was born to him from her a son with an impediment in his voice and lisping, to whom, as both Theraians and Kyrenians say, was given the name Battos, but I think that some other name was then given, 139 and he was named Battos instead of this after he came to Libya, taking for himself this surname from the oracle which was given to him at Delphi and from the rank which he had obtained; for the Libyans call a king *battos*: and for this reason, I think, the Pythian prophetess in her prophesying called him so, using the Libyan tongue, because she knew that he would be a king in Libya. For when he had grown to be a man, he came to Delphi to inquire about his voice; and when he asked, the prophetess thus answered him:
 
-"For a voice thou camest, O Battos, but thee lord Phoebus Apollo
+"For a voice thou camest, O Battos, but thee lord Phoebus Apollo  
  Sendeth as settler forth to the Libyan land sheep-abounding,"
 
 just as if she should say using the Hellenic tongue, "For a voice thou camest, O king." He thus made answer: "Lord, I came to thee to inquire concerning my voice, but thou answerest me other things which are not possible, bidding me go as a settler to Libya; but with what power, or with what force of men should I go?" Thus saying he did not at all persuade her to give him any other reply; and as she was prophesying to him again the same things as before, Battos departed while she was yet speaking, 140 and went away to Thera.
@@ -338,7 +338,7 @@ just as if she should say using the Hellenic tongue, "For a voice thou camest, O
 
 157. In this they continued to dwell two years; but as they had no prosperity, they left one of their number behind and all the rest sailed away to Delphi, and having come to the Oracle they consulted it, saying that they were dwelling in Libya and that, though they were dwelling there, they fared none the better: and the Pythian prophetess made answer to them thus:
 
-"Better than I if thou knowest the Libyan land sheep-abounding,
+"Better than I if thou knowest the Libyan land sheep-abounding,  
  Not having been there than I who have been, at thy wisdom I wonder."
 
 Having heard this Battos and his companions sailed away back again; for in fact the god would not let them off from the task of settlement till they had come to Libya itself: and having arrived at the island and taken up him whom they had left, they made a settlement in Libya itself at a spot opposite the island, called Aziris, which is enclosed by most fair woods on both sides and a river flows by it on one side.
@@ -347,7 +347,7 @@ Having heard this Battos and his companions sailed away back again; for in fact 
 
 159. Now during the lifetime of the first settler Battos, who reigned forty years, and of his son Arkesilaos, who reigned sixteen years, the Kyrenians continued to dwell there with the same number as 142 when they first set forth to the colony; but in the time of the third king, called Battos the Prosperous, the Pythian prophetess gave an oracle wherein she urged the Hellenes in general to sail and join with the Kyrenians in colonising Libya. For the Kyrenians invited them, giving promise of a division of land; and the oracle which she uttered was as follows:
 
-"Who to the land much desirèd, to Libya, afterwards cometh,
+"Who to the land much desirèd, to Libya, afterwards cometh,  
  After the land be divided, 143 I say he shall some day repent it."
 
 Then great numbers were gathered at Kyrene, and the Libyans who dwelt round had much land cut off from their possessions; therefore they with their king whose name was Adicran, as they were not only deprived of their country but also were dealt with very insolently by the Kyrenians, sent to Egypt and delivered themselves over to Apries king of Egypt. He then having gathered a great army of Egyptians, sent it against Kyrene; and the men of Kyrene marched out to the region of Irasa and to the spring Theste, 144 and there both joined battle with the Egyptians and defeated them in the battle: for since the Egyptians had not before made trial of the Hellenes in fight and therefore despised them, they were so slaughtered that but few of them returned back to Egypt. In consequence of this and because they laid the blame of it upon Apries, the Egyptians revolted from him.

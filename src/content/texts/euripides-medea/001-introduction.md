@@ -54,7 +54,7 @@ Attendant *on the children*.
 
 A Messenger.
 
-Chorus
+Chorus  
 Leader
 
 *The scene is laid in Corinth. The play was first acted when Pythodôrus was Archon, Olympiad 87, year* 1 (B.C. 431). *Euphorion was first, Sophocles second, Euripides third, with Medea, Philoctêtes, Dictys, and the Harvesters, a Satyr-play.*

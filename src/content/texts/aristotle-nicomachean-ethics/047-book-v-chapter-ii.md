@@ -16,7 +16,7 @@ Further, the Law commands the doing the deeds not only of the brave man (as not 
 
 Now this Justice is in fact perfect Virtue, yet not simply so but as exercised towards one’s neighbour: and for this reason Justice is thought oftentimes to be the best of the Virtues, and
 
-“neither Hesper nor the Morning-star
+“neither Hesper nor the Morning-star  
 So worthy of our admiration:”
 
 and in a proverbial saying we express the same;

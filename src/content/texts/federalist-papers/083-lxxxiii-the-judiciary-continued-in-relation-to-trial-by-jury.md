@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "lxxxiii-the-judiciary-continued-in-relation-to-trial-by-jury"
-heading: "LXXXIII The Judiciary Continued in Relation to Trial by Jury Hamilton: From McClean’s Edition, New York, Wednesday, May 28, 1788."
+heading: "LXXXIII: The Judiciary Continued in Relation to Trial by Jury"
 order: 83
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 5735
+words: 5726
 ---
-The Judiciary Continued in Relation to Trial by Jury
-
 Hamilton: From *McClean’s Edition*, New York, Wednesday, May 28, 1788.
 
 To the People of the State of New York:

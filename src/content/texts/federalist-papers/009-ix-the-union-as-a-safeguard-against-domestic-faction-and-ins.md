@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "ix-the-union-as-a-safeguard-against-domestic-faction-and-ins"
-heading: "IX The Union as a Safeguard Against Domestic Faction and Insurrection Hamilton: For The Independent Journal, Wednesday, November 21, 1787."
+heading: "IX: The Union as a Safeguard Against Domestic Faction and Insurrection"
 order: 9
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 2023
+words: 2013
 ---
-The Union as a Safeguard Against Domestic Faction and Insurrection
-
 Hamilton: For *The Independent Journal*, Wednesday, November 21, 1787.
 
 To the People of the State of New York:
@@ -31,23 +29,23 @@ So far are the suggestions of Montesquieu from standing in opposition to a gener
 
 > “It is very probable” (says he) “that mankind would have been obliged at length to live constantly under the government of a single person, had they not contrived a kind of constitution that has all the internal advantages of a republican, together with the external force of a monarchical government. I mean a Confederate Republic.
 >
->
+>  
 >
 > “This form of government is a convention by which several smaller *states* agree to become members of a larger *one*, which they intend to form. It is a kind of assemblage of societies that constitute a new one, capable of increasing, by means of new associations, till they arrive to such a degree of power as to be able to provide for the security of the united body.
 >
->
+>  
 >
 > “A republic of this kind, able to withstand an external force, may support itself without any internal corruptions. The form of this society prevents all manner of inconveniences.
 >
->
+>  
 >
 > “If a single member should attempt to usurp the supreme authority, he could not be supposed to have an equal authority and credit in all the confederate states. Were he to have too great influence over one, this would alarm the rest. Were he to subdue a part, that which would still remain free might oppose him with forces independent of those which he had usurped and overpower him before he could be settled in his usurpation.
 >
->
+>  
 >
 > “Should a popular insurrection happen in one of the confederate states, the others are able to quell it. Should abuses creep into one part, they are reformed by those that remain sound. The state may be destroyed on one side, and not on the other; the confederacy may be dissolved, and the confederates preserve their sovereignty.
 >
->
+>  
 >
 > “As this government is composed of small republics, it enjoys the internal happiness of each; and with respect to its external situation, it is possessed, by means of the association, of all the advantages of large monarchies.”
 

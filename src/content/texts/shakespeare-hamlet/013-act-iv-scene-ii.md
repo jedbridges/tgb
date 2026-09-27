@@ -38,7 +38,7 @@ Compounded it with dust, whereto ’tis kin.
 
 Rosencrantz
 
-Tell us where ’tis, that we may take it thence
+Tell us where ’tis, that we may take it thence  
 And bear it to the chapel.
 
 Hamlet

@@ -19,12 +19,12 @@ I see young men, my townsmen, whose misfortune it is to have inherited farms, ho
 
 But men labor under a mistake. The better part of the man is soon plowed into the soil for compost. By a seeming fate, commonly called necessity, they are employed, as it says in an old book, laying up treasures which moth and rust will corrupt and thieves break through and steal. It is a fool’s life, as they will find when they get to the end of it, if not before. It is said that Deucalion and Pyrrha created men by throwing stones over their heads behind them:⁠—
 
-> Inde genus durum sumus, experiensque laborum,
+> Inde genus durum sumus, experiensque laborum,  
 > Et documenta damus qua simus origine nati.
 
 Or, as Raleigh rhymes it in his sonorous way⁠—
 
-> “From thence our kind hard-hearted is, enduring pain and care,
+> “From thence our kind hard-hearted is, enduring pain and care,  
 > Approving that our bodies of a stony nature are.”
 
 So much for a blind obedience to a blundering oracle, throwing the stones over their heads behind them, and not seeing where they fell.
@@ -119,8 +119,8 @@ When I consider my neighbors, the farmers of Concord, who are at least as well o
 
 The farmer is endeavoring to solve the problem of a livelihood by a formula more complicated than the problem itself. To get his shoestrings he speculates in herds of cattle. With consummate skill he has set his trap with a hair spring to catch comfort and independence, and then, as he turned away, got his own leg into it. This is the reason he is poor; and for a similar reason we are all poor in respect to a thousand savage comforts, though surrounded by luxuries. As Chapman sings,
 
-> “The false society of men⁠—
-> —for earthly greatness
+> “The false society of men⁠—  
+> —for earthly greatness  
 > All heavenly comforts rarefies to air.”
 
 And when the farmer has got his house, he may not be the richer but the poorer for it, and it be the house that has got him. As I understand it, that was a valid objection urged by Momus against the house which Minerva made, that she “had not made it movable, by which means a bad neighborhood might be avoided”; and it may still be urged, for our houses are such unwieldy property that we are often imprisoned rather than housed in them; and the bad neighborhood to be avoided is our own scurvy selves. I know one or two families, at least, in this town, who, for nearly a generation, have been wishing to sell their houses in the outskirts and move into the village, but have not been able to accomplish it, and only death will set them free.
@@ -145,11 +145,11 @@ Near the end of March, 1845, I borrowed an axe and went down to the woods by Wal
 
 So I went on for some days cutting and hewing timber, and also studs and rafters, all with my narrow axe, not having many communicable or scholar-like thoughts, singing to myself⁠—
 
-> Men say they know many things;
-> But lo! they have taken wings⁠—
-> The arts and sciences,
-> And a thousand appliances;
-> The wind that blows
+> Men say they know many things;  
+> But lo! they have taken wings⁠—  
+> The arts and sciences,  
+> And a thousand appliances;  
+> The wind that blows  
 > Is all that any body knows.
 
 I hewed the main timbers six inches square, most of the studs on two sides only, and the rafters and floor timbers on one side, leaving the rest of the bark on, so that they were just as straight and much stronger than sawed ones. Each stick was carefully mortised or tenoned by its stump, for I had borrowed other tools by this time. My days in the woods were not very long ones; yet I usually carried my dinner of bread and butter, and read the newspaper in which it was wrapped, at noon, sitting amid the green pine boughs which I had cut off, and to my bread was imparted some of their fragrance, for my hands were covered with a thick coat of pitch. Before I had done I was more the friend than the foe of the pine tree, though I had cut down some of them, having become better acquainted with it. Sometimes a rambler in the wood was attracted by the sound of my axe, and we chatted pleasantly over the chips which I had made.
@@ -390,7 +390,7 @@ Bread I at first made of pure Indian meal and salt, genuine hoecakes, which I ba
 
 Every New Englander might easily raise all his own breadstuffs in this land of rye and Indian corn, and not depend on distant and fluctuating markets for them. Yet so far are we from simplicity and independence that, in Concord, fresh and sweet meal is rarely sold in the shops, and hominy and corn in a still coarser form are hardly used by any. For the most part the farmer gives to his cattle and hogs the grain of his own producing, and buys flour, which is at least no more wholesome, at a greater cost, at the store. I saw that I could easily raise my bushel or two of rye and Indian corn, for the former will grow on the poorest land, and the latter does not require the best, and grind them in a hand-mill, and so do without rice and pork; and if I must have some concentrated sweet, I found by experiment that I could make a very good molasses either of pumpkins or beets, and I knew that I needed only to set out a few maples to obtain it more easily still, and while these were growing I could use various substitutes beside those which I have named. “For,” as the Forefathers sang⁠—
 
-> “we can make liquor to sweeten our lips
+> “we can make liquor to sweeten our lips  
 > Of pumpkins and parsnips and walnut-tree chips.”
 
 Finally, as for salt, that grossest of groceries, to obtain this might be a fit occasion for a visit to the seashore, or, if I did without it altogether, I should probably drink the less water. I do not learn that the Indians ever troubled themselves to go after it.
@@ -451,40 +451,40 @@ I read in the Gulistan, or Flower Garden, of Sheik Sadi of Shiraz, that “they 
 
 > Complemental Verses
 >
->
+>  
 >
 > The Pretensions of Poverty
 >
+>  
 >
+>  
 >
->
->
-> Thou dost presume too much, poor needy wretch,
-> To claim a station in the firmament
-> Because thy humble cottage, or thy tub,
-> Nurses some lazy or pedantic virtue
-> In the cheap sunshine or by shady springs,
-> With roots and pot-herbs; where thy right hand,
-> Tearing those humane passions from the mind,
-> Upon whose stocks fair blooming virtues flourish,
-> Degradeth nature, and benumbeth sense,
-> And, Gorgon-like, turns active men to stone.
-> We not require the dull society
-> Of your necessitated temperance,
-> Or that unnatural stupidity
-> That knows nor joy nor sorrow; nor your forc’d
-> Falsely exalted passive fortitude
-> Above the active. This low abject brood,
-> That fix their seats in mediocrity,
-> Become your servile minds; but we advance
-> Such virtues only as admit excess,
-> Brave, bounteous acts, regal magnificence,
-> All-seeing prudence, magnanimity
-> That knows no bound, and that heroic virtue
-> For which antiquity hath left no name,
-> But patterns only, such as Hercules,
-> Achilles, Theseus. Back to thy loath’d cell;
-> And when thou seest the new enlightened sphere,
+> Thou dost presume too much, poor needy wretch,  
+> To claim a station in the firmament  
+> Because thy humble cottage, or thy tub,  
+> Nurses some lazy or pedantic virtue  
+> In the cheap sunshine or by shady springs,  
+> With roots and pot-herbs; where thy right hand,  
+> Tearing those humane passions from the mind,  
+> Upon whose stocks fair blooming virtues flourish,  
+> Degradeth nature, and benumbeth sense,  
+> And, Gorgon-like, turns active men to stone.  
+> We not require the dull society  
+> Of your necessitated temperance,  
+> Or that unnatural stupidity  
+> That knows nor joy nor sorrow; nor your forc’d  
+> Falsely exalted passive fortitude  
+> Above the active. This low abject brood,  
+> That fix their seats in mediocrity,  
+> Become your servile minds; but we advance  
+> Such virtues only as admit excess,  
+> Brave, bounteous acts, regal magnificence,  
+> All-seeing prudence, magnanimity  
+> That knows no bound, and that heroic virtue  
+> For which antiquity hath left no name,  
+> But patterns only, such as Hercules,  
+> Achilles, Theseus. Back to thy loath’d cell;  
+> And when thou seest the new enlightened sphere,  
 > Study to know but what those worthies were.
 >
 >  T. Carew

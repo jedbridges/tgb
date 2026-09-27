@@ -46,8 +46,8 @@ words: 1418
 
 [18] The Shoemaker would get a house while the Builder only had (say) one pair of shoes, or at all events not so many as he ought to have. Thus the man producing the least valuable ware would get the most valuable, and *vice versa*. Adopting, as I have done, the reading which omits [Greek:——] at [Greek:——], we have simply a repetition of the caution, that before Reciprocation is attempted, there must be the same ratio between the wares as between the persons, *i.e.* the ratio of equality. If we admit [Greek: ou], the meaning may be, that you must not bring into the proportion the difference mentioned above [Greek: eteron kai ouk ison], since for the purposes of commerce all men are equal. Say that the Builder is to the Shoemaker as 10:1. Then there must be the same ratio between the wares, consequently the highest artist will carry off the most valuable wares, thus combining in himself both [Greek: uperochai]. The following are the three cases, given 100 pr. shoes = 1 house.
 
-Builder : Shoemaker : : 1  pr.  shoes      : 1 house—wrong.
-——          ——          100 pr. shoes      : 1 house—right
+Builder : Shoemaker : : 1  pr.  shoes      : 1 house—wrong.  
+——          ——          100 pr. shoes      : 1 house—right  
 ——          ——          10 (100 pr. shoes) : 1 house—wrong.
 
 [19] [Greek] Compare a similar use of [Greek]. De Interpretatione, II. 2. [Greek].

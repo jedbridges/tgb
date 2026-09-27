@@ -19,8 +19,8 @@ My house was on the side of a hill, immediately on the edge of the larger wood, 
 
 As I sit at my window this summer afternoon, hawks are circling about my clearing; the tantivy of wild pigeons, flying by two and threes athwart my view, or perching restless on the white pine boughs behind my house, gives a voice to the air; a fish hawk dimples the glassy surface of the pond and brings up a fish; a mink steals out of the marsh before my door and seizes a frog by the shore; the sedge is bending under the weight of the reedbirds flitting hither and thither; and for the last half-hour I have heard the rattle of railroad cars, now dying away and then reviving like the beat of a partridge, conveying travellers from Boston to the country. For I did not live so out of the world as that boy who, as I hear, was put out to a farmer in the east part of the town, but ere long ran away and came home again, quite down at the heel and homesick. He had never seen such a dull and out-of-the-way place; the folks were all gone off; why, you couldn’t even hear the whistle! I doubt if there is such a place in Massachusetts now:⁠—
 
-> “In truth, our village has become a butt
-> For one of those fleet railroad shafts, and o’er
+> “In truth, our village has become a butt  
+> For one of those fleet railroad shafts, and o’er  
 > Our peaceful plain its soothing sound is⁠—Concord.”
 
 The Fitchburg Railroad touches the pond about a hundred rods south of where I dwell. I usually go to the village along its causeway, and am, as it were, related to society by this link. The men on the freight trains, who go over the whole length of the road, bow to me as to an old acquaintance, they pass me so often, and apparently they take me for an employee; and so I am. I too would fain be a track-repairer somewhere in the orbit of the earth.
@@ -39,17 +39,17 @@ Commerce is unexpectedly confident and serene, alert, adventurous, and unwearied
 
 While these things go up other things come down. Warned by the whizzing sound, I look up from my book and see some tall pine, hewn on far northern hills, which has winged its way over the Green Mountains and the Connecticut, shot like an arrow through the township within ten minutes, and scarce another eye beholds it; going
 
-> “to be the mast
+> “to be the mast  
 > Of some great ammiral.”
 
 And hark! here comes the cattle-train bearing the cattle of a thousand hills, sheepcots, stables, and cow-yards in the air, drovers with their sticks, and shepherd boys in the midst of their flocks, all but the mountain pastures, whirled along like leaves blown from the mountains by the September gales. The air is filled with the bleating of calves and sheep, and the hustling of oxen, as if a pastoral valley were going by. When the old bellwether at the head rattles his bell, the mountains do indeed skip like rams and the little hills like lambs. A carload of drovers, too, in the midst, on a level with their droves now, their vocation gone, but still clinging to their useless sticks as their badge of office. But their dogs, where are they? It is a stampede to them; they are quite thrown out; they have lost the scent. Methinks I hear them barking behind the Peterboro’ Hills, or panting up the western slope of the Green Mountains. They will not be in at the death. Their vocation, too, is gone. Their fidelity and sagacity are below par now. They will slink back to their kennels in disgrace, or perchance run wild and strike a league with the wolf and the fox. So is your pastoral life whirled past and away. But the bell rings, and I must get off the track and let the cars go by;⁠—
 
-> What’s the railroad to me?
-> I never go to see
-> Where it ends.
-> It fills a few hollows,
-> And makes banks for the swallows,
-> It sets the sand a-blowing,
+> What’s the railroad to me?  
+> I never go to see  
+> Where it ends.  
+> It fills a few hollows,  
+> And makes banks for the swallows,  
+> It sets the sand a-blowing,  
 > And the blackberries a-growing,
 
 but I cross it like a cart-path in the woods. I will not have my eyes put out and my ears spoiled by its smoke and steam and hissing.

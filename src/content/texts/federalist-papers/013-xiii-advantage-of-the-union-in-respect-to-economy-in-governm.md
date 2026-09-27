@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xiii-advantage-of-the-union-in-respect-to-economy-in-governm"
-heading: "XIII Advantage of the Union in Respect to Economy in Government Hamilton: For The Independent Journal, Wednesday, November 28, 1787."
+heading: "XIII: Advantage of the Union in Respect to Economy in Government"
 order: 13
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 986
+words: 976
 ---
-Advantage of the Union in Respect to Economy in Government
-
 Hamilton: For *The Independent Journal*, Wednesday, November 28, 1787.
 
 To the People of the State of New York:

@@ -15,8 +15,8 @@ The heath. Before a hovel.
 
 Kent
 
-Here is the place, my lord; good my lord, enter:
-The tyranny of the open night’s too rough
+Here is the place, my lord; good my lord, enter:  
+The tyranny of the open night’s too rough  
 For nature to endure.
 
  *Storm still.*
@@ -39,22 +39,22 @@ I had rather break mine own. Good my lord, enter.
 
 King Lear
 
-Thou think’st ’tis much that this contentious storm
-Invades us to the skin: so ’tis to thee;
-But where the greater malady is fix’d,
-The lesser is scarce felt. Thou’ldst shun a bear;
-But if thy flight lay toward the raging sea,
-Thou’ldst meet the bear i’ the mouth. When the mind’s free,
-The body’s delicate: the tempest in my mind
-Doth from my senses take all feeling else
-Save what beats there. Filial ingratitude!
-Is it not as this mouth should tear this hand
-For lifting food to’t? But I will punish home:
-No, I will weep no more. In such a night
-To shut me out! Pour on; I will endure.
-In such a night as this! O Regan, Goneril!
-Your old kind father, whose frank heart gave all⁠—
-O, that way madness lies; let me shun that;
+Thou think’st ’tis much that this contentious storm  
+Invades us to the skin: so ’tis to thee;  
+But where the greater malady is fix’d,  
+The lesser is scarce felt. Thou’ldst shun a bear;  
+But if thy flight lay toward the raging sea,  
+Thou’ldst meet the bear i’ the mouth. When the mind’s free,  
+The body’s delicate: the tempest in my mind  
+Doth from my senses take all feeling else  
+Save what beats there. Filial ingratitude!  
+Is it not as this mouth should tear this hand  
+For lifting food to’t? But I will punish home:  
+No, I will weep no more. In such a night  
+To shut me out! Pour on; I will endure.  
+In such a night as this! O Regan, Goneril!  
+Your old kind father, whose frank heart gave all⁠—  
+O, that way madness lies; let me shun that;  
 No more of that.
 
 Kent
@@ -63,19 +63,19 @@ Good my lord, enter here.
 
 King Lear
 
-Prithee, go in thyself: seek thine own ease:
-This tempest will not give me leave to ponder
-On things would hurt me more. But I’ll go in.
-*To the Fool.* In, boy; go first. You houseless poverty⁠—
-Nay, get thee in. I’ll pray, and then I’ll sleep. *Fool goes in.*
-Poor naked wretches, whereso’er you are,
-That bide the pelting of this pitiless storm,
-How shall your houseless heads and unfed sides,
-Your loop’d and window’d raggedness, defend you
-From seasons such as these? O, I have ta’en
-Too little care of this! Take physic, pomp;
-Expose thyself to feel what wretches feel,
-That thou mayst shake the superflux to them,
+Prithee, go in thyself: seek thine own ease:  
+This tempest will not give me leave to ponder  
+On things would hurt me more. But I’ll go in.  
+*To the Fool.* In, boy; go first. You houseless poverty⁠—  
+Nay, get thee in. I’ll pray, and then I’ll sleep. *Fool goes in.*  
+Poor naked wretches, whereso’er you are,  
+That bide the pelting of this pitiless storm,  
+How shall your houseless heads and unfed sides,  
+Your loop’d and window’d raggedness, defend you  
+From seasons such as these? O, I have ta’en  
+Too little care of this! Take physic, pomp;  
+Expose thyself to feel what wretches feel,  
+That thou mayst shake the superflux to them,  
 And show the heavens more just.
 
 Edgar
@@ -104,13 +104,13 @@ What art thou that dost grumble there i’ the straw? Come forth.
 
 Edgar
 
-Away! the foul fiend follows me!
-Through the sharp hawthorn blows the cold wind.
+Away! the foul fiend follows me!  
+Through the sharp hawthorn blows the cold wind.  
 Hum! go to thy cold bed, and warm thee.
 
 King Lear
 
-Hast thou given all to thy two daughters?
+Hast thou given all to thy two daughters?  
 And art thou come to this?
 
 Edgar
@@ -121,7 +121,7 @@ Who gives any thing to poor Tom? whom the foul fiend hath led through fire and t
 
 King Lear
 
-What, have his daughters brought him to this pass?
+What, have his daughters brought him to this pass?  
 Couldst thou save nothing? Didst thou give them all?
 
 Fool
@@ -130,7 +130,7 @@ Nay, he reserved a blanket, else we had been all shamed.
 
 King Lear
 
-Now, all the plagues that in the pendulous air
+Now, all the plagues that in the pendulous air  
 Hang fated o’er men’s faults light on thy daughters!
 
 Kent
@@ -139,11 +139,11 @@ He hath no daughters, sir.
 
 King Lear
 
-Death, traitor! nothing could have subdued nature
-To such a lowness but his unkind daughters.
-Is it the fashion, that discarded fathers
-Should have thus little mercy on their flesh?
-Judicious punishment! ’twas this flesh begot
+Death, traitor! nothing could have subdued nature  
+To such a lowness but his unkind daughters.  
+Is it the fashion, that discarded fathers  
+Should have thus little mercy on their flesh?  
+Judicious punishment! ’twas this flesh begot  
 Those pelican daughters.
 
 Edgar
@@ -182,10 +182,10 @@ Edgar
 
 This is the foul fiend Flibbertigibbet: he begins at curfew, and walks till the first cock; he gives the web and the pin, squints the eye, and makes the hare-lip; mildews the white wheat, and hurts the poor creature of earth.
 
-S. Withold footed thrice the old;
-He met the night-mare, and her nine-fold;
-Bid her alight,
-And her troth plight,
+S. Withold footed thrice the old;  
+He met the night-mare, and her nine-fold;  
+Bid her alight,  
+And her troth plight,  
 And, aroint thee, witch, aroint thee!
 
 Kent
@@ -208,7 +208,7 @@ Edgar
 
 Poor Tom; that eats the swimming frog, the toad, the tadpole, the wall-newt and the water; that in the fury of his heart, when the foul fiend rages, eats cow-dung for sallets; swallows the old rat and the ditch-dog; drinks the green mantle of the standing pool; who is whipped from tithing to tithing, and stock-punished, and imprisoned; who hath had three suits to his back, six shirts to his body, horse to ride, and weapon to wear;
 
-But mice and rats, and such small deer,
+But mice and rats, and such small deer,  
 Have been Tom’s food for seven long year.
 
 Beware my follower. Peace, Smulkin; peace, thou fiend!
@@ -223,7 +223,7 @@ The prince of darkness is a gentleman: Modo he’s call’d, and Mahu.
 
 Gloucester
 
-Our flesh and blood is grown so vile, my lord,
+Our flesh and blood is grown so vile, my lord,  
 That it doth hate what gets it.
 
 Edgar
@@ -232,16 +232,16 @@ Poor Tom’s a-cold.
 
 Gloucester
 
-Go in with me: my duty cannot suffer
-To obey in all your daughters’ hard commands:
-Though their injunction be to bar my doors,
-And let this tyrannous night take hold upon you,
-Yet have I ventured to come seek you out,
+Go in with me: my duty cannot suffer  
+To obey in all your daughters’ hard commands:  
+Though their injunction be to bar my doors,  
+And let this tyrannous night take hold upon you,  
+Yet have I ventured to come seek you out,  
 And bring you where both fire and food is ready.
 
 King Lear
 
-First let me talk with this philosopher.
+First let me talk with this philosopher.  
 What is the cause of thunder?
 
 Kent
@@ -250,7 +250,7 @@ Good my lord, take his offer; go into the house.
 
 King Lear
 
-I’ll talk a word with this same learned Theban.
+I’ll talk a word with this same learned Theban.  
 What is your study?
 
 Edgar
@@ -263,20 +263,20 @@ Let me ask you one word in private.
 
 Kent
 
-Importune him once more to go, my lord;
+Importune him once more to go, my lord;  
 His wits begin to unsettle.
 
 Gloucester
 
-Canst thou blame him? *Storm still.*
-His daughters seek his death: ah, that good Kent!
-He said it would be thus, poor banish’d man!
-Thou say’st the king grows mad; I’ll tell thee, friend,
-I am almost mad myself: I had a son,
-Now outlaw’d from my blood; he sought my life,
-But lately, very late: I loved him, friend;
-No father his son dearer: truth to tell thee,
-The grief hath crazed my wits. What a night’s this!
+Canst thou blame him? *Storm still.*  
+His daughters seek his death: ah, that good Kent!  
+He said it would be thus, poor banish’d man!  
+Thou say’st the king grows mad; I’ll tell thee, friend,  
+I am almost mad myself: I had a son,  
+Now outlaw’d from my blood; he sought my life,  
+But lately, very late: I loved him, friend;  
+No father his son dearer: truth to tell thee,  
+The grief hath crazed my wits. What a night’s this!  
 I do beseech your grace⁠—
 
 King Lear
@@ -325,8 +325,8 @@ No words, no words: hush.
 
 Edgar
 
-Child Rowland to the dark tower came,
-His word was still⁠—Fie, foh, and fum,
+Child Rowland to the dark tower came,  
+His word was still⁠—Fie, foh, and fum,  
 I smell the blood of a British man.
 
  *Exeunt.*

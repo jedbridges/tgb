@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "lxxii-the-same-subject-continued-and-re-eligibility-of-the-e"
-heading: "LXXII The Same Subject Continued, and Re-Eligibility of the Executive Considered Hamilton: From The Independent Journal, Wednesday, March 19, 1788."
+heading: "LXXII: The Same Subject Continued, and Re-Eligibility of the Executive Considered"
 order: 72
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 2060
+words: 2050
 ---
-The Same Subject Continued, and Re-Eligibility of the Executive Considered
-
 Hamilton: From *The Independent Journal*, Wednesday, March 19, 1788.
 
 To the People of the State of New York:

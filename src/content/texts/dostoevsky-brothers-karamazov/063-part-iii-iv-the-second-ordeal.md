@@ -130,7 +130,7 @@ He sat with his elbows on the table and his head in his hand. He sat sideways to
 
 “No, I’m not wrong, not at all!” Mitya flared up again, though his outburst of wrath had obviously relieved his heart. He grew more good-humored at every word. “You may not trust a criminal or a man on trial tortured by your questions, but an honorable man, the honorable impulses of the heart (I say that boldly!)⁠—no! That you must believe you have no right indeed⁠ ⁠… but⁠—
 
-> Be silent, heart,
+> Be silent, heart,  
 > Be patient, humble, hold thy peace.
 
 Well, shall I go on?” he broke off gloomily.

@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "lvi-the-same-subject-continued-the-total-number-of-the-house"
-heading: "LVI The Same Subject Continued (The Total Number of the House of Representatives) Madison: For The Independent Journal, Saturday, February 16, 1788."
+heading: "LVI: The Same Subject Continued (The Total Number of the House of Representatives)"
 order: 56
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 1589
+words: 1577
 ---
-The Same Subject Continued (The Total Number of the House of Representatives)
-
 Madison: For *The Independent Journal*, Saturday, February 16, 1788.
 
 To the People of the State of New York:

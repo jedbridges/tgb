@@ -1,0 +1,35 @@
+---
+work: montaigne-essays
+section: "preface"
+heading: "Preface"
+order: 1
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/3600"
+edition: "Charles Cotton's translation, 1685, in the 1877 revision"
+translator: "Charles Cotton"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 1148
+---
+The present publication is intended to supply a recognised deficiency in our literature—a library edition of the Essays of Montaigne. This great French writer deserves to be regarded as a classic, not only in the land of his birth, but in all countries and in all literatures. His Essays, which are at once the most celebrated and the most permanent of his productions, form a magazine out of which such minds as those of Bacon and Shakespeare did not disdain to help themselves; and, indeed, as Hallam observes, the Frenchman’s literary importance largely results from the share which his mind had in influencing other minds, coeval and subsequent. But, at the same time, estimating the value and rank of the essayist, we are not to leave out of the account the drawbacks and the circumstances of the period: the imperfect state of education, the comparative scarcity of books, and the limited opportunities of intellectual intercourse. Montaigne freely borrowed of others, and he has found men willing to borrow of him as freely. We need not wonder at the reputation which he with seeming facility achieved. He was, without being aware of it, the leader of a new school in letters and morals. His book was different from all others which were at that date in the world. It diverted the ancient currents of thought into new channels. It told its readers, with unexampled frankness, what its writer’s opinion was about men and things, and threw what must have been a strange kind of new light on many matters but darkly understood. Above all, the essayist uncased himself, and made his intellectual and physical organism public property. He took the world into his confidence on all subjects. His essays were a sort of literary anatomy, where we get a diagnosis of the writer’s mind, made by himself at different levels and under a large variety of operating influences.
+
+Of all egotists, Montaigne, if not the greatest, was the most fascinating, because, perhaps, he was the least affected and most truthful. What he did, and what he had professed to do, was to dissect his mind, and show us, as best he could, how it was made, and what relation it bore to external objects. He investigated his mental structure as a schoolboy pulls his watch to pieces, to examine the mechanism of the works; and the result, accompanied by illustrations abounding with originality and force, he delivered to his fellow-men in a book.
+
+Eloquence, rhetorical effect, poetry, were alike remote from his design. He did not write from necessity, scarcely perhaps for fame. But he desired to leave France, nay, and the world, something to be remembered by, something which should tell what kind of a man he was—what he felt, thought, suffered—and he succeeded immeasurably, I apprehend, beyond his expectations.
+
+It was reasonable enough that Montaigne should expect for his work a certain share of celebrity in Gascony, and even, as time went on, throughout France; but it is scarcely probable that he foresaw how his renown was to become world-wide; how he was to occupy an almost unique position as a man of letters and a moralist; how the Essays would be read, in all the principal languages of Europe, by millions of intelligent human beings, who never heard of Perigord or the League, and who are in doubt, if they are questioned, whether the author lived in the sixteenth or the eighteenth century. This is true fame. A man of genius belongs to no period and no country. He speaks the language of nature, which is always everywhere the same.
+
+The text of these volumes is taken from the first edition of Cotton’s version, printed in 3 vols. 8vo, 1685-6, and republished in 1693, 1700, 1711, 1738, and 1743, in the same number of volumes and the same size. In the earliest impression the errors of the press are corrected merely as far as page 240 of the first volume, and all the editions follow one another. That of 1685-6 was the only one which the translator lived to see. He died in 1687, leaving behind him an interesting and little-known collection of poems, which appeared posthumously, 8vo, 1689.
+
+It was considered imperative to correct Cotton’s translation by a careful collation with the ‘variorum’ edition of the original, Paris, 1854, 4 vols. 8vo or 12mo, and parallel passages from Florin’s earlier undertaking have occasionally been inserted at the foot of the page. A Life of the Author and all his recovered Letters, sixteen in number, have also been given; but, as regards the correspondence, it can scarcely be doubted that it is in a purely fragmentary state. To do more than furnish a sketch of the leading incidents in Montaigne’s life seemed, in the presence of Bayle St. John’s charming and able biography, an attempt as difficult as it was useless.
+
+The besetting sin of both Montaigne’s translators seems to have been a propensity for reducing his language and phraseology to the language and phraseology of the age and country to which they belonged, and, moreover, inserting paragraphs and words, not here and there only, but constantly and habitually, from an evident desire and view to elucidate or strengthen their author’s meaning. The result has generally been unfortunate; and I have, in the case of all these interpolations on Cotton’s part, felt bound, where I did not cancel them, to throw them down into the notes, not thinking it right that Montaigne should be allowed any longer to stand sponsor for what he never wrote; and reluctant, on the other hand, to suppress the intruding matter entirely, where it appeared to possess a value of its own.
+
+Nor is redundancy or paraphrase the only form of transgression in Cotton, for there are places in his author which he thought proper to omit, and it is hardly necessary to say that the restoration of all such matter to the text was considered essential to its integrity and completeness.
+
+My warmest thanks are due to my father, Mr Registrar Hazlitt, the author of the well-known and excellent edition of Montaigne published in 1842, for the important assistance which he has rendered to me in verifying and retranslating the quotations, which were in a most corrupt state, and of which Cotton’s English versions were singularly loose and inexact, and for the zeal with which he has co-operated with me in collating the English text, line for line and word for word, with the best French edition.
+
+By the favour of Mr F. W. Cosens, I have had by me, while at work on this subject, the copy of Cotgrave’s Dictionary, folio, 1650, which belonged to Cotton. It has his autograph and copious MSS. notes, nor is it too much to presume that it is the very book employed by him in his translation.
+
+W. C. H.
+
+KENSINGTON, November 1877.

@@ -124,9 +124,9 @@ words: 33195
 
 57. Those of the Samians who had made the expedition against Polycrates themselves also sailed away, when the Lacedemonians were about to desert them, and came to Siphnos: for they were in want of money, and the people of Siphnos were then at their greatest height of prosperity and possessed wealth more than all the other islanders, since they had in their island mines of gold and silver, so that there is a treasury dedicated at Delphi with the tithe of the money which came in from these mines, and furnished in a manner equal to the wealthiest of these treasuries: and the people used to divide among themselves the money which came in from the mines every year. So when they were establishing the treasury, they consulted the Oracle as to whether their present prosperity was capable of remaining with them for a long time, and the Pythian prophetess gave them this reply:
 
-"But when with white shall be shining 47 the hall of the city 48
-   in Siphnos,
- And when the market is white of brow, one wary is needed
+"But when with white shall be shining 47 the hall of the city 48  
+   in Siphnos,  
+ And when the market is white of brow, one wary is needed  
  Then, to beware of an army 49 of wood and a red-coloured herald."
 
 Now just at that time the market-place and city hall of the Siphnians had been decorated with Parian marble.

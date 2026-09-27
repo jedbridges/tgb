@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xxiv-the-powers-necessary-to-the-common-defense-further-cons"
-heading: "XXIV The Powers Necessary to the Common Defense Further Considered Hamilton: For The Independent Journal, Wednesday, December 19, 1787."
+heading: "XXIV: The Powers Necessary to the Common Defense Further Considered"
 order: 24
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 1843
+words: 1834
 ---
-The Powers Necessary to the Common Defense Further Considered
-
 Hamilton: For *The Independent Journal*, Wednesday, December 19, 1787.
 
 To the People of the State of New York:

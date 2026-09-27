@@ -22,11 +22,11 @@ words: 464
 
 [6] Movement is, according to Aristotle, of six kinds:
 
-From not being to being . . . . Generation
-From being to not being . . . . Destruction
-From being to being more . . . . Increase
-From being to being less . . . . Diminution
-From being here to being there . . Change of Place
+From not being to being . . . . Generation  
+From being to not being . . . . Destruction  
+From being to being more . . . . Increase  
+From being to being less . . . . Diminution  
+From being here to being there . . Change of Place  
 From being in this way to being in that Alteration
 
 [7] *A* may go to sleep quicker than *B*, but cannot *do more sleep* in a given time.

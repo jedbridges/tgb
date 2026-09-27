@@ -15,12 +15,12 @@ A hall in the same.
 
 Kent
 
-If but as well I other accents borrow,
-That can my speech defuse, my good intent
-May carry through itself to that full issue
-For which I razed my likeness. Now, banish’d Kent,
-If thou canst serve where thou dost stand condemn’d,
-So may it come, thy master, whom thou lovest,
+If but as well I other accents borrow,  
+That can my speech defuse, my good intent  
+May carry through itself to that full issue  
+For which I razed my likeness. Now, banish’d Kent,  
+If thou canst serve where thou dost stand condemn’d,  
+So may it come, thy master, whom thou lovest,  
 Shall find thee full of labours.
 
  *Horns within. Enter King Lear, Knights, and Attendants.*
@@ -253,16 +253,16 @@ Do.
 
 Fool
 
-Mark it, nuncle:
-Have more than thou showest,
-Speak less than thou knowest,
-Lend less than thou owest,
-Ride more than thou goest,
-Learn more than thou trowest,
-Set less than thou throwest;
-Leave thy drink and thy whore,
-And keep in-a-door,
-And thou shalt have more
+Mark it, nuncle:  
+Have more than thou showest,  
+Speak less than thou knowest,  
+Lend less than thou owest,  
+Ride more than thou goest,  
+Learn more than thou trowest,  
+Set less than thou throwest;  
+Leave thy drink and thy whore,  
+And keep in-a-door,  
+And thou shalt have more  
 Than two tens to a score.
 
 Kent
@@ -295,13 +295,13 @@ No, lad; teach me.
 
 Fool
 
-That lord that counsell’d thee
-To give away thy land,
-Come place him here by me,
-Do thou for him stand:
-The sweet and bitter fool
-Will presently appear;
-The one in motley here,
+That lord that counsell’d thee  
+To give away thy land,  
+Come place him here by me,  
+Do thou for him stand:  
+The sweet and bitter fool  
+Will presently appear;  
+The one in motley here,  
 The other found out there.
 
 King Lear
@@ -328,9 +328,9 @@ Fool
 
 Why, after I have cut the egg i’ the middle, and eat up the meat, the two crowns of the egg. When thou clovest thy crown i’ the middle, and gavest away both parts, thou borest thy ass on thy back o’er the dirt: thou hadst little wit in thy bald crown, when thou gavest thy golden one away. If I speak like myself in this, let him be whipped that first finds it so.
 
-*Singing.* Fools had ne’er less wit in a year;
-For wise men are grown foppish,
-They know not how their wits to wear,
+*Singing.* Fools had ne’er less wit in a year;  
+For wise men are grown foppish,  
+They know not how their wits to wear,  
 Their manners are so apish.
 
 King Lear
@@ -341,9 +341,9 @@ Fool
 
 I have used it, nuncle, ever since thou madest thy daughters thy mothers: for when thou gavest them the rod, and put’st down thine own breeches,
 
-*Singing.* Then they for sudden joy did weep,
-And I for sorrow sung,
-That such a king should play bo-peep,
+*Singing.* Then they for sudden joy did weep,  
+And I for sorrow sung,  
+That such a king should play bo-peep,  
 And go the fools among.
 
 Prithee, nuncle, keep a schoolmaster that can teach thy fool to lie: I would fain learn to lie.
@@ -366,33 +366,33 @@ Fool
 
 Thou wast a pretty fellow when thou hadst no need to care for her frowning; now thou art an O without a figure: I am better than thou art now; I am a fool, thou art nothing. *To Goneril.* Yes, forsooth, I will hold my tongue; so your face bids me, though you say nothing.
 
-Mum, mum, He that keeps nor crust nor crum,
+Mum, mum, He that keeps nor crust nor crum,  
 Weary of all, shall want some.
 
 *Pointing to King Lear.* That’s a shealed peascod.
 
 Goneril
 
-Not only, sir, this your all-licensed fool,
-But other of your insolent retinue
-Do hourly carp and quarrel; breaking forth
-In rank and not-to-be endured riots. Sir,
-I had thought, by making this well known unto you,
-To have found a safe redress; but now grow fearful,
-By what yourself too late have spoke and done.
-That you protect this course, and put it on
-By your allowance; which if you should, the fault
-Would not ’scape censure, nor the redresses sleep,
-Which, in the tender of a wholesome weal,
-Might in their working do you that offence,
-Which else were shame, that then necessity
+Not only, sir, this your all-licensed fool,  
+But other of your insolent retinue  
+Do hourly carp and quarrel; breaking forth  
+In rank and not-to-be endured riots. Sir,  
+I had thought, by making this well known unto you,  
+To have found a safe redress; but now grow fearful,  
+By what yourself too late have spoke and done.  
+That you protect this course, and put it on  
+By your allowance; which if you should, the fault  
+Would not ’scape censure, nor the redresses sleep,  
+Which, in the tender of a wholesome weal,  
+Might in their working do you that offence,  
+Which else were shame, that then necessity  
 Will call discreet proceeding.
 
 Fool
 
-For, you trow, nuncle,
-The hedge-sparrow fed the cuckoo so long,
-That it’s had it head bit off by it young.
+For, you trow, nuncle,  
+The hedge-sparrow fed the cuckoo so long,  
+That it’s had it head bit off by it young.  
 So, out went the candle, and we were left darkling.
 
 King Lear
@@ -401,10 +401,10 @@ Are you our daughter?
 
 Goneril
 
-Come, sir,
-I would you would make use of that good wisdom,
-Whereof I know you are fraught; and put away
-These dispositions, that of late transform you
+Come, sir,  
+I would you would make use of that good wisdom,  
+Whereof I know you are fraught; and put away  
+These dispositions, that of late transform you  
 From what you rightly are.
 
 Fool
@@ -413,10 +413,10 @@ May not an ass know when the cart draws the horse? Whoop, Jug! I love thee.
 
 King Lear
 
-Doth any here know me? This is not Lear:
-Doth Lear walk thus? speak thus? Where are his eyes?
-Either his notion weakens, his discernings
-Are lethargied⁠—Ha! waking? ’tis not so.
+Doth any here know me? This is not Lear:  
+Doth Lear walk thus? speak thus? Where are his eyes?  
+Either his notion weakens, his discernings  
+Are lethargied⁠—Ha! waking? ’tis not so.  
 Who is it that can tell me who I am?
 
 Fool
@@ -437,44 +437,44 @@ Your name, fair gentlewoman?
 
 Goneril
 
-This admiration, sir, is much o’ the savour
-Of other your new pranks. I do beseech you
-To understand my purposes aright:
-As you are old and reverend, you should be wise.
-Here do you keep a hundred knights and squires;
-Men so disorder’d, so debosh’d and bold,
-That this our court, infected with their manners,
-Shows like a riotous inn: epicurism and lust
-Make it more like a tavern or a brothel
-Than a graced palace. The shame itself doth speak
-For instant remedy: be then desired
-By her, that else will take the thing she begs,
-A little to disquantity your train;
-And the remainder, that shall still depend,
-To be such men as may besort your age,
+This admiration, sir, is much o’ the savour  
+Of other your new pranks. I do beseech you  
+To understand my purposes aright:  
+As you are old and reverend, you should be wise.  
+Here do you keep a hundred knights and squires;  
+Men so disorder’d, so debosh’d and bold,  
+That this our court, infected with their manners,  
+Shows like a riotous inn: epicurism and lust  
+Make it more like a tavern or a brothel  
+Than a graced palace. The shame itself doth speak  
+For instant remedy: be then desired  
+By her, that else will take the thing she begs,  
+A little to disquantity your train;  
+And the remainder, that shall still depend,  
+To be such men as may besort your age,  
 And know themselves and you.
 
 King Lear
 
-Darkness and devils!
-Saddle my horses; call my train together:
-Degenerate bastard! I’ll not trouble thee.
+Darkness and devils!  
+Saddle my horses; call my train together:  
+Degenerate bastard! I’ll not trouble thee.  
 Yet have I left a daughter.
 
 Goneril
 
-You strike my people; and your disorder’d rabble
+You strike my people; and your disorder’d rabble  
 Make servants of their betters.
 
  *Enter Albany.*
 
 King Lear
 
-Woe, that too late repents⁠—
-*To Albany.* O, sir, are you come?
-Is it your will? Speak, sir. Prepare my horses.
-Ingratitude, thou marble-hearted fiend,
-More hideous when thou show’st thee in a child
+Woe, that too late repents⁠—  
+*To Albany.* O, sir, are you come?  
+Is it your will? Speak, sir. Prepare my horses.  
+Ingratitude, thou marble-hearted fiend,  
+More hideous when thou show’st thee in a child  
 Than the sea-monster!
 
 Albany
@@ -483,40 +483,40 @@ Pray, sir, be patient.
 
 King Lear
 
-*To Goneril.* Detested kite! thou liest.
-My train are men of choice and rarest parts,
-That all particulars of duty know,
-And in the most exact regard support
-The worships of their name. O most small fault,
-How ugly didst thou in Cordelia show!
-That, like an engine, wrench’d my frame of nature
-From the fix’d place; drew from heart all love,
-And added to the gall. O Lear, Lear, Lear!
-Beat at this gate, that let thy folly in, *Striking his head.*
+*To Goneril.* Detested kite! thou liest.  
+My train are men of choice and rarest parts,  
+That all particulars of duty know,  
+And in the most exact regard support  
+The worships of their name. O most small fault,  
+How ugly didst thou in Cordelia show!  
+That, like an engine, wrench’d my frame of nature  
+From the fix’d place; drew from heart all love,  
+And added to the gall. O Lear, Lear, Lear!  
+Beat at this gate, that let thy folly in, *Striking his head.*  
 And thy dear judgment out! Go, go, my people.
 
 Albany
 
-My lord, I am guiltless, as I am ignorant
+My lord, I am guiltless, as I am ignorant  
 Of what hath moved you.
 
 King Lear
 
-It may be so, my lord.
-Hear, nature, hear; dear goddess, hear!
-Suspend thy purpose, if thou didst intend
-To make this creature fruitful!
-Into her womb convey sterility!
-Dry up in her the organs of increase;
-And from her derogate body never spring
-A babe to honour her! If she must teem,
-Create her child of spleen; that it may live,
-And be a thwart disnatured torment to her!
-Let it stamp wrinkles in her brow of youth;
-With cadent tears fret channels in her cheeks;
-Turn all her mother’s pains and benefits
-To laughter and contempt; that she may feel
-How sharper than a serpent’s tooth it is
+It may be so, my lord.  
+Hear, nature, hear; dear goddess, hear!  
+Suspend thy purpose, if thou didst intend  
+To make this creature fruitful!  
+Into her womb convey sterility!  
+Dry up in her the organs of increase;  
+And from her derogate body never spring  
+A babe to honour her! If she must teem,  
+Create her child of spleen; that it may live,  
+And be a thwart disnatured torment to her!  
+Let it stamp wrinkles in her brow of youth;  
+With cadent tears fret channels in her cheeks;  
+Turn all her mother’s pains and benefits  
+To laughter and contempt; that she may feel  
+How sharper than a serpent’s tooth it is  
 To have a thankless child! Away, away! *Exit.*
 
 Albany
@@ -525,15 +525,15 @@ Now, gods that we adore, whereof comes this?
 
 Goneril
 
-Never afflict yourself to know the cause;
-But let his disposition have that scope
+Never afflict yourself to know the cause;  
+But let his disposition have that scope  
 That dotage gives it.
 
  *Reenter King Lear.*
 
 King Lear
 
-What, fifty of my followers at a clap!
+What, fifty of my followers at a clap!  
 Within a fortnight!
 
 Albany
@@ -542,22 +542,22 @@ What’s the matter, sir?
 
 King Lear
 
-I’ll tell thee: *To Goneril.*
-Life and death! I am ashamed
-That thou hast power to shake my manhood thus;
-That these hot tears, which break from me perforce,
-Should make thee worth them. Blasts and fogs upon thee!
-The untented woundings of a father’s curse
-Pierce every sense about thee! Old fond eyes,
-Beweep this cause again, I’ll pluck ye out,
-And cast you, with the waters that you lose,
-To temper clay. Yea, it is come to this?
-Let it be so: yet have I left a daughter,
-Who, I am sure, is kind and comfortable:
-When she shall hear this of thee, with her nails
-She’ll flay thy wolvish visage. Thou shalt find
-That I’ll resume the shape which thou dost think
-I have cast off for ever: thou shalt,
+I’ll tell thee: *To Goneril.*  
+Life and death! I am ashamed  
+That thou hast power to shake my manhood thus;  
+That these hot tears, which break from me perforce,  
+Should make thee worth them. Blasts and fogs upon thee!  
+The untented woundings of a father’s curse  
+Pierce every sense about thee! Old fond eyes,  
+Beweep this cause again, I’ll pluck ye out,  
+And cast you, with the waters that you lose,  
+To temper clay. Yea, it is come to this?  
+Let it be so: yet have I left a daughter,  
+Who, I am sure, is kind and comfortable:  
+When she shall hear this of thee, with her nails  
+She’ll flay thy wolvish visage. Thou shalt find  
+That I’ll resume the shape which thou dost think  
+I have cast off for ever: thou shalt,  
 I warrant thee. *Exeunt King Lear, Kent, and Attendants.*
 
 Goneril
@@ -566,7 +566,7 @@ Do you mark that, my lord?
 
 Albany
 
-I cannot be so partial, Goneril,
+I cannot be so partial, Goneril,  
 To the great love I bear you⁠—
 
 Goneril
@@ -575,21 +575,21 @@ Pray you, content. What, Oswald, ho! *To the Fool.* You, sir, more knave than fo
 
 Fool
 
-Nuncle Lear, nuncle Lear, tarry and take the fool
-with thee.
-A fox, when one has caught her,
-And such a daughter,
-Should sure to the slaughter,
-If my cap would buy a halter:
+Nuncle Lear, nuncle Lear, tarry and take the fool  
+with thee.  
+A fox, when one has caught her,  
+And such a daughter,  
+Should sure to the slaughter,  
+If my cap would buy a halter:  
 So the fool follows after. *Exit.*
 
 Goneril
 
-This man hath had good counsel:⁠—a hundred knights!
-’Tis politic and safe to let him keep
-At point a hundred knights: yes, that, on every dream,
-Each buzz, each fancy, each complaint, dislike,
-He may enguard his dotage with their powers,
+This man hath had good counsel:⁠—a hundred knights!  
+’Tis politic and safe to let him keep  
+At point a hundred knights: yes, that, on every dream,  
+Each buzz, each fancy, each complaint, dislike,  
+He may enguard his dotage with their powers,  
 And hold our lives in mercy. Oswald, I say!
 
 Albany
@@ -598,16 +598,16 @@ Well, you may fear too far.
 
 Goneril
 
-Safer than trust too far:
-Let me still take away the harms I fear,
-Not fear still to be taken: I know his heart.
-What he hath utter’d I have writ my sister
-If she sustain him and his hundred knights
+Safer than trust too far:  
+Let me still take away the harms I fear,  
+Not fear still to be taken: I know his heart.  
+What he hath utter’d I have writ my sister  
+If she sustain him and his hundred knights  
 When I have show’d the unfitness⁠—
 
  *Reenter Oswald.*
 
-How now, Oswald!
+How now, Oswald!  
 What, have you writ that letter to my sister?
 
 Oswald
@@ -616,21 +616,21 @@ Yes, madam.
 
 Goneril
 
-Take you some company, and away to horse:
-Inform her full of my particular fear;
-And thereto add such reasons of your own
-As may compact it more. Get you gone;
+Take you some company, and away to horse:  
+Inform her full of my particular fear;  
+And thereto add such reasons of your own  
+As may compact it more. Get you gone;  
 And hasten your return. *Exit Oswald.*
 
-No, no, my lord,
-This milky gentleness and course of yours
-Though I condemn not, yet, under pardon,
-You are much more attask’d for want of wisdom
+No, no, my lord,  
+This milky gentleness and course of yours  
+Though I condemn not, yet, under pardon,  
+You are much more attask’d for want of wisdom  
 Than praised for harmful mildness.
 
 Albany
 
-How far your eyes may pierce I can not tell:
+How far your eyes may pierce I can not tell:  
 Striving to better, oft we mar what’s well.
 
 Goneril

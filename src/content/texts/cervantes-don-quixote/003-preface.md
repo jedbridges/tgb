@@ -50,28 +50,28 @@ In profound silence I listened to what my friend said, and his observations made
 
 On Sancho
 
-I am the esquire Sancho Pan⁠—
-Who served Don Quixote of La Man⁠—;
-But from his service I retreat⁠—,
-Resolved to pass my life discreet⁠—;
-For Villadiego, called the Si⁠—,
-Maintained that only in reti⁠—
-Was found the secret of well-be⁠—,
-According to the “Celesti⁠—:”
-A book divine, except for sin⁠—
+I am the esquire Sancho Pan⁠—  
+Who served Don Quixote of La Man⁠—;  
+But from his service I retreat⁠—,  
+Resolved to pass my life discreet⁠—;  
+For Villadiego, called the Si⁠—,  
+Maintained that only in reti⁠—  
+Was found the secret of well-be⁠—,  
+According to the “Celesti⁠—:”  
+A book divine, except for sin⁠—  
 By speech too plain, in my opin⁠—
 
 **On Rocinante**
 
 On Rocinante
 
-I am that Rocinante fa⁠—,
-Great-grandson of great Babie⁠—,
-Who, all for being lean and bon⁠—,
-Had one Don Quixote for an own⁠—;
-But if I matched him well in weak⁠—,
-I never took short commons meek⁠—,
-But kept myself in corn by steal⁠—,
-A trick I learned from Lazaril⁠—,
-When with a piece of straw so neat⁠—
+I am that Rocinante fa⁠—,  
+Great-grandson of great Babie⁠—,  
+Who, all for being lean and bon⁠—,  
+Had one Don Quixote for an own⁠—;  
+But if I matched him well in weak⁠—,  
+I never took short commons meek⁠—,  
+But kept myself in corn by steal⁠—,  
+A trick I learned from Lazaril⁠—,  
+When with a piece of straw so neat⁠—  
 The blind man of his wine he cheat⁠—.

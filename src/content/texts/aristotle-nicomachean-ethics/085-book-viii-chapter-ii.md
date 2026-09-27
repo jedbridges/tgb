@@ -14,8 +14,8 @@ Yet the disputed points respecting it are not few: some men lay down that it is 
 
 Again, some men push their enquiries on these points higher and reason physically: as Euripides, who says,
 
-“The earth by drought consumed doth love the rain,
-And the great heaven, overcharged with rain,
+“The earth by drought consumed doth love the rain,  
+And the great heaven, overcharged with rain,  
 Doth love to fall in showers upon the earth.”
 
 Heraclitus, again, maintains, that “contrariety is expedient, and that the best agreement arises from things differing, and that all things come into being in the way of the principle of antagonism.”

@@ -16,8 +16,8 @@ For, I saw the church full; and one went this way, and another that way. But I w
 
 To Simplicianus then I went, the father of Ambrose (a Bishop now) in receiving Thy grace, and whom Ambrose truly loved as a father. To him I related the mazes of my wanderings. But when I mentioned that I had read certain books of the Platonists, which Victorinus, sometime Rhetoric Professor of Rome (who had died a Christian, as I had heard), had translated into Latin, he testified his joy that I had not fallen upon the writings of other philosophers, full of fallacies and deceits, after the rudiments of this world, whereas the Platonists many ways led to the belief in God and His Word. Then to exhort me to the humility of Christ, hidden from the wise, and revealed to little ones, he spoke of Victorinus himself, whom while at Rome he had most intimately known: and of him he related what I will not conceal. For it contains great praise of Thy grace, to be confessed unto Thee, how that aged man, most learned and skilled in the liberal sciences, and who had read, and weighed so many works of the philosophers; the instructor of so many noble Senators, who also, as a monument of his excellent discharge of his office, had (which men of this world esteem a high honour) both deserved and obtained a statue in the Roman Forum; he, to that age a worshipper of idols, and a partaker of the sacrilegious rites, to which almost all the nobility of Rome were given up, and had inspired the people with the love of
 
-Anubis, barking Deity, and all
-The monster Gods of every kind, who fought
+Anubis, barking Deity, and all  
+The monster Gods of every kind, who fought  
 'Gainst Neptune, Venus, and Minerva:
 
 whom Rome once conquered, now adored, all which the aged Victorinus had with thundering eloquence so many years defended;—he now blushed not to be the child of Thy Christ, and the new-born babe of Thy fountain; submitting his neck to the yoke of humility, and subduing his forehead to the reproach of the Cross.

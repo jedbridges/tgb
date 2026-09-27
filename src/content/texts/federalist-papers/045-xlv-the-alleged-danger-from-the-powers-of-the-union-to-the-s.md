@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xlv-the-alleged-danger-from-the-powers-of-the-union-to-the-s"
-heading: "XLV The Alleged Danger from the Powers of the Union to the State Governments Madison: Considered For The Independent Journal, Saturday, January 26, 1788."
+heading: "XLV: The Alleged Danger from the Powers of the Union to the State Governments"
 order: 45
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 2148
+words: 2135
 ---
-The Alleged Danger from the Powers of the Union to the State Governments
-
 Madison: Considered For *The Independent Journal*, Saturday, January 26, 1788.
 
 To the People of the State of New York:

@@ -16,12 +16,12 @@ On the return of the Medici, Machiavelli, who for a few weeks had vainly hoped t
 
 > “The evening being come, I return home and go to my study; at the entrance I pull off my peasant-clothes, covered with dust and dirt, and put on my noble court dress, and thus becomingly re-clothed I pass into the ancient courts of the men of old, where, being lovingly received by them, I am fed with that food which is mine alone; where I do not hesitate to speak with them, and to ask for the reason of their actions, and they in their benignity answer me; and for four hours I feel no weariness, I forget every trouble, poverty does not dismay, death does not terrify me; I am possessed entirely by those great men. And because Dante says:
 >
+>  
 >
->
-> > Knowledge doth come of learning well retained,
+> > Knowledge doth come of learning well retained,  
 > > Unfruitful else,
 >
->
+>  
 >
 > I have noted down what I have gained from their conversation, and have composed a small work on ‘Principalities,’ where I pour myself out as fully as I can in meditation on the subject, discussing what a principality is, what kinds there are, how they can be acquired, how they can be kept, why they are lost: and if any of my fancies ever pleased you, this ought not to displease you: and to a prince, especially to a new one, it should be welcome: therefore I dedicate it to his Magnificence Giuliano. Filippo Casavecchio has seen it; he will be able to tell you what is in it, and of the discourses I have had with him; nevertheless, I am still enriching and polishing it.”
 

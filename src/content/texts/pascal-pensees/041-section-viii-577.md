@@ -80,10 +80,10 @@ Men must be sincere in all religions; true heathens, true Jews, true Christians.
 
 **Section Ix, 590**
 
-J. C.
-Heathens __|__ Mahomet
-        \     /
-       Ignorance
+J. C.  
+Heathens __|__ Mahomet  
+        \     /  
+       Ignorance  
         of God.
 
 **Section Ix, 591**

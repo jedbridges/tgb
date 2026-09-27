@@ -17,41 +17,41 @@ Some treaties of commerce, however, have been supposed advantageous upon princip
 
 > Art. I
 >
+>  
 >
->
->
+>  
 >
 > His sacred royal majesty of Portugal promises, both in his own name, and that of his successors, to admit, forever hereafter, into Portugal, the woollen cloths, and the rest of the woollen manufactures of the British, as was accustomed, till they were prohibited by the law; nevertheless upon this condition:
 >
+>  
 >
+>  
 >
+>  
 >
->
->
->
->
+>  
 >
 > Art. II
 >
+>  
 >
->
->
+>  
 >
 > That is to say, that her sacred royal majesty of Great Britain shall, in her own name, and that of her successors, be obliged, forever hereafter, to admit the wines of the growth of Portugal into Britain: so that at no time, whether there shall be peace or war between the kingdoms of Britain and France, anything more shall be demanded for these wines by the name of custom or duty, or by whatsoever other title, directly or indirectly, whether they shall be imported into Great Britain in pipes or hogsheads, or other casks, than what shall be demanded for the like quantity or measure of French wine, deducting or abating a third part of the custom or duty. But if at any time this deduction or abatement of customs, which is to be made as aforesaid, shall in any manner be attempted and prejudiced, it shall be just and lawful for his sacred royal majesty of Portugal, again to prohibit the woollen cloths, and the rest of the British woollen manufactures.
 >
+>  
 >
+>  
 >
+>  
 >
->
->
->
->
+>  
 >
 > Art. III
 >
+>  
 >
->
->
+>  
 >
 > The most excellent lords the plenipotentiaries promise and take upon themselves that their above-named masters shall ratify this treaty; and within the space of two months the ratifications shall be exchanged.
 

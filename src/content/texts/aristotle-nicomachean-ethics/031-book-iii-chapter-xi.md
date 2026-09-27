@@ -16,19 +16,19 @@ We will take first that which bears most resemblance to the true, the Courage of
 
 Such is the kind of Courage Homer exhibits in his characters; Diomed and Hector for example. The latter says,
 
-“Polydamas will be the first to fix
+“Polydamas will be the first to fix  
 Disgrace upon me.”
 
 Diomed again,
 
-“For Hector surely will hereafter say,
+“For Hector surely will hereafter say,  
 Speaking in Troy, Tydides by my hand”—
 
 This I say most nearly resembles the Courage before spoken of, because it arises from virtue, from a feeling of shame, and a desire of what is noble (that is, of honour), and avoidance of disgrace which is base.
 
 In the same rank one would be inclined to place those also who act under compulsion from their commanders; yet are they really lower, because not a sense of honour but fear is the motive from which they act, and what they seek to avoid is not that which is base but that which is simply painful: commanders do in fact compel their men sometimes, as Hector says (to quote Homer again),
 
-“But whomsoever I shall find cowering afar from the fight,
+“But whomsoever I shall find cowering afar from the fight,  
 The teeth of dogs he shall by no means escape.”
 
 Those commanders who station staunch troops by doubtful ones, or who beat their men if they flinch, or who draw their troops up in line with the trenches, or other similar obstacles, in their rear, do in effect the same as Hector, for they all use compulsion.

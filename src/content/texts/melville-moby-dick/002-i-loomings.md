@@ -33,11 +33,11 @@ Finally, I always go to sea as a sailor, because of the wholesome exercise and p
 
 > “Grand Contested Election for the Presidency of the United States.
 >
->
+>  
 >
 > “Whaling voyage by one Ishmael.
 >
->
+>  
 >
 > “*Bloody battle in Afghanistan.*”
 

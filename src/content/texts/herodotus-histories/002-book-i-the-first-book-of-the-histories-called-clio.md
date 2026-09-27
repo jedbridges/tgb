@@ -108,10 +108,10 @@ So having formed this design he began forthwith to make trial of the Oracles, bo
 
 47. And to the Lydians whom he sent to make trial of the Oracles he gave charge as follows,—that from the day on which they set out from Sardis they should reckon up the number of the days following and on the hundredth day they should consult the Oracles, asking what Croesus the son of Alyattes king of the Lydians chanced then to be doing: and whatever the Oracles severally should prophesy, this they should cause to be written down 39 and bear it back to him. Now what the other Oracles prophesied is not by any reported, but at Delphi, so soon as the Lydians entered the sanctuary of the temple 40 to consult the god and asked that which they were commanded to ask, the Pythian prophetess spoke thus in hexameter measure:
 
-"But the number of sand I know, 41 and the measure of drops in the ocean;
- The dumb man I understand, and I hear the speech of the speechless:
- And there hath come to my soul the smell of a strong-shelled tortoise
- Boiling in caldron of bronze, and the flesh of a lamb mingled with it;
+"But the number of sand I know, 41 and the measure of drops in the ocean;  
+ The dumb man I understand, and I hear the speech of the speechless:  
+ And there hath come to my soul the smell of a strong-shelled tortoise  
+ Boiling in caldron of bronze, and the flesh of a lamb mingled with it;  
  Under it bronze is laid, it hath bronze as a clothing upon it."
 
 48. When the Pythian prophetess had uttered this oracle, the Lydians caused the prophecy to be written down, and went away at once to Sardis. And when the rest also who had been sent round were there arrived with the answers of the Oracles, then Croesus unfolded the writings one by one and looked upon them: and at first none of them pleased him, but when he heard that from Delphi, forthwith he did worship to the god and accepted the answer, 42 judging that the Oracle at Delphi was the only true one, because it had found out what he himself had done. For when he had sent to the several Oracles his messengers to consult the gods, keeping well in mind the appointed day he contrived the following device,—he thought of something which it would be impossible to discover or to conceive of, and cutting up a tortoise and a lamb he boiled them together himself in a caldron of bronze, laying a cover of bronze over them.
@@ -130,8 +130,8 @@ So having formed this design he began forthwith to make trial of the Oracles, bo
 
 55. And having made presents to the men of Delphi, Croesus consulted the Oracle the third time; for from the time when he learnt the truth of the Oracle, he made abundant use of it. 59 And consulting the Oracle he inquired whether his monarchy would endure for a long time. And the Pythian prophetess answered him thus:
 
-"But when it cometh to pass that a mule of the Medes shall be monarch
- Then by the pebbly Hermos, O Lydian delicate-footed,
+"But when it cometh to pass that a mule of the Medes shall be monarch  
+ Then by the pebbly Hermos, O Lydian delicate-footed,  
  Flee and stay not, and be not ashamed to be callèd a coward."
 
 56. By these lines when they came to him Croesus was pleased more than by all the rest, for he supposed that a mule would never be ruler of the Medes instead of a man, and accordingly that he himself and his heirs would never cease from their rule. Then after this he gave thought to inquire which people of the Hellenes he should esteem the most powerful and gain over to himself as friends. And inquiring he found that the Lacedemonians and the Athenians had the pre-eminence, the first of the Dorian and the others of the Ionian race. For these were the most eminent races in ancient time, the second being a Pelasgian and the first a Hellenic race: and the one never migrated from its place in any direction, while the other was very exceedingly given to wanderings; for in the reign of Deucalion this race dwelt in Pthiotis, and in the time of Doros the son of Hellen in the land lying below Ossa and Olympos, which is called Histiaiotis; and when it was driven from Histiaiotis by the sons of Cadmos, it dwelt in Pindos and was called Makednian; and thence it moved afterwards to Dryopis, and from Dryopis it came finally to Peloponnesus, and began to be called Dorian.
@@ -148,7 +148,7 @@ So having formed this design he began forthwith to make trial of the Oracles, bo
 
 62. So starting from Eretria after the lapse of ten years 74 they returned back; and in Attica the first place of which they took possession was Marathon. While they were encamping here, their partisans from the city came to them, and also others flowed in from the various demes, to whom despotic rule was more welcome than freedom. So these were gathering themselves together; but the Athenians in the city, so long as Peisistratos was collecting the money, and afterwards when he took possession of Marathon, made no account of it; but when they heard that he was marching from Marathon towards the city, then they went to the rescue against him. These then were going in full force to fight against the returning exiles, and the forces of Peisistratos, as they went towards the city starting from Marathon, met them just when they came to the temple of Athene Pallenis, and there encamped opposite to them. Then moved by divine guidance 75 there came into the presence of Peisistratos Amphilytos the Arcarnanian, 76 a soothsayer, who approaching him uttered an oracle in hexameter verse, saying thus:
 
-"But now the cast hath been made and the net hath been widely extended,
+"But now the cast hath been made and the net hath been widely extended,  
  And in the night the tunnies will dart through the moon-lighted waters."
 
 63. This oracle he uttered to him being divinely inspired, and Peisistratos, having understood the oracle and having said that he accepted the prophecy which was uttered, led his army against the enemy. Now the Athenians from the city were just at that time occupied with the morning meal, and some of them after their meal with games of dice or with sleep; and the forces of Peisistratos fell upon the Athenians and put them to flight. Then as they fled, Peisistratos devised a very skilful counsel, to the end that the Athenians might not gather again into one body but might remain scattered abroad. He mounted his sons on horseback and sent them before him; and overtaking the fugitives they said that which was commanded them by Peisistratos, bidding them be of good cheer and that each man should depart to his own home.
@@ -157,27 +157,27 @@ So having formed this design he began forthwith to make trial of the Oracles, bo
 
 65. Such was the condition of things which Croesus heard was prevailing among the Athenians during this time; but as to the Lacedemonians he heard that they had escaped from great evils and had now got the better of the Tegeans in the war. For when Leon and Hegesicles were kings of Sparta, the Lacedemonians, who had good success in all their other wars, suffered disaster in that alone which they waged against the men of Tegea. Moreover in the times before this they had the worst laws of almost all the Hellenes, both in matters which concerned themselves alone and also in that they had no dealings with strangers. And they made their change to a good constitution of laws thus:—Lycurgos, a man of the Spartans who was held in high repute, came to the Oracle at Delphi, and as he entered the sanctuary of the temple, straightway the Pythian prophetess said as follows:
 
-"Lo, thou art come, O Lycurgos, to this rich shrine of my temple,
- Loved thou by Zeus and by all who possess the abodes of Olympos.
- Whether to call thee a god, I doubt, in my voices prophetic,
+"Lo, thou art come, O Lycurgos, to this rich shrine of my temple,  
+ Loved thou by Zeus and by all who possess the abodes of Olympos.  
+ Whether to call thee a god, I doubt, in my voices prophetic,  
  God or a man, but rather a god I think, O Lycurgos."
 
 66. Some say in addition to this that the Pythian prophetess also set forth to him the order of things which is now established for the Spartans; but the Lacedemonians themselves say that Lycurgos having become guardian of Leobotes his brother's son, who was king of the Spartans, brought in these things from Crete. For as soon as he became guardian, he changed all the prevailing laws, and took measures that they should not transgress his institutions: and after this Lycurgos established that which appertained to war, namely *Enomoties* and *Triecads* and Common Meals, 7701 and in addition to this the Ephors and the Senate. Having changed thus, the Spartans had good laws; and to Lycurgos after he was dead they erected a temple, and they pay him great worship. So then, as might be supposed, with a fertile land and with no small number of men dwelling in it, they straightway shot up and became prosperous: and it was no longer sufficient for them to keep still; but presuming that they were superior in strength to the Arcadians, they consulted the Oracle at Delphi respecting conquest of the whole of Arcadia; and the Pythian prophetess gave answer thus:
 
-"The land of Arcadia thou askest; thou askest me much; I refuse it;
- Many there are in Arcadian land, stout men, eating acorns;
- These will prevent thee from this: but I am not grudging towards thee;
- Tegea beaten with sounding feet I will give thee to dance in,
+"The land of Arcadia thou askest; thou askest me much; I refuse it;  
+ Many there are in Arcadian land, stout men, eating acorns;  
+ These will prevent thee from this: but I am not grudging towards thee;  
+ Tegea beaten with sounding feet I will give thee to dance in,  
  And a fair plain I will give thee to measure with line and divide it."
 
 When the Lacedemonians heard report of this, they held off from the other Arcadians, and marched against the Tegeans with fetters in their hands, trusting to a deceitful 78 oracle and expecting that they would make slaves of the men of Tegea. But having been worsted in the encounter, those of them who were taken alive worked wearing the fetters which they themselves brought with them and having "measured with line and divided" 79 the plain of the Tegeans. And these fetters with which they had been bound were preserved even to my own time at Tegea, hanging about the temple of Athene Alea. 80
 
 67. In the former war then I say they struggled against the Tegeans continually with ill success; but in the time of Croesus and in the reign of Anaxandrides and Ariston at Lacedemon the Spartans had at length become victors in the war; and they became so in the following manner:—As they continued to be always worsted in the war by the men of Tegea, they sent messengers to consult the Oracle at Delphi and inquired what god they should propitiate in order to get the better of the men of Tegea in the war: and the Pythian prophetess made answer to them that they should bring into their land the bones of Orestes the son of Agamemnon. Then as they were not able to find the grave of Orestes, they sent men again to go to the god and to inquire about the spot where Orestes was laid: and when the messengers who were sent asked this, the prophetess said as follows:
 
-"Tegea there is, in Arcadian land, in a smooth place founded;
- Where there do blow two blasts by strong compulsion together;
- Stroke too there is and stroke in return, and trouble on trouble.
- There Agamemnon's son in the life-giving earth is reposing;
+"Tegea there is, in Arcadian land, in a smooth place founded;  
+ Where there do blow two blasts by strong compulsion together;  
+ Stroke too there is and stroke in return, and trouble on trouble.  
+ There Agamemnon's son in the life-giving earth is reposing;  
  Him if thou bring with thee home, of Tegea thou shalt be master." 81
 
 When the Lacedemonians had heard this they were none the less far from finding it out, though they searched all places; until the time that Lichas, one of those Spartans who are called "Well-doers," 82 discovered it. Now the "Well-doers" are of the citizens the eldest who are passing from the ranks of the "Horsemen," in each year five; and these are bound during that year in which they pass out from the "Horsemen," to allow themselves to be sent without ceasing to various places by the Spartan State.
@@ -218,9 +218,9 @@ When the Lacedemonians had heard this they were none the less far from finding i
 
 85. Meanwhile to Croesus himself it happened thus:—He had a son, of whom I made mention before, who was of good disposition enough but deprived of speech. Now in his former time of prosperity Croesus had done everything that was possible for him, and besides other things which he devised he had also sent messengers to Delphi to inquire concerning him. And the Pythian prophetess spoke to him thus:
 
-"Lydian, master of many, much blind to destiny, Croesus,
- Do not desire to hear in thy halls that voice which is prayed for,
- Voice of thy son; much better if this from thee were removèd,
+"Lydian, master of many, much blind to destiny, Croesus,  
+ Do not desire to hear in thy halls that voice which is prayed for,  
+ Voice of thy son; much better if this from thee were removèd,  
  Since he shall first utter speech in an evil day of misfortune."
 
 Now when the fortress was being taken, one of the Persians was about to slay Croesus taking him for another; and Croesus for his part, seeing him coming on, cared nothing for it because of the misfortune which was upon him, and to him it was indifferent that he should be slain by the stroke; but this voiceless son, when he saw the Persian coming on, by reason of terror and affliction burst the bonds of his utterance and said: "Man, slay not Croesus." This son, I say, uttered voice then first of all, but after this he continued to use speech for the whole time of his life.
@@ -411,7 +411,7 @@ These men 171 set forth to them counsels of the kind which I have said:
 
 174. Now the Carians were reduced to subjection by Harpagos without any brilliant deed displayed either by the Carians themselves or by those of the Hellenes who dwell in this land. Of these last there are besides others the men of Cnidos, settlers from Lacedemon, whose land runs out into the sea, 173 being in fact the region which is called Triopion, beginning from the peninsula of Bybassos: and since all the land of Cnidos except a small part is washed by the sea (for the part of it which looks towards the North is bounded by the Gulf of Keramos, and that which looks to the South by the sea off Syme and Rhodes), therefore the men of Cnidos began to dig through this small part, which is about five furlongs across, while Harpagos was subduing Ionia, desiring to make their land an island: and within the isthmus all was theirs, 174 for where the territory of Cnidos ends in the direction of the mainland, here is the isthmus which they were digging across. And while the Cnidians were working at it with a great number of men, it was perceived that the men who worked suffered injury much more than might have been expected and in a more supernatural manner, both in other parts of their bodies and especially in their eyes, when the rock was being broken up; so they sent men to ask the Oracle at Delphi what the cause of the difficulty was. And the Pythian prophetess, as the men of Cnidos themselves report, gave them this reply in trimeter verse:—
 
-"Fence not the place with towers, nor dig the isthmus through;
+"Fence not the place with towers, nor dig the isthmus through;  
  Zeus would have made your land an island, had he willed."
 
 When the Pythian prophetess had given this oracle, the men of Cnidos not only ceased from their digging but delivered themselves to Harpagos without resistance, when he came against them with his army.

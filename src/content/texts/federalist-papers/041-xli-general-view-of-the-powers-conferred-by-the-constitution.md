@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xli-general-view-of-the-powers-conferred-by-the-constitution"
-heading: "XLI General View of the Powers Conferred by the Constitution Madison: For The Independent Journal, Saturday, January 19, 1788."
+heading: "XLI: General View of the Powers Conferred by the Constitution"
 order: 41
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 3575
+words: 3566
 ---
-General View of the Powers Conferred by the Constitution
-
 Madison: For *The Independent Journal*, Saturday, January 19, 1788.
 
 To the People of the State of New York:

@@ -32,7 +32,7 @@ Imperfection of Self-Control and Self-Control, after all, are above the average 
 
 Again, of the two forms of Imperfect Self-Control that is more easily cured which they have who are constitutionally of strong passions, than that of those who form resolutions and break them; and they that are so through habituation than they that are so naturally; since of course custom is easier to change than nature, because the very resemblance of custom to nature is what constitutes the difficulty of changing it; as Evenus says,
 
-“Practice, I say, my friend, doth long endure,
+“Practice, I say, my friend, doth long endure,  
 And at the last is even very nature.”
 
 We have now said then what Self-Control is, what Imperfection of Self-Control, what Endurance, and what Softness, and how these states are mutually related.

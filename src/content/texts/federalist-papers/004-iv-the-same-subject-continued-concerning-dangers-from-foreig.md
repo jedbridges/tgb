@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "iv-the-same-subject-continued-concerning-dangers-from-foreig"
-heading: "IV The Same Subject Continued (Concerning Dangers from Foreign Force and Influence) Jay: For The Independent Journal, Wednesday, November 7, 1787."
+heading: "IV: The Same Subject Continued (Concerning Dangers from Foreign Force and Influence)"
 order: 4
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 1656
+words: 1645
 ---
-The Same Subject Continued (Concerning Dangers from Foreign Force and Influence)
-
 Jay: For *The Independent Journal*, Wednesday, November 7, 1787.
 
 To the People of the State of New York:

@@ -145,7 +145,7 @@ Thou whoreson zed! thou unnecessary letter! My lord, if you will give me leave, 
 
 Cornwall
 
-Peace, sirrah!
+Peace, sirrah!  
 You beastly knave, know you no reverence?
 
 Kent
@@ -158,18 +158,18 @@ Why art thou angry?
 
 Kent
 
-That such a slave as this should wear a sword,
-Who wears no honesty. Such smiling rogues as these,
-Like rats, oft bite the holy cords a-twain
-Which are too intrinse t’ unloose; smooth every passion
-That in the natures of their lords rebel;
-Bring oil to fire, snow to their colder moods;
-Renege, affirm, and turn their halcyon beaks
-With every gale and vary of their masters,
-Knowing nought, like dogs, but following.
-A plague upon your epileptic visage!
-Smile you my speeches, as I were a fool?
-Goose, if I had you upon Sarum plain,
+That such a slave as this should wear a sword,  
+Who wears no honesty. Such smiling rogues as these,  
+Like rats, oft bite the holy cords a-twain  
+Which are too intrinse t’ unloose; smooth every passion  
+That in the natures of their lords rebel;  
+Bring oil to fire, snow to their colder moods;  
+Renege, affirm, and turn their halcyon beaks  
+With every gale and vary of their masters,  
+Knowing nought, like dogs, but following.  
+A plague upon your epileptic visage!  
+Smile you my speeches, as I were a fool?  
+Goose, if I had you upon Sarum plain,  
 I’ld drive ye cackling home to Camelot.
 
 Cornwall
@@ -182,7 +182,7 @@ How fell you out? say that.
 
 Kent
 
-No contraries hold more antipathy
+No contraries hold more antipathy  
 Than I and such a knave.
 
 Cornwall
@@ -199,29 +199,29 @@ No more, perchance, does mine, nor his, nor hers.
 
 Kent
 
-Sir, ’tis my occupation to be plain:
-I have seen better faces in my time
-Than stands on any shoulder that I see
+Sir, ’tis my occupation to be plain:  
+I have seen better faces in my time  
+Than stands on any shoulder that I see  
 Before me at this instant.
 
 Cornwall
 
-This is some fellow,
-Who, having been praised for bluntness, doth affect
-A saucy roughness, and constrains the garb
-Quite from his nature: he cannot flatter, he,
-An honest mind and plain, he must speak truth!
-An they will take it, so; if not, he’s plain.
-These kind of knaves I know, which in this plainness
-Harbour more craft and more corrupter ends
-Than twenty silly ducking observants
+This is some fellow,  
+Who, having been praised for bluntness, doth affect  
+A saucy roughness, and constrains the garb  
+Quite from his nature: he cannot flatter, he,  
+An honest mind and plain, he must speak truth!  
+An they will take it, so; if not, he’s plain.  
+These kind of knaves I know, which in this plainness  
+Harbour more craft and more corrupter ends  
+Than twenty silly ducking observants  
 That stretch their duties nicely.
 
 Kent
 
-Sir, in good sooth, in sincere verity,
-Under the allowance of your great aspect,
-Whose influence, like the wreath of radiant fire
+Sir, in good sooth, in sincere verity,  
+Under the allowance of your great aspect,  
+Whose influence, like the wreath of radiant fire  
 On flickering Phoebus’ front⁠—
 
 Cornwall
@@ -238,40 +238,40 @@ What was the offence you gave him?
 
 Oswald
 
-I never gave him any:
-It pleased the king his master very late
-To strike at me, upon his misconstruction;
-When he, conjunct and flattering his displeasure,
-Tripp’d me behind; being down, insulted, rail’d,
-And put upon him such a deal of man,
-That worthied him, got praises of the king
-For him attempting who was self-subdued;
-And, in the fleshment of this dread exploit,
+I never gave him any:  
+It pleased the king his master very late  
+To strike at me, upon his misconstruction;  
+When he, conjunct and flattering his displeasure,  
+Tripp’d me behind; being down, insulted, rail’d,  
+And put upon him such a deal of man,  
+That worthied him, got praises of the king  
+For him attempting who was self-subdued;  
+And, in the fleshment of this dread exploit,  
 Drew on me here again.
 
 Kent
 
-None of these rogues and cowards
+None of these rogues and cowards  
 But Ajax is their fool.
 
 Cornwall
 
-Fetch forth the stocks!
-You stubborn ancient knave, you reverend braggart,
+Fetch forth the stocks!  
+You stubborn ancient knave, you reverend braggart,  
 We’ll teach you⁠—
 
 Kent
 
-Sir, I am too old to learn:
-Call not your stocks for me: I serve the king;
-On whose employment I was sent to you:
-You shall do small respect, show too bold malice
-Against the grace and person of my master,
+Sir, I am too old to learn:  
+Call not your stocks for me: I serve the king;  
+On whose employment I was sent to you:  
+You shall do small respect, show too bold malice  
+Against the grace and person of my master,  
 Stocking his messenger.
 
 Cornwall
 
-Fetch forth the stocks! As I have life and honour,
+Fetch forth the stocks! As I have life and honour,  
 There shall he sit till noon.
 
 Regan
@@ -280,7 +280,7 @@ Till noon! till night, my lord; and all night too.
 
 Kent
 
-Why, madam, if I were your father’s dog,
+Why, madam, if I were your father’s dog,  
 You should not use me so.
 
 Regan
@@ -289,18 +289,18 @@ Sir, being his knave, I will.
 
 Cornwall
 
-This is a fellow of the self-same colour
+This is a fellow of the self-same colour  
 Our sister speaks of. Come, bring away the stocks! *Stocks brought out.*
 
 Gloucester
 
-Let me beseech your grace not to do so:
-His fault is much, and the good king his master
-Will cheque him for ’t: your purposed low correction
-Is such as basest and contemned’st wretches
-For pilferings and most common trespasses
-Are punish’d with: the king must take it ill,
-That he’s so slightly valued in his messenger,
+Let me beseech your grace not to do so:  
+His fault is much, and the good king his master  
+Will cheque him for ’t: your purposed low correction  
+Is such as basest and contemned’st wretches  
+For pilferings and most common trespasses  
+Are punish’d with: the king must take it ill,  
+That he’s so slightly valued in his messenger,  
 Should have him thus restrain’d.
 
 Cornwall
@@ -309,24 +309,24 @@ I’ll answer that.
 
 Regan
 
-My sister may receive it much more worse,
-To have her gentleman abused, assaulted,
-For following her affairs. Put in his legs. *Kent is put in the stocks.*
+My sister may receive it much more worse,  
+To have her gentleman abused, assaulted,  
+For following her affairs. Put in his legs. *Kent is put in the stocks.*  
 Come, my good lord, away.
 
  *Exeunt all but Gloucester and Kent.*
 
 Gloucester
 
-I am sorry for thee, friend; ’tis the duke’s pleasure,
-Whose disposition, all the world well knows,
+I am sorry for thee, friend; ’tis the duke’s pleasure,  
+Whose disposition, all the world well knows,  
 Will not be rubb’d nor stopp’d: I’ll entreat for thee.
 
 Kent
 
-Pray, do not, sir: I have watched and travell’d hard;
-Some time I shall sleep out, the rest I’ll whistle.
-A good man’s fortune may grow out at heels:
+Pray, do not, sir: I have watched and travell’d hard;  
+Some time I shall sleep out, the rest I’ll whistle.  
+A good man’s fortune may grow out at heels:  
 Give you good morrow!
 
 Gloucester
@@ -335,19 +335,19 @@ The duke’s to blame in this; ’twill be ill taken. *Exit.*
 
 Kent
 
-Good king, that must approve the common saw,
-Thou out of heaven’s benediction comest
-To the warm sun!
-Approach, thou beacon to this under globe,
-That by thy comfortable beams I may
-Peruse this letter! Nothing almost sees miracles
-But misery: I know ’tis from Cordelia,
-Who hath most fortunately been inform’d
-Of my obscured course; and shall find time
-From this enormous state, seeking to give
-Losses their remedies. All weary and o’erwatch’d,
-Take vantage, heavy eyes, not to behold
-This shameful lodging.
+Good king, that must approve the common saw,  
+Thou out of heaven’s benediction comest  
+To the warm sun!  
+Approach, thou beacon to this under globe,  
+That by thy comfortable beams I may  
+Peruse this letter! Nothing almost sees miracles  
+But misery: I know ’tis from Cordelia,  
+Who hath most fortunately been inform’d  
+Of my obscured course; and shall find time  
+From this enormous state, seeking to give  
+Losses their remedies. All weary and o’erwatch’d,  
+Take vantage, heavy eyes, not to behold  
+This shameful lodging.  
 Fortune, good night: smile once more: turn thy wheel! *Sleeps.*
 
 **Act II, Scene III**
@@ -358,24 +358,24 @@ A wood.
 
 Edgar
 
-I heard myself proclaim’d;
-And by the happy hollow of a tree
-Escaped the hunt. No port is free; no place,
-That guard, and most unusual vigilance,
-Does not attend my taking. Whiles I may ’scape,
-I will preserve myself: and am bethought
-To take the basest and most poorest shape
-That ever penury, in contempt of man,
-Brought near to beast: my face I’ll grime with filth;
-Blanket my loins: elf all my hair in knots;
-And with presented nakedness out-face
-The winds and persecutions of the sky.
-The country gives me proof and precedent
-Of Bedlam beggars, who, with roaring voices,
-Strike in their numb’d and mortified bare arms
-Pins, wooden pricks, nails, sprigs of rosemary;
-And with this horrible object, from low farms,
-Poor pelting villages, sheep-cotes, and mills,
-Sometime with lunatic bans, sometime with prayers,
-Enforce their charity. Poor Turlygod! poor Tom!
+I heard myself proclaim’d;  
+And by the happy hollow of a tree  
+Escaped the hunt. No port is free; no place,  
+That guard, and most unusual vigilance,  
+Does not attend my taking. Whiles I may ’scape,  
+I will preserve myself: and am bethought  
+To take the basest and most poorest shape  
+That ever penury, in contempt of man,  
+Brought near to beast: my face I’ll grime with filth;  
+Blanket my loins: elf all my hair in knots;  
+And with presented nakedness out-face  
+The winds and persecutions of the sky.  
+The country gives me proof and precedent  
+Of Bedlam beggars, who, with roaring voices,  
+Strike in their numb’d and mortified bare arms  
+Pins, wooden pricks, nails, sprigs of rosemary;  
+And with this horrible object, from low farms,  
+Poor pelting villages, sheep-cotes, and mills,  
+Sometime with lunatic bans, sometime with prayers,  
+Enforce their charity. Poor Turlygod! poor Tom!  
 That’s something yet: Edgar I nothing am. *Exit.*

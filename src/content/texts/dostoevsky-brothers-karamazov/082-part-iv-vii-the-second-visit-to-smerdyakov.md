@@ -134,19 +134,19 @@ When Katerina Ivanovna heard that, she got up from her seat without a word, went
 
 > Fatal Katya: Tomorrow I will get the money and repay your three thousand and farewell, woman of great wrath, but farewell, too, my love! Let us make an end! Tomorrow I shall try and get it from everyone, and if I can’t borrow it, I give you my word of honor I shall go to my father and break his skull and take the money from under the pillow, if only Ivan has gone. If I have to go to Siberia for it, I’ll give you back your three thousand. And farewell. I bow down to the ground before you, for I’ve been a scoundrel to you. Forgive me! No, better not forgive me, you’ll be happier and so shall I! Better Siberia than your love, for I love another woman and you got to know her too well today, so how can you forgive? I will murder the man who’s robbed me! I’ll leave you all and go to the East so as to see no one again. Not *her* either, for you are not my only tormentress; she is too. Farewell!
 >
->
+>  
 >
 > P.S.⁠—I write my curse, but I adore you! I hear it in my heart. One string is left, and it vibrates. Better tear my heart in two! I shall kill myself, but first of all that cur. I shall tear three thousand from him and fling it to you. Though I’ve been a scoundrel to you, I am not a thief! You can expect three thousand. The cur keeps it under his mattress, in pink ribbon. I am not a thief, but I’ll murder my thief. Katya, don’t look disdainful. Dmitri is not a thief! but a murderer! He has murdered his father and ruined himself to hold his ground, rather than endure your pride. And he doesn’t love you.
 >
->
+>  
 >
 > P.P.S.⁠—I kiss your feet, farewell! P.P.P.S.⁠—Katya, pray to God that someone’ll give me the money. Then I shall not be steeped in gore, and if no one does⁠—I shall! Kill me!
 >
->
+>  
 >
 > Your slave and enemy,
 >
->
+>  
 >
 > D. Karamazov.
 

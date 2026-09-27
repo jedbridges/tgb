@@ -30,16 +30,16 @@ And although Swiss and Spanish infantry may be considered very formidable, never
 
 This opportunity, therefore, ought not to be allowed to pass for letting Italy at last see her liberator appear. Nor can one express the love with which he would be received in all those provinces which have suffered so much from these foreign scourings, with what thirst for revenge, with what stubborn faith, with what devotion, with what tears. What door would be closed to him? Who would refuse obedience to him? What envy would hinder him? What Italian would refuse him homage? To all of us this barbarous dominion stinks. Let, therefore, your illustrious house take up this charge with that courage and hope with which all just enterprises are undertaken, so that under its standard our native country may be ennobled, and under its auspices may be verified that saying of Petrarch:
 
-> Virtu contro al Furore
-> Prendera l’arme, e fia il combatter corto:
-> Che l’antico valore
+> Virtu contro al Furore  
+> Prendera l’arme, e fia il combatter corto:  
+> Che l’antico valore  
 > Negli italici cuor non e ancor morto.
 >
+>  
 >
->
-> Virtue against fury shall advance the fight,
-> And it i’ th’ combat soon shall put to flight:
-> For the old Roman valour is not dead,
+> Virtue against fury shall advance the fight,  
+> And it i’ th’ combat soon shall put to flight:  
+> For the old Roman valour is not dead,  
 > Nor in th’ Italians’ brests extinguished.
 >
 >  Edward Dacre, 1640.

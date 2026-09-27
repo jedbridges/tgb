@@ -7,20 +7,8 @@ source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1"
 edition: "The text of 1776"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 483
+words: 438
 ---
-**The Declaration of Independence of the United States of America**
-
-Table of Contents
-
-Introductory Notes
-
-Transcribers’ Notes regarding this version of the first eBook.
-
-Declaration of Independence presented in the style of an original etext.
-
-Gallery of Thomas Jefferson's Handwritten Drafts presented in four images.
-
 *Written by Michael S. Hart for the official re-release:*
 
 The United States Declaration of Independence was the first E-text released by Project Gutenberg, early in 1971. The title was stored in an emailed instruction set which required a tape or diskpack be hand mounted for retrieval. The disk pack was the size of a large cake in a cake carrier, cost $1500, and contained 5 megabytes, of which this file took 1-2%. Two tape backups were kept plus one on paper tape. The 10,000 files we hope to have online by the end of 2001 should take about 1-2% of a comparably priced drive in 2001.

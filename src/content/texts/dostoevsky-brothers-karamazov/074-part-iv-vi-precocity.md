@@ -74,7 +74,7 @@ Kolya winced.
 
 “I must own, they’ve been at me to go, but I declined. That’s between ourselves, of course, Karamazov; do you hear, not a word to anyone. I say this only to you. I am not at all anxious to fall into the clutches of the secret police and take lessons at the Chain bridge.
 
-> Long will you remember
+> Long will you remember  
 > The house at the Chain bridge.
 
 Do you remember? It’s splendid. Why are you laughing? You don’t suppose I am fibbing, do you?” (“What if he should find out that I’ve only that one number of *The Bell* in father’s bookcase, and haven’t read any more of it?” Kolya thought with a shudder.)

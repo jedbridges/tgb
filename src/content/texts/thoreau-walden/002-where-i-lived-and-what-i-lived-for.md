@@ -13,7 +13,7 @@ At a certain season of our life we are accustomed to consider every spot as the 
 
 My imagination carried me so far that I even had the refusal of several farms⁠—the refusal was all I wanted⁠—but I never got my fingers burned by actual possession. The nearest that I came to actual possession was when I bought the Hollowell place, and had begun to sort my seeds, and collected materials with which to make a wheelbarrow to carry it on or off with; but before the owner gave me a deed of it, his wife⁠—every man has such a wife⁠—changed her mind and wished to keep it, and he offered me ten dollars to release him. Now, to speak the truth, I had but ten cents in the world, and it surpassed my arithmetic to tell, if I was that man who had ten cents, or who had a farm, or ten dollars, or all together. However, I let him keep the ten dollars and the farm too, for I had carried it far enough; or rather, to be generous, I sold him the farm for just what I gave for it, and, as he was not a rich man, made him a present of ten dollars, and still had my ten cents, and seeds, and materials for a wheelbarrow left. I found thus that I had been a rich man without any damage to my poverty. But I retained the landscape, and I have since annually carried off what it yielded without a wheelbarrow. With respect to landscapes,
 
-> “I am monarch of all I *survey*,
+> “I am monarch of all I *survey*,  
 > My right there is none to dispute.”
 
 I have frequently seen a poet withdraw, having enjoyed the most valuable part of a farm, while the crusty farmer supposed that he had got a few wild apples only. Why, the owner does not know it for many years when a poet has put his farm in rhyme, the most admirable kind of invisible fence, has fairly impounded it, milked it, skimmed it, and got all the cream, and left the farmer only the skimmed milk.
@@ -38,9 +38,9 @@ Though the view from my door was still more contracted, I did not feel crowded o
 
 Both place and time were changed, and I dwelt nearer to those parts of the universe and to those eras in history which had most attracted me. Where I lived was as far off as many a region viewed nightly by astronomers. We are wont to imagine rare and delectable places in some remote and more celestial corner of the system, behind the constellation of Cassiopeia’s Chair, far from noise and disturbance. I discovered that my house actually had its site in such a withdrawn, but forever new and unprofaned, part of the universe. If it were worth the while to settle in those parts near to the Pleiades or the Hyades, to Aldebaran or Altair, then I was really there, or at an equal remoteness from the life which I had left behind, dwindled and twinkling with as fine a ray to my nearest neighbor, and to be seen only in moonless nights by him. Such was that part of creation where I had squatted;
 
-> “There was a shepherd that did live,
-> And held his thoughts as high
-> As were the mounts whereon his flocks
+> “There was a shepherd that did live,  
+> And held his thoughts as high  
+> As were the mounts whereon his flocks  
 > Did hourly feed him by.”
 
 What should we think of the shepherd’s life if his flocks always wandered to higher pastures than his thoughts?

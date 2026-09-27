@@ -8,38 +8,8 @@ sourceUrl: "https://www.gutenberg.org/ebooks/3296"
 edition: "E. B. Pusey's translation, 1838"
 translator: "E. B. Pusey"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 7086
+words: 7054
 ---
-**The Confessions of Saint Augustine**
-
-CONTENTS
-
-BOOK I
-
-BOOK II
-
-BOOK III
-
-BOOK IV
-
-BOOK V
-
-BOOK VI
-
-BOOK VII
-
-BOOK VIII
-
-BOOK IX
-
-BOOK X
-
-BOOK XI
-
-BOOK XII
-
-BOOK XIII
-
 Great art Thou, O Lord, and greatly to be praised; great is Thy power, and Thy wisdom infinite. And Thee would man praise; man, but a particle of Thy creation; man, that bears about him his mortality, the witness of his sin, the witness that Thou resistest the proud: yet would man praise Thee; he, but a particle of Thy creation. Thou awakest us to delight in Thy praise; for Thou madest us for Thyself, and our heart is restless, until it repose in Thee. Grant me, Lord, to know and understand which is first, to call on Thee or to praise Thee? and, again, to know Thee or to call on Thee? for who can call on Thee, not knowing Thee? for he that knoweth Thee not, may call on Thee as other than Thou art. Or, is it rather, that we call on Thee that we may know Thee? but how shall they call on Him in whom they have not believed? or how shall they believe without a preacher? and they that seek the Lord shall praise Him: for they that seek shall find Him, and they that find shall praise Him. I will seek Thee, Lord, by calling on Thee; and will call on Thee, believing in Thee; for to us hast Thou been preached. My faith, Lord, shall call on Thee, which Thou hast given me, wherewith Thou hast inspired me, through the Incarnation of Thy Son, through the ministry of the Preacher.
 
 And how shall I call upon my God, my God and Lord, since, when I call for Him, I shall be calling Him to myself? and what room is there within me, whither my God can come into me? whither can God come into me, God who made heaven and earth? is there, indeed, O Lord my God, aught in me that can contain Thee? do then heaven and earth, which Thou hast made, and wherein Thou hast made me, contain Thee? or, because nothing which exists could exist without Thee, doth therefore whatever exists contain Thee? Since, then, I too exist, why do I seek that Thou shouldest enter into me, who were not, wert Thou not in me? Why? because I am not gone down in hell, and yet Thou art there also. For if I go down into hell, Thou art there. I could not be then, O my God, could not be at all, wert Thou not in me; or, rather, unless I were in Thee, of whom are all things, by whom are all things, in whom are all things? Even so, Lord, even so. Whither do I call Thee, since I am in Thee? or whence canst Thou enter into me? for whither can I go beyond heaven and earth, that thence my God should come into me, who hath said, I fill the heaven and the earth.
@@ -92,15 +62,15 @@ But woe is thee, thou torrent of human custom! Who shall stand against thee? how
 
 And yet, thou hellish torrent, into thee are cast the sons of men with rich rewards, for compassing such learning; and a great solemnity is made of it, when this is going on in the forum, within sight of laws appointing a salary beside the scholar's payments; and thou lashest thy rocks and roarest, "Hence words are learnt; hence eloquence; most necessary to gain your ends, or maintain opinions." As if we should have never known such words as "golden shower," "lap," "beguile," "temples of the heavens," or others in that passage, unless Terence had brought a lewd youth upon the stage, setting up Jupiter as his example of seduction.
 
-"Viewing a picture, where the tale was drawn,
-Of Jove's descending in a golden shower
+"Viewing a picture, where the tale was drawn,  
+Of Jove's descending in a golden shower  
 To Danae's lap a woman to beguile."
 
 And then mark how he excites himself to lust as by celestial authority:
 
-"And what God? Great Jove,
-Who shakes heaven's highest temples with his thunder,
-And I, poor mortal man, not do the same!
+"And what God? Great Jove,  
+Who shakes heaven's highest temples with his thunder,  
+And I, poor mortal man, not do the same!  
 I did it, and with all my heart I did it."
 
 Not one whit more easily are the words learnt for all this vileness; but by their means the vileness is committed with less shame. Not that I blame the words, being, as it were, choice and precious vessels; but that wine of error which is drunk to us in them by intoxicated teachers; and if we, too, drink not, we are beaten, and have no sober judge to whom we may appeal. Yet, O my God (in whose presence I now without hurt may remember this), all this unhappily I learnt willingly with great delight, and for this was pronounced a hopeful boy.

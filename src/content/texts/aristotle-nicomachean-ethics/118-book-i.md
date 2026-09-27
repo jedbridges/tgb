@@ -18,8 +18,8 @@ words: 2685
 
 [4] Ἀρχὴ is a word used in this treatise in various significations. The primary one is “beginning or first cause,” and this runs through all its various uses. “Rule,” and sometimes “Rulers,” are denoted by this term the initiative being a property of Rule. “Principle” is a very usual signification of it, and in fact the most characteristic of the Ethics. The word Principle means “starting-point.” Every action has two beginnings, that of Resolve οὗ ἕνεκα, and that of Action (ὅθεν ἡ κινήσις). I desire praise of men this then is the beginning of Resolve. Having considered how it is to be attained, I resolve upon some course and this Resolve is the beginning of Action. The beginnings of Resolve, Ἀρχὶ or Motives, when formally stated, are the major premisses of what Aristotle calls the συλλογίσμοι τῶν πρακτῶν, i.e. the reasoning into which actions may be analysed. Thus we say that the desire of human praise was the motive of the Pharisees, or the principle on which they acted. Their practical syllogism then would stand thus:
 
-Whatever gains human praise is to be done;
-Public praying and almsgiving gave human praise:
+Whatever gains human praise is to be done;  
+Public praying and almsgiving gave human praise:  
 [ergo] Public praying and almsgiving are to be done.
 
 The major premisses may be stored up in the mind as rules of action, and this is what is commonly meant by having principles good or bad.
@@ -42,12 +42,12 @@ Utere tuo judicio nihil enim impedio.
 
 [12] The list ran thus—
 
-[Greek:
-to peras     to apeiron      |    to euthu
-to perisson  to artion       |    to phos
-to en        to plethos      |    to tetragonon
-to dexion    to aristeron    |    to aeremoun
-to arren     to thelu        |    to agathon
+[Greek:  
+to peras     to apeiron      |    to euthu  
+to perisson  to artion       |    to phos  
+to en        to plethos      |    to tetragonon  
+to dexion    to aristeron    |    to aeremoun  
+to arren     to thelu        |    to agathon  
 ]
 
 [13] Plato’s sister’s son.

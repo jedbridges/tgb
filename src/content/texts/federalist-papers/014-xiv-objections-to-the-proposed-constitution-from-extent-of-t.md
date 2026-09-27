@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xiv-objections-to-the-proposed-constitution-from-extent-of-t"
-heading: "XIV Objections to the Proposed Constitution from Extent of Territory Answered Madison: From the New York Packet, Friday, November 30, 1787."
+heading: "XIV: Objections to the Proposed Constitution from Extent of Territory Answered"
 order: 14
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 2150
+words: 2140
 ---
-Objections to the Proposed Constitution from Extent of Territory Answered
-
 Madison: From the *New York Packet*, Friday, November 30, 1787.
 
 To the People of the State of New York:

@@ -62,7 +62,7 @@ Here, sweet lord, at your service.
 
 Hamlet
 
-Horatio, thou art e’en as just a man
+Horatio, thou art e’en as just a man  
 As e’er my conversation coped withal.
 
 Horatio
@@ -71,48 +71,48 @@ O, my dear lord⁠—
 
 Hamlet
 
-Nay, do not think I flatter;
-For what advancement may I hope from thee
-That no revenue hast but thy good spirits,
-To feed and clothe thee? Why should the poor be flatter’d?
-No, let the candied tongue lick absurd pomp,
-And crook the pregnant hinges of the knee
-Where thrift may follow fawning. Dost thou hear?
-Since my dear soul was mistress of her choice
-And could of men distinguish, her election
-Hath seal’d thee for herself; for thou hast been
-As one, in suffering all, that suffers nothing,
-A man that fortune’s buffets and rewards
-Hast ta’en with equal thanks: and blest are those
-Whose blood and judgment are so well commingled,
-That they are not a pipe for fortune’s finger
-To sound what stop she please. Give me that man
-That is not passion’s slave, and I will wear him
-In my heart’s core, ay, in my heart of heart,
-As I do thee.⁠—Something too much of this.⁠—
-There is a play to-night before the king;
-One scene of it comes near the circumstance
-Which I have told thee of my father’s death:
-I prithee, when thou seest that act afoot,
-Even with the very comment of thy soul
-Observe mine uncle: if his occulted guilt
-Do not itself unkennel in one speech,
-It is a damned ghost that we have seen,
-And my imaginations are as foul
-As Vulcan’s stithy. Give him heedful note;
-For I mine eyes will rivet to his face,
-And after we will both our judgments join
+Nay, do not think I flatter;  
+For what advancement may I hope from thee  
+That no revenue hast but thy good spirits,  
+To feed and clothe thee? Why should the poor be flatter’d?  
+No, let the candied tongue lick absurd pomp,  
+And crook the pregnant hinges of the knee  
+Where thrift may follow fawning. Dost thou hear?  
+Since my dear soul was mistress of her choice  
+And could of men distinguish, her election  
+Hath seal’d thee for herself; for thou hast been  
+As one, in suffering all, that suffers nothing,  
+A man that fortune’s buffets and rewards  
+Hast ta’en with equal thanks: and blest are those  
+Whose blood and judgment are so well commingled,  
+That they are not a pipe for fortune’s finger  
+To sound what stop she please. Give me that man  
+That is not passion’s slave, and I will wear him  
+In my heart’s core, ay, in my heart of heart,  
+As I do thee.⁠—Something too much of this.⁠—  
+There is a play to-night before the king;  
+One scene of it comes near the circumstance  
+Which I have told thee of my father’s death:  
+I prithee, when thou seest that act afoot,  
+Even with the very comment of thy soul  
+Observe mine uncle: if his occulted guilt  
+Do not itself unkennel in one speech,  
+It is a damned ghost that we have seen,  
+And my imaginations are as foul  
+As Vulcan’s stithy. Give him heedful note;  
+For I mine eyes will rivet to his face,  
+And after we will both our judgments join  
 In censure of his seeming.
 
 Horatio
 
-Well, my lord:
-If he steal aught the whilst this play is playing,
+Well, my lord:  
+If he steal aught the whilst this play is playing,  
 And ’scape detecting, I will pay the theft.
 
 Hamlet
 
-They are coming to the play; I must be idle:
+They are coming to the play; I must be idle:  
 Get you a place.
 
  *Danish march. A flourish. Enter King, Queen, Polonius, Ophelia, Rosencrantz, Guildenstern, and others.*
@@ -261,8 +261,8 @@ You are naught, you are naught: I’ll mark the play.
 
 Prologue
 
-For us, and for our tragedy,
-Here stooping to your clemency,
+For us, and for our tragedy,  
+Here stooping to your clemency,  
 We beg your hearing patiently. *Exit.*
 
 Hamlet
@@ -281,41 +281,41 @@ As woman’s love.
 
 Player King
 
-Full thirty times hath Phoebus’ cart gone round
-Neptune’s salt wash and Tellus’ orbed ground,
-And thirty dozen moons with borrow’d sheen
-About the world have times twelve thirties been
-Since love our hearts and Hymen did our hands
+Full thirty times hath Phoebus’ cart gone round  
+Neptune’s salt wash and Tellus’ orbed ground,  
+And thirty dozen moons with borrow’d sheen  
+About the world have times twelve thirties been  
+Since love our hearts and Hymen did our hands  
 Unite commutual in most sacred bands.
 
 Player Queen
 
-So many journeys may the sun and moon
-Make us again count o’er ere love be done!
-But, woe is me, you are so sick of late,
-So far from cheer and from your former state,
-That I distrust you. Yet, though I distrust,
-Discomfort you, my lord, it nothing must:
-For women’s fear and love holds quantity;
-In neither aught, or in extremity.
-Now, what my love is, proof hath made you know;
-And as my love is sized, my fear is so:
-Where love is great, the littlest doubts are fear;
+So many journeys may the sun and moon  
+Make us again count o’er ere love be done!  
+But, woe is me, you are so sick of late,  
+So far from cheer and from your former state,  
+That I distrust you. Yet, though I distrust,  
+Discomfort you, my lord, it nothing must:  
+For women’s fear and love holds quantity;  
+In neither aught, or in extremity.  
+Now, what my love is, proof hath made you know;  
+And as my love is sized, my fear is so:  
+Where love is great, the littlest doubts are fear;  
 Where little fears grow great, great love grows there.
 
 Player King
 
-’Faith, I must leave thee, love, and shortly too;
-My operant powers their functions leave to do:
-And thou shalt live in this fair world behind,
-Honour’d, beloved; and haply one as kind
+’Faith, I must leave thee, love, and shortly too;  
+My operant powers their functions leave to do:  
+And thou shalt live in this fair world behind,  
+Honour’d, beloved; and haply one as kind  
 For husband shalt thou⁠—
 
 Player Queen
 
-O, confound the rest!
-Such love must needs be treason in my breast:
-In second husband let me be accurst!
+O, confound the rest!  
+Such love must needs be treason in my breast:  
+In second husband let me be accurst!  
 None wed the second but who kill’d the first.
 
 Hamlet
@@ -324,53 +324,53 @@ Hamlet
 
 Player Queen
 
-The instances that second marriage move
-Are base respects of thrift, but none of love:
-A second time I kill my husband dead,
+The instances that second marriage move  
+Are base respects of thrift, but none of love:  
+A second time I kill my husband dead,  
 When second husband kisses me in bed.
 
 Player King
 
-I do believe you think what now you speak;
-But what we do determine oft we break.
-Purpose is but the slave to memory,
-Of violent birth, but poor validity:
-Which now, like fruit unripe, sticks on the tree;
-But fall, unshaken, when they mellow be.
-Most necessary ’tis that we forget
-To pay ourselves what to ourselves is debt:
-What to ourselves in passion we propose,
-The passion ending, doth the purpose lose.
-The violence of either grief or joy
-Their own enactures with themselves destroy:
-Where joy most revels, grief doth most lament;
-Grief joys, joy grieves, on slender accident.
-This world is not for aye, nor ’tis not strange
-That even our loves should with our fortunes change;
-For ’tis a question left us yet to prove,
-Whether love lead fortune, or else fortune love.
-The great man down, you mark his favourite flies;
-The poor advanced makes friends of enemies.
-And hitherto doth love on fortune tend;
-For who not needs shall never lack a friend,
-And who in want a hollow friend doth try,
-Directly seasons him his enemy.
-But, orderly to end where I begun,
-Our wills and fates do so contrary run
-That our devices still are overthrown;
-Our thoughts are ours, their ends none of our own:
-So think thou wilt no second husband wed;
+I do believe you think what now you speak;  
+But what we do determine oft we break.  
+Purpose is but the slave to memory,  
+Of violent birth, but poor validity:  
+Which now, like fruit unripe, sticks on the tree;  
+But fall, unshaken, when they mellow be.  
+Most necessary ’tis that we forget  
+To pay ourselves what to ourselves is debt:  
+What to ourselves in passion we propose,  
+The passion ending, doth the purpose lose.  
+The violence of either grief or joy  
+Their own enactures with themselves destroy:  
+Where joy most revels, grief doth most lament;  
+Grief joys, joy grieves, on slender accident.  
+This world is not for aye, nor ’tis not strange  
+That even our loves should with our fortunes change;  
+For ’tis a question left us yet to prove,  
+Whether love lead fortune, or else fortune love.  
+The great man down, you mark his favourite flies;  
+The poor advanced makes friends of enemies.  
+And hitherto doth love on fortune tend;  
+For who not needs shall never lack a friend,  
+And who in want a hollow friend doth try,  
+Directly seasons him his enemy.  
+But, orderly to end where I begun,  
+Our wills and fates do so contrary run  
+That our devices still are overthrown;  
+Our thoughts are ours, their ends none of our own:  
+So think thou wilt no second husband wed;  
 But die thy thoughts when thy first lord is dead.
 
 Player Queen
 
-Nor earth to me give food, nor heaven light!
-Sport and repose lock from me day and night!
-To desperation turn my trust and hope!
-An anchor’s cheer in prison be my scope!
-Each opposite that blanks the face of joy
-Meet what I would have well and it destroy!
-Both here and hence pursue me lasting strife,
+Nor earth to me give food, nor heaven light!  
+Sport and repose lock from me day and night!  
+To desperation turn my trust and hope!  
+An anchor’s cheer in prison be my scope!  
+Each opposite that blanks the face of joy  
+Meet what I would have well and it destroy!  
+Both here and hence pursue me lasting strife,  
 If, once a widow, ever I be wife!
 
 Hamlet
@@ -379,13 +379,13 @@ If she should break it now!
 
 Player King
 
-’Tis deeply sworn. Sweet, leave me here awhile;
-My spirits grow dull, and fain I would beguile
+’Tis deeply sworn. Sweet, leave me here awhile;  
+My spirits grow dull, and fain I would beguile  
 The tedious day with sleep. *Sleeps.*
 
 Player Queen
 
-Sleep rock thy brain;
+Sleep rock thy brain;  
 And never come mischance between us twain! *Exit.*
 
 Hamlet
@@ -446,11 +446,11 @@ So you must take your husbands. Begin, murderer; pox, leave thy damnable faces, 
 
 Lucianus
 
-Thoughts black, hands apt, drugs fit, and time agreeing;
-Confederate season, else no creature seeing;
-Thou mixture rank, of midnight weeds collected,
-With Hecate’s ban thrice blasted, thrice infected,
-Thy natural magic and dire property,
+Thoughts black, hands apt, drugs fit, and time agreeing;  
+Confederate season, else no creature seeing;  
+Thou mixture rank, of midnight weeds collected,  
+With Hecate’s ban thrice blasted, thrice infected,  
+Thy natural magic and dire property,  
 On wholesome life usurp immediately. *Pours the poison into the sleeper’s ears.*
 
 Hamlet
@@ -483,9 +483,9 @@ Lights, lights, lights! *Exeunt all but Hamlet and Horatio.*
 
 Hamlet
 
-Why, let the stricken deer go weep,
-The hart ungalled play;
-For some must watch, while some must sleep:
+Why, let the stricken deer go weep,  
+The hart ungalled play;  
+For some must watch, while some must sleep:  
 So runs the world away.
 
 Would not this, sir, and a forest of feathers⁠—if the rest of my fortunes turn Turk with me⁠—with two Provincial roses on my razed shoes, get me a fellowship in a cry of players, sir?
@@ -498,9 +498,9 @@ Hamlet
 
 A whole one, I.
 
-For thou dost know, O Damon dear,
-This realm dismantled was
-Of Jove himself; and now reigns here
+For thou dost know, O Damon dear,  
+This realm dismantled was  
+Of Jove himself; and now reigns here  
 A very, very⁠—pajock.
 
 Horatio
@@ -525,9 +525,9 @@ I did very well note him.
 
 Hamlet
 
-Ah, ha! Come, some music! come, the recorders!
-For if the king like not the comedy,
-Why then, belike, he likes it not, perdy.
+Ah, ha! Come, some music! come, the recorders!  
+For if the king like not the comedy,  
+Why then, belike, he likes it not, perdy.  
 Come, some music!
 
  *Reenter Rosencrantz and Guildenstern.*
@@ -722,16 +722,16 @@ I will say so.
 
 Hamlet
 
-By and by is easily said. *Exit Polonius.* Leave me, friends. *Exeunt all but Hamlet.*
-Tis now the very witching time of night,
-When churchyards yawn and hell itself breathes out
-Contagion to this world: now could I drink hot blood,
-And do such bitter business as the day
-Would quake to look on. Soft! now to my mother.
-O heart, lose not thy nature; let not ever
-The soul of Nero enter this firm bosom:
-Let me be cruel, not unnatural:
-I will speak daggers to her, but use none;
-My tongue and soul in this be hypocrites;
-How in my words soever she be shent,
+By and by is easily said. *Exit Polonius.* Leave me, friends. *Exeunt all but Hamlet.*  
+Tis now the very witching time of night,  
+When churchyards yawn and hell itself breathes out  
+Contagion to this world: now could I drink hot blood,  
+And do such bitter business as the day  
+Would quake to look on. Soft! now to my mother.  
+O heart, lose not thy nature; let not ever  
+The soul of Nero enter this firm bosom:  
+Let me be cruel, not unnatural:  
+I will speak daggers to her, but use none;  
+My tongue and soul in this be hypocrites;  
+How in my words soever she be shent,  
 To give them seals never, my soul, consent! *Exit.*

@@ -17,23 +17,23 @@ Holding by a shroud, Starbuck was standing on the quarterdeck; at every flash of
 
 “Bad work, bad work! Mr. Starbuck,” said Stubb, regarding the wreck, “but the sea will have its way. Stubb, for one, can’t fight it. You see, Mr. Starbuck, a wave has such a great long start before it leaps, all round the world it runs, and then comes the spring! But as for me, all the start I have to meet it, is just across the deck here. But never mind; it’s all in fun: so the old song says;”⁠—*sings*.
 
-> Oh! jolly is the gale,
-> And a joker is the whale,
-> A’ flourishin’ his tail⁠—
+> Oh! jolly is the gale,  
+> And a joker is the whale,  
+> A’ flourishin’ his tail⁠—  
 > Such a funny, sporty, gamy, jesty, joky, hoky-poky lad, is the Ocean, oh!
 >
+>  
 >
->
-> The scud all a flyin’,
-> That’s his flip only foamin’;
-> When he stirs in the spicin’⁠—
+> The scud all a flyin’,  
+> That’s his flip only foamin’;  
+> When he stirs in the spicin’⁠—  
 > Such a funny, sporty, gamy, jesty, joky, hoky-poky lad, is the Ocean, oh!
 >
+>  
 >
->
-> Thunder splits the ships,
-> But he only smacks his lips,
-> A tastin’ of this flip⁠—
+> Thunder splits the ships,  
+> But he only smacks his lips,  
+> A tastin’ of this flip⁠—  
 > Such a funny, sporty, gamy, jesty, joky, hoky-poky lad, is the Ocean, oh!
 
 “Avast Stubb,” cried Starbuck, “let the Typhoon sing, and strike his harp here in our rigging; but if thou art a brave man thou wilt hold thy peace.”

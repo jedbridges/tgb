@@ -15,63 +15,63 @@ Before Prospero’s cell.
 
 Ferdinand
 
-There be some sports are painful, and their labour
-Delight in them sets off: some kinds of baseness
-Are nobly undergone and most poor matters
-Point to rich ends. This my mean task
-Would be as heavy to me as odious, but
-The mistress which I serve quickens what’s dead
-And makes my labours pleasures: O, she is
-Ten times more gentle than her father’s crabbed,
-And he’s composed of harshness. I must remove
-Some thousands of these logs and pile them up,
-Upon a sore injunction: my sweet mistress
-Weeps when she sees me work, and says, such baseness
-Had never like executor. I forget:
-But these sweet thoughts do even refresh my labours,
+There be some sports are painful, and their labour  
+Delight in them sets off: some kinds of baseness  
+Are nobly undergone and most poor matters  
+Point to rich ends. This my mean task  
+Would be as heavy to me as odious, but  
+The mistress which I serve quickens what’s dead  
+And makes my labours pleasures: O, she is  
+Ten times more gentle than her father’s crabbed,  
+And he’s composed of harshness. I must remove  
+Some thousands of these logs and pile them up,  
+Upon a sore injunction: my sweet mistress  
+Weeps when she sees me work, and says, such baseness  
+Had never like executor. I forget:  
+But these sweet thoughts do even refresh my labours,  
 Most busy lest, when I do it.
 
  *Enter Miranda; and Prospero at a distance, unseen.*
 
 Miranda
 
-Alas, now, pray you,
-Work not so hard: I would the lightning had
-Burnt up those logs that you are enjoin’d to pile!
-Pray, set it down and rest you: when this burns,
-’Twill weep for having wearied you. My father
-Is hard at study; pray now, rest yourself;
+Alas, now, pray you,  
+Work not so hard: I would the lightning had  
+Burnt up those logs that you are enjoin’d to pile!  
+Pray, set it down and rest you: when this burns,  
+’Twill weep for having wearied you. My father  
+Is hard at study; pray now, rest yourself;  
 He’s safe for these three hours.
 
 Ferdinand
 
-O most dear mistress,
-The sun will set before I shall discharge
+O most dear mistress,  
+The sun will set before I shall discharge  
 What I must strive to do.
 
 Miranda
 
-If you’ll sit down,
-I’ll bear your logs the while: pray, give me that;
+If you’ll sit down,  
+I’ll bear your logs the while: pray, give me that;  
 I’ll carry it to the pile.
 
 Ferdinand
 
-No, precious creature;
-I had rather crack my sinews, break my back,
-Than you should such dishonour undergo,
+No, precious creature;  
+I had rather crack my sinews, break my back,  
+Than you should such dishonour undergo,  
 While I sit lazy by.
 
 Miranda
 
-It would become me
-As well as it does you: and I should do it
-With much more ease; for my good will is to it,
+It would become me  
+As well as it does you: and I should do it  
+With much more ease; for my good will is to it,  
 And yours it is against.
 
 Prospero
 
-Poor worm, thou art infected!
+Poor worm, thou art infected!  
 This visitation shows it.
 
 Miranda
@@ -80,56 +80,56 @@ You look wearily.
 
 Ferdinand
 
-No, noble mistress; ’tis fresh morning with me
-When you are by at night. I do beseech you⁠—
-Chiefly that I might set it in my prayers⁠—
+No, noble mistress; ’tis fresh morning with me  
+When you are by at night. I do beseech you⁠—  
+Chiefly that I might set it in my prayers⁠—  
 What is your name?
 
 Miranda
 
-Miranda.⁠—O my father,
+Miranda.⁠—O my father,  
 I have broke your hest to say so!
 
 Ferdinand
 
-Admired Miranda!
-Indeed the top of admiration! worth
-What’s dearest to the world! Full many a lady
-I have eyed with best regard and many a time
-The harmony of their tongues hath into bondage
-Brought my too diligent ear: for several virtues
-Have I liked several women; never any
-With so fun soul, but some defect in her
-Did quarrel with the noblest grace she owed
-And put it to the foil: but you, O you,
-So perfect and so peerless, are created
+Admired Miranda!  
+Indeed the top of admiration! worth  
+What’s dearest to the world! Full many a lady  
+I have eyed with best regard and many a time  
+The harmony of their tongues hath into bondage  
+Brought my too diligent ear: for several virtues  
+Have I liked several women; never any  
+With so fun soul, but some defect in her  
+Did quarrel with the noblest grace she owed  
+And put it to the foil: but you, O you,  
+So perfect and so peerless, are created  
 Of every creature’s best!
 
 Miranda
 
-I do not know
-One of my sex; no woman’s face remember,
-Save, from my glass, mine own; nor have I seen
-More that I may call men than you, good friend,
-And my dear father: how features are abroad,
-I am skilless of; but, by my modesty,
-The jewel in my dower, I would not wish
-Any companion in the world but you,
-Nor can imagination form a shape,
-Besides yourself, to like of. But I prattle
-Something too wildly and my father’s precepts
+I do not know  
+One of my sex; no woman’s face remember,  
+Save, from my glass, mine own; nor have I seen  
+More that I may call men than you, good friend,  
+And my dear father: how features are abroad,  
+I am skilless of; but, by my modesty,  
+The jewel in my dower, I would not wish  
+Any companion in the world but you,  
+Nor can imagination form a shape,  
+Besides yourself, to like of. But I prattle  
+Something too wildly and my father’s precepts  
 I therein do forget.
 
 Ferdinand
 
-I am in my condition
-A prince, Miranda; I do think, a king;
-I would, not so!⁠—and would no more endure
-This wooden slavery than to suffer
-The flesh-fly blow my mouth. Hear my soul speak:
-The very instant that I saw you, did
-My heart fly to your service; there resides,
-To make me slave to it; and for your sake
+I am in my condition  
+A prince, Miranda; I do think, a king;  
+I would, not so!⁠—and would no more endure  
+This wooden slavery than to suffer  
+The flesh-fly blow my mouth. Hear my soul speak:  
+The very instant that I saw you, did  
+My heart fly to your service; there resides,  
+To make me slave to it; and for your sake  
 Am I this patient log-man.
 
 Miranda
@@ -138,22 +138,22 @@ Do you love me?
 
 Ferdinand
 
-O heaven, O earth, bear witness to this sound
-And crown what I profess with kind event
-If I speak true! if hollowly, invert
-What best is boded me to mischief! I
-Beyond all limit of what else i’ the world
+O heaven, O earth, bear witness to this sound  
+And crown what I profess with kind event  
+If I speak true! if hollowly, invert  
+What best is boded me to mischief! I  
+Beyond all limit of what else i’ the world  
 Do love, prize, honour you.
 
 Miranda
 
-I am a fool
+I am a fool  
 To weep at what I am glad of.
 
 Prospero
 
-Fair encounter
-Of two most rare affections! Heavens rain grace
+Fair encounter  
+Of two most rare affections! Heavens rain grace  
 On that which breeds between ’em!
 
 Ferdinand
@@ -162,20 +162,20 @@ Wherefore weep you?
 
 Miranda
 
-At mine unworthiness that dare not offer
-What I desire to give, and much less take
-What I shall die to want. But this is trifling;
-And all the more it seeks to hide itself,
-The bigger bulk it shows. Hence, bashful cunning!
-And prompt me, plain and holy innocence!
-I am your wife, if you will marry me;
-If not, I’ll die your maid: to be your fellow
-You may deny me; but I’ll be your servant,
+At mine unworthiness that dare not offer  
+What I desire to give, and much less take  
+What I shall die to want. But this is trifling;  
+And all the more it seeks to hide itself,  
+The bigger bulk it shows. Hence, bashful cunning!  
+And prompt me, plain and holy innocence!  
+I am your wife, if you will marry me;  
+If not, I’ll die your maid: to be your fellow  
+You may deny me; but I’ll be your servant,  
 Whether you will or no.
 
 Ferdinand
 
-My mistress, dearest;
+My mistress, dearest;  
 And I thus humble ever.
 
 Miranda
@@ -184,12 +184,12 @@ My husband, then?
 
 Ferdinand
 
-Ay, with a heart as willing
+Ay, with a heart as willing  
 As bondage e’er of freedom: here’s my hand.
 
 Miranda
 
-And mine, with my heart in’t: and now farewell
+And mine, with my heart in’t: and now farewell  
 Till half an hour hence.
 
 Ferdinand
@@ -200,8 +200,8 @@ A thousand thousand!
 
 Prospero
 
-So glad of this as they I cannot be,
-Who are surprised withal; but my rejoicing
-At nothing can be more. I’ll to my book,
-For yet ere supper-time must I perform
+So glad of this as they I cannot be,  
+Who are surprised withal; but my rejoicing  
+At nothing can be more. I’ll to my book,  
+For yet ere supper-time must I perform  
 Much business appertaining. *Exit.*

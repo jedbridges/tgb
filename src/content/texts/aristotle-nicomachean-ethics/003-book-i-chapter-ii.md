@@ -20,7 +20,7 @@ And here we must not forget the difference between reasoning from principles, an
 
 Of course, we must begin with what is known; but then this is of two kinds, what we *do* know, and what we *may* know: perhaps then as individuals we must begin with what we *do* know. Hence the necessity that he should have been well trained in habits, who is to study, with any tolerable chance of profit, the principles of nobleness and justice and moral philosophy generally. For a principle is a matter of fact, and if the fact is sufficiently clear to a man there will be no need in addition of the reason for the fact. And he that has been thus trained either has principles already, or can receive them easily: as for him who neither has nor can receive them, let him hear his sentence from Hesiod:
 
-He is best of all who of himself conceiveth all things;
-Good again is he too who can adopt a good suggestion;
-But whoso neither of himself conceiveth nor hearing from another
+He is best of all who of himself conceiveth all things;  
+Good again is he too who can adopt a good suggestion;  
+But whoso neither of himself conceiveth nor hearing from another  
 Layeth it to heart;—he is a useless man.

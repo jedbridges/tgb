@@ -15,26 +15,26 @@ Another part of the island.
 
 Caliban
 
-All the infections that the sun sucks up
-From bogs, fens, flats, on Prosper fall and make him
-By inch-meal a disease! His spirits hear me
-And yet I needs must curse. But they’ll nor pinch,
-Fright me with urchin-shows, pitch me i’ the mire,
-Nor lead me, like a firebrand, in the dark
-Out of my way, unless he bid ’em; but
-For every trifle are they set upon me;
-Sometime like apes that mow and chatter at me
-And after bite me, then like hedgehogs which
-Lie tumbling in my barefoot way and mount
-Their pricks at my footfall; sometime am I
-All wound with adders who with cloven tongues
+All the infections that the sun sucks up  
+From bogs, fens, flats, on Prosper fall and make him  
+By inch-meal a disease! His spirits hear me  
+And yet I needs must curse. But they’ll nor pinch,  
+Fright me with urchin-shows, pitch me i’ the mire,  
+Nor lead me, like a firebrand, in the dark  
+Out of my way, unless he bid ’em; but  
+For every trifle are they set upon me;  
+Sometime like apes that mow and chatter at me  
+And after bite me, then like hedgehogs which  
+Lie tumbling in my barefoot way and mount  
+Their pricks at my footfall; sometime am I  
+All wound with adders who with cloven tongues  
 Do hiss me into madness.
 
  *Enter Trinculo.*
 
-Lo, now, lo!
-Here comes a spirit of his, and to torment me
-For bringing wood in slowly. I’ll fall flat;
+Lo, now, lo!  
+Here comes a spirit of his, and to torment me  
+For bringing wood in slowly. I’ll fall flat;  
 Perchance he will not mind me.
 
 Trinculo
@@ -45,20 +45,20 @@ Here’s neither bush nor shrub, to bear off any weather at all, and another sto
 
 Stephano
 
-I shall no more to sea, to sea,
+I shall no more to sea, to sea,  
 Here shall I die ashore⁠—
 
-This is a very scurvy tune to sing at a man’s
+This is a very scurvy tune to sing at a man’s  
 funeral: well, here’s my comfort. *Drinks.*
 
-*Sings.* The master, the swabber, the boatswain and I,
-The gunner and his mate
-Loved Mall, Meg and Marian and Margery,
-But none of us cared for Kate;
-For she had a tongue with a tang,
-Would cry to a sailor, Go hang!
-She loved not the savour of tar nor of pitch,
-Yet a tailor might scratch her where’er she did itch:
+*Sings.* The master, the swabber, the boatswain and I,  
+The gunner and his mate  
+Loved Mall, Meg and Marian and Margery,  
+But none of us cared for Kate;  
+For she had a tongue with a tang,  
+Would cry to a sailor, Go hang!  
+She loved not the savour of tar nor of pitch,  
+Yet a tailor might scratch her where’er she did itch:  
 Then to sea, boys, and let her go hang!
 
 This is a scurvy tune too: but here’s my comfort. *Drinks.*
@@ -129,8 +129,8 @@ Prithee, do not turn me about; my stomach is not constant.
 
 Caliban
 
-*Aside.* These be fine things, an if they be not sprites.
-That’s a brave god and bears celestial liquor.
+*Aside.* These be fine things, an if they be not sprites.  
+That’s a brave god and bears celestial liquor.  
 I will kneel to him.
 
 Stephano
@@ -171,7 +171,7 @@ Out o’ the moon, I do assure thee: I was the man i’ the moon when time was.
 
 Caliban
 
-I have seen thee in her and I do adore thee:
+I have seen thee in her and I do adore thee:  
 My mistress show’d me thee and thy dog and thy bush.
 
 Stephano
@@ -184,7 +184,7 @@ By this good light, this is a very shallow monster! I afeard of him! A very weak
 
 Caliban
 
-I’ll show thee every fertile inch o’ th’ island;
+I’ll show thee every fertile inch o’ th’ island;  
 And I will kiss thy foot: I prithee, be my god.
 
 Trinculo
@@ -213,10 +213,10 @@ But that the poor monster’s in drink: an abominable monster!
 
 Caliban
 
-I’ll show thee the best springs; I’ll pluck thee berries;
-I’ll fish for thee and get thee wood enough.
-A plague upon the tyrant that I serve!
-I’ll bear him no more sticks, but follow thee,
+I’ll show thee the best springs; I’ll pluck thee berries;  
+I’ll fish for thee and get thee wood enough.  
+A plague upon the tyrant that I serve!  
+I’ll bear him no more sticks, but follow thee,  
 Thou wondrous man.
 
 Trinculo
@@ -225,11 +225,11 @@ A most ridiculous monster, to make a wonder of a poor drunkard!
 
 Caliban
 
-I prithee, let me bring thee where crabs grow;
-And I with my long nails will dig thee pignuts;
-Show thee a jay’s nest and instruct thee how
-To snare the nimble marmoset; I’ll bring thee
-To clustering filberts and sometimes I’ll get thee
+I prithee, let me bring thee where crabs grow;  
+And I with my long nails will dig thee pignuts;  
+Show thee a jay’s nest and instruct thee how  
+To snare the nimble marmoset; I’ll bring thee  
+To clustering filberts and sometimes I’ll get thee  
 Young scamels from the rock. Wilt thou go with me?
 
 Stephano
@@ -246,11 +246,11 @@ A howling monster; a drunken monster!
 
 Caliban
 
-No more dams I’ll make for fish;
-Nor fetch in firing
-At requiring;
-Nor scrape trencher, nor wash dish:
-’Ban, ’Ban, Cacaliban
+No more dams I’ll make for fish;  
+Nor fetch in firing  
+At requiring;  
+Nor scrape trencher, nor wash dish:  
+’Ban, ’Ban, Cacaliban  
 Has a new master: get a new man.
 
 Freedom, hey-day! hey-day, freedom! freedom, hey-day, freedom!

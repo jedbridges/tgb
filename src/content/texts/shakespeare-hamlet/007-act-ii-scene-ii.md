@@ -15,48 +15,48 @@ A room in the castle.
 
 King
 
-Welcome, dear Rosencrantz and Guildenstern!
-Moreover that we much did long to see you,
-The need we have to use you did provoke
-Our hasty sending. Something have you heard
-Of Hamlet’s transformation; so call it,
-Sith nor the exterior nor the inward man
-Resembles that it was. What it should be,
-More than his father’s death, that thus hath put him
-So much from the understanding of himself,
-I cannot dream of: I entreat you both,
-That, being of so young days brought up with him,
-And sith so neighbour’d to his youth and havior,
-That you vouchsafe your rest here in our court
-Some little time: so by your companies
-To draw him on to pleasures, and to gather,
-So much as from occasion you may glean,
-Whether aught, to us unknown, afflicts him thus,
+Welcome, dear Rosencrantz and Guildenstern!  
+Moreover that we much did long to see you,  
+The need we have to use you did provoke  
+Our hasty sending. Something have you heard  
+Of Hamlet’s transformation; so call it,  
+Sith nor the exterior nor the inward man  
+Resembles that it was. What it should be,  
+More than his father’s death, that thus hath put him  
+So much from the understanding of himself,  
+I cannot dream of: I entreat you both,  
+That, being of so young days brought up with him,  
+And sith so neighbour’d to his youth and havior,  
+That you vouchsafe your rest here in our court  
+Some little time: so by your companies  
+To draw him on to pleasures, and to gather,  
+So much as from occasion you may glean,  
+Whether aught, to us unknown, afflicts him thus,  
 That, open’d, lies within our remedy.
 
 Queen
 
-Good gentlemen, he hath much talk’d of you;
-And sure I am two men there are not living
-To whom he more adheres. If it will please you
-To show us so much gentry and good will
-As to expend your time with us awhile,
-For the supply and profit of our hope,
-Your visitation shall receive such thanks
+Good gentlemen, he hath much talk’d of you;  
+And sure I am two men there are not living  
+To whom he more adheres. If it will please you  
+To show us so much gentry and good will  
+As to expend your time with us awhile,  
+For the supply and profit of our hope,  
+Your visitation shall receive such thanks  
 As fits a king’s remembrance.
 
 Rosencrantz
 
-Both your majesties
-Might, by the sovereign power you have of us,
-Put your dread pleasures more into command
+Both your majesties  
+Might, by the sovereign power you have of us,  
+Put your dread pleasures more into command  
 Than to entreaty.
 
 Guildenstern
 
-But we both obey,
-And here give up ourselves, in the full bent
-To lay our service freely at your feet,
+But we both obey,  
+And here give up ourselves, in the full bent  
+To lay our service freely at your feet,  
 To be commanded.
 
 King
@@ -65,14 +65,14 @@ Thanks, Rosencrantz and gentle Guildenstern.
 
 Queen
 
-Thanks, Guildenstern and gentle Rosencrantz:
-And I beseech you instantly to visit
-My too much changed son. Go, some of you,
+Thanks, Guildenstern and gentle Rosencrantz:  
+And I beseech you instantly to visit  
+My too much changed son. Go, some of you,  
 And bring these gentlemen where Hamlet is.
 
 Guildenstern
 
-Heavens make our presence and our practices
+Heavens make our presence and our practices  
 Pleasant and helpful to him!
 
 Queen
@@ -83,7 +83,7 @@ Ay, amen! *Exeunt Rosencrantz, Guildenstern, and some Attendants.*
 
 Polonius
 
-The ambassadors from Norway, my good lord,
+The ambassadors from Norway, my good lord,  
 Are joyfully return’d.
 
 King
@@ -92,12 +92,12 @@ Thou still hast been the father of good news.
 
 Polonius
 
-Have I, my lord? I assure my good liege,
-I hold my duty, as I hold my soul,
-Both to my God and to my gracious king:
-And I do think, or else this brain of mine
-Hunts not the trail of policy so sure
-As it hath used to do, that I have found
+Have I, my lord? I assure my good liege,  
+I hold my duty, as I hold my soul,  
+Both to my God and to my gracious king:  
+And I do think, or else this brain of mine  
+Hunts not the trail of policy so sure  
+As it hath used to do, that I have found  
 The very cause of Hamlet’s lunacy.
 
 King
@@ -106,18 +106,18 @@ O, speak of that; that do I long to hear.
 
 Polonius
 
-Give first admittance to the ambassadors;
+Give first admittance to the ambassadors;  
 My news shall be the fruit to that great feast.
 
 King
 
-Thyself do grace to them, and bring them in. *Exit Polonius.*
-He tells me, my dear Gertrude, he hath found
+Thyself do grace to them, and bring them in. *Exit Polonius.*  
+He tells me, my dear Gertrude, he hath found  
 The head and source of all your son’s distemper.
 
 Queen
 
-I doubt it is no other but the main;
+I doubt it is no other but the main;  
 His father’s death, and our o’erhasty marriage.
 
 King
@@ -126,54 +126,54 @@ Well, we shall sift him.
 
  *Reenter Polonius, with Voltimand and Cornelius.*
 
-Welcome, my good friends!
+Welcome, my good friends!  
 Say, Voltimand, what from our brother Norway?
 
 Voltimand
 
-Most fair return of greetings and desires.
-Upon our first, he sent out to suppress
-His nephew’s levies; which to him appear’d
-To be a preparation ’gainst the Polack;
-But, better look’d into, he truly found
-It was against your highness: whereat grieved,
-That so his sickness, age and impotence
-Was falsely borne in hand, sends out arrests
-On Fortinbras; which he, in brief, obeys;
-Receives rebuke from Norway, and in fine
-Makes vow before his uncle never more
-To give the assay of arms against your majesty.
-Whereon old Norway, overcome with joy,
-Gives him three thousand crowns in annual fee,
-And his commission to employ those soldiers,
-So levied as before, against the Polack:
-With an entreaty, herein further shown, *Giving a paper.*
-That it might please you to give quiet pass
-Through your dominions for this enterprise,
-On such regards of safety and allowance
+Most fair return of greetings and desires.  
+Upon our first, he sent out to suppress  
+His nephew’s levies; which to him appear’d  
+To be a preparation ’gainst the Polack;  
+But, better look’d into, he truly found  
+It was against your highness: whereat grieved,  
+That so his sickness, age and impotence  
+Was falsely borne in hand, sends out arrests  
+On Fortinbras; which he, in brief, obeys;  
+Receives rebuke from Norway, and in fine  
+Makes vow before his uncle never more  
+To give the assay of arms against your majesty.  
+Whereon old Norway, overcome with joy,  
+Gives him three thousand crowns in annual fee,  
+And his commission to employ those soldiers,  
+So levied as before, against the Polack:  
+With an entreaty, herein further shown, *Giving a paper.*  
+That it might please you to give quiet pass  
+Through your dominions for this enterprise,  
+On such regards of safety and allowance  
 As therein are set down.
 
 King
 
-It likes us well;
-And at our more consider’d time well read,
-Answer, and think upon this business.
-Meantime we thank you for your well-took labour:
-Go to your rest; at night we’ll feast together:
+It likes us well;  
+And at our more consider’d time well read,  
+Answer, and think upon this business.  
+Meantime we thank you for your well-took labour:  
+Go to your rest; at night we’ll feast together:  
 Most welcome home! *Exeunt Voltimand and Cornelius.*
 
 Polonius
 
-This business is well ended.
-My liege, and madam, to expostulate
-What majesty should be, what duty is,
-Why day is day, night night, and time is time,
-Were nothing but to waste night, day and time.
-Therefore, since brevity is the soul of wit,
-And tediousness the limbs and outward flourishes,
-I will be brief: your noble son is mad:
-Mad call I it; for, to define true madness,
-What is’t but to be nothing else but mad?
+This business is well ended.  
+My liege, and madam, to expostulate  
+What majesty should be, what duty is,  
+Why day is day, night night, and time is time,  
+Were nothing but to waste night, day and time.  
+Therefore, since brevity is the soul of wit,  
+And tediousness the limbs and outward flourishes,  
+I will be brief: your noble son is mad:  
+Mad call I it; for, to define true madness,  
+What is’t but to be nothing else but mad?  
 But let that go.
 
 Queen
@@ -182,18 +182,18 @@ More matter, with less art.
 
 Polonius
 
-Madam, I swear I use no art at all.
-That he is mad, ’tis true: ’tis true ’tis pity;
-And pity ’tis ’tis true: a foolish figure;
-But farewell it, for I will use no art.
-Mad let us grant him, then: and now remains
-That we find out the cause of this effect,
-Or rather say, the cause of this defect,
-For this effect defective comes by cause:
-Thus it remains, and the remainder thus.
-Perpend.
-I have a daughter⁠—have while she is mine⁠—
-Who, in her duty and obedience, mark,
+Madam, I swear I use no art at all.  
+That he is mad, ’tis true: ’tis true ’tis pity;  
+And pity ’tis ’tis true: a foolish figure;  
+But farewell it, for I will use no art.  
+Mad let us grant him, then: and now remains  
+That we find out the cause of this effect,  
+Or rather say, the cause of this defect,  
+For this effect defective comes by cause:  
+Thus it remains, and the remainder thus.  
+Perpend.  
+I have a daughter⁠—have while she is mine⁠—  
+Who, in her duty and obedience, mark,  
 Hath given me this: now gather, and surmise. *Reads.*
 
 > “To the celestial and my soul’s idol, the most beautified Ophelia,”⁠—
@@ -210,29 +210,29 @@ Polonius
 
 Good madam, stay awhile; I will be faithful. *Reads.*
 
-> “Doubt thou the stars are fire;
-> Doubt that the sun doth move;
-> Doubt truth to be a liar;
+> “Doubt thou the stars are fire;  
+> Doubt that the sun doth move;  
+> Doubt truth to be a liar;  
 > But never doubt I love.
 >
+>  
 >
->
->
+>  
 >
 > “O dear Ophelia, I am ill at these numbers; I have not art to reckon my groans: but that I love thee best, O most best, believe it. Adieu.
 >
->
+>  
 >
 > “Thine evermore most dear lady, whilst this machine is to him, Hamlet.”
 
-This, in obedience, hath my daughter shown me,
-And more above, hath his solicitings,
-As they fell out by time, by means and place,
+This, in obedience, hath my daughter shown me,  
+And more above, hath his solicitings,  
+As they fell out by time, by means and place,  
 All given to mine ear.
 
 King
 
-But how hath she
+But how hath she  
 Received his love?
 
 Polonius
@@ -245,26 +245,26 @@ As of a man faithful and honourable.
 
 Polonius
 
-I would fain prove so. But what might you think,
-When I had seen this hot love on the wing⁠—
-As I perceived it, I must tell you that,
-Before my daughter told me⁠—what might you,
-Or my dear majesty your queen here, think,
-If I had play’d the desk or table-book,
-Or given my heart a winking, mute and dumb,
-Or look’d upon this love with idle sight;
-What might you think? No, I went round to work,
-And my young mistress thus I did bespeak:
-“Lord Hamlet is a prince, out of thy star;
-This must not be:” and then I precepts gave her,
-That she should lock herself from his resort,
-Admit no messengers, receive no tokens.
-Which done, she took the fruits of my advice;
-And he, repulsed⁠—a short tale to make⁠—
-Fell into a sadness, then into a fast,
-Thence to a watch, thence into a weakness,
-Thence to a lightness, and, by this declension,
-Into the madness wherein now he raves,
+I would fain prove so. But what might you think,  
+When I had seen this hot love on the wing⁠—  
+As I perceived it, I must tell you that,  
+Before my daughter told me⁠—what might you,  
+Or my dear majesty your queen here, think,  
+If I had play’d the desk or table-book,  
+Or given my heart a winking, mute and dumb,  
+Or look’d upon this love with idle sight;  
+What might you think? No, I went round to work,  
+And my young mistress thus I did bespeak:  
+“Lord Hamlet is a prince, out of thy star;  
+This must not be:” and then I precepts gave her,  
+That she should lock herself from his resort,  
+Admit no messengers, receive no tokens.  
+Which done, she took the fruits of my advice;  
+And he, repulsed⁠—a short tale to make⁠—  
+Fell into a sadness, then into a fast,  
+Thence to a watch, thence into a weakness,  
+Thence to a lightness, and, by this declension,  
+Into the madness wherein now he raves,  
 And all we mourn for.
 
 King
@@ -277,8 +277,8 @@ It may be, very likely.
 
 Polonius
 
-Hath there been such a time⁠—I’d fain know that⁠—
-That I have positively said “ ’Tis so,”
+Hath there been such a time⁠—I’d fain know that⁠—  
+That I have positively said “ ’Tis so,”  
 When it proved otherwise?
 
 King
@@ -287,9 +287,9 @@ Not that I know.
 
 Polonius
 
-*Pointing to his head and shoulder.* Take this from this, if this be otherwise:
-If circumstances lead me, I will find
-Where truth is hid, though it were hid indeed
+*Pointing to his head and shoulder.* Take this from this, if this be otherwise:  
+If circumstances lead me, I will find  
+Where truth is hid, though it were hid indeed  
 Within the centre.
 
 King
@@ -298,7 +298,7 @@ How may we try it further?
 
 Polonius
 
-You know, sometimes he walks four hours together
+You know, sometimes he walks four hours together  
 Here in the lobby.
 
 Queen
@@ -307,11 +307,11 @@ So he does indeed.
 
 Polonius
 
-At such a time I’ll loose my daughter to him:
-Be you and I behind an arras then;
-Mark the encounter: if he love her not
-And be not from his reason fall’n thereon,
-Let me be no assistant for a state,
+At such a time I’ll loose my daughter to him:  
+Be you and I behind an arras then;  
+Mark the encounter: if he love her not  
+And be not from his reason fall’n thereon,  
+Let me be no assistant for a state,  
 But keep a farm and carters.
 
 King
@@ -324,12 +324,12 @@ But, look, where sadly the poor wretch comes reading.
 
 Polonius
 
-Away, I do beseech you, both away:
+Away, I do beseech you, both away:  
 I’ll board him presently. *Exeunt King, Queen, and Attendants.*
 
  *Enter Hamlet, reading.*
 
-O, give me leave:
+O, give me leave:  
 How does my good Lord Hamlet?
 
 Hamlet
@@ -452,7 +452,7 @@ As the indifferent children of the earth.
 
 Guildenstern
 
-Happy, in that we are not over-happy;
+Happy, in that we are not over-happy;  
 On fortune’s cap we are not the very button.
 
 Hamlet
@@ -726,7 +726,7 @@ Hamlet
 
 Why,
 
-“One fair daughter and no more,
+“One fair daughter and no more,  
 The which he loved passing well.”
 
 Polonius
@@ -777,18 +777,18 @@ I heard thee speak me a speech once, but it was never acted; or, if it was, not 
 
 —it is not so:⁠—it begins with Pyrrhus:⁠—
 
-> “The rugged Pyrrhus, he whose sable arms,
-> Black as his purpose, did the night resemble
-> When he lay couched in the ominous horse,
-> Hath now this dread and black complexion smear’d
-> With heraldry more dismal; head to foot
-> Now is he total gules; horridly trick’d
-> With blood of fathers, mothers, daughters, sons,
-> Baked and impasted with the parching streets,
-> That lend a tyrannous and damned light
-> To their lord’s murder: roasted in wrath and fire,
-> And thus o’er-sized with coagulate gore,
-> With eyes like carbuncles, the hellish Pyrrhus
+> “The rugged Pyrrhus, he whose sable arms,  
+> Black as his purpose, did the night resemble  
+> When he lay couched in the ominous horse,  
+> Hath now this dread and black complexion smear’d  
+> With heraldry more dismal; head to foot  
+> Now is he total gules; horridly trick’d  
+> With blood of fathers, mothers, daughters, sons,  
+> Baked and impasted with the parching streets,  
+> That lend a tyrannous and damned light  
+> To their lord’s murder: roasted in wrath and fire,  
+> And thus o’er-sized with coagulate gore,  
+> With eyes like carbuncles, the hellish Pyrrhus  
 > Old grandsire Priam seeks.”
 
 So, proceed you.
@@ -799,35 +799,35 @@ Polonius
 
 First Player
 
-> “Anon he finds him
-> Striking too short at Greeks; his antique sword,
-> Rebellious to his arm, lies where it falls,
-> Repugnant to command: unequal match’d,
-> Pyrrhus at Priam drives; in rage strikes wide;
-> But with the whiff and wind of his fell sword
-> The unnerved father falls. Then senseless Ilium,
-> Seeming to feel this blow, with flaming top
-> Stoops to his base, and with a hideous crash
-> Takes prisoner Pyrrhus’ ear: for, lo! his sword,
-> Which was declining on the milky head
-> Of reverend Priam, seem’d i’ the air to stick:
-> So, as a painted tyrant, Pyrrhus stood,
-> And like a neutral to his will and matter,
-> Did nothing.
-> But, as we often see, against some storm,
-> A silence in the heavens, the rack stand still,
-> The bold winds speechless and the orb below
-> As hush as death, anon the dreadful thunder
-> Doth rend the region, so, after Pyrrhus’ pause,
-> Aroused vengeance sets him new a-work;
-> And never did the Cyclops’ hammers fall
-> On Mars’s armour forged for proof eterne
-> With less remorse than Pyrrhus’ bleeding sword
-> Now falls on Priam.
-> Out, out, thou strumpet, Fortune! All you gods,
-> In general synod take away her power;
-> Break all the spokes and fellies from her wheel,
-> And bowl the round nave down the hill of heaven,
+> “Anon he finds him  
+> Striking too short at Greeks; his antique sword,  
+> Rebellious to his arm, lies where it falls,  
+> Repugnant to command: unequal match’d,  
+> Pyrrhus at Priam drives; in rage strikes wide;  
+> But with the whiff and wind of his fell sword  
+> The unnerved father falls. Then senseless Ilium,  
+> Seeming to feel this blow, with flaming top  
+> Stoops to his base, and with a hideous crash  
+> Takes prisoner Pyrrhus’ ear: for, lo! his sword,  
+> Which was declining on the milky head  
+> Of reverend Priam, seem’d i’ the air to stick:  
+> So, as a painted tyrant, Pyrrhus stood,  
+> And like a neutral to his will and matter,  
+> Did nothing.  
+> But, as we often see, against some storm,  
+> A silence in the heavens, the rack stand still,  
+> The bold winds speechless and the orb below  
+> As hush as death, anon the dreadful thunder  
+> Doth rend the region, so, after Pyrrhus’ pause,  
+> Aroused vengeance sets him new a-work;  
+> And never did the Cyclops’ hammers fall  
+> On Mars’s armour forged for proof eterne  
+> With less remorse than Pyrrhus’ bleeding sword  
+> Now falls on Priam.  
+> Out, out, thou strumpet, Fortune! All you gods,  
+> In general synod take away her power;  
+> Break all the spokes and fellies from her wheel,  
+> And bowl the round nave down the hill of heaven,  
 > As low as to the fiends!”
 
 Polonius
@@ -852,19 +852,19 @@ That’s good; “mobled queen” is good.
 
 First Player
 
-> “Run barefoot up and down, threatening the flames
-> With bisson rheum; a clout upon that head
-> Where late the diadem stood, and for a robe,
-> About her lank and all o’er-teemed loins,
-> A blanket, in the alarm of fear caught up;
-> Who this had seen, with tongue in venom steep’d,
-> ’Gainst Fortune’s state would treason have pronounced:
-> But if the gods themselves did see her then
-> When she saw Pyrrhus make malicious sport
-> In mincing with his sword her husband’s limbs,
-> The instant burst of clamour that she made,
-> Unless things mortal move them not at all,
-> Would have made milch the burning eyes of heaven,
+> “Run barefoot up and down, threatening the flames  
+> With bisson rheum; a clout upon that head  
+> Where late the diadem stood, and for a robe,  
+> About her lank and all o’er-teemed loins,  
+> A blanket, in the alarm of fear caught up;  
+> Who this had seen, with tongue in venom steep’d,  
+> ’Gainst Fortune’s state would treason have pronounced:  
+> But if the gods themselves did see her then  
+> When she saw Pyrrhus make malicious sport  
+> In mincing with his sword her husband’s limbs,  
+> The instant burst of clamour that she made,  
+> Unless things mortal move them not at all,  
+> Would have made milch the burning eyes of heaven,  
 > And passion in the gods.”
 
 Polonius
@@ -913,63 +913,63 @@ Good my lord!
 
 Hamlet
 
-Ay, so, God be wi’ ye; *Exeunt Rosencrantz and Guildenstern.* Now I am alone.
-O, what a rogue and peasant slave am I!
-Is it not monstrous that this player here,
-But in a fiction, in a dream of passion,
-Could force his soul so to his own conceit
-That from her working all his visage wann’d,
-Tears in his eyes, distraction in’s aspect,
-A broken voice, and his whole function suiting
-With forms to his conceit? and all for nothing!
-For Hecuba!
-What’s Hecuba to him, or he to Hecuba,
-That he should weep for her? What would he do,
-Had he the motive and the cue for passion
-That I have? He would drown the stage with tears
-And cleave the general ear with horrid speech,
-Make mad the guilty and appal the free,
-Confound the ignorant, and amaze indeed
-The very faculties of eyes and ears.
-Yet I,
-A dull and muddy-mettled rascal, peak,
-Like John-a-dreams, unpregnant of my cause,
-And can say nothing; no, not for a king,
-Upon whose property and most dear life
-A damn’d defeat was made. Am I a coward?
-Who calls me villain? breaks my pate across?
-Plucks off my beard, and blows it in my face?
-Tweaks me by the nose? gives me the lie i’ the throat,
-As deep as to the lungs? who does me this?
-Ha!
-’Swounds, I should take it: for it cannot be
-But I am pigeon-liver’d and lack gall
-To make oppression bitter, or ere this
-I should have fatted all the region kites
-With this slave’s offal: bloody, bawdy villain!
-Remorseless, treacherous, lecherous, kindless villain!
-O, vengeance!
-Why, what an ass am I! This is most brave,
-That I, the son of a dear father murder’d,
-Prompted to my revenge by heaven and hell,
-Must, like a whore, unpack my heart with words,
-And fall a-cursing, like a very drab,
-A scullion!
-Fie upon’t! foh! About, my brain! I have heard
-That guilty creatures sitting at a play
-Have by the very cunning of the scene
-Been struck so to the soul that presently
-They have proclaim’d their malefactions;
-For murder, though it have no tongue, will speak
-With most miraculous organ. I’ll have these players
-Play something like the murder of my father
-Before mine uncle: I’ll observe his looks;
-I’ll tent him to the quick: if he but blench,
-I know my course. The spirit that I have seen
-May be the devil: and the devil hath power
-To assume a pleasing shape; yea, and perhaps
-Out of my weakness and my melancholy,
-As he is very potent with such spirits,
-Abuses me to damn me: I’ll have grounds
-More relative than this: the play’s the thing
+Ay, so, God be wi’ ye; *Exeunt Rosencrantz and Guildenstern.* Now I am alone.  
+O, what a rogue and peasant slave am I!  
+Is it not monstrous that this player here,  
+But in a fiction, in a dream of passion,  
+Could force his soul so to his own conceit  
+That from her working all his visage wann’d,  
+Tears in his eyes, distraction in’s aspect,  
+A broken voice, and his whole function suiting  
+With forms to his conceit? and all for nothing!  
+For Hecuba!  
+What’s Hecuba to him, or he to Hecuba,  
+That he should weep for her? What would he do,  
+Had he the motive and the cue for passion  
+That I have? He would drown the stage with tears  
+And cleave the general ear with horrid speech,  
+Make mad the guilty and appal the free,  
+Confound the ignorant, and amaze indeed  
+The very faculties of eyes and ears.  
+Yet I,  
+A dull and muddy-mettled rascal, peak,  
+Like John-a-dreams, unpregnant of my cause,  
+And can say nothing; no, not for a king,  
+Upon whose property and most dear life  
+A damn’d defeat was made. Am I a coward?  
+Who calls me villain? breaks my pate across?  
+Plucks off my beard, and blows it in my face?  
+Tweaks me by the nose? gives me the lie i’ the throat,  
+As deep as to the lungs? who does me this?  
+Ha!  
+’Swounds, I should take it: for it cannot be  
+But I am pigeon-liver’d and lack gall  
+To make oppression bitter, or ere this  
+I should have fatted all the region kites  
+With this slave’s offal: bloody, bawdy villain!  
+Remorseless, treacherous, lecherous, kindless villain!  
+O, vengeance!  
+Why, what an ass am I! This is most brave,  
+That I, the son of a dear father murder’d,  
+Prompted to my revenge by heaven and hell,  
+Must, like a whore, unpack my heart with words,  
+And fall a-cursing, like a very drab,  
+A scullion!  
+Fie upon’t! foh! About, my brain! I have heard  
+That guilty creatures sitting at a play  
+Have by the very cunning of the scene  
+Been struck so to the soul that presently  
+They have proclaim’d their malefactions;  
+For murder, though it have no tongue, will speak  
+With most miraculous organ. I’ll have these players  
+Play something like the murder of my father  
+Before mine uncle: I’ll observe his looks;  
+I’ll tent him to the quick: if he but blench,  
+I know my course. The spirit that I have seen  
+May be the devil: and the devil hath power  
+To assume a pleasing shape; yea, and perhaps  
+Out of my weakness and my melancholy,  
+As he is very potent with such spirits,  
+Abuses me to damn me: I’ll have grounds  
+More relative than this: the play’s the thing  
 Wherein I’ll catch the conscience of the king. *Exit.*

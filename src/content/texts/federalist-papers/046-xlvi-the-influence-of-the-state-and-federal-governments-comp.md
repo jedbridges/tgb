@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xlvi-the-influence-of-the-state-and-federal-governments-comp"
-heading: "XLVI The Influence of the State and Federal Governments Compared Madison: From the New York Packet, Tuesday, January 29, 1788."
+heading: "XLVI: The Influence of the State and Federal Governments Compared"
 order: 46
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 2637
+words: 2628
 ---
-The Influence of the State and Federal Governments Compared
-
 Madison: From the *New York Packet*, Tuesday, January 29, 1788.
 
 To the People of the State of New York:

@@ -1,0 +1,413 @@
+---
+work: epictetus-enchiridion
+section: "chapter-li"
+heading: "Chapter LI"
+order: 10
+source: standardebooks
+sourceUrl: "https://standardebooks.org/ebooks/epictetus/the-enchiridion/elizabeth-carter"
+edition: "Elizabeth Carter's translation, 1758"
+translator: "Elizabeth Carter"
+licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
+words: 5223
+---
+How long will you then still defer thinking yourself worthy of the best things, and in no matter transgressing the distinctive reason? Have you accepted the theorems (rules), which it was your duty to agree to, and have you agreed to them? what teacher then do you still expect that you defer to him the correction of yourself? You are no longer a youth, but already a full-grown man. If then you are negligent and slothful, and are continually making procrastination after procrastination, and proposal (intention) after proposal, and fixing day after day, after which you will attend to yourself, you will not know that you are not making improvement, but you will continue ignorant (uninstructed) both while you live and till you die. Immediately then think it right to live as a full-grown man, and one who is making proficiency, and let everything which appears to you to be the best be to you a law which must not be transgressed. And if anything laborious, or pleasant or glorious or inglorious be presented to you, remember that now is the contest, now are the Olympic games, and they cannot be deferred; and that it depends on one defeat and one giving way that progress is either lost or maintained. Socrates in this way became perfect, in all things improving himself, attending to nothing except to reason. But you, though you are not yet a Socrates, ought to live as one who wishes to be a Socrates.
+
+**Chapter LII**
+
+The first and most necessary place (part, *τόπος*) in philosophy is the use of theorems (precepts, *φεωρήματα*), for instance, that we must not lie: the second part is that of demonstrations, for instance, How is it proved that we ought not to lie: the third is that which is confirmatory of these two and explanatory, for example, How is this a demonstration? For what is demonstration, what is consequence, what is contradiction, what is truth, what is falsehood? The third part (topic) is necessary on account of the second, and the second on account of the first; but the most necessary and that on which we ought to rest is the first. But we do the contrary. For we spend our time on the third topic, and all our earnestness is about it: but we entirely neglect the first. Therefore we lie; but the demonstration that we ought not to lie we have ready to hand.
+
+**LIII: In everything (circumstance) we should hold these maxims ready to hand:**
+
+> Lead me, O Zeus, and thou O Destiny,  
+> The way that I am bid by you to go:  
+> To follow I am ready. If I choose not,  
+> I make myself a wretch, and still must follow.
+
+> But whoso nobly yields unto necessity,  
+> We hold him wise, and skill’d in things divine.
+
+And the third also: O Crito, if so it pleases the Gods, so let it be; Anytus and Melitus are able indeed to kill me, but they cannot harm me.
+
+****
+
+These Fragments are entitled “*Epicteti Fragmenta maxime ex Ioanne Stobaeo, Antonio, et Maximo collecta*” (ed. Schweig.). There are some notes and emendations on the Fragments; and a short dissertation on them by Schweighaeuser.
+
+Nothing is known of Stobaeus nor of his time, except the fact that he has preserved some extracts of an ethical kind from the New Platonist Hierocles, who lived about the middle of the fifth century AD; and it is therefore concluded that Stobaeus lived after Hierocles. The fragments attributed to Epictetus are preserved by Stobaeus in his work entitled *Ἁνφολόγιον*, or *Florilegium* or *Sermones*.
+
+Antonius Monachus, a Greek monk, also made a Florilegium, entitled *Melissa* (the bee). His date is uncertain, but it was certainly much later than the time of Stobaeus.
+
+Maximus, also named the monk, and reverenced as a saint, is said to have been a native of Constantinople, and born about AD 580.
+
+Some of the Fragments contained in the edition of Schweighaeuser are certainly not from Epictetus. Many of the fragments are obscure; but they are translated as accurately as I can translate them, and the reader must give to them such meaning as he can.
+
+**Chapter I**
+
+The life which is implicated with fortune (depends on fortune) is like a winter torrent: for it is turbulent, and full of mud, and difficult to cross, and tyrannical, and noisy, and of short duration.
+
+**Chapter II**
+
+A soul which is conversant with virtue is like an ever flowing source, for it is pure and tranquil and potable and sweet and communicative (social), and rich and harmless and free from mischief.
+
+**Chapter III**
+
+If you wish to be good, first believe that you are bad.
+
+**Chapter IV**
+
+It is better to do wrong seldom and to own it, and to act right for the most part, than seldom to admit that you have done wrong and to do wrong often.
+
+**Chapter V**
+
+Check (punish) your passions (*πάφη*), that you may not be punished by them.
+
+**Chapter VI**
+
+Do not so much be ashamed of that (disgrace) which proceeds from men’s opinion as fly from that which comes from the truth.
+
+**Chapter VII**
+
+If you wish to be well spoken of, learn to speak well (of others): and when you have learned to speak well of them, try to act well, and so you will reap the fruit of being well spoken of.
+
+**Chapter VIII**
+
+Freedom and slavery, the one is the name of virtue, and the other of vice: and both are acts of the will. But where there is no will, neither of them touches (affects) these things. But the soul is accustomed to be master of the body, and the things which belong to the body have no share in the will. For no man is a slave who is free in his will.
+
+**Chapter IX**
+
+It is an evil chain, fortune (a chain) of the body, and vice of the soul. For he who is loose (free) in the body, but bound in the soul is a slave: but on the contrary he who is bound in the body, but free (unbound) in the soul, is free.
+
+**Chapter X**
+
+The bond of the body is loosened by nature through death, and by vice through money: but the bond of the soul is loosened by learning, and by experience and by discipline.
+
+**Chapter XI**
+
+If you wish to live without perturbation and with pleasure, try to have all who dwell with you good. And you will have them good, if you instruct the willing, and dismiss those who are unwilling (to be taught): for there will fly away together with those who have fled away both wickedness and slavery; and there will be left with those who remain with you goodness and liberty.
+
+**Chapter XII**
+
+It is a shame for those who sweeten drink with the gifts of the bees, by badness to embitter reason which is the gift of the gods.
+
+**Chapter XIII**
+
+No man who loves money, and loves pleasure, and loves fame, also loves mankind, but only he who loves virtue.
+
+**Chapter XIV**
+
+As you would not choose to sail in a large and decorated and gold-laden ship (or ship ornamented with gold), and to be drowned; so do not choose to dwell in a large and costly house and to be disturbed (by cares).
+
+**Chapter XV**
+
+When we have been invited to a banquet, we take what is set before us: but if a guest should ask the host to set before him fish or sweet cakes, he would be considered to be an unreasonable fellow. But in the world we ask the Gods for what they do not give; and we do this though the things are many which they have given.
+
+**Chapter XVI**
+
+They are amusing fellows, said he (Epictetus), who are proud of the things which are not in our power. A man says, I am better than you, for I possess much land, and you are wasting with hunger. Another says, I am of consular rank. Another says, I am a Procurator (*ἐπίτροπος*). Another, I have curly hair. But a horse does not say to a horse, I am superior to you, for I possess much fodder, and much barley, and my bits are of gold and my harness is embroidered: but he says, I am swifter than you. And every animal is better or worse from his own merit (virtue) or his own badness. Is there then no virtue in man only? and must we look to the hair, and our clothes and to our ancestors?
+
+**Chapter XVII**
+
+The sick are vexed with the physician who gives them no advice, and think that he has despaired of them. But why should they not have the same feeling towards the philosopher, and think that he has despaired of their coming to a sound state of mind, if he says nothing at all that is useful to a man?
+
+**Chapter XVIII**
+
+Those who are well constituted in the body endure both heat and cold: and so those who are well constituted in the soul endure both anger and grief and excessive joy and the other affects.
+
+**Chapter XIX**
+
+Examine yourself whether you wish to be rich or to be happy. If you wish to be rich, you should know that it is neither a good thing nor at all in your power: but if you wish to be happy, you should know that it is both a good thing and in your power, for the one is a temporary loan of fortune, and happiness comes from the will.
+
+**Chapter XX**
+
+As when you see a viper or an asp or a scorpion in an ivory or golden box, you do not on account of the costliness of the material love it or think it happy, but because the nature of it is pernicious, you turn away from it and loathe it; so when you shall see vice dwelling in wealth and in the swollen fullness of fortune, be not struck by the splendour of the material, but despise the false character of the morals.
+
+**Chapter XXI**
+
+Wealth is not one of the good things; great expenditure is one of the bad; moderation (*σωφροσύνη*) is one of the good things. And moderation invites to frugality and the acquisition of good things: but wealth invites to great expenditure and draws us away from moderation. It is difficult then for a rich man to be moderate, or for a moderate man to be rich.
+
+**Chapter XXII**
+
+As if you were begotten or born in a ship, you would not be eager to be the master of it (*κυβερνήτης*), so⁠—. For neither there (in the ship) will the ship naturally be connected with you, nor wealth in the other case; but reason is everywhere naturally connected with you. As then reason is a thing which naturally belongs to you and is born in you, consider this also as specially your own and take care of it.
+
+**Chapter XXIII**
+
+If you had been born among the Persians, you would not have wished to live in Hellas (Greece), but to have lived in Persia happy: so if you are born in poverty, why do you seek to grow rich, and why do you not remain in poverty and be happy?
+
+**Chapter XXIV**
+
+As it is better to lie compressed in a narrow bed and be healthy than to be tossed with disease on a broad couch, so also it is better to contract yourself within a small competence and to be happy than to have a great fortune and to be wretched.
+
+**Chapter XXV**
+
+It is not poverty which produces sorrow, but desire; nor does wealth release from fear, but reason (the power of reasoning, *λογισμός*). If then you acquire this power of reasoning, you will neither desire wealth nor complain of poverty.
+
+**Chapter XXVI**
+
+Neither is a horse elated nor proud of his manger and trappings and coverings, nor a bird of his little shreds of cloth and of his nest: but both of them are proud of their swiftness, one proud of the swiftness of the feet, and the other of the wings. Do you also then not be greatly proud of your food and dress and, in short, of any external things, but be proud of your integrity and good deeds (*εὐποιία*).
+
+**Chapter XXVII**
+
+To live well differs from living extravagantly: for the first comes from moderation and a sufficiency (*αὐταρκείας*） and good order and propriety and frugality; but the other comes from intemperance and luxury and want of order and want of propriety. And the end (the consequence) of the one is true praise, but of the other blame. If then you wish to live well, do not seek to be commended for profuse expenditure.
+
+**Chapter XXVIII**
+
+Let the measure to you of all food and drink be the first satisfying of the desire; and let the food and the pleasure be the desire (appetite) itself: and you will neither take more than is necessary, nor will you want cooks, and you will be satisfied with the drink that comes in the way.
+
+**Chapter XXIX**
+
+Make your manner of eating neither luxurious nor gloomy, but lively and frugal, that the soul may not be perturbed through being deceived by the pleasures of the body, and that it may despise them; and that the soul may not be injured by the enjoyment of present luxury, and the body may not afterwards suffer from disease.
+
+**Chapter XXX**
+
+Take care that the food which you put into the stomach does not fatten (nourish) you, but the cheerfulness of the mind: for the food is changed into excrement, and ejected, and the urine also flows out at the same time; but the cheerfulness, even if the soul be separated, remains always uncorrupted.
+
+**Chapter XXXI**
+
+In banquets remember that you entertain two guests, body and soul: and whatever you shall have given to the body you soon eject: but what you shall have given to the soul, you keep always.
+
+**Chapter XXXII**
+
+Do not mix anger with profuse expenditure and serve them up to your guests. Profusion which fills the body is quickly gone; but anger sinks into the soul and remains for a long time. Consider then that you be not transported with anger and insult your guests at a great expense; but rather please them with frugality and by gentle behaviour.
+
+**Chapter XXXIII**
+
+In your banquets (meals) take care that those who serve (your slaves) are not more than those who are served; for it is foolish for many souls (persons) to wait on a few couches (seats).
+
+**Chapter XXXIV**
+
+It is best if even in the preparations for a feast you take a part of the labour, and at the enjoyment of the food, while you are feasting, you share with those who serve the things which are before you. But if such behaviour be unsuitable to the occasion, remember that you are served when you are not labouring by those who are labouring, when you are eating by those who are not eating, when you are drinking by those who are not drinking, while you are talking by those who are silent, while you are at ease by those who are under constraint; and if you remember this, you will neither being heated with anger be guilty of any absurdity yourself, nor by irritating another will you cause any mischief.
+
+**Chapter XXXV**
+
+Quarrelling and contention are everywhere foolish, and particularly in talk over wine they are unbecoming: for a man who is drunk could not teach a man who is sober, nor on the other hand could a drunken man be convinced by a sober man. But where there is not sobriety, it will appear that to no purpose have you laboured for the result of persuasion.
+
+**Chapter XXXVI**
+
+Grasshoppers (cicadae) are musical: snails have no voice. Snails have pleasure in being moist, but grasshoppers in being dry. Next the dew invites forth the snails and for this they crawl out: but on the contrary the sun when he is hot, rouses the grasshoppers and they sing in the sun. Therefore if you wish to be a musical man and to harmonize well with others, when over the cups the soul is bedewed with wine, at that time do not permit the soul to go forth and to be polluted; but when in company (parties) it is fired by reason, then bid her to utter oracular words and to sing the oracles of justice.
+
+**Chapter XXXVII**
+
+Examine in three ways him who is talking with you, as superior, or as inferior, or as equal: and if he is superior, you should listen to him and be convinced by him: but if he is inferior, you should convince him; if he is equal, you should agree with him; and thus you will never be guilty of being quarrelsome.
+
+**Chapter XXXVIII**
+
+It is better by assenting to truth to conquer opinion, than by assenting to opinion to be conquered by truth.
+
+**Chapter XXXIX**
+
+If you seek truth, you will not seek by every means to gain a victory; and if you have found truth, you will have the gain of not being defeated.
+
+**Chapter XL**
+
+Truth conquers with itself; but opinion conquers among those who are external.
+
+**Chapter XLI**
+
+It is better to live with one free man and to be without fear and free, than to be a slave with many.
+
+**Chapter XLII**
+
+What you avoid suffering, do not attempt to make others suffer. You avoid slavery: take care that others are not your slaves. For if you endure to have a slave, you appear to be a slave yourself first. For vice has no community with virtue, nor freedom with slavery.
+
+**Chapter XLIII**
+
+As he who is in health would not choose to be served (ministered to) by the sick, nor for those who dwell with him to be sick, so neither would a free man endure to be served by slaves, or for those who live with him to be slaves.
+
+**Chapter XLIV**
+
+Whoever you are who wish to be not among the number of slaves, release yourself from slavery: and you will be free, if you are released from desire. For neither Aristides nor Epaminondas nor Lycurgus through being rich and served by slaves were named the one just, the other a god, and the third a saviour, but because they were poor and delivered Hellas (Greece) from slavery.
+
+**Chapter XLV**
+
+If you wish your house to be well managed, imitate the Spartan Lycurgus. For as he did not fence his city with walls, but fortified the inhabitants by virtue and preserved the city always free; so do you not cast around (your house) a large court and raise high towers, but strengthen the dwellers by good will and fidelity and friendship, and then nothing harmful will enter it, not even if the whole band of wickedness shall array itself against it.
+
+**Chapter XLVI**
+
+Do not hang your house round with tablets and pictures, but decorate it with moderation (*σωφροσύνη*): for the one is of a foreign (unsuitable) kind, and a temporary deception of the eyes; but the other is a natural and indelible, and perpetual ornament of the house.
+
+**Chapter XLVII**
+
+Instead of an herd of oxen, endeavour to assemble herds of friends in your house.
+
+**Chapter XLVIII**
+
+As a wolf resembles a dog, so both a flatterer, and an adulterer and a parasite, resemble a friend. Take care then that instead of watch dogs you do not without knowing it let in mischievous wolves.
+
+**Chapter XLIX**
+
+To be eager that your house should be admired by being whitened with gypsum, is the mark of a man who has no taste: but to set off (decorate) our morals by the goodness of our communication (social habits) is the mark of a man who is a lover of beauty and a lover of man.
+
+**Chapter L**
+
+If you begin by admiring little things, you will not be thought worthy of great things: but if you despise the little, you will be greatly admired.
+
+**Chapter LI**
+
+Nothing is smaller (meaner) than love of pleasure, and love of gain and pride. Nothing is superior to magnanimity, and gentleness, and love of mankind, and beneficence.
+
+**Chapter LII**
+
+They bring forward (they name, they mention) the peevish philosophers (the Stoics), whose opinion it is that pleasure is not a thing conformable to nature, but is a thing which is consequent on the things which are conformable to nature, as justice, temperance, freedom. What then? is the soul pleased and made tranquil by the pleasures of the body which are smaller, as Epicurus says; and is it not pleased with its own good things, which are the greatest? And indeed nature has given to me modesty, and I blush much when I think of saying anything base (indecent). This motion (feeling) does not permit me to make (consider) pleasure the good and the end (purpose) of life.
+
+**Chapter LIII**
+
+In Rome the women have in their hands Plato’s Polity (the Republic), because it allows (advises) the women to be common, for they attend only to the words of Plato, not to his meaning. Now he does not recommend marriage and one man to cohabit with one woman, and then that the women should be common: but he takes away such a marriage, and introduces another kind of marriage. And in fine, men are pleased with finding excuses for their faults. Yet philosophy says that we ought not to stretch out even a finger without a reason.
+
+**Chapter LIV**
+
+Of pleasures those which occur most rarely give the greatest delight.
+
+**Chapter LV**
+
+If a man should transgress moderation, the things which give the greatest delight would become the things which give the least.
+
+**Chapter LVI**
+
+It is just to commend Agrippinus for this reason, that though he was a man of the highest worth, he never praised himself; but even if another person praised him, he would blush. And he was such a man (Epictetus said) that he would write in praise of anything disagreeable that befell him; if it was a fever, he would write of a fever; if he was disgraced, he would write of disgrace; if he were banished, of banishment. And on one occasion (he mentioned) when he was going to dine, a messenger brought him news that Nero commanded him to go into banishment; on which Agrippinus said, Well then we will dine at Aricia.
+
+**Chapter LVII**
+
+Diogenes said that no labour was good, unless the end (purpose) of it was courage and strength (*τόνος*) of the soul, but not of the body.
+
+**Chapter LVIII**
+
+As a true balance is neither corrected by a true balance nor judged by a false balance, so also a just judge is neither corrected by just judges nor is he judged (condemned) by unjust judges.
+
+**Chapter LIX**
+
+As that which is straight does not need that which is straight, so neither does the just need that which is just.
+
+**Chapter LX**
+
+Do not give judgment in one court (of justice) before you have been tried yourself before justice.
+
+**Chapter LXI**
+
+If you wish to make your judgments just, listen not to (regard not) any of those who are parties (to the suit), nor to those who plead in it, but listen to justice itself.
+
+**Chapter LXII**
+
+You will fail (stumble) least in your judgments, if you yourself fail (stumble) least in your life.
+
+**Chapter LXIII**
+
+It is better when you judge justly to be blamed undeservedly by him who has been condemned than when you judge unjustly to be justly blamed by (before) nature.
+
+**Chapter LXIV**
+
+As the stone which tests the gold is not at all tested itself by the gold, so it is with him who has the faculty of judging.
+
+**Chapter LXV**
+
+It is shameful for the judge to be judged by others.
+
+**Chapter LXVI**
+
+As nothing is straighter than that which is straight, so nothing is juster than that which is just.
+
+**Chapter LXVII**
+
+Who among us does not admire the act of Lycurgus the Lacedaemonian? For after he was maimed in one of his eyes by one of the citizens, and the young man was delivered up to him by the people that he might punish him as he chose, Lycurgus spared him: and after instructing him and making him a good man he brought him into the theatre. When the Lacedaemonians expressed their surprise, Lycurgus said, I received from you this youth when he was insolent and violent: I restore him to you gentle and a good citizen.
+
+**Chapter LXVIII**
+
+Pittacus after being wronged by a certain person and having the power of punishing him let him go, saying, Forgiveness is better than revenge: for forgiveness is the sign of a gentle nature, but revenge the sign of a savage nature.
+
+**Chapter LXIX**
+
+But before everything this is the act of nature to bind together and to fit together the movement towards the appearance of that which is becoming (fit) and useful.
+
+**Chapter LXX**
+
+To suppose that we shall be easily despised by others, if we do not in every way do some damage to those who first show us their hostility, is the mark of very ignoble and foolish men: for (thus) we affirm that the man is considered to be contemptible because of his inability to do damage; but much rather is a man considered to be contemptible because of his inability to do what is good (useful).
+
+**Chapter LXXI**
+
+When you are attacking (or going to attack) any person violently and with threats, remember to say to yourself first, that you are (by nature) mild (gentle); and if you do nothing savage, you will continue to live without repentance and without blame.
+
+**Chapter LXXII**
+
+A man ought to know that it is not easy for him to have an opinion (or fixed principle), if he does not daily say the same things, and hear the same things, and at the same time apply them to life.
+
+**Chapter LXXIII**
+
+[Nicias was so fond of labour (assiduous) that he often asked his slaves, if he had bathed and if he had dined.]
+
+**Chapter LXXIV**
+
+[The slaves of Archimedes used to drag him by force from his table of diagrams and anoint him; and Archimedes would then draw his figures on his own body when it had been anointed.]
+
+**Chapter LXXV**
+
+[Lampis the shipowner being asked how he acquired his wealth, answered, With no difficulty, my great wealth; but my small wealth (my first gains), with much labour.]
+
+**Chapter LXXVI**
+
+Solon having been asked by Periander over their cups (*παρὰ πότον*), since he happened to say nothing, Whether he was silent for want of words or because he was a fool, replied: No fool is able to be silent over his cups.
+
+**Chapter LXXVII**
+
+Attempt on every occasion to provide for nothing so much as that which is safe: for silence is safer than speaking. And omit speaking whatever is without sense and reason.
+
+**Chapter LXXVIII**
+
+As the fire-lights in harbours by a few pieces of dry-wood raise a great flame and give sufficient help to ships which are wandering on the sea; so also an illustrious man in a state which is tempest-tossed, while he is himself satisfied with a few things does great services to his citizens.
+
+**Chapter LXXIX**
+
+As if you attempted to manage a ship, you would certainly learn completely the steersman’s art, [so if you would administer a state, learn the art of managing a state]. For it will be in your power, as in the first case to manage the whole ship, so in the second case also to manage the whole state.
+
+**Chapter LXXX**
+
+If you propose to adorn your city by the dedication of offerings (monuments), first dedicate to yourself (decorate yourself with) the noblest offering of gentleness, and justice and beneficence.
+
+**Chapter LXXXI**
+
+You will do the greatest services to the state, if you shall raise not the roofs of the houses, but the souls of the citizens: for it is better that great souls should dwell in small houses than for mean slaves to lurk in great houses.
+
+**Chapter LXXXII**
+
+Do not decorate the walls of your house with the valuable stones from Euboea and Sparta; but adorn the minds (breasts) of the citizens and of those who administer the state with the instruction which comes from Hellas (Greece). For states are well governed by the wisdom (judgment) of men, but not by stone and wood.
+
+**Chapter LXXXIII**
+
+As, if you wished to breed lions, you would not care about the costliness of their dens, but about the habits of the animals; so, if you attempt to preside over your citizens, be not so anxious about the costliness of the buildings as careful about the manly character of those who dwell in them.
+
+**Chapter Lxxxiv72**
+
+As a skilful horse-trainer does not feed (only) the good colts and allow to starve those who are disobedient to the rein, but he feeds both alike, and chastises the one more and forces him to be equal to the other: so also a careful man and one who is skilled in political power, attempts to treat well those citizens who have a good character, but does not will that those who are of a contrary character should be ruined at once; and he in no manner grudges both of them their food, but he teaches and urges on with more vehemence him who resists reason and law.
+
+**Chapter LXXXV**
+
+As a goose is not frightened by cackling nor a sheep by bleating, so let not the clamour of a senseless multitude alarm you.
+
+**Chapter Lxxxvi74**
+
+As a multitude, when they without reason demand of you anything of your own, do not disconcert you, so do not be moved from your purpose even by a rabble when they unjustly attempt to move you.
+
+**Chapter LXXXVII**
+
+What is due to the state pay as quickly as you can, and you will never be asked for that which is not due.
+
+**Chapter LXXXVIII**
+
+As the sun does not wait for prayers and incantations to be induced to rise, but immediately shines and is saluted by all: so do you also not wait for clappings of hands, and shouts and praise to be induced to do good, but be a doer of good voluntarily, and you will be beloved as much as the sun.
+
+**Chapter LXXXIX**
+
+Neither should a ship rely on one small anchor, nor should life rest on a single hope.
+
+**Chapter XC**
+
+We ought to stretch our legs and stretch our hopes only to that which is possible.
+
+**Chapter XCI**
+
+When Thales was asked what is most universal, he answered, Hope, for hope stays with those who have nothing else.
+
+**Chapter XCII**
+
+It is more necessary to heal the soul than the body, for to die is better than to live a bad life.
+
+**Chapter XCIII**
+
+Pyrrho used to say that there is no difference between dying and living: and a man said to him, Why then do you not die? Pyrrho replied, Because there is no difference.

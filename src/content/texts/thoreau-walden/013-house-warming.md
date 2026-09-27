@@ -41,15 +41,15 @@ Every man looks at his woodpile with a kind of affection. I love to have mine be
 
 A few pieces of fat pine were a great treasure. It is interesting to remember how much of this food for fire is still concealed in the bowels of the earth. In previous years I had often gone prospecting over some bare hillside, where a pitch pine wood had formerly stood, and got out the fat pine roots. They are almost indestructible. Stumps thirty or forty years old, at least, will still be sound at the core, though the sapwood has all become vegetable mould, as appears by the scales of the thick bark forming a ring level with the earth four or five inches distant from the heart. With axe and shovel you explore this mine, and follow the marrowy store, yellow as beef tallow, or as if you had struck on a vein of gold, deep into the earth. But commonly I kindled my fire with the dry leaves of the forest, which I had stored up in my shed before the snow came. Green hickory finely split makes the woodchopper’s kindlings, when he has a camp in the woods. Once in a while I got a little of this. When the villagers were lighting their fires beyond the horizon, I too gave notice to the various wild inhabitants of Walden vale, by a smoky streamer from my chimney, that I was awake.⁠—
 
-> Light-winged Smoke, Icarian bird,
-> Melting thy pinions in thy upward flight,
-> Lark without song, and messenger of dawn,
-> Circling above the hamlets as thy nest;
-> Or else, departing dream, and shadowy form
-> Of midnight vision, gathering up thy skirts;
-> By night star-veiling, and by day
-> Darkening the light and blotting out the sun;
-> Go thou my incense upward from this hearth,
+> Light-winged Smoke, Icarian bird,  
+> Melting thy pinions in thy upward flight,  
+> Lark without song, and messenger of dawn,  
+> Circling above the hamlets as thy nest;  
+> Or else, departing dream, and shadowy form  
+> Of midnight vision, gathering up thy skirts;  
+> By night star-veiling, and by day  
+> Darkening the light and blotting out the sun;  
+> Go thou my incense upward from this hearth,  
 > And ask the gods to pardon this clear flame.
 
 Hard green wood just cut, though I used but little of that, answered my purpose better than any other. I sometimes left a good fire when I went to take a walk in a winter afternoon; and when I returned, three or four hours afterward, it would be still alive and glowing. My house was not empty though I was gone. It was as if I had left a cheerful housekeeper behind. It was I and Fire that lived there; and commonly my housekeeper proved trustworthy. One day, however, as I was splitting wood, I thought that I would just look in at the window and see if the house was not on fire; it was the only time I remember to have been particularly anxious on this score; so I looked and saw that a spark had caught my bed, and I went in and extinguished it when it had burned a place as big as my hand. But my house occupied so sunny and sheltered a position, and its roof was so low, that I could afford to let the fire go out in the middle of almost any winter day.
@@ -58,24 +58,24 @@ The moles nested in my cellar, nibbling every third potato, and making a snug be
 
 The next winter I used a small cooking-stove for economy, since I did not own the forest; but it did not keep fire so well as the open fireplace. Cooking was then, for the most part, no longer a poetic, but merely a chemic process. It will soon be forgotten, in these days of stoves, that we used to roast potatoes in the ashes, after the Indian fashion. The stove not only took up room and scented the house, but it concealed the fire, and I felt as if I had lost a companion. You can always see a face in the fire. The laborer, looking into it at evening, purifies his thoughts of the dross and earthiness which they have accumulated during the day. But I could no longer sit and look into the fire, and the pertinent words of a poet recurred to me with new force:
 
-> “Never, bright flame, may be denied to me
-> Thy dear, life imaging, close sympathy.
-> What but my hopes shot upward e’er so bright?
-> What but my fortunes sunk so low in night?
-> Why art thou banished from our hearth and hall,
-> Thou who art welcomed and beloved by all?
-> Was thy existence then too fanciful
-> For our life’s common light, who are so dull?
-> Did thy bright gleam mysterious converse hold
+> “Never, bright flame, may be denied to me  
+> Thy dear, life imaging, close sympathy.  
+> What but my hopes shot upward e’er so bright?  
+> What but my fortunes sunk so low in night?  
+> Why art thou banished from our hearth and hall,  
+> Thou who art welcomed and beloved by all?  
+> Was thy existence then too fanciful  
+> For our life’s common light, who are so dull?  
+> Did thy bright gleam mysterious converse hold  
 > With our congenial souls? secrets too bold?
 >
+>  
 >
->
-> Well, we are safe and strong, for now we sit
-> Beside a hearth where no dim shadows flit,
-> Where nothing cheers nor saddens, but a fire
-> Warms feet and hands⁠—nor does to more aspire;
-> By whose compact utilitarian heap
-> The present may sit down and go to sleep,
-> Nor fear the ghosts who from the dim past walked,
+> Well, we are safe and strong, for now we sit  
+> Beside a hearth where no dim shadows flit,  
+> Where nothing cheers nor saddens, but a fire  
+> Warms feet and hands⁠—nor does to more aspire;  
+> By whose compact utilitarian heap  
+> The present may sit down and go to sleep,  
+> Nor fear the ghosts who from the dim past walked,  
 > And with us by the unequal light of the old wood fire talked.”

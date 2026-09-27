@@ -20,11 +20,11 @@ There was no one in the summerhouse. Alyosha sat down and began to wait. He look
 
 A man’s voice suddenly began singing in a sugary falsetto, accompanying himself on the guitar:
 
-> With invincible force
-> I am bound to my dear.
-> O Lord, have mercy
-> On her and on me!
-> On her and on me!
+> With invincible force  
+> I am bound to my dear.  
+> O Lord, have mercy  
+> On her and on me!  
+> On her and on me!  
 > On her and on me!
 
 The voice ceased. It was a lackey’s tenor and a lackey’s song. Another voice, a woman’s, suddenly asked insinuatingly and bashfully, though with mincing affectation:
@@ -37,11 +37,11 @@ The voice ceased. It was a lackey’s tenor and a lackey’s song. Another voice
 
 The man sang again:
 
-> What do I care for royal wealth
-> If but my dear one be in health?
-> Lord have mercy
-> On her and on me!
-> On her and on me!
+> What do I care for royal wealth  
+> If but my dear one be in health?  
+> Lord have mercy  
+> On her and on me!  
+> On her and on me!  
 > On her and on me!
 
 “It was even better last time,” observed the woman’s voice. “You sang ‘If my darling be in health’; it sounded more tender. I suppose you’ve forgotten today.”
@@ -86,12 +86,12 @@ The man sang again:
 
 “You don’t mean you would run away?” But Smerdyakov did not deign to reply. After a moment’s silence the guitar tinkled again, and he sang again in the same falsetto:
 
-> Whatever you may say,
-> I shall go far away.
-> Life will be bright and gay
-> In the city far away.
-> I shall not grieve,
-> I shall not grieve at all,
+> Whatever you may say,  
+> I shall go far away.  
+> Life will be bright and gay  
+> In the city far away.  
+> I shall not grieve,  
+> I shall not grieve at all,  
 > I don’t intend to grieve at all.
 
 Then something unexpected happened. Alyosha suddenly sneezed. They were silent. Alyosha got up and walked towards them. He found Smerdyakov dressed up and wearing polished boots, his hair pomaded, and perhaps curled. The guitar lay on the garden-seat. His companion was the daughter of the house, wearing a light-blue dress with a train two yards long. She was young and would not have been bad-looking, but that her face was so round and terribly freckled.

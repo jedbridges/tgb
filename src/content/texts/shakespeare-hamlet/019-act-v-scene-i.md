@@ -115,9 +115,9 @@ First Clown
 
 Cudgel thy brains no more about it, for your dull ass will not mend his pace with beating; and, when you are asked this question next, say “a grave-maker:” the houses that he makes last till doomsday. Go, get thee to Yaughan: fetch me a stoup of liquor. *Exit Second Clown.* *He digs and sings.*
 
-In youth, when I did love, did love,
-Methought it was very sweet,
-To contract, O, the time, for, ah, my behove,
+In youth, when I did love, did love,  
+Methought it was very sweet,  
+To contract, O, the time, for, ah, my behove,  
 O, methought, there was nothing meet.
 
 Hamlet
@@ -136,9 +136,9 @@ First Clown
 
 *Sings.*
 
-But age, with his stealing steps,
-Hath claw’d me in his clutch,
-And hath shipped me intil the land,
+But age, with his stealing steps,  
+Hath claw’d me in his clutch,  
+And hath shipped me intil the land,  
 As if I had never been such.
 
 *Throws up a skull.*
@@ -167,9 +167,9 @@ First Clown
 
 *Sings.*
 
-A pick-axe, and a spade, a spade,
-For and a shrouding sheet:
-O, a pit of clay for to be made
+A pick-axe, and a spade, a spade,  
+For and a shrouding sheet:  
+O, a pit of clay for to be made  
 For such a guest is meet.
 
 *Throws up another skull.*
@@ -198,7 +198,7 @@ First Clown
 
 Mine, sir. *Sings.*
 
-O, a pit of clay for to be made
+O, a pit of clay for to be made  
 For such a guest is meet.
 
 Hamlet
@@ -373,18 +373,18 @@ Hamlet
 
 No, faith, not a jot; but to follow him thither with modesty enough, and likelihood to lead it: as thus: Alexander died, Alexander was buried, Alexander returneth into dust; the dust is earth; of earth we make loam; and why of that loam, whereto he was converted, might they not stop a beer-barrel?
 
-Imperious Caesar, dead and turn’d to clay,
-Might stop a hole to keep the wind away:
-O, that that earth, which kept the world in awe,
-Should patch a wall to expel the winter flaw!
+Imperious Caesar, dead and turn’d to clay,  
+Might stop a hole to keep the wind away:  
+O, that that earth, which kept the world in awe,  
+Should patch a wall to expel the winter flaw!  
 But soft! but soft! aside: here comes the king,
 
  *Enter Priests, etc. in procession; the Corpse of Ophelia, Laertes and Mourners following; King, Queen, their trains, etc.*
 
-The queen, the courtiers: who is this they follow?
-And with such maimed rites? This doth betoken
-The corse they follow did with desperate hand
-Fordo its own life: ’twas of some estate.
+The queen, the courtiers: who is this they follow?  
+And with such maimed rites? This doth betoken  
+The corse they follow did with desperate hand  
+Fordo its own life: ’twas of some estate.  
 Couch we awhile, and mark. *Retiring with Horatio.*
 
 Laertes
@@ -393,7 +393,7 @@ What ceremony else?
 
 Hamlet
 
-That is Laertes,
+That is Laertes,  
 A very noble youth: mark.
 
 Laertes
@@ -402,14 +402,14 @@ What ceremony else?
 
 First Priest
 
-Her obsequies have been as far enlarged
-As we have warranty: her death was doubtful;
-And, but that great command o’ersways the order,
-She should in ground unsanctified have lodged
-Till the last trumpet; for charitable prayers,
-Shards, flints and pebbles should be thrown on her:
-Yet here she is allow’d her virgin crants,
-Her maiden strewments and the bringing home
+Her obsequies have been as far enlarged  
+As we have warranty: her death was doubtful;  
+And, but that great command o’ersways the order,  
+She should in ground unsanctified have lodged  
+Till the last trumpet; for charitable prayers,  
+Shards, flints and pebbles should be thrown on her:  
+Yet here she is allow’d her virgin crants,  
+Her maiden strewments and the bringing home  
 Of bell and burial.
 
 Laertes
@@ -418,17 +418,17 @@ Must there no more be done?
 
 First Priest
 
-No more be done:
-We should profane the service of the dead
-To sing a requiem and such rest to her
+No more be done:  
+We should profane the service of the dead  
+To sing a requiem and such rest to her  
 As to peace-parted souls.
 
 Laertes
 
-Lay her i’ the earth:
-And from her fair and unpolluted flesh
-May violets spring! I tell thee, churlish priest,
-A ministering angel shall my sister be,
+Lay her i’ the earth:  
+And from her fair and unpolluted flesh  
+May violets spring! I tell thee, churlish priest,  
+A ministering angel shall my sister be,  
 When thou liest howling.
 
 Hamlet
@@ -437,29 +437,29 @@ What, the fair Ophelia!
 
 Queen
 
-Sweets to the sweet: farewell! *Scattering flowers.*
-I hoped thou shouldst have been my Hamlet’s wife;
-I thought thy bride-bed to have deck’d, sweet maid,
+Sweets to the sweet: farewell! *Scattering flowers.*  
+I hoped thou shouldst have been my Hamlet’s wife;  
+I thought thy bride-bed to have deck’d, sweet maid,  
 And not have strew’d thy grave.
 
 Laertes
 
-O, treble woe
-Fall ten times treble on that cursed head,
-Whose wicked deed thy most ingenious sense
-Deprived thee of! Hold off the earth awhile,
-Till I have caught her once more in mine arms: *Leaps into the grave.*
-Now pile your dust upon the quick and dead,
-Till of this flat a mountain you have made,
-To o’ertop old Pelion, or the skyish head
+O, treble woe  
+Fall ten times treble on that cursed head,  
+Whose wicked deed thy most ingenious sense  
+Deprived thee of! Hold off the earth awhile,  
+Till I have caught her once more in mine arms: *Leaps into the grave.*  
+Now pile your dust upon the quick and dead,  
+Till of this flat a mountain you have made,  
+To o’ertop old Pelion, or the skyish head  
 Of blue Olympus.
 
 Hamlet
 
-*Advancing.* What is he whose grief
-Bears such an emphasis? whose phrase of sorrow
-Conjures the wandering stars, and makes them stand
-Like wonder-wounded hearers? This is I,
+*Advancing.* What is he whose grief  
+Bears such an emphasis? whose phrase of sorrow  
+Conjures the wandering stars, and makes them stand  
+Like wonder-wounded hearers? This is I,  
 Hamlet the Dane. *Leaps into the grave.*
 
 Laertes
@@ -468,10 +468,10 @@ The devil take thy soul! *Grappling with him.*
 
 Hamlet
 
-Thou pray’st not well.
-I prithee, take thy fingers from my throat;
-For, though I am not splenitive and rash,
-Yet have I something in me dangerous,
+Thou pray’st not well.  
+I prithee, take thy fingers from my throat;  
+For, though I am not splenitive and rash,  
+Yet have I something in me dangerous,  
 Which let thy wiseness fear: hold off thy hand.
 
 King
@@ -492,7 +492,7 @@ Good my lord, be quiet. *The Attendants part them, and they come out of the grav
 
 Hamlet
 
-Why, I will fight with him upon this theme
+Why, I will fight with him upon this theme  
 Until my eyelids will no longer wag.
 
 Queen
@@ -501,8 +501,8 @@ O my son, what theme?
 
 Hamlet
 
-I loved Ophelia: forty thousand brothers
-Could not, with all their quantity of love,
+I loved Ophelia: forty thousand brothers  
+Could not, with all their quantity of love,  
 Make up my sum. What wilt thou do for her?
 
 King
@@ -515,40 +515,40 @@ For love of God, forbear him.
 
 Hamlet
 
-’Swounds, show me what thou’lt do:
-Woo’t weep? woo’t fight? woo’t fast? woo’t tear thyself?
-Woo’t drink up eisel? eat a crocodile?
-I’ll do’t. Dost thou come here to whine?
-To outface me with leaping in her grave?
-Be buried quick with her, and so will I:
-And, if thou prate of mountains, let them throw
-Millions of acres on us, till our ground,
-Singeing his pate against the burning zone,
-Make Ossa like a wart! Nay, an thou’lt mouth,
+’Swounds, show me what thou’lt do:  
+Woo’t weep? woo’t fight? woo’t fast? woo’t tear thyself?  
+Woo’t drink up eisel? eat a crocodile?  
+I’ll do’t. Dost thou come here to whine?  
+To outface me with leaping in her grave?  
+Be buried quick with her, and so will I:  
+And, if thou prate of mountains, let them throw  
+Millions of acres on us, till our ground,  
+Singeing his pate against the burning zone,  
+Make Ossa like a wart! Nay, an thou’lt mouth,  
 I’ll rant as well as thou.
 
 Queen
 
-This is mere madness:
-And thus awhile the fit will work on him;
-Anon, as patient as the female dove,
-When that her golden couplets are disclosed,
+This is mere madness:  
+And thus awhile the fit will work on him;  
+Anon, as patient as the female dove,  
+When that her golden couplets are disclosed,  
 His silence will sit drooping.
 
 Hamlet
 
-Hear you, sir;
-What is the reason that you use me thus?
-I loved you ever: but it is no matter;
-Let Hercules himself do what he may,
+Hear you, sir;  
+What is the reason that you use me thus?  
+I loved you ever: but it is no matter;  
+Let Hercules himself do what he may,  
 The cat will mew and dog will have his day. *Exit.*
 
 King
 
-I pray you, good Horatio, wait upon him. *Exit Horatio.*
-*To Laertes.* Strengthen your patience in our last night’s speech;
-We’ll put the matter to the present push.
-Good Gertrude, set some watch over your son.
-This grave shall have a living monument:
-An hour of quiet shortly shall we see;
+I pray you, good Horatio, wait upon him. *Exit Horatio.*  
+*To Laertes.* Strengthen your patience in our last night’s speech;  
+We’ll put the matter to the present push.  
+Good Gertrude, set some watch over your son.  
+This grave shall have a living monument:  
+An hour of quiet shortly shall we see;  
 Till then, in patience our proceeding be. *Exeunt.*

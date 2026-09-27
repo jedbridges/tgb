@@ -74,13 +74,13 @@ The boy then being stilled from weeping, Euodius took up the Psalter, and began 
 
 And behold, the corpse was carried to the burial; we went and returned without tears. For neither in those prayers which we poured forth unto Thee, when the Sacrifice of our ransom was offered for her, when now the corpse was by the grave's side, as the manner there is, previous to its being laid therein, did I weep even during those prayers; yet was I the whole day in secret heavily sad, and with troubled mind prayed Thee, as I could, to heal my sorrow, yet Thou didst not; impressing, I believe, upon my memory by this one instance, how strong is the bond of all habit, even upon a soul, which now feeds upon no deceiving Word. It seemed also good to me to go and bathe, having heard that the bath had its name (balneum) from the Greek Balaneion for that it drives sadness from the mind. And this also I confess unto Thy mercy, Father of the fatherless, that I bathed, and was the same as before I bathed. For the bitterness of sorrow could not exude out of my heart. Then I slept, and woke up again, and found my grief not a little softened; and as I was alone in my bed, I remembered those true verses of Thy Ambrose. For Thou art the
 
-"Maker of all, the Lord,
-And Ruler of the height,
-Who, robing day in light, hast poured
-Soft slumbers o'er the night,
-That to our limbs the power
-Of toil may be renew'd,
-And hearts be rais'd that sink and cower,
+"Maker of all, the Lord,  
+And Ruler of the height,  
+Who, robing day in light, hast poured  
+Soft slumbers o'er the night,  
+That to our limbs the power  
+Of toil may be renew'd,  
+And hearts be rais'd that sink and cower,  
 And sorrows be subdu'd."
 
 And then by little and little I recovered my former thoughts of Thy handmaid, her holy conversation towards Thee, her holy tenderness and observance towards us, whereof I was suddenly deprived: and I was minded to weep in Thy sight, for her and for myself, in her behalf and in my own. And I gave way to the tears which I before restrained, to overflow as much as they desired; reposing my heart upon them; and it found rest in them, for it was in Thy ears, not in those of man, who would have scornfully interpreted my weeping. And now, Lord, in writing I confess it unto Thee. Read it, who will, and interpret it, how he will: and if he finds sin therein, that I wept my mother for a small portion of an hour (the mother who for the time was dead to mine eyes, who had for many years wept for me that I might live in Thine eyes), let him not deride me; but rather, if he be one of large charity, let him weep himself for my sins unto Thee, the Father of all the brethren of Thy Christ.

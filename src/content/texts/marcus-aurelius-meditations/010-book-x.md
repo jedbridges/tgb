@@ -84,7 +84,7 @@ What is that which as to this material [our life] can be done or said in the way
 
 To him who is penetrated by true principles even the briefest precept is sufficient, and any common precept, to remind him that he should be free from grief and fear. For example:
 
-> Leaves, some the wind scatters on the ground⁠—
+> Leaves, some the wind scatters on the ground⁠—  
 > So is the race of men.
 
 Leaves, also, are thy children; and leaves, too, are they who cry out as if they were worthy of credit and bestow their praise, or on the contrary curse, or secretly blame and sneer; and leaves, in like manner, are those who shall receive and transmit a man’s fame to aftertimes. For all such things as these “are produced in the season of spring,” as the poet says; then the wind casts them down; then the forest produces other leaves in their places. But a brief existence is common to all things, and yet thou avoidest and pursuest all things as if they would be eternal. A little time, and thou shalt close thy eyes; and him who has attended thee to thy grave another soon will lament.

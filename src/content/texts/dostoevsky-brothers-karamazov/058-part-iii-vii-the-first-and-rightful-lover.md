@@ -150,13 +150,13 @@ It was difficult to imagine what Kalganov was excited about, but his excitement 
 
 “The famous French writer, Piron. We were all drinking then, a big party of us, in a tavern at that very fair. They’d invited me, and first of all I began quoting epigrams. ‘Is that you, Boileau? What a funny getup!’ and Boileau answers that he’s going to a masquerade, that is to the baths, he he! And they took it to themselves, so I made haste to repeat another, very sarcastic, well known to all educated people:
 
-> Yes, Sappho and Phaon are we!
-> But one grief is weighing on me.
+> Yes, Sappho and Phaon are we!  
+> But one grief is weighing on me.  
 > You don’t know your way to the sea!
 
 They were still more offended and began abusing me in the most unseemly way for it. And as ill-luck would have it, to set things right, I began telling a very cultivated anecdote about Piron, how he was not accepted into the French Academy, and to revenge himself wrote his own epitaph:
 
-> *Ci-git Piron qui ne fut rien,*
+> *Ci-git Piron qui ne fut rien,*  
 > *Pas même académicien.*
 
 They seized me and thrashed me.”

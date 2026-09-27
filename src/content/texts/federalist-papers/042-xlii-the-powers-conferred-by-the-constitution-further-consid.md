@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xlii-the-powers-conferred-by-the-constitution-further-consid"
-heading: "XLII The Powers Conferred by the Constitution Further Considered Madison: From the New York Packet, Tuesday, January 22, 1788."
+heading: "XLII: The Powers Conferred by the Constitution Further Considered"
 order: 42
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 2804
+words: 2796
 ---
-The Powers Conferred by the Constitution Further Considered
-
 Madison: From the *New York Packet*, Tuesday, January 22, 1788.
 
 To the People of the State of New York:

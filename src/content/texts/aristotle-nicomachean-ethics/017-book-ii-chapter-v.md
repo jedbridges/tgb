@@ -28,5 +28,5 @@ In like manner too with respect to the actions, there may be excess and defect a
 
 Again, one may go wrong in many different ways (because, as the Pythagoreans expressed it, evil is of the class of the infinite, good of the finite), but right only in one; and so the former is easy, the latter difficult; easy to miss the mark, but hard to hit it: and for these reasons, therefore, both the excess and defect belong to Vice, and the mean state to Virtue; for, as the poet has it,
 
-“Men may be bad in many ways,
+“Men may be bad in many ways,  
 But good in one alone.”

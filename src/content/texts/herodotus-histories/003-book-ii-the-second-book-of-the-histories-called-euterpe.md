@@ -252,21 +252,21 @@ Of Min, who first became king of Egypt, the priests said that on the one hand he
 
 116. This the priests said was the manner of Helen's coming to Proteus; and I suppose that Homer also had heard this story, but since it was not so suitable to the composition of his poem as the other which he followed, he dismissed it finally, 96 making it clear at the same time that he was acquainted with that story also: and according to the manner in which he described 97 the wanderings of Alexander in the Iliad (nor did he elsewhere retract that which he had said) it is clear that when he brought Helen he was carried out of his course, wandering to various lands, and that he came among other places to Sidon in Phenicia. Of this the poet has made mention in the "prowess of Diomede," and the verses run this: 98
 
-"There she had robes many-coloured, the works of women of Sidon,
- Those whom her son himself the god-like of form Alexander
- Carried from Sidon, what time the broad sea-path he sailed over
+"There she had robes many-coloured, the works of women of Sidon,  
+ Those whom her son himself the god-like of form Alexander  
+ Carried from Sidon, what time the broad sea-path he sailed over  
  Bringing back Helene home, of a noble father begotten."
 
 And in the Odyssey also he has made mention of it in these verses: 99
 
-"Such had the daughter of Zeus, such drugs of exquisite cunning,
- Good, which to her the wife of Thon, Polydamna, had given,
- Dwelling in Egypt, the land where the bountiful meadow produces
+"Such had the daughter of Zeus, such drugs of exquisite cunning,  
+ Good, which to her the wife of Thon, Polydamna, had given,  
+ Dwelling in Egypt, the land where the bountiful meadow produces  
  Drugs more than all lands else, many good being mixed, many evil."
 
 And thus too Menelaos says to Telemachos: 100
 
-"Still the gods stayed me in Egypt, to come back hither desiring,
+"Still the gods stayed me in Egypt, to come back hither desiring,  
  Stayed me from voyaging home, since sacrifice was due I performed not."
 
 In these lines he makes it clear that he knew of the wandering of Alexander to Egypt, for Syria borders upon Egypt and the Phenicians, of whom is Sidon, dwell in Syria.

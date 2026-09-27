@@ -51,7 +51,7 @@ Moon-calf, speak once in thy life, if thou beest a good moon-calf.
 
 Caliban
 
-How does thy honour? Let me lick thy shoe.
+How does thy honour? Let me lick thy shoe.  
 I’ll not serve him; he’s not valiant.
 
 Trinculo
@@ -94,8 +94,8 @@ Thou liest.
 
 Caliban
 
-Thou liest, thou jesting monkey, thou:
-I would my valiant master would destroy thee!
+Thou liest, thou jesting monkey, thou:  
+I would my valiant master would destroy thee!  
 I do not lie.
 
 Stephano
@@ -112,9 +112,9 @@ Mum, then, and no more. Proceed.
 
 Caliban
 
-I say, by sorcery he got this isle;
-From me he got it. If thy greatness will
-Revenge it on him⁠—for I know thou darest,
+I say, by sorcery he got this isle;  
+From me he got it. If thy greatness will  
+Revenge it on him⁠—for I know thou darest,  
 But this thing dare not⁠—
 
 Stephano
@@ -131,7 +131,7 @@ How now shall this be compassed? Canst thou bring me to the party?
 
 Caliban
 
-Yea, yea, my lord: I’ll yield him thee asleep,
+Yea, yea, my lord: I’ll yield him thee asleep,  
 Where thou mayst knock a nail into his head.
 
 Ariel
@@ -140,10 +140,10 @@ Thou liest; thou canst not.
 
 Caliban
 
-What a pied ninny’s this! Thou scurvy patch!
-I do beseech thy greatness, give him blows
-And take his bottle from him: when that’s gone
-He shall drink nought but brine; for I’ll not show him
+What a pied ninny’s this! Thou scurvy patch!  
+I do beseech thy greatness, give him blows  
+And take his bottle from him: when that’s gone  
+He shall drink nought but brine; for I’ll not show him  
 Where the quick freshes are.
 
 Stephano
@@ -180,7 +180,7 @@ Now, forward with your tale. Prithee, stand farther off.
 
 Caliban
 
-Beat him enough: after a little time
+Beat him enough: after a little time  
 I’ll beat him too.
 
 Stephano
@@ -189,22 +189,22 @@ Stand farther. Come, proceed.
 
 Caliban
 
-Why, as I told thee, ’tis a custom with him,
-I’ th’ afternoon to sleep: there thou mayst brain him,
-Having first seized his books, or with a log
-Batter his skull, or paunch him with a stake,
-Or cut his wezand with thy knife. Remember
-First to possess his books; for without them
-He’s but a sot, as I am, nor hath not
-One spirit to command: they all do hate him
-As rootedly as I. Burn but his books.
-He has brave utensils⁠—for so he calls them⁠—
-Which when he has a house, he’ll deck withal.
-And that most deeply to consider is
-The beauty of his daughter; he himself
-Calls her a nonpareil: I never saw a woman,
-But only Sycorax my dam and she;
-But she as far surpasseth Sycorax
+Why, as I told thee, ’tis a custom with him,  
+I’ th’ afternoon to sleep: there thou mayst brain him,  
+Having first seized his books, or with a log  
+Batter his skull, or paunch him with a stake,  
+Or cut his wezand with thy knife. Remember  
+First to possess his books; for without them  
+He’s but a sot, as I am, nor hath not  
+One spirit to command: they all do hate him  
+As rootedly as I. Burn but his books.  
+He has brave utensils⁠—for so he calls them⁠—  
+Which when he has a house, he’ll deck withal.  
+And that most deeply to consider is  
+The beauty of his daughter; he himself  
+Calls her a nonpareil: I never saw a woman,  
+But only Sycorax my dam and she;  
+But she as far surpasseth Sycorax  
 As great’st does least.
 
 Stephano
@@ -213,7 +213,7 @@ Is it so brave a lass?
 
 Caliban
 
-Ay, lord; she will become thy bed, I warrant.
+Ay, lord; she will become thy bed, I warrant.  
 And bring thee forth brave brood.
 
 Stephano
@@ -230,7 +230,7 @@ Give me thy hand: I am sorry I beat thee; but, while thou livest, keep a good to
 
 Caliban
 
-Within this half hour will he be asleep:
+Within this half hour will he be asleep:  
 Wilt thou destroy him then?
 
 Stephano
@@ -243,16 +243,16 @@ This will I tell my master.
 
 Caliban
 
-Thou makest me merry; I am full of pleasure:
-Let us be jocund: will you troll the catch
+Thou makest me merry; I am full of pleasure:  
+Let us be jocund: will you troll the catch  
 You taught me but while-ere?
 
 Stephano
 
 At thy request, monster, I will do reason, any reason. Come on, Trinculo, let us sing. *Sings.*
 
-Flout ’em and scout ’em
-And scout ’em and flout ’em;
+Flout ’em and scout ’em  
+And scout ’em and flout ’em;  
 Thought is free.
 
 Caliban
@@ -289,14 +289,14 @@ No, monster, not I.
 
 Caliban
 
-Be not afeard; the isle is full of noises,
-Sounds and sweet airs, that give delight and hurt not.
-Sometimes a thousand twangling instruments
-Will hum about mine ears, and sometime voices
-That, if I then had waked after long sleep,
-Will make me sleep again: and then, in dreaming,
-The clouds methought would open and show riches
-Ready to drop upon me, that, when I waked,
+Be not afeard; the isle is full of noises,  
+Sounds and sweet airs, that give delight and hurt not.  
+Sometimes a thousand twangling instruments  
+Will hum about mine ears, and sometime voices  
+That, if I then had waked after long sleep,  
+Will make me sleep again: and then, in dreaming,  
+The clouds methought would open and show riches  
+Ready to drop upon me, that, when I waked,  
 I cried to dream again.
 
 Stephano

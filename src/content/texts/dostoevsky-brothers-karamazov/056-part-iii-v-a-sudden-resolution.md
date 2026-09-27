@@ -158,7 +158,7 @@ They began to wash. Pyotr Ilyitch held the jug and poured out the water. Mitya, 
 
 “I’m not talking about thousands. Damn thousands! I’m talking of the female character.
 
-> Fickle is the heart of woman
+> Fickle is the heart of woman  
 > Treacherous and full of vice;
 
 I agree with Ulysses. That’s what he says.”
@@ -279,7 +279,7 @@ Mitya sat down on a wicker chair, before a little table, covered with a dirty di
 
 “You’re raving, not making puns!”
 
-> “Glory be to God in Heaven,
+> “Glory be to God in Heaven,  
 > Glory be to God in me.⁠ ⁠…
 
 “That verse came from my heart once, it’s not a verse, but a tear.⁠ ⁠… I made it myself⁠ ⁠… not while I was pulling the captain’s beard, though.⁠ ⁠…”

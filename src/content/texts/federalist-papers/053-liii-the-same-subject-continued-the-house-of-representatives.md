@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "liii-the-same-subject-continued-the-house-of-representatives"
-heading: "LIII The Same Subject Continued (The House of Representatives) Madison: For The Independent Journal, Saturday, February 9, 1788."
+heading: "LIII: The Same Subject Continued (The House of Representatives)"
 order: 53
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 2186
+words: 2178
 ---
-The Same Subject Continued (The House of Representatives)
-
 Madison: For *The Independent Journal*, Saturday, February 9, 1788.
 
 To the People of the State of New York:

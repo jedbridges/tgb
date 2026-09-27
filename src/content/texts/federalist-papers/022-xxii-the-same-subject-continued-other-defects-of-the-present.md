@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xxii-the-same-subject-continued-other-defects-of-the-present"
-heading: "XXII The Same Subject Continued (Other Defects of the Present Confederation) Hamilton: From the New York Packet, Friday, December 14, 1787."
+heading: "XXII: The Same Subject Continued (Other Defects of the Present Confederation)"
 order: 22
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 3502
+words: 3492
 ---
-The Same Subject Continued (Other Defects of the Present Confederation)
-
 Hamilton: From the *New York Packet*, Friday, December 14, 1787.
 
 To the People of the State of New York:

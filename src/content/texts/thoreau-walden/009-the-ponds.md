@@ -59,15 +59,15 @@ Now the trunks of trees on the bottom, and the old log canoe, and the dark surro
 
 Nevertheless, of all the characters I have known, perhaps Walden wears best, and best preserves its purity. Many men have been likened to it, but few deserve that honor. Though the woodchoppers have laid bare first this shore and then that, and the Irish have built their sties by it, and the railroad has infringed on its border, and the icemen have skimmed it once, it is itself unchanged, the same water which my youthful eyes fell on; all the change is in me. It has not acquired one permanent wrinkle after all its ripples. It is perennially young, and I may stand and see a swallow dip apparently to pick an insect from its surface as of yore. It struck me again tonight, as if I had not seen it almost daily for more than twenty years⁠—Why, here is Walden, the same woodland lake that I discovered so many years ago; where a forest was cut down last winter another is springing up by its shore as lustily as ever; the same thought is welling up to its surface that was then; it is the same liquid joy and happiness to itself and its Maker, ay, and it may be to me. It is the work of a brave man surely, in whom there was no guile! He rounded this water with his hand, deepened and clarified it in his thought, and in his will bequeathed it to Concord. I see by its face that it is visited by the same reflection; and I can almost say, Walden, is it you?
 
-> It is no dream of mine,
-> To ornament a line;
-> I cannot come nearer to God and Heaven
-> Than I live to Walden even.
-> I am its stony shore,
-> And the breeze that passes o’er;
-> In the hollow of my hand
-> Are its water and its sand,
-> And its deepest resort
+> It is no dream of mine,  
+> To ornament a line;  
+> I cannot come nearer to God and Heaven  
+> Than I live to Walden even.  
+> I am its stony shore,  
+> And the breeze that passes o’er;  
+> In the hollow of my hand  
+> Are its water and its sand,  
+> And its deepest resort  
 > Lies high in my thought.
 
 The cars never pause to look at it; yet I fancy that the engineers and firemen and brakemen, and those passengers who have a season ticket and see it often, are better men for the sight. The engineer does not forget at night, or his nature does not, that he has beheld this vision of serenity and purity once at least during the day. Though seen but once, it helps to wash out State Street and the engine’s soot. One proposes that it be called “God’s Drop.”

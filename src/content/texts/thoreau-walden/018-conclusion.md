@@ -13,19 +13,19 @@ To the sick the doctors wisely recommend a change of air and scenery. Thank Heav
 
 Yet we should oftener look over the tafferel of our craft, like curious passengers, and not make the voyage like stupid sailors picking oakum. The other side of the globe is but the home of our correspondent. Our voyaging is only great-circle sailing, and the doctors prescribe for diseases of the skin merely. One hastens to southern Africa to chase the giraffe; but surely that is not the game he would be after. How long, pray, would a man hunt giraffes if he could? Snipes and woodcocks also may afford rare sport; but I trust it would be nobler game to shoot one’s self.⁠—
 
-> “Direct your eye right inward, and you’ll find
-> A thousand regions in your mind
-> Yet undiscovered. Travel them, and be
+> “Direct your eye right inward, and you’ll find  
+> A thousand regions in your mind  
+> Yet undiscovered. Travel them, and be  
 > Expert in home-cosmography.”
 
 What does Africa⁠—what does the West stand for? Is not our own interior white on the chart? black though it may prove, like the coast, when discovered. Is it the source of the Nile, or the Niger, or the Mississippi, or a Northwest Passage around this continent, that we would find? Are these the problems which most concern mankind? Is Franklin the only man who is lost, that his wife should be so earnest to find him? Does Mr. Grinnell know where he himself is? Be rather the Mungo Park, the Lewis and Clark and Frobisher, of your own streams and oceans; explore your own higher latitudes⁠—with shiploads of preserved meats to support you, if they be necessary; and pile the empty cans sky-high for a sign. Were preserved meats invented to preserve meat merely? Nay, be a Columbus to whole new continents and worlds within you, opening new channels, not of trade, but of thought. Every man is the lord of a realm beside which the earthly empire of the Czar is but a petty state, a hummock left by the ice. Yet some can be patriotic who have no self-respect, and sacrifice the greater to the less. They love the soil which makes their graves, but have no sympathy with the spirit which may still animate their clay. Patriotism is a maggot in their heads. What was the meaning of that South-Sea Exploring Expedition, with all its parade and expense, but an indirect recognition of the fact that there are continents and seas in the moral world to which every man is an isthmus or an inlet, yet unexplored by him, but that it is easier to sail many thousand miles through cold and storm and cannibals, in a government ship, with five hundred men and boys to assist one, than it is to explore the private sea, the Atlantic and Pacific Ocean of one’s being alone.
 
-> “Erret, et extremos alter scrutetur Iberos.
+> “Erret, et extremos alter scrutetur Iberos.  
 > lus habet hic vitae, plus habet ille viae.”
 >
+>  
 >
->
-> Let them wander and scrutinize the outlandish Australians.
+> Let them wander and scrutinize the outlandish Australians.  
 > I have more of God, they more of the road.
 
 It is not worth the while to go round the world to count the cats in Zanzibar. Yet do this even till you can do better, and you may perhaps find some “Symmes’ Hole” by which to get at the inside at last. England and France, Spain and Portugal, Gold Coast and Slave Coast, all front on this private sea; but no bark from them has ventured out of sight of land, though it is without doubt the direct way to India. If you would learn to speak all tongues and conform to the customs of all nations, if you would travel farther than all travellers, be naturalized in all climes, and cause the Sphinx to dash her head against a stone, even obey the precept of the old philosopher, and Explore thyself. Herein are demanded the eye and the nerve. Only the defeated and deserters go to the wars, cowards that run away and enlist. Start now on that farthest western way, which does not pause at the Mississippi or the Pacific, nor conduct toward a worn-out China or Japan, but leads on direct, a tangent to this sphere, summer and winter, day and night, sun down, moon down, and at last earth down too.

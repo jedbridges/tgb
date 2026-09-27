@@ -82,23 +82,23 @@ Alyosha returned to the other room, where Father Zossima had received his guests
 
 > “Alexey Fyodorovitch,” she wrote, “I am writing to you without anyone’s knowledge, even mamma’s, and I know how wrong it is. But I cannot live without telling you the feeling that has sprung up in my heart, and this no one but us two must know for a time. But how am I to say what I want so much to tell you? Paper, they say, does not blush, but I assure you it’s not true and that it’s blushing just as I am now, all over. Dear Alyosha, I love you, I’ve loved you from my childhood, since our Moscow days, when you were very different from what you are now, and I shall love you all my life. My heart has chosen you, to unite our lives, and pass them together till our old age. Of course, on condition that you will leave the monastery. As for our age we will wait for the time fixed by the law. By that time I shall certainly be quite strong, I shall be walking and dancing. There can be no doubt of that.
 >
->
+>  
 >
 > “You see how I’ve thought of everything. There’s only one thing I can’t imagine: what you’ll think of me when you read this. I’m always laughing and being naughty. I made you angry this morning, but I assure you before I took up my pen, I prayed before the Image of the Mother of God, and now I’m praying, and almost crying.
 >
->
+>  
 >
 > “My secret is in your hands. When you come tomorrow, I don’t know how I shall look at you. Ah, Alexey Fyodorovitch, what if I can’t restrain myself like a silly and laugh when I look at you as I did today. You’ll think I’m a nasty girl making fun of you, and you won’t believe my letter. And so I beg you, dear one, if you’ve any pity for me, when you come tomorrow, don’t look me straight in the face, for if I meet your eyes, it will be sure to make me laugh, especially as you’ll be in that long gown. I feel cold all over when I think of it, so when you come, don’t look at me at all for a time, look at mamma or at the window.⁠ ⁠…
 >
->
+>  
 >
 > “Here I’ve written you a love-letter. Oh, dear, what have I done? Alyosha, don’t despise me, and if I’ve done something very horrid and wounded you, forgive me. Now the secret of my reputation, ruined perhaps forever, is in your hands.
 >
->
+>  
 >
 > “I shall certainly cry today. Goodbye till our meeting, our *awful* meeting.⁠—Lise.
 >
->
+>  
 >
 > “P.S.⁠—Alyosha! You must, must, must come!⁠—Lise.”
 

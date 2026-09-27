@@ -66,37 +66,37 @@ Kalganov looked as though he had been besmirched with dirt.
 
 He particularly disliked one “new” song to a jaunty dance-tune. It described how a gentleman came and tried his luck with the girls, to see whether they would love him:
 
-> The master came to try the girls:
+> The master came to try the girls:  
 > Would they love him, would they not?
 
 But the girls could not love the master:
 
-> He would beat me cruelly
+> He would beat me cruelly  
 > And such love won’t do for me.
 
 Then a gypsy comes along and he, too, tries:
 
-> The gypsy came to try the girls:
+> The gypsy came to try the girls:  
 > Would they love him, would they not?
 
 But they couldn’t love the gypsy either:
 
-> He would be a thief, I fear,
+> He would be a thief, I fear,  
 > And would cause me many a tear.
 
 And many more men come to try their luck, among them a soldier:
 
-> The soldier came to try the girls:
+> The soldier came to try the girls:  
 > Would they love him, would they not?
 
 But the soldier is rejected with contempt, in two indecent lines, sung with absolute frankness and producing a furore in the audience. The song ends with a merchant:
 
-> The merchant came to try the girls:
+> The merchant came to try the girls:  
 > Would they love him, would they not?
 
 And it appears that he wins their love because:
 
-> The merchant will make gold for me
+> The merchant will make gold for me  
 > And his queen I’ll gladly be.
 
 Kalganov was positively indignant.
@@ -185,12 +185,12 @@ A smile lighted up her face that was swollen with weeping, and her eyes shone in
 
 He drank off another glass, and⁠—he thought it strange himself⁠—that glass made him completely drunk. He was suddenly drunk, although till that moment he had been quite sober, he remembered that. From that moment everything whirled about him, as though he were delirious. He walked, laughed, talked to everybody, without knowing what he was doing. Only one persistent burning sensation made itself felt continually, “like a red-hot coal in his heart,” he said afterwards. He went up to her, sat beside her, gazed at her, listened to her.⁠ ⁠… She became very talkative, kept calling everyone to her, and beckoned to different girls out of the chorus. When the girl came up, she either kissed her, or made the sign of the cross over her. In another minute she might have cried. She was greatly amused by the “little old man,” as she called Maximov. He ran up every minute to kiss her hands, “each little finger,” and finally he danced another dance to an old song, which he sang himself. He danced with special vigor to the refrain:
 
-> The little pig says⁠—umph! umph! umph!
-> The little calf says⁠—moo, moo, moo,
-> The little duck says⁠—quack, quack, quack,
-> The little goose says⁠—ga, ga, ga.
-> The hen goes strutting through the porch;
-> Troo-roo-roo-roo-roo, she’ll say,
+> The little pig says⁠—umph! umph! umph!  
+> The little calf says⁠—moo, moo, moo,  
+> The little duck says⁠—quack, quack, quack,  
+> The little goose says⁠—ga, ga, ga.  
+> The hen goes strutting through the porch;  
+> Troo-roo-roo-roo-roo, she’ll say,  
 > Troo-roo-roo-roo-roo, she’ll say!
 
 “Give him something, Mitya,” said Grushenka. “Give him a present, he’s poor, you know. Ah, the poor, the insulted!⁠ ⁠… Do you know, Mitya, I shall go into a nunnery. No, I really shall one day, Alyosha said something to me today that I shall remember all my life.⁠ ⁠… Yes.⁠ ⁠… But today let us dance. Tomorrow to the nunnery, but today we’ll dance. I want to play today, good people, and what of it? God will forgive us. If I were God, I’d forgive everyone: ‘My dear sinners, from this day forth I forgive you.’ I’m going to beg forgiveness: ‘Forgive me, good people, a silly wench.’ I’m a beast, that’s what I am. But I want to pray. I gave a little onion. Wicked as I’ve been, I want to pray. Mitya, let them dance, don’t stop them. Everyone in the world is good. Everyone⁠—even the worst of them. The world’s a nice place. Though we’re bad the world’s all right. We’re good and bad, good and bad.⁠ ⁠… Come, tell me, I’ve something to ask you: come here everyone, and I’ll ask you: Why am I so good? You know I am good. I’m very good.⁠ ⁠… Come, why am I so good?”
@@ -199,7 +199,7 @@ So Grushenka babbled on, getting more and more drunk. At last she announced that
 
 She really meant it. She pulled a white cambric handkerchief out of her pocket, and took it by one corner in her right hand, to wave it in the dance. Mitya ran to and fro, the girls were quiet, and got ready to break into a dancing song at the first signal. Maximov, hearing that Grushenka wanted to dance, squealed with delight, and ran skipping about in front of her, humming:
 
-> With legs so slim and sides so trim
+> With legs so slim and sides so trim  
 > And its little tail curled tight.
 
 But Grushenka waved her handkerchief at him and drove him away.

@@ -13,42 +13,42 @@ In this same New Bedford there stands a Whaleman’s Chapel, and few are the moo
 
 Returning from my first morning stroll, I again sallied out upon this special errand. The sky had changed from clear, sunny cold, to driving sleet and mist. Wrapping myself in my shaggy jacket of the cloth called bearskin, I fought my way against the stubborn storm. Entering, I found a small scattered congregation of sailors, and sailors’ wives and widows. A muffled silence reigned, only broken at times by the shrieks of the storm. Each silent worshipper seemed purposely sitting apart from the other, as if each silent grief were insular and incommunicable. The chaplain had not yet arrived; and there these silent islands of men and women sat steadfastly eyeing several marble tablets, with black borders, masoned into the wall on either side the pulpit. Three of them ran something like the following, but I do not pretend to quote:⁠—
 
-> Sacred
-> To the memory
-> Of
-> John Talbot,
-> Who, at the age of eighteen, was lost overboard,
-> Near the Isle of Desolation, off Patagonia,
-> November 1st, 1836.
-> This tablet
-> Is erected to his Memory
+> Sacred  
+> To the memory  
+> Of  
+> John Talbot,  
+> Who, at the age of eighteen, was lost overboard,  
+> Near the Isle of Desolation, off Patagonia,  
+> November 1st, 1836.  
+> This tablet  
+> Is erected to his Memory  
 > By his sister.
 
-> Sacred
-> To the memory
-> Of
-> Robert Long, Willis Ellery, Nathan Coleman, Walter Canny, Seth Macy, and Samuel Gleig,
-> Forming one of the boats’ crews
-> Of
-> The ship *Eliza*
-> Who were towed out of sight by a Whale,
-> On the Off-shore Ground in the
-> Pacific,
-> December 31st, 1839.
-> This marble
-> Is here placed by their surviving
+> Sacred  
+> To the memory  
+> Of  
+> Robert Long, Willis Ellery, Nathan Coleman, Walter Canny, Seth Macy, and Samuel Gleig,  
+> Forming one of the boats’ crews  
+> Of  
+> The ship *Eliza*  
+> Who were towed out of sight by a Whale,  
+> On the Off-shore Ground in the  
+> Pacific,  
+> December 31st, 1839.  
+> This marble  
+> Is here placed by their surviving  
 > Shipmates.
 
-> Sacred
-> To the memory
-> Of
-> The late
-> Captain Ezekiel Hardy,
-> Who in the bows of his boat was killed by a Sperm Whale on the coast of Japan,
-> August 3rd, 1833.
-> This tablet
-> Is erected to his Memory
-> By
+> Sacred  
+> To the memory  
+> Of  
+> The late  
+> Captain Ezekiel Hardy,  
+> Who in the bows of his boat was killed by a Sperm Whale on the coast of Japan,  
+> August 3rd, 1833.  
+> This tablet  
+> Is erected to his Memory  
+> By  
 > His widow.
 
 Shaking off the sleet from my ice-glazed hat and jacket, I seated myself near the door, and turning sideways was surprised to see Queequeg near me. Affected by the solemnity of the scene, there was a wondering gaze of incredulous curiosity in his countenance. This savage was the only person present who seemed to notice my entrance; because he was the only one who could not read, and, therefore, was not reading those frigid inscriptions on the wall. Whether any of the relatives of the seamen whose names appeared there were now among the congregation, I knew not; but so many are the unrecorded accidents in the fishery, and so plainly did several women present wear the countenance if not the trappings of some unceasing grief, that I feel sure that here before me were assembled those, in whose unhealing hearts the sight of those bleak tablets sympathetically caused the old wounds to bleed afresh.

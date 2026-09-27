@@ -22,7 +22,7 @@ What is thy art? To be good. And how is this accomplished well except by general
 
 At first tragedies were brought on the stage as means of reminding men of the things which happen to them, and that it is according to nature for things to happen so, and that, if you are delighted with what is shown on the stage, you should not be troubled with that which takes place on the larger stage. For you see that these things must be accomplished thus, and that even they bear them who cry out, “O Cithæron.” And, indeed, some things are said well by the dramatic writers, of which kind is the following especially:
 
-> Me and my children if the gods neglect,
+> Me and my children if the gods neglect,  
 > This has its reason too.
 
 And again⁠—
@@ -105,7 +105,7 @@ Consider what a man Socrates was when he dressed himself in a skin, after Xanthi
 
 Neither in writing nor in reading wilt thou be able to lay down rules for others before thou shalt have first learned to obey rules thyself. Much more is this so in life.
 
-> A slave thou art: free speech is not for thee.
+> A slave thou art: free speech is not for thee.  
 > —And my heart laughed within.
 >
 >  *Odyssey*, IX, 413.

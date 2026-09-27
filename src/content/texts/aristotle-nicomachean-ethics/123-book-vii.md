@@ -24,9 +24,9 @@ words: 1438
 
 [7] That is, as I understand it, either the major or the minor premise, it is true, that “all that is sweet is pleasant,” it is true also, that “this is sweet,” what is contrary to Right Reason is the bringing in this minor to the major *i.e.* the universal maxim, forbidding to taste. Thus, a man goes to a convivial meeting with the maxim in his mind “All excess is to be avoided,” at a certain time his [Greek:——] tells him “This glass is excess.” As a matter of mere reasoning, he cannot help receiving the conclusion “This glass is to be avoided,” and supposing him to be morally sound he would accordingly abstain. But [Greek:——], being a simple tendency towards indulgence suggests, in place of the minor premise “This is excess,” its own premise “This is sweet,” this again suggests the self-indulgent maxim or principle (‘[Greek:——]), “All that is sweet is to be tasted,” and so, by strict logical sequence, proves “This glass is to be tasted.” The solution then of the phænomenon of [Greek:——] is this that [Greek:——], by its direct action on the animal nature, swamps the suggestions of Right Reason. On the high ground of Universals, [Greek:——] i.e. [Greek:——] easily defeats [Greek:——]. The [Greek:——], an hour before he is in temptation, would never deliberately prefer the maxim “All that is sweet is to be tasted” to “All excess is to be avoided.” The [Greek:——] would.
 
-Horace has a good comment upon this (II Sat 2):
-Quæ virtus et quanta, bom, sit vivere parvo
-Discite, *non inter lances mensasque nitentes*
+Horace has a good comment upon this (II Sat 2):  
+Quæ virtus et quanta, bom, sit vivere parvo  
+Discite, *non inter lances mensasque nitentes*  
 Verum hic *impransi* mecum disquirite
 
 Compare also Proverbs XXIII. 31. “Look not thou upon the wine when it is red,” etc.
@@ -47,9 +47,9 @@ Compare also Proverbs XXIII. 31. “Look not thou upon the wine when it is red,�
 
 [15] The reasoning here being somewhat obscure from the concisement of expression, the following exposition of it is subjoined.
 
-Actions of Lust are wrong actions done with pleasure,
-Wrong actions done with pleasure are more justly objects of wrath,
-Such as are more justly objects of wrath are more unjust,
+Actions of Lust are wrong actions done with pleasure,  
+Wrong actions done with pleasure are more justly objects of wrath,  
+Such as are more justly objects of wrath are more unjust,  
 Actions of Lust are more unjust
 
 [*] [Greek: hubpis] is introduced as the single instance from which this premiss is proved inductively. See the account of it in the Chapter of the Rhetoric referred to in the preceding note.
@@ -72,8 +72,8 @@ Actions of Lust are more unjust
 
 [3] In this sense, therefore, is it sung of Mrs. Gilpin that she
 
-“two stone bottles found,
-To hold the liquor that she *loved*,
+“two stone bottles found,  
+To hold the liquor that she *loved*,  
 And keep it safe and sound.”
 
 [4] Cardwell’s reading, [Greek: tautae gar omoioi, kai ta loipa] is here adopted, as yielding a better sense than Bekker’s.

@@ -75,10 +75,10 @@ Extracts
 >
 >  *Hamlet*.
 
-> “Which to secure, no skill of leach’s art
-> Mote him availle, but to returne againe
-> To his wound’s worker, that with lowly dart,
-> Dinting his breast, had bred his restless paine,
+> “Which to secure, no skill of leach’s art  
+> Mote him availle, but to returne againe  
+> To his wound’s worker, that with lowly dart,  
+> Dinting his breast, had bred his restless paine,  
 > Like as the wounded whale to shore flies thro’ the maine.”
 >
 >  *The Fairie Queen*.
@@ -91,10 +91,10 @@ Extracts
 >
 >  Sir T. Browne. *Of Sperma Ceti and the Sperma Ceti Whale*. Vide his V.E.
 
-> “Like Spencer’s Talus with his modern flail
-> He threatens ruin with his ponderous tail.
-> …
-> Their fixed jav’lins in his side he wears,
+> “Like Spencer’s Talus with his modern flail  
+> He threatens ruin with his ponderous tail.  
+> …  
+> Their fixed jav’lins in his side he wears,  
 > And on his back a grove of pikes appears.”
 >
 >  Waller’s *Battle of the Summer Islands*.
@@ -107,16 +107,16 @@ Extracts
 >
 >  *Pilgrim’s Progress*.
 
-> “That sea beast
-> Leviathan, which God of all his works
+> “That sea beast  
+> Leviathan, which God of all his works  
 > Created hugest that swim the ocean stream.”
 >
 >  *Paradise Lost*.
 
-> “There Leviathan,
-> Hugest of living creatures, in the deep
-> Stretched like a promontory sleeps or swims,
-> And seems a moving land; and at his gills
+> “There Leviathan,  
+> Hugest of living creatures, in the deep  
+> Stretched like a promontory sleeps or swims,  
+> And seems a moving land; and at his gills  
 > Draws in, and at his breath spouts out a sea.”
 >
 >   Ibid.
@@ -125,9 +125,9 @@ Extracts
 >
 >  Fuller’s *Profane and Holy State*.
 
-> “So close behind some promontory lie
-> The huge Leviathan to attend their prey,
-> And give no chance, but swallow in the fry,
+> “So close behind some promontory lie  
+> The huge Leviathan to attend their prey,  
+> And give no chance, but swallow in the fry,  
 > Which through their gaping jaws mistake the way.”
 >
 >  Dryden’s *Annus Mirabilis*.
@@ -156,7 +156,7 @@ Extracts
 >
 >  Richard Strafford’s *Letter from the Bermudas*. Phil. Trans. AD 1668.
 
-> “Whales in the sea
+> “Whales in the sea  
 > God’s voice obey.”
 >
 >  *N. E. Primer*.
@@ -169,9 +169,9 @@ Extracts
 >
 >  Ulloa’s *South America*.
 
-> “To fifty chosen sylphs of special note,
-> We trust the important charge, the petticoat.
-> Oft have we known that seven-fold fence to fail,
+> “To fifty chosen sylphs of special note,  
+> We trust the important charge, the petticoat.  
+> Oft have we known that seven-fold fence to fail,  
 > Though stuffed with hoops and armed with ribs of whale.”
 >
 >  *Rape of the Lock*.
@@ -208,22 +208,22 @@ Extracts
 >
 >  Blackstone.
 
-> “Soon to the sport of death the crews repair:
-> Rodmond unerring o’er his head suspends
+> “Soon to the sport of death the crews repair:  
+> Rodmond unerring o’er his head suspends  
 > The barbed steel, and every turn attends.”
 >
 >  Falconer’s *Shipwreck*.
 
-> “Bright shone the roofs, the domes, the spires,
-> And rockets blew self driven,
-> To hang their momentary fire
+> “Bright shone the roofs, the domes, the spires,  
+> And rockets blew self driven,  
+> To hang their momentary fire  
 > Around the vault of heaven.
 >
+>  
 >
->
-> “So fire with water to compare,
-> The ocean serves on high,
-> Up-spouted by a whale in air,
+> “So fire with water to compare,  
+> The ocean serves on high,  
+> Up-spouted by a whale in air,  
 > To express unwieldy joy.”
 >
 >  Cowper, on the Queen’s Visit to London.
@@ -244,26 +244,26 @@ Extracts
 >
 >  Colnett’s *Voyage for the Purpose of Extending the Spermacetti Whale Fishery*.
 
-> “In the free element beneath me swam,
-> Floundered and dived, in play, in chase, in battle,
-> Fishes of every colour, form, and kind;
-> Which language cannot paint, and mariner
-> Had never seen; from dread Leviathan
-> To insect millions peopling every wave:
-> Gather’d in shoals immense, like floating islands,
-> Led by mysterious instincts through that waste
-> And trackless region, though on every side
-> Assaulted by voracious enemies,
-> Whales, sharks, and monsters, arm’d in front or jaw,
+> “In the free element beneath me swam,  
+> Floundered and dived, in play, in chase, in battle,  
+> Fishes of every colour, form, and kind;  
+> Which language cannot paint, and mariner  
+> Had never seen; from dread Leviathan  
+> To insect millions peopling every wave:  
+> Gather’d in shoals immense, like floating islands,  
+> Led by mysterious instincts through that waste  
+> And trackless region, though on every side  
+> Assaulted by voracious enemies,  
+> Whales, sharks, and monsters, arm’d in front or jaw,  
 > With swords, saws, spiral horns, or hooked fangs.”
 >
 >  Montgomery’s *World Before the Flood*.
 
-> “Io! Paean! Io! sing,
-> To the finny people’s king.
-> Not a mightier whale than this
-> In the vast Atlantic is;
-> Not a fatter fish than he,
+> “Io! Paean! Io! sing,  
+> To the finny people’s king.  
+> Not a mightier whale than this  
+> In the vast Atlantic is;  
+> Not a fatter fish than he,  
 > Flounders round the Polar Sea.”
 >
 >  Charles Lamb’s *Triumph of the Whale*.
@@ -292,21 +292,21 @@ Extracts
 >
 >  *Narrative of the Shipwreck of the Whale Ship *Essex* of Nantucket, which was attacked and finally destroyed by a large Sperm Whale in the Pacific Ocean*. By Owen Chace of Nantucket, first mate of said vessel. New York, 1821.
 
-> “A mariner sat in the shrouds one night,
-> The wind was piping free;
-> Now bright, now dimmed, was the moonlight pale,
-> And the phospher gleamed in the wake of the whale,
+> “A mariner sat in the shrouds one night,  
+> The wind was piping free;  
+> Now bright, now dimmed, was the moonlight pale,  
+> And the phospher gleamed in the wake of the whale,  
 > As it floundered in the sea.”
 >
 >  Elizabeth Oakes Smith.
 
 > “The quantity of line withdrawn from the boats engaged in the capture of this one whale, amounted altogether to 10,440 yards or nearly six English miles.⁠ ⁠…
 >
->
+>  
 >
 > …
 >
->
+>  
 >
 > “Sometimes the whale shakes its tremendous tail in the air, which, cracking like a whip, resounds to the distance of three or four miles.”
 >
@@ -322,47 +322,47 @@ Extracts
 
 > October 13. “There she blows,” was sung out from the masthead.
 >
->
+>  
 >
 > “Where away?” demanded the captain.
 >
->
+>  
 >
 > “Three points off the lee bow, sir.”
 >
->
+>  
 >
 > “Raise up your wheel. Steady!”
 >
->
+>  
 >
 > “Steady, sir.”
 >
->
+>  
 >
 > “Masthead ahoy! Do you see that whale now?”
 >
->
+>  
 >
 > “Ay ay, sir! A shoal of Sperm Whales! There she blows! There she breaches!”
 >
->
+>  
 >
 > “Sing out! sing out every time!”
 >
->
+>  
 >
 > “Ay Ay, sir! There she blows! there⁠—there⁠—*thar* she blows⁠—bowes⁠—bo-o-os!”
 >
->
+>  
 >
 > “How far off?”
 >
->
+>  
 >
 > “Two miles and a half.”
 >
->
+>  
 >
 > “Thunder and lightning! so near! Call all hands!”
 >
@@ -428,14 +428,14 @@ Extracts
 >
 >  *Wharton the Whale Killer*.
 
-> “So be cheery, my lads, let your hearts never fail,
+> “So be cheery, my lads, let your hearts never fail,  
 > While the bold harpooneer is striking the whale!”
 >
 >  Nantucket Song.
 
-> “Oh, the rare old Whale, mid storm and gale
-> In his ocean home will be
-> A giant in might, where might is right,
+> “Oh, the rare old Whale, mid storm and gale  
+> In his ocean home will be  
+> A giant in might, where might is right,  
 > And King of the boundless sea.”
 >
 >  Whale Song.

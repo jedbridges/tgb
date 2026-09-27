@@ -15,14 +15,14 @@ Another part of the island.
 
 Gonzalo
 
-Beseech you, sir, be merry; you have cause,
-So have we all, of joy; for our escape
-Is much beyond our loss. Our hint of woe
-Is common; every day some sailor’s wife,
-The masters of some merchant and the merchant
-Have just our theme of woe; but for the miracle,
-I mean our preservation, few in millions
-Can speak like us: then wisely, good sir, weigh
+Beseech you, sir, be merry; you have cause,  
+So have we all, of joy; for our escape  
+Is much beyond our loss. Our hint of woe  
+Is common; every day some sailor’s wife,  
+The masters of some merchant and the merchant  
+Have just our theme of woe; but for the miracle,  
+I mean our preservation, few in millions  
+Can speak like us: then wisely, good sir, weigh  
 Our sorrow with our comfort.
 
 Alonso
@@ -51,7 +51,7 @@ One: tell.
 
 Gonzalo
 
-When every grief is entertain’d that’s offer’d,
+When every grief is entertain’d that’s offer’d,  
 Comes to the entertainer⁠—
 
 Sebastian
@@ -304,26 +304,26 @@ When I wore it at your daughter’s marriage?
 
 Alonso
 
-You cram these words into mine ears against
-The stomach of my sense. Would I had never
-Married my daughter there! for, coming thence,
-My son is lost and, in my rate, she too,
-Who is so far from Italy removed
-I ne’er again shall see her. O thou mine heir
-Of Naples and of Milan, what strange fish
+You cram these words into mine ears against  
+The stomach of my sense. Would I had never  
+Married my daughter there! for, coming thence,  
+My son is lost and, in my rate, she too,  
+Who is so far from Italy removed  
+I ne’er again shall see her. O thou mine heir  
+Of Naples and of Milan, what strange fish  
 Hath made his meal on thee?
 
 Francisco
 
-Sir, he may live:
-I saw him beat the surges under him,
-And ride upon their backs; he trod the water,
-Whose enmity he flung aside, and breasted
-The surge most swoln that met him; his bold head
-’Bove the contentious waves he kept, and oar’d
-Himself with his good arms in lusty stroke
-To the shore, that o’er his wave-worn basis bow’d,
-As stooping to relieve him: I not doubt
+Sir, he may live:  
+I saw him beat the surges under him,  
+And ride upon their backs; he trod the water,  
+Whose enmity he flung aside, and breasted  
+The surge most swoln that met him; his bold head  
+’Bove the contentious waves he kept, and oar’d  
+Himself with his good arms in lusty stroke  
+To the shore, that o’er his wave-worn basis bow’d,  
+As stooping to relieve him: I not doubt  
 He came alive to land.
 
 Alonso
@@ -332,10 +332,10 @@ No, no, he’s gone.
 
 Sebastian
 
-Sir, you may thank yourself for this great loss,
-That would not bless our Europe with your daughter,
-But rather lose her to an African;
-Where she at least is banish’d from your eye,
+Sir, you may thank yourself for this great loss,  
+That would not bless our Europe with your daughter,  
+But rather lose her to an African;  
+Where she at least is banish’d from your eye,  
 Who hath cause to wet the grief on’t.
 
 Alonso
@@ -344,13 +344,13 @@ Prithee, peace.
 
 Sebastian
 
-You were kneel’d to and importuned otherwise
-By all of us, and the fair soul herself
-Weigh’d between loathness and obedience, at
-Which end o’ the beam should bow. We have lost your son,
-I fear, for ever: Milan and Naples have
-More widows in them of this business’ making
-Than we bring men to comfort them:
+You were kneel’d to and importuned otherwise  
+By all of us, and the fair soul herself  
+Weigh’d between loathness and obedience, at  
+Which end o’ the beam should bow. We have lost your son,  
+I fear, for ever: Milan and Naples have  
+More widows in them of this business’ making  
+Than we bring men to comfort them:  
 The fault’s your own.
 
 Alonso
@@ -359,9 +359,9 @@ So is the dear’st o’ the loss.
 
 Gonzalo
 
-My lord Sebastian,
-The truth you speak doth lack some gentleness
-And time to speak it in: you rub the sore,
+My lord Sebastian,  
+The truth you speak doth lack some gentleness  
+And time to speak it in: you rub the sore,  
 When you should bring the plaster.
 
 Sebastian
@@ -374,7 +374,7 @@ And most chirurgeonly.
 
 Gonzalo
 
-It is foul weather in us all, good sir,
+It is foul weather in us all, good sir,  
 When you are cloudy.
 
 Sebastian
@@ -407,15 +407,15 @@ Sebastian
 
 Gonzalo
 
-I’ the commonwealth I would by contraries
-Execute all things; for no kind of traffic
-Would I admit; no name of magistrate;
-Letters should not be known; riches, poverty,
-And use of service, none; contract, succession,
-Bourn, bound of land, tilth, vineyard, none;
-No use of metal, corn, or wine, or oil;
-No occupation; all men idle, all;
-And women too, but innocent and pure;
+I’ the commonwealth I would by contraries  
+Execute all things; for no kind of traffic  
+Would I admit; no name of magistrate;  
+Letters should not be known; riches, poverty,  
+And use of service, none; contract, succession,  
+Bourn, bound of land, tilth, vineyard, none;  
+No use of metal, corn, or wine, or oil;  
+No occupation; all men idle, all;  
+And women too, but innocent and pure;  
 No sovereignty;⁠—
 
 Sebastian
@@ -428,11 +428,11 @@ The latter end of his commonwealth forgets the beginning.
 
 Gonzalo
 
-All things in common nature should produce
-Without sweat or endeavour: treason, felony,
-Sword, pike, knife, gun, or need of any engine,
-Would I not have; but nature should bring forth,
-Of its own kind, all foison, all abundance,
+All things in common nature should produce  
+Without sweat or endeavour: treason, felony,  
+Sword, pike, knife, gun, or need of any engine,  
+Would I not have; but nature should bring forth,  
+Of its own kind, all foison, all abundance,  
 To feed my innocent people.
 
 Sebastian
@@ -445,7 +445,7 @@ None, man; all idle: whores and knaves.
 
 Gonzalo
 
-I would with such perfection govern, sir,
+I would with such perfection govern, sir,  
 To excel the golden age.
 
 Sebastian
@@ -508,21 +508,21 @@ Go sleep, and hear us. *All sleep except Alonso, Sebastian, and Antonio.*
 
 Alonso
 
-What, all so soon asleep! I wish mine eyes
-Would, with themselves, shut up my thoughts: I find
+What, all so soon asleep! I wish mine eyes  
+Would, with themselves, shut up my thoughts: I find  
 They are inclined to do so.
 
 Sebastian
 
-Please you, sir,
-Do not omit the heavy offer of it:
-It seldom visits sorrow; when it doth,
+Please you, sir,  
+Do not omit the heavy offer of it:  
+It seldom visits sorrow; when it doth,  
 It is a comforter.
 
 Antonio
 
-We two, my lord,
-Will guard your person while you take your rest,
+We two, my lord,  
+Will guard your person while you take your rest,  
 And watch your safety.
 
 Alonso
@@ -539,19 +539,19 @@ It is the quality o’ the climate.
 
 Sebastian
 
-Why
-Doth it not then our eyelids sink? I find not
+Why  
+Doth it not then our eyelids sink? I find not  
 Myself disposed to sleep.
 
 Antonio
 
-Nor I; my spirits are nimble.
-They fell together all, as by consent;
-They dropp’d, as by a thunder-stroke. What might,
-Worthy Sebastian? O, what might?⁠—No more:⁠—
-And yet me thinks I see it in thy face,
-What thou shouldst be: the occasion speaks thee, and
-My strong imagination sees a crown
+Nor I; my spirits are nimble.  
+They fell together all, as by consent;  
+They dropp’d, as by a thunder-stroke. What might,  
+Worthy Sebastian? O, what might?⁠—No more:⁠—  
+And yet me thinks I see it in thy face,  
+What thou shouldst be: the occasion speaks thee, and  
+My strong imagination sees a crown  
 Dropping upon thy head.
 
 Sebastian
@@ -564,28 +564,28 @@ Do you not hear me speak?
 
 Sebastian
 
-I do; and surely
-It is a sleepy language and thou speak’st
-Out of thy sleep. What is it thou didst say?
-This is a strange repose, to be asleep
-With eyes wide open; standing, speaking, moving,
+I do; and surely  
+It is a sleepy language and thou speak’st  
+Out of thy sleep. What is it thou didst say?  
+This is a strange repose, to be asleep  
+With eyes wide open; standing, speaking, moving,  
 And yet so fast asleep.
 
 Antonio
 
-Noble Sebastian,
-Thou let’st thy fortune sleep⁠—die, rather; wink’st
+Noble Sebastian,  
+Thou let’st thy fortune sleep⁠—die, rather; wink’st  
 Whiles thou art waking.
 
 Sebastian
 
-Thou dost snore distinctly;
+Thou dost snore distinctly;  
 There’s meaning in thy snores.
 
 Antonio
 
-I am more serious than my custom: you
-Must be so too, if heed me; which to do
+I am more serious than my custom: you  
+Must be so too, if heed me; which to do  
 Trebles thee o’er.
 
 Sebastian
@@ -598,48 +598,48 @@ I’ll teach you how to flow.
 
 Sebastian
 
-Do so: to ebb
+Do so: to ebb  
 Hereditary sloth instructs me.
 
 Antonio
 
-O,
-If you but knew how you the purpose cherish
-Whiles thus you mock it! how, in stripping it,
-You more invest it! Ebbing men, indeed,
-Most often do so near the bottom run
+O,  
+If you but knew how you the purpose cherish  
+Whiles thus you mock it! how, in stripping it,  
+You more invest it! Ebbing men, indeed,  
+Most often do so near the bottom run  
 By their own fear or sloth.
 
 Sebastian
 
-Prithee, say on:
-The setting of thine eye and cheek proclaim
-A matter from thee, and a birth indeed
+Prithee, say on:  
+The setting of thine eye and cheek proclaim  
+A matter from thee, and a birth indeed  
 Which throes thee much to yield.
 
 Antonio
 
-Thus, sir:
-Although this lord of weak remembrance, this,
-Who shall be of as little memory
-When he is earth’d, hath here almost persuaded⁠—
-For he’s a spirit of persuasion, only
-Professes to persuade⁠—the king his son’s alive,
-’Tis as impossible that he’s undrown’d
+Thus, sir:  
+Although this lord of weak remembrance, this,  
+Who shall be of as little memory  
+When he is earth’d, hath here almost persuaded⁠—  
+For he’s a spirit of persuasion, only  
+Professes to persuade⁠—the king his son’s alive,  
+’Tis as impossible that he’s undrown’d  
 And he that sleeps here swims.
 
 Sebastian
 
-I have no hope
+I have no hope  
 That he’s undrown’d.
 
 Antonio
 
-O, out of that “no hope”
-What great hope have you! no hope that way is
-Another way so high a hope that even
-Ambition cannot pierce a wink beyond,
-But doubt discovery there. Will you grant with me
+O, out of that “no hope”  
+What great hope have you! no hope that way is  
+Another way so high a hope that even  
+Ambition cannot pierce a wink beyond,  
+But doubt discovery there. Will you grant with me  
 That Ferdinand is drown’d?
 
 Sebastian
@@ -648,7 +648,7 @@ He’s gone.
 
 Antonio
 
-Then, tell me,
+Then, tell me,  
 Who’s the next heir of Naples?
 
 Sebastian
@@ -657,36 +657,36 @@ Claribel.
 
 Antonio
 
-She that is queen of Tunis; she that dwells
-Ten leagues beyond man’s life; she that from Naples
-Can have no note, unless the sun were post⁠—
-The man i’ the moon’s too slow⁠—till new-born chins
-Be rough and razorable; she that⁠—from whom?
-We all were sea-swallow’d, though some cast again,
-And by that destiny to perform an act
-Whereof what’s past is prologue, what to come
+She that is queen of Tunis; she that dwells  
+Ten leagues beyond man’s life; she that from Naples  
+Can have no note, unless the sun were post⁠—  
+The man i’ the moon’s too slow⁠—till new-born chins  
+Be rough and razorable; she that⁠—from whom?  
+We all were sea-swallow’d, though some cast again,  
+And by that destiny to perform an act  
+Whereof what’s past is prologue, what to come  
 In yours and my discharge.
 
 Sebastian
 
-What stuff is this! how say you?
-’Tis true, my brother’s daughter’s queen of Tunis;
-So is she heir of Naples; ’twixt which regions
+What stuff is this! how say you?  
+’Tis true, my brother’s daughter’s queen of Tunis;  
+So is she heir of Naples; ’twixt which regions  
 There is some space.
 
 Antonio
 
-A space whose every cubit
-Seems to cry out, “How shall that Claribel
-Measure us back to Naples? Keep in Tunis,
-And let Sebastian wake.” Say, this were death
-That now hath seized them; why, they were no worse
-Than now they are. There be that can rule Naples
-As well as he that sleeps; lords that can prate
-As amply and unnecessarily
-As this Gonzalo; I myself could make
-A chough of as deep chat. O, that you bore
-The mind that I do! what a sleep were this
+A space whose every cubit  
+Seems to cry out, “How shall that Claribel  
+Measure us back to Naples? Keep in Tunis,  
+And let Sebastian wake.” Say, this were death  
+That now hath seized them; why, they were no worse  
+Than now they are. There be that can rule Naples  
+As well as he that sleeps; lords that can prate  
+As amply and unnecessarily  
+As this Gonzalo; I myself could make  
+A chough of as deep chat. O, that you bore  
+The mind that I do! what a sleep were this  
 For your advancement! Do you understand me?
 
 Sebastian
@@ -695,19 +695,19 @@ Methinks I do.
 
 Antonio
 
-And how does your content
+And how does your content  
 Tender your own good fortune?
 
 Sebastian
 
-I remember
+I remember  
 You did supplant your brother Prospero.
 
 Antonio
 
-True:
-And look how well my garments sit upon me;
-Much feater than before: my brother’s servants
+True:  
+And look how well my garments sit upon me;  
+Much feater than before: my brother’s servants  
 Were then my fellows; now they are my men.
 
 Sebastian
@@ -716,34 +716,34 @@ But, for your conscience?
 
 Antonio
 
-Ay, sir; where lies that? if ’twere a kibe,
-’Twould put me to my slipper: but I feel not
-This deity in my bosom: twenty consciences,
-That stand ’twixt me and Milan, candied be they
-And melt ere they molest! Here lies your brother,
-No better than the earth he lies upon,
-If he were that which now he’s like, that’s dead;
-Whom I, with this obedient steel, three inches of it,
-Can lay to bed for ever; whiles you, doing thus,
-To the perpetual wink for aye might put
-This ancient morsel, this Sir Prudence, who
-Should not upbraid our course. For all the rest,
-They’ll take suggestion as a cat laps milk;
-They’ll tell the clock to any business that
+Ay, sir; where lies that? if ’twere a kibe,  
+’Twould put me to my slipper: but I feel not  
+This deity in my bosom: twenty consciences,  
+That stand ’twixt me and Milan, candied be they  
+And melt ere they molest! Here lies your brother,  
+No better than the earth he lies upon,  
+If he were that which now he’s like, that’s dead;  
+Whom I, with this obedient steel, three inches of it,  
+Can lay to bed for ever; whiles you, doing thus,  
+To the perpetual wink for aye might put  
+This ancient morsel, this Sir Prudence, who  
+Should not upbraid our course. For all the rest,  
+They’ll take suggestion as a cat laps milk;  
+They’ll tell the clock to any business that  
 We say befits the hour.
 
 Sebastian
 
-Thy case, dear friend,
-Shall be my precedent; as thou got’st Milan,
-I’ll come by Naples. Draw thy sword: one stroke
-Shall free thee from the tribute which thou payest:
+Thy case, dear friend,  
+Shall be my precedent; as thou got’st Milan,  
+I’ll come by Naples. Draw thy sword: one stroke  
+Shall free thee from the tribute which thou payest:  
 And I the king shall love thee.
 
 Antonio
 
-Draw together;
-And when I rear my hand, do you the like,
+Draw together;  
+And when I rear my hand, do you the like,  
 To fall it on Gonzalo.
 
 Sebastian
@@ -754,15 +754,15 @@ O, but one word. *They talk apart.*
 
 Ariel
 
-My master through his art foresees the danger
-That you, his friend, are in; and sends me forth⁠—
+My master through his art foresees the danger  
+That you, his friend, are in; and sends me forth⁠—  
 For else his project dies⁠—to keep them living. *Sings in Gonzalo’s ear.*
 
-While you here do snoring lie,
-Open-eyed conspiracy
-His time doth take.
-If of life you keep a care,
-Shake off slumber, and beware:
+While you here do snoring lie,  
+Open-eyed conspiracy  
+His time doth take.  
+If of life you keep a care,  
+Shake off slumber, and beware:  
 Awake, awake!
 
 Antonio
@@ -771,12 +771,12 @@ Then let us both be sudden.
 
 Gonzalo
 
-Now, good angels
+Now, good angels  
 Preserve the king. *They wake.*
 
 Alonso
 
-Why, how now? ho, awake! Why are you drawn?
+Why, how now? ho, awake! Why are you drawn?  
 Wherefore this ghastly looking?
 
 Gonzalo
@@ -785,9 +785,9 @@ What’s the matter?
 
 Sebastian
 
-Whiles we stood here securing your repose,
-Even now, we heard a hollow burst of bellowing
-Like bulls, or rather lions: did’t not wake you?
+Whiles we stood here securing your repose,  
+Even now, we heard a hollow burst of bellowing  
+Like bulls, or rather lions: did’t not wake you?  
 It struck mine ear most terribly.
 
 Alonso
@@ -796,8 +796,8 @@ I heard nothing.
 
 Antonio
 
-O, ’twas a din to fright a monster’s ear,
-To make an earthquake! sure, it was the roar
+O, ’twas a din to fright a monster’s ear,  
+To make an earthquake! sure, it was the roar  
 Of a whole herd of lions.
 
 Alonso
@@ -806,21 +806,21 @@ Heard you this, Gonzalo?
 
 Gonzalo
 
-Upon mine honour, sir, I heard a humming,
-And that a strange one too, which did awake me:
-I shaked you, sir, and cried: as mine eyes open’d,
-I saw their weapons drawn: there was a noise,
-That’s verily. ’Tis best we stand upon our guard,
+Upon mine honour, sir, I heard a humming,  
+And that a strange one too, which did awake me:  
+I shaked you, sir, and cried: as mine eyes open’d,  
+I saw their weapons drawn: there was a noise,  
+That’s verily. ’Tis best we stand upon our guard,  
 Or that we quit this place: let’s draw our weapons.
 
 Alonso
 
-Lead off this ground; and let’s make further search
+Lead off this ground; and let’s make further search  
 For my poor son.
 
 Gonzalo
 
-Heavens keep him from these beasts!
+Heavens keep him from these beasts!  
 For he is, sure, i’ the island.
 
 Alonso
@@ -829,5 +829,5 @@ Lead away.
 
 Ariel
 
-Prospero my lord shall know what I have done:
+Prospero my lord shall know what I have done:  
 So, king, go safely on to seek thy son. *Exeunt.*

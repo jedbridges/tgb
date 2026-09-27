@@ -45,19 +45,19 @@ For a week I heard the circling, groping clangor of some solitary goose in the f
 
 As every season seems best to us in its turn, so the coming in of spring is like the creation of Cosmos out of Chaos and the realization of the Golden Age.⁠—
 
-> “Eurus ad Auroram Nabathaeaque regna recessit,
+> “Eurus ad Auroram Nabathaeaque regna recessit,  
 > Persidaque, et radiis juga subdita matutinis.”
 >
+>  
 >
->
-> “The East-Wind withdrew to Aurora and the Nabathæn kingdom,
+> “The East-Wind withdrew to Aurora and the Nabathæn kingdom,  
 > And the Persian, and the ridges placed under the morning rays.
 >
+>  
 >
->
-> Man was born. Whether that Artificer of things,
-> The origin of a better world, made him from the divine seed;
-> Or the earth, being recent and lately sundered from the high
+> Man was born. Whether that Artificer of things,  
+> The origin of a better world, made him from the divine seed;  
+> Or the earth, being recent and lately sundered from the high  
 > Ether, retained some seeds of cognate heaven.”
 
 A single gentle rain makes the grass many shades greener. So our prospects brighten on the influx of better thoughts. We should be blessed if we lived in the present always, and took advantage of every accident that befell us, like the grass which confesses the influence of the slightest dew that falls on it; and did not spend our time in atoning for the neglect of past opportunities, which we call doing our duty. We loiter in winter while it is already spring. In a pleasant spring morning all men’s sins are forgiven. Such a day is a truce to vice. While such a sun holds out to burn, the vilest sinner may return. Through our own recovered innocence we discern the innocence of our neighbors. You may have known your neighbor yesterday for a thief, a drunkard, or a sensualist, and merely pitied or despised him, and despaired of the world; but the sun shines bright and warm this first spring morning, recreating the world, and you meet him at some serene work, and see how his exhausted and debauched veins expand with still joy and bless the new day, feel the spring influence with the innocence of infancy, and all his faults are forgotten. There is not only an atmosphere of good will about him, but even a savor of holiness groping for expression, blindly and ineffectually perhaps, like a newborn instinct, and for a short hour the south hillside echoes to no vulgar jest. You see some innocent fair shoots preparing to burst from his gnarled rind and try another year’s life, tender and fresh as the youngest plant. Even he has entered into the joy of his Lord. Why the jailer does not leave open his prison doors⁠—why the judge does not dismis his case⁠—why the preacher does not dismiss his congregation! It is because they do not obey the hint which God gives them, nor accept the pardon which he freely offers to all.
@@ -66,18 +66,18 @@ A single gentle rain makes the grass many shades greener. So our prospects brigh
 
 “After the germs of virtue have thus been prevented many times from developing themselves, then the beneficent breath of evening does not suffice to preserve them. As soon as the breath of evening does not suffice longer to preserve them, then the nature of man does not differ much from that of the brute. Men seeing the nature of this man like that of the brute, think that he has never possessed the innate faculty of reason. Are those the true and natural sentiments of man?”
 
-> “The Golden Age was first created, which without any avenger
-> Spontaneously without law cherished fidelity and rectitude.
-> Punishment and fear were not; nor were threatening words read
-> On suspended brass; nor did the suppliant crowd fear
-> The words of their judge; but were safe without an avenger.
-> Not yet the pine felled on its mountains had descended
-> To the liquid waves that it might see a foreign world,
+> “The Golden Age was first created, which without any avenger  
+> Spontaneously without law cherished fidelity and rectitude.  
+> Punishment and fear were not; nor were threatening words read  
+> On suspended brass; nor did the suppliant crowd fear  
+> The words of their judge; but were safe without an avenger.  
+> Not yet the pine felled on its mountains had descended  
+> To the liquid waves that it might see a foreign world,  
 > And mortals knew no shores but their own.
 >
+>  
 >
->
-> There was eternal spring, and placid zephyrs with warm
+> There was eternal spring, and placid zephyrs with warm  
 > Blasts soothed the flowers born without seed.”
 
 On the 29th of April, as I was fishing from the bank of the river near the Nine-Acre-Corner bridge, standing on the quaking grass and willow roots, where the muskrats lurk, I heard a singular rattling sound, somewhat like that of the sticks which boys play with their fingers, when, looking up, I observed a very slight and graceful hawk, like a nighthawk, alternately soaring like a ripple and tumbling a rod or two over and over, showing the under side of its wings, which gleamed like a satin ribbon in the sun, or like the pearly inside of a shell. This sight reminded me of falconry and what nobleness and poetry are associated with that sport. The Merlin it seemed to me it might be called: but I care not for its name. It was the most ethereal flight I had ever witnessed. It did not simply flutter like a butterfly, nor soar like the larger hawks, but it sported with proud reliance in the fields of air; mounting again and again with its strange chuckle, it repeated its free and beautiful fall, turning over and over like a kite, and then recovering from its lofty tumbling, as if it had never set its foot on terra firma. It appeared to have no companion in the universe⁠—sporting there alone⁠—and to need none but the morning and the ether with which it played. It was not lonely, but made all the earth lonely beneath it. Where was the parent which hatched it, its kindred, and its father in the heavens? The tenant of the air, it seemed related to the earth but by an egg hatched some time in the crevice of a crag;⁠—or was its native nest made in the angle of a cloud, woven of the rainbow’s trimmings and the sunset sky, and lined with some soft midsummer haze caught up from earth? Its eyry now some cliffy cloud.

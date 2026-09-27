@@ -82,15 +82,15 @@ From Plato: The man who has an elevated mind and takes a view of all time and of
 
 From Antisthenes: It is royal to do good and to be abused. It is a base thing for the countenance to be obedient and to regulate and compose itself as the mind commands, and for the mind not to be regulated and composed by itself.
 
-> It is not right to vex ourselves at things,
+> It is not right to vex ourselves at things,  
 > For they care nought about it.
 
 To the immortal gods and us give joy.
 
-> Life must be reaped like the ripe ears of corn:
+> Life must be reaped like the ripe ears of corn:  
 > One man is born; another dies.
 
-> If gods care not for me and for my children,
+> If gods care not for me and for my children,  
 > There is a reason for it.
 
 For the good is with me, and the just.
@@ -109,15 +109,15 @@ This is a fine saying of Plato: That he who is discoursing about men should look
 
 Consider the past; such great changes of political supremacies. Thou mayest foresee also the things which will be. For they will certainly be of like form, and it is not possible that they should deviate from the order of the things which take place now: accordingly to have contemplated human life for forty years is the same as to have contemplated it for ten thousand years. For what more wilt thou see?
 
-> That which has grown from the earth to the earth,
-> But that which has sprung from heavenly seed,
+> That which has grown from the earth to the earth,  
+> But that which has sprung from heavenly seed,  
 > Back to the heavenly realms returns.
 
 This is either a dissolution of the mutual involution of the atoms, or a similar dispersion of the unsentient elements.
 
-> With food and drinks and cunning magic arts
-> Turning the channel’s course to ’scape from death.
-> The breeze which heaven has sent
+> With food and drinks and cunning magic arts  
+> Turning the channel’s course to ’scape from death.  
+> The breeze which heaven has sent  
 > We must endure, and toil without complaining.
 
 Another may be more expert in casting his opponent; but he is not more social, nor more modest, nor better disciplined to meet all that happens, nor more considerate with respect to the faults of his neighbours.

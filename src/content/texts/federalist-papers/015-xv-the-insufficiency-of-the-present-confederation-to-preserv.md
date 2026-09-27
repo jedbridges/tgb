@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xv-the-insufficiency-of-the-present-confederation-to-preserv"
-heading: "XV The Insufficiency of the Present Confederation to Preserve the Union Hamilton: For The Independent Journal, Saturday, December 1, 1787."
+heading: "XV: The Insufficiency of the Present Confederation to Preserve the Union"
 order: 15
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 3102
+words: 3092
 ---
-The Insufficiency of the Present Confederation to Preserve the Union
-
 Hamilton: For *The Independent Journal*, Saturday, December 1, 1787.
 
 To the People of the State of New York:

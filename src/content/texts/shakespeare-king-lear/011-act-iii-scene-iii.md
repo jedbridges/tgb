@@ -27,8 +27,8 @@ Go to; say you nothing. There’s a division betwixt the dukes; and a worse matt
 
 Edmund
 
-This courtesy, forbid thee, shall the duke
-Instantly know; and of that letter too:
-This seems a fair deserving, and must draw me
-That which my father loses; no less than all:
+This courtesy, forbid thee, shall the duke  
+Instantly know; and of that letter too:  
+This seems a fair deserving, and must draw me  
+That which my father loses; no less than all:  
 The younger rises when the old doth fall. *Exit.*

@@ -13,8 +13,8 @@ Harpooneers and sailors.
 
 Foresail rises and discovers the watch standing, lounging, leaning, and lying in various attitudes, all singing in chorus.
 
-> Farewell and adieu to you, Spanish ladies!
-> Farewell and adieu to you, ladies of Spain!
+> Farewell and adieu to you, Spanish ladies!  
+> Farewell and adieu to you, ladies of Spain!  
 > Our captain’s commanded.⁠—
 
 1st Nantucket sailor.
@@ -23,15 +23,15 @@ Oh, boys, don’t be sentimental; it’s bad for the digestion! Take a tonic, fo
 
 Sings, and all follow.
 
-> Our captain stood upon the deck,
-> A spy-glass in his hand,
-> A viewing of those gallant whales
-> That blew at every strand.
-> Oh, your tubs in your boats, my boys,
-> And by your braces stand,
-> And we’ll have one of those fine whales,
-> Hand, boys, over hand!
-> So, be cheery, my lads! may your hearts never fail!
+> Our captain stood upon the deck,  
+> A spy-glass in his hand,  
+> A viewing of those gallant whales  
+> That blew at every strand.  
+> Oh, your tubs in your boats, my boys,  
+> And by your braces stand,  
+> And we’ll have one of those fine whales,  
+> Hand, boys, over hand!  
+> So, be cheery, my lads! may your hearts never fail!  
 > While the bold harpooner is striking the whale!
 
 Mate’s voice from the quarterdeck.

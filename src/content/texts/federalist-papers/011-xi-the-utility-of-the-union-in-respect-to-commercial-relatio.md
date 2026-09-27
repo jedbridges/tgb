@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xi-the-utility-of-the-union-in-respect-to-commercial-relatio"
-heading: "XI The Utility of the Union in Respect to Commercial Relations and a Navy Hamilton: For The Independent Journal, Saturday, November 24, 1787."
+heading: "XI: The Utility of the Union in Respect to Commercial Relations and a Navy"
 order: 11
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 2519
+words: 2506
 ---
-The Utility of the Union in Respect to Commercial Relations and a Navy
-
 Hamilton: For *The Independent Journal*, Saturday, November 24, 1787.
 
 To the People of the State of New York:

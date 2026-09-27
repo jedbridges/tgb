@@ -34,7 +34,7 @@ Alyosha was delighted too, but he did not know how to get over the hurdle. Mitya
 
 “Why do I whisper? Deuce take it!” cried Dmitri at the top of his voice. “You see what silly tricks nature plays one. I am here in secret, and on the watch. I’ll explain later on, but, knowing it’s a secret, I began whispering like a fool, when there’s no need. Let us go. Over there. Till then be quiet. I want to kiss you.
 
-> Glory to God in the world,
+> Glory to God in the world,  
 > Glory to God in me⁠ ⁠…
 
 I was just repeating that, sitting here, before you came.”
@@ -45,7 +45,7 @@ Dmitri led his brother to the most secluded corner of the garden. There, in a th
 
 “That’s brandy,” Mitya laughed. “I see your look: ‘He’s drinking again!’ Distrust the apparition.
 
-> Distrust the worthless, lying crowd,
+> Distrust the worthless, lying crowd,  
 > And lay aside thy doubts.
 
 I’m not drinking, I’m only ‘indulging,’ as that pig, your Rakitin, says. He’ll be a civil councilor one day, but he’ll always talk about ‘indulging.’ Sit down. I could take you in my arms, Alyosha, and press you to my bosom till I crush you, for in the whole world⁠—in reality⁠—in re‑al‑i‑ty⁠—(can you take it in?) I love no one but you!”
@@ -78,72 +78,72 @@ Alyosha made up his mind to wait. He felt that, perhaps, indeed, his work lay he
 
 “Alyosha,” said Mitya, “you’re the only one who won’t laugh. I should like to begin⁠—my confession⁠—with Schiller’s *Hymn to Joy*, *An die Freude*! I don’t know German, I only know it’s called that. Don’t think I’m talking nonsense because I’m drunk. I’m not a bit drunk. Brandy’s all very well, but I need two bottles to make me drunk:
 
-> Silenus with his rosy phiz
+> Silenus with his rosy phiz  
 > Upon his stumbling ass.
 
 But I’ve not drunk a quarter of a bottle, and I’m not Silenus. I’m not Silenus, though I am strong, for I’ve made a decision once for all. Forgive me the pun; you’ll have to forgive me a lot more than puns today. Don’t be uneasy. I’m not spinning it out. I’m talking sense, and I’ll come to the point in a minute. I won’t keep you in suspense. Stay, how does it go?”
 
 He raised his head, thought a minute, and began with enthusiasm:
 
-> “Wild and fearful in his cavern
-> Hid the naked troglodyte,
-> And the homeless nomad wandered
-> Laying waste the fertile plain.
-> Menacing with spear and arrow
-> In the woods the hunter strayed.⁠ ⁠…
-> Woe to all poor wretches stranded
+> “Wild and fearful in his cavern  
+> Hid the naked troglodyte,  
+> And the homeless nomad wandered  
+> Laying waste the fertile plain.  
+> Menacing with spear and arrow  
+> In the woods the hunter strayed.⁠ ⁠…  
+> Woe to all poor wretches stranded  
 > On those cruel and hostile shores!
 >
+>  
 >
->
-> “From the peak of high Olympus
-> Came the mother Ceres down,
-> Seeking in those savage regions
-> Her lost daughter Proserpine.
-> But the Goddess found no refuge,
-> Found no kindly welcome there,
-> And no temple bearing witness
+> “From the peak of high Olympus  
+> Came the mother Ceres down,  
+> Seeking in those savage regions  
+> Her lost daughter Proserpine.  
+> But the Goddess found no refuge,  
+> Found no kindly welcome there,  
+> And no temple bearing witness  
 > To the worship of the gods.
 >
+>  
 >
->
-> “From the fields and from the vineyards
-> Came no fruits to deck the feasts,
-> Only flesh of bloodstained victims
-> Smoldered on the altar-fires,
-> And where’er the grieving goddess
-> Turns her melancholy gaze,
-> Sunk in vilest degradation
+> “From the fields and from the vineyards  
+> Came no fruits to deck the feasts,  
+> Only flesh of bloodstained victims  
+> Smoldered on the altar-fires,  
+> And where’er the grieving goddess  
+> Turns her melancholy gaze,  
+> Sunk in vilest degradation  
 > Man his loathsomeness displays.”
 
 Mitya broke into sobs and seized Alyosha’s hand.
 
 “My dear, my dear, in degradation, in degradation now, too. There’s a terrible amount of suffering for man on earth, a terrible lot of trouble. Don’t think I’m only a brute in an officer’s uniform, wallowing in dirt and drink. I hardly think of anything but of that degraded man⁠—if only I’m not lying. I pray God I’m not lying and showing off. I think about that man because I am that man myself.
 
-> Would he purge his soul from vileness
-> And attain to light and worth,
-> He must turn and cling forever
+> Would he purge his soul from vileness  
+> And attain to light and worth,  
+> He must turn and cling forever  
 > To his ancient Mother Earth.
 
 “But the difficulty is how am I to cling forever to Mother Earth. I don’t kiss her. I don’t cleave to her bosom. Am I to become a peasant or a shepherd? I go on and I don’t know whether I’m going to shame or to light and joy. That’s the trouble, for everything in the world is a riddle! And whenever I’ve happened to sink into the vilest degradation (and it’s always been happening) I always read that poem about Ceres and man. Has it reformed me? Never! For I’m a Karamazov. For when I do leap into the pit, I go headlong with my heels up, and am pleased to be falling in that degrading attitude, and pride myself upon it. And in the very depths of that degradation I begin a hymn of praise. Let me be accursed. Let me be vile and base, only let me kiss the hem of the veil in which my God is shrouded. Though I may be following the devil, I am Thy son, O Lord, and I love Thee, and I feel the joy without which the world cannot stand.
 
-> Joy everlasting fostereth
-> The soul of all creation,
-> It is her secret ferment fires
-> The cup of life with flame.
-> ’Tis at her beck the grass hath turned
-> Each blade towards the light
-> And solar systems have evolved
-> From chaos and dark night,
-> Filling the realms of boundless space
-> Beyond the sage’s sight.
-> At bounteous Nature’s kindly breast,
-> All things that breathe drink Joy,
-> And birds and beasts and creeping things
-> All follow where She leads.
-> Her gifts to man are friends in need,
-> The wreath, the foaming must,
-> To angels⁠—vision of God’s throne,
+> Joy everlasting fostereth  
+> The soul of all creation,  
+> It is her secret ferment fires  
+> The cup of life with flame.  
+> ’Tis at her beck the grass hath turned  
+> Each blade towards the light  
+> And solar systems have evolved  
+> From chaos and dark night,  
+> Filling the realms of boundless space  
+> Beyond the sage’s sight.  
+> At bounteous Nature’s kindly breast,  
+> All things that breathe drink Joy,  
+> And birds and beasts and creeping things  
+> All follow where She leads.  
+> Her gifts to man are friends in need,  
+> The wreath, the foaming must,  
+> To angels⁠—vision of God’s throne,  
 > To insects⁠—sensual lust.
 
 “But enough poetry! I am in tears; let me cry. It may be foolishness that everyone would laugh at. But you won’t laugh. Your eyes are shining, too. Enough poetry. I want to tell you now about the insects to whom God gave ‘sensual lust.’

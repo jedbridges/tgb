@@ -52,22 +52,22 @@ The same winter the Athenians purified Delos, in compliance, it appears, with a 
 
 The Athenians, after the purification, celebrated, for the first time, the quinquennial festival of the Delian games. Once upon a time, indeed, there was a great assemblage of the Ionians and the neighbouring islanders at Delos, who used to come to the festival, as the Ionians now do to that of Ephesus, and athletic and poetical contests took place there, and the cities brought choirs of dancers. Nothing can be clearer on this point than the following verses of Homer, taken from a hymn to Apollo:
 
-Phœbus, wherever thou strayest, far or near,
-Delos was still of all thy haunts most dear.
-Thither the robed Ionians take their way
-With wife and child to keep thy holiday,
-Invoke thy favour on each manly game,
+Phœbus, wherever thou strayest, far or near,  
+Delos was still of all thy haunts most dear.  
+Thither the robed Ionians take their way  
+With wife and child to keep thy holiday,  
+Invoke thy favour on each manly game,  
 And dance and sing in honour of thy name.
 
 That there was also a poetical contest in which the Ionians went to contend, again is shown by the following, taken from the same hymn. After celebrating the Delian dance of the women, he ends his song of praise with these verses, in which he also alludes to himself:
 
-Well, may Apollo keep you all! and so,
-Sweethearts, good-bye—yet tell me not I go
-Out from your hearts; and if in after hours
-Some other wanderer in this world of ours
-Touch at your shores, and ask your maidens here
-Who sings the songs the sweetest to your ear,
-Think of me then, and answer with a smile,
+Well, may Apollo keep you all! and so,  
+Sweethearts, good-bye—yet tell me not I go  
+Out from your hearts; and if in after hours  
+Some other wanderer in this world of ours  
+Touch at your shores, and ask your maidens here  
+Who sings the songs the sweetest to your ear,  
+Think of me then, and answer with a smile,  
 ‘A blind old man of Scio’s rocky isle.’
 
 Homer thus attests that there was anciently a great assembly and festival at Delos. In later times, although the islanders and the Athenians continued to send the choirs of dancers with sacrifices, the contests and most of the ceremonies were abolished, probably through adversity, until the Athenians celebrated the games upon this occasion with the novelty of horse-races.

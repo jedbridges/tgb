@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xxxii-the-same-subject-continued-concerning-the-general-powe"
-heading: "XXXII The Same Subject Continued (Concerning the General Power of Taxation) Hamilton: From The Independent Journal, Wednesday, January 2, 1788."
+heading: "XXXII: The Same Subject Continued (Concerning the General Power of Taxation)"
 order: 32
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 1510
+words: 1500
 ---
-The Same Subject Continued (Concerning the General Power of Taxation)
-
 Hamilton: From *The Independent Journal*, Wednesday, January 2, 1788.
 
 To the People of the State of New York:

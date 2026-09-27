@@ -26,7 +26,7 @@ words: 1698
 
 [8] *i.e.* on objects of Moral Choice, opinion of this kind is not the same as Moral Choice, because actions alone form habits and constitute character, opinions are in general *signs* of character, but when they begin to be acted on they cease to be opinions, and merge in Moral Choice.
 
-“Treason doth never prosper, what’s the reason?
+“Treason doth never prosper, what’s the reason?  
 When it doth prosper, none dare call it Treason.”
 
 [9] The introduction of the words [Greek: dia tinos] seems a mere useless repetition, as in the second chapter [Greek: en tini] added to [Greek: peri ti]. These I take for some among the many indications that the treatise is a collection of notes for lectures, and not a finished or systematic one.

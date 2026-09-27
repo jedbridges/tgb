@@ -35,10 +35,10 @@ Did your letters pierce the queen to any demonstration of grief?
 
 Gentleman
 
-Ay, sir; she took them, read them in my presence;
-And now and then an ample tear trill’d down
-Her delicate cheek: it seem’d she was a queen
-Over her passion; who, most rebel-like,
+Ay, sir; she took them, read them in my presence;  
+And now and then an ample tear trill’d down  
+Her delicate cheek: it seem’d she was a queen  
+Over her passion; who, most rebel-like,  
 Sought to be king o’er her.
 
 Kent
@@ -47,14 +47,14 @@ O, then it moved her.
 
 Gentleman
 
-Not to a rage: patience and sorrow strove
-Who should express her goodliest. You have seen
-Sunshine and rain at once: her smiles and tears
-Were like a better way: those happy smilets,
-That play’d on her ripe lip, seem’d not to know
-What guests were in her eyes; which parted thence,
-As pearls from diamonds dropp’d. In brief,
-Sorrow would be a rarity most beloved,
+Not to a rage: patience and sorrow strove  
+Who should express her goodliest. You have seen  
+Sunshine and rain at once: her smiles and tears  
+Were like a better way: those happy smilets,  
+That play’d on her ripe lip, seem’d not to know  
+What guests were in her eyes; which parted thence,  
+As pearls from diamonds dropp’d. In brief,  
+Sorrow would be a rarity most beloved,  
 If all could so become it.
 
 Kent
@@ -63,20 +63,20 @@ Made she no verbal question?
 
 Gentleman
 
-’Faith, once or twice she heaved the name of “father”
-Pantingly forth, as if it press’d her heart:
-Cried “Sisters! sisters! Shame of ladies! sisters!
-Kent! father! sisters! What, i’ the storm? i’ the night?
-Let pity not be believed!” There she shook
-The holy water from her heavenly eyes,
-And clamour moisten’d: then away she started
+’Faith, once or twice she heaved the name of “father”  
+Pantingly forth, as if it press’d her heart:  
+Cried “Sisters! sisters! Shame of ladies! sisters!  
+Kent! father! sisters! What, i’ the storm? i’ the night?  
+Let pity not be believed!” There she shook  
+The holy water from her heavenly eyes,  
+And clamour moisten’d: then away she started  
 To deal with grief alone.
 
 Kent
 
-It is the stars,
-The stars above us, govern our conditions;
-Else one self mate and mate could not beget
+It is the stars,  
+The stars above us, govern our conditions;  
+Else one self mate and mate could not beget  
 Such different issues. You spoke not with her since?
 
 Gentleman
@@ -93,9 +93,9 @@ No, since.
 
 Kent
 
-Well, sir, the poor distressed Lear’s i’ the town;
-Who sometime, in his better tune, remembers
-What we are come about, and by no means
+Well, sir, the poor distressed Lear’s i’ the town;  
+Who sometime, in his better tune, remembers  
+What we are come about, and by no means  
 Will yield to see his daughter.
 
 Gentleman
@@ -104,11 +104,11 @@ Why, good sir?
 
 Kent
 
-A sovereign shame so elbows him: his own unkindness,
-That stripp’d her from his benediction, turn’d her
-To foreign casualties, gave her dear rights
-To his dog-hearted daughters, these things sting
-His mind so venomously, that burning shame
+A sovereign shame so elbows him: his own unkindness,  
+That stripp’d her from his benediction, turn’d her  
+To foreign casualties, gave her dear rights  
+To his dog-hearted daughters, these things sting  
+His mind so venomously, that burning shame  
 Detains him from Cordelia.
 
 Gentleman
@@ -125,9 +125,9 @@ Gentleman
 
 Kent
 
-Well, sir, I’ll bring you to our master Lear,
-And leave you to attend him: some dear cause
-Will in concealment wrap me up awhile;
-When I am known aright, you shall not grieve
-Lending me this acquaintance. I pray you, go
+Well, sir, I’ll bring you to our master Lear,  
+And leave you to attend him: some dear cause  
+Will in concealment wrap me up awhile;  
+When I am known aright, you shall not grieve  
+Lending me this acquaintance. I pray you, go  
 Along with me. *Exeunt.*

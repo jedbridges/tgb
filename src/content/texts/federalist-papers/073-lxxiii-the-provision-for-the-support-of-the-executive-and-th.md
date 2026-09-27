@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "lxxiii-the-provision-for-the-support-of-the-executive-and-th"
-heading: "LXXIII The Provision for the Support of the Executive, and the Veto Power Hamilton: From the New York Packet, Friday, March 21, 1788."
+heading: "LXXIII: The Provision for the Support of the Executive, and the Veto Power"
 order: 73
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 2375
+words: 2363
 ---
-The Provision for the Support of the Executive, and the Veto Power
-
 Hamilton: From the *New York Packet*, Friday, March 21, 1788.
 
 To the People of the State of New York:

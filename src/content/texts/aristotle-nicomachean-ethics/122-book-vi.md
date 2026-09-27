@@ -100,8 +100,8 @@ words: 3327
 
 [45] See the note on [Greek: Archae] on p. 4,1 30. As a matter of fact and mental experience the Major Premiss of the Practica Syllogism is wrought into the mind by repeatedly acting upon the Minor Premiss (*i.e.* by [Greek: ethismos]).
 
-All that is pleasant is to be done,
-This is pleasant,
+All that is pleasant is to be done,  
+This is pleasant,  
 This is to be done
 
 By habitually acting on the Minor Premiss, *i.e.* on the suggestions of [Greek: epithymia], a man comes really to hold the Major Premiss. Aristotle says of the man destitute of all self-control that he is firmly persuaded that it is his proper line to pursue the gratification of his bodily appetites, [Greek: dia to toioytos einai oios diokein aytas]. And his analysis of [Greek: akrasia] (the state of progress towards this utter abandonment to passion) shows that each case of previous good resolution succumbing to temptation is attributable to [Greek: epithymia] suggesting its own Minor Premiss in place of the right one. Book VII. 8 and 5.
@@ -110,8 +110,8 @@ By habitually acting on the Minor Premiss, *i.e.* on the suggestions of [Greek: 
 
 [47] This is a note to explain [Greek: hygieina] and [Greek: euektika], he gives these three uses of the term [Greek: hygieinon] in the Topics, I. xiii. 10,
 
-{ [Greek: to men hygieias poiætikon], [Greek: hygieinon legetai]
-{ [Greek: to de phylaktikon],
+{ [Greek: to men hygieias poiætikon], [Greek: hygieinon legetai]  
+{ [Greek: to de phylaktikon],  
 { [Greek: to de sæmantikon].
 
 Of course the same will apply to [Greek: euektikon].

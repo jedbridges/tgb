@@ -111,7 +111,7 @@ What, must our mouths be cold?
 
 Gonzalo
 
-The king and prince at prayers! let’s assist them,
+The king and prince at prayers! let’s assist them,  
 For our case is as theirs.
 
 Sebastian
@@ -120,18 +120,18 @@ I’m out of patience.
 
 Antonio
 
-We are merely cheated of our lives by drunkards:
-This wide-chapp’d rascal⁠—would thou mightst lie drowning
+We are merely cheated of our lives by drunkards:  
+This wide-chapp’d rascal⁠—would thou mightst lie drowning  
 The washing of ten tides!
 
 Gonzalo
 
-He’ll be hang’d yet,
-Though every drop of water swear against it
+He’ll be hang’d yet,  
+Though every drop of water swear against it  
 And gape at widest to glut him.
 
-*A confused noise within:* “Mercy on us!”
-“We split, we split!”⁠—“Farewell, my wife and children!”⁠—
+*A confused noise within:* “Mercy on us!”  
+“We split, we split!”⁠—“Farewell, my wife and children!”⁠—  
 “Farewell, brother!”⁠—“We split, we split, we split!”
 
 Antonio

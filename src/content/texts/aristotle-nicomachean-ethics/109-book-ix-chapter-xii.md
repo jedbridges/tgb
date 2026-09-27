@@ -12,7 +12,7 @@ words: 292
 ---
 May we not say then that, as seeing the beloved object is most prized by lovers and they choose this sense rather than any of the others because Love
 
-“Is engendered in the eyes,
+“Is engendered in the eyes,  
 With gazing fed,”
 
 in like manner intimacy is to friends most choice-worthy, Friendship being communion? Again, as a man is to himself so is he to his friend; now with respect to himself the perception of his own existence is choice-worthy, therefore is it also in respect of his friend.

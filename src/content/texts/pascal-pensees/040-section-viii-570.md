@@ -32,8 +32,8 @@ Thus as the significance of the word "enemy" is dependent on the ultimate end, t
 
 Hypothesis that the apostles were impostors.—The time clearly, the manner obscurely.—Five typical proofs.
 
-{1600 prophets.
-  2000 {
+{1600 prophets.  
+  2000 {  
 { 400 scattered.
 
 **Section Viii, 572**

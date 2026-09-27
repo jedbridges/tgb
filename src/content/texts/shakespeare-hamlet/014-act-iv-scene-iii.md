@@ -15,16 +15,16 @@ Another room in the castle.
 
 King
 
-I have sent to seek him, and to find the body.
-How dangerous is it that this man goes loose!
-Yet must not we put the strong law on him:
-He’s loved of the distracted multitude,
-Who like not in their judgment, but their eyes:
-And where ’tis so, the offender’s scourge is weigh’d,
-But never the offence. To bear all smooth and even,
-This sudden sending him away must seem
-Deliberate pause: diseases desperate grown
-By desperate appliance are relieved,
+I have sent to seek him, and to find the body.  
+How dangerous is it that this man goes loose!  
+Yet must not we put the strong law on him:  
+He’s loved of the distracted multitude,  
+Who like not in their judgment, but their eyes:  
+And where ’tis so, the offender’s scourge is weigh’d,  
+But never the offence. To bear all smooth and even,  
+This sudden sending him away must seem  
+Deliberate pause: diseases desperate grown  
+By desperate appliance are relieved,  
 Or not at all.
 
  *Enter Rosencrantz.*
@@ -33,7 +33,7 @@ How now! what hath befall’n?
 
 Rosencrantz
 
-Where the dead body is bestow’d, my lord,
+Where the dead body is bestow’d, my lord,  
 We cannot get from him.
 
 King
@@ -104,12 +104,12 @@ He will stay till ye come. *Exeunt Attendants.*
 
 King
 
-Hamlet, this deed, for thine especial safety⁠—
-Which we do tender, as we dearly grieve
-For that which thou hast done⁠—must send thee hence
-With fiery quickness: therefore prepare thyself;
-The bark is ready, and the wind at help,
-The associates tend, and every thing is bent
+Hamlet, this deed, for thine especial safety⁠—  
+Which we do tender, as we dearly grieve  
+For that which thou hast done⁠—must send thee hence  
+With fiery quickness: therefore prepare thyself;  
+The bark is ready, and the wind at help,  
+The associates tend, and every thing is bent  
 For England.
 
 Hamlet
@@ -142,18 +142,18 @@ My mother: father and mother is man and wife; man and wife is one flesh; and so,
 
 King
 
-Follow him at foot; tempt him with speed aboard;
-Delay it not; I’ll have him hence to-night:
-Away! for every thing is seal’d and done
-That else leans on the affair: pray you, make haste. *Exeunt Rosencrantz and Guildenstern.*
-And, England, if my love thou hold’st at aught⁠—
-As my great power thereof may give thee sense,
-Since yet thy cicatrice looks raw and red
-After the Danish sword, and thy free awe
-Pays homage to us⁠—thou mayst not coldly set
-Our sovereign process; which imports at full,
-By letters congruing to that effect,
-The present death of Hamlet. Do it, England;
-For like the hectic in my blood he rages,
-And thou must cure me: till I know ’tis done,
+Follow him at foot; tempt him with speed aboard;  
+Delay it not; I’ll have him hence to-night:  
+Away! for every thing is seal’d and done  
+That else leans on the affair: pray you, make haste. *Exeunt Rosencrantz and Guildenstern.*  
+And, England, if my love thou hold’st at aught⁠—  
+As my great power thereof may give thee sense,  
+Since yet thy cicatrice looks raw and red  
+After the Danish sword, and thy free awe  
+Pays homage to us⁠—thou mayst not coldly set  
+Our sovereign process; which imports at full,  
+By letters congruing to that effect,  
+The present death of Hamlet. Do it, England;  
+For like the hectic in my blood he rages,  
+And thou must cure me: till I know ’tis done,  
 Howe’er my haps, my joys were ne’er begun. *Exit.*

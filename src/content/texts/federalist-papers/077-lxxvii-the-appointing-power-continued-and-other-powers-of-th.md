@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "lxxvii-the-appointing-power-continued-and-other-powers-of-th"
-heading: "LXXVII The Appointing Power Continued and Other Powers of the Executive Considered Hamilton: From The Independent Journal, Wednesday, April 2, 1788."
+heading: "LXXVII: The Appointing Power Continued and Other Powers of the Executive Considered"
 order: 77
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 1997
+words: 1986
 ---
-The Appointing Power Continued and Other Powers of the Executive Considered
-
 Hamilton: From *The Independent Journal*, Wednesday, April 2, 1788.
 
 To the People of the State of New York:

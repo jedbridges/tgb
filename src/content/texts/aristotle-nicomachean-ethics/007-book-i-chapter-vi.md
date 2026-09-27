@@ -30,7 +30,7 @@ So then their life has no need of pleasure as a kind of additional appendage, bu
 
 Thus then Happiness is most excellent, most noble, and most pleasant, and these attributes are not separated as in the well-known Delian inscription—
 
-“Most noble is that which is most just, but best is health;
+“Most noble is that which is most just, but best is health;  
 And naturally most pleasant is the obtaining one’s desires.”
 
 For all these co-exist in the best acts of working: and we say that Happiness is these, or one, that is, the best of them.

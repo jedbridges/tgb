@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "lix-concerning-the-power-of-congress-to-regulate-the-electio"
-heading: "LIX Concerning the Power of Congress to Regulate the Election of Members Hamilton: From the New York Packet, Friday, February 22, 1788."
+heading: "LIX: Concerning the Power of Congress to Regulate the Election of Members"
 order: 59
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 1928
+words: 1917
 ---
-Concerning the Power of Congress to Regulate the Election of Members
-
 Hamilton: From the *New York Packet*, Friday, February 22, 1788.
 
 To the People of the State of New York:

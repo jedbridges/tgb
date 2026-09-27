@@ -28,37 +28,37 @@ This descending to popular notions is certainly very commendable, if the ascent 
 
 We need only look at the attempts of moralists in that favourite fashion, and we shall find at one time the special constitution of human nature (including, however, the idea of a rational nature generally), at one time perfection, at another happiness, here moral sense, there fear of God. a little of this, and a little of that, in marvellous mixture, without its occurring to them to ask whether the principles of morality are to be sought in the knowledge of human nature at all (which we can have only from experience); or, if this is not so, if these principles are to be found altogether a priori, free from everything empirical, in pure rational concepts only and nowhere else, not even in the smallest degree; then rather to adopt the method of making this a separate inquiry, as pure practical philosophy, or (if one may use a name so decried) as metaphysic of morals, * to bring it by itself to completeness, and to require the public, which wishes for popular treatment, to await the issue of this undertaking.
 
-* Just as pure mathematics are distinguished from applied,
-pure logic from applied, so if we choose we may also
-distinguish pure philosophy of morals (metaphysic) from
-applied (viz., applied to human nature). By this designation
-we are also at once reminded that moral principles are not
-based on properties of human nature, but must subsist a
-priori of themselves, while from such principles practical
-rules must be capable of being deduced for every rational
+* Just as pure mathematics are distinguished from applied,  
+pure logic from applied, so if we choose we may also  
+distinguish pure philosophy of morals (metaphysic) from  
+applied (viz., applied to human nature). By this designation  
+we are also at once reminded that moral principles are not  
+based on properties of human nature, but must subsist a  
+priori of themselves, while from such principles practical  
+rules must be capable of being deduced for every rational  
 nature, and accordingly for that of man.
 
 Such a metaphysic of morals, completely isolated, not mixed with any anthropology, theology, physics, or hyperphysics, and still less with occult qualities (which we might call hypophysical), is not only an indispensable substratum of all sound theoretical knowledge of duties, but is at the same time a desideratum of the highest importance to the actual fulfilment of their precepts. For the pure conception of duty, unmixed with any foreign addition of empirical attractions, and, in a word, the conception of the moral law, exercises on the human heart, by way of reason alone (which first becomes aware with this that it can of itself be practical), an influence so much more powerful than all other springs * which may be derived from the field of experience, that, in the consciousness of its worth, it despises the latter, and can by degrees become their master; whereas a mixed ethics, compounded partly of motives drawn from feelings and inclinations, and partly also of conceptions of reason, must make the mind waver between motives which cannot be brought under any principle, which lead to good only by mere accident and very often also to evil.
 
-* I have a letter from the late excellent Sulzer, in which
-he asks me what can be the reason that moral instruction,
-although containing much that is convincing for the reason,
-yet accomplishes so little? My answer was postponed in order
-that I might make it complete. But it is simply this: that
-the teachers themselves have not got their own notions
-clear, and when they endeavour to make up for this by raking
-up motives of moral goodness from every quarter, trying to
-make their physic right strong, they spoil it. For the
-commonest understanding shows that if we imagine, on the one
-hand, an act of honesty done with steadfast mind, apart from
-every view to advantage of any kind in this world or
-another, and even under the greatest temptations of
-necessity or allurement, and, on the other hand, a similar
-act which was affected, in however low a degree, by a
-foreign motive, the former leaves far behind and eclipses
-the second; it elevates the soul and inspires the wish to be
-able to act in like manner oneself. Even moderately young
-children feel this impression, ana one should never
+* I have a letter from the late excellent Sulzer, in which  
+he asks me what can be the reason that moral instruction,  
+although containing much that is convincing for the reason,  
+yet accomplishes so little? My answer was postponed in order  
+that I might make it complete. But it is simply this: that  
+the teachers themselves have not got their own notions  
+clear, and when they endeavour to make up for this by raking  
+up motives of moral goodness from every quarter, trying to  
+make their physic right strong, they spoil it. For the  
+commonest understanding shows that if we imagine, on the one  
+hand, an act of honesty done with steadfast mind, apart from  
+every view to advantage of any kind in this world or  
+another, and even under the greatest temptations of  
+necessity or allurement, and, on the other hand, a similar  
+act which was affected, in however low a degree, by a  
+foreign motive, the former leaves far behind and eclipses  
+the second; it elevates the soul and inspires the wish to be  
+able to act in like manner oneself. Even moderately young  
+children feel this impression, ana one should never  
 represent duties to them in any other light.
 
 From what has been said, it is clear that all moral conceptions have their seat and origin completely a priori in the reason, and that, moreover, in the commonest reason just as truly as in that which is in the highest degree speculative; that they cannot be obtained by abstraction from any empirical, and therefore merely contingent, knowledge; that it is just this purity of their origin that makes them worthy to serve as our supreme practical principle, and that just in proportion as we add anything empirical, we detract from their genuine influence and from the absolute value of actions; that it is not only of the greatest necessity, in a purely speculative point of view, but is also of the greatest practical importance, to derive these notions and laws from pure reason, to present them pure and unmixed, and even to determine the compass of this practical or pure rational knowledge, i.e., to determine the whole faculty of pure practical reason; and, in doing so, we must not make its principles dependent on the particular nature of human reason, though in speculative philosophy this may be permitted, or may even at times be necessary; but since moral laws ought to hold good for every rational creature, we must derive them from the general concept of a rational being. In this way, although for its application to man morality has need of anthropology, yet, in the first instance, we must treat it independently as pure philosophy, i.e., as metaphysic, complete in itself (a thing which in such distinct branches of science is easily done); knowing well that unless we are in possession of this, it would not only be vain to determine the moral element of duty in right actions for purposes of speculative criticism, but it would be impossible to base morals on their genuine principles, even for common practical purposes, especially of moral instruction, so as to produce pure moral dispositions, and to engraft them on men's minds to the promotion of the greatest possible good in the world.
@@ -71,25 +71,25 @@ The conception of an objective principle, in so far as it is obligatory for a wi
 
 All imperatives are expressed by the word ought [or shall], and thereby indicate the relation of an objective law of reason to a will, which from its subjective constitution is not necessarily determined by it (an obligation). They say that something would be good to do or to forbear, but they say it to a will which does not always do a thing because it is conceived to be good to do it. That is practically good, however, which determines the will by means of the conceptions of reason, and consequently not from subjective causes, but objectively, that is on principles which are valid for every rational being as such. It is distinguished from the pleasant, as that which influences the will only by means of sensation from merely subjective causes, valid only for the sense of this or that one, and not as a principle of reason, which holds for every one. *
 
-* The dependence of the desires on sensations is called
-inclination, and this accordingly always indicates a want.
-The dependence of a contingently determinable will on
-principles of reason is called an interest. This therefore,
-is found only in the case of a dependent will which does not
-always of itself conform to reason; in the Divine will we
-cannot conceive any interest. But the human will can also
-take an interest in a thing without therefore acting from
-interest. The former signifies the practical interest in the
-action, the latter the pathological in the object of the
-action. The former indicates only dependence of the will on
-principles of reason in themselves; the second, dependence
-on principles of reason for the sake of inclination, reason
-supplying only the practical rules how the requirement of
-the inclination may be satisfied. In the first case the
-action interests me; in the second the object of the action
-(because it is pleasant to me). We have seen in the first
-section that in an action done from duty we must look not to
-the interest in the object, but only to that in the action
+* The dependence of the desires on sensations is called  
+inclination, and this accordingly always indicates a want.  
+The dependence of a contingently determinable will on  
+principles of reason is called an interest. This therefore,  
+is found only in the case of a dependent will which does not  
+always of itself conform to reason; in the Divine will we  
+cannot conceive any interest. But the human will can also  
+take an interest in a thing without therefore acting from  
+interest. The former signifies the practical interest in the  
+action, the latter the pathological in the object of the  
+action. The former indicates only dependence of the will on  
+principles of reason in themselves; the second, dependence  
+on principles of reason for the sake of inclination, reason  
+supplying only the practical rules how the requirement of  
+the inclination may be satisfied. In the first case the  
+action interests me; in the second the object of the action  
+(because it is pleasant to me). We have seen in the first  
+section that in an action done from duty we must look not to  
+the interest in the object, but only to that in the action  
 itself, and in its rational principle (viz., the law).
 
 A perfectly good will would therefore be equally subject to objective laws (viz., laws of good), but could not be conceived as obliged thereby to act lawfully, because of itself from its subjective constitution it can only be determined by the conception of good. Therefore no imperatives hold for the Divine will, or in general for a holy will; ought is here out of place, because the volition is already of itself necessarily in unison with the law. Therefore imperatives are only formulae to express the relation of objective laws of all volition to the subjective imperfection of the will of this or that rational being, e.g., the human will.
@@ -106,28 +106,28 @@ Whatever is possible only by the power of some rational being may also be concei
 
 There is one end, however, which may be assumed to be actually such to all rational beings (so far as imperatives apply to them, viz., as dependent beings), and, therefore, one purpose which they not merely may have, but which we may with certainty assume that they all actually have by a natural necessity, and this is happiness. The hypothetical imperative which expresses the practical necessity of an action as means to the advancement of happiness is assertorial. We are not to present it as necessary for an uncertain and merely possible purpose, but for a purpose which we may presuppose with certainty and a priori in every man, because it belongs to his being. Now skill in the choice of means to his own greatest well-being may be called prudence, * in the narrowest sense. And thus the imperative which refers to the choice of means to one's own happiness, i.e., the precept of prudence, is still always hypothetical; the action is not commanded absolutely, but only as means to another purpose.
 
-* The word prudence is taken in two senses: in the one it
-may bear the name of knowledge of the world, in the other
-that of private prudence. The former is a man's ability to
-influence others so as to use them for his own purposes. The
-latter is the sagacity to combine all these purposes for his
-own lasting benefit. This latter is properly that to which
-the value even of the former is reduced, and when a man is
-prudent in the former sense, but not in the latter, we might
-better say of him that he is clever and cunning, but, on the
+* The word prudence is taken in two senses: in the one it  
+may bear the name of knowledge of the world, in the other  
+that of private prudence. The former is a man's ability to  
+influence others so as to use them for his own purposes. The  
+latter is the sagacity to combine all these purposes for his  
+own lasting benefit. This latter is properly that to which  
+the value even of the former is reduced, and when a man is  
+prudent in the former sense, but not in the latter, we might  
+better say of him that he is clever and cunning, but, on the  
 whole, imprudent.
 
 Finally, there is an imperative which commands a certain conduct immediately, without having as its condition any other purpose to be attained by it. This imperative is categorical. It concerns not the matter of the action, or its intended result, but its form and the principle of which it is itself a result; and what is essentially good in it consists in the mental disposition, let the consequence be what it may. This imperative may be called that of morality.
 
 There is a marked distinction also between the volitions on these three sorts of principles in the dissimilarity of the obligation of the will. In order to mark this difference more clearly, I think they would be most suitably named in their order if we said they are either rules of skill, or counsels of prudence, or commands (laws) of morality. For it is law only that involves the conception of an unconditional and objective necessity, which is consequently universally valid; and commands are laws which must be obeyed, that is, must be followed, even in opposition to inclination. Counsels, indeed, involve necessity, but one which can only hold under a contingent subjective condition, viz., they depend on whether this or that man reckons this or that as part of his happiness; the categorical imperative, on the contrary, is not limited by any condition, and as being absolutely, although practically, necessary, may be quite properly called a command. We might also call the first kind of imperatives technical (belonging to art), the second pragmatic * (to welfare), the third moral (belonging to free conduct generally, that is, to morals).
 
-* It seems to me that the proper signification of the word
-pragmatic may be most accurately defined in this way. For
-sanctions are called pragmatic which flow properly not from
-the law of the states as necessary enactments, but from
-precaution for the general welfare. A history is composed
-pragmatically when it teaches prudence, i.e., instructs the
-world how it can provide for its interests better, or at
+* It seems to me that the proper signification of the word  
+pragmatic may be most accurately defined in this way. For  
+sanctions are called pragmatic which flow properly not from  
+the law of the states as necessary enactments, but from  
+precaution for the general welfare. A history is composed  
+pragmatically when it teaches prudence, i.e., instructs the  
+world how it can provide for its interests better, or at  
 least as well as, the men of former time.
 
 Now arises the question, how are all these imperatives possible? This question does not seek to know how we can conceive the accomplishment of the action which the imperative ordains, but merely how we can conceive the obligation of the will which the imperative expresses. No special explanation is needed to show how an imperative of skill is possible. Whoever wills the end, wills also (so far as reason decides his conduct) the means in his power which are indispensably necessary thereto. This proposition is, as regards the volition, analytical; for, in willing an object as my effect, there is already thought the causality of myself as an acting cause, that is to say, the use of the means; and the imperative educes from the conception of volition of an end the conception of actions necessary to this end. Synthetical propositions must no doubt be employed in defining the means to a proposed end; but they do not concern the principle, the act of the will, but the object and its realization. E.g., that in order to bisect a line on an unerring principle I must draw from its extremities two intersecting arcs; this no doubt is taught by mathematics only in synthetical propositions; but if I know that it is only by this process that the intended operation can be performed, then to say that, if I fully will the operation, I also will the action required for it, is an analytical proposition; for it is one and the same thing to conceive something as an effect which I can produce in a certain way, and to conceive myself as acting in this way.
@@ -140,28 +140,28 @@ We shall therefore have to investigate a priori the possibility of a categorical
 
 Secondly, in the case of this categorical imperative or law of morality, the difficulty (of discerning its possibility) is a very profound one. It is an a priori synthetical practical proposition; * and as there is so much difficulty in discerning the possibility of speculative propositions of this kind, it may readily be supposed that the difficulty will be no less with the practical.
 
-* I connect the act with the will without presupposing any
-condition resulting from any inclination, but a priori, and
-therefore necessarily (though only objectively, i.e.,
-assuming the idea of a reason possessing full power over all
-subjective motives). This is accordingly a practical
-proposition which does not deduce the willing of an action
-by mere analysis from another already presupposed (for we
-have not such a perfect will), but connects it immediately
-with the conception of the will of a rational being, as
+* I connect the act with the will without presupposing any  
+condition resulting from any inclination, but a priori, and  
+therefore necessarily (though only objectively, i.e.,  
+assuming the idea of a reason possessing full power over all  
+subjective motives). This is accordingly a practical  
+proposition which does not deduce the willing of an action  
+by mere analysis from another already presupposed (for we  
+have not such a perfect will), but connects it immediately  
+with the conception of the will of a rational being, as  
 something not contained in it.
 
 In this problem we will first inquire whether the mere conception of a categorical imperative may not perhaps supply us also with the formula of it, containing the proposition which alone can be a categorical imperative; for even if we know the tenor of such an absolute command, yet how it is possible will require further special and laborious study, which we postpone to the last section.
 
 When I conceive a hypothetical imperative, in general I do not know beforehand what it will contain until I am given the condition. But when I conceive a categorical imperative, I know at once what it contains. For as the imperative contains besides the law only the necessity that the maxims * shall conform to this law, while the law contains no conditions restricting it, there remains nothing but the general statement that the maxim of the action should conform to a universal law, and it is this conformity alone that the imperative properly represents as necessary.
 
-* A maxim is a subjective principle of action, and must be
-distinguished from the objective principle, namely,
-practical law. The former contains the practical rule set by
-reason according to the conditions of the subject (often its
-ignorance or its inclinations), so that it is the principle
-on which the subject acts; but the law is the objective
-principle valid for every rational being, and is the
+* A maxim is a subjective principle of action, and must be  
+distinguished from the objective principle, namely,  
+practical law. The former contains the practical rule set by  
+reason according to the conditions of the subject (often its  
+ignorance or its inclinations), so that it is the principle  
+on which the subject acts; but the law is the objective  
+principle valid for every rational being, and is the  
 principle on which it ought to act that is an imperative.
 
 There is therefore but one categorical imperative, namely, this: Act only on that maxim whereby thou canst at the same time will that it should become a universal law.
@@ -172,14 +172,14 @@ Since the universality of the law according to which effects are produced consti
 
 We will now enumerate a few duties, adopting the usual division of them into duties to ourselves and ourselves and to others, and into perfect and imperfect duties. *
 
-* It must be noted here that I reserve the division of
-duties for a future metaphysic of morals; so that I give it
-here only as an arbitrary one (in order to arrange my
-examples). For the rest, I understand by a perfect duty one
-that admits no exception in favour of inclination and then I
-have not merely external but also internal perfect duties.
-This is contrary to the use of the word adopted in the
-schools; but I do not intend to justify there, as it is all
+* It must be noted here that I reserve the division of  
+duties for a future metaphysic of morals; so that I give it  
+here only as an arbitrary one (in order to arrange my  
+examples). For the rest, I understand by a perfect duty one  
+that admits no exception in favour of inclination and then I  
+have not merely external but also internal perfect duties.  
+This is contrary to the use of the word adopted in the  
+schools; but I do not intend to justify there, as it is all  
 one for my purpose whether it is admitted or not.
 
 1. A man reduced to despair by a series of misfortunes feels wearied of life, but is still so far in possession of his reason that he can ask himself whether it would not be contrary to his duty to himself to take his own life. Now he inquires whether the maxim of his action could become a universal law of nature. His maxim is: "From self-love I adopt it as a principle to shorten my life when its longer duration is likely to bring more evil than satisfaction." It is asked then simply whether this principle founded on self-love can become a universal law of nature. Now we see at once that a system of nature of which it should be a law to destroy life by means of the very feeling whose special nature it is to impel to the improvement of life would contradict itself and, therefore, could not exist as a system of nature; hence that maxim cannot possibly exist as a universal law of nature and, consequently, would be wholly inconsistent with the supreme principle of all duty.
@@ -202,12 +202,12 @@ Here then we see philosophy brought to a critical position, since it has to be f
 
 Thus every empirical element is not only quite incapable of being an aid to the principle of morality, but is even highly prejudicial to the purity of morals, for the proper and inestimable worth of an absolutely good will consists just in this, that the principle of action is free from all influence of contingent grounds, which alone experience can furnish. We cannot too much or too often repeat our warning against this lax and even mean habit of thought which seeks for its principle amongst empirical motives and laws; for human reason in its weariness is glad to rest on this pillow, and in a dream of sweet illusions (in which, instead of Juno, it embraces a cloud) it substitutes for morality a bastard patched up from limbs of various derivation, which looks like anything one chooses to see in it, only not like virtue to one who has once beheld her in her true form. *
 
-* To behold virtue in her proper form is nothing else but to
-contemplate morality stripped of all admixture of sensible
-things and of every spurious ornament of reward or self-
-love. How much she then eclipses everything else that
-appears charming to the affections, every one may readily
-perceive with the least exertion of his reason, if it be not
+* To behold virtue in her proper form is nothing else but to  
+contemplate morality stripped of all admixture of sensible  
+things and of every spurious ornament of reward or self-  
+love. How much she then eclipses everything else that  
+appears charming to the affections, every one may readily  
+perceive with the least exertion of his reason, if it be not  
 wholly spoiled for abstraction.
 
 The question then is this: "Is it a necessary law for all rational beings that they should always judge of their actions by maxims of which they can themselves will that they should serve as universal laws?" If it is so, then it must be connected (altogether a priori) with the very conception of the will of a rational being generally. But in order to discover this connexion we must, however reluctantly, take a step into metaphysic, although into a domain of it which is distinct from speculative philosophy, namely, the metaphysic of morals. In a practical philosophy, where it is not the reasons of what happens that we have to ascertain, but the laws of what ought to happen, even although it never does, i.e., objective practical laws, there it is not necessary to inquire into the reasons why anything pleases or displeases, how the pleasure of mere sensation differs from taste, and whether the latter is distinct from a general satisfaction of reason; on what the feeling of pleasure or pain rests, and how from it desires and inclinations arise, and from these again maxims by the co-operation of reason: for all this belongs to an empirical psychology, which would constitute the second part of physics, if we regard physics as the philosophy of nature, so far as it is based on empirical laws. But here we are concerned with objective practical laws and, consequently, with the relation of the will to itself so far as it is determined by reason alone, in which case whatever has reference to anything empirical is necessarily excluded; since if reason of itself alone determines the conduct (and it is the possibility of this that we are now investigating), it must necessarily do so a priori.
@@ -220,7 +220,7 @@ Now I say: man and generally any rational being exists as an end in himself, not
 
 If then there is a supreme practical principle or, in respect of the human will, a categorical imperative, it must be one which, being drawn from the conception of that which is necessarily an end for everyone because it is an end in itself, constitutes an objective principle of will, and can therefore serve as a universal practical law. The foundation of this principle is: rational nature exists as an end in itself. Man necessarily conceives his own existence as being so; so far then this is a subjective principle of human actions. But every other rational being regards its existence similarly, just on the same rational principle that holds for me: * so that it is at the same time an objective principle, from which as a supreme practical law all laws of the will must be capable of being deduced. Accordingly the practical imperative will be as follows: So act as to treat humanity, whether in thine own person or in that of any other, in every case as an end withal, never as means only. We will now inquire whether this can be practically carried out.
 
-* This proposition is here stated as a postulate. The ground
+* This proposition is here stated as a postulate. The ground  
 of it will be found in the concluding section.
 
 To abide by the previous examples:
@@ -229,16 +229,16 @@ Firstly, under the head of necessary duty to oneself: He who contemplates suicid
 
 Secondly, as regards necessary duties, or those of strict obligation, towards others: He who is thinking of making a lying promise to others will see at once that he would be using another man merely as a mean, without the latter containing at the same time the end in himself. For he whom I propose by such a promise to use for my own purposes cannot possibly assent to my mode of acting towards him and, therefore, cannot himself contain the end of this action. This violation of the principle of humanity in other men is more obvious if we take in examples of attacks on the freedom and property of others. For then it is clear that he who transgresses the rights of men intends to use the person of others merely as a means, without considering that as rational beings they ought always to be esteemed also as ends, that is, as beings who must be capable of containing in themselves the end of the very same action. *
 
-* Let it not be thought that the common "quod tibi non vis
-fieri, etc." could serve here as the rule or principle. For
-it is only a deduction from the former, though with several
-limitations; it cannot be a universal law, for it does not
-contain the principle of duties to oneself, nor of the
-duties of benevolence to others (for many a one would gladly
-consent that others should not benefit him, provided only
-that he might be excused from showing benevolence to them),
-nor finally that of duties of strict obligation to one
-another, for on this principle the criminal might argue
+* Let it not be thought that the common "quod tibi non vis  
+fieri, etc." could serve here as the rule or principle. For  
+it is only a deduction from the former, though with several  
+limitations; it cannot be a universal law, for it does not  
+contain the principle of duties to oneself, nor of the  
+duties of benevolence to others (for many a one would gladly  
+consent that others should not benefit him, provided only  
+that he might be excused from showing benevolence to them),  
+nor finally that of duties of strict obligation to one  
+another, for on this principle the criminal might argue  
 against the judge who punishes him, and so on.
 
 Thirdly, as regards contingent (meritorious) duties to oneself: It is not enough that the action does not violate humanity in our own person as an end in itself, it must also harmonize with it. Now there are in humanity capacities of greater perfection, which belong to the end that nature has in view in regard to humanity in ourselves as the subject: to neglect these might perhaps be consistent with the maintenance of humanity as an end in itself, but not with the advancement of this end.
@@ -255,9 +255,9 @@ For although a will which is subject to laws may be attached to this law by mean
 
 Thus the principle that every human will is a will which in all its maxims gives universal laws, * provided it be otherwise justified, would be very well adapted to be the categorical imperative, in this respect, namely, that just because of the idea of universal legislation it is not based on interest, and therefore it alone among all possible imperatives can be unconditional. Or still better, converting the proposition, if there is a categorical imperative (i.e., a law for the will of every rational being), it can only command that everything be done from maxims of one's will regarded as a will which could at the same time will that it should itself give universal laws, for in that case only the practical principle and the imperative which it obeys are unconditional, since they cannot be based on any interest.
 
-* I may be excused from adducing examples to elucidate this
-principle, as those which have already been used to
-elucidate the categorical imperative and its formula would
+* I may be excused from adducing examples to elucidate this  
+principle, as those which have already been used to  
+elucidate the categorical imperative and its formula would  
 all serve for the like purpose here.
 
 Looking back now on all previous attempts to discover the principle of morality, we need not wonder why they all failed. It was seen that man was bound to laws by duty, but it was not observed that the laws to which he is subject are only those of his own giving, though at the same time they are universal, and that he is only bound to act in conformity with his own will; a will, however, which is designed by nature to give universal laws. For when one has conceived man only as subject to a law (no matter what), then this law required some interest, either by way of attraction or constraint, since it did not originate as a law from his own will, but this will was according to a law obliged by something else to act in a certain manner. Now by this necessary consequence all the labour spent in finding a supreme principle of duty was irrevocably lost. For men never elicited duty, but only a necessity of acting from a certain interest. Whether this interest was private or otherwise, in any case the imperative must be conditional and could not by any means be capable of being a moral command. I will therefore call this the principle of autonomy of the will, in contrast with every other which I accordingly reckon as heteronomy.
@@ -292,12 +292,12 @@ The three modes of presenting the principle of morality that have been adduced a
 
 3. A complete characterization of all maxims by means of that formula, namely, that all maxims ought by their own legislation to harmonize with a possible kingdom of ends as with a kingdom of nature. * There is a progress here in the order of the categories of unity of the form of the will (its universality), plurality of the matter (the objects, i.e., the ends), and totality of the system of these. In forming our moral judgement of actions, it is better to proceed always on the strict method and start from the general formula of the categorical imperative: Act according to a maxim which can at the same time make itself a universal law. If, however, we wish to gain an entrance for the moral law, it is very useful to bring one and the same action under the three specified conceptions, and thereby as far as possible to bring it nearer to intuition.
 
-* Teleology considers nature as a kingdom of ends; ethics
-regards a possible kingdom of ends as a kingdom nature. In
-the first case, the kingdom of ends is a theoretical idea,
-adopted to explain what actually is. In the latter it is a
-practical idea, adopted to bring about that which is not
-yet, but which can be realized by our conduct, namely, if it
+* Teleology considers nature as a kingdom of ends; ethics  
+regards a possible kingdom of ends as a kingdom nature. In  
+the first case, the kingdom of ends is a theoretical idea,  
+adopted to explain what actually is. In the latter it is a  
+practical idea, adopted to bring about that which is not  
+yet, but which can be realized by our conduct, namely, if it  
 conforms to this idea.
 
 We can now end where we started at the beginning, namely, with the conception of a will unconditionally good. That will is absolutely good which cannot be evil- in other words, whose maxim, if made a universal law, could never contradict itself. This principle, then, is its supreme law: "Act always on such a maxim as thou canst at the same time will to be a universal law"; this is the sole condition under which a will can never contradict itself; and such an imperative is categorical. Since the validity of the will as a universal law for possible actions is analogous to the universal connexion of the existence of things by general laws, which is the formal notion of nature in general, the categorical imperative can also be expressed thus: Act on maxims which can at the same time have for their object themselves as universal laws of nature. Such then is the formula of an absolutely good will.

@@ -1,16 +1,14 @@
 ---
 work: federalist-papers
 section: "xxxi-the-same-subject-continued-concerning-the-general-power"
-heading: "XXXI The Same Subject Continued (Concerning the General Power of Taxation) Hamilton: From the New York Packet, Tuesday, January 1, 1788."
+heading: "XXXI: The Same Subject Continued (Concerning the General Power of Taxation)"
 order: 31
 source: standardebooks
 sourceUrl: "https://standardebooks.org/ebooks/alexander-hamilton_john-jay_james-madison/the-federalist-papers"
 edition: "The 1788 text"
 licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
-words: 1773
+words: 1763
 ---
-The Same Subject Continued (Concerning the General Power of Taxation)
-
 Hamilton: From the *New York Packet*, Tuesday, January 1, 1788.
 
 To the People of the State of New York:
@@ -25,15 +23,15 @@ How else could it happen (if we admit the objectors to be sincere in their oppos
 
 > A government ought to contain in itself every power requisite to the full accomplishment of the objects committed to its care, and to the complete execution of the trusts for which it is responsible, free from every other control but a regard to the public good and to the sense of the people.
 >
->
+>  
 >
 > As the duties of superintending the national defense and of securing the public peace against foreign or domestic violence involve a provision for casualties and dangers to which no possible limits can be assigned, the power of making that provision ought to know no other bounds than the exigencies of the nation and the resources of the community.
 >
->
+>  
 >
 > As revenue is the essential engine by which the means of answering the national exigencies must be procured, the power of procuring that article in its full extent must necessarily be comprehended in that of providing for those exigencies.
 >
->
+>  
 >
 > As theory and practice conspire to prove that the power of procuring revenue is unavailing when exercised over the states in their collective capacities, the federal government must of necessity be invested with an unqualified power of taxation in the ordinary modes.
 

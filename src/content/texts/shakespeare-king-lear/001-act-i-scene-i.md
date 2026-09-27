@@ -83,34 +83,34 @@ I shall, my liege.
 
 King Lear
 
-Meantime we shall express our darker purpose.
-Give me the map there. Know that we have divided
-In three our kingdom: and ’tis our fast intent
-To shake all cares and business from our age;
-Conferring them on younger strengths, while we
-Unburthen’d crawl toward death. Our son of Cornwall,
-And you, our no less loving son of Albany,
-We have this hour a constant will to publish
-Our daughters’ several dowers, that future strife
-May be prevented now. The princes, France and Burgundy,
-Great rivals in our youngest daughter’s love,
-Long in our court have made their amorous sojourn,
-And here are to be answer’d. Tell me, my daughters⁠—
-Since now we will divest us both of rule,
-Interest of territory, cares of state⁠—
-Which of you shall we say doth love us most?
-That we our largest bounty may extend
-Where nature doth with merit challenge. Goneril,
+Meantime we shall express our darker purpose.  
+Give me the map there. Know that we have divided  
+In three our kingdom: and ’tis our fast intent  
+To shake all cares and business from our age;  
+Conferring them on younger strengths, while we  
+Unburthen’d crawl toward death. Our son of Cornwall,  
+And you, our no less loving son of Albany,  
+We have this hour a constant will to publish  
+Our daughters’ several dowers, that future strife  
+May be prevented now. The princes, France and Burgundy,  
+Great rivals in our youngest daughter’s love,  
+Long in our court have made their amorous sojourn,  
+And here are to be answer’d. Tell me, my daughters⁠—  
+Since now we will divest us both of rule,  
+Interest of territory, cares of state⁠—  
+Which of you shall we say doth love us most?  
+That we our largest bounty may extend  
+Where nature doth with merit challenge. Goneril,  
 Our eldest-born, speak first.
 
 Goneril
 
-Sir, I love you more than words can wield the matter;
-Dearer than eye-sight, space, and liberty;
-Beyond what can be valued, rich or rare;
-No less than life, with grace, health, beauty, honour;
-As much as child e’er loved, or father found;
-A love that makes breath poor, and speech unable;
+Sir, I love you more than words can wield the matter;  
+Dearer than eye-sight, space, and liberty;  
+Beyond what can be valued, rich or rare;  
+No less than life, with grace, health, beauty, honour;  
+As much as child e’er loved, or father found;  
+A love that makes breath poor, and speech unable;  
 Beyond all manner of so much I love you.
 
 Cordelia
@@ -119,40 +119,40 @@ Cordelia
 
 Lear
 
-Of all these bounds, even from this line to this,
-With shadowy forests and with champains rich’d,
-With plenteous rivers and wide-skirted meads,
-We make thee lady: to thine and Albany’s issue
-Be this perpetual. What says our second daughter,
+Of all these bounds, even from this line to this,  
+With shadowy forests and with champains rich’d,  
+With plenteous rivers and wide-skirted meads,  
+We make thee lady: to thine and Albany’s issue  
+Be this perpetual. What says our second daughter,  
 Our dearest Regan, wife to Cornwall? Speak.
 
 Regan
 
-Sir, I am made
-Of the self-same metal that my sister is,
-And prize me at her worth. In my true heart
-I find she names my very deed of love;
-Only she comes too short: that I profess
-Myself an enemy to all other joys,
-Which the most precious square of sense possesses;
-And find I am alone felicitate
+Sir, I am made  
+Of the self-same metal that my sister is,  
+And prize me at her worth. In my true heart  
+I find she names my very deed of love;  
+Only she comes too short: that I profess  
+Myself an enemy to all other joys,  
+Which the most precious square of sense possesses;  
+And find I am alone felicitate  
 In your dear highness’ love.
 
 Cordelia
 
-*Aside.* Then poor Cordelia!
-And yet not so; since, I am sure, my love’s
+*Aside.* Then poor Cordelia!  
+And yet not so; since, I am sure, my love’s  
 More richer than my tongue.
 
 King Lear
 
-To thee and thine hereditary ever
-Remain this ample third of our fair kingdom;
-No less in space, validity, and pleasure,
-Than that conferr’d on Goneril. Now, our joy,
-Although the last, not least; to whose young love
-The vines of France and milk of Burgundy
-Strive to be interess’d; what can you say to draw
+To thee and thine hereditary ever  
+Remain this ample third of our fair kingdom;  
+No less in space, validity, and pleasure,  
+Than that conferr’d on Goneril. Now, our joy,  
+Although the last, not least; to whose young love  
+The vines of France and milk of Burgundy  
+Strive to be interess’d; what can you say to draw  
 A third more opulent than your sisters? Speak.
 
 Cordelia
@@ -173,26 +173,26 @@ Nothing will come of nothing: speak again.
 
 Cordelia
 
-Unhappy that I am, I cannot heave
-My heart into my mouth: I love your majesty
+Unhappy that I am, I cannot heave  
+My heart into my mouth: I love your majesty  
 According to my bond; nor more nor less.
 
 King Lear
 
-How, how, Cordelia! mend your speech a little,
+How, how, Cordelia! mend your speech a little,  
 Lest it may mar your fortunes.
 
 Cordelia
 
-Good my lord,
-You have begot me, bred me, loved me: I
-Return those duties back as are right fit,
-Obey you, love you, and most honour you.
-Why have my sisters husbands, if they say
-They love you all? Haply, when I shall wed,
-That lord whose hand must take my plight shall carry
-Half my love with him, half my care and duty:
-Sure, I shall never marry like my sisters,
+Good my lord,  
+You have begot me, bred me, loved me: I  
+Return those duties back as are right fit,  
+Obey you, love you, and most honour you.  
+Why have my sisters husbands, if they say  
+They love you all? Haply, when I shall wed,  
+That lord whose hand must take my plight shall carry  
+Half my love with him, half my care and duty:  
+Sure, I shall never marry like my sisters,  
 To love my father all.
 
 King Lear
@@ -213,18 +213,18 @@ So young, my lord, and true.
 
 King Lear
 
-Let it be so; thy truth, then, be thy dower:
-For, by the sacred radiance of the sun,
-The mysteries of Hecate, and the night;
-By all the operation of the orbs
-From whom we do exist, and cease to be;
-Here I disclaim all my paternal care,
-Propinquity and property of blood,
-And as a stranger to my heart and me
-Hold thee, from this, for ever. The barbarous Scythian,
-Or he that makes his generation messes
-To gorge his appetite, shall to my bosom
-Be as well neighbour’d, pitied, and relieved,
+Let it be so; thy truth, then, be thy dower:  
+For, by the sacred radiance of the sun,  
+The mysteries of Hecate, and the night;  
+By all the operation of the orbs  
+From whom we do exist, and cease to be;  
+Here I disclaim all my paternal care,  
+Propinquity and property of blood,  
+And as a stranger to my heart and me  
+Hold thee, from this, for ever. The barbarous Scythian,  
+Or he that makes his generation messes  
+To gorge his appetite, shall to my bosom  
+Be as well neighbour’d, pitied, and relieved,  
 As thou my sometime daughter.
 
 Kent
@@ -233,31 +233,31 @@ Good my liege⁠—
 
 King Lear
 
-Peace, Kent!
-Come not between the dragon and his wrath.
-I loved her most, and thought to set my rest
-On her kind nursery. Hence, and avoid my sight!
-So be my grave my peace, as here I give
-Her father’s heart from her! Call France; who stirs?
-Call Burgundy. Cornwall and Albany,
-With my two daughters’ dowers digest this third:
-Let pride, which she calls plainness, marry her.
-I do invest you jointly with my power,
-Pre-eminence, and all the large effects
-That troop with majesty. Ourself, by monthly course,
-With reservation of an hundred knights,
-By you to be sustain’d, shall our abode
-Make with you by due turns. Only we still retain
-The name, and all the additions to a king;
-The sway, revenue, execution of the rest,
-Beloved sons, be yours: which to confirm,
+Peace, Kent!  
+Come not between the dragon and his wrath.  
+I loved her most, and thought to set my rest  
+On her kind nursery. Hence, and avoid my sight!  
+So be my grave my peace, as here I give  
+Her father’s heart from her! Call France; who stirs?  
+Call Burgundy. Cornwall and Albany,  
+With my two daughters’ dowers digest this third:  
+Let pride, which she calls plainness, marry her.  
+I do invest you jointly with my power,  
+Pre-eminence, and all the large effects  
+That troop with majesty. Ourself, by monthly course,  
+With reservation of an hundred knights,  
+By you to be sustain’d, shall our abode  
+Make with you by due turns. Only we still retain  
+The name, and all the additions to a king;  
+The sway, revenue, execution of the rest,  
+Beloved sons, be yours: which to confirm,  
 This coronet part betwixt you. *Giving the crown.*
 
 Kent
 
-Royal Lear,
-Whom I have ever honour’d as my king,
-Loved as my father, as my master follow’d,
+Royal Lear,  
+Whom I have ever honour’d as my king,  
+Loved as my father, as my master follow’d,  
 As my great patron thought on in my prayers⁠—
 
 King Lear
@@ -266,16 +266,16 @@ The bow is bent and drawn, make from the shaft.
 
 Kent
 
-Let it fall rather, though the fork invade
-The region of my heart: be Kent unmannerly,
-When Lear is mad. What wilt thou do, old man?
-Think’st thou that duty shall have dread to speak,
-When power to flattery bows? To plainness honour’s bound,
-When majesty stoops to folly. Reverse thy doom;
-And, in thy best consideration, cheque
-This hideous rashness: answer my life my judgment,
-Thy youngest daughter does not love thee least;
-Nor are those empty-hearted whose low sound
+Let it fall rather, though the fork invade  
+The region of my heart: be Kent unmannerly,  
+When Lear is mad. What wilt thou do, old man?  
+Think’st thou that duty shall have dread to speak,  
+When power to flattery bows? To plainness honour’s bound,  
+When majesty stoops to folly. Reverse thy doom;  
+And, in thy best consideration, cheque  
+This hideous rashness: answer my life my judgment,  
+Thy youngest daughter does not love thee least;  
+Nor are those empty-hearted whose low sound  
 Reverbs no hollowness.
 
 King Lear
@@ -284,8 +284,8 @@ Kent, on thy life, no more.
 
 Kent
 
-My life I never held but as a pawn
-To wage against thy enemies; nor fear to lose it,
+My life I never held but as a pawn  
+To wage against thy enemies; nor fear to lose it,  
 Thy safety being the motive.
 
 King Lear
@@ -294,7 +294,7 @@ Out of my sight!
 
 Kent
 
-See better, Lear; and let me still remain
+See better, Lear; and let me still remain  
 The true blank of thine eye.
 
 King Lear
@@ -303,7 +303,7 @@ Now, by Apollo⁠—
 
 Kent
 
-Now, by Apollo, king,
+Now, by Apollo, king,  
 Thou swear’st thy gods in vain.
 
 King Lear
@@ -317,38 +317,38 @@ Dear sir, forbear.
 
 Kent
 
-Do:
-Kill thy physician, and the fee bestow
-Upon thy foul disease. Revoke thy doom;
-Or, whilst I can vent clamour from my throat,
+Do:  
+Kill thy physician, and the fee bestow  
+Upon thy foul disease. Revoke thy doom;  
+Or, whilst I can vent clamour from my throat,  
 I’ll tell thee thou dost evil.
 
 King Lear
 
-Hear me, recreant!
-On thine allegiance, hear me!
-Since thou hast sought to make us break our vow,
-Which we durst never yet, and with strain’d pride
-To come between our sentence and our power,
-Which nor our nature nor our place can bear,
-Our potency made good, take thy reward.
-Five days we do allot thee, for provision
-To shield thee from diseases of the world;
-And on the sixth to turn thy hated back
-Upon our kingdom: if, on the tenth day following,
-Thy banish’d trunk be found in our dominions,
-The moment is thy death. Away! by Jupiter,
+Hear me, recreant!  
+On thine allegiance, hear me!  
+Since thou hast sought to make us break our vow,  
+Which we durst never yet, and with strain’d pride  
+To come between our sentence and our power,  
+Which nor our nature nor our place can bear,  
+Our potency made good, take thy reward.  
+Five days we do allot thee, for provision  
+To shield thee from diseases of the world;  
+And on the sixth to turn thy hated back  
+Upon our kingdom: if, on the tenth day following,  
+Thy banish’d trunk be found in our dominions,  
+The moment is thy death. Away! by Jupiter,  
 This shall not be revoked.
 
 Kent
 
-Fare thee well, king: sith thus thou wilt appear,
-Freedom lives hence, and banishment is here.
-*To Cordelia.* The gods to their dear shelter take thee, maid,
-That justly think’st, and hast most rightly said!
-*To Regan and Goneril.* And your large speeches may your deeds approve,
-That good effects may spring from words of love.
-Thus Kent, O princes, bids you all adieu;
+Fare thee well, king: sith thus thou wilt appear,  
+Freedom lives hence, and banishment is here.  
+*To Cordelia.* The gods to their dear shelter take thee, maid,  
+That justly think’st, and hast most rightly said!  
+*To Regan and Goneril.* And your large speeches may your deeds approve,  
+That good effects may spring from words of love.  
+Thus Kent, O princes, bids you all adieu;  
 He’ll shape his old course in a country new. *Exit.*
 
  *Flourish. Reenter Gloucester, with King of France, Burgundy, and Attendants.*
@@ -359,26 +359,26 @@ Here’s France and Burgundy, my noble lord.
 
 King Lear
 
-My lord of Burgundy.
-We first address towards you, who with this king
-Hath rivall’d for our daughter: what, in the least,
-Will you require in present dower with her,
+My lord of Burgundy.  
+We first address towards you, who with this king  
+Hath rivall’d for our daughter: what, in the least,  
+Will you require in present dower with her,  
 Or cease your quest of love?
 
 Burgundy
 
-Most royal majesty,
-I crave no more than what your highness offer’d,
+Most royal majesty,  
+I crave no more than what your highness offer’d,  
 Nor will you tender less.
 
 King Lear
 
-Right noble Burgundy,
-When she was dear to us, we did hold her so;
-But now her price is fall’n. Sir, there she stands:
-If aught within that little seeming substance,
-Or all of it, with our displeasure pieced,
-And nothing more, may fitly like your grace,
+Right noble Burgundy,  
+When she was dear to us, we did hold her so;  
+But now her price is fall’n. Sir, there she stands:  
+If aught within that little seeming substance,  
+Or all of it, with our displeasure pieced,  
+And nothing more, may fitly like your grace,  
 She’s there, and she is yours.
 
 Burgundy
@@ -387,74 +387,74 @@ I know no answer.
 
 King Lear
 
-Will you, with those infirmities she owes,
-Unfriended, new-adopted to our hate,
-Dower’d with our curse, and stranger’d with our oath,
+Will you, with those infirmities she owes,  
+Unfriended, new-adopted to our hate,  
+Dower’d with our curse, and stranger’d with our oath,  
 Take her, or leave her?
 
 Burgundy
 
-Pardon me, royal sir;
+Pardon me, royal sir;  
 Election makes not up on such conditions.
 
 King Lear
 
-Then leave her, sir; for, by the power that made me,
-I tell you all her wealth. *To King of France.* For you, great king,
-I would not from your love make such a stray,
-To match you where I hate; therefore beseech you
-To avert your liking a more worthier way
-Than on a wretch whom nature is ashamed
+Then leave her, sir; for, by the power that made me,  
+I tell you all her wealth. *To King of France.* For you, great king,  
+I would not from your love make such a stray,  
+To match you where I hate; therefore beseech you  
+To avert your liking a more worthier way  
+Than on a wretch whom nature is ashamed  
 Almost to acknowledge hers.
 
 King of France
 
-This is most strange,
-That she, that even but now was your best object,
-The argument of your praise, balm of your age,
-Most best, most dearest, should in this trice of time
-Commit a thing so monstrous, to dismantle
-So many folds of favour. Sure, her offence
-Must be of such unnatural degree,
-That monsters it, or your fore-vouch’d affection
-Fall’n into taint: which to believe of her,
-Must be a faith that reason without miracle
+This is most strange,  
+That she, that even but now was your best object,  
+The argument of your praise, balm of your age,  
+Most best, most dearest, should in this trice of time  
+Commit a thing so monstrous, to dismantle  
+So many folds of favour. Sure, her offence  
+Must be of such unnatural degree,  
+That monsters it, or your fore-vouch’d affection  
+Fall’n into taint: which to believe of her,  
+Must be a faith that reason without miracle  
 Could never plant in me.
 
 Cordelia
 
-I yet beseech your majesty⁠—
-If for I want that glib and oily art,
-To speak and purpose not; since what I well intend,
-I’ll do’t before I speak⁠—that you make known
-It is no vicious blot, murder, or foulness,
-No unchaste action, or dishonour’d step,
-That hath deprived me of your grace and favour;
-But even for want of that for which I am richer,
-A still-soliciting eye, and such a tongue
-As I am glad I have not, though not to have it
+I yet beseech your majesty⁠—  
+If for I want that glib and oily art,  
+To speak and purpose not; since what I well intend,  
+I’ll do’t before I speak⁠—that you make known  
+It is no vicious blot, murder, or foulness,  
+No unchaste action, or dishonour’d step,  
+That hath deprived me of your grace and favour;  
+But even for want of that for which I am richer,  
+A still-soliciting eye, and such a tongue  
+As I am glad I have not, though not to have it  
 Hath lost me in your liking.
 
 King Lear
 
-Better thou
+Better thou  
 Hadst not been born than not to have pleased me better.
 
 King of France
 
-Is it but this⁠—a tardiness in nature
-Which often leaves the history unspoke
-That it intends to do? My lord of Burgundy,
-What say you to the lady? Love’s not love
-When it is mingled with regards that stand
-Aloof from the entire point. Will you have her?
+Is it but this⁠—a tardiness in nature  
+Which often leaves the history unspoke  
+That it intends to do? My lord of Burgundy,  
+What say you to the lady? Love’s not love  
+When it is mingled with regards that stand  
+Aloof from the entire point. Will you have her?  
 She is herself a dowry.
 
 Burgundy
 
-Royal Lear,
-Give but that portion which yourself proposed,
-And here I take Cordelia by the hand,
+Royal Lear,  
+Give but that portion which yourself proposed,  
+And here I take Cordelia by the hand,  
 Duchess of Burgundy.
 
 King Lear
@@ -463,36 +463,36 @@ Nothing: I have sworn; I am firm.
 
 Burgundy
 
-I am sorry, then, you have so lost a father
+I am sorry, then, you have so lost a father  
 That you must lose a husband.
 
 Cordelia
 
-Peace be with Burgundy!
-Since that respects of fortune are his love,
+Peace be with Burgundy!  
+Since that respects of fortune are his love,  
 I shall not be his wife.
 
 King of France
 
-Fairest Cordelia, that art most rich, being poor;
-Most choice, forsaken; and most loved, despised!
-Thee and thy virtues here I seize upon:
-Be it lawful I take up what’s cast away.
-Gods, gods! ’tis strange that from their cold’st neglect
-My love should kindle to inflamed respect.
-Thy dowerless daughter, king, thrown to my chance,
-Is queen of us, of ours, and our fair France:
-Not all the dukes of waterish Burgundy
-Can buy this unprized precious maid of me.
-Bid them farewell, Cordelia, though unkind:
+Fairest Cordelia, that art most rich, being poor;  
+Most choice, forsaken; and most loved, despised!  
+Thee and thy virtues here I seize upon:  
+Be it lawful I take up what’s cast away.  
+Gods, gods! ’tis strange that from their cold’st neglect  
+My love should kindle to inflamed respect.  
+Thy dowerless daughter, king, thrown to my chance,  
+Is queen of us, of ours, and our fair France:  
+Not all the dukes of waterish Burgundy  
+Can buy this unprized precious maid of me.  
+Bid them farewell, Cordelia, though unkind:  
 Thou losest here, a better where to find.
 
 King Lear
 
-Thou hast her, France: let her be thine; for we
-Have no such daughter, nor shall ever see
-That face of hers again. Therefore be gone
-Without our grace, our love, our benison.
+Thou hast her, France: let her be thine; for we  
+Have no such daughter, nor shall ever see  
+That face of hers again. Therefore be gone  
+Without our grace, our love, our benison.  
 Come, noble Burgundy. *Flourish. Exeunt all but King of France, Goneril, Regan, and Cordelia.*
 
 King of France
@@ -501,13 +501,13 @@ Bid farewell to your sisters.
 
 Cordelia
 
-The jewels of our father, with wash’d eyes
-Cordelia leaves you: I know you what you are;
-And like a sister am most loath to call
-Your faults as they are named. Use well our father:
-To your professed bosoms I commit him
-But yet, alas, stood I within his grace,
-I would prefer him to a better place.
+The jewels of our father, with wash’d eyes  
+Cordelia leaves you: I know you what you are;  
+And like a sister am most loath to call  
+Your faults as they are named. Use well our father:  
+To your professed bosoms I commit him  
+But yet, alas, stood I within his grace,  
+I would prefer him to a better place.  
 So, farewell to you both.
 
 Regan
@@ -516,15 +516,15 @@ Prescribe not us our duties.
 
 Goneril
 
-Let your study
-Be to content your lord, who hath received you
-At fortune’s alms. You have obedience scanted,
+Let your study  
+Be to content your lord, who hath received you  
+At fortune’s alms. You have obedience scanted,  
 And well are worth the want that you have wanted.
 
 Cordelia
 
-Time shall unfold what plaited cunning hides:
-Who cover faults, at last shame them derides.
+Time shall unfold what plaited cunning hides:  
+Who cover faults, at last shame them derides.  
 Well may you prosper!
 
 King of France

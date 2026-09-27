@@ -28,7 +28,7 @@ But operation of the Intellect by itself moves nothing, only when directed to a 
 
 But nothing which is done and past can be the object of Moral Choice; for instance, no man chooses to have sacked Troy; because, in fact, no one ever deliberates about what is past, but only about that which is future, and which may therefore be influenced, whereas what has been cannot not have been: and so Agathon is right in saying
 
-“Of this alone is Deity bereft,
+“Of this alone is Deity bereft,  
 To make undone whatever hath been done.”
 
 Thus then Truth is the work of both the Intellectual Parts of the Soul; those states therefore are the Excellences of each in which each will best attain truth.

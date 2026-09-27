@@ -14,8 +14,8 @@ Now a question may be raised whether we have spoken with sufficient distinctness
 
 First, whether the case is possible which Euripides has put, saying somewhat strangely,
 
-“My mother he hath slain; the tale is short,
-Either he willingly did slay her willing,
+“My mother he hath slain; the tale is short,  
+Either he willingly did slay her willing,  
 Or else with her will but against his own.”
 
 I mean then, is it really possible for a person to be unjustly dealt with with his own consent, or must every case of being unjustly dealt with be against the will of the sufferer as every act of unjust dealing is voluntary?

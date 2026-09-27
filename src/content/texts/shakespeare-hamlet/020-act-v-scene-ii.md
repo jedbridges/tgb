@@ -15,7 +15,7 @@ A hall in the castle.
 
 Hamlet
 
-So much for this, sir: now shall you see the other;
+So much for this, sir: now shall you see the other;  
 You do remember all the circumstance?
 
 Horatio
@@ -24,13 +24,13 @@ Remember it, my lord?
 
 Hamlet
 
-Sir, in my heart there was a kind of fighting,
-That would not let me sleep: methought I lay
-Worse than the mutines in the bilboes. Rashly,
-And praised be rashness for it, let us know,
-Our indiscretion sometimes serves us well,
-When our deep plots do pall: and that should teach us
-There’s a divinity that shapes our ends,
+Sir, in my heart there was a kind of fighting,  
+That would not let me sleep: methought I lay  
+Worse than the mutines in the bilboes. Rashly,  
+And praised be rashness for it, let us know,  
+Our indiscretion sometimes serves us well,  
+When our deep plots do pall: and that should teach us  
+There’s a divinity that shapes our ends,  
 Rough-hew them how we will⁠—
 
 Horatio
@@ -39,19 +39,19 @@ That is most certain.
 
 Hamlet
 
-Up from my cabin,
-My sea-gown scarf’d about me, in the dark
-Groped I to find out them; had my desire,
-Finger’d their packet, and in fine withdrew
-To mine own room again; making so bold,
-My fears forgetting manners, to unseal
-Their grand commission; where I found, Horatio⁠—
-O royal knavery!⁠—an exact command,
-Larded with many several sorts of reasons
-Importing Denmark’s health and England’s too,
-With, ho! such bugs and goblins in my life,
-That, on the supervise, no leisure bated,
-No, not to stay the grinding of the axe,
+Up from my cabin,  
+My sea-gown scarf’d about me, in the dark  
+Groped I to find out them; had my desire,  
+Finger’d their packet, and in fine withdrew  
+To mine own room again; making so bold,  
+My fears forgetting manners, to unseal  
+Their grand commission; where I found, Horatio⁠—  
+O royal knavery!⁠—an exact command,  
+Larded with many several sorts of reasons  
+Importing Denmark’s health and England’s too,  
+With, ho! such bugs and goblins in my life,  
+That, on the supervise, no leisure bated,  
+No, not to stay the grinding of the axe,  
 My head should be struck off.
 
 Horatio
@@ -60,7 +60,7 @@ Is’t possible?
 
 Hamlet
 
-Here’s the commission: read it at more leisure.
+Here’s the commission: read it at more leisure.  
 But wilt thou hear me how I did proceed?
 
 Horatio
@@ -69,14 +69,14 @@ I beseech you.
 
 Hamlet
 
-Being thus be-netted round with villainies⁠—
-Ere I could make a prologue to my brains,
-They had begun the play⁠—I sat me down,
-Devised a new commission, wrote it fair:
-I once did hold it, as our statists do,
-A baseness to write fair and labour’d much
-How to forget that learning, but, sir, now
-It did me yeoman’s service: wilt thou know
+Being thus be-netted round with villainies⁠—  
+Ere I could make a prologue to my brains,  
+They had begun the play⁠—I sat me down,  
+Devised a new commission, wrote it fair:  
+I once did hold it, as our statists do,  
+A baseness to write fair and labour’d much  
+How to forget that learning, but, sir, now  
+It did me yeoman’s service: wilt thou know  
 The effect of what I wrote?
 
 Horatio
@@ -85,15 +85,15 @@ Ay, good my lord.
 
 Hamlet
 
-An earnest conjuration from the king,
-As England was his faithful tributary,
-As love between them like the palm might flourish,
-As peace should still her wheaten garland wear
-And stand a comma ’tween their amities,
-And many such-like “As”es of great charge,
-That, on the view and knowing of these contents,
-Without debatement further, more or less,
-He should the bearers put to sudden death,
+An earnest conjuration from the king,  
+As England was his faithful tributary,  
+As love between them like the palm might flourish,  
+As peace should still her wheaten garland wear  
+And stand a comma ’tween their amities,  
+And many such-like “As”es of great charge,  
+That, on the view and knowing of these contents,  
+Without debatement further, more or less,  
+He should the bearers put to sudden death,  
 Not shriving-time allow’d.
 
 Horatio
@@ -102,13 +102,13 @@ How was this seal’d?
 
 Hamlet
 
-Why, even in that was heaven ordinant.
-I had my father’s signet in my purse,
-Which was the model of that Danish seal;
-Folded the writ up in form of the other,
-Subscribed it, gave’t the impression, placed it safely,
-The changeling never known. Now, the next day
-Was our sea-fight; and what to this was sequent
+Why, even in that was heaven ordinant.  
+I had my father’s signet in my purse,  
+Which was the model of that Danish seal;  
+Folded the writ up in form of the other,  
+Subscribed it, gave’t the impression, placed it safely,  
+The changeling never known. Now, the next day  
+Was our sea-fight; and what to this was sequent  
 Thou know’st already.
 
 Horatio
@@ -117,11 +117,11 @@ So Guildenstern and Rosencrantz go to’t.
 
 Hamlet
 
-Why, man, they did make love to this employment;
-They are not near my conscience; their defeat
-Does by their own insinuation grow:
-’Tis dangerous when the baser nature comes
-Between the pass and fell incensed points
+Why, man, they did make love to this employment;  
+They are not near my conscience; their defeat  
+Does by their own insinuation grow:  
+’Tis dangerous when the baser nature comes  
+Between the pass and fell incensed points  
 Of mighty opposites.
 
 Horatio
@@ -130,29 +130,29 @@ Why, what a king is this!
 
 Hamlet
 
-Does it not, think’st thee, stand me now upon⁠—
-He that hath kill’d my king and whored my mother,
-Popp’d in between the election and my hopes,
-Thrown out his angle for my proper life,
-And with such cozenage⁠—is’t not perfect conscience,
-To quit him with this arm? and is’t not to be damn’d,
-To let this canker of our nature come
+Does it not, think’st thee, stand me now upon⁠—  
+He that hath kill’d my king and whored my mother,  
+Popp’d in between the election and my hopes,  
+Thrown out his angle for my proper life,  
+And with such cozenage⁠—is’t not perfect conscience,  
+To quit him with this arm? and is’t not to be damn’d,  
+To let this canker of our nature come  
 In further evil?
 
 Horatio
 
-It must be shortly known to him from England
+It must be shortly known to him from England  
 What is the issue of the business there.
 
 Hamlet
 
-It will be short: the interim is mine;
-And a man’s life’s no more than to say “One.”
-But I am very sorry, good Horatio,
-That to Laertes I forgot myself;
-For, by the image of my cause, I see
-The portraiture of his: I’ll court his favours:
-But, sure, the bravery of his grief did put me
+It will be short: the interim is mine;  
+And a man’s life’s no more than to say “One.”  
+But I am very sorry, good Horatio,  
+That to Laertes I forgot myself;  
+For, by the image of my cause, I see  
+The portraiture of his: I’ll court his favours:  
+But, sure, the bravery of his grief did put me  
 Into a towering passion.
 
 Horatio
@@ -401,42 +401,42 @@ Come, Hamlet, come, and take this hand from me.
 
 Hamlet
 
-Give me your pardon, sir: I’ve done you wrong;
-But pardon’t, as you are a gentleman.
-This presence knows,
-And you must needs have heard, how I am punish’d
-With sore distraction. What I have done,
-That might your nature, honour and exception
-Roughly awake, I here proclaim was madness.
-Was’t Hamlet wrong’d Laertes? Never Hamlet:
-If Hamlet from himself be ta’en away,
-And when he’s not himself does wrong Laertes,
-Then Hamlet does it not, Hamlet denies it.
-Who does it, then? His madness: if’t be so,
-Hamlet is of the faction that is wrong’d;
-His madness is poor Hamlet’s enemy.
-Sir, in this audience,
-Let my disclaiming from a purposed evil
-Free me so far in your most generous thoughts,
-That I have shot mine arrow o’er the house,
+Give me your pardon, sir: I’ve done you wrong;  
+But pardon’t, as you are a gentleman.  
+This presence knows,  
+And you must needs have heard, how I am punish’d  
+With sore distraction. What I have done,  
+That might your nature, honour and exception  
+Roughly awake, I here proclaim was madness.  
+Was’t Hamlet wrong’d Laertes? Never Hamlet:  
+If Hamlet from himself be ta’en away,  
+And when he’s not himself does wrong Laertes,  
+Then Hamlet does it not, Hamlet denies it.  
+Who does it, then? His madness: if’t be so,  
+Hamlet is of the faction that is wrong’d;  
+His madness is poor Hamlet’s enemy.  
+Sir, in this audience,  
+Let my disclaiming from a purposed evil  
+Free me so far in your most generous thoughts,  
+That I have shot mine arrow o’er the house,  
 And hurt my brother.
 
 Laertes
 
-I am satisfied in nature,
-Whose motive, in this case, should stir me most
-To my revenge: but in my terms of honour
-I stand aloof; and will no reconcilement,
-Till by some elder masters, of known honour,
-I have a voice and precedent of peace,
-To keep my name ungored. But till that time,
-I do receive your offer’d love like love,
+I am satisfied in nature,  
+Whose motive, in this case, should stir me most  
+To my revenge: but in my terms of honour  
+I stand aloof; and will no reconcilement,  
+Till by some elder masters, of known honour,  
+I have a voice and precedent of peace,  
+To keep my name ungored. But till that time,  
+I do receive your offer’d love like love,  
 And will not wrong it.
 
 Hamlet
 
-I embrace it freely;
-And will this brother’s wager frankly play.
+I embrace it freely;  
+And will this brother’s wager frankly play.  
 Give us the foils. Come on.
 
 Laertes
@@ -445,8 +445,8 @@ Come, one for me.
 
 Hamlet
 
-I’ll be your foil, Laertes: in mine ignorance
-Your skill shall, like a star i’ the darkest night,
+I’ll be your foil, Laertes: in mine ignorance  
+Your skill shall, like a star i’ the darkest night,  
 Stick fiery off indeed.
 
 Laertes
@@ -459,17 +459,17 @@ No, by this hand.
 
 King
 
-Give them the foils, young Osric. Cousin Hamlet,
+Give them the foils, young Osric. Cousin Hamlet,  
 You know the wager?
 
 Hamlet
 
-Very well, my lord;
+Very well, my lord;  
 Your grace hath laid the odds o’ the weaker side.
 
 King
 
-I do not fear it; I have seen you both:
+I do not fear it; I have seen you both:  
 But since he is better’d, we have therefore odds.
 
 Laertes
@@ -486,18 +486,18 @@ Ay, my good lord.
 
 King
 
-Set me the stoups of wine upon that table.
-If Hamlet give the first or second hit,
-Or quit in answer of the third exchange,
-Let all the battlements their ordnance fire;
-The king shall drink to Hamlet’s better breath;
-And in the cup an union shall he throw,
-Richer than that which four successive kings
-In Denmark’s crown have worn. Give me the cups;
-And let the kettle to the trumpet speak,
-The trumpet to the cannoneer without,
-The cannons to the heavens, the heavens to earth,
-“Now the king drinks to Hamlet.” Come, begin:
+Set me the stoups of wine upon that table.  
+If Hamlet give the first or second hit,  
+Or quit in answer of the third exchange,  
+Let all the battlements their ordnance fire;  
+The king shall drink to Hamlet’s better breath;  
+And in the cup an union shall he throw,  
+Richer than that which four successive kings  
+In Denmark’s crown have worn. Give me the cups;  
+And let the kettle to the trumpet speak,  
+The trumpet to the cannoneer without,  
+The cannons to the heavens, the heavens to earth,  
+“Now the king drinks to Hamlet.” Come, begin:  
 And you, the judges, bear a wary eye.
 
 Hamlet
@@ -530,7 +530,7 @@ Well; again.
 
 King
 
-Stay; give me drink. Hamlet, this pearl is thine;
+Stay; give me drink. Hamlet, this pearl is thine;  
 Here’s to thy health. *Trumpets sound, and cannon shot off within.* Give him the cup.
 
 Hamlet
@@ -547,8 +547,8 @@ Our son shall win.
 
 Queen
 
-He’s fat, and scant of breath.
-Here, Hamlet, take my napkin, rub thy brows:
+He’s fat, and scant of breath.  
+Here, Hamlet, take my napkin, rub thy brows:  
 The queen carouses to thy fortune, Hamlet.
 
 Hamlet
@@ -589,8 +589,8 @@ Laertes
 
 Hamlet
 
-Come, for the third, Laertes: you but dally;
-I pray you, pass with your best violence;
+Come, for the third, Laertes: you but dally;  
+I pray you, pass with your best violence;  
 I am afeard you make a wanton of me.
 
 Laertes
@@ -627,7 +627,7 @@ How is’t, Laertes?
 
 Laertes
 
-Why, as a woodcock to mine own springe, Osric;
+Why, as a woodcock to mine own springe, Osric;  
 I am justly kill’d with mine own treachery.
 
 Hamlet
@@ -640,28 +640,28 @@ She swounds to see them bleed.
 
 Queen
 
-No, no, the drink, the drink⁠—O my dear Hamlet⁠—
+No, no, the drink, the drink⁠—O my dear Hamlet⁠—  
 The drink, the drink! I am poison’d. *Dies.*
 
 Hamlet
 
-O villany! Ho! let the door be lock’d:
+O villany! Ho! let the door be lock’d:  
 Treachery! Seek it out.
 
 Laertes
 
-It is here, Hamlet: Hamlet, thou art slain;
-No medicine in the world can do thee good;
-In thee there is not half an hour of life;
-The treacherous instrument is in thy hand,
-Unbated and envenom’d: the foul practice
-Hath turn’d itself on me; lo, here I lie,
-Never to rise again: thy mother’s poison’d:
+It is here, Hamlet: Hamlet, thou art slain;  
+No medicine in the world can do thee good;  
+In thee there is not half an hour of life;  
+The treacherous instrument is in thy hand,  
+Unbated and envenom’d: the foul practice  
+Hath turn’d itself on me; lo, here I lie,  
+Never to rise again: thy mother’s poison’d:  
 I can no more: the king, the king’s to blame.
 
 Hamlet
 
-The point envenom’d too!
+The point envenom’d too!  
 Then, venom, to thy work. *Stabs the King.*
 
 All
@@ -674,67 +674,67 @@ O, yet defend me, friends; I am but hurt.
 
 Hamlet
 
-Here, thou incestuous, murderous, damned Dane,
-Drink off this potion. Is thy union here?
+Here, thou incestuous, murderous, damned Dane,  
+Drink off this potion. Is thy union here?  
 Follow my mother. *King dies.*
 
 Laertes
 
-He is justly served;
-It is a poison temper’d by himself.
-Exchange forgiveness with me, noble Hamlet:
-Mine and my father’s death come not upon thee,
+He is justly served;  
+It is a poison temper’d by himself.  
+Exchange forgiveness with me, noble Hamlet:  
+Mine and my father’s death come not upon thee,  
 Nor thine on me! *Dies.*
 
 Hamlet
 
-Heaven make thee free of it! I follow thee.
-I am dead, Horatio. Wretched queen, adieu!
-You that look pale and tremble at this chance,
-That are but mutes or audience to this act,
-Had I but time⁠—as this fell sergeant, death,
-Is strict in his arrest⁠—O, I could tell you⁠—
-But let it be. Horatio, I am dead;
-Thou livest; report me and my cause aright
+Heaven make thee free of it! I follow thee.  
+I am dead, Horatio. Wretched queen, adieu!  
+You that look pale and tremble at this chance,  
+That are but mutes or audience to this act,  
+Had I but time⁠—as this fell sergeant, death,  
+Is strict in his arrest⁠—O, I could tell you⁠—  
+But let it be. Horatio, I am dead;  
+Thou livest; report me and my cause aright  
 To the unsatisfied.
 
 Horatio
 
-Never believe it:
-I am more an antique Roman than a Dane:
+Never believe it:  
+I am more an antique Roman than a Dane:  
 Here’s yet some liquor left.
 
 Hamlet
 
-As thou’rt a man,
-Give me the cup: let go; by heaven, I’ll have’t.
-O good Horatio, what a wounded name,
-Things standing thus unknown, shall live behind me!
-If thou didst ever hold me in thy heart,
-Absent thee from felicity awhile,
-And in this harsh world draw thy breath in pain,
+As thou’rt a man,  
+Give me the cup: let go; by heaven, I’ll have’t.  
+O good Horatio, what a wounded name,  
+Things standing thus unknown, shall live behind me!  
+If thou didst ever hold me in thy heart,  
+Absent thee from felicity awhile,  
+And in this harsh world draw thy breath in pain,  
 To tell my story. *March afar off, and shot within.* What warlike noise is this?
 
 Osric
 
-Young Fortinbras, with conquest come from Poland,
-To the ambassadors of England gives
+Young Fortinbras, with conquest come from Poland,  
+To the ambassadors of England gives  
 This warlike volley.
 
 Hamlet
 
-O, I die, Horatio;
-The potent poison quite o’er-crows my spirit:
-I cannot live to hear the news from England;
-But I do prophesy the election lights
-On Fortinbras: he has my dying voice;
-So tell him, with the occurrents, more and less,
+O, I die, Horatio;  
+The potent poison quite o’er-crows my spirit:  
+I cannot live to hear the news from England;  
+But I do prophesy the election lights  
+On Fortinbras: he has my dying voice;  
+So tell him, with the occurrents, more and less,  
 Which have solicited. The rest is silence. *Dies.*
 
 Horatio
 
-Now cracks a noble heart. Good night, sweet prince;
-And flights of angels sing thee to thy rest!
+Now cracks a noble heart. Good night, sweet prince;  
+And flights of angels sing thee to thy rest!  
 Why does the drum come hither? *March within.*
 
  *Enter Fortinbras, the English Ambassadors, and others.*
@@ -745,67 +745,67 @@ Where is this sight?
 
 Horatio
 
-What is it ye would see?
+What is it ye would see?  
 If aught of woe or wonder, cease your search.
 
 Prince Fortinbras
 
-This quarry cries on havoc. O proud death,
-What feast is toward in thine eternal cell,
-That thou so many princes at a shot
+This quarry cries on havoc. O proud death,  
+What feast is toward in thine eternal cell,  
+That thou so many princes at a shot  
 So bloodily hast struck?
 
 First Ambassador
 
-The sight is dismal;
-And our affairs from England come too late:
-The ears are senseless that should give us hearing,
-To tell him his commandment is fulfill’d,
-That Rosencrantz and Guildenstern are dead:
+The sight is dismal;  
+And our affairs from England come too late:  
+The ears are senseless that should give us hearing,  
+To tell him his commandment is fulfill’d,  
+That Rosencrantz and Guildenstern are dead:  
 Where should we have our thanks?
 
 Horatio
 
-Not from his mouth,
-Had it the ability of life to thank you:
-He never gave commandment for their death.
-But since, so jump upon this bloody question,
-You from the Polack wars, and you from England,
-Are here arrived give order that these bodies
-High on a stage be placed to the view;
-And let me speak to the yet unknowing world
-How these things came about: so shall you hear
-Of carnal, bloody, and unnatural acts,
-Of accidental judgments, casual slaughters,
-Of deaths put on by cunning and forced cause,
-And, in this upshot, purposes mistook
-Fall’n on the inventors’ heads: all this can I
+Not from his mouth,  
+Had it the ability of life to thank you:  
+He never gave commandment for their death.  
+But since, so jump upon this bloody question,  
+You from the Polack wars, and you from England,  
+Are here arrived give order that these bodies  
+High on a stage be placed to the view;  
+And let me speak to the yet unknowing world  
+How these things came about: so shall you hear  
+Of carnal, bloody, and unnatural acts,  
+Of accidental judgments, casual slaughters,  
+Of deaths put on by cunning and forced cause,  
+And, in this upshot, purposes mistook  
+Fall’n on the inventors’ heads: all this can I  
 Truly deliver.
 
 Prince Fortinbras
 
-Let us haste to hear it,
-And call the noblest to the audience.
-For me, with sorrow I embrace my fortune:
-I have some rights of memory in this kingdom,
+Let us haste to hear it,  
+And call the noblest to the audience.  
+For me, with sorrow I embrace my fortune:  
+I have some rights of memory in this kingdom,  
 Which now to claim my vantage doth invite me.
 
 Horatio
 
-Of that I shall have also cause to speak,
-And from his mouth whose voice will draw on more:
-But let this same be presently perform’d,
-Even while men’s minds are wild; lest more mischance,
+Of that I shall have also cause to speak,  
+And from his mouth whose voice will draw on more:  
+But let this same be presently perform’d,  
+Even while men’s minds are wild; lest more mischance,  
 On plots and errors, happen.
 
 Prince Fortinbras
 
-Let four captains
-Bear Hamlet, like a soldier, to the stage;
-For he was likely, had he been put on,
-To have proved most royally: and, for his passage,
-The soldiers’ music and the rites of war
-Speak loudly for him.
-Take up the bodies: such a sight as this
-Becomes the field, but here shows much amiss.
+Let four captains  
+Bear Hamlet, like a soldier, to the stage;  
+For he was likely, had he been put on,  
+To have proved most royally: and, for his passage,  
+The soldiers’ music and the rites of war  
+Speak loudly for him.  
+Take up the bodies: such a sight as this  
+Becomes the field, but here shows much amiss.  
 Go, bid the soldiers shoot. *A dead march. Exeunt, bearing off the dead bodies; after which a peal of ordnance is shot off.*

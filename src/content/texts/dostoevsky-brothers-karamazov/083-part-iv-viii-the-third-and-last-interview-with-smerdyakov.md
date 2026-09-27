@@ -12,7 +12,7 @@ words: 6408
 ---
 When he was halfway there, the keen dry wind that had been blowing early that morning rose again, and a fine dry snow began falling thickly. It did not lie on the ground, but was whirled about by the wind, and soon there was a regular snowstorm. There were scarcely any lampposts in the part of the town where Smerdyakov lived. Ivan strode alone in the darkness, unconscious of the storm, instinctively picking out his way. His head ached and there was a painful throbbing in his temples. He felt that his hands were twitching convulsively. Not far from Marya Kondratyevna’s cottage, Ivan suddenly came upon a solitary drunken little peasant. He was wearing a coarse and patched coat, and was walking in zigzags, grumbling and swearing to himself. Then suddenly he would begin singing in a husky drunken voice:
 
-> “Ach, Vanka’s gone to Petersburg;
+> “Ach, Vanka’s gone to Petersburg;  
 > I won’t wait till he comes back.”
 
 But he broke off every time at the second line and began swearing again; then he would begin the same song again. Ivan felt an intense hatred for him before he had thought about him at all. Suddenly he realized his presence and felt an irresistible impulse to knock him down. At that moment they met, and the peasant with a violent lurch fell full tilt against Ivan, who pushed him back furiously. The peasant went flying backwards and fell like a log on the frozen ground. He uttered one plaintive “O⁠—oh!” and then was silent. Ivan stepped up to him. He was lying on his back, without movement or consciousness. “He will be frozen,” thought Ivan, and he went on his way to Smerdyakov’s.
@@ -101,7 +101,7 @@ Something seemed to give way in his brain, and he shuddered all over with a cold
 
 “You don’t mean to say you really did not know?” he faltered mistrustfully, looking with a forced smile into his eyes. Ivan still gazed at him, and seemed unable to speak.
 
-> Ach, Vanka’s gone to Petersburg;
+> Ach, Vanka’s gone to Petersburg;  
 > I won’t wait till he comes back,
 
 suddenly echoed in his head.

@@ -12,10 +12,10 @@ words: 989
 ---
 **In Two Volumes Vol. I**
 
-This text was prepared from an edition dated 1890, published by
+This text was prepared from an edition dated 1890, published by  
 MacMillan and Co., London and New York.
 
-Greek text has been transliterated and marked with brackets, as in
+Greek text has been transliterated and marked with brackets, as in  
 the opening citation above.
 
 If a new translation of Herodotus does not justify itself, it will hardly be justified in a preface; therefore the question whether it was needed may be left here without discussion. The aim of the translator has been above all things faithfulness—faithfulness to the manner of expression and to the structure of sentences, as well as to the meaning of the Author. At the same time it is conceived that the freedom and variety of Herodotus is not always best reproduced by such severe consistency of rendering as is perhaps desirable in the case of the Epic writers before and the philosophical writers after his time: nor again must his simplicity of thought and occasional quaintness be reproduced in the form of archaisms of language; and that not only because the affectation of an archaic style would necessarily be offensive to the reader, but also because in language Herodotus is not archaic. His style is the "best canon of the Ionic speech," marked, however, not so much by primitive purity as by eclectic variety. At the same time it is characterised largely by the poetic diction of the Epic and Tragic writers; and while the translator is free to employ all the resources of modern English, so far as he has them at his command, he must carefully retain this poetical colouring and by all means avoid the courtier phrase by which the style of Herodotus has too often been made "more noble." 331

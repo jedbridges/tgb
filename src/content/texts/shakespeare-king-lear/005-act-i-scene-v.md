@@ -15,9 +15,9 @@ Court before the same.
 
 King Lear
 
-Go you before to Gloucester with these letters.
-Acquaint my daughter no further with any thing you
-know than comes from her demand out of the letter.
+Go you before to Gloucester with these letters.  
+Acquaint my daughter no further with any thing you  
+know than comes from her demand out of the letter.  
 If your diligence be not speedy, I shall be there afore you.
 
 Kent
@@ -118,7 +118,7 @@ Thou shouldst not have been old till thou hadst been wise.
 
 King Lear
 
-O, let me not be mad, not mad, sweet heaven!
+O, let me not be mad, not mad, sweet heaven!  
 Keep me in temper: I would not be mad!
 
  *Enter Gentleman.*
@@ -135,5 +135,5 @@ Come, boy.
 
 Fool
 
-She that’s a maid now, and laughs at my departure,
+She that’s a maid now, and laughs at my departure,  
 Shall not be a maid long, unless things be cut shorter. *Exeunt.*
