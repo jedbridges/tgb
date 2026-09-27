@@ -2,6 +2,8 @@ import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { loadCatalog, hasGuide } from '~/lib/catalog';
 import { abs } from '~/lib/url';
+import { readdirSync } from 'node:fs';
+import { textPageIndexable } from '~/lib/passages';
 
 /**
  * llms.txt: the site described for a language model, in the shape the convention asks for
@@ -49,6 +51,16 @@ export const GET: APIRoute = async () => {
     '## Authors',
     '',
     `- [All authors](${u('/authors/')}): ${authors.size} authors, each with a short biography, dates, and the works of theirs on the lists.`,
+    '',
+    '## Texts',
+    '',
+    'Public domain translations, one page per book, chapter or act. The pages listed here carry the guide\'s marked passages with a note on each, and link back to the guide. Cite the section page for a passage.',
+    '',
+    ...readdirSync('src/content/texts')
+      .filter((w) => textPageIndexable(`/books/${w}/text/`))
+      .map((w) => ({ w, title: works.find((x) => x.id === w)?.data.title ?? w }))
+      .sort((a, b) => a.title.localeCompare(b.title))
+      .map(({ w, title }) => `- [${title}](${u(`/books/${w}/text/`)}): contents, with the sections that hold a marked passage.`),
     '',
     '## Optional',
     '',
