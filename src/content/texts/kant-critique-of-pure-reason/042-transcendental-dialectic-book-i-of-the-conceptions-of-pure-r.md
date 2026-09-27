@@ -1,0 +1,15 @@
+---
+work: kant-critique-of-pure-reason
+section: "transcendental-dialectic-book-i-of-the-conceptions-of-pure-r"
+heading: "Transcendental Dialectic: Book I: of the Conceptions of Pure Reason"
+order: 42
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/4280"
+edition: "J. M. D. Meiklejohn's translation, 1855"
+translator: "J. M. D. Meiklejohn"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 401
+---
+The conceptions of pure reason—we do not here speak of the possibility of them—are not obtained by reflection, but by inference or conclusion. The conceptions of understanding are also cogitated à priori antecedently to experience, and render it possible; but they contain nothing but the unity of reflection upon phenomena, in so far as these must necessarily belong to a possible empirical consciousness. Through them alone are cognition and the determination of an object possible. It is from them, accordingly, that we receive material for reasoning, and antecedently to them we possess no à priori conceptions of objects from which they might be deduced, On the other hand, the sole basis of their objective reality consists in the necessity imposed on them, as containing the intellectual form of all experience, of restricting their application and influence to the sphere of experience.
+
+But the term, conception of reason, or rational conception, itself indicates that it does not confine itself within the limits of experience, because its object-matter is a cognition, of which every empirical cognition is but a part—nay, the whole of possible experience may be itself but a part of it—a cognition to which no actual experience ever fully attains, although it does always pertain to it. The aim of rational conceptions is the comprehension, as that of the conceptions of understanding is the understanding of perceptions. If they contain the unconditioned, they relate to that to which all experience is subordinate, but which is never itself an object of experience—that towards which reason tends in all its conclusions from experience, and by the standard of which it estimates the degree of their empirical use, but which is never itself an element in an empirical synthesis. If, notwithstanding, such conceptions possess objective validity, they may be called conceptus ratiocinati (conceptions legitimately concluded); in cases where they do not, they have been admitted on account of having the appearance of being correctly concluded, and may be called conceptus ratiocinantes (sophistical conceptions). But as this can only be sufficiently demonstrated in that part of our treatise which relates to the dialectical conclusions of reason, we shall omit any consideration of it in this place. As we called the pure conceptions of the understanding categories, we shall also distinguish those of pure reason by a new name and call them transcendental ideas. These terms, however, we must in the first place explain and justify.
