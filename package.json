@@ -16,6 +16,7 @@
     "seed": "tsx scripts/seed-work.ts",
     "smoke": "tsx scripts/smoke-dist.ts",
     "corpus": "tsx scripts/export-corpus.ts",
+    "corpus:sync": "tsx scripts/sync-corpus.ts",
     "texts": "tsx scripts/fetch-texts.ts",
     "deploy": "npm run build && wrangler deploy"
   },
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
+    "@aws-sdk/client-s3": "^3.1141.0",
     "opentype.js": "^2.0.0",
     "sharp": "^0.34.0",
     "tsx": "^4.20.0",
