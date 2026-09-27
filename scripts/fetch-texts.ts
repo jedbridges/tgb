@@ -162,7 +162,7 @@ function splitGutenberg(html: string): Section[] {
     const el = n as HTMLElement;
     const tag = el.tagName?.toLowerCase();
     if (tag && /^h[1-4]$/.test(tag)) {
-      const t = el.text.replace(/\s+/g, ' ').trim();
+      const t = el.text.replace(/\s+/g, ' ').trim().replace(/\.$/, ''); // "BOOK I." is Book I
       // An epigraph set as a heading is not a heading; keep the current section open.
       if (t.length > 90) { if (cur) cur.parts.push(`\n\n*${t}*\n\n`); return; }
       flush();
