@@ -177,21 +177,22 @@ function splitGutenberg(html: string): Section[] {
       // opens takes the work's title, and the introduction's part ends here.
       if (/^(dramatis person(ae|æ)|persons?( of the (drama|play|dialogue)| represented)?|characters( in the play)?|the persons)\b/i.test(t)) {
         flush();
-        if (/^(introduction|preface)/i.test(part) || !part) part = title || part;
+        if (/^(introduction|preface|by\b)/i.test(part) || !part) part = title || part;
         cur = { heading: titleCase(part || t), path: part || t, parts: [`\n\n**${titleCase(t)}**\n\n`] };
         return;
       }
       // A transcriber's note set as a heading heads nothing; the text under it belongs to
       // the section already open, or to the work itself if none is.
       if (/transliterat|transcriber/i.test(t)) { if (!cur) cur = { heading: titleCase(title || t), path: title || t, parts: [] }; return; }
-      // "Translated by Benjamin Jowett" heads the text itself in the Jowett volumes; the
-      // work's own title, the file's first heading, is the name the section wants.
+      // "Translated by Benjamin Jowett" heads the text itself in the Jowett volumes. It comes
+      // twice in a file: once under the title page, once after the introduction, where the
+      // dialogue proper begins under its own h2 ("GORGIAS", h3 "By Plato", h3 "Translated
+      // by"). The section it opens takes that part's name, or the work's title when the part
+      // is only an author line; an appended piece keeps its own name for the source map to skip.
       if (/^translated (by|into)\b/i.test(t)) {
-        // At the head of the text it names the work; at the end of a file it heads an
-        // appended piece the reader did not ask for, which is dropped.
         flush();
-        if (sections.length <= 1) cur = { heading: titleCase(title || part || t), path: title || part || t, parts: [] };
-        else cur = null;
+        const name = part && !/^(by\b|contents$)/i.test(part) ? part : title || t;
+        cur = { heading: titleCase(name), path: name, parts: [] };
         return;
       }
       flush();
@@ -214,6 +215,9 @@ function splitGutenberg(html: string): Section[] {
     if (tag === 'pre') { if (cur) cur.parts.push(preLines(el)); return; }
     // Gutenberg sets verse in <div class="poem"> or "stanza" full of spans or line breaks: take it whole.
     if (tag === 'div' && /(^|\s)(poem|stanza|verse|poetry)(\s|$)/.test(el.getAttribute('class') ?? '')) { if (cur) cur.parts.push(textOf(el)); return; }
+    // Some files set speeches as text and line breaks straight inside a <div>, with no <p>
+    // at all: a div with words of its own is taken whole, or those words would be lost.
+    if (tag === 'div' && el.childNodes.some((c) => c.nodeType === 3 && c.rawText.trim())) { if (cur) cur.parts.push(textOf(el)); return; }
     for (const c of el.childNodes ?? []) walk(c);
   };
   walk(body);
@@ -281,7 +285,14 @@ async function run(s: Source) {
     // A skip that would take everything is a skip that misread the file; keep the text.
     if (kept.length) raw = kept; else console.warn(`${s.work}: skip /${s.skip}/ would leave nothing; ignored`);
   }
-  const sections = fold(raw);
+  let sections = fold(raw);
+  // Every section named like front matter is a file the walker misread: the longest section
+  // is the text, whatever its heading, and one section beats a failed source.
+  if (!sections.length && raw.length) {
+    const longest = raw.reduce((a, b) => (words(b.body) > words(a.body) ? b : a));
+    console.warn(`${s.work}: every section looked like front matter; keeping the longest, "${longest.heading}"`);
+    sections = [longest];
+  }
   const total = sections.reduce((n, x) => n + words(x.body), 0);
   console.log(`${s.work}: ${sections.length} sections, ${total.toLocaleString()} words${DRY ? ' (dry)' : ''}`);
   if (!sections.length) throw new Error(`nothing parsed from ${url}`);
