@@ -12,6 +12,7 @@
  * oldest complete one. Run where gutendex.com is reachable; the build container is not.
  */
 
+export {};
 interface Candidate { work: string; q: string; note?: string }
 
 const CANDIDATES: Candidate[] = [
