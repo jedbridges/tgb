@@ -4,6 +4,7 @@ import Base from '~/layouts/Base.astro';
 import { authorOf, yearLabel } from '~/lib/catalog';
 import { url, workUrl, textUrl, authorUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
+import { textMap } from '~/lib/passages';
 
 /* One contents page per work that has a text. The pages exist only for works the fetch
    script has written sections for, so a book without one has no dead link to here. */
@@ -25,8 +26,13 @@ const total = sections.reduce((n, s) => n + s.data.words, 0);
 const minutes = Math.max(1, Math.round(total / 220));
 const time = minutes < 90 ? `${minutes} minutes` : `${Math.round(minutes / 60)} hours`;
 const highlights = d.highlights;
+/* Where each marked passage falls in this text, so the contents can say which parts the
+   guide has something to say about, and the passage list can open the right part. */
+const placed = textMap().get(work.id) ?? [];
+const sectionOf = (i: number) => placed.find((p) => p.index === i)?.section;
+const countIn = (section: string) => placed.filter((p) => p.section === section).length;
 ---
-<Base title={`Read ${d.title} online, free`} description={`The full text of ${d.title} by ${author.data.name}, ${first.edition.replace(/^The /, 'the ')}, in ${sections.length} parts, with the reading guide alongside.`} noindex
+<Base title={`Read ${d.title} online, free`} description={`The full text of ${d.title} by ${author.data.name}, ${first.edition.replace(/^The /, 'the ')}, in ${sections.length} parts, with the reading guide alongside.`} noindex={placed.length === 0}
   jsonld={breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }, { name: 'Text', path: textUrl(work.id) }])}>
   <article class="wrap text-index" data-pagefind-ignore>
     <header class="text-index__head page-open">
@@ -57,7 +63,7 @@ const highlights = d.highlights;
             <li class="toc__item">
               <a class="toc__link" href={textUrl(work.id, s.data.section)}>
                 <span class="toc__t">{s.data.heading}</span>
-                <span class="toc__n ui">{s.data.words.toLocaleString()} words</span>
+                <span class="toc__n ui">{countIn(s.data.section) > 0 && <span class="toc__mark" title="The guide marks a passage in this part">{countIn(s.data.section) === 1 ? '1 passage' : `${countIn(s.data.section)} passages`} · </span>}{s.data.words.toLocaleString()} words</span>
               </a>
             </li>
           ))}
@@ -69,10 +75,10 @@ const highlights = d.highlights;
           <section>
             <h2 class="side__h">Passages the guide marks</h2>
             <ul class="marks">
-              {highlights.map((h) => (
+              {highlights.map((h, i) => (
                 <li class="marks__item">
                   <blockquote class="marks__q"><p>{h.text.length > 220 ? h.text.slice(0, 217).replace(/\s+\S*$/, '') + '…' : h.text}</p></blockquote>
-                  {h.location && <p class="marks__where ui">{h.location}</p>}
+                  <p class="marks__where ui">{h.location}{sectionOf(i) && <>{h.location ? ' · ' : ''}<a href={textUrl(work.id, sectionOf(i))}>Read it in {sections.find((s) => s.data.section === sectionOf(i))?.data.heading}</a></>}</p>
                 </li>
               ))}
             </ul>
@@ -146,6 +152,8 @@ const highlights = d.highlights;
   .marks__q { margin: 0; padding-left: var(--s1); border-left: 1px solid var(--edge-strong); font-size: var(--step--1); line-height: 1.5; color: var(--ink-soft); }
   .marks__q p { margin: 0; }
   .marks__where { margin-top: 0.3rem; font-size: var(--step--2); color: var(--ink-mute); }
+  .marks__where a { color: var(--accent); }
+  .toc__mark { color: var(--accent); }
   .text-index__lic { font-size: var(--step--1); color: var(--ink-soft); line-height: 1.5; }
   @media (max-width: 860px) {
     .text-index__grid { grid-template-columns: 1fr; }

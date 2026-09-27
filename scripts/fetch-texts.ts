@@ -162,9 +162,11 @@ function splitGutenberg(html: string): Section[] {
     const el = n as HTMLElement;
     const tag = el.tagName?.toLowerCase();
     if (tag && /^h[1-4]$/.test(tag)) {
-      const t = el.text.replace(/\s+/g, ' ').trim().replace(/\.$/, ''); // "BOOK I." is Book I
-      // An epigraph set as a heading is not a heading; keep the current section open.
-      if (t.length > 90) { if (cur) cur.parts.push(`\n\n*${t}*\n\n`); return; }
+      // "BOOK I." is Book I, and a heading's em dash is a colon on this site.
+      const t = el.text.replace(/\s+/g, ' ').trim().replace(/\.$/, '').replace(/\s*[—–]\s*/g, ': ');
+      // An epigraph set as a heading is not a heading; keep the current section open. A long
+      // heading that opens with its number ("First Section: Transition from...") is a heading.
+      if (t.length > 90 && !/^((first|second|third|fourth|fifth|sixth)\s+(section|part|book)|(book|part|chapter|canto|section|act)\s+[ivxlc\d]+)\b/i.test(t)) { if (cur) cur.parts.push(`\n\n*${t}*\n\n`); return; }
       flush();
       if (tag === 'h1' || tag === 'h2') {
         // A part heading opens a section of its own only until the first chapter arrives.

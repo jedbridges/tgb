@@ -51,6 +51,12 @@ export function lastModifiedForPath(path: string): string | undefined {
   let m: RegExpMatchArray | null;
   if ((m = p.match(/^\/books\/difficulty\/([^/]+)$/))) return lastModified(shelfNoteFile('difficulties', m[1]), taxonomyFile('difficulties'));
   if ((m = p.match(/^\/books\/length\/([^/]+)$/))) return lastModified(shelfNoteFile('lengths', m[1]), taxonomyFile('lengths'));
+  if ((m = p.match(/^\/books\/([^/]+)\/text(?:\/([^/]+))?$/))) {
+    // A text page changes with the guide's passages or with the text itself.
+    const prefix = `src/content/texts/${m[1]}/`;
+    const files = [...load().keys()].filter((f) => f.startsWith(prefix) && (!m![2] || new RegExp(`^${prefix}\\d+-${m![2].replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\.md$`).test(f)));
+    return lastModified(workFile(m[1]), ...files);
+  }
   if ((m = p.match(/^\/books\/([^/]+)$/))) return lastModified(workFile(m[1]));
   if ((m = p.match(/^\/authors\/([^/]+)$/))) return lastModified(authorFile(m[1]));
   if ((m = p.match(/^\/programs\/([^/]+)$/))) return lastModified(programFile(m[1]));

@@ -47,6 +47,9 @@ CI (`.github/workflows/ci.yml`) runs the same on every PR.
   (`src/components/browse/Browse.tsx`) use. Facets on pages are `data-pagefind-filter`
   attributes carrying ids; display values are `data-pagefind-meta`. Add a new page kind by
   giving it a `type` meta and a `Group` in `search.ts`.
+- Passages in the texts: `src/lib/passages.ts` places each guide's marked passages in a
+  section by the location's structure and the passage's words; the section page, the
+  contents page and the sitemap filter all read it. A section is indexable only with one.
 - SEO: canonical and robots in `src/components/Seo.astro`; sitemap filter in
   `astro.config.mjs` (stubs and `/text/` pages are excluded); JSON-LD helpers in
   `src/lib/seo.ts`.
