@@ -58,7 +58,7 @@ async function fetchCached(url: string, key: string): Promise<string> {
 /* HTML to the plain Markdown the section files hold: paragraphs, verse lines kept as lines,
    emphasis as *, block quotes as >, nothing else. Footnote markers and page anchors go. */
 function textOf(node: Node): string {
-  if (node.nodeType === 3) return decode(node.rawText).replace(/\s+/g, ' ');
+  if (node.nodeType === 3) return decode(node.rawText).replace(/_{4,}/g, '').replace(/\s+/g, ' '); // a rule drawn in underscores is not text
   const el = node as HTMLElement;
   const tag = el.tagName?.toLowerCase();
   if (!tag) return el.childNodes.map(textOf).join('');
@@ -232,9 +232,12 @@ function fold(sections: Section[]): Section[] {
     const parts: Section[] = []; let head = s.heading; let buf: string[] = [];
     for (const line of s.body.split('\n')) {
       const t = line.replace(/\s+\\?$/, '').trim();
-      if (/^(BOOK|PART|CANTO|CHAPTER|QUESTION|TREATISE)\s+[IVXLC\d]+\b.{0,60}$/i.test(t) && t.split(/\s+/).length <= 12) {
+      // A book heading on a line of its own, or, in the Summa, a question's title with its
+      // article count: "THE EXISTENCE OF GOD (In Three Articles)".
+      const question = t.match(/^(.{4,90}?)\s*\((?:in )?[a-z-]+ articles?\)$/i);
+      if ((/^(BOOK|PART|CANTO|CHAPTER|QUESTION|TREATISE)\s+[IVXLC\d]+\b.{0,60}$/i.test(t) && t.split(/\s+/).length <= 12) || question) {
         const b = tidy(buf.join('\n')); if (b) parts.push({ heading: head, body: b, path: `${s.path} / ${head}` });
-        head = t.replace(/\s+/g, ' '); buf = []; continue;
+        head = titleCase((question ? question[1] : t).replace(/\s+/g, ' ')); buf = []; continue;
       }
       buf.push(line);
     }
