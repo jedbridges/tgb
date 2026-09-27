@@ -1,5 +1,6 @@
 import { abs, workUrl, authorUrl } from './url';
 import type { Work, Author } from './catalog';
+import { lastModified, workFile, authorFile } from './lastmod';
 
 export const breadcrumbs = (items: { name: string; path: string }[]) => ({
   '@context': 'https://schema.org', '@type': 'BreadcrumbList',
@@ -18,6 +19,11 @@ const LANG: Record<string, string> = {
   'church-slavonic': 'cu', czech: 'cs', polish: 'pl', turkish: 'tr',
 };
 
+export const organizationLd = () => ({
+  '@type': 'Organization', '@id': abs('/') + '#org', name: 'The Great Books', url: abs('/'),
+  logo: { '@type': 'ImageObject', url: abs('/apple-touch-icon.png').replace(/\/$/, '') },
+});
+
 export const bookLd = (work: Work, author: Author, image?: string) => {
   const d = work.data;
   const ed = d.recommendedEdition;
@@ -25,6 +31,10 @@ export const bookLd = (work: Work, author: Author, image?: string) => {
     '@context': 'https://schema.org', '@type': 'Book',
     '@id': abs(workUrl(work.id)),
     name: d.title,
+    /* The guide's own date, from git. A page that says when it was last worked on is one an
+       answer engine can rank for freshness; one that does not is guessed at. */
+    dateModified: lastModified(workFile(work.id)),
+    publisher: organizationLd(),
     alternateName: d.originalTitle,
     author: { '@type': 'Person', name: author.data.name, url: abs(authorUrl(author.id)) },
     inLanguage: LANG[d.language.id] ?? d.language.id,
@@ -64,6 +74,7 @@ export const personLd = (author: Author) => ({
   '@id': abs(authorUrl(author.id)),
   name: author.data.name,
   alternateName: author.data.aliases,
+  dateModified: lastModified(authorFile(author.id)),
   birthDate: author.data.born !== undefined && author.data.born > 0 ? String(author.data.born) : undefined,
   deathDate: author.data.died !== undefined && author.data.died > 0 ? String(author.data.died) : undefined,
 });
@@ -86,5 +97,6 @@ export const quotationsLd = (work: Work, author: Author) =>
 
 export const websiteLd = () => ({
   '@context': 'https://schema.org', '@type': 'WebSite', name: 'The Great Books', url: abs('/'),
+  publisher: organizationLd(),
   potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: abs('/books/') + '?q={search_term_string}' }, 'query-input': 'required name=search_term_string' },
 });

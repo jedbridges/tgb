@@ -1,0 +1,39 @@
+---
+work: pascal-pensees
+section: "section-xiii-841"
+heading: "Section Xiii, 841"
+order: 77
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 210
+---
+*Si tu es Christus, dic nobis.*[336]
+
+*Opera quæ ego facio in nomine patris mei, hæc testimonium perhibent de me. Sed vos non creditis quia non estis ex ovibus meis. Oves meœ vocem meam audiunt.*[337]
+
+John vi, 30. *Quod ergo tu facis signum ut videamus et credamus tibi?—Non dicunt: Quam doctrinam prædicas?*
+
+*Nemo potest facere signa quæ tu facis nisi Deus.*[338]
+
+2 Macc. xiv, 15. *Deus qui signis evidentibus suam portionem protegit.*
+
+*Volumus signum videre de cœlo, tentantes eum.* Luke xi, 16.
+
+*Generatio prava signum quærit; et non dabitur.*[339]
+
+*Et ingemiscens ait: Quid generatio ista signum quærit?* (Mark viii, 12.) They asked a sign with an evil intention.
+
+*Et non poterat facere.*[340] And yet he promises them the sign of Jonah, the great and wonderful miracle of his resurrection.
+
+*Nisi videritis, non creditis.*[341] He does not blame them for not believing unless there are miracles, but for not believing unless they are themselves spectators of them.
+
+Antichrist *in signis mendacibus*, says Saint Paul, 2 Thess. ii.
+
+*Secundum operationem Satanæ, in seductione iis qui pereunt eo quod charitatem veritatis non receperunt ut salvi fierent, ideo mittet illis Deus optationes erroris ut credant mendacio.*
+
+As in the passage of Moses: *Tentat enim vos Deus, utrum diligatis eum.*[342]
+
+*Ecce prædixi vobis: vos ergo videte.*[343]

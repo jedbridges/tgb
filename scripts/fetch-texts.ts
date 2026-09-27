@@ -23,7 +23,7 @@ const decode = (s: string) => decodeHTML(s);
 
 /* `match` is a regular expression on the section's heading path ("Apology" or "Antigone: Scene 1")
    for a volume that holds several works, so each work takes only its own sections. */
-interface Source { work: string; source: 'standardebooks' | 'gutenberg'; url: string; edition: string; translator?: string; match?: string }
+interface Source { work: string; source: 'standardebooks' | 'gutenberg'; url: string; edition: string; translator?: string; match?: string; skip?: string }
 interface Section { heading: string; body: string; path: string }
 
 const DRY = process.argv.includes('--dry');
@@ -63,6 +63,7 @@ function textOf(node: Node): string {
   const tag = el.tagName?.toLowerCase();
   if (!tag) return el.childNodes.map(textOf).join('');
   if (['script', 'style', 'sup', 'aside', 'nav', 'img', 'figure'].includes(tag)) return '';
+  if (tag === 'pre') return preLines(el);
   if (el.getAttribute('epub:type')?.includes('noteref') || el.classList?.contains('pagenum')) return '';
   const inner = el.childNodes.map(textOf).join('');
   if (tag === 'em' || tag === 'i') return inner.trim() ? `*${inner.trim()}*` : '';
@@ -73,24 +74,45 @@ function textOf(node: Node): string {
        ancestor; Gutenberg: a poem class), never guessed from spans, which SE also uses for
        roman numerals and foreign phrases inside ordinary prose. */
     const verseHost = (n: HTMLElement | null): boolean => !!n && (/(^|\s)(z3998:)?(verse|poem|song|stanza)(\s|$)/.test(`${n.getAttribute?.('epub:type') ?? ''} ${n.getAttribute?.('class') ?? ''}`) || verseHost(n.parentNode as HTMLElement | null));
-    const isVerse = verseHost(el);
+    const hasBreaks = !!el.querySelector(':scope > br');
+    const isVerse = verseHost(el) || (hasBreaks && el.querySelectorAll(':scope > span').length > 1);
     const lines = isVerse ? el.querySelectorAll(':scope > span') : [];
     const text = isVerse ? lines.length > 1 ? lines.map((l) => textOf(l).trim()).join('  \n') : inner.split('\n').map((l) => l.trim()).filter(Boolean).join('  \n') : inner.replace(/\s+/g, ' ').trim();
     return text ? `\n\n${text}\n\n` : '';
   }
   if (tag === 'blockquote') return `\n\n${inner.trim().split(/\n{2,}/).map((p) => '> ' + p.replace(/\n/g, '\n> ')).join('\n>\n')}\n\n`;
   if (/^h[1-6]$/.test(tag)) return '';
+  if (tag === 'div' && /(^|\s)(poem|stanza|verse|poetry)(\s|$)/.test(el.getAttribute('class') ?? '') && !el.querySelector('p')) {
+    const lines = el.querySelectorAll('span, div.line, .line').map((l) => textOf(l).trim()).filter(Boolean);
+    return `\n\n${(lines.length ? lines : inner.split('\n').map((l) => l.trim()).filter(Boolean)).join('  \n')}\n\n`;
+  }
   if (['div', 'section', 'article', 'body', 'html', 'header', 'ul', 'ol', 'li', 'table', 'tr', 'td', 'th', 'dl', 'dt', 'dd', 'hr'].includes(tag)) return `\n\n${inner}\n\n`;
   return inner;
 }
-const tidy = (s: string) => s.replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+/* A pre block as verse: the common indent goes, so Markdown does not take the lines for
+   code, and each line ends with the two spaces that keep it a line. */
+function preLines(el: HTMLElement): string {
+  const lines = decode(el.rawText).split('\n').map((l) => l.replace(/\s+$/, ''));
+  const indent = Math.min(...lines.filter((l) => l.trim()).map((l) => l.match(/^\s*/)![0].length));
+  return '\n\n' + lines.map((l) => l.slice(indent)).join('  \n').replace(/(  \n){2,}/g, '\n\n') + '\n\n';
+}
+/* Trailing whitespace goes, except the two spaces that mark a verse line break in Markdown:
+   those stay, or every poem and every speech would run together as prose on the page. */
+const tidy = (s: string) => s.replace(/[ \t]+\n/g, (m) => (m.length >= 3 ? '  \n' : '\n')).replace(/(  )?\n(\s*\n)+/g, '\n\n').trim();
 const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
 
+/* ALL CAPS headings read as shouting on the page; keep small words small. Roman numerals stay. */
+function titleCase(s: string): string {
+  if (s.length < 4 || s !== s.toUpperCase() || !/[A-Z]{3}/.test(s)) return s;
+  const small = new Set(['a', 'an', 'the', 'of', 'and', 'or', 'to', 'in', 'on', 'at', 'by', 'for', 'with', 'from', 'as', 'but', 'nor']);
+  return s.toLowerCase().split(' ').map((w, i) => /^[ivxlc]+\.?$/.test(w) ? w.toUpperCase() : i > 0 && small.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+}
 function headingText(el: HTMLElement): string {
   // Standard Ebooks headings carry an ordinal and a title in separate spans: "Book I" / "The Anger of Achilles".
   const parts = el.querySelectorAll('span').map((s) => s.text.replace(/\s+/g, ' ').trim()).filter(Boolean);
-  const raw = parts.length >= 2 ? parts.slice(0, 2).join(': ') : el.text.replace(/\s+/g, ' ').trim();
-  return raw.replace(/\s*:\s*$/, '');
+  const label = /^(act|scene|book|chapter|canto|part|section|letter|essay)$/i;
+  const raw = parts.length >= 2 ? (label.test(parts[0]) ? `${parts[0]} ${parts[1]}` : parts.slice(0, 2).join(': ')) : el.text.replace(/\s+/g, ' ').trim();
+  return titleCase(raw.replace(/\s*:\s*$/, ''));
 }
 
 function splitStandardEbooks(html: string): Section[] {
@@ -101,16 +123,27 @@ function splitStandardEbooks(html: string): Section[] {
   for (const s of leaves) {
     const type = s.getAttribute('epub:type') ?? '';
     if (/titlepage|imprint|colophon|copyright|toc|loi|dedication|halftitlepage|frontmatter|backmatter|endnotes|bibliography|glossary/.test(type)) continue;
-    const h = s.querySelector('h1, h2, h3, h4, h5, h6, header');
+    // The heading element itself, never the whole header: a header may also hold an epigraph.
+    const h = s.querySelector('h1, h2, h3, h4, h5, h6') ?? s.querySelector('header');
     const heading = h ? headingText(h) : '';
-    const bodyText = tidy(textOf(s));
+    let bodyText = tidy(textOf(s));
     if (!bodyText) continue;
+    let heading2 = heading;
+    if (/^[ivxlc\d]+$/i.test(heading)) {
+      const first = bodyText.split('\n')[0].trim();
+      // A short first line with no full stop is a title set as a paragraph; a quoted or
+      // italic first line is an epigraph, and a chapter with only a number is "Chapter I".
+      if (first.length > 0 && first.length <= 80 && !/[.!?,;]$/.test(first) && !/^[>*]/.test(first)) { heading2 = `${heading}: ${first}`; bodyText = tidy(bodyText.slice(first.length)); }
+      else heading2 = `Chapter ${heading}`;
+    }
     // The headings of the enclosing sections, so a dialogue's chapters carry the dialogue's name.
     const ancestors: string[] = [];
     for (let a = s.parentNode as HTMLElement | null; a; a = a.parentNode as HTMLElement | null) {
       if (a.tagName?.toLowerCase() === 'section') { const ah = a.querySelector(':scope > h1, :scope > h2, :scope > h3, :scope > header'); if (ah) ancestors.unshift(headingText(ah)); }
     }
-    sections.push({ heading, body: bodyText, path: [...ancestors, heading].filter(Boolean).join(' / ') });
+    // A scene needs its act, a chapter its book: "Act I, Scene II" rather than "Scene II".
+    if (ancestors.length && /^(scene|chapter|canto|section|[ivxlc]+|\d+)\b/i.test(heading2) && !/^(book|part|act)\b/i.test(heading2)) heading2 = `${ancestors[ancestors.length - 1]}, ${heading2}`;
+    sections.push({ heading: heading2, body: bodyText, path: [...ancestors, heading2].filter(Boolean).join(' / ') });
   }
   return sections;
 }
@@ -119,19 +152,40 @@ function splitGutenberg(html: string): Section[] {
   const root = parseHtml(html, { blockTextElements: { script: false, style: false } });
   const body = root.querySelector('body') ?? root;
   // Drop the licence and boilerplate that Gutenberg wraps around the text.
-  for (const sel of ['#pg-header', '#pg-footer', '.pg-boilerplate', 'pre']) body.querySelectorAll(sel).forEach((n) => n.remove());
+  for (const sel of ['#pg-header', '#pg-footer', '.pg-boilerplate']) body.querySelectorAll(sel).forEach((n) => n.remove());
   const sections: Section[] = [];
-  let cur: { heading: string; parts: string[] } | null = null;
-  const flush = () => { if (cur) { const b = tidy(cur.parts.join('')); if (b) sections.push({ heading: cur.heading, body: b, path: cur.heading }); } };
+  let cur: { heading: string; path: string; parts: string[] } | null = null;
+  let part = ''; // the nearest h1/h2: "Book One", "Part I", "Inferno"
+  const flush = () => { if (cur) { const b = tidy(cur.parts.join('')); if (b) sections.push({ heading: cur.heading, body: b, path: cur.path }); } };
+  const bare = (t: string) => /^(chapter|canto|book|part|scene|act)?\s*[ivxlc\d]+\.?$/i.test(t) || t.length <= 3;
   const walk = (n: Node) => {
     const el = n as HTMLElement;
     const tag = el.tagName?.toLowerCase();
     if (tag && /^h[1-4]$/.test(tag)) {
+      // "BOOK I." is Book I, and a heading's em dash is a colon on this site.
+      const t = el.text.replace(/\s+/g, ' ').trim().replace(/\.$/, '').replace(/\s*[—–]\s*/g, ': ');
+      // An epigraph set as a heading is not a heading; keep the current section open. A long
+      // heading that opens with its number ("First Section: Transition from...") is a heading.
+      if (t.length > 90 && !/^((first|second|third|fourth|fifth|sixth)\s+(section|part|book)|(book|part|chapter|canto|section|act)\s+[ivxlc\d]+)\b/i.test(t)) { if (cur) cur.parts.push(`\n\n*${t}*\n\n`); return; }
+      // A cast list heads the play, not a section of its own: opened as a section it would
+      // swallow every speech that follows and then be dropped as front matter by its name.
+      if (/^(dramatis person(ae|æ)|persons?( of the (drama|play)| represented)?|characters( in the play)?|the persons)$/i.test(t) && cur) { cur.parts.push(`\n\n**${titleCase(t)}**\n\n`); return; }
       flush();
-      cur = { heading: el.text.replace(/\s+/g, ' ').trim(), parts: [] };
+      if (tag === 'h1' || tag === 'h2') {
+        // A part heading opens a section of its own only until the first chapter arrives.
+        part = t;
+        cur = { heading: titleCase(t), path: t, parts: [] };
+      } else {
+        const heading = bare(t) && part && !/^(book|part|canto)\b/i.test(t) ? `${part}, ${t}` : t;
+        cur = { heading: titleCase(heading), path: part ? `${part} / ${t}` : t, parts: [] };
+      }
       return;
     }
     if (tag && ['p', 'blockquote', 'ul', 'ol', 'table'].includes(tag)) { if (cur) cur.parts.push(textOf(el)); return; }
+    // Older Gutenberg files set verse, and sometimes whole books, in <pre>: keep the lines.
+    if (tag === 'pre') { if (cur) cur.parts.push(preLines(el)); return; }
+    // Gutenberg sets verse in <div class="poem"> or "stanza" full of spans or line breaks: take it whole.
+    if (tag === 'div' && /(^|\s)(poem|stanza|verse|poetry)(\s|$)/.test(el.getAttribute('class') ?? '')) { if (cur) cur.parts.push(textOf(el)); return; }
     for (const c of el.childNodes ?? []) walk(c);
   };
   walk(body);
@@ -143,9 +197,29 @@ function splitGutenberg(html: string): Section[] {
 /* Fold short sections into the one before, and drop the front matter that survives the
    type filters (a table of contents rendered as a section, a two line epigraph). */
 function fold(sections: Section[]): Section[] {
+  /* A file with one heading and forty thousand words has its books inside the text: a
+     short line in capitals or "Book III" on a line of its own. Split there. */
+  sections = sections.flatMap((s) => {
+    if (words(s.body) < 40000) return [s];
+    const parts: Section[] = []; let head = s.heading; let buf: string[] = [];
+    for (const line of s.body.split('\n')) {
+      const t = line.replace(/\s+\\?$/, '').trim();
+      if (/^(BOOK|PART|CANTO|CHAPTER)\s+[IVXLC\d]+\b.{0,40}$/i.test(t) && t.split(/\s+/).length <= 8) {
+        const b = tidy(buf.join('\n')); if (b) parts.push({ heading: head, body: b, path: `${s.path} / ${head}` });
+        head = t.replace(/\s+/g, ' '); buf = []; continue;
+      }
+      buf.push(line);
+    }
+    const b = tidy(buf.join('\n')); if (b) parts.push({ heading: head, body: b, path: `${s.path} / ${head}` });
+    return parts.length > 1 ? parts : [s];
+  });
   const out: Section[] = [];
   for (const s of sections) {
-    if (/^(contents|table of contents|list of illustrations|index)$/i.test(s.heading)) continue;
+    const h = s.heading.trim().replace(/[:.]$/, '');
+    if (/^\d{3,4}$/.test(h)) continue; // a year standing as a heading is front matter
+    if (/^(contents|table of contents|list of illustrations|index|footnotes|endnotes|notes?( to .*)?|transcriber.?s? notes?|project gutenberg.*|.*bookmarks|dramatis person(ae|æ)|the following is a list.*|by [a-z .]+)$/i.test(h)) continue;
+    // A section that opens with the contents list is the front matter, whatever its heading.
+    if (/^(contents|table of contents)\b/i.test(s.body.trimStart().split('\n')[0].replace(/[*_]/g, ''))) continue;
     if (out.length && words(s.body) < MIN_WORDS) { out[out.length - 1].body += `\n\n**${s.heading}**\n\n${s.body}`; continue; }
     out.push({ ...s });
   }
@@ -153,11 +227,14 @@ function fold(sections: Section[]): Section[] {
   return out;
 }
 
-const slugify = (s: string) => s.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60) || 'section';
+const slugify = (s: string) => {
+  const id = s.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+  return !id ? 'section' : /^\d/.test(id) ? `part-${id}` : id; // a bare number is not a slug, and YAML would read it as one
+};
 
 async function run(s: Source) {
   const url = pageUrl(s);
-  const html = await fetchCached(url, `${s.work}`);
+  const html = await fetchCached(url, `${s.work}-${s.source}-${s.url.replace(/[^a-z0-9]+/gi, '-').slice(-40)}`);
   let raw = s.source === 'standardebooks' ? splitStandardEbooks(html) : splitGutenberg(html);
   if (s.match) {
     const re = new RegExp(s.match, 'i');
@@ -165,6 +242,8 @@ async function run(s: Source) {
     if (!kept.length) throw new Error(`match /${s.match}/ selected nothing; headings are: ${[...new Set(raw.map((x) => x.path.split(' / ')[0]))].slice(0, 12).join(' | ')}`);
     raw = kept;
   }
+  // A translator's introduction or analysis is not the work; the source map names it to leave out.
+  if (s.skip) { const re = new RegExp(s.skip, 'i'); raw = raw.filter((x) => !re.test(x.path)); }
   const sections = fold(raw);
   const total = sections.reduce((n, x) => n + words(x.body), 0);
   console.log(`${s.work}: ${sections.length} sections, ${total.toLocaleString()} words${DRY ? ' (dry)' : ''}`);
@@ -180,7 +259,7 @@ async function run(s: Source) {
     seen.add(id);
     const q = (v: string) => JSON.stringify(v);
     const fm = [
-      `work: ${s.work}`, `section: ${id}`, `heading: ${q(sec.heading || `Part ${i + 1}`)}`, `order: ${i + 1}`,
+      `work: ${s.work}`, `section: ${q(id)}`, `heading: ${q(sec.heading || `Part ${i + 1}`)}`, `order: ${i + 1}`,
       `source: ${s.source}`, `sourceUrl: ${q(s.source === 'standardebooks' ? s.url : `https://www.gutenberg.org/ebooks/${s.url}`)}`,
       `edition: ${q(s.edition)}`, ...(s.translator ? [`translator: ${q(s.translator)}`] : []), `licence: ${q(licence(s))}`, `words: ${words(sec.body)}`,
     ];

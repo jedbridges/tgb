@@ -1,0 +1,27 @@
+---
+work: rousseau-social-contract
+section: "book-iii-iii-the-division-of-governments"
+heading: "Book III, III: The Division of Governments"
+order: 23
+source: standardebooks
+sourceUrl: "https://standardebooks.org/ebooks/jean-jacques-rousseau/the-social-contract/g-d-h-cole"
+edition: "G. D. H. Cole's translation, 1913"
+translator: "G. D. H. Cole"
+licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
+words: 419
+---
+We saw in the last chapter what causes the various kinds or forms of government to be distinguished according to the number of the members composing them: it remains in this to discover how the division is made.
+
+In the first place, the Sovereign may commit the charge of the government to the whole people or to the majority of the people, so that more citizens are magistrates than are mere private individuals. This form of government is called “democracy.”
+
+Or it may restrict the government to a small number; so that there are more private citizens than magistrates; and this is named “aristocracy.”
+
+Lastly, it may concentrate the whole government in the hands of a single magistrate from whom all others hold their power. This third form is the most usual, and is called “monarchy,” or royal government.
+
+It should be remarked that all these forms, or at least the first two, admit of degree, and even of very wide differences; for democracy may include the whole people, or may be restricted to half. Aristocracy, in its turn, may be restricted indefinitely from half the people down to the smallest possible number. Even royalty is susceptible of a measure of distribution. Sparta always had two kings, as its constitution provided; and the Roman Empire saw as many as eight emperors at once, without it being possible to say that the Empire was split up. Thus there is a point at which each form of government passes into the next, and it becomes clear that, under three comprehensive denominations, government is really susceptible of as many diverse forms as the State has citizens.
+
+There are even more: for, as the government may also, in certain aspects, be subdivided into other parts, one administered in one fashion and one in another, the combination of the three forms may result in a multitude of mixed forms, each of which admits of multiplication by all the simple forms.
+
+There has been at all times much dispute concerning the best form of government, without consideration of the fact that each is in some cases the best, and in others the worst.
+
+If, in the different States, the number of supreme magistrates should be in inverse ratio to the number of citizens, it follows that, generally, democratic government suits small States, aristocratic government those of middle size, and monarchy great ones. This rule is immediately deducible from the principle laid down. But it is impossible to count the innumerable circumstances which may furnish exceptions.

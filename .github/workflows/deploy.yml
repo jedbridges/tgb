@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }  # full history: the sitemap's lastmod and dateModified come from git
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - run: npm ci
@@ -28,3 +29,7 @@ jobs:
         run: |
           curl -fsS -o /dev/null "${{ secrets.SITE_URL }}/"
           curl -fsS -o /dev/null "${{ secrets.SITE_URL }}/sitemap-index.xml"
+      - name: Tell Bing and the answer engines what changed
+        # Only pages whose lastmod is within the last few days; a full resubmission every
+        # deploy would be noise. Never fails the deploy.
+        run: npx tsx scripts/indexnow.ts --send --days 3 || true

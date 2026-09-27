@@ -1,0 +1,65 @@
+---
+work: pascal-pensees
+section: "section-xiii-807"
+heading: "Section Xiii, 807"
+order: 70
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 433
+---
+Jesus Christ has verified that He was the Messiah, never in verifying His doctrine by Scripture and the prophecies, but always by His miracles.
+
+He proves by a miracle that He remits sins.
+
+Rejoice not in your miracles, said Jesus Christ, but because your names are written in heaven.[319]
+
+If they believe not Moses, neither will they believe one risen from the dead.
+
+Nicodemus recognises by His miracles that His teaching is of God. *Scimus quia venisti a Deo magister; nemo enim potest hæc signa facere quæ tu facis nisi Deus fuerit cum eo.*[320] He does not judge of the miracles by the teaching, but of the teaching by the miracles.
+
+The Jews had a doctrine of God as we have one of Jesus Christ, and confirmed by miracles. They were forbidden to believe every worker of miracles; and they were further commanded to have recourse to the chief priests, and to rely on them.
+
+And thus, in regard to their prophets, they had all those reasons which we have for refusing to believe the workers of miracles.
+
+And yet they were very sinful in rejecting the prophets, and Jesus Christ, because of their miracles; and they would not have been culpable, if they had not seen the miracles. *Nisi fecissem ... peccatum non haberent.*[321] Therefore all belief rests upon miracles.
+
+Prophecy is not called miracle; as Saint John speaks of the first miracle in Cana, and then of what Jesus Christ says to the woman of Samaria, when He reveals to her all her hidden life. Then He heals the centurion's son; and Saint John calls this "the second miracle."[322]
+
+**Section Xiii, 808**
+
+The combinations of miracles.
+
+**Section Xiii, 809**
+
+The second miracle can suppose the first, but the first cannot suppose the second.
+
+**Section Xiii, 810**
+
+Had it not been for the miracles, there would have been no sin in not believing in Jesus Christ.
+
+**Section Xiii, 811**
+
+I should not be a Christian, but for the miracles, said Saint Augustine.
+
+**Section Xiii, 812**
+
+*Miracles.*—How I hate those who make men doubt of miracles! Montaigne[323] speaks of them as he should in two places. In one, we see how careful he is; and yet, in the other, he believes, and makes sport of unbelievers.
+
+However it may be, the Church is without proofs if they are right.
+
+**Section Xiii, 813**
+
+Montaigne against miracles.
+
+Montaigne for miracles.
+
+**Section Xiii, 814**
+
+It is not possible to have a reasonable belief against miracles.
+
+**Section Xiii, 815**
+
+Unbelievers the most credulous. They believe the miracles of Vespasian, in order not to believe those of Moses.

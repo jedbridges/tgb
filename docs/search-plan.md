@@ -29,11 +29,11 @@ Update this section at the end of every session.
 | 1f Analytics groups | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1h Header search bar cycles through example queries | Done | [#39](https://github.com/jedbridges/tgb/pull/39) |
 | 1g SEO: shelf notes on 71 pages, difficulty and length pages, segment descriptions, per segment ItemList | Done | [#39](https://github.com/jedbridges/tgb/pull/39) |
-| 2a Texts collection, source map for 51 works, fetch script | Built, unrun: blocked on network allow list | [#40](https://github.com/jedbridges/tgb/pull/40) |
-| 2b Passage index | Text pages index as Passage with a work filter; second index deferred until the volume is known | [#40](https://github.com/jedbridges/tgb/pull/40) |
-| 2c Text pages, search inside, guide highlights beside the contents | Built on a fixture, to be reviewed on real text | [#40](https://github.com/jedbridges/tgb/pull/40) |
-| 2d SEO for text pages | noindex and out of the sitemap until a section carries commentary; theme passage pages and Quotation markup shipped in [#41](https://github.com/jedbridges/tgb/pull/41) | [#40](https://github.com/jedbridges/tgb/pull/40) |
-| 3a Cloudflare AI Search over R2 | Not started | |
+| 2a Texts collection, source map for 51 works, fetch script | Done. The build container cannot reach the sources, so the owner runs the fetch on a Mac and commits the sections: 51 works, 2,223 sections in [#41](https://github.com/jedbridges/tgb/pull/41). The regenerated sections after the parser fix are in: 2,220 sections, verse line by line, chapters numbered, front and back matter gone | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41) |
+| 2b Passage index | Done. Text pages index as Passage in the one Pagefind index, 44 MB on disk, 186 KB to open the palette and 100 to 200 KB a query; a second index is not needed at this volume | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41) |
+| 2c Text pages, search inside, guide highlights beside the contents | Reviewed on the real texts: headings, contents and passage pages right; verse, speeches and epigraphs reviewed on the regenerated texts in Chromium | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41) |
+| 2d SEO for text pages | Done for the passages: `src/lib/passages.ts` places each guide's marked passages in the section of the text they fall in (197 of 230 by structure and words; the rest are paraphrases, line numbers in single-section plays, or text the edition lacks). A section with a passage shows it with the guide's note and a link back, drops its noindex and joins the sitemap with a lastmod: 151 sections and 52 contents pages. Bare text stays out. Theme passage pages and Quotation markup shipped in [#41](https://github.com/jedbridges/tgb/pull/41) | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41), [#42](https://github.com/jedbridges/tgb/pull/42) |
+| 3a Cloudflare AI Search over R2 | Corpus export ready: `npm run corpus` writes 1,096 documents, 1.23M words, with url and kind headers for citations; bucket and AI Search instance not yet created | [#41](https://github.com/jedbridges/tgb/pull/41) |
 | 3b Ask tab and cited answers | Not started | |
 | 3c SEO: reviewed question pages | Not started | |
 
@@ -151,6 +151,12 @@ The palette is invisible to crawlers. These pages are its crawlable twin.
   to the pages above. That is user value, not crawl value, but it puts the landing pages
   one click from every search.
 - Sitemap: add the new difficulty and length pages, keep theme, era and genre pages.
+- Shipped after 1g in [#41](https://github.com/jedbridges/tgb/pull/41): lastmod on every
+  sitemap entry and dateModified on Book and Person markup, both from git and from content
+  changes only; a publisher Organization on the WebSite and Book markup; IndexNow on every
+  deploy for pages changed in the last three days; llms.txt regenerated at build with every
+  page kind, and llms-full.txt with the shelf notes, program descriptions and an index of
+  all 689 works.
 
 ## Phase 2: the text layer
 
@@ -243,6 +249,24 @@ Kept so a later session knows what was checked and how, not only what was built.
   length pages: performance 96 to 98, accessibility, best practices and SEO 100, total
   blocking time 0 ms, layout shift under 0.005. A code review of the search module and the
   fetch script produced ten findings, all fixed in that PR.
+- 26 September 2026, texts: after the owner's fetch on a Mac, the built site was rebuilt
+  with all 2,223 sections (98 s, dist 230 MB, Pagefind 44 MB) and the Hamlet, Lucretius,
+  Karamazov and Montaigne text pages screenshotted in Chromium. Headings read "Act I, Scene
+  IV" and "Part I, I: Fyodor Pavlovitch Karamazov". Verse ran together as prose because
+  tidy() stripped the two space line breaks; fixed in the parser along with the epigraph
+  headings in Middlemarch, the surviving "Footnotes:" and contents sections, and Jowett's
+  introduction to the Republic. The fix was checked on fixture HTML, then the owner reran the
+  script and the regenerated Lucretius, Hamlet, Middlemarch and Republic pages were
+  screenshotted: verse line by line, speeches and stage directions flush, epigraphs as
+  quotations under "Chapter I", the Republic opening on Book I.
+- 27 September 2026, passages in the text: the placement was run over all 230 marked
+  passages and every result read by hand; the misses that were wrong (a Purgatorio canto in
+  the Inferno, "Volume III" against "Book III", Book 7 of a Books I to IV Herodotus) were
+  fixed and the run repeated. The Republic Book I and Hamlet Act III Scene I pages were
+  screenshotted at desktop and phone width with the passage block under the text. The
+  sitemap was checked for the 203 text URLs and their lastmod, and noindex for a section
+  with no passage. Known parser gaps for the next fetch run: the Oresteia parsed to its
+  introductory note only, and Kant's "First Section" heading was taken for an epigraph.
 - The query suite the palette is checked against, run in Chromium against the built site:
   Plato, Republic, justice, Iliad, Ilias, sophomore, approachable epic, tragedy, Greek
   tragedy, short novel, easy long novels, happiness, Dostoevski, Neitzsche, xqzv, St Johns,

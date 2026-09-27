@@ -1,0 +1,17 @@
+---
+work: rousseau-social-contract
+section: "book-iii-xiv-the-same-continued"
+heading: "Book III, XIV: The Same (Continued)"
+order: 34
+source: standardebooks
+sourceUrl: "https://standardebooks.org/ebooks/jean-jacques-rousseau/the-social-contract/g-d-h-cole"
+edition: "G. D. H. Cole's translation, 1913"
+translator: "G. D. H. Cole"
+licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
+words: 234
+---
+The moment the people is legitimately assembled as a sovereign body, the jurisdiction of the government wholly lapses, the executive power is suspended, and the person of the meanest citizen is as sacred and inviolable as that of the first magistrate; for in the presence of the person represented, representatives no longer exist. Most of the tumults that arose in the comitia at Rome were due to ignorance or neglect of this rule. The consuls were in them merely the presidents of the people; the tribunes were mere speakers; the senate was nothing at all.
+
+These intervals of suspension, during which the prince recognises or ought to recognise an actual superior, have always been viewed by him with alarm; and these assemblies of the people, which are the aegis of the body politic and the curb on the government, have at all times been the horror of rulers: who therefore never spare pains, objections, difficulties, and promises, to stop the citizens from having them. When the citizens are greedy, cowardly, and pusillanimous, and love ease more than liberty, they do not long hold out against the redoubled efforts of the government; and thus, as the resisting force incessantly grows, the sovereign authority ends by disappearing, and most cities fall and perish before their time.
+
+But between the sovereign authority and arbitrary government there sometimes intervenes a mean power of which something must be said.

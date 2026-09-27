@@ -1,0 +1,21 @@
+---
+work: pascal-pensees
+section: "section-x-642"
+heading: "Section X, 642"
+order: 50
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 243
+---
+Isaiah, li. The Red Sea an image of the Redemption. *Ut sciatis quod filius hominis habet potestatem remittendi peccata, tibi dico: Surge.*[235] God, wishing to show that He could form a people holy with an invisible holiness, and fill them with an eternal glory, made visible things. As nature is an image of grace, He has done in the bounties of nature what He would do in those of grace, in order that we might judge that He could make the invisible, since He made the visible excellently.
+
+Therefore He saved this people from the deluge; He has raised them up from Abraham, redeemed them from their enemies, and set them at rest.
+
+The object of God was not to save them from the deluge, and raise up a whole people from Abraham, only in order to bring them into a rich land.
+
+And even grace is only the type of glory, for it is not the ultimate end. It has been symbolised by the law, and itself symbolises [*glory*]. But it is the type of it, and the origin or cause.
+
+The ordinary life of men is like that of the saints. They all seek their satisfaction, and differ only in the object in which they place it; they call those their enemies who hinder them, etc. God has then shown the power which He has of giving invisible blessings, by that which He has shown Himself to have over things visible.

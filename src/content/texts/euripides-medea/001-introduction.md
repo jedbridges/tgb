@@ -1,0 +1,60 @@
+---
+work: euripides-medea
+section: "introduction"
+heading: "Introduction"
+order: 1
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/35451"
+edition: "Gilbert Murray's translation, 1910"
+translator: "Gilbert Murray"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 2080
+---
+The *Medea*, in spite of its background of wonder and enchantment, is not a romantic play but a tragedy of character and situation. It deals, so to speak, not with the romance itself, but with the end of the romance, a thing which is so terribly often the reverse of romantic. For all but the very highest of romances are apt to have just one flaw somewhere, and in the story of Jason and Medea the flaw was of a fatal kind.
+
+The wildness and beauty of the Argo legend run through all Greek literature, from the mass of Corinthian lays older than our present Iliad, which later writers vaguely associate with the name of Eumêlus, to the Fourth Pythian Ode of Pindar and the beautiful Argonautica of Apollonius Rhodius. Our poet knows the wildness and the beauty; but it is not these qualities that he specially seeks. He takes them almost for granted, and pierces through them to the sheer tragedy that lies below.
+
+Jason, son of Aeson, King of Iôlcos, in Thessaly, began his life in exile. His uncle Pelias had seized his father's kingdom, and Jason was borne away to the mountains by night and given, wrapped in a purple robe, to Chiron, the Centaur. When he reached manhood he came down to Iôlcos to demand, as Pindar tells us, his ancestral honour, and stood in the market-place, a world-famous figure, one-sandalled, with his pard-skin, his two spears and his long hair, gentle and wild and fearless, as the Wise Beast had reared him. Pelias, cowed but loath to yield, promised to give up the kingdom if Jason would make his way to the unknown land of Colchis and perform a double quest. First, if I read Pindar aright, he must fetch back the soul of his kinsman Phrixus, who had died there far from home; and, secondly, find the fleece of the Golden Ram which Phrixus had sacrificed. Jason undertook the quest: gathered the most daring heroes from all parts of Hellas; built the first ship, Argo, and set to sea. After all manner of desperate adventures he reached the land of Aiêtês, king of the Colchians, and there hope failed him. By policy, by tact, by sheer courage he did all that man could do. But Aiêtês was both hostile and treacherous. The Argonauts were surrounded, and their destruction seemed only a question of days when, suddenly, unasked, and by the mercy of Heaven, Aiêtês' daughter, Mêdêa, an enchantress as well as a princess, fell in love with Jason. She helped him through all his trials; slew for him her own sleepless serpent, who guarded the fleece; deceived her father, and secured both the fleece and the soul of Phrixus. At the last moment it appeared that her brother, Absyrtus, was about to lay an ambush for Jason. She invited Absyrtus to her room, stabbed him dead, and fled with Jason over the seas. She had given up all, and expected in return a perfect love.
+
+And what of Jason? He could not possibly avoid taking Medea with him. He probably rather loved her. She formed at the least a brilliant addition to the glory of his enterprise. Not many heroes could produce a barbarian princess ready to leave all and follow them in blind trust. For of course, as every one knew without the telling in fifth-century Athens, no legal marriage was possible between a Greek and a barbarian from Colchis.
+
+All through the voyage home, a world-wide baffled voyage by the Ister and the Eridanus and the African Syrtes, Medea was still in her element, and proved a constant help and counsellor to the Argonauts. When they reached Jason's home, where Pelias was still king, things began to be different. An ordered and law-abiding Greek state was scarcely the place for the untamed Colchian. We only know the catastrophe. She saw with smothered rage how Pelias hated Jason and was bent on keeping the kingdom from him, and she determined to do her lover another act of splendid service. Making the most of her fame as an enchantress, she persuaded Pelias that he could, by a certain process, regain his youth. He eagerly caught at the hope. His daughters tried the process upon him, and Pelias died in agony. Surely Jason would be grateful now!
+
+The real result was what it was sure to be in a civilised country. Medea and her lover had to fly for their lives, and Jason was debarred for ever from succeeding to the throne of Iôlcos. Probably there was another result also in Jason's mind: the conclusion that at all costs he must somehow separate himself from this wild beast of a woman who was ruining his life. He directed their flight to Corinth, governed at the time by a ruler of some sort, whether "tyrant" or king, who was growing old and had an only daughter. Creon would naturally want a son-in-law to support and succeed him. And where in all Greece could he find one stronger or more famous than the chief of the Argonauts? If only Medea were not there! No doubt Jason owed her a great debt for her various services. Still, after all, he was not married to her. And a man must not be weak in such matters as these. Jason accepted the princess's hand, and when Medea became violent, found it difficult to be really angry with Creon for instantly condemning her to exile. At this point the tragedy begins.
+
+The *Medea* is one of the earliest of Euripides' works now preserved to us. And those of us who have in our time glowed at all with the religion of realism, will probably feel in it many of the qualities of youth. Not, of course, the more normal, sensuous, romantic youth, the youth of *Romeo and Juliet*; but another kind—crude, austere, passionate—the youth of the poet who is also a sceptic and a devotee of truth, who so hates the conventionally and falsely beautiful that he is apt to be unduly ascetic towards beauty itself. When a writer really deficient in poetry walks in this path, the result is purely disagreeable. It produces its best results when the writer, like Euripides or Tolstoy, is so possessed by an inward flame of poetry that it breaks out at the great moments and consumes the cramping theory that would hold it in. One can feel in the *Medea* that the natural and inevitable romance of the story is kept rigidly down. One word about Medea's ancient serpent, two or three references to the Clashing Rocks, one startling flash of light upon the real love of Jason's life, love for the ship Argo, these are almost all the concessions made to us by the merciless delineator of disaster into whose hands we are fallen. Jason is a middle-aged man, with much glory, indeed, and some illusions; but a man entirely set upon building up a great career, to whom love and all its works, though at times he has found them convenient, are for the most part only irrational and disturbing elements in a world which he can otherwise mould to his will. And yet, most cruel touch of all, one feels this man to be the real Jason. It is not that he has fallen from his heroic past. It is that he was really like this always. And so with Medea. It is not only that her beauty has begun to fade; not only that she is set in surroundings which vaguely belittle and weaken her, making her no more a bountiful princess, but only an ambiguous and much criticised foreigner. Her very devotion of love for Jason, now turned to hatred, shows itself to have been always of that somewhat rank and ugly sort to which such a change is natural.
+
+For concentrated dramatic quality and sheer intensity of passion few plays ever written can vie with the *Medea*. Yet it obtained only a third prize at its first production; and, in spite of its immense fame, there are not many scholars who would put it among their favourite tragedies. The comparative failure of the first production was perhaps due chiefly to the extreme originality of the play. The Athenians in 432 B.C. had not yet learnt to understand or tolerate such work as this, though it is likely enough that they fortified their unfavourable opinion by the sort of criticisms which we still find attributed to Aristotle and Dicæarchus.
+
+At the present time it is certainly not the newness of the subject: I do not think it is Aegeus, nor yet the dragon chariot, much less Medea's involuntary burst of tears in the second scene with Jason, that really produces the feeling of dissatisfaction with which many people must rise from this great play. It is rather the general scheme on which the drama is built. It is a scheme which occurs again and again in Euripides, a study of oppression and revenge. Such a subject in the hands of a more ordinary writer would probably take the form of a triumph of oppressed virtue. But Euripides gives us nothing so sympathetic, nothing so cheap and unreal. If oppression usually made people virtuous, the problems of the world would be very different from what they are. Euripides seems at times to hate the revenge of the oppressed almost as much as the original cruelty of the oppressor; or, to put the same fact in a different light, he seems deliberately to dwell upon the twofold evil of cruelty, that it not only causes pain to the victim, but actually by means of the pain makes him a worse man, so that when his turn of triumph comes, it is no longer a triumph of justice or a thing to make men rejoice. This is a grim lesson; taught often enough by history, though seldom by the fables of the poets.
+
+Seventeen years later than the *Medea* Euripides expressed this sentiment in a more positive way in the *Trojan Women*, where a depth of wrong borne without revenge becomes, or seems for the moment to become, a thing beautiful and glorious. But more plays are constructed like the *Medea*. The *Hecuba* begins with a noble and injured Queen, and ends with her hideous vengeance on her enemy and his innocent sons. In the *Orestes* all our hearts go out to the suffering and deserted prince, till we find at last that we have committed ourselves to the blood-thirst of a madman. In the *Electra*, the workers of the vengeance themselves repent.
+
+The dramatic effect of this kind of tragedy is curious. No one can call it undramatic or tame. Yet it is painfully unsatisfying. At the close of the *Medea* I actually find myself longing for a *deus ex machinâ*, for some being like Artemis in the *Hippolytus* or the good Dioscuri of the *Electra*, to speak a word of explanation or forgiveness, or at least leave some sound of music in our ears to drown that dreadful and insistent clamour of hate. The truth is that in this play Medea herself is the *dea ex machinâ*. The woman whom Jason and Creon intended simply to crush has been transformed by her injuries from an individual human being into a sort of living Curse. She is inspired with superhuman force. Her wrongs and her hate fill all the sky. And the judgment pronounced on Jason comes not from any disinterested or peace-making God, but from his own victim transfigured into a devil.
+
+From any such judgment there is an instant appeal to sane human sympathy. Jason has suffered more than enough. But that also is the way of the world. And the last word upon these tragic things is most often something not to be expressed by the sentences of even the wisest articulate judge, but only by the unspoken *lacrimæ rerum*.
+
+G. M.
+
+**Characters of the Play**
+
+Medea, *daughter of Aiêtês, King of Colchis*.
+
+Jason, *chief of the Argonauts; nephew of Pelias, King of Iôlcos in Thessaly*.
+
+Creon, *ruler of Corinth*.
+
+Aegeus, *King of Athens*.
+
+Nurse *of Medea*.
+
+Two Children *of Jason and Medea*.
+
+Attendant *on the children*.
+
+A Messenger.
+
+Chorus  
+Leader
+
+*The scene is laid in Corinth. The play was first acted when Pythodôrus was Archon, Olympiad 87, year* 1 (B.C. 431). *Euphorion was first, Sophocles second, Euripides third, with Medea, Philoctêtes, Dictys, and the Harvesters, a Satyr-play.*

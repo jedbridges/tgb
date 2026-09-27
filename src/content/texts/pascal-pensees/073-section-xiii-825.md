@@ -1,0 +1,51 @@
+---
+work: pascal-pensees
+section: "section-xiii-825"
+heading: "Section Xiii, 825"
+order: 73
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 424
+---
+*Reasons why we do not believe.*
+
+John xii, 37. *Cum autem tanta signa fecisset, non credebant in eum, ut sermo Isayæ impleretur. Excæcavit*, etc.
+
+*Hæc dixit Isaias, quando vidit gloriam ejus et locutus est de eo.*
+
+*Judæi signa petunt et Græci sapientiam quærunt, nos autem Jesum crucifixum. Sed plenum signis, sed plenum sapientia; vos autem Christum non crucifixum et religionem sine miraculis et sine sapientia.*[328]
+
+What makes us not believe in the true miracles, is want of love. John: *Sed vos non creditis, quia non estis ex ovibus.*[329] What makes us believe the false is want of love. II Thess. ii.
+
+The foundation of religion. It is the miracles. What then? Does God speak against miracles, against the foundations of the faith which we have in Him?
+
+If there is a God, faith in God must exist on earth. Now the miracles of Jesus Christ are not foretold by Antichrist, but the miracles of Antichrist are foretold by Jesus Christ. And so if Jesus Christ were not the Messiah, He would have indeed led into error. When Jesus Christ foretold the miracles of Antichrist, did He think of destroying faith in His own miracles?
+
+Moses foretold Jesus Christ, and bade to follow Him. Jesus Christ foretold Antichrist, and forbade to follow him.
+
+It was impossible that in the time of Moses men should keep their faith for Antichrist, who was unknown to them. But it is quite easy, in the time of Antichrist, to believe in Jesus Christ, already known.
+
+There is no reason for believing in Antichrist, which there is not for believing in Jesus Christ. But there are reasons for believing in Jesus Christ, which there are not for believing in the other.
+
+**Section Xiii, 826**
+
+Judges xiii, 23: "If the Lord were pleased to kill us, He would not have shewed us all these things."
+
+Hezekiah, Sennacherib.
+
+Jeremiah. Hananiah, the false prophet, dies in seven months.
+
+2 Macc. iii. The temple, ready for pillage, miraculously succoured.—2 Macc. xv.
+
+1 Kings xvii. The widow to Elijah, who had restored her son, "By this I know that thy words are true."
+
+1 Kings xviii. Elijah with the prophets of Baal.
+
+In the dispute concerning the true God and the truth of religion, there has never happened any miracle on the side of error, and not of truth.
+
+**Section Xiii, 827**
+
+*Opposition.*—Abel, Cain; Moses, the Magicians; Elijah, the false prophets: Jeremiah, Hananiah; Micaiah, the false prophets; Jesus Christ, the Pharisees; St. Paul, Bar-jesus; the Apostles, the Exorcists; Christians, unbelievers; Catholics, heretics; Elijah, Enoch, Antichrist.

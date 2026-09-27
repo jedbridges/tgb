@@ -11,3 +11,6 @@ npm-debug.log*
 .preview/
 content/worklist.json
 .cache/
+
+# Retrieval corpus written by scripts/export-corpus.ts
+corpus/

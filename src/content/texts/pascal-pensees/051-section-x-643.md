@@ -1,0 +1,141 @@
+---
+work: pascal-pensees
+section: "section-x-643"
+heading: "Section X, 643"
+order: 51
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/18269"
+edition: "W. F. Trotter's translation, 1904"
+translator: "W. F. Trotter"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 1576
+---
+*Types.*—God, wishing to form for Himself an holy people, whom He should separate from all other nations, whom He should deliver from their enemies, and should put into a place of rest, has promised to do so, and has foretold by His prophets the time and the manner of His coming. And yet, to confirm the hope of His elect, He has made them see in it an image through all time, without leaving them devoid of assurances of His power and of His will to save them. For, at the creation of man, Adam was the witness, and guardian of the promise of a Saviour, who should be born of woman, when men were still so near the creation that they could not have forgotten their creation and their fall. When those who had seen Adam were no longer in the world, God sent Noah whom He saved, and drowned the whole earth by a miracle which sufficiently indicated the power which He had to save the world, and the will which He had to do so, and to raise up from the seed of woman Him whom He had promised. This miracle was enough to confirm the hope of men.
+
+The memory of the deluge being so fresh among men, while Noah was still alive, God made promises to Abraham, and, while Shem was still living, sent Moses, etc....
+
+**Section X, 644**
+
+*Types.*—God, willing to deprive His own of perishable blessings, created the Jewish people in order to show that this was not owing to lack of power.
+
+**Section X, 645**
+
+The Synagogue did not perish, because it was a type. But because it was only a type, it fell into servitude. The type existed till the truth came, in order that the Church should be always visible, either in the sign which promised it, or in substance.
+
+**Section X, 646**
+
+That the law was figurative.
+
+**Section X, 647**
+
+Two errors: 1. To take everything literally. 2. To take everything spiritually.
+
+**Section X, 648**
+
+To speak against too greatly figurative language.
+
+**Section X, 649**
+
+There are some types clear and demonstrative, but others which seem somewhat far-fetched, and which convince only those who are already persuaded. These are like the Apocalyptics. But the difference is that they have none which are certain, so that nothing is so unjust as to claim that theirs are as well founded as some of ours; for they have none so demonstrative as some of ours. The comparison is unfair. We must not put on the same level, and confound things, because they seem to agree in one point, while they are so different in another. The clearness in divine things requires us to revere the obscurities in them.
+
+[It is like men, who employ a certain obscure language among themselves. Those who should not understand it, would understand only a foolish meaning.]
+
+**Section X, 650**
+
+*Extravagances of the Apocalyptics, Preadamites, Millenarians, etc.*—He who would base extravagant opinions on Scripture, will, for example, base them on this. It is said that "this generation shall not pass till all these things be fulfilled."[236] Upon that I will say that after that generation will come another generation, and so on ever in succession.
+
+Solomon and the King are spoken of in the second book of Chronicles, as if they were two different persons. I will say that they were two.
+
+**Section X, 651**
+
+*Particular Types.*—A double law, double tables of the law, a double temple, a double captivity.
+
+**Section X, 652**
+
+*Types.*—The prophets prophesied by symbols of a girdle, a beard and burnt hair, etc.
+
+**Section X, 653**
+
+Difference between dinner and supper.[237]
+
+In God the word does not differ from the intention, for He is true; nor the word from the effect, for He is powerful; nor the means from the effect, for He is wise. Bern., *Ult. Sermo in Missam*.
+
+Augustine, *De Civit. Dei*, v, 10. This rule is general. God can do everything, except those things, which if He could do, He would not be almighty, as dying, being deceived, lying, etc.
+
+Several Evangelists for the confirmation of the truth; their difference useful.
+
+The Eucharist after the Lord's Supper. Truth after the type.
+
+The ruin of Jerusalem, a type of the ruin of the world, forty years after the death of Jesus. "I know not," as a man, or as an ambassador (Mark xiii, 32). (Matthew xxiv, 36.)
+
+Jesus condemned by the Jews and the Gentiles.
+
+The Jews and the Gentiles typified by the two sons. Aug., *De Civ.*, xx, 29.
+
+**Section X, 654**
+
+The six ages, the six Fathers of the six ages, the six wonders at the beginning of the six ages, the six mornings at the beginning of the six ages.[238]
+
+**Section X, 655**
+
+Adam *forma futuri*.[239] The six days to form the one, the six ages to form the other. The six days, which Moses represents for the formation of Adam, are only the picture of the six ages to form Jesus Christ and the Church. If Adam had not sinned, and Jesus Christ had not come, there had been only one covenant, only one age of men, and the creation would have been represented as accomplished at one single time.
+
+**Section X, 656**
+
+*Types.*—The Jewish and Egyptian peoples were plainly foretold by the two individuals whom Moses met; the Egyptian beating the Jew, Moses avenging him and killing the Egyptian, and the Jew being ungrateful.
+
+**Section X, 657**
+
+The symbols of the Gospel for the state of the sick soul are sick bodies; but because one body cannot be sick enough to express it well, several have been needed. Thus there are the deaf, the dumb, the blind, the paralytic, the dead Lazarus, the possessed. All this crowd is in the sick soul.
+
+**Section X, 658**
+
+*Types.*—To show that the Old Testament is only figurative, and that the prophets understood by temporal blessings other blessings, this is the proof:
+
+First, that this would be unworthy of God.
+
+Secondly, that their discourses express very clearly the promise of temporal blessings, and that they say nevertheless that their discourses are obscure, and that their meaning will not be understood. Whence it appears that this secret meaning was not that which they openly expressed, and that consequently they meant to speak of other sacrifices, of another deliverer, etc. They say that they will be understood only in the fullness of time (Jer. xxx, *ult.*).
+
+The third proof is that their discourses are contradictory, and neutralise each other; so that if we think that they did not mean by the words "law" and "sacrifice" anything else than that of Moses, there is a plain and gross contradiction. Therefore they meant something else, sometimes contradicting themselves in the same chapter. Now, to understand the meaning of an author ...
+
+**Section X, 659**
+
+Lust has become natural to us, and has made our second nature. Thus there are two natures in us—the one good, the other bad. Where is God? Where you are not, and the kingdom of God is within you. The Rabbis.
+
+**Section X, 660**
+
+Penitence, alone of all these mysteries, has been manifestly declared to the Jews, and by Saint John, the Forerunner; and then the other mysteries; to indicate that in each man, as in the entire world, this order must be observed.
+
+**Section X, 661**
+
+The carnal Jews understood neither the greatness nor the humiliation of the Messiah foretold in their prophecies. They misunderstood Him in His foretold greatness, as when He said that the Messiah should be lord of David, though his son, and that He was before Abraham, who had seen Him. They did not believe Him so great as to be eternal, and they likewise misunderstood Him in His humiliation and in His death. "The Messiah," said they, "abideth for ever, and this man says that he shall die."[240] Therefore they believed Him neither mortal nor eternal; they only sought in Him for a carnal greatness.
+
+**Section X, 662**
+
+*Typical.*—Nothing is so like charity as covetousness, and nothing is so opposed to it. Thus the Jews, full of possessions which flattered their covetousness, were very like Christians, and very contrary. And by this means they had the two qualities which it was necessary they should have, to be very like the Messiah to typify Him, and very contrary not to be suspected witnesses.
+
+**Section X, 663**
+
+*Typical.*—God made use of the lust of the Jews to make them minister to Jesus Christ, [who brought the remedy for their lust].
+
+**Section X, 664**
+
+Charity is not a figurative precept. It is dreadful to say that Jesus Christ, who came to take away types in order to establish the truth, came only to establish the type of charity, in order to take away the existing reality which was there before.
+
+"If the light be darkness, how great is that darkness!"[241]
+
+**Section X, 665**
+
+Fascination. *Somnum suum.[242] Figura hujus mundi.*[243]
+
+The Eucharist. *Comedes panem* tuum.[244] *Panem* nostrum.
+
+*Inimici Dei terram lingent.*[245] Sinners lick the dust, that is to say, love earthly pleasures.
+
+The Old Testament contained the types of future joy, and the New contains the means of arriving at it. The types were of joy; the means of penitence; and nevertheless the Paschal Lamb was eaten with bitter herbs, *cum amaritudinibus*.[246]
+
+*Singularis sum ego donec transeam.*[247]—Jesus Christ before His death was almost the only martyr.
+
+**Section X, 666**
+
+*Typical.*—The expressions, sword, shield. *Potentissime.*

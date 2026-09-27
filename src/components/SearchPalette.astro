@@ -199,7 +199,9 @@ const hints = [
          have little to say, so "Achilles" leads with the Iliad and not with Book XXII. */
       let hits = await search(q, { limit: 30, filters: { type: { not: 'Passage' } } });
       if (my !== seq) return;
-      if (hits && hits.filter((h) => h.type === 'Book' || h.type === 'Theme').length < 3) {
+      /* Passages join when the guides have little to say, or when the query is a phrase,
+         which is what someone hunting a line types. */
+      if (hits && (hits.filter((h) => h.type === 'Book' || h.type === 'Theme').length < 3 || q.trim().split(/\s+/).length >= 2)) {
         const passages = await search(q, { limit: 4, parse: false, filters: { type: 'Passage' } });
         if (my !== seq) return;
         if (passages?.length) hits = [...hits, ...passages];

@@ -1,0 +1,16 @@
+---
+work: hobbes-leviathan
+section: "ix-of-the-several-subjects-of-knowledge"
+heading: "IX: Of the Several Subjects of Knowledge"
+order: 9
+source: standardebooks
+sourceUrl: "https://standardebooks.org/ebooks/thomas-hobbes/leviathan"
+edition: "The 1651 text"
+licence: "Public domain in the United States; the Standard Ebooks edition is released under CC0."
+words: 228
+---
+There are of “knowledge” two kinds; whereof one is “knowledge of fact”: the other “knowledge of the consequence of one affirmation to another.” The former is nothing else but sense and memory, and is “absolute knowledge”; as when we see a fact doing, or remember it done: and this is the knowledge required in a witness. The latter is called “science,” and is “conditional”; as when we know that, “if the figure shown be a circle, then any straight line through the centre shall divide it into two equal parts.” And this is the knowledge required in a philosopher, that is to say, of him that pretends to reasoning.
+
+The register of “knowledge of fact” is called “history.” Whereof there be two sorts: one called “natural history”; which is the history of such facts, or effects of Nature, as have no dependence on man’s “will”; such as are the histories of “metals,” “plants,” “animals,” “regions,” and the like. The other is “civil history”; which is the history of the voluntary actions of men in commonwealths.
+
+The registers of science, are such “books” as contain the “demonstrations” of consequences of one affirmation to another; and are commonly called “books of philosophy”; whereof the sorts are many, according to the diversity of the matter; and may be divided in such manner as I have divided them in the following table.
