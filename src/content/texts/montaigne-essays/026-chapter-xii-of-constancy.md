@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xii-of-constancy"
-heading: "Chapter Xii: : of Constancy"
+heading: "Chapter XII: : of Constancy"
 order: 26
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

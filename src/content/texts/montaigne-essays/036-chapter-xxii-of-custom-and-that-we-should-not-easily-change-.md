@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxii-of-custom-and-that-we-should-not-easily-change-"
-heading: "Chapter Xxii: : of Custom, and That We Should Not Easily Change a Law Received"
+heading: "Chapter XXII: : of Custom, and That We Should Not Easily Change a Law Received"
 order: 36
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

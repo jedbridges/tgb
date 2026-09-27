@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-iv-to-morrows-a-new-day"
-heading: "Chapter Iv: : To-morrow’s a New Day"
+heading: "Chapter IV: : To-morrow’s a New Day"
 order: 74
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

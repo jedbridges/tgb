@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-ii-of-sorrow"
-heading: "Chapter Ii: : of Sorrow"
+heading: "Chapter II: : of Sorrow"
 order: 16
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

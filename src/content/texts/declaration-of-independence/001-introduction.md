@@ -7,7 +7,7 @@ source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1"
 edition: "The text of 1776"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 438
+words: 436
 ---
 *Written by Michael S. Hart for the official re-release:*
 
@@ -22,8 +22,6 @@ The resulting document has several misspellings removed from those parchment "fa
 [JT, Apr 2005: "Brittish" is spelled as in the original.]
 
 [RO, Aug 2025: MH's original justified text widths are restored as closely as possible in the introduction. Minor text alterations were made to do so.]
-
-**Transcribers’ Notes**
 
 NOTE: This file contains the original contents of the very first eBook in the Project Gutenberg collection, the Declaration of Independence. This file previously contained a compilation of etexts of #1 and etext #2. The historical variations of etext #1 are included in the "old" subdirectory to be accessed under the "More Files" listing in the landing page for this eBook. No edits or changes have been made to them.
 

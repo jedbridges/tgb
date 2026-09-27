@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xi-726"
-heading: "Section Xi, 726"
+heading: "Section XI, 726"
 order: 66
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -60,17 +60,17 @@ Calling of the Gentiles by Jesus Christ. Is. lii, 15; lv, 5; lx, etc. Ps. lxxxi.
 
 Hosea i, 9: "Ye are not my people, and I will not be your God, when ye are multiplied after the dispersion. In the places where it was said, Ye are not my people, I will call them my people."
 
-**Section Xi, 727**
+**Section XI, 727**
 
 It was not lawful to sacrifice outside of Jerusalem, which was the place that the Lord had chosen, nor even to eat the tithes elsewhere. Deut. xii, 5, etc.; Deut. xiv, 23, etc.; xv, 20; xvi, 2, 7, 11, 15.
 
 Hosea foretold that they should be without a king, without a prince, without a sacrifice, and without an idol; and this prophecy is now fulfilled, as they cannot make a lawful sacrifice out of Jerusalem.
 
-**Section Xi, 728**
+**Section XI, 728**
 
 *Predictions.*—It was foretold that, in the time of the Messiah, He should come to establish a new covenant, which should make them forget the escape from Egypt (Jer. xxiii, 5; Is. xliii, 10); that He should place His law not in externals, but in the heart; that He should put His fear, which had only been from without, in the midst of the heart. Who does not see the Christian law in all this?
 
-**Section Xi, 729**
+**Section XI, 729**
 
 ... That then idolatry would be overthrown; that this Messiah would cast down all idols, and bring men into the worship of the true God.
 
@@ -78,13 +78,13 @@ That the temples of the idols would be cast down, and that among all nations, an
 
 That He would be king of the Jews and Gentiles. And we see this king of the Jews and Gentiles oppressed by both, who conspire His death; and ruler of both, destroying the worship of Moses in Jerusalem, which was its centre, where He made His first Church; and also the worship of idols in Rome, the centre of it, where He made His chief Church.
 
-**Section Xi, 730**
+**Section XI, 730**
 
 *Prophecies.*—That Jesus Christ will sit on the right hand, till God has subdued His enemies.
 
 Therefore He will not subdue them Himself.
 
-**Section Xi, 731**
+**Section XI, 731**
 
 "... Then they shall teach no more every man his neighbour, saying, Here is the Lord, *for God shall make Himself known to all.*"[273]
 
@@ -92,23 +92,23 @@ Therefore He will not subdue them Himself.
 
 All that is the same thing. To prophesy is to speak of God, not from outward proofs, but from an inward and immediate feeling.
 
-**Section Xi, 732**
+**Section XI, 732**
 
 That He would teach men the perfect way.
 
 And there has never come, before Him nor after Him, any man who has taught anything divine approaching to this.
 
-**Section Xi, 733**
+**Section XI, 733**
 
 ... That Jesus Christ would be small in His beginning, and would then increase. The little stone of Daniel.
 
 If I had in no wise heard of the Messiah, nevertheless, after such wonderful predictions of the course of the world which I see fulfilled, I see that He is divine. And if I knew that these same books foretold a Messiah, I should be sure that He would come; and seeing that they place His time before the destruction of the second temple, I should say that He had come.
 
-**Section Xi, 734**
+**Section XI, 734**
 
 *Prophecies.*—That the Jews would reject Jesus Christ, and would be rejected of God, for this reason, that the chosen vine brought forth only wild grapes. That the chosen people would be fruitless, ungrateful, and unbelieving, *populum non credentem et contradicentem*.[275] That God would strike them with blindness, and in full noon they would grope like the blind; and that a forerunner would go before Him.
 
-**Section Xi, 735**
+**Section XI, 735**
 
 *Transfixerunt.* Zech. xii, 10.
 

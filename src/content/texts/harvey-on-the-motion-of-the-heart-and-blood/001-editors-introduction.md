@@ -8,9 +8,29 @@ sourceUrl: "https://www.gutenberg.org/ebooks/67065"
 edition: "Robert Willis's translation, 1847"
 translator: "Robert Willis"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 5694
+words: 5782
 ---
 **The Circulation of the Blood**
+
+WITH AN INTRODUCTION BY
+
+E. A. PARKYN
+
+THE PUBLISHERS OF *EVERYMAN’S LIBRARY* WILL BE PLEASED TO SEND FREELY TO ALL APPLICANTS A LIST OF THE PUBLISHED AND PROJECTED VOLUMES TO BE COMPRISED UNDER THE FOLLOWING TWELVE HEADINGS:
+
+ TRAVEL ❦ SCIENCE ❦ FICTION
+ THEOLOGY & PHILOSOPHY
+ HISTORY ❦ CLASSICAL
+ FOR YOUNG PEOPLE
+ ESSAYS ❦ ORATORY
+ POETRY & DRAMA
+ BIOGRAPHY
+ ROMANCE
+
+IN TWO STYLES OF BINDING, CLOTH, FLAT BACK, COLOURED TOP, AND LEATHER, ROUND CORNERS, GILT TOP
+
+London: J. M. DENT & CO.
+ New York: E. P. DUTTON & CO.
 
 PRINTED BY HAZELL, WATSON AND VINEY, LD., LONDON AND AYLESBURY
 

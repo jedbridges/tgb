@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiii-825"
-heading: "Section Xiii, 825"
+heading: "Section XIII, 825"
 order: 73
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -30,7 +30,7 @@ It was impossible that in the time of Moses men should keep their faith for Anti
 
 There is no reason for believing in Antichrist, which there is not for believing in Jesus Christ. But there are reasons for believing in Jesus Christ, which there are not for believing in the other.
 
-**Section Xiii, 826**
+**Section XIII, 826**
 
 Judges xiii, 23: "If the Lord were pleased to kill us, He would not have shewed us all these things."
 
@@ -46,6 +46,6 @@ Jeremiah. Hananiah, the false prophet, dies in seven months.
 
 In the dispute concerning the true God and the truth of religion, there has never happened any miracle on the side of error, and not of truth.
 
-**Section Xiii, 827**
+**Section XIII, 827**
 
 *Opposition.*—Abel, Cain; Moses, the Magicians; Elijah, the false prophets: Jeremiah, Hananiah; Micaiah, the false prophets; Jesus Christ, the Pharisees; St. Paul, Bar-jesus; the Apostles, the Exorcists; Christians, unbelievers; Catholics, heretics; Elijah, Enoch, Antichrist.

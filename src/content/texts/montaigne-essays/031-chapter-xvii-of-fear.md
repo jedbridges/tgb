@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xvii-of-fear"
-heading: "Chapter Xvii: : of Fear"
+heading: "Chapter XVII: : of Fear"
 order: 31
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

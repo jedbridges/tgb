@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxiv-observation-on-the-means-to-carry-on-a-war-acc"
-heading: "Chapter Xxxiv: : Observation on the Means to Carry on a War According to Julius Caesar"
+heading: "Chapter XXXIV: : Observation on the Means to Carry on a War According to Julius Caesar"
 order: 104
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

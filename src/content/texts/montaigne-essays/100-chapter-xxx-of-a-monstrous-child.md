@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxx-of-a-monstrous-child"
-heading: "Chapter Xxx: : of a Monstrous Child"
+heading: "Chapter XXX: : of a Monstrous Child"
 order: 100
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-iii-of-three-commerces"
-heading: "Chapter Iii: : of Three Commerces"
+heading: "Chapter III: : of Three Commerces"
 order: 110
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

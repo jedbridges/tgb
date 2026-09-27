@@ -8,9 +8,11 @@ sourceUrl: "https://www.gutenberg.org/ebooks/2707"
 edition: "G. C. Macaulay's translation, 1890, Books I to IV"
 translator: "G. C. Macaulay"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 989
+words: 991
 ---
 **In Two Volumes Vol. I**
+
+PREPARER'S NOTE
 
 This text was prepared from an edition dated 1890, published by  
 MacMillan and Co., London and New York.

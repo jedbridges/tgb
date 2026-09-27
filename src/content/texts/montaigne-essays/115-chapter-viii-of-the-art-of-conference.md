@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-viii-of-the-art-of-conference"
-heading: "Chapter Viii: : of the Art of Conference"
+heading: "Chapter VIII: : of the Art of Conference"
 order: 115
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

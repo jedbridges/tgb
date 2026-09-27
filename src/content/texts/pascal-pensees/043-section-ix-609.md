@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ix-609"
-heading: "Section Ix, 609"
+heading: "Section IX, 609"
 order: 43
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -74,13 +74,13 @@ That the Jews should be without prophets (Amos), without a king, without princes
 
 That the Jews should nevertheless always remain a people. *Jer.* xxxi, 36.
 
-**Section Ix, 610**
+**Section IX, 610**
 
 *Republic.*—The Christian republic—and even the Jewish—has only had God for ruler, as Philo the Jew notices, *On Monarchy*.
 
 When they fought, it was for God only; their chief hope was in God only; they considered their towns as belonging to God only, and kept them for God. 1 *Chron.* xix, 13.
 
-**Section Ix, 611**
+**Section IX, 611**
 
 *Gen.* xvii, 7. *Statuam pactum meum inter me et te fœdere sempiterno ... ut sim Deus tuus ...*
 

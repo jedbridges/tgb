@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxvii-of-friendship"
-heading: "Chapter Xxvii: : of Friendship"
+heading: "Chapter XXVII: : of Friendship"
 order: 41
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xi-of-prognostications"
-heading: "Chapter Xi: : of Prognostications"
+heading: "Chapter XI: : of Prognostications"
 order: 25
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

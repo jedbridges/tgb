@@ -1,7 +1,7 @@
 ---
 work: kant-critique-of-pure-reason
 section: "transcendental-dialectic-book-ii-of-the-dialectical-procedur"
-heading: "Transcendental Dialectic: Book Ii: of the Dialectical Procedure of Pure Reason"
+heading: "Transcendental Dialectic: Book II: of the Dialectical Procedure of Pure Reason"
 order: 46
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4280"

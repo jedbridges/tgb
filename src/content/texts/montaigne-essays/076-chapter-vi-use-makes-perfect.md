@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-vi-use-makes-perfect"
-heading: "Chapter Vi: : Use Makes Perfect"
+heading: "Chapter VI: : Use Makes Perfect"
 order: 76
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-vii-498"
-heading: "Section Vii, 498"
+heading: "Section VII, 498"
 order: 35
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -12,7 +12,7 @@ words: 1158
 ---
 It is true there is difficulty in entering into godliness. But this difficulty does not arise from the religion which begins in us, but from the irreligion which is still there. If our senses were not opposed to penitence, and if our corruption were not opposed to the purity of God, there would be nothing in this painful to us. We suffer only in proportion as the vice which is natural to us resists supernatural grace. Our heart feels torn asunder between these opposed efforts. But it would be very unfair to impute this violence to God, who is drawing us on, instead of to the world, which is holding us back. It is as a child, which a mother tears from the arms of robbers, in the pain it suffers, should love the loving and legitimate violence of her who procures its liberty, and detest only the impetuous and tyrannical violence of those who detain it unjustly. The most cruel war which God can make with men in this life is to leave them without that war which He came to bring. "I came to send war,"[186] He says, "and to teach them of this war. I came to bring fire and the sword."[187] Before Him the world lived in this false peace.
 
-**Section Vii, 499**
+**Section VII, 499**
 
 *External works.*—There is nothing so perilous as what pleases God and man. For those states, which please God and man, have one property which pleases God, and another which pleases men; as the greatness of Saint Teresa. What pleased God was her deep humility in the midst of her revelations; what pleased men was her light. And so we torment ourselves to imitate her discourses, thinking to imitate her conditions, and not so much to love what God loves, and to put ourselves in the state which God loves.
 
@@ -20,29 +20,29 @@ It is better not to fast, and thereby humbled, than to fast and be self-satisfie
 
 What use will memory be to me, if it can alike hurt and help me, and all depends upon the blessing of God, who gives only to things done for Him, according to His rules and in His ways, the manner being as important as the thing, and perhaps more; since God can bring forth good out of evil, and without God we bring forth evil out of good?
 
-**Section Vii, 500**
+**Section VII, 500**
 
 The meaning of the words, good and evil.
 
-**Section Vii, 501**
+**Section VII, 501**
 
 First step: to be blamed for doing evil, and praised for doing good.
 
 Second step: to be neither praised, nor blamed.
 
-**Section Vii, 502**
+**Section VII, 502**
 
 Abraham[189] took nothing for himself, but only for his servants. So the righteous man takes for himself nothing of the world, nor the applause of the world, but only for his passions, which he uses as their master, saying to the one, "Go," and to another, "Come." *Sub te erit appetitus tuus.*[190] The passions thus subdued are virtues. Even God attributes to Himself avarice, jealousy, anger; and these are virtues as well as kindness, pity, constancy, which are also passions. We must employ them as slaves, and, leaving to them their food, prevent the soul from taking any of it. For, when the passions become masters, they are vices; and they give their nutriment to the soul, and the soul nourishes itself upon it, and is poisoned.
 
-**Section Vii, 503**
+**Section VII, 503**
 
 Philosophers have consecrated the vices by placing them in God Himself. Christians have consecrated the virtues.
 
-**Section Vii, 504**
+**Section VII, 504**
 
 The just man acts by faith in the least things; when he reproves his servants, he desires their conversion by the Spirit of God, and prays God to correct them; and he expects as much from God as from his own reproofs, and prays God to bless his corrections. And so in all his other actions he proceeds with the Spirit of God; and his actions deceive us by reason of the ... or suspension of the Spirit of God in him; and he repents in his affliction.
 
-**Section Vii, 505**
+**Section VII, 505**
 
 All things can be deadly to us, even the things made to serve us; as in nature walls can kill us, and stairs can kill us, if we do not walk circumspectly.
 
@@ -50,33 +50,33 @@ The least movement affects all nature; the entire sea changes because of a rock.
 
 In each action we must look beyond the action at our past, present, and future state, and at others whom it affects, and see the relations of all those things. And then we shall be very cautious.
 
-**Section Vii, 506**
+**Section VII, 506**
 
 Let God not impute to us our sins, that is to say, all the consequences and results of our sins, which are dreadful, even those of the smallest faults, if we wish to follow them out mercilessly!
 
-**Section Vii, 507**
+**Section VII, 507**
 
 The spirit of grace; the hardness of the heart; external circumstances.
 
-**Section Vii, 508**
+**Section VII, 508**
 
 Grace is indeed needed to turn a man into a saint; and he who doubts it does not know what a saint or a man is.
 
-**Section Vii, 509**
+**Section VII, 509**
 
 *Philosophers.*—A fine thing to cry to a man who does not know himself, that he should come of himself to God! And a fine thing to say so to a man who does know himself!
 
-**Section Vii, 510**
+**Section VII, 510**
 
 Man is not worthy of God, but he is not incapable of being made worthy.
 
 It is unworthy of God to unite Himself to wretched man; but it is not unworthy of God to pull him out of his misery.
 
-**Section Vii, 511**
+**Section VII, 511**
 
 If we would say that man is too insignificant to deserve communion with God, we must indeed be very great to judge of it.
 
-**Section Vii, 512**
+**Section VII, 512**
 
 It is, in peculiar phraseology, wholly the body of Jesus Christ, but it cannot be said to be the whole body of Jesus Christ.[191] The union of two things without change does not enable us to say that one becomes the other; the soul thus being united to the body, the fire to the timber, without change. But change is necessary to make the form of the one become the form of the other; thus the union of the Word to man. Because my body without my soul would not make the body of a man; therefore my soul united to any matter whatsoever will make my body. It does not distinguish the necessary condition from the sufficient condition; the union is necessary, but not sufficient. The left arm is not the right.
 

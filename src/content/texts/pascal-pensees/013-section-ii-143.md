@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ii-143"
-heading: "Section Ii, 143"
+heading: "Section II, 143"
 order: 13
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -14,74 +14,74 @@ words: 1178
 
 How hollow and full of ribaldry is the heart of man!
 
-**Section Ii, 144**
+**Section II, 144**
 
 I spent a long time in the study of the abstract sciences, and was disheartened by the small number of fellow-students in them. When I commenced the study of man, I saw that these abstract sciences are not suited to man, and that I was wandering farther from my own state in examining them, than others in not knowing them. I pardoned their little knowledge; but I thought at least to find many companions in the study of man, and that it was the true study which is suited to him. I have been deceived; still fewer study it than geometry. It is only from the want of knowing how to study this that we seek the other studies. But is it not that even here is not the knowledge which man should have, and that for the purpose of happiness it is better for him not to know himself?
 
-**Section Ii, 145**
+**Section II, 145**
 
 [One thought alone occupies us; we cannot think of two things at the same time. This is lucky for us according to the world, not according to God.]
 
-**Section Ii, 146**
+**Section II, 146**
 
 Man is obviously made to think. It is his whole dignity and his whole merit; and his whole duty is to think as he ought. Now, the order of thought is to begin with self, and with its Author and its end.
 
 Now, of what does the world think? Never of this, but of dancing, playing the lute, singing, making verses, running at the ring, etc., fighting, making oneself king, without thinking what it is to be a king and what to be a man.
 
-**Section Ii, 147**
+**Section II, 147**
 
 We do not content ourselves with the life we have in ourselves and in our own being; we desire to live an imaginary life in the mind of others, and for this purpose we endeavour to shine. We labour unceasingly to adorn and preserve this imaginary existence, and neglect the real. And if we possess calmness, or generosity, or truthfulness, we are eager to make it known, so as to attach these virtues to that imaginary existence. We would rather separate them from ourselves to join them to it; and we would willingly be cowards in order to acquire the reputation of being brave. A great proof of the nothingness of our being, not to be satisfied with the one without the other, and to renounce the one for the other! For he would be infamous who would not die to preserve his honour.
 
-**Section Ii, 148**
+**Section II, 148**
 
 We are so presumptuous that we would wish to be known by all the world, even by people who shall come after, when we shall be no more; and we are so vain that the esteem of five or six neighbours delights and contents us.
 
-**Section Ii, 149**
+**Section II, 149**
 
 We do not trouble ourselves about being esteemed in the towns through which we pass. But if we are to remain a little while there, we are so concerned. How long is necessary? A time commensurate with our vain and paltry life.
 
-**Section Ii, 150**
+**Section II, 150**
 
 Vanity is so anchored in the heart of man that a soldier, a soldier's servant, a cook, a porter brags, and wishes to have his admirers. Even philosophers wish for them. Those who write against it want to have the glory of having written well;[72] and those who read it desire the glory of having read it. I who write this have perhaps this desire, and perhaps those who will read it ...
 
-**Section Ii, 151**
+**Section II, 151**
 
 *Glory.*—Admiration spoils all from infancy. Ah! How well said! Ah! How well done! How well-behaved he is! etc.
 
 The children of Port-Royal, who do not receive this stimulus of envy and glory, fall into carelessness.
 
-**Section Ii, 152**
+**Section II, 152**
 
 *Pride.*—Curiosity is only vanity. Most frequently we wish to know but to talk. Otherwise we would not take a sea voyage in order never to talk of it, and for the sole pleasure of seeing without hope of ever communicating it.
 
-**Section Ii, 153**
+**Section II, 153**
 
 *Of the desire of being esteemed by those with whom we are.*—Pride takes such natural possession of us in the midst of our woes, errors, etc. We even lose our life with joy, provided people talk of it.
 
 Vanity: play, hunting, visiting, false shame, a lasting name.
 
-**Section Ii, 154**
+**Section II, 154**
 
 [I have no friends] to your advantage].
 
-**Section Ii, 155**
+**Section II, 155**
 
 A true friend is so great an advantage, even for the greatest lords, in order that he may speak well of them, and back them in their absence, that they should do all to have one. But they should choose well; for, if they spend all their efforts in the interests of fools, it will be of no use, however well these may speak of them; and these will not even speak well of them if they find themselves on the weakest side, for they have no influence; and thus they will speak ill of them in company.
 
-**Section Ii, 156**
+**Section II, 156**
 
 *Ferox gens, nullam esse vitam sine armis rati.*[73]—They prefer death to peace; others prefer death to war.
 
 Every opinion may be held preferable to life, the love of which is so strong and so natural.[74]
 
-**Section Ii, 157**
+**Section II, 157**
 
 Contradiction: contempt for our existence, to die for nothing, hatred of our existence.
 
-**Section Ii, 158**
+**Section II, 158**
 
 *Pursuits.*—The charm of fame is so great, that we like every object to which it is attached, even death.
 
-**Section Ii, 159**
+**Section II, 159**
 
 Noble deeds are most estimable when hidden. When I see some of these in history (as p. 184)[75], they please me greatly. But after all they have not been quite hidden, since they have been known; and though people have done what they could to hide them, the little publication of them spoils all, for what was best in them was the wish to hide them.

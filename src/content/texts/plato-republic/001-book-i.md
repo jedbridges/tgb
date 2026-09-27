@@ -8,8 +8,10 @@ sourceUrl: "https://www.gutenberg.org/ebooks/1497"
 edition: "Benjamin Jowett's translation, 1871"
 translator: "Benjamin Jowett"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 12380
+words: 12382
 ---
+**The Republic**
+
 **Persons of the Dialogue**
 
 Socrates, who is the narrator.

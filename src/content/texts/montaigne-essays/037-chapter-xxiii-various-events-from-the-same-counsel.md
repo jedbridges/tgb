@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxiii-various-events-from-the-same-counsel"
-heading: "Chapter Xxiii: : Various Events from the Same Counsel"
+heading: "Chapter XXIII: : Various Events from the Same Counsel"
 order: 37
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

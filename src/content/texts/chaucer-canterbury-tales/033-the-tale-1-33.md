@@ -1,106 +1,142 @@
 ---
 work: chaucer-canterbury-tales
 section: "the-tale-1-33"
-heading: "The Tale. <1>"
+heading: "The Tale <1>"
 order: 33
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2383"
 edition: "The Middle English text in D. Laing Purves's edition, 1870"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 2282
+words: 1957
 ---
-O Lord our Lord! thy name how marvellous Is in this large world y-spread! <2> (quoth she) For not only thy laude* precious *praise Performed is by men of high degree, But by the mouth of children thy bounte* *goodness Performed is, for on the breast sucking Sometimes showe they thy herying.* <3> *glory
+The First Fit* *part
 
-Wherefore in laud, as I best can or may Of thee, and of the white lily flow’r Which that thee bare, and is a maid alway, To tell a story I will do my labour; Not that I may increase her honour, For she herselven is honour and root Of bounte, next her son, and soules’ boot.* *help
+Listen, lordings, in good intent, And I will tell you verrament* *truly Of mirth and of solas,* *delight, solace All of a knight was fair and gent,* *gentle In battle and in tournament, His name was Sir Thopas.
 
-O mother maid, O maid and mother free!* *bounteous O bush unburnt, burning in Moses’ sight, That ravished’st down from the deity, Through thy humbless, the ghost that in thee light; <4> Of whose virtue, when he thine hearte light,* *lightened, gladdened Conceived was the Father’s sapience; Help me to tell it to thy reverence.
+Y-born he was in far country, In Flanders, all beyond the sea, At Popering <2> in the place; His father was a man full free, And lord he was of that country, As it was Godde’s grace. <3>
 
-Lady! thy bounty, thy magnificence, Thy virtue, and thy great humility, There may no tongue express in no science: For sometimes, Lady! ere men pray to thee, Thou go’st before, of thy benignity, And gettest us the light, through thy prayere, To guiden us unto thy son so dear.
+Sir Thopas was a doughty swain, White was his face as paindemain, <4> His lippes red as rose. His rode* is like scarlet in grain, *complexion And I you tell in good certain He had a seemly nose.
 
-My conning* is so weak, O blissful queen, *skill, ability For to declare thy great worthiness, That I not may the weight of it sustene; But as a child of twelvemonth old, or less, That can unnethes* any word express, *scarcely Right so fare I; and therefore, I you pray, Guide my song that I shall of you say.
+His hair, his beard, was like saffroun, That to his girdle reach’d adown, His shoes of cordewane:<5> Of Bruges were his hosen brown; His robe was of ciclatoun,<6> That coste many a jane.<7>
 
-There was in Asia, in a great city, Amonges Christian folk, a Jewery,<5> Sustained by a lord of that country, For foul usure, and lucre of villainy, Hateful to Christ, and to his company; And through the street men mighte ride and wend,* *go, walk For it was free, and open at each end.
+He coulde hunt at the wild deer, And ride on hawking *for rivere* *by the river* With gray goshawk on hand: <8> Thereto he was a good archere, Of wrestling was there none his peer, Where any ram <9> should stand.
 
-A little school of Christian folk there stood Down at the farther end, in which there were Children an heap y-come of Christian blood, That learned in that schoole year by year Such manner doctrine as men used there; This is to say, to singen and to read, As smalle children do in their childhead.
+Full many a maiden bright in bow’r They mourned for him par amour, When them were better sleep; But he was chaste, and no lechour, And sweet as is the bramble flow’r That beareth the red heep.* *hip
 
-Among these children was a widow’s son, A little clergion,* seven year of age, *young clerk or scholar That day by day to scholay* was his won,** *study **wont And eke also, whereso he saw th’ image Of Christe’s mother, had he in usage, As him was taught, to kneel adown, and say Ave Maria as he went by the way.
+And so it fell upon a day, For sooth as I you telle may, Sir Thopas would out ride; He worth* upon his steede gray, *mounted And in his hand a launcegay,* *spear <10> A long sword by his side.
 
-Thus had this widow her little son y-taught Our blissful Lady, Christe’s mother dear, To worship aye, and he forgot it not; For sely* child will always soone lear.** *innocent **learn But aye when I remember on this mattere, Saint Nicholas <6> stands ever in my presence; For he so young to Christ did reverence.
+He pricked through a fair forest, Wherein is many a wilde beast, Yea, bothe buck and hare; And as he pricked north and east, I tell it you, him had almest *almost Betid* a sorry care. *befallen
 
-This little child his little book learning, As he sat in the school at his primere, He Alma redemptoris <7> hearde sing, As children learned their antiphonere; <8> And as he durst, he drew him nere and nere,* *nearer And hearken’d aye the wordes and the note, Till he the firste verse knew all by rote.
+There sprange herbes great and small, The liquorice and the setewall,* *valerian And many a clove-gilofre, <12> And nutemeg to put in ale, Whether it be moist* or stale, *new Or for to lay in coffer.
 
-Nought wist he what this Latin was tosay,* *meant For he so young and tender was of age; But on a day his fellow gan he pray To expound him this song in his language, Or tell him why this song was in usage: This pray’d he him to construe and declare, Full oftentime upon his knees bare.
+The birdes sang, it is no nay, The sperhawk* and the popinjay,** *sparrowhawk **parrot <13> That joy it was to hear; The throstle-cock made eke his lay, The woode-dove upon the spray She sang full loud and clear.
 
-His fellow, which that elder was than he, Answer’d him thus: “This song, I have heard say, Was maked of our blissful Lady free, Her to salute, and eke her to pray To be our help and succour when we dey.* *die I can no more expound in this mattere: I learne song, I know but small grammere.”
+Sir Thopas fell in love-longing All when he heard the throstle sing, And *prick’d as he were wood;* *rode as if he His faire steed in his pricking were mad* So sweated, that men might him wring, His sides were all blood.
 
-“And is this song y-made in reverence Of Christe’s mother?” said this innocent; Now certes I will do my diligence To conne* it all, ere Christemas be went; *learn; con Though that I for my primer shall be shent,* *disgraced And shall be beaten thries in an hour, I will it conne, our Lady to honour.”
+Sir Thopas eke so weary was For pricking on the softe grass, So fierce was his corage,* *inclination, spirit That down he laid him in that place, To make his steed some solace, And gave him good forage.
 
-His fellow taught him homeward* privily *on the way home From day to day, till he coud* it by rote, *knew And then he sang it well and boldely From word to word according with the note; Twice in a day it passed through his throat; To schoole-ward, and homeward when he went; On Christ’s mother was set all his intent.
+“Ah, Saint Mary, ben’dicite, What aileth thilke* love at me *this To binde me so sore? Me dreamed all this night, pardie, An elf-queen shall my leman* be, *mistress And sleep under my gore.* *shirt
 
-As I have said, throughout the Jewery, This little child, as he came to and fro, Full merrily then would he sing and cry, O Alma redemptoris, evermo’; The sweetness hath his hearte pierced so Of Christe’s mother, that to her to pray He cannot stint* of singing by the way. *cease
+An elf-queen will I love, y-wis,* *assuredly For in this world no woman is Worthy to be my make* *mate In town; All other women I forsake, And to an elf-queen I me take By dale and eke by down.” <14>
 
-Our firste foe, the serpent Satanas, That hath in Jewes’ heart his waspe’s nest, Upswell’d and said, “O Hebrew people, alas! Is this to you a thing that is honest,* *creditable, becoming That such a boy shall walken as him lest In your despite, and sing of such sentence, Which is against your lawe’s reverence?”
+Into his saddle he clomb anon, And pricked over stile and stone An elf-queen for to spy, Till he so long had ridden and gone, That he found in a privy wonne* *haunt The country of Faery, So wild; For in that country was there none That to him durste ride or gon, Neither wife nor child.
 
-From thenceforth the Jewes have conspired This innocent out of the world to chase; A homicide thereto have they hired, That in an alley had a privy place, And, as the child gan forth by for to pace, This cursed Jew him hent,* and held him fast *seized And cut his throat, and in a pit him cast.
+Till that there came a great giaunt, His name was Sir Oliphaunt,<15> A perilous man of deed; He saide, “Child,* by Termagaunt, <16> *young man *But if* thou prick out of mine haunt, *unless Anon I slay thy steed With mace. Here is the Queen of Faery, With harp, and pipe, and symphony, Dwelling in this place.”
 
-I say that in a wardrobe* he him threw, *privy Where as the Jewes purged their entrail. O cursed folk! O Herodes all new! What may your evil intente you avail? Murder will out, certain it will not fail, And namely* where th’ honour of God shall spread; *especially The blood out crieth on your cursed deed.
+The Child said, “All so may I the,* *thrive To-morrow will I meete thee, When I have mine armor; And yet I hope, *par ma fay,* *by my faith* That thou shalt with this launcegay Abyen* it full sore; *suffer for Thy maw* *belly Shall I pierce, if I may, Ere it be fully prime of day, For here thou shalt be slaw.”* *slain
 
-O martyr souded* to virginity, *confirmed <9> Now may’st thou sing, and follow ever-in-one* *continually The white Lamb celestial (quoth she), Of which the great Evangelist Saint John In Patmos wrote, which saith that they that gon Before this Lamb, and sing a song all new, That never fleshly woman they ne knew.<10>
+Sir Thopas drew aback full fast; This giant at him stones cast Out of a fell staff sling: But fair escaped Child Thopas, And all it was through Godde’s grace, And through his fair bearing. <17>
 
-This poore widow waited all that night After her little child, but he came not; For which, as soon as it was daye’s light, With face pale, in dread and busy thought, She hath at school and elleswhere him sought, Till finally she gan so far espy, That he was last seen in the Jewery.
+Yet listen, lordings, to my tale, Merrier than the nightingale, For now I will you rown,* *whisper How Sir Thopas, with sides smale,* *small <18> Pricking over hill and dale, Is come again to town.
 
-With mother’s pity in her breast enclosed, She went, as she were half out of her mind, To every place, where she hath supposed By likelihood her little child to find: And ever on Christ’s mother meek and kind She cried, and at the laste thus she wrought, Among the cursed Jewes she him sought.
+His merry men commanded he To make him both game and glee; For needes must he fight With a giant with heades three, For paramour and jollity Of one that shone full bright.
 
-She freined,* and she prayed piteously *asked* <11> To every Jew that dwelled in that place, To tell her, if her childe went thereby; They saide, “Nay;” but Jesus of his grace Gave in her thought, within a little space, That in that place after her son she cried, Where he was cast into a pit beside.
+“*Do come,*” he saide, “my minstrales *summon* And gestours* for to telle tales. *story-tellers Anon in mine arming, Of romances that be royales, <19> Of popes and of cardinales, And eke of love-longing.”
 
-O greate God, that preformest thy laud By mouth of innocents, lo here thy might! This gem of chastity, this emeraud,* *emerald And eke of martyrdom the ruby bright, Where he with throat y-carven* lay upright, *cut He Alma Redemptoris gan to sing So loud, that all the place began to ring.
+They fetch’d him first the sweete wine, And mead eke in a maseline,* *drinking-bowl And royal spicery; of maple wood <20> Of ginger-bread that was full fine, And liquorice and eke cumin, With sugar that is trie.* *refined
 
-The Christian folk, that through the streete went, In came, for to wonder on this thing: And hastily they for the provost sent. He came anon withoute tarrying, And heried* Christ, that is of heaven king, *praised And eke his mother, honour of mankind; And after that the Jewes let* he bind. *caused
+He didde,* next his white lere,** *put on **skin Of cloth of lake* fine and clear, *fine linen A breech and eke a shirt; And next his shirt an haketon,* *cassock And over that an habergeon,* *coat of mail For piercing of his heart;
 
-With torment, and with shameful death each one The provost did* these Jewes for to sterve** *caused **die That of this murder wist, and that anon; He woulde no such cursedness observe* *overlook Evil shall have that evil will deserve; Therefore with horses wild he did them draw, And after that he hung them by the law.
+And over that a fine hauberk,* *plate-armour Was all y-wrought of Jewes’* werk, *magicians’ Full strong it was of plate; And over that his coat-armour,* *knight’s surcoat As white as is the lily flow’r, <21> In which he would debate.* *fight
 
-The child, with piteous lamentation, Was taken up, singing his song alway: And with honour and great procession, They crry him unto the next abbay. His mother swooning by the biere lay; Unnethes* might the people that were there *scarcely This newe Rachel bringe from his bier.
+His shield was all of gold so red And therein was a boare’s head, A charboucle* beside; *carbuncle <22> And there he swore on ale and bread, How that the giant should be dead, Betide whatso betide.
 
-Upon his biere lay this innocent Before the altar while the masses last’;* *lasted And, after that, th’ abbot with his convent Have sped them for to bury him full fast; And when they holy water on him cast, Yet spake this child, when sprinkled was the water, And sang, O Alma redemptoris mater!
+His jambeaux* were of cuirbouly, <23> *boots His sworde’s sheath of ivory, His helm of latoun* bright, *brass His saddle was of rewel <24> bone, His bridle as the sunne shone, Or as the moonelight.
 
-This abbot, which that was a holy man, As monkes be, or elles ought to be, This younger child to conjure he began, And said; “O deare child! I halse* thee, *implore <12> In virtue of the holy Trinity; Tell me what is thy cause for to sing, Since that thy throat is cut, to my seeming.”
+His speare was of fine cypress, That bodeth war, and nothing peace; The head full sharp y-ground. His steede was all dapple gray, It went an amble in the way Full softely and round In land.
 
-“My throat is cut unto my necke-bone,” Saide this child, “and, as *by way of kind,* *in course of nature* I should have died, yea long time agone; But Jesus Christ, as ye in bookes find, Will that his glory last and be in mind; And, for the worship* of his mother dear, *glory Yet may I sing O Alma loud and clear.
+Lo, Lordes mine, here is a fytt; If ye will any more of it, To tell it will I fand.* *try
 
-“This well* of mercy, Christe’s mother sweet, *fountain I loved alway, after my conning:* *knowledge And when that I my life should forlete,* *leave To me she came, and bade me for to sing This anthem verily in my dying, As ye have heard; and, when that I had sung, Me thought she laid a grain upon my tongue.
+The Second Fit
 
-“Wherefore I sing, and sing I must certain, In honour of that blissful maiden free, Till from my tongue off taken is the grain. And after that thus saide she to me; ‘My little child, then will I fetche thee, When that the grain is from thy tongue take: Be not aghast,* I will thee not forsake.’” *afraid
+Now hold your mouth for charity, Bothe knight and lady free, And hearken to my spell;* *tale <25> Of battle and of chivalry, Of ladies’ love and druerie,* *gallantry Anon I will you tell.
 
-This holy monk, this abbot him mean I, His tongue out caught, and took away the grain; And he gave up the ghost full softely. And when this abbot had this wonder seen, His salte teares trickled down as rain: And groff* he fell all flat upon the ground, *prostrate, grovelling And still he lay, as he had been y-bound.
+Men speak of romances of price* * worth, esteem Of Horn Child, and of Ipotis, Of Bevis, and Sir Guy, <26> Of Sir Libeux, <27> and Pleindamour, But Sir Thopas, he bears the flow’r Of royal chivalry.
 
-The convent* lay eke on the pavement *all the monks Weeping, and herying* Christ’s mother dear. *praising And after that they rose, and forth they went, And took away this martyr from his bier, And in a tomb of marble stones clear Enclosed they his little body sweet; Where he is now, God lene* us for to meet. *grant
+His goode steed he all bestrode, And forth upon his way he glode,* *shone As sparkle out of brand;* *torch Upon his crest he bare a tow’r, And therein stick’d a lily flow’r; <28> God shield his corse* from shand!** *body **harm
 
-O younge Hugh of Lincoln!<13> slain also With cursed Jewes, — as it is notable, For it is but a little while ago, — Pray eke for us, we sinful folk unstable, That, of his mercy, God so merciable* *merciful On us his greate mercy multiply, For reverence of his mother Mary.
+And, for he was a knight auntrous,* *adventurous He woulde sleepen in none house, But liggen* in his hood, *lie His brighte helm was his wanger,* *pillow <29> And by him baited* his destrer** *fed **horse <30> Of herbes fine and good.
 
-Notes to the Prioress’s Tale
+Himself drank water of the well, As did the knight Sir Percivel, <31> So worthy under weed; Till on a day - . . .
 
-1. Tales of the murder of children by Jews were frequent in the Middle Ages, being probably designed to keep up the bitter feeling of the Christians against the Jews. Not a few children were canonised on this account; and the scene of the misdeeds was laid anywhere and everywhere, so that Chaucer could be at no loss for material.
+Notes to Chaucer’s Tale of Sir Thopas
 
-2. This is from Psalm viii. 1, “Domine, dominus noster,quam admirabile est nomen tuum in universa terra.”
+1. “The Rhyme of Sir Thopas,” as it is generally called, is introduced by Chaucer as a satire on the dull, pompous, and prolix metrical romances then in vogue. It is full of phrases taken from the popular rhymesters in the vein which he holds up to ridicule; if, indeed — though of that there is no evidence — it be not actually part of an old romance which Chaucer selected and reproduced to point his assault on the prevailing taste in literature. Transcriber’s note: The Tale is full of incongruities of every kind, which Purves does not refer to; I point some of them out in the notes which follow - marked TN.
 
-3. “Out of the mouths of babes and sucklings hast Thou ordained strength.” — Psalms viii. 2.
+2. Poppering, or Poppeling, a parish in the marches of Calais of which the famous antiquary Leland was once Rector. TN: The inhabitants of Popering had a reputation for stupidity.
 
-4. The ghost that in thee light: the spirit that on thee alighted; the Holy Ghost through whose power Christ was conceived.
+3. TN: The lord of Popering was the abbot of the local monastery - who could, of course, have no legitimate children.
 
-5. Jewery: A quarter which the Jews were permitted to inhabit; the Old Jewry in London got its name in this way.
+4. Paindemain: Either “pain de matin,” morning bread, or “pain de Maine,” because it was made best in that province; a kind of fine white bread.
 
-6. St. Nicholas, even in his swaddling clothes — so says the “Breviarium Romanum” —gave promise of extraordinary virtue and holiness; for, though he sucked freely on other days, on Wednesdays and Fridays he applied to the breast only once, and that not until the evening.
+5. Cordewane: Cordovan; fine Spanish leather, so called from the name of the city where it was prepared
 
-7. “O Alma Redemptoris Mater,” (“O soul mother of the Redeemer”) — the beginning of a hymn to the Virgin.
+6. Ciclatoun: A rich Oriental stuff of silk and gold, of which was made the circular robe of state called a “ciclaton,” from the Latin, “cyclas.” The word is French.
 
-8. Antiphonere: A book of anthems, or psalms, chanted in the choir by alternate verses.
+7. Jane: a Genoese coin, of small value; in our old statutes called “gallihalpens,” or galley half-pence.
 
-9. Souded; confirmed; from French, “soulde;” Latin, “solidatus.”
+8. TN: In Mediaeval falconry the goshawk was not regarded as a fit bird for a knight. It was the yeoman’s bird.
 
-10. “And they sung as it were a new song before the throne, and before the four beasts, and the elders: and no man could learn that song but the hundred and forty and four thousand, which were redeemed from the earth. These are they which were not defiled with women; for they are virgins. These are they which follow the Lamb whithersoever he goeth. These were redeemed from among men, being the firstfruits unto God and to the Lamb.” — Revelations xiv. 3, 4.
+9. A ram was the usual prize of wrestling contests. TN: Wrestling and archery were sports of the common people, not knightly accomplishments.
 
-11. Freined: asked, inquired; from Anglo-Saxon, “frinan,” “fraegnian.” Compare German, “fragen.”
+10. Launcegay: spear; “azagay” is the name of a Moorish weapon, and the identity of termination is singular.
 
-12. Halse: embrace or salute; implore: from Anglo-Saxon “hals,” the neck.
+12. Clove-gilofre: clove-gilliflower; “Caryophyllus hortensis.”
 
-14 A boy said to have been slain by the Jews at Lincoln in 1255, according to Matthew Paris. Many popular ballads were made about the event, which the diligence of the Church doubtless kept fresh in mind at Chaucer’s day.
+13. TN: The sparrowhawk and parrot can only squawk unpleasantly.
+
+14. TN: The sudden and pointless changes in the stanza form are of course part of Chaucer’s parody.
+
+15. Sir Oliphaunt: literally, “Sir Elephant;” Sir John Mandeville calls those animals “Olyfauntes.”
+
+16. Termagaunt: A pagan or Saracen deity, otherwise named Tervagan, and often mentioned in Middle Age literature. His name has passed into our language, to denote a ranter or blusterer, as be was represented to be.
+
+17. TN: His “fair bearing” would not have been much defence against a sling-stone.
+
+18. TN: “Sides small”: a conventional description for a woman, not a man.
+
+19. Romances that be royal: so called because they related to Charlemagne and his family.
+
+20. TN: A knight would be expected to have a gold or silver drinking vessel.
+
+21. TN: The coat-armour or coat of arms should have had his heraldic emblems on it, not been pure white
+
+22. Charboucle: Carbuncle; French, “escarboucle;” a heraldic device resembling a jewel.
+
+23. Cuirbouly: “Cuir boulli,” French, boiled or prepared leather; also used to cover shields, &c.
+
+24. Rewel bone: No satisfactory explanation has been furnished of this word, used to describe some material from which rich saddles were made. TN: The OED defines it as narwhal ivory.
+
+25. Spell: Tale, discourse, from Anglo-Saxon, “spellian,” to declare, tell a story.
+
+26. Sir Bevis of Hampton, and Sir Guy of Warwick, two knights of great renown.
+
+27. Libeux: One of Arthur’s knights, called “Ly beau desconus,” “the fair unknown.”
+
+28. TN: The crest was a small emblem worn on top of a knight’s helmet. A tower with a lily stuck in it would have been unwieldy and absurd.
+
+29. Wanger: pillow; from Anglo-Saxon, “wangere,” because the “wanges;” or cheeks, rested on it.
+
+30. Destrer: “destrier,” French, a war-horse; in Latin, “dextrarius,” as if led by the right hand.
+
+31. Sir Percival de Galois, whose adventures were written in more than 60,000 verses by Chretien de Troyes, one of the oldest and best French romancers, in 1191.

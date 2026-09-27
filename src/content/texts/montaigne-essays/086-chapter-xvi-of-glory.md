@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xvi-of-glory"
-heading: "Chapter Xvi: : of Glory"
+heading: "Chapter XVI: : of Glory"
 order: 86
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

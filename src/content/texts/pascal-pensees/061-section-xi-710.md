@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xi-710"
-heading: "Section Xi, 710"
+heading: "Section XI, 710"
 order: 61
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -18,6 +18,6 @@ This same Joseph, when dying, bade his children carry his bones with them when t
 
 Moses, who wrote all these things so long before they happened, himself assigned to each family portions of that land before they entered it, as though he had been its ruler. [In fact he declared that God was to raise up from their nation and their race a prophet, of whom he was the type; and he foretold them exactly all that was to happen to them in the land which they were to enter after his death, the victories which God would give them, their ingratitude towards God, the punishments which they would receive for it, and the rest of their adventures.] He gave them judges who should make the division. He prescribed the entire form of political government which they should observe, the cities of refuge which they should build, and ...
 
-**Section Xi, 711**
+**Section XI, 711**
 
 The prophecies about particular things are mingled with those about the Messiah, so that the prophecies of the Messiah should not be without proofs, nor the special prophecies without fruit.

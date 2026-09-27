@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxvii-of-the-resemblance-of-children-to-their-fathe"
-heading: "Chapter Xxxvii: : of the Resemblance of Children to Their Fathers"
+heading: "Chapter XXXVII: : of the Resemblance of Children to Their Fathers"
 order: 107
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxii-that-we-are-to-avoid-pleasures-even-at-the-exp"
-heading: "Chapter Xxxii: : That We Are to Avoid Pleasures, Even at the Expense of Life"
+heading: "Chapter XXXII: : That We Are to Avoid Pleasures, Even at the Expense of Life"
 order: 45
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

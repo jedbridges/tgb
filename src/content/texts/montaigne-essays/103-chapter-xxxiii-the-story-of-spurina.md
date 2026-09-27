@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxiii-the-story-of-spurina"
-heading: "Chapter Xxxiii: : the Story of Spurina"
+heading: "Chapter XXXIII: : the Story of Spurina"
 order: 103
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

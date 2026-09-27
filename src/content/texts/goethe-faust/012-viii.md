@@ -8,7 +8,7 @@ sourceUrl: "https://www.gutenberg.org/ebooks/14591"
 edition: "Bayard Taylor's verse translation, 1870, Part One"
 translator: "Bayard Taylor"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 954
+words: 955
 ---
 EVENING A SMALL, NEATLY KEPT CHAMBER
 
@@ -77,6 +77,8 @@ Yourself, perhaps, would keep the bubble? Then I suggest, ’twere fair and just
 (*He places the casket in the press, and locks it again*.)
 
 Now quick, away! The sweet young maiden to betray, So that by wish and will you bend her; And you look as though To the lecture-hall you were forced to go,— As if stood before you, gray and loath, Physics and Metaphysics both! But away!
+
+ [*Exeunt*.
 
 MARGARET (*with a lamp*)
 

@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiv-919"
-heading: "Section Xiv, 919"
+heading: "Section XIV, 919"
 order: 86
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"

@@ -8,9 +8,11 @@ sourceUrl: "https://www.gutenberg.org/ebooks/4363"
 edition: "Helen Zimmern's translation, 1906"
 translator: "Helen Zimmern"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 813
+words: 819
 ---
-**Translated by Helen Zimmern**
+**Beyond Good and Evil**
+
+TRANSCRIBER'S NOTE ABOUT THIS E-TEXT EDITION:
 
 The following is a reprint of the Helen Zimmern translation from German into English of "Beyond Good and Evil," as published in The Complete Works of Friedrich Nietzsche (1909-1913). Some adaptations from the original text were made to format it into an e-text. Italics in the original book are capitalized in this e-text, except for most foreign language phrases that were italicized. Original footnotes are put in brackets [ ] at the points where they are cited in the text. Some spellings were altered. "To-day" and "To-morrow" are spelled "today" and "tomorrow." Some words containing the letters "ise" in the original text, such as "idealise," had these letters changed to "ize," such as "idealize." "Sceptic" was changed to "skeptic."
 

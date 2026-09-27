@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxvi-of-the-most-excellent-men"
-heading: "Chapter Xxxvi: : of the Most Excellent Men"
+heading: "Chapter XXXVI: : of the Most Excellent Men"
 order: 106
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-viii-of-idleness"
-heading: "Chapter Viii: : of Idleness"
+heading: "Chapter VIII: : of Idleness"
 order: 22
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

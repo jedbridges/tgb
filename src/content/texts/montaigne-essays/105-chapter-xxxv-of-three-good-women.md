@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxv-of-three-good-women"
-heading: "Chapter Xxxv: : of Three Good Women"
+heading: "Chapter XXXV: : of Three Good Women"
 order: 105
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxvii-cowardice-the-mother-of-cruelty"
-heading: "Chapter Xxvii: : Cowardice the Mother of Cruelty"
+heading: "Chapter XXVII: : Cowardice the Mother of Cruelty"
 order: 97
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

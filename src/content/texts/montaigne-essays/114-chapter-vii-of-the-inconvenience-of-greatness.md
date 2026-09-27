@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-vii-of-the-inconvenience-of-greatness"
-heading: "Chapter Vii: : of the Inconvenience of Greatness"
+heading: "Chapter VII: : of the Inconvenience of Greatness"
 order: 114
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

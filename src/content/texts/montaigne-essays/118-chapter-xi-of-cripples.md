@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xi-of-cripples"
-heading: "Chapter Xi: : of Cripples"
+heading: "Chapter XI: : of Cripples"
 order: 118
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

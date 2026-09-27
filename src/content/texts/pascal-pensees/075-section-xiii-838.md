@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiii-838"
-heading: "Section Xiii, 838"
+heading: "Section XIII, 838"
 order: 75
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -20,7 +20,7 @@ But we have not to draw this distinction. Here is a sacred relic.[333] Here is a
 
 These are not men who do miracles by an unknown and doubtful virtue, which makes a decision difficult for us. It is God Himself. It is the instrument of the Passion of His only Son, who, being in many places, chooses this, and makes men come from all quarters there to receive these miraculous alleviations in their weaknesses.
 
-**Section Xiii, 839**
+**Section XIII, 839**
 
 The Church has three kinds of enemies: the Jews, who have never been of her body; the heretics, who have withdrawn from it; and the evil Christians, who rend her from within.
 

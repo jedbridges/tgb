@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xliii-of-sumptuary-laws"
-heading: "Chapter Xliii: : of Sumptuary Laws"
+heading: "Chapter XLIII: : of Sumptuary Laws"
 order: 56
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

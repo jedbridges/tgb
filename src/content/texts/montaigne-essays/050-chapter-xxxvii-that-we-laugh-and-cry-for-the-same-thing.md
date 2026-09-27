@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxvii-that-we-laugh-and-cry-for-the-same-thing"
-heading: "Chapter Xxxvii: : That We Laugh and Cry for the Same Thing"
+heading: "Chapter XXXVII: : That We Laugh and Cry for the Same Thing"
 order: 50
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

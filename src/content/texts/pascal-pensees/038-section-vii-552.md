@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-vii-552"
-heading: "Section Vii, 552"
+heading: "Section VII, 552"
 order: 38
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -98,13 +98,13 @@ I must add my wounds to His, and join myself to Him; and He will save me in savi
 
 Do little things as though they were great, because of the majesty of Jesus Christ who does them in us, and who lives our life; and do the greatest things as though they were little and easy, because of His omnipotence.
 
-**Section Vii, 553**
+**Section VII, 553**
 
 It seems to me that Jesus Christ only allowed His wounds to be touched after His resurrection: *Noli me tangere.*[206] We must unite ourselves only to His sufferings.
 
 At the Last Supper He gave Himself in communion as about to die; to the disciples at Emmaus as risen from the dead; to the whole Church as ascended into heaven.
 
-**Section Vii, 554**
+**Section VII, 554**
 
 "Compare not thyself with others, but with Me. If thou dost not find Me in those with whom thou comparest thyself, thou comparest thyself to one who is abominable. If thou findest Me in them, compare thyself to Me. But whom wilt thou compare? Thyself, or Me in thee? If it is thyself, it is one who is abominable. If it is I, thou comparest Me to Myself. Now I am God in all.
 

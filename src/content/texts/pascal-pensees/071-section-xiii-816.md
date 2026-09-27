@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiii-816"
-heading: "Section Xiii, 816"
+heading: "Section XIII, 816"
 order: 71
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"

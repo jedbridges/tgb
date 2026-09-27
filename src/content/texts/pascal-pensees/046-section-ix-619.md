@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ix-619"
-heading: "Section Ix, 619"
+heading: "Section IX, 619"
 order: 46
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -24,34 +24,34 @@ But this law is at the same time the severest and strictest of all in respect to
 
 The book which contains this law, the first of all, is itself the most ancient book in the world, those of Homer, Hesiod, and others, being six or seven hundred years later.
 
-**Section Ix, 620**
+**Section IX, 620**
 
 The creation and the deluge being past, and God no longer requiring to destroy the world, nor to create it anew, nor to give such great signs of Himself, He began to establish a people on the earth, purposely formed, who were to last until the coming of the people whom the Messiah should fashion by His spirit.
 
-**Section Ix, 621**
+**Section IX, 621**
 
 The creation of the world beginning to be distant, God provided a single contemporary historian, and appointed a whole people as guardians of this book, in order that this history might be the most authentic in the world, and that all men might thereby learn a fact so necessary to know, and which could only be known through that means.
 
-**Section Ix, 622**
+**Section IX, 622**
 
 [Japhet begins the genealogy.]
 
 Joseph folds his arms, and prefers the younger.[225]
 
-**Section Ix, 623**
+**Section IX, 623**
 
 Why should Moses make the lives of men so long, and their generations so few?
 
 Because it is not the length of years, but the multitude of generations, which renders things obscure. For truth is perverted only by the change of men. And yet he puts two things, the most memorable that were ever imagined, namely, the creation and the deluge, so near that we reach from one to the other.
 
-**Section Ix, 624**
+**Section IX, 624**
 
 Shem, who saw Lamech, who saw Adam, saw also Jacob, who saw those who saw Moses; therefore the deluge and the creation are true. This is conclusive among certain people who understand it rightly.
 
-**Section Ix, 625**
+**Section IX, 625**
 
 The longevity of the patriarchs, instead of causing the loss of past history, conduced, on the contrary, to its preservation. For the reason why we are sometimes insufficiently instructed in the history of our ancestors, is that we have never lived long with them, and that they are often dead before we have attained the age of reason. Now, when men lived so long, children lived long with their parents. They conversed long with them. But what else could be the subject of their talk save the history of their ancestors, since to that all history was reduced, and men did not study science or art, which now form a large part of daily conversation? We see also that in these days tribes took particular care to preserve their genealogies.
 
-**Section Ix, 626**
+**Section IX, 626**
 
 I believe that Joshua was the first of God's people to have this name, as Jesus Christ was the last of God's people.

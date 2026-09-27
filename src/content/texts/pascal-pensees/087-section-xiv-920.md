@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiv-920"
-heading: "Section Xiv, 920"
+heading: "Section XIV, 920"
 order: 87
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -32,15 +32,15 @@ I am alone against thirty thousand. No. Protect, you, the court; protect, you, d
 
 I do not need to defend religion, but you do not need to defend error and injustice. Let God, out of His compassion, having no regard to the evil which is in me, and having regard to the good which is in you, grant us all grace that truth may not be overcome in my hands, and that falsehood ...
 
-**Section Xiv, 921**
+**Section XIV, 921**
 
 *Probable.*—Let us see if we seek God sincerely, by comparison of the things which we love. It is *probable* that this food will not poison me. It is *probable* that I shall not lose my action by not prosecuting it ...
 
-**Section Xiv, 922**
+**Section XIV, 922**
 
 It is not absolution only which remits sins by the sacrament of penance, but contrition, which is not real if it does not seek the sacrament.
 
-**Section Xiv, 923**
+**Section XIV, 923**
 
 People who do not keep their word, without faith, without honour, without truth, deceitful in heart, deceitful in speech; for which that amphibious animal in fable was once reproached, which held itself in a doubtful position between the fish and the birds ...
 

@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiii-851"
-heading: "Section Xiii, 851"
+heading: "Section XIII, 851"
 order: 81
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -26,40 +26,40 @@ The two witnesses.
 
 In the Old Testament and the New, miracles are performed in connection with types. Salvation, or a useless thing, if not to show that we must submit to the Scriptures: type of the sacrament.
 
-**Section Xiii, 852**
+**Section XIII, 852**
 
 [We must judge soberly of divine ordinances, my father.
 
 Saint Paul in the isle of Malta.]
 
-**Section Xiii, 853**
+**Section XIII, 853**
 
 The hardness of the Jesuits, then, surpasses that of the Jews, since those refused to believe Jesus Christ innocent only because they doubted if His miracles were of God. Whereas the Jesuits, though unable to doubt that the miracles of Port-Royal are of God, do not cease to doubt still the innocence of that house.
 
-**Section Xiii, 854**
+**Section XIII, 854**
 
 I suppose that men believe miracles. You corrupt religion either in favour of your friends, or against your enemies. You arrange it at your will.
 
-**Section Xiii, 855**
+**Section XIII, 855**
 
 *On the miracle.*—As God has made no family more happy, let it also be the case that He find none more thankful.
 
-**Section Xiv, 856**
+**Section XIV, 856**
 
 *Clearness, obscurity.*—There would be too great darkness, if truth had not visible signs. This is a wonderful one, that it has always been preserved in one Church and one visible assembly [of men]. There would be too great clearness, if there were only one opinion in this Church. But in order to recognise what is true, one has only to look at what has always existed; for it is certain that truth has always existed, and that nothing false has always existed.
 
-**Section Xiv, 857**
+**Section XIV, 857**
 
 The history of the Church ought properly to be called the history of truth.
 
-**Section Xiv, 858**
+**Section XIV, 858**
 
 There is a pleasure in being in a ship beaten about by a storm, when we are sure that it will not founder. The persecutions which harass the Church are of this nature.
 
-**Section Xiv, 859**
+**Section XIV, 859**
 
 In addition to so many other signs of piety, they[359] are also persecuted, which is the best sign of piety.
 
-**Section Xiv, 860**
+**Section XIV, 860**
 
 The Church is in an excellent state, when it is sustained by God only.

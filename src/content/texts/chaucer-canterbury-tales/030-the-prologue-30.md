@@ -7,14 +7,10 @@ source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2383"
 edition: "The Middle English text in D. Laing Purves's edition, 1870"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 356
+words: 200
 ---
-Our Host upon his stirrups stood anon, And saide; “Good men, hearken every one, This was a thrifty* tale for the nones. *discreet, profitable Sir Parish Priest,” quoth he, “for Godde’s bones, Tell us a tale, as was thy *forword yore:* *promise formerly* I see well that ye learned men in lore Can* muche good, by Godde’s dignity.” *know The Parson him answer’d, “Ben’dicite! What ails the man, so sinfully to swear?” Our Host answer’d, “O Jankin, be ye there? Now, good men,” quoth our Host, “hearken to me. I smell a Lollard <2> in the wind,” quoth he. “Abide, for Godde’s digne* passion, *worthy For we shall have a predication: This Lollard here will preachen us somewhat.” “Nay, by my father’s soul, that shall he not, Saide the Shipman; “Here shall he not preach, He shall no gospel glose* here nor teach. *comment upon We all believe in the great God,” quoth he. “He woulde sowe some difficulty, Or springe cockle <3> in our cleane corn. And therefore, Host, I warne thee beforn, My jolly body shall a tale tell, And I shall clinke you so merry a bell, That I shall waken all this company; But it shall not be of philosophy, Nor of physic, nor termes quaint of law; There is but little Latin in my maw.”* *belly
+“WELL said, by *corpus Domini,”* quoth our Host; *the Lord’s body* “Now longe may’st thou saile by the coast, Thou gentle Master, gentle Marinere. God give the monk *a thousand last quad year!* *ever so much evil* <1> Aha! fellows, beware of such a jape.* *trick The monk *put in the manne’s hood an ape,* *fooled him* And in his wife’s eke, by Saint Austin. Drawe no monkes more into your inn. But now pass over, and let us seek about, Who shall now telle first of all this rout Another tale;” and with that word he said, As courteously as it had been a maid; “My Lady Prioresse, by your leave, So that I wist I shoulde you not grieve,* *offend I woulde deeme* that ye telle should *judge, decide A tale next, if so were that ye would. Now will ye vouchesafe, my lady dear?” “Gladly,” quoth she; and said as ye shall hear.
 
-Notes to the Prologue to the Shipman’s Tale
+Notes to the Prologue to the Prioress’s Tale.
 
-1. The Prologue here given was transferred by Tyrwhitt from the place, preceding the Squire’s Tale, which it had formerly occupied; the Shipman’s Tale having no Prologue in the best manuscripts.
-
-2. Lollard: A contemptuous name for the followers of Wyckliffe; presumably derived from the Latin, “lolium,” tares, as if they were the tares among the Lord’s wheat; so, a few lines below, the Shipman intimates his fear lest the Parson should “spring cockle in our clean corn.”
-
-3. Cockle: A weed, the “Agrostemma githago” of Linnaeus; perhaps named from the Anglo-Saxon, “ceocan,” because it chokes the corn. (Transcriber’s note: It is also possible Chaucer had in mind Matthew 13:25, where in some translations, an enemy sowed “cockle” amongst the wheat. (Other translations have “tares” and “darnel”.))
+1. A thousand last quad year: ever so much evil. “Last” means a load, “quad,” bad; and literally we may read “a thousand weight of bad years.” The Italians use “mal anno” in the same sense.

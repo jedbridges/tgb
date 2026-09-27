@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxvi-that-it-is-folly-to-measure-truth-and-error-by-"
-heading: "Chapter Xxvi: : That It Is Folly to Measure Truth and Error by Our Own Capacity"
+heading: "Chapter XXVI: : That It Is Folly to Measure Truth and Error by Our Own Capacity"
 order: 40
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

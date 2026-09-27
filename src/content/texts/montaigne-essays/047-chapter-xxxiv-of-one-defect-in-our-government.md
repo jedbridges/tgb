@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxiv-of-one-defect-in-our-government"
-heading: "Chapter Xxxiv: : of One Defect in Our Government"
+heading: "Chapter XXXIV: : of One Defect in Our Government"
 order: 47
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxix-a-consideration-upon-cicero"
-heading: "Chapter Xxxix: : a Consideration Upon Cicero"
+heading: "Chapter XXXIX: : a Consideration Upon Cicero"
 order: 52
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

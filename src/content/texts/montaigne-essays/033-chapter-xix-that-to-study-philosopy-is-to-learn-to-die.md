@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xix-that-to-study-philosopy-is-to-learn-to-die"
-heading: "Chapter Xix: : That to Study Philosopy Is to Learn to Die"
+heading: "Chapter XIX: : That to Study Philosopy Is to Learn to Die"
 order: 33
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

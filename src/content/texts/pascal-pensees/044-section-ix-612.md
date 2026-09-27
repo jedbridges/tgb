@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ix-612"
-heading: "Section Ix, 612"
+heading: "Section IX, 612"
 order: 44
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -18,23 +18,23 @@ The Greeks and Latins then set up false deities; the poets made a hundred differ
 
 He came at length in the fullness of time, and time has since witnessed the birth of so many schisms and heresies, so many political revolutions, so many changes in all things; yet this Church, which worships Him who has always been worshipped, has endured uninterruptedly. It is a wonderful, incomparable, and altogether divine fact that this religion, which has always endured, has always been attacked. It has been a thousand times on the eve of universal destruction, and every time it has been in that state, God has restored it by extraordinary acts of His power. This is astonishing, as also that it has preserved itself without yielding to the will of tyrants. For it is not strange that a State endures, when its laws are sometimes made to give way to necessity, but that ... (See the passage indicated in Montaigne.)
 
-**Section Ix, 613**
+**Section IX, 613**
 
 States would perish if they did not often make their laws give way to necessity. But religion has never suffered this, or practised it. Indeed, there must be these compromises, or miracles. It is not strange to be saved by yieldings, and this is not strictly self-preservation; besides, in the end they perish entirely. None has endured a thousand years. But the fact that this religion has always maintained itself, inflexible as it is, proves its divinity.
 
-**Section Ix, 614**
+**Section IX, 614**
 
 Whatever may be said, it must be admitted that the Christian religion has something astonishing in it. Some will say, "This is because you were born in it." Far from it; I stiffen myself against it for this very reason, for fear this prejudice bias me. But although I am born in it, I cannot help finding it so.
 
-**Section Ix, 615**
+**Section IX, 615**
 
 *Perpetuity.*—The Messiah has always been believed in. The tradition from Adam was fresh in Noah and in Moses. Since then the prophets have foretold him, while at the same time foretelling other things, which, being from time to time fulfilled in the sight of men, showed the truth of their mission, and consequently that of their promises touching the Messiah. Jesus Christ performed miracles, and the Apostles also, who converted all the heathen; and all the prophecies being thereby fulfilled, the Messiah is for ever proved.
 
-**Section Ix, 616**
+**Section IX, 616**
 
 *Perpetuity.*—Let us consider that since the beginning of the world the expectation of worship of the Messiah has existed uninterruptedly; that there have been found men, who said that God had revealed to them that a Redeemer was to be born, who should save His people; that Abraham came afterwards, saying that he had had a revelation that the Messiah was to spring from him by a son, whom he should have; that Jacob declared that, of his twelve sons, the Messiah would spring from Judah; that Moses and the prophets then came to declare the time and the manner of His coming; that they said their law was only temporary till that of the Messiah, that it should endure till then, but that the other should last for ever; that thus either their law, or that of the Messiah, of which it was the promise, would be always upon the earth; that, in fact, it has always endured; that at last Jesus Christ came with all the circumstances foretold. This is wonderful.
 
-**Section Ix, 617**
+**Section IX, 617**
 
 This is positive fact. While all philosophers separate into different sects, there is found in one corner of the world the most ancient people in it, declaring that all the world is in error, that God has revealed to them the truth, that they will always exist on the earth. In fact, all other sects come to an end, this one still endures, and has done so for four thousand years.
 

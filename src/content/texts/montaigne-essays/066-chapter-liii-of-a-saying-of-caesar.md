@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-liii-of-a-saying-of-caesar"
-heading: "Chapter Liii: : of a Saying of Caesar"
+heading: "Chapter LIII: : of a Saying of Caesar"
 order: 66
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxii-defence-of-seneca-and-plutarch"
-heading: "Chapter Xxxii: : Defence of Seneca and Plutarch"
+heading: "Chapter XXXII: : Defence of Seneca and Plutarch"
 order: 102
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

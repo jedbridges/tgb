@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-viii-555"
-heading: "Section Viii, 555"
+heading: "Section VIII, 555"
 order: 39
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -46,19 +46,19 @@ All appearance indicates neither a total exclusion nor a manifest presence of di
 
 ... Whatever part he takes, I shall not leave him at rest ...
 
-**Section Viii, 556**
+**Section VIII, 556**
 
 ... It is then true that everything teaches man his condition, but he must understand this well. For it is not true that all reveals God, and it is not true that all conceals God. But it is at the same time true that He hides Himself from those who tempt Him, and that He reveals Himself to those who seek Him, because men are both unworthy and capable of God; unworthy by their corruption capable by their original nature.
 
-**Section Viii, 557**
+**Section VIII, 557**
 
 What shall we conclude from all our darkness, but our unworthiness?
 
-**Section Viii, 558**
+**Section VIII, 558**
 
 If there never had been any appearance of God, this eternal deprivation would have been equivocal, and might have as well corresponded with the absence of all divinity, as with the unworthiness of men to know Him; but His occasional, though not continual, appearances remove the ambiguity, If He appeared once, He exists always; and thus we cannot but conclude both that there is a God, and that men are unworthy of Him.
 
-**Section Viii, 559**
+**Section VIII, 559**
 
 We do not understand the glorious state of Adam, nor the nature of his sin, nor the transmission of it to us. These are matters which took place under conditions of a nature altogether different from our own, and which transcend our present understanding.
 
@@ -66,48 +66,48 @@ The knowledge of all this is useless to us as a means of escape from it; and all
 
 So the two proofs of corruption and redemption are drawn from the ungodly, who live in indifference to religion, and from the Jews who are irreconcilable enemies.
 
-**Section Viii, 560**
+**Section VIII, 560**
 
 There are two ways of proving the truths of our religion; one by the power of reason, the other by the authority of him who speaks.
 
 We do not make use of the latter, but of the former. We do not say, "This must be believed, for Scripture, which says it, is divine." But we say that it must be believed for such and such a reason, which are feeble arguments, as reason may be bent to everything.
 
-**Section Viii, 561**
+**Section VIII, 561**
 
 There is nothing on earth that does not show either the wretchedness of man, or the mercy of God; either the weakness of man without God, or the strength of man with God.
 
-**Section Viii, 562**
+**Section VIII, 562**
 
 It will be one of the confusions of the damned to see that they are condemned by their own reason, by which they claimed to condemn the Christian religion.
 
-**Section Viii, 563**
+**Section VIII, 563**
 
 The prophecies, the very miracles and proofs of our religion, are not of such a nature that they can be said to be absolutely convincing. But they are also of such a kind that it cannot be said that it is unreasonable to believe them. Thus there is both evidence and obscurity to enlighten some and confuse others. But the evidence is such that it surpasses, or at least equals, the evidence to the contrary; so that it is not reason which can determine men not to follow it, and thus it can only be lust or malice of heart. And by this means there is sufficient evidence to condemn, and insufficient to convince; so that it appears in those who follow it, that it is grace, and not reason, which makes them follow it; and in those who shun it, that it is lust, not reason, which makes them shun it.
 
 *Vere discipuli, vere Israëlita, vere liberi, vere cibus.*[207]
 
-**Section Viii, 564**
+**Section VIII, 564**
 
 Recognise, then, the truth of religion in the very obscurity of religion, in the little light we have of it, and in the indifference which we have to knowing it.
 
-**Section Viii, 565**
+**Section VIII, 565**
 
 We understand nothing of the works of God, if we do not take as a principle that He has willed to blind some, and enlighten others.
 
-**Section Viii, 566**
+**Section VIII, 566**
 
 The two contrary reasons. We must begin with that; without that we understand nothing, and all is heretical; and we must even add at the end of each truth that the opposite truth is to be remembered.
 
-**Section Viii, 567**
+**Section VIII, 567**
 
 *Objection.* The Scripture is plainly full of matters not dictated by the Holy Spirit.—*Answer.* Then they do not harm faith.—*Objection.* But the Church has decided that all is of the Holy Spirit.—*Answer.* I answer two things: first, the Church has not so decided; secondly, if she should so decide, it could be maintained.
 
 Do you think that the prophecies cited in the Gospel are related to make you believe? No, it is to keep you from believing.
 
-**Section Viii, 568**
+**Section VIII, 568**
 
 *Canonical.*—The heretical books in the beginning of the Church serve to prove the canonical.
 
-**Section Viii, 569**
+**Section VIII, 569**
 
 To the chapter on the *Fundamentals* must be added that on *Typology* touching the reason of types: why Jesus Christ was prophesied as to His first coming; why prophesied obscurely as to the manner.

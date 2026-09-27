@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiv-867"
-heading: "Section Xiv, 867"
+heading: "Section XIV, 867"
 order: 83
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -14,45 +14,45 @@ That which hinders us in comparing what formerly occurred in the Church with wha
 
 Zeal, light. Four kinds of persons: zeal without knowledge; knowledge without zeal; neither knowledge nor zeal; both zeal and knowledge. The first three condemned him. The last acquitted him, were excommunicated by the Church, and yet saved the Church.
 
-**Section Xiv, 868**
+**Section XIV, 868**
 
 If Saint Augustine came at the present time, and was as little authorised as his defenders, he would accomplish nothing. God directs His Church well, by having sent him before with authority.
 
-**Section Xiv, 869**
+**Section XIV, 869**
 
 God has not wanted to absolve without the Church. As she has part in the offence, He desires her to have part in the pardon. He associates her with this power, as kings their parliaments. But if she absolves or binds without God, she is no longer the Church. For, as in the case of parliament, even if the king have pardoned a man, it must be ratified; but if parliament ratifies without the king, or refuses to ratify on the order of the king, it is no longer the parliament of the king, but a rebellious assembly.
 
-**Section Xiv, 870**
+**Section XIV, 870**
 
 *The Church, the Pope. Unity, plurality.*—Considering the Church as a unity, the Pope, who is its head, is as the whole. Considering it as a plurality, the Pope is only a part of it. The Fathers have considered the Church now in the one way, now in the other. And thus they have spoken differently of the Pope. (Saint Cyprian: *Sacerdos Dei.*) But in establishing one of these truths, they have not excluded the other. Plurality which is not reduced to unity is confusion; unity which does not depend on plurality is tyranny. There is scarcely any other country than France in which it is permissible to say that the Council is above the Pope.
 
-**Section Xiv, 871**
+**Section XIV, 871**
 
 The Pope is head. Who else is known of all? Who else is recognised by all, having power to insinuate himself into all the body, because he holds the principal shoot, which insinuates itself everywhere? How easy it was to make this degenerate into tyranny! That is why Christ has laid down for them this precept: *Vos autem non sic.*[363]
 
-**Section Xiv, 872**
+**Section XIV, 872**
 
 The Pope hates and fears the learned, who do not submit to him at will.
 
-**Section Xiv, 873**
+**Section XIV, 873**
 
 We must not judge of what the Pope is by some words of the Fathers—as the Greeks said in a council, important rules—but by the acts of the Church and the Fathers, and by the canons.
 
 *Duo aut tres in unum.*[364] Unity and plurality. It is an error to exclude one of the two, as the papists do who exclude plurality, or the Huguenots who exclude unity.
 
-**Section Xiv, 874**
+**Section XIV, 874**
 
 Would the Pope be dishonoured by having his knowledge from God and tradition; and is it not dishonouring him to separate him from this holy union?
 
-**Section Xiv, 875**
+**Section XIV, 875**
 
 God does not perform miracles in the ordinary conduct of His Church. It would be a strange miracle if infallibility existed in one man. But it appears so natural for it to reside in a multitude, since the conduct of God is hidden under nature, as in all His other works.
 
-**Section Xiv, 876**
+**Section XIV, 876**
 
 Kings dispose of their own power; but the Popes cannot dispose of theirs.
 
-**Section Xiv, 877**
+**Section XIV, 877**
 
 *Summum jus, summa injuria.*
 
@@ -62,47 +62,47 @@ If men could have done it, they would have placed might in the hands of justice.
 
 Hence comes the right of the sword, for the sword gives a true right. Otherwise we should see violence on one side and justice on the other (end of the twelfth *Provincial*). Hence comes the injustice of the Fronde,[365] which raises its alleged justice against power. It is not the same in the Church, for there is a true justice and no violence.
 
-**Section Xiv, 878**
+**Section XIV, 878**
 
 *Injustice.*—Jurisdiction is not given for the sake of the judge, but for that of the litigant. It is dangerous to tell this to the people. But the people have too much faith in you; it will not harm them, and may serve you. It should therefore be made known. *Pasce oves meas*,[366] non *tuas*. You owe me pasturage.
 
-**Section Xiv, 879**
+**Section XIV, 879**
 
 Men like certainty. They like the Pope to be infallible in faith, and grave doctors to be infallible in morals, so as to have certainty.
 
-**Section Xiv, 880**
+**Section XIV, 880**
 
 The Church teaches, and God inspires, both infallibly. The work of the Church is of use only as a preparation for grace or condemnation. What it does is enough for condemnation, not for inspiration.
 
-**Section Xiv, 881**
+**Section XIV, 881**
 
 Every time the Jesuits may impose upon the Pope, they will make all Christendom perjured.
 
 The Pope is very easily imposed upon, because of his occupations, and the confidence which he has in the Jesuits; and the Jesuits are very capable of imposing upon him by means of calumny.
 
-**Section Xiv, 882**
+**Section XIV, 882**
 
 The wretches who have obliged me to speak of the basis of religion.
 
-**Section Xiv, 883**
+**Section XIV, 883**
 
 Sinners purified without penitence; the righteous justified without love; all Christians without the grace of Jesus Christ; God without power over the will of men; a predestination without mystery; a redemption without certitude!
 
-**Section Xiv, 884**
+**Section XIV, 884**
 
 Any one is made a priest, who wants to be so, as under Jeroboam.[367]
 
 It is a horrible thing that they propound to us the discipline of the Church of to-day as so good, that it is made a crime to desire to change it. Formerly it was infallibly good, and it was thought that it could be changed without sin; and now, such as it is, we cannot wish it changed! It has indeed been permitted to change the custom of not making priests without such great circumspection, that there were hardly any who were worthy; and it is not allowed to complain of the custom which makes so many who are unworthy!
 
-**Section Xiv, 885**
+**Section XIV, 885**
 
 *Heretics.*—Ezekiel. All the heathen, and also the Prophet, spoke evil of Israel. But the Israelites were so far from having the right to say to him, "You speak like the heathen," that he is most forcible upon this, that the heathen say the same as he.
 
-**Section Xiv, 886**
+**Section XIV, 886**
 
 The Jansenists are like the heretics in the reformation of morality; but you are like them in evil.
 
-**Section Xiv, 887**
+**Section XIV, 887**
 
 You are ignorant of the prophecies, if you do not know that all this must happen; princes, prophets, Pope, and even the priests. And yet the Church is to abide. By the grace of God we have not come to that. Woe to these priests! But we hope that God will bestow His mercy upon us that we shall not be of them.
 

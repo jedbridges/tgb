@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xi-712"
-heading: "Section Xi, 712"
+heading: "Section XI, 712"
 order: 62
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -108,7 +108,7 @@ Jer. vii, 22: "What avails it you to add sacrifice to sacrifice? For I spake not
 
 Jer. vii, 4: "Trust ye not in lying words, saying, The temple of the Lord, the temple of the Lord, the temple of the Lord, are these."
 
-**Section Xi, 713**
+**Section XI, 713**
 
 The Jews witnesses for God. Is. xliii, 9; xliv, 8.
 
@@ -124,7 +124,7 @@ Moses foretold what would happen to each tribe.
 
 "Make their heart fat,"[270] and how? by flattering their lust and making them hope to satisfy it.
 
-**Section Xi, 714**
+**Section XI, 714**
 
 *Prophecy.*—Amos and Zechariah. They have sold the just one, and therefore will not be recalled.—Jesus Christ betrayed.
 
@@ -136,26 +136,26 @@ Malachi. *Grotius.*—The second temple glorious.—Jesus Christ will come. Hagg
 
 The calling of the Gentiles. Joel ii, 28. Hosea ii, 24. Deut. xxxii, 21. Malachi i, 11.
 
-**Section Xi, 715**
+**Section XI, 715**
 
 Hosea iii.—Is. xlii, xlviii, liv, lx, lxi, last verse. "I foretold it long since that they might know that it is I." Jaddus to Alexander.
 
-**Section Xi, 716**
+**Section XI, 716**
 
 [*Prophecies.*—The promise that David will always have descendants. Jer. xiii, 13.]
 
-**Section Xi, 717**
+**Section XI, 717**
 
 The eternal reign of the race of David, 2 Chron., by all the prophecies, and with an oath. And it was not temporally fulfilled. Jer. xxiii, 20.
 
-**Section Xi, 718**
+**Section XI, 718**
 
 We might perhaps think that, when the prophets foretold that the sceptre should not depart from Judah until the eternal King came, they spoke to flatter the people, and that their prophecy was proved false by Herod. But to show that this was not their meaning, and that, on the contrary, they knew well that this temporal kingdom should cease, they said that they would be without a king and without a prince, and for a long time. Hosea iii, 4.
 
-**Section Xi, 719**
+**Section XI, 719**
 
 *Non habemus regem nisi Cæsarem.*[271] Therefore Jesus Christ was the Messiah, since they had no longer any king but a stranger, and would have no other.
 
-**Section Xi, 720**
+**Section XI, 720**
 
 We have no king but Cæsar.

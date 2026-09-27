@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-ix-of-liars"
-heading: "Chapter Ix: : of Liars"
+heading: "Chapter IX: : of Liars"
 order: 23
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

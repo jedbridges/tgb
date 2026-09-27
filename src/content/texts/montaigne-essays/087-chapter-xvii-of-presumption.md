@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xvii-of-presumption"
-heading: "Chapter Xvii: : of Presumption"
+heading: "Chapter XVII: : of Presumption"
 order: 87
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

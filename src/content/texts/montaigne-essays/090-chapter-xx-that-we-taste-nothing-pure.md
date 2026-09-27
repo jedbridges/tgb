@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xx-that-we-taste-nothing-pure"
-heading: "Chapter Xx: : That We Taste Nothing Pure"
+heading: "Chapter XX: : That We Taste Nothing Pure"
 order: 90
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

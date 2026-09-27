@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xiii-of-judging-of-the-death-of-another"
-heading: "Chapter Xiii: : of Judging of the Death of Another"
+heading: "Chapter XIII: : of Judging of the Death of Another"
 order: 83
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-ix-of-the-arms-of-the-parthians"
-heading: "Chapter Ix: : of the Arms of the Parthians"
+heading: "Chapter IX: : of the Arms of the Parthians"
 order: 79
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ix-627"
-heading: "Section Ix, 627"
+heading: "Section IX, 627"
 order: 47
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -18,7 +18,7 @@ Every history which is not contemporaneous, as the books of the Sibyls and Trism
 
 There is a great difference between a book which an individual writes, and publishes to a nation, and a book which itself creates a nation. We cannot doubt that the book is as old as the people.
 
-**Section Ix, 628**
+**Section IX, 628**
 
 Josephus hides the shame of his nation.
 
@@ -28,7 +28,7 @@ Moses does not hide his own shame.
 
 He was weary of the multitude.
 
-**Section Ix, 629**
+**Section IX, 629**
 
 *The sincerity of the Jews.*—Maccabees,[228] after they had no more prophets; the Masorah, since Jesus Christ.
 
@@ -38,7 +38,7 @@ Defective and final letters.
 
 Sincere against their honour, and dying for it; this has no example in the world, and no root in nature.
 
-**Section Ix, 630**
+**Section IX, 630**
 
 *Sincerity of the Jews.*—They preserve lovingly and carefully the book in which Moses declares that they have been all their life ungrateful to God, and that he knows they will be still more so after his death; but that he calls heaven and earth to witness against them, and that he has [*taught*] them enough.
 

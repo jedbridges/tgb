@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxiv-of-the-roman-grandeur"
-heading: "Chapter Xxiv: : of the Roman Grandeur"
+heading: "Chapter XXIV: : of the Roman Grandeur"
 order: 94
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

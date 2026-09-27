@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxx-of-cannibals"
-heading: "Chapter Xxx: : of Cannibals"
+heading: "Chapter XXX: : of Cannibals"
 order: 43
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

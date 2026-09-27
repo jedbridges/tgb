@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxv-of-the-custom-of-wearing-clothes"
-heading: "Chapter Xxxv: : of the Custom of Wearing Clothes"
+heading: "Chapter XXXV: : of the Custom of Wearing Clothes"
 order: 48
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

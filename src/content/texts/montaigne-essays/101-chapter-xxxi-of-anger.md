@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxi-of-anger"
-heading: "Chapter Xxxi: : of Anger"
+heading: "Chapter XXXI: : of Anger"
 order: 101
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

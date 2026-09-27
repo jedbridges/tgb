@@ -8,8 +8,14 @@ sourceUrl: "https://www.gutenberg.org/ebooks/2199"
 edition: "Samuel Butler's prose translation, 1898"
 translator: "Samuel Butler"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 5816
+words: 5834
 ---
+**The Iliad of Homer**
+
+Rendered into English Prose for
+ the use of those who cannot
+ read the original
+
 The quarrel between Agamemnon and Achilles—Achilles withdraws from the war, and sends his mother Thetis to ask Jove to help the Trojans—Scene between Jove and Juno on Olympus.
 
 Sing, O goddess, the anger of Achilles son of Peleus, that brought countless ills upon the Achaeans. Many a brave soul did it send hurrying down to Hades, and many a hero did it yield a prey to dogs and vultures, for so were the counsels of Jove fulfilled from the day on which the son of Atreus, king of men, and great Achilles, first fell out with one another.

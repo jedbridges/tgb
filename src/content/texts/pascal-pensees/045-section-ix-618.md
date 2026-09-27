@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ix-618"
-heading: "Section Ix, 618"
+heading: "Section IX, 618"
 order: 45
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xlvi-of-names"
-heading: "Chapter Xlvi: : of Names"
+heading: "Chapter XLVI: : of Names"
 order: 59
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

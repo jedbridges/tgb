@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xi-725"
-heading: "Section Xi, 725"
+heading: "Section XI, 725"
 order: 65
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"

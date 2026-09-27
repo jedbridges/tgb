@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xli-not-to-communicate-a-mans-honour"
-heading: "Chapter Xli: : Not to Communicate a Man’s Honour"
+heading: "Chapter XLI: : Not to Communicate a Man’s Honour"
 order: 54
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-vii-434"
-heading: "Section Vii, 434"
+heading: "Section VII, 434"
 order: 31
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"

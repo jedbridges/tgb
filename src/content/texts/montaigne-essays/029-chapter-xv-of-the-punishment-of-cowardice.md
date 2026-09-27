@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xv-of-the-punishment-of-cowardice"
-heading: "Chapter Xv: : of the Punishment of Cowardice"
+heading: "Chapter XV: : of the Punishment of Cowardice"
 order: 29
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

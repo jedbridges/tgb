@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxviii-all-things-have-their-season"
-heading: "Chapter Xxviii: : All Things Have Their Season"
+heading: "Chapter XXVIII: : All Things Have Their Season"
 order: 98
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

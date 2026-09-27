@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-vii-430"
-heading: "Section Vii, 430"
+heading: "Section VII, 430"
 order: 30
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -48,7 +48,7 @@ But I would ask him if God demands anything else from him than the knowledge and
 
 "It is not in this manner that He has willed to appear in His advent of mercy, because, as so many make themselves unworthy of His mercy, He has willed to leave them in the loss of the good which they do not want. It was not then right that He should appear in a manner manifestly divine, and completely capable of convincing all men; but it was also not right that He should come in so hidden a manner that He could not be known by those who should sincerely seek Him. He has willed to make Himself quite recognisable by those; and thus, willing to appear openly to those who seek Him with all their heart, and to be hidden from those who flee from Him with all their heart, He so regulates the knowledge of Himself that He has given signs of Himself, visible to those who seek Him, and not to those who seek Him not. There is enough light for those who only desire to see, and enough obscurity for those who have a contrary disposition."
 
-**Section Vii, 431**
+**Section VII, 431**
 
 No other religion has recognised that man is the most excellent creature. Some, which have quite recognised the reality of his excellence, have considered as mean and ungrateful the low opinions which men naturally have of themselves; and others, which have thoroughly recognised how real is this vileness, have treated with proud ridicule those feelings of greatness, which are equally natural to man.
 
@@ -56,12 +56,12 @@ No other religion has recognised that man is the most excellent creature. Some, 
 
 What, then, will man become? Will he be equal to God or the brutes? What a frightful difference! What, then, shall we be? Who does not see from all this that man has gone astray, that he has fallen from his place, that he anxiously seeks it, that he cannot find it again? And who shall then direct him to it? The greatest men have failed.
 
-**Section Vii, 432**
+**Section VII, 432**
 
 Scepticism is true; for, after all, men before Jesus Christ did not know where they were, nor whether they were great or small. And those who have said the one or the other, knew nothing about it, and guessed without reason and by chance. They also erred always in excluding the one or the other.
 
 *Quod ergo ignorantes, quæritis, religio annuntiat vobis.*[160]
 
-**Section Vii, 433**
+**Section VII, 433**
 
 *After having understood the whole nature of man.*—That a religion may be true, it must have knowledge of our nature. It ought to know its greatness and littleness, and the reason of both. What religion but the Christian has known this?

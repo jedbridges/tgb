@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxi-against-idleness"
-heading: "Chapter Xxi: : Against Idleness"
+heading: "Chapter XXI: : Against Idleness"
 order: 91
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

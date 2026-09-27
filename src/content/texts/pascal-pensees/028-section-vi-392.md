@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-vi-392"
-heading: "Section Vi, 392"
+heading: "Section VI, 392"
 order: 28
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -14,87 +14,87 @@ words: 2047
 
 This is enough, at least, to obscure the matter; not that it completely extinguishes the natural light which assures us of these things. The academicians[153] would have won. But this dulls it, and troubles the dogmatists to the glory of the sceptical crowd, which consists in this doubtful ambiguity, and in a certain doubtful dimness from which our doubts cannot take away all the clearness, nor our own natural lights chase away all the darkness.
 
-**Section Vi, 393**
+**Section VI, 393**
 
 It is a singular thing to consider that there are people in the world who, having renounced all the laws of God and nature, have made laws for themselves which they strictly obey, as, for instance, the soldiers of Mahomet, robbers, heretics, etc. It is the same with logicians. It seems that their licence must be without any limits or barriers, since they have broken through so many that are so just and sacred.
 
-**Section Vi, 394**
+**Section VI, 394**
 
 All the principles of sceptics, stoics, atheists, etc., are true. But their conclusions are false, because the opposite principles are also true.
 
-**Section Vi, 395**
+**Section VI, 395**
 
 *Instinct, reason.*—We have an incapacity of proof, insurmountable by all dogmatism. We have an idea of truth, invincible to all scepticism.
 
-**Section Vi, 396**
+**Section VI, 396**
 
 Two things instruct man about his whole nature; instinct and experience.
 
-**Section Vi, 397**
+**Section VI, 397**
 
 The greatness of man is great in that he knows himself to be miserable. A tree does not know itself to be miserable. It is then being miserable to know oneself to be miserable; but it is also being great to know that one is miserable.
 
-**Section Vi, 398**
+**Section VI, 398**
 
 All these same miseries prove man's greatness. They are the miseries of a great lord, of a deposed king.
 
-**Section Vi, 399**
+**Section VI, 399**
 
 We are not miserable without feeling it. A ruined house is not miserable. Man only is miserable. *Ego vir videns.*[154]
 
-**Section Vi, 400**
+**Section VI, 400**
 
 *The greatness of man.*—We have so great an idea of the soul of man that we cannot endure being despised, or not being esteemed by any soul; and all the happiness of men consists in this esteem.
 
-**Section Vi, 401**
+**Section VI, 401**
 
 *Glory.*—The brutes do not admire each other. A horse does not admire his companion. Not that there is no rivalry between them in a race, but that is of no consequence; for, when in the stable, the heaviest and most ill-formed does not give up his oats to another, as men would have others do to them. Their virtue is satisfied with itself.
 
-**Section Vi, 402**
+**Section VI, 402**
 
 The greatness of man even in his lust, to have known how to extract from it a wonderful code, and to have drawn from it a picture of benevolence.
 
-**Section Vi, 403**
+**Section VI, 403**
 
 *Greatness.*—The reasons of effects indicate the greatness of man, in having extracted so fair an order from lust.
 
-**Section Vi, 404**
+**Section VI, 404**
 
 The greatest baseness of man is the pursuit of glory. But it is also the greatest mark of his excellence; for whatever possessions he may have on earth, whatever health and essential comfort, he is not satisfied if he has not the esteem of men. He values human reason so highly that, whatever advantages he may have on earth, he is not content if he is not also ranked highly in the judgment of man. This is the finest position in the world. Nothing can turn him from that desire, which is the most indelible quality of man's heart.
 
 And those who most despise men, and put them on a level with the brutes, yet wish to be admired and believed by men, and contradict themselves by their own feelings; their nature, which is stronger than all, convincing them of the greatness of man more forcibly than reason convinces them of their baseness.
 
-**Section Vi, 405**
+**Section VI, 405**
 
 *Contradiction.*—Pride counterbalancing all miseries. Man either hides his miseries, or, if he disclose them, glories in knowing them.
 
-**Section Vi, 406**
+**Section VI, 406**
 
 Pride counterbalances and takes away all miseries. Here is a strange monster, and a very plain aberration. He is fallen from his place, and is anxiously seeking it. This is what all men do. Let us see who will have found it.
 
-**Section Vi, 407**
+**Section VI, 407**
 
 When malice has reason on its side, it becomes proud, and parades reason in all its splendour. When austerity or stern choice has not arrived at the true good, and must needs return to follow nature, it becomes proud by reason of this return.
 
-**Section Vi, 408**
+**Section VI, 408**
 
 Evil is easy, and has infinite forms; good is almost unique.[155] But a certain kind of evil is as difficult to find as what we call good; and often on this account such particular evil gets passed off as good. An extraordinary greatness of soul is needed in order to attain to it as well as to good.
 
-**Section Vi, 409**
+**Section VI, 409**
 
 *The greatness of man.*—The greatness of man is so evident, that it is even proved by his wretchedness. For what in animals is nature we call in man wretchedness; by which we recognise that, his nature being now like that of animals, he has fallen from a better nature which once was his.
 
 For who is unhappy at not being a king, except a deposed king? Was Paulus Æmilius[156] unhappy at being no longer consul? On the contrary, everybody thought him happy in having been consul, because the office could only be held for a time. But men thought Perseus so unhappy in being no longer king, because the condition of kingship implied his being always king, that they thought it strange that he endured life. Who is unhappy at having only one mouth? And who is not unhappy at having only one eye? Probably no man ever ventured to mourn at not having three eyes. But any one is inconsolable at having none.
 
-**Section Vi, 410**
+**Section VI, 410**
 
 *Perseus, King of Macedon.*—Paulus Æmilius reproached Perseus for not killing himself.
 
-**Section Vi, 411**
+**Section VI, 411**
 
 Notwithstanding the sight of all our miseries, which press upon us and take us by the throat, we have an instinct which we cannot repress, and which lifts us up.
 
-**Section Vi, 412**
+**Section VI, 412**
 
 There is internal war in man between reason and the passions.
 
@@ -104,54 +104,54 @@ If he had only passions without reason ...
 
 But having both, he cannot be without strife, being unable to be at peace with the one without being at war with the other. Thus he is always divided against, and opposed to himself.
 
-**Section Vi, 413**
+**Section VI, 413**
 
 This internal war of reason against the passions has made a division of those who would have peace into two sects. The first would renounce their passions, and become gods; the others would renounce reason, and become brute beasts. (Des Barreaux.)[157] But neither can do so, and reason still remains, to condemn the vileness and injustice of the passions, and to trouble the repose of those who abandon themselves to them; and the passions keep always alive in those who would renounce them.
 
-**Section Vi, 414**
+**Section VI, 414**
 
 Men are so necessarily mad, that not to be mad would amount to another form of madness.
 
-**Section Vi, 415**
+**Section VI, 415**
 
 The nature of man may be viewed in two ways: the one according to its end, and then he is great and incomparable; the other according to the multitude, just as we judge of the nature of the horse and the dog, popularly, by seeing its fleetness, *et animum arcendi*; and then man is abject and vile. These are the two ways which make us judge of him differently, and which occasion such disputes among philosophers.
 
 For one denies the assumption of the other. One says, "He is not born for this end, for all his actions are repugnant to it." The other says, "He forsakes his end, when he does these base actions."
 
-**Section Vi, 416**
+**Section VI, 416**
 
 *For Port-Royal.[158] Greatness and wretchedness.*—Wretchedness being deduced from greatness, and greatness from wretchedness, some have inferred man's wretchedness all the more because they have taken his greatness as a proof of it, and others have inferred his greatness with all the more force, because they have inferred it from his very wretchedness. All that the one party has been able to say in proof of his greatness has only served as an argument of his wretchedness to the others, because the greater our fall, the more wretched we are, and *vice versa.* The one party is brought back to the other in an endless circle, it being certain that in proportion as men possess light they discover both the greatness and the wretchedness of man. In a word, man knows that he is wretched. He is therefore wretched, because he is so; but he is really great because he knows it.
 
-**Section Vi, 417**
+**Section VI, 417**
 
 This twofold nature of man is so evident that some have thought that we had two souls. A single subject seemed to them incapable of such sudden variations from unmeasured presumption to a dreadful dejection of heart.
 
-**Section Vi, 418**
+**Section VI, 418**
 
 It is dangerous to make man see too clearly his equality with the brutes without showing him his greatness. It is also dangerous to make him see his greatness too clearly, apart from his vileness. It is still more dangerous to leave him in ignorance of both. But it is very advantageous to show him both. Man must not think that he is on a level either with the brutes or with the angels, nor must he be ignorant of both sides of his nature; but he must know both.
 
-**Section Vi, 419**
+**Section VI, 419**
 
 I will not allow man to depend upon himself, or upon another, to the end that being without a resting-place and without repose ...
 
-**Section Vi, 420**
+**Section VI, 420**
 
 If he exalt himself, I humble him; if he humble himself, I exalt him; and I always contradict him, till he understands that he is an incomprehensible monster.
 
-**Section Vi, 421**
+**Section VI, 421**
 
 I blame equally those who choose to praise man, those who choose to blame him, and those who choose to amuse themselves; and I can only approve of those who seek with lamentation.
 
-**Section Vi, 422**
+**Section VI, 422**
 
 It is good to be tired and wearied by the vain search after the true good, that we may stretch out our arms to the Redeemer.
 
-**Section Vi, 423**
+**Section VI, 423**
 
 *Contraries. After having shown the vileness and the greatness of man.*—Let man now know his value. Let him love himself, for there is in him a nature capable of good; but let him not for this reason love the vileness which is in him. Let him despise himself, for this capacity is barren; but let him not therefore despise this natural capacity. Let him hate himself, let him love himself; he has within him the capacity of knowing the truth and of being happy, but he possesses no truth, either constant or satisfactory.
 
 I would then lead man to the desire of finding truth; to be free from passions, and ready to follow it where he may find it, knowing how much his knowledge is obscured by the passions. I would indeed that he should hate in himself the lust which determined his will by itself, so that it may not blind him in making his choice, and may not hinder him when he has chosen.
 
-**Section Vi, 424**
+**Section VI, 424**
 
 All these contradictions, which seem most to keep me from the knowledge of religion, have led me most quickly to the true one.
