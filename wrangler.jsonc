@@ -2,11 +2,17 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "tgb",
   "compatibility_date": "2026-09-01",
+  "main": "worker/index.ts",
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page",
-    "html_handling": "auto-trailing-slash"
+    "html_handling": "auto-trailing-slash",
+    "binding": "ASSETS",
+    // Every path but /api/* is served straight from dist without the Worker running at
+    // all; only the answer endpoint needs the AI binding.
+    "run_worker_first": ["/api/*"]
   },
+  "ai": { "binding": "AI" },
   // The site lives on its own domain. Leaving the workers.dev hostname enabled
   // would serve a second, fully crawlable copy competing with the real one.
   "workers_dev": false,

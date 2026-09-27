@@ -20,6 +20,16 @@ jobs:
           AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
           BOOKSHOP_AFFILIATE_ID: ${{ secrets.BOOKSHOP_AFFILIATE_ID }}
           PUBLIC_GA4_ID: ${{ secrets.PUBLIC_GA4_ID }}
+      - name: Sync the corpus to R2 for AI Search
+        # Only runs once both R2 secrets exist; the Ask feature is optional infrastructure,
+        # not a reason to fail every deploy while it is being set up.
+        if: ${{ secrets.R2_ACCESS_KEY_ID != '' && secrets.R2_SECRET_ACCESS_KEY != '' }}
+        run: npm run corpus && npm run corpus:sync
+        env:
+          SITE_URL: ${{ secrets.SITE_URL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
