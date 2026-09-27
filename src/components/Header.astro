@@ -71,12 +71,11 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
 <style>
   .site-header {
     position: sticky; top: 0; z-index: 40;
-    /* Solid.
-       This was a tinted ramp across the bar's own height, and then a progressive blur under
-       it. Both read as haze: the page was legible through the top of the bar, and the gap
-       between the bar and the browse bar that pins under it turned into a second edge.
-       A reference site's chrome is not the place for an effect. */
-    background: var(--paper);
+    /* Paper at four fifths over a heavy blur of the page (the tokens are in base.css). An
+       earlier tinted ramp let words show through the top of the bar; a flat fill with the
+       page blurred to tone behind it does not, and the bar still reads as chrome. */
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur);
     /* On a phone the page runs under the status bar, so a bar pinned to top: 0 leaves a
        band above it where the page shows through and text scrolls past behind the clock.
        The inset is taken as padding rather than as a top offset, so the bar's own fill

@@ -231,7 +231,18 @@ const groups = bySegment ? shelves : [{ id: 'all', label: '', books: shelves.fla
        sitting on a bar. */
     position: sticky; bottom: 0; z-index: 5;
     padding: var(--s1) 0 calc(var(--s0) + env(safe-area-inset-bottom));
-    background: linear-gradient(to bottom, color-mix(in oklch, var(--paper) 0%, transparent), var(--paper) var(--s1));
+    /* The same glass as the header, faded in over its top edge so it still rises out of
+       the paper rather than sitting on a bar. The blur is on a pseudo so the mask that
+       fades the fill does not fade the caption's own text. */
+    isolation: isolate;
+  }
+  .bookcase__caption::before {
+    content: ''; position: absolute; inset: 0; z-index: -1;
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, #000 var(--s1)); mask-image: linear-gradient(to bottom, transparent, #000 var(--s1));
+  }
+  .bookcase__caption {
     min-height: 2.6rem;
     display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.9rem;
     font-size: var(--step--1); color: var(--ink-soft);
