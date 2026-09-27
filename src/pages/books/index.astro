@@ -3,13 +3,12 @@ import { getCollection } from 'astro:content';
 import Base from '~/layouts/Base.astro';
 import BookCard from '~/components/BookCard.astro';
 import Browse from '~/components/browse/Browse';
-import { placeholderAuthor, loadCatalog, catalogRecord, sortedByAssignment, guidedCount } from '~/lib/catalog';
+import { placeholderAuthor, loadCatalog, catalogRecord, sortedByAssignment } from '~/lib/catalog';
 import { breadcrumbs } from '~/lib/seo';
 
 const { works, authors, programs } = await loadCatalog();
 const sorted = await sortedByAssignment(works);
 const rows = await Promise.all(sorted.map(catalogRecord));
-const guided = await guidedCount();
 /* Cards laid out before the island starts revealing more. Sixty is four to six shelves at
    every width, which is further than the first screen reaches and less than a tenth of
    the layout work. The island uses the same number: see PAGE in Browse.tsx. */
@@ -31,7 +30,7 @@ const facets = {
   jsonld={breadcrumbs([{ name: 'Books', path: '/books/' }])}>
   <section class="wrap browse-head page-open">
     <h1 class="italic">All the books</h1>
-    <p class="browse-head__lede">Every work on the nine lists, {guided} of them with a written reading guide so far. Filter by what you are studying, or search inside every summary.</p>
+    <p class="browse-head__lede">Every work on the nine lists, each with a reading guide. Filter by what you are studying, or search inside every summary.</p>
   </section>
   <section class="wrap browse" data-pagefind-ignore>
     <Browse client:idle rows={rows} facets={facets} total={works.length} />

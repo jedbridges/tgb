@@ -57,6 +57,17 @@ const description = placed.length
     <h1 class="passage__h" data-pagefind-meta="title" data-pagefind-weight="6">{t.heading}</h1>
     <p class="passage__meta ui" data-pagefind-ignore>Part {t.order} of {count} · {t.words.toLocaleString()} words · about {minutes} min · {t.translator ? `trans. ${t.translator}` : t.edition}</p>
 
+    {/* Where the reader is, kept under the header for the length of a long part: the
+        part, the way to the passage the guide marks, and the next part, so nobody has to
+        reach the foot of twelve thousand words to find out what comes after. */}
+    <nav class="passage__bar ui" aria-label="This part" data-pagefind-ignore>
+      <span class="passage__bar-where">{t.heading} · {t.order} of {count}</span>
+      <span class="passage__bar-links">
+        {placed.length > 0 && <a href="#guide-h">{placed.length === 1 ? 'The marked passage' : `${placed.length} marked passages`} ↓</a>}
+        {next ? <a href={textUrl(work.id, next.data.section)}>Next: {next.data.heading} →</a> : <a href={workUrl(work.id)}>Back to the guide →</a>}
+      </span>
+    </nav>
+
     <div class="prose passage__text"><Content /></div>
 
     {placed.length > 0 && (
@@ -92,6 +103,19 @@ const description = placed.length
   .passage__book a:hover { color: var(--accent); }
   .passage__h { font-size: var(--step-3); font-style: italic; margin-top: var(--s2); text-wrap: balance; }
   .passage__meta { margin-top: var(--s0); color: var(--ink-mute); font-size: var(--step--2); }
+  .passage__bar {
+    position: sticky; top: var(--header-h); z-index: 5;
+    display: flex; justify-content: space-between; align-items: center; gap: var(--s2);
+    margin-top: var(--s2); padding: 0.55rem 0; border-top: var(--rule); border-bottom: var(--rule);
+    background: var(--glass-bg); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur);
+    font-size: var(--step--2); color: var(--ink-mute);
+  }
+  .passage__bar-where { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+  .passage__bar-links { display: flex; gap: var(--s2); flex: 0 0 auto; }
+  .passage__bar a { color: var(--ink-soft); text-decoration: none; min-height: 32px; display: inline-flex; align-items: center; white-space: nowrap; }
+  .passage__bar a:hover { color: var(--accent); }
+  @media (max-width: 560px) { .passage__bar-where { display: none; } .passage__bar { justify-content: space-between; } .passage__bar-links { flex: 1 1 auto; justify-content: space-between; } }
+  .guide { scroll-margin-top: calc(var(--header-h) + 4rem); }
   /* Long text is read, not scanned: a touch larger and looser than the guides, and never
      wider than the measure. */
   .passage__text { margin-top: var(--s3); font-size: var(--step-0); line-height: 1.62; }

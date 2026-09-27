@@ -181,6 +181,8 @@ function splitGutenberg(html: string): Section[] {
       }
       return;
     }
+    // A cross reference to another Gutenberg number is catalogue housekeeping, not text.
+    if (tag === 'p' && /^\s*Note:\s*See also\b/i.test(el.text)) return;
     if (tag && ['p', 'blockquote', 'ul', 'ol', 'table'].includes(tag)) { if (cur) cur.parts.push(textOf(el)); return; }
     // Older Gutenberg files set verse, and sometimes whole books, in <pre>: keep the lines.
     if (tag === 'pre') { if (cur) cur.parts.push(preLines(el)); return; }
