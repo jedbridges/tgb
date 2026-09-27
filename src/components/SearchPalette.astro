@@ -16,10 +16,15 @@ const hints = [
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13"/></svg>
       </button>
     </form>
+    <div class="palette__tabs" role="tablist" aria-label="Search or ask">
+      <button type="button" role="tab" id="tab-search" aria-controls="palette-results" aria-selected="true" data-mode="search">Search</button>
+      <button type="button" role="tab" id="tab-ask" aria-controls="palette-results" aria-selected="false" data-mode="ask">Ask</button>
+    </div>
     <div class="palette__busy" aria-hidden="true"></div>
     <p class="visually-hidden" id="palette-status" role="status" aria-live="polite"></p>
     <div class="palette__results" id="palette-results" role="listbox" aria-label="Results"></div>
     <p class="palette__hint ui" id="palette-hint">Try {hints.map(([q, what], i) => <>{i > 0 && (i === hints.length - 1 ? ', or ' : ', ')}<button type="button" data-q={q}>{q}</button> <span class="palette__what">({what})</span></>)}</p>
+    <p class="palette__hint ui" id="ask-hint" hidden>Ask a question and press Enter. Answers draw only on this site's own writing and the public domain texts here, never the open web.</p>
   </div>
 </div>
 <style>
@@ -47,10 +52,27 @@ const hints = [
   .palette__close { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: -0.5rem -0.2rem -0.5rem 0; border-radius: 6px; color: var(--ink-soft); }
   .palette__close:hover, .palette__close:focus-visible { color: var(--ink-strong); background: var(--paper); }
   @media (max-width: 480px) { .palette__form kbd { display: none; } }
+  /* The tab strip: two ordinary buttons standing in for a tablist, styled as an
+     underline pair so the mode read is quiet next to the input above it. */
+  .palette__tabs { display: flex; gap: 1.2rem; padding: 0.6rem 1.1rem 0; border-bottom: 1px solid var(--paper-deeper); }
+  .palette__tabs button { font-family: var(--font-ui); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); padding: 0.1rem 0 0.6rem; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  .palette__tabs button[aria-selected='true'] { color: var(--ink-strong); border-bottom-color: var(--accent); }
+  .palette__tabs button:hover { color: var(--ink-strong); }
   .palette__results { max-height: min(64vh, 36rem); overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+  .palette__results :global(.ask) { padding: 1rem 1.1rem 1.2rem; }
+  .palette__results :global(.ask__answer) { font-family: var(--font-display); font-size: var(--step-0); line-height: 1.6; color: var(--ink-strong); margin: 0; }
+  .palette__results :global(.ask__answer sup) { margin-left: 0.15em; }
+  .palette__results :global(.ask__answer sup a) { color: var(--accent); text-decoration: none; }
+  .palette__results :global(.ask__sources) { list-style: decimal; margin: 0.9rem 0 0; padding-left: 1.3rem; display: grid; gap: 0.35rem; }
+  .palette__results :global(.ask__sources a) { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-strong); text-decoration: none; }
+  .palette__results :global(.ask__sources a:hover) { text-decoration: underline; text-underline-offset: 0.15em; }
+  .palette__results :global(.ask__kind) { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); }
+  .palette__results :global(.ask__scope) { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); margin: 1rem 0 0; padding-top: 0.7rem; border-top: 1px solid var(--paper-deeper); }
   .palette__results:empty { display: none; }
   /* The hints teach what the box can answer; once it is answering they are in the way. */
-  .palette__results:not(:empty) + .palette__hint { display: none; }
+  /* General sibling, not adjacent: the ask hint sits one element further along than the
+     search hint, and both are in the way once there is something to read above them. */
+  .palette__results:not(:empty) ~ .palette__hint { display: none; }
   .palette__hint { padding: 0.8rem 1.1rem; color: var(--ink-mute); font-size: var(--step--2); line-height: 1.7; }
   .palette__results :global(.palette__wait) { padding: 0.8rem 1.1rem; color: var(--ink-mute); font-style: italic; }
   .palette__hint button { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 0.15em; min-height: 32px; padding: 0 0.15em; }
@@ -104,11 +126,30 @@ const hints = [
   const input = document.getElementById('palette-input') as HTMLInputElement;
   const list = document.getElementById('palette-results')!;
   const panel = root.querySelector<HTMLElement>('.palette__panel')!;
+  const tabs = [...root.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+  const searchHint = document.getElementById('palette-hint')!;
+  const askHint = document.getElementById('ask-hint')!;
   let lastFocus: HTMLElement | null = null;
   let sel = -1;
   let seq = 0;
+  let mode: 'search' | 'ask' = 'search';
   let names: Promise<string[]> | null = null;
   const loadNames = () => (names ??= fetch('/search-names.json').then((r) => r.json()).then((j) => j.authors as string[]).catch(() => []));
+
+  const SEARCH_PLACEHOLDER = input.placeholder;
+  const ASK_PLACEHOLDER = 'Ask a question about the books…';
+  function setMode(m: 'search' | 'ask') {
+    if (mode === m) return;
+    mode = m;
+    seq++; clearTimeout(t);
+    for (const tb of tabs) tb.setAttribute('aria-selected', String(tb.dataset.mode === m));
+    input.placeholder = m === 'ask' ? ASK_PLACEHOLDER : SEARCH_PLACEHOLDER;
+    searchHint.hidden = m === 'ask';
+    askHint.hidden = m === 'search';
+    list.innerHTML = ''; sel = -1; input.setAttribute('aria-expanded', 'false');
+    root.classList.remove('is-busy'); say('');
+    if (m === 'search' && input.value.trim()) run(input.value);
+  }
 
   const outside = () => [...document.body.children].filter((el) => el !== root) as HTMLElement[];
   function open(q = '') {
@@ -127,6 +168,11 @@ const hints = [
     outside().forEach((el) => { el.inert = false; el.removeAttribute('aria-hidden'); });
     list.innerHTML = ''; sel = -1; input.setAttribute('aria-expanded', 'false');
     lastFocus?.focus();
+    // Reopening always starts on Search; reset without re-running anything hidden can't see.
+    mode = 'search';
+    for (const tb of tabs) tb.setAttribute('aria-selected', String(tb.dataset.mode === 'search'));
+    input.placeholder = SEARCH_PLACEHOLDER;
+    searchHint.hidden = false; askHint.hidden = true;
   }
   const escape = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
 
@@ -218,6 +264,44 @@ const hints = [
       if (!hits.length) dispatchEvent(new CustomEvent('tgb:search-empty', { detail: { length: q.trim().length } }));
     }, 90);
   }
+
+  const KIND_LABEL: Record<string, string> = { guide: 'book', passage: 'passage', author: 'author', shelf: 'theme', program: 'program' };
+  interface AskSource { url: string; title: string; kind: string }
+  function renderAsk(answer: string, sources: AskSource[]) {
+    sel = -1;
+    const sups = sources.map((s, i) => `<sup><a href="${escape(s.url)}" data-rank="${i}">${i + 1}</a></sup>`).join('');
+    const items = sources.map((s, i) => `<li><a href="${escape(s.url)}" data-rank="${i}">${escape(s.title)}</a>${s.kind ? ` <span class="ask__kind">${escape(KIND_LABEL[s.kind] ?? s.kind)}</span>` : ''}</li>`).join('');
+    list.innerHTML = `<div class="ask">
+      <p class="ask__answer">${escape(answer).trim().replace(/\n{2,}/g, '</p><p class="ask__answer">').replace(/\n/g, '<br>')}${sups}</p>
+      ${items ? `<ol class="ask__sources">${items}</ol>` : ''}
+      <p class="ask__scope">Answers draw only on this site's own writing and the public domain texts here, never the open web.</p>
+    </div>`;
+    say(`Answered, with ${sources.length} ${sources.length === 1 ? 'source' : 'sources'}.`);
+  }
+  let askT: number | undefined;
+  function ask(q: string) {
+    clearTimeout(askT);
+    const query = q.trim();
+    if (!query) return;
+    root.classList.add('is-busy');
+    const my = ++seq;
+    const wait = window.setTimeout(() => { if (my === seq) list.innerHTML = '<p class="palette__wait">Thinking…</p>'; }, 300);
+    dispatchEvent(new CustomEvent('tgb:ask', { detail: { length: query.length } }));
+    fetch('/api/ask', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ query }) })
+      .then((r) => r.ok ? r.json() : Promise.reject(new Error(String(r.status))))
+      .then((data: { answer?: string; sources?: AskSource[] }) => {
+        if (my !== seq) return;
+        clearTimeout(wait); root.classList.remove('is-busy');
+        if (!data.answer) { throw new Error('empty answer'); }
+        renderAsk(data.answer, data.sources ?? []);
+      })
+      .catch(() => {
+        if (my !== seq) return;
+        clearTimeout(wait); root.classList.remove('is-busy');
+        list.innerHTML = `<div class="empty"><p>The answer service is not available right now.</p><p class="empty__out"><a href="${escape(browseUrl(query))}">Search the library instead →</a></p></div>`;
+        say('Ask is unavailable.');
+      });
+  }
   const options = () => [...list.querySelectorAll<HTMLElement>('[role="option"]')];
   function move(d: number) {
     const hits = options();
@@ -232,6 +316,7 @@ const hints = [
   // the query leaves the page: what people look for is theirs, that they looked is ours.
   let searchReported = false;
   input.addEventListener('input', () => {
+    if (mode !== 'search') return;
     if (!searchReported && input.value.trim().length >= 3) {
       searchReported = true;
       dispatchEvent(new CustomEvent('tgb:search', { detail: { length: input.value.trim().length } }));
@@ -243,6 +328,7 @@ const hints = [
     location.href = a.href;
   }
   input.addEventListener('keydown', (e) => {
+    if (mode === 'ask') { if (e.key === 'Enter') { e.preventDefault(); ask(input.value); } return; }
     if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
     else if (e.key === 'Enter') {
@@ -252,7 +338,13 @@ const hints = [
   });
   list.addEventListener('click', (e) => {
     const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[role="option"]');
-    if (a) { e.preventDefault(); go(a); }
+    if (a) { e.preventDefault(); go(a); return; }
+    const cite = (e.target as HTMLElement).closest<HTMLAnchorElement>('.ask a');
+    if (cite) {
+      e.preventDefault();
+      dispatchEvent(new CustomEvent('tgb:ask-citation', { detail: { rank: Number(cite.dataset.rank ?? -1) } }));
+      location.href = cite.href;
+    }
   });
   // Keep Tab inside the dialog.
   panel.addEventListener('keydown', (e) => {
@@ -267,7 +359,9 @@ const hints = [
   root.addEventListener('click', (e) => {
     const el = e.target as HTMLElement;
     if (el.closest('[data-close-search]')) close();
-    const q = el.closest<HTMLElement>('[data-q]'); if (q) { input.value = q.dataset.q!; run(input.value); input.focus(); }
+    const tb = el.closest<HTMLButtonElement>('[role="tab"]');
+    if (tb) { setMode(tb.dataset.mode === 'ask' ? 'ask' : 'search'); input.focus(); }
+    const q = el.closest<HTMLElement>('[data-q]'); if (q) { input.value = q.dataset.q!; if (mode === 'search') run(input.value); input.focus(); }
   });
   document.addEventListener('click', (e) => { if ((e.target as HTMLElement).closest('[data-open-search]')) open(); });
   document.addEventListener('keydown', (e) => {
