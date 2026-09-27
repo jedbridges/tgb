@@ -21,9 +21,7 @@ recommendedEdition:
   isbn13: "9781603846738"
   why: The Social Contract together with the Discourses it answers, in a clear translation with the key French terms flagged.
 cover:
-  source: archive
-  archiveId: therepublicofpla00rousuoft
-  credit: "Internet Archive, therepublicofpla00rousuoft"
+  source: generated
 synopsis: >-
   Rousseau's short treatise on what could make political authority legitimate, opening with the observation that man
   is born free and is everywhere in chains. Force creates no right and no one can contract himself into slavery, so

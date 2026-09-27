@@ -21,9 +21,7 @@ recommendedEdition:
   year: 2005
   why: A fresh translation of thirty tales from the Danish, edited by Jackie Wullschlager, that restores Andersen's plain and ironic voice.
 cover:
-  source: archive
-  archiveId: fairytalesfromha00ande3
-  credit: "Internet Archive, fairytalesfromha00ande3"
+  source: generated
 synopsis: >-
   Andersen published 156 tales between 1835 and 1872, some retold from Danish folklore but most invented. The best known include The Little Mermaid, who gives up her voice for a prince and is not chosen, The Emperor's New Clothes, The Ugly Duckling, The Princess and the Pea, The Snow Queen, The Little Match Girl, who freezes to death seeing visions in her matches, The Steadfast Tin Soldier and The Nightingale. Their tone is plain, colloquial and often unhappy, and their subjects are frequently outsiders and objects that come to life. The Harvard Classics selection includes twenty of them.
 whyItMatters: >-

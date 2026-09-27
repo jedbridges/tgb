@@ -20,9 +20,7 @@ recommendedEdition:
   year: 2008
   why: John Carey's selection of the poems and prose, with notes that unpack the conceits.
 cover:
-  source: archive
-  archiveId: poemsofjohndonne01donn
-  credit: "Internet Archive, poemsofjohndonne01donn"
+  source: generated
 synopsis: >-
   Donne's poems circulated privately in manuscript among a small readership and were first collected and printed only two years after his death. The Songs and Sonnets, written mostly in his twenties, are love poems built from argument and wit rather than plain declaration: The Good Morrow, The Sun Rising, The Flea, A Valediction Forbidding Mourning with its famous compass image. The satires, elegies and verse letters belong to the same early period. After his ordination into the Church of England came the Holy Sonnets, including Death Be Not Proud and Batter My Heart, and finally the hymns written during his last illnesses.
 whyItMatters: >-

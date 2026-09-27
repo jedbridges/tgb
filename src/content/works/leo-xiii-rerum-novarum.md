@@ -18,9 +18,7 @@ recommendedEdition:
   year: 1891
   why: The Vatican's English text is freely available online and is the version most courses use.
 cover:
-  source: archive
-  archiveId: encycliquererumn00cath
-  credit: "Internet Archive, encycliquererumn00cath"
+  source: generated
 synopsis: >-
   The encyclical of May 1891 issued by Pope Leo XIII that founded modern Catholic social teaching. Writing on the condition of workers in industrial society, Leo rejects socialism and the abolition of private property but insists that employers owe their workers a just wage, humane conditions and rest, that the state must protect the poor, and that workers have the right to form associations. Later popes marked its anniversaries with their own major statements, Quadragesimo Anno in 1931 and Centesimus Annus in 1991.
 whyItMatters: >-

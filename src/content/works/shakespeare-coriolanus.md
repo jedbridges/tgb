@@ -19,9 +19,7 @@ recommendedEdition:
   year: 2009
   why: The knotty late verse needs glossing, and the Folger does it line by line.
 cover:
-  source: archive
-  archiveId: coriolanuskerch00shakuoft
-  credit: "Internet Archive, coriolanuskerch00shakuoft"
+  source: generated
 synopsis: >-
   Caius Martius, a Roman patrician and unmatched soldier, wins the surname Coriolanus by taking the Volscian city of Corioli almost single-handed. Put forward for consul, he cannot bring himself to flatter the common people whose votes he needs, and the tribunes provoke him into contempt that gets him banished. He joins his old enemy Aufidius and leads the Volscians against Rome. At the gates his mother Volumnia persuades him to spare the city; the Volscians kill him for it. Shakespeare drew the story from Plutarch's Life of Coriolanus, tightening its already stark study of pride and political failure into one of his coldest and least forgiving tragedies.
 whyItMatters: >-

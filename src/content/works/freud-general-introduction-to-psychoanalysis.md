@@ -21,9 +21,7 @@ recommendedEdition:
   year: 1989
   why: Strachey's later translation supersedes the 1920 Riviere version that Great Books of the Western World reprints under this title.
 cover:
-  source: archive
-  archiveId: psychoanalysisin00freuuoft
-  credit: "Internet Archive, psychoanalysisin00freuuoft"
+  source: generated
 synopsis: >-
   The title under which Joan Riviere's 1920 English translation of Freud's Introductory Lectures was published in the United States by Boni and Liveright, distinct from the Introductory Lectures on Psycho-Analysis title used for the same translation in Britain, and the version reprinted in Great Books of the Western World. It is the same underlying work as the Introductory Lectures, twenty-eight Vienna lectures delivered across two wartime winters covering slips and errors, dreams, and the general theory of the neuroses. Riviere herself had been analyzed by Freud before undertaking the translation. Students assigned this specific title can read any complete translation of the Introductory Lectures, including James Strachey's later, more widely cited Standard Edition version.
 whyItMatters: >-

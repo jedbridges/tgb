@@ -21,9 +21,7 @@ recommendedEdition:
   why: Marian Evans's 1854 translation, the one English readers have always used, in a cheap reprint.
   isbn13: "9780486119229"
 cover:
-  source: archive
-  archiveId: a581696600feneuoft
-  credit: "Internet Archive, a581696600feneuoft"
+  source: generated
 synopsis: >-
   Feuerbach's sustained argument that theology is anthropology in disguise. Human beings project their own species-essence, reason, will and love, onto an imagined being existing outside themselves and then bow down to worship it; God's attributes, on this account, are simply human attributes freed from their ordinary limits. Part I works systematically through the specific doctrines of Christianity, the Trinity, the Incarnation, prayer, the resurrection, reading each as an expression of genuine human wish rather than revealed truth. Part II turns to attack the internal contradictions Feuerbach finds in these doctrines once examined honestly. Marx, Engels and the translator George Eliot were all directly shaped by reading it.
 whyItMatters: >-

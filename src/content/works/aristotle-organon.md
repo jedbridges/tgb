@@ -33,9 +33,7 @@ otherEditions:
     year: 1994
     why: If you read only one of the six closely, this is the one, and this is the edition that explains it.
 cover:
-  source: archive
-  archiveId: organonorlogica01aris
-  credit: "Internet Archive, organonorlogica01aris"
+  source: generated
 synopsis: >-
   The collective name, given by later editors, for Aristotle's six logical treatises. The Categories classifies the kinds of thing that can be said of a subject; On Interpretation treats statements and their contradictories, and asks whether a claim about tomorrow is already true; the Prior Analytics sets out the syllogism and the first formal system of valid inference in history; the Posterior Analytics asks what scientific knowledge is and where its first principles come from; the Topics teaches argument from accepted opinions; and the Sophistical Refutations catalogues the ways arguments cheat.
 whyItMatters: >-

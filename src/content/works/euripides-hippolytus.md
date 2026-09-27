@@ -28,9 +28,7 @@ otherEditions:
     year: 2006
     why: Printed in Grief Lessons with three other plays, in a translation that is a poet's rather than a philologist's and very good on Phaedra.
 cover:
-  source: archive
-  archiveId: bub_gb_m24nx0tx0rcC
-  credit: "Internet Archive, bub_gb_m24nx0tx0rcC"
+  source: generated
 synopsis: >-
   Aphrodite, insulted by the young hunter Hippolytus, who worships only the virgin Artemis and will have nothing to do with sex, makes his stepmother Phaedra fall hopelessly in love with him. Phaedra resolves to starve herself rather than speak, but her nurse extracts the secret and carries it to Hippolytus, who answers with a tirade against women. Phaedra hangs herself, leaving a tablet accusing him of rape. His father Theseus curses him with one of three wishes granted by Poseidon; a bull from the sea wrecks his chariot, and Artemis arrives too late to do anything but explain.
 whyItMatters: >-

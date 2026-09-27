@@ -20,9 +20,7 @@ recommendedEdition:
   year: 1964
   why: T. W. Craik's annotated student edition; the unglossed text is free in Harvard Classics Volume 47.
 cover:
-  source: archive
-  archiveId: newwaytopayoldde00massuoft
-  credit: "Internet Archive, newwaytopayoldde00massuoft"
+  source: generated
 synopsis: >-
   A comedy by Philip Massinger, composed around 1625 and published in 1633, the most performed non-Shakespearean play of its age for two centuries. Sir Giles Overreach, a ruthless extortioner modelled on a real monopolist, has ruined his nephew Wellborn and schemes to marry his daughter Margaret to a lord. Wellborn, with the help of the rich widow Lady Allworth, tricks Overreach into believing he is about to marry her and so restoring his credit; Margaret marries Allworth's stepson instead, and Overreach, his bonds voided and his schemes exposed, goes mad on stage.
 whyItMatters: >-

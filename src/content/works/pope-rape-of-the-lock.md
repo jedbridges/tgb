@@ -20,9 +20,7 @@ recommendedEdition:
   why: Pat Rogers's selection, which gives all three poems Adler names with notes, in one volume.
   isbn13: "9780191525308"
 cover:
-  source: archive
-  archiveId: rapeoflock00popeiala
-  credit: "Internet Archive, rapeoflock00popeiala"
+  source: generated
 synopsis: >-
   A mock-epic in five cantos, written to reconcile two Catholic families after Lord Petre cut a lock of hair from Arabella Fermor. Belinda wakes, is warned in a dream by the sylph Ariel, dresses at her toilet as a hero arms for battle, and sails up the Thames to Hampton Court, where after coffee and a game of cards the Baron snips her lock with a pair of scissors. The gnome Umbriel fetches spleen from the underworld, a battle of fans and frowns follows, and the lock rises to heaven as a star. The 1714 version added the machinery of sylphs and gnomes.
 whyItMatters: >-

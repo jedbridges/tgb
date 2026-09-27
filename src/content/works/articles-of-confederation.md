@@ -19,9 +19,7 @@ recommendedEdition:
   publisher: National Archives (online)
   why: The official transcription is free; it is also printed in most editions of the Federalist and in the Library of America's Debate on the Constitution.
 cover:
-  source: archive
-  archiveId: the-articles-of-confederation
-  credit: "Internet Archive, the-articles-of-confederation"
+  source: generated
 synopsis: >-
   The first constitution of the United States, agreed by the Continental Congress in November 1777
   and not in force until Maryland finally ratified in March 1781, four years into the war it was

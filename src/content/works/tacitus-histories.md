@@ -21,9 +21,7 @@ recommendedEdition:
   year: 2009
   why: Revised by Rhiannon Ash, with maps and notes; the standard paperback.
 cover:
-  source: archive
-  archiveId: histories01taciuoft
-  credit: "Internet Archive, histories01taciuoft"
+  source: generated
 synopsis: >-
   Tacitus' account of the Flavian period, originally covering AD 69 to 96 in about fourteen books, of which only the first four and part of the fifth survive. They cover the Year of the Four Emperors, when Galba, Otho and Vitellius were raised and destroyed in turn by the armies before Vespasian's forces took Rome, along with the revolt of Civilis on the Rhine and the opening of the Jewish war. The book opens with Tacitus' statement of his method and his famous remark that an emperor could be made elsewhere than at Rome.
 whyItMatters: >-

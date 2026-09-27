@@ -21,9 +21,7 @@ recommendedEdition:
   why: Michael Gamer and Dahlia Porter print both editions complete, with the Preface, the Appendix and the 1802 additions.
   isbn13: "9781551116006"
 cover:
-  source: archive
-  archiveId: lyricalballads00worduoft
-  credit: "Internet Archive, lyricalballads00worduoft"
+  source: generated
 synopsis: >-
   The small anonymous volume of 1798 by Wordsworth and Coleridge that is usually taken to begin English Romanticism. It opens with Coleridge's Rime of the Ancient Mariner and closes with Wordsworth's Tintern Abbey; between are ballads about beggars, mad mothers, an idiot boy and a girl who insists her dead siblings are still seven. The 1800 second edition added a volume of new poems and Wordsworth's Preface, which defends plain language and defines poetry as the spontaneous overflow of powerful feelings recollected in tranquillity, and the 1802 edition enlarged the Preface into the manifesto it has been read as since.
 whyItMatters: >-

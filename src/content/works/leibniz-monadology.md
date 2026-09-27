@@ -20,9 +20,7 @@ recommendedEdition:
   isbn13: "9780872201323"
   why: A clear translation of the Monadology with the Discourse and the Principles of Nature and Grace that explain it.
 cover:
-  source: archive
-  archiveId: monadologyotherp00gott
-  credit: "Internet Archive, monadologyotherp00gott"
+  source: generated
 synopsis: >-
   Ninety numbered paragraphs written in Vienna in 1714, in French, as a summary of a philosophy
   Leibniz had been building for forty years and had never set out whole. The world, he argues,

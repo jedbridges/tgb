@@ -10,6 +10,12 @@ export const TONES = [
   { id: 'tobacco', bg: 'oklch(0.45 0.07 55)', ink: 'oklch(0.95 0.02 80)' },
   { id: 'ink', bg: 'oklch(0.26 0.015 40)', ink: 'oklch(0.93 0.02 70)' },
   { id: 'sage', bg: 'oklch(0.6 0.05 130)', ink: 'oklch(0.2 0.02 100)' },
+  { id: 'claret', bg: 'oklch(0.42 0.12 15)', ink: 'oklch(0.95 0.02 60)' },
+  { id: 'teal', bg: 'oklch(0.4 0.07 210)', ink: 'oklch(0.95 0.015 90)' },
+  { id: 'mustard', bg: 'oklch(0.7 0.13 90)', ink: 'oklch(0.22 0.03 70)' },
+  { id: 'indigo', bg: 'oklch(0.3 0.09 290)', ink: 'oklch(0.94 0.02 80)' },
+  { id: 'rust', bg: 'oklch(0.52 0.13 40)', ink: 'oklch(0.96 0.02 70)' },
+  { id: 'moss', bg: 'oklch(0.48 0.08 120)', ink: 'oklch(0.95 0.02 100)' },
 ];
 export function toneFor(key: string) {
   let h = 0;

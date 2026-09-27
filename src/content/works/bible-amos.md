@@ -21,9 +21,7 @@ recommendedEdition:
   isbn13: "9780190276072"
   why: The standard scholarly study Bible, with introductions and notes for every book.
 cover:
-  source: archive
-  archiveId: amosbersunderlut00bibl
-  credit: "Internet Archive, amosbersunderlut00bibl"
+  source: generated
 synopsis: >-
   Amos, a herdsman from Judah, prophesies against the northern kingdom of Israel in a time of prosperity under Jeroboam II. In nine short chapters of oracles and visions he denounces the rich who trample the poor, sell the needy for a pair of sandals and mask injustice with lavish worship. God rejects their festivals and demands that justice roll down like waters. Twice he intercedes and God relents; the third time, shown a plumb line against a crumbling wall, he is told the end has come. The book foretells exile and ends, in its final verses, with a brief promise of restoration under a rebuilt house of David.
 whyItMatters: >-

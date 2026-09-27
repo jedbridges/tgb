@@ -28,9 +28,7 @@ otherEditions:
     year: 2013
     why: The literal version, and the one to check when Fagles has smoothed a difficult passage into something too easy.
 cover:
-  source: archive
-  archiveId: the-oresteia-trilogy-agamemnon-the-libation-bearers-and-the-furies-2012-aeschylu
-  credit: "Internet Archive, the-oresteia-trilogy-agamemnon-the-libation-bearers-and-the-furies-2012-aeschylu"
+  source: generated
 synopsis: >-
   The middle play of the Oresteia. Years after Agamemnon's murder his son Orestes comes back from exile and meets his sister Electra at their father's grave, where Clytemnestra has sent her to pour offerings after a terrifying dream. They recognise each other and, with the chorus of captive women, call on the dead man to help them. Orestes enters the palace disguised as a stranger bringing news of his own death, kills Aegisthus, and then, after his mother bares the breast that fed him and he hesitates, kills her too. As he shows the bodies the Furies appear, visible to nobody but him, and he runs.
 whyItMatters: >-

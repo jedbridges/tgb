@@ -21,9 +21,7 @@ recommendedEdition:
   year: 1992
   why: A well-chosen selection of the most read Moralia; the complete text is in fifteen Loeb volumes.
 cover:
-  source: archive
-  archiveId: plutarchsmoralia10plut_0
-  credit: "Internet Archive, plutarchsmoralia10plut_0"
+  source: generated
 synopsis: >-
   The collective name for Plutarch's seventy-eight surviving essays, dialogues and lectures on everything other than biography. They include practical advice on listening to lectures, controlling anger, distinguishing a flatterer from a friend and consoling the bereaved, dialogues on love and on the decline of oracles, a defence of eating no meat, the education of children, essays on Isis and Osiris and on superstition, and the polemic On the Malice of Herodotus. Montaigne read them constantly, and the collection's range, from practical advice to theology to literary polemic, has made it a lasting source for essayists working long after the genre Plutarch effectively helped originate.
 whyItMatters: >-
