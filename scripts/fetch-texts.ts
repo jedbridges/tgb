@@ -218,7 +218,9 @@ function splitGutenberg(html: string): Section[] {
   };
   walk(body);
   flush();
-  // Everything before the first real chapter (title, contents, preface headings with no text) goes.
+  // A file whose headings the walker could not read still has its text: one section, the
+  // whole of it, is better than nothing at all.
+  if (!sections.length) { const b = tidy(textOf(body)); if (b) sections.push({ heading: titleCase(title || 'Text'), body: b, path: title || 'Text' }); }
   return sections;
 }
 
@@ -274,7 +276,11 @@ async function run(s: Source) {
     raw = kept;
   }
   // A translator's introduction or analysis is not the work; the source map names it to leave out.
-  if (s.skip) { const re = new RegExp(s.skip, 'i'); raw = raw.filter((x) => !re.test(x.path)); }
+  if (s.skip) {
+    const re = new RegExp(s.skip, 'i'); const kept = raw.filter((x) => !re.test(x.path));
+    // A skip that would take everything is a skip that misread the file; keep the text.
+    if (kept.length) raw = kept; else console.warn(`${s.work}: skip /${s.skip}/ would leave nothing; ignored`);
+  }
   const sections = fold(raw);
   const total = sections.reduce((n, x) => n + words(x.body), 0);
   console.log(`${s.work}: ${sections.length} sections, ${total.toLocaleString()} words${DRY ? ' (dry)' : ''}`);
