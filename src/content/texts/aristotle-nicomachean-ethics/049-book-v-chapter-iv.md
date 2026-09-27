@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-v-chapter-iv"
-heading: "BOOK V, Chapter IV."
+heading: "BOOK V, Chapter IV"
 order: 49
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"
@@ -18,7 +18,7 @@ Here then let us dismiss any further consideration of the Justice ranking as co-
 
 By the way, as to individual education, in respect of which a man is simply good without reference to others, whether it is the province of πολιτικὴ or some other science we must determine at a future time: for it may be it is not the same thing to be a good man and a good citizen in every case.
 
-**BOOK V, Chapter V.**
+**BOOK V, Chapter V**
 
 Now of the Particular Justice, and the Just involved in it, one species is that which is concerned in the distributions of honour, or wealth, or such other things as are to be shared among the members of the social community (because in these one man as compared with another may have either an equal or an unequal share), and the other is that which is Corrective in the various transactions between man and man.
 

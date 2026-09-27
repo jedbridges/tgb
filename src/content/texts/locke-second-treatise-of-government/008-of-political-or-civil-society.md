@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-political-or-civil-society"
-heading: "Of Political or CIVIL Society."
+heading: "Of Political or CIVIL Society"
 order: 8
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

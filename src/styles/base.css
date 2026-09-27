@@ -70,6 +70,23 @@ img, svg { display: block; max-width: 100%; height: auto; }
    It sits above the page and below nothing, because paper is the surface everything is
    printed on, including the covers. pointer-events stay off so it is invisible to every
    interaction. */
+/* Chrome that floats over the page: the header, the buy bar, a pinned segment nav. Paper at
+   four fifths with the page blurred behind it, so what scrolls under shows as a wash of
+   tone, never as words. Two tokens rather than a class, so each bar keeps its own rules and
+   only the surface is shared. The blur is composited on its own layer in every engine that
+   has it (Safari with the prefix, Firefox 103 and up); where it is missing, or the reader
+   has asked for less transparency, the bars go back to solid paper. */
+:root {
+  --glass-bg: color-mix(in oklch, var(--paper) 84%, transparent);
+  --glass-blur: blur(28px) saturate(1.15);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root { --glass-bg: var(--paper); --glass-blur: none; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  :root { --glass-bg: var(--paper); --glass-blur: none; }
+}
+
 body::after {
   content: '';
   position: fixed;

@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-vi-chapter-v"
-heading: "BOOK VI, Chapter V."
+heading: "BOOK VI, Chapter V"
 order: 66
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"
@@ -26,7 +26,7 @@ Then again Art admits of degrees of excellence, but Practical Wisdom does not: a
 
 Now as there are two parts of the Soul which have Reason, it must be the Excellence of the Opinionative [which we called before calculative or deliberative], because both Opinion and Practical Wisdom are exercised upon Contingent matter. And further, it is not simply a state conjoined with Reason, as is proved by the fact that such a state may be forgotten and so lost while Practical Wisdom cannot.
 
-**BOOK VI, Chapter VI.**
+**BOOK VI, Chapter VI**
 
 Now Knowledge is a conception concerning universals and Necessary matter, and there are of course certain First Principles in all trains of demonstrative reasoning (that is of all Knowledge because this is connected with reasoning): that faculty, then, which takes in the first principles of that which comes under the range of Knowledge, cannot be either Knowledge, or Art, or Practical Wisdom: not Knowledge, because what is the object of Knowledge must be derived from demonstrative reasoning; not either of the other two, because they are exercised upon Contingent matter only. Nor can it be Science which takes in these, because the Scientific Man must in some cases depend on demonstrative Reasoning.
 

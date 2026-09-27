@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-v-chapter-xii"
-heading: "BOOK V, Chapter XII."
+heading: "BOOK V, Chapter XII"
 order: 56
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

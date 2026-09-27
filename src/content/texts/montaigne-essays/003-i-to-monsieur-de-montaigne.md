@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "i-to-monsieur-de-montaigne"
-heading: "I.——To Monsieur de MONTAIGNE"
+heading: "I.: : To Monsieur de MONTAIGNE"
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

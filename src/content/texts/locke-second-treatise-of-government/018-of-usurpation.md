@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-usurpation"
-heading: "Of Usurpation."
+heading: "Of Usurpation"
 order: 18
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

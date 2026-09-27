@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-the-state-of-war"
-heading: "Of the State of War."
+heading: "Of the State of War"
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

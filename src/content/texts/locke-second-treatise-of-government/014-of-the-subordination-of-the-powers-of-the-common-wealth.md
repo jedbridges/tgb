@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-the-subordination-of-the-powers-of-the-common-wealth"
-heading: "Of the Subordination of the Powers of the Common-wealth."
+heading: "Of the Subordination of the Powers of the Common-wealth"
 order: 14
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

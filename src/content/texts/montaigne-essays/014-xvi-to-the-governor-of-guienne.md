@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "xvi-to-the-governor-of-guienne"
-heading: "XVI.——To the Governor of Guienne."
+heading: "XVI.: : To the Governor of Guienne"
 order: 14
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

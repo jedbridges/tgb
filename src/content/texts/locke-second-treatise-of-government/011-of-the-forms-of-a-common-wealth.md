@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-the-forms-of-a-common-wealth"
-heading: "Of the Forms of a Common-wealth."
+heading: "Of the Forms of a Common-wealth"
 order: 11
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "xv-to-the-same"
-heading: "XV.——To the same."
+heading: "XV.: : To the same"
 order: 13
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -19,9 +19,7 @@ recommendedEdition:
   year: 2009
   why: Both Vindications in one volume; the Rights of Men is rarely printed alone.
 cover:
-  source: archive
-  archiveId: vindicationofrig00woll_4
-  credit: "Internet Archive, vindicationofrig00woll_4"
+  source: generated
 synopsis: >-
   The first published reply to Burke's Reflections on the Revolution in France, written in a month and issued anonymously in November 1790. Wollstonecraft accuses Burke of sentimental theatricality, of defending property and hereditary privilege in the name of tradition, and of feeling for the queen of France while ignoring the poor. Against him she sets natural rights grounded in reason and God, and argues that inherited wealth and rank corrupt manners and morals. A second edition carried her name and made her reputation, two years before the Rights of Woman applied the same argument to her own sex.
 whyItMatters: >-

@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-xxiv"
-heading: "Book XXIV."
+heading: "Book XXIV"
 order: 24
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

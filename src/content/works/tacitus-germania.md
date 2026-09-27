@@ -21,9 +21,7 @@ recommendedEdition:
   why: Both short works together with good notes; the Harvard Classics uses the older Church and Brodribb translation.
   isbn13: "9780191587542"
 cover:
-  source: archive
-  archiveId: agricolagermanyo00taci
-  credit: "Internet Archive, agricolagermanyo00taci"
+  source: generated
 synopsis: >-
   A short ethnographic essay on the peoples beyond the Rhine and Danube, written the same year as the Agricola and drawing on earlier Roman writers, traders and soldiers who had dealt with the tribes at first hand. The first half describes the Germans in general, their land, warfare, kings and assemblies, religion, marriage customs and love of drinking and gambling; the second surveys the individual tribes from the Rhine to the Baltic, naming and locating peoples otherwise unrecorded. Tacitus uses German simplicity and chastity as a pointed mirror for Roman decadence, and the short work has had a long and troubling afterlife in German nationalism centuries after its composition.
 whyItMatters: >-

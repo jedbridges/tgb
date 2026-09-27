@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-ii-chapter-vi"
-heading: "BOOK II, Chapter VI."
+heading: "BOOK II, Chapter VI"
 order: 18
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

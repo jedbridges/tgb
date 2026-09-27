@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-tyranny"
-heading: "Of Tyranny."
+heading: "Of Tyranny"
 order: 19
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

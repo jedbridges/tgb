@@ -20,9 +20,7 @@ recommendedEdition:
   isbn13: "9780199540792"
   why: Brian Vickers's Oxford World's Classics volume includes New Atlantis, the Essays and the Advancement of Learning in one book.
 cover:
-  source: archive
-  archiveId: fnewatlantis00baco
-  credit: "Internet Archive, fnewatlantis00baco"
+  source: generated
 synopsis: >-
   An unfinished utopian fiction, published the year after Bacon's death. European sailors blown off
   course across the Pacific reach Bensalem, a Christian island that sealed itself off nineteen

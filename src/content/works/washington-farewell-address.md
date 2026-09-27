@@ -18,9 +18,7 @@ recommendedEdition:
   year: 1796
   why: The text is in the public domain; the Harvard Classics prints it with the First Inaugural Address of 1789 in volume 43.
 cover:
-  source: archive
-  archiveId: washingtonsfarew00washrich
-  credit: "Internet Archive, washingtonsfarew00washrich"
+  source: generated
 synopsis: >-
   An open letter to the American people, published in a Philadelphia newspaper in September 1796, announcing that Washington would not seek a third term. Drafted with help from Madison and Hamilton, it urges the union of the states above sectional loyalties, warns against the spirit of party and against permanent alliances with foreign nations, and calls religion, morality and public credit the supports of good government. The Harvard Classics also prints his First Inaugural Address of April 1789, in which he declined a salary and commended the new government to the care of Providence.
 whyItMatters: >-

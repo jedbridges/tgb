@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-vi"
-heading: "Book VI."
+heading: "Book VI"
 order: 6
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

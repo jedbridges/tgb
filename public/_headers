@@ -1,0 +1,24 @@
+# Cache rules for the search index, read by Cloudflare's static asset serving.
+#
+# Pagefind names its index chunks by content hash and lists them in pagefind-entry.json,
+# so every deploy renames the chunks. A browser holding a cached entry file then asks for
+# chunks that no longer exist and the search answers with nothing at all. The entry, the
+# script, its worker and the wasm are revalidated on every load (an ETag round trip, not
+# a download); the hashed chunks can be kept for a year.
+
+/pagefind/pagefind-entry.json
+  Cache-Control: no-cache
+/pagefind/pagefind.js
+  Cache-Control: no-cache
+/pagefind/pagefind-worker.js
+  Cache-Control: no-cache
+/pagefind/wasm.en.pagefind
+  Cache-Control: no-cache
+/pagefind/wasm.unknown.pagefind
+  Cache-Control: no-cache
+/pagefind/index/*
+  Cache-Control: public, max-age=31536000, immutable
+/pagefind/fragment/*
+  Cache-Control: public, max-age=31536000, immutable
+/pagefind/filter/*
+  Cache-Control: public, max-age=31536000, immutable

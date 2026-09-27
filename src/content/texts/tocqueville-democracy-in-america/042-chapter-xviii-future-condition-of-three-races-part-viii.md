@@ -1,7 +1,7 @@
 ---
 work: tocqueville-democracy-in-america
 section: "chapter-xviii-future-condition-of-three-races-part-viii"
-heading: "Chapter XVIII: Future Condition Of Three Races—Part VIII"
+heading: "Chapter XVIII: Future Condition Of Three Races: Part VIII"
 order: 42
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/815"

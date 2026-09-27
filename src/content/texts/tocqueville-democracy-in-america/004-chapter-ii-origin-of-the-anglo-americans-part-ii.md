@@ -1,7 +1,7 @@
 ---
 work: tocqueville-democracy-in-america
 section: "chapter-ii-origin-of-the-anglo-americans-part-ii"
-heading: "Chapter II: Origin Of The Anglo-Americans—Part II"
+heading: "Chapter II: Origin Of The Anglo-Americans: Part II"
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/815"

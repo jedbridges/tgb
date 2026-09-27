@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-the-state-of-nature"
-heading: "Of the State of Nature."
+heading: "Of the State of Nature"
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-vi-chapter-ix"
-heading: "BOOK VI, Chapter IX."
+heading: "BOOK VI, Chapter IX"
 order: 69
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

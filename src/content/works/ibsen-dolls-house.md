@@ -20,9 +20,7 @@ recommendedEdition:
   year: 2008
   why: Accurate translations from the Oxford Ibsen, with three of the other plays on the lists in the same volume.
 cover:
-  source: archive
-  archiveId: dollshouseplayin00ibseuoft
-  credit: "Internet Archive, dollshouseplayin00ibseuoft"
+  source: generated
 synopsis: >-
   Nora Helmer appears to be a happy, spoiled, childish wife, and spends the first act being
   petted and teased by a husband who calls her his songbird. Years earlier she had secretly

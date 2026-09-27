@@ -136,6 +136,15 @@ export async function search(q: string, opts: SearchOptions = {}): Promise<Hit[]
   if (!pf) return null;
   const res = await pf.search(text, Object.keys(filters).length ? { filters } : undefined);
   const raw = await Promise.all(res.results.slice(0, opts.limit ?? 24).map((r) => r.data()));
+  /* Pagefind ranks by how densely a page uses the word, so thirty guides that argue about
+     justice outrank the Justice theme page, which names it once in its title and never
+     reaches the cut. The pages that are not books are few and short: ask for them apart,
+     so a theme, a form, an author or a program named by the query is always in the pool. */
+  if (text && typeof filters.type !== 'string') {
+    const shelves = await pf.search(text, { filters: { ...filters, type: { any: ['Author', 'Theme', 'Era', 'Form', 'Shelf', 'Program'] } } });
+    const seen = new Set(raw.map((r) => r.url));
+    for (const r of await Promise.all(shelves.results.slice(0, 6).map((x) => x.data()))) if (!seen.has(r.url)) raw.push(r);
+  }
   /* A query no word matches is still answered by Pagefind with pages that share the first
      two letters of it ("Neitzsche" marks "ne"), which is not a result. A hit has to mark
      a real fraction of some word that was typed. */

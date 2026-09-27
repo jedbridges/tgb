@@ -17,9 +17,7 @@ recommendedEdition:
   year: 1989
   why: Prints the published text with an introduction that sets the famous mental crisis in context.
 cover:
-  source: archive
-  archiveId: a592818300milluoft
-  credit: "Internet Archive, a592818300milluoft"
+  source: generated
 synopsis: >-
   Mill's account of his own formation, published the year he died. He describes the extraordinary education his father James Mill gave him, Greek at three and logic at twelve, with no religion and almost no company of other children. He then narrates the mental crisis of his twentieth year, when he realised that reaching all his aims would not make him happy, and his recovery through Wordsworth's poetry and the cultivation of feeling. The later chapters cover his years at the East India Company, his work with the Philosophic Radicals, his long attachment to Harriet Taylor, and how his books came to be written.
 whyItMatters: >-

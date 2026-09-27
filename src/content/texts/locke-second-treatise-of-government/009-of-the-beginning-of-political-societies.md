@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-the-beginning-of-political-societies"
-heading: "Of the Beginning of Political Societies."
+heading: "Of the Beginning of Political Societies"
 order: 9
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

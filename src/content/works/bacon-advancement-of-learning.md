@@ -19,9 +19,7 @@ recommendedEdition:
   isbn13: "9780199540792"
   why: Vickers's annotated text of the 1605 Advancement, with the Essays and New Atlantis.
 cover:
-  source: archive
-  archiveId: newatlantis00bacouoft
-  credit: "Internet Archive, newatlantis00bacouoft"
+  source: generated
 synopsis: >-
   Bacon's first major work, written in English and addressed to James I in the second year of his
   reign, as a prospectus for royal patronage. Book I defends learning against three sets of

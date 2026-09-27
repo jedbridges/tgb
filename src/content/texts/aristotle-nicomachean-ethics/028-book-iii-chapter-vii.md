@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-iii-chapter-vii"
-heading: "BOOK III, Chapter VII."
+heading: "BOOK III, Chapter VII"
 order: 28
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"
@@ -42,7 +42,7 @@ Whether then we suppose that the End impresses each man’s mind with certain no
 
 If then, as is commonly said, the Virtues are voluntary (because we at least cooperate in producing our moral states, and we assume the End to be of a certain kind according as we are ourselves of certain characters), the Vices must be voluntary also, because the cases are exactly similar.
 
-**BOOK III, Chapter VIII.**
+**BOOK III, Chapter VIII**
 
 Well now, we have stated generally respecting the Moral Virtues, the genus (in outline), that they are mean states, and that they are habits, and how they are formed, and that they are of themselves calculated to act upon the circumstances out of which they were formed, and that they are in our own power and voluntary, and are to be done so as right Reason may direct.
 

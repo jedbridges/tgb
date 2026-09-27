@@ -21,9 +21,7 @@ recommendedEdition:
   year: 2008
   why: Six hundred fables from the Greek and Latin sources, arranged by theme, with notes on their origins.
 cover:
-  source: archive
-  archiveId: aesopsfables00aeso
-  credit: "Internet Archive, aesopsfables00aeso"
+  source: generated
 synopsis: >-
   Short tales, mostly of talking animals, each ending in a lesson, attributed to a slave on Samos in the sixth century BCE about whom nothing certain is known. The fables circulated orally, were collected by Demetrius of Phalerum around 300 BCE, and survive through Greek prose collections and the Latin verse of Phaedrus and the Greek of Babrius. Among the several hundred are the tortoise and the hare, the fox and the grapes, the boy who cried wolf, the ant and the grasshopper, the lion and the mouse, and the town mouse and the country mouse.
 whyItMatters: >-

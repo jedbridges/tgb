@@ -267,6 +267,15 @@ Kept so a later session knows what was checked and how, not only what was built.
   sitemap was checked for the 203 text URLs and their lastmod, and noindex for a section
   with no passage. Known parser gaps for the next fetch run: the Oresteia parsed to its
   introductory note only, and Kant's "First Section" heading was taken for an epigraph.
+- 27 September 2026, the hint that led nowhere: "justice" from the palette's own hint
+  returned thirty books and never the Justice theme page, because Pagefind ranks by term
+  density and a short theme page never reached the cut where the exact-title promotion
+  looks. `search()` now runs a second small query for the page kinds that are not books
+  and merges them before promotion; justice, tragedy, Renaissance and sophomore each lead
+  with their own page in Chromium. On the live site the same query returned nothing at
+  all, which fits a browser holding a cached `pagefind-entry.json` from before a deploy
+  and asking for index chunks that no longer exist: `public/_headers` now revalidates the
+  entry, script, worker and wasm on every load and caches the hashed chunks for a year.
 - The query suite the palette is checked against, run in Chromium against the built site:
   Plato, Republic, justice, Iliad, Ilias, sophomore, approachable epic, tragedy, Greek
   tragedy, short novel, easy long novels, happiness, Dostoevski, Neitzsche, xqzv, St Johns,

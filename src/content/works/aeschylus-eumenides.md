@@ -28,9 +28,7 @@ otherEditions:
     year: 2013
     why: Literal where Fagles is theatrical, which matters in the trial scene where the arguments are technical.
 cover:
-  source: archive
-  archiveId: eum00enidesaescrich
-  credit: "Internet Archive, eum00enidesaescrich"
+  source: generated
 synopsis: >-
   The last play of the Oresteia. Orestes, having killed his mother, takes refuge at Delphi with the Furies asleep around him, ancient goddesses whose one function is to hunt down those who spill kindred blood. Apollo purifies him and sends him to Athens. There Athena refuses to judge the case herself, founds a court on the hill of Ares and empanels Athenian citizens to hear it. The Furies prosecute, Apollo defends, the jury splits evenly, and Athena's vote acquits. She then spends the rest of the play persuading the furious goddesses to accept a home and honours in Athens instead of blighting it.
 whyItMatters: >-

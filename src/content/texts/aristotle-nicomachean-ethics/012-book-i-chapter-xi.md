@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-i-chapter-xi"
-heading: "BOOK I, Chapter XI."
+heading: "BOOK I, Chapter XI"
 order: 12
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

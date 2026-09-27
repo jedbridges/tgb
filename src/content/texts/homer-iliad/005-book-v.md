@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-v"
-heading: "Book V."
+heading: "Book V"
 order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

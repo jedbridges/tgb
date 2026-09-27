@@ -21,9 +21,7 @@ recommendedEdition:
   year: 1967
   why: The standard English translation, with an introduction on the quarrel between the Jansenists and the Jesuits.
 cover:
-  source: archive
-  archiveId: provincialletter00pascuoft
-  credit: "Internet Archive, provincialletter00pascuoft"
+  source: generated
 synopsis: >-
   Eighteen letters published anonymously in 1656 and 1657 in defence of Antoine Arnauld and the Jansenists of Port-Royal against the Sorbonne and the Jesuits. The early letters, written as reports from a puzzled Parisian to a friend in the provinces, use comic dialogue to expose the theological hair-splitting over grace. The middle letters turn on Jesuit casuistry, quoting their own moral handbooks to show how mental reservation and probable opinion excuse almost any sin. The last letters answer the Jesuits directly. The work was placed on the Index and burned, and admired by Voltaire.
 whyItMatters: >-

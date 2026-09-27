@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-iii-chapter-xi"
-heading: "BOOK III, Chapter XI."
+heading: "BOOK III, Chapter XI"
 order: 31
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

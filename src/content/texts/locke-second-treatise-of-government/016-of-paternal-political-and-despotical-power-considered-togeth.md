@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-paternal-political-and-despotical-power-considered-togeth"
-heading: "Of Paternal, Political, and Despotical Power, Considered Together."
+heading: "Of Paternal, Political, and Despotical Power, Considered Together"
 order: 16
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

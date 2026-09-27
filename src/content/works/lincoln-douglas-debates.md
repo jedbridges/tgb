@@ -18,9 +18,7 @@ recommendedEdition:
   year: 2004
   why: Harold Holzer's edition prints each speaker from the opposing party's newspaper transcript, the closest we can come to what was actually said.
 cover:
-  source: archive
-  archiveId: lincolndouglasde00link
-  credit: "Internet Archive, lincolndouglasde00link"
+  source: generated
 synopsis: >-
   Seven three-hour public debates held across Illinois in the autumn of 1858 between Abraham Lincoln and Senator Stephen A. Douglas, contesting Douglas's Senate seat. The central question was whether slavery should be allowed to spread into the western territories. Douglas defended popular sovereignty, the right of settlers to decide, and accused Lincoln of favouring racial equality. Lincoln argued that slavery was a moral wrong that the founders had expected to die out and that a house divided could not stand. Douglas won the seat; the debates made Lincoln a national figure.
 whyItMatters: >-

@@ -1,7 +1,7 @@
 ---
 work: tocqueville-democracy-in-america
 section: "chapter-xvii-principal-causes-maintaining-the-democratic-rep-34"
-heading: "Chapter XVII: Principal Causes Maintaining The Democratic Republic—Part IV"
+heading: "Chapter XVII: Principal Causes Maintaining The Democratic Republic: Part IV"
 order: 34
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/815"

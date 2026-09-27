@@ -353,9 +353,10 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
        the title sat against the left edge of the screen and the button against the right. */
     padding-block: var(--s1) calc(var(--s1) + env(safe-area-inset-bottom));
     padding-inline: max(var(--gutter), env(safe-area-inset-left)) max(var(--gutter), env(safe-area-inset-right));
-    /* Solid, like the header. A wash over scrolling covers reads as a smear, and a bar
-       carrying the page's one commercial action should not look provisional. */
-    background: var(--paper);
+    /* The same glass as the header (base.css): paper over a heavy blur, so the page shows
+       through as tone while the bar's own text stays on solid ground. */
+    background: var(--glass-bg);
+    -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur);
     border-top: 1px solid var(--ink);
   }
   .buybar > * { align-self: center; }

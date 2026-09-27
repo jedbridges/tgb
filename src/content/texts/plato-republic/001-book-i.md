@@ -1,7 +1,7 @@
 ---
 work: plato-republic
 section: "book-i"
-heading: "Book I."
+heading: "Book I"
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1497"
@@ -14,7 +14,7 @@ words: 12394
 
 Note: See also “The Republic” by Plato, Jowett, eBook #150
 
-**Persons of the Dialogue.**
+**Persons of the Dialogue**
 
 Socrates, who is the narrator.
 

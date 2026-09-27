@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-vi-chapter-viii"
-heading: "BOOK VI, Chapter VIII."
+heading: "BOOK VI, Chapter VIII"
 order: 68
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

@@ -1,7 +1,7 @@
 ---
 work: lucretius-on-the-nature-of-things
 section: "great-meteorological-phenomena-etc"
-heading: "Great Meteorological Phenomena, Etc."
+heading: "Great Meteorological Phenomena, Etc"
 order: 27
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/785"

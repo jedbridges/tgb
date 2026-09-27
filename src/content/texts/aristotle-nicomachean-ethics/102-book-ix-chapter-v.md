@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-ix-chapter-v"
-heading: "BOOK IX, Chapter V."
+heading: "BOOK IX, Chapter V"
 order: 102
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

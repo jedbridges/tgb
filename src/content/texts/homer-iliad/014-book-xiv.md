@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-xiv"
-heading: "Book XIV."
+heading: "Book XIV"
 order: 14
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

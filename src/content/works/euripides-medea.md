@@ -28,9 +28,7 @@ otherEditions:
     year: 2008
     why: Verse translation with an introduction by Ruby Blondell that is the best short account of the play's argument about women.
 cover:
-  source: archive
-  archiveId: medea00euri
-  credit: "Internet Archive, medea00euri"
+  source: generated
 synopsis: >-
   Medea, a foreign princess and sorceress who betrayed her family and killed her brother to help Jason win the Golden Fleece, has been abandoned by him in Corinth so that he can marry the king's daughter. Sentenced to immediate exile, she bargains for a single day, secures a refuge in Athens from the visiting king Aegeus, and uses the day to kill the bride and her father with a poisoned robe and crown. Then, to leave Jason with nothing at all, she kills their two sons and escapes above his head in the chariot of the sun.
 whyItMatters: >-
