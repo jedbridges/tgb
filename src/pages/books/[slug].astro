@@ -261,7 +261,12 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
      plane, so on an opened cover the jacket was drawn from behind, mirrored, where the
      endpaper should be. A page transition only ever captures the book shut anyway. */
   .work__stage :global(.book[data-state='shelf'] .book__front) { view-transition-name: book-cover; }
-  .work__stage { grid-column: 2; grid-row: 1; position: sticky; top: var(--stick); align-self: start; display: grid; justify-items: center; gap: var(--s2); padding-bottom: var(--s1); max-height: var(--stick-max); }
+  .work__stage { grid-column: 2; grid-row: 1; position: sticky; top: var(--stick); align-self: start; display: grid; justify-items: center; gap: var(--s2); padding-bottom: var(--s1); max-height: var(--stick-max); container-type: inline-size; }
+  /* An open book slides right to centre its spread, which on a phone is the whole screen
+     and on a desktop is a 20rem column: there the first page ran off the column's edge and
+     was clipped. The slide is capped so the page's right edge stops at the column's, and
+     the cover swings out over the gap to the left, where there is room. */
+  .work__stage :global(.book[data-state='open'] .book__body) { --tx: min(calc(var(--w) * 0.44), calc(50cqi - var(--w) / 2 - 4px)); }
   /* The form of the work, as a texture on the wall the book stands against: verse ruled in
      lines, a play in arches, an argument in compass work. Coloured by the jacket where it
      has a colour, and faint enough that it is noticed on the second book, not the first.
