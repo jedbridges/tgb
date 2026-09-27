@@ -171,7 +171,19 @@ function splitGutenberg(html: string): Section[] {
       if (t.length > 90 && !/^((first|second|third|fourth|fifth|sixth)\s+(section|part|book)|(book|part|chapter|canto|section|act)\s+[ivxlc\d]+)\b/i.test(t)) { if (cur) cur.parts.push(`\n\n*${t}*\n\n`); return; }
       // A cast list heads the play, not a section of its own: opened as a section it would
       // swallow every speech that follows and then be dropped as front matter by its name.
-      if (/^(dramatis person(ae|æ)|persons?( of the (drama|play)| represented)?|characters( in the play)?|the persons|argument|the argument)$/i.test(t) && cur) { cur.parts.push(`\n\n**${titleCase(t)}**\n\n`); return; }
+      if (/^(argument|the argument)$/i.test(t) && cur) { cur.parts.push(`\n\n**${titleCase(t)}**\n\n`); return; }
+      // A cast list is where the text proper begins: in the Jowett dialogues it follows the
+      // translator's introduction with no heading of the dialogue's own, so the section it
+      // opens takes the work's title, and the introduction's part ends here.
+      if (/^(dramatis person(ae|æ)|persons?( of the (drama|play|dialogue)| represented)?|characters( in the play)?|the persons)\b/i.test(t)) {
+        flush();
+        if (/^(introduction|preface)/i.test(part) || !part) part = title || part;
+        cur = { heading: titleCase(part || t), path: part || t, parts: [`\n\n**${titleCase(t)}**\n\n`] };
+        return;
+      }
+      // A transcriber's note set as a heading heads nothing; the text under it belongs to
+      // the section already open, or to the work itself if none is.
+      if (/transliterat|transcriber/i.test(t)) { if (!cur) cur = { heading: titleCase(title || t), path: title || t, parts: [] }; return; }
       // "Translated by Benjamin Jowett" heads the text itself in the Jowett volumes; the
       // work's own title, the file's first heading, is the name the section wants.
       if (/^translated (by|into)\b/i.test(t)) {
