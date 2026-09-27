@@ -282,14 +282,8 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
           <span aria-hidden="true">{open ? '−' : '+'}</span>
         </button>
         <div class={`filters__body${open ? ' is-open' : ''}`} id="filters-body">
-          <p class="f">
-            <label class="f__label" for="f-guide">Reading guide</label>
-            <select id="f-guide" value={s.guide} onChange={(e) => set({ guide: (e.target as HTMLSelectElement).value })}>
-              <option value="">Any ({rows.length})</option>
-              <option value="yes">Written ({countIf((r) => r.hg === 1, 'guide')})</option>
-              <option value="no">Catalogue only ({countIf((r) => r.hg === 0, 'guide')})</option>
-            </select>
-          </p>
+          {/* The reading-guide facet is not offered while every work has one: a choice with
+              one answer is noise. The URL parameter still filters, for old links. */}
           <p class="f">
             <label class="f__label" for="f-program">Program</label>
             <select id="f-program" value={s.program} onChange={(e) => set({ program: (e.target as HTMLSelectElement).value, segment: '' })}>
@@ -328,7 +322,6 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
           </div>
           <Select label="Form" k="genre" opts={facets.genres} all="Any form" />
           <Select label="Era" k="era" opts={facets.eras} all="Any era" />
-          <Select label="Author" k="author" opts={facets.authors} all="Any author" />
           <p class="f">
             <label class="f__label" for="f-difficulty">Difficulty</label>
             <select id="f-difficulty" value={s.difficulty} onChange={(e) => set({ difficulty: (e.target as HTMLSelectElement).value })}>
@@ -337,8 +330,11 @@ export default function Browse({ rows, facets, total }: { rows: CatalogRow[]; fa
             </select>
           </p>
           <Select label="Length" k="length" opts={LENGTH} all="Any length" />
-          <details class="more">
-            <summary>Region and language</summary>
+          {/* Six facets are what a reader chooses by; a 328-entry author list and the two
+              geography facets are for the reader who already knows, behind one disclosure. */}
+          <details class="more" open={!!(s.author || s.region || s.language) || undefined}>
+            <summary>Author, region and language</summary>
+            <Select label="Author" k="author" opts={facets.authors} all="Any author" />
             <Select label="Region" k="region" opts={facets.regions} all="Anywhere" />
             <Select label="Original language" k="language" opts={facets.languages} all="Any language" />
           </details>

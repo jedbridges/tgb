@@ -3,7 +3,7 @@ import { getCollection, getEntry } from 'astro:content';
 import Base from '~/layouts/Base.astro';
 import Book3D from '~/components/Book3D.astro';
 import Bookcase from '~/components/Bookcase.astro';
-import { placeholderAuthor, loadCatalog, yearShort, difficultyLabel, hasGuide } from '~/lib/catalog';
+import { placeholderAuthor, loadCatalog, yearShort, difficultyLabel } from '~/lib/catalog';
 import { programUrl, url, workUrl, authorUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
 import { abs } from '~/lib/url';
@@ -90,7 +90,6 @@ const itemList = {
                   <span class="row__meta ui">{a && <a href={authorUrl(a.id)}>{a.data.name}</a>} · {yearShort(w)}{it.note && <span class="row__note"> · {it.note}</span>}{it.optional && <span class="row__note"> · optional</span>}</span>
                 </span>
                 <span class="row__end">
-                  {hasGuide(w) && <span class="row__guide ui">Guide</span>}
                   <span class="row__diff ui" title={difficultyLabel(w.data.difficulty)}>{difficultyLabel(w.data.difficulty)}</span>
                 </span>
               </li>

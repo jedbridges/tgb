@@ -2,7 +2,7 @@
 /* Command palette: ⌘K or "/" opens. Pagefind loads on first open, through lib/search. */
 const hints = [
   ['justice', 'a theme'], ['Plato', 'an author'], ['tragedy', 'a form'],
-  ['sophomore', 'a program year'], ['approachable epic', 'difficulty and length'], ['Iliad', 'a title'],
+  ['sophomore', 'a program year'], ['approachable tragedy', 'difficulty and form'], ['Iliad', 'a title'],
 ];
 ---
 <div class="palette" id="palette" hidden>
@@ -52,6 +52,7 @@ const hints = [
   /* The hints teach what the box can answer; once it is answering they are in the way. */
   .palette__results:not(:empty) + .palette__hint { display: none; }
   .palette__hint { padding: 0.8rem 1.1rem; color: var(--ink-mute); font-size: var(--step--2); line-height: 1.7; }
+  .palette__results :global(.palette__wait) { padding: 0.8rem 1.1rem; color: var(--ink-mute); font-style: italic; }
   .palette__hint button { color: var(--ink-soft); text-decoration: underline; text-underline-offset: 0.15em; min-height: 32px; padding: 0 0.15em; }
   .palette__what { color: var(--ink-mute); }
   /* Group headers: the reader's question is "which of these is the book", answered before
@@ -98,7 +99,7 @@ const hints = [
   @media (prefers-reduced-motion: reduce) { .palette__panel, .palette__backdrop { animation: none; } }
 </style>
 <script>
-  import { search, warm, groupHits, suggestFor, browseUrl, DIFFICULTY_WORD, LENGTH_WORD, type Hit, type Group } from '~/lib/search';
+  import { search, warm, groupHits, suggestFor, browseUrl, parseQuery, DIFFICULTY_WORD, LENGTH_WORD, type Hit, type Group } from '~/lib/search';
   const root = document.getElementById('palette')!;
   const input = document.getElementById('palette-input') as HTMLInputElement;
   const list = document.getElementById('palette-results')!;
@@ -146,7 +147,6 @@ const hints = [
       const [id, label] = t.split('|');
       parts.push(`<span class="chip">${escape(label || id)}</span>`);
     }
-    if (h.meta.guide === 'yes') parts.push('<span class="chip chip--guide">Reading guide</span>');
     return parts.length ? `<span class="hit__facts">${parts.join('')}</span>` : '';
   }
   function typeLine(h: Hit) {
@@ -194,6 +194,9 @@ const hints = [
     root.classList.add('is-busy');
     t = window.setTimeout(async () => {
       const my = ++seq;
+      // A query that takes longer than a beat says so in words, not only in a hairline.
+      const wait = window.setTimeout(() => { if (my === seq && root.classList.contains('is-busy')) { list.innerHTML = '<p class="palette__wait">Searching…</p>'; } }, 450);
+      const done = () => clearTimeout(wait);
       /* Books, authors and shelves first, without the passages, which would otherwise be
          most of the index once the texts are in. Passages are added only when the guides
          have little to say, so "Achilles" leads with the Iliad and not with Book XXII. */
@@ -201,11 +204,14 @@ const hints = [
       if (my !== seq) return;
       /* Passages join when the guides have little to say, or when the query is a phrase,
          which is what someone hunting a line types. */
-      if (hits && (hits.filter((h) => h.type === 'Book' || h.type === 'Theme').length < 3 || q.trim().split(/\s+/).length >= 2)) {
+      // A query that is all facet words ("approachable tragedy") names a shelf, not a line,
+      // so the passages are not asked.
+      if (hits && parseQuery(q).text && (hits.filter((h) => h.type === 'Book' || h.type === 'Theme').length < 3 || q.trim().split(/\s+/).length >= 2)) {
         const passages = await search(q, { limit: 4, parse: false, filters: { type: 'Passage' } });
         if (my !== seq) return;
         if (passages?.length) hits = [...hits, ...passages];
       }
+      done();
       root.classList.remove('is-busy');
       if (hits === null) { list.innerHTML = '<div class="empty"><p>Search is unavailable right now.</p><p class="empty__out"><a href="/books/">Browse and filter every book →</a></p></div>'; say('Search is unavailable.'); return; }
       render(hits, q.trim(), my);

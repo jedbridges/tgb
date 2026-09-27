@@ -26,13 +26,13 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
            each one a query the box can actually answer, so the bar teaches what to type. -->
       <span class="search-trigger__label">
         <span class="visually-hidden">Search every book</span>
-        <span class="prompts" data-prompts aria-hidden="true">
-          {['Search every book', 'Try “justice”', 'Try “Plato”', 'Try “Greek tragedy”', 'Try “sophomore”', 'Try “short novel”', 'Try “Iliad”', 'Try “approachable epic”'].map((t, i) => (
+        <span class="prompts" data-prompts data-still={path === '/' ? '' : undefined} aria-hidden="true">
+          {['Search every book', 'Try “justice”', 'Try “Plato”', 'Try “Greek tragedy”', 'Try “sophomore”', 'Try “short novel”', 'Try “Iliad”', 'Try “approachable tragedy”'].map((t, i) => (
             <span class="prompts__t" data-active={i === 0 ? '' : undefined}>{t}</span>
           ))}
         </span>
       </span>
-      <kbd aria-hidden="true">⌘K</kbd>
+      <kbd aria-hidden="true" data-kbd>⌘K</kbd>
     </button>
 
     <div class="site-header__end">
@@ -58,16 +58,17 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     </div>
   </div>
 
-  <!-- The same destinations as the desktop bar, set at reading size. A phone has room for
-       five words; what it does not have room for is five words in a row. -->
-  <div class="site-menu" id="site-menu" hidden>
-    <nav class="site-menu__nav" aria-label="All pages">
-      {nav.map((n, i) => (
-        <a href={url(n.href)} style={`--i:${i}`} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a>
-      ))}
-    </nav>
-  </div>
 </header>
+<!-- The panel sits beside the header, not inside it: the header's backdrop blur makes it
+     the containing block for anything fixed within it, and a menu contained by a 64px bar
+     is a 64px menu. As a sibling it fills the viewport under the bar as intended. -->
+<div class="site-menu" id="site-menu" hidden>
+  <nav class="site-menu__nav" aria-label="All pages">
+    {nav.map((n, i) => (
+      <a href={url(n.href)} style={`--i:${i}`} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a>
+    ))}
+  </nav>
+</div>
 <style>
   .site-header {
     position: sticky; top: 0; z-index: 40;
@@ -337,20 +338,25 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
 <script>
   /* The search bar's prompts turn over every few seconds while nobody is using it. They
      rest on the plain name, pause under the pointer or focus, and stop when the reader
-     asks for less motion or the tab is hidden. */
+     asks for less motion or the tab is hidden. One cycle through the list is the lesson;
+     after that the bar rests on the plain name, and on the home page, where the headline
+     already turns, it never moves at all. The platform's own modifier key is shown. */
+  const kbd = document.querySelector<HTMLElement>('[data-kbd]');
+  if (kbd && !/Mac|iPhone|iPad/.test(navigator.platform)) kbd.textContent = 'Ctrl K';
   const box = document.querySelector<HTMLElement>('[data-prompts]');
   const prompts = box ? [...box.querySelectorAll<HTMLElement>('.prompts__t')] : [];
   const lessMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  if (box && prompts.length > 1) {
+  if (box && prompts.length > 1 && !box.hasAttribute('data-still')) {
     let at = 0;
+    let turns = 0;
     let timer: number | undefined;
     let held = false;
     const show = (n: number) => { prompts[at].removeAttribute('data-active'); at = n % prompts.length; prompts[at].setAttribute('data-active', ''); };
     const stop = () => { clearInterval(timer); timer = undefined; };
     const start = () => {
       stop();
-      if (held || document.hidden || lessMotion.matches) return;
-      timer = window.setInterval(() => show(at + 1), 3000);
+      if (held || document.hidden || lessMotion.matches || turns >= prompts.length) return;
+      timer = window.setInterval(() => { show(at + 1); if (++turns >= prompts.length) { show(0); stop(); } }, 3000);
     };
     const trigger = box.closest<HTMLElement>('.search-trigger')!;
     trigger.addEventListener('pointerenter', () => { held = true; stop(); });

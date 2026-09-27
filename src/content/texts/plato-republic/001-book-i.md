@@ -12,8 +12,6 @@ words: 12394
 ---
 **Translated by Benjamin Jowett**
 
-Note: See also “The Republic” by Plato, Jowett, eBook #150
-
 **Persons of the Dialogue**
 
 Socrates, who is the narrator.
