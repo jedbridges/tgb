@@ -105,7 +105,7 @@ const words = (s: string) => s.split(/\s+/).filter(Boolean).length;
 function titleCase(s: string): string {
   if (s.length < 4 || s !== s.toUpperCase() || !/[A-Z]{3}/.test(s)) return s;
   const small = new Set(['a', 'an', 'the', 'of', 'and', 'or', 'to', 'in', 'on', 'at', 'by', 'for', 'with', 'from', 'as', 'but', 'nor']);
-  return s.toLowerCase().split(' ').map((w, i) => /^[ivxlc]+\.?$/.test(w) ? w.toUpperCase() : i > 0 && small.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  return s.toLowerCase().split(' ').map((w, i) => /^[ivxlc]+[.,:;]?$/.test(w) ? w.toUpperCase() : i > 0 && small.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }
 function headingText(el: HTMLElement): string {
   // Standard Ebooks headings carry an ordinal and a title in separate spans: "Book I" / "The Anger of Achilles".
@@ -156,6 +156,7 @@ function splitGutenberg(html: string): Section[] {
   const sections: Section[] = [];
   let cur: { heading: string; path: string; parts: string[] } | null = null;
   let part = ''; // the nearest h1/h2: "Book One", "Part I", "Inferno"
+  let title = ''; // the file's first heading, the work's title
   const flush = () => { if (cur) { const b = tidy(cur.parts.join('')); if (b) sections.push({ heading: cur.heading, body: b, path: cur.path }); } };
   const bare = (t: string) => /^(chapter|canto|book|part|scene|act)?\s*[ivxlc\d]+\.?$/i.test(t) || t.length <= 3;
   const walk = (n: Node) => {
@@ -164,14 +165,27 @@ function splitGutenberg(html: string): Section[] {
     if (tag && /^h[1-4]$/.test(tag)) {
       // "BOOK I." is Book I, and a heading's em dash is a colon on this site.
       const t = el.text.replace(/\s+/g, ' ').trim().replace(/\.$/, '').replace(/\s*[—–]\s*/g, ': ');
+      if (!title && tag === 'h1') title = t;
       // An epigraph set as a heading is not a heading; keep the current section open. A long
       // heading that opens with its number ("First Section: Transition from...") is a heading.
       if (t.length > 90 && !/^((first|second|third|fourth|fifth|sixth)\s+(section|part|book)|(book|part|chapter|canto|section|act)\s+[ivxlc\d]+)\b/i.test(t)) { if (cur) cur.parts.push(`\n\n*${t}*\n\n`); return; }
       // A cast list heads the play, not a section of its own: opened as a section it would
       // swallow every speech that follows and then be dropped as front matter by its name.
-      if (/^(dramatis person(ae|æ)|persons?( of the (drama|play)| represented)?|characters( in the play)?|the persons)$/i.test(t) && cur) { cur.parts.push(`\n\n**${titleCase(t)}**\n\n`); return; }
+      if (/^(dramatis person(ae|æ)|persons?( of the (drama|play)| represented)?|characters( in the play)?|the persons|argument|the argument)$/i.test(t) && cur) { cur.parts.push(`\n\n**${titleCase(t)}**\n\n`); return; }
+      // "Translated by Benjamin Jowett" heads the text itself in the Jowett volumes; the
+      // work's own title, the file's first heading, is the name the section wants.
+      if (/^translated (by|into)\b/i.test(t)) {
+        // At the head of the text it names the work; at the end of a file it heads an
+        // appended piece the reader did not ask for, which is dropped.
+        flush();
+        if (sections.length <= 1) cur = { heading: titleCase(title || part || t), path: title || part || t, parts: [] };
+        else cur = null;
+        return;
+      }
       flush();
-      if (tag === 'h1' || tag === 'h2') {
+      // A heading that names a book, part, act or volume is a part whatever its level:
+      // Gutenberg sets "BOOK I" as h3 in one file and h2 in the next.
+      if (tag === 'h1' || tag === 'h2' || /^(book|part|act|volume)\b/i.test(t)) {
         // A part heading opens a section of its own only until the first chapter arrives.
         part = t;
         cur = { heading: titleCase(t), path: t, parts: [] };
@@ -206,7 +220,7 @@ function fold(sections: Section[]): Section[] {
     const parts: Section[] = []; let head = s.heading; let buf: string[] = [];
     for (const line of s.body.split('\n')) {
       const t = line.replace(/\s+\\?$/, '').trim();
-      if (/^(BOOK|PART|CANTO|CHAPTER)\s+[IVXLC\d]+\b.{0,40}$/i.test(t) && t.split(/\s+/).length <= 8) {
+      if (/^(BOOK|PART|CANTO|CHAPTER|QUESTION|TREATISE)\s+[IVXLC\d]+\b.{0,60}$/i.test(t) && t.split(/\s+/).length <= 12) {
         const b = tidy(buf.join('\n')); if (b) parts.push({ heading: head, body: b, path: `${s.path} / ${head}` });
         head = t.replace(/\s+/g, ' '); buf = []; continue;
       }
@@ -219,7 +233,7 @@ function fold(sections: Section[]): Section[] {
   for (const s of sections) {
     const h = s.heading.trim().replace(/[:.]$/, '');
     if (/^\d{3,4}$/.test(h)) continue; // a year standing as a heading is front matter
-    if (/^(contents|table of contents|list of illustrations|index|footnotes|endnotes|notes?( to .*)?|transcriber.?s? notes?|project gutenberg.*|.*bookmarks|dramatis person(ae|æ)|the following is a list.*|by [a-z .]+)$/i.test(h)) continue;
+    if (/^(contents|table of contents|list of illustrations|index|footnotes|endnotes|notes?( to .*)?|transcriber.?s? notes?|project gutenberg.*|.*bookmarks|dramatis person(ae|æ)|the following is a list.*|by [a-z .]+|all greek .*|.*transliterated.*|bibliography|editor.?s? preface|foreign theological library.*)$/i.test(h)) continue;
     // A section that opens with the contents list is the front matter, whatever its heading.
     if (/^(contents|table of contents)\b/i.test(s.body.trimStart().split('\n')[0].replace(/[*_]/g, ''))) continue;
     if (out.length && words(s.body) < MIN_WORDS) { out[out.length - 1].body += `\n\n**${s.heading}**\n\n${s.body}`; continue; }
