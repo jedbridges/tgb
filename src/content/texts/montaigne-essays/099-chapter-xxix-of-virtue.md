@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxix-of-virtue"
-heading: "Chapter Xxix: : of Virtue"
+heading: "Chapter XXIX: : of Virtue"
 order: 99
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

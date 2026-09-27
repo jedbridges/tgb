@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xi-721"
-heading: "Section Xi, 721"
+heading: "Section XI, 721"
 order: 63
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -66,6 +66,6 @@ Daniel xi. "The angel said to Daniel: There shall stand up yet," (after Cyrus, u
 
 "And he who shall stand up in his estate," (Seleucus Philopator or Soter, the son of Antiochus the Great), "shall be a tyrant, a raiser of taxes in the glory of the kingdom," (which means the people), "but within a few days he shall be destroyed, neither in anger nor in battle. And in his place shall stand up a vile person, unworthy of the honour of the kingdom, but he shall come in cleverly by flatteries. All armies shall bend before him; he shall conquer them, and even the prince with whom he has made a covenant. For having renewed the league with him, he shall work deceitfully, and enter with a small people into his province, peaceably and without fear. He shall take the fattest places, and shall do that which his fathers have not done, and ravage on all sides. He shall forecast great devices during his time."
 
-**Section Xi, 722**
+**Section XI, 722**
 
 *Prophecies.*—The seventy weeks of Daniel are ambiguous as regards the term of commencement, because of the terms of the prophecy; and as regards the term of conclusion, because of the differences among chronologists. But all this difference extends only to two hundred years.

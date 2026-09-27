@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiii-842"
-heading: "Section Xiii, 842"
+heading: "Section XIII, 842"
 order: 78
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -56,7 +56,7 @@ It is impossible, from the duty of God to men, that a man, hiding his evil teach
 
 And still less, that God, who knows the heart, should perform miracles in favour of such a one.
 
-**Section Xiii, 843**
+**Section XIII, 843**
 
 The three marks of religion: perpetuity, a good life, miracles. They destroy perpetuity by their doctrine of probability; a good life by their morals; miracles by destroying either their truth or the conclusions to be drawn from them.
 
@@ -64,6 +64,6 @@ If we believe them, the Church will have nothing to do with perpetuity, holiness
 
 Nobody has ever suffered martyrdom for the miracles which he says he has seen; for the folly of men goes perhaps to the length of martyrdom, for those which the Turks believe by tradition, but not for those which they have seen.
 
-**Section Xiii, 844**
+**Section XIII, 844**
 
 The heretics have always attacked these three marks, which they have not.

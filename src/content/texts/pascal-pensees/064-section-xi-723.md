@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xi-723"
-heading: "Section Xi, 723"
+heading: "Section XI, 723"
 order: 64
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -18,6 +18,6 @@ The rich left their wealth. Children left the dainty homes of their parents to g
 
 No heathen, since Moses until Jesus Christ, believed according to the very Rabbis. A great number of the heathen, after Jesus Christ, believed in the books of Moses, kept them in substance and spirit, and only rejected what was useless.
 
-**Section Xi, 724**
+**Section XI, 724**
 
 *Prophecies.*—The conversion of the Egyptians (Isaiah xix, 19); an altar in Egypt to the true God.

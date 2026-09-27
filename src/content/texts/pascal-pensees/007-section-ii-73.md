@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ii-73"
-heading: "Section Ii, 73"
+heading: "Section II, 73"
 order: 7
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -22,7 +22,7 @@ Is then the soul too noble a subject for their feeble lights? Let us then abase 
 
 This would doubtless suffice, if reason were reasonable. She is reasonable enough to admit that she has been unable to find anything durable, but she does not yet despair of reaching it; she is as ardent as ever in this search, and is confident she has within her the necessary powers for this conquest. We must therefore conclude, and, after having examined her powers in their effects, observe them in themselves, and see if she has a nature and a grasp capable of laying hold of the truth.]
 
-**Section Ii, 74**
+**Section II, 74**
 
 A letter *On the Foolishness of Human Knowledge and Philosophy*.
 
@@ -32,34 +32,34 @@ This letter before *Diversion*.
 
 280 kinds of sovereign good in Montaigne.[43]
 
-**Section Ii, 75**
+**Section II, 75**
 
 Part I, 1, 2, c. 1, section 4.[44]
 
 [*Probability.*—It will not be difficult to put the case a stage lower, and make it appear ridiculous. To begin at the very beginning.] What is more absurd than to say that lifeless bodies have passions, fears, hatreds—that insensible bodies, lifeless and incapable of life, have passions which presuppose at least a sensitive soul to feel them, nay more, that the object of their dread is the void? What is there in the void that could make them afraid? Nothing is more shallow and ridiculous. This is not all; it is said that they have in themselves a source of movement to shun the void. Have they arms, legs, muscles, nerves?
 
-**Section Ii, 76**
+**Section II, 76**
 
 To write against those who made too profound a study of science: Descartes.
 
-**Section Ii, 77**
+**Section II, 77**
 
 I cannot forgive Descartes. In all his philosophy he would have been quite willing to dispense with God. But he had to make Him give a fillip to set the world in motion; beyond this, he has no further need of God.
 
-**Section Ii, 78**
+**Section II, 78**
 
 Descartes useless and uncertain.
 
-**Section Ii, 79**
+**Section II, 79**
 
 [*Descartes.*—We must say summarily: "This is made by figure and motion," for it is true. But to say what these are, and to compose the machine, is ridiculous. For it is useless, uncertain, and painful. And were it true, we do not think all philosophy is worth one hour of pain.]
 
-**Section Ii, 80**
+**Section II, 80**
 
 How comes it that a cripple does not offend us, but that a fool does?[45] Because a cripple recognises that we walk straight, whereas a fool declares that it is we who are silly; if it were not so, we should feel pity and not anger.
 
 Epictetus[46] asks still more strongly: "Why are we not angry if we are told that we have a headache, and why are we angry if we are told that we reason badly, or choose wrongly?" The reason is that we are quite certain that we have not a headache, or are not lame, but we are not so sure that we make a true choice. So having assurance only because we see with our whole sight, it puts us into suspense and surprise when another with his whole sight sees the opposite, and still more so when a thousand others deride our choice. For we must prefer our own lights to those of so many others, and that is bold and difficult. There is never this contradiction in the feelings towards a cripple.
 
-**Section Ii, 81**
+**Section II, 81**
 
 It is natural for the mind to believe, and for the will to love;[47] so that, for want of true objects, they must attach themselves to false.

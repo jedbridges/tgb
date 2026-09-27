@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-vii-446"
-heading: "Section Vii, 446"
+heading: "Section VII, 446"
 order: 33
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -42,41 +42,41 @@ And on Psalm xvi.
 
 Principles of Rabbinism: two Messiahs.
 
-**Section Vii, 447**
+**Section VII, 447**
 
 Will it be said that, as men have declared that righteousness has departed the earth, they therefore knew of original sin?—*Nemo ante obitum beatus est*[170]—that is to say, they knew death to be the beginning of eternal and essential happiness?
 
-**Section Vii, 448**
+**Section VII, 448**
 
 [*Miton*] sees well that nature is corrupt, and that men are averse to virtue; but he does not know why they cannot fly higher.
 
-**Section Vii, 449**
+**Section VII, 449**
 
 *Order.*—After *Corruption* to say: "It is right that all those who are in that state should know it, both those who are content with it, and those who are not content with it; but it is not right that all should see Redemption."
 
-**Section Vii, 450**
+**Section VII, 450**
 
 If we do not know ourselves to be full of pride, ambition, lust, weakness, misery, and injustice, we are indeed blind. And if, knowing this, we do not desire deliverance, what can we say of a man...?
 
 What, then, can we have but esteem for a religion which knows so well the defects of man, and desire for the truth of a religion which promises remedies so desirable?
 
-**Section Vii, 451**
+**Section VII, 451**
 
 All men naturally hate one another. They employ lust as far as possible in the service of the public weal. But this is only a [*pretence*] and a false image of love; for at bottom it is only hate.
 
-**Section Vii, 452**
+**Section VII, 452**
 
 To pity the unfortunate is not contrary to lust. On the contrary, we can quite well give such evidence of friendship, and acquire the reputation of kindly feeling, without giving anything.
 
-**Section Vii, 453**
+**Section VII, 453**
 
 From lust men have found and extracted excellent rules of policy, morality, and justice; but in reality this vile root of man, this *figmentum malum*,[171] is only covered, it is not taken away.
 
-**Section Vii, 454**
+**Section VII, 454**
 
 *Injustice.*—They have not found any other means of satisfying lust without doing injury to others.
 
-**Section Vii, 455**
+**Section VII, 455**
 
 Self is hateful. You, Miton, conceal it; you do not for that reason destroy it; you are, then, always hateful.
 
@@ -84,19 +84,19 @@ Self is hateful. You, Miton, conceal it; you do not for that reason destroy it; 
 
 In a word, the Self has two qualities: it is unjust in itself since it makes itself the centre of everything; it is inconvenient to others since it would enslave them; for each Self is the enemy, and would like to be the tyrant of all others. You take away its inconvenience, but not its injustice, and so you do not render it lovable to those who hate injustice; you render it lovable only to the unjust, who do not any longer find in it an enemy. And thus you remain unjust, and can please only the unjust.
 
-**Section Vii, 456**
+**Section VII, 456**
 
 It is a perverted judgment that makes every one place himself above the rest of the world, and prefer his own good, and the continuance of his own good fortune and life, to that of the rest of the world!
 
-**Section Vii, 457**
+**Section VII, 457**
 
 Each one is all in all to himself; for he being dead, all is dead to him. Hence it comes that each believes himself to be all in all to everybody. We must not judge of nature by ourselves, but by it.
 
-**Section Vii, 458**
+**Section VII, 458**
 
 "All that is in the world is the lust of the flesh, or the lust of the eyes, or the pride of life; *libido sentiendi, libido sciendi, libido dominandi.*"[172] Wretched is the cursed land which these three rivers of fire enflame rather than water![173] Happy they who, on these rivers, are not overwhelmed nor carried away, but are immovably fixed, not standing but seated on a low and secure base, whence they do not rise before the light, but, having rested in peace, stretch out their hands to Him, who must lift them up, and make them stand upright and firm in the porches of the holy Jerusalem! There pride can no longer assail them nor cast them down; and yet they weep, not to see all those perishable things swept away by the torrents, but at the remembrance of their loved country, the heavenly Jerusalem, which they remember without ceasing during their prolonged exile.
 
-**Section Vii, 459**
+**Section VII, 459**
 
 The rivers of Babylon rush and fall and sweep away.
 
@@ -106,33 +106,33 @@ We must sit upon the waters, not under them or in them, but on them; and not sta
 
 Let us see if this pleasure is stable or transitory; if it pass away, it is a river of Babylon.
 
-**Section Vii, 460**
+**Section VII, 460**
 
 *The lust of the flesh, the lust of the eyes, pride, etc.*—There are three orders of things: the flesh, the spirit, and the will. The carnal are the rich and kings; they have the body as their object. Inquirers and scientists; they have the mind as their object. The wise; they have righteousness as their object.
 
 God must reign over all, and all men must be brought back to Him. In things of the flesh lust reigns specially; in intellectual matters, inquiry specially; in wisdom, pride specially. Not that a man cannot boast of wealth or knowledge, but it is not the place for pride; for in granting to a man that he is learned, it is easy to convince him that he is wrong to be proud. The proper place for pride is in wisdom, for it cannot be granted to a man that he has made himself wise, and that he is wrong to be proud; for that is right. Now God alone gives wisdom, and that is why *Qui gloriatur, in Domino glorietur*.[174]
 
-**Section Vii, 461**
+**Section VII, 461**
 
 The three lusts have made three sects; and the philosophers have done no other thing than follow one of the three lusts.
 
-**Section Vii, 462**
+**Section VII, 462**
 
 *Search for the true good.*—Ordinary men place the good in fortune and external goods, or at least in amusement. Philosophers have shown the vanity of all this, and have placed it where they could.
 
-**Section Vii, 463**
+**Section VII, 463**
 
 *[Against the philosophers who believe in God without Jesus Christ]*
 
 *Philosophers.*—They believe that God alone is worthy to be loved and admired; and they have desired to be loved and admired of men, and do not know their own corruption. If they feel full of feelings of love and admiration, and find therein their chief delight, very well, let them think themselves good. But if they find themselves averse to Him, if they have no inclination but the desire to establish themselves in the esteem of men, and if their whole perfection consists only in making men—but without constraint—find their happiness in loving them, I declare that this perfection is horrible. What! they have known God, and have not desired solely that men should love Him, but that men should stop short at them! They have wanted to be the object of the voluntary delight of men.
 
-**Section Vii, 464**
+**Section VII, 464**
 
 *Philosophers.*—We are full of things which take us out of ourselves.
 
 Our instinct makes us feel that we must seek our happiness outside ourselves. Our passions impel us outside, even when no objects present themselves to excite them. External objects tempt us of themselves, and call to us, even when we are not thinking of them. And thus philosophers have said in vain, "Retire within yourselves, you will find your good there." We do not believe them, and those who believe them are the most empty and the most foolish.
 
-**Section Vii, 465**
+**Section VII, 465**
 
 The Stoics say, "Retire within yourselves; it is there you will find your rest." And that is not true.
 
@@ -140,80 +140,80 @@ Others say, "Go out of yourselves; seek happiness in amusement." And this is not
 
 Happiness is neither without us nor within us. It is in God, both without us and within us.
 
-**Section Vii, 466**
+**Section VII, 466**
 
 Had Epictetus seen the way perfectly, he would have said to men, "You follow a wrong road"; he shows that there is another, but he does not lead to it. It is the way of willing what God wills. Jesus Christ alone leads to it: *Via, veritas.*[175]
 
 The vices of Zeno[176] himself.
 
-**Section Vii, 467**
+**Section VII, 467**
 
 *The reason of effects.*—Epictetus.[177] Those who say, "You have a headache;" this is not the same thing. We are assured of health, and not of justice; and in fact his own was nonsense.
 
 And yet he believed it demonstrable, when he said, "It is either in our power or it is not." But he did not perceive that it is not in our power to regulate the heart, and he was wrong to infer this from the fact that there were some Christians.
 
-**Section Vii, 468**
+**Section VII, 468**
 
 No other religion has proposed to men to hate themselves. No other religion then can please those who hate themselves, and who seek a Being truly lovable. And these, if they had never heard of the religion of a God humiliated, would embrace it at once.
 
-**Section Vii, 469**
+**Section VII, 469**
 
 I feel that I might not have been; for the Ego consists in my thoughts. Therefore I, who think, would not have been, if my mother had been killed before I had life. I am not then a necessary being. In the same way I am not eternal or infinite; but I see plainly that there exists in nature a necessary Being, eternal and infinite.
 
-**Section Vii, 470**
+**Section VII, 470**
 
 "Had I seen a miracle," say men, "I should become converted." How can they be sure they would do a thing of the nature of which they are ignorant? They imagine that this conversion consists in a worship of God which is like commerce, and in a communion such as they picture to themselves. True religion consists in annihilating self before that Universal Being, whom we have so often provoked, and who can justly destroy us at any time; in recognising that we can do nothing without Him, and have deserved nothing from Him but His displeasure. It consists in knowing that there is an unconquerable opposition between us and God, and that without a mediator there can be no communion with Him.
 
-**Section Vii, 471**
+**Section VII, 471**
 
 It is unjust that men should attach themselves to me, even though they do it with pleasure and voluntarily. I should deceive those in whom I had created this desire; for I am not the end of any, and I have not the wherewithal to satisfy them. Am I not about to die? And thus the object of their attachment will die. Therefore, as I would be blamable in causing a falsehood to be believed, though I should employ gentle persuasion, though it should be believed with pleasure, and though it should give me pleasure; even so I am blamable in making myself loved, and if I attract persons to attach themselves to me. I ought to warn those who are ready to consent to a lie, that they ought not to believe it, whatever advantage comes to me from it; and likewise that they ought not to attach themselves to me; for they ought to spend their life and their care in pleasing God, or in seeking Him.
 
-**Section Vii, 472**
+**Section VII, 472**
 
 Self-will will never be satisfied, though it should have command of all it would; but we are satisfied from the moment we renounce it. Without it we cannot be discontented; with it we cannot be content.
 
-**Section Vii, 473**
+**Section VII, 473**
 
 Let us imagine a body full of thinking members.[178]
 
-**Section Vii, 474**
+**Section VII, 474**
 
 *Members, To commence with that.*—To regulate the love which we owe to ourselves, we must imagine a body full of thinking members, for we are members of the whole, and must see how each member should love itself, etc....
 
-**Section Vii, 475**
+**Section VII, 475**
 
 If the feet and the hands had a will of their own, they could only be in their order in submitting this particular will to the primary will which governs the whole body. Apart from that, they are in disorder and mischief; but in willing only the good of the body, they accomplish their own good.
 
-**Section Vii, 476**
+**Section VII, 476**
 
 We must love God only and hate self only.
 
 If the foot had always been ignorant that it belonged to the body, and that there was a body on which it depended, if it had only had the knowledge and the love of self, and if it came to know that it belonged to a body on which it depended, what regret, what shame for its past life, for having been useless to the body which inspired its life, which would have annihilated it if it had rejected it and separated it from itself, as it kept itself apart from the body! What prayers for its preservation in it! And with what submission would it allow itself to be governed by the will which rules the body, even to consenting, if necessary, to be cut off, or it would lose its character as member! For every member must be quite willing to perish for the body, for which alone the whole is.
 
-**Section Vii, 477**
+**Section VII, 477**
 
 It is false that we are worthy of the love of others; it is unfair that we should desire it. If we were born reasonable and impartial, knowing ourselves and others, we should not give this bias to our will. However, we are born with it; therefore born unjust, for all tends to self. This is contrary to all order. We must consider the general good; and the propensity to self is the beginning of all disorder, in war, in politics, in economy, and in the particular body of man. The will is therefore depraved.
 
 If the members of natural and civil communities tend towards the weal of the body, the communities themselves ought to look to another more general body of which they are members. We ought therefore to look to the whole. We are therefore born unjust and depraved.
 
-**Section Vii, 478**
+**Section VII, 478**
 
 When we want to think of God, is there nothing which turns us away, and tempts us to think of something else? All this is bad, and is born in us.
 
-**Section Vii, 479**
+**Section VII, 479**
 
 If there is a God, we must love Him only, and not the creatures of a day. The reasoning of the ungodly in the book of Wisdom[179] is only based upon the non-existence of God. "On that supposition," say they, "let us take delight in the creatures." That is the worst that can happen. But if there were a God to love, they would not have come to this conclusion, but to quite the contrary. And this is the conclusion of the wise: "There is a God, let us therefore not take delight in the creatures."
 
 Therefore all that incites us to attach ourselves to the creatures is bad; since it prevents us from serving God if we know Him, or from seeking Him if we know Him not. Now we are full of lust. Therefore we are full of evil; therefore we ought to hate ourselves and all that excited us to attach ourselves to any other object than God only.
 
-**Section Vii, 480**
+**Section VII, 480**
 
 To make the members happy, they must have one will, and submit it to the body.
 
-**Section Vii, 481**
+**Section VII, 481**
 
 The examples of the noble deaths of the Lacedæmonians and others scarce touch us. For what good is it to us? But the example of the death of the martyrs touches us; for they are "our members." We have a common tie with them. Their resolution can form ours, not only by example, but because it has perhaps deserved ours. There is nothing of this in the examples of the heathen. We have no tie with them; as we do not become rich by seeing a stranger who is so, but in fact by seeing a father or a husband who is so.
 
-**Section Vii, 482**
+**Section VII, 482**
 
 *Morality.*—God having made the heavens and the earth, which do not feel the happiness of their being, He has willed to make beings who should know it, and who should compose a body of thinking members. For our members do not feel the happiness of their union, of their wonderful intelligence, of the care which has been taken to infuse into them minds, and to make them grow and endure. How happy they would be if they saw and felt it! But for this they would need to have intelligence to know it, and good-will to consent to that of the universal soul. But if, having received intelligence, they employed it to retain nourishment for themselves without allowing it to pass to the other members, they would hate rather than love themselves; their blessedness, as well as their duty, consisting in their consent to the guidance of the whole soul to which they belong, which loves them better than they love themselves.

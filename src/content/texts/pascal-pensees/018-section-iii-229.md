@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-iii-229"
-heading: "Section Iii, 229"
+heading: "Section III, 229"
 order: 18
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -14,16 +14,16 @@ This is what I see and what troubles me. I look on all sides, and I see only dar
 
 I envy those whom I see living in the faith with such carelessness, and who make such a bad use of a gift of which it seems to me I would make such a different use.
 
-**Section Iii, 230**
+**Section III, 230**
 
 It is incomprehensible that God should exist, and it is incomprehensible that He should not exist; that the soul should be joined to the body, and that we should have no soul; that the world should be created, and that it should not be created, etc.; that original sin should be, and that it should not be.
 
-**Section Iii, 231**
+**Section III, 231**
 
 Do you believe it to be impossible that God is infinite, without parts?—Yes. I wish therefore to show you an infinite and indivisible thing. It is a point moving everywhere with an infinite velocity; for it is one in all places, and is all totality in every place.
 
 Let this effect of nature, which previously seemed to you impossible, make you know that there may be others of which you are still ignorant. Do not draw this conclusion from your experiment, that there remains nothing for you to know; but rather that there remains an infinity for you to know.
 
-**Section Iii, 232**
+**Section III, 232**
 
 Infinite movement, the point which fills everything, the moment of rest; infinite without quantity, indivisible and infinite.

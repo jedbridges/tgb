@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiii-828"
-heading: "Section Xiii, 828"
+heading: "Section XIII, 828"
 order: 74
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -18,25 +18,25 @@ John vii, 40. *Dispute among the Jews as among the Christians of to-day.* Some b
 
 The Pharisees said to the people, who believed in Him, because of His miracles: "This people who knoweth not the law are cursed. But have any of the rulers or of the Pharisees believed on him? For we know that out of Galilee ariseth no prophet." Nicodemus answered: "Doth our law judge any man before it hear him, [and specially, such a man who works such miracles]?"
 
-**Section Xiii, 829**
+**Section XIII, 829**
 
 The prophecies were ambiguous; they are no longer so.
 
-**Section Xiii, 830**
+**Section XIII, 830**
 
 The five propositions were ambiguous; they are no longer so.
 
-**Section Xiii, 831**
+**Section XIII, 831**
 
 Miracles are no longer necessary, because we have had them already. But when tradition is no longer minded; when the Pope alone is offered to us; when he has been imposed upon; and when the true source of truth, which is tradition, is thus excluded; and the Pope, who is its guardian, is biased; the truth is no longer free to appear. Then, as men speak no longer of truth, truth itself must speak to men. This is what happened in the time of Arius. (Miracles under Diocletian and under Arius.)
 
-**Section Xiii, 832**
+**Section XIII, 832**
 
 *Miracle.*—The people concluded this of themselves; but if the reason of it must be given to you ...
 
 It is unfortunate to be in exception to the rule. The same must be strict, and opposed to exception. But yet, as it is certain that there are exceptions to a rule, our judgment must though strict, be just.
 
-**Section Xiii, 833**
+**Section XIII, 833**
 
 John vi, 26: *Non quia vidisti signum, sed quia saturati estis.*
 
@@ -52,7 +52,7 @@ Which is the most clear?
 
 *Tu quid dicis? Dico quia propheta est. Nisi esset hic a Deo, non poterat facere quidquam.*[330]
 
-**Section Xiii, 834**
+**Section XIII, 834**
 
 In the Old Testament, when they will turn you from God. In the New, when they will turn you from Jesus Christ. These are the occasions for excluding particular miracles from belief. No others need be excluded.
 
@@ -60,14 +60,14 @@ Does it therefore follow that they would have the right to exclude all the proph
 
 So soon, then, as we see a miracle, we must either assent to it, or have striking proofs to the contrary. We must see if it denies a God, or Jesus Christ, or the Church.
 
-**Section Xiii, 835**
+**Section XIII, 835**
 
 There is a great difference between not being for Jesus Christ and saying so, and not being for Jesus Christ and pretending to be so. The one party can do miracles, not the others. For it is clear of the one party, that they are opposed to the truth, but not of the others; and thus miracles are clearer.
 
-**Section Xiii, 836**
+**Section XIII, 836**
 
 That we must love one God only is a thing so evident, that it does not require miracles to prove it.
 
-**Section Xiii, 837**
+**Section XIII, 837**
 
 Jesus Christ performed miracles, then the apostles, and the first saints in great number; because the prophecies not being yet accomplished, but in the process of being accomplished by them, the miracles alone bore witness to them. It was foretold that the Messiah should convert the nations. How could this prophecy be fulfilled without the conversion of the nations? And how could the nations be converted to the Messiah, if they did not see this final effect of the prophecies which prove Him? Therefore, till He had died, risen again, and converted the nations, all was not accomplished; and so miracles were needed during all this time. Now they are no longer needed against the Jews; for the accomplished prophecies constitute a lasting miracle.

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-lv-of-smells"
-heading: "Chapter Lv: : of Smells"
+heading: "Chapter LV: : of Smells"
 order: 68
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ii-172"
-heading: "Section Ii, 172"
+heading: "Section II, 172"
 order: 15
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -14,90 +14,90 @@ We do not rest satisfied with the present. We anticipate the future as too slow 
 
 Let each one examine his thoughts, and he will find them all occupied with the past and the future. We scarcely ever think of the present; and if we think of it, it is only to take light from it to arrange the future. The present is never our end. The past and the present are our means; the future alone is our end.[78] So we never live, but we hope to live; and, as we are always preparing to be happy, it is inevitable we should never be so.
 
-**Section Ii, 173**
+**Section II, 173**
 
 They say that eclipses foretoken misfortune, because misfortunes are common, so that, as evil happens so often, they often foretell it; whereas if they said that they predict good fortune, they would often be wrong. They attribute good fortune only to rare conjunctions of the heavens; so they seldom fail in prediction.
 
-**Section Ii, 174**
+**Section II, 174**
 
 *Misery.*—Solomon[79] and Job have best known and best spoken of the misery of man; the former the most fortunate, and the latter the most unfortunate of men; the former knowing the vanity of pleasures from experience, the latter the reality of evils.
 
-**Section Ii, 175**
+**Section II, 175**
 
 We know ourselves so little, that many think they are about to die when they are well, and many think they are well when they are near death, unconscious of approaching fever,[80] or of the abscess ready to form itself.
 
-**Section Ii, 176**
+**Section II, 176**
 
 Cromwell[81] was about to ravage all Christendom; the royal family was undone, and his own for ever established, save for a little grain of sand which formed in his ureter. Rome herself was trembling under him; but this small piece of gravel having formed there, he is dead, his family cast down, all is peaceful, and the king is restored.
 
-**Section Ii, 177**
+**Section II, 177**
 
 [Three hosts.[82]] Would he who had possessed the friendship of the King of England, the King of Poland, and the Queen of Sweden, have believed he would lack a refuge and shelter in the world?
 
-**Section Ii, 178**
+**Section II, 178**
 
 Macrobius:[83] on the innocents slain by Herod.
 
-**Section Ii, 179**
+**Section II, 179**
 
 When Augustus learnt that Herod's own son was amongst the infants under two years of age, whom he had caused to be slain, he said that it was better to be Herod's pig than his son.—Macrobius, *Sat.*, book ii, chap. 4.
 
-**Section Ii, 180**
+**Section II, 180**
 
 The great and the humble have the same misfortunes, the same griefs, the same passions;[84] but the one is at the top of the wheel, and the other near the centre, and so less disturbed by the same revolutions.
 
-**Section Ii, 181**
+**Section II, 181**
 
 We are so unfortunate that we can only take pleasure in a thing on condition of being annoyed if it turn out ill, as a thousand things can do, and do every hour. He who should find the secret of rejoicing in the good, without troubling himself with its contrary evil, would have hit the mark. It is perpetual motion.
 
-**Section Ii, 182**
+**Section II, 182**
 
 Those who have always good hope in the midst of misfortunes, and who are delighted with good luck, are suspected of being very pleased with the ill success of the affair, if they are not equally distressed by bad luck; and they are overjoyed to find these pretexts of hope, in order to show that they are concerned and to conceal by the joy which they feign to feel that which they have at seeing the failure of the matter.
 
-**Section Ii, 183**
+**Section II, 183**
 
 We run carelessly to the precipice, after we have put something before us to prevent us seeing it.
 
-**Section Iii, 184**
+**Section III, 184**
 
 A letter to incite to the search after God.
 
 And then to make people seek Him among the philosophers, sceptics, and dogmatists, who disquiet him who inquires of them.
 
-**Section Iii, 185**
+**Section III, 185**
 
 The conduct of God, who disposes all things kindly, is to put religion into the mind by reason, and into the heart by grace. But to will to put it into the mind and heart by force and threats is not to put religion there, but terror, *terorrem potius quam religionem*.
 
-**Section Iii, 186**
+**Section III, 186**
 
 *Nisi terrerentur et non docerentur, improba quasi dominatio videretur* (Aug., Ep. 48 or 49), *Contra Mendacium ad Consentium*.
 
-**Section Iii, 187**
+**Section III, 187**
 
 *Order.*—Men despise religion; they hate it, and fear it is true. To remedy this, we must begin by showing that religion is not contrary to reason; that it is venerable, to inspire respect for it; then we must make it lovable, to make good men hope it is true; finally, we must prove it is true.
 
 Venerable, because it has perfect knowledge of man; lovable, because it promises the true good.
 
-**Section Iii, 188**
+**Section III, 188**
 
 In every dialogue and discourse, we must be able to say to those who take offence, "Of what do you complain?"
 
-**Section Iii, 189**
+**Section III, 189**
 
 To begin by pitying unbelievers; they are wretched enough by their condition. We ought only to revile them where it is beneficial; but this does them harm.
 
-**Section Iii, 190**
+**Section III, 190**
 
 To pity atheists who seek, for are they not unhappy enough? To inveigh against those who make a boast of it.
 
-**Section Iii, 191**
+**Section III, 191**
 
 And will this one scoff at the other? Who ought to scoff? And yet, the latter does not scoff at the other, but pities him.
 
-**Section Iii, 192**
+**Section III, 192**
 
 To reproach Miton[85] with not being troubled, since God will reproach him.
 
-**Section Iii, 193**
+**Section III, 193**
 
 *Quid fiet hominibus qui minima contemnunt, majora non credunt?*

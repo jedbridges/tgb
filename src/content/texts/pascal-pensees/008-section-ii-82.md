@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ii-82"
-heading: "Section Ii, 82"
+heading: "Section II, 82"
 order: 8
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -46,73 +46,73 @@ Justice and truth are two such subtle points, that our tools are too blunt to to
 
 [Man is so happily formed that he has no ... good of the true, and several excellent of the false. Let us now see how much ... But the most powerful cause of error is the war existing between the senses and reason.]
 
-**Section Ii, 83**
+**Section II, 83**
 
 *We must thus begin the chapter on the deceptive powers.* Man is only a subject full of error, natural and ineffaceable, without grace. Nothing shows him the truth. Everything deceives him. These two sources of truth, reason and the senses, besides being both wanting in sincerity, deceive each other in turn. The senses mislead the reason with false appearances, and receive from reason in their turn the same trickery which they apply to her; reason has her revenge. The passions of the soul trouble the senses, and make false impressions upon them. They rival each other in falsehood and deception.[53]
 
 But besides those errors which arise accidentally and through lack of intelligence, with these heterogeneous faculties ...
 
-**Section Ii, 84**
+**Section II, 84**
 
 The imagination enlarges little objects so as to fill our souls with a fantastic estimate; and, with rash insolence, it belittles the great to its own measure, as when talking of God.
 
-**Section Ii, 85**
+**Section II, 85**
 
 Things which have most hold on us, as the concealment of our few possessions, are often a mere nothing. It is a nothing which our imagination magnifies into a mountain. Another turn of the imagination would make us discover this without difficulty.
 
-**Section Ii, 86**
+**Section II, 86**
 
 [My fancy makes me hate a croaker, and one who pants when eating. Fancy has great weight. Shall we profit by it? Shall we yield to this weight because it is natural? No, but by resisting it ...]
 
-**Section Ii, 87**
+**Section II, 87**
 
 *Næ iste magno conatu magnas nugas dixerit.*[54]
 
 *Quasi quidquam infelicius sit homini cui sua figmenta dominantur.*[55] (Plin.)
 
-**Section Ii, 88**
+**Section II, 88**
 
 Children who are frightened at the face they have blackened are but children. But how shall one who is so weak in his childhood become really strong when he grows older? We only change our fancies. All that is made perfect by progress perishes also by progress. All that has been weak can never become absolutely strong. We say in vain, "He has grown, he has changed"; he is also the same.
 
-**Section Ii, 89**
+**Section II, 89**
 
 Custom is our nature. He who is accustomed to the faith believes in it, can no longer fear hell, and believes in nothing else. He who is accustomed to believe that the king is terrible ... etc. Who doubts then that our soul, being accustomed to see number, space, motion, believes that and nothing else?
 
-**Section Ii, 90**
+**Section II, 90**
 
 *Quod crebro videt non miratur, etiamsi cur fiat nescit; quod ante non viderit, id si evenerit, ostentum esse censet.*[56] (Cic. 583.)
 
-**Section Ii, 91**
+**Section II, 91**
 
 *Spongia solis.*[57]—When we see the same effect always recur, we infer a natural necessity in it, as that there will be a to-morrow, etc. But nature often deceives us, and does not subject herself to her own rules.
 
-**Section Ii, 92**
+**Section II, 92**
 
 What are our natural principles but principles of custom? In children they are those which they have received from the habits of their fathers, as hunting in animals. A different custom will cause different natural principles. This is seen in experience; and if there are some natural principles ineradicable by custom, there are also some customs opposed to nature, ineradicable by nature, or by a second custom. This depends on disposition.
 
-**Section Ii, 93**
+**Section II, 93**
 
 Parents fear lest the natural love of their children may fade away. What kind of nature is that which is subject to decay? Custom is a second nature which destroys the former.[58] But what is nature? For is custom not natural? I am much afraid that nature is itself only a first custom, as custom is a second nature.
 
-**Section Ii, 94**
+**Section II, 94**
 
 The nature of man is wholly natural, *omne animal*.[59]
 
 There is nothing he may not make natural; there is nothing natural he may not lose.
 
-**Section Ii, 95**
+**Section II, 95**
 
 Memory, joy, are intuitions; and even mathematical propositions become intuitions, for education produces natural intuitions, and natural intuitions are erased by education.
 
-**Section Ii, 96**
+**Section II, 96**
 
 When we are accustomed to use bad reasons for proving natural effects, we are not willing to receive good reasons when they are discovered. An example may be given from the circulation of the blood as a reason why the vein swells below the ligature.
 
-**Section Ii, 97**
+**Section II, 97**
 
 The most important affair in life is the choice of a calling; chance decides it. Custom makes men masons, soldiers, slaters. "He is a good slater," says one, and, speaking of soldiers, remarks, "They are perfect fools." But others affirm, "There is nothing great but war, the rest of men are good for nothing." We choose our callings according as we hear this or that praised or despised in our childhood, for we naturally love truth and hate folly. These words move us; the only error is in their application. So great is the force of custom that out of those whom nature has only made men, are created all conditions of men. For some districts are full of masons, others of soldiers, etc. Certainly nature is not so uniform. It is custom then which does this, for it constrains nature. But sometimes nature gains the ascendancy, and preserves man's instinct, in spite of all custom, good or bad.
 
-**Section Ii, 98**
+**Section II, 98**
 
 *Bias leading to error.*—It is a deplorable thing to see all men deliberating on means alone, and not on the end. Each thinks how he will acquit himself in his condition; but as for the choice of condition, or of country, chance gives them to us.
 
@@ -120,7 +120,7 @@ It is a pitiable thing to see so many Turks, heretics, and infidels follow the w
 
 Hence savages care nothing for Providence.[60]
 
-**Section Ii, 99**
+**Section II, 99**
 
 There is an universal and essential difference between the actions of the will and all other actions.
 

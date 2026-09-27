@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xi-692"
-heading: "Section Xi, 692"
+heading: "Section XI, 692"
 order: 60
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -14,7 +14,7 @@ When I see the blindness and the wretchedness of man, when I regard the whole si
 
 I see many contradictory religions, and consequently all false save one. Each wants to be believed on its own authority, and threatens unbelievers. I do not therefore believe them. Every one can say this; every one can call himself a prophet. But I see that Christian religion wherein prophecies are fulfilled; and that is what every one cannot do.
 
-**Section Xi, 693**
+**Section XI, 693**
 
 And what crowns all this is prediction, so that it should not be said that it is chance which has done it.
 
@@ -22,19 +22,19 @@ Whosoever, having only a week to live, will not find out that it is expedient to
 
 Now, if the passions had no hold on us, a week and a hundred years would amount to the same thing.
 
-**Section Xi, 694**
+**Section XI, 694**
 
 *Prophecies.*—Great Pan is dead.[267]
 
-**Section Xi, 695**
+**Section XI, 695**
 
 *Susceperunt verbum cum omni aviditate, scrutantes Scripturas, si ita se haberent.*[268]
 
-**Section Xi, 696**
+**Section XI, 696**
 
 *Prodita lege.*—*Impleta cerne.*—*Implenda collige.*
 
-**Section Xi, 697**
+**Section XI, 697**
 
 We understand the prophecies only when we see the events happen. Thus the proofs of retreat, discretion, silence, etc. are proofs only to those who know and believe them.
 
@@ -42,15 +42,15 @@ Joseph so internal in a law so external.
 
 Outward penances dispose to inward, as humiliations to humility. Thus the ...
 
-**Section Xi, 698**
+**Section XI, 698**
 
 The synagogue has preceded the church; the Jews, the Christians. The prophets have foretold the Christians; Saint John, Jesus Christ.
 
-**Section Xi, 699**
+**Section XI, 699**
 
 It is glorious to see with the eyes of faith the history of Herod and of Cæsar.
 
-**Section Xi, 700**
+**Section XI, 700**
 
 The zeal of the Jews for their law and their temple (Josephus, and Philo the Jew, *Ad Caïum*). What other people had such a zeal? It was necessary they should have it.
 
@@ -58,43 +58,43 @@ Jesus Christ foretold as to the time and the state of the world. The ruler taken
 
 How fine it is to see, with the eyes of faith, Darius and Cyrus, Alexander, the Romans, Pompey and Herod working, without knowing it, for the glory of the Gospel!
 
-**Section Xi, 701**
+**Section XI, 701**
 
 Zeal of the Jewish people for the law, especially after there were no more prophets.
 
-**Section Xi, 702**
+**Section XI, 702**
 
 While the prophets were for maintaining the law, the people were indifferent. But since there have been no more prophets, zeal has succeeded them.
 
-**Section Xi, 703**
+**Section XI, 703**
 
 The devil troubled the zeal of the Jews before Jesus Christ, because he would have been their salvation, but not since.
 
 The Jewish people scorned by the Gentiles; the Christian people persecuted.
 
-**Section Xi, 704**
+**Section XI, 704**
 
 *Proof.*—Prophecies with their fulfilment; what has preceded and what has followed Jesus Christ.
 
-**Section Xi, 705**
+**Section XI, 705**
 
 The prophecies are the strongest proof of Jesus Christ. It is for them also that God has made most provision; for the event which has fulfilled them is a miracle existing since the birth of the Church to the end. So God has raised up prophets during sixteen hundred years, and, during four hundred years afterwards, He has scattered all these prophecies among all the Jews, who carried them into all parts of the world. Such was the preparation for the birth of Jesus Christ, and, as His Gospel was to be believed by all the world, it was not only necessary that there should be prophecies to make it believed, but that these prophecies should exist throughout the whole world, in order to make it embraced by the whole world.
 
-**Section Xi, 706**
+**Section XI, 706**
 
 But it was not enough that the prophecies should exist. It was necessary that they should be distributed throughout all places, and preserved throughout all times. And in order that this agreement might not be taken for an effect of chance, it was necessary that this should be foretold.
 
 It is far more glorious for the Messiah that the Jews should be the spectators, and even the instruments of His glory, besides that God had reserved them.
 
-**Section Xi, 707**
+**Section XI, 707**
 
 *Prophecies.*—The time foretold by the state of the Jewish people, by the state of the heathen, by the state of the temple, by the number of years.
 
-**Section Xi, 708**
+**Section XI, 708**
 
 One must be bold to predict the same thing in so many ways. It was necessary that the four idolatrous or pagan monarchies, the end of the kingdom of Judah, and the seventy weeks, should happen at the same time, and all this before the second temple was destroyed.
 
-**Section Xi, 709**
+**Section XI, 709**
 
 *Prophecies.*—If one man alone had made a book of predictions about Jesus Christ, as to the time and the manner, and Jesus Christ had come in conformity to these prophecies, this fact would have infinite weight.
 

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xviii-of-giving-the-lie"
-heading: "Chapter Xviii: : of Giving the Lie"
+heading: "Chapter XVIII: : of Giving the Lie"
 order: 88
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-vii-425"
-heading: "Section Vii, 425"
+heading: "Section VII, 425"
 order: 29
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -24,18 +24,18 @@ He only is our true good, and since we have forsaken Him, it is a strange thing 
 
 Some seek good in authority, others in scientific research, others in pleasure. Others, who are in fact nearer the truth, have considered it necessary that the universal good, which all men desire, should not consist in any of the particular things which can only be possessed by one man, and which, when shared, afflict their possessor more by the want of the part he has not, than they please him by the possession of what he has. They have learned that the true good should be such as all can possess at once, without diminution and without envy, and which no one can lose against his will. And their reason is that this desire being natural to man, since it is necessarily in all, and that it is impossible not to have it, they infer from it ...
 
-**Section Vii, 426**
+**Section VII, 426**
 
 True nature being lost, everything becomes its own nature; as the true good being lost, everything becomes its own true good.
 
-**Section Vii, 427**
+**Section VII, 427**
 
 Man does not know in what rank to place himself. He has plainly gone astray, and fallen from his true place without being able to find it again. He seeks it anxiously and unsuccessfully everywhere in impenetrable darkness.
 
-**Section Vii, 428**
+**Section VII, 428**
 
 If it is a sign of weakness to prove God by nature, do not despise Scripture; if it is a sign of strength to have known these contradictions, esteem Scripture.
 
-**Section Vii, 429**
+**Section VII, 429**
 
 The vileness of man in submitting himself to the brutes, and in even worshipping them.

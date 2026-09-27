@@ -8,7 +8,7 @@ sourceUrl: "https://www.gutenberg.org/ebooks/35451"
 edition: "Gilbert Murray's translation, 1910"
 translator: "Gilbert Murray"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 2080
+words: 2081
 ---
 The *Medea*, in spite of its background of wonder and enchantment, is not a romantic play but a tragedy of character and situation. It deals, so to speak, not with the romance itself, but with the end of the romance, a thing which is so terribly often the reverse of romantic. For all but the very highest of romances are apt to have just one flaw somewhere, and in the story of Jason and Medea the flaw was of a fatal kind.
 
@@ -35,6 +35,8 @@ The dramatic effect of this kind of tragedy is curious. No one can call it undra
 From any such judgment there is an instant appeal to sane human sympathy. Jason has suffered more than enough. But that also is the way of the world. And the last word upon these tragic things is most often something not to be expressed by the sentences of even the wisest articulate judge, but only by the unspoken *lacrimæ rerum*.
 
 G. M.
+
+**Medea**
 
 **Characters of the Play**
 

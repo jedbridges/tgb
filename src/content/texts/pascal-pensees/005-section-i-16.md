@@ -210,7 +210,7 @@ You are ungraceful: "Excuse me, pray." Without that excuse I would not have know
 
 "To extinguish the torch of sedition"; too luxuriant. "The restlessness of his genius"; two superfluous grand words.
 
-**Section Ii, 60**
+**Section II, 60**
 
 *First part*: Misery of man without God.
 
@@ -220,48 +220,48 @@ Or, *First part*: That nature is corrupt. Proved by nature itself.
 
 *Second part*: That there is a Redeemer. Proved by Scripture.
 
-**Section Ii, 61**
+**Section II, 61**
 
 *Order.*—I might well have taken this discourse in an order like this: to show the vanity of all conditions of men, to show the vanity of ordinary lives, and then the vanity of philosophic lives, sceptics, stoics; but the order would not have been kept. I know a little what it is, and how few people understand it. No human science can keep it. Saint Thomas[20] did not keep it. Mathematics keep it, but they are useless on account of their depth.
 
-**Section Ii, 62**
+**Section II, 62**
 
 *Preface to the first part.*—To speak of those who have treated of the knowledge of self; of the divisions of Charron,[21] which sadden and weary us; of the confusion of Montaigne;[22] that he was quite aware of his want of method, and shunned it by jumping from subject to subject; that he sought to be fashionable.
 
 His foolish project of describing himself! And this not casually and against his maxims, since every one makes mistakes, but by his maxims themselves, and by first and chief design. For to say silly things by chance and weakness is a common misfortune; but to say them intentionally is intolerable, and to say such as that ...
 
-**Section Ii, 63**
+**Section II, 63**
 
 *Montaigne.*—Montaigne's faults are great. Lewd words; this is bad, notwithstanding Mademoiselle de Gournay.[23] Credulous; *people without eyes*.[24] Ignorant; *squaring the circle,[25] a greater world*.[26] His opinions on suicide, on death.[27] He suggests an indifference about salvation, *without fear and without repentance*.[28] As his book was not written with a religious purpose, he was not bound to mention religion; but it is always our duty not to turn men from it. One can excuse his rather free and licentious opinions on some relations of life (730,231)[29]; but one cannot excuse his thoroughly pagan views on death, for a man must renounce piety altogether, if he does not at least wish to die like a Christian. Now, through the whole of his book his only conception of death is a cowardly and effeminate one.
 
-**Section Ii, 64**
+**Section II, 64**
 
 It is not in Montaigne, but in myself, that I find all that I see in him.
 
-**Section Ii, 65**
+**Section II, 65**
 
 What good there is in Montaigne can only have been acquired with difficulty. The evil that is in him, I mean apart from his morality, could have been corrected in a moment, if he had been informed that he made too much of trifles and spoke too much of himself.
 
-**Section Ii, 66**
+**Section II, 66**
 
 One must know oneself. If this does not serve to discover truth, it at least serves as a rule of life, and there is nothing better.
 
-**Section Ii, 67**
+**Section II, 67**
 
 *The vanity of the sciences.*—Physical science will not console me for the ignorance of morality in the time of affliction. But the science of ethics will always console me for the ignorance of the physical sciences.
 
-**Section Ii, 68**
+**Section II, 68**
 
 Men are never taught to be gentlemen, and are taught everything else; and they never plume themselves so much on the rest of their knowledge as on knowing how to be gentlemen. They only plume themselves on knowing the one thing they do not know.
 
-**Section Ii, 69**
+**Section II, 69**
 
 *The infinites, the mean.*—When we read too fast or too slowly, we understand nothing.
 
-**Section Ii, 70**
+**Section II, 70**
 
 *Nature* ...—[Nature has set us so well in the centre, that if we change one side of the balance, we change the other also. *I act.* Τά ζῶα τρέχει This makes me believe that the springs in our brain are so adjusted that he who touches one touches also its contrary.]
 
-**Section Ii, 71**
+**Section II, 71**
 
 Too much and too little wine. Give him none, he cannot find truth; give him too much, the same.

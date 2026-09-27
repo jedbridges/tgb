@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxi-that-the-profit-of-one-man-is-the-damage-of-anot"
-heading: "Chapter Xxi: : That the Profit of One Man Is the Damage of Another"
+heading: "Chapter XXI: : That the Profit of One Man Is the Damage of Another"
 order: 35
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

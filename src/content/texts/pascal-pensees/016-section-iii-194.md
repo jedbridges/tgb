@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-iii-194"
-heading: "Section Iii, 194"
+heading: "Section III, 194"
 order: 16
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"

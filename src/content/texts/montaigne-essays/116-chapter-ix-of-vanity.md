@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-ix-of-vanity"
-heading: "Chapter Ix: : of Vanity"
+heading: "Chapter IX: : of Vanity"
 order: 116
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

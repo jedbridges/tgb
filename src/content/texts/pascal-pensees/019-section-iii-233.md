@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-iii-233"
-heading: "Section Iii, 233"
+heading: "Section III, 233"
 order: 19
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"

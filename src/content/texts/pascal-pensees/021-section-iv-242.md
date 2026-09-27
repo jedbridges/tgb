@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-iv-242"
-heading: "Section Iv, 242"
+heading: "Section IV, 242"
 order: 21
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -18,38 +18,38 @@ It is not after this manner that Scripture speaks, which has a better knowledge 
 
 This is what Scripture points out to us, when it says in so many places that those who seek God find Him.[93] It is not of that light, "like the noonday sun," that this is said. We do not say that those who seek the noonday sun, or water in the sea, shall find them; and hence the evidence of God must not be of this nature. So it tells us elsewhere: *Vere tu es Deus absconditus*.[94]
 
-**Section Iv, 243**
+**Section IV, 243**
 
 It is an astounding fact that no canonical writer has ever made use of nature to prove God. They all strive to make us believe in Him. David, Solomon, etc., have never said, "There is no void, therefore there is a God." They must have had more knowledge than the most learned people who came after them, and who have all made use of this argument. This is worthy of attention.
 
-**Section Iv, 244**
+**Section IV, 244**
 
 "Why! Do you not say yourself that the heavens and birds prove God?" No. "And does your religion not say so?" No. For although it is true in a sense for some souls to whom God gives this light, yet it is false with respect to the majority of men.
 
-**Section Iv, 245**
+**Section IV, 245**
 
 There are three sources of belief: reason, custom, inspiration. The Christian religion, which alone has reason, does not acknowledge as her true children those who believe without inspiration. It is not that she excludes reason and custom. On the contrary, the mind must be opened to proofs, must be confirmed by custom, and offer itself in humbleness to inspirations, which alone can produce a true and saving effect. *Ne evacuetur crux Christi.*[95]
 
-**Section Iv, 246**
+**Section IV, 246**
 
 *Order.*—After the letter *That we ought to seek God*, to write the letter *On removing obstacles*; which is the discourse on "the machine,"[96] on preparing the machine, on seeking by reason.
 
-**Section Iv, 247**
+**Section IV, 247**
 
 *Order.*—A letter of exhortation to a friend to induce him to seek. And he will reply, "But what is the use of seeking? Nothing is seen." Then to reply to him, "Do not despair." And he will answer that he would be glad to find some light, but that, according to this very religion, if he believed in it, it will be of no use to him, and that therefore he prefers not to seek. And to answer to that: The machine.
 
-**Section Iv, 248**
+**Section IV, 248**
 
 *A letter which indicates the use of proofs by the machine.*— Faith is different from proof; the one is human, the other is a gift of God. *Justus ex fide vivit.*[97] It is this faith that God Himself puts into the heart, of which the proof is often the instrument, *fides ex auditu*;[98] but this faith is in the heart, and makes us not say *scio*, but *credo*.
 
-**Section Iv, 249**
+**Section IV, 249**
 
 It is superstition to put one's hope in formalities; but it is pride to be unwilling to submit to them.
 
-**Section Iv, 250**
+**Section IV, 250**
 
 The external must be joined to the internal to obtain anything from God, that is to say, we must kneel, pray with the lips, etc., in order that proud man, who would not submit himself to God, may be now subject to the creature.[99] To expect help from these externals is superstition; to refuse to join them to the internal is pride.
 
-**Section Iv, 251**
+**Section IV, 251**
 
 Other religions, as the pagan, are more popular, for they consist in externals. But they are not for educated people. A purely intellectual religion would be more suited to the learned, but it would be of no use to the common people. The Christian religion alone is adapted to all, being composed of externals and internals. It raises the common people to the internal, and humbles the proud to the external; it is not perfect without the two, for the people must understand the spirit of the letter, and the learned must submit their spirit to the letter.

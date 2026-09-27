@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-lii-of-the-parsimony-of-the-ancients"
-heading: "Chapter Lii: : of the Parsimony of the Ancients"
+heading: "Chapter LII: : of the Parsimony of the Ancients"
 order: 65
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

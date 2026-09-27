@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-viii-570"
-heading: "Section Viii, 570"
+heading: "Section VIII, 570"
 order: 40
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -28,7 +28,7 @@ Now the ultimate end gives names to things. All which prevents us from attaining
 
 Thus as the significance of the word "enemy" is dependent on the ultimate end, the righteous understood by it their passions, and the carnal the Babylonians; and so these terms were obscure only for the unrighteous. And this is what Isaiah says: *Signa legem in electis meis*,[208] and that Jesus Christ shall be a stone of stumbling. But, "Blessed are they who shall not be offended in him." Hosea,[209] *ult.*, says excellently, "Where is the wise? and he shall understand what I say. The righteous shall know them, for the ways of God are right; but the transgressors shall fall therein."
 
-**Section Viii, 571**
+**Section VIII, 571**
 
 Hypothesis that the apostles were impostors.—The time clearly, the manner obscurely.—Five typical proofs.
 
@@ -36,22 +36,22 @@ Hypothesis that the apostles were impostors.—The time clearly, the manner obsc
   2000 {  
 { 400 scattered.
 
-**Section Viii, 572**
+**Section VIII, 572**
 
 *Blindness of Scripture.*—"The Scripture," said the Jews, "says that we shall not know whence Christ will come (John vii, 27, and xii, 34). The Scripture says that Christ abideth for ever, and He said that He should die." Therefore, says Saint John,[210] they believed not, though He had done so many miracles, that the word of Isaiah might be fulfilled: "He hath blinded them," etc.
 
-**Section Viii, 573**
+**Section VIII, 573**
 
 *Greatness.*—Religion is so great a thing that it is right that those who will not take the trouble to seek it, if it be obscure, should be deprived of it. Why, then, do any complain, if it be such as can be found by seeking?
 
-**Section Viii, 574**
+**Section VIII, 574**
 
 All things work together for good to the elect, even the obscurities of Scripture; for they honour them because of what is divinely clear. And all things work together for evil to the rest of the world, even what is clear; for they revile such, because of the obscurities which they do not understand.
 
-**Section Viii, 575**
+**Section VIII, 575**
 
 *The general conduct of the world towards the Church: God willing to blind and to enlighten.*—The event having proved the divinity of these prophecies, the rest ought to be believed. And thereby we see the order of the world to be of this kind. The miracles of the Creation and the Deluge being forgotten, God sends the law and the miracles of Moses, the prophets who prophesied particular things; and to prepare a lasting miracle, He prepares prophecies and their fulfilment; but, as the prophecies could be suspected, He desires to make them above suspicion, etc.
 
-**Section Viii, 576**
+**Section VIII, 576**
 
 God has made the blindness of this people subservient to the good of the elect.

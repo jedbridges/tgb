@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxviii-of-solitude"
-heading: "Chapter Xxxviii: : of Solitude"
+heading: "Chapter XXXVIII: : of Solitude"
 order: 51
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ii-142"
-heading: "Section Ii, 142"
+heading: "Section II, 142"
 order: 12
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxiv-of-pedantry"
-heading: "Chapter Xxiv: : of Pedantry"
+heading: "Chapter XXIV: : of Pedantry"
 order: 38
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

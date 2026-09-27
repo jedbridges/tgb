@@ -64,3 +64,38 @@
 - { work: dostoevsky-brothers-karamazov, source: standardebooks, url: https://standardebooks.org/ebooks/fyodor-dostoevsky/the-brothers-karamazov/constance-garnett, edition: "Constance Garnett's translation, 1912", translator: Constance Garnett }
 - { work: tolstoy-war-and-peace, source: standardebooks, url: https://standardebooks.org/ebooks/leo-tolstoy/war-and-peace/louise-maude_aylmer-maude, edition: "Louise and Aylmer Maude's translation, 1922", translator: Louise and Aylmer Maude }
 - { work: du-bois-souls-of-black-folk, source: standardebooks, url: https://standardebooks.org/ebooks/w-e-b-du-bois/the-souls-of-black-folk, edition: "The 1903 text" }
+
+# The second batch, from the Gutenberg catalogue (scripts/find-texts.ts, 27 September 2026).
+# The King James books share one file, number 10, and each takes its own book by match.
+- { work: plato-phaedo, source: gutenberg, url: "1658", skip: "^Introduction", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: plato-crito, source: gutenberg, url: "1657", skip: "^Introduction", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: plato-meno, source: gutenberg, url: "1643", skip: "^(Introduction|On the Ideas)", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: plato-phaedrus, source: gutenberg, url: "1636", skip: "^Introduction", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: plato-gorgias, source: gutenberg, url: "1672", skip: "^Introduction", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: plato-timaeus, source: gutenberg, url: "1572", skip: "^(Introduction|Section)", edition: "Benjamin Jowett's translation, 1871", translator: Benjamin Jowett }
+- { work: aristotle-politics, source: gutenberg, url: "6762", skip: "(^|/ )(London|Introduction|Bibliography)", edition: "Benjamin Jowett's translation, 1885", translator: Benjamin Jowett }
+- { work: aristotle-poetics, source: gutenberg, url: "1974", edition: "S. H. Butcher's translation, 1902", translator: S. H. Butcher }
+- { work: aristophanes-clouds, source: gutenberg, url: "2562", edition: "The Athenian Society translation, 1912" }
+- { work: aristophanes-birds, source: gutenberg, url: "3013", edition: "The Athenian Society translation, 1912" }
+- { work: sophocles-oedipus-at-colonus, source: gutenberg, url: "31", match: "Colonus", edition: "Francis Storr's translation, 1912", translator: Francis Storr }
+- { work: cicero-on-duties, source: gutenberg, url: "47001", skip: "^(Introduction|Bibliography)", edition: "Walter Miller's translation, 1913", translator: Walter Miller }
+- { work: augustine-city-of-god, source: gutenberg, url: "45304", edition: "Marcus Dods's translation, 1871, Books I to X", translator: Marcus Dods }
+- { work: aquinas-summa-theologica, source: gutenberg, url: "17611", edition: "The English Dominican translation, 1911, the First Part", translator: Fathers of the English Dominican Province }
+- { work: chaucer-canterbury-tales, source: gutenberg, url: "2383", match: "^(?!.*Legend)(The Prologue|.*Tale|Preces)", edition: "The Middle English text in D. Laing Purves's edition, 1870" }
+- { work: shakespeare-macbeth, source: gutenberg, url: "1533", edition: "The Globe edition text" }
+- { work: descartes-discourse-on-method, source: gutenberg, url: "59", edition: "John Veitch's translation, 1850", translator: John Veitch }
+- { work: harvey-on-the-motion-of-the-heart-and-blood, source: gutenberg, url: "67065", edition: "Robert Willis's translation, 1847", translator: Robert Willis }
+- { work: racine-phaedra, source: gutenberg, url: "1977", edition: "Robert Bruce Boswell's translation, 1890", translator: Robert Bruce Boswell }
+- { work: berkeley-principles-of-human-knowledge, source: gutenberg, url: "4723", edition: "The 1710 text" }
+- { work: hume-enquiry-concerning-human-understanding, source: gutenberg, url: "9662", edition: "The 1748 text" }
+- { work: kant-critique-of-pure-reason, source: gutenberg, url: "4280", edition: "J. M. D. Meiklejohn's translation, 1855", translator: J. M. D. Meiklejohn }
+- { work: goethe-faust, source: gutenberg, url: "14591", edition: "Bayard Taylor's verse translation, 1870, Part One", translator: Bayard Taylor }
+- { work: nietzsche-beyond-good-and-evil, source: gutenberg, url: "4363", edition: "Helen Zimmern's translation, 1906", translator: Helen Zimmern }
+- { work: nietzsche-genealogy-of-morals, source: gutenberg, url: "52319", skip: "^Peoples and Countries", edition: "Horace B. Samuel's translation, 1913", translator: Horace B. Samuel }
+- { work: hippocrates-works, source: gutenberg, url: "72583", skip: "^(Translator|On the Origin|Section I|Section III|The Pythagoreans|The Platonists|The Peripatetics|The Stoics|The Epicureans|Explanation of the Plates)", edition: "Francis Adams's translation, 1849, volume one", translator: Francis Adams }
+- { work: bible-genesis, source: gutenberg, url: "10", match: "Genesis", edition: "The King James Version, 1611" }
+- { work: bible-exodus, source: gutenberg, url: "10", match: "Exodus", edition: "The King James Version, 1611" }
+- { work: bible-job, source: gutenberg, url: "10", match: "Book of Job", edition: "The King James Version, 1611" }
+- { work: bible-psalms, source: gutenberg, url: "10", match: "Psalms", edition: "The King James Version, 1611" }
+- { work: bible-gospel-of-matthew, source: gutenberg, url: "10", match: "Matthew", edition: "The King James Version, 1611" }
+- { work: bible-gospel-of-john, source: gutenberg, url: "10", match: "Gospel According to Saint John", edition: "The King James Version, 1611" }

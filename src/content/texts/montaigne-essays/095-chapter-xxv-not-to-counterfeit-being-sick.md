@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxv-not-to-counterfeit-being-sick"
-heading: "Chapter Xxv: : Not to Counterfeit Being Sick"
+heading: "Chapter XXV: : Not to Counterfeit Being Sick"
 order: 95
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

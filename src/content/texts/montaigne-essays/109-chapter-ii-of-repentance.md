@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-ii-of-repentance"
-heading: "Chapter Ii: : of Repentance"
+heading: "Chapter II: : of Repentance"
 order: 109
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

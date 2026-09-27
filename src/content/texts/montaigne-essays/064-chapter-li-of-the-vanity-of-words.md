@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-li-of-the-vanity-of-words"
-heading: "Chapter Li: : of the Vanity of Words"
+heading: "Chapter LI: : of the Vanity of Words"
 order: 64
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

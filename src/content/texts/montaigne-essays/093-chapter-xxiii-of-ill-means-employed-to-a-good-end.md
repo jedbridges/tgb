@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxiii-of-ill-means-employed-to-a-good-end"
-heading: "Chapter Xxiii: : of ILL Means Employed to a Good End"
+heading: "Chapter XXIII: : of ILL Means Employed to a Good End"
 order: 93
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-iii-that-our-affections-carry-themselves-beyond-us"
-heading: "Chapter Iii: : That Our Affections Carry Themselves Beyond Us"
+heading: "Chapter III: : That Our Affections Carry Themselves Beyond Us"
 order: 17
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

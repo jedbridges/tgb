@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ix-600"
-heading: "Section Ix, 600"
+heading: "Section IX, 600"
 order: 42
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -18,40 +18,40 @@ The Jewish religion must be differently regarded in the tradition of the Holy Bi
 
 Our religion is so divine that another divine religion has only been the foundation of it.
 
-**Section Ix, 601**
+**Section IX, 601**
 
 *Order.*—To see what is clear and indisputable in the whole state of the Jews.
 
-**Section Ix, 602**
+**Section IX, 602**
 
 The Jewish religion is wholly divine in its authority, its duration, its perpetuity, its morality, its doctrine, and its effects.
 
-**Section Ix, 603**
+**Section IX, 603**
 
 The only science contrary to common sense and human nature is that alone which has always existed among men.
 
-**Section Ix, 604**
+**Section IX, 604**
 
 The only religion contrary to nature, to common sense, and to our pleasure, is that alone which has always existed.
 
-**Section Ix, 605**
+**Section IX, 605**
 
 No religion but our own has taught that man is born in sin. No sect of philosophers has said this. Therefore none have declared the truth.
 
 No sect or religion has always existed on earth, but the Christian religion.
 
-**Section Ix, 606**
+**Section IX, 606**
 
 Whoever judges of the Jewish religion by its coarser forms will misunderstand it. It is to be seen in the Holy Bible, and in the tradition of the prophets, who have made it plain enough that they did not interpret the law according to the letter. So our religion is divine in the Gospel, in the Apostles, and in tradition; but it is absurd in those who tamper with it.
 
 The Messiah, according to the carnal Jews, was to be a great temporal prince. Jesus Christ, according to carnal Christians,[218] has come to dispense us from the love of God, and to give us sacraments which shall do everything without our help. Such is not the Christian religion, nor the Jewish. True Jews and true Christians have always expected a Messiah who should make them love God, and by that love triumph over their enemies.
 
-**Section Ix, 607**
+**Section IX, 607**
 
 The carnal Jews hold a midway place between Christians and heathens. The heathens know not God, and love the world only. The Jews know the true God, and love the world only. The Christians know the true God, and love not the world. Jews and heathens love the same good. Jews and Christians know the same God.
 
 The Jews were of two kinds; the first had only heathen affections, the other had Christian affections.
 
-**Section Ix, 608**
+**Section IX, 608**
 
 There are two kinds of men in each religion: among the heathen, worshippers of beasts, and the worshippers of the one only God of natural religion; among the Jews, the carnal, and the spiritual, who were the Christians of the old law; among Christians, the coarser-minded, who are the Jews of the new law. The carnal Jews looked for a carnal Messiah; the coarser Christians believe that the Messiah has dispensed them from the love of God; true Jews and true Christians worship a Messiah who makes them love God.

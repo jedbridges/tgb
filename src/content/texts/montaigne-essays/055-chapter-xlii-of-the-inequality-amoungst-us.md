@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xlii-of-the-inequality-amoungst-us"
-heading: "Chapter Xlii: : of the Inequality Amoungst Us"
+heading: "Chapter XLII: : of the Inequality Amoungst Us"
 order: 55
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

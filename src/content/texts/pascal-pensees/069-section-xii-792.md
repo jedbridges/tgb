@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xii-792"
-heading: "Section Xii, 792"
+heading: "Section XII, 792"
 order: 69
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -40,33 +40,33 @@ All bodies together, and all minds together, and all their products, are not equ
 
 From all bodies together, we cannot obtain one little thought; this is impossible, and of another order. From all bodies and minds, we cannot produce a feeling of true charity; this is impossible, and of another and supernatural order.
 
-**Section Xii, 793**
+**Section XII, 793**
 
 Why did Jesus Christ not come in a visible manner, instead of obtaining testimony of Himself from preceding prophecies? Why did He cause Himself to be foretold in types?
 
-**Section Xii, 794**
+**Section XII, 794**
 
 If Jesus Christ had only come to sanctify, all Scripture and all things would tend to that end; and it would be quite easy to convince unbelievers. If Jesus Christ had only come to blind, all His conduct would be confused; and we would have no means of convincing unbelievers. But as He came *in sanctificationem et in scandalum*,[317] as Isaiah says, we cannot convince unbelievers, and they cannot convince us. But by this very fact we convince them; since we say that in His whole conduct there is no convincing proof on one side or the other.
 
-**Section Xii, 795**
+**Section XII, 795**
 
 Jesus Christ does not say that He is not of Nazareth, in order to leave the wicked in their blindness; nor that He is not Joseph's son.
 
-**Section Xii, 796**
+**Section XII, 796**
 
 *Proofs of Jesus Christ.*—Jesus Christ said great things so simply, that it seems as though He had not thought them great; and yet so clearly that we easily see what He thought of them. This clearness, joined to this simplicity, is wonderful.
 
-**Section Xii, 797**
+**Section XII, 797**
 
 The style of the gospel is admirable in so many ways, and among the rest in hurling no invectives against the persecutors and enemies of Jesus Christ. For there is no such invective in any of the historians against Judas, Pilate, or any of the Jews.
 
 If this moderation of the writers of the Gospels had been assumed, as well as many other traits of so beautiful a character, and they had only assumed it to attract notice, even if they had not dared to draw attention to it themselves, they would not have failed to secure friends, who would have made such remarks to their advantage. But as they acted thus without pretence, and from wholly disinterested motives, they did not point it out to any one; and I believe that many such facts have not been noticed till now, which is evidence of the natural disinterestedness with which the thing has been done.
 
-**Section Xii, 798**
+**Section XII, 798**
 
 An artisan who speaks of wealth, a lawyer who speaks of war, of royalty, etc.; but the rich man rightly speaks of wealth, a king speaks indifferently of a great gift he has just made, and God rightly speaks of God.
 
-**Section Xii, 799**
+**Section XII, 799**
 
 Who has taught the evangelists the qualities of a perfectly heroic soul, that they paint it so perfectly in Jesus Christ? Why do they make Him weak in His agony? Do they not know how to paint a resolute death? Yes, for the same Saint Luke paints the death of Saint Stephen as braver than that of Jesus Christ.
 
@@ -74,17 +74,17 @@ They make Him therefore capable of fear, before the necessity of dying has come,
 
 But when they make Him so troubled, it is when He afflicts Himself; and when men afflict Him, He is altogether strong.
 
-**Section Xii, 800**
+**Section XII, 800**
 
 *Proof of Jesus Christ.*—The supposition that the apostles were impostors is very absurd. Let us think it out. Let us imagine those twelve men, assembled after the death of Jesus Christ, plotting to say that He was risen. By this they attack all the powers. The heart of man is strangely inclined to fickleness, to change, to promises, to gain. However little any of them might have been led astray by all these attractions, nay more, by the fear of prisons, tortures, and death, they were lost. Let us follow up this thought.
 
-**Section Xii, 801**
+**Section XII, 801**
 
 The apostles were either deceived or deceivers. Either supposition has difficulties; for it is not possible to mistake a man raised from the dead ...
 
 While Jesus Christ was with them, He could sustain them. But, after that, if He did not appear to them, who inspired them to act?
 
-**Section Xiii, 802**
+**Section XIII, 802**
 
 *The beginning.*—Miracles enable us to judge of doctrine, and doctrine enables us to judge of miracles.
 
@@ -98,18 +98,18 @@ If miracles regulate....
 
 *Objection to the rule.*—The distinction of the times. One rule during the time of Moses, another at present.
 
-**Section Xiii, 803**
+**Section XIII, 803**
 
 *Miracle.*—It is an effect, which exceeds the natural power of the means which are employed for it; and what is not a miracle is an effect, which does not exceed the natural power of the means which are employed for it. Thus, those who heal by invocation of the devil do not work a miracle; for that does not exceed the natural power of the devil. But ...
 
-**Section Xiii, 804**
+**Section XIII, 804**
 
 The two fundamentals; one inward, the other outward; grace and miracles; both supernatural.
 
-**Section Xiii, 805**
+**Section XIII, 805**
 
 Miracles and truth are necessary, because it is necessary to convince the entire man, in body and soul.
 
-**Section Xiii, 806**
+**Section XIII, 806**
 
 In all times, either men have spoken of the true God, or the true God has spoken to men.

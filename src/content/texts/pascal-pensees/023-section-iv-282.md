@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-iv-282"
-heading: "Section Iv, 282"
+heading: "Section IV, 282"
 order: 23
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -16,7 +16,7 @@ This inability ought, then, to serve only to humble reason, which would judge al
 
 Therefore, those to whom God has imparted religion by intuition are very fortunate, and justly convinced. But to those who do not have it, we can give it only by reasoning, waiting for God to give them spiritual insight, without which faith is only human, and useless for salvation.
 
-**Section Iv, 283**
+**Section IV, 283**
 
 *Order.—Against the objection that Scripture has no order.*
 
@@ -24,19 +24,19 @@ The heart has its own order; the intellect has its own, which is by principle an
 
 Jesus Christ and Saint Paul employ the rule of love, not of intellect; for they would warm, not instruct. It is the same with Saint Augustine. This order consists chiefly in digressions on each point to indicate the end, and keep it always in sight.
 
-**Section Iv, 284**
+**Section IV, 284**
 
 Do not wonder to see simple people believe without reasoning. God imparts to them love of Him and hatred of self. He inclines their heart to believe. Men will never believe with a saving and real faith, unless God inclines their heart; and they will believe as soon as He inclines it. And this is what David knew well, when he said: *Inclina cor meum, Deus, in ...*[106]
 
-**Section Iv, 285**
+**Section IV, 285**
 
 Religion is suited to all kinds of minds. Some pay attention only to its establishment,[107] and this religion is such that its very establishment suffices to prove its truth. Others trace it even to the apostles. The more learned go back to the beginning of the world. The angels see it better still, and from a more distant time.
 
-**Section Iv, 286**
+**Section IV, 286**
 
 Those who believe without having read the Testaments, do so because they have an inward disposition entirely holy, and all that they hear of our religion conforms to it. They feel that a God has made them; they desire only to love God; they desire to hate themselves only. They feel that they have no strength in themselves; that they are incapable of coming to God; and that if God does not come to them, they can have no communion with Him. And they hear our religion say that men must love God only, and hate self only; but that all being corrupt and unworthy of God, God made Himself man to unite Himself to us. No more is required to persuade men who have this disposition in their heart, and who have this knowledge of their duty and of their inefficiency.
 
-**Section Iv, 287**
+**Section IV, 287**
 
 Those whom we see to be Christians without the knowledge of the prophets and evidences, nevertheless judge of their religion as well as those who have that knowledge. They judge of it by the heart, as others judge of it by the intellect. God Himself inclines them to believe, and thus they are most effectively convinced.
 
@@ -44,19 +44,19 @@ I confess indeed that one of those Christians who believe without proofs will no
 
 For God having said in His prophecies (which are undoubtedly prophecies), that in the reign of Jesus Christ He would spread His spirit abroad among nations, and that the youths and maidens and children of the Church would prophesy;[108] it is certain that the Spirit of God is in these, and not in the others.
 
-**Section Iv, 288**
+**Section IV, 288**
 
 Instead of complaining that God had hidden Himself, you will give Him thanks for having revealed so much of Himself; and you will also give Him thanks for not having revealed Himself to haughty sages, unworthy to know so holy a God.
 
 Two kinds of persons know Him: those who have a humble heart, and who love lowliness, whatever kind of intellect they may have, high or low; and those who have sufficient understanding to see the truth, whatever opposition they may have to it.
 
-**Section Iv, 289**
+**Section IV, 289**
 
 *Proof.*—1. The Christian religion, by its establishment, having established itself so strongly, so gently, whilst contrary to nature.—2. The sanctity, the dignity, and the humility of a Christian soul.—3. The miracles of Holy Scripture.—4. Jesus Christ in particular.—5. The apostles in particular.—6. Moses and the prophets in particular.—7. The Jewish people.—8. The prophecies.—9. Perpetuity; no religion has perpetuity.— 10. The doctrine which gives a reason for everything.—11. The sanctity of this law.—12. By the course of the world.
 
 Surely, after considering what is life and what is religion, we should not refuse to obey the inclination to follow it, if it comes into our heart; and it is certain that there is no ground for laughing at those who follow it.
 
-**Section Iv, 290**
+**Section IV, 290**
 
 *Proofs of religion.*—Morality, Doctrine, Miracles, Prophecies, Types.
 

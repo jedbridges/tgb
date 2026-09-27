@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxii-of-posting"
-heading: "Chapter Xxii: : of Posting"
+heading: "Chapter XXII: : of Posting"
 order: 92
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

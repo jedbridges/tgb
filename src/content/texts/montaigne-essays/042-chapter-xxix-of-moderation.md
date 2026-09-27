@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxix-of-moderation"
-heading: "Chapter Xxix: : of Moderation"
+heading: "Chapter XXIX: : of Moderation"
 order: 42
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

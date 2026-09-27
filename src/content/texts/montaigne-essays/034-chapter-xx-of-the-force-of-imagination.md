@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xx-of-the-force-of-imagination"
-heading: "Chapter Xx: : of the Force of Imagination"
+heading: "Chapter XX: : of the Force of Imagination"
 order: 34
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

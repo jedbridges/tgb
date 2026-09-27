@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-iii-234"
-heading: "Section Iii, 234"
+heading: "Section III, 234"
 order: 20
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -16,32 +16,32 @@ Saint Augustine has seen that we work for an uncertainty, on sea, in battle, etc
 
 All these persons have seen the effects, but they have not seen the causes. They are, in comparison with those who have discovered the causes, as those who have only eyes are in comparison with those who have intellect. For the effects are perceptible by sense, and the causes are visible only to the intellect. And although these effects are seen by the mind, this mind is, in comparison with the mind which sees the causes, as the bodily senses are in comparison with the intellect.
 
-**Section Iii, 235**
+**Section III, 235**
 
 *Rem viderunt, causam non viderunt.*
 
-**Section Iii, 236**
+**Section III, 236**
 
 According to the doctrine of chance, you ought to put yourself to the trouble of searching for the truth; for if you die without worshipping the True Cause, you are lost.—"But," say you, "if He had wished me to worship Him, He would have left me signs of His will."—He has done so; but you neglect them. Seek them, therefore; it is well worth it.
 
-**Section Iii, 237**
+**Section III, 237**
 
 *Chances.*—We must live differently in the world, according to these different assumptions: (1) that we could always remain in it; (2) that it is certain that we shall not remain here long, and uncertain if we shall remain here one hour. This last assumption is our condition.
 
-**Section Iii, 238**
+**Section III, 238**
 
 What do you then promise me, in addition to certain troubles, but ten years of self-love (for ten years is the chance), to try hard to please without success?
 
-**Section Iii, 239**
+**Section III, 239**
 
 *Objection.*—Those who hope for salvation are so far happy; but they have as a counterpoise the fear of hell.
 
 *Reply.*—Who has most reason to fear hell: he who is in ignorance whether there is a hell, and who is certain of damnation if there is; or he who certainly believes there is a hell, and hopes to be saved if there is?
 
-**Section Iii, 240**
+**Section III, 240**
 
 "I would soon have renounced pleasure," say they, "had I faith." For my part I tell you, "You would soon have faith, if you renounced pleasure." Now, it is for you to begin. If I could, I would give you faith. I cannot do so, nor therefore test the truth of what you say. But you can well renounce pleasure, and test whether what I say is true.
 
-**Section Iii, 241**
+**Section III, 241**
 
 *Order.*—I would have far more fear of being mistaken, and of finding that the Christian religion was true, than of not being mistaken in believing it true.

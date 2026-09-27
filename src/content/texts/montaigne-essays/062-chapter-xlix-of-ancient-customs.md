@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xlix-of-ancient-customs"
-heading: "Chapter Xlix: : of Ancient Customs"
+heading: "Chapter XLIX: : of Ancient Customs"
 order: 62
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

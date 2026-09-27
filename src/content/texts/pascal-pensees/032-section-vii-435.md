@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-vii-435"
-heading: "Section Vii, 435"
+heading: "Section VII, 435"
 order: 32
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -16,11 +16,11 @@ The Christian religion alone has been able to cure these two vices, not by expel
 
 Who then can refuse to believe and adore this heavenly light? For is it not clearer than day that we perceive within ourselves ineffaceable marks of excellence? And is it not equally true that we experience every hour the results of our deplorable condition? What does this chaos and monstrous confusion proclaim to us but the truth of these two states, with a voice so powerful that it is impossible to resist it?
 
-**Section Vii, 436**
+**Section VII, 436**
 
 *Weakness.*—Every pursuit of men is to get wealth; and they cannot have a title to show that they possess it justly, for they have only that of human caprice; nor have they strength to hold it securely. It is the same with knowledge, for disease takes it away. We are incapable both of truth and goodness.
 
-**Section Vii, 437**
+**Section VII, 437**
 
 We desire truth, and find within ourselves only uncertainty.
 
@@ -28,36 +28,36 @@ We seek happiness, and find only misery and death.
 
 We cannot but desire truth and happiness, and are incapable of certainty or happiness. This desire is left to us, partly to punish us, partly to make us perceive wherefrom we are fallen.
 
-**Section Vii, 438**
+**Section VII, 438**
 
 If man is not made for God, why is he only happy in God? If man is made for God, why is he so opposed to God?
 
-**Section Vii, 439**
+**Section VII, 439**
 
 *Nature corrupted.*—Man does not act by reason, which constitutes his being.
 
-**Section Vii, 440**
+**Section VII, 440**
 
 The corruption of reason is shown by the existence of so many different and extravagant customs. It was necessary that truth should come, in order that man should no longer dwell within himself.
 
-**Section Vii, 441**
+**Section VII, 441**
 
 For myself, I confess that so soon as the Christian religion reveals the principle that human nature is corrupt and fallen from God, that opens my eyes to see everywhere the mark of this truth: for nature is such that she testifies everywhere, both within man and without him, to a lost God and a corrupt nature.
 
-**Section Vii, 442**
+**Section VII, 442**
 
 Man's true nature, his true good, true virtue, and true religion, are things of which the knowledge is inseparable.
 
-**Section Vii, 443**
+**Section VII, 443**
 
 *Greatness, wretchedness.*—The more light we have, the more greatness and the more baseness we discover in man. Ordinary men—those who are more educated: philosophers, they astonish ordinary men—Christians, they astonish philosophers.
 
 Who will then be surprised to see that religion only makes us know profoundly what we already know in proportion to our light?
 
-**Section Vii, 444**
+**Section VII, 444**
 
 This religion taught to her children what men have only been able to discover by their greatest knowledge.
 
-**Section Vii, 445**
+**Section VII, 445**
 
 Original sin is foolishness to men, but it is admitted to be such. You must not then reproach me for the want of reason in this doctrine, since I admit it to be without reason. But this foolishness is wiser than all the wisdom of men, *sapientius est hominibus*.[167] For without this, what can we say that man is? His whole state depends on this imperceptible point. And how should it be perceived by his reason, since it is a thing against reason, and since reason, far from finding it out by her own ways, is averse to it when it is presented to her?

@@ -8,9 +8,9 @@ sourceUrl: "https://www.gutenberg.org/ebooks/7142"
 edition: "Richard Crawley's translation, 1874"
 translator: "Richard Crawley"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 5100
+words: 5102
 ---
-**Translated by Richard Crawley**
+**The History of the Peloponnesian War**
 
 With Permission to CONNOP THIRLWALL Historian of Greece This Translation of the Work of His Great Predecessor is Respectfully Inscribed by —The Translator—
 

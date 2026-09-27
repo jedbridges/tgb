@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-liv-of-vain-subtleties"
-heading: "Chapter Liv: : of Vain Subtleties"
+heading: "Chapter LIV: : of Vain Subtleties"
 order: 67
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

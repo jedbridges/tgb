@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiii-850"
-heading: "Section Xiii, 850"
+heading: "Section XIII, 850"
 order: 80
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"

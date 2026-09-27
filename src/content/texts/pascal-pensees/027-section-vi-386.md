@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-vi-386"
-heading: "Section Vi, 386"
+heading: "Section VI, 386"
 order: 27
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -16,23 +16,23 @@ If we were to dream every night that we were pursued by enemies, and harassed by
 
 But since dreams are all different, and each single one is diversified, what is seen in them affects us much less than what we see when awake, because of its continuity, which is not, however, so continuous and level as not to change too; but it changes less abruptly, except rarely, as when we travel, and then we say, "It seems to me I am dreaming." For life is a dream a little less inconstant.
 
-**Section Vi, 387**
+**Section VI, 387**
 
 [It may be that there are true demonstrations; but this is not certain. Thus, this proves nothing else but that it is not certain that all is uncertain, to the glory of scepticism.]
 
-**Section Vi, 388**
+**Section VI, 388**
 
 *Good sense.*—They are compelled to say, "You are not acting in good faith; we are not asleep," etc. How I love to see this proud reason humiliated and suppliant! For this is not the language of a man whose right is disputed, and who defends it with the power of armed hands. He is not foolish enough to declare that men are not acting in good faith, but he punishes this bad faith with force.
 
-**Section Vi, 389**
+**Section VI, 389**
 
 Ecclesiastes[152] shows that man without God is in total ignorance and inevitable misery. For it is wretched to have the wish, but not the power. Now he would be happy and assured of some truth, and yet he can neither know, nor desire not to know. He cannot even doubt.
 
-**Section Vi, 390**
+**Section VI, 390**
 
 My God! How foolish this talk is! "Would God have made the world to damn it? Would He ask so much from persons so weak?" etc. Scepticism is the cure for this evil, and will take down this vanity.
 
-**Section Vi, 391**
+**Section VI, 391**
 
 *Conversation.*—Great words: Religion, I deny it.
 

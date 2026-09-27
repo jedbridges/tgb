@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiv-861"
-heading: "Section Xiv, 861"
+heading: "Section XIV, 861"
 order: 82
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -36,22 +36,22 @@ The shortest way, therefore, to prevent heresies is to instruct in all truths; a
 
 In order to know whether an opinion is a Father's ...
 
-**Section Xiv, 862**
+**Section XIV, 862**
 
 All err the more dangerously, as they each follow a truth. Their fault is not in following a falsehood, but in not following another truth.
 
-**Section Xiv, 863**
+**Section XIV, 863**
 
 Truth is so obscure in these times, and falsehood so established, that unless we love the truth, we cannot know it.
 
-**Section Xiv, 864**
+**Section XIV, 864**
 
 If there is ever a time in which we must make profession of two opposite truths, it is when we are reproached for omitting one. Therefore the Jesuits and Jansenists are wrong in concealing them, but the Jansenists more so, for the Jesuits have better made profession of the two.
 
-**Section Xiv, 865**
+**Section XIV, 865**
 
 Two kinds of people make things equal to one another, as feasts to working days, Christians to priests, all things among them, etc. And hence the one party conclude that what is then bad for priests is also so for Christians, and the other that what is not bad for Christians is lawful for priests.
 
-**Section Xiv, 866**
+**Section XIV, 866**
 
 If the ancient Church was in error, the Church is fallen. If she should be in error to-day, it is not the same thing; for she has always the superior maxim of tradition from the hand of the ancient Church; and so this submission and this conformity to the ancient Church prevail and correct all. But the ancient Church did not assume the future Church, and did not consider her, as we assume and consider the ancient.

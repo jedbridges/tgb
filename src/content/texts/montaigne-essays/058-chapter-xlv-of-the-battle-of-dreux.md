@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xlv-of-the-battle-of-dreux"
-heading: "Chapter Xlv: : of the Battle of Dreux"
+heading: "Chapter XLV: : of the Battle of Dreux"
 order: 58
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

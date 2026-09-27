@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-vi-that-the-hour-of-parley-dangerous"
-heading: "Chapter Vi: : That the Hour of Parley Dangerous"
+heading: "Chapter VI: : That the Hour of Parley Dangerous"
 order: 20
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

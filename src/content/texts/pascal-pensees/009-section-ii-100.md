@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-ii-100"
-heading: "Section Ii, 100"
+heading: "Section II, 100"
 order: 9
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -30,39 +30,39 @@ This evil is no doubt greater and more common among the higher classes; but the 
 
 Man is then only disguise, falsehood, and hypocrisy, both in himself and in regard to others. He does not wish any one to tell him the truth; he avoids telling it to others, and all these dispositions, so removed from justice and reason, have a natural root in his heart.
 
-**Section Ii, 101**
+**Section II, 101**
 
 I set it down as a fact that if all men knew what each said of the other, there would not be four friends in the world. This is apparent from the quarrels which arise from the indiscreet tales told from time to time. [I say, further, all men would be ...]
 
-**Section Ii, 102**
+**Section II, 102**
 
 Some vices only lay hold of us by means of others, and these, like branches, fall on removal of the trunk.
 
-**Section Ii, 103**
+**Section II, 103**
 
 The example of Alexander's chastity[62] has not made so many continent as that of his drunkenness has made intemperate. It is not shameful not to be as virtuous as he, and it seems excusable to be no more vicious. We do not believe ourselves to be exactly sharing in the vices of the vulgar, when we see that we are sharing in those of great men; and yet we do not observe that in these matters they are ordinary men. We hold on to them by the same end by which they hold on to the rabble; for, however exalted they are, they are still united at some point to the lowest of men. They are not suspended in the air, quite removed from our society. No, no; if they are greater than we, it is because their heads are higher; but their feet are as low as ours. They are all on the same level, and rest on the same earth; and by that extremity they are as low as we are, as the meanest folk, as infants, and as the beasts.
 
-**Section Ii, 104**
+**Section II, 104**
 
 When our passion leads us to do something, we forget our duty; for example, we like a book and read it, when we ought to be doing something else. Now, to remind ourselves of our duty, we must set ourselves a task we dislike; we then plead that we have something else to do, and by this means remember our duty.
 
-**Section Ii, 105**
+**Section II, 105**
 
 How difficult it is to submit anything to the judgment of another, without prejudicing his judgment by the manner in which we submit it! If we say, "I think it beautiful," "I think it obscure," or the like, we either entice the imagination into that view, or irritate it to the contrary. It is better to say nothing; and then the other judges according to what really is, that is to say, according as it then is, and according as the other circumstances, not of our making, have placed it. But we at least shall have added nothing, unless it be that silence also produces an effect, according to the turn and the interpretation which the other will be disposed to give it, or as he will guess it from gestures or countenance, or from the tone of the voice, if he is a physiognomist. So difficult is it not to upset a judgment from its natural place, or, rather, so rarely is it firm and stable!
 
-**Section Ii, 106**
+**Section II, 106**
 
 By knowing each man's ruling passion, we are sure of pleasing him; and yet each has his fancies, opposed to his true good, in the very idea which he has of the good. It is a singularly puzzling fact.
 
-**Section Ii, 107**
+**Section II, 107**
 
 *Lustravit lampade terras.*[63]—The weather and my mood have little connection. I have my foggy and my fine days within me; my prosperity or misfortune has little to do with the matter. I sometimes struggle against luck, the glory of mastering it makes me master it gaily; whereas I am sometimes surfeited in the midst of good fortune.
 
-**Section Ii, 108**
+**Section II, 108**
 
 Although people may have no interest in what they are saying, we must not absolutely conclude from this that they are not lying; for there are some people who lie for the mere sake of lying.
 
-**Section Ii, 109**
+**Section II, 109**
 
 When we are well we wonder what we would do if we were ill, but when we are ill we take medicine cheerfully; the illness persuades us to do so. We have no longer the passions and desires for amusements and promenades which health gave to us, but which are incompatible with the necessities of illness. Nature gives us, then, passions and desires suitable to our present state.[64] We are only troubled by the fears which we, and not nature, give ourselves, for they add to the state in which we are the passions of the state in which we are not.
 
@@ -70,124 +70,124 @@ As nature makes us always unhappy in every state, our desires picture to us a ha
 
 We must particularise this general proposition....
 
-**Section Ii, 110**
+**Section II, 110**
 
 The consciousness of the falsity of present pleasures, and the ignorance of the vanity of absent pleasures, cause inconstancy.
 
-**Section Ii, 111**
+**Section II, 111**
 
 *Inconstancy.*—We think we are playing on ordinary organs when playing upon man. Men are organs, it is true, but, odd, changeable, variable [with pipes not arranged in proper order. Those who only know how to play on ordinary organs] will not produce harmonies on these. We must know where [*the keys*] are.
 
-**Section Ii, 112**
+**Section II, 112**
 
 *Inconstancy.*—Things have different qualities, and the soul different inclinations; for nothing is simple which is presented to the soul, and the soul never presents itself simply to any object. Hence it comes that we weep and laugh at the same thing.
 
-**Section Ii, 113**
+**Section II, 113**
 
 *Inconstancy and oddity.*—To live only by work, and to rule over the most powerful State in the world, are very opposite things. They are united in the person of the great Sultan of the Turks.
 
-**Section Ii, 114**
+**Section II, 114**
 
 Variety is as abundant as all tones of the voice, all ways of walking, coughing, blowing the nose, sneezing. We distinguish vines by their fruit, and call them the Condrien, the Desargues, and such and such a stock. Is this all? Has a vine ever produced two bunches exactly the same, and has a bunch two grapes alike? etc.
 
 I can never judge of the same thing exactly in the same way. I cannot judge of my work, while doing it. I must do as the artists, stand at a distance, but not too far. How far, then? Guess.
 
-**Section Ii, 115**
+**Section II, 115**
 
 *Variety.*—Theology is a science, but at the same time how many sciences? A man is a whole; but if we dissect him, will he be the head, the heart, the stomach, the veins, each vein, each portion of a vein, the blood, each humour in the blood?
 
 A town, a country-place, is from afar a town and a country-place. But, as we draw near, there are houses, trees, tiles, leaves, grass, ants, limbs of ants, in infinity. All this is contained under the name of country-place.
 
-**Section Ii, 116**
+**Section II, 116**
 
 *Thoughts.*—All is one, all is different. How many natures exist in man? How many vocations? And by what chance does each man ordinarily choose what he has heard praised? A well-turned heel.
 
-**Section Ii, 117**
+**Section II, 117**
 
 *The heel of a slipper.*—"Ah! How well this is turned! Here is a clever workman! How brave is this soldier!" This is the source of our inclinations, and of the choice of conditions. "How much this man drinks! How little that one!" This makes people sober or drunk, soldiers, cowards, etc.
 
-**Section Ii, 118**
+**Section II, 118**
 
 Chief talent, that which rules the rest.
 
-**Section Ii, 119**
+**Section II, 119**
 
 Nature imitates herself. A seed sown in good ground brings forth fruit. A principle, instilled into a good mind, brings forth fruit. Numbers imitate space, which is of a different nature.
 
 All is made and led by the same master, root, branches, and fruits; principles and consequences.
 
-**Section Ii, 120**
+**Section II, 120**
 
 [Nature diversifies and imitates; art imitates and diversifies.]
 
-**Section Ii, 121**
+**Section II, 121**
 
 Nature always begins the same things again, the years, the days, the hours; in like manner spaces and numbers follow each other from beginning to end. Thus is made a kind of infinity and eternity. Not that anything in all this is infinite and eternal, but these finite realities are infinitely multiplied. Thus it seems to me to be only the number which multiplies them that is infinite.
 
-**Section Ii, 122**
+**Section II, 122**
 
 Time heals griefs and quarrels, for we change and are no longer the same persons. Neither the offender nor the offended are any more themselves. It is like a nation which we have provoked, but meet again after two generations. They are still Frenchmen, but not the same.
 
-**Section Ii, 123**
+**Section II, 123**
 
 He no longer loves the person whom he loved ten years ago. I quite believe it. She is no longer the same, nor is he. He was young, and she also; she is quite different. He would perhaps love her yet, if she were what she was then.
 
-**Section Ii, 124**
+**Section II, 124**
 
 We view things not only from different sides, but with different eyes; we have no wish to find them alike.
 
-**Section Ii, 125**
+**Section II, 125**
 
 *Contraries.*—Man is naturally credulous and incredulous, timid and rash.
 
-**Section Ii, 126**
+**Section II, 126**
 
 Description of man: dependency, desire of independence, need.
 
-**Section Ii, 127**
+**Section II, 127**
 
 Condition of man: inconstancy, weariness, unrest.
 
-**Section Ii, 128**
+**Section II, 128**
 
 The weariness which is felt by us in leaving pursuits to which we are attached. A man dwells at home with pleasure; but if he sees a woman who charms him, or if he enjoys himself in play for five or six days, he is miserable if he returns to his former way of living. Nothing is more common than that.
 
-**Section Ii, 129**
+**Section II, 129**
 
 Our nature consists in motion; complete rest is death.[65]
 
-**Section Ii, 130**
+**Section II, 130**
 
 *Restlessness.*—If a soldier, or labourer, complain of the hardship of his lot, set him to do nothing.
 
-**Section Ii, 131**
+**Section II, 131**
 
 *Weariness.*[66]—Nothing is so insufferable to man as to be completely at rest, without passions, without business, without diversion, without study. He then feels his nothingness, his forlornness, his insufficiency, his dependence, his weakness, his emptiness. There will immediately arise from the depth of his heart weariness, gloom, sadness, fretfulness, vexation, despair.
 
-**Section Ii, 132**
+**Section II, 132**
 
 Methinks Cæsar was too old to set about amusing himself with conquering the world.[67] Such sport was good for Augustus or Alexander. They were still young men, and thus difficult to restrain. But Cæsar should have been more mature.
 
-**Section Ii, 133**
+**Section II, 133**
 
 Two faces which resemble each other, make us laugh, when together, by their resemblance, though neither of them by itself makes us laugh.
 
-**Section Ii, 134**
+**Section II, 134**
 
 How useless is painting, which attracts admiration by the resemblance of things, the originals of which we do not admire!
 
-**Section Ii, 135**
+**Section II, 135**
 
 The struggle alone pleases us, not the victory. We love to see animals fighting, not the victor infuriated over the vanquished. We would only see the victorious end; and, as soon as it comes, we are satiated. It is the same in play, and the same in the search for truth. In disputes we like to see the clash of opinions, but not at all to contemplate truth when found. To observe it with pleasure, we have to see it emerge out of strife. So in the passions, there is pleasure in seeing the collision of two contraries; but when one acquires the mastery, it becomes only brutality. We never seek things for themselves, but for the search. Likewise in plays, scenes which do not rouse the emotion of fear are worthless, so are extreme and hopeless misery, brutal lust, and extreme cruelty.
 
-**Section Ii, 136**
+**Section II, 136**
 
 A mere trifle consoles us, for a mere trifle distresses us.[68]
 
-**Section Ii, 137**
+**Section II, 137**
 
 Without examining every particular pursuit, it is enough to comprehend them under diversion.
 
-**Section Ii, 138**
+**Section II, 138**
 
 Men naturally slaters and of all callings, save in their own rooms.

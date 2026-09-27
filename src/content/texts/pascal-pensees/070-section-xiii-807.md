@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiii-807"
-heading: "Section Xiii, 807"
+heading: "Section XIII, 807"
 order: 70
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -28,38 +28,38 @@ And yet they were very sinful in rejecting the prophets, and Jesus Christ, becau
 
 Prophecy is not called miracle; as Saint John speaks of the first miracle in Cana, and then of what Jesus Christ says to the woman of Samaria, when He reveals to her all her hidden life. Then He heals the centurion's son; and Saint John calls this "the second miracle."[322]
 
-**Section Xiii, 808**
+**Section XIII, 808**
 
 The combinations of miracles.
 
-**Section Xiii, 809**
+**Section XIII, 809**
 
 The second miracle can suppose the first, but the first cannot suppose the second.
 
-**Section Xiii, 810**
+**Section XIII, 810**
 
 Had it not been for the miracles, there would have been no sin in not believing in Jesus Christ.
 
-**Section Xiii, 811**
+**Section XIII, 811**
 
 I should not be a Christian, but for the miracles, said Saint Augustine.
 
-**Section Xiii, 812**
+**Section XIII, 812**
 
 *Miracles.*—How I hate those who make men doubt of miracles! Montaigne[323] speaks of them as he should in two places. In one, we see how careful he is; and yet, in the other, he believes, and makes sport of unbelievers.
 
 However it may be, the Church is without proofs if they are right.
 
-**Section Xiii, 813**
+**Section XIII, 813**
 
 Montaigne against miracles.
 
 Montaigne for miracles.
 
-**Section Xiii, 814**
+**Section XIII, 814**
 
 It is not possible to have a reasonable belief against miracles.
 
-**Section Xiii, 815**
+**Section XIII, 815**
 
 Unbelievers the most credulous. They believe the miracles of Vespasian, in order not to believe those of Moses.

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-iv-of-diversion"
-heading: "Chapter Iv: : of Diversion"
+heading: "Chapter IV: : of Diversion"
 order: 111
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

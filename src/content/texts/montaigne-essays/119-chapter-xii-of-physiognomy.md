@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xii-of-physiognomy"
-heading: "Chapter Xii: : of Physiognomy"
+heading: "Chapter XII: : of Physiognomy"
 order: 119
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

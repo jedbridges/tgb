@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxvi-of-cato-the-younger"
-heading: "Chapter Xxxvi: : of Cato the Younger"
+heading: "Chapter XXXVI: : of Cato the Younger"
 order: 49
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

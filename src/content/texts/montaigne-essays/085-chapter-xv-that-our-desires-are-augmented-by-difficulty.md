@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xv-that-our-desires-are-augmented-by-difficulty"
-heading: "Chapter Xv: : That Our Desires Are Augmented by Difficulty"
+heading: "Chapter XV: : That Our Desires Are Augmented by Difficulty"
 order: 85
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

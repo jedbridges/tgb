@@ -1,7 +1,7 @@
 ---
 work: pascal-pensees
 section: "section-xiii-845"
-heading: "Section Xiii, 845"
+heading: "Section XIII, 845"
 order: 79
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/18269"
@@ -28,15 +28,15 @@ But apart from schism, error is not so obvious as a miracle is obvious. Therefor
 
 *Ubi est Deus tuus?*[351] Miracles show Him, and are a light.
 
-**Section Xiii, 846**
+**Section XIII, 846**
 
 One of the anthems for Vespers at Christmas: *Exortum est in tenebris lumen rectis corde.*[352]
 
-**Section Xiii, 847**
+**Section XIII, 847**
 
 If the compassion of God is so great that He instructs us to our benefit, even when He hides Himself, what light ought we not to expect from Him when He reveals Himself?
 
-**Section Xiii, 848**
+**Section XIII, 848**
 
 Will *Est et non est* be received in faith itself as well as in miracles? And if it is inseparable in the others ...
 
@@ -52,7 +52,7 @@ If they say that our salvation depends upon God, they are "heretics." If they sa
 
 This way in which the Church has existed is that truth has been without dispute, or, if it has been contested, there has been the Pope, or, failing him, there has been the Church.
 
-**Section Xiii, 849**
+**Section XIII, 849**
 
 The five propositions[355] condemned, but no miracle; for the truth was not attacked. But the Sorbonne ... but the bull....
 

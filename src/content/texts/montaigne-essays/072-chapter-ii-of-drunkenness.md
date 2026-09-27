@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-ii-of-drunkenness"
-heading: "Chapter Ii: : of Drunkenness"
+heading: "Chapter II: : of Drunkenness"
 order: 72
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

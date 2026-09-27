@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xlviii-of-war-horses-or-destriers"
-heading: "Chapter Xlviii: : of War Horses, or Destriers"
+heading: "Chapter XLVIII: : of War Horses, or Destriers"
 order: 61
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

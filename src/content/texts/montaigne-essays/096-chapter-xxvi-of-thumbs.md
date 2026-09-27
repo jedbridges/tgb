@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxvi-of-thumbs"
-heading: "Chapter Xxvi: : of Thumbs"
+heading: "Chapter XXVI: : of Thumbs"
 order: 96
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

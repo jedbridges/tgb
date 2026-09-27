@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xxxi-that-a-man-is-soberly-to-judge-of-the-divine-or"
-heading: "Chapter Xxxi: : That a Man Is Soberly to Judge of the Divine Ordinances"
+heading: "Chapter XXXI: : That a Man Is Soberly to Judge of the Divine Ordinances"
 order: 44
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

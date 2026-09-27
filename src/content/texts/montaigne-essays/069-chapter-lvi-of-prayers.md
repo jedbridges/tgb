@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-lvi-of-prayers"
-heading: "Chapter Lvi: : of Prayers"
+heading: "Chapter LVI: : of Prayers"
 order: 69
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

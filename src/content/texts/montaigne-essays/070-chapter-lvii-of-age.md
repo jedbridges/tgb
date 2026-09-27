@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-lvii-of-age"
-heading: "Chapter Lvii: : of Age"
+heading: "Chapter LVII: : of Age"
 order: 70
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

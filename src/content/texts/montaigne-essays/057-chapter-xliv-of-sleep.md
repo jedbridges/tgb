@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "chapter-xliv-of-sleep"
-heading: "Chapter Xliv: : of Sleep"
+heading: "Chapter XLIV: : of Sleep"
 order: 57
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"
