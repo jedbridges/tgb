@@ -7,6 +7,8 @@ export const GET: APIRoute = ({ site }) => {
   const body = [
     'User-agent: *',
     'Allow: /',
+    // The answer endpoint takes POSTs from the search dialog; it has nothing to crawl.
+    'Disallow: /api/',
     '',
     `Sitemap: ${origin}/sitemap-index.xml`,
     '',

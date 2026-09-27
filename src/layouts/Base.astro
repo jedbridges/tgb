@@ -127,7 +127,12 @@ const { bodyClass, ...seo } = Astro.props;
       // Which kind of result a search ends in, and how far down. Still never the query.
       addEventListener('tgb:search-open', (e) => { const d = (e as CustomEvent).detail ?? {}; track('search_open', { group: d.group, rank: String(d.rank), top3: d.rank >= 0 && d.rank < 3 ? 'yes' : 'no' }); });
       addEventListener('tgb:search-empty', (e) => track('search_empty', { query_length: String((e as CustomEvent).detail?.length ?? 0) }));
-      addEventListener('tgb:filter', (e) => track('filter_used', { facet: (e as CustomEvent).detail?.facet }));
+      // The Ask tab: how often a question is asked and whether its sources get opened.
+      // Length and rank only, never the question; this is what shows which questions
+      // deserve a reviewed page of their own (docs/search-plan.md, 3c).
+      addEventListener('tgb:ask', (e) => track('ask_used', { query_length: String((e as CustomEvent).detail?.length ?? 0) }));
+      addEventListener('tgb:ask-citation', (e) => { const r = Number((e as CustomEvent).detail?.rank ?? -1); track('ask_citation', { rank: String(r), top3: r >= 0 && r < 3 ? 'yes' : 'no' }); });
+      addEventListener('tgb:filter',(e) => track('filter_used', { facet: (e as CustomEvent).detail?.facet }));
     </script>
   </body>
 </html>
