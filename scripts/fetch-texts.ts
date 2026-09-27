@@ -167,6 +167,9 @@ function splitGutenberg(html: string): Section[] {
       // An epigraph set as a heading is not a heading; keep the current section open. A long
       // heading that opens with its number ("First Section: Transition from...") is a heading.
       if (t.length > 90 && !/^((first|second|third|fourth|fifth|sixth)\s+(section|part|book)|(book|part|chapter|canto|section|act)\s+[ivxlc\d]+)\b/i.test(t)) { if (cur) cur.parts.push(`\n\n*${t}*\n\n`); return; }
+      // A cast list heads the play, not a section of its own: opened as a section it would
+      // swallow every speech that follows and then be dropped as front matter by its name.
+      if (/^(dramatis person(ae|æ)|persons?( of the (drama|play)| represented)?|characters( in the play)?|the persons)$/i.test(t) && cur) { cur.parts.push(`\n\n**${titleCase(t)}**\n\n`); return; }
       flush();
       if (tag === 'h1' || tag === 'h2') {
         // A part heading opens a section of its own only until the first chapter arrives.
