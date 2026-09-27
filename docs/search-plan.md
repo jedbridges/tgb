@@ -29,10 +29,10 @@ Update this section at the end of every session.
 | 1f Analytics groups | Done | [#38](https://github.com/jedbridges/tgb/pull/38) |
 | 1h Header search bar cycles through example queries | Done | [#39](https://github.com/jedbridges/tgb/pull/39) |
 | 1g SEO: shelf notes on 71 pages, difficulty and length pages, segment descriptions, per segment ItemList | Done | [#39](https://github.com/jedbridges/tgb/pull/39) |
-| 2a Texts collection, source map for 51 works, fetch script | Done. The build container cannot reach the sources, so the owner runs the fetch on a Mac and commits the sections: 51 works, 2,223 sections in [#41](https://github.com/jedbridges/tgb/pull/41). The regenerated sections after the parser fix are in: 2,220 sections, verse line by line, chapters numbered, front and back matter gone | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41) |
+| 2a Texts collection, source map for 51 works, fetch script | Done. The build container cannot reach the sources, so the owner runs the fetch on a Mac and commits the sections: 51 works, 2,223 sections in [#41](https://github.com/jedbridges/tgb/pull/41). The regenerated sections after the parser fix are in: 2,220 sections, verse line by line, chapters numbered, front and back matter gone. A second batch of 33 works, 570 sections, is in a branch pending PR: the parser needed three more fixes (a translator's-name heading that opens the text proper rather than dropping it as an appended piece, a heading whose text sits in a nested element, a section named for the guide's title when the file gives none, scenes and prologues carrying their act or tale) | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41) |
 | 2b Passage index | Done. Text pages index as Passage in the one Pagefind index, 44 MB on disk, 186 KB to open the palette and 100 to 200 KB a query; a second index is not needed at this volume | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41) |
 | 2c Text pages, search inside, guide highlights beside the contents | Reviewed on the real texts: headings, contents and passage pages right; verse, speeches and epigraphs reviewed on the regenerated texts in Chromium | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41) |
-| 2d SEO for text pages | Done for the passages: `src/lib/passages.ts` places each guide's marked passages in the section of the text they fall in (197 of 230 by structure and words; the rest are paraphrases, line numbers in single-section plays, or text the edition lacks). A section with a passage shows it with the guide's note and a link back, drops its noindex and joins the sitemap with a lastmod: 151 sections and 52 contents pages. Bare text stays out. Theme passage pages and Quotation markup shipped in [#41](https://github.com/jedbridges/tgb/pull/41) | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41), [#42](https://github.com/jedbridges/tgb/pull/42) |
+| 2d SEO for text pages | Done for the passages: `src/lib/passages.ts` places each guide's marked passages in the section of the text they fall in. Across both batches, 84 works and 2,790 sections: 306 of 368 marked passages placed, 213 sections carry one. A section with a passage shows it with the guide's note and a link back, drops its noindex and joins the sitemap with a lastmod. Bare text stays out. Theme passage pages and Quotation markup shipped in [#41](https://github.com/jedbridges/tgb/pull/41). Two second-batch works place nothing: Faust's highlights quote the German with a literal gloss against an English verse translation numbered in bare Roman numerals rather than named scenes, and the fetched Hippocrates volume (Gutenberg 72583) does not contain the Aphorisms, the Sacred Disease or the Oath that its highlights cite; a different edition would be needed for those three | [#40](https://github.com/jedbridges/tgb/pull/40), [#41](https://github.com/jedbridges/tgb/pull/41), [#42](https://github.com/jedbridges/tgb/pull/42) |
 | 3a Cloudflare AI Search over R2 | Corpus export ready: `npm run corpus` writes 1,096 documents, 1.23M words, with url and kind headers for citations; bucket and AI Search instance not yet created | [#41](https://github.com/jedbridges/tgb/pull/41) |
 | 3b Ask tab and cited answers | Not started | |
 | 3c SEO: reviewed question pages | Not started | |
@@ -286,6 +286,23 @@ Kept so a later session knows what was checked and how, not only what was built.
   passages pages unpaged at 148 cards and 80 headings, the era bars in dark mode, the
   "Shelves" palette group name, and the question whether passage-in-context pages should
   replace full sections as the indexable unit of the text layer.
+- 27 September 2026, second batch of texts: 33 more works fetched by the owner on a Mac.
+  Two failed outright, Gorgias and Clouds, both "nothing parsed": Gorgias because the
+  walker read the dialogue's own "Translated by Benjamin Jowett" heading, the one after
+  the introduction, as an appended piece and dropped everything past it; Clouds because
+  its headings carry their text in a nested element the walker's title-reading missed, and
+  its speeches sit as bare text in divs with no paragraph tag the walker read. Fixed and
+  verified against fixture HTML built from the real headings the owner pasted, then the
+  owner reran the fetch. A second pass over the real output found four more faults: a file
+  with no readable heading named its lone section "Text" instead of the work's own title, a
+  scene heading with no act and a tale's "The Prologue" with no tale name, a translator's
+  note and the play that follows it both named after the play so Antigone held two
+  sections called Antigone, and the Politics skip pattern matched only at the head of a
+  path so the publisher's imprint page survived. Fixed and reran once more; the build
+  passed content validation and `astro check` with 84 works and 2,790 text sections, and
+  the placement run above covers this batch. Not yet done: a full read of the new pages in
+  a browser (Politics book numbering, Macbeth's five acts, City of God's books, Chaucer's
+  tale order, Summa's questions) and the PR for this batch.
 - The query suite the palette is checked against, run in Chromium against the built site:
   Plato, Republic, justice, Iliad, Ilias, sophomore, approachable epic, tragedy, Greek
   tragedy, short novel, easy long novels, happiness, Dostoevski, Neitzsche, xqzv, St Johns,

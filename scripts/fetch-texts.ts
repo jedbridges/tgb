@@ -164,8 +164,9 @@ function splitGutenberg(html: string, workTitle = ''): Section[] {
     const el = n as HTMLElement;
     const tag = el.tagName?.toLowerCase();
     if (tag && /^h[1-4]$/.test(tag)) {
-      // "BOOK I." is Book I, and a heading's em dash is a colon on this site.
-      const t = el.text.replace(/\s+/g, ' ').trim().replace(/\.$/, '').replace(/\s*[—–]\s*/g, ': ');
+      // "BOOK I." is Book I, and a heading's em dash is a colon on this site. A footnote
+      // marker left as literal text ("The Tale.<1>") is not part of the heading's words.
+      const t = el.text.replace(/\s+/g, ' ').trim().replace(/\s*[\[<]\d+[\]>]\s*$/, '').replace(/\.$/, '').replace(/\s*[—–]\s*/g, ': ');
       if (!title && tag === 'h1') title = t;
       // An epigraph set as a heading is not a heading; keep the current section open. A long
       // heading that opens with its number ("First Section: Transition from...") is a heading.
