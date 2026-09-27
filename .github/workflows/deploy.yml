@@ -21,6 +21,9 @@ jobs:
           BOOKSHOP_AFFILIATE_ID: ${{ secrets.BOOKSHOP_AFFILIATE_ID }}
           PUBLIC_GA4_ID: ${{ secrets.PUBLIC_GA4_ID }}
       - name: Sync the corpus to R2 for AI Search
+        # A failed sync leaves Ask answering from the last corpus; it must never stop the
+        # site itself from deploying. The failure still shows as an annotation on the run.
+        continue-on-error: true
         # Skipped until both R2 secrets exist, so the deploy never fails on setup. GitHub
         # rejects the secrets context inside `if:`, which made the whole workflow invalid,
         # so the check reads them from the environment in the shell instead.
