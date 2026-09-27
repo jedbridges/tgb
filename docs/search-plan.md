@@ -276,6 +276,16 @@ Kept so a later session knows what was checked and how, not only what was built.
   all, which fits a browser holding a cached `pagefind-entry.json` from before a deploy
   and asking for index chunks that no longer exist: `public/_headers` now revalidates the
   entry, script, worker and wasm on every load and caches the hashed chunks for a year.
+- 27 September 2026, site critique: a dual-assessment design critique of the whole site
+  scored 27/40 (snapshot in `.impeccable/critique/`). Fixed the same day: the phone menu
+  clipped by the glass header (P0), the book page's order (synopsis before the edition,
+  buy bar after the argument), the always-true guide facet, pill and chip, the palette's
+  failing worked example and its silent wait, the author facet behind the disclosure, and
+  a wayfinding strip on text sections. Left for later, recorded here so the next session
+  sees them: line length of 87 to 98 characters on guide prose and text pages, theme and
+  passages pages unpaged at 148 cards and 80 headings, the era bars in dark mode, the
+  "Shelves" palette group name, and the question whether passage-in-context pages should
+  replace full sections as the indexable unit of the text layer.
 - The query suite the palette is checked against, run in Chromium against the built site:
   Plato, Republic, justice, Iliad, Ilias, sophomore, approachable epic, tragedy, Greek
   tragedy, short novel, easy long novels, happiness, Dostoevski, Neitzsche, xqzv, St Johns,
