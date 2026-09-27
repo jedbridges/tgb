@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-the-extent-of-the-legislative-power"
-heading: "Of the Extent of the Legislative Power."
+heading: "Of the Extent of the Legislative Power"
 order: 12
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "ii-to-monseigneur-monseigneur-de-montaigne"
-heading: "II.——To Monseigneur, Monseigneur de MONTAIGNE."
+heading: "II.: : To Monseigneur, Monseigneur de MONTAIGNE"
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

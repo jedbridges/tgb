@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-xvi"
-heading: "Book XVI."
+heading: "Book XVI"
 order: 16
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

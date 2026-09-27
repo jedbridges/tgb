@@ -8,7 +8,7 @@ sourceUrl: "https://www.gutenberg.org/ebooks/815"
 edition: "Henry Reeve's translation, 1835, Volume 1"
 translator: "Henry Reeve"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 2405
+words: 2406
 ---
 Definition of political jurisdiction—What is understood by political jurisdiction in France, in England, and in the United States—In America the political judge can only pass sentence on public officers—He more frequently passes a sentence of removal from office than a penalty—Political jurisdiction as it exists in the United States is, notwithstanding its mildness, and perhaps in consequence of that mildness, a most powerful instrument in the hands of the majority.
 
@@ -42,6 +42,6 @@ d [ See Appendix, N.
 
 [The impeachment of President Andrew Johnson in 1868—which was resorted to by his political opponents solely as a means of turning him out of office, for it could not be contended that he had been guilty of high crimes and misdemeanors, and he was in fact honorably acquitted and reinstated in office—is a striking confirmation of the truth of this remark.—Translator’s Note, 1874.]]
 
-**Chapter VIII: The Federal Constitution—Part I**
+**Chapter VIII: The Federal Constitution: Part I**
 
 I have hitherto considered each State as a separate whole, and I have explained the different springs which the people sets in motion, and the different means of action which it employs. But all the States which I have considered as independent are forced to submit, in certain cases, to the supreme authority of the Union. The time is now come for me to examine separately the supremacy with which the Union has been invested, and to cast a rapid glance over the Federal Constitution.

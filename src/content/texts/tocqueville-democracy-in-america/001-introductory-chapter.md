@@ -10,7 +10,7 @@ translator: "Henry Reeve"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
 words: 5587
 ---
-**Translated by Henry Reeve, Esq.**
+**Translated by Henry Reeve, Esq**
 
 IN TWO VOLUMES. VOL. I.
 

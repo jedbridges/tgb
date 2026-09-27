@@ -1,14 +1,14 @@
 ---
 work: montaigne-essays
 section: "v-to-monsieur-monsieur-de-lhospital-chancellor-of-france"
-heading: "V.——To Monsieur, Monsieur de L’HOSPITAL, Chancellor of France"
+heading: "V.: : To Monsieur, Monsieur de L’HOSPITAL, Chancellor of France"
 order: 7
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"
 edition: "Charles Cotton's translation, 1685, in the 1877 revision"
 translator: "Charles Cotton"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 1009
+words: 1011
 ---
 MONSEIGNEUR,—I am of the opinion that persons such as you, to whom fortune and reason have committed the charge of public affairs, are not more inquisitive in any point than in ascertaining the character of those in office under you; for no society is so poorly furnished, but that, if a proper distribution of authority be used, it has persons sufficient for the discharge of all official duties; and when this is the case, nothing is wanting to make a State perfect in its constitution. Now, in proportion as this is so much to be desired, so it is the more difficult of accomplishment, since you cannot have eyes to embrace a multitude so large and so widely extended, nor to see to the bottom of hearts, in order that you may discover intentions and consciences, matters principally to be considered; so that there has never been any commonwealth so well organised, in which we might not detect often enough defect in such a department or such a choice; and in those systems, where ignorance and malice, favouritism, intrigue, and violence govern, if any selection happens to be made on the ground of merit and regularity, we may doubtless thank Fortune, which, in its capricious movements, has for once taken the path of reason.
 
@@ -28,4 +28,4 @@ Sir, I pray God to grant you a very happy and a very long life. From Montaigne, 
 
 MICHEL DE MONTAIGNE.
 
-*VI.——To Monsieur, Monsieur de Folx, Privy Councillor, and Ambassador of His Majesty to the Signory of Venice.*
+*VI.: : To Monsieur, Monsieur de Folx, Privy Councillor, and Ambassador of His Majesty to the Signory of Venice*

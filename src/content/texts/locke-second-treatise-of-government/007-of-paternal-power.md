@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-paternal-power"
-heading: "Of Paternal Power."
+heading: "Of Paternal Power"
 order: 7
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

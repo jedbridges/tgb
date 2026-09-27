@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-iii-chapter-vi"
-heading: "BOOK III, Chapter VI."
+heading: "BOOK III, Chapter VI"
 order: 27
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

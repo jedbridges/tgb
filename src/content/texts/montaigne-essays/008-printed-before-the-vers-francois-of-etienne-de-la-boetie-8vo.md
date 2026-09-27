@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "printed-before-the-vers-francois-of-etienne-de-la-boetie-8vo"
-heading: "—[ Printed before the ‘Vers Francois’ of Etienne de la Boetie, 8vo, Paris, 1572.]"
+heading: ": [ Printed before the ‘Vers Francois’ of Etienne de la Boetie, 8vo, Paris, 1572.]"
 order: 8
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

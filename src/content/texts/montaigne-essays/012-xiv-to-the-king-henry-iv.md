@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "xiv-to-the-king-henry-iv"
-heading: "XIV.——To the KING, HENRY IV."
+heading: "XIV.: : To the KING, HENRY IV"
 order: 12
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

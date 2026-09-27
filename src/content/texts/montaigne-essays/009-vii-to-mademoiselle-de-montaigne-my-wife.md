@@ -1,7 +1,7 @@
 ---
 work: montaigne-essays
 section: "vii-to-mademoiselle-de-montaigne-my-wife"
-heading: "VII.——To Mademoiselle de MONTAIGNE, my Wife."
+heading: "VII.: : To Mademoiselle de MONTAIGNE, my Wife"
 order: 9
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/3600"

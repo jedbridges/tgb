@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-slavery"
-heading: "Of Slavery."
+heading: "Of Slavery"
 order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

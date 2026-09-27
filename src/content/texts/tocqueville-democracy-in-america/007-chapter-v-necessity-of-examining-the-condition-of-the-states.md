@@ -1,7 +1,7 @@
 ---
 work: tocqueville-democracy-in-america
 section: "chapter-v-necessity-of-examining-the-condition-of-the-states"
-heading: "Chapter V: Necessity Of Examining The Condition Of The States—Part I"
+heading: "Chapter V: Necessity Of Examining The Condition Of The States: Part I"
 order: 7
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/815"

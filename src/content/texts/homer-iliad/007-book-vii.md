@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-vii"
-heading: "Book VII."
+heading: "Book VII"
 order: 7
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"

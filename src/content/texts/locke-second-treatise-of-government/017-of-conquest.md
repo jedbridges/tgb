@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-conquest"
-heading: "Of Conquest."
+heading: "Of Conquest"
 order: 17
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

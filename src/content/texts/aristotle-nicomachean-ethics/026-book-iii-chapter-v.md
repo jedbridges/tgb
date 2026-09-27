@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-iii-chapter-v"
-heading: "BOOK III, Chapter V."
+heading: "BOOK III, Chapter V"
 order: 26
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

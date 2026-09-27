@@ -1,7 +1,7 @@
 ---
 work: tocqueville-democracy-in-america
 section: "chapter-viii-the-federal-constitution-part-v"
-heading: "Chapter VIII: The Federal Constitution—Part V"
+heading: "Chapter VIII: The Federal Constitution: Part V"
 order: 17
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/815"

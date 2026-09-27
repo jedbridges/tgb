@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-the-dissolution-of-government"
-heading: "Of the Dissolution of Government."
+heading: "Of the Dissolution of Government"
 order: 20
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

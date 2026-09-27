@@ -1,7 +1,7 @@
 ---
 work: plato-apology
 section: "introduction"
-heading: "Introduction."
+heading: "Introduction"
 order: 1
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1656"

@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-i-chapter-ix"
-heading: "BOOK I, Chapter IX."
+heading: "BOOK I, Chapter IX"
 order: 10
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

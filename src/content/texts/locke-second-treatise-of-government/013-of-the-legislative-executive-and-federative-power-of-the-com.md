@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-the-legislative-executive-and-federative-power-of-the-com"
-heading: "Of the Legislative, Executive, and Federative Power of the Common-wealth."
+heading: "Of the Legislative, Executive, and Federative Power of the Common-wealth"
 order: 13
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

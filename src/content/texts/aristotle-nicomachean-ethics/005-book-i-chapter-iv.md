@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-i-chapter-iv"
-heading: "BOOK I, Chapter IV."
+heading: "BOOK I, Chapter IV"
 order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

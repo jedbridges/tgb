@@ -1,7 +1,7 @@
 ---
 work: locke-second-treatise-of-government
 section: "of-prerogative"
-heading: "Of Prerogative."
+heading: "Of Prerogative"
 order: 15
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/7370"

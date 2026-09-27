@@ -1,7 +1,7 @@
 ---
 work: homer-iliad
 section: "book-ii"
-heading: "Book II."
+heading: "Book II"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2199"
