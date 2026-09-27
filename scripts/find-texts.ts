@@ -72,7 +72,9 @@ const list = CANDIDATES.filter((c) => !only.length || only.some((o) => c.work.in
 for (const c of list) {
   const url = `https://gutendex.com/books?languages=en&search=${encodeURIComponent(c.q)}`;
   try {
-    const res = await fetch(url);
+    // The index answers 503 when asked too quickly; wait and ask again, up to four times.
+    let res = await fetch(url);
+    for (let wait = 3000; !res.ok && res.status >= 500 && wait <= 24000; wait *= 2) { await new Promise((r) => setTimeout(r, wait)); res = await fetch(url); }
     if (!res.ok) { console.log(`${c.work}: ${res.status} from gutendex`); continue; }
     const data = (await res.json()) as { results: { id: number; title: string; authors: { name: string }[]; download_count: number; formats: Record<string, string> }[] };
     const hits = data.results.filter((r) => Object.keys(r.formats).some((f) => f.startsWith('text/html'))).slice(0, 4);
@@ -82,5 +84,5 @@ for (const c of list) {
   } catch (e) {
     console.log(`${c.work}: ${(e as Error).message}`);
   }
-  await new Promise((r) => setTimeout(r, 400)); // a polite gap between requests
+  await new Promise((r) => setTimeout(r, 1500)); // a polite gap between requests
 }
