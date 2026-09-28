@@ -101,10 +101,10 @@
 - { work: bible-gospel-of-john, source: gutenberg, url: "10", match: "Gospel According to Saint John", edition: "The King James Version, 1611" }
 # Third batch: found by scripts/find-texts.ts, not yet fetched. The edition line names only
 # what the catalogue confirms; check the translator on the first run and correct it here.
-- { work: euripides-bacchae, source: gutenberg, url: "35173", edition: "The Bacchae of Euripides, Project Gutenberg edition" }
+- { work: euripides-bacchae, source: gutenberg, url: "35173", skip: "Athenian Drama|Introductory Note", edition: "The Bacchae of Euripides, Project Gutenberg edition" }
 - { work: euripides-hippolytus, source: gutenberg, url: "8418", match: "Hippolytus", edition: "Hippolytus, Project Gutenberg edition" }
 - { work: aristophanes-frogs, source: gutenberg, url: "7998", edition: "The Frogs, Project Gutenberg edition" }
-- { work: livy-history-of-rome, source: gutenberg, url: "19725", edition: "The History of Rome, Books 1 to 8" }
+- { work: livy-history-of-rome, source: gutenberg, url: "19725", skip: "John Childs", edition: "The History of Rome, Books 1 to 8" }
 - { work: bacon-novum-organum, source: gutenberg, url: "45988", edition: "Novum Organum, Project Gutenberg edition" }
 - { work: euclid-elements, source: gutenberg, url: "21076", edition: "The First Six Books of the Elements, John Casey's edition", translator: John Casey }
-- { work: tacitus-annals, source: gutenberg, url: "7959", edition: "The Reign of Tiberius: the first six books of the Annals" }
+- { work: tacitus-annals, source: gutenberg, url: "7959", skip: "Germany|Agricola", edition: "The Reign of Tiberius: the first six books of the Annals" }
