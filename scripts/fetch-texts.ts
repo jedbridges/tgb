@@ -269,8 +269,39 @@ function fold(sections: Section[]): Section[] {
     if (prev && prev.heading === s.heading && words(prev.body) < 1000) { prev.body = `${prev.body}\n\n${s.body}`; continue; }
     out.push({ ...s });
   }
-  if (out.length && words(out[0].body) < MIN_WORDS && out.length > 1) { out[1].body = `**${out[0].heading}**\n\n${out[0].body}\n\n${out[1].body}`; out.shift(); }
+  if (out.length && words(out[0].body) < MIN_WORDS && out.length > 1) {
+    // A short opening scene or chapter ("Act I, Scene I", the witches) is the start of the
+    // work, so the merged section keeps its name; a short title page gives way to the next.
+    const unit = /^(act|scene|book|chapter|canto|part)\b/i.test(out[0].heading);
+    out[1].body = `**${out[0].heading}**\n\n${out[0].body}\n\n${out[1].body}`;
+    if (unit) { out[1].heading = out[0].heading; out[1].path = out[0].path; }
+    out.shift();
+  }
+  numberBooks(out);
+  for (const s of out) s.heading = unitCase(s.heading);
   return out;
+}
+
+/* "ACT I, SCENE II. A Camp near Forres" reads as "Act I, Scene II: A Camp near Forres". The
+   slug does not change, since case and the stop both become hyphens. */
+function unitCase(h: string): string {
+  return h
+    .replace(/\b(ACT|SCENE|BOOK|PART|CHAPTER|CANTO|VOLUME)\b/g, (w) => w[0] + w.slice(1).toLowerCase())
+    .replace(/^((?:Act|Book|Part|Volume) [IVXLC\d]+(?:, (?:Scene|Chapter) [IVXLC\d]+)?|(?:Scene|Chapter) [IVXLC\d]+)\.\s+/, '$1: ');
+}
+const romanValue = (r: string) => { const v: Record<string, number> = { I: 1, V: 5, X: 10, L: 50, C: 100 }; let n = 0; for (let i = 0; i < r.length; i++) { const a = v[r[i]], b = v[r[i + 1]] ?? 0; n += a < b ? -a : a; } return n; };
+const roman = (n: number) => [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']].reduce((acc, [v, s]) => { while (n >= (v as number)) { acc += s; n -= v as number; } return acc; }, '');
+/* The Politics sets its books in markup the walker cannot read, so eight sections are each
+   called "Chapter I". A chapter count that starts again is a new book: number them. Only
+   when the file opens on Chapter I and restarts at least once, so a work with one run of
+   chapters is left alone. */
+function numberBooks(out: Section[]) {
+  const ch = out.map((s) => s.heading.match(/^chapter ([IVXLC]+)\b/i)?.[1]?.toUpperCase());
+  if (ch[0] !== 'I' || ch.some((c) => !c)) return;
+  let book = 1, prev = 0, restarts = 0;
+  const books = ch.map((c) => { const v = romanValue(c!); if (v <= prev) { book++; restarts++; } prev = v; return book; });
+  if (!restarts) return;
+  out.forEach((s, i) => { s.heading = `Book ${roman(books[i])}, ${s.heading}`; s.path = `Book ${roman(books[i])} / ${s.path}`; });
 }
 
 const slugify = (s: string) => {

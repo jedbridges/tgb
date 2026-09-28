@@ -13,6 +13,13 @@
     "run_worker_first": ["/api/*"]
   },
   "ai": { "binding": "AI" },
+  // Every question is a paid retrieval and generation call, and /api/ask is public. Six a
+  // minute is more than a person asks; sixty a minute across the site caps what a bot can
+  // spend, whatever addresses it uses.
+  "ratelimits": [
+    { "name": "ASK_PER_VISITOR", "namespace_id": "1001", "simple": { "limit": 6, "period": 60 } },
+    { "name": "ASK_SITEWIDE", "namespace_id": "1002", "simple": { "limit": 60, "period": 60 } }
+  ],
   // The site lives on its own domain. Leaving the workers.dev hostname enabled
   // would serve a second, fully crawlable copy competing with the real one.
   "workers_dev": false,
