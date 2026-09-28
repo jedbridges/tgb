@@ -81,10 +81,12 @@ async function ask(request: Request, env: Env): Promise<Response> {
     const sources: { url: string; title: string; kind: string }[] = [];
     for (const d of result.data ?? []) {
       const path = fromPath(d.filename);
-      const url = meta(d.attributes?.url) || path?.url || '';
+      // AI Search nests an object's custom metadata under attributes.file; read both places.
+      const a = { ...d.attributes, ...(d.attributes?.file as Record<string, unknown> | undefined) };
+      const url = meta(a.url) || path?.url || '';
       if (!url || seen.has(url)) continue;
       seen.add(url);
-      sources.push({ url, title: meta(d.attributes?.title) || path?.title || url, kind: meta(d.attributes?.kind) || path?.kind || '' });
+      sources.push({ url, title: meta(a.title) || path?.title || url, kind: meta(a.kind) || path?.kind || '' });
       if (sources.length === 6) break;
     }
     return json({ answer: result.response, sources });

@@ -61,8 +61,10 @@ const hints = [
   .palette__results { max-height: min(64vh, 36rem); overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
   .palette__results :global(.ask) { padding: 1rem 1.1rem 1.2rem; }
   .palette__results :global(.ask__answer) { font-family: var(--font-display); font-size: var(--step-0); line-height: 1.6; color: var(--ink-strong); margin: 0; }
-  .palette__results :global(.ask__answer sup) { margin-left: 0.15em; }
+  .palette__results :global(.ask__answer sup) { margin-left: 0.1em; }
+  .palette__results :global(.ask__answer sup a) { padding: 0 0.1em; }
   .palette__results :global(.ask__answer sup a) { color: var(--accent); text-decoration: none; }
+  .palette__results :global(.ask__sep) { font-size: 0.7em; vertical-align: super; color: var(--ink-mute); }
   .palette__results :global(.ask__sources) { list-style: decimal; margin: 0.9rem 0 0; padding-left: 1.3rem; display: grid; gap: 0.35rem; }
   .palette__results :global(.ask__sources a) { font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-strong); text-decoration: none; }
   .palette__results :global(.ask__sources a:hover) { text-decoration: underline; text-underline-offset: 0.15em; }
@@ -275,7 +277,7 @@ const hints = [
   interface AskSource { url: string; title: string; kind: string }
   function renderAsk(answer: string, sources: AskSource[]) {
     sel = -1;
-    const sups = sources.map((s, i) => `<sup><a href="${escape(s.url)}" data-rank="${i}">${i + 1}</a></sup>`).join('');
+    const sups = sources.map((s, i) => `<sup><a href="${escape(s.url)}" data-rank="${i}">${i + 1}</a></sup>`).join('<span class="ask__sep">,</span>');
     const items = sources.map((s, i) => `<li><a href="${escape(s.url)}" data-rank="${i}">${escape(s.title)}</a>${s.kind ? ` <span class="ask__kind">${escape(KIND_LABEL[s.kind] ?? s.kind)}</span>` : ''}</li>`).join('');
     list.innerHTML = `<div class="ask">
       <p class="ask__answer">${escape(answer).trim().replace(/\n{2,}/g, '</p><p class="ask__answer">').replace(/\n/g, '<br>')}${sups}</p>
