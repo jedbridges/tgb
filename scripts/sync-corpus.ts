@@ -46,6 +46,21 @@ function walk(dir: string): string[] {
   });
 }
 
+/* The url, title and kind from the document's own header, as R2 custom metadata, which is
+   what AI Search hands back as a result's attributes. Metadata travels as HTTP headers, so
+   each value is URI-encoded to stay ASCII; the Worker decodes it. */
+function metadata(doc: string): Record<string, string> {
+  const head = doc.match(/^---\n([\s\S]*?)\n---/)?.[1] ?? '';
+  const out: Record<string, string> = {};
+  for (const k of ['url', 'title', 'kind']) {
+    const raw = head.match(new RegExp(`^${k}: (.+)$`, 'm'))?.[1];
+    if (!raw) continue;
+    let v = raw; try { v = JSON.parse(raw); } catch { /* a bare value */ }
+    out[k] = encodeURIComponent(String(v).slice(0, 200)); // cut before encoding, never mid-escape
+  }
+  return out;
+}
+
 async function pool<T>(items: T[], limit: number, run: (item: T) => Promise<void>) {
   const queue = [...items];
   await Promise.all(Array.from({ length: limit }, async () => {
@@ -75,8 +90,9 @@ async function main() {
   let uploaded = 0;
   await pool(files, CONCURRENCY, async (file) => {
     const key = relative(CORPUS, file).split(sep).join('/');
+    const body = readFileSync(file);
     await s3.send(new PutObjectCommand({
-      Bucket: BUCKET, Key: key, Body: readFileSync(file), ContentType: 'text/markdown; charset=utf-8',
+      Bucket: BUCKET, Key: key, Body: body, ContentType: 'text/markdown; charset=utf-8', Metadata: metadata(body.toString('utf8')),
     }));
     uploaded++;
   });
