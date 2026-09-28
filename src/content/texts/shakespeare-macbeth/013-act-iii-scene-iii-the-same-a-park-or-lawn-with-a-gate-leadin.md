@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-iii-scene-iii-the-same-a-park-or-lawn-with-a-gate-leadin"
-heading: "ACT III, SCENE III. The same. A Park or Lawn, with a gate leading to the Palace"
+heading: "Act III, Scene III: The same. A Park or Lawn, with a gate leading to the Palace"
 order: 13
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

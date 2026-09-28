@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-iii-scene-v-the-heath"
-heading: "ACT III, SCENE V. The heath"
+heading: "Act III, Scene V: The heath"
 order: 15
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

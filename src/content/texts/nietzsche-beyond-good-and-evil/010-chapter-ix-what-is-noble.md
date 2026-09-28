@@ -1,7 +1,7 @@
 ---
 work: nietzsche-beyond-good-and-evil
 section: "chapter-ix-what-is-noble"
-heading: "Chapter IX. What Is Noble?"
+heading: "Chapter IX: What Is Noble?"
 order: 10
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4363"

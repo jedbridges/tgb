@@ -1,7 +1,7 @@
 ---
 work: herodotus-histories
 section: "book-i-the-first-book-of-the-histories-called-clio"
-heading: "Book I. the First Book of the Histories, Called Clio"
+heading: "Book I: the First Book of the Histories, Called Clio"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2707"

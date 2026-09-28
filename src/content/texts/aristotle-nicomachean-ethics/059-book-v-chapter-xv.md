@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-v-chapter-xv"
-heading: "BOOK V, Chapter XV"
+heading: "Book V, Chapter XV"
 order: 59
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

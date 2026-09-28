@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-i-scene-iv-forres-a-room-in-the-palace"
-heading: "ACT I, SCENE IV. Forres. A Room in the Palace"
+heading: "Act I, Scene IV: Forres. A Room in the Palace"
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

@@ -7,7 +7,7 @@ source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2383"
 edition: "The Middle English text in D. Laing Purves's edition, 1870"
 licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
-words: 8196
+words: 8198
 ---
 In Armoric’, that called is Bretagne, There was a knight, that lov’d and *did his pain* *devoted himself, To serve a lady in his beste wise; strove* And many a labour, many a great emprise,* *enterprise He for his lady wrought, ere she were won: For she was one the fairest under sun, And eke thereto come of so high kindred, That *well unnethes durst this knight for dread,* *see note <1>* Tell her his woe, his pain, and his distress But, at the last, she for his worthiness, And namely* for his meek obeisance, *especially Hath such a pity caught of his penance,* *suffering, distress That privily she fell of his accord To take him for her husband and her lord (Of such lordship as men have o’er their wives); And, for to lead the more in bliss their lives, Of his free will he swore her as a knight, That never in all his life he day nor night Should take upon himself no mastery Against her will, nor kithe* her jealousy, *show But her obey, and follow her will in all, As any lover to his lady shall; Save that the name of sovereignety That would he have, for shame of his degree. She thanked him, and with full great humbless She saide; “Sir, since of your gentleness Ye proffer me to have so large a reign, *Ne woulde God never betwixt us twain, As in my guilt, were either war or strife:* *see note <2>* Sir, I will be your humble true wife, Have here my troth, till that my hearte brest.”* *burst Thus be they both in quiet and in rest.
 
@@ -113,7 +113,7 @@ Notes to The Franklin’s Tale
 
 32. The same question is stated a the end of Boccaccio’s version of the story in the “Philocopo,” where the queen determines in favour of Aviragus. The question is evidently one of those which it was the fashion to propose for debate in the mediaeval “courts of love.”
 
-**The Prologue. <1>**
+**The Doctor’s Tale, the Prologue**
 
 [“YEA, let that passe,” quoth our Host, “as now. Sir Doctor of Physik, I praye you, Tell us a tale of some honest mattere.” “It shall be done, if that ye will it hear,” Said this Doctor; and his tale gan anon. “Now, good men,” quoth he, “hearken everyone.”]
 

@@ -1,7 +1,7 @@
 ---
 work: kant-critique-of-pure-reason
 section: "chapter-ii-the-canon-of-pure-reason"
-heading: "Chapter II. The Canon of Pure Reason"
+heading: "Chapter II: The Canon of Pure Reason"
 order: 72
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4280"

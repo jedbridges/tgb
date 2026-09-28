@@ -1,7 +1,7 @@
 ---
 work: kant-critique-of-pure-reason
 section: "chapter-i-of-the-schematism-at-of-the-pure-conceptions-of-th"
-heading: "Chapter I. Of the Schematism at of the Pure Conceptions of the Understanding"
+heading: "Chapter I: Of the Schematism at of the Pure Conceptions of the Understanding"
 order: 33
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4280"

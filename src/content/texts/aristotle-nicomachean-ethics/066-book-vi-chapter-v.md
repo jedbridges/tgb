@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-vi-chapter-v"
-heading: "BOOK VI, Chapter V"
+heading: "Book VI, Chapter V"
 order: 66
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

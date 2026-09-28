@@ -1,7 +1,7 @@
 ---
 work: kant-critique-of-pure-reason
 section: "chapter-i-of-the-paralogisms-of-pure-reason"
-heading: "Chapter I. Of the Paralogisms of Pure Reason"
+heading: "Chapter I: Of the Paralogisms of Pure Reason"
 order: 47
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4280"

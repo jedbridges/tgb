@@ -1,0 +1,12 @@
+---
+work: livy-history-of-rome
+section: "book-i"
+heading: "Book I"
+order: 3
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/19725"
+edition: "The History of Rome, Books 1 to 8"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 358
+---
+*The coming of Æneas into Italy, and his achievements there; the reign of Ascanius in Alba, and of the other Sylvian kings. Romulus and Remus born. Amulius killed. Romulus builds Rome; forms a senate; makes war upon the Sabines; presents the* opima spolia *to Jupiter Feretrius; divides the people into* curiæ; *his victories; is deified. Numa institutes the rites of religious worship; builds a temple to Janus; and having made peace with all his neighbours, closes it for the first time; enjoys a peaceful reign, and is succeeded by Tullus Hostilius. War with the Albans; combat of the Horatii and Curiatii. Alba demolished, and the Albans made citizens of Rome. War declared against the Sabines; Tullus killed by lightning. Ancus Marcius renews the religious institutions of Numa; conquers the Latins, confers on them the right of citizenship, and assigns them the Aventine hill to dwell on; adds the hill Janiculum to the city; enlarges the bounds of the empire. In his reign Lucumo comes to Rome; assumes the name of Tarquinius; and, after the death of Ancus, is raised to the throne. He increases the senate, by adding to it a hundred new senators; defeats the Latins and Sabines; augments the centuries of knights; builds a wall round the city; makes the common sewers; is slain by the sons of Ancus after a reign of thirty-eight years; and is succeeded by Servius Tullius. He institutes the census; closes the lustrum, in which eighty thousand citizens are said to have been enrolled; divides the people into classes and centuries; enlarges the Pomœrium, and adds the Quirinal, Viminal, and Esquiline hills to the city; after a reign of forty years, is murdered by L. Tarquin, afterwards surnamed Superbus. He usurps the crown. Tarquin makes war on the Volsci, and, with the plunder taken from them, builds a temple to Jupiter Capitolinus. By a stratagem of his son, Sextus Tarquin, he reduces the city of Gabii; after a reign of twenty-five years is dethroned and banished, in consequence of the forcible violation of the person of Lucretia by his son Sextus. L. Junius Brutus and L. Tarquinius Collatinus first created consuls.*

@@ -1,7 +1,7 @@
 ---
 work: herodotus-histories
 section: "book-ii-the-second-book-of-the-histories-called-euterpe"
-heading: "Book II. the Second Book of the Histories, Called Euterpe"
+heading: "Book II: the Second Book of the Histories, Called Euterpe"
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2707"

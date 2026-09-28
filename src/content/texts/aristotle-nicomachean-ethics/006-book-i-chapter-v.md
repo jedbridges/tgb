@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-i-chapter-v"
-heading: "BOOK I, Chapter V"
+heading: "Book I, Chapter V"
 order: 6
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

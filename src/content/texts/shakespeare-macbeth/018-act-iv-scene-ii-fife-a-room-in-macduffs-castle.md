@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-iv-scene-ii-fife-a-room-in-macduffs-castle"
-heading: "ACT IV, SCENE II. Fife. A Room in Macduff’s Castle"
+heading: "Act IV, Scene II: Fife. A Room in Macduff’s Castle"
 order: 18
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

@@ -1,7 +1,7 @@
 ---
 work: nietzsche-beyond-good-and-evil
 section: "chapter-i-prejudices-of-philosophers"
-heading: "Chapter I. Prejudices of Philosophers"
+heading: "Chapter I: Prejudices of Philosophers"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4363"

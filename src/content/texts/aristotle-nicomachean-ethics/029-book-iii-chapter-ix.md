@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-iii-chapter-ix"
-heading: "BOOK III, Chapter IX"
+heading: "Book III, Chapter IX"
 order: 29
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

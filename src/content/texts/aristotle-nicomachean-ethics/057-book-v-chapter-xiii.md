@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-v-chapter-xiii"
-heading: "BOOK V, Chapter XIII"
+heading: "Book V, Chapter XIII"
 order: 57
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

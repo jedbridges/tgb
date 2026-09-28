@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-vii-chapter-ii"
-heading: "BOOK VII, Chapter II"
+heading: "Book VII, Chapter II"
 order: 75
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

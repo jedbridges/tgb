@@ -1,7 +1,7 @@
 ---
 work: herodotus-histories
 section: "book-iv-the-fourth-book-of-the-histories-called-melpomene"
-heading: "Book IV. the Fourth Book of the Histories, Called Melpomene"
+heading: "Book IV: the Fourth Book of the Histories, Called Melpomene"
 order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/2707"

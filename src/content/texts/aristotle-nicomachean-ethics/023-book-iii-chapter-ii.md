@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-iii-chapter-ii"
-heading: "BOOK III, Chapter II"
+heading: "Book III, Chapter II"
 order: 23
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

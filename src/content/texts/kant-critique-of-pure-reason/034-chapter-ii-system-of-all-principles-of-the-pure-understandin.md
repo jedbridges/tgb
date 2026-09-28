@@ -1,7 +1,7 @@
 ---
 work: kant-critique-of-pure-reason
 section: "chapter-ii-system-of-all-principles-of-the-pure-understandin"
-heading: "Chapter II. System of all Principles of the Pure Understanding"
+heading: "Chapter II: System of all Principles of the Pure Understanding"
 order: 34
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4280"

@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-ii-scene-iii-the-same"
-heading: "ACT II, SCENE III. The same"
+heading: "Act II, Scene III: The same"
 order: 9
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

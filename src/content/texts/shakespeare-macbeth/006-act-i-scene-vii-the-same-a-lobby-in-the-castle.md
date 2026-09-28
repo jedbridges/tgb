@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-i-scene-vii-the-same-a-lobby-in-the-castle"
-heading: "ACT I, SCENE VII. The same. A Lobby in the Castle"
+heading: "Act I, Scene VII: The same. A Lobby in the Castle"
 order: 6
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-v-chapter-xvii"
-heading: "BOOK V, Chapter XVII"
+heading: "Book V, Chapter XVII"
 order: 61
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-iv-chapter-vii"
-heading: "BOOK IV, Chapter VII"
+heading: "Book IV, Chapter VII"
 order: 41
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

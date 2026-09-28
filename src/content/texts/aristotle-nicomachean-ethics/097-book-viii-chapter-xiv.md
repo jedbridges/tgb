@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-viii-chapter-xiv"
-heading: "BOOK VIII, Chapter XIV"
+heading: "Book VIII, Chapter XIV"
 order: 97
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

@@ -1,7 +1,7 @@
 ---
 work: kant-critique-of-pure-reason
 section: "chapter-ii-the-antinomy-of-pure-reason"
-heading: "Chapter II. The Antinomy of Pure Reason"
+heading: "Chapter II: The Antinomy of Pure Reason"
 order: 48
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4280"

@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-iii-scene-i-forres-a-room-in-the-palace"
-heading: "ACT III, SCENE I. Forres. A Room in the Palace"
+heading: "Act III, Scene I: Forres. A Room in the Palace"
 order: 11
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

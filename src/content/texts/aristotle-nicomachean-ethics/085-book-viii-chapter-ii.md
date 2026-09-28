@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-viii-chapter-ii"
-heading: "BOOK VIII, Chapter II"
+heading: "Book VIII, Chapter II"
 order: 85
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

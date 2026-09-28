@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-v-scene-viii-the-same-another-part-of-the-field"
-heading: "ACT V, SCENE VIII. The same. Another part of the field"
+heading: "Act V, Scene VIII: The same. Another part of the field"
 order: 25
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

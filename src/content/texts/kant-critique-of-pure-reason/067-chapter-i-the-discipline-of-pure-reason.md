@@ -1,7 +1,7 @@
 ---
 work: kant-critique-of-pure-reason
 section: "chapter-i-the-discipline-of-pure-reason"
-heading: "Chapter I. The Discipline of Pure Reason"
+heading: "Chapter I: The Discipline of Pure Reason"
 order: 67
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4280"
