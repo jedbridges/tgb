@@ -148,7 +148,13 @@ const hints = [
     askHint.hidden = m === 'search';
     list.innerHTML = ''; sel = -1; input.setAttribute('aria-expanded', 'false');
     root.classList.remove('is-busy'); say('');
-    if (m === 'search' && input.value.trim()) run(input.value);
+    // The tabs are two views of one question: whatever is typed is answered in the new tab
+    // at once. The last answer is kept, so tabbing back and forth never pays for it twice.
+    const q = input.value.trim();
+    if (!q) return;
+    if (m === 'search') run(input.value);
+    else if (q === lastAsk.q) { list.innerHTML = lastAsk.html; say('Answered.'); }
+    else ask(input.value);
   }
 
   const outside = () => [...document.body.children].filter((el) => el !== root) as HTMLElement[];
@@ -279,6 +285,7 @@ const hints = [
     say(`Answered, with ${sources.length} ${sources.length === 1 ? 'source' : 'sources'}.`);
   }
   let askT: number | undefined;
+  const lastAsk = { q: '', html: '' };
   function ask(q: string) {
     clearTimeout(askT);
     const query = q.trim();
@@ -294,6 +301,7 @@ const hints = [
         clearTimeout(wait); root.classList.remove('is-busy');
         if (!data.answer) { throw new Error('empty answer'); }
         renderAsk(data.answer, data.sources ?? []);
+        lastAsk.q = query; lastAsk.html = list.innerHTML;
       })
       .catch(() => {
         if (my !== seq) return;
