@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
 import BookCard from './BookCard.astro';
+import ClipList from './ClipList.astro';
 import { placeholderAuthor, loadCatalog, sortedByAssignment, yearShort, lengthLabel, difficultyLabel, type Work } from '~/lib/catalog';
 import { url, taxUrl, workUrl, authorUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
@@ -81,12 +82,13 @@ const crumbs = breadcrumbs([{ name: 'Books', path: '/books/' }, { name: entry.da
 </section>
 <section class="wrap" data-pagefind-ignore>
   {list.length ? (
-    <div class="shelf-grid">
+    <div class="shelf-grid" data-clip="36" data-clip-label="books">
       {list.map((w, i) => <BookCard work={w} authorName={authorName(w)} width={140} index={Math.min(i, 12)} eager={i < 6} />)}
     </div>
   ) : (
     <p class="empty">Nothing on this shelf yet.</p>
   )}
+  <ClipList />
 </section>
 {siblings.length > 0 && (
   <nav class="wrap more" aria-label={`Other ${kindWord}`} data-pagefind-ignore>

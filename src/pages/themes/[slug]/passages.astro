@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '~/layouts/Base.astro';
+import ClipList from '~/components/ClipList.astro';
 import { placeholderAuthor, loadCatalog, sortedByAssignment, yearShort } from '~/lib/catalog';
 import { url, workUrl, authorUrl, taxUrl } from '~/lib/url';
 import { abs } from '~/lib/url';
@@ -50,7 +51,7 @@ const itemList = {
       <p class="quotes__back ui"><a href={taxUrl('themes', entry.id)}>← All {onShelf.length} works on {lower}</a></p>
     </header>
 
-    <ol class="quotes__list">
+    <ol class="quotes__list" data-clip="15" data-clip-label="works">
       {rows.map((r) => (
         <li class="qwork">
           <h2 class="qwork__h"><a href={workUrl(r.work.id)}>{r.work.data.title}</a> <span class="qwork__by">{r.author.data.name} · {yearShort(r.work)}</span></h2>
@@ -69,6 +70,7 @@ const itemList = {
         </li>
       ))}
     </ol>
+    <ClipList />
   </article>
 </Base>
 <style>

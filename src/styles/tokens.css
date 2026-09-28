@@ -120,7 +120,7 @@
 @media (max-width: 1180px) { :root { --header-h: 4rem; } }
 @media (max-width: 760px) { :root { --header-h: 3.5rem; } }
 :root {
-  --measure: 68ch;
+  --measure: 58ch; /* ch is a zero, wider than an average letter: 58ch reads as about 70 characters a line */
   --page-max: 84rem;
 
   /* Motion */

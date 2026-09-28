@@ -303,10 +303,11 @@ const hints = [
         renderAsk(data.answer, data.sources ?? []);
         lastAsk.q = query; lastAsk.html = list.innerHTML;
       })
-      .catch(() => {
+      .catch((err: Error) => {
         if (my !== seq) return;
         clearTimeout(wait); root.classList.remove('is-busy');
-        list.innerHTML = `<div class="empty"><p>The answer service is not available right now.</p><p class="empty__out"><a href="${escape(browseUrl(query))}">Search the library instead →</a></p></div>`;
+        const busy = err?.message === '429';
+        list.innerHTML = `<div class="empty"><p>${busy ? 'That is a lot of questions in a minute. Try again shortly.' : 'The answer service is not available right now.'}</p><p class="empty__out"><a href="${escape(browseUrl(query))}">Search the library instead →</a></p></div>`;
         say('Ask is unavailable.');
       });
   }

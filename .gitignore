@@ -14,3 +14,6 @@ content/worklist.json
 
 # Retrieval corpus written by scripts/export-corpus.ts
 corpus/
+
+# Impeccable live-mode state: a local pid and port, never shared
+.impeccable/live/

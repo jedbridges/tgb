@@ -80,7 +80,7 @@
 - { work: sophocles-oedipus-at-colonus, source: gutenberg, url: "31", match: "Colonus", edition: "Francis Storr's translation, 1912", translator: Francis Storr }
 - { work: cicero-on-duties, source: gutenberg, url: "47001", skip: "^(Introduction|Bibliography)", edition: "Walter Miller's translation, 1913", translator: Walter Miller }
 - { work: augustine-city-of-god, source: gutenberg, url: "45304", edition: "Marcus Dods's translation, 1871, Books I to X", translator: Marcus Dods }
-- { work: aquinas-summa-theologica, source: gutenberg, url: "17611", edition: "The English Dominican translation, 1911, the First Part", translator: Fathers of the English Dominican Province }
+- { work: aquinas-summa-theologica, source: gutenberg, skip: "^St\\. Thomas", url: "17611", edition: "The English Dominican translation, 1911, the First Part", translator: Fathers of the English Dominican Province }
 - { work: chaucer-canterbury-tales, source: gutenberg, url: "2383", match: "^(?!.*Legend)(The Prologue|.*Tale|Preces)", edition: "The Middle English text in D. Laing Purves's edition, 1870" }
 - { work: shakespeare-macbeth, source: gutenberg, url: "1533", edition: "The Globe edition text" }
 - { work: descartes-discourse-on-method, source: gutenberg, url: "59", edition: "John Veitch's translation, 1850", translator: John Veitch }
@@ -99,3 +99,12 @@
 - { work: bible-psalms, source: gutenberg, url: "10", match: "Psalms", edition: "The King James Version, 1611" }
 - { work: bible-gospel-of-matthew, source: gutenberg, url: "10", match: "Matthew", edition: "The King James Version, 1611" }
 - { work: bible-gospel-of-john, source: gutenberg, url: "10", match: "Gospel According to Saint John", edition: "The King James Version, 1611" }
+# Third batch: found by scripts/find-texts.ts, not yet fetched. The edition line names only
+# what the catalogue confirms; check the translator on the first run and correct it here.
+- { work: euripides-bacchae, source: gutenberg, url: "35173", edition: "The Bacchae of Euripides, Project Gutenberg edition" }
+- { work: euripides-hippolytus, source: gutenberg, url: "8418", match: "Hippolytus", edition: "Hippolytus, Project Gutenberg edition" }
+- { work: aristophanes-frogs, source: gutenberg, url: "7998", edition: "The Frogs, Project Gutenberg edition" }
+- { work: livy-history-of-rome, source: gutenberg, url: "19725", edition: "The History of Rome, Books 1 to 8" }
+- { work: bacon-novum-organum, source: gutenberg, url: "45988", edition: "Novum Organum, Project Gutenberg edition" }
+- { work: euclid-elements, source: gutenberg, url: "21076", edition: "The First Six Books of the Elements, John Casey's edition", translator: John Casey }
+- { work: tacitus-annals, source: gutenberg, url: "7959", edition: "The Reign of Tiberius: the first six books of the Annals" }

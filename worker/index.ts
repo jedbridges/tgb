@@ -13,7 +13,8 @@ interface AutoRAGResult { response: string; data: AutoRAGSource[] }
 interface AutoRAGBinding { aiSearch(opts: { query: string; rewrite_query?: boolean; max_num_results?: number; system_prompt?: string }): Promise<AutoRAGResult> }
 interface Ai { autorag(name: string): AutoRAGBinding }
 interface Fetcher { fetch(request: Request): Promise<Response> }
-export interface Env { ASSETS: Fetcher; AI: Ai }
+interface RateLimit { limit(o: { key: string }): Promise<{ success: boolean }> }
+export interface Env { ASSETS: Fetcher; AI: Ai; ASK_PER_VISITOR?: RateLimit; ASK_SITEWIDE?: RateLimit }
 
 const MAX_QUERY = 500;
 
@@ -65,6 +66,14 @@ async function ask(request: Request, env: Env): Promise<Response> {
   const raw = (body as { query?: unknown } | null)?.query;
   const query = typeof raw === 'string' ? raw.trim().slice(0, MAX_QUERY) : '';
   if (!query) return json({ error: 'a query is required' }, 400);
+  // Checked after the cheap validation, before the paid call. A missing binding (local dev)
+  // means no limit rather than no answers.
+  const visitor = request.headers.get('cf-connecting-ip') ?? 'unknown';
+  const [mine, all] = await Promise.all([
+    env.ASK_PER_VISITOR?.limit({ key: visitor }) ?? { success: true },
+    env.ASK_SITEWIDE?.limit({ key: 'all' }) ?? { success: true },
+  ]);
+  if (!mine.success || !all.success) return json({ error: 'too many questions; try again in a minute' }, 429, { 'retry-after': '60' });
   try {
     const result = await env.AI.autorag('tgb-ask').aiSearch({ query, rewrite_query: true, max_num_results: 8, system_prompt: SYSTEM_PROMPT });
     // Several chunks of one page are one source; the list shows each page once, in rank order.
@@ -85,9 +94,9 @@ async function ask(request: Request, env: Env): Promise<Response> {
   }
 }
 
-function json(data: unknown, status = 200): Response {
+function json(data: unknown, status = 200, extra: Record<string, string> = {}): Response {
   return new Response(JSON.stringify(data), {
     status,
-    headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
+    headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', ...extra },
   });
 }
