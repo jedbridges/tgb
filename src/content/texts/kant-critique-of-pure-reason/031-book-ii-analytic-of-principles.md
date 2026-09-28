@@ -1,7 +1,7 @@
 ---
 work: kant-critique-of-pure-reason
 section: "book-ii-analytic-of-principles"
-heading: "BOOK II. Analytic of Principles"
+heading: "Book II: Analytic of Principles"
 order: 31
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4280"

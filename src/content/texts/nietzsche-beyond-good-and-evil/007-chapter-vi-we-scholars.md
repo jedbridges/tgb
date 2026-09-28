@@ -1,7 +1,7 @@
 ---
 work: nietzsche-beyond-good-and-evil
 section: "chapter-vi-we-scholars"
-heading: "Chapter VI. We Scholars"
+heading: "Chapter VI: We Scholars"
 order: 7
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4363"

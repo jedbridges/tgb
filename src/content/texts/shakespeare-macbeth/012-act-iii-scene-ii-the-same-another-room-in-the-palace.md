@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-iii-scene-ii-the-same-another-room-in-the-palace"
-heading: "ACT III, SCENE II. The same. Another Room in the Palace"
+heading: "Act III, Scene II: The same. Another Room in the Palace"
 order: 12
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

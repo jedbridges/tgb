@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-i-chapter-ii"
-heading: "BOOK I, Chapter II"
+heading: "Book I, Chapter II"
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

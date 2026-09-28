@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-ii-scene-ii-the-same"
-heading: "ACT II, SCENE II. The same"
+heading: "Act II, Scene II: The same"
 order: 8
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

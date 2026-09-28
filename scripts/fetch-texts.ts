@@ -334,6 +334,15 @@ async function run(s: Source) {
     console.warn(`${s.work}: every section looked like front matter; keeping the longest, "${longest.heading}"`);
     sections = [longest];
   }
+  // Fold splits a long section by its inner headings, so a skip can only see some front
+  // matter (the Summa's opening life of Aquinas) once the split has run.
+  if (s.skip) {
+    const re = new RegExp(s.skip, 'i'); const kept = sections.filter((x) => !re.test(x.heading));
+    if (kept.length) sections = kept;
+  }
+  // A lone section has no structure to name, and its heading is whatever line preceded the
+  // text (Hippolytus came out as "Of Euripides"); the work's own title is the honest one.
+  if (sections.length === 1 && workTitle) sections[0] = { ...sections[0], heading: workTitle, path: workTitle };
   const total = sections.reduce((n, x) => n + words(x.body), 0);
   console.log(`${s.work}: ${sections.length} sections, ${total.toLocaleString()} words${DRY ? ' (dry)' : ''}`);
   if (!sections.length) throw new Error(`nothing parsed from ${url}`);

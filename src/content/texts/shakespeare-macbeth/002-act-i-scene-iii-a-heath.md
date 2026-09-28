@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-i-scene-iii-a-heath"
-heading: "ACT I, SCENE III. A heath"
+heading: "Act I, Scene III: A heath"
 order: 2
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

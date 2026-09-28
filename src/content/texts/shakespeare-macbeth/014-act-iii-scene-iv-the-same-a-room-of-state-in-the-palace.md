@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-iii-scene-iv-the-same-a-room-of-state-in-the-palace"
-heading: "ACT III, SCENE IV. The same. A Room of state in the Palace"
+heading: "Act III, Scene IV: The same. A Room of state in the Palace"
 order: 14
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

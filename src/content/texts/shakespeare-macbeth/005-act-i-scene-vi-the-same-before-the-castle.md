@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-i-scene-vi-the-same-before-the-castle"
-heading: "ACT I, SCENE VI. The same. Before the Castle"
+heading: "Act I, Scene VI: The same. Before the Castle"
 order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

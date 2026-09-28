@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-iii-chapter-xiv"
-heading: "BOOK III, Chapter XIV"
+heading: "Book III, Chapter XIV"
 order: 34
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

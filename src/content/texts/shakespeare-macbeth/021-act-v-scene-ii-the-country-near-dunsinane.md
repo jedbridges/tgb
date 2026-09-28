@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-v-scene-ii-the-country-near-dunsinane"
-heading: "ACT V, SCENE II. The Country near Dunsinane"
+heading: "Act V, Scene II: The Country near Dunsinane"
 order: 21
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

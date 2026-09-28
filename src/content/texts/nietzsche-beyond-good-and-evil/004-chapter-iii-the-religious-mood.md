@@ -1,7 +1,7 @@
 ---
 work: nietzsche-beyond-good-and-evil
 section: "chapter-iii-the-religious-mood"
-heading: "Chapter III. the Religious Mood"
+heading: "Chapter III: the Religious Mood"
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4363"

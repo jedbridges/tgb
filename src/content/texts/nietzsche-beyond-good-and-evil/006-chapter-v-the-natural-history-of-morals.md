@@ -1,7 +1,7 @@
 ---
 work: nietzsche-beyond-good-and-evil
 section: "chapter-v-the-natural-history-of-morals"
-heading: "Chapter V. the Natural History of Morals"
+heading: "Chapter V: the Natural History of Morals"
 order: 6
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4363"

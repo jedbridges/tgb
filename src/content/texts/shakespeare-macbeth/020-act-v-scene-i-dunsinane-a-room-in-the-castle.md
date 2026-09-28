@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-v-scene-i-dunsinane-a-room-in-the-castle"
-heading: "ACT V, SCENE I. Dunsinane. A Room in the Castle"
+heading: "Act V, Scene I: Dunsinane. A Room in the Castle"
 order: 20
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

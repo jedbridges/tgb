@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-i-scene-v-inverness-a-room-in-macbeths-castle"
-heading: "ACT I, SCENE V. Inverness. A Room in Macbeth’s Castle"
+heading: "Act I, Scene V: Inverness. A Room in Macbeth’s Castle"
 order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

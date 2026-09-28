@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-iii-chapter-xii"
-heading: "BOOK III, Chapter XII"
+heading: "Book III, Chapter XII"
 order: 32
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

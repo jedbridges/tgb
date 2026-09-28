@@ -1,7 +1,7 @@
 ---
 work: nietzsche-beyond-good-and-evil
 section: "chapter-iv-apophthegms-and-interludes"
-heading: "Chapter IV. Apophthegms and Interludes"
+heading: "Chapter IV: Apophthegms and Interludes"
 order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4363"

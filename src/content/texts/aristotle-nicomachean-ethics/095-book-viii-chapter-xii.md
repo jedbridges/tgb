@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-viii-chapter-xii"
-heading: "BOOK VIII, Chapter XII"
+heading: "Book VIII, Chapter XII"
 order: 95
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

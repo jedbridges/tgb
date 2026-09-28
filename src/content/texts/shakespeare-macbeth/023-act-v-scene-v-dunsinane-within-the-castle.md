@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-v-scene-v-dunsinane-within-the-castle"
-heading: "ACT V, SCENE V. Dunsinane. Within the castle"
+heading: "Act V, Scene V: Dunsinane. Within the castle"
 order: 23
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

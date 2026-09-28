@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-ii-scene-iv-the-same-without-the-castle"
-heading: "ACT II, SCENE IV. The same. Without the Castle"
+heading: "Act II, Scene IV: The same. Without the Castle"
 order: 10
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

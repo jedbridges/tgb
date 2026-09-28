@@ -1,7 +1,7 @@
 ---
 work: nietzsche-beyond-good-and-evil
 section: "chapter-vii-our-virtues"
-heading: "Chapter VII. Our Virtues"
+heading: "Chapter VII: Our Virtues"
 order: 8
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4363"

@@ -1,7 +1,7 @@
 ---
 work: nietzsche-beyond-good-and-evil
 section: "chapter-viii-peoples-and-countries"
-heading: "Chapter VIII. Peoples and Countries"
+heading: "Chapter VIII: Peoples and Countries"
 order: 9
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4363"

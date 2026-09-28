@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-ii-scene-i-inverness-court-within-the-castle"
-heading: "ACT II, SCENE I. Inverness. Court within the Castle"
+heading: "Act II, Scene I: Inverness. Court within the Castle"
 order: 7
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

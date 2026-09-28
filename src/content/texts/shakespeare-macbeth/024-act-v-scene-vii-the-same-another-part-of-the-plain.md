@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-v-scene-vii-the-same-another-part-of-the-plain"
-heading: "ACT V, SCENE VII. The same. Another part of the Plain"
+heading: "Act V, Scene VII: The same. Another part of the Plain"
 order: 24
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

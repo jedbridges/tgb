@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-iv-chapter-vi"
-heading: "BOOK IV, Chapter VI"
+heading: "Book IV, Chapter VI"
 order: 40
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

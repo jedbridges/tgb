@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-iv-scene-iii-england-before-the-kings-palace"
-heading: "ACT IV, SCENE III. England. Before the King’s Palace"
+heading: "Act IV, Scene III: England. Before the King’s Palace"
 order: 19
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

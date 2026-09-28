@@ -1,7 +1,7 @@
 ---
 work: aristotle-nicomachean-ethics
 section: "book-v-chapter-xvi"
-heading: "BOOK V, Chapter XVI"
+heading: "Book V, Chapter XVI"
 order: 60
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/8438"

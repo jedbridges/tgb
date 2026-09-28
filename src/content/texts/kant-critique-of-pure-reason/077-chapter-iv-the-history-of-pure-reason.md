@@ -1,7 +1,7 @@
 ---
 work: kant-critique-of-pure-reason
 section: "chapter-iv-the-history-of-pure-reason"
-heading: "Chapter IV. The History of Pure Reason"
+heading: "Chapter IV: The History of Pure Reason"
 order: 77
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4280"

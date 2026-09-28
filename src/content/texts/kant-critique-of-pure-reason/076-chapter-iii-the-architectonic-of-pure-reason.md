@@ -1,7 +1,7 @@
 ---
 work: kant-critique-of-pure-reason
 section: "chapter-iii-the-architectonic-of-pure-reason"
-heading: "Chapter III. The Architectonic of Pure Reason"
+heading: "Chapter III: The Architectonic of Pure Reason"
 order: 76
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4280"

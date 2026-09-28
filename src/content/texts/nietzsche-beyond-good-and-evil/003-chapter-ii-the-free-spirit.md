@@ -1,7 +1,7 @@
 ---
 work: nietzsche-beyond-good-and-evil
 section: "chapter-ii-the-free-spirit"
-heading: "Chapter II. the Free Spirit"
+heading: "Chapter II: the Free Spirit"
 order: 3
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/4363"

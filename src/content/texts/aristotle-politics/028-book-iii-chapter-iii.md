@@ -1,0 +1,17 @@
+---
+work: aristotle-politics
+section: "book-iii-chapter-iii"
+heading: "Book III, Chapter III"
+order: 28
+source: gutenberg
+sourceUrl: "https://www.gutenberg.org/ebooks/6762"
+edition: "Benjamin Jowett's translation, 1885"
+translator: "Benjamin Jowett"
+licence: "Public domain in the United States; the Project Gutenberg edition is free of restrictions under the Project Gutenberg License."
+words: 577
+---
+It has also been doubted what was and what was not the act of the city; as, for instance, when a democracy arises out of an aristocracy or a tyranny; for some persons then refuse to fulfil their contracts; as if the right to receive the money was in the tyrant and not in the state, and many other things of the same nature; as if any covenant was founded for violence and not for the common good. So in like manner, if anything is done by those who have the management of public affairs where a democracy is established, their actions are to be considered as the actions of the state, as well as in the oligarchy or tyranny.
+
+And here it seems very proper to consider this question, When shall we say that a city is the same, and when shall we say that it is different?
+
+It is but a superficial mode of examining into this question to begin with the place and the people; for it may happen that these may be divided from that, or that some one of them may live in one place, and some in another (but this question may be regarded as no very knotty one; for, as a city may acquire that appellation on many accounts, it may be solved many ways); and in like manner, when men inhabit one common place, when shall we say that they inhabit the same city, or that the city is the same? for it does not depend upon the walls; for I can suppose Peloponnesus itself surrounded with a wall, as Babylon was, and every other place, which rather encircles many nations than one city, and that they say was taken three days when some of the inhabitants knew nothing of it: but we shall find a proper time to determine this question; for the extent of a city, how large it should be, and whether it should consist of more than one people, these are particulars that the politician should by no means be unacquainted with. This, too, is a matter of inquiry, whether we shall say that a city is the same while it is inhabited by the same race of men, though some of them are perpetually dying, others coming into the world, as we say that a river or a fountain is the same, though the waters are continually changing; or when a revolution takes place shall we [1276b] say the men are the same, but the city is different: for if a city is a community, it is a community of citizens; but if the mode of government should alter, and become of another sort, it would seem a necessary consequence that the city is not the same; as we regard the tragic chorus as different from the comic, though it may probably consist of the same performers: thus every other community or composition is said to be different if the species of composition is different; as in music the same hands produce different harmony, as the Doric and Phrygian. If this is true, it is evident, that when we speak of a city as being the same we refer to the government there established; and this, whether it is called by the same name or any other, or inhabited by the same men or different. But whether or no it is right to dissolve the community when the constitution is altered is another question.

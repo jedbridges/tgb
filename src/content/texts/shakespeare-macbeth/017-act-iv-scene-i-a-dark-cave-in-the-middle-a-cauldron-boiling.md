@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-iv-scene-i-a-dark-cave-in-the-middle-a-cauldron-boiling"
-heading: "ACT IV, SCENE I. A dark Cave. In the middle, a Cauldron Boiling"
+heading: "Act IV, Scene I: A dark Cave. In the middle, a Cauldron Boiling"
 order: 17
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"

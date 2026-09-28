@@ -1,7 +1,7 @@
 ---
 work: shakespeare-macbeth
 section: "act-iii-scene-vi-forres-a-room-in-the-palace"
-heading: "ACT III, SCENE VI. Forres. A Room in the Palace"
+heading: "Act III, Scene VI: Forres. A Room in the Palace"
 order: 16
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/1533"
