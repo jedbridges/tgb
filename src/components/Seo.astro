@@ -6,11 +6,13 @@ interface Props {
   image?: string;          // absolute or site-relative
   type?: 'website' | 'article' | 'book';
   noindex?: boolean;
+  /** Append " · The Great Books". Off where the page title is already as long as a results page shows. */
+  suffix?: boolean;
   jsonld?: Record<string, unknown> | Record<string, unknown>[];
 }
-const { title, description, image, type = 'website', noindex = false, jsonld } = Astro.props;
+const { title, description, image, type = 'website', noindex = false, suffix = true, jsonld } = Astro.props;
 const siteName = 'The Great Books';
-const fullTitle = title === siteName ? title : `${title} · ${siteName}`;
+const fullTitle = title === siteName || !suffix ? title : `${title} · ${siteName}`;
 const canonical = abs(Astro.url.pathname);
 const ogImage = image ? (image.startsWith('http') ? image : abs(image).replace(/\/$/, '')) : abs('/og-default.png').replace(/\/$/, '');
 const ld = jsonld ? (Array.isArray(jsonld) ? jsonld : [jsonld]) : [];

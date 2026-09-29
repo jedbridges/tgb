@@ -50,22 +50,25 @@ export const bookLd = (work: Work, author: Author, image?: string) => {
     about: d.themes.map((t) => ({ '@type': 'Thing', name: t.id.replace(/-/g, ' ') })),
     keywords: [...d.themes.map((t) => t.id), ...d.keywords].join(', '),
     /*
-     * The edition, as its own thing. The work is Homer's Iliad; the book you can buy is
+     * The editions, each as its own thing. The work is Homer's Iliad; the book you can buy is
      * Lattimore's, from Chicago, with its own ISBN. Collapsing the two loses the fact a
      * reader and an answer engine both want, which is precisely which edition to get.
      */
-    workExample: ed?.isbn13
-      ? {
-          '@type': 'Book', '@id': `${abs(workUrl(work.id))}#edition`,
-          bookFormat: 'https://schema.org/Paperback',
-          name: ed.title ?? d.title,
-          isbn: ed.isbn13,
-          translator: ed.translator ? { '@type': 'Person', name: ed.translator } : undefined,
-          publisher: ed.publisher ? { '@type': 'Organization', name: ed.publisher } : undefined,
-          datePublished: ed.year ? String(ed.year) : undefined,
-          inLanguage: 'en',
-        }
-      : undefined,
+    workExample: (() => {
+      const eds = [ed, ...d.otherEditions].filter((e): e is NonNullable<typeof ed> => Boolean(e?.isbn13));
+      if (!eds.length) return undefined;
+      const items = eds.map((e, i) => ({
+        '@type': 'Book', '@id': `${abs(workUrl(work.id))}#edition${i === 0 && e === ed ? '' : `-${e.isbn13}`}`,
+        bookFormat: 'https://schema.org/Paperback',
+        name: e.title ?? d.title,
+        isbn: e.isbn13,
+        translator: e.translator ? { '@type': 'Person', name: e.translator } : undefined,
+        publisher: e.publisher ? { '@type': 'Organization', name: e.publisher } : undefined,
+        datePublished: e.year ? String(e.year) : undefined,
+        inLanguage: 'en',
+      }));
+      return items.length === 1 ? items[0] : items;
+    })(),
   };
 };
 

@@ -5,12 +5,13 @@ import { programUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
 const { programs } = await loadCatalog();
 const count = (p: (typeof programs)[number]) => new Set(p.data.segments.flatMap((s) => s.items.map((i) => i.work.id))).size;
+const numberWord = (n: number) => ['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve'][n] ?? String(n);
 const kindLabel = { college: 'Four-year college curriculum', course: 'Course sequence', series: 'Published series', list: 'Reading list' };
 ---
-<Base title="The programs" description="The college Great Books curricula and canonical reading lists this site draws from, each in its own order." jsonld={breadcrumbs([{ name: 'Programs', path: '/programs/' }])}>
+<Base title="Great Books Reading Lists: The College Programs and Canons" suffix={false} description={`${programs.length} Great Books reading lists, from St. John's College and the Columbia Core to the Harvard Classics and Great Books of the Western World, each complete and in its own order.`} jsonld={breadcrumbs([{ name: 'Programs', path: '/programs/' }])}>
   <section class="wrap head page-open">
     <h1 class="italic">The programs</h1>
-    <p class="lede">Nine reading lists, from four-year college curricula to the published canons that shaped them. Each page keeps the program's own order.</p>
+    <p class="lede">{numberWord(programs.length)} reading lists, from four-year college curricula to the published canons that shaped them. Each page keeps the program's own order.</p>
   </section>
   <section class="wrap">
     <ol class="programs">

@@ -1,17 +1,25 @@
 ---
 import Base from '~/layouts/Base.astro';
 import { GA4_ID } from '~/lib/analytics';
+import { NEWSLETTER_USER } from '~/lib/newsletter';
 ---
 <Base title="Privacy" description="What The Great Books collects about visitors, which is very little.">
   <article class="wrap page page-open" data-pagefind-body data-pagefind-filter="type:Page">
     <h1 class="italic" data-pagefind-meta="title">What we collect</h1>
     <div class="prose set-hold"><span class="visually-hidden" data-pagefind-meta="type:Page"></span>
-      <p class="lede">There are no accounts, no comments and no newsletter. The site is static pages.</p>
+      <p class="lede">There are no accounts and no comments{NEWSLETTER_USER ? ', and the only thing you can give us is an email address, if you subscribe' : ' and no newsletter'}. The site is static pages.</p>
       <h2>Analytics</h2>
       {GA4_ID ? (
         <p>We use Google Analytics 4 with IP anonymisation to count visits and to see which buy links are used, so we can tell which guides are useful. Google sets cookies for this. You can block them with your browser's settings or an extension and the site works exactly the same.</p>
       ) : (
         <p>We use Cloudflare Web Analytics, which counts page views without cookies and without identifying you.</p>
+      )}
+      {GA4_ID && <p>Cloudflare Web Analytics also counts page views, without cookies and without identifying you.</p>}
+      {NEWSLETTER_USER && (
+        <>
+          <h2>Newsletter</h2>
+          <p>If you subscribe we keep your email address and nothing else, to send the weekly email. It is held by Buttondown, which sends it for us; we never sell or share it. Every email has a one-click unsubscribe link, and unsubscribing deletes you from the list.</p>
+        </>
       )}
       <h2>Affiliate links</h2>
       <p>When you click a buy link, Amazon or Bookshop.org may set their own cookies so they can attribute a purchase to this site. Their privacy policies govern what they do with that.</p>

@@ -17,3 +17,4 @@ corpus/
 
 # Impeccable live-mode state: a local pid and port, never shared
 .impeccable/live/
+reports/

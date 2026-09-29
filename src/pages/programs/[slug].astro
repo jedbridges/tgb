@@ -38,8 +38,17 @@ const itemList = {
   '@context': 'https://schema.org', '@type': 'ItemList', name: `${p.name} reading list`, numberOfItems: unique,
   itemListElement: allWorks.slice(0, 100).map((w, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(workUrl(w.id)), name: w.data.title })),
 };
+/*
+ * People search for these lists by name: "st johns college reading list", "harvard classics
+ * list", "great books of the western world list". The title says the name, the word "list"
+ * and the one fact that makes this page better than a PDF, that it is complete and in order.
+ */
+const listName = /\blist$/i.test(p.name) ? p.name : `${p.name} Reading List`;
+const titleLong = `${listName}: All ${unique} Books in Order`;
+const pageTitle = titleLong.length <= 65 ? titleLong : `${p.name}: All ${unique} Books in Order`;
+const pageDescription = `The complete ${listName.replace(/Reading List$/, 'reading list')}: all ${unique} books in the program's own order, with a guide to each and the translation to buy.`;
 ---
-<Base title={`${p.name} reading list`} description={`Every book on the ${p.name} list, in the program's own order, with summaries and where to buy each one. ${unique} works.`}
+<Base title={pageTitle} suffix={false} description={pageDescription}
   jsonld={[itemList, ...segmentLists, breadcrumbs([{ name: 'Programs', path: '/programs/' }, { name: p.name, path: programUrl(program.id) }])]}>
   <article data-pagefind-body data-pagefind-filter="type:Program">
     <span class="visually-hidden" data-pagefind-meta="type:Program"></span>

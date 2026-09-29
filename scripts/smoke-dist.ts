@@ -104,4 +104,46 @@ if (!site) {
     fail(`sitemap-0.xml does not use ${site}`);
   } else if (existsSync(sitemap)) ok('sitemap uses the configured origin');
 }
+/*
+ * Search-facing structure. Each check guards a change made to earn search traffic, and
+ * each fails quietly in the browser if it regresses, so it is caught here instead.
+ */
+{
+  const noindexed = new Set<string>();
+  let titleLong = 0, picksMissing = 0, guided = 0, placementMissing = 0;
+  const pathOf = (p: string) => '/' + p.slice(dist.length + 1).replace(/index\.html$/, '');
+  for (const p of pages) {
+    const html = readFileSync(p, 'utf8');
+    if (/<meta name="robots" content="noindex/.test(html)) noindexed.add(pathOf(p));
+    const title = html.match(/<title>([^<]*)<\/title>/)?.[1] ?? '';
+    // Entities count as one character on a results page. A work whose own name is longer
+    // than a results line is allowed its name; what is caught is a phrase appended past it.
+    const appended = /: Best (Translation|Edition)$|: All \d+ Books in Order$| · The Great Books$/.test(title);
+    if (!noindexed.has(pathOf(p)) && appended && title.replace(/&[a-z#0-9]+;/gi, 'x').length > 70) titleLong++;
+    if (/data-affiliate=/.test(html) && /<a [^>]*data-affiliate=(?![^>]*data-placement=)[^>]*>/.test(html)) placementMissing++;
+    if (books.includes(p) && !noindexed.has(pathOf(p))) {
+      guided++;
+      // Every guided page with a named edition should answer "which translation".
+      if (/Our pick|No edition recommended yet/.test(html) === false) picksMissing++;
+    }
+  }
+  titleLong ? fail(`${titleLong} indexable pages have a <title> over 70 characters`) : ok('titles fit a results page');
+  picksMissing ? fail(`${picksMissing} guided book pages have no "Which translation" section`) : ok(`${guided} guided book pages answer which translation`);
+  placementMissing ? fail(`${placementMissing} pages have affiliate links without data-placement`) : ok('every affiliate link says where it sits');
+
+  // The sitemap and the robots tag must agree, or search is told two things at once.
+  const sm = join(dist, 'sitemap-0.xml');
+  if (existsSync(sm) && site) {
+    const listed = new Set([...readFileSync(sm, 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname));
+    const both = [...noindexed].filter((u) => listed.has(u));
+    both.length ? fail(`${both.length} noindexed pages are in the sitemap, e.g. ${both[0]}`) : ok('no noindexed page is in the sitemap');
+  }
+
+  // Finder duplicates ("type 2.astro", "satoshi-400 2.woff2") once shipped as public pages.
+  const dupes: string[] = [];
+  const scan = (dir: string) => { for (const f of readdirSync(dir)) { const q = join(dir, f); if (/ \d+(\.[a-z0-9]+)?$/i.test(f)) dupes.push(q); if (statSync(q).isDirectory()) scan(q); } };
+  scan(dist);
+  dupes.length ? fail(`${dupes.length} Finder duplicate files in dist, e.g. ${dupes[0]}`) : ok('no Finder duplicates in dist');
+  existsSync(join(dist, 'favicon.ico')) ? ok('favicon.ico present') : fail('favicon.ico missing');
+}
 if (process.exitCode) process.exit(1);

@@ -1,4 +1,5 @@
 ---
+import Signup from '~/components/Signup.astro';
 import { getCollection } from 'astro:content';
 import Base from '~/layouts/Base.astro';
 import BookCard from '~/components/BookCard.astro';
@@ -71,6 +72,7 @@ const HEADLINE_WORDS = [
         <a class="btn btn--accent" href={url('/books/')}>Browse the shelf</a>
         <button class="btn" type="button" data-open-search>Search inside every book</button>
       </div>
+      <p class="hero__aside ui"><a href={url('/translations/')}>Which translation? Our pick for every book →</a></p>
     </div>
   </section>
 
@@ -126,6 +128,7 @@ const HEADLINE_WORDS = [
       ))}
     </ul>
   </section>
+  <div class="wrap"><Signup from="home" /></div>
 </Base>
 <script>
   // The headline names what is on the shelf. It is decoration only in the sense that the
@@ -162,6 +165,9 @@ const HEADLINE_WORDS = [
   }
 </script>
 <style>
+  .hero__aside { font-size: var(--step--1); }
+  .hero__aside a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--edge); }
+  .hero__aside a:hover { color: var(--accent); border-color: currentColor; }
   /* The hero is sized so the first shelf breaks the fold: the section heading and the top
      of the covers sit just inside the viewport, which shows the product and says there is
      more below without a scroll cue. min-height, not height, so short and landscape

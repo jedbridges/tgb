@@ -12,7 +12,7 @@
  *
  *   npx tsx scripts/build-og.ts
  */
-import { writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import sharp from 'sharp';
 import { RED, CREAM, mark, leaf, LEAF_W, LEAF_H, markScaleForWidth, markHeightForWidth, loadFonts, setText } from './lib/brand.ts';
 
@@ -58,6 +58,19 @@ await sharp(Buffer.from(svg)).png({ compressionLevel: 9 }).toFile('public/og-def
  * leaf alone, which is nearly square, fills the space and still reads as a page. The home
  * screen icon is 180 pixels and has room for the whole mark.
  */
+function ico(images: { px: number; png: Buffer }[]): Buffer {
+  const head = Buffer.alloc(6 + 16 * images.length);
+  head.writeUInt16LE(0, 0); head.writeUInt16LE(1, 2); head.writeUInt16LE(images.length, 4);
+  let offset = head.length;
+  images.forEach(({ px, png }, i) => {
+    const e = 6 + 16 * i;
+    head.writeUInt8(px % 256, e); head.writeUInt8(px % 256, e + 1);
+    head.writeUInt16LE(1, e + 4); head.writeUInt16LE(32, e + 6);
+    head.writeUInt32LE(png.length, e + 8); head.writeUInt32LE(offset, e + 12);
+    offset += png.length;
+  });
+  return Buffer.concat([head, ...images.map((i) => i.png)]);
+}
 const tabIcon = (size: number) => {
   const w = size * 0.58;
   const x = (size - w) / 2;
@@ -81,6 +94,10 @@ writeFileSync('public/favicon.svg', tabIcon(64));
 // already cached the old drawing is more likely to pick up a file it has never seen.
 for (const px of [16, 32, 48]) await sharp(Buffer.from(tabIcon(px * 4))).resize(px, px).png().toFile(`public/favicon-${px}.png`);
 await sharp(Buffer.from(appIcon(180))).png().toFile('public/apple-touch-icon.png');
+// Browsers, feed readers and crawlers still ask for /favicon.ico whatever the <link> tags
+// say, and a 404 there was the most requested missing file on the site. An .ico may hold
+// PNGs directly, so it is the same three rasters in a six-byte header and a directory.
+writeFileSync('public/favicon.ico', ico([16, 32, 48].map((px) => ({ px, png: readFileSync(`public/favicon-${px}.png`) }))));
 
 const meta = await sharp('public/og-default.png').metadata();
 console.log(

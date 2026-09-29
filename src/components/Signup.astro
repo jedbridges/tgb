@@ -1,0 +1,41 @@
+---
+/*
+ * One way back. A reader who lands from search on one book and leaves has earned the site
+ * one chance at a sale; a subscriber gives it one a week. It is a plain form posting to
+ * Buttondown, with no script and nothing loaded from them until someone subscribes, and it
+ * renders nothing at all until PUBLIC_BUTTONDOWN_USER is set.
+ */
+import { NEWSLETTER_USER } from '~/lib/newsletter';
+interface Props { from: string }
+const { from } = Astro.props;
+---
+{NEWSLETTER_USER && (
+  <aside class="signup" aria-labelledby={`signup-h-${from}`} data-pagefind-ignore>
+    <div class="signup__text">
+      <h2 class="signup__h" id={`signup-h-${from}`}>One great book a week</h2>
+      <p class="signup__p">Why it matters, how to read it, and which translation to get. One email, every Sunday. Unsubscribe in one click.</p>
+    </div>
+    <form class="signup__form" action={`https://buttondown.com/api/emails/embed-subscribe/${NEWSLETTER_USER}`} method="post" target="_blank" data-signup={from}>
+      <label class="visually-hidden" for={`signup-email-${from}`}>Email address</label>
+      <input id={`signup-email-${from}`} type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+      <input type="hidden" name="tag" value={`from-${from}`} />
+      <button class="btn btn--accent" type="submit">Subscribe</button>
+    </form>
+  </aside>
+)}
+<style>
+  .signup { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 24rem); gap: var(--s2) var(--s4); align-items: end; padding-block: var(--s3); border-top: var(--rule-section); }
+  .signup__h { font-style: italic; font-size: var(--step-2); }
+  .signup__p { margin-top: var(--s0); color: var(--ink-soft); max-width: 46ch; line-height: var(--lh-prose); text-wrap: pretty; }
+  .signup__form { display: flex; gap: var(--s-1); }
+  .signup__form input[type='email'] {
+    flex: 1; min-width: 0; min-height: 44px; padding: 0 0.9em; border-radius: 3px;
+    border: 1px solid var(--ink); background: var(--paper-bright, transparent); color: var(--ink-strong);
+    font-family: var(--font-ui); font-size: var(--step--1);
+  }
+  @media (max-width: 700px) {
+    .signup { grid-template-columns: 1fr; }
+    .signup__form { flex-direction: column; }
+    .signup__form .btn { min-height: 52px; }
+  }
+</style>

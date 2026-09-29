@@ -7,7 +7,7 @@ import SearchPalette from '~/components/SearchPalette.astro';
 import { GA4_ID } from '~/lib/analytics';
 interface Props {
   title: string; description: string; image?: string;
-  type?: 'website' | 'article' | 'book'; noindex?: boolean;
+  type?: 'website' | 'article' | 'book'; noindex?: boolean; suffix?: boolean;
   jsonld?: Record<string, unknown> | Record<string, unknown>[];
   bodyClass?: string;
 }
@@ -103,11 +103,19 @@ const { bodyClass, ...seo } = Astro.props;
     <script>
       import { track } from '~/lib/analytics';
 
-      // The click. Which book, which retailer, which page it was clicked from.
+      // The click. Which book, which retailer, which page, which spot on the page (the hero,
+      // the phone buy bar, the translation comparison, the translations list) and which
+      // edition. Placement is what says whether a new section earns its space.
       document.addEventListener('click', (e) => {
         const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[data-affiliate]');
         if (!a) return;
-        track('affiliate_click', { retailer: a.dataset.affiliate, work: a.dataset.work, page: location.pathname });
+        track('affiliate_click', { retailer: a.dataset.affiliate, work: a.dataset.work, page: location.pathname, placement: a.dataset.placement, edition: a.dataset.edition });
+      });
+
+      // A newsletter signup, and which page it came from.
+      document.addEventListener('submit', (e) => {
+        const f = (e.target as HTMLElement).closest<HTMLFormElement>('form[data-signup]');
+        if (f) track('newsletter_signup', { from: f.dataset.signup, page: location.pathname });
       });
 
       // And the denominator. A click count on its own says which books are popular; it
