@@ -2,7 +2,7 @@
 work: livy-history-of-rome
 section: "book-iii"
 heading: "Book III"
-order: 6
+order: 5
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/19725"
 edition: "The History of Rome, Books 1 to 8"
