@@ -2,7 +2,7 @@
 work: livy-history-of-rome
 section: "book-ii"
 heading: "Book II"
-order: 5
+order: 4
 source: gutenberg
 sourceUrl: "https://www.gutenberg.org/ebooks/19725"
 edition: "The History of Rome, Books 1 to 8"

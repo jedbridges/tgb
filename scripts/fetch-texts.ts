@@ -340,6 +340,17 @@ async function run(s: Source) {
     const re = new RegExp(s.skip, 'i'); const kept = sections.filter((x) => !re.test(x.heading));
     if (kept.length) sections = kept;
   }
+  // Livy's Book I carries only its summary under the book heading; the book itself follows,
+  // after the author's preface, as "Chapter I". A short Book section whose body turns up as
+  // Chapter I within the next two sections is one book: the summary joins the text there.
+  for (let i = 0; i < sections.length; i++) {
+    const b = sections[i];
+    if (!/^Book [IVXLC]+$/.test(b.heading) || words(b.body) > 1000) continue;
+    const j = sections.findIndex((x, k) => k > i && k <= i + 2 && x.heading === 'Chapter I');
+    if (j < 0) continue;
+    sections[j] = { ...sections[j], heading: b.heading, path: b.path, body: `${b.body}\n\n${sections[j].body}` };
+    sections.splice(i, 1);
+  }
   // A lone section has no structure to name, and its heading is whatever line preceded the
   // text (Hippolytus came out as "Of Euripides"); the work's own title is the honest one.
   if (sections.length === 1 && workTitle) sections[0] = { ...sections[0], heading: workTitle, path: workTitle };
