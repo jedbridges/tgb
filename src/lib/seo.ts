@@ -24,7 +24,7 @@ export const organizationLd = () => ({
   logo: { '@type': 'ImageObject', url: abs('/apple-touch-icon.png').replace(/\/$/, '') },
 });
 
-export const bookLd = (work: Work, author: Author, image?: string) => {
+export const bookLd = (work: Work, author: Author, image?: string, free?: { url: string; edition: string; translator?: string }) => {
   const d = work.data;
   const ed = d.recommendedEdition;
   return {
@@ -67,7 +67,23 @@ export const bookLd = (work: Work, author: Author, image?: string) => {
         datePublished: e.year ? String(e.year) : undefined,
         inLanguage: 'en',
       }));
-      return items.length === 1 ? items[0] : items;
+      /*
+       * A free edition is a workExample too, and the one an answer engine should be able
+       * to name when someone asks where to read the book for nothing. isAccessibleForFree
+       * is the field that says so; without it a free text looks like another thing to buy.
+       */
+      const all = free
+        ? [...items, {
+            '@type': 'Book', '@id': `${abs(workUrl(work.id))}#free`,
+            bookFormat: 'https://schema.org/EBook',
+            name: d.title,
+            url: free.url,
+            isAccessibleForFree: true,
+            translator: free.translator ? { '@type': 'Person', name: free.translator } : undefined,
+            inLanguage: 'en',
+          }]
+        : items;
+      return all.length === 1 ? all[0] : all;
     })(),
   };
 };

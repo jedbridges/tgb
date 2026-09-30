@@ -188,6 +188,28 @@ const texts = defineCollection({
   }),
 });
 
+/*
+ * Where a work can be read free, when the text is not hosted here.
+ *
+ * Link only: nothing in this file is ever downloaded, which is what keeps it apart from
+ * text-sources.yaml. Standard Ebooks and Project Gutenberg have already made the copyright
+ * judgement these entries rest on, and both are named so a reader knows where they are
+ * going before they click. Written by scripts/write-free.ts from the report that
+ * scripts/find-free.ts produces, then corrected by hand.
+ */
+const freeSources = defineCollection({
+  loader: file('src/content/free-sources.yaml'),
+  schema: z.object({
+    work: reference('works'),
+    source: z.enum(['standardebooks', 'gutenberg', 'wikisource', 'archive']),
+    url: z.string().url(),
+    /** Named the way the hosted texts name theirs: "Samuel Butler's prose translation, 1898". */
+    edition: z.string(),
+    translator: z.string().optional(),
+  }),
+});
+
 export const collections = {
+  freeSources,
   texts,
   difficulties, lengths, shelfNotes, works, authors, programs, themes, genres, eras, regions, languages };

@@ -1,0 +1,158 @@
+---
+/*
+ * Every book on the lists that can be read free and legally, in one place.
+ *
+ * Two kinds of row. A work whose text is hosted here opens on this site, beside the guide.
+ * Everything else points at Standard Ebooks or Project Gutenberg, who did the work of
+ * digitising it and of deciding it is out of copyright. Nothing here links to a "free PDF"
+ * of a book still in copyright, which is the thing this page must never become.
+ *
+ * It sells books rather than competing with them. A free text is nearly always an older
+ * translation, so each row also names the translation we would buy, with a link. A reader
+ * who has just read Butler's Iliad for nothing is the likeliest person on the site to want
+ * Lattimore's in print.
+ */
+import { getCollection } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import { loadCatalog, placeholderAuthor, yearShort } from '~/lib/catalog';
+import { amazonUrl } from '~/lib/affiliates';
+import { describeEdition, editionKey } from '~/lib/editions';
+import { loadFreeReads, SOURCE_NAME, upsellWorthIt } from '~/lib/free';
+import { authorUrl, workUrl, abs } from '~/lib/url';
+import { breadcrumbs } from '~/lib/seo';
+import Disclosure from '~/components/Disclosure.astro';
+import Signup from '~/components/Signup.astro';
+
+const { works, authors } = await loadCatalog();
+const free = await loadFreeReads();
+const eras = (await getCollection('eras')).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+
+const rows = works
+  .filter((w) => free.has(w.id))
+  .map((w) => {
+    const author = authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id);
+    const read = free.get(w.id)!;
+    return { w, author, read, pick: describeEdition(w, author.data.name, w.data.recommendedEdition) };
+  })
+  .sort((a, b) => a.w.data.year - b.w.data.year || a.w.data.title.localeCompare(b.w.data.title));
+
+const groups = eras.map((era) => ({ era, rows: rows.filter((r) => r.w.data.era.id === era.id) })).filter((g) => g.rows.length);
+const total = rows.length;
+const hereCount = rows.filter((r) => !r.read.external).length;
+
+const title = `Read the Great Books Free: ${total} Classics, Legally Online`;
+const description = `${total} books from the great college reading lists you can read free and legally right now, from Homer and Plato to Dante and Dostoevsky, with the edition to buy if you want to keep one.`;
+const itemList = {
+  '@context': 'https://schema.org', '@type': 'ItemList', name: 'The great books you can read free', numberOfItems: total,
+  itemListElement: rows.slice(0, 100).map((r, i) => ({
+    '@type': 'ListItem', position: i + 1, name: r.w.data.title,
+    url: r.read.external ? abs(workUrl(r.w.id)) : abs(r.read.url),
+  })),
+};
+---
+<Base title={title} suffix={false} description={description} jsonld={[itemList, breadcrumbs([{ name: 'Free', path: '/free/' }])]}>
+  <section class="wrap head page-open">
+    <h1 class="italic">Read them free</h1>
+    <p class="lede">
+      {total} of the books on these reading lists are out of copyright, which means you can read them today without paying anyone.
+      {' '}{hereCount} are on this site, set beside their guides; the rest are at Standard Ebooks and Project Gutenberg, who digitised them.
+    </p>
+    <p class="note">
+      What is free is almost always an older translation, and for Homer or Dante that is a real difference rather than a technicality.
+      Each book below names the translation we would actually buy, so you can read the free one first and decide.
+    </p>
+    <nav class="jump ui" aria-label="Eras">
+      {groups.map((g) => <a href={`#${g.era.id}`}>{g.era.data.label}</a>)}
+    </nav>
+  </section>
+
+  {groups.map((g) => (
+    <section class="wrap era" id={g.era.id} aria-labelledby={`${g.era.id}-h`}>
+      <h2 class="era__label" id={`${g.era.id}-h`}>{g.era.data.label}</h2>
+      <ol class="rows">
+        {g.rows.map(({ w, author, read, pick }) => (
+          <li class="row">
+            <p class="row__work">
+              <a class="row__title" href={workUrl(w.id)}>{w.data.title}</a>
+              <span class="row__by">by <a href={authorUrl(author.id)}>{author.data.name}</a><span class="row__year ui"> · {yearShort(w)}</span></span>
+            </p>
+            <p class="row__free">
+              <a class="btn row__read" href={read.url} data-free={w.id} data-source={read.where}
+                {...(read.external ? { target: '_blank', rel: 'noopener' } : {})}>
+                {read.external ? `Read at ${SOURCE_NAME[read.where]}` : 'Read it here'}
+                {read.external && <span class="visually-hidden">&#32;{w.data.title}, opens in a new tab</span>}
+              </a>
+              <span class="row__edition ui">{read.edition}</span>
+            </p>
+            <p class="row__buy">
+              {upsellWorthIt(w, read) ? (
+                <>
+                  <span class="row__buy-label ui">In print we recommend</span>
+                  <a class="row__buy-link" href={amazonUrl(pick.target)} target="_blank" rel="sponsored noopener"
+                    data-affiliate="amazon" data-work={w.id} data-placement="free" data-edition={editionKey(w.data.recommendedEdition)}>
+                    {pick.short}<span class="visually-hidden">: {w.data.title} on Amazon, opens in a new tab</span>
+                  </a>
+                </>
+              ) : (
+                <span class="row__buy-label ui">The free text is the one we recommend</span>
+              )}
+            </p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+
+  <div class="wrap"><Signup from="free" /></div>
+  <section class="wrap foot">
+    <p class="foot__note">
+      Every link goes to a text whose copyright has expired in the United States, hosted by
+      <a href="https://standardebooks.org" rel="noopener" target="_blank">Standard Ebooks</a> or
+      <a href="https://www.gutenberg.org" rel="noopener" target="_blank">Project Gutenberg</a>, both of which are worth supporting.
+      Books still in copyright are not here and will not be.
+    </p>
+    <Disclosure />
+  </section>
+</Base>
+<style>
+  .head { padding-block: var(--s4) var(--s2); display: grid; gap: var(--s1); }
+  .head h1 { font-size: var(--step-4); }
+  .lede { font-size: var(--step-1); color: var(--ink-soft); max-width: 54ch; text-wrap: pretty; }
+  .note { color: var(--ink-soft); font-size: var(--step--1); line-height: var(--lh-prose); max-width: 56ch; text-wrap: pretty; }
+  .jump { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s1); margin-top: var(--s1); font-size: var(--step--1); }
+  .jump a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--edge); }
+  .jump a:hover { color: var(--accent); border-color: currentColor; }
+  .era { padding-block: var(--s2); scroll-margin-top: var(--stick); }
+  .era__label { font-style: italic; font-size: var(--step-2); border-bottom: var(--rule-section); padding-bottom: var(--s0); }
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .row {
+    display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 15rem) minmax(0, 1fr); gap: var(--s0) var(--s3);
+    align-items: start; padding-block: var(--s1); border-bottom: 1px solid var(--edge);
+  }
+  .row p { margin: 0; min-width: 0; }
+  .row__work { display: grid; gap: 2px; }
+  .row__title { font-size: var(--step-0); font-style: italic; color: var(--ink-strong); text-decoration: none; }
+  .row__title:hover { color: var(--accent); }
+  .row__by { color: var(--ink-soft); font-size: var(--step--1); }
+  .row__by a { color: inherit; }
+  .row__year { color: var(--ink-mute); font-size: var(--step--2); }
+  .row__free { display: grid; gap: var(--s-1); justify-items: start; }
+  .row__read { font-size: var(--step--2); padding: 0.55em 1em; }
+  .row__edition { color: var(--ink-mute); font-size: var(--step--2); line-height: 1.45; }
+  .row__buy { display: grid; gap: 2px; align-content: start; }
+  .row__buy-label { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; }
+  .row__buy-link { color: var(--accent); font-size: var(--step--1); text-decoration: none; border-bottom: 1px solid currentColor; justify-self: start; }
+  .foot { padding-block: var(--s3); display: grid; gap: var(--s1); border-top: var(--rule); }
+  .foot__note { color: var(--ink-soft); font-size: var(--step--1); line-height: var(--lh-prose); max-width: 68ch; text-wrap: pretty; }
+  .foot__note a { color: var(--ink-strong); }
+  @media (max-width: 860px) {
+    .row { grid-template-columns: minmax(0, 1fr) auto; }
+    .row__free { grid-column: 2; grid-row: 1; justify-items: end; text-align: right; }
+    .row__buy { grid-column: 1 / -1; grid-row: 2; }
+  }
+  @media (max-width: 520px) {
+    .row { grid-template-columns: 1fr; }
+    .row__free { grid-column: 1; grid-row: 2; justify-items: start; text-align: left; }
+    .row__buy { grid-row: 3; }
+  }
+</style>

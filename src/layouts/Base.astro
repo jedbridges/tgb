@@ -118,6 +118,13 @@ const { bodyClass, ...seo } = Astro.props;
         if (f) track('newsletter_signup', { from: f.dataset.signup, page: location.pathname });
       });
 
+      // A free read. Which book, and whether they stayed here or went to Gutenberg. The
+      // free page earns its place only if these turn into buy clicks later.
+      document.addEventListener('click', (e) => {
+        const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[data-free]');
+        if (a) track('free_read', { work: a.dataset.free, source: a.dataset.source, page: location.pathname });
+      });
+
       // And the denominator. A click count on its own says which books are popular; it
       // cannot say which pages persuade, because a page seen ten times and clicked twice
       // and a page seen a thousand times and clicked twenty look identical. This reports

@@ -11,10 +11,11 @@ import FormPattern from '~/components/FormPattern.astro';
 import { formFamily } from '~/lib/form';
 import ProgramBadges from '~/components/ProgramBadges.astro';
 import { placeholderAuthor, authorOf, coverFor, tintVars, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, hasGuide, guidedCount, loadCatalog } from '~/lib/catalog';
-import { authorUrl, taxUrl, url, workUrl, textUrl } from '~/lib/url';
+import { abs, authorUrl, taxUrl, url, workUrl, textUrl } from '~/lib/url';
 import { bookLd, quotationsLd, breadcrumbs } from '~/lib/seo';
 import { amazonUrl, bookshopUrl } from '~/lib/affiliates';
 import { describeEdition, editionKey, isTranslated } from '~/lib/editions';
+import { freeReadFor, SOURCE_NAME } from '~/lib/free';
 import { toneFor } from '~/lib/tone';
 
 export async function getStaticPaths() {
@@ -35,6 +36,10 @@ const count = await programCount(work.id);
 /* A public domain text, when the fetch script has written one for this work. */
 const textSections = (await getCollection('texts')).filter((t) => t.data.work.id === work.id);
 const hasText = textSections.length > 0;
+// When we do not host the text, someone else may still have it out of copyright.
+const freeRead = hasText ? undefined : await freeReadFor(work.id);
+// For the markup, a hosted text counts as free as much as an external one does.
+const freeHere = freeRead ?? (hasText ? { url: abs(textUrl(work.id)), edition: textSections[0].data.edition, translator: textSections[0].data.translator } : undefined);
 const guided = await guidedCount();
 /*
  * A stub is a catalogue record: the synopsis, the edition and the buy links, on the same
@@ -102,7 +107,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
 ---
 <Base title={pageTitle} suffix={!hasGuideHere} description={description} type="book" image={og}
   noindex={!hasGuideHere}
-  jsonld={[bookLd(work, author, og ? new URL(og, Astro.site).toString() : undefined), ...quotationsLd(work, author), breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }])]}>
+  jsonld={[bookLd(work, author, og ? new URL(og, Astro.site).toString() : undefined, freeHere), ...quotationsLd(work, author), breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }])]}>
   <article class="work" data-pagefind-body data-pagefind-filter="type:Book" data-work-view={work.id} data-work-guide={hasGuideHere ? "yes" : "no"} data-work-lists={String(count)}>
     {searchMeta.map(([k, v]) => <span class="visually-hidden" data-pagefind-meta={`${k}:${v}`}></span>)}
     {searchFilters.map(([k, v]) => <span class="visually-hidden" data-pagefind-filter={`${k}:${v}`}></span>)}
@@ -214,8 +219,15 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
         {hasText && (
           <section>
             <h3 class="side__h">Read the text</h3>
-            <p class="side__text"><a class="btn" href={textUrl(work.id)}>Read {d.title} online, free →</a></p>
+            <p class="side__text"><a class="btn" href={textUrl(work.id)} data-free={work.id} data-source="here">Read {d.title} online, free →</a></p>
             <p class="side__note ui">{textSections[0].data.edition}, in {textSections.length} parts. Not the assigned edition; a way to find a passage.</p>
+          </section>
+        )}
+        {freeRead && (
+          <section>
+            <h3 class="side__h">Read the text</h3>
+            <p class="side__text"><a class="btn" href={freeRead.url} target="_blank" rel="noopener" data-free={work.id} data-source={freeRead.where}>Read it free at {SOURCE_NAME[freeRead.where]} →</a></p>
+            <p class="side__note ui">{freeRead.edition}. Out of copyright, and not the assigned edition; <a href={url('/free/')}>every free book</a>.</p>
           </section>
         )}
         <section>

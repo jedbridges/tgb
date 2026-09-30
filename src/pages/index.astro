@@ -72,7 +72,7 @@ const HEADLINE_WORDS = [
         <a class="btn btn--accent" href={url('/books/')}>Browse the shelf</a>
         <button class="btn" type="button" data-open-search="ask">Ask the books a question</button>
       </div>
-      <p class="hero__aside ui"><a href={url('/translations/')}>Which translation? Our pick for every book →</a></p>
+      <p class="hero__aside ui"><a href={url('/translations/')}>Which translation? Our pick for every book →</a> <a href={url('/free/')}>Which are free to read? →</a></p>
     </div>
   </section>
 
@@ -165,7 +165,7 @@ const HEADLINE_WORDS = [
   }
 </script>
 <style>
-  .hero__aside { font-size: var(--step--1); margin-top: var(--s1); }
+  .hero__aside { font-size: var(--step--1); margin-top: var(--s1); display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s2); }
   .hero__aside a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--edge); }
   .hero__aside a:hover { color: var(--accent); border-color: currentColor; }
   /* The hero is sized so the first shelf breaks the fold: the section heading and the top
