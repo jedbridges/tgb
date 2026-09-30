@@ -73,7 +73,7 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
         <circle cx="200" cy="200" r="155" fill="none" stroke-width="1.1" />
         <circle cx="200" cy="200" r="108" fill="none" stroke-width="1.1" />
         <!-- The mark, where a seal carries its device. -->
-        <g transform="translate(144.5, 158) scale(0.0661)">
+        <g class="seal__device" transform="translate(144.5, 158) scale(0.0661)">
           <path d="M1681.625,391.685c-220.914-220.913-579.086-220.913-800,0v-226c220.914-220.913,579.086-220.913,800,0Z" />
           <path d="M1681.625,965.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z" />
           <path d="M1681.625,678.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z" />
@@ -121,6 +121,9 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
     --press-dark: light-dark(rgb(74 58 50 / 0.56), rgb(0 0 0 / 0.72));
     --press-light: light-dark(rgb(255 255 253 / 1), rgb(255 244 228 / 0.13));
     --press-recess: light-dark(rgb(74 58 50 / 0.030), rgb(0 0 0 / 0.11));
+    /* The floor of a pressed letter. Shaded only where the seal has room of its own: on a
+       narrow screen it sits behind the lede, and shaded letters there fight the words over them. */
+    --press-floor: var(--paper);
     position: relative;
     width: 100%;
     aspect-ratio: 1;
@@ -140,6 +143,18 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
   /* The face is the page. It exists only to bury the middle of each lip, which is what
      turns two offset copies into one pressed line. */
   .seal__face * { fill: var(--paper); stroke: var(--paper); }
+  /* Except the words and the device. Paper-filled, they were only their two lips, which at
+     rim size read as outlined letters rather than as letters: legible to someone who knew
+     what it said. The floor of a pressed letter sits in shade, so it gets some, opaque so
+     it still buries the lips. */
+  /* 761px matches the homepage, where below that width the seal moves behind the headline. */
+  @media (min-width: 761px) {
+    .seal { --press-floor: light-dark(color-mix(in oklab, var(--paper), var(--ink) 28%), color-mix(in oklab, var(--paper), black 32%)); }
+  }
+  .seal__lip--dark { --floor: var(--press-dark); }
+  .seal__lip--light { --floor: var(--press-light); }
+  .seal__face { --floor: var(--press-floor); }
+  .seal__rim, .seal__count, .seal__device path { fill: var(--floor); }
 
   /* The sheen.
      It used to be a fourth copy of every struck line, painted with an SVG gradient, so the

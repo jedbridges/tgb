@@ -16,7 +16,26 @@ export interface EditionInfo {
   editionName: string | null;
   /** The shortest label that tells two editions apart: the translator, else the editor, else the publisher. */
   short: string;
+  /** What a buy button says: "Get the Lattimore translation", or "Buy this edition" when the
+   *  name would not fit on one line. */
+  buttonLabel: string;
 }
+
+/**
+ * The name readers use for a translation is the translator's surname: "the Lattimore", "the
+ * Fagles". For a team it is the first of them, and a particle stays with its name, so Aubrey
+ * de Sélincourt is "the de Sélincourt translation".
+ */
+export function surname(name: string): string {
+  const first = name.split(/,|;| and | & /)[0].trim().replace(/\s+(Jr\.|Sr\.|II|III)$/, '');
+  const words = first.split(/\s+/);
+  let i = words.length - 1;
+  while (i > 0 && /^(de|du|da|di|del|della|van|von|der|den|la|le|ten|ter)$/.test(words[i - 1])) i--;
+  return words.slice(i).join(' ');
+}
+
+/** Past this a label wraps to two lines on a phone-width button and stops reading as a button. */
+const BUTTON_MAX = 32;
 
 /**
  * What an edition is actually called, in the order that tells a reader the most.
@@ -34,10 +53,22 @@ export function describeEdition(work: Work, authorName: string, ed: Edition | un
     : editor
       ? `${editor} edition`
       : ed?.publisher ? `${ed.publisher} edition` : null;
+  const specific = translator
+    ? `Get the ${surname(translator)} translation`
+    : editor
+      ? `Get the ${surname(editor)} edition`
+      : ed?.publisher ? `Get the ${ed.publisher.replace(/\s*\(.*?\)/g, '')} edition` : null;
+  const precise = Boolean(ed?.asin || isbn13ToAsin(ed?.isbn13));
+  const named = Boolean(ed && (ed.translator || ed.editor || ed.publisher));
+  // The full name is always printed just above the button, so a short button loses nothing.
+  const buttonLabel = precise && specific && specific.length <= BUTTON_MAX
+    ? specific
+    : precise && named ? 'Buy this edition' : named ? 'Find this edition' : 'Search Amazon';
   return {
+    buttonLabel,
     target: { title: ed?.title ?? work.data.title, author: authorName, isbn13: ed?.isbn13, asin: ed?.asin },
-    named: Boolean(ed && (ed.translator || ed.editor || ed.publisher)),
-    precise: Boolean(ed?.asin || isbn13ToAsin(ed?.isbn13)),
+    named,
+    precise,
     translator,
     editor,
     editionName,

@@ -13,7 +13,7 @@ import ProgramBadges from '~/components/ProgramBadges.astro';
 import { placeholderAuthor, authorOf, coverFor, tintVars, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, hasGuide, guidedCount, loadCatalog } from '~/lib/catalog';
 import { authorUrl, taxUrl, url, workUrl, textUrl } from '~/lib/url';
 import { bookLd, quotationsLd, breadcrumbs } from '~/lib/seo';
-import { amazonUrl } from '~/lib/affiliates';
+import { amazonUrl, bookshopUrl } from '~/lib/affiliates';
 import { describeEdition, editionKey, isTranslated } from '~/lib/editions';
 import { toneFor } from '~/lib/tone';
 
@@ -132,6 +132,16 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
       <div class="work__stage" style={tint || undefined} data-pagefind-ignore>
         <FormPattern family={family} id="form-stage" class="work__texture" />
         <Book3D work={work} authorName={author.data.name} width={230} as="button" tilt openable eager epigraph={epigraph} endpaper={family} />
+        {/* The desktop twin of the phone buy bar. The book stays pinned beside the guide as
+            it scrolls, so a buy action under it is always in reach. It stands down while
+            the hero buttons are on screen, so the two never compete. */}
+        <div class="stagebuy" id="stagebuy" hidden>
+          <p class="stagebuy__ed ui">{pick.named ? pick.editionName ?? pick.short : 'No edition recommended yet'}</p>
+          <p class="stagebuy__row">
+            <a class="btn btn--accent" href={amazonUrl(pick.target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id} data-placement="stage" data-edition={editionKey(d.recommendedEdition)}>{pick.buttonLabel.startsWith('Get the') ? 'Buy on Amazon' : pick.buttonLabel}<span class="visually-hidden">: {d.title}, opens in a new tab</span></a>
+            <a class="btn" href={bookshopUrl(pick.target)} target="_blank" rel="sponsored noopener" data-affiliate="bookshop" data-work={work.id} data-placement="stage" data-edition={editionKey(d.recommendedEdition)}>Bookshop.org<span class="visually-hidden">: {d.title}, opens in a new tab</span></a>
+          </p>
+        </div>
       </div>
     </header>
 
@@ -367,6 +377,14 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .work__stub p { color: var(--ink-soft); line-height: 1.6; }
   .work__stub-out { margin-top: var(--s1); }
   .work__stub-out a { color: var(--accent); font-family: var(--font-ui); font-size: var(--step--1); text-decoration: none; border-bottom: 1px solid currentColor; }
+  .stagebuy[hidden] { display: none; }
+  .stagebuy { display: grid; gap: var(--s-1); justify-items: center; text-align: center; width: 100%; max-width: 17rem; }
+  .stagebuy:not([hidden]) { animation: stagebuy-in 280ms var(--ease-out); }
+  @keyframes stagebuy-in { from { opacity: 0; transform: translateY(4px); } }
+  @media (prefers-reduced-motion: reduce) { .stagebuy:not([hidden]) { animation: none; } }
+  .stagebuy__ed { font-size: var(--step--2); color: var(--ink-soft); }
+  .stagebuy__row { display: grid; grid-template-columns: 1fr; gap: var(--s-1); width: 100%; }
+  .stagebuy__row .btn { width: 100%; font-size: var(--step--2); padding: 0.55em 1em; }
   .buybar {
     position: fixed; inset: auto 0 0 0; z-index: 30; display: none;
     justify-content: center; gap: var(--s1);
@@ -391,6 +409,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .buybar__close:hover { color: var(--ink-strong); background: var(--paper-bright); }
   @media (max-width: 420px) { .buybar__cta { padding-inline: 1.3em; } .buybar__title { font-size: var(--step-0); } }
   @media (max-width: 900px) {
+    .stagebuy { display: none; }
     .buybar:not([hidden]) { display: flex; }
     .work { padding-bottom: 7rem; }  /* clears the fixed buy bar */
     .work__hero { grid-template-columns: 1fr; gap: var(--s2); }
@@ -405,6 +424,18 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   }
 </style>
 <script>
+  // On a wide screen, a quiet buy block under the pinned book whenever the hero buttons are
+  // off screen: below the fold on arrival (the synopsis pushes them past a laptop's first
+  // screen) and above it once the reader is into the guide. Never both at once.
+  const heroBuy = document.getElementById('buy-inline');
+  const stageBuy = document.getElementById('stagebuy');
+  if (heroBuy && stageBuy && 'IntersectionObserver' in window && matchMedia('(min-width: 901px)').matches) {
+    new IntersectionObserver(
+      ([entry]) => { stageBuy.hidden = entry.isIntersecting; },
+      { rootMargin: '-72px 0px 0px 0px' },
+    ).observe(heroBuy);
+  }
+
   // The sticky buy bar arrives once the reader has read the argument for the book, not the
   // moment the inline buttons scroll away: it follows "Why it's on the list" (or, on a page
   // without one, the inline buttons) out of the viewport, and a tap on its close keeps it

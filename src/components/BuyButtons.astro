@@ -6,7 +6,7 @@ import type { Work } from '~/lib/catalog';
 interface Props { work: Work; authorName: string; compact?: boolean }
 const { work, authorName, compact = false } = Astro.props;
 const ed = work.data.recommendedEdition;
-const { target, named, precise, translator, editor, editionName } = describeEdition(work, authorName, ed);
+const { target, named, translator, editor, buttonLabel } = describeEdition(work, authorName, ed);
 const edKey = editionKey(ed);
 ---
 <div class:list={['buy', { 'buy--compact': compact }]}>
@@ -30,7 +30,7 @@ const edKey = editionKey(ed);
 
   <div class="buy__row">
     <a class="btn btn--accent" href={amazonUrl(target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id} data-placement="hero" data-edition={edKey}>
-      {precise && editionName ? `Get the ${editionName}` : named ? 'Find this edition' : 'Search Amazon'}
+      {buttonLabel}
       <svg class="btn__ext" width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 5 7M8 10.5H1.5V4" stroke-linecap="round"/></svg>
       <span class="visually-hidden">&#32;on Amazon, opens in a new tab</span>
     </a>
