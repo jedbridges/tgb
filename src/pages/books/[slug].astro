@@ -5,13 +5,16 @@ import Base from '~/layouts/Base.astro';
 import Book3D from '~/components/Book3D.astro';
 import BookCard from '~/components/BookCard.astro';
 import BuyButtons from '~/components/BuyButtons.astro';
+import EditionPicks from '~/components/EditionPicks.astro';
+import Signup from '~/components/Signup.astro';
 import FormPattern from '~/components/FormPattern.astro';
 import { formFamily } from '~/lib/form';
 import ProgramBadges from '~/components/ProgramBadges.astro';
 import { placeholderAuthor, authorOf, coverFor, tintVars, relatedWorks, yearLabel, lengthLabel, lengthHint, difficultyLabel, programCount, hasGuide, guidedCount, loadCatalog } from '~/lib/catalog';
 import { authorUrl, taxUrl, url, workUrl, textUrl } from '~/lib/url';
 import { bookLd, quotationsLd, breadcrumbs } from '~/lib/seo';
-import { amazonUrl } from '~/lib/affiliates';
+import { amazonUrl, bookshopUrl } from '~/lib/affiliates';
+import { describeEdition, editionKey, isTranslated } from '~/lib/editions';
 import { toneFor } from '~/lib/tone';
 
 export async function getStaticPaths() {
@@ -49,16 +52,6 @@ const [era, genre, region, language] = await Promise.all([
 ]);
 const themeEntries = (await Promise.all(d.themes.map((t) => getEntry('themes', t.id)))).filter(Boolean);
 const keyThemeEntries = await Promise.all(d.keyThemes.map(async (k) => ({ ...k, entry: await getEntry('themes', k.theme.id) })));
-/*
- * Every book page is indexable.
- *
- * 641 of the 689 used to carry noindex because they have no written guide yet, which hid
- * 93% of the site's buy buttons from search: the pages that earn the money were precisely
- * the ones search could not reach. They are not thin. Each carries a synopsis, verified
- * dates, its themes, its difficulty, which of the nine programs assign it, a named
- * recommended edition and, for most, a verified ISBN, which is more than a great many
- * pages that rank. A guide makes the page better; it does not make it legitimate.
- */
 const isStub = d.status === 'stub';
 /*
  * What search knows about this page. Filters carry ids so the browse island's facet
@@ -88,10 +81,26 @@ const factWords = [era?.data.label, genre?.data.label, language?.data.label, len
 const assignmentWords = [...new Set(mine.flatMap((x) => [x.program.data.name, x.program.data.shortName, ...x.program.data.aliases, x.segment.label]))].join(', ');
 const first = d.highlights[0];
 const epigraph = first ? { text: first.text.length > 150 ? first.text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : first.text, source: first.location } : undefined;
-const description = d.synopsis.length > 158 ? d.synopsis.slice(0, 155).replace(/\s+\S*$/, '') + '…' : d.synopsis;
+/*
+ * Title and description answer the question a buyer searches: which translation. "The Iliad
+ * by Homer: Guide and Best Translation" matches "best translation of the iliad" and "iliad
+ * guide" at once. The site name is dropped here because it pushed these past the ~60
+ * characters a results page shows; the brand is in og:site_name and the URL.
+ */
+const noun = isTranslated(work) ? 'Translation' : 'Edition';
+const pick = describeEdition(work, author.data.name, d.recommendedEdition);
+const others = d.otherEditions.map((e) => describeEdition(work, author.data.name, e)).filter((e) => e.named).map((e) => e.short);
+const titleFull = `${d.title} by ${author.data.name}: Guide and Best ${noun}`;
+const titleShort = `${d.title} by ${author.data.name}: Best ${noun}`;
+const pageTitle = !hasGuideHere ? `${d.title} by ${author.data.name}` : !pick.named ? `${d.title} by ${author.data.name}: Reading Guide` : titleFull.length <= 65 ? titleFull : titleShort.length <= 65 ? titleShort : `${d.title}: Best ${noun}`.length <= 65 ? `${d.title}: Best ${noun}` : d.title;
+const clip = (s: string, n: number) => (s.length > n ? s.slice(0, n - 3).replace(/\s+\S*$/, '') + '…' : s);
+const pickLine = pick.named && pick.short !== d.title
+  ? `Best ${noun.toLowerCase()} of ${d.title}: ${pick.short}${d.recommendedEdition?.publisher && pick.short !== d.recommendedEdition.publisher ? ` (${d.recommendedEdition.publisher})` : ''}.${others.length ? ` Also good: ${others.join(', ')}.` : ''} `
+  : '';
+const description = clip(pickLine + d.synopsis, 158);
 const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'he', french: 'fr', german: 'de', italian: 'it', spanish: 'es', russian: 'ru' };
 ---
-<Base title={`${d.title} by ${author.data.name}`} description={description} type="book" image={og}
+<Base title={pageTitle} suffix={!hasGuideHere} description={description} type="book" image={og}
   noindex={!hasGuideHere}
   jsonld={[bookLd(work, author, og ? new URL(og, Astro.site).toString() : undefined), ...quotationsLd(work, author), breadcrumbs([{ name: 'Books', path: '/books/' }, { name: d.title, path: workUrl(work.id) }])]}>
   <article class="work" data-pagefind-body data-pagefind-filter="type:Book" data-work-view={work.id} data-work-guide={hasGuideHere ? "yes" : "no"} data-work-lists={String(count)}>
@@ -123,6 +132,16 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
       <div class="work__stage" style={tint || undefined} data-pagefind-ignore>
         <FormPattern family={family} id="form-stage" class="work__texture" />
         <Book3D work={work} authorName={author.data.name} width={230} as="button" tilt openable eager epigraph={epigraph} endpaper={family} />
+        {/* The desktop twin of the phone buy bar. The book stays pinned beside the guide as
+            it scrolls, so a buy action under it is always in reach. It stands down while
+            the hero buttons are on screen, so the two never compete. */}
+        <div class="stagebuy" id="stagebuy" hidden>
+          <p class="stagebuy__ed ui">{pick.named ? pick.editionName ?? pick.short : 'No edition recommended yet'}</p>
+          <p class="stagebuy__row">
+            <a class="btn btn--accent" href={amazonUrl(pick.target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id} data-placement="stage" data-edition={editionKey(d.recommendedEdition)}>{pick.buttonLabel.startsWith('Get the') ? 'Buy on Amazon' : pick.buttonLabel}<span class="visually-hidden">: {d.title}, opens in a new tab</span></a>
+            <a class="btn" href={bookshopUrl(pick.target)} target="_blank" rel="sponsored noopener" data-affiliate="bookshop" data-work={work.id} data-placement="stage" data-edition={editionKey(d.recommendedEdition)}>Bookshop.org<span class="visually-hidden">: {d.title}, opens in a new tab</span></a>
+          </p>
+        </div>
       </div>
     </header>
 
@@ -132,9 +151,9 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
           <section class="work__stub">
             <h2 class="work__h">No reading guide yet</h2>
             <p>The catalogue entry above is complete: the dates, the form, the themes and every program that assigns <em>{d.title}</em> are verified against each program's published list.</p>
-            <p>What is missing is the part that takes real work: the summary, the key passages, and a recommended translation. {hasNamedEdition
-              ? <>The edition named below is the one most programs assign, so the buy links are useful already.</>
-              : <>That includes a recommended translation, so for now the buy links search the retailer rather than pointing at a chosen edition.</>}</p>
+            <p>What is missing is the part that takes real work: the summary, the key passages and the questions to read with. {hasNamedEdition
+              ? <>The edition we recommend is named above, with the reason, so the buy links already point at a chosen {noun.toLowerCase()}.</>
+              : <>We have not chosen a {noun.toLowerCase()} yet either, so for now the buy links search the retailer rather than pointing at a chosen edition.</>}</p>
             <p class="work__stub-out"><a href={url('/books/') + '?guide=yes'}>Browse the {guided} works that do have a guide →</a></p>
           </section>
         ) : (
@@ -158,6 +177,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
                 </dl>
               </section>
             )}
+            <EditionPicks work={work} authorName={author.data.name} />
             <section class="prose work__body">
               <Content />
             </section>
@@ -214,10 +234,10 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
             <li><a class="tag tag--facet" href={url(`/books/`) + `?length=${d.length}`}>{lengthLabel[d.length]}</a></li>
           </ul>
         </section>
-        {d.otherEditions.length > 0 && (
+        {hasGuideHere && pick.named && others.length > 0 && (
           <section>
-            <h3 class="side__h">Other editions</h3>
-            <ul class="editions ui">{d.otherEditions.map((e) => <li>{e.title ?? d.title}{e.translator && `, trans. ${e.translator}`}{e.publisher && ` (${e.publisher})`}{e.why && <span class="editions__why"> {e.why}</span>}</li>)}</ul>
+            <h3 class="side__h">Editions</h3>
+            <p class="editions ui"><a href="#translation">Compare the {others.length + 1} {noun.toLowerCase()}s we recommend</a></p>
           </section>
         )}
       </aside>
@@ -229,7 +249,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
         <span class="buybar__ed">{d.recommendedEdition?.translator ? `${d.recommendedEdition.translator} translation` : 'No edition recommended yet'}</span>
       </span>
       <a class="btn btn--accent buybar__cta" href={amazonUrl({ title: d.recommendedEdition?.title ?? d.title, author: author.data.name, isbn13: d.recommendedEdition?.isbn13, asin: d.recommendedEdition?.asin })}
-         target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id}>Buy the book<span class="visually-hidden">&#32;{d.title} on Amazon, opens in a new tab</span></a>
+         target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id} data-placement="buybar" data-edition={editionKey(d.recommendedEdition)}>Buy the book<span class="visually-hidden">&#32;{d.title} on Amazon, opens in a new tab</span></a>
       <button class="buybar__close" type="button" data-buybar-close aria-label="Hide the buy bar">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 2l10 10M12 2 2 12" stroke-linecap="round"/></svg>
       </button>
@@ -243,6 +263,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
         </div>
       </section>
     )}
+    {hasGuideHere && <div class="wrap"><Signup from="book" /></div>}
   </article>
 </Base>
 <style>
@@ -349,14 +370,21 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .side__h { margin-bottom: var(--s1); font-family: var(--font-ui); font-size: var(--step--2); font-weight: var(--w-emph); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-soft); }
   .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s-1); }
     /* Markers hang in the margin so the editions keep the sidebar's left edge. */
-  .editions { margin: 0; padding-left: 0; color: var(--ink-soft); display: grid; gap: var(--s0); font-size: var(--step--2); }
-  .editions li { margin-left: 1.1em; }
-  .editions__why { color: var(--ink-mute); }
+  .editions { margin: 0; font-size: var(--step--1); }
+  .editions a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
   .related { padding-top: var(--s4); border-top: var(--rule); }
   .work__stub { display: grid; gap: var(--s1); max-width: var(--measure); }
   .work__stub p { color: var(--ink-soft); line-height: 1.6; }
   .work__stub-out { margin-top: var(--s1); }
   .work__stub-out a { color: var(--accent); font-family: var(--font-ui); font-size: var(--step--1); text-decoration: none; border-bottom: 1px solid currentColor; }
+  .stagebuy[hidden] { display: none; }
+  .stagebuy { display: grid; gap: var(--s-1); justify-items: center; text-align: center; width: 100%; max-width: 17rem; }
+  .stagebuy:not([hidden]) { animation: stagebuy-in 280ms var(--ease-out); }
+  @keyframes stagebuy-in { from { opacity: 0; transform: translateY(4px); } }
+  @media (prefers-reduced-motion: reduce) { .stagebuy:not([hidden]) { animation: none; } }
+  .stagebuy__ed { font-size: var(--step--2); color: var(--ink-soft); }
+  .stagebuy__row { display: grid; grid-template-columns: 1fr; gap: var(--s-1); width: 100%; }
+  .stagebuy__row .btn { width: 100%; font-size: var(--step--2); padding: 0.55em 1em; }
   .buybar {
     position: fixed; inset: auto 0 0 0; z-index: 30; display: none;
     justify-content: center; gap: var(--s1);
@@ -381,6 +409,7 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   .buybar__close:hover { color: var(--ink-strong); background: var(--paper-bright); }
   @media (max-width: 420px) { .buybar__cta { padding-inline: 1.3em; } .buybar__title { font-size: var(--step-0); } }
   @media (max-width: 900px) {
+    .stagebuy { display: none; }
     .buybar:not([hidden]) { display: flex; }
     .work { padding-bottom: 7rem; }  /* clears the fixed buy bar */
     .work__hero { grid-template-columns: 1fr; gap: var(--s2); }
@@ -395,6 +424,18 @@ const langCode: Record<string, string> = { greek: 'grc', latin: 'la', hebrew: 'h
   }
 </style>
 <script>
+  // On a wide screen, a quiet buy block under the pinned book whenever the hero buttons are
+  // off screen: below the fold on arrival (the synopsis pushes them past a laptop's first
+  // screen) and above it once the reader is into the guide. Never both at once.
+  const heroBuy = document.getElementById('buy-inline');
+  const stageBuy = document.getElementById('stagebuy');
+  if (heroBuy && stageBuy && 'IntersectionObserver' in window && matchMedia('(min-width: 901px)').matches) {
+    new IntersectionObserver(
+      ([entry]) => { stageBuy.hidden = entry.isIntersecting; },
+      { rootMargin: '-72px 0px 0px 0px' },
+    ).observe(heroBuy);
+  }
+
   // The sticky buy bar arrives once the reader has read the argument for the book, not the
   // moment the inline buttons scroll away: it follows "Why it's on the list" (or, on a page
   // without one, the inline buttons) out of the viewport, and a tap on its close keeps it

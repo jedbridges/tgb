@@ -1,0 +1,111 @@
+---
+/*
+ * The best translation of every translated work that has a guide, on one page.
+ *
+ * Each book page answers "which translation" for one book. This answers it for the whole
+ * shelf, which is the page a reader bookmarks, a forum links to when someone asks where to
+ * start with Homer or Dostoevsky, and a search for "best translations of the classics"
+ * lands on. Works in English are left out: for them the choice is an edition, not a
+ * translation, and it is rarely the question anyone is asking.
+ */
+import { getCollection } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import { loadCatalog, hasGuide, placeholderAuthor, yearShort } from '~/lib/catalog';
+import { amazonUrl } from '~/lib/affiliates';
+import { describeEdition, editionKey, isTranslated } from '~/lib/editions';
+import { authorUrl, workUrl, abs } from '~/lib/url';
+import { breadcrumbs } from '~/lib/seo';
+import Disclosure from '~/components/Disclosure.astro';
+import Signup from '~/components/Signup.astro';
+
+const { works, authors } = await loadCatalog();
+const eras = (await getCollection('eras')).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+const rows = works
+  .filter((w) => hasGuide(w) && isTranslated(w))
+  .map((w) => {
+    const author = authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id);
+    const info = describeEdition(w, author.data.name, w.data.recommendedEdition);
+    return { w, author, info };
+  })
+  .filter((r) => r.info.named && r.info.translator)
+  .sort((a, b) => a.w.data.year - b.w.data.year || a.w.data.title.localeCompare(b.w.data.title));
+const groups = eras.map((era) => ({ era, rows: rows.filter((r) => r.w.data.era.id === era.id) })).filter((g) => g.rows.length);
+const total = rows.length;
+const title = 'The Best Translations of the Great Books';
+const description = `Which translation to read for ${total} classics, from Homer and Plato to Dante, Tolstoy and Dostoevsky: one pick for each, and why.`;
+const itemList = {
+  '@context': 'https://schema.org', '@type': 'ItemList', name: title, numberOfItems: total,
+  itemListElement: rows.slice(0, 100).map((r, i) => ({ '@type': 'ListItem', position: i + 1, url: abs(workUrl(r.w.id)) + '#translation', name: `${r.w.data.title}, translated by ${r.info.translator}` })),
+};
+---
+<Base title={title} suffix={false} description={description} jsonld={[itemList, breadcrumbs([{ name: 'Translations', path: '/translations/' }])]}>
+  <section class="wrap head page-open">
+    <h1 class="italic">The best translations</h1>
+    <p class="lede">For most of the great books the translation is most of the decision. Here is the one we would hand you for each of {total} works, with a sentence on why. Where more than one is worth reading, the book page compares them.</p>
+    <nav class="jump ui" aria-label="Eras">
+      {groups.map((g) => <a href={`#${g.era.id}`}>{g.era.data.label}</a>)}
+    </nav>
+  </section>
+  {groups.map((g) => (
+    <section class="wrap era" id={g.era.id} aria-labelledby={`${g.era.id}-h`}>
+      <h2 class="era__label" id={`${g.era.id}-h`}>{g.era.data.label}</h2>
+      <ol class="rows">
+        {g.rows.map(({ w, author, info }) => (
+          <li class="row">
+            <p class="row__work">
+              <a class="row__title" href={workUrl(w.id) + '#translation'}>{w.data.title}</a>
+              <span class="row__by">by <a href={authorUrl(author.id)}>{author.data.name}</a><span class="row__year ui"> · {yearShort(w)}</span></span>
+            </p>
+            <p class="row__pick">
+              <span class="row__translator">{info.translator}</span>
+              {w.data.recommendedEdition?.publisher && <span class="row__pub ui">{w.data.recommendedEdition.publisher}</span>}
+              {w.data.recommendedEdition?.why && <span class="row__why">{w.data.recommendedEdition.why}</span>}
+              {w.data.otherEditions.length > 0 && <a class="row__more ui" href={workUrl(w.id) + '#translation'}>Compare {w.data.otherEditions.length + 1} translations</a>}
+            </p>
+            <p class="row__buy">
+              <a class="btn" href={amazonUrl(info.target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={w.id} data-placement="hub" data-edition={editionKey(w.data.recommendedEdition)}>
+                Amazon<span class="visually-hidden">: {w.data.title}, the {info.editionName}, opens in a new tab</span>
+              </a>
+            </p>
+          </li>
+        ))}
+      </ol>
+    </section>
+  ))}
+  <div class="wrap"><Signup from="translations" /></div>
+  <section class="wrap foot"><Disclosure /></section>
+</Base>
+<style>
+  .head { padding-block: var(--s4) var(--s2); display: grid; gap: var(--s1); }
+  .head h1 { font-size: var(--step-4); }
+  .lede { font-size: var(--step-1); color: var(--ink-soft); max-width: 52ch; text-wrap: pretty; }
+  .jump { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s1); margin-top: var(--s1); font-size: var(--step--1); }
+  .jump a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--edge); }
+  .jump a:hover { color: var(--accent); border-color: currentColor; }
+  .era { padding-block: var(--s2); scroll-margin-top: var(--stick); }
+  .era__label { font-style: italic; font-size: var(--step-2); border-bottom: var(--rule-section); padding-bottom: var(--s0); }
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .row {
+    display: grid; grid-template-columns: minmax(0, 16rem) minmax(0, 1fr) auto; gap: var(--s0) var(--s3);
+    align-items: start; padding-block: var(--s1); border-bottom: 1px solid var(--edge);
+  }
+  .row p { margin: 0; min-width: 0; }
+  .row__work { display: grid; gap: 2px; }
+  .row__title { font-size: var(--step-0); font-style: italic; color: var(--ink-strong); text-decoration: none; }
+  .row__title:hover { color: var(--accent); }
+  .row__by { color: var(--ink-soft); font-size: var(--step--1); }
+  .row__by a { color: inherit; }
+  .row__year { color: var(--ink-mute); font-size: var(--step--2); }
+  .row__pick { display: grid; gap: 2px; }
+  .row__translator { color: var(--ink-strong); }
+  .row__pub { color: var(--ink-mute); font-size: var(--step--2); }
+  .row__why { color: var(--ink-soft); font-size: var(--step--1); line-height: var(--lh-ui); max-width: 60ch; text-wrap: pretty; }
+  .row__more { color: var(--accent); font-size: var(--step--2); text-decoration: none; margin-top: 2px; }
+  .row__buy .btn { font-size: var(--step--2); padding: 0.55em 1em; }
+  .foot { padding-block: var(--s3); }
+  @media (max-width: 760px) {
+    .row { grid-template-columns: minmax(0, 1fr) auto; }
+    .row__pick { grid-column: 1 / -1; grid-row: 2; }
+    .row__buy { grid-column: 2; grid-row: 1; }
+  }
+</style>

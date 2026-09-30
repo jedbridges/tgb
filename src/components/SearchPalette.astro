@@ -374,7 +374,13 @@ const hints = [
     if (tb) { setMode(tb.dataset.mode === 'ask' ? 'ask' : 'search'); input.focus(); }
     const q = el.closest<HTMLElement>('[data-q]'); if (q) { input.value = q.dataset.q!; if (mode === 'search') run(input.value); input.focus(); }
   });
-  document.addEventListener('click', (e) => { if ((e.target as HTMLElement).closest('[data-open-search]')) open(); });
+  // data-open-search="ask" opens straight onto the Ask tab, for a button that invites a question.
+  document.addEventListener('click', (e) => {
+    const trigger = (e.target as HTMLElement).closest<HTMLElement>('[data-open-search]');
+    if (!trigger) return;
+    open();
+    if (trigger.dataset.openSearch === 'ask') setMode('ask');
+  });
   document.addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); root.hidden ? open() : close(); return; }
     if (e.key === 'Escape' && !root.hidden) { close(); return; }
