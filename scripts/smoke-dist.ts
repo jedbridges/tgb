@@ -116,9 +116,10 @@ if (!site) {
     const html = readFileSync(p, 'utf8');
     if (/<meta name="robots" content="noindex/.test(html)) noindexed.add(pathOf(p));
     const title = html.match(/<title>([^<]*)<\/title>/)?.[1] ?? '';
-    // Entities count as one character on a results page. A work whose own name is longer
-    // than a results line is allowed its name; what is caught is a phrase appended past it.
-    const appended = /: Best (Translation|Edition)$|: All \d+ Books in Order$| · The Great Books$/.test(title);
+    // Entities count as one character on a results page. Only the search-shaped titles
+    // on book and program pages are held to this: a work whose own name is longer than a
+    // results line is allowed its name, and text-section titles are named by their source.
+    const appended = /: (Guide and )?Best (Translation|Edition)$|: All \d+ Books in Order$/.test(title);
     if (!noindexed.has(pathOf(p)) && appended && title.replace(/&[a-z#0-9]+;/gi, 'x').length > 70) titleLong++;
     if (/data-affiliate=/.test(html) && /<a [^>]*data-affiliate=(?![^>]*data-placement=)[^>]*>/.test(html)) placementMissing++;
     if (books.includes(p) && !noindexed.has(pathOf(p))) {
