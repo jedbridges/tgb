@@ -78,43 +78,46 @@ const itemList = {
 
   <div class="wrap">
     <form class="bar" id="free-bar" role="search" aria-label="Filter the free books">
-      <p class="bar__find">
+      <div class="bar__find">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="7" cy="7" r="5" /><path d="m11 11 3.5 3.5" stroke-linecap="round" /></svg>
         <label class="visually-hidden" for="free-q">Search these books</label>
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="5" /><path d="m11 11 3.5 3.5" stroke-linecap="round" /></svg>
-        <input id="free-q" type="search" autocomplete="off" placeholder="Search by title or author…" />
-      </p>
-      <p class="bar__f">
-        <label class="bar__label" for="free-where">Read</label>
-        <select id="free-where">
-          <option value="">Anywhere</option>
-          <option value="here">On this site ({hereCount})</option>
-          <option value="away">At the libraries ({total - hereCount})</option>
-        </select>
-      </p>
-      <p class="bar__f">
-        <label class="bar__label" for="free-program">On the list of</label>
-        <select id="free-program">
-          <option value="">Any program</option>
-          {programFacets.map((p) => <option value={p.id}>{p.label} ({p.n})</option>)}
-        </select>
-      </p>
-      <p class="bar__f">
-        <label class="bar__label" for="free-sort">Sort</label>
-        <select id="free-sort">
-          <option value="era">Oldest first</option>
-          <option value="title">Title A to Z</option>
-          <option value="author">Author A to Z</option>
-        </select>
-      </p>
-      <p class="bar__count" role="status" aria-live="polite">
-        <span id="free-count">{total}</span> <span id="free-count-word">books</span>
+        <input id="free-q" type="search" autocomplete="off" placeholder="Search by title or author" />
+        <p class="bar__count" role="status" aria-live="polite"><span id="free-count">{total}</span> <span id="free-count-word">books</span></p>
+      </div>
+      <div class="bar__controls">
+        <div class="segs" role="group" aria-label="Where to read">
+          <button type="button" class="seg on" data-where="" aria-pressed="true">All</button>
+          <button type="button" class="seg" data-where="here" aria-pressed="false">On this site <span class="seg__n">{hereCount}</span></button>
+          <button type="button" class="seg" data-where="away" aria-pressed="false">At the libraries <span class="seg__n">{total - hereCount}</span></button>
+        </div>
+        <span class="pick">
+          <label class="visually-hidden" for="free-era">Era</label>
+          <select id="free-era">
+            <option value="">Any era</option>
+            {groups.map((g) => <option value={g.era.id}>{g.era.data.label} ({g.rows.length})</option>)}
+          </select>
+          <svg class="pick__chev" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="pick">
+          <label class="visually-hidden" for="free-program">Program</label>
+          <select id="free-program">
+            <option value="">Any program</option>
+            {programFacets.map((p) => <option value={p.id}>{p.label} ({p.n})</option>)}
+          </select>
+          <svg class="pick__chev" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
         <button type="button" class="bar__clear" id="free-clear" hidden>Clear</button>
-      </p>
+        <span class="pick pick--sort">
+          <label class="pick__label" for="free-sort">Sort</label>
+          <select id="free-sort">
+            <option value="era">Oldest first</option>
+            <option value="title">Title A to Z</option>
+            <option value="author">Author A to Z</option>
+          </select>
+          <svg class="pick__chev" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </div>
     </form>
-
-    <nav class="jump ui" id="free-jump" aria-label="Jump to an era">
-      {groups.map((g) => <a href={`#${g.era.id}`}>{g.era.data.label}</a>)}
-    </nav>
 
     <ol class="rows" id="free-list">
       {groups.map((g) => (
@@ -124,7 +127,7 @@ const itemList = {
             <li class="row" data-title={w.data.title.toLowerCase()} data-author={author.data.name.toLowerCase()}
               data-sort-title={w.data.title.replace(/^(the|a|an) /i, '').toLowerCase()}
               data-sort-author={(author.data.sortName ?? author.data.name).toLowerCase()}
-              data-where={read.external ? 'away' : 'here'} data-programs={progs.join(' ')}>
+              data-where={read.external ? 'away' : 'here'} data-programs={progs.join(' ')} data-era={w.data.era.id}>
               <p class="row__work">
                 <a class="row__title" href={workUrl(w.id)}>{w.data.title}</a>
                 <span class="row__by">by <a href={authorUrl(author.id)}>{author.data.name}</a><span class="row__year ui"> · {yearShort(w)}</span></span>
@@ -183,43 +186,62 @@ const itemList = {
   .note { color: var(--ink-soft); font-size: var(--step--1); line-height: var(--lh-prose); max-width: 56ch; text-wrap: pretty; }
 
   /* The bar rides with the list: at four hundred rows the controls are wanted at row 300
-     as much as at row 3, and a filter whose readout has scrolled away reads as broken. */
+     as much as at row 3, and a filter whose readout has scrolled away reads as broken.
+     Two lines and one vocabulary: the search, then a row of pills that all share the
+     height, border and filled "on" state of the chips on the books page. */
   .bar {
     position: sticky; top: var(--header-h); z-index: 10;
-    display: flex; flex-wrap: wrap; align-items: end; gap: var(--s0) var(--s2);
-    padding: var(--s1) 0 calc(var(--s1) - 1px);
-    background: var(--paper); border-bottom: 1px solid var(--ink);
+    display: grid; gap: var(--s1);
+    padding: var(--s1) 0 var(--s1);
+    margin-top: var(--s1);
+    background: var(--paper);
+    border-bottom: 1px solid var(--paper-deeper);
   }
   .bar__find {
-    display: flex; align-items: center; gap: var(--s0); margin: 0;
-    flex: 1 1 16rem; min-width: 0; color: var(--ink-soft);
-    border-bottom: 1px solid var(--edge);
+    display: flex; align-items: center; gap: var(--s0);
+    border-bottom: 1px solid var(--ink); padding-bottom: 0.35rem;
+    color: var(--ink-mute);
   }
   .bar__find input {
-    flex: 1; min-width: 0; min-height: 40px; background: none; border: 0;
-    font-family: var(--font-display); font-size: var(--step-0); color: var(--ink-strong);
+    flex: 1; min-width: 0; min-height: 44px; background: none; border: 0;
+    font-family: var(--font-display); font-size: var(--step-1); color: var(--ink-strong);
   }
   .bar__find input::placeholder { color: var(--ink-mute); font-style: italic; }
   .bar__find input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
-  .bar__f { display: grid; gap: 0.25rem; margin: 0; min-width: 0; }
-  .bar__label { font-family: var(--font-ui); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute); }
-  .bar select {
-    font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-strong);
-    background: var(--paper-bright); border: 1px solid var(--edge); border-radius: 3px;
-    padding: 0.45em 0.6em; min-height: 40px; max-width: 100%;
-  }
   .bar__count {
-    margin: 0 0 0 auto; display: flex; align-items: baseline; gap: 0.5rem;
-    font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-soft); white-space: nowrap;
+    margin: 0; flex: 0 0 auto; display: flex; align-items: baseline; gap: 0.4rem;
+    font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-mute); white-space: nowrap;
   }
   .bar__count #free-count { font-family: var(--font-display); font-size: var(--step-1); color: var(--ink-strong); font-variant-numeric: tabular-nums; }
-  .bar__clear { font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; min-height: 32px; }
-  .bar__clear[hidden] { display: none; }
 
-  .jump { display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s1); padding-block: var(--s1); font-size: var(--step--1); }
-  .jump a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--edge); }
-  .jump a:hover { color: var(--accent); border-color: currentColor; }
-  .jump[hidden] { display: none; }
+  .bar__controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-1) var(--s0); }
+  .segs { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-right: var(--s0); }
+  .seg, .pick select {
+    font-family: var(--font-ui); font-size: var(--step--2); line-height: 1;
+    min-height: 36px; border-radius: 999px;
+    border: 1px solid var(--paper-deeper); color: var(--ink-soft); background: transparent;
+    transition: border-color var(--dur-fast), color var(--dur-fast), background var(--dur-fast);
+  }
+  .seg { display: inline-flex; align-items: center; gap: 0.45em; padding: 0.6em 0.9em; }
+  .seg__n { color: var(--ink-mute); font-variant-numeric: tabular-nums; }
+  .seg:hover, .pick select:hover { border-color: var(--ink-mute); color: var(--ink-strong); }
+  .seg.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .seg.on .seg__n { color: inherit; opacity: 0.7; }
+
+  /* A select dressed as a pill: the native control does the work, the chevron is ours. */
+  .pick { position: relative; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .pick select { appearance: none; -webkit-appearance: none; padding: 0.6em 2.1em 0.6em 0.9em; cursor: pointer; max-width: 16rem; text-overflow: ellipsis; }
+  .pick select.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .pick__chev { position: absolute; right: 0.85em; pointer-events: none; color: var(--ink-mute); }
+  .pick select.on + .pick__chev { color: var(--paper); }
+  .pick__label { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); }
+  /* A native select is as wide as its longest option, which made "Any era" a wide empty
+     pill. A fixed width reads as a set; a long choice ellipsises inside it. */
+  .pick:not(.pick--sort) select { width: 11rem; }
+  .pick--sort { margin-left: auto; }
+
+  .bar__clear { font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; min-height: 36px; padding-inline: 0.3em; }
+  .bar__clear[hidden] { display: none; }
 
   .rows { list-style: none; margin: 0; padding: 0; }
   .rowhead { padding-top: var(--s3); scroll-margin-top: calc(var(--header-h) + 6rem); }
@@ -268,16 +290,16 @@ const itemList = {
      screen where it is the only tap target in the row. */
   @media (max-width: 620px) {
     /* On a phone a pinned bar would hold a quarter of the screen for the whole list, so
-       it scrolls away with the intro, and the three controls share one line. */
-    .bar {
-      position: static; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: var(--s0) var(--s-1); padding: var(--s0) 0 var(--s0);
-    }
-    .bar__find { grid-column: 1 / -1; }
-    .bar__f { gap: 0.2rem; }
-    .bar__label { font-size: 0.62rem; letter-spacing: 0.08em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .bar select { width: 100%; padding-inline: 0.4em; font-size: var(--step--2); }
-    .bar__count { grid-column: 1 / -1; margin-left: 0; }
+       it scrolls away with the intro. The where pills keep their own line; the two
+       filters share the next, and sort takes the last on its own. */
+    .bar { position: static; }
+    .bar__find input { font-size: var(--step-0); }
+    .segs { width: 100%; margin-right: 0; }
+    .seg { flex: 1 1 auto; justify-content: center; padding-inline: 0.6em; }
+    .pick { flex: 1 1 40%; }
+    .pick select, .pick:not(.pick--sort) select { width: 100%; max-width: none; }
+    .pick--sort { flex-basis: 100%; margin-left: 0; }
+    .pick--sort select { flex: 1; }
     .row { grid-template-columns: minmax(0, 1fr); gap: var(--s-1); padding-block: var(--s2); }
     .row__work, .row__edition, .row__buy, .row__action { grid-column: 1; grid-row: auto; }
     .row__action { justify-self: stretch; margin-top: var(--s-1); }
@@ -296,7 +318,8 @@ const itemList = {
   const list = document.getElementById('free-list');
   if (bar && list) {
     const q = document.getElementById('free-q') as HTMLInputElement;
-    const where = document.getElementById('free-where') as HTMLSelectElement;
+    const segs = [...bar.querySelectorAll<HTMLButtonElement>('.seg')];
+    const era = document.getElementById('free-era') as HTMLSelectElement;
     const program = document.getElementById('free-program') as HTMLSelectElement;
     const sort = document.getElementById('free-sort') as HTMLSelectElement;
     const count = document.getElementById('free-count')!;
@@ -304,20 +327,20 @@ const itemList = {
     const clear = document.getElementById('free-clear') as HTMLButtonElement;
     const clear2 = document.getElementById('free-clear-2') as HTMLButtonElement | null;
     const empty = document.getElementById('free-empty')!;
-    const jump = document.getElementById('free-jump')!;
 
     const rows = [...list.querySelectorAll<HTMLElement>('.row')];
     const heads = [...list.querySelectorAll<HTMLElement>('.rowhead')];
     const original = [...list.children] as HTMLElement[];
     const total = rows.length;
     // Accents are in the titles and not on most keyboards: "Pere Goriot" should find it.
-    const fold = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const fold = (s: string) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     const text = new Map(rows.map((r) => [r, fold(`${r.dataset.title} ${r.dataset.author}`)]));
+    let where = '';
 
     let raf = 0;
     function apply() {
       const term = fold(q.value.trim());
-      const w = where.value;
+      const e = era.value;
       const p = program.value;
       const s = sort.value;
 
@@ -325,7 +348,8 @@ const itemList = {
       for (const row of rows) {
         const ok =
           (!term || text.get(row)!.includes(term)) &&
-          (!w || row.dataset.where === w) &&
+          (!where || row.dataset.where === where) &&
+          (!e || row.dataset.era === e) &&
           (!p || (row.dataset.programs ?? '').split(' ').includes(p));
         row.hidden = !ok;
         if (ok) shown++;
@@ -350,23 +374,28 @@ const itemList = {
         for (const row of sorted) list!.appendChild(row);
       }
 
+      // A filter that is on looks on, the same filled pill as the where buttons.
+      era.classList.toggle('on', Boolean(e));
+      program.classList.toggle('on', Boolean(p));
+      for (const b of segs) {
+        const on = (b.dataset.where ?? '') === where;
+        b.classList.toggle('on', on);
+        b.setAttribute('aria-pressed', String(on));
+      }
+
       count.textContent = String(shown);
-      countWord.textContent = shown === total ? 'books' : shown === 1 ? `book of ${total}` : `of ${total} books`;
-      clear.hidden = !(term || w || p || s !== 'era');
-      jump.hidden = s !== 'era';
+      countWord.textContent = shown === total ? 'books' : shown === 1 ? `book of ${total}` : `of ${total}`;
+      clear.hidden = !(term || where || e || p);
       empty.hidden = shown > 0;
     }
 
+    const track = (facet: string) => dispatchEvent(new CustomEvent('tgb:filter', { detail: { facet } }));
     const schedule = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(apply); };
     q.addEventListener('input', schedule);
-    for (const el of [where, program, sort]) {
-      el.addEventListener('change', () => {
-        apply();
-        dispatchEvent(new CustomEvent('tgb:filter', { detail: { facet: el.id.replace('free-', '') } }));
-      });
-    }
+    for (const b of segs) b.addEventListener('click', () => { where = b.dataset.where ?? ''; apply(); track('where'); });
+    for (const el of [era, program, sort]) el.addEventListener('change', () => { apply(); track(el.id.replace('free-', '')); });
     bar.addEventListener('submit', (e) => e.preventDefault());
-    const reset = () => { bar.reset(); apply(); q.focus(); };
+    const reset = () => { q.value = ''; era.value = ''; program.value = ''; where = ''; apply(); q.focus(); };
     clear.addEventListener('click', reset);
     clear2?.addEventListener('click', reset);
     // A reload can restore the controls, so the list is brought into line on load.
