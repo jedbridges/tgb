@@ -67,12 +67,15 @@ const HEADLINE_WORDS = [
         </span>
         <span class="visually-hidden">of {HEADLINE_WORDS[0]}, and everything else the great reading lists assign.</span>
       </h1>
-      <p class="hero__lede">The ideas that built the West, argued out in the books themselves. {works.length} works, nine reading lists, a guide to each.</p>
+      <!-- The two questions a reader actually brings, which translation and whether it costs
+           anything, are answered inside the sentence rather than under the buttons. Under
+           the buttons they read as a smaller second voice saying "and also". They take the
+           site's own inline link style from base.css and need nothing of their own. -->
+      <p class="hero__lede">The ideas that built the West, argued out in the books themselves. {works.length} works, nine reading lists, a guide to each, <a href={url('/translations/')}>which translation to read</a>, and <a href={url('/free/')}>which you can read free</a>.</p>
       <div class="hero__actions set-hold">
         <a class="btn btn--accent" href={url('/books/')}>Browse the shelf</a>
         <button class="btn" type="button" data-open-search="ask">Ask the books a question</button>
       </div>
-      <p class="hero__aside ui"><a href={url('/translations/')}>Which translation? Our pick for every book →</a> <a href={url('/free/')}>Which are free to read? →</a></p>
     </div>
   </section>
 
@@ -165,20 +168,6 @@ const HEADLINE_WORDS = [
   }
 </script>
 <style>
-  .hero__aside { font-size: var(--step--1); margin-top: var(--s1); display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s2); }
-  .hero__aside a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--edge); }
-  .hero__aside a:hover { color: var(--accent); border-color: currentColor; }
-  /* Where the finger is the pointer, these two stop being asides and become the only
-     links in the hero that are not buttons, and 21px of text is not a target.
-     The box is left alone and the hit area grown past it, because the rule under these
-     links is a border on the link itself: make the box 44px tall and the underline
-     detaches from the words and floats below them. The row gap is opened to more than
-     the two inflated areas so they cannot overlap each other. */
-  @media (hover: none) {
-    .hero__aside { gap: var(--s2) var(--s2); }
-    .hero__aside a { position: relative; }
-    .hero__aside a::after { content: ''; position: absolute; inset: -12px 0; }
-  }
   /* The hero is sized so the first shelf breaks the fold: the section heading and the top
      of the covers sit just inside the viewport, which shows the product and says there is
      more below without a scroll cue. min-height, not height, so short and landscape
