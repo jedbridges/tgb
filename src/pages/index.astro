@@ -279,7 +279,6 @@ const HEADLINE_WORDS = [
      first screen. */
   @media (max-height: 880px) {
     .hero { padding-block: var(--s2) var(--s1); }
-    .hero__h1 { font-size: clamp(1.6rem, 7.2vw, 4.5rem); }
     .hero__lede { margin-top: var(--s1); }
     .hero__actions { margin-top: var(--s2); }
     /* The hero is not the only thing between the top of the page and the books. The shelf
@@ -293,14 +292,42 @@ const HEADLINE_WORDS = [
      still breaks the fold. */
   @media (max-height: 800px) {
     .hero { padding-block: var(--s1) var(--s0); }
-    .hero__h1 { font-size: clamp(1.5rem, 5.4vw, 3rem); }
     .shelf-section { padding-top: var(--s2); }
     .shelf-section .section-head { margin-bottom: var(--s1); }
   }
   @media (max-height: 640px) { .hero { min-height: 0; padding-block: var(--s2) var(--s1); } }
 
+  /* Giving up headline size is a laptop's answer, not a phone's.
+     The two rules above are about height, and a phone is short: an iPhone is 852px tall,
+     well inside max-height 880, so every phone was being handed the 1366-by-768 treatment
+     and reading the headline at 7.2vw, 28px. But a phone is not short of height relative
+     to its width; it is short of width, and the headline is already as large as "Three
+     thousand years" on one line allows. So the compacting above still applies, and only
+     the shrinking is held back to the widths it was written for. */
+  @media (max-height: 880px) and (min-width: 761px) {
+    .hero__h1 { font-size: clamp(1.6rem, 7.2vw, 4.5rem); }
+  }
+  @media (max-height: 800px) and (min-width: 761px) {
+    .hero__h1 { font-size: clamp(1.5rem, 5.4vw, 3rem); }
+  }
+
+
   .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s2); border-top: var(--rule-section); padding-top: var(--s1); margin-bottom: var(--s3); }
   .section-head h2 { font-size: var(--step-3); }
+  /* A section heading must not out-shout the page's own title, and twice it was.
+     The headline is sized to fit its longest line, so it has a ceiling the bands do not:
+     about 35px on a 393px phone, and 3rem on a short laptop, where it gives up size to
+     keep the shelf above the fold. A section heading reaches 3.75rem in both cases, so
+     "Most assigned" read larger than the title of the page it sits on. The bands step
+     down a notch wherever the headline is held back, which is the better size on those
+     screens anyway. Both rules have to sit below the declaration they override rather
+     than up with the hero, where they lose on source order. */
+  @media (max-width: 760px) {
+    .section-head h2 { font-size: var(--step-2); }
+  }
+  @media (max-height: 800px) and (min-width: 761px) {
+    .section-head h2 { font-size: var(--step-2); }
+  }
   /* A tracked link sitting on a right edge leaves the tracking after its last character,
      which reads as the link being short of the margin. */
   .section-head__more { margin-right: -0.02em; }
