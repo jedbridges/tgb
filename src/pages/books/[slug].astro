@@ -30,6 +30,10 @@ const { image, meta: coverMeta } = coverFor(work.id);
 const tint = tintVars(coverMeta);
 const family = formFamily(work.data.genre.id);
 const og = image ? (await getImage({ src: image, width: 800, format: 'jpg' })).src : undefined;
+/* The share image is 800px wide and the palette draws it into a 2.4rem box. One of those
+   is nothing; a result list is six at once, every time someone types. Search gets its own
+   derivative, and Sharp is already walking every cover, so this costs a file not a pass. */
+const thumb = image ? (await getImage({ src: image, width: 160, format: 'webp' })).src : undefined;
 const related = await relatedWorks(work);
 const { authors, assigned } = await loadCatalog();
 const count = await programCount(work.id);
@@ -42,12 +46,13 @@ const freeRead = hasText ? undefined : await freeReadFor(work.id);
 const freeHere = freeRead ?? (hasText ? { url: abs(textUrl(work.id)), edition: textSections[0].data.edition, translator: textSections[0].data.translator } : undefined);
 const guided = await guidedCount();
 /*
- * A stub is a catalogue record: the synopsis, the edition and the buy links, on the same
- * template as 594 others. That is useful to a reader who lands on it and thin to a search
- * engine, and thin affiliate pages are named in Google's own spam policies, so 595 of them
- * would be judged against the 94 written guides rather than beside them. Stubs are therefore
- * noindex,follow (still crawled, still passing link equity) and dropped from the sitemap in
- * astro.config.mjs. Each one rejoins both by itself on the commit that gives it a guide.
+ * A stub is a catalogue record: the synopsis, the edition and the buy links, and nothing
+ * written. That is useful to a reader who lands on it and thin to a search engine, and
+ * thin affiliate pages are named in Google's own spam policies, so a shelf of them would
+ * be judged against the written guides rather than beside them. Stubs are therefore
+ * noindex,follow (still crawled, still passing link equity) and dropped from the sitemap
+ * in astro.config.mjs. Each one rejoins both by itself on the commit that gives it a
+ * guide, and as of this commit none are left: all 689 carry one.
  */
 const hasGuideHere = work.data.status !== 'stub';
 const hasNamedEdition = Boolean(work.data.recommendedEdition?.translator || work.data.recommendedEdition?.publisher);
@@ -75,7 +80,7 @@ const searchFilters: [string, string][] = [
   ...[...new Set(mine.map((x) => `${x.program.id}/${x.segment.id}`))].map((s) => ['segment', s] as [string, string]),
 ];
 const searchMeta: [string, string][] = [
-  ['type', 'Book'], ['author', author.data.name], ['slug', work.id], ['cover', og ?? ''], ['tone', toneFor(work.id).bg],
+  ['type', 'Book'], ['author', author.data.name], ['slug', work.id], ['cover', thumb ?? og ?? ''], ['tone', toneFor(work.id).bg],
   ['year', yearLabel(work)], ['difficulty', String(d.difficulty)], ['length', d.length], ['pages', d.pages ? String(d.pages) : ''],
   ['era', era?.data.label ?? ''], ['genre', genre?.data.label ?? ''],
   ['themes', themeEntries.slice(0, 3).map((t) => `${t!.id}|${t!.data.label}`).join(', ')],

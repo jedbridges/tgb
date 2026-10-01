@@ -381,6 +381,16 @@ const hints = [
     open();
     if (trigger.dataset.openSearch === 'ask') setMode('ask');
   });
+  /* The one way in from elsewhere on the page. Astro hoists every component script into
+     its own module, so the header cannot call open() directly; it dispatches this when a
+     reader starts typing at the pill, and the first character survives the trip. */
+  addEventListener('tgb:open-search', (e) => {
+    const q = (e as CustomEvent<{ q?: string }>).detail?.q ?? '';
+    open(q);
+    // open() focuses the field, which selects nothing in particular. Put the caret after
+    // the character they typed, so the next one lands where they expect.
+    input.setSelectionRange(q.length, q.length);
+  });
   document.addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); root.hidden ? open() : close(); return; }
     if (e.key === 'Escape' && !root.hidden) { close(); return; }

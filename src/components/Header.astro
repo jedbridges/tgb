@@ -306,6 +306,21 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     matchMedia('(min-width: 761px)').addEventListener('change', (e) => { if (e.matches && !menu.hidden) setOpen(false); });
   }
 
+  /* Type at the pill and you are typing into the search.
+     It is the widest target in the bar, so people focus it and start typing, and a button
+     that only answers to Enter and Space swallows the first character. Four keys are
+     deliberately not caught: the modifier combinations, because this listener runs on the
+     button during bubbling and would eat Cmd-K before the palette's own handler sees it;
+     "/" and Space, because both already open the palette from here, and prefilling them
+     with a literal slash or a leading space would be a change rather than a shortcut. */
+  document.querySelector('.search-trigger')?.addEventListener('keydown', (e) => {
+    const k = e as KeyboardEvent;
+    if (k.isComposing || k.metaKey || k.ctrlKey || k.altKey) return;
+    if (k.key.length !== 1 || k.key === ' ' || k.key === '/') return;
+    k.preventDefault();
+    dispatchEvent(new CustomEvent('tgb:open-search', { detail: { q: k.key } }));
+  });
+
   // The scheme follows the system until the reader says otherwise, and that choice is
   // theirs for good. Nothing here decides the colours: it only pins color-scheme, and
   // every token in tokens.css reads that. The same write happens inline in <head> before

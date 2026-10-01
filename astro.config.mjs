@@ -25,10 +25,12 @@ for (const k of ['AMAZON_ASSOCIATE_TAG', 'BOOKSHOP_AFFILIATE_ID', 'PUBLIC_GA4_ID
   if (!process.env[k] && env[k]) process.env[k] = env[k];
 
 /*
- * The sitemap is a request, not an inventory: it says which pages we want judged. 595 of the
- * 689 works are still catalogue stubs, so asking Google to weigh them against the 94 written
- * guides is asking to be read as a thin affiliate site. They are noindexed on the page itself
- * and dropped here, and a work rejoins both the moment its status stops being 'stub'.
+ * The sitemap is a request, not an inventory: it says which pages we want judged. A work
+ * still marked a catalogue stub is noindexed on the page itself and dropped here, so that
+ * a shelf of entries with no guide written yet cannot be weighed against the ones that do
+ * and read as a thin affiliate site. A work rejoins both the moment its status stops
+ * being 'stub'. As of this commit every one of the 689 has a guide and the set is empty,
+ * which is the state this is meant to protect rather than a reason to delete it.
  *
  * Read with a regex rather than a YAML parser because astro.config runs before the content
  * layer exists, and the only field needed is one line of frontmatter.
