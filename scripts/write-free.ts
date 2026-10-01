@@ -47,6 +47,20 @@ if (check) {
       try {
         const res = await fetch(row.url, { method: 'GET', headers: { 'user-agent': 'greatbookslist.com link check' }, signal: AbortSignal.timeout(25_000) });
         if (!res.ok) { console.log(`  ✗ ${res.status} ${row.work} ${row.url}`); bad++; }
+        else {
+          /*
+           * A page that loads is not a book you can read. Standard Ebooks keeps a page for
+           * every book it would like to make, marked as a placeholder with a "sponsor this
+           * ebook" button and no download, and its search returns those beside the real
+           * ones; 56 of them got onto /free/ before this check existed. So the test is the
+           * thing a reader came for: a file to download or a way to read it in the browser.
+           */
+          const html = await res.text();
+          const readable = row.url.includes('standardebooks.org')
+            ? !/ebook-placeholder/.test(html) && /\.epub|\/text\/single-page/.test(html)
+            : /\.(epub3?\.images|epub\.noimages|kf8\.images|html\.images|txt\.utf-8)|Read now|Read online/i.test(html);
+          if (!readable) { console.log(`  ✗ nothing to read ${row.work} ${row.url}`); bad++; }
+        }
       } catch (e) { console.log(`  ✗ error ${row.work} ${row.url}`); bad++; }
       if (++n % 50 === 0) console.log(`  ${n}…`);
       await sleep(80);

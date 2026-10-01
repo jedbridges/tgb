@@ -44,12 +44,20 @@ export function loadFreeReads() {
         where: s.data.source, url: s.data.url, edition: s.data.edition, translator: s.data.translator, external: true,
       });
     }
-    // Hosted texts win, and one section is enough to know the edition.
+    // Hosted texts win. Count the sections per work: a work with only one (the Phaedo, the
+    // Gospel of John) has a contents page that is a single link, a dead-feeling stop between
+    // the reader and the text, so its "read" link goes straight to the section instead.
+    const sectionCount = new Map<string, number>();
+    for (const t of texts) sectionCount.set(t.data.work.id, (sectionCount.get(t.data.work.id) ?? 0) + 1);
+    const seen = new Set<string>();
     for (const t of texts) {
       const id = t.data.work.id;
-      if (map.get(id)?.where === 'here') continue;
+      if (seen.has(id)) continue;
+      seen.add(id);
       map.set(id, {
-        where: 'here', url: textUrl(id), edition: t.data.edition, translator: t.data.translator, external: false,
+        where: 'here',
+        url: sectionCount.get(id) === 1 ? textUrl(id, t.data.section) : textUrl(id),
+        edition: t.data.edition, translator: t.data.translator, external: false,
       });
     }
     return map;
