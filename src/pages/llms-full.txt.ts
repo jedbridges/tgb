@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { loadFreeReads } from '~/lib/free';
 import { getCollection } from 'astro:content';
 import { loadCatalog, placeholderAuthor, sortedByAssignment, difficultyLabel, lengthLabel, yearShort } from '~/lib/catalog';
 import { abs, workUrl } from '~/lib/url';
@@ -40,11 +41,16 @@ export const GET: APIRoute = async () => {
       out.push(s.items.map((it) => `- ${it.title ?? it.work.id}${it.author ? `, ${it.author}` : ''}`).join('\n'), '');
     }
   }
-  out.push('## Index of works', '', 'Title, author, date, difficulty, length, number of the nine lists that assign it, URL.', '');
+  out.push('## Index of works', '', 'Title, author, date, difficulty, length, number of the nine lists that assign it, URL, the translation or edition we recommend, and where to read it free when it is out of copyright.', '');
   const { assigned } = await loadCatalog();
+  const free = await loadFreeReads();
   for (const w of await sortedByAssignment(works)) {
     const n = new Set((assigned.get(w.id) ?? []).map((a) => a.program.id)).size;
-    out.push(`- ${title(w)}, ${yearShort(w)}, ${difficultyLabel(w.data.difficulty)}, ${lengthLabel[w.data.length]}, ${n} of 9, ${abs(workUrl(w.id))}`);
+    const ed = w.data.recommendedEdition;
+    const pick = ed && (ed.translator ? `${ed.translator} translation` : ed.editor ? `${ed.editor} edition` : ed.publisher ? `${ed.publisher} edition` : '');
+    const f = free.get(w.id);
+    const freeNote = f ? `; free: ${f.edition}, ${f.external ? f.url : abs(f.url)}` : '';
+    out.push(`- ${title(w)}, ${yearShort(w)}, ${difficultyLabel(w.data.difficulty)}, ${lengthLabel[w.data.length]}, ${n} of 9, ${abs(workUrl(w.id))}${pick ? `; recommended: ${pick}` : ''}${freeNote}`);
   }
   out.push('');
   return new Response(out.join('\n'), { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });

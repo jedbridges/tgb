@@ -4,6 +4,7 @@ import { loadCatalog, hasGuide } from '~/lib/catalog';
 import { abs } from '~/lib/url';
 import { readdirSync } from 'node:fs';
 import { textPageIndexable } from '~/lib/passages';
+import { loadFreeReads } from '~/lib/free';
 
 /**
  * llms.txt: the site described for a language model, in the shape the convention asks for
@@ -15,6 +16,8 @@ export const GET: APIRoute = async () => {
   const { works, authors, programs } = await loadCatalog();
   const [themes, eras, genres] = await Promise.all([getCollection('themes'), getCollection('eras'), getCollection('genres')]);
   const guided = works.filter(hasGuide).length;
+  const free = await loadFreeReads();
+  const freeHere = [...free.values()].filter((f) => !f.external).length;
   const u = (p: string) => abs(p);
   const lines = [
     '# The Great Books',
@@ -26,9 +29,14 @@ export const GET: APIRoute = async () => {
     '## Books',
     '',
     `- [All the books](${u('/books/')}): ${works.length} works with filters by program, era, theme, form, difficulty and length. ${guided} have a written reading guide.`,
-    `- Each book page (${u('/books/')}{slug}/) has a synopsis, why it is on the lists, key themes, marked passages with notes, difficulty and length, which programs assign it and where, and a recommended edition. Book, Quotation and BreadcrumbList structured data.`,
+    `- Each book page (${u('/books/')}{slug}/) has a synopsis, why it is on the lists, key themes, marked passages with notes, difficulty and length, which programs assign it and where, which translation or edition to read and why (with the alternatives compared), and where to read it free when it is out of copyright. Book, Quotation and BreadcrumbList structured data; free editions are marked isAccessibleForFree.`,
     `- [Approachable](${u('/books/difficulty/approachable/')}), [moderate](${u('/books/difficulty/moderate/')}), [demanding](${u('/books/difficulty/demanding/')}), [difficult](${u('/books/difficulty/difficult/')}) and [formidable](${u('/books/difficulty/formidable/')}): the works by difficulty, each with a note on where to start.`,
     `- [Short](${u('/books/length/short/')}), [medium](${u('/books/length/medium/')}), [long](${u('/books/length/long/')}) and [epic](${u('/books/length/epic/')}): the works by length.`,
+    '',
+    '## Which translation, and reading free',
+    '',
+    `- [The best translations](${u('/translations/')}): the translation we recommend for every translated work with a guide, with one line on why. Each book page compares the alternatives under "Which translation to read".`,
+    `- [Read the great books free](${u('/free/')}): the ${free.size} works on the lists that can be read free and legally online, ${freeHere} on this site and the rest at Standard Ebooks or Project Gutenberg, each with the translation to buy in print. Filter by program with ?program={id}, for example ${u('/free/?program=st-johns')}.`,
     '',
     '## Programs',
     '',
