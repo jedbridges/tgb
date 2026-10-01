@@ -14,6 +14,7 @@
     "validate:content": "astro sync && tsx scripts/validate-content.ts",
     "covers": "tsx scripts/fetch-covers.ts",
     "seed": "tsx scripts/seed-work.ts",
+    "seal": "tsx scripts/build-seal.ts",
     "smoke": "tsx scripts/smoke-dist.ts",
     "corpus": "tsx scripts/export-corpus.ts",
     "corpus:sync": "tsx scripts/sync-corpus.ts",

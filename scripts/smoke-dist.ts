@@ -145,6 +145,25 @@ if (!site) {
   const scan = (dir: string) => { for (const f of readdirSync(dir)) { const q = join(dir, f); if (/ \d+(\.[a-z0-9]+)?$/i.test(f)) dupes.push(q); if (statSync(q).isDirectory()) scan(q); } };
   scan(dist);
   dupes.length ? fail(`${dupes.length} Finder duplicate files in dist, e.g. ${dupes[0]}`) : ok('no Finder duplicates in dist');
+  /* The seal.
+     Three things that have each been broken once and are invisible when they break.
+     A filter element inside this markup is the one that matters: an SVG filter with
+     anything animating inside it is re-run on the CPU every frame, and that combination
+     held this page at six frames a second in Safari. Nothing in the seal needs one, so
+     the build refuses one. The other two catch a legend that silently lost its Greek,
+     which would fall back to a system serif mid-word, and a relief that lost its
+     placements, which would ship a blank disc. */
+  const home = readFileSync(join(dist, 'index.html'), 'utf8');
+  const sealMarkup = home.match(/<div class="seal[^"]*"[^>]*data-seal[\s\S]*?<\/svg>/)?.[0] ?? '';
+  if (!sealMarkup) fail('the seal is missing from the home page');
+  else {
+    sealMarkup.includes('<filter') ? fail('the seal contains an SVG filter: see Seal.astro on why that is banned') : ok('seal carries no SVG filter');
+    const uses = (sealMarkup.match(/href="#sg/g) ?? []).length;
+    uses >= 50 ? ok(`seal legend has ${uses} glyph placements`) : fail(`seal legend has only ${uses} glyph placements`);
+    const greek = ['923', '927', '915', '931'].filter((c) => sealMarkup.includes(`id="sg${c}"`));
+    greek.length === 4 ? ok('seal legend keeps its Greek') : fail(`seal legend is missing Greek glyphs (${4 - greek.length} of 4)`);
+  }
+
   existsSync(join(dist, 'favicon.ico')) ? ok('favicon.ico present') : fail('favicon.ico missing');
 
   /*

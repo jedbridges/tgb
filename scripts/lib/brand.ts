@@ -15,15 +15,11 @@ export const RED = '#b62200';
 /** --paper-bright, the cream that sits on it. */
 export const CREAM = '#f4ece6';
 
-/** The 2019 mark, on a 1681.625 x 965.685 artboard. Four leaves reading as an open spread. */
-export const MARK_W = 1681.625;
-export const MARK_H = 965.685;
-const MARK_PATHS = [
-  'M1681.625,391.685c-220.914-220.913-579.086-220.913-800,0v-226c220.914-220.913,579.086-220.913,800,0Z',
-  'M1681.625,965.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z',
-  'M1681.625,678.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z',
-  'M800,965.685c-220.914-220.914-579.086-220.914-800,0v-800c220.914-220.913,579.086-220.913,800,0Z',
-];
+/* The mark itself lives in src/lib/mark.ts, which imports nothing, so the seal can have it
+   on both sides of the build. Re-exported here because this file is the brand's front door
+   for scripts. */
+import { MARK_PATHS, MARK_W, MARK_H } from '../../src/lib/mark';
+export { MARK_W, MARK_H };
 
 /**
  * The mark reduced to its solid leaf, for sizes where the rest cannot survive.
@@ -69,7 +65,7 @@ export function loadFonts(): { roman: Font; italic: Font } {
  * it cannot read: that is how a share card once shipped reading "689 works · n". The
  * commands are serialised here instead, and checked before they can reach the canvas.
  */
-function pathData(path: { commands: Array<Record<string, number | string>> }): string {
+export function pathData(path: { commands: Array<Record<string, number | string>> }): string {
   const n = (v: unknown) => {
     if (typeof v !== 'number' || !Number.isFinite(v)) throw new Error(`Bad coordinate: ${String(v)}`);
     return String(Math.round(v * 100) / 100);

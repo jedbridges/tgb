@@ -1,222 +1,167 @@
 ---
 /**
- * The seal.
+ * The seal, in wax.
  *
- * Not an object on the page. The page itself, pressed.
+ * What this replaced, and why. The previous seal was a blind deboss: no ink, no object,
+ * just the paper pressed, on the argument that an object in the corner of the hero has to
+ * win against the headline or lose to it. That argument was sound and it has been
+ * overruled on purpose. A deboss can only ever be a texture, and the mark is the thing
+ * that says a person chose these books; it earns being an object. So this is wax, poured
+ * and struck, and it is lit rather than drawn.
  *
- * A blind deboss is what a bindery does to a cloth cover when it wants a mark without ink:
- * a heated die is struck into the board, and what you see afterwards is not pigment but
- * light, caught on the wall of the recess. That is the whole of this component. There is no
- * gold, no disc, no material that the site does not already have. Every line here is warm
- * paper with a shadow above it and a highlight below it, which is exactly what a pressed
- * line looks like under a light that comes from overhead.
+ * Three things are worth knowing.
  *
- * Why this rather than a rendered medallion: an object has to win against the headline or
- * lose to it, and at this size it was winning. A deboss is the surface, so it can run off
- * the edge of the screen at any scale without competing with a word.
+ * The shape is shared. src/lib/seal-geometry.ts holds every radius, height and
+ * coefficient, and hands the same numbers to this SVG, to the shader, and to the script
+ * that lays the legend out. There is no second copy to drift.
  *
- * Three things are worth knowing about the construction.
+ * What ships in the HTML is this SVG, and it is complete: a reader with no JavaScript, no
+ * WebGL, a lost context, a print dialog or a forced-colours mode sees a finished seal
+ * rather than a hole. The canvas is created by script, fades in over the top, and the SVG
+ * stays underneath for the rest of the page's life. The relief is rasterised out of these
+ * very nodes, so the two cannot disagree about where a letter sits.
  *
- * The strike is three copies of one drawing. A dark copy sits a little high, a light copy a
- * little low, and the real one on top is filled with the page's own paper, so only the two
- * lips survive. Both lips are softened by a small blur, because a die leaves a rolled edge
- * rather than a cut one.
+ * There is no filter element anywhere in here, and nothing inside the SVG animates. Those
+ * two together, on this page, once held Safari at six frames a second: an SVG filter with
+ * something moving inside it is re-run on the CPU every frame. The smoke test now fails
+ * the build if a filter reappears in this markup.
  *
- * The recess cannot be pure paper. A true same-value deboss relies on a real light and a
- * real surface; on a screen, under a grain overlay, it disappears. The face carries a few
- * per cent of ink so the pressed area reads as sunk even on a phone in daylight. That is a
- * cheat, and it is the difference between debossed and absent.
- *
- * The rim turns. The lettering rotates inside the ring while the seal itself stays put,
- * slowly enough that it reads as drift rather than as a spinner. The rotation has to be
- * applied inside the lip offset, not outside it, or the shadow travels around to the bottom
- * of the letters: hence a translating group wrapping a rotating use, rather than one
- * element carrying both.
- *
- * On hover an iridescence rises in the struck lines only, the way light moves over a foil
- * that has been pressed rather than printed. It is one gradient, turned by the pointer.
+ * The legend reads IN PRINCIPIO ERAT VERBUM, twice, hinged on the Greek word the Latin is
+ * translating. Outlines are baked at build time by scripts/build-seal.ts, from EB Garamond
+ * SemiBold (SIL OFL 1.1), because neither face this site ships has a Greek capital in it.
  */
+import legend from '~/assets/seal-legend.json';
+import { MARK_PATHS } from '~/lib/mark';
+import {
+  outlinePath, FIELD_C, R_FIELD, R_LIP, DEVICE_TRANSFORM, LEGEND,
+} from '~/lib/seal-geometry';
+
 interface Props { class?: string }
 const { class: cls } = Astro.props;
 
-const RIM = '· EVERY BOOK THAT NINE PROGRAMS ASSIGN · ONE SHELF ';
-
-/* The scalloped edge, as arcs rather than as a polygon: twenty-six chords, each bulged
-   outward by a fixed sagitta. Soft lobes, not teeth. A sunburst edge reads as a discount
-   sticker; this one reads as a notary seal, which is the claim being made. */
-const LOBES = 26;
-const EDGE_R = 170;
-const BULGE = 8;
-const chord = 2 * EDGE_R * Math.sin(Math.PI / LOBES);
-const arcR = (chord * chord) / 4 / (2 * BULGE) + (BULGE * BULGE) / (2 * BULGE);
-const n = (v: number) => Number(v.toFixed(2));
-const ring = Array.from({ length: LOBES + 1 }, (_, i) => {
-  const t = -Math.PI / 2 + (i * 2 * Math.PI) / LOBES;
-  return [n(200 + EDGE_R * Math.cos(t)), n(200 + EDGE_R * Math.sin(t))] as const;
-});
-const SCALLOP =
-  `M${ring[0][0]},${ring[0][1]}` +
-  ring.slice(1).map(([x, y]) => `A${n(arcR)},${n(arcR)} 0 0,1 ${x},${y}`).join('') +
-  'Z';
-
-const RIM_R = 134;
-const RIM_LEN = n(2 * Math.PI * RIM_R);
+const OUTLINE = outlinePath();
+const gid = (ch: string) => `sg${ch.codePointAt(0)}`;
+const shapes = Object.entries(legend.glyphs as Record<string, string>);
+const place = legend.place as Array<[string, string]>;
 ---
 <div class:list={['seal', cls]} data-seal aria-hidden="true">
-  <div class="seal__sheen"></div>
-  <svg class="seal__art" viewBox="0 0 400 400" role="presentation" focusable="false">
-    <defs>
-      <!-- Everything that does not turn. -->
-      <g id="seal-still">
-        <path d={SCALLOP} fill="none" stroke-width="2.6" />
-        <circle cx="200" cy="200" r="161" fill="none" stroke-width="1.1" />
-        <circle cx="200" cy="200" r="155" fill="none" stroke-width="1.1" />
-        <circle cx="200" cy="200" r="108" fill="none" stroke-width="1.1" />
-        <!-- The mark, where a seal carries its device. -->
-        <g class="seal__device" transform="translate(144.5, 158) scale(0.0661)">
-          <path d="M1681.625,391.685c-220.914-220.913-579.086-220.913-800,0v-226c220.914-220.913,579.086-220.913,800,0Z" />
-          <path d="M1681.625,965.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z" />
-          <path d="M1681.625,678.685c-220.914-220.914-579.086-220.914-800,0v-226c220.914-220.914,579.086-220.914,800,0Z" />
-          <path d="M800,965.685c-220.914-220.914-579.086-220.914-800,0v-800c220.914-220.913,579.086-220.913,800,0Z" />
-        </g>
-        <text class="seal__count" x="200" y="252">689 WORKS</text>
-        <path d="M168,266 H232" stroke-width="1.3" fill="none" />
-      </g>
+  <!-- The shader works in linear light and needs real numbers, but a custom property
+       computes to whatever token it was written as and a computed colour may serialise as
+       oklch(). So the colours are put on something and read back off it. -->
+  <span class="seal__probe" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
 
-      <!-- Everything that does. -->
-      <g id="seal-turn">
-        <path id="seal-rim-path" d={`M200,200 m-${RIM_R},0 a${RIM_R},${RIM_R} 0 1,1 ${RIM_R * 2},0 a${RIM_R},${RIM_R} 0 1,1 -${RIM_R * 2},0`} fill="none" />
-        <text class="seal__rim">
-          <textPath href="#seal-rim-path" startOffset="0" textLength={RIM_LEN} lengthAdjust="spacing">{RIM}</textPath>
-        </text>
-      </g>
+  <svg class="seal__svg" viewBox="0 0 400 400" role="presentation" focusable="false">
+    <defs>
+      <radialGradient id="wax-body" cx="42%" cy="38%" r="72%">
+        <stop class="s-edge" offset="0" />
+        <stop class="s-wax" offset="0.55" />
+        <stop class="s-deep" offset="1" />
+      </radialGradient>
+      <radialGradient id="wax-shadow" cx="50%" cy="50%" r="50%">
+        <stop class="s-shadow" offset="0.86" />
+        <stop class="s-shadow-out" offset="0.98" />
+      </radialGradient>
+      <linearGradient id="wax-lip" x1="0" y1="0" x2="1" y2="1">
+        <stop class="s-edge" offset="0" stop-opacity="0.7" />
+        <stop class="s-wax" offset="0.5" stop-opacity="0" />
+        <stop class="s-deep" offset="1" stop-opacity="0.6" />
+      </linearGradient>
+      <linearGradient id="wax-field" x1="0" y1="0" x2="0.6" y2="1">
+        <stop class="s-deep" offset="0" />
+        <stop class="s-wax" offset="1" />
+      </linearGradient>
+      <!-- A recess lit from over the left shoulder has its near wall in shade and its far
+           wall catching the light, which is the whole of what tells an eye it is sunk. -->
+      <linearGradient id="wax-wall" x1="0" y1="0" x2="0.8" y2="1">
+        <stop class="s-deep" offset="0" />
+        <stop class="s-edge" offset="1" />
+      </linearGradient>
+      {shapes.map(([ch, d]) => <path id={gid(ch)} d={d} />)}
     </defs>
 
-    <!-- The sunk area itself. A recess gathers a little shade before any lip is drawn. -->
-    <path class="seal__recess" d={SCALLOP} />
+    <path class="seal__shadow" d={OUTLINE} transform="translate(5 8) scale(1.04)" fill="url(#wax-shadow)" />
+    <path class="seal__body" d={OUTLINE} fill="url(#wax-body)" />
+    <circle cx={FIELD_C[0]} cy={FIELD_C[1]} r={R_LIP} fill="none" stroke="url(#wax-lip)" stroke-width="11" />
+    <circle cx={FIELD_C[0]} cy={FIELD_C[1]} r={R_FIELD} fill="url(#wax-field)" />
+    <circle cx={FIELD_C[0]} cy={FIELD_C[1]} r={R_FIELD - 1.2} fill="none" stroke="url(#wax-wall)" stroke-width="2.4" />
 
-    <!-- The strike. Dark lip high, light lip low, face in the page's own paper.
-         Each lip translates on the outside of a use that rotates on the inside, so the
-         lettering turns while the direction of the light does not. -->
-    <g class="seal__lip seal__lip--dark" transform="translate(0,-2.5)">
-      <use href="#seal-still" />
-      <use href="#seal-turn" class="seal__spin" />
-    </g>
-    <g class="seal__lip seal__lip--light" transform="translate(0,2.5)">
-      <use href="#seal-still" />
-      <use href="#seal-turn" class="seal__spin" />
-    </g>
-    <g class="seal__face">
-      <use href="#seal-still" />
-      <use href="#seal-turn" class="seal__spin" />
+    <!-- The raised work. data-h is how proud each part stands, which is what the relief
+         rasteriser reads: the device full, the legend a little lower, so the mark keeps
+         the deeper cut where a letter passes near it. -->
+    <g id="seal-relief">
+      <g class="seal__legend" transform={`translate(${FIELD_C[0]},${FIELD_C[1]})`}>
+        {place.map(([ch, m]) => <use href={`#${gid(ch)}`} transform={m} data-h="215" />)}
+      </g>
+      <g class="seal__device" transform={DEVICE_TRANSFORM}>
+        {MARK_PATHS.map((d) => <path d={d} data-h="255" />)}
+      </g>
     </g>
   </svg>
 </div>
 
 <style>
+  /* Wax is a material, not a user-interface red.
+     tokens.css asks that no file mix its own red, so the light value is --accent-press
+     exactly. The dark value is deliberately not that token's own dark half: --accent-press
+     goes pale pink in the dark scheme, which is right for a pressed button and quite wrong
+     for wax, because a stick of sealing wax does not change colour when the light does. It
+     sits on darker paper with a little less chroma, and that is all. */
   .seal {
-    /* The press. Two schemes, not one flipped: a recess in dark paper needs a far weaker
-       highlight than one in light paper, or the lip reads as an outline drawn around the
-       shape rather than as light falling into it. */
-    --press-dark: light-dark(rgb(74 58 50 / 0.56), rgb(0 0 0 / 0.72));
-    --press-light: light-dark(rgb(255 255 253 / 1), rgb(255 244 228 / 0.13));
-    --press-recess: light-dark(rgb(74 58 50 / 0.030), rgb(0 0 0 / 0.11));
-    /* The floor of a pressed letter. Shaded only where the seal has room of its own: on a
-       narrow screen it sits behind the lede, and shaded letters there fight the words over them. */
-    --press-floor: var(--paper);
+    --wax:      light-dark(oklch(0.42 0.17 35), oklch(0.39 0.15 33));
+    --wax-deep: light-dark(oklch(0.30 0.13 31), oklch(0.27 0.11 30));
+    --wax-edge: light-dark(oklch(0.55 0.19 39), oklch(0.50 0.17 37));
     position: relative;
     width: 100%;
     aspect-ratio: 1;
   }
 
-  .seal__art { width: 100%; height: 100%; display: block; overflow: visible; }
+  .seal__probe { position: absolute; width: 0; height: 0; overflow: hidden; }
+  .seal__probe i:nth-child(1) { color: var(--wax); }
+  .seal__probe i:nth-child(2) { color: var(--wax-deep); }
+  .seal__probe i:nth-child(3) { color: var(--wax-edge); }
+  .seal__probe i:nth-child(4) { color: var(--paper); }
 
-  .seal__recess { fill: var(--press-recess); }
+  .seal__svg, :global(.seal__gl) {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    display: block; overflow: visible;
+  }
+  /* The canvas arrives over the top and the SVG goes out underneath it. Both are in the
+     same square, so nothing on the page moves when the swap happens. */
+  :global(.seal__gl) { opacity: 0; transition: opacity 320ms var(--ease-out); }
+  .seal[data-gl] :global(.seal__gl) { opacity: 1; }
+  .seal[data-gl] .seal__svg {
+    opacity: 0; visibility: hidden;
+    transition: opacity 320ms var(--ease-out), visibility 0s 320ms;
+  }
+  /* When the canvas is going to strike the wax itself, the drawn fallback leaves at once
+     rather than fading, so the reader never sees a finished impression dissolve into an
+     unfinished one. */
+  .seal[data-press] .seal__svg { transition: none; }
+  .seal[data-press] :global(.seal__gl) { transition: none; }
 
-  /* No blur on the lips. A softened edge is truer to a die strike, but it cost an SVG
-     filter, and an SVG filter with something turning inside it is re-run on the CPU every
-     frame: measured in Safari it held the whole page at 26fps with the filter alone and
-     6fps with the sheen as well. The lips carry a little less weight instead, which reads
-     as the same shallow press without asking anything of the compositor. */
-  .seal__lip--dark * { fill: var(--press-dark); stroke: var(--press-dark); }
-  .seal__lip--light * { fill: var(--press-light); stroke: var(--press-light); }
-  /* The face is the page. It exists only to bury the middle of each lip, which is what
-     turns two offset copies into one pressed line. */
-  .seal__face * { fill: var(--paper); stroke: var(--paper); }
-  /* Except the words and the device. Paper-filled, they were only their two lips, which at
-     rim size read as outlined letters rather than as letters: legible to someone who knew
-     what it said. The floor of a pressed letter sits in shade, so it gets some, opaque so
-     it still buries the lips. */
-  /* 761px matches the homepage, where below that width the seal moves behind the headline. */
-  @media (min-width: 761px) {
-    .seal { --press-floor: light-dark(color-mix(in oklab, var(--paper), var(--ink) 28%), color-mix(in oklab, var(--paper), black 32%)); }
-  }
-  .seal__lip--dark { --floor: var(--press-dark); }
-  .seal__lip--light { --floor: var(--press-light); }
-  .seal__face { --floor: var(--press-floor); }
-  .seal__rim, .seal__count, .seal__device path { fill: var(--floor); }
+  .s-wax { stop-color: var(--wax); }
+  .s-deep { stop-color: var(--wax-deep); }
+  .s-edge { stop-color: var(--wax-edge); }
+  .s-shadow { stop-color: rgb(var(--shadow-ink) / calc(0.22 * var(--shadow-a))); }
+  .s-shadow-out { stop-color: rgb(var(--shadow-ink) / 0); }
 
-  /* The sheen.
-     It used to be a fourth copy of every struck line, painted with an SVG gradient, so the
-     iridescence sat inside the lettering itself. That was the nicest version and it is not
-     affordable: its mere presence, blending or not, turning or not, held Safari at 6fps.
-     One CSS layer over the disc instead. It is composited rather than rasterised, so it
-     costs nothing until the pointer arrives, and it catches the whole medallion rather than
-     only its lines, which is what light on a foil does anyway. */
-  .seal__sheen {
-    position: absolute; inset: 5.4%;
-    border-radius: 50%;
-    pointer-events: none;
-    opacity: calc(var(--sheen, 0) * 0.85);
-    /* A band, not a disc. A conic sweep covers every pixel of the medallion, which on
-       parchment passes for a sheen and on a dark page is simply a milky film laid over the
-       whole thing: the deboss disappears under it. A band that is transparent at both ends
-       leaves most of the seal alone and reads as light travelling across a surface, which
-       is what it is. The element is a circle, so turning it toward the pointer turns the
-       band and nothing else, and a rotation is composited rather than repainted. */
-    background: linear-gradient(to right,
-      transparent 14%,
-      rgb(246 221 192 / 0.40) 29%,
-      rgb(207 232 224 / 0.52) 41%,
-      rgb(217 210 238 / 0.58) 51%,
-      rgb(242 214 223 / 0.52) 61%,
-      rgb(248 238 214 / 0.38) 73%,
-      transparent 88%);
-    rotate: calc(var(--sweep, 0) * 1deg);
-    transition: opacity 420ms var(--ease-out);
-    will-change: opacity;
-  }
-  /* Light added to a near-black page carries much further than light added to paper. */
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme='light']) .seal__sheen { opacity: calc(var(--sheen, 0) * 0.42); }
-  }
-  :root[data-theme='dark'] .seal__sheen { opacity: calc(var(--sheen, 0) * 0.42); }
+  #seal-relief use, #seal-relief path { fill: var(--wax-edge); }
+  /* The relief in the fallback is flat fill rather than modelled light. It is a drawing of
+     a seal, not a photograph of one, and it only has to hold the half second before the
+     canvas arrives, or the whole visit if the canvas never does. */
+  .seal__device path { fill: color-mix(in oklab, var(--wax-edge), white 8%); }
 
-  /* Bigger than it looks like it needs to be. A blind deboss carries no ink, so the only
-     things holding a letter together are its size and the depth of the strike, and at 19.5
-     the thin strokes of the rim legend were disappearing into the paper. */
-  .seal__rim {
-    font-family: var(--font-ui);
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
+  @media print {
+    /* A canvas without a preserved drawing buffer can print as a blank square. */
+    :global(.seal__gl) { display: none; }
+    .seal[data-gl] .seal__svg { opacity: 1; visibility: visible; }
   }
-  .seal__count {
-    font-family: var(--font-ui);
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    text-anchor: middle;
-  }
+  /* It carries no information, so in a forced palette it simply steps out of the way
+     rather than becoming a solid shape in somebody's chosen colours. */
+  @media (forced-colors: active) { .seal { display: none; } }
 
-  /* Drift, not rotation. A full turn takes well over a minute, so the eye reads it as the
-     page breathing rather than as something loading. */
-  .seal__spin { transform-box: view-box; transform-origin: 200px 200px; }
   @media (prefers-reduced-motion: no-preference) {
-    .seal__spin { animation: seal-turn 78s linear infinite; }
-    @keyframes seal-turn { to { rotate: 360deg; } }
-
-    /* It arrives the way it was made: struck, from very slightly above. */
     .seal { animation: seal-strike 820ms cubic-bezier(0.16, 1, 0.3, 1) 220ms backwards; }
     @keyframes seal-strike {
       from { opacity: 0; transform: translateY(-14px) scale(1.06); }
@@ -227,53 +172,18 @@ const RIM_LEN = n(2 * Math.PI * RIM_R);
 </style>
 
 <script>
-  /*
-   * The sheen, and only the sheen.
-   *
-   * Everything else is CSS and SVG. This reads the pointer across the hero and writes two
-   * values: how much iridescence, by distance from the seal, and which way it runs. It
-   * never runs without a real pointer, so a phone gets a still deboss, which is what a
-   * deboss is.
-   */
-  const seal = document.querySelector<HTMLElement>('[data-seal]');
-  const sheen = seal?.querySelector<HTMLElement>('.seal__sheen');
-  const fine = matchMedia('(hover: hover) and (pointer: fine)');
-
-  if (seal && sheen && fine.matches) {
-    let frame = 0;
-    const rest = () => seal.style.setProperty('--sheen', '0');
-
-    /* Geometry is measured once and re-measured only when it can actually have changed.
-       Reading a bounding rect inside a pointermove handler forces a synchronous layout on
-       every single mouse move, and on a page carrying a shelf of books that is not a free
-       read: it is the whole reason a hover can feel like it is dragging. */
-    const hero = seal.closest('section');
-    let h: DOMRect | null = null;
-    let r: DOMRect | null = null;
-    const remeasure = () => { h = hero?.getBoundingClientRect() ?? null; r = seal.getBoundingClientRect(); };
-    remeasure();
-    addEventListener('resize', remeasure, { passive: true });
-    addEventListener('scroll', remeasure, { passive: true });
-
-    let px = 0, py = 0;
-    addEventListener('pointermove', (e) => {
-      px = e.clientX; py = e.clientY;
-      if (frame) return;
-      frame = requestAnimationFrame(() => {
-        frame = 0;
-        if (!h || !r || !r.width) return;
-        if (py < h.top || py > h.bottom) { rest(); return; }
-        const dx = px - (r.left + r.width / 2);
-        const dy = py - (r.top + r.height / 2);
-        // Full strength on the seal, falling away over about a seal's width, so it lights up
-        // as the pointer approaches rather than switching on at an edge.
-        const near = Math.max(0, 1 - Math.hypot(dx, dy) / (r.width * 1.15));
-        seal.style.setProperty('--sheen', near.toFixed(3));
-        seal.style.setProperty('--sweep', String(Math.round((Math.atan2(dy, dx) * 180) / Math.PI)));
-      });
-    }, { passive: true });
-
-    addEventListener('blur', rest);
-    document.addEventListener('mouseleave', rest);
+  /* The renderer is loaded on idle, not on parse. It is the one piece of this page that
+     nothing depends on: the seal is already drawn and already correct when this runs, so
+     it waits until the browser has nothing better to do and then upgrades. The import is
+     dynamic so none of the GL code sits in the critical bundle. */
+  const root = document.querySelector<HTMLElement>('[data-seal]');
+  if (root && typeof WebGLRenderingContext !== 'undefined') {
+    /* Started after the first paint, not on idle.
+       On idle was the cautious choice and it cost the entrance: by the time the browser
+       declares itself idle the page is a second old and striking the wax then looks like
+       a glitch rather than an arrival. One frame after paint is late enough to stay off
+       the critical path and early enough that the press belongs to the page opening. */
+    const boot = () => import('~/lib/seal-gl').then((m) => m.mountWaxSeal(root)).catch(() => { /* the SVG stands */ });
+    requestAnimationFrame(() => requestAnimationFrame(boot));
   }
 </script>
