@@ -117,6 +117,9 @@ const itemList = {
           <svg class="pick__chev" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </span>
       </div>
+      <div class="cols ui" aria-hidden="true">
+        <span>Book</span><span>Free to read</span><span>In print we recommend</span><span></span>
+      </div>
     </form>
 
     <ol class="rows" id="free-list">
@@ -134,7 +137,7 @@ const itemList = {
               </p>
               <p class="row__edition">
                 <span class="row__label ui">Free to read</span>
-                <span class="row__edition-name">{read.edition}{read.external && <span class="row__host"> at {SOURCE_NAME[read.where]}</span>}</span>
+                <span class="row__edition-name">{read.edition}{read.external && !read.edition.includes(SOURCE_NAME[read.where]) && <span class="row__host"> at {SOURCE_NAME[read.where]}</span>}</span>
               </p>
               <p class="row__buy">
                 {upsellWorthIt(w, read) ? (
@@ -142,11 +145,11 @@ const itemList = {
                     <span class="row__label ui">In print we recommend</span>
                     <a class="row__buy-link" href={amazonUrl(pick.target)} target="_blank" rel="sponsored noopener"
                       data-affiliate="amazon" data-work={w.id} data-placement="free" data-edition={editionKey(w.data.recommendedEdition)}>
-                      {pick.short}<span class="visually-hidden">: {w.data.title} on Amazon, opens in a new tab</span>
+                      {pick.editionName ?? pick.short}<span class="visually-hidden">: {w.data.title} on Amazon, opens in a new tab</span>
                     </a>
                   </>
                 ) : (
-                  <span class="row__label ui">The free text is the one we recommend</span>
+                  <span class="row__label row__label--note ui">The free text is the one we recommend</span>
                 )}
               </p>
               <p class="row__action">
@@ -190,6 +193,7 @@ const itemList = {
      Two lines and one vocabulary: the search, then a row of pills that all share the
      height, border and filled "on" state of the chips on the books page. */
   .bar {
+    --free-cols: minmax(0, 1.3fr) minmax(0, 1.1fr) minmax(0, 1fr) 8.5rem;
     position: sticky; top: var(--header-h); z-index: 10;
     display: grid; gap: var(--s1);
     padding: var(--s1) 0 var(--s1);
@@ -240,6 +244,12 @@ const itemList = {
   .pick:not(.pick--sort) select { width: 11rem; }
   .pick--sort { margin-left: auto; }
 
+  /* Column heads, once, in the pinned bar: the labels belong to the columns, not to each
+     of four hundred rows. Same template as .row so they sit over what they name. */
+  .cols {
+    display: grid; grid-template-columns: var(--free-cols); gap: 0 var(--s2);
+    font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute);
+  }
   .bar__clear { font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; min-height: 36px; padding-inline: 0.3em; }
   .bar__clear[hidden] { display: none; }
 
@@ -252,9 +262,22 @@ const itemList = {
      every row so the eye finds the next one without reading across. */
   .row {
     display: grid;
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr) minmax(0, 1fr) auto;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr) minmax(0, 1fr) 8.5rem;
     gap: var(--s0) var(--s2);
     align-items: center; padding-block: var(--s1); border-bottom: 1px solid var(--edge);
+    position: relative; isolation: isolate;
+  }
+  /* A quiet band under the row the pointer is on, reaching just past the text, so the eye
+     can follow a title across to its button on a wide screen. */
+  .row::before {
+    content: ''; position: absolute; inset: 0 calc(var(--s0) * -1); z-index: -1;
+    background: var(--paper-bright); opacity: 0; transition: opacity var(--dur-fast);
+  }
+  @media (hover: hover) { .row:hover::before { opacity: 1; } }
+  /* On a wide screen the column heads carry the labels; the per-row copies stay for
+     screen readers and come back wherever the row stacks. */
+  @media (min-width: 1001px) {
+    .row__label:not(.row__label--note) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   }
   .row[hidden] { display: none; }
   .row p { margin: 0; min-width: 0; }
@@ -269,8 +292,8 @@ const itemList = {
   .row__edition-name { color: var(--ink-soft); font-size: var(--step--1); line-height: 1.4; }
   .row__host { color: var(--ink-mute); }
   .row__buy-link { color: var(--accent); font-size: var(--step--1); text-decoration: none; border-bottom: 1px solid currentColor; justify-self: start; }
-  .row__action { justify-self: end; }
-  .row__read { font-size: var(--step--2); padding: 0.55em 1.1em; white-space: nowrap; min-width: 8.5rem; }
+  .row__action { justify-self: stretch; }
+  .row__read { font-size: var(--step--2); padding: 0.55em 1.1em; white-space: nowrap; width: 100%; }
   .row__ext { opacity: 0.6; }
 
   .empty { padding-block: var(--s4); color: var(--ink-soft); font-size: var(--step-1); }
@@ -282,9 +305,10 @@ const itemList = {
 
   /* Tablet: the two middle columns stack under the title, the action keeps its edge. */
   @media (max-width: 1000px) {
+    .cols { display: none; }
     .row { grid-template-columns: minmax(0, 1fr) auto; gap: var(--s-1) var(--s2); align-items: start; }
     .row__work, .row__edition, .row__buy { grid-column: 1; }
-    .row__action { grid-column: 2; grid-row: 1 / span 3; align-self: center; }
+    .row__action { grid-column: 2; grid-row: 1 / span 3; align-self: center; width: 8.5rem; }
   }
   /* Phone: one column, and the action becomes the full-width thing it should be on a
      screen where it is the only tap target in the row. */
@@ -302,7 +326,7 @@ const itemList = {
     .pick--sort select { flex: 1; }
     .row { grid-template-columns: minmax(0, 1fr); gap: var(--s-1); padding-block: var(--s2); }
     .row__work, .row__edition, .row__buy, .row__action { grid-column: 1; grid-row: auto; }
-    .row__action { justify-self: stretch; margin-top: var(--s-1); }
+    .row__action { justify-self: stretch; margin-top: var(--s-1); width: auto; }
     .row__read { width: 100%; min-height: 48px; font-size: var(--step--1); }
     .rowhead { padding-top: var(--s2); }
   }
