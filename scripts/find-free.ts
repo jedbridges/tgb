@@ -155,7 +155,14 @@ async function seForAuthor(w: (typeof candidates)[number]): Promise<SEHit[]> {
     get(`https://standardebooks.org/ebooks?query=${encodeURIComponent(w.authorName)}`) as Promise<string | null>,
   )) as string | null;
   if (!html) return [];
-  const paths = [...new Set([...html.matchAll(/href="(\/ebooks\/[a-z0-9-]+\/[a-z0-9-]+(?:\/[a-z0-9-]+)?)"/g)].map((m) => m[1]))];
+  /*
+   * Search results list placeholders too: a page for a book Standard Ebooks wants to make
+   * and has not, with a sponsor button and nothing to read. Each result is a schema:Book
+   * <li>, and a placeholder's carries a placeholder cover, so only the real ones are kept.
+   */
+  const real = [...html.matchAll(/<li[^>]*typeof="schema:Book"[^>]*>[\s\S]*?<\/li>/g)]
+    .map((m) => m[0]).filter((li) => !/placeholder/.test(li)).join('\n');
+  const paths = [...new Set([...(real || html).matchAll(/href="(\/ebooks\/[a-z0-9-]+\/[a-z0-9-]+(?:\/[a-z0-9-]+)?)"/g)].map((m) => m[1]))];
   const surnames = surnamesOf(w.authorName, w.authorAliases);
   return paths
     .map((p) => p.split('/').filter(Boolean))              // ebooks, author, title, [translator]
@@ -242,6 +249,8 @@ async function lane() {
     for (const w of group) {
       const mine = [w.title, ...w.aliases];
       let bestSE: Cand['se'];
+      // Placeholders (books Standard Ebooks would like to make) carry no download. They
+      // were filtered out of the author's page in seForAuthor, so every hit here is real.
       for (const h of se) {
         const s = titleScore(mine, h.titleSlug);
         if (s >= 0.75 && (!bestSE || s > bestSE.score)) bestSE = { ...h, score: s };
