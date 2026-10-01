@@ -168,6 +168,17 @@ const HEADLINE_WORDS = [
   .hero__aside { font-size: var(--step--1); margin-top: var(--s1); display: flex; flex-wrap: wrap; gap: var(--s-1) var(--s2); }
   .hero__aside a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid var(--edge); }
   .hero__aside a:hover { color: var(--accent); border-color: currentColor; }
+  /* Where the finger is the pointer, these two stop being asides and become the only
+     links in the hero that are not buttons, and 21px of text is not a target.
+     The box is left alone and the hit area grown past it, because the rule under these
+     links is a border on the link itself: make the box 44px tall and the underline
+     detaches from the words and floats below them. The row gap is opened to more than
+     the two inflated areas so they cannot overlap each other. */
+  @media (hover: none) {
+    .hero__aside { gap: var(--s2) var(--s2); }
+    .hero__aside a { position: relative; }
+    .hero__aside a::after { content: ''; position: absolute; inset: -12px 0; }
+  }
   /* The hero is sized so the first shelf breaks the fold: the section heading and the top
      of the covers sit just inside the viewport, which shows the product and says there is
      more below without a scroll cue. min-height, not height, so short and landscape
@@ -218,13 +229,17 @@ const HEADLINE_WORDS = [
   @media (min-width: 2100px) {
     .hero__seal { width: min(44rem, 24vw); translate: 28% -50%; }
   }
-  /* Same crop, different height. On a phone nothing clears a seal this size, so the only
-     question is what it may pass behind. Text is transparent and the primary action is not,
-     so it rises to the top of the hero and sits behind the headline like a watermark on
-     letterhead, rather than being sliced in half by a solid red button. The slice hanging
-     off the right edge is unchanged. */
+  /* On a phone nothing clears a seal at the desktop size, so the only question is what it
+     may pass behind: text is transparent, the primary action is not, and it rises to the
+     top of the hero to sit behind the headline like a watermark on letterhead rather than
+     being sliced in half by a solid red button.
+     Behind the headline, though, and not behind the lede. At the old size it crossed 44%
+     of that paragraph, three lines of 19px copy read against an embossed ring and its
+     lettering, so here it is smaller and lifted further: same corner, same crop by the
+     right edge, now also cropped by the top, and the only thing under it is display type
+     large enough to hold its own. */
   @media (max-width: 760px) {
-    .hero__seal { top: 7%; translate: 33% 0; }
+    .hero__seal { top: 0; width: clamp(9rem, 34vw, 13rem); translate: 30% -30%; }
   }
 
   /* Two lines at every width, breaking after "years" so that "of argument" reads as one
