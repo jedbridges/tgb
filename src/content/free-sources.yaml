@@ -1,0 +1,298 @@
+# Where a work can be read free when the text is not hosted here. Link only: nothing in
+# this file is downloaded. Written by scripts/write-free.ts from the report that
+# scripts/find-free.ts produces, then corrected by hand.
+#
+#   id, work:   the work slug in src/content/works (the id is what the loader keys on)
+#   source:     standardebooks | gutenberg | wikisource | archive
+#   url:        the page a reader lands on
+#   edition:    what they are being given, named honestly (translator, year)
+#   translator: as the work's recommendedEdition uses it, when the text is a translation
+- { id: aeschylus-agamemnon, work: aeschylus-agamemnon, source: standardebooks, url: "https://standardebooks.org/ebooks/aeschylus/agamemnon/gilbert-murray", edition: "Gilbert Murray's translation", translator: "Gilbert Murray" }
+- { id: aeschylus-eumenides, work: aeschylus-eumenides, source: standardebooks, url: "https://standardebooks.org/ebooks/aeschylus/the-eumenides/gilbert-murray", edition: "Gilbert Murray's translation", translator: "Gilbert Murray" }
+- { id: aeschylus-libation-bearers, work: aeschylus-libation-bearers, source: standardebooks, url: "https://standardebooks.org/ebooks/aeschylus/the-libation-bearers/gilbert-murray", edition: "Gilbert Murray's translation", translator: "Gilbert Murray" }
+- { id: aeschylus-prometheus-bound, work: aeschylus-prometheus-bound, source: standardebooks, url: "https://standardebooks.org/ebooks/aeschylus/prometheus-bound/gilbert-murray", edition: "Gilbert Murray's translation", translator: "Gilbert Murray" }
+- { id: aesop-fables, work: aesop-fables, source: standardebooks, url: "https://standardebooks.org/ebooks/aesop/fables/v-s-vernon-jones", edition: "V S Vernon Jones's translation", translator: "V S Vernon Jones" }
+- { id: andersen-fairy-tales, work: andersen-fairy-tales, source: standardebooks, url: "https://standardebooks.org/ebooks/hans-christian-andersen/fairy-tales/various-translators", edition: "The Standard Ebooks edition" }
+- { id: aristophanes-lysistrata, work: aristophanes-lysistrata, source: standardebooks, url: "https://standardebooks.org/ebooks/aristophanes/lysistrata/benjamin-bickley-rogers", edition: "Benjamin Bickley Rogers's translation", translator: "Benjamin Bickley Rogers" }
+- { id: aristotle-athenian-constitution, work: aristotle-athenian-constitution, source: gutenberg, url: "https://www.gutenberg.org/ebooks/26095", edition: "Sir Frederic G. Kenyon's translation", translator: "Sir Frederic G. Kenyon" }
+- { id: aristotle-history-of-animals, work: aristotle-history-of-animals, source: gutenberg, url: "https://www.gutenberg.org/ebooks/59058", edition: "Richard Cresswell's translation", translator: "Richard Cresswell" }
+- { id: augustine-on-christian-doctrine, work: augustine-on-christian-doctrine, source: standardebooks, url: "https://standardebooks.org/ebooks/augustine-of-hippo/on-christian-doctrine", edition: "The Standard Ebooks edition" }
+- { id: austen-emma, work: austen-emma, source: standardebooks, url: "https://standardebooks.org/ebooks/jane-austen/emma", edition: "The Standard Ebooks edition" }
+- { id: bacon-advancement-of-learning, work: bacon-advancement-of-learning, source: standardebooks, url: "https://standardebooks.org/ebooks/francis-bacon/the-advancement-of-learning", edition: "The Standard Ebooks edition" }
+- { id: bacon-essays, work: bacon-essays, source: standardebooks, url: "https://standardebooks.org/ebooks/francis-bacon/essays", edition: "The Standard Ebooks edition" }
+- { id: bacon-new-atlantis, work: bacon-new-atlantis, source: standardebooks, url: "https://standardebooks.org/ebooks/francis-bacon/new-atlantis", edition: "The Standard Ebooks edition" }
+- { id: balzac-cousin-bette, work: balzac-cousin-bette, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1749", edition: "James Waring's translation", translator: "James Waring" }
+- { id: balzac-eugenie-grandet, work: balzac-eugenie-grandet, source: standardebooks, url: "https://standardebooks.org/ebooks/honore-de-balzac/eugenie-grandet/clara-bell", edition: "Clara Bell's translation", translator: "Clara Bell" }
+- { id: balzac-pere-goriot, work: balzac-pere-goriot, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1237", edition: "Ellen Marriage's translation", translator: "Ellen Marriage" }
+- { id: beaumont-and-fletcher-philaster, work: beaumont-and-fletcher-philaster, source: gutenberg, url: "https://www.gutenberg.org/ebooks/10850", edition: "The Project Gutenberg text" }
+- { id: beowulf, work: beowulf, source: standardebooks, url: "https://standardebooks.org/ebooks/anonymous/beowulf/john-lesslie-hall", edition: "John Lesslie Hall's translation", translator: "John Lesslie Hall" }
+- { id: bergson-creative-evolution, work: bergson-creative-evolution, source: standardebooks, url: "https://standardebooks.org/ebooks/henri-bergson/creative-evolution/arthur-mitchell", edition: "Arthur Mitchell's translation", translator: "Arthur Mitchell" }
+- { id: bergson-introduction-to-metaphysics, work: bergson-introduction-to-metaphysics, source: standardebooks, url: "https://standardebooks.org/ebooks/henri-bergson/introduction-to-metaphysics/t-e-hulme", edition: "The Standard Ebooks edition" }
+- { id: bergson-time-and-free-will, work: bergson-time-and-free-will, source: gutenberg, url: "https://www.gutenberg.org/ebooks/56852", edition: "Frank Lubecki Pogson's translation", translator: "Frank Lubecki Pogson" }
+- { id: berkeley-three-dialogues, work: berkeley-three-dialogues, source: gutenberg, url: "https://www.gutenberg.org/ebooks/4724", edition: "The Project Gutenberg text" }
+- { id: bible, work: bible, source: gutenberg, url: "https://www.gutenberg.org/ebooks/124", edition: "The Project Gutenberg text" }
+- { id: bible-acts, work: bible-acts, source: gutenberg, url: "https://www.gutenberg.org/ebooks/8044", edition: "The Project Gutenberg text" }
+- { id: bible-ecclesiastes, work: bible-ecclesiastes, source: gutenberg, url: "https://www.gutenberg.org/ebooks/8021", edition: "The Project Gutenberg text" }
+- { id: boethius-consolation-of-philosophy, work: boethius-consolation-of-philosophy, source: standardebooks, url: "https://standardebooks.org/ebooks/boethius/the-consolation-of-philosophy/h-r-james", edition: "H R James's translation", translator: "H R James" }
+- { id: boswell-life-of-johnson, work: boswell-life-of-johnson, source: standardebooks, url: "https://standardebooks.org/ebooks/james-boswell/the-life-of-johnson", edition: "The Standard Ebooks edition" }
+- { id: browne-religio-medici, work: browne-religio-medici, source: gutenberg, url: "https://www.gutenberg.org/ebooks/586", edition: "The Project Gutenberg text" }
+- { id: browning-blot-in-the-scutcheon, work: browning-blot-in-the-scutcheon, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2880", edition: "The Project Gutenberg text" }
+- { id: bunyan-pilgrims-progress, work: bunyan-pilgrims-progress, source: gutenberg, url: "https://www.gutenberg.org/ebooks/131", edition: "The Project Gutenberg text" }
+- { id: burke-reflections-on-the-revolution-in-france, work: burke-reflections-on-the-revolution-in-france, source: standardebooks, url: "https://standardebooks.org/ebooks/edmund-burke/reflections-on-the-revolution-in-france", edition: "The Standard Ebooks edition" }
+- { id: burns-poems-and-songs, work: burns-poems-and-songs, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1279", edition: "The Project Gutenberg text" }
+- { id: byron-don-juan, work: byron-don-juan, source: standardebooks, url: "https://standardebooks.org/ebooks/lord-byron/don-juan", edition: "The Standard Ebooks edition" }
+- { id: calderon-life-is-a-dream, work: calderon-life-is-a-dream, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2587", edition: "Edward FitzGerald's translation", translator: "Edward FitzGerald" }
+- { id: calvin-institutes-of-the-christian-religion, work: calvin-institutes-of-the-christian-religion, source: standardebooks, url: "https://standardebooks.org/ebooks/john-calvin/institutes-of-the-christian-religion", edition: "The Standard Ebooks edition" }
+- { id: cather-lost-lady, work: cather-lost-lady, source: standardebooks, url: "https://standardebooks.org/ebooks/willa-cather/a-lost-lady", edition: "The Standard Ebooks edition" }
+- { id: cather-my-antonia, work: cather-my-antonia, source: standardebooks, url: "https://standardebooks.org/ebooks/willa-cather/my-antonia", edition: "The Standard Ebooks edition" }
+- { id: cellini-autobiography, work: cellini-autobiography, source: gutenberg, url: "https://www.gutenberg.org/ebooks/4028", edition: "John Addington Symonds's translation", translator: "John Addington Symonds" }
+- { id: chaucer-troilus-and-criseyde, work: chaucer-troilus-and-criseyde, source: standardebooks, url: "https://standardebooks.org/ebooks/geoffrey-chaucer/troilus-and-criseyde", edition: "The Standard Ebooks edition" }
+- { id: chekhov-uncle-vanya, work: chekhov-uncle-vanya, source: standardebooks, url: "https://standardebooks.org/ebooks/anton-chekhov/uncle-vanya/constance-garnett", edition: "Constance Garnett's translation", translator: "Constance Garnett" }
+- { id: cicero-letters, work: cicero-letters, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2812", edition: "Evelyn S. Shuckburgh's translation", translator: "Evelyn S. Shuckburgh" }
+- { id: cicero-on-friendship, work: cicero-on-friendship, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2808", edition: "Evelyn S. Shuckburgh's translation", translator: "Evelyn S. Shuckburgh" }
+- { id: cicero-on-old-age, work: cicero-on-old-age, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2808", edition: "Evelyn S. Shuckburgh's translation", translator: "Evelyn S. Shuckburgh" }
+- { id: clausewitz-on-war, work: clausewitz-on-war, source: standardebooks, url: "https://standardebooks.org/ebooks/carl-von-clausewitz/on-war/j-j-graham", edition: "J J Graham's translation", translator: "J J Graham" }
+- { id: coleridge-biographia-literaria, work: coleridge-biographia-literaria, source: gutenberg, url: "https://www.gutenberg.org/ebooks/6081", edition: "The Project Gutenberg text" }
+- { id: coleridge-poems, work: coleridge-poems, source: gutenberg, url: "https://www.gutenberg.org/ebooks/8208", edition: "The Project Gutenberg text" }
+- { id: coleridge-rime-of-the-ancient-mariner, work: coleridge-rime-of-the-ancient-mariner, source: gutenberg, url: "https://www.gutenberg.org/ebooks/151", edition: "The Project Gutenberg text" }
+- { id: confucius-analects, work: confucius-analects, source: standardebooks, url: "https://standardebooks.org/ebooks/confucius/analects/james-legge", edition: "The Standard Ebooks edition" }
+- { id: congreve-way-of-the-world, work: congreve-way-of-the-world, source: standardebooks, url: "https://standardebooks.org/ebooks/william-congreve/the-way-of-the-world", edition: "The Standard Ebooks edition" }
+- { id: conrad-heart-of-darkness, work: conrad-heart-of-darkness, source: gutenberg, url: "https://www.gutenberg.org/ebooks/219", edition: "The Project Gutenberg text" }
+- { id: corneille-le-cid, work: corneille-le-cid, source: gutenberg, url: "https://www.gutenberg.org/ebooks/14954", edition: "Roscoe Mongan's translation", translator: "Roscoe Mongan" }
+- { id: corneille-polyeucte, work: corneille-polyeucte, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2543", edition: "Thomas Constable's translation", translator: "Thomas Constable" }
+- { id: dana-two-years-before-the-mast, work: dana-two-years-before-the-mast, source: standardebooks, url: "https://standardebooks.org/ebooks/richard-henry-dana-jr/two-years-before-the-mast", edition: "The Standard Ebooks edition" }
+- { id: dante-inferno, work: dante-inferno, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1001", edition: "Henry Wadsworth Longfellow's translation", translator: "Henry Wadsworth Longfellow" }
+- { id: dante-on-monarchy, work: dante-on-monarchy, source: standardebooks, url: "https://standardebooks.org/ebooks/dante-alighieri/de-monarchia/aurelia-henry", edition: "The Standard Ebooks edition" }
+- { id: dante-paradiso, work: dante-paradiso, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1003", edition: "Henry Wadsworth Longfellow's translation", translator: "Henry Wadsworth Longfellow" }
+- { id: dante-purgatorio, work: dante-purgatorio, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1002", edition: "Henry Wadsworth Longfellow's translation", translator: "Henry Wadsworth Longfellow" }
+- { id: darwin-descent-of-man, work: darwin-descent-of-man, source: standardebooks, url: "https://standardebooks.org/ebooks/charles-darwin/the-descent-of-man", edition: "The Standard Ebooks edition" }
+- { id: darwin-voyage-of-the-beagle, work: darwin-voyage-of-the-beagle, source: standardebooks, url: "https://standardebooks.org/ebooks/charles-darwin/the-voyage-of-the-beagle", edition: "The Standard Ebooks edition" }
+- { id: defoe-robinson-crusoe, work: defoe-robinson-crusoe, source: standardebooks, url: "https://standardebooks.org/ebooks/daniel-defoe/the-life-and-adventures-of-robinson-crusoe", edition: "The Standard Ebooks edition" }
+- { id: descartes-geometry, work: descartes-geometry, source: standardebooks, url: "https://standardebooks.org/ebooks/rene-descartes/the-geometry", edition: "The Standard Ebooks edition" }
+- { id: descartes-objections-and-replies, work: descartes-objections-and-replies, source: standardebooks, url: "https://standardebooks.org/ebooks/rene-descartes/objections-against-the-meditations-and-replies", edition: "The Standard Ebooks edition" }
+- { id: descartes-rules-for-the-direction-of-the-mind, work: descartes-rules-for-the-direction-of-the-mind, source: standardebooks, url: "https://standardebooks.org/ebooks/rene-descartes/rules-for-the-direction-of-the-mind", edition: "The Standard Ebooks edition" }
+- { id: dewey-democracy-and-education, work: dewey-democracy-and-education, source: standardebooks, url: "https://standardebooks.org/ebooks/john-dewey/democracy-and-education", edition: "The Standard Ebooks edition" }
+- { id: dewey-how-we-think, work: dewey-how-we-think, source: standardebooks, url: "https://standardebooks.org/ebooks/john-dewey/how-we-think", edition: "The Standard Ebooks edition" }
+- { id: dickens-david-copperfield, work: dickens-david-copperfield, source: gutenberg, url: "https://www.gutenberg.org/ebooks/766", edition: "The Project Gutenberg text" }
+- { id: dickens-hard-times, work: dickens-hard-times, source: standardebooks, url: "https://standardebooks.org/ebooks/charles-dickens/hard-times", edition: "The Standard Ebooks edition" }
+- { id: dickens-little-dorrit, work: dickens-little-dorrit, source: standardebooks, url: "https://standardebooks.org/ebooks/charles-dickens/little-dorrit", edition: "The Standard Ebooks edition" }
+- { id: dickens-pickwick-papers, work: dickens-pickwick-papers, source: standardebooks, url: "https://standardebooks.org/ebooks/charles-dickens/the-pickwick-papers", edition: "The Standard Ebooks edition" }
+- { id: dostoevsky-idiot, work: dostoevsky-idiot, source: standardebooks, url: "https://standardebooks.org/ebooks/fyodor-dostoevsky/the-idiot/eva-m-martin", edition: "Eva M Martin's translation", translator: "Eva M Martin" }
+- { id: dryden-all-for-love, work: dryden-all-for-love, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2062", edition: "The Project Gutenberg text" }
+- { id: einstein-meaning-of-relativity, work: einstein-meaning-of-relativity, source: gutenberg, url: "https://www.gutenberg.org/ebooks/36276", edition: "Edwin P. Adams's translation", translator: "Edwin P. Adams" }
+- { id: einstein-relativity, work: einstein-relativity, source: gutenberg, url: "https://www.gutenberg.org/ebooks/5001", edition: "Robert W. Lawson's translation", translator: "Robert W. Lawson" }
+- { id: emerson-english-traits, work: emerson-english-traits, source: gutenberg, url: "https://www.gutenberg.org/ebooks/39862", edition: "The Project Gutenberg text" }
+- { id: emerson-essays, work: emerson-essays, source: standardebooks, url: "https://standardebooks.org/ebooks/ralph-waldo-emerson/essays", edition: "The Standard Ebooks edition" }
+- { id: emerson-representative-men, work: emerson-representative-men, source: standardebooks, url: "https://standardebooks.org/ebooks/ralph-waldo-emerson/representative-men", edition: "The Standard Ebooks edition" }
+- { id: epictetus-discourses, work: epictetus-discourses, source: standardebooks, url: "https://standardebooks.org/ebooks/epictetus/discourses/george-long", edition: "George Long's translation", translator: "George Long" }
+- { id: epictetus-golden-sayings, work: epictetus-golden-sayings, source: gutenberg, url: "https://www.gutenberg.org/ebooks/871", edition: "Hastings Crossley's translation", translator: "Hastings Crossley" }
+- { id: erasmus-praise-of-folly, work: erasmus-praise-of-folly, source: gutenberg, url: "https://www.gutenberg.org/ebooks/9371", edition: "John Wilson's translation", translator: "John Wilson" }
+- { id: euripides-trojan-women, work: euripides-trojan-women, source: standardebooks, url: "https://standardebooks.org/ebooks/euripides/the-trojan-women/gilbert-murray", edition: "Gilbert Murray's translation", translator: "Gilbert Murray" }
+- { id: faraday-chemical-history-of-a-candle, work: faraday-chemical-history-of-a-candle, source: gutenberg, url: "https://www.gutenberg.org/ebooks/14474", edition: "The Project Gutenberg text" }
+- { id: faraday-forces-of-matter, work: faraday-forces-of-matter, source: gutenberg, url: "https://www.gutenberg.org/ebooks/52293", edition: "The Project Gutenberg text" }
+- { id: feuerbach-essence-of-christianity, work: feuerbach-essence-of-christianity, source: gutenberg, url: "https://www.gutenberg.org/ebooks/47025", edition: "George Eliot's translation", translator: "George Eliot" }
+- { id: fielding-tom-jones, work: fielding-tom-jones, source: standardebooks, url: "https://standardebooks.org/ebooks/henry-fielding/the-history-of-tom-jones-a-foundling", edition: "The Standard Ebooks edition" }
+- { id: fitzgerald-great-gatsby, work: fitzgerald-great-gatsby, source: standardebooks, url: "https://standardebooks.org/ebooks/f-scott-fitzgerald/the-great-gatsby", edition: "The Standard Ebooks edition" }
+- { id: flaubert-madame-bovary, work: flaubert-madame-bovary, source: standardebooks, url: "https://standardebooks.org/ebooks/gustave-flaubert/madame-bovary/eleanor-marx-aveling", edition: "Eleanor Marx Aveling's translation", translator: "Eleanor Marx Aveling" }
+- { id: franklin-autobiography, work: franklin-autobiography, source: standardebooks, url: "https://standardebooks.org/ebooks/benjamin-franklin/the-autobiography-of-benjamin-franklin", edition: "The Standard Ebooks edition" }
+- { id: frazer-golden-bough, work: frazer-golden-bough, source: standardebooks, url: "https://standardebooks.org/ebooks/james-george-frazer/the-golden-bough", edition: "The Standard Ebooks edition" }
+- { id: freud-beyond-the-pleasure-principle, work: freud-beyond-the-pleasure-principle, source: gutenberg, url: "https://www.gutenberg.org/ebooks/76031", edition: "C. J. M. Hubback's translation", translator: "C. J. M. Hubback" }
+- { id: freud-general-introduction-to-psychoanalysis, work: freud-general-introduction-to-psychoanalysis, source: gutenberg, url: "https://www.gutenberg.org/ebooks/38219", edition: "G. Stanley Hall's translation", translator: "G. Stanley Hall" }
+- { id: freud-group-psychology, work: freud-group-psychology, source: gutenberg, url: "https://www.gutenberg.org/ebooks/35877", edition: "James Strachey's translation", translator: "James Strachey" }
+- { id: freud-interpretation-of-dreams, work: freud-interpretation-of-dreams, source: gutenberg, url: "https://www.gutenberg.org/ebooks/66048", edition: "A. A. Brill's translation", translator: "A. A. Brill" }
+- { id: freud-introductory-lectures-on-psychoanalysis, work: freud-introductory-lectures-on-psychoanalysis, source: gutenberg, url: "https://www.gutenberg.org/ebooks/75810", edition: "Joan Riviere's translation", translator: "Joan Riviere" }
+- { id: freud-selected-papers-on-hysteria, work: freud-selected-papers-on-hysteria, source: gutenberg, url: "https://www.gutenberg.org/ebooks/75132", edition: "A. A. Brill's translation", translator: "A. A. Brill" }
+- { id: freud-the-unconscious, work: freud-the-unconscious, source: gutenberg, url: "https://www.gutenberg.org/ebooks/75915", edition: "A. A. Brill's translation", translator: "A. A. Brill" }
+- { id: freud-thoughts-for-the-times-on-war-and-death, work: freud-thoughts-for-the-times-on-war-and-death, source: gutenberg, url: "https://www.gutenberg.org/ebooks/35875", edition: "A. A. Brill's translation", translator: "A. A. Brill" }
+- { id: galileo-starry-messenger, work: galileo-starry-messenger, source: gutenberg, url: "https://www.gutenberg.org/ebooks/46036", edition: "Edward Stafford Carlos's translation", translator: "Edward Stafford Carlos" }
+- { id: gandhi-hind-swaraj, work: gandhi-hind-swaraj, source: gutenberg, url: "https://www.gutenberg.org/ebooks/40461", edition: "The Project Gutenberg text" }
+- { id: george-eliot-adam-bede, work: george-eliot-adam-bede, source: gutenberg, url: "https://www.gutenberg.org/ebooks/507", edition: "The Project Gutenberg text" }
+- { id: gibbon-decline-and-fall, work: gibbon-decline-and-fall, source: standardebooks, url: "https://standardebooks.org/ebooks/edward-gibbon/the-history-of-the-decline-and-fall-of-the-roman-empire", edition: "The Standard Ebooks edition" }
+- { id: gilbert-on-the-loadstone, work: gilbert-on-the-loadstone, source: gutenberg, url: "https://www.gutenberg.org/ebooks/33810", edition: "Silvanus P. Thompson's translation", translator: "Silvanus P. Thompson" }
+- { id: goethe-egmont, work: goethe-egmont, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1945", edition: "Anna Swanwick's translation", translator: "Anna Swanwick" }
+- { id: goethe-hermann-and-dorothea, work: goethe-hermann-and-dorothea, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1958", edition: "Ellen Frothingham's translation", translator: "Ellen Frothingham" }
+- { id: goethe-poetry-and-truth, work: goethe-poetry-and-truth, source: gutenberg, url: "https://www.gutenberg.org/ebooks/5733", edition: "John Oxenford's translation", translator: "John Oxenford" }
+- { id: goldsmith-deserted-village, work: goldsmith-deserted-village, source: gutenberg, url: "https://www.gutenberg.org/ebooks/50500", edition: "The Project Gutenberg text" }
+- { id: goldsmith-she-stoops-to-conquer, work: goldsmith-she-stoops-to-conquer, source: standardebooks, url: "https://standardebooks.org/ebooks/oliver-goldsmith/she-stoops-to-conquer", edition: "The Standard Ebooks edition" }
+- { id: grimm-fairy-tales, work: grimm-fairy-tales, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2591", edition: "The Project Gutenberg text" }
+- { id: harrison-description-of-elizabethan-england, work: harrison-description-of-elizabethan-england, source: gutenberg, url: "https://www.gutenberg.org/ebooks/32593", edition: "The Project Gutenberg text" }
+- { id: hawthorne-scarlet-letter, work: hawthorne-scarlet-letter, source: standardebooks, url: "https://standardebooks.org/ebooks/nathaniel-hawthorne/the-scarlet-letter", edition: "The Standard Ebooks edition" }
+- { id: henry-james-ambassadors, work: henry-james-ambassadors, source: standardebooks, url: "https://standardebooks.org/ebooks/henry-james/the-ambassadors", edition: "The Standard Ebooks edition" }
+- { id: henry-james-american, work: henry-james-american, source: gutenberg, url: "https://www.gutenberg.org/ebooks/177", edition: "The Project Gutenberg text" }
+- { id: henry-james-beast-in-the-jungle, work: henry-james-beast-in-the-jungle, source: standardebooks, url: "https://standardebooks.org/ebooks/henry-james/the-beast-in-the-jungle", edition: "The Standard Ebooks edition" }
+- { id: horace-odes, work: horace-odes, source: standardebooks, url: "https://standardebooks.org/ebooks/horace/the-odes", edition: "The Standard Ebooks edition" }
+- { id: huizinga-waning-of-the-middle-ages, work: huizinga-waning-of-the-middle-ages, source: standardebooks, url: "https://standardebooks.org/ebooks/johan-huizinga/the-autumn-of-the-middle-ages/frederik-jan-hopman", edition: "The Standard Ebooks edition" }
+- { id: hume-treatise-of-human-nature, work: hume-treatise-of-human-nature, source: standardebooks, url: "https://standardebooks.org/ebooks/david-hume/a-treatise-of-human-nature", edition: "The Standard Ebooks edition" }
+- { id: huygens-treatise-on-light, work: huygens-treatise-on-light, source: gutenberg, url: "https://www.gutenberg.org/ebooks/14725", edition: "Silvanus P. Thompson's translation", translator: "Silvanus P. Thompson" }
+- { id: ibn-tufail-hayy-ibn-yaqzan, work: ibn-tufail-hayy-ibn-yaqzan, source: gutenberg, url: "https://www.gutenberg.org/ebooks/16831", edition: "The Project Gutenberg text" }
+- { id: ibsen-dolls-house, work: ibsen-dolls-house, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2542", edition: "R. Farquharson Sharp's translation", translator: "R. Farquharson Sharp" }
+- { id: ibsen-hedda-gabler, work: ibsen-hedda-gabler, source: gutenberg, url: "https://www.gutenberg.org/ebooks/4093", edition: "William Archer's translation", translator: "William Archer" }
+- { id: ibsen-master-builder, work: ibsen-master-builder, source: gutenberg, url: "https://www.gutenberg.org/ebooks/4070", edition: "William Archer's translation", translator: "William Archer" }
+- { id: ibsen-wild-duck, work: ibsen-wild-duck, source: gutenberg, url: "https://www.gutenberg.org/ebooks/73631", edition: "Eleanor Marx Aveling's translation", translator: "Eleanor Marx Aveling" }
+- { id: jacobs-incidents-in-the-life-of-a-slave-girl, work: jacobs-incidents-in-the-life-of-a-slave-girl, source: standardebooks, url: "https://standardebooks.org/ebooks/linda-brent/incidents-in-the-life-of-a-slave-girl", edition: "The Standard Ebooks edition" }
+- { id: johnson-dictionary, work: johnson-dictionary, source: gutenberg, url: "https://www.gutenberg.org/ebooks/5430", edition: "The Project Gutenberg text" }
+- { id: johnson-lives-of-the-poets, work: johnson-lives-of-the-poets, source: gutenberg, url: "https://www.gutenberg.org/ebooks/4678", edition: "The Project Gutenberg text" }
+- { id: johnson-preface-to-shakespeare, work: johnson-preface-to-shakespeare, source: gutenberg, url: "https://www.gutenberg.org/ebooks/5429", edition: "The Project Gutenberg text" }
+- { id: johnson-rasselas, work: johnson-rasselas, source: standardebooks, url: "https://standardebooks.org/ebooks/samuel-johnson/the-history-of-rasselas-prince-of-abyssinia", edition: "The Standard Ebooks edition" }
+- { id: johnson-vanity-of-human-wishes, work: johnson-vanity-of-human-wishes, source: gutenberg, url: "https://www.gutenberg.org/ebooks/13350", edition: "The Project Gutenberg text" }
+- { id: jonson-alchemist, work: jonson-alchemist, source: standardebooks, url: "https://standardebooks.org/ebooks/ben-jonson/the-alchemist", edition: "The Standard Ebooks edition" }
+- { id: joyce-dubliners, work: joyce-dubliners, source: standardebooks, url: "https://standardebooks.org/ebooks/james-joyce/dubliners", edition: "The Standard Ebooks edition" }
+- { id: joyce-portrait-of-the-artist, work: joyce-portrait-of-the-artist, source: standardebooks, url: "https://standardebooks.org/ebooks/james-joyce/a-portrait-of-the-artist-as-a-young-man", edition: "The Standard Ebooks edition" }
+- { id: joyce-ulysses, work: joyce-ulysses, source: standardebooks, url: "https://standardebooks.org/ebooks/james-joyce/ulysses", edition: "The Standard Ebooks edition" }
+- { id: julian-of-norwich-showings, work: julian-of-norwich-showings, source: gutenberg, url: "https://www.gutenberg.org/ebooks/52958", edition: "The Project Gutenberg text" }
+- { id: kafka-metamorphosis, work: kafka-metamorphosis, source: gutenberg, url: "https://www.gutenberg.org/ebooks/5200", edition: "David Wyllie's translation", translator: "David Wyllie" }
+- { id: kafka-trial, work: kafka-trial, source: gutenberg, url: "https://www.gutenberg.org/ebooks/7849", edition: "David Wyllie's translation", translator: "David Wyllie" }
+- { id: kant-critique-of-judgment, work: kant-critique-of-judgment, source: standardebooks, url: "https://standardebooks.org/ebooks/immanuel-kant/critique-of-judgement/j-h-bernard", edition: "The Standard Ebooks edition" }
+- { id: kant-metaphysics-of-morals, work: kant-metaphysics-of-morals, source: standardebooks, url: "https://standardebooks.org/ebooks/immanuel-kant/the-metaphysics-of-morals", edition: "The Standard Ebooks edition" }
+- { id: kant-prolegomena, work: kant-prolegomena, source: standardebooks, url: "https://standardebooks.org/ebooks/immanuel-kant/prolegomena-to-any-future-metaphysics/paul-carus", edition: "Paul Carus's translation", translator: "Paul Carus" }
+- { id: kempis-imitation-of-christ, work: kempis-imitation-of-christ, source: standardebooks, url: "https://standardebooks.org/ebooks/thomas-a-kempis/the-imitation-of-christ/william-benham", edition: "William Benham's translation", translator: "William Benham" }
+- { id: kierkegaard-fear-and-trembling, work: kierkegaard-fear-and-trembling, source: standardebooks, url: "https://standardebooks.org/ebooks/soren-kierkegaard/fear-and-trembling", edition: "The Standard Ebooks edition" }
+- { id: laozi-tao-te-ching, work: laozi-tao-te-ching, source: standardebooks, url: "https://standardebooks.org/ebooks/laozi/tao-te-ching/james-legge", edition: "James Legge's translation", translator: "James Legge" }
+- { id: lavoisier-elements-of-chemistry, work: lavoisier-elements-of-chemistry, source: gutenberg, url: "https://www.gutenberg.org/ebooks/30775", edition: "Robert Kerr's translation", translator: "Robert Kerr" }
+- { id: lawrence-prussian-officer, work: lawrence-prussian-officer, source: standardebooks, url: "https://standardebooks.org/ebooks/d-h-lawrence/the-prussian-officer", edition: "The Standard Ebooks edition" }
+- { id: lessing-minna-von-barnhelm, work: lessing-minna-von-barnhelm, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2663", edition: "Ernest Bell's translation", translator: "Ernest Bell" }
+- { id: lincoln-gettysburg-address, work: lincoln-gettysburg-address, source: gutenberg, url: "https://www.gutenberg.org/ebooks/4", edition: "The Project Gutenberg text" }
+- { id: lincoln-second-inaugural-address, work: lincoln-second-inaugural-address, source: gutenberg, url: "https://www.gutenberg.org/ebooks/8", edition: "The Project Gutenberg text" }
+- { id: locke-essay-concerning-human-understanding, work: locke-essay-concerning-human-understanding, source: standardebooks, url: "https://standardebooks.org/ebooks/john-locke/an-essay-concerning-human-understanding", edition: "The Standard Ebooks edition" }
+- { id: locke-letter-concerning-toleration, work: locke-letter-concerning-toleration, source: standardebooks, url: "https://standardebooks.org/ebooks/john-locke/a-letter-concerning-toleration", edition: "The Standard Ebooks edition" }
+- { id: locke-some-thoughts-concerning-education, work: locke-some-thoughts-concerning-education, source: standardebooks, url: "https://standardebooks.org/ebooks/john-locke/some-thoughts-concerning-education", edition: "The Standard Ebooks edition" }
+- { id: longfellow-evangeline, work: longfellow-evangeline, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2039", edition: "The Project Gutenberg text" }
+- { id: luther-ninety-five-theses, work: luther-ninety-five-theses, source: gutenberg, url: "https://www.gutenberg.org/ebooks/274", edition: "The Project Gutenberg text" }
+- { id: luther-on-the-freedom-of-a-christian, work: luther-on-the-freedom-of-a-christian, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1911", edition: "The Project Gutenberg text" }
+- { id: luther-table-talk, work: luther-table-talk, source: gutenberg, url: "https://www.gutenberg.org/ebooks/9841", edition: "Captain Henry Bell's translation", translator: "Captain Henry Bell" }
+- { id: lyell-principles-of-geology, work: lyell-principles-of-geology, source: gutenberg, url: "https://www.gutenberg.org/ebooks/33224", edition: "The Project Gutenberg text" }
+- { id: machiavelli-discourses-on-livy, work: machiavelli-discourses-on-livy, source: standardebooks, url: "https://standardebooks.org/ebooks/niccolo-machiavelli/discourses-on-livy/ninian-hill-thomson", edition: "The Standard Ebooks edition" }
+- { id: maimonides-guide-for-the-perplexed, work: maimonides-guide-for-the-perplexed, source: gutenberg, url: "https://www.gutenberg.org/ebooks/73584", edition: "M. Friedländer's translation", translator: "M. Friedländer" }
+- { id: malory-le-morte-darthur, work: malory-le-morte-darthur, source: standardebooks, url: "https://standardebooks.org/ebooks/thomas-malory/le-morte-darthur", edition: "The Standard Ebooks edition" }
+- { id: mann-death-in-venice, work: mann-death-in-venice, source: gutenberg, url: "https://www.gutenberg.org/ebooks/66073", edition: "Kenneth Burke's translation", translator: "Kenneth Burke" }
+- { id: mann-magic-mountain, work: mann-magic-mountain, source: standardebooks, url: "https://standardebooks.org/ebooks/thomas-mann/the-magic-mountain/h-t-lowe-porter", edition: "H T Lowe Porter's translation", translator: "H T Lowe Porter" }
+- { id: manzoni-betrothed, work: manzoni-betrothed, source: standardebooks, url: "https://standardebooks.org/ebooks/alessandro-manzoni/the-betrothed", edition: "The Standard Ebooks edition" }
+- { id: marie-de-france-lais, work: marie-de-france-lais, source: standardebooks, url: "https://standardebooks.org/ebooks/marie-de-france/lais/eugene-mason", edition: "The Standard Ebooks edition" }
+- { id: marlowe-doctor-faustus, work: marlowe-doctor-faustus, source: standardebooks, url: "https://standardebooks.org/ebooks/christopher-marlowe/the-tragical-history-of-doctor-faustus", edition: "The Standard Ebooks edition" }
+- { id: marlowe-edward-ii, work: marlowe-edward-ii, source: standardebooks, url: "https://standardebooks.org/ebooks/christopher-marlowe/edward-ii", edition: "The Standard Ebooks edition" }
+- { id: mary-shelley-frankenstein, work: mary-shelley-frankenstein, source: standardebooks, url: "https://standardebooks.org/ebooks/mary-shelley/frankenstein", edition: "The Standard Ebooks edition" }
+- { id: melville-billy-budd, work: melville-billy-budd, source: gutenberg, url: "https://www.gutenberg.org/ebooks/76513", edition: "The Project Gutenberg text" }
+- { id: mill-autobiography, work: mill-autobiography, source: standardebooks, url: "https://standardebooks.org/ebooks/john-stuart-mill/the-autobiography-of-john-stuart-mill", edition: "The Standard Ebooks edition" }
+- { id: mill-representative-government, work: mill-representative-government, source: standardebooks, url: "https://standardebooks.org/ebooks/john-stuart-mill/considerations-on-representative-government", edition: "The Standard Ebooks edition" }
+- { id: mill-subjection-of-women, work: mill-subjection-of-women, source: standardebooks, url: "https://standardebooks.org/ebooks/john-stuart-mill/the-subjection-of-women", edition: "The Standard Ebooks edition" }
+- { id: mill-utilitarianism, work: mill-utilitarianism, source: standardebooks, url: "https://standardebooks.org/ebooks/john-stuart-mill/utilitarianism", edition: "The Standard Ebooks edition" }
+- { id: milton-areopagitica, work: milton-areopagitica, source: standardebooks, url: "https://standardebooks.org/ebooks/john-milton/areopagitica", edition: "The Standard Ebooks edition" }
+- { id: milton-minor-poems, work: milton-minor-poems, source: gutenberg, url: "https://www.gutenberg.org/ebooks/31706", edition: "The Project Gutenberg text" }
+- { id: milton-paradise-regained, work: milton-paradise-regained, source: gutenberg, url: "https://www.gutenberg.org/ebooks/58", edition: "The Project Gutenberg text" }
+- { id: milton-samson-agonistes, work: milton-samson-agonistes, source: standardebooks, url: "https://standardebooks.org/ebooks/john-milton/samson-agonistes", edition: "The Standard Ebooks edition" }
+- { id: moliere-don-juan, work: moliere-don-juan, source: standardebooks, url: "https://standardebooks.org/ebooks/moliere/don-juan", edition: "The Standard Ebooks edition" }
+- { id: moliere-imaginary-invalid, work: moliere-imaginary-invalid, source: standardebooks, url: "https://standardebooks.org/ebooks/moliere/the-imaginary-invalid", edition: "The Standard Ebooks edition" }
+- { id: moliere-miser, work: moliere-miser, source: standardebooks, url: "https://standardebooks.org/ebooks/moliere/the-miser", edition: "The Standard Ebooks edition" }
+- { id: moliere-school-for-wives, work: moliere-school-for-wives, source: standardebooks, url: "https://standardebooks.org/ebooks/moliere/the-school-for-wives", edition: "The Standard Ebooks edition" }
+- { id: moliere-tartuffe, work: moliere-tartuffe, source: standardebooks, url: "https://standardebooks.org/ebooks/moliere/tartuffe/curtis-hidden-page", edition: "Curtis Hidden Page's translation", translator: "Curtis Hidden Page" }
+- { id: moliere-would-be-gentleman, work: moliere-would-be-gentleman, source: standardebooks, url: "https://standardebooks.org/ebooks/moliere/the-would-be-gentleman", edition: "The Standard Ebooks edition" }
+- { id: montesquieu-spirit-of-the-laws, work: montesquieu-spirit-of-the-laws, source: standardebooks, url: "https://standardebooks.org/ebooks/montesquieu/the-spirit-of-the-laws", edition: "The Standard Ebooks edition" }
+- { id: more-utopia, work: more-utopia, source: standardebooks, url: "https://standardebooks.org/ebooks/thomas-more/utopia", edition: "The Standard Ebooks edition" }
+- { id: newman-development-of-christian-doctrine, work: newman-development-of-christian-doctrine, source: gutenberg, url: "https://www.gutenberg.org/ebooks/35110", edition: "The Project Gutenberg text" }
+- { id: newman-idea-of-a-university, work: newman-idea-of-a-university, source: gutenberg, url: "https://www.gutenberg.org/ebooks/24526", edition: "The Project Gutenberg text" }
+- { id: newton-opticks, work: newton-opticks, source: gutenberg, url: "https://www.gutenberg.org/ebooks/33504", edition: "The Project Gutenberg text" }
+- { id: newton-principia, work: newton-principia, source: gutenberg, url: "https://www.gutenberg.org/ebooks/76404", edition: "Andrew Motte's translation", translator: "Andrew Motte" }
+- { id: nibelungenlied, work: nibelungenlied, source: standardebooks, url: "https://standardebooks.org/ebooks/anonymous/the-nibelungenlied/alice-horton", edition: "Alice Horton's translation", translator: "Alice Horton" }
+- { id: nichols-sir-francis-drake-revived, work: nichols-sir-francis-drake-revived, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2854", edition: "The Project Gutenberg text" }
+- { id: nietzsche-thus-spoke-zarathustra, work: nietzsche-thus-spoke-zarathustra, source: standardebooks, url: "https://standardebooks.org/ebooks/friedrich-nietzsche/thus-spake-zarathustra/thomas-common", edition: "The Standard Ebooks edition" }
+- { id: ovid-metamorphoses, work: ovid-metamorphoses, source: standardebooks, url: "https://standardebooks.org/ebooks/ovid/metamorphoses/various-translators", edition: "Various Translators's translation", translator: "Various Translators" }
+- { id: pascal-provincial-letters, work: pascal-provincial-letters, source: standardebooks, url: "https://standardebooks.org/ebooks/blaise-pascal/the-provincial-letters", edition: "The Standard Ebooks edition" }
+- { id: percy-shelley-adonais, work: percy-shelley-adonais, source: gutenberg, url: "https://www.gutenberg.org/ebooks/10119", edition: "The Project Gutenberg text" }
+- { id: percy-shelley-defence-of-poetry, work: percy-shelley-defence-of-poetry, source: gutenberg, url: "https://www.gutenberg.org/ebooks/5428", edition: "The Project Gutenberg text" }
+- { id: pirandello-six-characters-in-search-of-an-author, work: pirandello-six-characters-in-search-of-an-author, source: standardebooks, url: "https://standardebooks.org/ebooks/luigi-pirandello/six-characters-in-search-of-an-author/edward-storer", edition: "Edward Storer's translation", translator: "Edward Storer" }
+- { id: planck-origin-and-development-of-the-quantum-theory, work: planck-origin-and-development-of-the-quantum-theory, source: gutenberg, url: "https://www.gutenberg.org/ebooks/33663", edition: "Hans Thacher Clarke's translation", translator: "Hans Thacher Clarke" }
+- { id: plato-euthyphro, work: plato-euthyphro, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1642", edition: "Benjamin Jowett's translation", translator: "Benjamin Jowett" }
+- { id: plato-ion, work: plato-ion, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1635", edition: "Benjamin Jowett's translation", translator: "Benjamin Jowett" }
+- { id: plato-laws, work: plato-laws, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1750", edition: "Benjamin Jowett's translation", translator: "Benjamin Jowett" }
+- { id: plato-parmenides, work: plato-parmenides, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1687", edition: "Benjamin Jowett's translation", translator: "Benjamin Jowett" }
+- { id: plato-protagoras, work: plato-protagoras, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1591", edition: "Benjamin Jowett's translation", translator: "Benjamin Jowett" }
+- { id: plato-sophist, work: plato-sophist, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1735", edition: "Benjamin Jowett's translation", translator: "Benjamin Jowett" }
+- { id: plato-theaetetus, work: plato-theaetetus, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1726", edition: "Benjamin Jowett's translation", translator: "Benjamin Jowett" }
+- { id: pliny-letters, work: pliny-letters, source: standardebooks, url: "https://standardebooks.org/ebooks/pliny-the-younger/epistulae/j-b-firth", edition: "The Standard Ebooks edition" }
+- { id: plutarch-lives, work: plutarch-lives, source: standardebooks, url: "https://standardebooks.org/ebooks/plutarch/parallel-lives/bernadotte-perin", edition: "The Standard Ebooks edition" }
+- { id: poetic-edda, work: poetic-edda, source: standardebooks, url: "https://standardebooks.org/ebooks/anonymous/the-poetic-edda/henry-adams-bellows", edition: "Henry Adams Bellows's translation", translator: "Henry Adams Bellows" }
+- { id: poincare-science-and-hypothesis, work: poincare-science-and-hypothesis, source: gutenberg, url: "https://www.gutenberg.org/ebooks/37157", edition: "W. J. Greenstreet's translation", translator: "W. J. Greenstreet" }
+- { id: poincare-science-and-method, work: poincare-science-and-method, source: gutenberg, url: "https://www.gutenberg.org/ebooks/39713", edition: "George Bruce Halsted's translation", translator: "George Bruce Halsted" }
+- { id: pope-essay-on-criticism, work: pope-essay-on-criticism, source: gutenberg, url: "https://www.gutenberg.org/ebooks/7409", edition: "The Project Gutenberg text" }
+- { id: pope-essay-on-man, work: pope-essay-on-man, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2428", edition: "The Project Gutenberg text" }
+- { id: pope-rape-of-the-lock, work: pope-rape-of-the-lock, source: gutenberg, url: "https://www.gutenberg.org/ebooks/9800", edition: "The Project Gutenberg text" }
+- { id: pretty-drakes-famous-voyage, work: pretty-drakes-famous-voyage, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2991", edition: "The Project Gutenberg text" }
+- { id: proust-in-search-of-lost-time, work: proust-in-search-of-lost-time, source: standardebooks, url: "https://standardebooks.org/ebooks/marcel-proust/in-search-of-lost-time/c-k-scott-moncrieff", edition: "C K Scott Moncrieff's translation", translator: "C K Scott Moncrieff" }
+- { id: proust-swanns-way, work: proust-swanns-way, source: gutenberg, url: "https://www.gutenberg.org/ebooks/7178", edition: "C. K. Scott-Moncrieff's translation", translator: "C. K. Scott-Moncrieff" }
+- { id: quran, work: quran, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2800", edition: "The Project Gutenberg text" }
+- { id: rabelais-gargantua-and-pantagruel, work: rabelais-gargantua-and-pantagruel, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1200", edition: "The Project Gutenberg text" }
+- { id: racine-berenice, work: racine-berenice, source: standardebooks, url: "https://standardebooks.org/ebooks/jean-racine/berenice", edition: "The Standard Ebooks edition" }
+- { id: raleigh-discovery-of-guiana, work: raleigh-discovery-of-guiana, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2272", edition: "The Project Gutenberg text" }
+- { id: rousseau-discourse-on-political-economy, work: rousseau-discourse-on-political-economy, source: standardebooks, url: "https://standardebooks.org/ebooks/jean-jacques-rousseau/a-discourse-on-political-economy", edition: "The Standard Ebooks edition" }
+- { id: rousseau-emile, work: rousseau-emile, source: gutenberg, url: "https://www.gutenberg.org/ebooks/5427", edition: "The Project Gutenberg text" }
+- { id: ruskin-sesame-and-lilies, work: ruskin-sesame-and-lilies, source: standardebooks, url: "https://standardebooks.org/ebooks/john-ruskin/sesame-and-lilies", edition: "The Standard Ebooks edition" }
+- { id: santayana-life-of-reason, work: santayana-life-of-reason, source: standardebooks, url: "https://standardebooks.org/ebooks/george-santayana/the-life-of-reason", edition: "The Standard Ebooks edition" }
+- { id: santayana-skepticism-and-animal-faith, work: santayana-skepticism-and-animal-faith, source: standardebooks, url: "https://standardebooks.org/ebooks/george-santayana/skepticism-and-animal-faith", edition: "The Standard Ebooks edition" }
+- { id: schiller-william-tell, work: schiller-william-tell, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2782", edition: "The Project Gutenberg text" }
+- { id: schopenhauer-studies-in-pessimism, work: schopenhauer-studies-in-pessimism, source: gutenberg, url: "https://www.gutenberg.org/ebooks/10732", edition: "T. Bailey Saunders's translation", translator: "T. Bailey Saunders" }
+- { id: shakespeare-antony-and-cleopatra, work: shakespeare-antony-and-cleopatra, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1130", edition: "The Project Gutenberg text" }
+- { id: shakespeare-as-you-like-it, work: shakespeare-as-you-like-it, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1121", edition: "The Project Gutenberg text" }
+- { id: shakespeare-comedy-of-errors, work: shakespeare-comedy-of-errors, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1104", edition: "The Project Gutenberg text" }
+- { id: shakespeare-coriolanus, work: shakespeare-coriolanus, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1131", edition: "The Project Gutenberg text" }
+- { id: shakespeare-henry-iv-part-1, work: shakespeare-henry-iv-part-1, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1115", edition: "The Project Gutenberg text" }
+- { id: shakespeare-henry-iv-part-2, work: shakespeare-henry-iv-part-2, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1117", edition: "The Project Gutenberg text" }
+- { id: shakespeare-henry-v, work: shakespeare-henry-v, source: standardebooks, url: "https://standardebooks.org/ebooks/william-shakespeare/henry-v", edition: "The Standard Ebooks edition" }
+- { id: shakespeare-julius-caesar, work: shakespeare-julius-caesar, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1120", edition: "The Project Gutenberg text" }
+- { id: shakespeare-measure-for-measure, work: shakespeare-measure-for-measure, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1126", edition: "The Project Gutenberg text" }
+- { id: shakespeare-merchant-of-venice, work: shakespeare-merchant-of-venice, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1114", edition: "The Project Gutenberg text" }
+- { id: shakespeare-midsummer-nights-dream, work: shakespeare-midsummer-nights-dream, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1113", edition: "The Project Gutenberg text" }
+- { id: shakespeare-much-ado-about-nothing, work: shakespeare-much-ado-about-nothing, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1118", edition: "The Project Gutenberg text" }
+- { id: shakespeare-othello, work: shakespeare-othello, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1127", edition: "The Project Gutenberg text" }
+- { id: shakespeare-richard-ii, work: shakespeare-richard-ii, source: standardebooks, url: "https://standardebooks.org/ebooks/william-shakespeare/richard-ii", edition: "The Standard Ebooks edition" }
+- { id: shakespeare-richard-iii, work: shakespeare-richard-iii, source: standardebooks, url: "https://standardebooks.org/ebooks/william-shakespeare/richard-iii", edition: "The Standard Ebooks edition" }
+- { id: shakespeare-romeo-and-juliet, work: shakespeare-romeo-and-juliet, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1112", edition: "The Project Gutenberg text" }
+- { id: shakespeare-sonnets, work: shakespeare-sonnets, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1041", edition: "The Project Gutenberg text" }
+- { id: shakespeare-taming-of-the-shrew, work: shakespeare-taming-of-the-shrew, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1107", edition: "The Project Gutenberg text" }
+- { id: shakespeare-troilus-and-cressida, work: shakespeare-troilus-and-cressida, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1124", edition: "The Project Gutenberg text" }
+- { id: shakespeare-twelfth-night, work: shakespeare-twelfth-night, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1123", edition: "The Project Gutenberg text" }
+- { id: shakespeare-winters-tale, work: shakespeare-winters-tale, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1134", edition: "The Project Gutenberg text" }
+- { id: shaw-major-barbara, work: shaw-major-barbara, source: gutenberg, url: "https://www.gutenberg.org/ebooks/3790", edition: "The Project Gutenberg text" }
+- { id: shaw-man-and-superman, work: shaw-man-and-superman, source: gutenberg, url: "https://www.gutenberg.org/ebooks/3328", edition: "The Project Gutenberg text" }
+- { id: shaw-pygmalion, work: shaw-pygmalion, source: gutenberg, url: "https://www.gutenberg.org/ebooks/3825", edition: "The Project Gutenberg text" }
+- { id: shaw-saint-joan, work: shaw-saint-joan, source: standardebooks, url: "https://standardebooks.org/ebooks/george-bernard-shaw/saint-joan", edition: "The Standard Ebooks edition" }
+- { id: sheridan-school-for-scandal, work: sheridan-school-for-scandal, source: standardebooks, url: "https://standardebooks.org/ebooks/richard-brinsley-sheridan/the-school-for-scandal", edition: "The Standard Ebooks edition" }
+- { id: sidney-defence-of-poesy, work: sidney-defence-of-poesy, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1962", edition: "The Project Gutenberg text" }
+- { id: sir-gawain-and-the-green-knight, work: sir-gawain-and-the-green-knight, source: standardebooks, url: "https://standardebooks.org/ebooks/anonymous/sir-gawain-and-the-green-knight/s-o-andrew", edition: "S O Andrew's translation", translator: "S O Andrew" }
+- { id: smith-theory-of-moral-sentiments, work: smith-theory-of-moral-sentiments, source: standardebooks, url: "https://standardebooks.org/ebooks/adam-smith/the-theory-of-moral-sentiments", edition: "The Standard Ebooks edition" }
+- { id: sophocles-philoctetes, work: sophocles-philoctetes, source: standardebooks, url: "https://standardebooks.org/ebooks/sophocles/philoctetes/francis-storr", edition: "Francis Storr's translation", translator: "Francis Storr" }
+- { id: spenser-faerie-queene, work: spenser-faerie-queene, source: standardebooks, url: "https://standardebooks.org/ebooks/edmund-spenser/the-faerie-queene", edition: "The Standard Ebooks edition" }
+- { id: stendhal-charterhouse-of-parma, work: stendhal-charterhouse-of-parma, source: standardebooks, url: "https://standardebooks.org/ebooks/stendhal/the-charterhouse-of-parma/c-k-scott-moncrieff", edition: "C K Scott Moncrieff's translation", translator: "C K Scott Moncrieff" }
+- { id: stendhal-on-love, work: stendhal-on-love, source: gutenberg, url: "https://www.gutenberg.org/ebooks/53720", edition: "Cecil N. Sidney Woolf's translation", translator: "Cecil N. Sidney Woolf" }
+- { id: stendhal-red-and-the-black, work: stendhal-red-and-the-black, source: standardebooks, url: "https://standardebooks.org/ebooks/stendhal/the-red-and-the-black/c-k-scott-moncrieff", edition: "C K Scott Moncrieff's translation", translator: "C K Scott Moncrieff" }
+- { id: sterne-sentimental-journey, work: sterne-sentimental-journey, source: standardebooks, url: "https://standardebooks.org/ebooks/laurence-sterne/a-sentimental-journey", edition: "The Standard Ebooks edition" }
+- { id: sterne-tristram-shandy, work: sterne-tristram-shandy, source: standardebooks, url: "https://standardebooks.org/ebooks/laurence-sterne/the-life-and-opinions-of-tristram-shandy-gentleman", edition: "The Standard Ebooks edition" }
+- { id: swift-journal-to-stella, work: swift-journal-to-stella, source: gutenberg, url: "https://www.gutenberg.org/ebooks/4208", edition: "The Project Gutenberg text" }
+- { id: swift-modest-proposal, work: swift-modest-proposal, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1080", edition: "The Project Gutenberg text" }
+- { id: swift-tale-of-a-tub, work: swift-tale-of-a-tub, source: gutenberg, url: "https://www.gutenberg.org/ebooks/4737", edition: "The Project Gutenberg text" }
+- { id: tacitus-germania, work: tacitus-germania, source: gutenberg, url: "https://www.gutenberg.org/ebooks/2995", edition: "Thomas Gordon's translation", translator: "Thomas Gordon" }
+- { id: tacitus-histories, work: tacitus-histories, source: gutenberg, url: "https://www.gutenberg.org/ebooks/16927", edition: "W. Hamilton Fyfe's translation", translator: "W. Hamilton Fyfe" }
+- { id: thoreau-civil-disobedience, work: thoreau-civil-disobedience, source: gutenberg, url: "https://www.gutenberg.org/ebooks/71", edition: "The Project Gutenberg text" }
+- { id: thoreau-walking, work: thoreau-walking, source: gutenberg, url: "https://www.gutenberg.org/ebooks/1022", edition: "The Project Gutenberg text" }
+- { id: tolstoy-anna-karenina, work: tolstoy-anna-karenina, source: standardebooks, url: "https://standardebooks.org/ebooks/leo-tolstoy/anna-karenina/constance-garnett", edition: "Constance Garnett's translation", translator: "Constance Garnett" }
+- { id: tolstoy-hadji-murat, work: tolstoy-hadji-murat, source: standardebooks, url: "https://standardebooks.org/ebooks/leo-tolstoy/hadji-murad/aylmer-maude", edition: "The Standard Ebooks edition" }
+- { id: tolstoy-what-is-art, work: tolstoy-what-is-art, source: standardebooks, url: "https://standardebooks.org/ebooks/leo-tolstoy/what-is-art/aylmer-maude", edition: "Aylmer Maude's translation", translator: "Aylmer Maude" }
+- { id: twain-mysterious-stranger, work: twain-mysterious-stranger, source: gutenberg, url: "https://www.gutenberg.org/ebooks/3186", edition: "The Project Gutenberg text" }
+- { id: veblen-theory-of-the-leisure-class, work: veblen-theory-of-the-leisure-class, source: standardebooks, url: "https://standardebooks.org/ebooks/thorstein-veblen/the-theory-of-the-leisure-class", edition: "The Standard Ebooks edition" }
+- { id: virgil-eclogues, work: virgil-eclogues, source: standardebooks, url: "https://standardebooks.org/ebooks/virgil/the-eclogues/john-dryden", edition: "John Dryden's translation", translator: "John Dryden" }
+- { id: virgil-georgics, work: virgil-georgics, source: standardebooks, url: "https://standardebooks.org/ebooks/virgil/the-georgics/john-dryden", edition: "John Dryden's translation", translator: "John Dryden" }
+- { id: voltaire-philosophical-dictionary, work: voltaire-philosophical-dictionary, source: gutenberg, url: "https://www.gutenberg.org/ebooks/18569", edition: "The Project Gutenberg text" }
+- { id: wagner-tristan-and-isolde, work: wagner-tristan-and-isolde, source: gutenberg, url: "https://www.gutenberg.org/ebooks/16250", edition: "The Project Gutenberg text" }
+- { id: walker-appeal-to-the-colored-citizens-of-the-world, work: walker-appeal-to-the-colored-citizens-of-the-world, source: gutenberg, url: "https://www.gutenberg.org/ebooks/16516", edition: "The Project Gutenberg text" }
+- { id: walton-lives-of-donne-and-herbert, work: walton-lives-of-donne-and-herbert, source: gutenberg, url: "https://www.gutenberg.org/ebooks/13139", edition: "The Project Gutenberg text" }
+- { id: weber-protestant-ethic, work: weber-protestant-ethic, source: standardebooks, url: "https://standardebooks.org/ebooks/max-weber/the-protestant-ethic-and-the-spirit-of-capitalism/talcott-parsons", edition: "Talcott Parsons's translation", translator: "Talcott Parsons" }
+- { id: webster-duchess-of-malfi, work: webster-duchess-of-malfi, source: standardebooks, url: "https://standardebooks.org/ebooks/john-webster/the-duchess-of-malfi", edition: "The Standard Ebooks edition" }
+- { id: whitehead-introduction-to-mathematics, work: whitehead-introduction-to-mathematics, source: gutenberg, url: "https://www.gutenberg.org/ebooks/41568", edition: "The Project Gutenberg text" }
+- { id: whitehead-science-and-the-modern-world, work: whitehead-science-and-the-modern-world, source: standardebooks, url: "https://standardebooks.org/ebooks/alfred-north-whitehead/science-and-the-modern-world", edition: "The Standard Ebooks edition" }
+- { id: whitman-leaves-of-grass, work: whitman-leaves-of-grass, source: standardebooks, url: "https://standardebooks.org/ebooks/walt-whitman/leaves-of-grass", edition: "The Standard Ebooks edition" }
+- { id: william-james-essays-in-radical-empiricism, work: william-james-essays-in-radical-empiricism, source: gutenberg, url: "https://www.gutenberg.org/ebooks/32547", edition: "The Project Gutenberg text" }
+- { id: william-james-pragmatism, work: william-james-pragmatism, source: standardebooks, url: "https://standardebooks.org/ebooks/william-james/pragmatism", edition: "The Standard Ebooks edition" }
+- { id: william-james-varieties-of-religious-experience, work: william-james-varieties-of-religious-experience, source: standardebooks, url: "https://standardebooks.org/ebooks/william-james/the-varieties-of-religious-experience", edition: "The Standard Ebooks edition" }
+- { id: wollstonecraft-vindication-of-the-rights-of-men, work: wollstonecraft-vindication-of-the-rights-of-men, source: gutenberg, url: "https://www.gutenberg.org/ebooks/62757", edition: "The Project Gutenberg text" }
+- { id: wollstonecraft-vindication-of-the-rights-of-woman, work: wollstonecraft-vindication-of-the-rights-of-woman, source: standardebooks, url: "https://standardebooks.org/ebooks/mary-wollstonecraft/a-vindication-of-the-rights-of-woman", edition: "The Standard Ebooks edition" }
+- { id: woolf-to-the-lighthouse, work: woolf-to-the-lighthouse, source: standardebooks, url: "https://standardebooks.org/ebooks/virginia-woolf/to-the-lighthouse", edition: "The Standard Ebooks edition" }
+- { id: woolman-journal, work: woolman-journal, source: gutenberg, url: "https://www.gutenberg.org/ebooks/37311", edition: "The Project Gutenberg text" }

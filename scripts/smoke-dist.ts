@@ -146,5 +146,29 @@ if (!site) {
   scan(dist);
   dupes.length ? fail(`${dupes.length} Finder duplicate files in dist, e.g. ${dupes[0]}`) : ok('no Finder duplicates in dist');
   existsSync(join(dist, 'favicon.ico')) ? ok('favicon.ico present') : fail('favicon.ico missing');
+
+  /*
+   * The free page sends readers to other people's sites, which is a promise about what is
+   * on the other end. Only the four public domain libraries, only over https, and never
+   * marked sponsored: a free text is not an affiliate link and must not look like one.
+   */
+  const freePage = join(dist, 'free', 'index.html');
+  if (existsSync(freePage)) {
+    const html = readFileSync(freePage, 'utf8');
+    const ALLOWED = ['standardebooks.org', 'www.gutenberg.org', 'en.wikisource.org', 'archive.org'];
+    const bad: string[] = [];
+    for (const m of html.matchAll(/<a\b[^>]*data-free=[^>]*>/g)) {
+      const href = /href="([^"]+)"/.exec(m[0])?.[1] ?? '';
+      const external = /^https?:/.test(href);
+      if (external && (!href.startsWith('https://') || !ALLOWED.includes(new URL(href).host))) bad.push(href);
+      if (/rel="[^"]*sponsored/.test(m[0])) bad.push(`${href} (marked sponsored)`);
+    }
+    bad.length ? fail(`${bad.length} bad free links, e.g. ${bad[0]}`) : ok('free links go to the public domain libraries only');
+    /^\/free\/$/.test('/free/') && pathOf(freePage) === '/free/' && !noindexed.has('/free/')
+      ? ok('/free/ is indexable')
+      : fail('/free/ is noindexed');
+  } else {
+    fail('/free/ missing');
+  }
 }
 if (process.exitCode) process.exit(1);

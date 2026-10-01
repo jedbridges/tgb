@@ -1,0 +1,428 @@
+---
+/*
+ * Every book on the lists that can be read free and legally, in one place.
+ *
+ * Two kinds of row. A work whose text is hosted here opens on this site, beside the guide.
+ * Everything else points at Standard Ebooks or Project Gutenberg, who digitised it and who
+ * did the work of deciding it is out of copyright. Nothing here links to a "free PDF" of a
+ * book still in copyright, which is the thing this page must never become.
+ *
+ * It sells books rather than competing with them. A free text is nearly always an older
+ * translation, so each row also names the translation we would buy, with a link. A reader
+ * who has just read Butler's Iliad for nothing is the likeliest person on the site to want
+ * Lattimore's in print.
+ *
+ * Four hundred rows is a catalogue, not a list, so it opens with a filter bar and sorts
+ * rather than asking anyone to scroll. Everything is in the page already: the controls hide
+ * and reorder rows that are all present on load, so the page works with scripting off and
+ * search engines see the whole list.
+ */
+import { getCollection } from 'astro:content';
+import Base from '~/layouts/Base.astro';
+import { loadCatalog, placeholderAuthor, yearShort } from '~/lib/catalog';
+import { amazonUrl } from '~/lib/affiliates';
+import { describeEdition, editionKey } from '~/lib/editions';
+import { loadFreeReads, SOURCE_NAME, upsellWorthIt } from '~/lib/free';
+import { authorUrl, workUrl, abs } from '~/lib/url';
+import { breadcrumbs } from '~/lib/seo';
+import Disclosure from '~/components/Disclosure.astro';
+import Signup from '~/components/Signup.astro';
+
+const { works, authors, programs, assigned } = await loadCatalog();
+const free = await loadFreeReads();
+const eras = (await getCollection('eras')).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+
+const rows = works
+  .filter((w) => free.has(w.id))
+  .map((w) => {
+    const author = authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id);
+    return {
+      w, author,
+      read: free.get(w.id)!,
+      pick: describeEdition(w, author.data.name, w.data.recommendedEdition),
+      programs: [...new Set((assigned.get(w.id) ?? []).map((a) => a.program.id))],
+    };
+  })
+  .sort((a, b) => a.w.data.year - b.w.data.year || a.w.data.title.localeCompare(b.w.data.title));
+
+const groups = eras.map((era) => ({ era, rows: rows.filter((r) => r.w.data.era.id === era.id) })).filter((g) => g.rows.length);
+const total = rows.length;
+const hereCount = rows.filter((r) => !r.read.external).length;
+// Only the programs that actually have a free book on them, with their counts.
+const programFacets = programs
+  .map((p) => ({ id: p.id, label: p.data.shortName, n: rows.filter((r) => r.programs.includes(p.id)).length }))
+  .filter((p) => p.n > 0);
+
+const title = `Read the Great Books Free: ${total} Classics, Legally Online`;
+const description = `${total} books from the great college reading lists you can read free and legally right now, from Homer and Plato to Dante and Dostoevsky, with the edition to buy if you want to keep one.`;
+const itemList = {
+  '@context': 'https://schema.org', '@type': 'ItemList', name: 'The great books you can read free', numberOfItems: total,
+  itemListElement: rows.slice(0, 100).map((r, i) => ({
+    '@type': 'ListItem', position: i + 1, name: r.w.data.title,
+    url: r.read.external ? abs(workUrl(r.w.id)) : abs(r.read.url),
+  })),
+};
+---
+<Base title={title} suffix={false} description={description} jsonld={[itemList, breadcrumbs([{ name: 'Free', path: '/free/' }])]}>
+  <section class="wrap head page-open">
+    <h1 class="italic">Read them free</h1>
+    <p class="lede">
+      {total} of the books on these reading lists are out of copyright, which means you can read them today without paying anyone.
+      {' '}{hereCount} are on this site, set beside their guides; the rest are at Standard Ebooks and Project Gutenberg, who digitised them.
+    </p>
+    <p class="note">
+      What is free is almost always an older translation, and for Homer or Dante that is a real difference rather than a technicality.
+      Each book below names the translation we would actually buy, so you can read the free one first and decide.
+    </p>
+  </section>
+
+  <div class="wrap">
+    <form class="bar" id="free-bar" role="search" aria-label="Filter the free books">
+      <div class="bar__find">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="7" cy="7" r="5" /><path d="m11 11 3.5 3.5" stroke-linecap="round" /></svg>
+        <label class="visually-hidden" for="free-q">Search these books</label>
+        <input id="free-q" type="search" autocomplete="off" placeholder="Search by title or author" />
+        <p class="bar__count" role="status" aria-live="polite"><span id="free-count">{total}</span> <span id="free-count-word">books</span></p>
+      </div>
+      <div class="bar__controls">
+        <div class="segs" role="group" aria-label="Where to read">
+          <button type="button" class="seg on" data-where="" aria-pressed="true">All</button>
+          <button type="button" class="seg" data-where="here" aria-pressed="false">On this site <span class="seg__n">{hereCount}</span></button>
+          <button type="button" class="seg" data-where="away" aria-pressed="false">At the libraries <span class="seg__n">{total - hereCount}</span></button>
+        </div>
+        <span class="pick">
+          <label class="visually-hidden" for="free-era">Era</label>
+          <select id="free-era">
+            <option value="">Any era</option>
+            {groups.map((g) => <option value={g.era.id}>{g.era.data.label} ({g.rows.length})</option>)}
+          </select>
+          <svg class="pick__chev" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="pick">
+          <label class="visually-hidden" for="free-program">Program</label>
+          <select id="free-program">
+            <option value="">Any program</option>
+            {programFacets.map((p) => <option value={p.id}>{p.label} ({p.n})</option>)}
+          </select>
+          <svg class="pick__chev" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <button type="button" class="bar__clear" id="free-clear" hidden>Clear</button>
+        <span class="pick pick--sort">
+          <label class="pick__label" for="free-sort">Sort</label>
+          <select id="free-sort">
+            <option value="era">Oldest first</option>
+            <option value="title">Title A to Z</option>
+            <option value="author">Author A to Z</option>
+          </select>
+          <svg class="pick__chev" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </div>
+      <div class="cols ui" aria-hidden="true">
+        <span>Book</span><span>Free to read</span><span>In print we recommend</span><span></span>
+      </div>
+    </form>
+
+    <ol class="rows" id="free-list">
+      {groups.map((g) => (
+        <>
+          <li class="rowhead" id={g.era.id}><h2 class="rowhead__label">{g.era.data.label}</h2></li>
+          {g.rows.map(({ w, author, read, pick, programs: progs }) => (
+            <li class="row" data-title={w.data.title.toLowerCase()} data-author={author.data.name.toLowerCase()}
+              data-sort-title={w.data.title.replace(/^(the|a|an) /i, '').toLowerCase()}
+              data-sort-author={(author.data.sortName ?? author.data.name).toLowerCase()}
+              data-where={read.external ? 'away' : 'here'} data-programs={progs.join(' ')} data-era={w.data.era.id}>
+              <p class="row__work">
+                <a class="row__title" href={workUrl(w.id)}>{w.data.title}</a>
+                <span class="row__by">by <a href={authorUrl(author.id)}>{author.data.name}</a><span class="row__year ui"> · {yearShort(w)}</span></span>
+              </p>
+              <p class="row__edition">
+                <span class="row__label ui">Free to read</span>
+                <span class="row__edition-name">{read.edition}{read.external && !read.edition.includes(SOURCE_NAME[read.where]) && <span class="row__host"> at {SOURCE_NAME[read.where]}</span>}</span>
+              </p>
+              <p class="row__buy">
+                {upsellWorthIt(w, read) ? (
+                  <>
+                    <span class="row__label ui">In print we recommend</span>
+                    <a class="row__buy-link" href={amazonUrl(pick.target)} target="_blank" rel="sponsored noopener"
+                      data-affiliate="amazon" data-work={w.id} data-placement="free" data-edition={editionKey(w.data.recommendedEdition)}>
+                      {pick.editionName ?? pick.short}<span class="visually-hidden">: {w.data.title} on Amazon, opens in a new tab</span>
+                    </a>
+                  </>
+                ) : (
+                  <span class="row__label row__label--note ui">The free text is the one we recommend</span>
+                )}
+              </p>
+              <p class="row__action">
+                <a class="btn row__read" href={read.url} data-free={w.id} data-source={read.where}
+                  {...(read.external ? { target: '_blank', rel: 'noopener' } : {})}>
+                  {read.external ? 'Read free' : 'Read it here'}
+                  <span class="visually-hidden">&#32;{w.data.title}{read.external ? `, at ${SOURCE_NAME[read.where]}, opens in a new tab` : ', on this site'}</span>
+                  {read.external && (
+                    <svg class="row__ext" width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4.5 1.5h6v6M10.5 1.5 5 7M8 10.5H1.5V4" stroke-linecap="round"/></svg>
+                  )}
+                </a>
+              </p>
+            </li>
+          ))}
+        </>
+      ))}
+    </ol>
+    <p class="empty" id="free-empty" hidden>Nothing here matches that. <button type="button" class="bar__clear" id="free-clear-2">Clear the filters</button></p>
+  </div>
+
+  <div class="wrap"><Signup from="free" /></div>
+  <section class="wrap foot">
+    <p class="foot__note">
+      Every link goes to a text whose copyright has expired in the United States, hosted by
+      <a href="https://standardebooks.org" rel="noopener" target="_blank">Standard Ebooks</a> or
+      <a href="https://www.gutenberg.org" rel="noopener" target="_blank">Project Gutenberg</a>, both of which are worth supporting.
+      Books still in copyright are not here and will not be.
+    </p>
+    <Disclosure />
+  </section>
+</Base>
+
+<style>
+  .head { padding-block: var(--s4) var(--s2); display: grid; gap: var(--s1); }
+  .head h1 { font-size: var(--step-4); }
+  .lede { font-size: var(--step-1); color: var(--ink-soft); max-width: 54ch; text-wrap: pretty; }
+  .note { color: var(--ink-soft); font-size: var(--step--1); line-height: var(--lh-prose); max-width: 56ch; text-wrap: pretty; }
+
+  /* The bar rides with the list: at four hundred rows the controls are wanted at row 300
+     as much as at row 3, and a filter whose readout has scrolled away reads as broken.
+     Two lines and one vocabulary: the search, then a row of pills that all share the
+     height, border and filled "on" state of the chips on the books page. */
+  .bar {
+    --free-cols: minmax(0, 1.3fr) minmax(0, 1.1fr) minmax(0, 1fr) 8.5rem;
+    position: sticky; top: var(--header-h); z-index: 10;
+    display: grid; gap: var(--s1);
+    padding: var(--s1) 0 var(--s1);
+    margin-top: var(--s1);
+    background: var(--paper);
+    border-bottom: 1px solid var(--paper-deeper);
+  }
+  .bar__find {
+    display: flex; align-items: center; gap: var(--s0);
+    border-bottom: 1px solid var(--ink); padding-bottom: 0.35rem;
+    color: var(--ink-mute);
+  }
+  .bar__find input {
+    flex: 1; min-width: 0; min-height: 44px; background: none; border: 0;
+    font-family: var(--font-display); font-size: var(--step-1); color: var(--ink-strong);
+  }
+  .bar__find input::placeholder { color: var(--ink-mute); font-style: italic; }
+  .bar__find input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+  .bar__count {
+    margin: 0; flex: 0 0 auto; display: flex; align-items: baseline; gap: 0.4rem;
+    font-family: var(--font-ui); font-size: var(--step--1); color: var(--ink-mute); white-space: nowrap;
+  }
+  .bar__count #free-count { font-family: var(--font-display); font-size: var(--step-1); color: var(--ink-strong); font-variant-numeric: tabular-nums; }
+
+  .bar__controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-1) var(--s0); }
+  .segs { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-right: var(--s0); }
+  .seg, .pick select {
+    font-family: var(--font-ui); font-size: var(--step--2); line-height: 1;
+    min-height: 36px; border-radius: 999px;
+    border: 1px solid var(--paper-deeper); color: var(--ink-soft); background: transparent;
+    transition: border-color var(--dur-fast), color var(--dur-fast), background var(--dur-fast);
+  }
+  .seg { display: inline-flex; align-items: center; gap: 0.45em; padding: 0.6em 0.9em; }
+  .seg__n { color: var(--ink-mute); font-variant-numeric: tabular-nums; }
+  .seg:hover, .pick select:hover { border-color: var(--ink-mute); color: var(--ink-strong); }
+  .seg.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .seg.on .seg__n { color: inherit; opacity: 0.7; }
+
+  /* A select dressed as a pill: the native control does the work, the chevron is ours. */
+  .pick { position: relative; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .pick select { appearance: none; -webkit-appearance: none; padding: 0.6em 2.1em 0.6em 0.9em; cursor: pointer; max-width: 16rem; text-overflow: ellipsis; }
+  .pick select.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .pick__chev { position: absolute; right: 0.85em; pointer-events: none; color: var(--ink-mute); }
+  .pick select.on + .pick__chev { color: var(--paper); }
+  .pick__label { font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); }
+  /* A native select is as wide as its longest option, which made "Any era" a wide empty
+     pill. A fixed width reads as a set; a long choice ellipsises inside it. */
+  .pick:not(.pick--sort) select { width: 11rem; }
+  .pick--sort { margin-left: auto; }
+
+  /* Column heads, once, in the pinned bar: the labels belong to the columns, not to each
+     of four hundred rows. Same template as .row so they sit over what they name. */
+  .cols {
+    display: grid; grid-template-columns: var(--free-cols); gap: 0 var(--s2);
+    font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--ink-mute);
+  }
+  .bar__clear { font-family: var(--font-ui); font-size: var(--step--2); color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; min-height: 36px; padding-inline: 0.3em; }
+  .bar__clear[hidden] { display: none; }
+
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .rowhead { padding-top: var(--s3); scroll-margin-top: calc(var(--header-h) + 6rem); }
+  .rowhead[hidden] { display: none; }
+  .rowhead__label { font-style: italic; font-size: var(--step-2); border-bottom: var(--rule-section); padding-bottom: var(--s0); }
+
+  /* Work, what is free, what to buy, and the action. The action holds the right edge of
+     every row so the eye finds the next one without reading across. */
+  .row {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr) minmax(0, 1fr) 8.5rem;
+    gap: var(--s0) var(--s2);
+    align-items: center; padding-block: var(--s1); border-bottom: 1px solid var(--edge);
+    position: relative; isolation: isolate;
+  }
+  /* A quiet band under the row the pointer is on, reaching just past the text, so the eye
+     can follow a title across to its button on a wide screen. */
+  .row::before {
+    content: ''; position: absolute; inset: 0 calc(var(--s0) * -1); z-index: -1;
+    background: var(--paper-bright); opacity: 0; transition: opacity var(--dur-fast);
+  }
+  @media (hover: hover) { .row:hover::before { opacity: 1; } }
+  /* On a wide screen the column heads carry the labels; the per-row copies stay for
+     screen readers and come back wherever the row stacks. */
+  @media (min-width: 1001px) {
+    .row__label:not(.row__label--note) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  }
+  .row[hidden] { display: none; }
+  .row p { margin: 0; min-width: 0; }
+  .row__work { display: grid; gap: 2px; }
+  .row__title { font-size: var(--step-0); font-style: italic; color: var(--ink-strong); text-decoration: none; }
+  .row__title:hover { color: var(--accent); }
+  .row__by { color: var(--ink-soft); font-size: var(--step--1); }
+  .row__by a { color: inherit; }
+  .row__year { color: var(--ink-mute); font-size: var(--step--2); white-space: nowrap; }
+  .row__edition, .row__buy { display: grid; gap: 2px; align-content: center; }
+  .row__label { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; }
+  .row__edition-name { color: var(--ink-soft); font-size: var(--step--1); line-height: 1.4; }
+  .row__host { color: var(--ink-mute); }
+  .row__buy-link { color: var(--accent); font-size: var(--step--1); text-decoration: none; border-bottom: 1px solid currentColor; justify-self: start; }
+  .row__action { justify-self: stretch; }
+  .row__read { font-size: var(--step--2); padding: 0.55em 1.1em; white-space: nowrap; width: 100%; }
+  .row__ext { opacity: 0.6; }
+
+  .empty { padding-block: var(--s4); color: var(--ink-soft); font-size: var(--step-1); }
+  .empty[hidden] { display: none; }
+
+  .foot { padding-block: var(--s3); display: grid; gap: var(--s1); border-top: var(--rule); }
+  .foot__note { color: var(--ink-soft); font-size: var(--step--1); line-height: var(--lh-prose); max-width: 68ch; text-wrap: pretty; }
+  .foot__note a { color: var(--ink-strong); }
+
+  /* Tablet: the two middle columns stack under the title, the action keeps its edge. */
+  @media (max-width: 1000px) {
+    .cols { display: none; }
+    .row { grid-template-columns: minmax(0, 1fr) auto; gap: var(--s-1) var(--s2); align-items: start; }
+    .row__work, .row__edition, .row__buy { grid-column: 1; }
+    .row__action { grid-column: 2; grid-row: 1 / span 3; align-self: center; width: 8.5rem; }
+  }
+  /* Phone: one column, and the action becomes the full-width thing it should be on a
+     screen where it is the only tap target in the row. */
+  @media (max-width: 620px) {
+    /* On a phone a pinned bar would hold a quarter of the screen for the whole list, so
+       it scrolls away with the intro. The where pills keep their own line; the two
+       filters share the next, and sort takes the last on its own. */
+    .bar { position: static; }
+    .bar__find input { font-size: var(--step-0); }
+    .segs { width: 100%; margin-right: 0; }
+    .seg { flex: 1 1 auto; justify-content: center; padding-inline: 0.6em; }
+    .pick { flex: 1 1 40%; }
+    .pick select, .pick:not(.pick--sort) select { width: 100%; max-width: none; }
+    .pick--sort { flex-basis: 100%; margin-left: 0; }
+    .pick--sort select { flex: 1; }
+    .row { grid-template-columns: minmax(0, 1fr); gap: var(--s-1); padding-block: var(--s2); }
+    .row__work, .row__edition, .row__buy, .row__action { grid-column: 1; grid-row: auto; }
+    .row__action { justify-self: stretch; margin-top: var(--s-1); width: auto; }
+    .row__read { width: 100%; min-height: 48px; font-size: var(--step--1); }
+    .rowhead { padding-top: var(--s2); }
+  }
+</style>
+
+<script>
+  /*
+   * Filtering and sorting, over rows that are all in the page already. Nothing is fetched
+   * and nothing is rendered: a row is hidden or moved, so the list a crawler reads and the
+   * list a reader filters are the same list.
+   */
+  const bar = document.getElementById('free-bar') as HTMLFormElement | null;
+  const list = document.getElementById('free-list');
+  if (bar && list) {
+    const q = document.getElementById('free-q') as HTMLInputElement;
+    const segs = [...bar.querySelectorAll<HTMLButtonElement>('.seg')];
+    const era = document.getElementById('free-era') as HTMLSelectElement;
+    const program = document.getElementById('free-program') as HTMLSelectElement;
+    const sort = document.getElementById('free-sort') as HTMLSelectElement;
+    const count = document.getElementById('free-count')!;
+    const countWord = document.getElementById('free-count-word')!;
+    const clear = document.getElementById('free-clear') as HTMLButtonElement;
+    const clear2 = document.getElementById('free-clear-2') as HTMLButtonElement | null;
+    const empty = document.getElementById('free-empty')!;
+
+    const rows = [...list.querySelectorAll<HTMLElement>('.row')];
+    const heads = [...list.querySelectorAll<HTMLElement>('.rowhead')];
+    const original = [...list.children] as HTMLElement[];
+    const total = rows.length;
+    // Accents are in the titles and not on most keyboards: "Pere Goriot" should find it.
+    const fold = (s: string) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const text = new Map(rows.map((r) => [r, fold(`${r.dataset.title} ${r.dataset.author}`)]));
+    let where = '';
+
+    let raf = 0;
+    function apply() {
+      const term = fold(q.value.trim());
+      const e = era.value;
+      const p = program.value;
+      const s = sort.value;
+
+      let shown = 0;
+      for (const row of rows) {
+        const ok =
+          (!term || text.get(row)!.includes(term)) &&
+          (!where || row.dataset.where === where) &&
+          (!e || row.dataset.era === e) &&
+          (!p || (row.dataset.programs ?? '').split(' ').includes(p));
+        row.hidden = !ok;
+        if (ok) shown++;
+      }
+
+      // Era headings only mean anything in era order, and only when something sits under them.
+      if (s === 'era') {
+        for (const el of original) list!.appendChild(el);
+        for (const head of heads) {
+          let el = head.nextElementSibling as HTMLElement | null;
+          let any = false;
+          while (el && !el.classList.contains('rowhead')) {
+            if (!el.hidden) { any = true; break; }
+            el = el.nextElementSibling as HTMLElement | null;
+          }
+          head.hidden = !any;
+        }
+      } else {
+        for (const head of heads) head.hidden = true;
+        const key = s === 'title' ? 'sortTitle' : 'sortAuthor';
+        const sorted = rows.slice().sort((a, b) => (a.dataset[key] ?? '').localeCompare(b.dataset[key] ?? ''));
+        for (const row of sorted) list!.appendChild(row);
+      }
+
+      // A filter that is on looks on, the same filled pill as the where buttons.
+      era.classList.toggle('on', Boolean(e));
+      program.classList.toggle('on', Boolean(p));
+      for (const b of segs) {
+        const on = (b.dataset.where ?? '') === where;
+        b.classList.toggle('on', on);
+        b.setAttribute('aria-pressed', String(on));
+      }
+
+      count.textContent = String(shown);
+      countWord.textContent = shown === total ? 'books' : shown === 1 ? `book of ${total}` : `of ${total}`;
+      clear.hidden = !(term || where || e || p);
+      empty.hidden = shown > 0;
+    }
+
+    const track = (facet: string) => dispatchEvent(new CustomEvent('tgb:filter', { detail: { facet } }));
+    const schedule = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(apply); };
+    q.addEventListener('input', schedule);
+    for (const b of segs) b.addEventListener('click', () => { where = b.dataset.where ?? ''; apply(); track('where'); });
+    for (const el of [era, program, sort]) el.addEventListener('change', () => { apply(); track(el.id.replace('free-', '')); });
+    bar.addEventListener('submit', (e) => e.preventDefault());
+    const reset = () => { q.value = ''; era.value = ''; program.value = ''; where = ''; apply(); q.focus(); };
+    clear.addEventListener('click', reset);
+    clear2?.addEventListener('click', reset);
+    // A reload can restore the controls, so the list is brought into line on load.
+    apply();
+  }
+</script>
