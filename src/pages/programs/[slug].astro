@@ -6,6 +6,7 @@ import Bookcase from '~/components/Bookcase.astro';
 import { placeholderAuthor, loadCatalog, yearShort, difficultyLabel } from '~/lib/catalog';
 import { programUrl, url, workUrl, authorUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
+import { loadFreeReads } from '~/lib/free';
 import { abs } from '~/lib/url';
 
 export async function getStaticPaths() {
@@ -25,6 +26,10 @@ const caseSegments = resolved.map((seg) => ({
 }));
 const allWorks = resolved.flatMap((s) => s.items.map((i) => i.work!));
 const unique = new Set(allWorks.map((w) => w.id)).size;
+// How much of this list can be read today for nothing, which is the first question a
+// student handed the list tends to ask.
+const freeReads = await loadFreeReads();
+const freeCount = new Set(allWorks.filter((w) => freeReads.has(w.id)).map((w) => w.id)).size;
 const p = program.data;
 const paragraphs = p.description.split(/\n\n+/);
 /* One list per year or course as well as the whole: "St. John's sophomore reading list"
@@ -64,6 +69,7 @@ const pageDescription = `The complete ${listName.replace(/Reading List$/, 'readi
         <div class="prose head__desc">{paragraphs.map((t) => <p>{t}</p>)}</div>
         <dl class="facts ui" data-pagefind-ignore>
           <div><dt>Works</dt><dd>{unique}</dd></div>
+          {freeCount > 0 && <div><dt>Free to read</dt><dd><a href={url('/free/') + `?program=${program.id}`}>{freeCount} of them →</a></dd></div>}
           <div><dt>{p.segmentLabel}s</dt><dd>{segments.length}</dd></div>
           {p.url && <div><dt>Official list</dt><dd><a href={p.url} rel="noopener" target="_blank">{new URL(p.url).hostname.replace(/^www\./, '')}</a></dd></div>}
           <div><dt>Source</dt><dd><details class="facts__src"><summary>How this list was checked</summary><p>{p.sourceNote.replace(/https?:\/\/\S+/g, '').replace(/\s+,/g, ',').replace(/,\s*,/g, ',').trim()}</p></details></dd></div>

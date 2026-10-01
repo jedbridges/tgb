@@ -13,7 +13,7 @@ import Base from '~/layouts/Base.astro';
 import { loadCatalog, hasGuide, placeholderAuthor, yearShort } from '~/lib/catalog';
 import { amazonUrl } from '~/lib/affiliates';
 import { describeEdition, editionKey, isTranslated } from '~/lib/editions';
-import { authorUrl, workUrl, abs } from '~/lib/url';
+import { authorUrl, workUrl, abs, url } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
 import Disclosure from '~/components/Disclosure.astro';
 import Signup from '~/components/Signup.astro';
@@ -41,7 +41,7 @@ const itemList = {
 <Base title={title} suffix={false} description={description} jsonld={[itemList, breadcrumbs([{ name: 'Translations', path: '/translations/' }])]}>
   <section class="wrap head page-open">
     <h1 class="italic">The best translations</h1>
-    <p class="lede">For most of the great books the translation is most of the decision. Here is the one we would hand you for each of {total} works, with a sentence on why. Where more than one is worth reading, the book page compares them.</p>
+    <p class="lede">For most of the great books the translation is most of the decision. Here is the one we would hand you for each of {total} works, with a sentence on why. Where more than one is worth reading, the book page compares them. Many have an older translation you can <a href={url('/free/')}>read free</a> first.</p>
     <nav class="jump ui" aria-label="Eras">
       {groups.map((g) => <a href={`#${g.era.id}`}>{g.era.data.label}</a>)}
     </nav>

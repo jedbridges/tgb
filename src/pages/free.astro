@@ -411,6 +411,30 @@ const itemList = {
       countWord.textContent = shown === total ? 'books' : shown === 1 ? `book of ${total}` : `of ${total}`;
       clear.hidden = !(term || where || e || p);
       empty.hidden = shown > 0;
+
+      // The view is the address, so a filtered list can be linked to: a program page sends
+      // its readers to /free/?program=st-johns, and a reader can share what they found.
+      // Replace, not push: a filter change is not a page the back button should step through.
+      const params = new URLSearchParams();
+      if (q.value.trim()) params.set('q', q.value.trim());
+      if (where) params.set('where', where);
+      if (e) params.set('era', e);
+      if (p) params.set('program', p);
+      if (s !== 'era') params.set('sort', s);
+      const next = `${location.pathname}${params.size ? `?${params}` : ''}${location.hash}`;
+      if (next !== `${location.pathname}${location.search}${location.hash}`) history.replaceState(null, '', next);
+    }
+
+    // Arriving with a filter in the address: apply only values the controls offer.
+    {
+      const params = new URLSearchParams(location.search);
+      const pick = (sel: HTMLSelectElement, v: string | null) => { if (v && [...sel.options].some((o) => o.value === v)) sel.value = v; };
+      if (params.get('q')) q.value = params.get('q')!;
+      const w0 = params.get('where');
+      if (w0 === 'here' || w0 === 'away') where = w0;
+      pick(era, params.get('era'));
+      pick(program, params.get('program'));
+      pick(sort, params.get('sort'));
     }
 
     const track = (facet: string) => dispatchEvent(new CustomEvent('tgb:filter', { detail: { facet } }));
