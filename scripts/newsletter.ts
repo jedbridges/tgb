@@ -11,6 +11,7 @@
  *   npx tsx scripts/newsletter.ts --dry-run --work X    any work, printed
  *   npx tsx scripts/newsletter.ts --dry-run --weeks 3   the next three, printed
  *   npx tsx scripts/newsletter.ts --schedule            create the scheduled draft
+ *   npx tsx scripts/newsletter.ts --configure           point Buttondown's redirects here
  *
  * A dry run makes no network call of any kind. --schedule needs BUTTONDOWN_API_KEY and
  * refuses to act if the work it picked has already gone out.
@@ -26,7 +27,7 @@ const KEY = (process.env.BUTTONDOWN_API_KEY || '').trim();
 const argv = process.argv.slice(2);
 const flag = (n: string) => argv.includes(`--${n}`);
 const opt = (n: string) => { const i = argv.indexOf(`--${n}`); return i === -1 ? undefined : argv[i + 1]; };
-const DRY = flag('dry-run') || !flag('schedule');
+const DRY = flag('dry-run') || !(flag('schedule') || flag('configure'));
 
 /* Every email carries this marker so the next run can see what has already gone out.
    Buttondown is the source of truth for that, not a file in the repo, because a file
@@ -280,9 +281,30 @@ const alreadySent = async (): Promise<string[]> => {
   return seen.sort((a, b) => a.at.localeCompare(b.at)).map((s) => s.slug);
 };
 
+/*
+ * Left alone, Buttondown drops a reader on its own hosted newsletter page the moment they
+ * submit, which carries none of this site's branding and offers them a second empty
+ * subscribe box. A successful signup then reads as a failed one. These two settings send
+ * them to pages here instead: one for the unconfirmed state, one for after they confirm.
+ */
+const configure = async () => {
+  const list = await api('/newsletters');
+  const n = (list.results ?? [])[0];
+  if (!n?.id) throw new Error('the API key reaches no newsletter');
+  const want = {
+    subscription_redirect_url: `${SITE}/subscribed/`,
+    subscription_confirmation_redirect_url: `${SITE}/welcome/`,
+  };
+  await api(`/newsletters/${n.id}`, { method: 'PATCH', body: JSON.stringify(want) });
+  console.log(`Configured ${n.username ?? n.id}:`);
+  for (const [k, v] of Object.entries(want)) console.log(`  ${k} = ${v}`);
+};
+
 const main = async () => {
   const only = opt('work');
   const weeks = Number(opt('weeks') ?? 1);
+
+  if (flag('configure')) return configure();
 
   if (DRY) {
     const chosen = only

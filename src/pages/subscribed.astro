@@ -1,0 +1,25 @@
+---
+/*
+ * Where Buttondown sends a reader the moment they submit the form, set as
+ * subscription_redirect_url. Without it they land on the Buttondown-hosted newsletter
+ * page, which carries none of this site's branding and shows them a second empty subscribe
+ * box, so a successful signup reads as a failed one.
+ */
+import Base from '~/layouts/Base.astro';
+---
+<Base
+  title="Check your inbox"
+  description="One more click confirms your subscription to the weekly email from The Great Books."
+  noindex
+>
+  <article class="wrap page page-open" data-pagefind-ignore>
+    <h1 class="italic">Check your inbox</h1>
+    <div class="prose set-hold">
+      <p class="lede">We have sent you one email with a confirmation link in it. Click that link and you are on the list. Nothing else arrives until you do.</p>
+      <p>If it is not there in a minute, look in spam or promotions. Moving it to your inbox is also the thing most likely to make Saturday's email land where you can see it.</p>
+      <h2>What you will get</h2>
+      <p>One book every Saturday morning: why it matters, how to read it, which translation to get, and one passage worth the price of the book on its own. One email a week, and a one-click unsubscribe at the bottom of every one.</p>
+      <p>While you wait, the <a href="/free/">free texts</a> are the whole of several hundred of these books, readable here.</p>
+    </div>
+  </article>
+</Base>

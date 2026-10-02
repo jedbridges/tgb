@@ -1,0 +1,24 @@
+---
+/*
+ * Where Buttondown sends a reader after they click the confirmation link, set as
+ * subscription_confirmation_redirect_url. The page before this one is a promise; this is
+ * the only one that means they are actually on the list.
+ */
+import Base from '~/layouts/Base.astro';
+---
+<Base
+  title="You are on the list"
+  description="Your subscription to the weekly email from The Great Books is confirmed."
+  noindex
+>
+  <article class="wrap page page-open" data-pagefind-ignore>
+    <h1 class="italic">You are on the list</h1>
+    <div class="prose set-hold">
+      <p class="lede">That is it. The next email arrives on Saturday morning: one book, why it matters, how to read it, and which translation to get.</p>
+      <p>The emails are not a course and they do not run in order of difficulty. Each one stands alone, so a week you skip costs you nothing.</p>
+      <h2>Start now if you like</h2>
+      <p>You do not have to wait for Saturday. The <a href="/free/">free texts</a> hold several hundred of these books in full, and every guide on the site tells you which edition to buy and where to begin.</p>
+      <p>If you ever want out, every email has a one-click unsubscribe link, and using it deletes you from the list.</p>
+    </div>
+  </article>
+</Base>

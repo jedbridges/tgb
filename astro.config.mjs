@@ -62,6 +62,9 @@ export default defineConfig({
     sitemap({
       filter: (page) => {
         if (page.includes('/404')) return false;
+        // The two pages Buttondown redirects to after a signup. They are noindexed on the
+        // page itself, and they are meaningless to anyone arriving from search.
+        if (/\/(subscribed|welcome)\/?$/.test(page)) return false;
         // The type specimen is a working page for the site's own typography, noindexed on
         // the page itself; listing it here told search the opposite.
         if (/\/type\/?$/.test(page)) return false;
