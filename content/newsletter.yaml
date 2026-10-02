@@ -1,0 +1,44 @@
+# The running order for the weekly email.
+#
+# The first twelve weeks are chosen by hand, because they decide whether the list
+# survives: they open on the most approachable famous book rather than the most
+# important one, keep a short easy read at week four as a breather, and hold Moby-Dick
+# and the Republic back until the habit is formed. After the curated run ends the
+# rotation takes over and picks from the rest of the catalogue on its own.
+#
+# Every slug here is checked by validate-content, so a typo fails the build rather than
+# the Thursday job.
+
+send:
+  # The signup form promises a weekly email. Saturday morning, read in the sender's
+  # timezone, is what the workflow cron and the scheduled publish_date are derived from.
+  day: saturday
+  hour: 8
+  timezone: America/Boise
+  # The draft is built this many days before the send, which is the window to catch a
+  # bad one. Nothing is required of anyone during it: silence ships the email.
+  draftLeadDays: 2
+
+curated:
+  - mary-shelley-frankenstein
+  - marcus-aurelius-meditations
+  - homer-iliad
+  - fitzgerald-great-gatsby
+  - machiavelli-prince
+  - dostoevsky-crime-and-punishment
+  - sophocles-antigone
+  - augustine-confessions
+  - shakespeare-hamlet
+  - melville-moby-dick
+  - plato-republic
+  - descartes-meditations
+
+rotation:
+  # A list that runs three Greeks together reads like a syllabus. Holding era and region
+  # apart for a month makes the same catalogue feel like a world.
+  spacing:
+    era: 4
+    region: 4
+  # A work with no recommended ISBN cannot carry a direct buy link, which is the one
+  # line in the email that pays for the rest of it.
+  requireRecommendedIsbn: true

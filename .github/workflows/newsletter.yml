@@ -1,0 +1,40 @@
+# Build the week's email and hand it to Buttondown as a scheduled send.
+#
+# Thursday, two days before the Saturday 08:00 Mountain send, so there is a window to read
+# it and change your mind. Doing nothing ships it. The job creates nothing if the work it
+# picked has already gone out, so a re-run is safe.
+name: Newsletter
+
+on:
+  schedule:
+    # 15:00 UTC Thursday. GitHub's cron is UTC and can run late, which costs nothing here:
+    # the send time lives in the scheduled publish_date, not in when this job happens to run.
+    - cron: '0 15 * * 4'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Print the email and send nothing'
+        type: boolean
+        default: true
+      work:
+        description: 'Send a specific work slug instead of the next in the queue'
+        type: string
+        required: false
+
+jobs:
+  newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22', cache: npm }
+      - run: npm ci
+      - name: Build and schedule the email
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
+          SITE_URL: ${{ secrets.SITE_URL }}
+        run: |
+          npx tsx scripts/newsletter.ts \
+            ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '--schedule' }} \
+            ${{ inputs.work && format('--work {0}', inputs.work) || '' }}

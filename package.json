@@ -20,7 +20,8 @@
     "corpus:sync": "tsx scripts/sync-corpus.ts",
     "texts": "tsx scripts/fetch-texts.ts",
     "deploy": "npm run build && wrangler deploy",
-    "report": "tsx scripts/traffic-report.ts"
+    "report": "tsx scripts/traffic-report.ts",
+    "newsletter": "tsx scripts/newsletter.ts"
   },
   "dependencies": {
     "@astrojs/preact": "^6.0.5",

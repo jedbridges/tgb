@@ -13,7 +13,7 @@ const { from } = Astro.props;
   <aside class="signup" aria-labelledby={`signup-h-${from}`} data-pagefind-ignore>
     <div class="signup__text">
       <h2 class="signup__h" id={`signup-h-${from}`}>One great book a week</h2>
-      <p class="signup__p">Why it matters, how to read it, and which translation to get. One email, every Sunday. Unsubscribe in one click.</p>
+      <p class="signup__p">Why it matters, how to read it, and which translation to get. One email, every Saturday. Unsubscribe in one click.</p>
     </div>
     <form class="signup__form" action={`https://buttondown.com/api/emails/embed-subscribe/${NEWSLETTER_USER}`} method="post" target="_blank" data-signup={from}>
       <label class="visually-hidden" for={`signup-email-${from}`}>Email address</label>

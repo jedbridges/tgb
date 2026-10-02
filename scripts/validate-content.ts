@@ -101,5 +101,22 @@ for (const [slug, { body }] of works) {
   const local = new Set<string>();
   for (let i = 0; i + 12 <= w.length; i++) { const g = w.slice(i, i + 12).join(' '); if (local.has(g)) continue; local.add(g); const o = grams.get(g); if (o && o !== slug) { err(`${slug} shares a 12-word run with ${o}: "${g}"`); break; } grams.set(g, slug); }
 }
+/* The weekly email's running order. A dangling slug here would not fail the build, it
+   would fail the Thursday job with nobody watching, so it is checked with everything else. */
+if (existsSync('content/newsletter.yaml')) {
+  const n = parse(readFileSync('content/newsletter.yaml', 'utf8')) as any;
+  const curated: string[] = n?.curated ?? [];
+  const seen = new Set<string>();
+  for (const slug of curated) {
+    if (!works.has(slug)) err(`newsletter: curated slug ${slug} has no work file`);
+    else if (n?.rotation?.requireRecommendedIsbn !== false && !works.get(slug)!.data.recommendedEdition?.isbn13)
+      warn(`newsletter: curated ${slug} has no recommended ISBN, so its email carries no direct buy link`);
+    if (seen.has(slug)) err(`newsletter: ${slug} appears twice in the running order`);
+    seen.add(slug);
+  }
+  if (!['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'].includes(String(n?.send?.day).toLowerCase()))
+    err(`newsletter: send.day is not a day of the week: ${n?.send?.day}`);
+}
+
 console.log(`${works.size} works, ${authors.size} authors, ${programs.length} programs · ${errors} errors, ${warnings} warnings`);
 if (errors) process.exit(1);
