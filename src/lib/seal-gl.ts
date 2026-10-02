@@ -147,6 +147,7 @@ export function mountWaxSeal(root: HTMLElement): void {
     gl.uniform3fv(uWaxDeep, get(1, [0.08, 0.02, 0.01]));
     gl.uniform3fv(uWaxEdge, get(2, [0.34, 0.10, 0.05]));
     gl.uniform3fv(uPaper, get(3, [0.85, 0.80, 0.77]));
+    state.colours = probes.length ? [...probes].map((i) => getComputedStyle(i).color).join() : 'none';
     const ink = (cs.getPropertyValue('--shadow-ink') || '20 12 8').trim().split(/\s+/).map(Number);
     gl.uniform3f(uShadowInk, toLinear((ink[0] || 20) / 255), toLinear((ink[1] || 12) / 255), toLinear((ink[2] || 8) / 255));
     gl.uniform1f(uShadowA, Number(cs.getPropertyValue('--shadow-a')) || 1);
@@ -175,9 +176,18 @@ export function mountWaxSeal(root: HTMLElement): void {
     visible: false,
     dirty: true,
     rot: 0,
+    colours: '',
     size: 0,
     px: 0,
     lost: false,
+    /* A signature of everything draw() actually depends on.
+       Not scheduling when nothing changed relies on every caller being disciplined, and
+       in Safari one of them is not: a sweep that measured a clean sixty frames a second
+       still counted 179 draws across three idle seconds, so some observer was asking for
+       frames that Chrome never asked for. Rather than keep hunting the caller, the draw
+       itself refuses: if the inputs are identical to the last frame there is nothing to
+       paint and nothing to schedule, whoever asked and whatever browser they are in. */
+    sig: '',
     heroRect: null as DOMRect | null,
     sealRect: null as DOMRect | null,
     pointer: null as { x: number; y: number } | null,
@@ -263,9 +273,18 @@ export function mountWaxSeal(root: HTMLElement): void {
       if (t < 1) moving = true; else state.strike = 1;
     }
 
-    draw();
-    state.dirty = false;
-    if (!root.hasAttribute('data-gl')) root.setAttribute('data-gl', '');
+    const sig = state.cur.map((v) => v.toFixed(4)).join() + '|' +
+      state.tilt.map((v) => v.toFixed(5)).join() + '|' + state.strike.toFixed(4) + '|' +
+      state.px + '|' + state.rot.toFixed(3) + '|' + state.colours;
+    if (sig !== state.sig || state.dirty) {
+      state.sig = sig;
+      draw();
+      state.dirty = false;
+      if (!root.hasAttribute('data-gl')) root.setAttribute('data-gl', '');
+    } else {
+      // Identical to the last frame. Stop, whatever asked for this one.
+      moving = false;
+    }
     if (moving) schedule();
   }
 
