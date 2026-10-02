@@ -58,6 +58,7 @@ highlights:
     note: "Paraphrase of the novel's famous closing passage, extending Gatsby's individual story into a broader claim about American longing and the impossibility of recovering the past."
 related: [hemingway-short-happy-life-of-francis-macomber, ellison-invisible-man, dickens-david-copperfield]
 keywords: [Jay Gatsby, Nick Carraway, Daisy Buchanan, Tom Buchanan, Jazz Age, West Egg, green light, American Dream]
+emailSubject: Gatsby built the fortune, the mansion and the parties to win back one woman
 status: draft
 updated: 2026-09-24
 ---

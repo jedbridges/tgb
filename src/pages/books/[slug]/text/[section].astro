@@ -5,6 +5,7 @@ import { authorOf, yearLabel } from '~/lib/catalog';
 import { url, workUrl, textUrl, authorUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
 import { passagesIn } from '~/lib/passages';
+import Signup from '~/components/Signup.astro';
 
 export async function getStaticPaths() {
   const texts = await getCollection('texts');
@@ -91,6 +92,11 @@ const description = placed.length
       <a class="passage__all ui" href={textUrl(work.id)}>Contents</a>
       {next ? <a class="passage__next" href={textUrl(work.id, next.data.section)}><span class="ui">Next</span><span>{next.data.heading}</span></a> : <a class="passage__next" href={workUrl(work.id)}><span class="ui">The end</span><span>Back to the guide</span></a>}
     </nav>
+    {/* Only on the last part, and that restraint is the point. A reader three sections into
+        Walden is in the middle of something and wants the next one; the same offer put
+        under every part would be the site interrupting the book it just handed over. At
+        the end of the last part they have finished, and asking then costs them nothing. */}
+    {!next && <Signup from="text" />}
     <footer class="passage__foot" data-pagefind-ignore>
       <p>{t.edition}. {t.licence} <a href={t.sourceUrl} rel="noopener">Source edition</a>. The programs assign a different edition; <a href={workUrl(work.id)}>the guide</a> names it.</p>
     </footer>

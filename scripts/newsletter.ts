@@ -237,13 +237,14 @@ const render = (w: Work) => {
 };
 
 /**
- * The first sentence of whyItMatters, which is written to be the strongest claim the
- * guide makes and is the one line in the file that already works as a subject. Nothing is
- * invented and nothing is rephrased. If it runs long, or somehow does not name the book,
- * the title carries it instead.
+ * A hand-written emailSubject if the work carries one, else the first sentence of
+ * whyItMatters, which is written to be the strongest claim the guide makes and is the one
+ * line in the file that already works as a subject. Nothing is invented and nothing is
+ * rephrased. If it runs long, or somehow does not name the book, the title carries it.
  */
 const subjectFor = (w: Work) => {
   const title = String(w.data.title);
+  if (w.data.emailSubject) return String(w.data.emailSubject);
   const sentences = (paras(String(w.data.whyItMatters ?? ''))[0] ?? '')
     .split(/(?<=[.?!])\s/).map((x) => x.replace(/\s*\.$/, '').trim()).filter(Boolean);
   const named = (t: string) => t.toLowerCase().includes(title.toLowerCase());

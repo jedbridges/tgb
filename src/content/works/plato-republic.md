@@ -84,6 +84,7 @@ highlights:
     note: Paraphrase.
 related: [plato-gorgias, plato-symposium, aristotle-politics, more-utopia]
 keywords: [justice, Thrasymachus, Glaucon, Adeimantus, Cephalus, guardians, philosopher king, allegory of the cave, divided line, ring of Gyges, noble lie, tyranny]
+emailSubject: Almost every argument about justice is still answering The Republic
 status: draft
 updated: 2026-09-21
 ---

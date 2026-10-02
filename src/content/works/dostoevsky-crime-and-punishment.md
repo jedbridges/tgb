@@ -63,6 +63,7 @@ highlights:
     note: "Paraphrase of Raskolnikov's conclusion before confessing, which stops short of repentance and admits only failure."
 related: [dostoevsky-brothers-karamazov, dostoevsky-idiot, nietzsche-genealogy-of-morals, tolstoy-anna-karenina]
 keywords: [Raskolnikov, Sonya, Porfiry, Svidrigailov, St Petersburg, axe murder, Siberia, extraordinary man]
+emailSubject: Crime and Punishment puts an idea on trial by giving it to a man
 status: draft
 updated: 2026-09-24
 ---

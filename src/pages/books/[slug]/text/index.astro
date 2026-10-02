@@ -5,6 +5,7 @@ import { authorOf, yearLabel } from '~/lib/catalog';
 import { url, workUrl, textUrl, authorUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
 import { textMap } from '~/lib/passages';
+import Signup from '~/components/Signup.astro';
 
 /* One contents page per work that has a text. The pages exist only for works the fetch
    script has written sections for, so a book without one has no dead link to here. */
@@ -90,6 +91,9 @@ const countIn = (section: string) => placed.filter((p) => p.section === section)
         </section>
       </aside>
     </div>
+    {/* A contents page is a page someone is choosing from rather than reading, which makes
+        it the one surface in the text where an offer is not an interruption. */}
+    <Signup from="contents" />
   </article>
 </Base>
 <script>

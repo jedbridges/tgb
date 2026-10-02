@@ -82,6 +82,7 @@ highlights:
     note: Paraphrase.
 related: [descartes-discourse-on-method, descartes-objections-and-replies, hume-enquiry-concerning-human-understanding, kant-critique-of-pure-reason]
 keywords: [cogito ergo sum, method of doubt, evil demon, wax argument, mind-body dualism, clear and distinct ideas, ontological argument, Cartesian circle]
+emailSubject: Meditations on First Philosophy asks what you are entitled to believe
 status: draft
 updated: 2026-09-21
 ---

@@ -126,6 +126,10 @@ const works = defineCollection({
     keyThemes: z.array(z.object({ theme: reference('themes'), note: z.string().max(320) })).default([]),
     highlights: z.array(highlight).max(6).default([]),
     related: z.array(reference('works')).max(6).default([]),
+    /* Overrides the weekly email's subject line, which is otherwise cut from the opening
+       of whyItMatters. Worth setting where that opening is a long sentence the knife
+       cannot find a clause in, which is most of the ones that run past 95 characters. */
+    emailSubject: z.string().max(95).optional(),
     keywords: z.array(z.coerce.string()).default([]),
     status: z.enum(['stub', 'draft', 'reviewed', 'published']).default('stub'),
     updated: z.coerce.date().optional(),
