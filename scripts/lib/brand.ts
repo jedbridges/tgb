@@ -9,11 +9,59 @@
  */
 import { readFileSync, existsSync } from 'node:fs';
 import opentype, { type Font } from 'opentype.js';
+import sharp from 'sharp';
+
+/**
+ * oklch to a hex sRGB string, the conversion a browser performs for `color: oklch(...)`.
+ *
+ * Most of this project's tokens are written in oklch, and sharp renders SVG through
+ * librsvg, which predates the syntax and silently drops any fill it cannot parse. Resolving
+ * them here is what lets a generated image quote a token instead of a second hand copy of
+ * one, which is the drift this file exists to stop.
+ */
+export function oklch(L: number, C: number, hDeg: number): string {
+  const h = (hDeg * Math.PI) / 180;
+  const a = C * Math.cos(h), b = C * Math.sin(h);
+  const l_ = L + 0.3963377774 * a + 0.2158037573 * b;
+  const m_ = L - 0.1055613458 * a - 0.0638541728 * b;
+  const s_ = L - 0.0894841775 * a - 1.291485548 * b;
+  const l = l_ ** 3, m = m_ ** 3, s = s_ ** 3;
+  return '#' + [
+    4.0767416621 * l - 3.3077115913 * m + 0.2309699292 * s,
+    -1.2684380046 * l + 2.6097574011 * m - 0.3413193965 * s,
+    -0.0041960863 * l - 0.7034186147 * m + 1.707614701 * s,
+  ].map((c) => {
+    const v = c <= 0.0031308 ? 12.92 * c : 1.055 * Math.abs(c) ** (1 / 2.4) - 0.055;
+    return Math.max(0, Math.min(255, Math.round(v * 255))).toString(16).padStart(2, '0');
+  }).join('');
+}
 
 /** --accent, resolved in the light scheme. The one red. */
 export const RED = '#b62200';
 /** --paper-bright, the cream that sits on it. */
 export const CREAM = '#f4ece6';
+/** --paper, the page itself, which is what wax is actually struck on. */
+export const PAPER = '#f2e8e4';
+/** --ink-strong and --ink-soft, the two weights of text the page sets. */
+export const INK_STRONG = oklch(0.31, 0.014, 40);
+export const INK_SOFT = oklch(0.46, 0.015, 40);
+
+/**
+ * The page's own grain, as a tile to lay over a finished image.
+ *
+ * base.css puts public/paper.png over the whole site at 192px and 13% opacity, above the
+ * content rather than behind it, so everything on the page sits under the same tooth. An
+ * image generated without it is the only flat surface the brand has. The alpha is scaled
+ * here rather than drawn at full strength and faded by the compositor, because sharp's
+ * tiling composite has no opacity of its own.
+ *
+ * Returns the tile, to be composited with `{ input: await paperGrain(), tile: true }`.
+ */
+export async function paperGrain(opacity = 0.13): Promise<Buffer> {
+  const { data, info } = await sharp('public/paper.png').ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  for (let i = 3; i < data.length; i += 4) data[i] = Math.round(data[i] * opacity);
+  return sharp(data, { raw: { width: info.width, height: info.height, channels: 4 } }).png().toBuffer();
+}
 
 /* The mark itself lives in src/lib/mark.ts, which imports nothing, so the seal can have it
    on both sides of the build. Re-exported here because this file is the brand's front door

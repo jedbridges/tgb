@@ -17,10 +17,17 @@
  * is cropped from the sides by whatever is displaying it, and a left-aligned lockup is the
  * first thing lost. This is the one surface where the site's own alignment rule is the
  * wrong answer.
+ *
+ * The newsletter avatar is a third shape and takes neither answer. It is the seal, whole,
+ * on paper, and it is the only one of the three that carries no lettering at all: it is
+ * read at thirty-two pixels in a mail app's message list, where a wordmark is a grey bar
+ * and even the seal's own legend is a texture. What survives that size is a red disc with
+ * a book in it, which is exactly what the page shows a reader who arrives later.
  */
 import { mkdirSync } from 'node:fs';
 import sharp from 'sharp';
-import { RED, CREAM, mark, markScaleForWidth, markHeightForWidth, loadFonts, setText, measure } from './lib/brand.ts';
+import { RED, CREAM, PAPER, paperGrain, mark, markScaleForWidth, markHeightForWidth, loadFonts, setText, measure } from './lib/brand.ts';
+import { seal } from './lib/seal-art.ts';
 
 const { roman, italic } = loadFonts();
 const OUT = 'public/brand';
@@ -78,15 +85,38 @@ function banner(W: number, H: number): string {
   </svg>`;
 }
 
+/* ------------------------------------------------- newsletter avatar, square */
+
+/*
+ * The wax keeps to 90% of the square: enough margin that a circular crop cannot shave the
+ * uneven rim into a perfect arc, which is the one thing that says wax rather than button,
+ * and no more than that. At 82% the ring of bare paper was a tenth of a thirty-two pixel
+ * avatar spent on nothing, and the inbox is the size this image is actually read at.
+ */
+function sealAvatar(size: number): string {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+    <rect width="${size}" height="${size}" fill="${PAPER}"/>
+    ${seal({ id: 'av', cx: size / 2, cy: size / 2, size: size * 0.9, rotate: -4 })}
+  </svg>`;
+}
+
 /* ---------------------------------------------------------------- write */
 
-const jobs: [string, string][] = [
-  [`${OUT}/avatar-180.png`, avatar(180)],
-  [`${OUT}/avatar-512.png`, avatar(512)],          // a spare for anywhere that wants more
-  [`${OUT}/banner-2048x600.png`, banner(2048, 600)],
+const jobs: [string, string, boolean][] = [
+  [`${OUT}/avatar-180.png`, avatar(180), false],
+  [`${OUT}/avatar-512.png`, avatar(512), false],          // a spare for anywhere that wants more
+  [`${OUT}/banner-2048x600.png`, banner(2048, 600), false],
+  // Buttondown asks for 300 square and takes larger; the 600 is the one to upload, and the
+  // 300 is there for anywhere that takes the dimension literally.
+  [`${OUT}/newsletter-avatar-600.png`, sealAvatar(600), true],
+  [`${OUT}/newsletter-avatar-300.png`, sealAvatar(300), true],
 ];
-for (const [file, svg] of jobs) {
-  await sharp(Buffer.from(svg)).png({ compressionLevel: 9 }).toFile(file);
+const grain = await paperGrain();
+for (const [file, svg, grained] of jobs) {
+  const img = sharp(Buffer.from(svg));
+  // Only the paper surfaces take the page's tooth. The red ones are ink, not sheet.
+  if (grained) img.composite([{ input: grain, tile: true }]);
+  await img.png({ compressionLevel: 9 }).toFile(file);
   const m = await sharp(file).metadata();
-  console.log(`${file.padEnd(34)} ${m.width}x${m.height}`);
+  console.log(`${file.padEnd(40)} ${m.width}x${m.height}`);
 }

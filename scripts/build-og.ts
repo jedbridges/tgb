@@ -10,44 +10,71 @@
  * social images, because when this script kept its own copy the card drifted onto a red
  * that existed nowhere else on the site.
  *
+ * The card is struck on paper rather than on the red, and that is a material decision
+ * rather than a taste one. Wax is darker than the brand red and only a little warmer, so a
+ * seal laid on a red field loses its edge, its legend and its shadow all at once and
+ * arrives in a feed as a dark smudge. On paper every one of those reads. The card now
+ * shows the same thing the page does: a sheet, with wax on it.
+ *
+ * There is no small mark on the card any more either. The seal carries the device at ten
+ * times the size, and a second copy of it over the wordmark was the lockup competing with
+ * itself for the one thing a share card has to do.
+ *
  *   npx tsx scripts/build-og.ts
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import sharp from 'sharp';
-import { RED, CREAM, mark, leaf, LEAF_W, LEAF_H, markScaleForWidth, markHeightForWidth, loadFonts, setText } from './lib/brand.ts';
+import { RED, CREAM, PAPER, INK_STRONG, INK_SOFT, paperGrain, mark, leaf, LEAF_W, LEAF_H, markScaleForWidth, markHeightForWidth, loadFonts, setText } from './lib/brand.ts';
+import { seal } from './lib/seal-art.ts';
 
 const W = 1200, H = 630;
 const M = 104;
 const { roman, italic } = loadFonts();
 
-/** One line of the card, with a guard against running off the edge. */
+/* The seal runs off the right edge. Its centre sits past the canvas on purpose: a circle
+   cropped by the frame reads as an object continuing beyond it, where a whole circle
+   floating inside the frame reads as a logo pasted on. */
+const SEAL = { cx: 1160, cy: 315, size: 680 };
+const SEAL_LEFT = SEAL.cx - SEAL.size / 2;
+/* Nothing in the type block may reach the wax. This is the guard that matters: the card is
+   generated, never looked at by the person shipping it, and a headline growing by one word
+   is how it would quietly start colliding. */
+const TYPE_LIMIT = SEAL_LEFT - 44;
+
+/** One line of the card, with a guard against running into the seal. */
 function line(o: Parameters<typeof setText>[0]) {
   const r = setText(o);
-  if (r.right > W - M) throw new Error(`"${o.text}" runs to ${Math.round(r.right)}, past the ${W - M} margin`);
+  if (r.right > TYPE_LIMIT) {
+    throw new Error(`"${o.text}" runs to ${Math.round(r.right)}, past the ${Math.round(TYPE_LIMIT)} the seal leaves for it`);
+  }
   return r;
 }
 
-// Layout: one optical margin, a mark, the wordmark, a rule measured to the type above it,
-// and one line of fact. Everything hangs off the same left edge and the block is centred
-// vertically, so the card is balanced rather than top-heavy.
-const wordmark = line({ font: italic, text: 'The Great Books', size: 118, x: M, y: 368 });
+// Layout: one optical margin, the wordmark, a rule measured to the type above it, and one
+// line of fact. Everything hangs off the same left edge, and the block sits a little above
+// the seal's centre so the two are related rather than stacked.
+const wordmark = line({ font: italic, text: 'The Great Books', size: 100, x: M, y: 316, fill: INK_STRONG });
 /* "works that defined the West" would not be true of this list: 55 of the 689 come from
    outside it, from the Qur'an and Ibn Khaldun to the Analects. What is true is that the
    West built on them, which is why nine of its own curricula still assign them. */
 const strap = line({
-  font: roman, text: '689 works the West was built on', size: 42, x: M, y: 454, opacity: 0.88,
+  font: roman, text: '689 works the West was built on', size: 42, x: M, y: 402, fill: INK_SOFT,
 });
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
-  <rect width="${W}" height="${H}" fill="${RED}"/>
-  ${mark(W - 250, H - 300, 0.3, CREAM, 0.13)}
-  ${mark(M, 176, 0.05)}
+  <rect width="${W}" height="${H}" fill="${PAPER}"/>
+  ${seal({ id: 'og', cx: SEAL.cx, cy: SEAL.cy, size: SEAL.size, rotate: -4 })}
   ${wordmark.svg}
-  <rect x="${M}" y="400" width="${Math.round(wordmark.right - M)}" height="2" fill="${CREAM}" opacity="0.4"/>
+  <rect x="${M}" y="350" width="${Math.round(wordmark.right - M)}" height="2" fill="${RED}" opacity="0.5"/>
   ${strap.svg}
 </svg>`;
 
-await sharp(Buffer.from(svg)).png({ compressionLevel: 9 }).toFile('public/og-default.png');
+/* The grain goes over the wax as well as the paper, which is what base.css does: one sheet
+   under one light, rather than a textured background with a clean sticker on it. */
+await sharp(Buffer.from(svg))
+  .composite([{ input: await paperGrain(), tile: true }])
+  .png({ compressionLevel: 9 })
+  .toFile('public/og-default.png');
 
 /**
  * Two icons, because one drawing cannot do both jobs.
