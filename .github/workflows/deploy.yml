@@ -43,6 +43,20 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: deploy
+      - name: Give the Worker the newsletter key
+        # The signup endpoint needs the key at runtime and the Thursday job needs the same
+        # key as a repo secret. Pushing it from here means it is stored in one place, not
+        # two that can drift. Same shape as the corpus step above: absent means skipped,
+        # and the signup form quietly keeps using its plain-form fallback.
+        run: |
+          if [ -z "$BUTTONDOWN_API_KEY" ]; then
+            echo "BUTTONDOWN_API_KEY not set; inline signup stays on its plain form fallback"; exit 0
+          fi
+          printf '%s' "$BUTTONDOWN_API_KEY" | npx wrangler secret put BUTTONDOWN_API_KEY
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       - name: Smoke the live site
         run: |
           curl -fsS -o /dev/null "${{ secrets.SITE_URL }}/"
