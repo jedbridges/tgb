@@ -116,7 +116,9 @@ for (const [file, svg, grained] of jobs) {
   const img = sharp(Buffer.from(svg));
   // Only the paper surfaces take the page's tooth. The red ones are ink, not sheet.
   if (grained) img.composite([{ input: grain, tile: true }]);
-  await img.png({ compressionLevel: 9 }).toFile(file);
+  // Quantise the grained ones: the tile's noise defeats PNG's filters and nearly doubles
+  // the file for no visible difference. The flat red surfaces compress fine as they are.
+  await img.png(grained ? { palette: true, dither: 1, compressionLevel: 9 } : { compressionLevel: 9 }).toFile(file);
   const m = await sharp(file).metadata();
   console.log(`${file.padEnd(40)} ${m.width}x${m.height}`);
 }

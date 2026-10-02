@@ -73,7 +73,10 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
    under one light, rather than a textured background with a clean sticker on it. */
 await sharp(Buffer.from(svg))
   .composite([{ input: await paperGrain(), tile: true }])
-  .png({ compressionLevel: 9 })
+  /* The grain is noise, and noise is what PNG's filters cannot predict: full colour it
+     costs 293KB for a card that is three flat areas and one gradient. Quantised it is
+     158KB with no banding in the wax, checked against the full-colour render. */
+  .png({ palette: true, dither: 1, compressionLevel: 9 })
   .toFile('public/og-default.png');
 
 /**
