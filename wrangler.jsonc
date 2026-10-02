@@ -18,7 +18,10 @@
   // spend, whatever addresses it uses.
   "ratelimits": [
     { "name": "ASK_PER_VISITOR", "namespace_id": "1001", "simple": { "limit": 6, "period": 60 } },
-    { "name": "ASK_SITEWIDE", "namespace_id": "1002", "simple": { "limit": 60, "period": 60 } }
+    { "name": "ASK_SITEWIDE", "namespace_id": "1002", "simple": { "limit": 60, "period": 60 } },
+    // Subscribing sends mail to an address the sender chose, so an open endpoint is a way
+    // to pester someone else's inbox. Three a minute is more than a person needs.
+    { "name": "SUBSCRIBE_PER_VISITOR", "namespace_id": "1003", "simple": { "limit": 3, "period": 60 } }
   ],
   // The site lives on its own domain. Leaving the workers.dev hostname enabled
   // would serve a second, fully crawlable copy competing with the real one.

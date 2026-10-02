@@ -1,9 +1,14 @@
 ---
 /*
  * One way back. A reader who lands from search on one book and leaves has earned the site
- * one chance at a sale; a subscriber gives it one a week. It is a plain form posting to
- * Buttondown, with no script and nothing loaded from them until someone subscribes, and it
- * renders nothing at all until PUBLIC_BUTTONDOWN_USER is set.
+ * one chance at a sale; a subscriber gives it one a week. It renders nothing at all until
+ * PUBLIC_BUTTONDOWN_USER is set.
+ *
+ * The form is a plain form that posts to Buttondown, so it works with no JavaScript, and
+ * none of Buttondown's code is on the page. Where scripting is available the submit is
+ * taken over and sent to /api/subscribe on our own Worker instead, which answers inline:
+ * subscribing should not throw a reader off the page they were reading, and the page they
+ * used to land on was Buttondown's, which looks like the signup failed.
  */
 import { NEWSLETTER_USER } from '~/lib/newsletter';
 interface Props { from: string }
@@ -19,15 +24,82 @@ const { from } = Astro.props;
       <label class="visually-hidden" for={`signup-email-${from}`}>Email address</label>
       <input id={`signup-email-${from}`} type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
       <input type="hidden" name="tag" value={`from-${from}`} />
+      {/* No person sees this, so anything in it came from something filling in every field. */}
+      <div class="signup__hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
       <button class="btn btn--accent" type="submit">Subscribe</button>
     </form>
+    <p class="signup__status" role="status" aria-live="polite" hidden></p>
   </aside>
 )}
+<script>
+  /* Progressive enhancement only. If anything here fails, including the request itself,
+     the form is submitted the ordinary way and Buttondown handles it as before. */
+  document.querySelectorAll<HTMLFormElement>('form[data-signup]').forEach((form) => {
+    const status = form.parentElement?.querySelector<HTMLParagraphElement>('.signup__status');
+    const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+    const field = form.querySelector<HTMLInputElement>('input[type="email"]');
+    if (!status || !button || !field) return;
+
+    /* The form opens its target in a new tab, so handing back to it leaves this page
+       exactly where it was. A button still reading "Subscribing" there looks stuck. */
+    const restore = (label: string | null) => { button.disabled = false; button.textContent = label; };
+
+    const say = (message: string, ok: boolean) => {
+      status.textContent = message;
+      status.classList.toggle('is-error', !ok);
+      status.hidden = false;
+    };
+
+    form.addEventListener('submit', async (event) => {
+      if (!field.checkValidity()) return;
+      event.preventDefault();
+      button.disabled = true;
+      const label = button.textContent;
+      button.textContent = 'Subscribing';
+      try {
+        const response = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({
+            email: field.value,
+            from: form.dataset.signup,
+            website: form.querySelector<HTMLInputElement>('input[name="website"]')?.value ?? '',
+          }),
+        });
+        /* Our own fault, not the reader's: the endpoint is down or has no key yet. Say
+           nothing about it and let the plain form post carry them, which is what happened
+           before this script existed. */
+        if (response.status >= 500) { restore(label); form.submit(); return; }
+        const data = (await response.json()) as { ok?: boolean; state?: string; error?: string };
+        if (!response.ok || !data.ok) {
+          say(data.error ?? 'That did not work. Try again in a moment.', false);
+          restore(label);
+          return;
+        }
+        form.hidden = true;
+        say(
+          data.state === 'existing'
+            ? 'You are already on the list. The next email arrives Saturday morning.'
+            : 'Check your inbox. One email is on its way with a confirmation link, and nothing else arrives until you click it.',
+          true,
+        );
+      } catch {
+        /* Offline, blocked, or something that did not answer with JSON. The form still works. */
+        restore(label);
+        form.submit();
+      }
+    });
+  });
+</script>
 <style>
   .signup { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 24rem); gap: var(--s2) var(--s4); align-items: end; padding-block: var(--s3); border-top: var(--rule-section); }
   .signup__h { font-style: italic; font-size: var(--step-2); }
   .signup__p { margin-top: var(--s0); color: var(--ink-soft); max-width: 46ch; line-height: var(--lh-prose); text-wrap: pretty; }
   .signup__form { display: flex; gap: var(--s-1); }
+  .signup__form[hidden] { display: none; }
+  .signup__hp { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .signup__status { grid-column: 2; margin-top: var(--s-1); color: var(--ink-soft); font-size: var(--step--1); line-height: var(--lh-prose); text-wrap: pretty; }
+  .signup__status.is-error { color: var(--ink-strong); }
   .signup__form input[type='email'] {
     flex: 1; min-width: 0; min-height: 44px; padding: 0 0.9em; border-radius: 3px;
     border: 1px solid var(--ink); background: var(--paper-bright, transparent); color: var(--ink-strong);
@@ -35,6 +107,7 @@ const { from } = Astro.props;
   }
   @media (max-width: 700px) {
     .signup { grid-template-columns: 1fr; }
+    .signup__status { grid-column: 1; }
     .signup__form { flex-direction: column; }
     .signup__form .btn { min-height: 52px; }
   }
