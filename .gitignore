@@ -18,3 +18,15 @@ corpus/
 # Impeccable live-mode state: a local pid and port, never shared
 .impeccable/live/
 reports/
+
+# iCloud's copies of this repo.
+# This project lives in a synced ~/Documents, and iCloud periodically duplicates the whole
+# tree as "mark 2.ts", "favicon 2.ico" and so on. There were 2,978 of them on 2026-10-02,
+# and deleting them does not hold: new ones appeared within the hour. They are never
+# wanted, and ignoring them removes the real danger, which is `git add -A` committing a
+# few thousand of them. It does not stop them polluting a local build, because Astro reads
+# the directory rather than the index and a copy under src/pages becomes a real route:
+# that is what the Finder-duplicate check in scripts/smoke-dist.ts is for. CI is unaffected
+# either way, since it builds from a clean checkout.
+* [0-9].*
+* [0-9]
