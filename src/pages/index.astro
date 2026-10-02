@@ -205,39 +205,44 @@ const HEADLINE_WORDS = [
        page. The renderer reads this and rotates the light the other way, so the highlight
        stays where the room is instead of travelling round with the seal. */
     --seal-rotate: -11deg;
+
+    /* Position the seal by how much of it shows, not by how far it is pushed.
+       The first version cropped in four steps, 36 then 48 then 66 then 72 per cent, each
+       keyed to a viewport width. It measured clean and it was wrong twice over: dragging
+       a window made the seal lurch between the steps, and width was only ever a stand-in
+       for the thing that decides this, which is how much room is left to the right of the
+       headline. So the visible slice is the declared value and the position follows from
+       it, continuously.
+       The headline's width is 9vw of type until it caps at 6rem, so the room beside it
+       opens at 0.123 of the viewport while the type is still growing and at 0.96 of it
+       afterwards. Those are the two slopes below; the knee is where the cap takes over.
+       The second term is the seal's own wish: never show more than about seven tenths,
+       because a disc that fits inside the page is no longer cut by it. */
+    --vis: min(calc(11.5vw - 6px), calc(var(--seal-d) * 0.72));
+
     position: absolute;
     top: 50%;
-    right: 0;
+    /* The viewport's right edge expressed in the column's coordinates, less the slice we
+       mean to show. The rest of the disc runs off the page, which body's overflow-x clip
+       absorbs without opening a scrollbar. */
+    left: calc(100% + (100vw - 100%) / 2 - var(--vis));
+    right: auto;
     width: var(--seal-d);
-    translate: 32% -50%;
+    translate: 0 -50%;
     rotate: var(--seal-rotate);
     z-index: 0;
   }
-  /* Past the width where the column stops growing, the seal is cut by the screen rather
-     than by the column, so the same slice hangs off the edge however wide the monitor is.
-     The inset is the gap between the column and the viewport, which is what lets it reach
-     past the wrap without opening a horizontal scrollbar. */
-  @media (min-width: 1600px) {
-    .hero__seal { right: calc((100vw - 100%) / -2); translate: 30% -50%; }
+  /* Past the knee the headline has stopped growing, so the room beside it opens almost as
+     fast as the viewport does. */
+  @media (min-width: 1067px) {
+    .hero__seal { --vis: min(calc(94vw - 890px), calc(var(--seal-d) * 0.72)); }
   }
-  /* The crop adapts, not the size.
-     The seal is meant to be large and to run off the page, so as the viewport narrows and
-     the headline grows into the space beside it, the disc is pushed further over the edge
-     rather than made smaller. Each step is the crop that keeps the circle's left edge
-     clear of the headline's right edge at the narrow end of its range, measured, with
-     about ten pixels to spare. Shrinking instead would have given four different sizes
-     and no single object. */
-  @media (max-width: 1599px) { .hero__seal { translate: 36% -50%; } }
-  @media (max-width: 1399px) { .hero__seal { translate: 48% -50%; } }
-  @media (max-width: 1199px) { .hero__seal { translate: 66% -50%; } }
-  @media (max-width: 1099px) { .hero__seal { translate: 72% -50%; } }
-  /* Those crops are sized for a tall window, where the headline runs at its full size and
-     fills the row. On a short one it has already given up most of that size to keep the
-     shelf above the fold, which leaves room the crop was still taking: at 1024 by 768 the
-     clearance was 410px and the seal was cut back to its rim with the mark out of sight.
-     Where the headline is small, the seal keeps more of itself. */
-  @media (max-height: 800px) and (min-width: 861px) and (max-width: 1399px) {
-    .hero__seal { translate: 36% -50%; }
+  /* On a short window the headline has already given up most of its size to keep the
+     first shelf above the fold, so the room the crop was protecting is not in use: at
+     1024 by 768 the clearance ran to 410px while the seal was cut back to its rim with
+     the mark out of sight. There it simply shows its full slice. */
+  @media (max-height: 800px) and (min-width: 861px) {
+    .hero__seal { --vis: calc(var(--seal-d) * 0.72); }
   }
 
   /* Below this the headline fills the column and there is no room beside it.
@@ -255,6 +260,7 @@ const HEADLINE_WORDS = [
     .hero { --seal-d: clamp(5rem, 24vw, 11rem); }
     .hero__seal {
       position: static;
+      left: auto;
       grid-row: 1;
       justify-self: end;
       translate: 26% 0;
