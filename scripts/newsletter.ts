@@ -309,8 +309,12 @@ const diagnose = async () => {
   const n = ((await api('/newsletters')).results ?? [])[0];
   if (!n?.id) throw new Error('the API key reaches no newsletter');
   console.log(`newsletter: ${n.username} (${n.name ?? 'no display name'})`);
-  for (const k of ['subscription_redirect_url', 'subscription_confirmation_redirect_url', 'from_email', 'reply_to'])
-    if (n[k] !== undefined) console.log(`  ${k} = ${n[k] || '(unset)'}`);
+  /* Print the newsletter's own scalar settings. Which ones exist moves between API
+     versions, and the one that explains a missing email is rarely the one guessed at. */
+  const SECRET = /key|token|secret|password/i;
+  for (const [k, v] of Object.entries(n).sort())
+    if (!SECRET.test(k) && (v === null || ['string', 'number', 'boolean'].includes(typeof v)))
+      console.log(`  ${k} = ${v === null || v === '' ? '(unset)' : v}`);
 
   const states = new Map<string, number>();
   let total = 0, newest = '';
