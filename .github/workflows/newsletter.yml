@@ -16,7 +16,7 @@ on:
         description: 'What to do'
         type: choice
         default: dry-run
-        options: [dry-run, configure, schedule]
+        options: [dry-run, diagnose, configure, schedule]
       work:
         description: 'A specific work slug, instead of the next in the queue'
         type: string

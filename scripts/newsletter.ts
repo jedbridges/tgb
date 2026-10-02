@@ -12,6 +12,7 @@
  *   npx tsx scripts/newsletter.ts --dry-run --weeks 3   the next three, printed
  *   npx tsx scripts/newsletter.ts --schedule            create the scheduled draft
  *   npx tsx scripts/newsletter.ts --configure           point Buttondown's redirects here
+ *   npx tsx scripts/newsletter.ts --diagnose            what the list looks like from here
  *
  * A dry run makes no network call of any kind. --schedule needs BUTTONDOWN_API_KEY and
  * refuses to act if the work it picked has already gone out.
@@ -27,7 +28,7 @@ const KEY = (process.env.BUTTONDOWN_API_KEY || '').trim();
 const argv = process.argv.slice(2);
 const flag = (n: string) => argv.includes(`--${n}`);
 const opt = (n: string) => { const i = argv.indexOf(`--${n}`); return i === -1 ? undefined : argv[i + 1]; };
-const DRY = flag('dry-run') || !(flag('schedule') || flag('configure'));
+const DRY = flag('dry-run') || !(flag('schedule') || flag('configure') || flag('diagnose'));
 
 /* Every email carries this marker so the next run can see what has already gone out.
    Buttondown is the source of truth for that, not a file in the repo, because a file
@@ -300,11 +301,45 @@ const configure = async () => {
   for (const [k, v] of Object.entries(want)) console.log(`  ${k} = ${v}`);
 };
 
+/*
+ * Why a signup did or did not produce a confirmation email. Counts and settings only: the
+ * answer never depends on whose address it was, and a CI log is a poor place for one.
+ */
+const diagnose = async () => {
+  const n = ((await api('/newsletters')).results ?? [])[0];
+  if (!n?.id) throw new Error('the API key reaches no newsletter');
+  console.log(`newsletter: ${n.username} (${n.name ?? 'no display name'})`);
+  for (const k of ['subscription_redirect_url', 'subscription_confirmation_redirect_url', 'from_email', 'reply_to'])
+    if (n[k] !== undefined) console.log(`  ${k} = ${n[k] || '(unset)'}`);
+
+  const states = new Map<string, number>();
+  let total = 0, newest = '';
+  for (let page = 1; page <= 20; page++) {
+    const r = await api(`/subscribers?page=${page}`);
+    for (const sub of r.results ?? []) {
+      total++;
+      const state = String(sub.type ?? sub.subscriber_type ?? 'unknown');
+      states.set(state, (states.get(state) ?? 0) + 1);
+      const at = String(sub.creation_date ?? '');
+      if (at > newest) newest = at;
+    }
+    if (!r.next) break;
+  }
+  console.log(`subscribers: ${total}`);
+  for (const [state, count] of [...states].sort()) console.log(`  ${state}: ${count}`);
+  console.log(`most recent signup: ${newest || '(none)'}`);
+  /* An unactivated subscriber is waiting on a confirmation email that Buttondown has
+     already sent. A regular one never had to confirm, so no such email exists to miss. */
+  if (states.get('unactivated')) console.log('\nAt least one address is unactivated: a confirmation email was sent and is waiting to be clicked.');
+  else if (total) console.log('\nNo unactivated addresses: double opt-in is off, so Buttondown sends no confirmation email and a signup is complete at once.');
+};
+
 const main = async () => {
   const only = opt('work');
   const weeks = Number(opt('weeks') ?? 1);
 
   if (flag('configure')) return configure();
+  if (flag('diagnose')) return diagnose();
 
   if (DRY) {
     const chosen = only
