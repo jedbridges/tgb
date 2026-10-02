@@ -26,6 +26,9 @@ import { P, R_MAX, FIELD_C, RELIEF_HALF } from './seal-geometry';
 import { VERT, frag } from './seal-shader';
 import { buildRelief } from './seal-relief';
 
+/** How far the pointer still moves the seal, in multiples of its own width. Past this it
+ *  is simply at rest, and the approach to that is smooth, so there is no edge to feel. */
+const REACH = 2.4;
 /** Rest light: over the left shoulder, which is where the old deboss was lit from.
  *  Raking rather than overhead. A light high on the z axis flattens everything it touches,
  *  and relief is only visible as the shadow it throws, so this sits low enough to model
@@ -172,6 +175,7 @@ export function mountWaxSeal(root: HTMLElement): void {
     tiltTgt: [0, 0] as [number, number],
     strike: 1,
     strikeFrom: 0,
+    last: 0,
     raf: 0,
     visible: false,
     dirty: true,
@@ -188,17 +192,12 @@ export function mountWaxSeal(root: HTMLElement): void {
        itself refuses: if the inputs are identical to the last frame there is nothing to
        paint and nothing to schedule, whoever asked and whatever browser they are in. */
     sig: '',
-    heroRect: null as DOMRect | null,
     sealRect: null as DOMRect | null,
     pointer: null as { x: number; y: number } | null,
   };
 
-  const hero = root.closest('section');
-  const forget = () => { state.heroRect = null; state.sealRect = null; };
-  const measure = () => {
-    state.heroRect = hero?.getBoundingClientRect() ?? null;
-    state.sealRect = root.getBoundingClientRect();
-  };
+  const forget = () => { state.sealRect = null; };
+  const measure = () => { state.sealRect = root.getBoundingClientRect(); };
 
   function resize(): boolean {
     const css = root.clientWidth;
@@ -251,17 +250,25 @@ export function mountWaxSeal(root: HTMLElement): void {
 
     // Exponential approach. Bounded: once it is within a thousandth of the target it
     // stops asking for frames, so a settled page schedules nothing.
+    /* Approach in time, not in frames.
+       A fixed fraction per frame is a different speed on every display: the same gesture
+       settles twice as fast on a 120Hz laptop as on a 60Hz monitor, which is half of why
+       this felt unpredictable. These are time constants, so the motion is the same
+       wherever it runs, and a long frame catches up instead of falling behind. */
+    const dt = Math.min(64, now - (state.last || now));
+    state.last = now;
+    const kLight = 1 - Math.exp(-dt / 110);
+    const kTilt = 1 - Math.exp(-dt / 190);   // the disc has mass; the lamp does not
+
     let moving = false;
     for (let i = 0; i < 3; i++) {
       const d = state.tgt[i] - state.cur[i];
-      if (Math.abs(d) > 0.0015) { state.cur[i] += d * 0.22; moving = true; }
+      if (Math.abs(d) > 0.0015) { state.cur[i] += d * kLight; moving = true; }
       else state.cur[i] = state.tgt[i];
     }
     for (let i = 0; i < 2; i++) {
       const d = state.tiltTgt[i] - state.tilt[i];
-      // A heavier disc than the light: the lamp can move instantly, a lump of wax should
-      // look like it has mass.
-      if (Math.abs(d) > 0.00008) { state.tilt[i] += d * 0.14; moving = true; }
+      if (Math.abs(d) > 0.00008) { state.tilt[i] += d * kTilt; moving = true; }
       else state.tilt[i] = state.tiltTgt[i];
     }
     if (state.strike < 1) {
@@ -345,24 +352,37 @@ export function mountWaxSeal(root: HTMLElement): void {
       state.raf = requestAnimationFrame((t) => {
         state.raf = 0;
         if (!state.sealRect) measure();
-        const r = state.sealRect, h = state.heroRect, p = state.pointer;
+        const r = state.sealRect, p = state.pointer;
         if (!r || !r.width || !p) return;
-        if (h && (p.y < h.top || p.y > h.bottom)) { state.tgt = [...REST]; state.tiltTgt = [0, 0]; }
-        else {
-          // The light comes from wherever the pointer is, like a lamp held over the page,
-          // and drops toward the surface as the pointer moves away from the centre.
-          let vx = (p.x - (r.left + r.width / 2)) / (0.9 * r.width);
-          let vy = (p.y - (r.top + r.height / 2)) / (0.9 * r.width);
-          const m = Math.hypot(vx, vy);
-          if (m > 1) { vx /= m; vy /= m; }
-          state.tgt = norm([0.85 * vx, 0.85 * vy, 1.2 - 0.65 * Math.min(1, m)]);
-          /* Eight degrees at the far edge. Enough that the lip comes round and the
-             lettering on the near side catches, little enough that it never reads as a
-             card flipping. The sign is inverted on x so the disc leans toward the pointer
-             rather than away from it. */
-          const MAX = (8 * Math.PI) / 180;
-          state.tiltTgt = [-vy * MAX, vx * MAX];
-        }
+
+        /* How much the pointer owns the seal at all.
+           The first version had no distance term: the direction was clamped to the unit
+           circle, so a pointer anywhere in the hero swung the light at full strength and
+           crossing the hero's bottom edge snapped it back to rest. Hence jumpy, and hence
+           responding to a pointer nowhere near it. Now there is one weight, smooth at both
+           ends, and it fades the light and the tilt together. Rest is simply weight zero,
+           so there is no boundary left to cross. */
+        const dx = p.x - (r.left + r.width / 2);
+        const dy = p.y - (r.top + r.height / 2);
+        const len = Math.hypot(dx, dy) || 1;
+        const far = len / r.width;                       // distance in seal widths
+        const prox = Math.min(1, Math.max(0, (REACH - far) / (REACH - 0.45)));
+        const w = prox * prox * (3 - 2 * prox);                   // smoothstep, so no corner at either end
+
+        // Where the lamp is: over the pointer, dropping toward the surface as it recedes.
+        const swing = Math.min(1, far / 1.1);
+        const ux = dx / len, uy = dy / len;
+        const lamp: [number, number, number] = [0.85 * ux * swing, 0.85 * uy * swing, 1.2 - 0.5 * swing];
+        state.tgt = norm([
+          REST[0] + (lamp[0] - REST[0]) * w,
+          REST[1] + (lamp[1] - REST[1]) * w,
+          REST[2] + (lamp[2] - REST[2]) * w,
+        ]);
+        /* Eight degrees at most. Enough that the lip comes round and the lettering on the
+           near side catches, little enough that it never reads as a card flipping. x is
+           inverted so the disc leans toward the pointer rather than away from it. */
+        const MAX = (8 * Math.PI) / 180;
+        state.tiltTgt = [-uy * MAX * swing * w, ux * MAX * swing * w];
         frame(t);
       });
     }, { passive: true });

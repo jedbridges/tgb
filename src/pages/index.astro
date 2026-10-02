@@ -192,6 +192,14 @@ const HEADLINE_WORDS = [
      is the only way the crop stays identical from a phone to a wide desktop: a fixed
      offset crops a small seal in half and barely nicks a large one. You always see its
      top left two thirds, which is the part carrying the mark and the start of the line. */
+  /* One size curve, at every width.
+     The seal used to have two sizes rather than two positions: a 98px stamp that held
+     flat from 600 all the way to 1280, then a 403px disc from 1366 up. Four times bigger
+     across one breakpoint, and a fixed small disc through the whole middle range, so it
+     read as two unrelated designs and as an afterthought in between. The diameter is now
+     a single function of the viewport and only the placement changes. */
+  .hero { --seal-d: clamp(6rem, 30vw, 42rem); }
+
   .hero__seal {
     /* A contract with Seal.astro: the element may be turned, but the light comes from the
        page. The renderer reads this and rotates the light the other way, so the highlight
@@ -200,60 +208,59 @@ const HEADLINE_WORDS = [
     position: absolute;
     top: 50%;
     right: 0;
-    width: clamp(13rem, 30vw, 27rem);
-    translate: 33% -50%;
+    width: var(--seal-d);
+    translate: 32% -50%;
     rotate: var(--seal-rotate);
     z-index: 0;
   }
-  /* Very wide screens.
-     The hero is a centred column, so past about 1600px the seal stops being cut by the
-     screen and starts floating in the middle of an empty half, which loses the whole point
-     of it. It is pinned to the viewport's own right edge from there on and grows with the
-     screen, so the same slice keeps hanging off the side however wide the monitor is. The
-     right-hand inset is the gap between the column and the viewport edge, which is what
-     makes it reach past the wrap without a horizontal scrollbar. */
+  /* Past the width where the column stops growing, the seal is cut by the screen rather
+     than by the column, so the same slice hangs off the edge however wide the monitor is.
+     The inset is the gap between the column and the viewport, which is what lets it reach
+     past the wrap without opening a horizontal scrollbar. */
   @media (min-width: 1600px) {
-    .hero__seal {
-      right: calc((100vw - 100%) / -2);
-      width: min(34rem, 26vw);
-      translate: 30% -50%;
-    }
+    .hero__seal { right: calc((100vw - 100%) / -2); translate: 30% -50%; }
   }
-  @media (min-width: 2100px) {
-    .hero__seal { width: min(44rem, 24vw); translate: 28% -50%; }
+  /* The crop adapts, not the size.
+     The seal is meant to be large and to run off the page, so as the viewport narrows and
+     the headline grows into the space beside it, the disc is pushed further over the edge
+     rather than made smaller. Each step is the crop that keeps the circle's left edge
+     clear of the headline's right edge at the narrow end of its range, measured, with
+     about ten pixels to spare. Shrinking instead would have given four different sizes
+     and no single object. */
+  @media (max-width: 1599px) { .hero__seal { translate: 36% -50%; } }
+  @media (max-width: 1399px) { .hero__seal { translate: 48% -50%; } }
+  @media (max-width: 1199px) { .hero__seal { translate: 66% -50%; } }
+  @media (max-width: 1099px) { .hero__seal { translate: 72% -50%; } }
+  /* Those crops are sized for a tall window, where the headline runs at its full size and
+     fills the row. On a short one it has already given up most of that size to keep the
+     shelf above the fold, which leaves room the crop was still taking: at 1024 by 768 the
+     clearance was 410px and the seal was cut back to its rim with the mark out of sight.
+     Where the headline is small, the seal keeps more of itself. */
+  @media (max-height: 800px) and (min-width: 861px) and (max-width: 1399px) {
+    .hero__seal { translate: 36% -50%; }
   }
-  /* On a phone nothing clears a seal at the desktop size, so the only question is what it
-     may pass behind: text is transparent, the primary action is not, and it rises to the
-     top of the hero to sit behind the headline like a watermark on letterhead rather than
-     being sliced in half by a solid red button.
-     Behind the headline, though, and not behind the lede. At the old size it crossed 44%
-     of that paragraph, three lines of 19px copy read against an embossed ring and its
-     lettering, so here it is smaller and lifted further: same corner, same crop by the
-     right edge, now also cropped by the top, and the only thing under it is display type
-     large enough to hold its own. */
-  /* Wax is opaque, and opaque cannot sit behind words.
-     The deboss could: it was the paper itself, so the headline read straight through it,
-     and the overlap was never worth measuring. This does not, and measured, the wax lands
-     on "Three thousand years" by 78px at 1000 wide, 50px at 820 and 31px at 1180, clearing
-     it only past about 1280 where the column stops growing with the viewport. So the
-     stamp runs all the way up to there rather than only on phones.
-     It takes a row of its own above the headline, tucked into the right edge the way a
-     stamp sits on letterhead. A grid row cannot overlap the row below it, which makes the
-     collision impossible rather than merely unlikely, and that is worth more here than
-     the few pixels a float would have saved. */
-  @media (max-width: 1280px) {
-    .hero { --stamp: clamp(4.75rem, 21vw, 6.25rem); }
+
+  /* Below this the headline fills the column and there is no room beside it.
+     Down to 861 the disc still fits beside the headline once it is cropped harder, and it
+     is worth keeping there because the disc is positioned out of flow and costs the page
+     no height: the in-flow stamp at those widths pushed the first shelf clean off a 900
+     tall screen. Below 861 there is no room beside the headline at any crop, so
+     the seal takes a row of its own above the headline instead, where a grid row makes an
+     overlap impossible rather than merely unlikely. The diameter does not change across
+     this line, only where the disc sits. */
+  @media (max-width: 860px) {
+    /* In flow, so every pixel of diameter is a pixel the first shelf loses. It still
+       grows with the screen, just not as fast as the disc does, and it is cropped by the
+       viewport edge the same way. */
+    .hero { --seal-d: clamp(5rem, 24vw, 11rem); }
     .hero__seal {
       position: static;
       grid-row: 1;
       justify-self: end;
-      width: var(--stamp);
-      /* Cropped by the viewport edge rather than by the text column, so it reads as
-         running off the page. The body clips horizontally, so this cannot scroll. */
-      translate: 24% 0;
+      translate: 26% 0;
       margin-right: calc(-1 * var(--gutter));
-      /* The box carries margin for the cast shadow that the stamp does not need here. */
-      margin-block: calc(var(--stamp) * -0.07) calc(var(--stamp) * -0.07 + var(--s0));
+      /* The box carries margin for a cast shadow the stamp does not need up here. */
+      margin-block: calc(var(--seal-d) * -0.06) calc(var(--seal-d) * -0.06 + var(--s0));
     }
     .hero__text { grid-row: 2; }
   }
@@ -325,6 +332,10 @@ const HEADLINE_WORDS = [
     .hero { padding-block: var(--s1) var(--s0); }
     .shelf-section { padding-top: var(--s2); }
     .shelf-section .section-head { margin-bottom: var(--s1); }
+    /* Only the stamp. Its diameter is hero height spent, so a short screen has to claw
+       some back; the disc is out of flow and costs nothing, and shrinking it there just
+       pulls it away from the edge it is supposed to be cut by. */
+    @media (max-width: 860px) { .hero { --seal-d: clamp(5rem, 20vw, 10rem); } }
   }
   @media (max-height: 640px) { .hero { min-height: 0; padding-block: var(--s2) var(--s1); } }
 
