@@ -295,6 +295,10 @@ const configure = async () => {
   const want = {
     subscription_redirect_url: `${SITE}/subscribed/`,
     subscription_confirmation_redirect_url: `${SITE}/welcome/`,
+    /* Unset, the confirmation and the weekly email arrive from a bare address with no
+       name on them, which is most of what a reader has to judge whether the thing they
+       just signed up for is the thing that landed. */
+    from_name: 'The Great Books',
   };
   await api(`/newsletters/${n.id}`, { method: 'PATCH', body: JSON.stringify(want) });
   console.log(`Configured ${n.username ?? n.id}:`);
