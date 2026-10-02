@@ -13,6 +13,7 @@
  *   npx tsx scripts/newsletter.ts --schedule            create the scheduled draft
  *   npx tsx scripts/newsletter.ts --configure           point Buttondown's redirects here
  *   npx tsx scripts/newsletter.ts --diagnose            what the list looks like from here
+ *   npx tsx scripts/newsletter.ts --verify              prove the send path, send nothing
  *
  * A dry run makes no network call of any kind. --schedule needs BUTTONDOWN_API_KEY and
  * refuses to act if the work it picked has already gone out.
@@ -28,7 +29,7 @@ const KEY = (process.env.BUTTONDOWN_API_KEY || '').trim();
 const argv = process.argv.slice(2);
 const flag = (n: string) => argv.includes(`--${n}`);
 const opt = (n: string) => { const i = argv.indexOf(`--${n}`); return i === -1 ? undefined : argv[i + 1]; };
-const DRY = flag('dry-run') || !(flag('schedule') || flag('configure') || flag('diagnose'));
+const DRY = flag('dry-run') || !(flag('schedule') || flag('configure') || flag('diagnose') || flag('verify'));
 
 /* Every email carries this marker so the next run can see what has already gone out.
    Buttondown is the source of truth for that, not a file in the repo, because a file
@@ -266,15 +267,22 @@ const api = async (path: string, init: RequestInit = {}) => {
     headers: { Authorization: `Token ${KEY}`, 'Content-Type': 'application/json', ...(init.headers ?? {}) },
   });
   if (!r.ok) throw new Error(`Buttondown ${init.method ?? 'GET'} ${path} returned ${r.status}: ${(await r.text()).slice(0, 300)}`);
-  return r.json() as Promise<any>;
+  if (r.status === 204) return null;
+  const text = await r.text();
+  return text ? JSON.parse(text) : null;
 };
 
-/** Every work Buttondown has an email for, in the order it was published. */
+/* An email on its way or already gone. A draft is neither: one left lying around would
+   otherwise take its work out of the queue and quietly cost that week an email. */
+const GONE = new Set(['scheduled', 'about_to_send', 'in_flight', 'sent', 'partially_sent', 'resending', 'throttled']);
+
+/** Every work Buttondown has sent or is about to send, in the order it was published. */
 const alreadySent = async (): Promise<string[]> => {
   const seen: { slug: string; at: string }[] = [];
   for (let page = 1; page <= 20; page++) {
     const r = await api(`/emails?page=${page}`);
     for (const e of r.results ?? []) {
+      if (!GONE.has(String(e.status))) continue;
       for (const m of String(e.body ?? '').matchAll(MARK_RE)) seen.push({ slug: m[1], at: e.publish_date ?? e.creation_date ?? '' });
     }
     if (!r.next) break;
@@ -342,12 +350,43 @@ const diagnose = async () => {
   else if (total) console.log('\nNo unactivated addresses: double opt-in is off, so Buttondown sends no confirmation email and a signup is complete at once.');
 };
 
+/*
+ * The one path nothing else exercises: Thursday's POST. It runs unattended, so a payload
+ * Buttondown will not take is a week with no email and nobody watching. This sends the
+ * real body as a draft, which is never delivered to anyone, checks it came back, and
+ * removes it again, so the state of the account afterwards is the state before it.
+ */
+const verify = async () => {
+  const work = pick(await alreadySent(), 1)[0];
+  const email = render(work);
+  console.log(`verifying with ${work.slug}, as a draft that is deleted again`);
+  const created = await api('/emails', {
+    method: 'POST',
+    body: JSON.stringify({ subject: email.subject, body: email.body, status: 'draft' }),
+  });
+  if (!created?.id) throw new Error('Buttondown accepted the email but returned no id');
+  try {
+    const back = await api(`/emails/${created.id}`);
+    const ok = back?.subject === email.subject && String(back?.body ?? '').includes(MARK(work.slug));
+    console.log(`  created ${created.id}, status ${back?.status}`);
+    console.log(`  subject and body came back ${ok ? 'intact' : 'CHANGED'}`);
+    if (!ok) throw new Error('what came back is not what was sent');
+  } finally {
+    await api(`/emails/${created.id}`, { method: 'DELETE' });
+    console.log('  draft deleted');
+  }
+  const still = await alreadySent();
+  console.log(`  queue unaffected: ${still.length} works counted as sent, next is still ${pick(still, 1)[0].slug}`);
+  console.log('\nThe Thursday job will work.');
+};
+
 const main = async () => {
   const only = opt('work');
   const weeks = Number(opt('weeks') ?? 1);
 
   if (flag('configure')) return configure();
   if (flag('diagnose')) return diagnose();
+  if (flag('verify')) return verify();
 
   if (DRY) {
     const chosen = only
