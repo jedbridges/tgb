@@ -19,7 +19,7 @@
  * A dry run makes no network call of any kind. --schedule needs BUTTONDOWN_API_KEY and
  * refuses to act if the work it picked has already gone out.
  */
-import { readdirSync, readFileSync } from 'node:fs';
+import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { parse } from 'yaml';
 
 const API = 'https://api.buttondown.com/v1';
@@ -277,6 +277,30 @@ const api = async (path: string, init: RequestInit = {}) => {
    otherwise take its work out of the queue and quietly cost that week an email. */
 const GONE = new Set(['scheduled', 'about_to_send', 'in_flight', 'sent', 'partially_sent', 'resending', 'throttled']);
 
+/**
+ * Put a file in Buttondown's own store and return where it landed.
+ *
+ * Multipart, so it cannot go through api(): that helper sets a JSON content type, and a
+ * multipart body needs fetch to set the header itself so the boundary matches.
+ */
+const upload = async (path: string): Promise<string> => {
+  if (!KEY) throw new Error('BUTTONDOWN_API_KEY is not set');
+  const size = statSync(path).size;
+  // Their limit, and worth failing on by name rather than as an opaque 400.
+  if (size > 1_000_000) throw new Error(`${path} is ${Math.round(size / 1024)}KB, over Buttondown's 1MB limit`);
+  const body = new FormData();
+  body.append('image', new Blob([readFileSync(path)], { type: 'image/png' }), path.split('/').pop());
+  const r = await fetch(`${API}/images`, { method: 'POST', headers: { Authorization: `Token ${KEY}` }, body });
+  const text = await r.text();
+  if (!r.ok) throw new Error(`upload of ${path} returned ${r.status}: ${text.slice(0, 200)}`);
+  /* The field naming has moved between API versions, so take whichever value is a URL
+     rather than guessing at the key. */
+  const found = Object.values(JSON.parse(text) as Record<string, unknown>)
+    .find((v) => typeof v === 'string' && v.startsWith('http'));
+  if (typeof found !== 'string') throw new Error(`upload of ${path} returned no URL: ${text.slice(0, 200)}`);
+  return found;
+};
+
 /** Every work Buttondown has sent or is about to send, in the order it was published. */
 const alreadySent = async (): Promise<string[]> => {
   const seen: { slug: string; at: string }[] = [];
@@ -317,20 +341,25 @@ const configure = async () => {
   console.log(`Configured ${n.username ?? n.id}:`);
   for (const [k, v] of Object.entries(want)) console.log(`  ${k} = ${v}`);
 
-  /* The seal and the share card, pointed at the copies the site already serves. Sent as
-     their own request: these two are the fields most likely to be refused, by plan or
-     because the account wants an upload rather than a URL, and Buttondown refuses a whole
-     PATCH over one bad field. Losing the settings above to them would be a poor trade. */
-  const art = {
-    icon: `${SITE}/brand/newsletter-avatar-600.png`,
-    image: `${SITE}/og-default.png`,
-  };
+  /* The seal and the share card.
+   *
+   * Setting these two to a URL on this site looks like it works: the PATCH is accepted and
+   * the field comes back populated, pointing at a Buttondown proxy wrapped around the
+   * address given. That proxy then serves nothing, and the newsletter's own page shows a
+   * broken image where the seal should be. So the files are uploaded instead, and the
+   * fields are set to the address the upload hands back.
+   *
+   * Sent after the settings above and on its own: these are the fields most likely to be
+   * refused, and Buttondown refuses a whole PATCH over one bad field. */
   try {
+    const art = {
+      icon: await upload('public/brand/newsletter-avatar-600.png'),
+      image: await upload('public/og-default.png'),
+    };
     await api(`/newsletters/${n.id}`, { method: 'PATCH', body: JSON.stringify(art) });
-    const back = ((await api('/newsletters')).results ?? [])[0];
-    for (const k of ['icon', 'image'] as const) console.log(`  ${k} = ${back?.[k] || '(refused silently)'}`);
+    for (const [k, v] of Object.entries(art)) console.log(`  ${k} = ${v}`);
   } catch (e) {
-    console.log(`  icon and image not set from a URL: ${(e as Error).message}`);
+    console.log(`  icon and image not set: ${(e as Error).message}`);
     console.log('  upload them by hand at https://buttondown.com/settings');
   }
 };
