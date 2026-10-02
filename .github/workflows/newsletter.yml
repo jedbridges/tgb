@@ -12,12 +12,13 @@ on:
     - cron: '0 15 * * 4'
   workflow_dispatch:
     inputs:
-      dry_run:
-        description: 'Print the email and send nothing'
-        type: boolean
-        default: true
+      mode:
+        description: 'What to do'
+        type: choice
+        default: dry-run
+        options: [dry-run, configure, schedule]
       work:
-        description: 'Send a specific work slug instead of the next in the queue'
+        description: 'A specific work slug, instead of the next in the queue'
         type: string
         required: false
 
@@ -34,7 +35,7 @@ jobs:
           BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
           AMAZON_ASSOCIATE_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}
           SITE_URL: ${{ secrets.SITE_URL }}
-        run: |
-          npx tsx scripts/newsletter.ts \
-            ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run) && '--dry-run' || '--schedule' }} \
-            ${{ inputs.work && format('--work {0}', inputs.work) || '' }}
+          # The cron passes no inputs, so the scheduled run is always a real send.
+          MODE: ${{ inputs.mode || 'schedule' }}
+          WORK: ${{ inputs.work }}
+        run: npx tsx scripts/newsletter.ts "--$MODE" ${WORK:+--work "$WORK"}
