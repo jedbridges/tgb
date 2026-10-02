@@ -316,6 +316,23 @@ const configure = async () => {
   await api(`/newsletters/${n.id}`, { method: 'PATCH', body: JSON.stringify(want) });
   console.log(`Configured ${n.username ?? n.id}:`);
   for (const [k, v] of Object.entries(want)) console.log(`  ${k} = ${v}`);
+
+  /* The seal and the share card, pointed at the copies the site already serves. Sent as
+     their own request: these two are the fields most likely to be refused, by plan or
+     because the account wants an upload rather than a URL, and Buttondown refuses a whole
+     PATCH over one bad field. Losing the settings above to them would be a poor trade. */
+  const art = {
+    icon: `${SITE}/brand/newsletter-avatar-600.png`,
+    image: `${SITE}/og-default.png`,
+  };
+  try {
+    await api(`/newsletters/${n.id}`, { method: 'PATCH', body: JSON.stringify(art) });
+    const back = ((await api('/newsletters')).results ?? [])[0];
+    for (const k of ['icon', 'image'] as const) console.log(`  ${k} = ${back?.[k] || '(refused silently)'}`);
+  } catch (e) {
+    console.log(`  icon and image not set from a URL: ${(e as Error).message}`);
+    console.log('  upload them by hand at https://buttondown.com/settings');
+  }
 };
 
 /*
