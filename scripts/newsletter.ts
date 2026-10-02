@@ -14,6 +14,7 @@
  *   npx tsx scripts/newsletter.ts --configure           point Buttondown's redirects here
  *   npx tsx scripts/newsletter.ts --diagnose            what the list looks like from here
  *   npx tsx scripts/newsletter.ts --verify              prove the send path, send nothing
+ *   npx tsx scripts/newsletter.ts --nudge               resend confirmation to the unconfirmed
  *
  * A dry run makes no network call of any kind. --schedule needs BUTTONDOWN_API_KEY and
  * refuses to act if the work it picked has already gone out.
@@ -29,7 +30,7 @@ const KEY = (process.env.BUTTONDOWN_API_KEY || '').trim();
 const argv = process.argv.slice(2);
 const flag = (n: string) => argv.includes(`--${n}`);
 const opt = (n: string) => { const i = argv.indexOf(`--${n}`); return i === -1 ? undefined : argv[i + 1]; };
-const DRY = flag('dry-run') || !(flag('schedule') || flag('configure') || flag('diagnose') || flag('verify'));
+const DRY = flag('dry-run') || !(flag('schedule') || flag('configure') || flag('diagnose') || flag('verify') || flag('nudge'));
 
 /* Every email carries this marker so the next run can see what has already gone out.
    Buttondown is the source of truth for that, not a file in the repo, because a file
@@ -307,6 +308,11 @@ const configure = async () => {
        name on them, which is most of what a reader has to judge whether the thing they
        just signed up for is the thing that landed. */
     from_name: 'The Great Books',
+    /* The subject is the whole of what a reader sees before deciding an unexpected email
+       is junk. The body is left alone on purpose: it carries the confirmation link through
+       Buttondown's own template, and a custom one written blind could drop it. */
+    custom_subscription_confirmation_email_subject: 'Confirm your subscription to The Great Books',
+    description: 'One great book a week: why it matters, how to read it, and which translation to get.',
   };
   await api(`/newsletters/${n.id}`, { method: 'PATCH', body: JSON.stringify(want) });
   console.log(`Configured ${n.username ?? n.id}:`);
@@ -380,6 +386,26 @@ const verify = async () => {
   console.log('\nThe Thursday job will work.');
 };
 
+/*
+ * Resend the confirmation to anyone still unconfirmed. Buttondown does this by itself a
+ * day after signup; this is for when the first one went astray and waiting is the only
+ * other option.
+ */
+const nudge = async () => {
+  let found = 0;
+  for (let page = 1; page <= 20; page++) {
+    const r = await api(`/subscribers?page=${page}`);
+    for (const sub of r.results ?? []) {
+      if (String(sub.type ?? '') !== 'unactivated') continue;
+      found++;
+      await api(`/subscribers/${sub.id}/send-reminder`, { method: 'POST' });
+      console.log(`  reminder sent to subscriber ${sub.id}`);
+    }
+    if (!r.next) break;
+  }
+  console.log(found ? `${found} reminder(s) sent.` : 'Nobody is waiting to confirm.');
+};
+
 const main = async () => {
   const only = opt('work');
   const weeks = Number(opt('weeks') ?? 1);
@@ -387,6 +413,7 @@ const main = async () => {
   if (flag('configure')) return configure();
   if (flag('diagnose')) return diagnose();
   if (flag('verify')) return verify();
+  if (flag('nudge')) return nudge();
 
   if (DRY) {
     const chosen = only
