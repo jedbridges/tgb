@@ -308,10 +308,9 @@ const configure = async () => {
        name on them, which is most of what a reader has to judge whether the thing they
        just signed up for is the thing that landed. */
     from_name: 'The Great Books',
-    /* The subject is the whole of what a reader sees before deciding an unexpected email
-       is junk. The body is left alone on purpose: it carries the confirmation link through
-       Buttondown's own template, and a custom one written blind could drop it. */
-    custom_subscription_confirmation_email_subject: 'Confirm your subscription to The Great Books',
+    /* Not the confirmation email's subject, however much it wants rewording: customising
+       a transactional email needs the Standard plan, and the whole PATCH is refused with
+       it in. The sender name above does most of the same work on the free plan. */
     description: 'One great book a week: why it matters, how to read it, and which translation to get.',
   };
   await api(`/newsletters/${n.id}`, { method: 'PATCH', body: JSON.stringify(want) });
