@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T02:25:52.034Z",
+  "title": "Design System: The Great Books",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Oxblood",
+        "canonical": "oklch(0.50 0.19 37)",
+        "tonalRamp": [
+          "oklch(0.15 0.19 37)",
+          "oklch(0.26 0.19 37)",
+          "oklch(0.37 0.19 37)",
+          "oklch(0.47 0.19 37)",
+          "oklch(0.58 0.19 37)",
+          "oklch(0.69 0.19 37)",
+          "oklch(0.8 0.19 37)",
+          "oklch(0.93 0.19 37)"
+        ]
+      },
+      "accent-press": {
+        "role": "primary",
+        "displayName": "Oxblood Pressed",
+        "canonical": "oklch(0.42 0.17 35)"
+      },
+      "accent-wash": {
+        "role": "primary",
+        "displayName": "Oxblood Wash",
+        "canonical": "oklch(0.93 0.04 45)"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f2e8e4",
+        "tonalRamp": [
+          "oklch(0.15 0.018 45)",
+          "oklch(0.26 0.018 45)",
+          "oklch(0.37 0.018 45)",
+          "oklch(0.47 0.018 45)",
+          "oklch(0.58 0.018 45)",
+          "oklch(0.69 0.018 45)",
+          "oklch(0.8 0.018 45)",
+          "oklch(0.93 0.018 45)"
+        ]
+      },
+      "paper-bright": {
+        "role": "neutral",
+        "displayName": "Raised Paper",
+        "canonical": "oklch(0.965 0.01 55)"
+      },
+      "paper-deep": {
+        "role": "neutral",
+        "displayName": "Recessed Paper",
+        "canonical": "oklch(0.905 0.018 45)"
+      },
+      "paper-deeper": {
+        "role": "neutral",
+        "displayName": "Sunk Paper",
+        "canonical": "oklch(0.86 0.022 45)"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Brand Ink",
+        "canonical": "#4b4644",
+        "contrast": "7.72:1 on paper-deep",
+        "tonalRamp": [
+          "oklch(0.15 0.014 40)",
+          "oklch(0.26 0.014 40)",
+          "oklch(0.37 0.014 40)",
+          "oklch(0.47 0.014 40)",
+          "oklch(0.58 0.014 40)",
+          "oklch(0.69 0.014 40)",
+          "oklch(0.8 0.014 40)",
+          "oklch(0.93 0.014 40)"
+        ]
+      },
+      "ink-strong": {
+        "role": "neutral",
+        "displayName": "Strong Ink",
+        "canonical": "oklch(0.31 0.014 40)",
+        "contrast": "10.98:1"
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(0.46 0.015 40)",
+        "contrast": "5.38:1"
+      },
+      "ink-mute": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(0.49 0.014 45)",
+        "contrast": "4.72:1"
+      },
+      "shelf-wood": {
+        "role": "tertiary",
+        "displayName": "Shelf Wood",
+        "canonical": "oklch(0.42 0.05 45)"
+      },
+      "wax": {
+        "role": "tertiary",
+        "displayName": "Sealing Wax",
+        "canonical": "oklch(0.42 0.17 35)",
+        "tonalRamp": [
+          "oklch(0.15 0.17 35)",
+          "oklch(0.26 0.17 35)",
+          "oklch(0.37 0.17 35)",
+          "oklch(0.47 0.17 35)",
+          "oklch(0.58 0.17 35)",
+          "oklch(0.69 0.17 35)",
+          "oklch(0.8 0.17 35)",
+          "oklch(0.93 0.17 35)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page titles. A hero-only step above reaches 6.5rem."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sub-headings and work titles. Italic in prose."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text at a 58ch measure, about 70 characters a line."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Satoshi, uppercase eyebrow labels and metadata."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-rest",
+        "value": "0 1px 0 var(--edge), 0 12px 30px -18px rgb(var(--shadow-ink) / calc(0.35 * var(--shadow-a)))",
+        "purpose": "A raised card or pick. First layer is a hairline, not a glow."
+      },
+      {
+        "name": "card-lift",
+        "value": "0 1px 0 var(--edge), 0 18px 34px -16px rgb(var(--shadow-ink) / calc(0.45 * var(--shadow-a)))",
+        "purpose": "Hover, paired with translateY(-2px)."
+      },
+      {
+        "name": "panel-float",
+        "value": "0 30px 80px -20px rgb(var(--shadow-ink) / calc(0.5 * var(--shadow-a))), 0 0 0 1px var(--edge)",
+        "purpose": "The search palette, over a 4px backdrop blur."
+      },
+      {
+        "name": "shelf",
+        "value": "0 6px 12px -4px rgb(var(--shadow-ink) / calc(0.35 * var(--shadow-a)))",
+        "purpose": "The bookcase, with an inset top highlight."
+      },
+      {
+        "name": "nav-current",
+        "value": "inset 0 -3px 0 var(--accent)",
+        "purpose": "The current nav item; the same shape in --edge on hover."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Default easing for state transitions."
+      },
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Entrances: the palette rise, the seal strike."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.65, 0, 0.35, 1)",
+        "purpose": "Reversible movement."
+      },
+      {
+        "name": "dur-fast",
+        "value": "160ms",
+        "purpose": "Hover and press."
+      },
+      {
+        "name": "dur",
+        "value": "420ms",
+        "purpose": "Panels and reveals."
+      },
+      {
+        "name": "dur-slow",
+        "value": "620ms",
+        "purpose": "The longest deliberate move."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "640px"
+      },
+      {
+        "name": "mobile-header",
+        "value": "760px"
+      },
+      {
+        "name": "browse-stack",
+        "value": "860px"
+      },
+      {
+        "name": "compact-header",
+        "value": "1180px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "The default action. An action is either the accent or it is an outline; there is no ink-filled variant.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Browse the shelf</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5em; font-family: var(--font-ui), system-ui, sans-serif; font-weight: 700; font-size: var(--step--1, 1rem); letter-spacing: 0.01em; padding: 0.8em 1.3em; border-radius: 3px; min-height: 44px; text-decoration: none; border: 1px solid var(--ink, #4b4644); color: var(--ink, #4b4644); background: transparent; transition: transform 160ms cubic-bezier(0.22,1,0.36,1), background 160ms, color 160ms; } .ds-btn:hover { background: var(--ink, #4b4644); color: var(--paper, #f2e8e4); } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 2px solid var(--accent, #b62200); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Accent Button",
+      "kind": "button",
+      "refersTo": "button-accent",
+      "description": "The primary action. The one filled control in the system.",
+      "html": "<button class=\"ds-btn-accent\" type=\"button\">Subscribe</button>",
+      "css": ".ds-btn-accent { display: inline-flex; align-items: center; justify-content: center; gap: 0.5em; font-family: var(--font-ui), system-ui, sans-serif; font-weight: 700; font-size: var(--step--1, 1rem); padding: 0.8em 1.3em; border-radius: 3px; min-height: 44px; border: 1px solid var(--accent, #b62200); background: var(--accent, #b62200); color: var(--paper-bright, #f9f4f0); cursor: pointer; transition: transform 160ms cubic-bezier(0.22,1,0.36,1), background 160ms; } .ds-btn-accent:hover { background: var(--accent-press, #930b00); border-color: var(--accent-press, #930b00); } .ds-btn-accent:active { transform: translateY(1px); } .ds-btn-accent:focus-visible { outline: 2px solid var(--accent, #b62200); outline-offset: 3px; }"
+    },
+    {
+      "name": "Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "Taxonomy and filter links. Full pill, hairline edge, 44px target.",
+      "html": "<a class=\"ds-tag\" href=\"#\">Mortality <span>114</span></a>",
+      "css": ".ds-tag { display: inline-flex; align-items: center; gap: 0.4em; font-family: var(--font-ui), system-ui, sans-serif; font-size: var(--step--2, 0.875rem); font-weight: 500; letter-spacing: 0.04em; padding: 0.7em 0.9em; min-height: 44px; border-radius: 999px; border: 1px solid var(--edge, rgba(75,70,68,0.34)); color: var(--ink, #4b4644); text-decoration: none; background: transparent; transition: border-color 160ms, background 160ms; } .ds-tag span { color: var(--ink-mute, #6f6560); font-variant-numeric: tabular-nums; } .ds-tag:hover { border-color: var(--ink, #4b4644); } .ds-tag:focus-visible { outline: 2px solid var(--accent, #b62200); outline-offset: 3px; }"
+    },
+    {
+      "name": "Pick Card",
+      "kind": "card",
+      "refersTo": "pick-card",
+      "description": "A raised recommendation. The only content surface allowed a shadow, because it reads as a card rather than a section.",
+      "html": "<a class=\"ds-card\" href=\"#\"><span class=\"ds-card__k\">Start here</span><span class=\"ds-card__t\">The Iliad</span><span class=\"ds-card__a\">Homer</span></a>",
+      "css": ".ds-card { display: grid; gap: 0.3rem; padding: 1.5rem; border-radius: 6px; background: var(--paper-bright, #f9f4f0); box-shadow: 0 1px 0 var(--edge, rgba(75,70,68,0.34)), 0 12px 30px -18px rgb(20 12 8 / 0.35); text-decoration: none; color: inherit; transition: box-shadow 160ms, transform 160ms; } .ds-card:hover { transform: translateY(-2px); box-shadow: 0 1px 0 var(--edge, rgba(75,70,68,0.34)), 0 18px 34px -16px rgb(20 12 8 / 0.45); } .ds-card__k { font-family: var(--font-ui), system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent, #b62200); } .ds-card__t { font-family: var(--font-display), Georgia, serif; font-size: 2rem; line-height: 1.2; color: var(--ink-strong, #3a332f); } .ds-card__a { font-family: var(--font-ui), system-ui, sans-serif; font-size: 0.875rem; color: var(--ink-soft, #6b615c); }"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": null,
+      "description": "The one input pattern: hairline box, 3px corner, accent caret, the global focus ring.",
+      "html": "<label class=\"ds-field\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"m20 20-3.5-3.5\"/></svg><input type=\"search\" placeholder=\"Search every book\"></label>",
+      "css": ".ds-field { display: inline-flex; align-items: center; gap: 0.6em; min-height: 44px; padding: 0 0.9em; border: 1px solid var(--edge, rgba(75,70,68,0.34)); border-radius: 999px; background: transparent; color: var(--ink-soft, #6b615c); } .ds-field input { border: 0; background: none; outline: none; font-family: var(--font-ui), system-ui, sans-serif; font-size: var(--step--1, 1rem); color: var(--ink, #4b4644); caret-color: var(--accent, #b62200); min-width: 16ch; } .ds-field:focus-within { outline: 2px solid var(--accent, #b62200); outline-offset: 3px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Satoshi, ink, with an inset 3px underline. Accent marks the current page, edge marks hover.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Home</a><a href=\"#\">Books</a><a href=\"#\">Programs</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 1.25rem; font-family: var(--font-ui), system-ui, sans-serif; font-size: var(--step--1, 1rem); } .ds-nav a { color: var(--ink, #4b4644); text-decoration: none; padding: 0.4em 0.1em; box-shadow: inset 0 -3px 0 transparent; transition: box-shadow 160ms, color 160ms; } .ds-nav a:hover { color: var(--ink-strong, #3a332f); box-shadow: inset 0 -3px 0 var(--edge, rgba(75,70,68,0.34)); } .ds-nav a[aria-current=\"page\"] { color: var(--ink-strong, #3a332f); box-shadow: inset 0 -3px 0 var(--accent, #b62200); } .ds-nav a:focus-visible { outline: 2px solid var(--accent, #b62200); outline-offset: 3px; }"
+    },
+    {
+      "name": "Dotted Section Rule",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The divider borrowed from the leaders in a table of contents. Content is separated by dots; structure is edged with solid lines.",
+      "html": "<hr class=\"ds-rule\">",
+      "css": ".ds-rule { border: 0; border-top: 1px dotted color-mix(in oklch, var(--ink, #4b4644) 42%, transparent); margin: 2.5rem 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Standing Shelf",
+    "overview": "The books are objects and everything else is the quiet case around them. A page is a warm sheet of paper with ink on it, ruled by dotted leaders borrowed from a table of contents, and the only things on it with weight and shadow are the volumes themselves, the shelf they stand on, and the wax seal. That division is the whole system: chrome recedes to type and hairlines, and depth is spent exclusively on the things a reader would be able to pick up.\n\nThe character is restrained and typographic. Hierarchy is carried by size, by the display face and by its single heavier cut, never by piling on weight or colour. Headings sit in the same warm ink as body text rather than reaching for black.\n\nBoth schemes are first-class. Every colour is declared once as light-dark(light, dark), so there is no second palette to keep in step.",
+    "keyCharacteristics": [
+      "Warm paper and warm ink; nothing is pure black or pure white",
+      "One red, used sparingly, in three states rather than three colours",
+      "Dotted rules for content, solid edges for controls",
+      "Flat chrome, real depth only for objects",
+      "Type set in a serif for reading and a sans for controls, never mixed within a role"
+    ],
+    "rules": [
+      {
+        "name": "The One Red Rule",
+        "body": "No file mixes its own red. Anything wanting red takes --accent, --accent-press or --accent-wash. The three are states, not colours.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Black Rule",
+        "body": "Nothing is #000 or #fff. Ink is warm brown-grey, paper is warm pink-cream, and shadows are cast in rgb(20 12 8) in light and pure black only in dark, where they also work 1.7x harder.",
+        "section": "colors"
+      },
+      {
+        "name": "The Measured Contrast Rule",
+        "body": "Every ink token carries its measured ratio in a comment in tokens.css, taken against --paper-deep, the darkest surface it is ever set on. A new ink value is not done until it has a number.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Ramps Rule",
+        "body": "The interface range steps by about 1.15 and the display range by about 1.4. One ratio for both put a label, a control and a paragraph within a pixel of each other.",
+        "section": "typography"
+      },
+      {
+        "name": "The Shipped Weights Rule",
+        "body": "font-synthesis is off, so asking for a weight that is not shipped rounds silently. Nothing may request a weight outside --w-text, --w-emph and --w-bold, and --w-bold is Satoshi only.",
+        "section": "typography"
+      },
+      {
+        "name": "The Italic Display Rule",
+        "body": "Italic is the display face emphasis, used for section headings, the wordmark and the signup heading. Bold is not available in it and must not be faked.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Filter Rule",
+        "body": "There is no SVG filter element in the seal markup and nothing inside it animates. The two together once held Safari at six frames a second. The smoke test fails the build if a filter reappears there.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do take red from --accent, --accent-press or --accent-wash, and nowhere else.",
+      "Do declare new colours once as light-dark(light, dark) so there is never a second palette to maintain.",
+      "Do record a measured contrast ratio in a comment beside any new ink value, taken against --paper-deep.",
+      "Do keep interactive targets at 44px and above.",
+      "Do separate content with dotted rules and structure with solid edges.",
+      "Do derive sticky offsets from --header-h and --stick.",
+      "Do give prose the 58ch measure even when the container is wider."
+    ],
+    "donts": [
+      "Don't use pure black or pure white anywhere, including shadows in the light scheme.",
+      "Don't request a font weight outside 400, 500 and Satoshi's 700.",
+      "Don't put a shadow on a content surface. If it is not an object a reader could pick up, it is flat.",
+      "Don't add an SVG filter to the seal, or animate anything inside it.",
+      "Don't introduce a large corner radius. 8px is the ceiling and it belongs to one panel.",
+      "Don't add an ink-filled button variant alongside the accent one.",
+      "Don't load anything from a third party at page load."
+    ]
+  }
+}

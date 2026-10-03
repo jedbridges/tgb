@@ -10,8 +10,10 @@ branch and open a PR; the owner merges. README.md has the commands.
   Status table says what is done, what is blocked and on what. Update it at the end of any
   session that touches search, and record what was verified in its Verification record.
 - `.claude/skills/impeccable/` is installed; run `/impeccable context` before design work.
-  There is no PRODUCT.md or DESIGN.md yet; the incumbent CSS and components are the
-  design authority.
+  `PRODUCT.md` holds the product record: who the reader is, what success means, and the
+  four constraints future work must not break. `DESIGN.md` and `.impeccable/design.json`
+  hold the design system, derived from the shipped code rather than from intentions. Read
+  both before design work; the CSS is still the implementation, but these say why.
 
 ## Checks that must pass before a push
 
