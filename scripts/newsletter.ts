@@ -15,6 +15,7 @@
  *   npx tsx scripts/newsletter.ts --diagnose            what the list looks like from here
  *   npx tsx scripts/newsletter.ts --verify              prove the send path, send nothing
  *   npx tsx scripts/newsletter.ts --nudge               resend confirmation to the unconfirmed
+ *   npx tsx scripts/newsletter.ts --preview             mail the next email to the owner
  *
  * A dry run makes no network call of any kind. --schedule needs BUTTONDOWN_API_KEY and
  * refuses to act if the work it picked has already gone out.
@@ -30,7 +31,8 @@ const KEY = (process.env.BUTTONDOWN_API_KEY || '').trim();
 const argv = process.argv.slice(2);
 const flag = (n: string) => argv.includes(`--${n}`);
 const opt = (n: string) => { const i = argv.indexOf(`--${n}`); return i === -1 ? undefined : argv[i + 1]; };
-const DRY = flag('dry-run') || !(flag('schedule') || flag('configure') || flag('diagnose') || flag('verify') || flag('nudge'));
+const DRY = flag('dry-run') || !(flag('schedule') || flag('configure') || flag('diagnose')
+  || flag('verify') || flag('nudge') || flag('preview'));
 
 /* Every email carries this marker so the next run can see what has already gone out.
    Buttondown is the source of truth for that, not a file in the repo, because a file
@@ -452,6 +454,42 @@ const nudge = async () => {
   console.log(found ? `${found} reminder(s) sent.` : 'Nobody is waiting to confirm.');
 };
 
+/*
+ * The next email, in an inbox, today.
+ *
+ * Everything else proves the machinery: that the payload is accepted, that the schedule
+ * lands on the right morning, that the body comes back the way it went. None of it shows
+ * what a reader opens, because that is Buttondown's template wrapped around our markdown
+ * and neither of us has seen the two together. A draft sent to the account's own address
+ * is the only way to look at the real thing before real people get it.
+ *
+ * It goes to the address on the newsletter rather than one passed in: the owner is who
+ * should be reviewing, and an address typed into a workflow input is an address written
+ * into a run's public metadata for no reason. The draft is deleted afterwards, so the
+ * queue sees nothing and Saturday still sends the same work.
+ */
+const preview = async (only?: string) => {
+  const n = ((await api('/newsletters')).results ?? [])[0];
+  const to = n?.email_address;
+  if (!to) throw new Error('the newsletter has no account address to send a preview to');
+  const work = only ? works.get(only) : pick(await alreadySent(), 1)[0];
+  if (!work) throw new Error(`no work with slug ${only}`);
+  const email = render(work);
+  const created = await api('/emails', {
+    method: 'POST',
+    body: JSON.stringify({ subject: email.subject, body: email.body, status: 'draft' }),
+  });
+  if (!created?.id) throw new Error('Buttondown accepted the draft but returned no id');
+  try {
+    await api(`/emails/${created.id}/send-draft`, { method: 'POST', body: JSON.stringify({ recipients: [to] }) });
+    console.log(`Sent "${email.subject}" to the account address.`);
+    console.log(`  work: ${work.slug}`);
+  } finally {
+    await api(`/emails/${created.id}`, { method: 'DELETE' });
+    console.log('  draft deleted, so the queue still has this work to send');
+  }
+};
+
 const main = async () => {
   const only = opt('work');
   const weeks = Number(opt('weeks') ?? 1);
@@ -460,6 +498,7 @@ const main = async () => {
   if (flag('diagnose')) return diagnose();
   if (flag('verify')) return verify();
   if (flag('nudge')) return nudge();
+  if (flag('preview')) return preview(only);
 
   if (DRY) {
     const chosen = only
