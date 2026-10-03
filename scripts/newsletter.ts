@@ -373,7 +373,9 @@ const configure = async () => {
    * refused, and Buttondown refuses a whole PATCH over one bad field. */
   try {
     const art = {
-      icon: await upload('public/brand/newsletter-avatar-600.png'),
+      /* The transparent one: Buttondown's template puts this on a white card, and the
+         paper-backed version showed up there as an off-colour tile around the seal. */
+      icon: await upload('public/brand/newsletter-avatar-clear-600.png'),
       image: await upload('public/og-default.png'),
     };
     await api(`/newsletters/${n.id}`, { method: 'PATCH', body: JSON.stringify(art) });

@@ -88,15 +88,27 @@ function banner(W: number, H: number): string {
 /* ------------------------------------------------- newsletter avatar, square */
 
 /*
- * The wax keeps to 90% of the square: enough margin that a circular crop cannot shave the
- * uneven rim into a perfect arc, which is the one thing that says wax rather than button,
- * and no more than that. At 82% the ring of bare paper was a tenth of a thirty-two pixel
- * avatar spent on nothing, and the inbox is the size this image is actually read at.
+ * Two avatars, and the difference is the ground.
+ *
+ * The transparent one is what Buttondown is given. Its template puts this image on a white
+ * card, and a PNG carrying its own paper-coloured square showed up there as an off-colour
+ * tile around the seal: the site's paper is not the template's white, and nothing was ever
+ * going to make those two agree. With no ground of its own the seal sits on whatever it is
+ * put on and the tile cannot happen.
+ *
+ * Losing the ground also buys size. The frame is fixed by whoever displays it, so every
+ * pixel of margin inside the image is a smaller seal in the same box. On paper the margin
+ * earned its place by keeping a circular crop off the uneven rim; with transparency the
+ * corners are already empty, so the wax can run to 96% and still sit inside the circle a
+ * crop would cut. That is about a sixth more seal in the same frame.
+ *
+ * The opaque one stays for anywhere that renders a transparent PNG on black.
  */
-function sealAvatar(size: number): string {
+function sealAvatar(size: number, ground: string | null): string {
+  const inset = ground ? 0.9 : 0.96;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
-    <rect width="${size}" height="${size}" fill="${PAPER}"/>
-    ${seal({ id: 'av', cx: size / 2, cy: size / 2, size: size * 0.9, rotate: -4 })}
+    ${ground ? `<rect width="${size}" height="${size}" fill="${ground}"/>` : ''}
+    ${seal({ id: 'av', cx: size / 2, cy: size / 2, size: size * inset, rotate: -4 })}
   </svg>`;
 }
 
@@ -108,8 +120,11 @@ const jobs: [string, string, boolean][] = [
   [`${OUT}/banner-2048x600.png`, banner(2048, 600), false],
   // Buttondown asks for 300 square and takes larger; the 600 is the one to upload, and the
   // 300 is there for anywhere that takes the dimension literally.
-  [`${OUT}/newsletter-avatar-600.png`, sealAvatar(600), true],
-  [`${OUT}/newsletter-avatar-300.png`, sealAvatar(300), true],
+  [`${OUT}/newsletter-avatar-600.png`, sealAvatar(600, PAPER), true],
+  [`${OUT}/newsletter-avatar-300.png`, sealAvatar(300, PAPER), true],
+  // No grain on these: the tile would lay the page's tooth over the empty corners too.
+  [`${OUT}/newsletter-avatar-clear-600.png`, sealAvatar(600, null), false],
+  [`${OUT}/newsletter-avatar-clear-300.png`, sealAvatar(300, null), false],
 ];
 const grain = await paperGrain();
 for (const [file, svg, grained] of jobs) {
