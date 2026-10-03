@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
 import Base from '~/layouts/Base.astro';
+import Signup from '~/components/Signup.astro';
 import BookCard from '~/components/BookCard.astro';
 import { placeholderAuthor, loadCatalog, hasGuide } from '~/lib/catalog';
 import { authorUrl, programUrl, taxUrl, url } from '~/lib/url';
@@ -51,6 +52,8 @@ const hasBio = author.body && author.body.trim().length > 40;
       </section>
     )}
   </article>
+  {/* An author page is browsed, not read, so the offer at the foot interrupts nothing. */}
+  <div class="wrap"><Signup from="author" /></div>
 </Base>
 <style>
   .head { padding-block: var(--s4) var(--s3); }

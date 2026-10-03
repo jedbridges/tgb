@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '~/layouts/Base.astro';
+import Signup from '~/components/Signup.astro';
 import BookCard from '~/components/BookCard.astro';
 import Browse from '~/components/browse/Browse';
 import { placeholderAuthor, loadCatalog, catalogRecord, sortedByAssignment } from '~/lib/catalog';
@@ -54,6 +55,9 @@ const facets = {
       <div id="browse-end" tabindex="-1"></div>
     </div>
   </section>
+  {/* Under the whole catalogue: someone who has scrolled 689 books and not picked one is
+      exactly who a weekly pick is for. */}
+  <div class="wrap"><Signup from="browse" /></div>
 </Base>
 <style>
   .browse-head { padding-block: var(--s4) var(--s3); }

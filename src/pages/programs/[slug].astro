@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import Base from '~/layouts/Base.astro';
+import Signup from '~/components/Signup.astro';
 import Book3D from '~/components/Book3D.astro';
 import Bookcase from '~/components/Bookcase.astro';
 import { placeholderAuthor, loadCatalog, yearShort, difficultyLabel } from '~/lib/catalog';
@@ -114,6 +115,8 @@ const pageDescription = `The complete ${listName.replace(/Reading List$/, 'readi
       </section>
     ))}
   </article>
+  {/* A programme page is a reading list someone is sizing up against their own year. */}
+  <div class="wrap"><Signup from="program" /></div>
 </Base>
 <style>
   .head { padding-block: var(--s4) var(--s3); }

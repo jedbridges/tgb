@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
 import BookCard from './BookCard.astro';
+import Signup from './Signup.astro';
 import ClipList from './ClipList.astro';
 import { placeholderAuthor, loadCatalog, sortedByAssignment, yearShort, lengthLabel, difficultyLabel, type Work } from '~/lib/catalog';
 import { url, taxUrl, workUrl, authorUrl } from '~/lib/url';
@@ -96,6 +97,9 @@ const crumbs = breadcrumbs([{ name: 'Books', path: '/books/' }, { name: entry.da
     <ul class="more__list">{siblings.map((s) => <li><a class="tag" href={taxUrl(kind, s.id)}>{s.data.label}</a></li>)}</ul>
   </nav>
 )}
+{/* A shelf is a page someone browses to the bottom of without finding the one book they
+    came for, which is the moment a weekly pick is worth more than another grid. */}
+<div class="wrap"><Signup from={kind} /></div>
 <style>
   .head { padding-block: var(--s4) var(--s3); }
   .head h1 { font-size: var(--step-4); }

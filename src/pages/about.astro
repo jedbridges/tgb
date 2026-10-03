@@ -1,5 +1,6 @@
 ---
 import Base from '~/layouts/Base.astro';
+import Signup from '~/components/Signup.astro';
 import { url } from '~/lib/url';
 ---
 <Base title="About" description="What The Great Books is, where the lists come from, and how the summaries are written.">
@@ -17,6 +18,9 @@ import { url } from '~/lib/url';
       <p>Buy links are affiliate links to Amazon and Bookshop.org. If you buy through them the site earns a small commission at no extra cost to you. Editorial choices are never influenced by that. Read the <a href={url('/disclosure/')}>full disclosure</a>.</p>
     </div>
   </article>
+  {/* A reader on the about page is asking who chose these books, which is as close to
+      interest in the person doing the choosing as this site gets. */}
+  <div class="wrap"><Signup from="about" /></div>
 </Base>
 <style>
   .page { padding-block: var(--s4) var(--s3); }
