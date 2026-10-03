@@ -451,25 +451,44 @@ const diagnose = async () => {
 const verify = async () => {
   const work = pick(await alreadySent(), 1)[0];
   const email = render(work);
-  console.log(`verifying with ${work.slug}, as a draft that is deleted again`);
-  const created = await api('/emails', {
-    method: 'POST',
-    body: JSON.stringify({ subject: email.subject, body: email.body, status: 'draft' }),
-  });
-  if (!created?.id) throw new Error('Buttondown accepted the email but returned no id');
-  try {
-    const back = await api(`/emails/${created.id}`);
-    const ok = back?.subject === email.subject && String(back?.body ?? '').includes(MARK(work.slug));
-    console.log(`  created ${created.id}, status ${back?.status}`);
-    console.log(`  subject and body came back ${ok ? 'intact' : 'CHANGED'}`);
-    if (!ok) throw new Error('what came back is not what was sent');
-  } finally {
-    await api(`/emails/${created.id}`, { method: 'DELETE' });
-    console.log('  draft deleted');
+  const publish = nextSend(new Date());
+  console.log(`verifying with ${work.slug}; everything created here is deleted again`);
+
+  /* Both halves of the real call. A draft proves the payload, but Thursday posts
+     status: scheduled with a publish_date, and that is the request that has to be right:
+     it runs unattended, and a date Buttondown will not take is a week with no email and
+     nobody watching. The scheduled one is made last and removed first. */
+  for (const status of ['draft', 'scheduled'] as const) {
+    const body: Record<string, unknown> = { subject: email.subject, body: email.body, status };
+    if (status === 'scheduled') body.publish_date = publish.toISOString();
+    const created = await api('/emails', { method: 'POST', body: JSON.stringify(body) });
+    if (!created?.id) throw new Error(`Buttondown accepted the ${status} email but returned no id`);
+    try {
+      const back = await api(`/emails/${created.id}`);
+      const intact = back?.subject === email.subject && String(back?.body ?? '').includes(MARK(work.slug));
+      console.log(`  ${status}: created ${created.id}, status came back as ${back?.status}`);
+      if (status === 'scheduled') {
+        const when = String(back?.publish_date ?? '');
+        const matches = when.startsWith(publish.toISOString().slice(0, 16));
+        console.log(`    publish_date ${when || '(none)'} ${matches ? 'matches' : 'DOES NOT MATCH'} the ${publish.toISOString()} asked for`);
+        if (!matches) throw new Error('Buttondown stored a different send time than the one requested');
+        if (back?.status !== 'scheduled') throw new Error(`asked for scheduled, got ${back?.status}`);
+      }
+      console.log(`    subject and body came back ${intact ? 'intact' : 'CHANGED'}`);
+      if (!intact) throw new Error('what came back is not what was sent');
+    } finally {
+      await api(`/emails/${created.id}`, { method: 'DELETE' });
+      console.log(`    ${status} deleted`);
+    }
   }
+
+  /* The one that matters after a scheduled email has existed: a leftover would count as
+     sent and quietly take this work out of the queue. */
   const still = await alreadySent();
-  console.log(`  queue unaffected: ${still.length} works counted as sent, next is still ${pick(still, 1)[0].slug}`);
-  console.log('\nThe Thursday job will work.');
+  const next = pick(still, 1)[0];
+  console.log(`  queue unaffected: ${still.length} works counted as sent, next is still ${next.slug}`);
+  if (still.length || next.slug !== work.slug) throw new Error('something survived the cleanup; check Buttondown for a stray email');
+  console.log(`\nThursday will post a scheduled email for ${publish.toISOString()} and it will be accepted.`);
 };
 
 /*
