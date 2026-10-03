@@ -65,6 +65,7 @@ highlights:
     note: "He goes on to say that they behave so through ignorance of good and evil, that they are his kin, and that he cannot be injured by any of them."
 related: [epictetus-discourses, cicero-on-duties, seneca-moral-and-political-essays, plato-apology]
 keywords: [Stoicism, Epictetus, Antoninus Pius, logos, death, providence, duty, Danube]
+emailSubject: Marcus is not recommending Stoicism to you, he is administering it to himself
 status: draft
 updated: 2026-09-23
 ---

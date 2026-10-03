@@ -200,6 +200,23 @@ const render = (w: Work) => {
     .filter(Boolean)[0];
 
   const subject = subjectFor(w);
+
+  /* The subject is cut from the opening of whyItMatters, and Buttondown prints the subject
+     as the email's headline. Where the whole first sentence was taken, the reader meets it
+     as the headline and then immediately reads it again as the first line of the body.
+     Only an exact match is dropped: where the subject is the title plus a clause, the
+     sentence still carries words the clause left behind and removing it would lose them. */
+  const why = paras(String(w.data.whyItMatters ?? ''));
+  if (why[0]) {
+    const sentences = why[0].split(/(?<=[.?!])\s/);
+    /* The subject may be the bare claim or the title with the claim after a colon, and
+       both forms print as the same headline over the same opening line. */
+    const claim = subject.startsWith(`${w.data.title}: `) ? subject.slice(String(w.data.title).length + 2) : subject;
+    if (claim === sentences[0].replace(/\s*\.$/, '')) {
+      const rest = sentences.slice(1).join(' ').trim();
+      if (rest) why[0] = rest; else why.shift();
+    }
+  }
   const by = ed?.translator ? `translated by ${ed.translator}` : ed?.editor ? `edited by ${ed.editor}` : '';
   const buy = amazonUrl(ed?.isbn13, String(ed?.title ?? w.data.title), author);
 
@@ -209,7 +226,7 @@ const render = (w: Work) => {
     `## ${w.data.title}`,
     `*${author}, ${w.data.yearDisplay ?? w.data.year}*`,
     '',
-    ...paras(String(w.data.whyItMatters ?? '')),
+    ...why,
     '',
     '### How to read it',
     '',

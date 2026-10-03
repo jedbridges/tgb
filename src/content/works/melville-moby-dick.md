@@ -59,6 +59,7 @@ highlights:
     note: "The epigraph to the epilogue, from the book of Job, where it is said four times by the four messengers who bring Job the news of his ruin."
 related: [conrad-heart-of-darkness, bible-job, shakespeare-king-lear, whitman-leaves-of-grass]
 keywords: [Ishmael, Ahab, Queequeg, Starbuck, Pequod, white whale, Nantucket, whaling]
+emailSubject: Moby-Dick refuses to stay one kind of book, and the collisions are the point
 status: draft
 updated: 2026-09-24
 ---

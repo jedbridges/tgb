@@ -89,6 +89,7 @@ highlights:
     note: Paraphrase.
 related: [augustine-city-of-god, plato-phaedo, rousseau-emile, plotinus-enneads]
 keywords: [Monica, Ambrose, Manichees, Carthage, Milan, pear theft, memory, time]
+emailSubject: Confessions invents the interior life as a literary object
 status: draft
 updated: 2026-09-21
 ---
