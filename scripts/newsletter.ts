@@ -415,6 +415,19 @@ const diagnose = async () => {
   console.log(`subscribers: ${total}`);
   for (const [state, count] of [...states].sort()) console.log(`  ${state}: ${count}`);
   console.log(`most recent signup: ${newest || '(none)'}`);
+
+  /* Sending domains, which decide whether mail leaves as greatbookslist.com or on
+     Buttondown's shared one. Wrapped because the endpoint may not exist on this plan, and
+     a diagnosis should not fail over the part it was only curious about. */
+  try {
+    const d = await api('/domains');
+    const rows = d?.results ?? [];
+    console.log(`sending domains: ${rows.length}`);
+    for (const row of rows) console.log(`  ${JSON.stringify(row).slice(0, 400)}`);
+    if (!rows.length) console.log('  none configured, so mail goes out on Buttondown\'s shared domain');
+  } catch (e) {
+    console.log(`sending domains: not readable here (${(e as Error).message.slice(0, 120)})`);
+  }
   /* An unactivated subscriber is waiting on a confirmation email that Buttondown has
      already sent. A regular one never had to confirm, so no such email exists to miss. */
   if (states.get('unactivated')) console.log('\nAt least one address is unactivated: a confirmation email was sent and is waiting to be clicked.');
