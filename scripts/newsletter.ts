@@ -428,10 +428,16 @@ const diagnose = async () => {
   } catch (e) {
     console.log(`sending domains: not readable here (${(e as Error).message.slice(0, 120)})`);
   }
-  /* An unactivated subscriber is waiting on a confirmation email that Buttondown has
-     already sent. A regular one never had to confirm, so no such email exists to miss. */
-  if (states.get('unactivated')) console.log('\nAt least one address is unactivated: a confirmation email was sent and is waiting to be clicked.');
-  else if (total) console.log('\nNo unactivated addresses: double opt-in is off, so Buttondown sends no confirmation email and a signup is complete at once.');
+  /* An unactivated subscriber is waiting on a confirmation email Buttondown has already
+     sent, which is worth saying because it looks identical to a signup that failed.
+     Nothing is claimed in the other direction: an empty unactivated count means everyone
+     confirmed just as readily as it means confirmation was never asked for, and the first
+     version of this said the second out loud on a list that had just used the first. */
+  if (states.get('unactivated')) {
+    console.log('\nAt least one address is unactivated: a confirmation email was sent and is waiting to be clicked.');
+  } else if (total) {
+    console.log('\nNobody is waiting to confirm.');
+  }
 };
 
 /*
