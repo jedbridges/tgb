@@ -21,6 +21,7 @@
     "texts": "tsx scripts/fetch-texts.ts",
     "deploy": "npm run build && wrangler deploy",
     "report": "tsx scripts/traffic-report.ts",
+    "growth": "tsx scripts/growth-report.ts",
     "newsletter": "tsx scripts/newsletter.ts"
   },
   "dependencies": {
