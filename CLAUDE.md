@@ -9,6 +9,10 @@ branch and open a PR; the owner merges. README.md has the commands.
 - `docs/search-plan.md` is the living plan for search, the text layer and AI answers. Its
   Status table says what is done, what is blocked and on what. Update it at the end of any
   session that touches search, and record what was verified in its Verification record.
+- `docs/growth-plan.md` is the living plan for affiliate revenue: how the site earns, what
+  growth work may not do, the weekly pass, and the ranked backlog. Read it before growth
+  work. The repository is public, so traffic, click and earnings figures never go in it,
+  a commit or a PR; they stay in `reports/` (gitignored).
 - `.claude/skills/impeccable/` is installed; run `/impeccable context` before design work.
   `PRODUCT.md` holds the product record: who the reader is, what success means, and the
   four constraints future work must not break. `DESIGN.md` and `.impeccable/design.json`
