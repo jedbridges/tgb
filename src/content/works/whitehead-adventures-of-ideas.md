@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Free Press
   year: 1967
   why: The standard paperback of the 1933 text.
+  isbn13: "9780029351703"
 cover: { source: generated }
 synopsis: >-
   A study of how certain general ideas have shaped Western civilisation, written as a companion to Science and the Modern World and Process and Reality. Part I, on sociology, follows the idea of the human soul from Plato to the abolition of slavery and traces the ideal of freedom and the role of persuasion against force. Part II considers the cosmologies of the Greeks and the moderns. Part III restates Whitehead's philosophy of organism in brief. Part IV proposes that a civilised society is marked by truth, beauty, adventure, art and peace, and defines each, the last as a trust in the efficacy of beauty that lies beyond anxiety.

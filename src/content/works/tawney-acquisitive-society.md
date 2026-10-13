@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Dover
   year: 2004
   why: An affordable reprint of the 1920 text.
+  isbn13: "9780486436296"
 cover:
   source: generated
 synopsis: >-
