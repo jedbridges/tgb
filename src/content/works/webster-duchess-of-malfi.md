@@ -18,7 +18,6 @@ recommendedEdition:
   publisher: Bloomsbury, New Mermaids
   year: 2014
   why: Brian Gibbons's fifth edition, the standard annotated student text.
-  isbn13: "9781521983546"
 cover:
   source: generated
 synopsis: >-

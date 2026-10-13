@@ -95,25 +95,37 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
    complete Bible, a short essay in a collected volume). Confirm candidates one at a time
    against Open Library on title, publisher, translator and year; record only confirmed
    ones; list the rest for the owner. Order by traffic once Search Console is connected.
-2. **Striking-distance queries** (links 1 and 2). Queries where a guide ranks 5 to 20 are
+   First pass done (see the log): automatic confirmation against Open Library is nearly
+   exhausted, since most remaining works have no catalogue record that matches on every
+   field. What is left is a list of near misses, mostly a year apart, for the owner to
+   settle by eye. Do not run `verify-editions.ts --apply`: its finder accepts a publisher
+   match alone, which can pick a different translation from the same house.
+2. **Tighten the edition finder** (link 4). Teach `scripts/verify-editions.ts` the checks
+   the first pass needed by hand: the translator and the year must match, the record's
+   author must be the guide's author (an edition-title search returned another poet's
+   Selected Poems), and e-book formats are refused. Then `--apply` becomes safe to run.
+3. **Review suspect existing ISBNs** (link 4). The verifier flags eleven recommended
+   ISBNs whose record does not clearly match the named edition. Each is either right and
+   oddly catalogued, or a wrong buy link live on the site. Check each one.
+4. **Striking-distance queries** (links 1 and 2). Queries where a guide ranks 5 to 20 are
    the cheapest traffic to win. For each, check the title, the H1, the description and the
    internal links pointing at the page against the query's wording. Needs Search Console.
-3. **Shown but not clicked** (link 2). Pages with impressions and almost no clicks: the
+5. **Shown but not clicked** (link 2). Pages with impressions and almost no clicks: the
    title or description is not answering the query. Templated from existing prose and
    edition data, never newly written. Needs Search Console.
-4. **Internal links into pages search already likes** (link 1). Raise the pages with
+6. **Internal links into pages search already likes** (link 1). Raise the pages with
    impressions from the home page, programme pages and related shelves.
-5. **Buy button placement and wording** (link 4). Once clicks split by placement, compare
+7. **Buy button placement and wording** (link 4). Once clicks split by placement, compare
    the hero button with the edition picks and test changes one at a time. Needs the GA4
    custom dimensions and enough clicks to tell a difference.
-6. **Links from other sites** (link 1). The site has none yet, and for a new domain that
+8. **Links from other sites** (link 1). The site has none yet, and for a new domain that
    is the largest single factor. Prepare a short list of genuinely relevant places (great
    books communities, programme reading pages, library guides) and what each would find
    useful here. The owner decides and does any outreach; nothing is posted or sent from
    here.
-7. **Bing Webmaster Tools** (link 1). IndexNow already tells Bing about changes; verifying
+9. **Bing Webmaster Tools** (link 1). IndexNow already tells Bing about changes; verifying
    the site there (an owner task) shows whether pages are actually indexed.
-8. **Newsletter signups** (return visits). Once traffic exists, measure signups per guide
+10. **Newsletter signups** (return visits). Once traffic exists, measure signups per guide
    view and test placement.
 
 ## Log
@@ -121,5 +133,8 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
 Newest first. One line per shipped change: date, PR, the link it targets, the metric to
 watch. Outcomes with figures go in `reports/growth-log.md`, not here.
 
+- 2026-10-13: confirmed ISBNs for eight recommended editions and removed two that sent
+  buyers to print-on-demand reprints (handed off). Watch: buy clicks on those ten guides,
+  and whether the product-page links convert where the search links did not.
 - 2026-10-12: weekly growth report and this plan (measurement). Watch: `npm run growth`
   returns Search Console and GA4 data once the service account exists.

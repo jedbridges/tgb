@@ -18,6 +18,7 @@ recommendedEdition:
   publisher: University of California Press
   year: 2005
   why: Prints all three of Twain's unfinished versions; the 1916 text edited by Paine is a patchwork and is not what Twain wrote.
+  isbn13: "9780520246959"
 cover: { source: generated }
 synopsis: >-
   In an Austrian village in 1590 three boys meet a beautiful youth who calls himself Satan, nephew of the fallen angel, and can create and destroy living creatures at will. He shows them the wretchedness of human life, the cruelty of the moral sense, and the meaninglessness of any human choice, and ends by declaring that nothing exists but a vagrant thought. Twain worked on the story in three manuscripts over the last decade of his life and finished none; the book published in 1916 was assembled and altered by his literary executor, and the version most readers know is partly his invention.

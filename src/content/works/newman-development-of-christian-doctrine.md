@@ -18,7 +18,7 @@ recommendedEdition:
   publisher: University of Notre Dame Press
   year: 1989
   why: The 1878 edition with a foreword by Ian Ker; the same text is free from the Newman Reader.
-  isbn13: "9781548543891"
+  isbn13: "9780268009212"
 cover:
   source: generated
 synopsis: >-

@@ -17,6 +17,7 @@ recommendedEdition:
   publisher: Free Press
   year: 1997
   why: The standard American paperback of the Lowell Lectures text.
+  isbn13: "9780684836393"
 cover:
   source: generated
 synopsis: >-
