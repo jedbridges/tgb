@@ -104,9 +104,12 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
    the first pass needed by hand: the translator and the year must match, the record's
    author must be the guide's author (an edition-title search returned another poet's
    Selected Poems), and e-book formats are refused. Then `--apply` becomes safe to run.
-3. **Review suspect existing ISBNs** (link 4). The verifier flags eleven recommended
-   ISBNs whose record does not clearly match the named edition. Each is either right and
-   oddly catalogued, or a wrong buy link live on the site. Check each one.
+3. **Review suspect existing ISBNs** (link 4). Done for the eleven the verifier flagged
+   (see the log). Two remain for the owner: No Exit links a library rebind of the right
+   Vintage text, and Death in Venice links the ebook record of the right translation.
+   Run the verifier again whenever editions change, since a wrong ISBN can arrive with
+   any content edit. Also: covers are drawn from `cover.isbn13`, so a corrected ISBN can
+   leave the old edition's cover in place (Pere Goriot, The Red and the Black).
 4. **Striking-distance queries** (links 1 and 2). Queries where a guide ranks 5 to 20 are
    the cheapest traffic to win. For each, check the title, the H1, the description and the
    internal links pointing at the page against the query's wording. Needs Search Console.
@@ -133,6 +136,9 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
 Newest first. One line per shipped change: date, PR, the link it targets, the metric to
 watch. Outcomes with figures go in `reports/growth-log.md`, not here.
 
+- 2026-10-13: replaced or removed five buy links that sold a different translation, or a
+  different book, from the one the guide recommends (handed off). Watch: buy clicks on
+  those guides do not fall now that the search fallback replaces a product page.
 - 2026-10-13: confirmed ISBNs for eight recommended editions and removed two that sent
   buyers to print-on-demand reprints (handed off). Watch: buy clicks on those ten guides,
   and whether the product-page links convert where the search links did not.
