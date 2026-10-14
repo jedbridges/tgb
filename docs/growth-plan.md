@@ -66,23 +66,34 @@ A one-time job for the owner, since it happens inside the owner's Google account
 4. In GA4, under Admin, Custom definitions, register `placement` and `retailer` as
    event-scoped custom dimensions, so buy clicks can be split by where the button sits.
 
-## The weekly pass
+## The agent loop
 
-Every Monday:
+Three scheduled Claude agents work this plan on the owner's Mac, and the owner acts as
+chairman. GitHub issues are the queue between them, so every decision is visible there.
 
-1. Run `npm run report` and `npm run growth`. Compare with the previous rows in
-   `reports/traffic.csv` and `reports/growth.csv`.
-2. If an improvement PR from an earlier pass is still open, ship nothing new. Report, and
-   leave the owner one PR to review rather than a queue.
-3. Otherwise take the highest item in the backlog that the numbers still support, build it
-   on a `growth/` branch, run `npm run validate:content`, `npx astro check` and
-   `npm run build`, and open a PR saying which link in the chain it strengthens and what
-   should move if it works.
-4. Update this file: the shipped item moves to the log with the date and the metric to
-   watch; the backlog is re-ranked. Results with figures go to `reports/growth-log.md`.
-5. Send the owner the week's numbers and the PR link. On the first Monday of a month, ask
-   for the previous month's Amazon and Bookshop figures and record them in
-   `reports/earnings.csv`.
+| Role | When | Job |
+| --- | --- | --- |
+| PM | Mondays | Measures, re-ranks the backlog, keeps at most three `growth` issues labelled `ready`, each with a definition of done and the metric to watch, and writes the chairman's brief |
+| Builder | Daily | Takes the top `ready` issue, builds it on a `growth/` branch from a fresh `origin/master`, runs the three checks, opens a PR that closes the issue, labels it `needs-review` |
+| Reviewer | Daily, after the builder | Reviews each `needs-review` PR against the rules above and the checks; merges and confirms the deploy and the live page, or labels it `needs-changes` with what to fix |
+| Chairman (the owner) | Weekly | Reads the brief, settles issues labelled `chairman`, does what only the owner can: accounts, keys, outreach, and the monthly Amazon and Bookshop figures |
+
+The rules that keep it safe:
+
+- **One change in flight.** The builder does nothing while a growth PR is open.
+- **Anything the rules do not settle waits.** An agent unsure whether something is allowed
+  labels the issue `chairman` and moves on; nobody acts on it until the owner answers.
+- **Nothing leaves the site.** No outreach, posting, emails, new accounts or spending. The
+  agents prepare drafts; the owner decides.
+- **Stop switch.** A `pause` label on any open issue stops every agent at its next run.
+- **Figures stay private.** Issues, PRs and this file are public. Numbers go only in
+  `reports/` and in the brief sent to the owner.
+- **The checks carry the weight.** Agents reviewing agents share blind spots, so CI, the
+  smoke checks and `scripts/verify-editions.ts` are the gate; the reviewer is a second look.
+
+Each week the PM also appends to `reports/growth-log.md` (private) with the figures and how
+the last change looks, and on the first Monday of a month asks the owner for the previous
+month's Amazon and Bookshop figures for `reports/earnings.csv`.
 
 ## Backlog
 
