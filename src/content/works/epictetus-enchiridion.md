@@ -20,7 +20,7 @@ recommendedEdition:
   publisher: Penguin Classics
   year: 2008
   why: Modern and readable, and it prints the Handbook with enough of the Discourses to see where it comes from.
-  isbn13: "9780141917481"
+  isbn13: "9780140449464"
 cover:
   source: generated
 synopsis: >-
