@@ -11,6 +11,14 @@
  * Open Library is the source because its per-ISBN endpoint returns publisher, date and a
  * by_statement naming the translator. Google Books rate-limits anonymous callers.
  *
+ * A found ISBN has to agree with the edition the guide names on every field the guide
+ * gives: the title, the publisher (the house or its series), every translator, and the
+ * year. It must be a print edition, and its record's author must be the guide's author.
+ * Each of those rules is there because a looser version let a wrong book through: a
+ * publisher match alone picked another translation from the same house, a search on an
+ * edition's title alone ("Selected Poems") returned another poet's book, and ebook ISBNs
+ * make Amazon links that land on nothing.
+ *
  *   npx tsx scripts/verify-editions.ts            report only
  *   npx tsx scripts/verify-editions.ts --apply    write accepted ISBNs into the content
  *   npx tsx scripts/verify-editions.ts --only <slug> [...]
@@ -25,10 +33,11 @@ const UA = { 'User-Agent': 'greatbookslist.com edition verifier (hello@greatbook
 mkdirSync(CACHE_DIR, { recursive: true });
 
 /** Reprint mills. Their editions carry no apparatus and are never what a programme assigns. */
-const BLOCKED_PUBLISHER = /createspace|independently published|lulu|bibliolife|kessinger|dodo press|nabu|general books|book on demand|hardpress|palala|wentworth|sagwan|trieste|alpha edition|leopold classic|forgotten books|bibliobazaar|ulan press|arkose|scholar's choice|pranava|outlook verlag|anboco|e-artnow|sharp ink|good press|musaicum|digireads|simon & brown|value classic|tredition/i;
+const BLOCKED_PUBLISHER = /createspace|independently published|lulu|bibliolife|kessinger|dodo press|nabu|general books|book on demand|hardpress|palala|wentworth|sagwan|trieste|alpha edition|leopold classic|forgotten books|bibliobazaar|ulan press|arkose|scholar's choice|pranava|outlook verlag|anboco|e-artnow|sharp ink|good press|musaicum|digireads|simon & brown|value classic|tredition|creative media partners|start publishing/i;
 
-/** Publishers whose classics editions are the ones actually assigned. */
-const TRUSTED_PUBLISHER = /penguin|oxford|hackett|norton|chicago|cambridge|yale|harvard|princeton|modern library|everyman|vintage|farrar|loeb|bantam|signet|dover|broadview|liberty fund|ignatius|catholic university|indiana university|johns hopkins|columbia university|university of|hutchinson|faber|macmillan|routledge|blackwell|wiley|随/i;
+/** Formats that cannot be the paperback a reader is sent to buy. */
+const NOT_PRINT = /e-?book|electronic|kindle|digital|audio|online|epub|pdf/i;
+
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const slugify = (s: string) => s.replace(/[^a-z0-9]+/gi, '-').slice(0, 120);
@@ -54,12 +63,6 @@ async function cachedJson(url: string): Promise<any | null> {
 const norm = (s: string) =>
   (s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
     .replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
-const surname = (name?: string) => {
-  if (!name) return '';
-  const first = name.split(/\s+and\s+|,|&/)[0].trim();
-  const parts = first.split(/\s+/).filter(Boolean);
-  return norm(parts[parts.length - 1] ?? '');
-};
 const STOP = new Set(['the','a','an','of','on','and','or','to','in','by','with','vol','volume','works','complete','selected','book','books','new','edition']);
 const tokens = (t: string) => norm(t).split(' ').filter((w) => w.length > 2 && !STOP.has(w));
 /**
@@ -78,6 +81,86 @@ const titleAgrees = (a: string, b: string) => {
   const shared = x.filter((w) => y.includes(w)).length;
   return shared / Math.min(x.length, y.length) >= 0.5;
 };
+
+/** Words that appear in every publisher's name and so prove nothing on their own. */
+const GENERIC = new Set(['university', 'press', 'books', 'book', 'publishing', 'publishers', 'publisher',
+  'company', 'inc', 'co', 'ltd', 'house', 'the', 'of', 'and', 'group', 'classics', 'classic', 'editions',
+  'edition', 'paperbacks', 'paperback', 'publications', 'international', 'usa', 'us', 'uk', 'new', 'york', 'london']);
+/**
+ * "Oxford University Press (Oxford World's Classics)" names a house and its series, and a
+ * catalogue usually records only the house. Either part agreeing is enough, but every
+ * distinctive word of that part must be present: "Norton" alone does not make "Penguin".
+ */
+const publisherAgrees = (want: string, pubs: string) => {
+  const have = norm(pubs).split(' ');
+  return want.split(/[(),]/).map((x) => x.trim()).filter(Boolean).some((part) => {
+    const t = norm(part).split(' ').filter((w) => w.length > 1 && !GENERIC.has(w));
+    return t.length ? t.every((w) => have.includes(w)) : norm(pubs).includes(norm(part));
+  });
+};
+/** Every translator's surname, not only the first: "Pevear and Volokhonsky" needs both. */
+const surnames = (name?: string) => (name ?? '').split(/\s*(?:,|&|\band\b|revised by|with)\s*/i)
+  .map((n) => n.trim().split(/\s+/).filter(Boolean)).filter((p) => p.length)
+  .map((p) => norm(p[p.length - 1])).filter((s) => s.length > 1 && !['jr', 'sr', 'ed', 'eds', 'trans'].includes(s));
+const translatorsAgree = (want: string | undefined, rec: any) => {
+  const need = surnames(want);
+  if (!need.length) return true;
+  const said = norm([rec.by_statement ?? '', rec.title ?? '', ...(rec.contributors ?? []).map((c: any) => c.name ?? '')].join(' ')).split(' ');
+  return need.every((s) => said.includes(s));
+};
+/** An ISBN-10 or a stated print binding. Ebook records usually have neither, and a format
+ *  left blank is not evidence of a paperback. */
+const printEvidence = (rec: any) => (rec.isbn_10 ?? []).length > 0 || /paper|hard|cloth|mass market|trade/i.test(rec.physical_format ?? '');
+/** "My Antonia / O Pioneers!" agrees with "My Antonia" word for word and is still another book. */
+const combinedVolume = (recTitle: string, wantTitle: string) => /\s\/\s|;\s/.test(recTitle) && !/\s\/\s|;\s/.test(wantTitle);
+/** The reverse case: the guide names "The School for Scandal and Other Plays" and the record
+ *  is the single play. Every word of the shorter title is in the longer one, so the plain
+ *  title check passes it; a collection word the guide uses has to be in the record too. */
+const COLLECTION = ['other', 'selected', 'collected', 'complete', 'plays', 'poems', 'stories', 'tales', 'writings', 'essays', 'works', 'letters'];
+const collectionMismatch = (recTitle: string, wantTitle: string) => {
+  const have = norm(recTitle).split(' ');
+  return norm(wantTitle).split(' ').some((w) => COLLECTION.includes(w) && !have.includes(w));
+};
+/**
+ * ISBN prefixes for houses whose numbers come from a few stable blocks. A catalogue can name
+ * the wrong publisher (Open Library files an Edinburgh University Press number under Yale),
+ * so when the guide names one of these houses the ISBN has to carry one of its prefixes.
+ * The list only refuses: a house not listed here is not checked.
+ */
+const HOUSE_PREFIXES: [RegExp, string[]][] = [
+  [/\byale\b/i, ['978030']],
+  [/\bnorton\b/i, ['978039', '9781324']],
+  [/\boxford\b/i, ['978019']],
+  [/\bdover\b/i, ['978048']],
+  [/\bchicago\b/i, ['978022']],
+  [/\bharvard\b|\bloeb\b/i, ['978067']],
+  [/\bprinceton\b/i, ['978069']],
+  [/\bhackett\b/i, ['978087220', '978160384', '978162466']],
+  [/\bedinburgh\b/i, ['9780748', '9781474']],
+];
+const prefixAgrees = (isbn: string, publisher?: string) => {
+  const rules = HOUSE_PREFIXES.filter(([house]) => house.test(publisher ?? ''));
+  return !rules.length || rules.some(([, prefixes]) => prefixes.some((p) => isbn.startsWith(p)));
+};
+const yearOf = (s?: unknown) => (String(s ?? '').match(/\b(1[5-9]\d\d|20\d\d)\b/) ?? [])[1];
+
+/** The record's author has to be the guide's author. An edition-title search can return
+ *  any writer's "Selected Poems"; this is the check that catches it. */
+async function authorAgrees(rec: any, authorName: string): Promise<boolean> {
+  let keys: string[] = (rec.authors ?? []).map((a: any) => a.key);
+  if (!keys.length && rec.works?.[0]) {
+    const work = await cachedJson(`https://openlibrary.org${rec.works[0].key}.json`);
+    keys = (work?.authors ?? []).map((a: any) => a.author?.key).filter(Boolean);
+  }
+  const want = norm(authorName).split(' ').filter((t) => t.length > 2);
+  const last = want[want.length - 1];
+  if (!last) return false;
+  for (const k of keys) {
+    const a = await cachedJson(`https://openlibrary.org${k}.json`);
+    if (a?.name && norm(a.name).split(' ').includes(last)) return true;
+  }
+  return false;
+}
 
 interface Work { slug: string; title: string; authorName: string; ed: any }
 
@@ -110,55 +193,85 @@ async function verifyIsbn(w: Work) {
   const by: string = rec.by_statement ?? '';
   const pubs: string = (rec.publishers ?? []).join(', ');
   const okTitle = titleAgrees(recTitle, w.title) || titleAgrees(recTitle, w.ed.title ?? '');
-  const wantTr = surname(w.ed.translator);
-  const okTr = !wantTr || norm(by).includes(wantTr) || norm(recTitle).includes(wantTr);
-  const wantPub = norm(w.ed.publisher ?? '').split(' ')[0];
-  const okPub = !wantPub || norm(pubs).includes(wantPub);
+  const okTr = translatorsAgree(w.ed.translator, rec);
+  const okPub = !w.ed.publisher || publisherAgrees(w.ed.publisher, pubs);
   if (BLOCKED_PUBLISHER.test(pubs)) return { slug: w.slug, isbn, status: 'bad' as const, note: `reprint mill: ${pubs}` };
+  if (NOT_PRINT.test(rec.physical_format ?? '')) {
+    return { slug: w.slug, isbn, status: 'suspect' as const, note: `an ${rec.physical_format} record, not a print edition (${pubs})` };
+  }
   const omnibus = /complete works|collected works|selected works|complete plays|reader|anthology/i.test(recTitle);
   if (!okTitle && omnibus && (okTr || okPub)) {
-    return { slug: w.slug, isbn, status: 'ok' as const, note: `${recTitle} (${pubs}) — omnibus containing this work` };
+    return { slug: w.slug, isbn, status: 'ok' as const, note: `${recTitle} (${pubs}), an omnibus containing this work` };
   }
   if (!okTitle) return { slug: w.slug, isbn, status: 'bad' as const, note: `resolves to "${recTitle}" not "${w.title}"` };
   if (!okTr && !okPub) return { slug: w.slug, isbn, status: 'suspect' as const, note: `is "${recTitle}" (${pubs}) ${by ? '| ' + by.slice(0, 60) : ''}` };
   return { slug: w.slug, isbn, status: 'ok' as const, note: `${recTitle} (${pubs})` };
 }
 
-/** Look for the specific edition the work already names. Returns nothing unless confident. */
+/** Look for the specific edition the work already names. Returns nothing unless every field
+ *  the guide gives agrees, and says which field failed when it does not. */
 async function findIsbn(w: Work) {
-  const search = await cachedJson(
-    `https://openlibrary.org/search.json?title=${encodeURIComponent(w.title)}&author=${encodeURIComponent(w.authorName)}&fields=key,title&limit=1`,
-  );
-  const key = search?.docs?.[0]?.key;
-  if (!key) return { slug: w.slug, status: 'none' as const, note: 'no work found' };
-  const eds = await cachedJson(`https://openlibrary.org${key}/editions.json?limit=100`);
-  const entries: any[] = eds?.entries ?? [];
+  // The work's own title finds its editions; an anthology the guide names (a Bible book
+  // recommended in a complete Bible) is a different catalogue work, found by its title.
+  const queries = [`title=${encodeURIComponent(w.title)}&author=${encodeURIComponent(w.authorName)}`];
+  if (w.ed.title && !titleAgrees(w.ed.title, w.title)) queries.push(`title=${encodeURIComponent(w.ed.title)}`);
+  const keys = new Set<string>();
+  for (const q of queries) {
+    const s = await cachedJson(`https://openlibrary.org/search.json?${q}&fields=key,title&limit=3`);
+    for (const d of s?.docs ?? []) keys.add(d.key);
+  }
+  if (!keys.size) return { slug: w.slug, status: 'none' as const, note: 'no work found' };
+  const entries: any[] = [];
+  for (const key of keys) {
+    for (let offset = 0; offset < 300; offset += 100) {
+      const page = await cachedJson(`https://openlibrary.org${key}/editions.json?limit=100&offset=${offset}`);
+      const got = page?.entries ?? [];
+      entries.push(...got);
+      if (got.length < 100) break;
+    }
+  }
 
-  const wantTr = surname(w.ed.translator);
-  const wantPub = norm(w.ed.publisher ?? '').split(' ').filter((t) => t.length > 3)[0] ?? '';
-
-  let best: { isbn: string; score: number; why: string } | null = null;
+  const wantYear = w.ed.year ? String(w.ed.year) : '';
+  const matches: { isbn: string; paper: boolean }[] = [];
+  let nearest = '';
   for (const e of entries) {
     const isbn = (e.isbn_13 ?? []).find((i: string) => /^978/.test(i));
     if (!isbn) continue; // 979 has no ISBN-10, so no direct Amazon product link
     const pubs = (e.publishers ?? []).join(', ');
-    const by = e.by_statement ?? '';
     const langs = (e.languages ?? []).map((l: any) => l.key).join(',');
     if (langs && !langs.includes('eng')) continue;
-    if (BLOCKED_PUBLISHER.test(pubs)) continue;
-    if (!titleAgrees(e.title ?? '', w.title)) continue;
-
-    let score = 0;
-    const why: string[] = [];
-    if (wantPub && norm(pubs).includes(wantPub)) { score += 6; why.push('publisher'); }
-    if (wantTr && (norm(by).includes(wantTr) || norm(e.title ?? '').includes(wantTr))) { score += 6; why.push('translator'); }
-    if (TRUSTED_PUBLISHER.test(pubs)) { score += 2; why.push('trusted'); }
-    if (score === 0) continue;
-    if (!best || score > best.score) best = { isbn, score, why: `${why.join('+')} · ${pubs}` };
+    if (BLOCKED_PUBLISHER.test(pubs) || NOT_PRINT.test(e.physical_format ?? '')) continue;
+    if (!titleAgrees(e.title ?? '', w.ed.title || w.title) && !titleAgrees(e.title ?? '', w.title)) continue;
+    const okPub = !w.ed.publisher || publisherAgrees(w.ed.publisher, pubs);
+    const okTr = translatorsAgree(w.ed.translator, e);
+    const okYear = !wantYear || yearOf(e.publish_date) === wantYear;
+    if (okPub && okTr && okYear) matches.push({ isbn, paper: /paper/i.test(e.physical_format ?? '') });
+    else if (okPub && !nearest) {
+      nearest = `${isbn} (${pubs}, ${yearOf(e.publish_date) ?? '?'}): ` +
+        (!okTr ? 'translator not named in the record' : `year ${yearOf(e.publish_date) ?? '?'}, guide says ${wantYear}`);
+    }
   }
-  // Publisher or translator alone is thin; require one strong signal plus a real publisher.
-  if (!best || best.score < 8) return { slug: w.slug, status: 'none' as const, note: best ? `only weak matches (${best.why})` : 'no acceptable edition' };
-  return { slug: w.slug, status: 'found' as const, isbn: best.isbn, note: best.why };
+  if (!matches.length) return { slug: w.slug, status: 'none' as const, note: nearest ? `nearest ${nearest}` : 'no edition matches the named one' };
+
+  // Confirm on the record for the ISBN itself, since that is what the buy link resolves to.
+  const pick = matches.find((m) => m.paper) ?? matches[0];
+  const rec = await cachedJson(`https://openlibrary.org/isbn/${pick.isbn}.json`);
+  if (!rec) return { slug: w.slug, status: 'none' as const, note: `${pick.isbn} has no ISBN record to confirm` };
+  const pubs = (rec.publishers ?? []).join(', ');
+  const recTitle = [rec.title, rec.subtitle].filter(Boolean).join(': ');
+  const failed = [
+    !(titleAgrees(recTitle, w.ed.title || w.title) || titleAgrees(recTitle, w.title)) && 'title',
+    w.ed.publisher && !publisherAgrees(w.ed.publisher, pubs) && 'publisher',
+    !translatorsAgree(w.ed.translator, rec) && 'translator',
+    wantYear && yearOf(rec.publish_date) !== wantYear && 'year',
+    (BLOCKED_PUBLISHER.test(pubs) || NOT_PRINT.test(rec.physical_format ?? '') || !printEvidence(rec)) && 'format',
+    combinedVolume(recTitle, w.ed.title || w.title) && 'combined volume',
+    collectionMismatch(recTitle, w.ed.title || w.title) && 'single work where the guide names a collection',
+    !prefixAgrees(pick.isbn, w.ed.publisher) && 'ISBN registered to another publisher',
+    !(await authorAgrees(rec, w.authorName)) && 'author',
+  ].filter(Boolean);
+  if (failed.length) return { slug: w.slug, status: 'none' as const, note: `${pick.isbn} failed on its own record: ${failed.join(', ')}` };
+  return { slug: w.slug, status: 'found' as const, isbn: pick.isbn, note: `${recTitle} (${pubs}, ${yearOf(rec.publish_date)})` };
 }
 
 function applyIsbn(slug: string, isbn: string) {
@@ -213,7 +326,10 @@ async function main() {
     (r.status === 'found' ? found : none).push(r);
   }
   console.log(`\nFIND: ${found.length} confident matches · ${none.length} left without one`);
-  for (const r of found.slice(0, 30)) console.log(`  + ${r.slug}  ${r.isbn}  ${r.note}`);
+  for (const r of found) console.log(`  + ${r.slug}  ${r.isbn}  ${r.note}`);
+  const near = none.filter((r) => /^nearest|failed on its own record/.test(r.note));
+  if (near.length) console.log(`\nNEAR MISSES, for a human to settle (${near.length}):`);
+  for (const r of near) console.log(`  ? ${r.slug}  ${r.note}`);
 
   if (APPLY) {
     let wrote = 0;
