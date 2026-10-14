@@ -1,9 +1,9 @@
 /**
  * Fetch cover images from Open Library for works that declare cover.source: openlibrary,
  * normalise with sharp, commit to src/assets/covers/{slug}.jpg, and write spine colours to covers.json.
- *   npx tsx scripts/fetch-covers.ts [--force] [slug ...]
+ *   npx tsx scripts/fetch-covers.ts [--force] [--from-isbn] [--match-edition] [slug ...]
  */
-import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync, unlinkSync } from 'node:fs';
 import { parse } from 'yaml';
 import sharp from 'sharp';
 
@@ -19,6 +19,14 @@ const force = args.includes('--force');
  * good outcome and not a failure.
  */
 const fromIsbn = args.includes('--from-isbn');
+/*
+ * --match-edition: make the jacket the edition the guide recommends. Where a recommended
+ * ISBN differs from cover.isbn13 (a later ISBN correction does not move the cover), fetch the
+ * recommended edition's image through the same gate as any other fetch and point the cover
+ * at it; where Open Library has none, fall back to the generated cover instead of keeping
+ * another edition's jacket. Hand-placed covers (manual, archive) are left alone.
+ */
+const matchEdition = args.includes('--match-edition');
 const only = new Set(args.filter((a) => !a.startsWith('--')));
 const meta: Record<string, any> = existsSync(META) ? JSON.parse(readFileSync(META, 'utf8')) : {};
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -83,11 +91,11 @@ function resolveSharing(cands: { slug: string; isbn: string; work: string; edTit
  * corrupted six files, which is why this refuses outright rather than guessing when it
  * meets a third shape.
  */
-function adopt(file: string, isbn: string) {
+function adopt(file: string, isbn: string | null) {
   const raw = readFileSync(file, 'utf8');
   const flow = /^cover:[ \t]*\{[^}]*\}[ \t]*$/m;
   const block = /^cover:[ \t]*\n(?:[ \t]+\S.*\n?)+/m;
-  const replacement = `cover: { source: openlibrary, isbn13: "${isbn}" }`;
+  const replacement = isbn ? `cover: { source: openlibrary, isbn13: "${isbn}" }` : 'cover: { source: generated }';
   if (flow.test(raw)) writeFileSync(file, raw.replace(flow, replacement));
   else if (block.test(raw)) writeFileSync(file, raw.replace(block, `${replacement}\n`));
   else throw new Error(`${file}: cover declaration is in a shape this does not know how to rewrite`);
@@ -95,6 +103,34 @@ function adopt(file: string, isbn: string) {
 
 async function main() {
   const files = readdirSync('src/content/works').filter((f) => f.endsWith('.md'));
+
+  if (matchEdition) {
+    let fixed = 0, fellBack = 0;
+    for (const f of files) {
+      const slug = f.replace(/\.md$/, '');
+      if (only.size && !only.has(slug)) continue;
+      const file = `src/content/works/${f}`;
+      const d = fm(file);
+      const rec = d?.recommendedEdition?.isbn13 && String(d.recommendedEdition.isbn13);
+      if (!rec || d.cover?.source !== 'openlibrary' || !d.cover.isbn13 || String(d.cover.isbn13) === rec) continue;
+      const out = `${OUT}/${slug}.jpg`;
+      const buf = await fetchCover([{ kind: 'isbn', value: rec }]);
+      if (buf) {
+        await sharp(buf).rotate().resize({ width: 600, withoutEnlargement: true }).jpeg({ quality: 82, mozjpeg: true }).toFile(out);
+        await record(slug, out, 'openlibrary');
+        adopt(file, rec);
+        console.log(`  ok    ${slug} now shows ${rec}`); fixed++;
+      } else {
+        if (existsSync(out)) unlinkSync(out);
+        delete meta[slug];
+        adopt(file, null);
+        console.log(`  none  ${slug}: no image for ${rec}, back to a generated cover`); fellBack++;
+      }
+    }
+    writeFileSync(META, JSON.stringify(meta, null, 0) + '\n');
+    console.log(`\n${fixed} covers now match the recommended edition, ${fellBack} fell back to generated`);
+    return;
+  }
 
   if (fromIsbn) {
     const cands: { slug: string; isbn: string; work: string; edTitle: string }[] = [];

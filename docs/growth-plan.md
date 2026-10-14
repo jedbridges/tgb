@@ -152,6 +152,11 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
 Newest first. One line per shipped change: date, PR, the link it targets, the metric to
 watch. Outcomes with figures go in `reports/growth-log.md`, not here.
 
+- 2026-10-14: the cover on seven guides showed a different edition from the one the guide
+  tells readers to buy; six now show the recommended edition's jacket and Adam Bede, which
+  has none on Open Library, is back to a generated cover. `validate:content` now fails when
+  `cover.isbn13` and `recommendedEdition.isbn13` differ, so it cannot return. Link: the
+  reader's trust at the buy click. Watch: buy clicks on those seven guides.
 - 2026-10-14: eight buy buttons opened Amazon's "Page Not Found" (ebook ISBNs). Seven now
   go to the print edition the guide names, confirmed on the product page itself, and
   Arabian Nights falls back to search, since the recommended translation is three volumes

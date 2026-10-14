@@ -70,6 +70,11 @@ for (const [slug, { data, body }] of works) {
   if (st === 'published' || st === 'reviewed') {
     if (!data.recommendedEdition?.isbn13) err(`${slug}: ${st} requires recommendedEdition.isbn13`);
   }
+  // The jacket a reader sees must be the edition the guide tells them to buy. Hand-placed
+  // scans (manual, archive) are exempt: they are chosen by eye and may be a better image.
+  const recIsbn = data.recommendedEdition?.isbn13, coverIsbn = data.cover?.isbn13;
+  if (recIsbn && coverIsbn && String(recIsbn) !== String(coverIsbn) && !['manual', 'archive'].includes(data.cover?.source))
+    err(`${slug}: cover.isbn13 ${coverIsbn} differs from recommendedEdition.isbn13 ${recIsbn}`);
   const text = `${data.synopsis ?? ''} ${data.whyItMatters ?? ''} ${body}`;
   const b = text.match(BANNED); if (b) warn(`${slug}: banned phrase "${b[0]}"`);
   if (/—/.test(text)) err(`${slug}: contains an em dash`);
