@@ -98,18 +98,23 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
    First pass done (see the log): automatic confirmation against Open Library is nearly
    exhausted, since most remaining works have no catalogue record that matches on every
    field. What is left is a list of near misses, mostly a year apart, for the owner to
-   settle by eye. Do not run `verify-editions.ts --apply`: its finder accepts a publisher
-   match alone, which can pick a different translation from the same house.
-2. **Tighten the edition finder** (link 4). Teach `scripts/verify-editions.ts` the checks
-   the first pass needed by hand: the translator and the year must match, the record's
-   author must be the guide's author (an edition-title search returned another poet's
-   Selected Poems), and e-book formats are refused. Then `--apply` becomes safe to run.
+   settle by eye. The finder is now strict enough to run with `--apply` (see the log).
+   Open Library often leaves the translator out of print records, so many near misses
+   are right and simply unconfirmable there; the retailer's own product page names the
+   translator and is the better second source for a human check.
+2. **Check that every Amazon product link resolves** (link 4). Of the nine recommended
+   ISBNs Open Library called ebooks, seven opened Amazon's "Page Not Found" and one (the
+   Qur'an) was a print edition mislabelled. So Open Library's format field cannot be
+   trusted either way, and other dead buy buttons may sit among the ISBNs it confirms.
+   Visiting hundreds of product pages one by one is not the way; Amazon's Product
+   Advertising API answers which ASINs exist in one request per ten. It needs the
+   owner's Associates API credentials.
 3. **Review suspect existing ISBNs** (link 4). Done for the eleven the verifier flagged
-   (see the log). Two remain for the owner: No Exit links a library rebind of the right
-   Vintage text, and Death in Venice links the ebook record of the right translation.
-   Run the verifier again whenever editions change, since a wrong ISBN can arrive with
-   any content edit. Also: covers are drawn from `cover.isbn13`, so a corrected ISBN can
-   leave the old edition's cover in place (Pere Goriot, The Red and the Black).
+   (see the log). One remains for the owner: No Exit links a library rebind of the right
+   Vintage text. Run the verifier again whenever editions change, since a wrong ISBN can
+   arrive with any content edit. Covers are drawn from `cover.isbn13`, so a corrected
+   ISBN can leave the old edition's cover in place (Pere Goriot, The Red and the Black,
+   and the eight ebook replacements).
 4. **Striking-distance queries** (links 1 and 2). Queries where a guide ranks 5 to 20 are
    the cheapest traffic to win. For each, check the title, the H1, the description and the
    internal links pointing at the page against the query's wording. Needs Search Console.
@@ -136,6 +141,13 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
 Newest first. One line per shipped change: date, PR, the link it targets, the metric to
 watch. Outcomes with figures go in `reports/growth-log.md`, not here.
 
+- 2026-10-14: eight buy buttons opened Amazon's "Page Not Found" (ebook ISBNs). Seven now
+  go to the print edition the guide names, confirmed on the product page itself, and
+  Arabian Nights falls back to search, since the recommended translation is three volumes
+  (handed off). Watch: buy clicks on those guides, which were earning nothing.
+- 2026-10-14: edition finder made strict enough to run with `--apply`: translator, year,
+  author, print evidence, publisher prefixes, combined volumes and collections all
+  checked (handed off). Watch: future ISBN passes need no hand check of each match.
 - 2026-10-13: replaced or removed five buy links that sold a different translation, or a
   different book, from the one the guide recommends (handed off). Watch: buy clicks on
   those guides do not fall now that the search fallback replaces a product page.
