@@ -9,6 +9,9 @@ import { programUrl, url, workUrl, authorUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
 import { loadFreeReads } from '~/lib/free';
 import { abs } from '~/lib/url';
+import { amazonUrl } from '~/lib/affiliates';
+import { describeEdition, editionKey } from '~/lib/editions';
+import Disclosure from '~/components/Disclosure.astro';
 
 export async function getStaticPaths() {
   const programs = await getCollection('programs');
@@ -97,6 +100,11 @@ const pageDescription = `The complete ${listName.replace(/Reading List$/, 'readi
           {seg.items.map((it, i) => {
             const w = it.work!;
             const a = authors.get(w.data.author.id) ?? placeholderAuthor(w.data.author.id);
+            const ed = w.data.recommendedEdition;
+            const pick = describeEdition(w, a?.data.name ?? '', ed);
+            // Only a product page: a search would list the competing translations this row
+            // has just settled, so a row without a usable ISBN shows the name and no link.
+            const buy = Boolean(ed?.isbn13) && pick.precise;
             return (
               <li class="row" data-slug={w.id}>
                 <span class="row__n ui">{i + 1}</span>
@@ -104,6 +112,12 @@ const pageDescription = `The complete ${listName.replace(/Reading List$/, 'readi
                 <span class="row__text">
                   <a class="row__title" href={workUrl(w.id)}>{w.data.title}</a>
                   <span class="row__meta ui">{a && <a href={authorUrl(a.id)}>{a.data.name}</a>} · {yearShort(w)}{it.note && <span class="row__note"> · {it.note}</span>}{it.optional && <span class="row__note"> · optional</span>}</span>
+                  {pick.editionName && (
+                    <span class="row__ed ui">
+                      <span class="row__ed-name">{pick.editionName}</span>
+                      {buy && <a class="row__buy" href={amazonUrl(pick.target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={w.id} data-edition={editionKey(ed)} data-placement="program">Amazon<span class="visually-hidden">: {w.data.title}, {pick.editionName}, opens in a new tab</span></a>}
+                    </span>
+                  )}
                 </span>
                 <span class="row__end">
                   <span class="row__diff ui" title={difficultyLabel(w.data.difficulty)}>{difficultyLabel(w.data.difficulty)}</span>
@@ -114,6 +128,7 @@ const pageDescription = `The complete ${listName.replace(/Reading List$/, 'readi
         </ol>
       </section>
     ))}
+    <section class="wrap foot" data-pagefind-ignore><Disclosure /></section>
   </article>
   {/* A programme page is a reading list someone is sizing up against their own year. */}
   <div class="wrap"><Signup from="program" /></div>
@@ -172,6 +187,13 @@ const pageDescription = `The complete ${listName.replace(/Reading List$/, 'readi
   .row__meta { color: var(--ink-soft); font-size: var(--step--2); }
   .row__meta a { text-decoration: none; }
   .row__note { color: var(--ink-mute); }
+  /* Which translation to get, under the author: quieter than the title, and the one link to
+     Amazon smaller still, so the row still reads as a list of books and not of offers. */
+  .row__ed { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 var(--s1); color: var(--ink-mute); font-size: var(--step--2); }
+  .row__ed-name { min-width: 0; }
+  .row__buy { display: inline-flex; align-items: center; min-height: 24px; margin-block: -0.3em; color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in oklch, currentColor 45%, transparent); line-height: 1.2; }
+  .row__buy:hover { border-bottom-color: currentColor; }
+  .foot { padding-block: var(--s2) var(--s3); }
   .row__end { display: flex; align-items: baseline; gap: var(--s1); justify-self: end; }
   .row__diff { color: var(--ink-mute); font-size: var(--step--2); letter-spacing: var(--tracking-caps); text-transform: uppercase; white-space: nowrap; }
   /* This is the page a student actually arrives on with a syllabus in hand, and until now
