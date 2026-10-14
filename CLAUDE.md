@@ -2,7 +2,9 @@
 
 Astro 7 static site (greatbookslist.com), content collections in `src/content`, deployed to
 Cloudflare on every push to `master` by `.github/workflows/deploy.yml`. Work on a feature
-branch and open a PR; the owner merges. README.md has the commands.
+branch and open a PR. A PR is merged once every check passes, by the reviewer agent or by
+the session that opened it, which then confirms the deploy finished and the live page shows
+the change; the owner merges by hand only when asked to. README.md has the commands.
 
 ## Read first
 
@@ -10,9 +12,9 @@ branch and open a PR; the owner merges. README.md has the commands.
   Status table says what is done, what is blocked and on what. Update it at the end of any
   session that touches search, and record what was verified in its Verification record.
 - `docs/growth-plan.md` is the living plan for affiliate revenue: how the site earns, what
-  growth work may not do, the weekly pass, and the ranked backlog. Read it before growth
-  work. The repository is public, so traffic, click and earnings figures never go in it,
-  a commit or a PR; they stay in `reports/` (gitignored).
+  growth work may not do, the agent loop (PM, builder, reviewer) that works it, and the
+  ranked backlog. Read it before growth work. The repository is public, so traffic, click
+  and earnings figures never go in it, a commit or a PR; they stay in `reports/` (gitignored).
 - `.claude/skills/impeccable/` is installed; run `/impeccable context` before design work.
   `PRODUCT.md` holds the product record: who the reader is, what success means, and the
   four constraints future work must not break. `DESIGN.md` and `.impeccable/design.json`
