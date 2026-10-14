@@ -152,6 +152,10 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
 Newest first. One line per shipped change: date, PR, the link it targets, the metric to
 watch. Outcomes with figures go in `reports/growth-log.md`, not here.
 
+- 2026-10-14: programme pages now name the recommended translation on every row and, where
+  the ISBN gives a product page, carry one small Amazon link (placement `program`), so a
+  student with a syllabus can buy without opening the guide (handed off). Watch: GA4
+  `affiliate_click` with placement `program`, and landings on `/programs/*`.
 - 2026-10-14: eight buy buttons opened Amazon's "Page Not Found" (ebook ISBNs). Seven now
   go to the print edition the guide names, confirmed on the product page itself, and
   Arabian Nights falls back to search, since the recommended translation is three volumes
