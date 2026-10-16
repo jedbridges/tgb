@@ -22,7 +22,7 @@ const fromIsbn = args.includes('--from-isbn');
 /*
  * --match-edition: make the jacket the edition the guide recommends. Where a recommended
  * ISBN differs from cover.isbn13 (a later ISBN correction does not move the cover), fetch the
- * recommended edition's image through the same gate as any other fetch and point the cover
+ * recommended edition's image through the same gate as any other fetch plus a title-page check, and point the cover
  * at it; where Open Library has none, fall back to the generated cover instead of keeping
  * another edition's jacket. Hand-placed covers (manual, archive) are left alone.
  */
@@ -34,7 +34,7 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 function fm(file: string) { const m = readFileSync(file, 'utf8').match(/^---\n([\s\S]*?)\n---/); return m ? parse(m[1]) : null; }
 const luminance = (hex: string) => { const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16) / 255).map((c) => (c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4)); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
 
-async function fetchCover(keys: { kind: 'id' | 'olid' | 'isbn'; value: string }[]): Promise<Buffer | null> {
+async function fetchCover(keys: { kind: 'id' | 'olid' | 'isbn'; value: string }[], rejectTitlePages = false): Promise<Buffer | null> {
   for (const k of keys) {
     const url = `https://covers.openlibrary.org/b/${k.kind}/${k.value}-L.jpg?default=false`;
     try {
@@ -45,11 +45,30 @@ async function fetchCover(keys: { kind: 'id' | 'olid' | 'isbn'; value: string }[
       if (buf.length < 2000) continue;
       const m = await sharp(buf).metadata();
       if (!m.width || m.width < 280) continue;
+      if (rejectTitlePages && await paleShare(buf) > TITLE_PAGE) { console.log(`  skip  ${k.value}: a title page, not a jacket`); continue; }
       return buf;
     } catch { /* try next */ }
   }
   return null;
 }
+
+/**
+ * Is this image a jacket, or a scanned title page? Open Library holds both under one ISBN.
+ * A title page is paper with thin type: white or cream with no saturation. Counting every
+ * pale, unsaturated pixel (not only paper-white, which misses cream) separates the two,
+ * since a jacket that is mostly pale still carries colour or a picture.
+ */
+async function paleShare(buf: Buffer): Promise<number> {
+  const { data, info } = await sharp(buf).resize(64, 96, { fit: 'fill' }).raw().toBuffer({ resolveWithObject: true });
+  const n = info.width * info.height, ch = info.channels;
+  let pale = 0;
+  for (let i = 0; i < n; i++) {
+    const r = data[i * ch], g = data[i * ch + 1], b = data[i * ch + 2];
+    if (Math.min(r, g, b) > 165 && Math.max(r, g, b) - Math.min(r, g, b) < 50) pale++;
+  }
+  return pale / n;
+}
+const TITLE_PAGE = 0.5;
 
 /** Normalised word overlap, for deciding which work an anthology cover belongs to. */
 const normTitle = (t: string) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
@@ -114,7 +133,7 @@ async function main() {
       const rec = d?.recommendedEdition?.isbn13 && String(d.recommendedEdition.isbn13);
       if (!rec || d.cover?.source !== 'openlibrary' || !d.cover.isbn13 || String(d.cover.isbn13) === rec) continue;
       const out = `${OUT}/${slug}.jpg`;
-      const buf = await fetchCover([{ kind: 'isbn', value: rec }]);
+      const buf = await fetchCover([{ kind: 'isbn', value: rec }], true);
       if (buf) {
         await sharp(buf).rotate().resize({ width: 600, withoutEnlargement: true }).jpeg({ quality: 82, mozjpeg: true }).toFile(out);
         await record(slug, out, 'openlibrary');
