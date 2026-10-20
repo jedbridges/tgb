@@ -152,6 +152,13 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
 Newest first. One line per shipped change: date, PR, the link it targets, the metric to
 watch. Outcomes with figures go in `reports/growth-log.md`, not here.
 
+- 2026-10-14: the cover on seven guides showed a different edition from the one the guide
+  tells readers to buy; three now show the recommended edition's jacket, and four are back
+  to a generated cover (Adam Bede has no image on Open Library; three more had only a scanned
+  title page, which `fetch-covers.ts --match-edition` now rejects as mostly pale and
+  unsaturated). `validate:content` now fails when `cover.isbn13` and
+  `recommendedEdition.isbn13` differ, so it cannot return. Link: the
+  reader's trust at the buy click. Watch: buy clicks on those seven guides.
 - 2026-10-14: programme pages now name the recommended translation on every row and, where
   the ISBN gives a product page, carry one small Amazon link (placement `program`), so a
   student with a syllabus can buy without opening the guide (handed off). Watch: GA4
