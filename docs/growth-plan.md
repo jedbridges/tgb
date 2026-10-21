@@ -152,6 +152,12 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
 Newest first. One line per shipped change: date, PR, the link it targets, the metric to
 watch. Outcomes with figures go in `reports/growth-log.md`, not here.
 
+- 2026-10-21: `verify-editions.ts --checklist` writes the edition near misses to the
+  gitignored `reports/edition-checklist.md`, one row each with the guide's edition, the
+  catalogue record and plain Amazon and Bookshop product links; `--apply-checklist` writes
+  only rows ticked accept. Link: Confirmed (4), the near-miss tail of backlog item 1.
+  Watch: works with a product-page buy link once the owner works through the list.
+
 - 2026-10-14: the cover on seven guides showed a different edition from the one the guide
   tells readers to buy; three now show the recommended edition's jacket, and four are back
   to a generated cover (Adam Bede has no image on Open Library; three more had only a scanned
