@@ -22,11 +22,20 @@
  *   npx tsx scripts/verify-editions.ts            report only
  *   npx tsx scripts/verify-editions.ts --apply    write accepted ISBNs into the content
  *   npx tsx scripts/verify-editions.ts --only <slug> [...]
+ *   npx tsx scripts/verify-editions.ts --checklist         also write reports/edition-checklist.md
+ *   npx tsx scripts/verify-editions.ts --apply-checklist   write only the rows ticked accept
+ *
+ * The checklist turns each near miss into a row a person can settle by eye: the edition the
+ * guide names, the candidate's catalogue record, and plain product links (no affiliate tag)
+ * to check it against the retailer's own page. It lives in reports/, which is gitignored.
  */
 import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { parse } from 'yaml';
 
 const APPLY = process.argv.includes('--apply');
+const CHECKLIST = process.argv.includes('--checklist');
+const APPLY_CHECKLIST = process.argv.includes('--apply-checklist');
+const CHECKLIST_FILE = 'reports/edition-checklist.md';
 const ONLY = new Set(process.argv.filter((a, i) => process.argv[i - 1] === '--only'));
 const CACHE_DIR = '.cache/openlibrary';
 const UA = { 'User-Agent': 'greatbookslist.com edition verifier (hello@greatbookslist.com)' };
@@ -162,6 +171,25 @@ async function authorAgrees(rec: any, authorName: string): Promise<boolean> {
   return false;
 }
 
+/** The catalogue record behind a near miss, kept so the checklist can show it. */
+interface Candidate { isbn: string; title: string; publishers: string; year: string; by: string; format: string }
+const candidateOf = (isbn: string, rec: any): Candidate => ({
+  isbn,
+  title: [rec.title, rec.subtitle].filter(Boolean).join(': '),
+  publishers: (rec.publishers ?? []).join(', '),
+  year: yearOf(rec.publish_date) ?? '?',
+  by: rec.by_statement ?? '',
+  format: rec.physical_format ?? '',
+});
+
+/** ISBN-10 for a 978 ISBN-13: Amazon's /dp/ pages are keyed on it. */
+function isbn10Of(isbn13: string): string {
+  const body = isbn13.slice(3, 12);
+  const sum = [...body].reduce((t, d, i) => t + Number(d) * (10 - i), 0);
+  const check = (11 - (sum % 11)) % 11;
+  return body + (check === 10 ? 'X' : String(check));
+}
+
 interface Work { slug: string; title: string; authorName: string; ed: any }
 
 function readWorks(): Work[] {
@@ -234,6 +262,7 @@ async function findIsbn(w: Work) {
   const wantYear = w.ed.year ? String(w.ed.year) : '';
   const matches: { isbn: string; paper: boolean }[] = [];
   let nearest = '';
+  let cand: Candidate | undefined;
   for (const e of entries) {
     const isbn = (e.isbn_13 ?? []).find((i: string) => /^978/.test(i));
     if (!isbn) continue; // 979 has no ISBN-10, so no direct Amazon product link
@@ -249,9 +278,10 @@ async function findIsbn(w: Work) {
     else if (okPub && !nearest) {
       nearest = `${isbn} (${pubs}, ${yearOf(e.publish_date) ?? '?'}): ` +
         (!okTr ? 'translator not named in the record' : `year ${yearOf(e.publish_date) ?? '?'}, guide says ${wantYear}`);
+      cand = candidateOf(isbn, e);
     }
   }
-  if (!matches.length) return { slug: w.slug, status: 'none' as const, note: nearest ? `nearest ${nearest}` : 'no edition matches the named one' };
+  if (!matches.length) return { slug: w.slug, status: 'none' as const, note: nearest ? `nearest ${nearest}` : 'no edition matches the named one', cand };
 
   // Confirm on the record for the ISBN itself, since that is what the buy link resolves to.
   const pick = matches.find((m) => m.paper) ?? matches[0];
@@ -270,7 +300,7 @@ async function findIsbn(w: Work) {
     !prefixAgrees(pick.isbn, w.ed.publisher) && 'ISBN registered to another publisher',
     !(await authorAgrees(rec, w.authorName)) && 'author',
   ].filter(Boolean);
-  if (failed.length) return { slug: w.slug, status: 'none' as const, note: `${pick.isbn} failed on its own record: ${failed.join(', ')}` };
+  if (failed.length) return { slug: w.slug, status: 'none' as const, note: `${pick.isbn} failed on its own record: ${failed.join(', ')}`, cand: candidateOf(pick.isbn, rec) };
   return { slug: w.slug, status: 'found' as const, isbn: pick.isbn, note: `${recTitle} (${pubs}, ${yearOf(rec.publish_date)})` };
 }
 
@@ -288,7 +318,57 @@ function applyIsbn(slug: string, isbn: string) {
   return true;
 }
 
+/** One row per near miss. The ISBN line and the tick boxes are what --apply-checklist reads. */
+function checklistRow(r: { slug: string; note: string; cand?: Candidate }, w: Work): string {
+  const c = r.cand!;
+  const e = w.ed;
+  const named = [e.title ?? w.title, e.translator && `tr. ${e.translator}`, e.publisher, e.year].filter(Boolean).join(', ');
+  return [
+    `### ${r.slug}`,
+    `- Guide names: ${named}`,
+    `- ISBN: ${c.isbn}`,
+    `- Open Library record: ${c.title} | ${c.publishers || 'no publisher'} | ${c.year} | ${c.format || 'format blank'}${c.by ? ' | ' + c.by.slice(0, 90) : ''}`,
+    `- Why it was not accepted: ${r.note.replace(/^nearest \S+ \(.*?\): /, '').replace(/^\S+ failed on its own record: /, 'failed on its own record: ')}`,
+    `- Check: [Amazon](https://www.amazon.com/dp/${isbn10Of(c.isbn)}) · [Bookshop](https://bookshop.org/book/${c.isbn})`,
+    `- [ ] accept  [ ] reject`,
+    '',
+  ].join('\n');
+}
+
+function writeChecklist(near: any[], works: Work[]) {
+  const bySlug = new Map(works.map((w) => [w.slug, w]));
+  const rows = near.filter((r) => r.cand && bySlug.has(r.slug));
+  const head = [
+    '# Edition checklist',
+    '',
+    'Open each product page and compare title, translator, publisher and year with the line',
+    '"Guide names". Tick `[x] accept` only when the page is that exact print edition. Then run',
+    '`npx tsx scripts/verify-editions.ts --apply-checklist`. Unticked rows change nothing.',
+    '',
+  ].join('\n');
+  mkdirSync('reports', { recursive: true });
+  writeFileSync(CHECKLIST_FILE, head + '\n' + rows.map((r) => checklistRow(r, bySlug.get(r.slug)!)).join('\n'));
+  console.log(`\nCHECKLIST: ${rows.length} rows written to ${CHECKLIST_FILE}`);
+}
+
+/** Write only the rows ticked accept, through applyIsbn, the same path --apply uses. */
+function applyChecklist() {
+  if (!existsSync(CHECKLIST_FILE)) { console.log(`No ${CHECKLIST_FILE}; run with --checklist first.`); return; }
+  let wrote = 0, skipped = 0;
+  for (const section of readFileSync(CHECKLIST_FILE, 'utf8').split(/^### /m).slice(1)) {
+    const slug = section.split('\n')[0].trim();
+    const isbn = section.match(/^- ISBN: (978\d{10})$/m)?.[1];
+    const accepted = /\[[xX]\] accept/.test(section) && !/\[[xX]\] reject/.test(section);
+    if (!accepted) continue;
+    if (!isbn || !existsSync(`src/content/works/${slug}.md`)) { skipped++; console.log(`  skipped ${slug}: row unreadable`); continue; }
+    if (applyIsbn(slug, isbn)) { wrote++; console.log(`  + ${slug}  ${isbn}`); }
+    else { skipped++; console.log(`  skipped ${slug}: already has an ISBN or no edition block`); }
+  }
+  console.log(`\nAPPLIED FROM CHECKLIST: ${wrote} ISBNs written · ${skipped} skipped`);
+}
+
 async function main() {
+  if (APPLY_CHECKLIST) return applyChecklist();
   const works = readWorks();
   const toVerify = works.filter((w) => w.ed.isbn13);
   const toFind = works.filter((w) => !w.ed.isbn13 && (w.ed.translator || w.ed.publisher));
@@ -330,6 +410,7 @@ async function main() {
   const near = none.filter((r) => /^nearest|failed on its own record/.test(r.note));
   if (near.length) console.log(`\nNEAR MISSES, for a human to settle (${near.length}):`);
   for (const r of near) console.log(`  ? ${r.slug}  ${r.note}`);
+  if (CHECKLIST) writeChecklist(near, works);
 
   if (APPLY) {
     let wrote = 0;
