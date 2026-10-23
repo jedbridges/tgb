@@ -54,7 +54,9 @@ const itemList = {
  */
 const listName = /\blist$/i.test(p.name) ? p.name : `${p.name} Reading List`;
 const titleLong = `${listName}: All ${unique} Books in Order`;
-const pageTitle = titleLong.length <= 65 ? titleLong : `${p.name}: All ${unique} Books in Order`;
+// Keep the words "reading list" when the full form is too long, and drop "in Order" before them.
+const titleMid = `${listName}: All ${unique} Books`;
+const pageTitle = titleLong.length <= 65 ? titleLong : titleMid.length <= 65 ? titleMid : `${p.name}: All ${unique} Books in Order`;
 const pageDescription = `The complete ${listName.replace(/Reading List$/, 'reading list')}: all ${unique} books in the program's own order, with a guide to each and the translation to buy.`;
 ---
 <Base title={pageTitle} suffix={false} description={pageDescription}
