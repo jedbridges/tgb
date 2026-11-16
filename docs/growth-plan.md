@@ -152,6 +152,9 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
 Newest first. One line per shipped change: date, PR, the link it targets, the metric to
 watch. Outcomes with figures go in `reports/growth-log.md`, not here.
 
+- 2026-11-16: /translations/ buy buttons carry placement `translations` (was `hub`), the page is
+  indexed in site search as a Page, and the browse page links to it (search landing, buy click).
+  Watch: `affiliate_click` with placement `translations`, search landings on the page.
 - 2026-10-23: programme page titles keep the words "reading list" for Columbia and Great
   Books of the Western World, which had dropped them for length (search landing). Watch:
   search click-through on those two programme pages.

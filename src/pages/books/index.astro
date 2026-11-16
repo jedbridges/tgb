@@ -6,6 +6,7 @@ import BookCard from '~/components/BookCard.astro';
 import Browse from '~/components/browse/Browse';
 import { placeholderAuthor, loadCatalog, catalogRecord, sortedByAssignment } from '~/lib/catalog';
 import { breadcrumbs } from '~/lib/seo';
+import { url } from '~/lib/url';
 
 const { works, authors, programs } = await loadCatalog();
 const sorted = await sortedByAssignment(works);
@@ -31,7 +32,7 @@ const facets = {
   jsonld={breadcrumbs([{ name: 'Books', path: '/books/' }])}>
   <section class="wrap browse-head page-open">
     <h1 class="italic">All the books</h1>
-    <p class="browse-head__lede">Every work on the nine lists, each with a reading guide. Filter by what you are studying, or search inside every summary.</p>
+    <p class="browse-head__lede">Every work on the nine lists, each with a reading guide. Filter by what you are studying, or search inside every summary. Choosing a translation? See <a href={url('/translations/')}>the best translation of every book</a>.</p>
   </section>
   <section class="wrap browse" data-pagefind-ignore>
     <Browse client:idle rows={rows} facets={facets} total={works.length} />
