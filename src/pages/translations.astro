@@ -39,8 +39,9 @@ const itemList = {
 };
 ---
 <Base title={title} suffix={false} description={description} jsonld={[itemList, breadcrumbs([{ name: 'Translations', path: '/translations/' }])]}>
-  <section class="wrap head page-open">
-    <h1 class="italic">The best translations</h1>
+  <section class="wrap head page-open" data-pagefind-body data-pagefind-filter="type:Page">
+    <span class="visually-hidden" data-pagefind-meta="type:Page"></span>
+    <h1 class="italic" data-pagefind-meta="title">The best translations</h1>
     <p class="lede">For most of the great books the translation is most of the decision. Here is the one we would hand you for each of {total} works, with a sentence on why. Where more than one is worth reading, the book page compares them. Many have an older translation you can <a href={url('/free/')}>read free</a> first.</p>
     <nav class="jump ui" aria-label="Eras">
       {groups.map((g) => <a href={`#${g.era.id}`}>{g.era.data.label}</a>)}
@@ -63,7 +64,7 @@ const itemList = {
               {w.data.otherEditions.length > 0 && <a class="row__more ui" href={workUrl(w.id) + '#translation'}>Compare {w.data.otherEditions.length + 1} translations</a>}
             </p>
             <p class="row__buy">
-              <a class="btn" href={amazonUrl(info.target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={w.id} data-placement="hub" data-edition={editionKey(w.data.recommendedEdition)}>
+              <a class="btn" href={amazonUrl(info.target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={w.id} data-placement="translations" data-edition={editionKey(w.data.recommendedEdition)}>
                 Amazon<span class="visually-hidden">: {w.data.title}, the {info.editionName}, opens in a new tab</span>
               </a>
             </p>
