@@ -6,6 +6,9 @@ import { url, workUrl, textUrl, authorUrl } from '~/lib/url';
 import { breadcrumbs } from '~/lib/seo';
 import { passagesIn } from '~/lib/passages';
 import Signup from '~/components/Signup.astro';
+import Disclosure from '~/components/Disclosure.astro';
+import { amazonUrl, bookshopUrl } from '~/lib/affiliates';
+import { describeEdition, editionKey } from '~/lib/editions';
 
 export async function getStaticPaths() {
   const texts = await getCollection('texts');
@@ -23,6 +26,11 @@ const { work, entry, prev, next, count } = Astro.props;
 const author = await authorOf(work);
 const { Content } = await render(entry);
 const d = work.data; const t = entry.data;
+/* A product-page buy link only where the guide's recommended edition has a confirmed ISBN;
+   without one the footer's link to the guide is all there is, never a retailer search. */
+const pick = describeEdition(work, author.data.name, d.recommendedEdition);
+const buy = pick.named && pick.precise && d.recommendedEdition?.isbn13 ? pick : null;
+const edKey = editionKey(d.recommendedEdition);
 const minutes = Math.max(1, Math.round(t.words / 220));
 /*
  * Indexed by the site's search as a Passage, so "search inside" and the palette can find
@@ -99,6 +107,14 @@ const description = placed.length
     {!next && <Signup from="text" />}
     <footer class="passage__foot" data-pagefind-ignore>
       <p>{t.edition}. {t.licence} <a href={t.sourceUrl} rel="noopener">Source edition</a>. The programs assign a different edition; <a href={workUrl(work.id)}>the guide</a> names it.</p>
+      {buy && (
+        <p class="passage__buy">
+          The guide recommends the {buy.editionName ?? 'edition it names'}. Get it on{' '}
+          <a href={amazonUrl(buy.target)} target="_blank" rel="sponsored noopener" data-affiliate="amazon" data-work={work.id} data-placement="text" data-edition={edKey}>Amazon<span class="visually-hidden">, opens in a new tab</span></a> or{' '}
+          <a href={bookshopUrl(buy.target)} target="_blank" rel="sponsored noopener" data-affiliate="bookshop" data-work={work.id} data-placement="text" data-edition={edKey}>Bookshop.org<span class="visually-hidden">, opens in a new tab</span></a>.
+        </p>
+      )}
+      {buy && <Disclosure compact />}
     </footer>
   </article>
 </Base>
@@ -152,4 +168,5 @@ const description = placed.length
   .passage__all { align-self: center; color: var(--ink-soft); text-decoration: none; font-size: var(--step--1); min-height: 44px; display: inline-flex; align-items: center; padding-inline: 0.5rem; }
   .passage__foot { margin-top: var(--s3); font-family: var(--font-ui); font-size: var(--step--2); color: var(--ink-mute); line-height: 1.5; }
   .passage__foot a { color: inherit; }
+  .passage__foot p + p { margin-top: var(--s-1); }
 </style>

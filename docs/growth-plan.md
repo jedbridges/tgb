@@ -152,6 +152,7 @@ Ranked by expected revenue per hour of work, re-ranked every pass.
 Newest first. One line per shipped change: date, PR, the link it targets, the metric to
 watch. Outcomes with figures go in `reports/growth-log.md`, not here.
 
+- 2026-11-23: free text pages carry one quiet line under the text offering the guide's recommended edition, placement `text`, only where the work has a confirmed ISBN (reader on a text page, buy click). Watch: `affiliate_click` with placement `text`, and guide visits from text pages.
 - 2026-11-16: /translations/ buy buttons carry placement `translations` (was `hub`), the page is
   indexed in site search as a Page, and the browse page links to it (search landing, buy click).
   Watch: `affiliate_click` with placement `translations`, search landings on the page.
